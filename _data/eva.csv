@@ -1,0 +1,836 @@
+"#", "ISS", "Mission", "Participants", "Duration", "Date", "Notes"
+"1", "", "Voskhod 2", "Alexi Leonov", "0h 23m", "1965-03-18", "First spacewalk"
+"2", "", "Gemini IV", "Edward White
+James McDivitt", "0h 46m", "1966-06-03", "First American spacewalk
+McDivitt did not egress"
+"3", "", "Gemini IX-A", "Eugene Cernan
+Thomas Stafford", "2h 08m", "1966-06-05", "No egress by Stafford"
+"4", "", "Gemini X", "Michael Collins
+John Young", "0h 50m", "1966-07-19", "No egress by Young"
+"5", "", "Gemini X", "Michael Collins
+John Young", "0h 40m", "1966-07-20", "No egress by Young"
+"6", "", "Gemini X", "Michael Collins
+John Young", "0h 03m", "1966-07-21", "Equipment dump"
+"7", "", "Gemini XI", "Richard Gordon
+Charles Conrad", "0h 43m", "1966-09-13", "No egress by Conrad"
+"8", "", "Gemini XI", "Richard Gordon
+Charles Conrad", "0h 04m", "1966-09-13", "Equipment dump"
+"9", "", "Gemini XI", "Richard Gordon
+Charles Conrad", "2h 10m", "1966-09-14", "No egress by Conrad"
+"10", "", "Gemini XII", "Edwin Aldrin
+James Lovell", "2h 30m", "1966-11-12", "No egress by Lovell"
+"11", "", "Gemini XII", "Edwin Aldrin
+James Lovell", "2h 08m", "1966-11-13", "No egress by Lovell"
+"12", "", "Gemini XII", "Edwin Aldrin
+James Lovell", "0h 58m", "1966-11-14", "No egress by Lovell"
+"13", "", "Soyuz 5", "Yevgeni Khrunov
+Aleksei Yeliseyev", "0h 53m", "1969-01-15", ""
+"14", "", "Apollo 9", "Russell Schweickart
+James McDivitt", "1h 07m", "1969-03-06", "Schweickert on LM porch
+No egress by McDivitt"
+"15", "", "Apollo 9", "David Scott", "1h 01m", "1969-03-06", "Scott from CM"
+"16", "", "Apollo 11", "Edwin Aldrin
+Neil Armstrong", "2h 32m", "1969-07-21", "Lunar
+(02:39:33 UTC)"
+"17", "", "Apollo 11", "Edwin Aldrin
+Neil Armstrong", "0h 05m", "1969-07-21", "Equipment dump"
+"18", "", "Apollo 12", "Alan Bean
+Charles Conrad", "3h 56m", "1969-11-19", "Lunar
+(11:32:35 UTC)"
+"19", "", "Apollo 12", "Alan Bean
+Charles Conrad", "3h 49m", "1969-11-20", "Lunar
+(03:54:45 UTC)"
+"20", "", "Apollo 12", "Charles Conrad
+Alan Bean", "0h 05m", "1969-11-20", "Equipment dump"
+"21", "", "Apollo 14", "Edgar Mitchell
+Alan Shepard", "4h 48m", "1971-02-05", "Lunar
+(14:42:13 UTC)"
+"22", "", "Apollo 14", "Edgar Mitchell
+Alan Shepard", "4h 35m", "1971-02-06", "Lunar
+(08:11:15 UTC)"
+"23", "", "Apollo 15", "David Scott", "0h 33m", "1971-07-31", "Panoramic photos"
+"24", "", "Apollo 15", "James Irwin
+David Scott", "6h 33m", "1971-07-31", "Lunar
+(13:13:17 UTC)"
+"25", "", "Apollo 15", "James Irwin
+David Scott", "7h 12m", "1971-08-01", "Lunar
+(11:48:48 UTC)"
+"26", "", "Apollo 15", "James Irwin
+David Scott", "4h 50m", "1971-08-02", "Lunar
+(08:52:14 UTC)"
+"27", "", "Apollo 15", "James Irwin
+David Scott", "0h 12m", "1971-08-02", "Equipment dump"
+"28", "", "Apollo 15", "Alfred Worden
+James Irwin
+David Scott", "0h 39m", "1971-08-05", "Deep Space
+(15:31:12 UTC)
+No egress by Scott or Irwin"
+"29", "", "Apollo 16", "Charles Duke
+John Young", "7h 11m", "1972-04-21", "Lunar
+(16:47:28 UTC)"
+"30", "", "Apollo 16", "Charles Duke
+John Young", "7h 23m", "1972-04-22", "Lunar
+(16:33:35 UTC)"
+"31", "", "Apollo 16", "Charles Duke
+John Young", "5h 40m", "1972-04-23", "Lunar
+(15:25:28 UTC)"
+"32", "", "Apollo 16", "Charles Duke
+John Young", "0h 04m", "1972-04-23", "Equipment dump"
+"33", "", "Apollo 16", "Thomas Mattingly
+Charles Duke
+John Young", "1h 24m", "1972-04-25", "Deep Space
+(20:33:46 UTC)
+No egress by Young or Duke"
+"34", "", "Apollo 17", "Eugene Cernan
+Harrison Schmitt", "7h 12m", "1972-12-11", "Lunar
+(23:54:49 UTC)"
+"35", "", "Apollo 17", "Eugene Cernan
+Harrison Schmitt", "7h 37m", "1972-12-12", "Lunar
+(23:28:06 UTC)"
+"36", "", "Apollo 17", "Eugene Cernan
+Harrison Schmitt", "7h 15m", "1972-12-13", "Lunar
+(22:25:48 UTC)"
+"37", "", "Apollo 17", "Harrison Schmitt
+Eugene Cernan", "0h 07m", "1972-12-14", "Equipment dump"
+"38", "", "Apollo 17", "Harrison Schmitt
+Eugene Cernan", "0h 04m", "1972-12-14", "Equipment dump"
+"39", "", "Apollo 17", "Ronald Evans
+Harrison Schmitt
+Eugene Cernan", "1h 06m", "1972-12-17", "Deep Space
+(20:27:40 UTC)
+No egress by Cernan or Schmitt"
+"40", "", "Skylab 1", "Paul Weitz", "0h 40m", "1973-05-25", "Skylab 1"
+"41", "", "Skylab 1", "Charles Conrad
+Joseph Kerwin", "3h 23m", "1973-06-07", "Skylab 1"
+"42", "", "Skylab 1", "Charles Conrad
+Paul Weitz", "1h 34m", "1973-06-19", "Skylab 1"
+"43", "", "Skylab 2", "Owen Garriott
+Jack Lousma", "6h 37m", "1973-08-06", "Skylab 2"
+"44", "", "Skylab 2", "Owen Garriott
+Jack Lousma", "4h 37m", "1973-08-24", "Skylab 2"
+"45", "", "Skylab 2", "Alan Bean
+Owen Garriott", "2h 45m", "1973-09-22", "Skylab 2"
+"46", "", "Skylab 3", "Edward Gibson
+William Pogue", "6h 36m", "1973-11-22", "Skylab 3"
+"47", "", "Skylab 3", "Gerald Carr
+William Pogue", "7h 00m", "1973-12-25", "Skylab 3"
+"48", "", "Skylab 3", "Gerald Carr
+William Pogue", "3h 34m", "1973-12-29", "Skylab 3"
+"49", "", "Skylab 3", "Gerald Carr
+William Pogue", "5h 24m", "1974-02-03", "Skylab 3"
+"50", "", "Salyut 6, PE-1", "Georgi Grechko
+Yuri Romanenko", "1h 28m", "1977-12-19", ""
+"51", "", "Salyut 6, PE-2", "Aleksandr Ivanchenkov
+Vladimir Kovalyonok", "2h 20m", "1978-07-29", "Ivanchenko actually depressurized at 03:57, 3 minutes before Kovalyonok"
+"52", "", "Salyut 6, PE-3", "Vladimir Lyakhov
+Valeri Ryumin", "1h 23m", "1979-08-15", ""
+"53", "", "Salyut 7, PE-1", "Anatoli Berezovoi
+Valentin Lebedev", "2h 33m", "1982-07-30", ""
+"54", "", "STS-6", "Franklin Musgrave
+Donald Peterson", "4h 10m", "1983-04-07", ""
+"55", "", "Salyut 7, PE-2", "Aleksandr Aleksandrov
+Vladimir Lyakhov", "2h 49m", "1983-11-01", ""
+"56", "", "Salyut 7, PE-2", "Aleksandr Aleksandrov
+Vladimir Lyakhov", "2h 55m", "1983-11-03", ""
+"57", "", "41-B", "Bruce McCandless
+Robert Stewart", "5h 55m", "1984-02-07", "McCandless makes the first untethered walk with a MMU
+Ventures 100 m from shuttle"
+"58", "", "41-B", "Bruce McCandless
+Robert Stewart", "6h 17m", "1984-02-09", ""
+"59", "", "41-C", "George Nelson
+James van Hoften", "2h 51m", "1984-04-08", ""
+"60", "", "41-C", "George Nelson
+James van Hoften", "6h 38m", "1984-04-11", ""
+"61", "", "Salyut 7, PE-3", "Leonid Kizim
+Vladimir Solovyov", "4h 15m", "1984-04-23", ""
+"62", "", "Salyut 7, PE-3", "Leonid Kizim
+Vladimir Solovyov", "5h 00m", "1984-04-26", ""
+"63", "", "Salyut 7, PE-3", "Leonid Kizim
+Vladimir Solovyov", "2h 45m", "1984-04-29", ""
+"64", "", "Salyut 7, PE-3", "Leonid Kizim
+Vladimir Solovyov", "2h 45m", "1984-05-03", ""
+"65", "", "Salyut 7, PE-3", "Leonid Kizim
+Vladimir Solovyov", "3h 05m", "1984-05-18", ""
+"66", "", "Salyut 7, VE-4", "Vladimir Dzhanibekov
+Svetlana Savitskaya", "3h 34m", "1984-07-25", "First woman to spacewalk"
+"67", "", "Salyut 7, PE-3", "Leonid Kizim
+Vladimir Solovyov", "5h 00m", "1984-08-08", ""
+"68", "", "41-G", "David Leestma
+Kathryn Sullivan", "3h 33m", "1984-10-11", "First American woman to spacewalk"
+"69", "", "51-A", "Joseph Allen
+Dale Gardner", "6h 10m", "1984-11-12", ""
+"70", "", "51-A", "Joseph Allen
+Dale Gardner", "6h 01m", "1984-11-14", ""
+"71", "", "51-D", "Stanley Griggs
+Jeffrey Hoffman", "3h 10m", "1985-04-16", ""
+"72", "", "Salyut 7, PE-4", "Vladimir Dzhanibekov
+Viktor Savinykh", "5h 00m", "1985-08-02", ""
+"73", "", "51-I", "William Fisher
+James van Hoften", "7h 08m", "1985-08-31", ""
+"74", "", "51-I", "William Fisher
+James van Hoften", "4h 41m", "1985-09-01", ""
+"75", "", "61-B", "Jerry Ross
+Sherwood Spring", "5h 34m", "1985-11-29", ""
+"76", "", "61-B", "Jerry Ross
+Sherwood Spring", "6h 46m", "1985-12-01", ""
+"77", "", "Salyut 7, PE-6", "Leonid Kizim
+Vladimir Solovyov", "3h 50m", "1986-05-28", ""
+"78", "", "Salyut 7, PE-6", "Leonid Kizim
+Vladimir Solovyov", "5h 00m", "1986-05-31", ""
+"79", "", "EO-2", "Aleksandr Laveykin
+Yuri Romanenko", "3h 40m", "1987-04-11", ""
+"80", "", "EO-2", "Aleksandr Laveykin
+Yuri Romanenko", "1h 53m", "1987-06-12", ""
+"81", "", "EO-2", "Aleksandr Laveykin
+Yuri Romanenko", "3h 15m", "1987-06-16", ""
+"82", "", "EO-3", "Musa Manarov
+Vladimir Titov", "4h 25m", "1988-02-26", ""
+"83", "", "EO-3", "Musa Manarov
+Vladimir Titov", "5h 10m", "1988-06-30", ""
+"84", "", "EO-3", "Musa Manarov
+Vladimir Titov", "4h 12m", "1988-10-20", ""
+"85", "", "EO-3/4", "Jean-Loup Chretien
+Aleksandr Volkov", "6h 00m", "1988-12-09", ""
+"86", "", "EO-5", "Aleksandr Serebrov
+Aleksandr Viktorenko", "2h 56m", "1990-01-08", ""
+"87", "", "EO-5", "Aleksandr Serebrov
+Aleksandr Viktorenko", "2h 54m", "1990-01-11", ""
+"88", "", "EO-5", "Aleksandr Serebrov
+Aleksandr Viktorenko", "3h 02m", "1990-01-26", ""
+"89", "", "EO-5", "Aleksandr Serebrov
+Aleksandr Viktorenko", "4h 59m", "1990-02-01", ""
+"90", "", "EO-5", "Aleksandr Serebrov
+Aleksandr Viktorenko", "3h 45m", "1990-02-05", ""
+"91", "", "EO-6", "Aleksandr Balandin
+Anatoliy Solovyov", "7h 16m", "1990-07-17", ""
+"92", "", "EO-6", "Aleksandr Balandin
+Anatoliy Solovyov", "3h 31m", "1990-07-26", ""
+"93", "", "EO-7", "Gennadi Manakov
+Gennadi Strekalov", "2h 45m", "1990-10-29", ""
+"94", "", "EO-8", "Viktor Afanasyev
+Musa Manarov", "5h 18m", "1991-01-07", ""
+"95", "", "EO-8", "Viktor Afanasyev
+Musa Manarov", "5h 33m", "1991-01-23", ""
+"96", "", "EO-8", "Viktor Afanasyev
+Musa Manarov", "6h 20m", "1991-01-26", ""
+"97", "", "STS-37", "Jerome Apt
+Jerry Ross", "4h 38m", "1991-04-07", ""
+"98", "", "STS-37", "Jerome Apt
+Jerry Ross", "6h 11m", "1991-04-08", ""
+"99", "", "EO-8", "Viktor Afanasyev
+Musa Manarov", "3h 34m", "1991-04-25", ""
+"100", "", "EO-9", "Anatoli Artsebarsky
+Sergei Krikalyov", "4h 58m", "1991-06-24", ""
+"101", "", "EO-9", "Anatoli Artsebarsky
+Sergei Krikalyov", "3h 24m", "1991-06-28", ""
+"102", "", "EO-9", "Anatoli Artsebarsky
+Sergei Krikalyov", "5h 56m", "1991-07-15", ""
+"103", "", "EO-9", "Anatoli Artsebarsky
+Sergei Krikalyov", "5h 28m", "1991-07-19", ""
+"104", "", "EO-9", "Anatoli Artsebarsky
+Sergei Krikalyov", "5h 42m", "1991-07-23", ""
+"105", "", "EO-9", "Anatoli Artsebarsky
+Sergei Krikalyov", "6h 49m", "1991-07-27", ""
+"106", "", "EO-10", "Sergei Krikalyov
+Aleksandr Volkov", "4h 12m", "1992-02-20", ""
+"107", "", "STS-49", "Richard Hieb
+Pierre Thuot", "3h 51m", "1992-05-10", ""
+"108", "", "STS-49", "Richard Hieb
+Pierre Thuot", "5h 26m", "1992-05-11", ""
+"109", "", "STS-49", "Thomas Akers
+Richard Hieb
+Pierre Thuot", "8h 29m", "1992-05-13", ""
+"110", "", "STS-49", "Thomas Akers
+Kathryn Thornton", "7h 45m", "1992-05-14", ""
+"111", "", "EO-11", "Aleksandr Kaleri
+Aleksandr Viktorenko", "2h 03m", "1992-07-08", ""
+"112", "", "EO-12", "Sergei Avdeyev
+Anatoliy Solovyov", "3h 56m", "1992-09-03", ""
+"113", "", "EO-12", "Sergei Avdeyev
+Anatoliy Solovyov", "5h 08m", "1992-09-07", ""
+"114", "", "EO-12", "Sergei Avdeyev
+Anatoliy Solovyov", "5h 44m", "1992-09-11", ""
+"115", "", "EO-12", "Sergei Avdeyev
+Anatoliy Solovyov", "3h 33m", "1992-09-15", ""
+"116", "", "STS-54", "Gregory Harbaugh
+Mario Runco", "4h 28m", "1993-01-17", ""
+"117", "", "EO-13", "Gennadi Manakov
+Aleksandr Poleshchuk", "5h 25m", "1993-04-19", ""
+"118", "", "EO-13", "Gennadi Manakov
+Aleksandr Poleshchuk", "4h 33m", "1993-06-18", ""
+"119", "", "STS-57", "George Low
+Peter Wisoff", "5h 50m", "1993-06-25", ""
+"120", "", "EO-14", "Aleksandr Serebrov
+Vasili Tsibliyev", "4h 18m", "1993-09-16", ""
+"121", "", "STS-51", "James Newman
+Carl Walz", "7h 05m", "1993-09-16", ""
+"122", "", "EO-14", "Aleksandr Serebrov
+Vasili Tsibliyev", "3h 14m", "1993-09-20", ""
+"123", "", "EO-14", "Aleksandr Serebrov
+Vasili Tsibliyev", "1h 51m", "1993-09-28", ""
+"124", "", "EO-14", "Aleksandr Serebrov
+Vasili Tsibliyev", "0h 38m", "1993-10-22", ""
+"125", "", "EO-14", "Aleksandr Serebrov
+Vasili Tsibliyev", "4h 12m", "1993-10-29", ""
+"126", "", "STS-61", "Jeffrey Hoffman
+Franklin Musgrave", "7h 54m", "1993-12-05", "Hubble repair"
+"127", "", "STS-61", "Thomas Akers
+Kathryn Thornton", "6h 36m", "1993-12-06", "Hubble repair"
+"128", "", "STS-61", "Jeffrey Hoffman
+Franklin Musgrave", "6h 47m", "1993-12-07", "Hubble repair"
+"129", "", "STS-61", "Thomas Akers
+Kathryn Thornton", "6h 50m", "1993-12-08", "Hubble repair"
+"130", "", "STS-61", "Jeffrey Hoffman
+Franklin Musgrave", "6h 51m", "1993-12-09", "Hubble repair"
+"131", "", "EO-16", "Yuri Malenchenko
+Talgat Musabayev", "5h 06m", "1994-09-09", ""
+"132", "", "EO-16", "Yuri Malenchenko
+Talgat Musabayev", "6h 01m", "1994-09-13", ""
+"133", "", "STS-64", "Mark Lee
+Carl Meade", "6h 51m", "1994-09-16", ""
+"134", "", "STS-63", "Colin Foale
+Bernard Harris", "4h 39m", "1995-02-09", ""
+"135", "", "EO-18", "Vladimir Dezhurov
+Gennadi Strekalov", "6h 15m", "1995-05-12", ""
+"136", "", "EO-18", "Vladimir Dezhurov
+Gennadi Strekalov", "6h 42m", "1995-05-17", ""
+"137", "", "EO-18", "Vladimir Dezhurov
+Gennadi Strekalov", "5h 15m", "1995-05-22", ""
+"138", "", "EO-18", "Vladimir Dezhurov
+Gennadi Strekalov", "0h 21m", "1995-05-28", ""
+"139", "", "EO-18", "Vladimir Dezhurov
+Gennadi Strekalov", "0h 23m", "1995-06-01", ""
+"140", "", "EO-19", "Nikolai Budarin
+Anatoliy Solovyov", "5h 34m", "1995-07-14", ""
+"141", "", "EO-19", "Nikolai Budarin
+Anatoliy Solovyov", "3h 08m", "1995-07-19", ""
+"142", "", "EO-19", "Nikolai Budarin
+Anatoliy Solovyov", "5h 50m", "1995-07-21", ""
+"143", "", "STS-69", "Michael Gernhardt
+James Voss", "6h 46m", "1995-09-16", ""
+"144", "", "EO-20", "Sergei Avdeyev
+Thomas Reiter", "5h 16m", "1995-10-20", ""
+"145", "", "EO-20", "Sergei Avdeyev
+Yuri Gidzenko", "0h 29m", "1995-12-08", ""
+"146", "", "STS-72", "Daniel Barry
+Leroy Chiao", "6h 09m", "1996-01-15", ""
+"147", "", "STS-72", "Leroy Chiao
+Winston Scott", "6h 54m", "1996-01-17", ""
+"148", "", "EO-20", "Yuri Gidzenko
+Thomas Reiter", "3h 06m", "1996-02-08", ""
+"149", "", "EO-21", "Yuri Onufrienko
+Yuri Usachyov", "5h 51m", "1996-03-15", ""
+"150", "", "STS-76", "Michael Clifford
+Linda Godwin", "6h 02m", "1996-03-27", ""
+"151", "", "EO-21", "Yuri Onufrienko
+Yuri Usachyov", "5h 20m", "1996-05-20", ""
+"152", "", "EO-21", "Yuri Onufrienko
+Yuri Usachyov", "5h 43m", "1996-05-24", ""
+"153", "", "EO-21", "Yuri Onufrienko
+Yuri Usachyov", "4h 20m", "1996-05-30", ""
+"154", "", "EO-21", "Yuri Onufrienko
+Yuri Usachyov", "3h 34m", "1996-06-06", ""
+"155", "", "EO-21", "Yuri Onufrienko
+Yuri Usachyov", "5h 42m", "1996-06-13", ""
+"156", "", "EO-22", "Aleksandr Kaleri
+Valeri Korzun", "5h 58m", "1996-12-02", ""
+"157", "", "EO-22", "Aleksandr Kaleri
+Valeri Korzun", "6h 38m", "1996-12-09", ""
+"158", "", "STS-82", "Mark Lee
+Stephen Smith", "6h 42m", "1997-02-14", "Hubble repair"
+"159", "", "STS-82", "Gregory Harbaugh
+Joseph Tanner", "7h 27m", "1997-02-15", "Hubble repair"
+"160", "", "STS-82", "Mark Lee
+Stephen Smith", "7h 11m", "1997-02-16", "Hubble repair"
+"161", "", "STS-82", "Gregory Harbaugh
+Joseph Tanner", "6h 34m", "1997-02-17", "Hubble repair"
+"162", "", "STS-82", "Mark Lee
+Stephen Smith", "5h 17m", "1997-02-18", "Hubble repair"
+"163", "", "EO-23", "Jerry Linenger
+Vasili Tsibliyev", "4h 59m", "1997-04-29", ""
+"164", "", "EO-24", "Anatoliy Solovyov
+Pavel Vinogradov", "3h 16m", "1997-08-22", ""
+"165", "", "EO-24", "Anatoliy Solovyov
+Colin Foale", "6h 00m", "1997-09-06", ""
+"166", "", "STS-86", "Scott Parazynski
+Vladimir Titov", "5h 01m", "1997-10-01", ""
+"167", "", "EO-24", "Anatoliy Solovyov", "6h 38m", "1997-10-20", ""
+"168", "", "EO-24", "Anatoliy Solovyov
+Pavel Vinogradov", "6h 04m", "1997-11-03", ""
+"169", "", "EO-24", "Anatoliy Solovyov
+Pavel Vinogradov", "6h 12m", "1997-11-06", ""
+"170", "", "STS-87", "Takao Doi
+Winston Scott", "7h 43m", "1997-11-25", ""
+"171", "", "STS-87", "Takao Doi
+Winston Scott", "5h 01m", "1997-12-03", ""
+"172", "", "EO-24", "Anatoliy Solovyov
+Pavel Vinogradov", "3h 06m", "1998-01-08", ""
+"173", "", "EO-24", "Anatoliy Solovyov
+David Wolf", "3h 52m", "1998-01-14", ""
+"174", "", "EO-25", "Nikolai Budarin
+Talgat Musabayev", "1h 15m", "1998-03-03", "Internal EVA, outer hatch would not open"
+"175", "", "EO-25", "Nikolai Budarin
+Talgat Musabayev", "6h 40m", "1998-04-01", ""
+"176", "", "EO-25", "Nikolai Budarin
+Talgat Musabayev", "4h 15m", "1998-04-06", ""
+"177", "", "EO-25", "Nikolai Budarin
+Talgat Musabayev", "6h 25m", "1998-04-11", ""
+"178", "", "EO-25", "Nikolai Budarin
+Talgat Musabayev", "6h 33m", "1998-04-17", ""
+"179", "", "EO-25", "Nikolai Budarin
+Talgat Musabayev", "6h 21m", "1998-04-22", ""
+"180", "", "EO-26", "Sergei Avdeyev
+Gennadi Padalka", "0h 30m", "1998-09-15", ""
+"181", "", "EO-26", "Sergei Avdeyev
+Gennadi Padalka", "5h 54m", "1998-11-10", ""
+"182", "1", "STS-88", "James Newman
+Jerry Ross", "7h 21m", "1998-12-07", "First EVA in support of the ISS"
+"183", "2", "STS-88", "James Newman
+Jerry Ross", "7h 02m", "1998-12-09", "Second EVA in support of the ISS"
+"184", "3", "STS-88", "James Newman
+Jerry Ross", "6h 59m", "1998-12-12", "Third EVA in support of the ISS"
+"185", "", "EO-27", "Viktor Afanasyev
+Jean-Pierre Haigneré", "6h 19m", "1999-04-16", ""
+"186", "4", "STS-96", "Daniel Barry
+Tamara Jernigan", "7h 55m", "1999-05-30", "ISS support"
+"187", "", "EO-27", "Viktor Afanasyev
+Sergei Avdeyev", "6h 07m", "1999-07-23", ""
+"188", "", "EO-27", "Viktor Afanasyev
+Sergei Avdeyev", "5h 22m", "1999-07-28", ""
+"189", "", "STS-103", "John Grunsfeld
+Stephen Smith", "8h 15m", "1999-12-22", "Hubble repair"
+"190", "", "STS-103", "Colin Foale
+Claude Nicollier", "8h 10m", "1999-12-23", "Hubble repair"
+"191", "", "STS-103", "John Grunsfeld
+Stephen Smith", "8h 08m", "1999-12-24", "Hubble repair"
+"192", "", "EO-28", "Aleksandr Kaleri
+Sergy Zalyotin", "4h 52m", "2000-05-12", ""
+"193", "5", "STS-101", "James Voss
+Jeffrey Williams", "6h 44m", "2000-05-22", ""
+"194", "6", "STS-106", "Edward Lu
+Yuri Malenchenko", "6h 14m", "2000-09-11", ""
+"195", "7", "STS-92", "Leroy Chiao
+William McArthur", "6h 28m", "2000-10-15", ""
+"196", "8", "STS-92", "Michael Lopez-Alegria
+Peter Wisoff", "7h 07m", "2000-10-16", ""
+"197", "9", "STS-92", "Leroy Chiao
+William McArthur", "6h 48m", "2000-10-17", ""
+"198", "10", "STS-92", "Michael Lopez-Alegria
+Peter Wisoff", "6h 56m", "2000-10-18", ""
+"199", "11", "STS-97", "Carlos Noriega
+Joseph Tanner", "7h 33m", "2000-12-03", ""
+"200", "12", "STS-97", "Carlos Noriega
+Joseph Tanner", "6h 37m", "2000-12-05", ""
+"201", "13", "STS-97", "Carlos Noriega
+Joseph Tanner", "5h 10m", "2000-12-07", ""
+"202", "14", "STS-98", "Robert Curbeam
+Thomas Jones", "7h 34m", "2001-02-10", ""
+"203", "15", "STS-98", "Robert Curbeam
+Thomas Jones", "6h 50m", "2001-02-12", ""
+"204", "16", "STS-98", "Robert Curbeam
+Thomas Jones", "5h 25m", "2001-02-14", ""
+"205", "17", "STS-102", "Susan Helms
+James Voss", "8h 56m", "2001-03-11", ""
+"206", "18", "STS-102", "Paul Richards
+Andrew Thomas", "6h 21m", "2001-03-13", ""
+"207", "19", "STS-100", "Chris Hadfield
+Scott Parazynski", "7h 10m", "2001-04-22", "First spacewalk by a Canadian"
+"208", "20", "STS-100", "Chris Hadfield
+Scott Parazynski", "7h 40m", "2001-04-24", ""
+"209", "21", "ISS Expedition 2", "Yuri Usachyov
+James Voss", "0h 19m", "2001-06-08", "Internal spacewalk"
+"210", "22", "STS-104", "Michael Gernhardt
+James Reilly", "5h 59m", "2001-07-15", ""
+"211", "23", "STS-104", "Michael Gernhardt
+James Reilly", "6h 29m", "2001-07-18", ""
+"212", "24", "STS-104", "Michael Gernhardt
+James Reilly", "4h 02m", "2001-07-21", "First spacewalk from the Joint Airlock Assembly on the ISS"
+"213", "25", "STS-105", "Daniel Barry
+Patrick Forrester", "6h 16m", "2001-08-16", ""
+"214", "26", "STS-105", "Daniel Barry
+Patrick Forrester", "5h 29m", "2001-08-18", ""
+"215", "27", "ISS Expedition 3", "Vladimir Dezhurov
+Mikhail Tyurin", "4h 58m", "2001-10-08", "First independent ISS spacewalk from the Pirs module"
+"216", "28", "ISS Expedition 3", "Vladimir Dezhurov
+Mikhail Tyurin", "5h 52m", "2001-10-15", ""
+"217", "29", "ISS Expedition 3", "Frank Culbertson
+Vladimir Dezhurov", "5h 04m", "2001-11-12", ""
+"218", "30", "ISS Expedition 3", "Vladimir Dezhurov
+Mikhail Tyurin", "2h 46m", "2001-12-03", "Emergency walk to correct Progress caro docking malfunction"
+"219", "31", "STS-108", "Linda Godwin
+Daniel Tani", "4h 12m", "2001-12-10", ""
+"220", "32", "ISS Expedition 4", "Daniel Bursch
+Yuri Onufrienko", "6h 03m", "2002-01-14", ""
+"221", "33", "ISS Expedition 4", "Daniel Bursch
+Yuri Onufrienko", "5h 59m", "2002-01-25", ""
+"222", "34", "ISS Expedition 4", "Daniel Bursch
+Carl Walz", "5h 47m", "2002-02-20", ""
+"223", "", "STS-109", "John Grunsfeld
+Richard Linnehan", "7h 01m", "2002-03-04", "Hubble repair"
+"224", "", "STS-109", "Michael Massimino
+James Newman", "7h 16m", "2002-03-05", "Hubble repair"
+"225", "", "STS-109", "John Grunsfeld
+Richard Linnehan", "6h 48m", "2002-03-06", "Hubble repair"
+"226", "", "STS-109", "Michael Massimino
+James Newman", "7h 30m", "2002-03-07", "Hubble repair"
+"227", "", "STS-109", "John Grunsfeld
+Richard Linnehan", "7h 20m", "2002-03-08", "Hubble repair"
+"228", "35", "STS-110", "Stephen Smith
+Rex Walheim", "7h 48m", "2002-04-11", ""
+"229", "36", "STS-110", "Lee Morin
+Jerry Ross", "7h 30m", "2002-04-13", ""
+"230", "37", "STS-110", "Stephen Smith
+Rex Walheim", "6h 27m", "2002-04-14", ""
+"231", "38", "STS-110", "Lee Morin
+Jerry Ross", "6h 37m", "2002-04-16", ""
+"232", "39", "STS-111", "Franklin Chang-Diaz
+Philippe Perrin", "7h 14m", "2002-06-09", ""
+"233", "40", "STS-111", "Franklin Chang-Diaz
+Philippe Perrin", "5h 00m", "2002-06-11", ""
+"234", "41", "STS-111", "Franklin Chang-Diaz
+Philippe Perrin", "7h 17m", "2002-06-13", ""
+"235", "42", "ISS Expedition 5", "Valeri Korzun
+Peggy Whitson", "4h 25m", "2002-08-16", ""
+"236", "43", "ISS Expedition 5", "Valeri Korzun
+Sergei Treschev", "5h 21m", "2002-08-26", ""
+"237", "44", "STS-112", "David Wolf
+Piers Sellers", "7h 01m", "2002-10-10", ""
+"238", "45", "STS-112", "David Wolf
+Piers Sellers", "6h 04m", "2002-10-12", ""
+"239", "46", "STS-112", "David Wolf
+Piers Sellers", "6h 36m", "2002-10-14", ""
+"240", "47", "STS-113", "Michael Lopez-Alegria
+John Herrington", "6h 45m", "2002-11-26", ""
+"241", "48", "STS-113", "Michael Lopez-Alegria
+John Herrington", "6h 10m", "2002-11-28", ""
+"242", "49", "STS-113", "Michael Lopez-Alegria
+John Herrington", "7h 00m", "2002-11-30", ""
+"243", "50", "ISS Expedition 6", "Kenneth Bowersox
+Donald Pettit", "6h 51m", "2003-01-15", ""
+"244", "51", "ISS Expedition 6", "Kenneth Bowersox
+Donald Pettit", "6h 26m", "2003-04-08", ""
+"245", "52", "ISS Expedition 8", "Colin Foale
+Aleksandr Kaleri", "3h 55m", "2004-02-26", "EVA was cut short due to a cooling system malfunction in Kaleri's suit"
+"246", "53", "ISS Expedition 9", "Gennadi Padalka
+Edward Fincke", "0h 14m", "2004-06-24", "EVA was cut short due to a malfunction in Fincke's suit"
+"247", "54", "ISS Expedition 9", "Gennadi Padalka
+Edward Fincke", "5h 40m", "2004-06-30", ""
+"248", "55", "ISS Expedition 9", "Gennadi Padalka
+Edward Fincke", "4h 30m", "2004-08-03", ""
+"249", "56", "ISS Expedition 9", "Gennadi Padalka
+Edward Fincke", "5h 21m", "2004-09-03", ""
+"250", "57", "ISS Expedition 10", "Leroy Chiao
+Saliszan Sharipov", "5h 28m", "2005-01-26", ""
+"251", "58", "ISS Expedition 10", "Leroy Chiao
+Saliszan Sharipov", "4h 30m", "2005-03-28", ""
+"252", "59", "STS-114", "Stephen Robinson
+Soichi Noguchi", "6h 50m", "2005-07-30", ""
+"253", "60", "STS-114", "Stephen Robinson
+Soichi Noguchi", "7h 14m", "2005-08-01", ""
+"254", "61", "STS-114", "Stephen Robinson
+Soichi Noguchi", "6h 01m", "2005-08-03", ""
+"255", "62", "ISS Expedition 11", "Sergei Krikalyov
+John Phillips", "-1h 00m", "2005-08-18", ""
+"256", "63", "ISS Expedition 12", "William McArthur
+Valery Tokarev", "5h 22m", "2005-11-07", ""
+"257", "64", "ISS Expedition 12", "William McArthur
+Valery Tokarev", "5h 43m", "2006-02-03", ""
+"258", "65", "ISS Expedition 13", "Pavel Vinogradov
+Jeffrey Williams", "6h 31m", "2006-06-01", ""
+"259", "66", "STS-121", "Piers Sellers
+Michael Fossum", "7h 31m", "2006-07-08", ""
+"260", "67", "STS-121", "Piers Sellers
+Michael Fossum", "6h 47m", "2006-07-10", ""
+"261", "68", "STS-121", "Piers Sellers
+Michael Fossum", "7h 11m", "2006-07-12", ""
+"262", "69", "ISS Expedition 13", "Jeffrey Williams
+Thomas Reiter", "5h 54m", "2006-08-03", ""
+"263", "70", "STS-115", "Joseph Tanner
+Heidemarie Stefanyshyn-Piper", "6h 26m", "2006-09-12", ""
+"264", "71", "STS-115", "Daniel Burbank
+Steven MacLean", "7h 11m", "2006-09-13", ""
+"265", "72", "STS-115", "Joseph Tanner
+Heidemarie Stefanyshyn-Piper", "6h 42m", "2006-09-15", ""
+"266", "73", "ISS Expedition 14", "Mikhail Tyurin
+Michael Lopez-Alegria", "5h 38m", "2006-11-23", ""
+"267", "74", "STS-116", "Robert Curbeam
+Arne Fuglesang", "6h 36m", "2006-12-12", ""
+"268", "75", "STS-116", "Robert Curbeam
+Arne Fuglesang", "5h 00m", "2006-12-14", ""
+"269", "76", "STS-116", "Robert Curbeam
+Sunita Williams", "7h 31m", "2006-12-16", ""
+"270", "77", "STS-116", "Robert Curbeam
+Arne Fuglesang", "6h 38m", "2006-12-18", ""
+"271", "78", "ISS Expedition 14", "Michael Lopez-Alegria
+Sunita Williams", "7h 55m", "2007-01-31", ""
+"272", "79", "ISS Expedition 14", "Michael Lopez-Alegria
+Sunita Williams", "7h 11m", "2007-02-04", ""
+"273", "80", "ISS Expedition 14", "Michael Lopez-Alegria
+Sunita Williams", "6h 40m", "2007-02-08", ""
+"274", "81", "ISS Expedition 14", "Michael Lopez-Alegria
+Mikhail Tyurin", "6h 18m", "2007-02-22", ""
+"275", "82", "ISS Expedition 15", "Oleg Kotov
+Fyodor Yurchikhin", "5h 25m", "2007-05-30", ""
+"276", "83", "ISS Expedition 15", "Oleg Kotov
+Fyodor Yurchikhin", "5h 37m", "2007-06-06", ""
+"277", "84", "STS-117", "James Reilly
+John Olivas", "6h 15m", "2007-06-11", ""
+"278", "85", "STS-117", "Patrick Forrester
+Steven Swanson", "7h 16m", "2007-06-13", ""
+"279", "86", "STS-117", "James Reilly
+John Olivas", "7h 58m", "2007-06-15", ""
+"280", "87", "STS-117", "Patrick Forrester
+Steven Swanson", "6h 28m", "2007-06-17", ""
+"281", "88", "ISS Expedition 15", "Clayton Anderson
+Fyodor Yurchikhin", "7h 41m", "2007-07-23", ""
+"282", "89", "STS-118", "Richard Mastracchio
+Dafydd Williams", "6h 17m", "2007-08-11", ""
+"283", "90", "STS-118", "Richard Mastracchio
+Dafydd Williams", "6h 28m", "2007-08-13", ""
+"284", "91", "STS-118", "Richard Mastracchio
+Clayton Anderson", "5h 28m", "2007-08-15", ""
+"285", "92", "STS-118", "Dafydd Williams
+Clayton Anderson", "5h 02m", "2007-08-18", ""
+"286", "93", "STS-120", "Scott Parazynski
+Douglas Wheelock", "6h 14m", "2007-10-26", ""
+"287", "94", "STS-120", "Scott Parazynski
+Daniel Tani", "6h 33m", "2007-10-28", ""
+"288", "95", "STS-120", "Scott Parazynski
+Douglas Wheelock", "7h 08m", "2007-10-30", ""
+"289", "96", "STS-120", "Scott Parazynski
+Douglas Wheelock", "7h 19m", "2007-11-03", ""
+"290", "97", "ISS Expedition 16", "Peggy Whitson
+Yuri Malenchenko", "6h 55m", "2007-11-09", ""
+"291", "98", "ISS Expedition 16", "Peggy Whitson
+Daniel Tani", "7h 16m", "2007-11-20", ""
+"292", "99", "ISS Expedition 16", "Daniel Tani
+Peggy Whitson", "7h 04m", "2007-11-24", ""
+"293", "100", "ISS Expedition 16", "Daniel Tani
+Peggy Whitson", "6h 56m", "2007-12-18", ""
+"294", "101", "ISS Expedition 16", "Peggy Whitson
+Daniel Tani", "7h 10m", "2008-01-30", ""
+"295", "102", "STS-122", "Stanley Love
+Rex Walheim", "7h 58m", "2008-02-11", ""
+"296", "103", "STS-122", "Rex Walheim
+Hans Schlegel", "6h 45m", "2008-02-13", ""
+"297", "104", "STS-122", "Stanley Love
+Rex Walheim", "7h 25m", "2008-02-15", ""
+"298", "105", "STS-123", "Richard Linnehan
+Garrett Reisman", "7h 01m", "2008-03-14", ""
+"299", "106", "STS-123", "Richard Linnehan
+Michael Foreman", "7h 08m", "2008-03-15", ""
+"300", "107", "STS-123", "Richard Linnehan
+Robert Behnken", "6h 53m", "2008-03-17", ""
+"301", "108", "STS-123", "Robert Behnken
+Michael Foreman", "6h 24m", "2008-03-20", ""
+"302", "109", "STS-123", "Robert Behnken
+Michael Foreman", "6h 02m", "2008-03-22", ""
+"303", "110", "STS-124", "Michael Fossum
+Robert Garan", "6h 48m", "2008-06-03", ""
+"304", "111", "STS-124", "Michael Fossum
+Robert Garan", "7h 11m", "2008-06-05", ""
+"305", "112", "STS-124", "Michael Fossum
+Robert Garan", "6h 33m", "2008-06-08", ""
+"306", "113", "ISS Expedition 17", "Sergey Volkov
+Oleg Kononenko", "6h 18m", "2008-07-10", ""
+"307", "114", "ISS Expedition 17", "Sergey Volkov
+Oleg Kononenko", "5h 54m", "2008-07-15", ""
+"308", "", "ShenZhou 7", "Zhai Zhi-gang", "0h 14m", "2008-09-27", ""
+"309", "115", "STS-126", "Heidemarie Stefanyshyn-Piper
+Stephen Bowen", "6h 52m", "2008-11-18", ""
+"310", "116", "STS-126", "Heidemarie Stefanyshyn-Piper
+Robert Kimbrough", "6h 45m", "2008-11-20", ""
+"311", "117", "STS-126", "Heidemarie Stefanyshyn-Piper
+Stephen Bowen", "6h 57m", "2008-11-22", ""
+"312", "118", "STS-126", "Stephen Bowen
+Robert Kimbrough", "6h 07m", "2008-11-24", ""
+"313", "119", "ISS Expedition 18", "Yuri Lonchakov
+Edward Fincke", "5h 37m", "2008-12-23", ""
+"314", "120", "ISS Expedition 18", "Yuri Lonchakov
+Edward Fincke", "4h 49m", "2009-03-10", ""
+"315", "121", "STS-119", "Richard Arnold
+Steven Swanson", "6h 07m", "2009-03-19", ""
+"316", "122", "STS-119", "Joseph Acaba
+Steven Swanson", "6h 30m", "2009-03-21", ""
+"317", "123", "STS-119", "Joseph Acaba
+Richard Arnold", "6h 27m", "2009-03-23", ""
+"318", "", "STS-125", "John Grunsfeld
+Andrew Feustel", "7h 20m", "2009-05-14", "Hubble repair"
+"319", "", "STS-125", "Michael Good
+Michael Massimino", "7h 56m", "2009-05-15", "Hubble repair"
+"320", "", "STS-125", "John Grunsfeld
+Andrew Feustel", "6h 36m", "2009-05-16", "Hubble repair"
+"321", "", "STS-125", "Michael Good
+Michael Massimino", "8h 02m", "2009-05-17", "Hubble repair"
+"322", "", "STS-125", "John Grunsfeld
+Andrew Feustel", "7h 02m", "2009-05-18", "Hubble repair"
+"323", "124", "ISS Expedition 20", "Gennadi Padalka
+Michael Barratt", "4h 54m", "2009-06-05", ""
+"324", "125", "ISS Expedition 20", "Gennadi Padalka
+Michael Barratt", "0h 12m", "2009-06-10", "Internal EVA"
+"325", "126", "STS-127", "David Wolf
+Timothy Kopra", "5h 32m", "2009-07-18", ""
+"326", "127", "STS-127", "David Wolf
+Thomas Marshburn", "6h 53m", "2009-07-20", ""
+"327", "128", "STS-127", "David Wolf
+Christopher Cassidy", "5h 59m", "2009-07-22", ""
+"328", "129", "STS-127", "Christopher Cassidy
+Thomas Marshburn", "7h 12m", "2009-07-24", ""
+"329", "130", "STS-127", "Christopher Cassidy
+Thomas Marshburn", "4h 54m", "2009-07-27", ""
+"330", "131", "STS-128", "John Olivas
+Nicole Stott", "6h 35m", "2009-09-01", ""
+"331", "132", "STS-128", "John Olivas
+Arne Fuglesang", "6h 39m", "2009-09-03", ""
+"332", "133", "STS-128", "John Olivas
+Arne Fuglesang", "7h 01m", "2009-09-05", ""
+"333", "134", "STS-129", "Michael Foreman
+Robert Satcher", "6h 37m", "2009-11-19", ""
+"334", "135", "STS-129", "Michael Foreman
+Randolph Bresnik", "6h 08m", "2009-11-21", ""
+"335", "136", "STS-129", "Robert Satcher
+Randolph Bresnik", "5h 42m", "2009-11-23", ""
+"336", "137", "ISS Expedition 22", "Maksim Surayev
+Oleg Kotov", "5h 44m", "2010-01-14", ""
+"337", "138", "STS-130", "Robert Behnken
+Nicholas Patrick", "6h 32m", "2010-02-12", ""
+"338", "139", "STS-130", "Robert Behnken
+Nicholas Patrick", "5h 54m", "2010-02-14", ""
+"339", "140", "STS-130", "Robert Behnken
+Nicholas Patrick", "5h 48m", "2010-02-17", ""
+"340", "141", "STS-131", "Richard Mastracchio
+Clayton Anderson", "6h 27m", "2010-04-09", ""
+"341", "142", "STS-131", "Richard Mastracchio
+Clayton Anderson", "7h 26m", "2010-04-11", ""
+"342", "143", "STS-131", "Richard Mastracchio
+Clayton Anderson", "6h 24m", "2010-04-13", ""
+"343", "144", "STS-132", "Garrett Reisman
+Stephen Bowen", "7h 25m", "2010-05-17", ""
+"344", "145", "STS-132", "Stephen Bowen
+Michael Good", "7h 09m", "2010-05-19", ""
+"345", "146", "STS-132", "Michael Good
+Garrett Reisman", "6h 46m", "2010-05-21", ""
+"346", "147", "ISS Expedition 24", "Fyodor Yurchikhin
+Mikhail Korniyenko", "6h 43m", "2010-07-27", ""
+"347", "148", "ISS Expedition 24", "Douglas Wheelock
+Tracy Caldwell-Dyson", "8h 03m", "2010-08-07", ""
+"348", "149", "ISS Expedition 24", "Douglas Wheelock
+Tracy Caldwell-Dyson", "7h 26m", "2010-08-11", ""
+"349", "150", "ISS Expedition 24", "Douglas Wheelock
+Tracy Caldwell-Dyson", "7h 20m", "2010-08-16", ""
+"350", "151", "ISS Expedition 25", "Fyodor Yurchikhin
+Oleg Skripochka", "6h 28m", "2010-11-15", ""
+"351", "152", "ISS Expedition 26", "Oleg Skripochka
+Dmitry Kondratiyev", "5h 27m", "2011-01-21", ""
+"352", "153", "ISS Expedition 26", "Dmitry Kondratiyev
+Oleg Skripochka", "4h 51m", "2011-02-16", ""
+"353", "154", "STS-133", "Stephen Bowen
+Benjamin Drew", "6h 34m", "2011-02-28", ""
+"354", "155", "STS-133", "Stephen Bowen
+Benjamin Drew", "6h 14m", "2011-03-02", ""
+"355", "156", "STS-134", "Andrew Feustel
+Gregory Chamitoff", "6h 19m", "2011-05-20", ""
+"356", "157", "STS-134", "Andrew Feustel
+Edward Fincke", "8h 07m", "2011-05-22", ""
+"357", "158", "STS-134", "Andrew Feustel
+Edward Fincke", "6h 54m", "2011-05-25", ""
+"358", "159", "STS-134", "Edward Fincke
+Gregory Chamitoff", "7h 24m", "2011-05-27", ""
+"359", "160", "ISS Expedition 28", "Robert Garan
+Michael Fossum", "6h 31m", "2011-07-12", ""
+"360", "161", "ISS Expedition 28", "Sergey Volkov
+Aleksandr Samokutyayev", "6h 23m", "2011-08-03", ""
+"361", "162", "ISS Expedition 30", "Oleg Kononenko
+Anton Shkaplerov", "6h 15m", "2012-02-16", ""
+"362", "163", "ISS Expedition 32", "Gennadi Padalka
+Yuri Malenchenko", "6h 15m", "2012-08-20", ""
+"363", "164", "ISS Expedition 32", "Sunita Williams
+Akihiko Hoshide", "8h 17m", "2012-08-30", ""
+"364", "165", "ISS Expedition 32", "Sunita Williams
+Akihiko Hoshide", "6h 28m", "2012-09-05", ""
+"365", "166", "ISS Expedition 33", "Sunita Williams
+Akihiko Hoshide", "6h 38m", "2012-11-01", ""
+"366", "167", "ISS Expedition 35", "Pavel Vinogradov
+Roman Romanenko", "6h 38m", "2013-04-19", ""
+"367", "168", "ISS Expedition 35", "Christopher Cassidy
+Thomas Marshburn", "5h 30m", "2013-05-11", ""
+"368", "169", "ISS Expedition 36", "Fyodor Yurchikhin
+Aleksandr Misurkin", "6h 34m", "2013-06-24", ""
+"369", "170", "ISS Expedition 36", "Christopher Cassidy
+Luca Parmitano", "6h 07m", "2013-07-09", ""
+"370", "171", "ISS Expedition 36", "Christopher Cassidy
+Luca Parmitano", "1h 32m", "2013-07-16", "Terminated early due to water buildup in Parmitano's helmet"
+"371", "172", "ISS Expedition 36", "Fyodor Yurchikhin
+Aleksandr Misurkin", "7h 29m", "2013-08-16", ""
+"372", "173", "ISS Expedition 36", "Aleksandr Misurkin
+Fyodor Yurchikhin", "5h 58m", "2013-08-22", ""
+"373", "174", "ISS Expedition 37", "Sergei Ryazansky
+Oleg Kotov", "5h 50m", "2013-11-09", "Featured a cermonial handoff of an Olympic torch replica"
+"374", "175", "ISS Expedition 38", "Richard Mastracchio
+Michael Hopkins", "5h 28m", "2013-12-21", ""
+"375", "176", "ISS Expedition 38", "Richard Mastracchio
+Michael Hopkins", "7h 30m", "2013-12-24", ""
+"376", "177", "ISS Expedition 38", "Oleg Kotov
+Sergei Ryazansky", "8h 07m", "2013-12-27", ""
+"377", "178", "ISS Expedition 38", "Oleg Kotov
+Sergei Ryazansky", "6h 08m", "2014-01-27", ""
+"378", "179", "ISS Expedition 39", "Richard Mastracchio
+Steven Swanson", "1h 36m", "2014-04-23", ""
+"379", "180", "ISS Expedition 40", "Aleksandr Skvortsov
+Oleg Artemyev", "7h 23m", "2014-06-19", ""
+"380", "181", "ISS Expedition 40", "Oleg Artemyev
+Aleksandr Skvortsov", "5h 11m", "2014-08-18", ""
+"381", "182", "ISS Expedition 41", "Gregory Wiseman
+Alexander Gerst", "6h 13m", "2014-10-07", ""
+"382", "183", "ISS Expedition 41", "Gregory Wiseman
+Barry Wilmore", "6h 34m", "2014-10-15", ""
+"383", "184", "ISS Expedition 41", "Maksim Surayev
+Aleksandr Samokutyayev", "3h 38m", "2014-10-22", ""
+"384", "185", "ISS Expedition 42", "Terry Virts
+Barry Wilmore", "6h 41m", "2015-02-21", ""
+"385", "186", "ISS Expedition 42", "Barry Wilmore
+Terry Virts", "6h 43m", "2015-02-25", ""
+"386", "187", "ISS Expedition 42", "Barry Wilmore
+Terry Virts", "5h 38m", "2015-03-01", ""
+"387", "188", "ISS Expedition 44", "Gennadi Padalka
+Mikhail Korniyenko", "5h 31m", "2015-08-10", ""
+"388", "189", "ISS Expedition 45", "Kjell Lindgren
+Scott Kelly", "7h 16m", "2015-10-28", ""
+"389", "190", "ISS Expedition 45", "Scott Kelly
+Kjell Lindgren", "7h 48m", "2015-11-06", ""
+"390", "191", "ISS Expedition 46", "Scott Kelly
+Timothy Kopra", "3h 16m", "2015-12-20", ""
+"391", "192", "ISS Expedition 46", "Timothy Kopra
+Timothy Peake", "4h 43m", "2016-01-15", ""
+"392", "193", "ISS Expedition 46", "Sergey Volkov
+Yuri Malenchenko", "4h 45m", "2016-02-03", ""
+"393", "194", "ISS Expedition 48", "Jeffrey Williams
+Kathleen Rubins", "5h 58m", "2016-08-19", ""
+"394", "195", "ISS Expedition 48", "Kathleen Rubins
+Jeffrey Williams", "5h 48m", "2016-09-01", ""
+"395", "196", "ISS Expedition 50", "Robert Kimbrough
+Peggy Whitson", "6h 32m", "2017-01-06", ""
+"396", "197", "ISS Expedition 50", "Robert Kimbrough
+Thomas Pesquet", "5h 58m", "2017-01-13", ""
+"397", "198", "ISS Expedition 50", "Thomas Pesquet
+Robert Kimbrough", "6h 34m", "2017-03-24", ""
+"398", "199", "ISS Expedition 50", "Robert Kimbrough
+Peggy Whitson", "7h 04m", "2017-03-30", ""
+"399", "200", "ISS Expedition 51", "Peggy Whitson
+Jack Fischer", "4h 13m", "2017-05-12", ""
+"400", "201", "ISS Expedition 51", "Jack Fischer
+Peggy Whitson", "2h 46m", "2017-05-23", ""
+"401", "202", "ISS Expedition 52", "Fyodor Yurchikhin
+Sergei Ryazansky", "7h 34m", "2017-08-17", ""
+"402", "203", "ISS Expedition 53", "Randolph Bresnik
+Mark Vande Hei", "6h 55m", "2017-10-05", ""
+"403", "204", "ISS Expedition 53", "Randolph Bresnik
+Mark Vande Hei", "6h 26m", "2017-10-10", ""
+"404", "205", "ISS Expedition 53", "Joseph Acaba
+Randolph Bresnik", "6h 49m", "2017-10-20", ""
+"405", "206", "ISS Expedition 54", "Mark Vande Hei
+Scott Tingle", "7h 24m", "2018-01-23", ""
+"406", "207", "ISS Expedition 54", "Aleksandr Misurkin
+Anton Shkaplerov", "8h 13m", "2018-02-02", ""
+"407", "208", "ISS Expedition 54", "Mark Vande Hei
+Norishige Kanai", "5h 57m", "2018-02-16", ""

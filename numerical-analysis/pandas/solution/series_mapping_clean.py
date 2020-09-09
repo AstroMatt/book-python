@@ -1,3 +1,5 @@
+import pandas as pd
+
 def clean(text: str) -> str:
     """
     >>> DATA = [
@@ -58,3 +60,35 @@ def clean(text: str) -> str:
 
     # Return
     return text.strip()
+
+
+DATA = [
+    'ul.Mieszka II',
+    'UL. Zygmunta III WaZY',
+    '  bolesława chrobrego ',
+    'ul Jana III SobIESkiego',
+    '\tul. Jana trzeciego Sobieskiego',
+    'ulicaJana III Sobieskiego',
+    'UL. JA    NA 3 SOBIES  KIEGO',
+    'ULICA JANA III SOBIESKIEGO  ',
+    'ULICA. JANA III SOBIeskieGO',
+    ' Jana 3 Sobieskiego  ',
+    'Jana III Sobi  eskiego ',
+]
+
+s = pd.Series(DATA)
+s = s.apply(clean)
+
+s: pd.Series
+# 0               Mieszka II
+# 1        Zygmunta III Wazy
+# 2      Bolesława Chrobrego
+# 3     Jana III Sobieskiego
+# 4     Jana III Sobieskiego
+# 5     Jana III Sobieskiego
+# 6     Jana III Sobieskiego
+# 7     Jana III Sobieskiego
+# 8     Jana III Sobieskiego
+# 9     Jana III Sobieskiego
+# 10    Jana III Sobieskiego
+# dtype: object

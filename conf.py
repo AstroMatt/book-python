@@ -64,7 +64,6 @@ exclude_patterns = [
     '_build',
     '_extensions',
     '_img',
-    '_data',
     '_slides',
     '_i18n',
     '_static',
@@ -124,7 +123,7 @@ html_theme_path = ['_themes']
 html_secnumber_suffix = '. '
 html_title = project
 html_favicon = '_static/favicon.png'
-html_static_path = ['_static']
+html_static_path = ['_static', '_data']
 html_context = {}
 
 if html_theme == 'sphinx_rtd_theme':

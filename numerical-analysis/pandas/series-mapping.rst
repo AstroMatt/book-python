@@ -401,8 +401,8 @@ Example
 Assignments
 ===========
 
-Series Cleaning
----------------
+Series Mapping Clean
+--------------------
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
@@ -447,17 +447,19 @@ Series Cleaning
 :Output:
     .. code-block:: python
 
-        'Mieszka II'
-        'Zygmunta III Wazy'
-        'Bolesława Chrobrego'
-        'Jana III Sobieskiego'
-        'Jana III Sobieskiego'
-        'Jana III Sobieskiego'
-        'Jana III Sobieskiego'
-        'Jana III Sobieskiego'
-        'Jana III Sobieskiego'
-        'Jana III Sobieskiego'
-        'Jana III Sobieskiego'
+        s: pd.Series
+        # 0               Mieszka II
+        # 1        Zygmunta III Wazy
+        # 2      Bolesława Chrobrego
+        # 3     Jana III Sobieskiego
+        # 4     Jana III Sobieskiego
+        # 5     Jana III Sobieskiego
+        # 6     Jana III Sobieskiego
+        # 7     Jana III Sobieskiego
+        # 8     Jana III Sobieskiego
+        # 9     Jana III Sobieskiego
+        # 10    Jana III Sobieskiego
+        # dtype: object
 
 :The whys and wherefores:
     * Defining and calling functions

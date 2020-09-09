@@ -229,7 +229,6 @@ DataFrame Select
 
 :Polish:
     #. Pobierz zbiór danych Iris Dataset :download:`data/iris.csv`
-    #. Korzystając z Pandas i kodowania UTF-8 wczytaj plik
     #. Przekonwertuj dane na ``pd.DataFrame``
     #. Przefiltruj ``inplace`` kolumnę 'Petal length' i pozostaw wartości powyżej 2.0
     #. Wyświetl 5 pierwszych wierszy
