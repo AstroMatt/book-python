@@ -45,9 +45,9 @@ Working with dirty CSV
 ======================
 .. code-block:: python
 
-    url = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/iris-dirty.csv'
+    DATA = 'https://python.astrotech.io/_static/iris-dirty.csv'
 
-    nrows, nfeatures, *species = pd.read_csv(url, nrows=0).columns
+    nrows, nfeatures, *species = pd.read_csv(DATA, nrows=0).columns
     species = dict(enumerate(species))
 
     df = pd.read_csv(url, skiprows=1, names=['sepal_length', 'sepal_width',
@@ -64,7 +64,7 @@ Working with CSV
     import pandas as pd
 
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/iris.csv'
+    DATA = 'https://python.astrotech.io/_static/iris-clean.csv'
 
     # Read data
     df = pd.read_csv(DATA)
@@ -161,7 +161,7 @@ Hist
     import pandas as pd
 
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/iris.csv'
+    DATA = 'https://python.astrotech.io/_static/iris-clean.csv'
 
     df = pd.read_csv(DATA)
     df.hist()
@@ -181,7 +181,7 @@ Density
     import pandas as pd
 
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/iris.csv'
+    DATA = 'https://python.astrotech.io/_static/iris-clean.csv'
 
     df = pd.read_csv(DATA)
     df.plot(kind='density', subplots=True, layout=(2,2), sharex=False)
@@ -201,7 +201,7 @@ Box
     import pandas as pd
 
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/iris.csv'
+    DATA = 'https://python.astrotech.io/_static/iris-clean.csv'
 
     df = pd.read_csv(DATA)
     df.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
@@ -225,7 +225,7 @@ Scatter matrix
     from pandas.plotting import scatter_matrix
 
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/iris.csv'
+    DATA = 'https://python.astrotech.io/_static/iris-clean.csv'
 
     df = pd.read_csv(DATA)
     scatter_matrix(df)

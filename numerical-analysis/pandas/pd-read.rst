@@ -43,7 +43,7 @@ Examples
 
     import pandas as pd
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/iris.csv'
+    DATA = 'https://python.astrotech.io/_static/iris-clean.csv'
     header = pd.read_csv(DATA, nrows=0).columns
 
 .. code-block:: python
@@ -51,7 +51,7 @@ Examples
     import pandas as pd
 
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/iris.csv'
+    DATA = 'https://python.astrotech.io/_static/iris-clean.csv'
     df = pd.read_csv(DATA)
 
     df.head(3)
@@ -65,7 +65,7 @@ Examples
     import pandas as pd
 
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/iris-dirty.csv'
+    DATA = 'https://python.astrotech.io/_static/iris-dirty.csv'
     COLUMNS =  ['sepal_length', 'sepal_width',
                 'petal_length', 'petal_width', 'species']
 
@@ -165,7 +165,7 @@ StringIO
     from io import StringIO
 
 
-    URL = 'https://python.astrotech.io/_downloads/ede733e2c8b6e3b26609bda93263410e/astronauts.csv'
+    URL = 'https://python.astrotech.io/_static/astro-flights.csv'
     resp = requests.get(URL)
     data = StringIO(resp.text)
 
@@ -192,8 +192,8 @@ Read SQL
     import sqlite3
     import requests
 
-    DATABASE = r'/tmp/apollo-timeline.sqlite3'
-    URL = r'https://github.com/AstroMatt/book-python/raw/master/numerical-analysis/pandas/data/apollo-timeline.sqlite3'
+    DATABASE = r'/tmp/astro-timeline.sqlite3'
+    URL = r'https://python.astrotech.io/_static/astro-timeline.sqlite3'
     SQL = r'SELECT * FROM logs'
 
     with open(DATABASE, mode='wb') as db:
@@ -259,7 +259,7 @@ Pandas Read CSV Dates
 :Input:
     .. code-block:: python
 
-        URL = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/astro-dates.csv'
+        URL = 'https://python.astrotech.io/_static/martian-en.csv'
 
 :Hint:
     * ``parse_dates`` argument
@@ -291,7 +291,7 @@ Pandas Read CSV Replace
 :Input:
     .. code-block:: python
 
-        URL = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/breast-cancer.csv'
+        URL = 'https://python.astrotech.io/_static/breast-cancer.csv'
 
         COLUMNS = ['mean radius', 'mean texture', 'mean perimeter', 'mean area',
                    'mean smoothness', 'mean compactness', 'mean concavity',
@@ -331,7 +331,7 @@ Pandas Read JSON
 :Input:
     .. code-block:: python
 
-        URL = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/iris.json'
+        URL = 'https://python.astrotech.io/_static/iris.json'
 
 Pandas Read HTML
 ----------------
@@ -367,20 +367,25 @@ Pandas Read XML XSLT
 * Solution: :download:`solution/pandas_read_xml_xslt.py`
 
 :English:
-    #. Download :download:`data/plants.xml`
-    #. Read data from file
+    #. Use data from "Input" section (see below)
+    #. Read data from ``DATA`` as ``plants: pd.DataFrame``
     #. Using XSLT transformation convert it to pandas readable format
     #. Read data to ``df: pd.DataFrame``
     #. Make sure that columns and indexes are named properly
     #. Calculate average cost of flower
 
 :Polish:
-    #. Pobierz dane z pliku :download:`data/plants.xml`
-    #. Zaczytaj dane z pliku
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Wczytaj dane z ``DATA`` jako ``plants: pd.DataFrame``
     #. Używając transformaty XSLT sprowadź je do formatu zrozumiałego dla Pandas
     #. Wczytaj dane do ``df: pd.DataFrame``
     #. Upewnij się, że nazwy kolumn i indeks są dobrze ustawione
     #. Wylicz średni koszt kwiatów
+
+:Input:
+    .. code-block:: python
+
+        DATA = 'https://python.astrotech.io/_static/plants.csv'
 
 :Hint:
     * Require ``lxml``: ``pip install lxml``

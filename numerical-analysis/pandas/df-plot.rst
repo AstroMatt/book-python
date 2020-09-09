@@ -179,7 +179,7 @@ Prepare Data
     import pandas as pd
 
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/iris.csv'
+    DATA = 'https://python.astrotech.io/_static/iris-clean.csv'
 
     df = pd.read_csv(DATA)
     df.columns = [
@@ -340,7 +340,7 @@ Hist
     import pandas as pd
 
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/iris.csv'
+    DATA = 'https://python.astrotech.io/_static/iris-clean.csv'
 
     df = pd.read_csv(DATA)
     df.hist()
@@ -360,7 +360,7 @@ Density
     import pandas as pd
 
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/iris.csv'
+    DATA = 'https://python.astrotech.io/_static/iris-clean.csv'
 
     df = pd.read_csv(DATA)
     df.plot(kind='density', subplots=True, layout=(2,2), sharex=False)
@@ -380,7 +380,7 @@ Box
     import pandas as pd
 
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/iris.csv'
+    DATA = 'https://python.astrotech.io/_static/iris-clean.csv'
 
     df = pd.read_csv(DATA)
     df.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
@@ -404,7 +404,7 @@ Scatter matrix
     from pandas.plotting import scatter_matrix
 
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/iris.csv'
+    DATA = 'https://python.astrotech.io/_static/iris-clean.csv'
 
     df = pd.read_csv(DATA)
     scatter_matrix(df)
@@ -439,7 +439,8 @@ DataFrame Plot
 * Solution: :download:`solution/df_plot.py`
 
 :English:
-    #. Download :download:`data/optima-sensors.xlsx`
+    #. Use data from "Input" section (see below)
+    #. Read data from ``DATA`` as ``sensors: pd.DataFrame``
     #. Select ``Luminance`` stylesheet
     #. Parse column with dates
     #. Select desired date and location, then resample by hour
@@ -449,7 +450,8 @@ DataFrame Plot
     #. Advanced: for each day, as subplots
 
 :Polish:
-    #. Pobierz :download:`data/optima-sensors.xlsx`
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Wczytaj dane z ``DATA`` jako ``sensors: pd.DataFrame``
     #. Wybierz arkusz ``Luminance``
     #. Sparsuj kolumny z datami
     #. Wybierz pożądaną datę i lokację, następnie próbkuj co godzinę
@@ -457,6 +459,11 @@ DataFrame Plot
     #. Wyświetl wykres (line) z godzinami aktywności w dla lokacji "Sleeping Quarters upper"
     #. Łatwe: dla dnia 2019-09-28
     #. Zaawansowane: dla wszystkich dni, jako subploty
+
+:Input:
+    .. code-block:: python
+
+        DATA = 'https://python.astrotech.io/_static/optima-sensors.xlsx'
 
 :Hint:
     * ``pd.Series.apply(np.sign)`` :ref:`Numpy signum`

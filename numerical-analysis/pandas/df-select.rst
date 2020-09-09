@@ -228,8 +228,12 @@ DataFrame Select
     .. todo:: Translate to English
 
 :Polish:
-    #. Pobierz zbiór danych Iris Dataset :download:`data/iris.csv`
-    #. Przekonwertuj dane na ``pd.DataFrame``
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Wczytaj dane z ``DATA`` jako ``iris: pd.DataFrame``
     #. Przefiltruj ``inplace`` kolumnę 'Petal length' i pozostaw wartości powyżej 2.0
     #. Wyświetl 5 pierwszych wierszy
 
+:Input:
+    .. code-block:: python
+
+        DATA = 'https://python.astrotech.io/_static/iris-clean.csv'

@@ -209,8 +209,8 @@ DataFrame Sample
     .. todo:: English translation
 
 :Polish:
-    #. Pobierz zbiór danych Astronautów :download:`data/astronauts.csv`
-    #. Korzystając z Pandas wczytaj go do ``pd.DataFrame``
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Wczytaj dane z ``DATA`` jako ``astronauts: pd.DataFrame``
     #. W danych kolumna "Order":
 
         - określa kolejność astronauty/kosmonauty w kosmosie
@@ -223,3 +223,8 @@ DataFrame Sample
 
         * Pierwsze trzy wiersze
         * Ostatnie 10% wierszy
+
+:Input:
+    .. code-block:: python
+
+        DATA = 'https://python.astrotech.io/_static/astro-flights.csv'

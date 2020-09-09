@@ -276,8 +276,8 @@ DataFrame NaN
     .. todo:: English Translation
 
 :Polish:
-    #. Pobierz dane Irysów: :download:`data/iris-dirty.csv`
-    #. Zaczytaj dane do ``iris: pd.DataFrame``
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Wczytaj dane z ``DATA`` jako ``iris: pd.DataFrame``
     #. Pomiń pierwszą linię z metadanymi
     #. Zmień nazwy kolumn na:
 
@@ -299,3 +299,8 @@ DataFrame NaN
     #. Usuń wiersze z pozostałymi wartościami ``NaN``
     #. Wypisz dwa pierwsze wiersze
     #. Wypisz liczbę wierszy
+
+:Input:
+    .. code-block:: python
+
+        DATA = 'https://python.astrotech.io/_static/iris-dirty.csv'

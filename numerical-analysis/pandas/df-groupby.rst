@@ -8,7 +8,7 @@ DataFrame Group By
     import pandas as pd
 
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/phones-old.csv'
+    DATA = 'https://python.astrotech.io/_static/phones-en.csv'
 
     df = pd.read_csv(DATA, parse_dates=['date'])
     df.drop(columns='index', inplace=True)
@@ -489,12 +489,19 @@ DataFrame Groupby Astronauts
 * Solution: :download:`solution/df_groupby_astronauts.py`
 
 :English:
-    #. Download astronauts dataset :download:`data/astronauts.csv`
+    #. Use data from "Input" section (see below)
+    #. Read data from ``DATA`` as ``astronauts: pd.DataFrame``
     #. Create ranking of the most experienced astronauts (number of flights)
 
 :Polish:
-    #. Pobierz zbiór danych astronautów :download:`data/astronauts.csv`
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Wczytaj dane z ``DATA`` jako ``astronauts: pd.DataFrame``
     #. Stwórz ranking najbardziej doświadczonych astronautów (liczba lotów)
+
+:Input:
+    .. code-block:: python
+
+        DATA = 'https://python.astrotech.io/_static/phones-pl.csv'
 
 DataFrame Groupby Phone Billing
 -------------------------------
@@ -504,12 +511,19 @@ DataFrame Groupby Phone Billing
 * Solution: :download:`solution/df_groupby_billing.py`
 
 :English:
-    #. Download :download:`data/phones.csv`
+    #. Use data from "Input" section (see below)
+    #. Read data from ``DATA`` as ``phones: pd.DataFrame``
     #. Give information about total number of all connection types for each month
 
 :Polish:
-    #. Pobierz :download:`data/phones.csv`
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Wczytaj dane z ``DATA`` jako ``phones: pd.DataFrame``
     #. Podaj informacje o łącznej liczbie wszystkich połączeń dla każdego miesiąca
+
+:Input:
+    .. code-block:: python
+
+        DATA = 'https://python.astrotech.io/_static/phones-pl.csv'
 
 DataFrame Groupby EVA
 ---------------------
@@ -519,12 +533,19 @@ DataFrame Groupby EVA
 * Solution: :download:`solution/df_groupby_eva.py`
 
 :English:
-    #. Download spacewalk (EVA) dataset :download:`data/eva.csv`
-    #. Create ranking of astronauts with the most time spent on EVA
+    #. Use data from "Input" section (see below)
+    #. Read data from ``DATA`` as ``spacewalks: pd.DataFrame``
+    #. Create ranking of astronauts with the most time spent on EVA (ExtraVehicular Activity)
 
 :Polish:
-    #. Pobierz zbiór danych spacerów kosmicznych (EVA) :download:`data/eva.csv`
-    #. Stwórz ranking astronautów z największym czasem EVA
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Wczytaj dane z ``DATA`` jako ``spacewalks: pd.DataFrame``
+    #. Stwórz ranking astronautów z największym czasem EVA (Spacerów kosmicznych)
+
+:Input:
+    .. code-block:: python
+
+        DATA = 'https://python.astrotech.io/_static/astro-eva.csv'
 
 :Hint:
     * Parse CSV and replace newlines inside fields with ``","``

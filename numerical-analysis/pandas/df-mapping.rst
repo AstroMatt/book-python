@@ -326,16 +326,21 @@ DataFrame Mapping Split
 * Solution: :download:`solution/df_mapping_split.py`
 
 :English:
-    #. Download :download:`data/phones.csv`
-    #. Read data as ``phones: pd.DataFrame``
+    #. Use data from "Input" section (see below)
+    #. Read data from ``DATA`` as ``phones: pd.DataFrame``
     #. Parse data in ``date`` column as ``datetime`` object
     #. Split column ``date`` with into two separate: date and time columns
 
 :Polish:
-    #. Pobierz :download:`data/phones.csv`
-    #. Wczytaj dane jako ``phones: pd.DataFrame``
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Wczytaj dane z ``DATA`` jako ``phones: pd.DataFrame``
     #. Sparsuj dane w kolumnie ``date`` jako obiekty ``datetime``
     #. Podziel kolumnę z ``date`` na dwie osobne: datę i czas
+
+:Input:
+    .. code-block:: python
+
+        DATA = 'https://python.astrotech.io/_static/phones-pl.csv'
 
 :Hint:
     * ``help(phones['date'].dt)``
@@ -349,20 +354,22 @@ DataFrame Mapping Translate
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Download :download:`data/astro-dates.csv`
+    #. Read data from ``DATA`` as ``martian: pd.DataFrame``
     #. Set header and index to data from file
     #. Convert Polish month names to English
     #. Parse dates to ``datetime`` objects
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Pobierz :download:`data/astro-dates.csv`
+    #. Wczytaj dane z ``DATA`` jako ``martian: pd.DataFrame``
     #. Ustaw nagłówek i index na dane zaczytane z pliku
     #. Przekonwertuj polskie nazwy miesięcy na angielskie
     #. Sparsuj daty do obiektów ``datetime``
 
 :Input:
     .. code-block:: python
+
+        DATA = 'https://python.astrotech.io/_static/martian-pl.csv'
 
         MONTHS_PLEN = {'styczeń': 'January',
                        'luty': 'February',
@@ -390,23 +397,25 @@ DataFrame Mapping Month
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Download :download:`data/phones.csv`
-    #. Add column ``year`` and ``month_name`` by parsing ``month`` column
+    #. Read data from ``DATA`` as ``phones: pd.DataFrame``
+    #. Add column ``year`` and ``month`` by parsing ``period`` column
     #. Month name must be a string month name, not a number (i.e.: 'January', 'May')
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Pobierz :download:`data/phones.csv`
-    #. Dodaj kolumnę ``year`` i ``month_name`` poprzez sparsowanie kolumny ``month``
+    #. Wczytaj dane z ``DATA`` jako ``phones: pd.DataFrame``
+    #. Dodaj kolumnę ``year`` i ``month`` poprzez sparsowanie kolumny ``period``
     #. Nazwa miesiąca musi być ciągiem znaków, a nie liczbą (i.e. 'January', 'May')
 
 :Example:
-    #. if ``month`` column is "2015-01"
+    #. if ``period`` column is "2015-01"
     #. ``year``: 2015
-    #. ``month_name``: January
+    #. ``month``: January
 
 :Input:
     .. code-block:: python
+
+        DATA = 'https://python.astrotech.io/_static/phones-pl.csv'
 
         MONTHS_EN = ['January', 'February', 'March', 'April',
                      'May', 'June', 'July', 'August', 'September',
@@ -425,7 +434,7 @@ DataFrame Mapping Substitute
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Download :download:`data/trl.xlsx`
+    #. Read data from ``DATA`` as ``phones: pd.DataFrame``
     #. Select ``Polish`` spreadsheet
     #. Set header and index to data from file
     #. Mind the encoding
@@ -434,15 +443,17 @@ DataFrame Mapping Substitute
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Pobierz :download:`data/trl.xlsx`
+    #. Wczytaj dane z ``DATA`` jako ``trl: pd.DataFrame``
     #. Wybierz arkusz ``Polish``
     #. Ustaw nagłówek i index na dane zaczytane z pliku
     #. Zwróć uwagę na encoding
     #. Podmień polskie znaki diakrytyczne na litery z alfabetu angielskiego
     #. Porównaj ``df.replace(regex=True)`` z ``df.applymap()``
 
-:Example:
+:Input:
     .. code-block:: python
+
+        DATA = 'https://python.astrotech.io/_static/astro-trl.xslx'
 
         LETTERS_PLEN = {'ą': 'a', 'ć': 'c', 'ę': 'e',
                         'ł': 'l', 'ń': 'n', 'ó': 'o',
