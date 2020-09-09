@@ -305,7 +305,7 @@ Examples
     import pandas as pd
 
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/phones.csv'
+    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/phones-old.csv'
 
     df = pd.read_csv(DATA, parse_dates=['date'])
     df.drop(columns='index', inplace=True)
@@ -394,7 +394,7 @@ DataFrame Statistics
         * Wypisz podstawowe statystyki opisowe (``DataFrame.describe()``)
         * Sprawdź liczność grup (``DataFrame.count()``, ``Series.value_counts()``)
 
-:Zadanie nadobowiązkowe:
+:Dla chętnych:
     #. (wymaga wiedzy z przyszłych rozdziałów)
     #. Narysuj histogram dla ``consumption``
     #. Pogrupuj dane po ``type`` i ``status`` a następnie wypisz statystyki opisowe
