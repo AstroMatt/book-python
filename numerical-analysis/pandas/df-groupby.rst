@@ -481,34 +481,12 @@ Output format
 Assignments
 ===========
 
-DataFrame Groupby Astronauts
-----------------------------
-* Complexity level: easy
+DataFrame Groupby Phones
+------------------------
+* Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 10 min
-* Solution: :download:`solution/df_groupby_astronauts.py`
-
-:English:
-    #. Use data from "Input" section (see below)
-    #. Read data from ``DATA`` as ``astronauts: pd.DataFrame``
-    #. Create ranking of the most experienced astronauts (number of flights)
-
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Wczytaj dane z ``DATA`` jako ``astronauts: pd.DataFrame``
-    #. Stwórz ranking najbardziej doświadczonych astronautów (liczba lotów)
-
-:Input:
-    .. code-block:: python
-
-        DATA = 'https://python.astrotech.io/_static/phones-pl.csv'
-
-DataFrame Groupby Phone Billing
--------------------------------
-* Complexity level: easy
-* Lines of code to write: 5 lines
-* Estimated time of completion: 10 min
-* Solution: :download:`solution/df_groupby_billing.py`
+* Solution: :download:`solution/df_groupby_phones.py`
 
 :English:
     #. Use data from "Input" section (see below)
@@ -525,27 +503,49 @@ DataFrame Groupby Phone Billing
 
         DATA = 'https://python.astrotech.io/_static/phones-pl.csv'
 
-DataFrame Groupby EVA
----------------------
-* Complexity level: hard
-* Lines of code to write: 30 lines
-* Estimated time of completion: 40 min
-* Solution: :download:`solution/df_groupby_eva.py`
+DataFrame Groupby Astro Flights
+-------------------------------
+* Complexity level: medium
+* Lines of code to write: 5 lines
+* Estimated time of completion: 10 min
+* Solution: :download:`solution/df_groupby_astro_flights.py`
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Read data from ``DATA`` as ``spacewalks: pd.DataFrame``
+    #. Read data from ``DATA`` as ``astro_flights: pd.DataFrame``
+    #. Create ranking of the most experienced astronauts (number of flights)
+
+:Polish:
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Wczytaj dane z ``DATA`` jako ``astro_flights: pd.DataFrame``
+    #. Stwórz ranking najbardziej doświadczonych astronautów (liczba lotów)
+
+:Input:
+    .. code-block:: python
+
+        DATA = 'https://python.astrotech.io/_static/astro-flights.csv'
+
+DataFrame Groupby Astro EVA
+---------------------------
+* Complexity level: medium
+* Lines of code to write: 30 lines
+* Estimated time of completion: 40 min
+* Solution: :download:`solution/df_groupby_astro_eva.py`
+
+:English:
+    #. Use data from "Input" section (see below)
+    #. Read data from ``DATA`` as ``astro_eva_all: pd.DataFrame``
     #. Create ranking of astronauts with the most time spent on EVA (ExtraVehicular Activity)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Wczytaj dane z ``DATA`` jako ``spacewalks: pd.DataFrame``
+    #. Wczytaj dane z ``DATA`` jako ``astro_eva_all: pd.DataFrame``
     #. Stwórz ranking astronautów z największym czasem EVA (Spacerów kosmicznych)
 
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/astro-eva.csv'
+        DATA = 'https://python.astrotech.io/_static/astro-eva-all.csv'
 
 :Hint:
     * Parse CSV and replace newlines inside fields with ``","``

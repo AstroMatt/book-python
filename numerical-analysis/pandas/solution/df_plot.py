@@ -3,7 +3,7 @@ import pandas as pd
 from matplotlib.dates import HourLocator, DateFormatter
 
 df = pd.read_excel(
-    io='../data/optima-sensors.xlsx',
+    io='../data/sensors-optima.xlsx',
     parse_dates=['datetime'],
     sheet_name=['Luminance'],
     header=1,

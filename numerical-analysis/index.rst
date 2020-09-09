@@ -129,8 +129,8 @@ Pandas
     pandas/df-mapping.rst
     pandas/df-groupby.rst
     pandas/df-aggregations.rst
-    pandas/df-join.rst
     pandas/df-export.rst
+    pandas/df-join.rst
     pandas/df-plot.rst
 
     pandas/date-types.rst

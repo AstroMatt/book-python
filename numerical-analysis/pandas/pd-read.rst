@@ -165,8 +165,8 @@ StringIO
     from io import StringIO
 
 
-    URL = 'https://python.astrotech.io/_static/astro-flights.csv'
-    resp = requests.get(URL)
+    DATA = 'https://python.astrotech.io/_static/astro-flights.csv'
+    resp = requests.get(DATA)
     data = StringIO(resp.text)
 
     pd.read_csv(data)
@@ -193,7 +193,7 @@ Read SQL
     import requests
 
     DATABASE = r'/tmp/astro-timeline.sqlite3'
-    URL = r'https://python.astrotech.io/_static/astro-timeline.sqlite3'
+    DATA = r'https://python.astrotech.io/_static/astro-timeline.sqlite3'
     SQL = r'SELECT * FROM logs'
 
     with open(DATABASE, mode='wb') as db:
@@ -201,9 +201,9 @@ Read SQL
         db.write(resp.content)
 
     with sqlite3.connect(DATABASE) as db:
-        df = pd.read_sql(SQL, db, parse_dates=['datetime'])
+        astro_timeline = pd.read_sql(SQL, db, parse_dates=['datetime'])
 
-    df
+    astro_timeline
     #     id  ...                                            message
     # 0    1  ...                         Terminal countdown started
     # 1    2  ...                          S-IC engine ignition (#5)
@@ -248,18 +248,18 @@ Pandas Read CSV Dates
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Read data from ``URL`` to ``df: pd.DataFrame``
+    #. Read data from ``DATA`` to ``df: pd.DataFrame``
     #. Parse dates in "Mission Date" column
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Wczytaj dane z ``URL`` do ``df: pd.DataFrame``
+    #. Wczytaj dane z ``DATA`` do ``df: pd.DataFrame``
     #. Sparsuj daty w kolumnie "Mission Date"
 
 :Input:
     .. code-block:: python
 
-        URL = 'https://python.astrotech.io/_static/martian-en.csv'
+        DATA = 'https://python.astrotech.io/_static/martian-en.csv'
 
 :Hint:
     * ``parse_dates`` argument
@@ -273,25 +273,25 @@ Pandas Read CSV Replace
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Read data from ``URL`` to ``DataFrame``
+    #. Read data from ``DATA`` to ``breast_cancer: pd.DataFrame``
     #. Use provided column names in ``COLUMNS``
     #. Read labels from the first row
     #. Replace data in ``label`` column with values extracted above
     #. Print ``DataFrame``
-    #. Print first 5 rows from ``df: pd.DataFrame``
+    #. Print first 5 rows from ``breast_cancer``
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Wczytaj dane z ``URL`` do ``DataFrame``
+    #. Wczytaj dane z ``DATA`` do ``breast_cancer: pd.DataFrame``
     #. Użyj podanych w ``COLUMNS`` nazw kolumn
     #. Wczytaj nazwy labeli z pierwszego wiersza
     #. Podmień dane w kolumnie ``label`` na wartości wyciągnięte powyżej
-    #. Wypisz pierwsze 5 wierszy z ``df: pd.DataFrame``
+    #. Wypisz pierwsze 5 wierszy z ``breast_cancer``
 
 :Input:
     .. code-block:: python
 
-        URL = 'https://python.astrotech.io/_static/breast-cancer.csv'
+        DATA = 'https://python.astrotech.io/_static/breast-cancer.csv'
 
         COLUMNS = ['mean radius', 'mean texture', 'mean perimeter', 'mean area',
                    'mean smoothness', 'mean compactness', 'mean concavity',
@@ -320,18 +320,18 @@ Pandas Read JSON
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Using ``pd.read_json()`` read data from ``URL``
+    #. Using ``pd.read_json()`` read data from ``DATA``
     #. Print ``df: pd.DataFrame``
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Za pomocą ``pd.read_json()`` wczytaj dane z ``URL``
+    #. Za pomocą ``pd.read_json()`` wczytaj dane z ``DATA``
     #. Wypisz ``df: pd.DataFrame``
 
 :Input:
     .. code-block:: python
 
-        URL = 'https://python.astrotech.io/_static/iris.json'
+        DATA = 'https://python.astrotech.io/_static/iris.json'
 
 Pandas Read HTML
 ----------------
@@ -342,21 +342,21 @@ Pandas Read HTML
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Using ``pd.read_html()`` read data from ``URL``
+    #. Using ``pd.read_html()`` read data from ``DATA``
     #. Print ``df: pd.DataFrame`` with active European Space Agency astronauts
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Za pomocą ``pd.read_html()`` wczytaj dane z ``URL``
+    #. Za pomocą ``pd.read_html()`` wczytaj dane z ``DATA``
     #. Wypisz ``df: pd.DataFrame`` z aktywnymi astronautami Europejskiej Agencji Kosmicznej
 
 :Input:
     .. code-block:: python
 
-        URL = 'https://en.wikipedia.org/wiki/European_Astronaut_Corps'
+        DATA = 'https://en.wikipedia.org/wiki/European_Astronaut_Corps'
 
 :Hint:
-    * Might require ``lxml``: ``pip install lxml``
+    * Might require ``lxml`` and ``html5lib``: ``pip install --upgrade lxml html5lib``
     * 3rd table
 
 Pandas Read XML XSLT

@@ -71,6 +71,100 @@ Append
     # 4  1.494079 -0.205158  0.313068 -0.854096
     # 5 -2.552990  0.653619  0.864436 -0.742165
 
+.. code-block:: python
+    :caption: Add Row
+
+    import pandas as pd
+
+    df = pd.DataFrame({
+        'A': [10, 11, 12],
+        'B': [20, 21, 22],
+        'C': [30, 31, 32]})
+
+    df
+    #     A   B   C
+    # 0  10  20  30
+    # 1  11  21  31
+    # 2  12  22  32
+
+    df.append({'A': 77, 'B': 88, 'C': 99})
+    # TypeError: Can only append a Series if ignore_index=True or if the Series has a name
+
+    df.append({'A': 77, 'B': 88, 'C': 99}, ignore_index=True)
+    #     A   B   C
+    # 0  10  20  30
+    # 1  11  21  31
+    # 2  12  22  32
+    # 3  77  88  99
+
+.. code-block:: python
+
+    import pandas as pd
+
+    simple = pd.DataFrame({
+        'A': [10, 11, 12],
+        'B': [20, 21, 22],
+        'C': [30, 31, 32]})
+
+    new = pd.DataFrame([
+        {'A': 13, 'B': 23, 'C': 33},
+        {'A': 13, 'B': 23, 'C': 33},
+        {'A': 13, 'B': 23, 'C': 33},
+    ])
+
+    simple.append(new)
+    simple.append(new, ignore_index=True)
+
+.. code-block:: python
+
+    import pandas as pd
+    import numpy as np
+    np.random.seed(0)
+
+
+    temp = pd.DataFrame(
+        columns = ['Morning', 'Noon', 'Evening', 'Midnight'],
+        index = pd.date_range('1999-12-30', periods=2),
+        data = np.random.randn(2, 4))
+
+    temp
+    #              Morning      Noon   Evening  Midnight
+    # 1999-12-30  1.532779  1.469359  0.154947  0.378163
+    # 1999-12-31 -0.887786 -1.980796 -0.347912  0.156349
+
+
+    new1 = pd.DataFrame([
+        {'Morning': 1, 'Noon': 2, 'Evening': 3, 'Midnight': 4}])
+
+    temp.append(new1)
+    #              Morning      Noon   Evening  Midnight
+    # 1999-12-30  1.532779  1.469359  0.154947  0.378163
+    # 1999-12-31 -0.887786 -1.980796 -0.347912  0.156349
+    # 0                    1.000000  2.000000  3.000000  4.000000
+
+    temp.append(new1, ignore_index=True)
+    #              Morning      Noon   Evening  Midnight
+    # 1999-12-30  1.532779  1.469359  0.154947  0.378163
+    # 1999-12-31 -0.887786 -1.980796 -0.347912  0.156349
+    # 7  1.000000  2.000000  3.000000  4.000000
+
+
+    new2 = pd.DataFrame(
+        data = [{'Morning': 1, 'Noon': 2, 'Evening': 3, 'Midnight': 4}],
+        index= [pd.Timestamp('2000-01-01')])
+
+    temp.append(new2)
+    #              Morning      Noon   Evening  Midnight
+    # 1999-12-30  1.532779  1.469359  0.154947  0.378163
+    # 1999-12-31 -0.887786 -1.980796 -0.347912  0.156349
+    # 2000-01-01  1.000000  2.000000  3.000000  4.000000
+
+    temp.append(new2, ignore_index=True)
+    #              Morning      Noon   Evening  Midnight
+    # 1999-12-30  1.532779  1.469359  0.154947  0.378163
+    # 1999-12-31 -0.887786 -1.980796 -0.347912  0.156349
+    # 7  1.000000  2.000000  3.000000  4.000000
+
 
 Merge
 =====

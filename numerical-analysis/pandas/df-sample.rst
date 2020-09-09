@@ -210,7 +210,7 @@ DataFrame Sample
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Wczytaj dane z ``DATA`` jako ``astronauts: pd.DataFrame``
+    #. Wczytaj dane z ``DATA`` jako ``astro_flights: pd.DataFrame``
     #. W danych kolumna "Order":
 
         - określa kolejność astronauty/kosmonauty w kosmosie

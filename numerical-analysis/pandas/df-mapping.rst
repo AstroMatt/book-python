@@ -434,7 +434,7 @@ DataFrame Mapping Substitute
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Read data from ``DATA`` as ``phones: pd.DataFrame``
+    #. Read data from ``DATA`` as ``astro_trl: pd.DataFrame``
     #. Select ``Polish`` spreadsheet
     #. Set header and index to data from file
     #. Mind the encoding
@@ -443,7 +443,7 @@ DataFrame Mapping Substitute
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Wczytaj dane z ``DATA`` jako ``trl: pd.DataFrame``
+    #. Wczytaj dane z ``DATA`` jako ``astro_trl: pd.DataFrame``
     #. Wybierz arkusz ``Polish``
     #. Ustaw nagłówek i index na dane zaczytane z pliku
     #. Zwróć uwagę na encoding

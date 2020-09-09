@@ -463,7 +463,7 @@ DataFrame Plot
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/optima-sensors.xlsx'
+        DATA = 'https://python.astrotech.io/_static/sensors-optima.xlsx'
 
 :Hint:
     * ``pd.Series.apply(np.sign)`` :ref:`Numpy signum`
