@@ -24,6 +24,7 @@ Series Statistics
 Count
 =====
 * ``Series.count()`` - Number of non-null observations
+
 .. code-block:: python
 
     len(s)          # 5

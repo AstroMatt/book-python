@@ -155,8 +155,11 @@ Matplotlib
 
     matplotlib/index.rst
     matplotlib/plots.rst
+    matplotlib/subplots.rst
     matplotlib/styling.rst
     matplotlib/scales.rst
+    matplotlib/config.rst
+    matplotlib/interactive.rst
 
 
 
@@ -176,7 +179,6 @@ Matplotlib
     matplotlib/style-advanced.rst
     matplotlib/customization.rst
     matplotlib/multiple-figures.rst
-    matplotlib/non-linear-axes.rst
     matplotlib/animation.rst
     matplotlib/example.rst
     matplotlib/lifecycle.rst
