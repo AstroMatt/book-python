@@ -291,10 +291,9 @@ Concatenation
     '-' * 10                # '----------'
     'Beetlejuice' * 3       # 'BeetlejuiceBeetlejuiceBeetlejuice'
     'Mua' + 'Ha' * 2        # 'MuaHaHa'
+    'Mua' + ('Ha'*2)        # 'MuaHaHa'
+    ('Mua'+'Ha') * 2        # 'MuaHaMuaHa'
 
-
-String Immutability
-===================
 .. code-block:: python
 
     firstname = 'Jan'
@@ -306,13 +305,24 @@ String Immutability
     firstname + ' ' + lastname
     # Jan Twardowski
 
+String Immutability
+===================
 .. code-block:: python
     :caption: How many string are there in a memory?
 
     firstname = 'Jan'
     lastname = 'Twardowski'
 
-    firstname + lastname
+    firstname + ' ' + lastname
+    # Jan Twardowski
+
+.. code-block:: python
+
+    firstname = 'Jan'
+    lastname = 'Twardowski'
+
+    f'{firstname} {lastname}'
+    # Jan Twardowski
 
 .. code-block:: python
     :caption: How many string are there in a memory?
@@ -322,6 +332,7 @@ String Immutability
     age = 42
 
     'Hello ' + firstname + ' ' + lastname + ' ' + str(age) + '!'
+    # 'Hello Jan Twardowski 42!'
 
 .. code-block:: python
     :caption: How many string are there in a memory?
@@ -331,6 +342,7 @@ String Immutability
     age = 42
 
     f'Hello {firstname} {lastname} {age}!'
+    # 'Hello Jan Twardowski 42!'
 
 
 Assignments

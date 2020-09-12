@@ -360,23 +360,64 @@ Remove Prefix or Suffix
     :pep:`616` New ``str.removeprefix()`` and ``str.removesuffix()`` string methods
 
 
-Methods Chaining
-================
-.. code-block:: python
-
-    a = 'Python'
-    b = a.upper().replace('P', 'C').title()
-
-    print(a)            # Python
-    print(b)            # Cython
-
+Method Chaining
+===============
 .. code-block:: python
 
     a = 'Python'
 
-    b = a.upper().startswith('P').replace('P', 'C')
+    a = a.upper()
+    a = a.replace('P', 'C')
+    a = a.title()
+
+    print(a)
+    # Cython
+
+.. code-block:: python
+
+    a = 'Python'
+    a = a.upper().replace('P', 'C').title()
+
+    print(a)
+    # Cython
+
+.. code-block:: python
+
+    a.upper().replace('P', 'C').title()
+
+    # a -> 'Python'
+    # 'Python'.upper() -> 'PYTHON'
+    # 'PYTHON'.replace('P', 'C') -> 'CYTHON'
+    # 'CYTHON'.title() -> 'Cython'
+
+.. code-block:: python
+
+    a = 'Python'
+
+    a = a \
+        .upper() \
+        .replace('P', 'C') \
+        .title()
+
+    print(a)
+
+.. code-block:: python
+
+    a = 'Python'
+
+    a = (a
+        .upper()
+        .replace('P', 'C')
+        .title())
+
+    print(a)
+
+.. code-block:: python
+
+    a = 'Python'
+
+    a = a.upper().startswith('P').replace('P', 'C')
     # AttributeError: 'bool' object has no attribute 'replace'
-
 
 Cleaning User Input
 ===================
@@ -508,7 +549,7 @@ Type String Normalize
 ---------------------
 * Complexity level: easy
 * Lines of code to write: 8 lines
-* Estimated time of completion: 3 min
+* Estimated time of completion: 5 min
 * Solution: :download:`solution/type_str_normalize.py`
 
 :English:

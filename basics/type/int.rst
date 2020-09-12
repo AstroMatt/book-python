@@ -160,8 +160,8 @@ Type Int Time
     * 1 h = 60 min
     * 1 min = 60 s
 
-Type Int Bites
---------------
+Type Int Bits
+-------------
 * Complexity level: medium
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
