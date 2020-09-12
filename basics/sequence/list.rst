@@ -239,7 +239,7 @@ Method Chaining
     data = [3, 1, 2]
 
     data.sort().append(4)
-    # AttributeError: 'NoneType' object has no attribute 'sort'
+    # AttributeError: 'NoneType' object has no attribute 'append'
 
 
 Built-in Functions
@@ -361,7 +361,7 @@ Sequence List Modify
     #. Na początek ``a`` wstaw ostatni element wyciągnięty z ``b``
     #. Na koniec ``b`` wstaw ostatni element wyciągnięty z ``a``
     #. Do wyciągnięcia używaj ``list.pop()``
-    #. Z listy ``c`` za pomocą ``del`` usuń last element
+    #. Z listy ``c`` za pomocą ``del`` usuń ostatni element
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:

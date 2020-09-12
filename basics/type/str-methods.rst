@@ -391,6 +391,7 @@ Method Chaining
     # 'CYTHON'.title() -> 'Cython'
 
 .. code-block:: python
+    :caption: Note, that there cannot be any char, not even space after ``\`` character
 
     a = 'Python'
 
@@ -419,19 +420,17 @@ Method Chaining
     a = a.upper().startswith('P').replace('P', 'C')
     # AttributeError: 'bool' object has no attribute 'replace'
 
+
 Cleaning User Input
 ===================
 .. highlights::
     * 80% of machine learning and data science is cleaning data
-
-Addresses
----------
-.. highlights::
     * Is This the Same Address?
     * This is a dump of distinct records of a single address
     * Which one of the below is a true address?
 
 .. code-block:: text
+    :caption: Addresses
 
     'ul. Jana III Sobieskiego'
     'ul Jana III Sobieskiego'
@@ -451,9 +450,8 @@ Addresses
     'Jana IIi Sobieskiego'
     'Jana lll Sobieskiego'  # three small letters 'L'
 
-Streets
--------
 .. code-block:: text
+    :caption: Streets
 
     'ul'
     'ul.'
@@ -462,40 +460,31 @@ Streets
     'ulica'
     'Ulica'
 
-.. code-block:: text
-
     'os'
     'os.'
     'Os.'
     'osiedle'
-
     'oś'
     'oś.'
     'Oś.'
     'ośedle'
-
-.. code-block:: text
 
     'pl'
     'pl.'
     'Pl.'
     'plac'
 
-.. code-block:: text
-
     'al'
     'al.'
     'Al.'
-
     'aleja'
     'aleia'
     'alei'
     'aleii'
     'aleji'
 
-House and Apartment Number
---------------------------
 .. code-block:: text
+    :caption: House and Apartment Number
 
     'Ćwiartki 3/4'
     'Ćwiartki 3 / 4'
@@ -505,25 +494,18 @@ House and Apartment Number
     'Brighton Beach 1st apt. 2'
     'Myśliwiecka 3/5/7'
 
-.. code-block:: text
-
-    '180f/8f'
-    '180f/8'
-    '180/8f'
-
-.. code-block:: text
+    'Jana Twardowskiego 180f/8f'
+    'Jana Twardowskiego 180f/8'
+    'Jana Twardowskiego 180/8f'
 
     'Jana Twardowskiego III 3 m. 3'
     'Jana Twardowskiego 13d bud. A piętro II sala 3'
 
-Phone Numbers
--------------
 .. code-block:: text
+    :caption: Phone Numbers
 
     +48 (12) 355 5678
     +48 123 555 678
-
-.. code-block:: text
 
     123 555 678
 
@@ -553,14 +535,25 @@ Type String Normalize
 * Solution: :download:`solution/type_str_normalize.py`
 
 :English:
-    #. For given text: ``UL. jana \tTWArdoWskIEGO 3``
-    #. Use ``str`` methods to clean variable
-    #. Expected value is ``Jana Twardowskiego III``
+    #. Use data from "Input" section (see below)
+    #. Use ``str`` methods to clean ``DATA``
+    #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Dla danego tekstu: ``UL. jana \tTWArdoWskIEGO 3``
-    #. Wykorzystaj metody ``str`` do oczyszczenia
-    #. Oczekiwana wartość ``Jana Twardowskiego III``
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Wykorzystaj metody ``str`` do oczyszczenia ``DATA``
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Input:
+    .. code-block:: python
+
+        DATA = 'UL. jana \tTWArdoWskIEGO 3'
+
+:Output:
+    .. code-block:: python
+
+        result: str
+        # Jana Twardowskiego III
 
 :The whys and wherefores:
     * Variable definition
