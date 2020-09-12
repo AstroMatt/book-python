@@ -49,12 +49,17 @@ Type Casting
     :caption: ``float()`` converts argument to ``float``
 
     float(13)               # 13.0
+    float(+13)              # 13.0
     float(-13)              # -13.0
+
     float(13.37)            # 13.37
+    float(+13.37)           # 13.37
     float(-13.37)           # -13.37
 
+    float('13.37')          # 13.37
     float('+13.37')         # 13.37
     float('-13.37')         # -13.37
+
     float('13,37')          # ValueError: could not convert string to float: '13,37'
     float('+13,37')         # ValueError: could not convert string to float: '+13,37'
     float('-13,37')         # ValueError: could not convert string to float: '-13,37'

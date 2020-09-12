@@ -107,15 +107,14 @@ Type Int Distance
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        armstrong_line=18000
-        stratosphere=20000
-        usaf_space=80000
-
-        karman_line_earth=100
-        karman_line_mars=80
-        karman_line_venus=250
+        Armstrong Line: 18000 m
+        Stratosphere: 20000 m
+        USAF Space: 80000 m
+        Kármán Line Earth: 100 km
+        Kármán Line Mars: 80 km
+        Kármán Line Venus: 250 km
 
 :Hint:
     * 1 km = 1000 m
@@ -144,7 +143,7 @@ Type Int Time
     #. W obliczeniach użyj truediv (``//``)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         Day: 86400 sec
         Day: 1440 min
@@ -183,7 +182,7 @@ Type Int Bites
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         Size: 1048576 b
         Size: 1024 kb
@@ -217,7 +216,7 @@ Type Int Bytes
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         Size: 1 MB
         Size: 8 Mb
@@ -254,7 +253,7 @@ Type Int Bandwidth
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         File size: 100 MB
         Download speed: 12 sec
@@ -306,6 +305,15 @@ Type Int Temperature
         * Mars średnia: −63 °C
 
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: text
+
+        Moon day: 453K, 726°C
+        Moon night: 93K, 93°C
+        Mars high: -253K, 20°C
+        Mars low: -393K, -153°C
+        Mars avg: -336K, -63°C
 
 :The whys and wherefores:
     * Defining constants and variables
