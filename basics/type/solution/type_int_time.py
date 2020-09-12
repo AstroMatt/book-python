@@ -7,8 +7,8 @@ workday = 8 * HOUR
 workweek = 5 * workday
 workmonth = 22 * workday
 
-print(f'day = {DAY / SECOND} sec')
-print(f'day = {DAY / MIN} min')
-print(f'work day = {workday} sec')
-print(f'work month = {workmonth / HOUR} h')
-print(f'work week = {workweek / MIN} min')
+print(f'Day: {DAY // SECOND} sec')
+print(f'Day: {DAY // MIN} min')
+print(f'Work day: {workday} sec')
+print(f'Work week: {workweek // MIN} min')
+print(f'Work month: {workmonth // HOUR} h')

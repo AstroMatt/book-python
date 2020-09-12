@@ -1,12 +1,12 @@
-BIT = 1
-KILOBIT = 1024 * BIT
-MEGABIT = 1024 * KILOBIT
+b = 1
+kb = 1024 * b
+Mb = 1024 * kb
 
-BYTE = 8 * BIT
-KILOBYTE = 1024 * BYTE
-MEGABYTE = 1024 * KILOBYTE
+B = 8 * b
+kB = 1024 * B
+MB = 1024 * kB
 
-size = 1 * MEGABYTE
+size = 1 * MB
 
-print(f'1 MB in bit = {size / BIT} bits')
-print(f'1 MB in Mb = {size / MEGABIT} Mb')
+print(f'Size: {size // MB} MB')
+print(f'Size: {size // Mb} Mb')

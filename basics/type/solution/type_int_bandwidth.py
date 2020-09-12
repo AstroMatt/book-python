@@ -1,13 +1,15 @@
-BIT = 1
-KILOBIT = 1024 * BIT
-MEGABIT = 1024 * KILOBIT
+b = 1
+kb = 1024 * b
+Mb = 1024 * kb
 
-BYTE = 8 * BIT
-KILOBYTE = 1024 * BYTE
-MEGABYTE = 1024 * KILOBYTE
+B = 8 * b
+kB = 1024 * B
+MB = 1024 * kB
 
-file_size = 100 * MEGABYTE
-speed = 100 * MEGABIT
-time = file_size / speed
+file_size = 100 * MB
+speed = 100 * Mb
+time = file_size // speed
 
+print(f'File size: {file_size // MB} MB')
+print(f'Download speed: {speed // MB} sec')
 print(f'Download time: {time} sec')

@@ -67,26 +67,90 @@ Type Checking
 Assignments
 ===========
 
+Type Int Distance
+-----------------
+* Complexity level: easy
+* Lines of code to write: 3 lines
+* Estimated time of completion: 5 min
+* Solution: :download:`solution/type_int_distance.py`
+
+:English:
+    #. Calculate altitude in meters:
+
+        * Armstrong Line: 18 km
+        * Stratosphere: 20 km
+        * USAF Space Line: 80 km
+
+    #. Calculate altitude in kilometers:
+
+        * Kármán Line Earth: 100000 m
+        * Kármán Line Mars: 80000 m
+        * Kármán Line Venus: 250000 m
+
+    #. In Calculations use truediv (``//``)
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Calculate altitude in meters:
+
+        * Linia Armstronga: 18 km
+        * Stratosfera: 20 km
+        * Granica kosmosu wg. USAF: 80 km
+
+    #. Calculate altitude in kilometers:
+
+        * Linia Kármána Ziemia: 100000 m
+        * Linia Kármána Mars: 80000 m
+        * Linia Kármána Wenus: 250000 m
+
+    #. W obliczeniach użyj truediv (``//``)
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: python
+
+        armstrong_line=18000
+        stratosphere=20000
+        usaf_space=80000
+
+        karman_line_earth=100
+        karman_line_mars=80
+        karman_line_venus=250
+
+:Hint:
+    * 1 km = 1000 m
+
 Type Int Time
 -------------
 * Complexity level: easy
 * Lines of code to write: 12 lines
-* Estimated time of completion: 5 min
+* Estimated time of completion: 8 min
 * Solution: :download:`solution/type_int_time.py`
 
 :English:
     #. Calculate how many seconds is one day
     #. Calculate how many minutes is one day
     #. Calculate how many seconds is work day (8 hours)
-    #. Calculate how many hours is work month (22 work days)
     #. Calculate how many minutes is work week (5 work days)
+    #. Calculate how many hours is work month (22 work days)
+    #. In Calculations use truediv (``//``)
 
 :Polish:
     #. Oblicz ile sekund to jedna doba
     #. Oblicz ile minut to je jedna doba
     #. Oblicz ile sekund to dzień pracy (8 godzin)
-    #. Oblicz ile godzin to miesiąc pracy (22 dni pracy)
     #. Oblicz ile minut to tydzień pracy (5 dni pracy)
+    #. Oblicz ile godzin to miesiąc pracy (22 dni pracy)
+    #. W obliczeniach użyj truediv (``//``)
+
+:Output:
+    .. code-block:: python
+
+        Day: 86400 sec
+        Day: 1440 min
+        Work day: 28800 sec
+        Work week: 2400 min
+        Work month: 176 h
 
 :The whys and wherefores:
     * Defining constants and variables
@@ -97,22 +161,66 @@ Type Int Time
     * 1 h = 60 min
     * 1 min = 60 s
 
-Type Int Bytes
+Type Int Bites
 --------------
 * Complexity level: medium
+* Lines of code to write: 6 lines
+* Estimated time of completion: 3 min
+* Solution: :download:`solution/type_int_bits.py`
+
+:English:
+    #. File size is 1 megabit
+    #. Calculate size in bits
+    #. Calculate size in kilobits
+    #. W obliczeniach użyj truediv (``//``)
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Wielkość pliku to 1 megabit
+    #. Oblicz wielkość w bitach
+    #. Oblicz wielkość w kilobitach
+    #. In Calculations use truediv (``//``)
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: python
+
+        Size: 1048576 b
+        Size: 1024 kb
+
+:The whys and wherefores:
+    * Defining constants and variables
+    * Naming convention
+    * Mathematical operations
+
+:Hint:
+    * 1 Kb = 1024 b
+    * 1 Mb = 1024 Kb
+
+Type Int Bytes
+--------------
+* Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_int_bytes.py`
 
 :English:
-    #. File size is one megabyte
-    #. Calculate size in bits
+    #. File size is 1 megabyte
     #. Calculate size in megabits
+    #. Print result in megabytes and megabits
+    #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Wielkość pliku to jeden megabajt
-    #. Oblicz wielkość w bitach
+    #. Wielkość pliku to 1 megabajt
     #. Oblicz wielkość w megabitach
+    #. Wypisz wielkość w megabajtach oraz megabitach
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: python
+
+        Size: 1 MB
+        Size: 8 Mb
 
 :The whys and wherefores:
     * Defining constants and variables
@@ -130,16 +238,27 @@ Type Int Bandwidth
 ------------------
 * Complexity level: easy
 * Lines of code to write: 10 lines
-* Estimated time of completion: 5 min
+* Estimated time of completion: 3 min
 * Solution: :download:`solution/type_int_bandwidth.py`
 
 :English:
     #. Having internet connection with speed up to 100 Mb/s
     #. How long will take to download 100 MB?
+    #. W obliczeniach użyj truediv (``//``)
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Mając łącze internetowe "do 100 Mb/s"
     #. Ile zajmie ściągnięcie pliku 100 MB?
+    #. In Calculations use truediv (``//``)
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: python
+
+        File size: 100 MB
+        Download speed: 12 sec
+        Download time: 8 sec
 
 :The whys and wherefores:
     * Defining constants and variables
@@ -172,6 +291,8 @@ Type Int Temperature
         * Mars lowest: -153 °C
         * Mars average: −63 °C
 
+    #. Compare result with "Output" section (see below)
+
 :Polish:
     #. Jeden Kelwin to jeden stopień Celsiusza (1K = 1°C)
     #. Zero Kelwina (bezwzględne) to -273.15 stopni Celsiusza
@@ -183,6 +304,8 @@ Type Int Temperature
         * Mars najwyższa: 20 °C
         * Mars najniższa: -153 °C
         * Mars średnia: −63 °C
+
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :The whys and wherefores:
     * Defining constants and variables
