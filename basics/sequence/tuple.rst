@@ -163,9 +163,9 @@ Sequence Tuple Create
 :English:
     #. Create tuple ``result`` with elements:
 
-        * 'a'
-        * 1
-        * 2.2
+        * ``'a'``
+        * ``1``
+        * ``2.2``
 
     #. Print ``result``
     #. Print number of elements in ``result``
@@ -173,9 +173,9 @@ Sequence Tuple Create
 :Polish:
     #. Stwórz tuple ``result`` z elementami:
 
-        * 'a'
-        * 1
-        * 2.2
+        * ``'a'``
+        * ``1``
+        * ``2.2``
 
     #. Wypisz ``result``
     #. Wypisz liczbę elementów ``result``

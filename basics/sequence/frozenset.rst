@@ -114,9 +114,9 @@ Sequence Frozenset Create
 :English:
     #. Create frozenset ``result`` with elements:
 
-        * 'a'
-        * 1
-        * 2.2
+        * ``'a'``
+        * ``1``
+        * ``2.2``
 
     #. Print ``result``
     #. Print number of elements in ``result``
@@ -124,9 +124,9 @@ Sequence Frozenset Create
 :Polish:
     #. Stwórz frozenset ``result`` z elementami:
 
-        * 'a'
-        * 1
-        * 2.2
+        * ``'a'``
+        * ``1``
+        * ``2.2``
 
     #. Wypisz ``result``
     #. Wypisz liczbę elementów ``result``

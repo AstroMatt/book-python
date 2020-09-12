@@ -375,9 +375,9 @@ Sequence Set Create
 :English:
     #. Create set ``result`` with elements:
 
-        * 'a'
-        * 1
-        * 2.2
+        * ``'a'``
+        * ``1``
+        * ``2.2``
 
     #. Print ``result``
     #. Print number of elements in ``result``
@@ -385,9 +385,9 @@ Sequence Set Create
 :Polish:
     #. Stwórz zbiór ``result`` z elementami:
 
-        * 'a'
-        * 1
-        * 2.2
+        * ``'a'``
+        * ``1``
+        * ``2.2``
 
     #. Wypisz ``result``
     #. Wypisz liczbę elementów ``result``
