@@ -31,17 +31,6 @@ Type Casting
 .. code-block:: python
     :caption: Negative values
 
-    bool(int())                 # False
-    bool(float())               # False
-    bool(complex())             # False
-    bool(bool())                # False
-    bool(str())                 # False
-    bool(tuple())               # False
-    bool(list())                # False
-    bool(dict())                # False
-    bool(set())                 # False
-    bool(frozenset())           # False
-
     bool(0)                     # False
     bool(0.0)                   # False
     bool(0+0j)                  # False
@@ -52,6 +41,17 @@ Type Casting
     bool(())                    # False
     bool([])                    # False
     bool({})                    # False
+
+    bool(int())                 # False
+    bool(float())               # False
+    bool(complex())             # False
+    bool(bool())                # False
+    bool(str())                 # False
+    bool(tuple())               # False
+    bool(list())                # False
+    bool(dict())                # False
+    bool(set())                 # False
+    bool(frozenset())           # False
 
 
 Conjunction
@@ -168,6 +168,40 @@ Built-in Functions
     isinstance(False, float)        # False
 
 
+Example
+=======
+.. code-block:: python
+
+    import numpy as np
+
+    a = np.array([[1, 2, 3],
+                  [4, 5, 6],
+                  [7, 8, 9]])
+
+    a > 2
+    # array([[False, False,  True],
+    #        [ True,  True,  True],
+    #        [ True,  True,  True]])
+
+    a < 7
+    # array([[ True,  True,  True],
+    #        [ True,  True,  True],
+    #        [False, False, False]])
+
+    a == 9
+    # array([[False, False, False],
+    #        [False, False, False],
+    #        [False, False,  True]])
+
+    (a>2) & (a<7) | (a==9)
+    # array([[False, False,  True],
+    #        [ True,  True,  True],
+    #        [False, False,  True]])
+
+    a[(a>2) & (a<7) | (a==9)]
+    # array([3, 4, 5, 6, 9])
+
+
 Assignments
 ===========
 
@@ -211,6 +245,7 @@ Type Bool True or False
 
         o = bool(-0.0+0.0j)
         p = bool('-0.0+0.0j')
+        q = bool(complex('-0.0+0.0j'))
 
 :The whys and wherefores:
     * Defining variables
