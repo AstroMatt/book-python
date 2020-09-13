@@ -3,6 +3,15 @@ Good Practices
 **************
 
 
+Rationale
+=========
+.. figure:: img/goodpractices-programmer-exp
+    :align: center
+    :scale: 75%
+
+    Code Complexity vs. Programmer Experiance
+
+
 Range
 =====
 .. code-block:: python
