@@ -165,7 +165,7 @@ Iris
 ----
 * Complexity level: medium
 * Lines of code to write: 20 lines
-* Estimated time of completion: 30 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/scrapping_iris.py`
 
 #. Za pomocą beautifulsoup4 ze strony https://github.com/AstroMatt/book-python/blob/master/numerical-analysis/data/iris-dirty.csv pobierz dane zbióru Irysów.
@@ -178,7 +178,7 @@ EVA
 ---
 * Complexity level: medium
 * Lines of code to write: 100 lines
-* Estimated time of completion: 45 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/scrapping_eva.py`
 
 #. Na podstawie podanych URL:

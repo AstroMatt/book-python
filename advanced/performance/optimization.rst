@@ -213,7 +213,7 @@ Memoization
 -----------
 * Complexity level: medium
 * Lines of code to write: 5 lines
-* Estimated time of completion: 15 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/optimization_memoize.py`
 * Input data: :numref:`listing-performance-memoize`
 

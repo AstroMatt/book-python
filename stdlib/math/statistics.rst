@@ -221,7 +221,7 @@ Column Stats
 ------------
 * Complexity level: easy
 * Lines of code to write: 30 lines
-* Estimated time of completion: 30 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/statistics_column_stats.py`
 
 :English:
@@ -296,7 +296,7 @@ Iris Stats
 ----------
 * Complexity level: easy
 * Lines of code to write: 30 lines
-* Estimated time of completion: 30 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/statistics_iris.py`
 
 :English:

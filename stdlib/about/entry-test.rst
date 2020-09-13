@@ -76,7 +76,7 @@ Iris dataset
 ============
 * Complexity level: easy
 * Lines of code to write: 20 lines
-* Estimated time of completion: 10 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/slice_iris.py`
 
 :English:
@@ -143,7 +143,7 @@ Iris dataset
 =================================
 * Complexity level: easy
 * Lines of code to write: 8 lines
-* Estimated time of completion: 10 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/loop_dict_to_list.py`
 
 :English:
@@ -213,7 +213,7 @@ Get elements from nested data structure
 =======================================
 * Complexity level: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 10 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/for_nested.py`
 
 :English:
@@ -252,7 +252,7 @@ Label encoder
 =============
 * Complexity level: medium
 * Lines of code to write: 13 lines
-* Estimated time of completion: 15 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/loop_label_encoder.py`
 
 :English:

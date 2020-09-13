@@ -717,7 +717,7 @@ XML Parsing
 -----------
 * Complexity level: easy
 * Lines of code to write: 20 lines
-* Estimated time of completion: 20 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/xml_parse.py`
 
 :English:
@@ -736,7 +736,7 @@ XSLT Transformation
 -------------------
 * Complexity level: medium
 * Lines of code to write: 5 lines
-* Estimated time of completion: 10 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/xml_xslt.py`
 
 :English:

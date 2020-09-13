@@ -13,7 +13,9 @@ Rationale
     * Exception example situations:
 
         * File does not exists
-        * Function argument is invalid
+        * No permissions to read file
+        * Function argument is invalid type (ie. ``int('one')``)
+        * Value is incorrect (ie. negative Kelvin temperature)
         * Network or database connection could not be established
 
 
@@ -132,15 +134,15 @@ Most Common Exceptions
     #   File "<stdin>", line 1, in <module>
     # ValueError: too many values to unpack (expected 2)
 
-    float('a')
+    float('one')
     # Traceback (most recent call last):
     #   File "<stdin>", line 1, in <module>
-    # ValueError: could not convert string to float: 'a'
+    # ValueError: could not convert string to float: 'one'
 
-    int('a')
+    int('one')
     # Traceback (most recent call last):
     #   File "<stdin>", line 1, in <module>
-    # ValueError: invalid literal for int() with base 10: 'a'
+    # ValueError: invalid literal for int() with base 10: 'one'
 
 
 Exception Hierarchy

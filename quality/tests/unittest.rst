@@ -172,7 +172,7 @@ Dragon
 ------
 * Complexity level: medium
 * Lines of code to write: 100 lines
-* Estimated time of completion: 25 min
+* Estimated time of completion: 21 min
 
 :English:
     #. Write unittest for the dragon from :ref:`Dragon Alpha`

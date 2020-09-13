@@ -124,7 +124,7 @@ Assignments
 Address Book
 ------------
 * Lines of code to write: 50 lines
-* Estimated time of completion: 30 min
+* Estimated time of completion: 21 min
 
 #. Stwórz projekt ``addressbook``
 #. Stwórz apkę ``contact``

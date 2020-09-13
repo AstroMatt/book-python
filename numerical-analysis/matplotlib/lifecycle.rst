@@ -339,7 +339,7 @@ Iris transformations
 --------------------
 * Complexity level: medium
 * Lines of code to write: 20 lines
-* Estimated time of completion: 20 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/matplotlib_lifecycle.py`
 * Input data: https://raw.githubusercontent.com/AstroMatt/book-python/master/data-vizualization/data/iris.csv
 

@@ -161,7 +161,7 @@ Feature Engineering
 -------------------
 * Complexity level: easy
 * Lines of code to write: 15 lines
-* Estimated time of completion: 10 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/features_engineering.py`
 
 #. Celem zadania będzie opracowanie tabeli, cech osób, które czynią z niego astronautę.

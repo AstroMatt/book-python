@@ -228,7 +228,7 @@ Trigonometry
 ------------
 * Complexity level: easy
 * Lines of code to write: 10 lines
-* Estimated time of completion: 10 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/math_trigonometry.py`
 
 :English:
@@ -250,7 +250,7 @@ Euclidean distance 2D
 ---------------------
 * Complexity level: easy
 * Lines of code to write: 5 lines
-* Estimated time of completion: 15 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/math_euclidean_2d.py`
 
 :English:
@@ -310,7 +310,7 @@ Euclidean distance ``n`` dimensions
 -----------------------------------
 * Complexity level: easy
 * Lines of code to write: 10 lines
-* Estimated time of completion: 15 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/math_euclidean_multi_dim.py`
 
 :English:
@@ -368,7 +368,7 @@ Matrix multiplication
 ---------------------
 * Complexity level: hard
 * Lines of code to write: 6 lines
-* Estimated time of completion: 20 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/math_matmul.py`
 
 :English:
@@ -406,7 +406,7 @@ Triangle
 --------
 * Complexity level: easy
 * Lines of code to write: 5 lines
-* Estimated time of completion: 10 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/math_triangle.py`
 
 :English:

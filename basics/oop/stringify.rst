@@ -341,7 +341,7 @@ OOP Stringify Nested
 --------------------
 * Complexity level: medium
 * Lines of code to write: 9 lines
-* Estimated time of completion: 20 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/oop_stringify_nested.py`
 
 :English:

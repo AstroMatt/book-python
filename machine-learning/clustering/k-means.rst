@@ -342,7 +342,7 @@ Klastrowanie zbioru Iris
 ------------------------
 * Complexity level: medium
 * Lines of code to write: 30 lines
-* Estimated time of completion: 15 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/clustering_iris.py`
 
 #. Dla zbioru Iris dokonaj klastrowania za pomocą alborytmu ``KMeans`` z biblioteki ``sklearn``.

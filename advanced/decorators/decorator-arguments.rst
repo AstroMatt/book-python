@@ -222,7 +222,7 @@ Decorator Arguments Type Check
 ------------------------------
 * Complexity level: medium
 * Lines of code to write: 20 lines
-* Estimated time of completion: 10 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/decorator_arguments_typecheck.py`
 
 :English:

@@ -532,7 +532,7 @@ Assignments
 --------------------------------------
 * Complexity level: easy
 * Lines of code to write: 10 lines
-* Estimated time of completion: 15 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/functional_map_filter_lambda.py`
 
 :Polish:
@@ -545,7 +545,7 @@ Balanced Brackets
 -----------------
 * Complexity level: medium
 * Lines of code to write: 10 lines
-* Estimated time of completion: 15 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/functional_brackets.py`
 
 :English:

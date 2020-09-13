@@ -28,7 +28,7 @@ Heartbeat Receiver
 ------------------
 * Complexity level: medium
 * Lines of code to write: 45 lines
-* Estimated time of completion: 30 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/botnet_heartbeat_receiver.py`
 
 #. Server ma przyjmować komunikaty UDP na porcie 1337
@@ -45,7 +45,7 @@ Victim
 ------
 * Complexity level: medium
 * Lines of code to write: 150 lines
-* Estimated time of completion: 75 min
+* Estimated time of completion: 34 min
 * Solution: :download:`solution/botnet_victim.py`
 
 #. Po zainfekowaniu otwiera randomowy port TCP (backdoor) z przedziału 1025-65535 na którym nasłuchuje komunikatów
@@ -76,7 +76,7 @@ Attacker
 --------
 * Complexity level: medium
 * Lines of code to write: 150 lines
-* Estimated time of completion: 75 min
+* Estimated time of completion: 34 min
 * Solution: :download:`solution/botnet_attacker.py`
 
 #. Skopiuj zawartość :numref:`listing-botnet-commands` do pliku ``botnet-commands.xml``

@@ -7,7 +7,7 @@ Dragon (version release candidate)
 
 * Complexity level: hard
 * Lines of code to write: 50 lines
-* Estimated time of completion: 30 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/dragon_rc.py`
 
 .. figure:: img/dragon.gif

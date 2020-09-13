@@ -266,7 +266,7 @@ Least square regression 3 points
 --------------------------------
 * Complexity level: easy
 * Lines of code to write: 10 lines
-* Estimated time of completion: 15 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/linreg_least_square_3pts.py`
 
 #. Consider the following set of points: :math:`{(-2 , -1) , (1 , 1) , (3 , 2)}`
@@ -278,7 +278,7 @@ Least square regression 4 points
 --------------------------------
 * Complexity level: easy
 * Lines of code to write: 10 lines
-* Estimated time of completion: 15 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/linreg_least_square_4pts.py`
 
 #. Find the least square regression line for the following set of data: :math:`{(-1 , 0),(0 , 2),(1 , 4),(2 , 5)}`
@@ -290,7 +290,7 @@ Company sales
 -------------
 * Complexity level: easy
 * Lines of code to write: 10 lines
-* Estimated time of completion: 15 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/linreg_company_sales.py`
 
 The sales of a company (in million dollars) for each year are shown in the table below.

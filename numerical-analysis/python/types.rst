@@ -475,7 +475,7 @@ To ``bool`` or not to ``bool``
 ------------------------------
 * Complexity level: easy
 * Lines of code to write: 15 lines
-* Estimated time of completion: 10 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/types_bool.py`
 
 :English:

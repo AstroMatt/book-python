@@ -363,7 +363,7 @@ Pandas Read XML XSLT
 --------------------
 * Complexity level: medium
 * Lines of code to write: 5 lines
-* Estimated time of completion: 10 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/pandas_read_xml_xslt.py`
 
 :English:

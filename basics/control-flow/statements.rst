@@ -216,12 +216,12 @@ Unconditional Alternative
 .. code-block:: python
     :caption: Checking if variable is certain value
 
-    country = 'USA'
+    country = 'Russia'
 
-    if country == 'Russia':
-        job = 'cosmonaut'
-    else:
+    if country == 'USA':
         job = 'astronaut'
+    else:
+        job = 'cosmonaut'
 
     print(job)
     # astronaut
@@ -305,7 +305,7 @@ Shorthand Expressions
     is_even = (number % 2 == 0 )
 
     print(is_even)
-    # True
+    # False
 
 .. code-block:: python
 
@@ -349,21 +349,21 @@ Conditional Expression
 .. code-block:: python
     :caption: Normal ``if``
 
-    country = 'USA'
+    country = 'Russia'
 
-    if country == 'Russia':
-        job = 'cosmonaut'
-    else:
+    if country == 'USA':
         job = 'astronaut'
+    else:
+        job = 'cosmonaut'
 
     print(job)
-    # astronaut
+    # cosmonaut
 
 .. code-block:: python
     :caption: Inline ``if``
 
-    country = 'USA'
-    job = 'cosmonaut' if country == 'Russia' else 'astronaut'
+    country = 'Russia'
+    job = 'astronaut' if country == 'USA' else 'cosmonaut'
 
     print(job)
     # astronaut
@@ -372,8 +372,12 @@ Conditional Expression
     :caption: :ref:`Type Str Methods is Numeric`
 
     age = input('What is your age?: ')
+    # What is your age?: 10<ENTER>
+
     age = float(age) if age.isnumeric() else None
     print(age)
+    # 10.0
+
 
 Switch
 ======

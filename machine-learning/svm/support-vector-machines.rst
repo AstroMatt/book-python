@@ -428,7 +428,7 @@ Wykorzystanie biblioteki ``sklearn``
 ------------------------------------
 * Complexity level: medium
 * Lines of code to write: 30 lines
-* Estimated time of completion: 25 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/svm_sklearn.py`
 * Input data: https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/
 

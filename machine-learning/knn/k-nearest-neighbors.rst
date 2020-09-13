@@ -171,7 +171,7 @@ Pima Indians Diabetes problem
 -----------------------------
 * Complexity level: medium
 * Lines of code to write: 15 lines
-* Estimated time of completion: 15 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/knn_pima.py`
 
 #. Dla Pima Indians Diabetes wykonaj analizę algorytmem KNN z biblioteki ``sklearn``.
@@ -180,7 +180,7 @@ Płeć
 ----
 * Complexity level: easy
 * Lines of code to write: 15 lines
-* Estimated time of completion: 15 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/knn_gender.py`
 
 #. Napisz własną implementacje k Nearest Neighbors, która dla danych:

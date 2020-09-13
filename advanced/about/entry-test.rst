@@ -122,7 +122,7 @@ Entry Test File
 ===============
 * Complexity level: hard
 * Lines of code to write: 15 lines
-* Estimated time of completion: 15 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/entry_test_file.py`
 
 :English:

@@ -281,7 +281,7 @@ REST API
 --------
 * Complexity level: medium
 * Lines of code to write: 35 lines
-* Estimated time of completion: 30 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/requests_github.py`
 
 #. Załóż darmowe konto na Github i potwierdź email

@@ -34,7 +34,7 @@ Random numbers
 --------------
 * Complexity level: easy
 * Lines of code to write: 5 lines
-* Estimated time of completion: 10 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/random_sample.py`
 
 :English:
@@ -47,7 +47,7 @@ Sum of inner elements
 ---------------------
 * Complexity level: medium
 * Lines of code to write: 5 lines
-* Estimated time of completion: 10 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/random_matrix.py`
 
 :English:

@@ -104,7 +104,7 @@ Contains
         'chemist': 'Alex Vogel'}
 
     'commander' in crew             # True
-    'pilot' in data                 # False
+    'pilot' in crew                 # False
 
 
 Missing
@@ -155,6 +155,7 @@ Missing
 
     'commander' not in crew         # False
     'pilot' not in crew             # True
+
 
 Assignments
 ===========

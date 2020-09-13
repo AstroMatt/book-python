@@ -649,7 +649,7 @@ Recursive folders walking
 -------------------------
 * Complexity level: easy
 * Lines of code to write: 30 lines
-* Estimated time of completion: 30 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/system_walk.py`
 
 #. Sprawdź czy katalog "Python" już istnieje na pulpicie w Twoim systemie
@@ -686,7 +686,7 @@ Tree
 ----
 * Complexity level: hard
 * Lines of code to write: 60 lines
-* Estimated time of completion: 60 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/system_tree.py`
 
 #. Za pomocą znaków unicode: "┣━", "┗━" , "┃  "

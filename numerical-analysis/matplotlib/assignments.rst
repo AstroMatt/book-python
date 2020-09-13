@@ -5,7 +5,7 @@ Trigonometry
 ------------
 * Complexity level: medium
 * Lines of code to write: 15 lines
-* Estimated time of completion: 20 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/matplotlib_trigonometry.py`
 
 #. Dla ``x`` z przedziału od 0.0 do 1.0 z próbkowaniem co 0.01 przedstaw przebiegi funkcji ``sin``, ``cos`` dla parametrów ``2 * np.pi * x``
@@ -30,7 +30,7 @@ Iris scatter
 ------------
 * Complexity level: medium
 * Lines of code to write: 20 lines
-* Estimated time of completion: 20 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/matplotlib_iris.py`
 * Input data: https://raw.githubusercontent.com/AstroMatt/book-python/master/data-vizualization/data/iris.csv
 
@@ -46,7 +46,7 @@ Random points
 -------------
 * Complexity level: medium
 * Lines of code to write: 15 lines
-* Estimated time of completion: 20 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/matplotlib_random_points.py`
 
 #. Wygeneruj 100 losowych punktów:

@@ -435,7 +435,7 @@ DataFrame Plot
 --------------
 * Complexity level: medium
 * Lines of code to write: 15 lines
-* Estimated time of completion: 30 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/df_plot.py`
 
 :English:

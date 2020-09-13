@@ -485,7 +485,7 @@ DataFrame Groupby Phones
 ------------------------
 * Complexity level: medium
 * Lines of code to write: 5 lines
-* Estimated time of completion: 10 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/df_groupby_phones.py`
 
 :English:
@@ -507,7 +507,7 @@ DataFrame Groupby Astro Flights
 -------------------------------
 * Complexity level: medium
 * Lines of code to write: 5 lines
-* Estimated time of completion: 10 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/df_groupby_astro_flights.py`
 
 :English:
@@ -529,7 +529,7 @@ DataFrame Groupby Astro EVA
 ---------------------------
 * Complexity level: medium
 * Lines of code to write: 30 lines
-* Estimated time of completion: 40 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/df_groupby_astro_eva.py`
 
 :English:

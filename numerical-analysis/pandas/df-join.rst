@@ -347,7 +347,7 @@ DataFrame Join
 --------------
 * Complexity level: medium
 * Lines of code to write: 25 lines
-* Estimated time of completion: 30 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/df_join_eva.py`
 
 :English:

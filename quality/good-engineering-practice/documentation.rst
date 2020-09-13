@@ -133,7 +133,7 @@ Assignments
 Dokumentacja
 ------------
 * Lines of code to write: 30 lines
-* Estimated time of completion: 15 min
+* Estimated time of completion: 13 min
 * Input data: https://raw.githubusercontent.com/AstroMatt/book-python/master/database/data/iris.csv
 
 #. Za pomocą ``sphinx-quickstart`` stwórz dokumentację.

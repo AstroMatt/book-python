@@ -153,7 +153,7 @@ Conditional Expression
 ----------------------
 * Complexity level: medium
 * Lines of code to write: 25 lines
-* Estimated time of completion: 25 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/conditional_expression.py`
 
 :English:

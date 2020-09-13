@@ -214,7 +214,7 @@ Own ``doctest``
 ---------------
 * Complexity level: easy
 * Lines of code to write: 60 lines
-* Estimated time of completion: 30 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/debugging_doctest.py`
 
 #. Dla kodu z listingu

@@ -551,7 +551,7 @@ Podstawy korzystania
 --------------------
 * Complexity level: easy
 * Lines of code to write: 10 lines
-* Estimated time of completion: 15 min
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/jupyter_first.ipynb`
 
 #. Stwórz notebook jupyter o nazwie ``jupyter_first.ipynb``

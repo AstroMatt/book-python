@@ -31,7 +31,7 @@ Send email
 ----------
 * Complexity level: medium
 * Lines of code to write: 20 lines
-* Estimated time of completion: 25 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/smtp_ssl.py`
 
 #. Połącz się z serwerem podanym przez prowadzącego

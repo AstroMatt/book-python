@@ -39,7 +39,7 @@ FTP Download
 ------------
 * Complexity level: easy
 * Lines of code to write: 20 lines
-* Estimated time of completion: 25 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/ftp_download.py`
 
 #. Stwórz na swoim komputerze plik o nazwie ``imie-nazwisko.txt``, gdzie:
@@ -57,7 +57,7 @@ FTP Upload
 ----------
 * Complexity level: easy
 * Lines of code to write: 20 lines
-* Estimated time of completion: 25 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/ftp_upload.py`
 
 #. Pobierz na swój komputer plik :download:`http://python.astrotech.io/_static/favicon.png`

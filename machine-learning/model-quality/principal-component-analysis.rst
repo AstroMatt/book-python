@@ -136,7 +136,7 @@ PCA dla zbioru Pima Indian Diabetes
 -----------------------------------
 * Complexity level: medium
 * Lines of code to write: 30 lines
-* Estimated time of completion: 20 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/pca_pima.py`
 
 #. Przeprowadź analizę PCA dla zbioru Indian Pima

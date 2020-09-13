@@ -137,7 +137,7 @@ Nearest Neighbor Classifier
 ---------------------------
 * Complexity level: medium
 * Lines of code to write: 15 lines
-* Estimated time of completion: 30 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/sklearn_classifier.py`
 
 #. Napisz klasyfikator najbliższego sąsiada
@@ -193,7 +193,7 @@ Porównanie classifierów
 -----------------------
 * Complexity level: medium
 * Lines of code to write: 15 lines
-* Estimated time of completion: 20 min
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/sklearn_comparision.py`
 
 * Pobierz dane Brest Cancer Dataset (``datasets.load_breast_cancer()``)
