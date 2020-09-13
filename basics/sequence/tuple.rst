@@ -149,6 +149,24 @@ List:
     * implemented in memory as list of pointers to objects
     * objects are scattered in memory
 
+.. figure:: img/memory-tuple.png
+    :align: center
+    :scale: 75%
+
+    Define tuple
+
+.. figure:: img/memory-list.png
+    :align: center
+    :scale: 75%
+
+    Define list
+
+.. figure:: img/memory-all.png
+    :align: center
+    :scale: 75%
+
+    Define str, tuple and list
+
 
 Assignments
 ===========

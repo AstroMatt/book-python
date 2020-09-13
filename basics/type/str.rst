@@ -344,6 +344,24 @@ String Immutability
     f'Hello {firstname} {lastname} {age}!'
     # 'Hello Jan Twardowski 42!'
 
+.. figure:: img/memory-str-1.png
+    :align: center
+    :scale: 75%
+
+    Define str
+
+.. figure:: img/memory-str-2.png
+    :align: center
+    :scale: 75%
+
+    Define another str with the same value
+
+.. figure:: img/memory-str-3.png
+    :align: center
+    :scale: 75%
+
+    Define another str with different value
+
 
 Assignments
 ===========

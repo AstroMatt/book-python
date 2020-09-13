@@ -548,6 +548,16 @@ Mapping Dict Substitute
               'ł': 'l', 'ń': 'n', 'ó': 'o',
               'ś': 's', 'ż': 'z', 'ź': 'z'}
 
+:Example:
+    .. code-block:: text
+
+        | Input | Output |
+        |-------|--------|
+        |   A   |    a   |
+        |   x   |    x   |
+        |   ś   |    s   |
+        |   Ź   |    z   |
+
 Mapping Dict Get
 ----------------
 * Complexity level: easy

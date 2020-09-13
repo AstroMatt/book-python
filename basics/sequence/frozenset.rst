@@ -13,14 +13,14 @@ Rationale
     * Can store elements of any **hashable** types
     * Has all ``set`` methods such as ``.intersect()``, ``.subset()`` ``.union()``, etc.
     * One solid block in memory
+    * Frozenset is unordered data structure
+    * Do not support getitem
+    * Do not support slice
 
 
 Type Definition
 ===============
 .. highlights::
-    * Frozenset is unordered data structure
-    * Do not support getitem
-    * Do not support slice
     * Defining only with ``frozenset()`` - no short syntax
     * Comma after last element of a one element frozenset is optional
     * Brackets are required

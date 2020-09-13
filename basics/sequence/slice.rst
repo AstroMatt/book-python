@@ -153,21 +153,6 @@ Out of Range
     text[100:]      # ''
 
 
-Index Arithmetic
-================
-.. code-block:: python
-
-    text = 'We choose to go to the Moon!'
-    first = 23
-    last = 28
-    step = 2
-
-    text[first:last]            # 'Moon!'
-    text[first:last-1]          # 'Moon'
-    text[first:last:step]       # 'Mo!'
-    text[first:last-1:step]     # 'Mo'
-
-
 Nested Sequences
 ================
 .. code-block:: python
@@ -252,6 +237,48 @@ Slice All
     # B    5
     # C    8
     # Name: 1, dtype: int64
+
+
+Index Arithmetic
+================
+.. code-block:: python
+
+    text = 'We choose to go to the Moon!'
+    first = 23
+    last = 28
+    step = 2
+
+    text[first:last]            # 'Moon!'
+    text[first:last-1]          # 'Moon'
+    text[first:last:step]       # 'Mo!'
+    text[first:last-1:step]     # 'Mo'
+
+
+Slice Function
+==============
+.. code-block:: python
+
+    text = 'We choose to go to the Moon!'
+
+    q = slice(23, 27)
+    text[q]
+    # 'Moon'
+
+    q = slice(None, 9)
+    text[q]
+    # 'We choose'
+
+    q = slice(23, None)
+    text[q]
+    # 'Moon!'
+
+    q = slice(23, None, 2)
+    text[q]
+    # 'Mo!'
+
+    q = slice(None, None, 2)
+    text[q]
+    # 'W hoet ot h on'
 
 
 Example
@@ -362,7 +389,7 @@ Sequence Slice Text
 -------------------
 * Complexity level: easy
 * Lines of code to write: 8 lines
-* Estimated time of completion: 10 min
+* Estimated time of completion: 8 min
 * Solution: :download:`solution/sequence_slice_text.py`
 
 :English:
@@ -418,7 +445,7 @@ Sequence Slice Split
 --------------------
 * Complexity level: easy
 * Lines of code to write: 6 lines
-* Estimated time of completion: 10 min
+* Estimated time of completion: 8 min
 * Solution: :download:`solution/sequence_slice_split.py`
 
 :English:

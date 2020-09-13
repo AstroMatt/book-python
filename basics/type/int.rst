@@ -171,14 +171,14 @@ Type Int Bits
     #. File size is 1 megabit
     #. Calculate size in bits
     #. Calculate size in kilobits
-    #. W obliczeniach użyj truediv (``//``)
+    #. In Calculations use truediv (``//``)
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Wielkość pliku to 1 megabit
     #. Oblicz wielkość w bitach
     #. Oblicz wielkość w kilobitach
-    #. In Calculations use truediv (``//``)
+    #. W obliczeniach użyj truediv (``//``)
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:

@@ -143,15 +143,6 @@ Skipping Values
 
 .. code-block:: python
 
-    line = 'Jan,Twardowski,44'
-
-    firstname, lastname, _ = line.split(',')
-
-    print(firstname)        # Jan
-    print(lastname)         # Twardowski
-
-.. code-block:: python
-
     a, _, c = 1, 2, 3
 
     print(a)                # 1
@@ -162,6 +153,15 @@ Skipping Values
     _, b, _ = 1, 2, 3
 
     print(b)                # 2
+
+.. code-block:: python
+
+    line = 'Jan,Twardowski,44'
+
+    firstname, lastname, _ = line.split(',')
+
+    print(firstname)        # Jan
+    print(lastname)         # Twardowski
 
 .. code-block:: python
 
@@ -246,6 +246,17 @@ Examples
     second                  # 1
     others                  # [2, 3, 4, 5, 6, 7, 8, 9]
 
+.. code-block:: python
+
+    import pandas as pd
+
+    df = pd.DataFrame({
+        'A': [1, 2, 3],
+        'B': [4, 5, 6],
+        'C': [7, 8, 9]})
+
+    _ = df.plot(kind='line')
+
 
 Using in a Loop
 ===============
@@ -271,6 +282,21 @@ Using in a Loop
     # virginica 3.875
     # setosa 2.55
     # versicolor 3.475
+
+.. code-block:: python
+
+    DATA = [
+        (5.8, 2.7, 5.1, 1.9, 'virginica'),
+        (5.1, 3.5, 1.4, 0.2, 'setosa'),
+        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+    ]
+
+    result = {y: sum(X)/len(X) for *X,y in DATA}
+
+    print(result)
+    # {'virginica': 3.875,
+    #  'setosa': 2.55,
+    #  'versicolor': 3.475}
 
 .. code-block:: python
 

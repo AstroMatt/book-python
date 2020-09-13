@@ -11,16 +11,15 @@ Rationale
     * Only unique values
     * Mutable - can add, remove, and modify items
     * Can store elements of any **hashable** types
-
-
-Type Definition
-===============
-.. highlights::
     * Set is unordered data structure (each time order differs)
     * Do not record element position
     * Do not record order of insertion
     * Do not support getitem
     * Do not support slice
+
+Type Definition
+===============
+.. highlights::
     * Defining only with ``set()`` - no short syntax
     * Comma after last element of a one element set is optional
     * Brackets are required
