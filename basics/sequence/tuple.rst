@@ -151,19 +151,19 @@ List:
 
 .. figure:: img/memory-tuple.png
     :align: center
-    :scale: 75%
+    :scale: 50%
 
     Define tuple
 
 .. figure:: img/memory-list.png
     :align: center
-    :scale: 75%
+    :scale: 50%
 
     Define list
 
 .. figure:: img/memory-all.png
     :align: center
-    :scale: 75%
+    :scale: 50%
 
     Define str, tuple and list
 

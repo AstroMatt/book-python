@@ -47,19 +47,19 @@ String interning
 
 .. figure:: img/identity-str-1.png
     :align: center
-    :scale: 75%
+    :scale: 50%
 
     Define str
 
 .. figure:: img/identity-str-2.png
     :align: center
-    :scale: 75%
+    :scale: 50%
 
     Define another str with the same value
 
 .. figure:: img/identity-str-3.png
     :align: center
-    :scale: 75%
+    :scale: 50%
 
     Define another str with different value
 
