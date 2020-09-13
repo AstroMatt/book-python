@@ -402,7 +402,7 @@ Sequence Set Many
 :English:
     #. Use data from "Input" section (see below)
     #. Create set ``result`` representing first row
-    #. Values from second row add to ``set`` using ``.add()``
+    #. Values from second row add to ``result`` using ``.add()``
     #. From third row create ``set`` and add it to ``result`` using ``.update()``
     #. From fourth row create ``tuple`` and add it to ``result`` using ``.update()``
     #. From fifth row create ``list`` and add it to ``result`` using ``.update()``

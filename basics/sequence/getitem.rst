@@ -129,26 +129,24 @@ Sequence Getitem Select
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Separate header from data (row with index 0)
-    #. Write header (first line) to ``header: tuple`` variable
+    #. Write header (row with index 0) to ``header: tuple`` variable
     #. Create ``result: list``
-    #. Select row at index 5, convert it to list and add to ``result``
-    #. Select row at index 10, convert it to tuple and add to ``result``
-    #. Select row at index -10, convert it to set and add to ``result``
-    #. Select row at index -5, convert it to frozenset and add to ``result``
+    #. Select row at index 5, convert it to ``list`` and add to ``result``
+    #. Select row at index 10, convert it to ``tuple`` and add to ``result``
+    #. Select row at index -10, convert it to ``set`` and add to ``result``
+    #. Select row at index -5, convert it to ``frozenset`` and add to ``result``
     #. Append to ``result``: empty ``list``, empty ``tuple``, empty ``set`` and empty ``frozenset``
     #. Use only indexes and do not use ``for``, ``while`` or ``slice()``
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Odseparuj nagłówek od danych (wiersz o indeksie 0)
-    #. Zapisz nagłówek (pierwsza linia) do zmiennej ``header: tuple``
+    #. Zapisz nagłówek (wiersz o indeksie 0) do zmiennej ``header: tuple``
     #. Stwórz ``result: list``
-    #. Wybierz wiersz o indeksie 5, przekonwertuj go do listy i dodaj do ``result``
-    #. Wybierz wiersz o indeksie 10, przekonwertuj go do tuple i dodaj do ``result``
-    #. Wybierz wiersz o indeksie -10, przekonwertuj go do set i dodaj do ``result``
-    #. Wybierz wiersz o indeksie -5, przekonwertuj go do frozenset i dodaj do ``result``
+    #. Wybierz wiersz o indeksie 5, przekonwertuj go do ``list`` i dodaj do ``result``
+    #. Wybierz wiersz o indeksie 10, przekonwertuj go do ``tuple`` i dodaj do ``result``
+    #. Wybierz wiersz o indeksie -10, przekonwertuj go do ``set`` i dodaj do ``result``
+    #. Wybierz wiersz o indeksie -5, przekonwertuj go do ``frozenset`` i dodaj do ``result``
     #. Dodaj na koniec ``result``: pustą ``list``, pustą ``tuple``, pusty ``set``, pusty ``frozenset``
     #. Korzystaj tylko z indeksów i nie używaj ``for``, ``while`` lub ``slice()``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
