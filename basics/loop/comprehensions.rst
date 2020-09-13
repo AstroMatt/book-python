@@ -1,8 +1,8 @@
-.. _Comprehensions:
+.. _Loop Comprehension:
 
-**************
-Comprehensions
-**************
+******************
+Loop Comprehension
+******************
 
 
 Recap
@@ -649,8 +649,8 @@ Assignment Expressions
 Assignments
 ===========
 
-Comprehensions Create
----------------------
+Loop Comprehension Create
+-------------------------
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
@@ -666,8 +666,8 @@ Comprehensions Create
     #. Wygeneruj ``result: List[int]`` parzystych liczb z przedziału 5 do 20
     #. Wypisz ``result``
 
-Comprehensions Translate
-------------------------
+Loop Comprehension Translate
+----------------------------
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
@@ -704,8 +704,8 @@ Comprehensions Translate
         result: str
         # 'zazolc gesla jazn'
 
-Comprehension Dict
-------------------
+Loop Comprehension Months
+-------------------------
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
@@ -757,8 +757,8 @@ Comprehension Dict
         #  '11': 'November',
         #  '12': 'December'}
 
-Comprehensions Split
---------------------
+Loop Comprehension Split
+------------------------
 * Complexity level: medium
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
