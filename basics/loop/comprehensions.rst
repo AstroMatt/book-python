@@ -407,24 +407,30 @@ Examples
         {'is_astronaut': False, 'name': 'Alex Vogel'},
     ]
 
-    astronauts = [person for person in DATA if person['is_astronaut']]
+    astronauts = [person
+                  for person in DATA
+                  if person['is_astronaut']]
+
     print(astronauts)
     # [{'is_astronaut': True, 'name': 'Jan Twardowski'},
     #  {'is_astronaut': True, 'name': 'Mark Watney'},
     #  {'is_astronaut': True, 'name': 'Melissa Lewis'}]
 
 
-    astronauts = [person['name'] for person in DATA if person['is_astronaut']]
+    astronauts = [person['name']
+                  for person in DATA
+                  if person['is_astronaut']]
+
     print(astronauts)
     # ['Jan Twardowski', 'Mark Watney', 'Melissa Lewis']
 
 
     astronauts = [{'firstname': person['name'].split()[0],
                    'lastname': person['name'].split()[1]}
-
                    for person in DATA
-                        if person['is_astronaut']]
+                   if person['is_astronaut']]
 
+    print(astronauts)
     # [{'firstname': 'Jan', 'lastname': 'Twardowski'},
     #  {'firstname': 'Mark', 'lastname': 'Watney'},
     #  {'firstname': 'Melissa', 'lastname': 'Lewis'}]
