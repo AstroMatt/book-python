@@ -45,27 +45,33 @@ Type Casting
 
 .. code-block:: python
 
-    data = [1, 2, 3]
+    data = 'abcd'
     frozenset(data)
-    # frozenset({1, 2, 3})
+    # frozenset({'a', 'b', 'c', 'd'})
 
 .. code-block:: python
 
-    data = (1, 2, 3)
+    data = ['a', 'b', 'c', 'd']
     frozenset(data)
-    # frozenset({1, 2, 3})
+    # frozenset({'a', 'b', 'c', 'd'})
 
 .. code-block:: python
 
-    data = {1, 2, 3}
+    data = ('a', 'b', 'c', 'd')
     frozenset(data)
-    # frozenset({1, 2, 3})
+    # frozenset({'a', 'b', 'c', 'd'})
 
 .. code-block:: python
 
-    data = frozenset({1, 2, 3})
+    data = {'a', 'b', 'c', 'd'}
     frozenset(data)
-    # frozenset({1, 2, 3})
+    # frozenset({'a', 'b', 'c', 'd'})
+
+.. code-block:: python
+
+    data = frozenset({'a', 'b', 'c', 'd'})
+    frozenset(data)
+    # frozenset({'a', 'b', 'c', 'd'})
 
 .. code-block:: python
 

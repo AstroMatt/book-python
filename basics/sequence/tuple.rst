@@ -48,27 +48,33 @@ Type Casting
 
 .. code-block:: python
 
-    data = [1, 2, 3]
+    data = 'abcd'
     tuple(data)
-    # (1, 2, 3)
+    # ('a', 'b', 'c', 'd')
 
 .. code-block:: python
 
-    data = (1, 2, 3)
+    data = ['a', 'b', 'c', 'd']
     tuple(data)
-    # (1, 2, 3)
+    # ('a', 'b', 'c', 'd')
+
+.. code-block:: python
+
+    data = ('a', 'b', 'c', 'd')
+    tuple(data)
+    # ('a', 'b', 'c', 'd')
 
 .. code-block:: python
 
     data = {1, 2, 3}
     tuple(data)
-    # (1, 2, 3)
+    # ('a', 'b', 'c', 'd')
 
 .. code-block:: python
 
-    data = frozenset({1, 2, 3})
+    data = frozenset({'a', 'b', 'c', 'd'})
     tuple(data)
-    # (1, 2, 3)
+    # ('a', 'b', 'c', 'd')
 
 
 Get Item
@@ -90,15 +96,15 @@ Tuple or Int, Float, Str
 =========================
 .. code-block:: python
 
-    data = (1,)
-    type(data)
-    # <class 'tuple'>
-
-    data = (1)
+    data = 1
     type(data)
     # <class 'int'>
 
-    data = (1.)
+    data = 1,
+    type(data)
+    # <class 'tuple'>
+
+    data = 1.
     type(data)
     # <class 'float'>
 

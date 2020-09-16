@@ -62,27 +62,33 @@ Type Casting
 
 .. code-block:: python
 
-    data = [1, 2, 3]
+    data = 'abcd'
     set(data)
-    # {1, 2, 3}
+    # {'a', 'b', 'c', 'd'}
 
 .. code-block:: python
 
-    data = (1, 2, 3)
+    data = ['a', 'b', 'c', 'd']
     set(data)
-    # {1, 2, 3}
+    # {'a', 'b', 'c', 'd'}
 
 .. code-block:: python
 
-    data = {1, 2, 3}
+    data = ('a', 'b', 'c', 'd')
     set(data)
-    # {1, 2, 3}
+    # {'a', 'b', 'c', 'd'}
 
 .. code-block:: python
 
-    data = frozenset({1, 2, 3})
+    data = {'a', 'b', 'c', 'd'}
     set(data)
-    # {1, 2, 3}
+    # {'a', 'b', 'c', 'd'}
+
+.. code-block:: python
+
+    data = frozenset({'a', 'b', 'c', 'd'})
+    set(data)
+    # {'a', 'b', 'c', 'd'}
 
 
 Deduplicate
@@ -92,7 +98,7 @@ Deduplicate
 
 .. code-block:: python
 
-    data = [1,2,3,1,1,2,4]
+    data = [1, 2, 3, 1, 1, 2, 4]
 
     set(data)
     # {1, 2, 3, 4}

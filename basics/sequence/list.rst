@@ -32,14 +32,6 @@ Type Definition
     data = ['a', 'b', 'c']
     data = ['a', 1, 2.2, True, None]
 
-.. code-block:: python
-
-    list('hello')
-    # ['h', 'e', 'l', 'l', 'o']
-
-    list('ABCD')
-    # ['A', 'B', 'C', 'D']
-
 
 Type Casting
 ============
@@ -48,27 +40,32 @@ Type Casting
 
 .. code-block:: python
 
-    data = [1, 2, 3]
-    list(data)
-    # [1, 2, 3]
+    list('a', 'b', 'c', 'd')
+    # ['a', 'b', 'c', 'd']
 
 .. code-block:: python
 
-    data = (1, 2, 3)
+    data = ['a', 'b', 'c', 'd']
     list(data)
-    # [1, 2, 3]
+    # ['a', 'b', 'c', 'd']
 
 .. code-block:: python
 
-    data = {1, 2, 3}
+    data = ('a', 'b', 'c', 'd')
     list(data)
-    # [1, 2, 3]
+    # ['a', 'b', 'c', 'd']
 
 .. code-block:: python
 
-    data = frozenset({1, 2, 3})
+    data = {'a', 'b', 'c', 'd'}
     list(data)
-    # [1, 2, 3]
+    # ['a', 'b', 'c', 'd']
+
+.. code-block:: python
+
+    data = frozenset({'a', 'b', 'c', 'd'})
+    list(data)
+    # ['a', 'b', 'c', 'd']
 
 
 Get Item
@@ -129,6 +126,7 @@ Append
 ======
 .. highlights::
     * ``list + list``
+    * ``list += list``
     * ``list.extend()``
     * ``list.append()``
 
@@ -137,6 +135,15 @@ Append
 
     data = [1, 2]
     data = data + [3, 4]
+
+    print(data)
+    # [1, 2, 3, 4]
+
+.. code-block:: python
+    :caption: Adding two lists
+
+    data = [1, 2]
+    data += [3, 4]
 
     print(data)
     # [1, 2, 3, 4]
@@ -176,19 +183,19 @@ Insert
 
 .. code-block:: python
 
-    data = [1, 2]
-    data.insert(0, 'a')
+    data = ['a', 'b', 'c', 'd']
+    data.insert(0, 'x')
 
     print(data)
-    # ['a', 1, 2]
+    # ['x', 'a', 'b', 'c', 'd']
 
 .. code-block:: python
 
-    data = [1, 2]
-    data.insert(1, 'a')
+    data = ['a', 'b', 'c', 'd']
+    data.insert(1, 'x')
 
     print(data)
-    # [1, 'a', 2]
+    # ['a', 'x', 'b', 'c', 'd']
 
 
 Sort

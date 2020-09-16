@@ -162,10 +162,8 @@ Nested Sequences
             [7, 8, 9]]
 
     data[::2]
-    # [
-    #   [1, 2, 3],
-    #   [7, 8, 9],
-    # ]
+    # [[1, 2, 3],
+    #  [7, 8, 9]]
 
     data[::2][1]
     # [7, 8, 9]
@@ -337,13 +335,13 @@ Sequence Slice Substr
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Using ``str.find()`` and slicing
+    #. Use ``str.find()`` and slicing
     #. Print ``TEXT`` without text in ``REMOVE``
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Używając ``str.find()`` oraz wycinania
+    #. Użyj ``str.find()`` oraz wycinania
     #. Wypisz ``TEXT`` bez tekstu z ``REMOVE``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
@@ -352,6 +350,13 @@ Sequence Slice Substr
 
         TEXT = 'We choose to go to the Moon!'
         REMOVE = 'to go to '
+
+:Output:
+    .. code-block:: python
+
+    result: str
+    # 'We choose the Moon!'
+
 
 Sequence Slice Sequence
 -----------------------

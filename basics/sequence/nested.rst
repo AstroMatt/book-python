@@ -101,11 +101,9 @@ List of Lists
 .. code-block:: python
     :caption: Get elements from ``list`` of ``list``
 
-    data = [
-        [1, 2, 3],
-        [4, 5, 6],
-        [7, 8, 9],
-    ]
+    data = [[1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]]
 
     data[0][0]
     # 1
@@ -119,11 +117,9 @@ List of Lists
 .. code-block:: python
     :caption: ``list`` of ``list`` length
 
-    data = [
-        [1, 2, 3],
-        [4, 5, 6],
-        [7, 8, 9],
-    ]
+    data = [[1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]]
 
     len(data)
     # 3
@@ -190,9 +186,9 @@ Sequence Nested Create
 :English:
     #. Create nested sequence ``result`` with elements:
 
-        * tuple: 1, 2, 3
-        * list: 1.1, 2.2, 3.3
-        * set: 'Mark Watney', 'Melissa Lewis', 'Jan Twardowski'
+        * tuple: ``1``, ``2``, ``3``
+        * list: ``1.1``, ``2.2``, ``3.3``
+        * set: ``'Mark Watney'``, ``'Melissa Lewis'``, ``'Jan Twardowski'``
 
     #. Print ``result``
     #. Print number of elements in ``result``
@@ -200,9 +196,9 @@ Sequence Nested Create
 :Polish:
     #. Stwórz zagnieżdżoną sekwencję ``result`` z elementami:
 
-        * krotka: 1, 2, 3
-        * lista: 1.1, 2.2, 3.3
-        * zbiór: 'Mark Watney', 'Melissa Lewis', 'Jan Twardowski'
+        * krotka: ``1``, ``2``, ``3``
+        * lista: ``1.1``, ``2.2``, ``3.3``
+        * zbiór: ``'Mark Watney'``, ``'Melissa Lewis'``, ``'Jan Twardowski'``
 
     #. Wypisz ``result``
     #. Wypisz liczbę elementów ``result``
