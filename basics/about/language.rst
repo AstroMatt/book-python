@@ -27,12 +27,14 @@ Rationale
 Which Version?
 ==============
 * You should use newest official Python version
+* Soruce: https://devguide.python.org/#status-of-python-branches
+* Source: https://www.python.org/downloads/
 
 .. csv-table:: Future Versions
     :header: "Version", "PEP", "Status", "Release", "End-of-life", "Release Manager"
 
-    "3.10", "TBA",        "future",       "2021-10",    "2025-10",     "TBA"
-    "3.9",  ":pep:`596`", "development",  "2020-10-05", "2025-10",     "Łukasz Langa"
+    "3.10", "TBA",        "future",       "2021-10-04", "TBA",     "Pablo Galindo Salgado"
+    "3.9",  ":pep:`596`", "development",  "2020-10-05", "TBA",     "Łukasz Langa"
 
 .. csv-table:: Currently Supported Versions
     :header: "Version", "PEP", "Status", "Release", "End-of-life", "Release Manager"
@@ -183,14 +185,12 @@ About Version
     .. code-block:: python
 
         import sys
-
-        print(sys.version)
+        print(sys.version[:5])
 
 :Output:
     .. code-block:: text
 
-        3.8.2 (default, Mar 11 2020, 00:29:50)
-        [Clang 11.0.0 (clang-1100.0.33.17)]
+        3.8.5
 
 :The whys and wherefores:
     * Czy Python działa
