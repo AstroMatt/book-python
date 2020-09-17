@@ -1,5 +1,5 @@
 def wrapper(*args, **kwargs):
-    pass
+    return None
 
 
 def check(func):

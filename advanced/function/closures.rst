@@ -11,7 +11,7 @@ Nested Function
 .. code-block:: python
 
     def run():
-        lastname = 'Twardowski'
+        lastname = 'Watney'
 
         def hello():
             print(lastname)
@@ -24,9 +24,9 @@ Nested Function
     run()
     # <function __main__.run.<locals>.hello()>
 
-    hello = run()
-    hello()
-    # Twardowski
+    result = run()
+    result()
+    # Watney
 
 
 What is closure?
@@ -43,23 +43,23 @@ What is closure?
 
 .. code-block:: python
 
-    firstname = 'Jan'
-    lastname = 'Twardowski'
+    firstname = 'Mark'
+    lastname = 'Watney'
 
     def hello():
         print(firstname)
         print(lastname)
 
     hello()
-    # Jan
-    # Twardowski
+    # Mark
+    # Watney
 
 .. code-block:: python
 
-    firstname = 'Jan'
+    firstname = 'Mark'
 
     def run():
-        lastname = 'Twardowski'
+        lastname = 'Watney'
 
         def hello():
             print(firstname)
@@ -68,17 +68,17 @@ What is closure?
         return hello
 
 
-    hello = run()
-    hello()
-    # Jan
-    # Twardowski
+    result = run()
+    result()
+    # Mark
+    # Watney
 
 .. code-block:: python
 
-    firstname = 'Jan'
+    firstname = 'Mark'
 
     def run():
-        lastname = 'Twardowski'
+        lastname = 'Watney'
 
         def hello():
             print(firstname)
@@ -87,11 +87,11 @@ What is closure?
         return hello
 
 
-    hello = run()
+    result = run()
     del run
-    hello()
-    # Jan
-    # Twardowski
+    result()
+    # Mark
+    # Watney
 
 .. code-block:: python
 
@@ -104,27 +104,52 @@ What is closure?
 Assignments
 ===========
 
-Function Closure Check
-----------------------
+Function Closure Define
+-----------------------
 * Complexity level: easy
 * Lines of code to write: 4 lines
-* Estimated time of completion: 5 min
-* Solution: :download:`solution/function_closure_check.py`
+* Estimated time of completion: 3 min
+* Solution: :download:`solution/function_closure_define.py`
 
 :English:
     #. Define function ``check`` which takes ``func: Callable`` as an argument
     #. Define closure function ``wrapper`` inside ``check``
-    #. ``wrapper`` function takes ``*args`` and ``**kwargs`` as arguments
+    #. Function ``wrapper`` takes ``*args`` and ``**kwargs`` as arguments
+    #. Function ``wrapper`` returns ``None``
     #. Function ``check`` must return ``wrapper: Callable``
-    #. Call ``check`` and get pointer to ``wrapper``
-    #. Delete ``check`` using ``del`` keyword
-    #. Call pointer
 
 :Polish:
     #. Zdefiniuj funkcję ``check``, która przyjmuje ``func: Callable`` jako argument
     #. Zdefiniuj funkcję closure ``wrapper`` wewnątrz ``check``
     #. Funkcja ``wrapper`` przyjmuje ``*args`` i ``**kwargs`` jako argumenty
+    #. Funckja ``wrapper`` zwraca ``None``
     #. Funkcja ``check`` ma zwracać ``wrapper: Callable``
-    #. Wywołaj ``check`` i przechwyć wskaźnik do ``wrapper``
+
+Function Closure Call
+---------------------
+* Complexity level: easy
+* Lines of code to write: 9 lines
+* Estimated time of completion: 5 min
+* Solution: :download:`solution/function_closure_call.py`
+
+:English:
+    #. Define function ``add(a: int, b: int) -> int``, which returns sum of ``a`` and ``b``
+    #. Define function ``check`` which takes ``func: Callable`` as an argument
+    #. Define closure function ``wrapper`` inside ``check``
+    #. Function ``wrapper`` takes ``*args`` and ``**kwargs`` as arguments
+    #. Function ``wrapper`` prints ``hello`` on the screen
+    #. Function ``check`` must return ``wrapper: Callable``
+    #. Call ``check`` with ``add`` as and argument and capture pointer to ``wrapper``
+    #. Delete ``check`` using ``del`` keyword
+    #. Call pointer
+
+:Polish:
+    #. Zdefiniuj funkcję ``add(a: int, b: int) -> int``, która zwraca sumę ``a`` i ``b``
+    #. Zdefiniuj funkcję ``check``, która przyjmuje ``func: Callable`` jako argument
+    #. Zdefiniuj funkcję closure ``wrapper`` wewnątrz ``check``
+    #. Funkcja ``wrapper`` przyjmuje ``*args`` i ``**kwargs`` jako argumenty
+    #. Funckja ``wrapper`` wypisuje ``hello`` na ekranie
+    #. Funkcja ``check`` ma zwracać ``wrapper: Callable``
+    #. Wywołaj ``check`` z argumentem ``add`` i przechwyć wskaźnik do ``wrapper``
     #. Skasuj ``check`` za pomocą słowa kluczowego ``del``
     #. Wywołaj wskaźnik

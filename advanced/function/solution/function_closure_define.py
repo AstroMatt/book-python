@@ -1,9 +1,4 @@
 def check(func):
     def wrapper(*args, **kwargs):
-        pass
+        return None
     return wrapper
-
-
-run = check(...)
-del check
-run()
