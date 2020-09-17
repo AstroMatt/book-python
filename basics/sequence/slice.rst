@@ -368,8 +368,8 @@ Sequence Slice Sequence
 :English:
     #. Create tuple ``a`` with digits: 0, 1, 2, 3
     #. Create list ``b`` with digits: 2, 3, 4, 5
-    #. Create set ``c`` with every second element from ``a`` and ``b``
-    #. Print ``c``
+    #. Create set ``result`` with every second element from ``a`` and ``b``
+    #. Print ``result``
     #. Compare result with "Output" section (see below)
 
 :Polish:

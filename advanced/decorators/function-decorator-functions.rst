@@ -339,7 +339,7 @@ Decorator Function Allowed
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Create decorattor ``if_allowed``
+    #. Create decorator ``if_allowed``
     #. Decorator calls function, only when ``_allowed`` is ``True``
     #. Else raise an exception ``PermissionError``
     #. Run program and check what happend

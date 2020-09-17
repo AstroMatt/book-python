@@ -141,8 +141,8 @@ Boolean Algebra
 Built-in Functions
 ==================
 * ``type()`` - Checks type of an object
-* ``isinstance(a, b)`` - If ``a`` is instance of ``b``
-* ``isinstance(a, (b,c))`` - If ``a`` is instance of ``b`` or ``c``
+* ``isinstance(a, x)`` - If ``a`` is instance of ``x``
+* ``isinstance(a, (x,y))`` - If ``a`` is instance of ``x`` or ``y``
 
 .. code-block:: python
 
