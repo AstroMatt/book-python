@@ -24,24 +24,18 @@ DATA = [
 ]
 
 header, *data = DATA
+
+
+# Solution 1
 result = []
 
 for values in data:
     pair = zip(header, values)
     result.append(dict(pair))
 
-    ## Alternative solution
-    # result.append({key: values[i] for i, key in enumerate(header)})
-
-    ## Alternative solution
-    # row = {}
-    #
-    # for i, _ in enumerate(header):
-    #     key = header[i]
-    #     value = values[i]
-    #     row[key] = value
-    #
-    # result.append(row)
-
-
 print(result)
+
+
+# Solution 2
+result = [dict(zip(header, values))
+          for values in data]
