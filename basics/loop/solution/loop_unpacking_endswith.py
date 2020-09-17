@@ -1,5 +1,3 @@
-ENDINGS = ('ca', 'osa')
-
 DATA = [
     ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
     (5.8, 2.7, 5.1, 1.9, {'virginica'}),
@@ -14,33 +12,44 @@ DATA = [
 ]
 
 header, *data = DATA
+suffixes = ('osa', 'ca')
 
-for *features, label in data:
-    species = label.pop()
+# Solution 1
+for *X,y in data:
+    species = y.pop()
 
-    if species.endswith(ENDINGS):
+    if species.endswith(suffixes):
         print(species)
 
 
-## Alternative Solution
-# for row in data:
-#     species = row[4].pop()
-#
-#     if species.endswith('ca') or species.endswith('sa'):
-#         print(species)
+# Solution 2
+for row in data:
+    species = row[4].pop()
+
+    if species.endswith('ca') or species.endswith('sa'):
+        print(species)
 
 
-## Alternative Solution
-# for *_, species in data:
-#     species = species.pop()
-#
-#     if species.endswith('ca') or species.endswith('sa'):
-#         print(species)
+# Solution 3
+for *_, species in data:
+    species = species.pop()
+
+    if species.endswith('ca') or species.endswith('sa'):
+        print(species)
 
 
-## Alternative solution
-# for *features, label in data:
-#     species = label.pop()
-#
-#     if any(species.endswith(x) for x in ENDINGS):
-#         print(species)
+# Solution 4
+for *features, label in data:
+    species = label.pop()
+
+    if any(species.endswith(x) for x in suffixes):
+        print(species)
+
+
+# Solution 5
+result = [species
+          for *X,y in data
+          if (species := y.pop())
+          and species.endswith(suffixes)]
+print(result)
+

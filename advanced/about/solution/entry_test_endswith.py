@@ -12,9 +12,21 @@ DATA = [
 ]
 
 header, *data = DATA
+suffixes = ('osa', 'ca')
 
-for *_, species in data:
-    species = species.pop()
 
-    if species.endswith('sa') or species.endswith('ca'):
+# Solution 1
+result = [species
+          for *X,y in data
+          if (species := y.pop())
+          and species.endswith(suffixes)]
+
+print(result)
+
+
+# Solution 2
+for *X,y in data:
+    species = y.pop()
+
+    if species.endswith(suffixes):
         print(species)
