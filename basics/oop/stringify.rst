@@ -299,7 +299,7 @@ OOP Stringify Repr
 * Solution: :download:`solution/oop_stringify_repr.py`
 
 :English:
-    #. Use code from "Input" section (see below)
+    #. Use code from "Input" section (see below)
     #. Print representation of each instance with values (use ``repr()``)
     #. Result of sum round to two decimal places
     #. Compare result with "Output" section (see below)
@@ -345,7 +345,7 @@ OOP Stringify Nested
 * Solution: :download:`solution/oop_stringify_nested.py`
 
 :English:
-    #. Use code from "Input" section (see below)
+    #. Use code from "Input" section (see below)
     #. Overload ``str`` and ``repr`` to achieve desired printing output
     #. Compare result with "Output" section (see below)
 

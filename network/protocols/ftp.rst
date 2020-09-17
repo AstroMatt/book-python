@@ -48,7 +48,7 @@ FTP Download
     * zamiast ``nazwisko`` wpisz swoje nazwisko
 
 #. Do pliku wklej treść tekstu :pep:`20` (wynik polecenia ``import this``)
-#. Połącz się z serwerem podanym przez prowadzącego
+#. Połącz się z serwerem podanym przez prowadzącego
 #. Pobierz plik ``README.txt`` z głównego folderu
 #. Do katalogu ``files`` uploaduj plik ``imie-nazwisko.txt``
 #. Skorzystaj z Contex Managera do połączenia
@@ -66,7 +66,7 @@ FTP Upload
     * zamiast ``imie`` wpisz swoje imię
     * zamiast ``nazwisko`` wpisz swoje nazwisko
 
-#. Połącz się z serwerem podanym przez prowadzącego
+#. Połącz się z serwerem podanym przez prowadzącego
 #. Do katalogu ``img`` uploaduj plik pobrany w poprzednim kroku
 #. Skorzystaj z Contex Managera do połączenia
-#. Przesyłanie danych ma odbywać się w trybie binarnym
+#. Przesyłanie danych ma odbywać się w trybie binarnym

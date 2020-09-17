@@ -293,7 +293,7 @@ Regexp Match Git Flow
 :Polish:
     #. Użyj wyrażeń regularnych do walidacji nazwy gałęzi w Git
     #. Sprawdź wszystkie dane nazwy gałęzi (patrz sekcja input)
-    #. Nazwy gałęzi powinny stosować się do konwencji Git Flow:
+    #. Nazwy gałęzi powinny stosować się do konwencji Git Flow:
 
         * ``release/major.minor`` - major i minor nieujemne liczby całkowite
         * ``feature/``, ``bugfix/``, ``hotfix/`` - prefiks nazwy gałęzi

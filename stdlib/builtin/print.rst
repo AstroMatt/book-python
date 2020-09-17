@@ -629,7 +629,7 @@ Powielanie napisów
 
     #. Każda funkcja ma wyświetlić 5 kopii tego ciągu znaków
     #. Każdy ciąg znaków w osobnej linii
-    #. Napisz doctest do wszystkich funkcji
+    #. Napisz doctest do wszystkich funkcji
 
 :The whys and wherefores:
     * wczytywanie ciągu znaków od użytkownika

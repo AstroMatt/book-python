@@ -220,7 +220,7 @@ Loop For Counter
         * klucz - cyfra
         * wartość - liczba wystąpień
 
-    #. Iterując po cyfrach sprawdź czy cyfra znajduje się już w ``result``
+    #. Iterując po cyfrach sprawdź czy cyfra znajduje się już w ``result``
 
         * Jeżeli pierwsze wystąpienie, to dodaj ją do ``result`` z wartością 1
         * Jeżeli istnieje, to zwiększ w wartość o 1

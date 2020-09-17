@@ -255,7 +255,7 @@ Using ``__`` and ``_`` in names
 Single or double quotes?
 ------------------------
 * Python nie rozróżnia czy stosujemy pojedyncze znaki cudzysłowiu czy podwójne.
-* Ważne jest aby wybrać jedną konwencję i się jej konsekwentnie trzymać.
+* Ważne jest aby wybrać jedną konwencję i się jej konsekwentnie trzymać.
 * Interpreter Pythona domyślnie stosuje pojedyncze znaki cudzysłowia.
 * Z tego powodu w tej książce będziemy trzymać się powyższej konwencji.
 * Ma to znaczenie przy ``doctest``, który zawsze korzysta z pojedynczych i rzuca errorem jak są podwójne

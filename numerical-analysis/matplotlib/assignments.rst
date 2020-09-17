@@ -79,7 +79,7 @@ Random points
 #. Wyrysuj te punkty na wykresie (możesz użyć funkcji ``plt.axis('equal')`` żeby osie wykresu były w tej samej skali).
 #. Punkt A i punkty wygenerowane na jego podstawie wyrysuj kolorem czerwonym
 #. punkt B i punkty wygenerowane na jego podstawie wyrysuj kolorem niebieskim
-#. Możesz do tego celu napisać funkcję ``plot_point(point, color)``, która przyjmuje punkt (dwuelementowy tuple, lub listę, z czego pierwszy element to współrzędna x, a druga to y), i kolor i doda ten punkt do aktualnie aktywnego rysunku.
+#. Możesz do tego celu napisać funkcję ``plot_point(point, color)``, która przyjmuje punkt (dwuelementowy tuple, lub listę, z czego pierwszy element to współrzędna x, a druga to y), i kolor i doda ten punkt do aktualnie aktywnego rysunku.
 #. Korzystając z funkcji napisanej w ćwiczeniu powyżej oblicz odległość od każdego z punktów do punktów A i B
 #. Na podstawie tej odległości zaklasyfikuj te punkty
 
