@@ -316,7 +316,7 @@ Pandas Read JSON
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/pandas_read_json.py`
+* Solution: :download:`solution/pandas_read_json_iris.py`
 
 :English:
     #. Use data from "Input" section (see below)
@@ -333,6 +333,30 @@ Pandas Read JSON
 
         DATA = 'https://python.astrotech.io/_static/iris.json'
 
+Pandas Read JSON OpenAPI
+------------------------
+* Complexity level: easy
+* Lines of code to write: 5 lines
+* Estimated time of completion: 5 min
+* Solution: :download:`solution/pandas_read_json_openapi.py`
+
+:English:
+    #. Use data from "Input" section (see below)
+    #. Use ``requests`` library
+    #. Read data from ``DATA`` as ``api: pd.DataFrame``
+    #. Print ``api``
+
+:Polish:
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Użyj biblioteki ``requests``
+    #. Wczytaj dane z ``DATA`` jako ``api: pd.DataFrame``
+    #. Wypisz ``api``
+
+:Input:
+    .. code-block:: python
+
+        DATA = 'https://python.astrotech.io/_static/openapi.json'
+
 Pandas Read HTML
 ----------------
 * Complexity level: easy
@@ -342,12 +366,12 @@ Pandas Read HTML
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Using ``pd.read_html()`` read data from ``DATA``
+    #. Read data from ``DATA`` as ``df: pd.DataFrame``
     #. Print ``df: pd.DataFrame`` with active European Space Agency astronauts
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Za pomocą ``pd.read_html()`` wczytaj dane z ``DATA``
+    #. Wczytaj dane z ``DATA`` jako ``df: pd.DataFrame``
     #. Wypisz ``df: pd.DataFrame`` z aktywnymi astronautami Europejskiej Agencji Kosmicznej
 
 :Input:
