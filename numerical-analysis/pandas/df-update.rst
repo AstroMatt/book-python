@@ -1,8 +1,10 @@
-Update
-======
+****************
+DataFrame Update
+****************
+
 
 Update Column
--------------
+=============
 .. code-block:: python
 
     import pandas as pd
@@ -26,8 +28,9 @@ Update Column
     # 1  11  21  0
     # 2  12  22  0
 
+
 Update Row
-----------
+==========
 .. code-block:: python
 
     import pandas as pd
@@ -70,3 +73,8 @@ Update Row
         1: 'versicolor',
         2: 'virginica'
     }, inplace=True)
+
+
+Assignments
+===========
+.. todo:: Create assignments
