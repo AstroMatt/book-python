@@ -44,6 +44,16 @@ suppress_warnings = [
     'autosectionlabel.*',
 ]
 
+html_static_path = [
+    '_static',
+    '_data/csv',
+    '_data/json',
+    '_data/sas',
+    '_data/sqlite3',
+    '_data/xml',
+    '_data/xslx',
+]
+
 # article - for articles in scientific journals, presentations, short reports, program documentation, invitations, etc
 # proc - a class for proceedings based on the article class.
 # minimal - is as small as it can get. It only sets a page size and a base font. It is mainly used for debugging purposes.
@@ -142,7 +152,6 @@ html_theme_path = ['_themes']
 html_secnumber_suffix = '. '
 html_title = project
 html_favicon = '_static/favicon.png'
-html_static_path = ['_static', '_data']
 html_context = {}
 
 if html_theme == 'sphinx_rtd_theme':
