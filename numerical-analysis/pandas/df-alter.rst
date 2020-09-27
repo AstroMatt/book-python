@@ -180,6 +180,8 @@ Transpose
 
 .. code-block:: python
 
+    import pandas as pd
+
     df = pd.DataFrame({
         'A': [10, 11, 12],
         'B': [20, 21, 22],
@@ -197,6 +199,8 @@ Transpose
     df.transpose()  # will transpose data
 
 .. code-block:: python
+
+    import pandas as pd
 
     df = pd.DataFrame({
         'R': [10, 11, 12],

@@ -121,6 +121,7 @@ Pandas
     pandas/df-at.rst
     pandas/df-loc.rst
     pandas/df-select.rst
+    pandas/df-query.rst
     pandas/df-update.rst
     pandas/df-alter.rst
     pandas/df-na.rst

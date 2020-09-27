@@ -21,7 +21,26 @@ extensions = [
 ]
 
 suppress_warnings = [
+    # 'app.add_node',
+    # 'app.add_directive',
+    # 'app.add_role',
+    # 'app.add_generic_role',
+    # 'app.add_source_parser',
+    # 'download.not_readable',
+    # 'image.not_readable',
+    # 'ref.term',
+    # 'ref.ref',
+    # 'ref.numref',
+    # 'ref.keyword',
+    # 'ref.option',
+    # 'ref.citation',
+    # 'ref.footnote',
+    # 'ref.doc',
+    # 'ref.python',
+    # 'misc.highlighting_failure',
+    # 'toc.circular',
     'toc.secnum',
+    # 'epub.unknown_project_files',
     'autosectionlabel.*',
 ]
 

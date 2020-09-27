@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 
 
-DATA = 'https://python.astrotech.io/_static/openapi.json'
+DATA = 'https://python.astrotech.io/_static/json/openapi.json'
 
 resp = requests.get(DATA)
 data = resp.json()

@@ -43,7 +43,7 @@ Examples
 
     import pandas as pd
 
-    DATA = 'https://python.astrotech.io/_static/iris-clean.csv'
+    DATA = 'https://python.astrotech.io/_static/csv/iris-clean.csv'
     header = pd.read_csv(DATA, nrows=0).columns
 
 .. code-block:: python
@@ -51,7 +51,7 @@ Examples
     import pandas as pd
 
 
-    DATA = 'https://python.astrotech.io/_static/iris-clean.csv'
+    DATA = 'https://python.astrotech.io/_static/csv/iris-clean.csv'
     df = pd.read_csv(DATA)
 
     df.head(3)
@@ -65,7 +65,7 @@ Examples
     import pandas as pd
 
 
-    DATA = 'https://python.astrotech.io/_static/iris-dirty.csv'
+    DATA = 'https://python.astrotech.io/_static/csv/iris-dirty.csv'
     COLUMNS =  ['sepal_length', 'sepal_width',
                 'petal_length', 'petal_width', 'species']
 
@@ -165,7 +165,7 @@ StringIO
     from io import StringIO
 
 
-    DATA = 'https://python.astrotech.io/_static/astro-flights.csv'
+    DATA = 'https://python.astrotech.io/_static/csv/astro-flights.csv'
     resp = requests.get(DATA)
     data = StringIO(resp.text)
 
@@ -193,7 +193,7 @@ Read SQL
     import requests
 
     DATABASE = r'/tmp/astro-timeline.sqlite3'
-    DATA = r'https://python.astrotech.io/_static/astro-timeline.sqlite3'
+    DATA = r'https://python.astrotech.io/_static/sqlite3/astro-timeline.sqlite3'
     SQL = r'SELECT * FROM logs'
 
     with open(DATABASE, mode='wb') as db:
@@ -248,18 +248,20 @@ Pandas Read CSV Dates
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Read data from ``DATA`` to ``df: pd.DataFrame``
+    #. Read data from ``DATA`` to ``result: pd.DataFrame``
     #. Parse dates in "Mission Date" column
+    #. Print ``result``
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Wczytaj dane z ``DATA`` do ``df: pd.DataFrame``
+    #. Wczytaj dane z ``DATA`` do ``result: pd.DataFrame``
     #. Sparsuj daty w kolumnie "Mission Date"
+    #. Wypisz ``result``
 
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/martian-en.csv'
+        DATA = 'https://python.astrotech.io/_static/csv/martian-en.csv'
 
 :Hint:
     * ``parse_dates`` argument
@@ -273,25 +275,25 @@ Pandas Read CSV Replace
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Read data from ``DATA`` to ``breast_cancer: pd.DataFrame``
+    #. Read data from ``DATA`` to ``result: pd.DataFrame``
     #. Use provided column names in ``COLUMNS``
     #. Read labels from the first row
     #. Replace data in ``label`` column with values extracted above
     #. Print ``DataFrame``
-    #. Print first 5 rows from ``breast_cancer``
+    #. Print first 5 rows from ``result``
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Wczytaj dane z ``DATA`` do ``breast_cancer: pd.DataFrame``
+    #. Wczytaj dane z ``DATA`` do ``result: pd.DataFrame``
     #. Użyj podanych w ``COLUMNS`` nazw kolumn
     #. Wczytaj nazwy labeli z pierwszego wiersza
     #. Podmień dane w kolumnie ``label`` na wartości wyciągnięte powyżej
-    #. Wypisz pierwsze 5 wierszy z ``breast_cancer``
+    #. Wypisz pierwsze 5 wierszy z ``result``
 
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/breast-cancer.csv'
+        DATA = 'https://python.astrotech.io/_static/csv/breast-cancer.csv'
 
         COLUMNS = ['mean radius', 'mean texture', 'mean perimeter', 'mean area',
                    'mean smoothness', 'mean compactness', 'mean concavity',
@@ -320,18 +322,18 @@ Pandas Read JSON
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Using ``pd.read_json()`` read data from ``DATA``
-    #. Print ``df: pd.DataFrame``
+    #. Read data from ``DATA`` as ``result: pd.DataFrame``
+    #. Print ``result: pd.DataFrame``
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Za pomocą ``pd.read_json()`` wczytaj dane z ``DATA``
-    #. Wypisz ``df: pd.DataFrame``
+    #. Wczytaj dane z ``DATA`` jako ``result: pd.DataFrame``
+    #. Wypisz ``result``
 
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/iris.json'
+        DATA = 'https://python.astrotech.io/_static/json/iris.json'
 
 Pandas Read JSON OpenAPI
 ------------------------
@@ -342,20 +344,20 @@ Pandas Read JSON OpenAPI
 
 :English:
     #. Use data from "Input" section (see below)
+    #. Read data from ``DATA`` as ``result: pd.DataFrame``
     #. Use ``requests`` library
-    #. Read data from ``DATA`` as ``api: pd.DataFrame``
-    #. Print ``api``
+    #. Print ``result``
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Wczytaj dane z ``DATA`` jako ``result: pd.DataFrame``
     #. Użyj biblioteki ``requests``
-    #. Wczytaj dane z ``DATA`` jako ``api: pd.DataFrame``
-    #. Wypisz ``api``
+    #. Wypisz ``result``
 
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/openapi.json'
+        DATA = 'https://python.astrotech.io/_static/json/openapi.json'
 
 Pandas Read HTML
 ----------------
@@ -366,13 +368,13 @@ Pandas Read HTML
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Read data from ``DATA`` as ``df: pd.DataFrame``
-    #. Print ``df: pd.DataFrame`` with active European Space Agency astronauts
+    #. Read data from ``DATA`` as ``result: pd.DataFrame``
+    #. Print ``result`` with active European Space Agency astronauts
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Wczytaj dane z ``DATA`` jako ``df: pd.DataFrame``
-    #. Wypisz ``df: pd.DataFrame`` z aktywnymi astronautami Europejskiej Agencji Kosmicznej
+    #. Wczytaj dane z ``DATA`` jako ``result: pd.DataFrame``
+    #. Wypisz ``result`` z aktywnymi astronautami Europejskiej Agencji Kosmicznej
 
 :Input:
     .. code-block:: python
@@ -383,33 +385,58 @@ Pandas Read HTML
     * Might require ``lxml`` and ``html5lib``: ``pip install --upgrade lxml html5lib``
     * 3rd table
 
-Pandas Read XML XSLT
---------------------
+Pandas Read XSLT Books
+----------------------
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/pandas_read_xml_xslt.py`
+* Solution: :download:`solution/pandas_read_xslt_books.py`
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Read data from ``DATA`` as ``plants: pd.DataFrame``
-    #. Using XSLT transformation convert it to pandas readable format
-    #. Read data to ``df: pd.DataFrame``
+    #. Read data from ``DATA`` as ``result: pd.DataFrame``
+    #. Use XSLT transformation
+    #. Print ``result``
+
+:Polish:
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Wczytaj dane z ``DATA`` jako ``result: pd.DataFrame``
+    #. Użyj transformaty XSLT
+    #. Print ``result``
+
+:Input:
+    .. code-block:: python
+
+        DATA = 'https://python.astrotech.io/_static/csv/plants.csv'
+
+:Hint:
+    * Require ``lxml``: ``pip install lxml``
+
+Pandas Read XSLT Plants
+-----------------------
+* Complexity level: medium
+* Lines of code to write: 5 lines
+* Estimated time of completion: 13 min
+* Solution: :download:`solution/pandas_read_xslt_plants.py`
+
+:English:
+    #. Use data from "Input" section (see below)
+    #. Read data from ``DATA`` as ``result: pd.DataFrame``
+    #. Use XSLT transformation
     #. Make sure that columns and indexes are named properly
     #. Calculate average cost of flower
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Wczytaj dane z ``DATA`` jako ``plants: pd.DataFrame``
-    #. Używając transformaty XSLT sprowadź je do formatu zrozumiałego dla Pandas
-    #. Wczytaj dane do ``df: pd.DataFrame``
+    #. Wczytaj dane z ``DATA`` jako ``result: pd.DataFrame``
+    #. Użyj transformaty XSLT
     #. Upewnij się, że nazwy kolumn i indeks są dobrze ustawione
     #. Wylicz średni koszt kwiatów
 
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/plants.csv'
+        DATA = 'https://python.astrotech.io/_static/csv/plants.csv'
 
 :Hint:
     * Require ``lxml``: ``pip install lxml``
