@@ -305,7 +305,7 @@ Examples
     import pandas as pd
 
 
-    DATA = 'https://python.astrotech.io/_static/csv/phones-en.csv'
+    DATA = 'https://python.astrotech.io/_static/phones-en.csv'
 
     df = pd.read_csv(DATA, parse_dates=['date'])
     df.drop(columns='index', inplace=True)

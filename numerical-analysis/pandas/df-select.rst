@@ -236,4 +236,4 @@ DataFrame Select
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/csv/iris-clean.csv'
+        DATA = 'https://python.astrotech.io/_static/iris-clean.csv'

@@ -227,4 +227,4 @@ DataFrame Sample
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/csv/astro-flights.csv'
+        DATA = 'https://python.astrotech.io/_static/astro-flights.csv'

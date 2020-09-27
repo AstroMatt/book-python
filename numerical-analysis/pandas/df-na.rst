@@ -303,4 +303,4 @@ DataFrame NaN
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/csv/iris-dirty.csv'
+        DATA = 'https://python.astrotech.io/_static/iris-dirty.csv'
