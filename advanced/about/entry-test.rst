@@ -8,6 +8,7 @@ Entry Test List of Dict
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 8 min
+* Filename: entry_test_listdict.py
 
 :English:
     #. Use data from "Input" section (see below)
@@ -76,6 +77,7 @@ Entry Test Endswith
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
+* Filename: entry_test_endswith.py
 
 :English:
     #. Use data from "Input" section (see below)
@@ -121,6 +123,7 @@ Entry Test File
 * Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
+* Filename: entry_test_file.py
 
 :English:
     #. Use data from "Input" section (see below)
