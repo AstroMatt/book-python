@@ -1,44 +1,39 @@
-FILE = r'../data/etc-hosts.txt'
+DATA = """
+##
+# ``/etc/hosts`` structure:
+#   - IPv4 or IPv6
+#   - Hostnames
+ ##
+
+127.0.0.1       localhost
+127.0.0.1       astromatt
+10.13.37.1      nasa.gov esa.int roscosmos.ru
+255.255.255.255 broadcasthost
+::1             localhost
+"""
+
 result = []
 
+for line in DATA.splitlines():
+    line = line.strip()
 
-with open(FILE) as file:
-    for line in file:
-        line = line.strip()
+    if len(line) == 0:
+        continue
 
-        if not line:
-            continue
+    if line.startswith('#'):
+        continue
 
-        if line.startswith('#'):
-            continue
+    ip, *hosts = line.split()
 
-        ip, *hosts = line.split()
-
-        for record in result:
-            if record['ip'] == ip:
-                record['hostnames'].update(hosts)
-                break
-        else:
-            result.append({
-                'hostnames': set(hosts),
-                'protocol': 'IPv4' if '.' in ip else 'IPv6',
-                'ip': ip,
-            })
+    for row in result:
+        if row['ip'] == ip:
+            row['hosts'].update(hosts)
+            break
+    else:
+        result.append({
+            'ip': ip,
+            'hosts': set(hosts),
+            'protocol': 'ipv4' if '.' in ip else 'ipv6'
+        })
 
 print(result)
-
-## Alternative solution
-# found = False
-#
-# for x in hosts:
-#     if result['ip'] == ip:
-#         found = True
-#         result['hostnames'].update(hosts)
-#
-# if not found:
-#     result.append({
-#         'ip': ip,
-#         'hostnames': set(hostnames),
-#         'protocol': 'IPv4' if '.' in ip else 'IPv6'
-#     })
-#

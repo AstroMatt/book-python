@@ -11,22 +11,9 @@ DATA = [
     (4.6, 3.1, 1.5, 0.2, {'setosa'}),
 ]
 
-header, *data = DATA
-suffixes = ('osa', 'ca')
-
-
-# Solution 1
 result = [species
-          for *X,y in data
-          if (species := y.pop())
-          and species.endswith(suffixes)]
+          for *features, label in DATA[1:]
+          if (species := label.pop())
+          and species.endswith(('ca', 'osa'))]
 
 print(result)
-
-
-# Solution 2
-for *X,y in data:
-    species = y.pop()
-
-    if species.endswith(suffixes):
-        print(species)

@@ -12,8 +12,7 @@ Entry Test List of Dict
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Separate header and data
-    #. Print ``List[dict]``:
+    #. Define ``result: List[dict]``:
 
         * key - name from the header
         * value - measurement or species
@@ -22,8 +21,7 @@ Entry Test List of Dict
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Odseparuj nagłówek od danych
-    #. Wypisz ``List[dict]``:
+    #. Zdefiniuj ``result: List[dict]``:
 
         * klucz: nazwa z nagłówka
         * wartość: wyniki pomiarów lub gatunek
@@ -67,10 +65,6 @@ Entry Test List of Dict
         #  {'Sepal length': 5.7, 'Sepal width': 2.8, 'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
         #  ...]
 
-:The whys and wherefores:
-    * Working with nested data structures
-    * Iterating over dict and lists
-
 
 Entry Test Endswith
 ===================
@@ -81,15 +75,13 @@ Entry Test Endswith
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Separate header from data
-    #. Iterating over data unpack row to ``*features`` and ``label``
-    #. Print species names ending with "ca" or "osa"
+    #. Define ``result: List[str]`` with species names ending with "ca" or "osa"
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Odseparuj nagłówek od danych
-    #. Iterując po danych rozpakuj wiersz do ``*features`` oraz ``label``
-    #. Wypisz nazwy gatunków kończące się na "ca" lub "osa"
+    #. Zdefiniuj ``result: List[str]`` z nazwami gatunków kończącymi się na "ca" lub "osa"
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. code-block:: python
@@ -107,15 +99,11 @@ Entry Test Endswith
             (4.6, 3.1, 1.5, 0.2, {'setosa'}),
         ]
 
-:The whys and wherefores:
-    * Accessing ``set`` items
-    * Iterating over nested structure
-    * Unpacking in ``for`` loop
+:Output:
+    .. code-block:: python
 
-:Hint:
-    * ``str.endswith()``
-    * ``set.pop()``
-    * ``isinstance`` or ``type``
+        result: List[str]
+        # ['virginica', 'setosa', 'virginica', 'setosa', 'virginica', 'setosa']
 
 
 Entry Test File
@@ -127,36 +115,21 @@ Entry Test File
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Using ``file.write()`` save input data from listing below to file ``hosts-advanced.txt``
-    #. Read file and for each line:
-
-        * Skip line if it's empty, is whitespace or starts with comment ``#``
-        * Remove leading and trailing whitespaces
-        * Split line by whitespace
-        * Separate IP address and hosts names
-        * Use one line ``if`` to check whether dot ``.`` is in the IP address
-        * If is present then protocol is IPv4 otherwise IPv6
-        * Append IP address and hosts names to ``result``
-
-    #. Merge hostnames for the same IP
+    #. Skip comments (``#``) and empty lines
+    #. Extract from each line: ip, host and protocol and add to ``result: List[dict]``
+    #. Each line must be a separate dict
+    #. Merge host names with the same IP
+    #. IPv4 protocol address is when dot (``.``) is in ip address
     #. ``result`` must be list of dicts (``List[dict]``)
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Używając ``file.write()`` zapisz dane wejściowe z listingu poniżej do pliku ``hosts-advanced.txt``
-    #. Przeczytaj plik i dla każdej lini:
-
-        * Pomiń linię jeżeli jest pusta, jest białym znakiem lub zaczyna się od komentarza ``#``
-        * Usuń białe znaki na początku i końcu linii
-        * Podziel linię po białych znakach
-        * Odseparuj adres IP i nazwy hostów
-        * Wykorzystaj jednolinikowego ``if`` do sprawdzenia czy jest kropka ``.`` w adresie IP
-        * Jeżeli jest obecna to protokół  jest IPv4, w przeciwnym przypadku IPv6
-        * Dodaj adres IP i nazwy hostów do ``result``
-
+    #. Pomiń komentarze (``#``) i puste linie
+    #. Wyciągnij z każdej linii: ip, host i protokół i dodaj do ``result: List[dict]``
+    #. Każda linia ma być osobnym dictem
+    #. Protokół IPv4 jest gdy kropka (``.``) znajduje się w adresie
     #. Scal nazwy hostów dla tego samego IP
-    #. ``result`` ma być listą dictów (``List[dict]``)
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
@@ -184,11 +157,3 @@ Entry Test File
         #  {'ip': '10.13.37.1', 'protocol': 'ipv4', 'hostnames': {'nasa.gov', 'esa.int', 'roscosmos.ru'}},
         #  {'ip': '255.255.255.255', 'protocol': 'ipv4', 'hostnames': {'broadcasthost'}},
         #  {'ip': '::1', 'protocol': 'ipv6', 'hostnames': {'localhost'}}]
-
-:The whys and wherefores:
-    * czytanie i parsowanie pliku
-    * nieregularne pliki konfiguracyjne (struktura może się zmieniać)
-    * filtrowanie elementów
-    * korzystanie z pętli i instrukcji warunkowych
-    * parsowanie stringów
-    * praca ze ścieżkami w systemie operacyjnym

@@ -24,18 +24,10 @@ DATA = [
 ]
 
 header, *data = DATA
-
-
-# Solution 1
 result = []
 
-for values in data:
-    pair = zip(header, values)
-    result.append(dict(pair))
+for row in data:
+    paris = zip(header, row)
+    result.append(dict(paris))
 
 print(result)
-
-
-# Solution 2
-result = [dict(zip(header, values))
-          for values in data]
