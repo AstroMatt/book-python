@@ -6,7 +6,6 @@ About
     :caption: About
     :name: Advanced About
 
-    about/survey.rst
     about/entry-test.rst
     about/agenda.rst
 

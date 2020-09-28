@@ -10,6 +10,7 @@ About
     /LICENSE.rst
     /PROGRESS.rst
     /install.rst
+    /survey.rst
     /about/references.rst
 
 *************
