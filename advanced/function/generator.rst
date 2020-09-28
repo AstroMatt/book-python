@@ -593,6 +593,7 @@ Function Generator Iris
         >>> from inspect import isfunction, isgeneratorfunction
         >>> assert isfunction(function)
         >>> assert isgeneratorfunction(generator)
+
         >>> result
         ... # doctest: +NORMALIZE_WHITESPACE
         {'function x1': 88,
@@ -671,6 +672,7 @@ Function Generator Passwd
         >>> from inspect import isfunction, isgeneratorfunction
         >>> assert isfunction(function)
         >>> assert isgeneratorfunction(generator)
+
         >>> result
         {'function': 120, 'generator': 112}
 
