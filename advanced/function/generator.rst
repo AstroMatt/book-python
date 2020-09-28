@@ -191,18 +191,16 @@ Which one is better?
 .. code-block:: python
 
     DATA = [
-        (5.1, 3.5, 1.4, 0.2, 'setosa'),
-        (4.9, 3.0, 1.4, 0.2, 'setosa'),
-        (5.4, 3.9, 1.7, 0.4, 'setosa'),
-        (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-        (6.4, 3.2, 4.5, 1.5, 'versicolor'),
-        (5.7, 2.8, 4.5, 1.3, 'versicolor'),
-        (6.3, 3.3, 6.0, 2.5, 'virginica'),
+        ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
         (5.8, 2.7, 5.1, 1.9, 'virginica'),
-        (4.9, 2.5, 4.5, 1.7, 'virginica'),
+        (5.1, 3.5, 1.4, 0.2, 'setosa'),
+        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+        (6.3, 2.9, 5.6, 1.8, 'virginica'),
+        (6.4, 3.2, 4.5, 1.5, 'versicolor'),
+        (4.7, 3.2, 1.3, 0.2, 'setosa'),
     ]
 
-    def get_species(species):
+    def get_values(species):
         result = []
         for row in DATA:
             if row[4] == species:
@@ -210,48 +208,42 @@ Which one is better?
         return result
 
 
-    data = get_species('setosa')
+    data = get_values('setosa')
 
     print(data)
-    # [(5.1, 3.5, 1.4, 0.2, 'setosa'),
-    #  (4.9, 3.0, 1.4, 0.2, 'setosa'),
-    #  (5.4, 3.9, 1.7, 0.4, 'setosa')]
+    # [(5.1, 3.5, 1.4, 0.2, 'setosa'), (4.7, 3.2, 1.3, 0.2, 'setosa')]
 
     for row in data:
         print(row)
     # (5.1, 3.5, 1.4, 0.2, 'setosa')
-    # (4.9, 3.0, 1.4, 0.2, 'setosa')
-    # (5.4, 3.9, 1.7, 0.4, 'setosa')
+    # (4.7, 3.2, 1.3, 0.2, 'setosa')
 
 .. code-block:: python
 
     DATA = [
-        (5.1, 3.5, 1.4, 0.2, 'setosa'),
-        (4.9, 3.0, 1.4, 0.2, 'setosa'),
-        (5.4, 3.9, 1.7, 0.4, 'setosa'),
-        (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-        (6.4, 3.2, 4.5, 1.5, 'versicolor'),
-        (5.7, 2.8, 4.5, 1.3, 'versicolor'),
-        (6.3, 3.3, 6.0, 2.5, 'virginica'),
+        ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
         (5.8, 2.7, 5.1, 1.9, 'virginica'),
-        (4.9, 2.5, 4.5, 1.7, 'virginica'),
+        (5.1, 3.5, 1.4, 0.2, 'setosa'),
+        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+        (6.3, 2.9, 5.6, 1.8, 'virginica'),
+        (6.4, 3.2, 4.5, 1.5, 'versicolor'),
+        (4.7, 3.2, 1.3, 0.2, 'setosa'),
     ]
 
-    def get_species(species):
+    def get_values(species):
         for row in DATA:
             if row[4] == species:
                 yield row
 
-    data = get_species('setosa')
+    data = get_values('setosa')
 
     print(data)
-    # <generator object get_species at 0x11af257c8>
+    # <generator object get_values at 0x103632820>
 
     for row in data:
         print(row)
     # (5.1, 3.5, 1.4, 0.2, 'setosa')
-    # (4.9, 3.0, 1.4, 0.2, 'setosa')
-    # (5.4, 3.9, 1.7, 0.4, 'setosa')
+    # (4.7, 3.2, 1.3, 0.2, 'setosa')
 
 
 Built-in generators
@@ -327,60 +319,36 @@ Built-in generators
 
     data = [1, 2, 3, 4, 5, 6]
 
-    list(filter(lambda x: x % 2 == 0, data))
-    # [2, 4, 6]
-
-.. code-block:: python
-
-    data = [1, 2, 3, 4, 5, 6]
-
     def is_even(x):
         return x % 2 == 0
 
-    filter(is_even, data)
-    # <filter object at 0x11d182990>
-
     list(filter(is_even, data))
     # [2, 4, 6]
 
 .. code-block:: python
+    :caption: Show only even numbers
 
     data = [1, 2, 3, 4, 5, 6]
 
-    def is_even(x):
-        if x % 2 == 0:
-            return True
-        else:
-            return False
-
-    filter(is_even, data)
-    # <filter object at 0x11d182990>
-
-    list(filter(is_even, data))
+    list(filter(lambda x: x % 2 == 0, data))
     # [2, 4, 6]
 
 .. code-block:: python
     :caption: ``filter()`` example
 
     DATA = [
-        {'name': 'Jan Twardowski', 'age': 21},
-        {'name': 'Mark Watney', 'age': 25},
-        {'name': 'Melissa Lewis', 'age': 18},
+        {'age': 21, 'name': 'Jan Twardowski'},
+        {'age': 25, 'name': 'Mark Watney'},
+        {'age': 18, 'name': 'Melissa Lewis'},
     ]
 
     def is_adult(person):
-        if person['age'] >= 21:
-            return True
-        else:
-            return False
-
+        return person['age'] >= 21:
 
     result = filter(is_adult, DATA)
     print(list(result))
-    # [
-    #   {'name': 'Jan Twardowski', 'age': 21},
-    #   {'name': 'Mark Watney', 'age': 25},
-    # ]
+    # [{'age': 21, 'name': 'Jan Twardowski'},
+    #  {'age': 25, 'name': 'Mark Watney'}]
 
 ``enumerate()``
 ---------------
@@ -545,21 +513,20 @@ Memory Size
 * ``sys.getsizeof(object)`` returns the size of an object in bytes
 * ``sys.getsizeof(object)`` calls the object's ``__sizeof__`` method
 * ``sys.getsizeof(object)`` adds an additional garbage collector overhead if the object is managed by the garbage collector
-* More info: https://stackoverflow.com/a/30316760
 
 .. code-block:: python
 
     import sys
 
+    a = (x for x in range(0,10))
+    b = [x for x in range(0,10)]
+    c = (x for x in range(0,1000))
+    d = [x for x in range(0,1000)]
 
-    genexpr = (x for x in range(0,10))
-    listcomp = [x for x in range(0,10)]
-
-    sys.getsizeof(genexpr)
-    # 112
-
-    sys.getsizeof(listcomp)
-    # 184
+    sys.getsizeof(a)     # 112
+    sys.getsizeof(b)     # 184
+    sys.getsizeof(c)     # 112
+    sys.getsizeof(d)     # 9016
 
 
 Assignments
@@ -574,11 +541,7 @@ Function Generator Iris
 
 :English:
     #. Use code from "Input" section (see below)
-    #. Download :download:`data/iris.csv` and save as ``iris.csv``
-    #. Iterate over file lines
-    #. Read header from first line
-    #. Create function which returns all features for given species
-    #. Species will be passed as an ``str`` argument to the function
+    #. Write filter for ``DATA`` which returns ``features`` for given ``species``
     #. Implement solution using function
     #. Implement solution using generator and ``yield`` keyword
     #. Compare results of both using ``sys.getsizeof()``
@@ -587,13 +550,9 @@ Function Generator Iris
 
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
-    #. Pobierz :download:`data/iris.csv` i zapisz jako ``iris.csv``
-    #. Iteruj po liniach pliku
-    #. Wczytaj header z pierwszej linii
-    #. Napisz funkcję która zwraca wszystkie pomiary dla danego gatunku
-    #. Gatunek będzie podawany jako argument typu ``str`` do funkcji
+    #. Napisz filtr dla ``DATA`` zwracający ``features`` dla danego gatunku ``species``
     #. Zaimplementuj rozwiązanie wykorzystując funkcję
-    #. Zaimplementuj rozwiązanie wykorzystując generator i słówko kluczowe ``yield``
+    #. Zaimplementuj rozwiązanie wykorzystując generator i słowo kluczowe ``yield``
     #. Porównaj wyniki obu używając ``sys.getsizeof()``
     #. Co się stanie, gdy ilość danych będzie większa?
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
@@ -601,23 +560,27 @@ Function Generator Iris
 :Input:
     .. code-block:: python
 
-        import sys
+        from sys import getsizeof
 
-        FILE = r'iris.csv'
+        DATA = [
+            ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
+            (5.8, 2.7, 5.1, 1.9, 'virginica'),
+            (5.1, 3.5, 1.4, 0.2, 'setosa'),
+            (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+            (6.3, 2.9, 5.6, 1.8, 'virginica'),
+            (6.4, 3.2, 4.5, 1.5, 'versicolor'),
+            (4.7, 3.2, 1.3, 0.2, 'setosa'),
+        ]
 
-
-        def function(species):
+        def function(species: str):
             raise NotImplementedError
 
-        def generator(species):
+        def generator(species: str):
             raise NotImplementedError
 
 
-        fun = function('setosa')
-        gen = generator('setosa')
-
-        print('Function', sys.getsizeof(fun))
-        print('Generator', sys.getsizeof(gen))
+        print('Function', getsizeof(function('setosa')))
+        print('Generator', getsizeof(generator('setosa')))
 
 :Output:
     .. code-block:: text

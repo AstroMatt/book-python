@@ -5,7 +5,6 @@ Arbitrary Number of Arguments
 
 Positional Arguments
 ====================
-* ``*`` in this context, is not multiplication in mathematical sense
 * ``*`` is used for positional arguments
 * ``args`` is a convention, but you can use any name
 * ``*args`` unpacks from ``tuple``, ``list`` or ``set``
@@ -31,10 +30,23 @@ Positional Arguments
     args = (1, 2)
     echo(*args)
 
+.. code-block:: python
+    :caption: Positional arguments passed from sequence
+
+    def echo(a, b, c=0):
+        print(a)    # 1
+        print(b)    # 2
+        print(c)    # 0
+
+    args = (1, 2)
+    echo(args)
+    # Traceback (most recent call last):
+    #    ...
+    # TypeError: echo() missing 1 required positional argument: 'b'
+
 
 Keyword Arguments
 =================
-* ``**`` in this context, is not power in mathematical sense
 * ``**`` is used for keyword arguments
 * ``kwargs`` is a convention, but you can use any name
 * ``**kwargs`` unpacks from ``dict``
@@ -109,7 +121,7 @@ Objects From Sequence
 
     DATA = [
         (6.0, 3.4, 4.5, 1.6, 'versicolor'),
-        (4.9, 3.1, 1.5, 0.1, "setosa"),
+        (4.9, 3.1, 1.5, 0.1, 'setosa'),
     ]
 
     class Iris:
@@ -320,7 +332,6 @@ Examples
 
 .. code-block:: python
     :caption: Proxy functions. One of the most common use of ``*args``, ``**kwargs``.
-    :emphasize-lines: 2,6,10
 
     def read_csv(filepath_or_buffer, sep=', ', delimiter=None, header='infer',
                  names=None, index_col=None, usecols=None, squeeze=False, prefix=None,
@@ -341,15 +352,17 @@ Examples
         """
 
 
-    def my_csv(file, encoding='utf-8', decimal=b',', lineterminator='\n', *args, **kwargs):
+    def mycsv(file, encoding='utf-8', decimal=b',',
+              lineterminator='\n', *args, **kwargs):
+
         return read_csv(file, encoding=encoding, decimal=decimal,
                         lineterminator=lineterminator, *args, **kwargs)
 
 
-    my_csv('iris1.csv')
-    my_csv('iris2.csv', encoding='iso-8859-2')
-    my_csv('iris3.csv', encoding='cp1250', verbose=True)
-    my_csv('iris4.csv', verbose=True, usecols=['Sepal Length', 'Species'])
+    mycsv('iris1.csv')
+    mycsv('iris2.csv', encoding='iso-8859-2')
+    mycsv('iris3.csv', encoding='cp1250', verbose=True)
+    mycsv('iris4.csv', verbose=True, usecols=['Sepal Length', 'Species'])
 
 .. code-block:: python
     :caption: Decorators. Decorators are functions, which get pointer to the decorated function as it's argument, and has closure which gets original function arguments as positional and keyword arguments.

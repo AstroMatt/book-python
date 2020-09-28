@@ -228,12 +228,12 @@ Function Args/Kwargs Parameters Define
 * Solution: :download:`solution/function_argskwargs_parameters_define.py`
 
 :English:
-    #. Create function ``average()``, which calculates arithmetic mean
+    #. Create function ``mean()``, which calculates arithmetic mean
     #. Function can have arbitrary number of positional arguments
     #. Do not import any libraries and modules
 
 :Polish:
-    #. Napisz funkcję ``average()``, wyliczającą średnią arytmetyczną
+    #. Napisz funkcję ``mean()``, wyliczającą średnią arytmetyczną
     #. Funkcja przyjmuje dowolną ilość pozycyjnych argumentów
     #. Nie importuj żadnych biliotek i modułów
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
@@ -242,17 +242,19 @@ Function Args/Kwargs Parameters Define
 :Output:
     .. code-block:: python
 
-        >>> average(1)
+        >>> mean(1)
         1.0
-        >>> average(1, 3)
+
+        >>> mean(1, 3)
         2.0
-        >>> average()
+
+        >>> mean()
         Traceback (most recent call last):
             ...
         ValueError: Not enough arguments
 
 :Hint:
-    * ``mean = sum(...) / len(...)``
+    * ``sum(...) / len(...)``
 
 Function Args/Kwargs Parameters Args
 ------------------------------------
@@ -262,7 +264,7 @@ Function Args/Kwargs Parameters Args
 * Solution: :download:`solution/function_argskwargs_parameters_args.py`
 
 :English:
-    #. Create function ``is_numeric``
+    #. Create function ``isnumeric``
     #. Function can have arbitrary number of positional arguments
     #. Arguments can be of any type
     #. Return ``True`` if all arguments are ``int`` or ``float`` only
@@ -272,7 +274,7 @@ Function Args/Kwargs Parameters Args
     #. Run the function without any arguments
 
 :Polish:
-    #. Stwórz funkcję ``is_numeric``
+    #. Stwórz funkcję ``isnumeric``
     #. Funkcja może przyjmować dowolną liczbę argumentów pozycyjnych
     #. Podawane argumenty mogą być dowolnego typu
     #. Zwróć ``True`` jeżeli wszystkie argumenty są tylko typów ``int`` lub ``float``
@@ -286,19 +288,27 @@ Function Args/Kwargs Parameters Args
 :Output:
     .. code-block:: python
 
-        >>> is_numeric()
+        >>> isnumeric()
         False
-        >>> is_numeric(1)
+        >>> isnumeric(0)
         True
-        >>> is_numeric(1, 1.5)
+        >>> isnumeric(1)
         True
-        >>> is_numeric(True)
+        >>> isnumeric(-1)
+        True
+        >>> isnumeric(1.1)
+        True
+        >>> isnumeric('one')
         False
-        >>> is_numeric('one', 1)
+        >>> isnumeric([1, 1.1])
         False
-        >>> is_numeric([])
+        >>> isnumeric(1, 1.1)
+        True
+        >>> isnumeric(1, 'one')
         False
-        >>> is_numeric([1, 1.5])
+        >>> isnumeric(1, 'one', 'two')
+        False
+        >>> isnumeric(True)
         False
 
 :The whys and wherefores:
@@ -320,7 +330,7 @@ Function Args/Kwargs Parameters Kwargs
 * Solution: :download:`solution/function_argskwargs_parameters_kwargs.py`
 
 :English:
-    #. Create function ``is_numeric``
+    #. Create function ``isnumeric``
     #. Function can have arbitrary number of positional **and keyword arguments**
     #. Arguments can be of any type
     #. Return ``True`` if all arguments are ``int`` or ``float`` only
@@ -331,7 +341,7 @@ Function Args/Kwargs Parameters Kwargs
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Stwórz funkcję ``is_numeric``
+    #. Stwórz funkcję ``isnumeric``
     #. Funkcja może przyjmować dowolną liczbę argumentów pozycyjnych **i nazwanych**
     #. Podawane argumenty mogą być dowolnego typu
     #. Zwróć ``True`` jeżeli wszystkie argumenty są tylko typów ``int`` lub ``float``
@@ -344,21 +354,33 @@ Function Args/Kwargs Parameters Kwargs
 :Output:
     .. code-block:: python
 
-        >>> is_numeric(1)
+        >>> isnumeric()
+        False
+        >>> isnumeric(0)
         True
-        >>> is_numeric(1.5)
+        >>> isnumeric(1)
         True
-        >>> is_numeric('one', a=1)
-        False
-        >>> is_numeric([1, 1.5])
-        False
-        >>> is_numeric()
-        False
-        >>> is_numeric(True)
-        False
-        >>> is_numeric(a=1)
+        >>> isnumeric(-1)
         True
-        >>> is_numeric(a='one')
+        >>> isnumeric(1.1)
+        True
+        >>> isnumeric('one')
+        False
+        >>> isnumeric([1, 1.1])
+        False
+        >>> isnumeric(1, 1.1)
+        True
+        >>> isnumeric(1, 'one')
+        False
+        >>> isnumeric(1, 'one', 'two')
+        False
+        >>> isnumeric(True)
+        False
+        >>> isnumeric(a=1)
+        True
+        >>> isnumeric(a=1.1)
+        True
+        >>> isnumeric(a='one')
         False
 
 :The whys and wherefores:

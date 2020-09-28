@@ -11,7 +11,7 @@ Serialization XML, XSLT, XPath
     from xml.etree.ElementTree import parse
 
 
-    FILE = r'../serialization/data/xml-commands.xml'
+    FILE = r'../_data/xml/commands.xml'
     # <execute>
     #     <command timeout="2">/bin/ls -la /etc/</command>
     #     <command>/bin/ls -l /home/ /tmp/</command>
@@ -68,10 +68,10 @@ Creating elements
     from lxml.etree import tostring, Element
 
 
-    root = Element("iris")
-    root.append(Element("setosa"))
-    root.append(Element("versicolor"))
-    root.append(Element("virginica"))
+    root = Element('iris')
+    root.append(Element('setosa'))
+    root.append(Element('versicolor'))
+    root.append(Element('virginica'))
 
     print(tostring(root))
     # b'<iris><setosa/><versicolor/><virginica/></iris>'
@@ -84,10 +84,10 @@ Length of a subtree
     from lxml.etree import Element
 
 
-    root = Element("iris")
-    root.append(Element("setosa"))
-    root.append(Element("versicolor"))
-    root.append(Element("virginica"))
+    root = Element('iris')
+    root.append(Element('setosa'))
+    root.append(Element('versicolor'))
+    root.append(Element('virginica'))
 
     print(len(root))
     # 3
@@ -100,10 +100,10 @@ Selecting subtree
     from lxml.etree import Element
 
 
-    root = Element("iris")
-    root.append(Element("setosa"))
-    root.append(Element("versicolor"))
-    root.append(Element("virginica"))
+    root = Element('iris')
+    root.append(Element('setosa'))
+    root.append(Element('versicolor'))
+    root.append(Element('virginica'))
 
     selected = root[2]
     print(selected.tag)
@@ -115,10 +115,10 @@ Selecting subtree
     from lxml.etree import Element
 
 
-    root = Element("iris")
-    root.append(Element("setosa"))
-    root.append(Element("versicolor"))
-    root.append(Element("virginica"))
+    root = Element('iris')
+    root.append(Element('setosa'))
+    root.append(Element('versicolor'))
+    root.append(Element('virginica'))
 
     selected = root[1]
     root.index(selected)
@@ -136,10 +136,10 @@ Element tree as a lists
     from lxml.etree import tostring, Element
 
 
-    root = Element("iris")
-    root.append(Element("setosa"))
-    root.append(Element("versicolor"))
-    root.append(Element("virginica"))
+    root = Element('iris")
+    root.append(Element('setosa"))
+    root.append(Element('versicolor"))
+    root.append(Element('virginica"))
 
     children = list(root)
     print(children)
@@ -370,23 +370,48 @@ Comments
 
 .. code-block:: python
 
-    from lxml.etree import tostring, Element, SubElement, Comment
+    from lxml.etree import tostring, Element, SubElement
 
-    root = Element("iris")
-    SubElement(root, "species").text = "Setosa"
-    SubElement(root, "species").text = "Virginica"
-    SubElement(root, "flower").text = "Versicolor"
+    root = Element('iris')
+    SubElement(root, 'species').text = 'setosa'
+    SubElement(root, 'species').text = 'virginica'
+    SubElement(root, 'flower').text = 'versicolor'
 
     print(tostring(root))
-    # b'<iris><species>Setosa</species><species>Virginica</species><flower>Versicolor</flower></iris>'
+    # b'<iris><species>setosa</species><species>virginica</species><flower>versicolor</flower></iris>'
 
-    root.append(Entity("#234"))
-    print(tostring(root))
-    # b'<iris><species>Setosa</species><species>Virginica</species><flower>Versicolor</flower>&#234;</iris>'
+.. code-block:: python
 
-    root.append(Comment("Hello World"))
+    from lxml.etree import tostring, Element, Entity
+
+    root = Element('iris')
+    root.append(Entity('#234'))
+
     print(tostring(root))
-    # b'<iris><species>Setosa</species><species>Virginica</species><flower>Versicolor</flower>&#234;<!--Hello World--></iris>'
+    # b'<iris>&#234;</iris>'
+
+.. code-block:: python
+
+    from lxml.etree import tostring, Element, Comment
+
+    root = Element('iris')
+    root.append(Comment('Hello World'))
+    print(tostring(root))
+    # b'<iris><!--Hello World--></iris>'
+
+.. code-block:: python
+
+    from lxml.etree import tostring, Element, Entity, Comment
+
+    root = Element('iris')
+    root.append(Element('species'))
+    root.append(Element('species'))
+    root.append(Element('flower'))
+    root.append(Entity('#234'))
+    root.append(Comment('Hello World'))
+
+    print(tostring(root))
+    # b'<iris><species/><species/><flower/>&#234;<!--Hello World--></iris>'
 
 
     for element in root.iter():
@@ -396,9 +421,9 @@ Comments
             print(f'SPECIAL: {element} -> {element.text}')
 
     # TAG: iris -> None
-    # TAG: species -> Setosa
-    # TAG: species -> Virginica
-    # TAG: flower -> Versicolor
+    # TAG: species -> None
+    # TAG: species -> None
+    # TAG: flower -> None
     # SPECIAL: &#234; -> &#234;
     # SPECIAL: <!--Hello World--> -> Hello World
 
@@ -407,9 +432,9 @@ Comments
             print(f'{element.tag} -> {element.text}')
 
     # iris -> None
-    # species -> Setosa
-    # species -> Virginica
-    # flower -> Versicolor
+    # species -> None
+    # species -> None
+    # flower -> None
 
 
     for element in root.iter(tag=Entity):
@@ -507,7 +532,7 @@ Working with HTML
     tostring(html)
     # b'<html><body>Iris<br/></body></html>'
 
-    br.tail = "Setosa"
+    br.tail = 'Setosa'
     tostring(html)
     # b'<html><body>Iris<br/>Setosa</body></html>'
 

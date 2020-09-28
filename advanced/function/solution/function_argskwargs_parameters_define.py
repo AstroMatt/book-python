@@ -1,10 +1,10 @@
-def average(*numbers):
+def mean(*numbers):
     """
-    >>> average(1)
+    >>> mean(1)
     1.0
-    >>> average(1, 3)
+    >>> mean(1, 3)
     2.0
-    >>> average()
+    >>> mean()
     Traceback (most recent call last):
         ...
     ValueError: Not enough arguments

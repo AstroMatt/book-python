@@ -1,18 +1,18 @@
-def is_numeric(*args) -> bool:
+def isnumeric(*args) -> bool:
     """
-    >>> is_numeric()
+    >>> isnumeric()
     False
-    >>> is_numeric(1)
+    >>> isnumeric(1)
     True
-    >>> is_numeric(1, 1.5)
+    >>> isnumeric(1, 1.5)
     True
-    >>> is_numeric(True)
+    >>> isnumeric(True)
     False
-    >>> is_numeric('one', 1)
+    >>> isnumeric('one', 1)
     False
-    >>> is_numeric([])
+    >>> isnumeric([])
     False
-    >>> is_numeric([1, 1.5])
+    >>> isnumeric([1, 1.5])
     False
     """
     if not args:

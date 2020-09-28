@@ -317,11 +317,11 @@ Function Unpack Flat
 :Output:
     .. code-block:: python
 
-        ip: str
-        # 10.13.37.1
+        >>> ip: str
+        10.13.37.1
 
-        hosts: list
-        # ['nasa.gov', 'esa.int', 'roscosmos.ru']
+        >>> hosts: list
+        ['nasa.gov', 'esa.int', 'roscosmos.ru']
 
 :Hint:
     * ``help(str.split)``
@@ -376,14 +376,14 @@ Function Unpack Nested
 :Output:
     .. code-block:: python
 
-        header: tuple
-        # ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species')
+        >>> header: tuple
+        ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species')
 
-        data: list
-        # [(5.8, 2.7, 5.1, 1.9, 'virginica'),
-        #  (5.1, 3.5, 1.4, 0.2, 'setosa'),
-        #  (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-        #  ... ]
+        >>> data: list
+        [(5.8, 2.7, 5.1, 1.9, 'virginica'),
+         (5.1, 3.5, 1.4, 0.2, 'setosa'),
+         (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+         ... ]
 
 :Hint:
     * ``from pprint import pprint``
@@ -426,8 +426,8 @@ Function Unpack Loop
 :Output:
     .. code-block:: python
 
-        result: List[str]
-        # ['virginica', 'setosa', 'virginica', 'setosa', 'virginica', 'setosa']
+        >>> result: List[str]
+        ['virginica', 'setosa', 'virginica', 'setosa', 'virginica', 'setosa']
 
 :Hint:
     * ``str.endswith()``

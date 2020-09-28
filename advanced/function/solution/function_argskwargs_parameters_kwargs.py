@@ -1,20 +1,20 @@
-def is_numeric(*args, **kwargs) -> bool:
+def isnumeric(*args, **kwargs) -> bool:
     """
-    >>> is_numeric(1)
+    >>> isnumeric(1)
     True
-    >>> is_numeric(1.5)
+    >>> isnumeric(1.5)
     True
-    >>> is_numeric('one', a=1)
+    >>> isnumeric('one', a=1)
     False
-    >>> is_numeric([1, 1.5])
+    >>> isnumeric([1, 1.5])
     False
-    >>> is_numeric()
+    >>> isnumeric()
     False
-    >>> is_numeric(True)
+    >>> isnumeric(True)
     False
-    >>> is_numeric(a=1)
+    >>> isnumeric(a=1)
     True
-    >>> is_numeric(a='one')
+    >>> isnumeric(a='one')
     False
     """
     arguments = args + tuple(kwargs.values())

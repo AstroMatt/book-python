@@ -272,20 +272,20 @@ Contextmanager decorator
         def __exit__(self, *arg, **kwargs):
             self.end_time = datetime.now().timestamp()
             duration = self.end_time - self.start_time
-            print(f"Duration of {self.name} is {duration:f} seconds")
+            print(f'Duration of {self.name} is {duration:f} seconds')
 
 
-    with Timeit("function"):
-        list(get_for_species_function(data, "setosa"))
+    with Timeit('function'):
+        list(get_for_species_function(data, 'setosa'))
 
-    with Timeit("comprehension"):
-        list([row for row in data if row[4] == "setosa"])
+    with Timeit('comprehension'):
+        list([row for row in data if row[4] == 'setosa'])
 
-    with Timeit("generator short"):
-        list((row for row in data if row[4] == "setosa"))
+    with Timeit('generator short'):
+        list((row for row in data if row[4] == 'setosa'))
 
-    with Timeit("generator"):
-        list(get_for_species_generator(data, "setosa"))
+    with Timeit('generator'):
+        list(get_for_species_generator(data, 'setosa'))
 
 
 Assignments

@@ -1,35 +1,31 @@
-import sys
+from sys import getsizeof
 
-FILE = r'../data/iris.csv'
+DATA = [
+    ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
+    (5.8, 2.7, 5.1, 1.9, 'virginica'),
+    (5.1, 3.5, 1.4, 0.2, 'setosa'),
+    (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+    (6.3, 2.9, 5.6, 1.8, 'virginica'),
+    (6.4, 3.2, 4.5, 1.5, 'versicolor'),
+    (4.7, 3.2, 1.3, 0.2, 'setosa'),
+]
 
 
-def function(species):
+def function(species: str):
     result = []
-    with open(FILE) as file:
-        header = file.readline()
-
-        for line in file:
-            *features, label = line.strip().split(',')
-            if label == species:
-                result.append(features)
-        return result
+    for *features, label in DATA:
+        if label == species:
+            result.append(features)
+    return result
 
 
-def generator(species):
-    with open(FILE) as file:
-        header = file.readline()
-
-        for line in file:
-            *features, label = line.strip().split(',')
-            if label == species:
-                yield features
+def generator(species: str):
+    for *features, label in DATA:
+        if label == species:
+            yield features
 
 
-fun = function('setosa')
-gen = generator('setosa')
-
-print('Function', sys.getsizeof(fun))
-# Function 520
-
-print('Generator', sys.getsizeof(gen))
+print('Function', getsizeof(function('setosa')))
+print('Generator', getsizeof(generator('setosa')))
+# Function 88
 # Generator 112
