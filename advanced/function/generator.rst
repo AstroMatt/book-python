@@ -594,8 +594,7 @@ Function Generator Iris
         >>> assert isfunction(function)
         >>> assert isgeneratorfunction(generator)
 
-        >>> result
-        ... # doctest: +NORMALIZE_WHITESPACE
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
         {'function x1': 88,
          'function x10': 256,
          'function x100': 1664,
