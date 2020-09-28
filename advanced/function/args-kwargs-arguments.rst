@@ -445,8 +445,7 @@ Function Args/Kwargs Arguments Define
             ...
         ValueError: At least one argument is required
 
-        >>> result
-        ... # doctest: +NORMALIZE_WHITESPACE
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
         [('virginica', 3.875),
          ('setosa', 2.65),
          ('versicolor', 3.475),
