@@ -1,7 +1,21 @@
+"""
+>>> from inspect import isfunction, isgeneratorfunction
+>>> assert isfunction(function)
+>>> assert isgeneratorfunction(generator)
+>>> result
+... # doctest: +NORMALIZE_WHITESPACE
+{'function x1': 88,
+ 'function x10': 256,
+ 'function x100': 1664,
+ 'generator x1': 112,
+ 'generator x10': 112,
+ 'generator x100': 112}
+"""
+
 from sys import getsizeof
 
+
 DATA = [
-    ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
     (5.8, 2.7, 5.1, 1.9, 'virginica'),
     (5.1, 3.5, 1.4, 0.2, 'setosa'),
     (5.7, 2.8, 4.1, 1.3, 'versicolor'),
@@ -11,21 +25,25 @@ DATA = [
 ]
 
 
-def function(species: str):
+def function(data: list, species: str):
     result = []
-    for *features, label in DATA:
+    for *features, label in data:
         if label == species:
             result.append(features)
     return result
 
 
-def generator(species: str):
-    for *features, label in DATA:
+def generator(data: list, species: str):
+    for *features, label in data:
         if label == species:
             yield features
 
 
-print('Function', getsizeof(function('setosa')))
-print('Generator', getsizeof(generator('setosa')))
-# Function 88
-# Generator 112
+result = {
+    'function x1': getsizeof(function(DATA, 'setosa')),
+    'function x10': getsizeof(function(DATA * 10, 'setosa')),
+    'function x100': getsizeof(function(DATA * 100, 'setosa')),
+    'generator x1': getsizeof(generator(DATA, 'setosa')),
+    'generator x10': getsizeof(generator(DATA * 10, 'setosa')),
+    'generator x100': getsizeof(generator(DATA * 100, 'setosa')),
+}

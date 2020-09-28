@@ -396,56 +396,58 @@ Function Args/Kwargs Arguments Define
 * Solution: :download:`solution/function_argskwargs_arguments_define.py`
 
 :English:
-    #. Mind the non-functional requirements (see below)
-    #. Download :download:`data/iris.csv` and save as ``iris.csv``
-    #. Remove ``species`` column
-    #. Separate header from measurements
-    #. For each line extract values by splitting lines by coma ``,``
-    #. Create ``result: List[dict]`` by zipping header and measurements:
-
-        * key: column name from the header
-        * value: measurement at the position
-
-    #. Create function ``mean(*values)``, function
-    #. Iterate over ``result`` and call ``mean()`` by passing arguments positionally
-    #. Print mean for each row
+    #. Use data from "Input" section (see below)
+    #. Create function ``mean(*args)``, which calculates arithmetic mean for ``args``
+    #. Do not import any libraries and modules
+    #. Separate header from data
+    #. Define ``result: List[Tuple[str, float]]``
+    #. Iterate over ``DATA`` separating ``features`` from ``label``
+    #. To ``result`` append ``label`` and arithmetic mean of ``features``
     #. Compare result with "Output" section (see below)
-    #. Non-functional requirements:
-
-        * Use only ``str.split()`` method
-        * Don't use ``pandas``, ``numpy`` or ``csv`` etc.
 
 :Polish:
-    #. Pobierz plik :download:`data/iris.csv` i zapisz jako ``iris.csv``
-    #. Usuń kolumnę ``species``
-    #. Odseparuj nagłówek od pomiarów
-    #. Wyciągnij wartości z każdej linii przez podział jej po przecinku ``,``
-    #. Stwórz ``result: List[dict]`` poprzez scalenie nagłówka i pomiarów z każdego wiersza
-
-        * klucz: nazwa kolumny z nagłówka
-        * wartość: pomiar z odpowiedniej kolumny
-
-    #. Stwórz funkcję ``mean(*values)``
-    #. Iterując po ``result`` wywołuj ``mean()`` podając argumenty pozycyjnie
-    #. Wypisz średnią dla każdego wiersza
+    #. Użyj kodu z sekcji "Input" (patrz poniżej)
+    #. Stwórz funkcję ``mean(*args)``, która liczy średnią arytmetyczną dla ``args``
+    #. Nie importuj żadnych biliotek i modułów
+    #. Odseparuj nagłówek od danych
+    #. Zdefiniuj ``result: List[Tuple[str, float]]``
+    #. Iteruj po ``DATA`` separując ``features`` od ``label``
+    #. Do ``result`` dodawaj ``label`` oraz wynik średniej arytmetycznej ``features``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-    #. Wymagania niefunkcjonalne:
 
-        * Użyj tylko metody ``str.split()``
-        * Nie używaj ``pandas``, ``numpy``, ``csv`` itp.
+:Input:
+    .. code-block:: python
+
+        DATA = [
+            ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
+            (5.8, 2.7, 5.1, 1.9, 'virginica'),
+            (5.1, 0.2, 'setosa'),
+            (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+            (6.3, 5.7, 'virginica'),
+            (6.4, 1.5, 'versicolor'),
+            (4.7,  'setosa'),
+        ]
 
 :Output:
     .. code-block:: python
 
-        header: list
-        # ['sepal_length', 'sepal_width' ,'petal_length', 'petal_width']
-
-        result: List[Dict[str, float]] = [
-            {'sepal_length': 5.4, 'sepal_width': 3.9, 'petal_length': 1.3, 'petal_width': 0.4},
-            {'sepal_length': 5.9, 'sepal_width': 3.0, 'petal_length': 5.1, 'petal_width': 1.8},
-            {'sepal_length': 6.0, 'sepal_width': 3.4, 'petal_length': 4.5, 'petal_width': 1.6},
+        >>> mean(1)
+        1.0
+        >>> mean(1, 3)
+        2.0
+        >>> mean(1, 2, 3)
+        2.0
+        >>> mean()
+        Traceback (most recent call last):
             ...
-        ]
+        ValueError: At least one argument is required
 
-:Hint:
-    * ``map(float, measurements)``
+        >>> result
+        ... # doctest: +NORMALIZE_WHITESPACE
+        [('virginica', 3.875),
+         ('setosa', 2.65),
+         ('versicolor', 3.475),
+         ('virginica', 6.0),
+         ('versicolor', 3.95),
+         ('setosa', 4.7)]
+

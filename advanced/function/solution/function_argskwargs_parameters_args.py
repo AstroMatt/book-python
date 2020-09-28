@@ -1,20 +1,21 @@
+"""
+>>> isnumeric()
+False
+>>> isnumeric(1)
+True
+>>> isnumeric(1, 1.5)
+True
+>>> isnumeric(True)
+False
+>>> isnumeric('one', 1)
+False
+>>> isnumeric([])
+False
+>>> isnumeric([1, 1.5])
+False
+"""
+
 def isnumeric(*args) -> bool:
-    """
-    >>> isnumeric()
-    False
-    >>> isnumeric(1)
-    True
-    >>> isnumeric(1, 1.5)
-    True
-    >>> isnumeric(True)
-    False
-    >>> isnumeric('one', 1)
-    False
-    >>> isnumeric([])
-    False
-    >>> isnumeric([1, 1.5])
-    False
-    """
     if not args:
         return False
 

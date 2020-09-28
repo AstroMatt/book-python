@@ -1,3 +1,19 @@
+"""
+>>> add(1, 2)
+3
+>>> add(-1.1, 1.1)
+0.0
+
+>>> result()
+hello
+
+>>> check()
+Traceback (most recent call last):
+    ...
+NameError: name 'check' is not defined
+"""
+
+
 def add(a, b):
     return a + b
 

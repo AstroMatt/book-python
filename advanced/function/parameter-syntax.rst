@@ -128,27 +128,22 @@ Function Parameter Syntax Kwargs
     .. code-block:: python
 
         >>> set_position(x=1, y=2)
-
         >>> set_position()
         Traceback (most recent call last):
             ...
         TypeError: set_position() missing 2 required keyword-only arguments: 'x' and 'y'
-
         >>> set_position(1)
         Traceback (most recent call last):
             ...
         TypeError: set_position() takes 0 positional arguments but 1 was given
-
         >>> set_position(1, 2)
         Traceback (most recent call last):
             ...
         TypeError: set_position() takes 0 positional arguments but 2 were given
-
         >>> set_position(1, y=1)
         Traceback (most recent call last):
             ...
         TypeError: set_position() takes 0 positional arguments but 1 positional argument (and 1 keyword-only argument) were given
-
         >>> set_position(x=1, 2)
         Traceback (most recent call last):
             ...
@@ -183,17 +178,14 @@ Function Parameter Syntax Args
     .. code-block:: python
 
         >>> take_damage(1)
-
         >>> take_damage(1, 2)
         Traceback (most recent call last):
             ...
         TypeError: take_damage() takes 1 positional argument but 2 were given
-
         >>> take_damage()
         Traceback (most recent call last):
             ...
         TypeError: take_damage() missing 1 required positional argument: 'dmg'
-
         >>> take_damage(dmg=1)
         Traceback (most recent call last):
             ...

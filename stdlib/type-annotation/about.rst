@@ -18,6 +18,7 @@ Rationale
 * ``Any`` is consistent with (i.e. assignable to and from) all types
 * This latter feature is taken from the idea of gradual typing.
 * Gradual typing and the full type system are explained in :pep:`483`
+* https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html
 
 .. warning:: It should also be emphasized that Python will remain a dynamically typed language, and the authors have no desire to ever make type hints mandatory, even by convention.
 

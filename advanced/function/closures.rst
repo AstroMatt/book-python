@@ -125,6 +125,15 @@ Function Closure Define
     #. Funckja ``wrapper`` zwraca ``None``
     #. Funkcja ``check`` ma zwracać ``wrapper: Callable``
 
+:Output:
+    .. code-block:: python
+
+        >>> assert callable(check)
+        >>> assert callable(check(lambda x: x))
+        >>> result = check(lambda x: x).__call__()
+        >>> result is None
+        True
+
 Function Closure Call
 ---------------------
 * Complexity level: easy
@@ -142,6 +151,7 @@ Function Closure Call
     #. Call ``check`` with ``add`` as and argument and capture pointer to ``wrapper``
     #. Delete ``check`` using ``del`` keyword
     #. Call pointer
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Zdefiniuj funkcję ``add(a: int, b: int) -> int``, która zwraca sumę ``a`` i ``b``
@@ -153,3 +163,20 @@ Function Closure Call
     #. Wywołaj ``check`` z argumentem ``add`` i przechwyć wskaźnik do ``wrapper``
     #. Skasuj ``check`` za pomocą słowa kluczowego ``del``
     #. Wywołaj wskaźnik
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: python
+
+        >>> add(1, 2)
+        3
+        >>> add(-1.1, 1.1)
+        0.0
+
+        >>> result()
+        hello
+
+        >>> check()
+        Traceback (most recent call last):
+            ...
+        NameError: name 'check' is not defined

@@ -5,6 +5,7 @@ Datetime Timezones
 
 Standard Library
 ================
+* :pep:`615` - Support for the IANA Time Zone Database in the Standard Library
 * Always keep dates and times only in UTC (**important!**)
 * Datetimes should be converted to local time only when displaying to user
 * Computerphile Time & Time Zones :cite:`VideoComputerphileTimeZones`

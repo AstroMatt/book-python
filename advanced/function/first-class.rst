@@ -220,3 +220,11 @@ Function First Class Define
     #. ``wrapper`` zwraca ``None``
     #. Zdefiniuj funkcję ``check``, która przyjmuje ``func: Callable`` jako argument
     #. Funkcja ``check`` ma zwracać ``wrapper: Callable``
+
+.. code-block:: python
+
+    >>> assert callable(check)
+    >>> assert callable(check(lambda x: x))
+    >>> result = check(lambda x: x).__call__()
+    >>> result is None
+    True

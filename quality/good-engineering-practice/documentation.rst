@@ -9,6 +9,7 @@ reStructuredText vs. Markdown
 
 Format reStructuredText
 =======================
+* https://devguide.python.org/documenting/#rst-primer
 
 Po co?
 ------

@@ -231,27 +231,25 @@ Function Args/Kwargs Parameters Define
     #. Create function ``mean()``, which calculates arithmetic mean
     #. Function can have arbitrary number of positional arguments
     #. Do not import any libraries and modules
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Napisz funkcję ``mean()``, wyliczającą średnią arytmetyczną
     #. Funkcja przyjmuje dowolną ilość pozycyjnych argumentów
     #. Nie importuj żadnych biliotek i modułów
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-    #. Compare result with "Output" section (see below)
 
 :Output:
     .. code-block:: python
 
         >>> mean(1)
         1.0
-
         >>> mean(1, 3)
         2.0
-
         >>> mean()
         Traceback (most recent call last):
             ...
-        ValueError: Not enough arguments
+        ValueError: At least one argument is required
 
 :Hint:
     * ``sum(...) / len(...)``
@@ -270,8 +268,7 @@ Function Args/Kwargs Parameters Args
     #. Return ``True`` if all arguments are ``int`` or ``float`` only
     #. Return ``False`` if any argument is different type
     #. Do not use ``all()`` and ``any()``
-    #. Compare using ``type()`` and ``isinstance()`` passing ``True`` as an argument
-    #. Run the function without any arguments
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Stwórz funkcję ``isnumeric``
@@ -280,10 +277,7 @@ Function Args/Kwargs Parameters Args
     #. Zwróć ``True`` jeżeli wszystkie argumenty są tylko typów ``int`` lub ``float``
     #. Zwróć ``False`` jeżeli którykolwiek jest innego typu
     #. Nie używaj ``all()`` oraz ``any()``
-    #. Porównaj użycie ``type()`` i ``isinstance()`` podając argument do funkcji ``True``
-    #. Uruchom funkcję bez podawania argumentów
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-    #. Compare result with "Output" section (see below)
 
 :Output:
     .. code-block:: python

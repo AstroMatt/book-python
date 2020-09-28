@@ -1,34 +1,44 @@
-def mean(*values):
-    """
-    >>> mean(7.3, 2.9, 6.3, 1.8)
-    4.575
-    >>> row = [5.9, 3.0, 5.1, 1.8]
-    >>> mean(*row)
-    3.95
-    >>> row = {'sepal_length': 5.4, 'sepal_width': 3.9, 'petal_length': 1.3, 'petal_width': 0.4},
-    >>> mean(*row.values())
-    3.875
-    """
-    return sum(values) / len(values)
+"""
+>>> mean(1)
+1.0
+>>> mean(1, 3)
+2.0
+>>> mean(1, 2, 3)
+2.0
+>>> mean()
+Traceback (most recent call last):
+    ...
+ValueError: At least one argument is required
+
+>>> result
+... # doctest: +NORMALIZE_WHITESPACE
+[('virginica', 3.875),
+ ('setosa', 2.65),
+ ('versicolor', 3.475),
+ ('virginica', 6.0),
+ ('versicolor', 3.95),
+ ('setosa', 4.7)]
+"""
 
 
-FILE = r'../data/iris.csv'
-result = []
+def mean(*args):
+    if not args:
+        raise ValueError('At least one argument is required')
 
-with open(FILE) as file:
-    *header, _ = file.readline().strip().split(',')
-
-    for line in file:
-        *measurements, _ = line.strip().split(',')
-        measurements = map(float, measurements)
-        pairs = zip(header, measurements)
-        result.append(dict(pairs))
+    return sum(args) / len(args)
 
 
-for row in result:
-    avg = mean(*row.values())
-    print(avg)
+DATA = [
+    ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
+    (5.8, 2.7, 5.1, 1.9, 'virginica'),
+    (5.1, 0.2, 'setosa'),
+    (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+    (6.3, 5.7, 'virginica'),
+    (6.4, 1.5, 'versicolor'),
+    (4.7,  'setosa'),
+]
 
+header, *data = DATA
 
-## Alternative
-# list(map(lambda row: mean(*row.values()), result))
+result = [(label, mean(*features))
+          for *features, label in data]

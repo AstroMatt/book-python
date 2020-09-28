@@ -33,20 +33,21 @@ Which Version?
 .. csv-table:: Future Versions
     :header: "Version", "PEP", "Status", "Release", "End-of-life", "Release Manager"
 
-    "3.10", "TBA",        "future",       "2021-10-04", "TBA",     "Pablo Galindo Salgado"
-    "3.9",  ":pep:`596`", "development",  "2020-10-05", "TBA",     "Łukasz Langa"
+    "3.11", "TBA",        "future",       "2022-10-04", "TBA",     "Pablo Galindo Salgado"
+    "3.10", "TBA",        "development",  "2021-10-04", "TBA",     "Pablo Galindo Salgado"
 
 .. csv-table:: Currently Supported Versions
     :header: "Version", "PEP", "Status", "Release", "End-of-life", "Release Manager"
 
+    "3.9",  ":pep:`596`", "features",     "2020-10-05", "TBA",     "Łukasz Langa"
     "3.8",  ":pep:`569`", "features",     "2019-10-20", "2024-10",     "Łukasz Langa"
     "3.7",  ":pep:`537`", "bugfix",       "2018-06-27", "2023-06-27",  "Ned Deily"
     "3.6",  ":pep:`494`", "security",     "2016-12-23", "2021-12-23",  "Ned Deily"
-    "3.5",  ":pep:`478`", "security",     "2015-09-13", "2020-09-13",  "Larry Hastings"
 
 .. csv-table:: Unsupported Versions
     :header: "Version", "PEP", "Status", "Release", "End-of-life", "Release Manager"
 
+    "3.5",  ":pep:`478`", "end of life",  "2015-09-13", "2020-09-13",  "Larry Hastings"
     "3.4",  ":pep:`429`", "end of life",  "2014-03-16", "2019-03-16",  "Larry Hastings"
     "3.3",  ":pep:`398`", "end of life",  "2012-09-29", "2017-09-29",  "Georg Brandl"
     "3.2",  ":pep:`392`", "end of life",  "2011-02-20", "2016-02-20",  "Georg Brandl"

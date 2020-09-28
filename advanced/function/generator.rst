@@ -535,7 +535,7 @@ Assignments
 Function Generator Iris
 -----------------------
 * Complexity level: easy
-* Lines of code to write: 14 lines
+* Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/function_generator_iris.py`
 
@@ -563,7 +563,6 @@ Function Generator Iris
         from sys import getsizeof
 
         DATA = [
-            ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
             (5.8, 2.7, 5.1, 1.9, 'virginica'),
             (5.1, 3.5, 1.4, 0.2, 'setosa'),
             (5.7, 2.8, 4.1, 1.3, 'versicolor'),
@@ -572,21 +571,36 @@ Function Generator Iris
             (4.7, 3.2, 1.3, 0.2, 'setosa'),
         ]
 
-        def function(species: str):
+        def function(data: list, species: str):
             raise NotImplementedError
 
-        def generator(species: str):
+        def generator(data: list, species: str):
             raise NotImplementedError
 
 
-        print('Function', getsizeof(function('setosa')))
-        print('Generator', getsizeof(generator('setosa')))
+        result = {
+            'function x1': getsizeof(function(DATA, 'setosa')),
+            'generator x1': getsizeof(generator(DATA, 'setosa')),
+            'function x10': getsizeof(function(DATA*10, 'setosa')),
+            'generator x10': getsizeof(generator(DATA*10, 'setosa')),
+            'function x100': getsizeof(function(DATA*100, 'setosa')),
+            'generator x100': getsizeof(generator(DATA*100, 'setosa')),
+        }
 
 :Output:
     .. code-block:: text
 
-        Function 520
-        Generator 112
+        >>> from inspect import isfunction, isgeneratorfunction
+        >>> assert isfunction(function)
+        >>> assert isgeneratorfunction(generator)
+        >>> result
+        ... # doctest: +NORMALIZE_WHITESPACE
+        {'function x1': 88,
+         'function x10': 256,
+         'function x100': 1664,
+         'generator x1': 112,
+         'generator x10': 112,
+         'generator x100': 112}
 
 :The whys and wherefores:
     * Using generators
@@ -598,13 +612,13 @@ Function Generator Iris
 Function Generator Passwd
 -------------------------
 * Complexity level: medium
-* Lines of code to write: 27 lines
+* Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/function_generator_passwd.py`
 
 :English:
-    #. Download :download:`data/etc-passwd.txt` and save as ``etc-passwd.txt``
-    #. Iterating over lines, filter out comments, empty lines, etc.
+    #. Use code from "Input" section (see below)
+    #. Split ``DATA`` by lines and then by colon ``:``
     #. Extract system accounts (users with UID [third field] is less than 1000)
     #. Return list of system account logins
     #. Implement solution using function
@@ -613,20 +627,52 @@ Function Generator Passwd
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Pobierz :download:`data/etc-passwd.txt` i zapisz jako ``etc-passwd.txt``
-    #. Iterując po liniaj, odfiltruj komentarze, puste linie itp.
+    #. Użyj kodu z sekcji "Input" (patrz poniżej)
+    #. Podziel ``DATA`` po liniach a następnie po dwukropku ``:``
     #. Wyciągnnij konta systemowe (użytkownicy z UID (trzecie pole) mniejszym niż 1000)
     #. Zwróć listę loginów użytkowników systemowych
     #. Zaimplementuj rozwiązanie wykorzystując funkcję
-    #. Zaimplementuj rozwiązanie wykorzystując generator i słówko kluczowe ``yield``
+    #. Zaimplementuj rozwiązanie wykorzystując generator i słowo kluczowe ``yield``
     #. Porównaj wyniki obu używając ``sys.getsizeof()``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Input:
+    .. code-block:: python
+
+        from sys import getsizeof
+
+        DATA = """root:x:0:0:root:/root:/bin/bash
+        bin:x:1:1:bin:/bin:/sbin/nologin
+        daemon:x:2:2:daemon:/sbin:/sbin/nologin
+        adm:x:3:4:adm:/var/adm:/sbin/nologin
+        shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+        halt:x:7:0:halt:/sbin:/sbin/halt
+        nobody:x:99:99:Nobody:/:/sbin/nologin
+        sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+        watney:x:1000:1000:Mark Watney:/home/watney:/bin/bash
+        jimenez:x:1001:1001:José Jiménez:/home/jimenez:/bin/bash
+        ivanovic:x:1002:1002:Иван Иванович:/home/ivanovic:/bin/bash
+        lewis:x:1003:1002:Melissa Lewis:/home/ivanovic:/bin/bash"""
+
+        def function(data: list):
+            raise NotImplementedError
+
+        def generator(data: list):
+            raise NotImplementedError
+
+        result = {
+            'function': getsizeof(function(DATA)),
+            'generator': getsizeof(generator(DATA)),
+        }
 
 :Output:
     .. code-block:: text
 
-        Function 120
-        Generator 112
+        >>> from inspect import isfunction, isgeneratorfunction
+        >>> assert isfunction(function)
+        >>> assert isgeneratorfunction(generator)
+        >>> result
+        {'function': 120, 'generator': 112}
 
 :The whys and wherefores:
     * Using generators
