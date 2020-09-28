@@ -207,18 +207,15 @@ Examples
 
 .. code-block:: python
 
-    line = '5.4,3.9,1.3,0.4,setosa'
-
-    *features, label = line.split(',')
+    *features, label = (5.8, 2.7, 5.1, 1.9, 'virginica')
     avg = sum(features) / len(features)
 
-    label                   # 'setosa'
-    avg                     # 2.75
+    print(label, avg)
+    # virginica 3.875
 
 .. code-block:: python
 
     line = 'ares3,watney,lewis,vogel,johanssen'
-
     mission, *crew = line.split(',')
 
     mission                 # ares3
@@ -391,3 +388,46 @@ Function Unpack Nested
 :Hint:
     * ``from pprint import pprint``
     * ``pprint(data)``
+
+Function Unpack Loop
+--------------------
+* Complexity level: easy
+* Lines of code to write: 4 lines
+* Estimated time of completion: 5 min
+* Solution: :download:`solution/function_unpack_loop.py`
+
+:English:
+    #. Use data from "Input" section (see below)
+    #. Iterate over data splitting ``*features`` i ``label``
+    #. Define ``result: List[str]`` with species names ending with "ca" or "osa"
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Iteruj po danych rozbijając ``*features`` i ``label``
+    #. Zdefiniuj ``result: List[str]`` z nazwami gatunków kończącymi się na "ca" lub "osa"
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Input:
+    .. code-block:: python
+
+        DATA = [
+            (5.8, 2.7, 5.1, 1.9, 'virginica'),
+            (5.1, 3.5, 1.4, 0.2, 'setosa'),
+            (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+            (6.3, 2.9, 5.6, 1.8, 'virginica'),
+            (6.4, 3.2, 4.5, 1.5, 'versicolor'),
+            (4.7, 3.2, 1.3, 0.2, 'setosa'),
+            (7.0, 3.2, 4.7, 1.4, 'versicolor'),
+            (7.6, 3.0, 6.6, 2.1, 'virginica'),
+            (4.6, 3.1, 1.5, 0.2, 'setosa'),
+        ]
+
+:Output:
+    .. code-block:: python
+
+        result: List[str]
+        # ['virginica', 'setosa', 'virginica', 'setosa', 'virginica', 'setosa']
+
+:Hint:
+    * ``str.endswith()``

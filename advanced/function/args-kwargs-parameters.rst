@@ -6,8 +6,9 @@ Arbitrary Number of Parameters
 Recap information about function parameters
 ===========================================
 * positional arguments
-* keyword (named) arguments
-* default values
+* keyword arguments
+* required parameters
+* optional parameters (with default value)
 * keyword arguments must be on the right side
 * order of keyword arguments doesn't matter
 
@@ -19,6 +20,7 @@ Recap information about function parameters
 
 
     echo(1, 2)       # positional arguments
+    echo(2, 1)       # positional arguments
     echo(a=1, b=2)   # keyword arguments
     echo(b=2, a=1)   # keyword arguments, order doesn't matter
     echo(1, b=2)     # positional and keyword arguments
@@ -27,7 +29,6 @@ Recap information about function parameters
 
 Positional Parameters
 =====================
-* ``*`` in this context, is not multiplication in mathematical sense
 * ``*`` is used for positional arguments
 * ``args`` is a convention, but you can use any name
 * ``*args`` unpacks to ``tuple``
@@ -69,7 +70,6 @@ Positional Parameters
 
 Keyword Parameters
 ==================
-* ``**`` in this context, is not power in mathematical sense
 * ``**`` is used for keyword arguments
 * ``kwargs`` is a convention, but you can use any name
 * ``**kwargs`` unpacks to ``dict``
@@ -82,7 +82,7 @@ Keyword Parameters
 
     echo(a=1)                                       # {'a': 1}
     echo(color='red')                               # {'color': 'red'}
-    echo(firstname='Jan', lastname='Twardowski')  # {'firstname': 'Jan', 'lastname': Twardowski}
+    echo(firstname='Jan', lastname='Twardowski')    # {'firstname': 'Jan', 'lastname': Twardowski}
 
 .. code-block:: python
 
@@ -138,12 +138,12 @@ Positional and Keyword Parameters
     def echo(a, b, c=0, *args, **kwargs):
         print(a)       # 1
         print(b)       # 2
-        print(c)       # 0
+        print(c)       # 3
         print(args)    # ()
         print(kwargs)  # {'d': 7, 'e': 8}
 
 
-    echo(1, 2, d=7, e=8)
+    echo(1, 2, 3, d=7, e=8)
 
 .. code-block:: python
 
@@ -163,20 +163,20 @@ Examples
 .. code-block:: python
     :caption: Sum
 
-    def add(*args):
+    def sum(*values):
         total = 0
 
-        for arg in args:
-            total += arg
+        for value in values:
+            total += value
 
         return total
 
 
-    add()            # 0
-    add(1)           # 1
-    add(1, 4)        # 5
-    add(3, 1)        # 4
-    add(1, 2, 3, 4)  # 10
+    sum()            # 0
+    sum(1)           # 1
+    sum(1, 4)        # 5
+    sum(3, 1)        # 4
+    sum(1, 2, 3, 4)  # 10
 
 .. code-block:: python
     :caption: Kelvin to Celsius
@@ -194,11 +194,11 @@ Examples
 .. code-block:: python
     :caption: Generate HTML list from function arguments
 
-    def html_list(*args):
+    def html_list(*fruits):
         print('<ul>')
 
-        for element in args:
-            print(f'<li>{element}</li>')
+        for fruit in fruits:
+            print(f'<li>{fruit}</li>')
 
         print('</ul>')
 
@@ -230,12 +230,26 @@ Function Args/Kwargs Parameters Define
 :English:
     #. Create function ``average()``, which calculates arithmetic mean
     #. Function can have arbitrary number of positional arguments
-    #. Don't use neither ``numpy`` nor ``statistics``
+    #. Do not import any libraries and modules
 
 :Polish:
     #. Napisz funkcję ``average()``, wyliczającą średnią arytmetyczną
     #. Funkcja przyjmuje dowolną ilość pozycyjnych argumentów
-    #. Nie używaj ``numpy`` ani ``statistics``
+    #. Nie importuj żadnych biliotek i modułów
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Compare result with "Output" section (see below)
+
+:Output:
+    .. code-block:: python
+
+        >>> average(1)
+        1.0
+        >>> average(1, 3)
+        2.0
+        >>> average()
+        Traceback (most recent call last):
+            ...
+        ValueError: Not enough arguments
 
 :Hint:
     * ``mean = sum(...) / len(...)``
@@ -266,6 +280,26 @@ Function Args/Kwargs Parameters Args
     #. Nie używaj ``all()`` oraz ``any()``
     #. Porównaj użycie ``type()`` i ``isinstance()`` podając argument do funkcji ``True``
     #. Uruchom funkcję bez podawania argumentów
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Compare result with "Output" section (see below)
+
+:Output:
+    .. code-block:: python
+
+        >>> is_numeric()
+        False
+        >>> is_numeric(1)
+        True
+        >>> is_numeric(1, 1.5)
+        True
+        >>> is_numeric(True)
+        False
+        >>> is_numeric('one', 1)
+        False
+        >>> is_numeric([])
+        False
+        >>> is_numeric([1, 1.5])
+        False
 
 :The whys and wherefores:
     * Defining and calling functions
@@ -294,6 +328,7 @@ Function Args/Kwargs Parameters Kwargs
     #. Do not use ``all()`` and ``any()``
     #. Compare using ``type()`` and ``isinstance()`` passing ``True`` as an argument
     #. Run the function without any arguments
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Stwórz funkcję ``is_numeric``
@@ -304,6 +339,27 @@ Function Args/Kwargs Parameters Kwargs
     #. Nie używaj ``all()`` oraz ``any()``
     #. Porównaj użycie ``type()`` i ``isinstance()`` podając argument do funkcji ``True``
     #. Uruchom funkcję bez podawania argumentów
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: python
+
+        >>> is_numeric(1)
+        True
+        >>> is_numeric(1.5)
+        True
+        >>> is_numeric('one', a=1)
+        False
+        >>> is_numeric([1, 1.5])
+        False
+        >>> is_numeric()
+        False
+        >>> is_numeric(True)
+        False
+        >>> is_numeric(a=1)
+        True
+        >>> is_numeric(a='one')
+        False
 
 :The whys and wherefores:
     * Defining and calling functions

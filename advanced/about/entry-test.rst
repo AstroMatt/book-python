@@ -69,8 +69,8 @@ Entry Test List of Dict
 Entry Test Endswith
 ===================
 * Complexity level: easy
-* Lines of code to write: 3 lines
-* Estimated time of completion: 5 min
+* Lines of code to write: 4 lines
+* Estimated time of completion: 8 min
 * Filename: entry_test_endswith.py
 
 :English:
