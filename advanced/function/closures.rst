@@ -3,11 +3,39 @@ Closures
 ********
 
 
+Rationale
+=========
+.. code-block:: python
+
+    def f(x):
+        def g(y):
+            return x + y
+        return g
+
+
 Nested Function
 ===============
 * Function inside the function
 * nested functions can access the variables of the enclosing scope
 
+.. code-block:: python
+
+    def run():
+        def hello():
+            print('Watney')
+
+.. code-block:: python
+
+    def run():
+        lastname = 'Watney'
+
+        def hello():
+            firstname = 'Mark'
+            print(firstname, lastname)
+
+
+Calling Nested Functions
+========================
 .. code-block:: python
 
     def run():
@@ -29,6 +57,52 @@ Nested Function
     # Watney
 
 
+Functions as a Namespace
+========================
+.. code-block:: python
+
+    def run():
+        firstname = 'Mark'
+        lastname = 'Watney'
+
+.. code-block:: python
+
+    def run():
+        firstname = 'Mark'
+        lastname = 'Watney'
+
+        def hello():
+            print(firstname, lastname)
+
+.. code-block:: python
+
+    def run():
+        firstname = 'Mark'
+        lastname = 'Watney'
+
+        def hello():
+            print(firstname, lastname)
+
+        class Astronaut:
+            pass
+
+.. code-block:: python
+
+    def run():
+        firstname = 'Mark'
+        lastname = 'Watney'
+
+        def hello():
+            print(firstname, lastname)
+
+        class Astronaut:
+            firstname = 'Mark'
+            lastname = 'Watney'
+
+            def hello(self):
+                print(self.firstname, self.lastname)
+
+
 What is closure?
 ================
 * technique by which the data is attached to some code even after end of those other original functions is called as closures
@@ -47,12 +121,10 @@ What is closure?
     lastname = 'Watney'
 
     def hello():
-        print(firstname)
-        print(lastname)
+        print(firstname, lastname)
 
     hello()
-    # Mark
-    # Watney
+    # Mark Watney
 
 .. code-block:: python
 
@@ -62,16 +134,14 @@ What is closure?
         lastname = 'Watney'
 
         def hello():
-            print(firstname)
-            print(lastname)
+            print(firstname, lastname)
 
         return hello
 
 
     result = run()
     result()
-    # Mark
-    # Watney
+    # Mark Watney
 
 .. code-block:: python
 
@@ -81,8 +151,7 @@ What is closure?
         lastname = 'Watney'
 
         def hello():
-            print(firstname)
-            print(lastname)
+            print(firstname, lastname)
 
         return hello
 
@@ -90,15 +159,7 @@ What is closure?
     result = run()
     del run
     result()
-    # Mark
-    # Watney
-
-.. code-block:: python
-
-    def f(x):
-        def g(y):
-            return x + y
-        return g
+    # Mark Watney
 
 
 Assignments
@@ -126,7 +187,7 @@ Function Closure Define
     #. Funkcja ``check`` ma zwracać ``wrapper: Callable``
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> assert callable(check)
         >>> assert callable(check(lambda x: x))
@@ -166,7 +227,7 @@ Function Closure Call
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> add(1, 2)
         3

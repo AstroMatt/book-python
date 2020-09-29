@@ -43,11 +43,21 @@ Union
     def add_numbers(a: Union[int, float], b: Union[int, float]) -> int:
         return int(a + b)
 
-    add_numbers(1, 2)
-    # 3
 
-    add_numbers(1.5, 2.5)
-    # 4
+    add_numbers(1, 2)       # 'Ok'
+    add_numbers(1.5, 2.5)   # 'Ok'
+
+.. code-block:: python
+
+    from typing import Union
+
+    def add_numbers(a: Union[int,float],
+                    b: Union[int,float]
+                    ) -> Union[int,float]:
+        return a + b
+
+    add_numbers(1, 2)       # 'Ok'
+    add_numbers(1.5, 2.5)   # 'Ok'
 
 .. code-block:: python
 
@@ -55,21 +65,18 @@ Union
 
     Number = Union[int, float]
 
-    def add_numbers(a: Number, b: Number) -> int:
-        return int(a + b)
+    def add_numbers(a: Number, b: Number) -> Number:
+        return a + b
 
-    add_numbers(1, 2)
-    # 3
-
-    add_numbers(1.5, 2.5)
-    # 4
+    add_numbers(1, 2)       # 'Ok'
+    add_numbers(1.5, 2.5)   # 'Ok'
 
 
 Optional
 ========
 .. code-block:: python
 
-    def find(text, what) -> Optional[int]:
+    def find(text: str, what: str) -> Optional[int]:
         start_position = text.find(what)
 
         if start_position > 0:
@@ -131,7 +138,6 @@ Literal
     allow_access('Astronaut')   # OK
     allow_access('Pilot')       # Error
 
-
 .. code-block:: python
 
     from typing import Literal
@@ -139,6 +145,19 @@ Literal
 
     def open(filename: str, mode: Literal['r','w','a']) -> None:
         pass
+
+
+Annotations
+===========
+.. code-block:: python
+
+    def add_numbers(a: int, b: int) -> int:
+        return a + b
+
+    add_numbers.__annotations__
+    # {'a': <class 'int'>,
+    #  'b': <class 'int'>,
+    #  'return': <class 'int'>}
 
 
 Errors

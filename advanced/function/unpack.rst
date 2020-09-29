@@ -359,7 +359,7 @@ Function Unpack Nested
         ]
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> header
         ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species')
@@ -405,7 +405,7 @@ Function Unpack Loop
         ]
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> result
         ['virginica', 'setosa', 'virginica', 'setosa']

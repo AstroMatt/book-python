@@ -125,7 +125,7 @@ Function Parameter Syntax Kwargs
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> set_position(x=1, y=2)
 
@@ -180,7 +180,7 @@ Function Parameter Syntax Args
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> take_damage(1)
 

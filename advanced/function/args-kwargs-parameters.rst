@@ -240,7 +240,7 @@ Function Args/Kwargs Parameters Define
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> mean(1)
         1.0
@@ -280,7 +280,7 @@ Function Args/Kwargs Parameters Args
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> isnumeric()
         False
@@ -346,7 +346,7 @@ Function Args/Kwargs Parameters Kwargs
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> isnumeric()
         False

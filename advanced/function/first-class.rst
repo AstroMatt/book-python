@@ -13,11 +13,8 @@ Rationale
     type(hello)
     # <class 'function'>
 
-    hello()
-    # Hello
-
-    hello.__call__()
-    # Hello
+    callable(hello)
+    # True
 
 
 First-class Function
@@ -96,6 +93,23 @@ Callable
 .. code-block:: python
 
     def hello():
+        print('Hello')
+
+    type(hello)
+    # <class 'function'>
+
+    callable(hello)
+    # True
+
+    hello()
+    # Hello
+
+    hello.__call__()
+    # Hello
+
+.. code-block:: python
+
+    def hello():
         return 'My name... José Jiménez'
 
 
@@ -144,16 +158,12 @@ Callbacks
         pass
 
 
-    def http_request(url: str,
-                     on_success: Callable = noop,
-                     on_error: Callable = noop
-                     ) -> None:
-
+    def http_request(url, on_success=noop, on_error=noop:
         result = requests.get(url)
         if result.status_code == HTTPStatus.OK:
-            on_success(result)
+            return on_success(result)
         else:
-            on_error(result)
+            return on_error(result)
 
 
     def success(result):
@@ -172,6 +182,31 @@ Callbacks
 
 Type Annotation
 ===============
+.. code-block:: python
+
+    def add(a: int, b: int) -> int:
+        return a + b
+
+    total: Callable = add
+    total: Callable[[int, int], int] = add
+
+.. code-block:: python
+
+    from typing import Callable, Iterator, Iterable
+
+
+    def map(func: Callable, data: Iterable) -> Iterator:
+        ...
+
+    def filter(func: Callable, data: Iterable) -> Iterator:
+        ...
+
+    def zip(a: Iterable, b: Iterable) -> Iterator:
+        ...
+
+    def enumerate(data: Iterable) -> Iterator[int, Any]:
+        ...
+
 .. code-block:: python
 
     from typing import Callable
@@ -221,7 +256,7 @@ Function First Class Define
     #. Zdefiniuj funkcję ``check``, która przyjmuje ``func: Callable`` jako argument
     #. Funkcja ``check`` ma zwracać ``wrapper: Callable``
 
-.. code-block:: python
+.. code-block:: text
 
     >>> assert callable(check)
     >>> assert callable(check(lambda x: x))

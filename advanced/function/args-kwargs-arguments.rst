@@ -429,7 +429,7 @@ Function Args/Kwargs Arguments Define
         ]
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> mean(1)
         1.0
