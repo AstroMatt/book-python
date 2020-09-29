@@ -55,7 +55,7 @@ Method Return Types
 .. code-block:: python
 
     class Point:
-        def get_coordinates(self) -> Tuple[int, int]:
+        def get_coordinates(self) -> tuple[int, int]:
             return 1, 2
 
 
@@ -85,9 +85,6 @@ Optional Method Arguments
 =========================
 .. code-block:: python
 
-    from typing import Tuple
-
-
     class Point:
         def __init__(self, x: int = 0, y: int = 0) -> None:
             self.x = x
@@ -97,7 +94,7 @@ Optional Method Arguments
             self.x = x
             self.y = y
 
-        def get_coordinates(self) -> Tuple[int, int]:
+        def get_coordinates(self) -> tuple[int, int]:
             return self.x, self.y
 
 
@@ -141,15 +138,12 @@ Nested
 ======
 .. code-block:: python
 
-    from typing import List
-
-
     class Iris:
-        def __init__(self, features: List[float], label: str) -> None:
-            self.features: List[float] = features
+        def __init__(self, features: list[float], label: str) -> None:
+            self.features: list[float] = features
             self.label: str = label
 
-    data: List[Iris] = [
+    data: list[Iris] = [
         Iris([4.7, 3.2, 1.3, 0.2], 'setosa'),
         Iris([7.0, 3.2, 4.7, 1.4], 'versicolor'),
         Iris([7.6, 3.0, 6.6, 2.1], 'virginica'),

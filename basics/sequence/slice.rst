@@ -517,7 +517,7 @@ Sequence Slice Split
         header: tuple
         # ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species')
 
-        train: List[tuple]
+        train: list[tuple]
         # [(5.8, 2.7, 5.1, 1.9, 'virginica'),
         #  (5.1, 3.5, 1.4, 0.2, 'setosa'),
         #  (5.7, 2.8, 4.1, 1.3, 'versicolor'),
@@ -531,7 +531,7 @@ Sequence Slice Split
         #  (7.1, 3.0, 5.9, 2.1, 'virginica'),
         #  (4.6, 3.4, 1.4, 0.3, 'setosa')]
 
-        test: List[tuple]
+        test: list[tuple]
         # [(5.4, 3.9, 1.7, 0.4, 'setosa'),
         #  (5.7, 2.8, 4.5, 1.3, 'versicolor'),
         #  (5.0, 3.6, 1.4, 0.3, 'setosa'),

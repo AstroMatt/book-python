@@ -514,7 +514,7 @@ Mapping Dict Items
         values: list
         # [5.8, 2.7, 5.1, 1.9]
 
-        items: List[tuple]
+        items: list[tuple]
         # [('Sepal length', 5.8),
         #  ('Sepal width', 2.7),
         #  ('Petal length', 5.1),

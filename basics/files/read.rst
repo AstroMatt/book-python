@@ -224,14 +224,14 @@ File Read Multiline
 :English:
     #. Use data from "Input" section (see below)
     #. Write ``DATA`` to file ``FILE``
-    #. Read ``FILE`` to ``result: List[str]``
+    #. Read ``FILE`` to ``result: list[str]``
     #. Print ``result``
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Zapisz ``DATA`` do pliku ``FILE``
-    #. Wczytaj ``FILE`` do ``result: List[str]``
+    #. Wczytaj ``FILE`` do ``result: list[str]``
     #. Wypisz ``result``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
@@ -244,7 +244,7 @@ File Read Multiline
 :Output:
     .. code-block:: python
 
-        result: List[str]
+        result: list[str]
         # ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
 
 File Read CSV
@@ -264,7 +264,7 @@ File Read CSV
 
         * Strip whitespaces
         * Split line by coma ``,``
-        * Convert measurements do ``Tuple[float]``
+        * Convert measurements do ``tuple[float]``
         * Append measurements to ``features``
         * Append species name to ``labels``
 
@@ -281,7 +281,7 @@ File Read CSV
 
         * Usuń białe znaki z początku i końca linii
         * Podziel linię po przecinku ``,``
-        * Przekonwertuj pomiary do ``Tuple[float]``
+        * Przekonwertuj pomiary do ``tuple[float]``
         * Dodaj pomiary do ``features``
         * Dodaj gatunek do ``labels``
 
@@ -314,15 +314,15 @@ File Read CSV
 :Output:
     .. code-block:: python
 
-        header: List[str]
+        header: list[str]
         # ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
 
-        features: List[Tuple[float]]
+        features: list[tuple[float]]
         # [(5.4, 3.9, 1.3, 0.4), (5.9, 3.0, 5.1, 1.8), (6.0, 3.4, 4.5, 1.6),
         #  (7.3, 2.9, 6.3, 1.8), (5.6, 2.5, 3.9, 1.1), (5.4, 3.9, 1.3, 0.4),
         #  (5.5, 2.6, 4.4, 1.2), (5.7, 2.9, 4.2, 1.3), (4.9, 3.1, 1.5, 0.1), ...]
 
-        labels: List[str]
+        labels: list[str]
         # ['setosa', 'virginica', 'versicolor', 'virginica', 'versicolor',
         #  'setosa', 'versicolor', 'versicolor', 'setosa', 'virginica',
         #  'virginica', 'setosa', 'setosa', ...]
@@ -409,6 +409,7 @@ File Read Parsing List of Dicts
 
 :English:
     #. Use data from "Input" section (see below)
+    #. Define ``result: list[dict]``
     #. Using ``file.write()`` save input data from listing below to file ``hosts-advanced.txt``
     #. Read file and for each line:
 
@@ -421,11 +422,11 @@ File Read Parsing List of Dicts
         * Append IP address and hosts names to ``result``
 
     #. Merge hostnames for the same IP
-    #. ``result`` must be list of dicts (``List[dict]``)
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Zdefiniuj ``result: list[dict]``
     #. Używając ``file.write()`` zapisz dane wejściowe z listingu poniżej do pliku ``hosts-advanced.txt``
     #. Przeczytaj plik i dla każdej lini:
 
@@ -438,7 +439,6 @@ File Read Parsing List of Dicts
         * Dodaj adres IP i nazwy hostów do ``result``
 
     #. Scal nazwy hostów dla tego samego IP
-    #. ``result`` ma być listą dictów (``List[dict]``)
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
@@ -461,7 +461,7 @@ File Read Parsing List of Dicts
 :Output:
     .. code-block:: python
 
-        result: List[dict]
+        result: list[dict]
         # [{'ip': '127.0.0.1', 'protocol': 'ipv4', 'hostnames': {'localhost', 'astromatt'}},
         #  {'ip': '10.13.37.1', 'protocol': 'ipv4', 'hostnames': {'nasa.gov', 'esa.int', 'roscosmos.ru'}},
         #  {'ip': '255.255.255.255', 'protocol': 'ipv4', 'hostnames': {'broadcasthost'}},

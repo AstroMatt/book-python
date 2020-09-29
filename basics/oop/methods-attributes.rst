@@ -211,7 +211,7 @@ OOP Method Sequence
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Create class ``Iris`` with ``features: List[float]`` and ``label: str`` attributes
+    #. Create class ``Iris`` with ``features: list[float]`` and ``label: str`` attributes
     #. For each row in ``DATA`` create ``Iris`` instance with row values
     #. Set class attributes at the initialization from positional arguments
     #. Create method which sums values of all ``features``
@@ -220,7 +220,7 @@ OOP Method Sequence
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Stwórz klasę ``Iris`` z atrybutami ``features: List[float]`` i ``label: str``
+    #. Stwórz klasę ``Iris`` z atrybutami ``features: list[float]`` i ``label: str``
     #. Dla każdego wiersza w ``DATA`` twórz instancję ``Iris`` z danymi z wiersza
     #. Ustaw atrybuty klasy przy inicjalizacji z argumentów pozycyjnych
     #. Stwórz metodę sumującą wartości wszystkich ``features``

@@ -358,21 +358,19 @@ Function Arguments Numbers to Str
 :English:
     #. Use data from "Input" section (see below)
     #. Given is pilot's alphabet for numbers
-    #. Convert ``DATA: Dict[int, str]`` to ``CONVERT: Dict[str, str]`` (keys as ``str``)
+    #. Convert ``DATA: dict[int, str]`` to ``data: dict[str, str]`` (keys as ``str``)
     #. For input data (see input section below)
     #. Define function converting ``int`` or ``float`` to text form in Pilot's Speak
-    #. You can modify ``CONVERT``
-    #. You cannot change ``DATA``
+    #. You cannot change ``DATA``, but you can modify ``data``
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Dany jest alfabet pilotów dla numerów
-    #. Przekonwertuj ``DATA: Dict[int, str]`` na ``CONVERT: Dict[str, str]`` (klucze jako ``str``)
+    #. Przekonwertuj ``DATA: dict[int, str]`` na ``data: dict[str, str]`` (klucze jako ``str``)
     #. Dla danych wejściowych (patrz sekcja input poniżej)
     #. Zdefiniuj funkcję konwertującą ``int`` lub ``float`` na formę tekstową w mowie pilotów
-    #. Możesz modyfikować ``CONVERT``
-    #. Nie możesz zmieniać ``DATA``
+    #. Nie możesz zmieniać ``DATA``, ale możesz modyfikować ``data``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:

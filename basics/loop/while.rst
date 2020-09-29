@@ -220,7 +220,7 @@ Loop While Cast
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Create ``result: List[int]``
+    #. Create ``result: list[int]``
     #. Use ``while`` to iterate over ``DATA``
     #. Convert all elements of ``DATA`` to ``int``
     #. Converted values add to ``result``
@@ -228,7 +228,7 @@ Loop While Cast
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Stwórz ``result: List[int]``
+    #. Stwórz ``result: list[int]``
     #. Użyj ``while`` do iterowania po ``DATA``
     #. Przekonwertuj wszystkie elementy ``DATA`` do ``int``
     #. Przekonwertowane wartości dodaj do ``result``
@@ -242,7 +242,7 @@ Loop While Cast
 :Output:
     .. code-block:: python
 
-        result: List[int]
+        result: list[int]
         # [1, 2, 3]
 
 Loop While Convert
@@ -254,7 +254,7 @@ Loop While Convert
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Create ``result: List[float]``
+    #. Create ``result: list[float]``
     #. Use ``while`` to iterate over ``DATA``
     #. Convert all elements of ``DATA`` to ``float``
     #. Converted values add to ``result``
@@ -262,7 +262,7 @@ Loop While Convert
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Stwórz ``result: List[float]``
+    #. Stwórz ``result: list[float]``
     #. Użyj ``while`` do iterowania po ``DATA``
     #. Przekonwertuj wszystkie elementy ``DATA`` do ``float``
     #. Przekonwertowane wartości dodaj do ``result``
@@ -276,7 +276,7 @@ Loop While Convert
 :Output:
     .. code-block:: python
 
-        result: List[float]
+        result: list[float]
         # [2.0, 3.0, 3.5, 4.0, 4.5, 5.0]
 
 :The whys and wherefores:

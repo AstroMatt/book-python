@@ -332,7 +332,7 @@ OOP Stringify Repr
 :Output:
     .. code-block:: python
 
-        result: List[Iris]
+        result: list[Iris]
         # [Iris(features=[7.6, 3.0, 6.6, 2.1], label='virginica'),
         #  Iris(features=[7.6, 3.0, 6.6, 2.1], label='virginica'),
         #  Iris(features=[7.6, 3.0, 6.6, 2.1], label='virginica')]

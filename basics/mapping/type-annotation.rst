@@ -5,6 +5,12 @@ Mapping Type Annotation
 ***********************
 
 
+Rationale
+=========
+* Python 3.9 introduced :pep:`585` -- Type Hinting Generics In Standard Collections
+* Before Python 3.9 you need ``from typing import List, Set, Tuple, Dict``
+
+
 Dict
 ====
 .. code-block:: python
@@ -12,83 +18,56 @@ Dict
     data: dict = {}
     data: dict = dict()
 
-.. code-block:: python
-
-    from typing import Dict
-
-    a: Dict[int, str] = {
+    a: dict[int, str] = {
         0: 'setosa',
         1: 'virginica',
-        2: 'versicolor',
-    }
+        2: 'versicolor'}
 
-    b: Dict[float, str] = {
+    b: dict[float, str] = {
         5.8: 'Sepal length',
         2.7: 'Sepal width',
         5.1: 'Petal length',
-        1.9: 'Petal width',
-    }
+        1.9: 'Petal width'}
 
-    c: Dict[str, float] = {
+    c: dict[str, float] = {
         'Sepal length': 5.8,
         'Sepal width': 2.7,
         'Petal length': 5.1,
-        'Petal width': 1.9,
-    }
+        'Petal width': 1.9}
 
 
 List of Dicts
 =============
 .. code-block:: python
-    :caption: Generic type annotation
 
-    from typing import List
+    from typing import Union
 
-
-    data: List[dict] = [
-        {'measurements': [4.7, 3.2, 1.3, 0.2], 'species': 'setosa'},
-        {'measurements': [7.0, 3.2, 4.7, 1.4], 'species': 'versicolor'},
-        {'measurements': [7.6, 3.0, 6.6, 2.1], 'species': 'virginica'},
+    data: list[dict] = [
+        {'features': [4.7, 3.2, 1.3, 0.2], 'label': 'setosa'},
+        {'features': [7.0, 3.2, 4.7, 1.4], 'label': 'versicolor'},
+        {'features': [7.6, 3.0, 6.6, 2.1], 'label': 'virginica'},
     ]
 
-.. code-block:: python
-    :caption: Explicit type annotation
-
-    from typing import Dict, List, Union
-
-
-    data: List[Dict[str, Union[List[float], str]]] = [
-        {'measurements': [4.7, 3.2, 1.3, 0.2], 'species': 'setosa'},
-        {'measurements': [7.0, 3.2, 4.7, 1.4], 'species': 'versicolor'},
-        {'measurements': [7.6, 3.0, 6.6, 2.1], 'species': 'virginica'},
+    data: list[dict[str, Union[list[float], str]]] = [
+        {'features': [4.7, 3.2, 1.3, 0.2], 'label': 'setosa'},
+        {'features': [7.0, 3.2, 4.7, 1.4], 'label': 'versicolor'},
+        {'features': [7.6, 3.0, 6.6, 2.1], 'label': 'virginica'},
     ]
 
-.. code-block:: python
-    :caption: Explicit type annotation
-
-    from typing import Dict, List, Union
-
-    Measurement = List[float]
-
-    data: List[Dict[str, Union[Measurement, str]]] = [
-        {'measurements': [4.7, 3.2, 1.3, 0.2], 'species': 'setosa'},
-        {'measurements': [7.0, 3.2, 4.7, 1.4], 'species': 'versicolor'},
-        {'measurements': [7.6, 3.0, 6.6, 2.1], 'species': 'virginica'},
+    row = list[float]
+    data: list[dict[str, Union[row, str]]] = [
+        {'features': [4.7, 3.2, 1.3, 0.2], 'label': 'setosa'},
+        {'features': [7.0, 3.2, 4.7, 1.4], 'label': 'versicolor'},
+        {'features': [7.6, 3.0, 6.6, 2.1], 'label': 'virginica'},
     ]
 
-.. code-block:: python
-    :caption: Explicit type annotation
-
-    from typing import Dict, List, Union
-
-    Measurement = List[float]
-    Data = Union[Measurement, str]
-    Row = Dict[str, Data]
-
-    data: List[Row] = [
-        {'measurements': [4.7, 3.2, 1.3, 0.2], 'species': 'setosa'},
-        {'measurements': [7.0, 3.2, 4.7, 1.4], 'species': 'versicolor'},
-        {'measurements': [7.6, 3.0, 6.6, 2.1], 'species': 'virginica'},
+    features = list[float]
+    label = str
+    row = dict[str, Union[features, label]]
+    data: list[row] = [
+        {'features': [4.7, 3.2, 1.3, 0.2], 'label': 'setosa'},
+        {'features': [7.0, 3.2, 4.7, 1.4], 'label': 'versicolor'},
+        {'features': [7.6, 3.0, 6.6, 2.1], 'label': 'virginica'},
     ]
 
 
@@ -107,8 +86,8 @@ Typed Dict
         y: int
 
 
-    pt1: Point = {'x':1, 'y':2}           # Ok
-    pt2: Point = {'x':1, 'y':2, 'z':0}    # Error
+    pt1: Point = {'x':1, 'y':2}         # Ok
+    pt2: Point = {'x':1, 'y':2, 'z':0}  # Error
 
 .. code-block:: python
 
@@ -120,14 +99,8 @@ Typed Dict
         y: int
 
 
-    pt1 = Point(x=1, y=2)                   # Ok
-    pt2 = Point(x=1, y=2, z=0)              # Error
-
-
-Future
-======
-.. versionadded:: Python 3.9
-    :pep:`585` Will be possible to use ``dict[str, int]``, ``dict[str, list[float]]`` etc without importing from ``typing``
+    pt1: Point = Point(x=1, y=2)       # Ok
+    pt2: Point = Point(x=1, y=2, z=0)  # Error
 
 
 More Information

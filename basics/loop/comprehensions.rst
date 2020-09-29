@@ -664,12 +664,12 @@ Loop Comprehension Create
 
 :English:
     #. Use list comprehension
-    #. Generate ``result: List[int]`` of even numbers from 5 to 20
+    #. Generate ``result: list[int]`` of even numbers from 5 to 20
     #. Print ``result``
 
 :Polish:
     #. Użyj rozwinięcia listowego
-    #. Wygeneruj ``result: List[int]`` parzystych liczb z przedziału 5 do 20
+    #. Wygeneruj ``result: list[int]`` parzystych liczb z przedziału 5 do 20
     #. Wypisz ``result``
 
 Loop Comprehension Translate
@@ -776,15 +776,15 @@ Loop Comprehension Split
     #. Calculate pivot point: length of data times given percent (60%/40%, see below)
     #. Using List Comprehension split data to:
 
-        * ``features: List[tuple]`` - list of measurements (each measurement row is a tuple)
-        * ``labels: List[str]`` - list of species names
+        * ``features: list[tuple]`` - list of measurements (each measurement row is a tuple)
+        * ``labels: list[str]`` - list of species names
 
     #. Split those data structures with proportion:
 
-        * ``features_train: List[tuple]`` - features to train - 60%
-        * ``features_test: List[tuple]`` - features to test - 40%
-        * ``labels_train: List[str]`` - labels to train - 60%
-        * ``labels_test: List[str]`` - labels to test - 40%
+        * ``features_train: list[tuple]`` - features to train - 60%
+        * ``features_test: list[tuple]`` - features to test - 40%
+        * ``labels_train: list[str]`` - labels to train - 60%
+        * ``labels_test: list[str]`` - labels to test - 40%
 
     #. Compare results with "Output" section below
 
@@ -794,15 +794,15 @@ Loop Comprehension Split
     #. Wylicz punkt podziału: długość danych razy zadany procent (60%/40%, patrz poniżej)
     #. Używając List Comprehension podziel dane na:
 
-        * ``features: List[tuple]`` - lista pomiarów (każdy wiersz z pomiarami ma być tuple)
-        * ``labels: List[str]`` - lista nazw gatunków
+        * ``features: list[tuple]`` - lista pomiarów (każdy wiersz z pomiarami ma być tuple)
+        * ``labels: list[str]`` - lista nazw gatunków
 
     #. Podziel te struktury danych w proporcji:
 
-        * ``features_train: List[tuple]`` - features do uczenia - 60%
-        * ``features_test: List[tuple]`` - features do testów - 40%
-        * ``labels_train: List[str]`` - labels do uczenia - 60%
-        * ``labels_test: List[str]`` - labels do testów - 40%
+        * ``features_train: list[tuple]`` - features do uczenia - 60%
+        * ``features_test: list[tuple]`` - features do testów - 40%
+        * ``labels_train: list[str]`` - labels do uczenia - 60%
+        * ``labels_test: list[str]`` - labels do testów - 40%
 
     #. Porównaj wynik z sekcją "Output" poniżej
 
@@ -837,23 +837,23 @@ Loop Comprehension Split
 :Output:
     .. code-block:: python
 
-        features_train: List[Tuple[float, ...]]
+        features_train: list[tuple[float, ...]]
         # [(5.8, 2.7, 5.1, 1.9), (5.1, 3.5, 1.4, 0.2), (5.7, 2.8, 4.1, 1.3),
         #  (6.3, 2.9, 5.6, 1.8), (6.4, 3.2, 4.5, 1.5), (4.7, 3.2, 1.3, 0.2),
         #  (7.0, 3.2, 4.7, 1.4), (7.6, 3.0, 6.6, 2.1), (4.9, 3.0, 1.4, 0.2),
         #  (4.9, 2.5, 4.5, 1.7), (7.1, 3.0, 5.9, 2.1), (4.6, 3.4, 1.4, 0.3)]
 
-        features_test: List[Tuple[float, ...]]
+        features_test: list[tuple[float, ...]]
         # [(5.4, 3.9, 1.7, 0.4), (5.7, 2.8, 4.5, 1.3), (5.0, 3.6, 1.4, 0.3),
         #  (5.5, 2.3, 4.0, 1.3), (6.5, 3.0, 5.8, 2.2), (6.5, 2.8, 4.6, 1.5),
         #  (6.3, 3.3, 6.0, 2.5), (6.9, 3.1, 4.9, 1.5), (4.6, 3.1, 1.5, 0.2)]
 
-        labels_train: List[str]
+        labels_train: list[str]
         # ['virginica', 'setosa', 'versicolor', 'virginica', 'versicolor',
         #  'setosa', 'versicolor', 'virginica', 'setosa', 'virginica',
         #  'virginica', 'setosa']
 
-        labels_test: List[str]
+        labels_test: list[str]
         # ['setosa', 'versicolor', 'setosa', 'versicolor', 'virginica',
         #  'versicolor', 'virginica', 'versicolor', 'setosa']
 

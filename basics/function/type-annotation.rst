@@ -8,10 +8,8 @@ Function Type Annotation
 Rationale
 =========
 .. highlights::
-    * Since Python 3.5
-    * Types are not forced
-    * Twoje IDE porówna typy oraz poinformuje cię jeżeli wykryje niezgodność
-    * Użyj ``mypy`` lub ``pyre-check`` do sprawdzania typów
+    * Python 3.9 introduced :pep:`585` -- Type Hinting Generics In Standard Collections
+    * Before Python 3.9 you need ``from typing import List, Set, Tuple, Dict``
 
 
 Return
@@ -131,20 +129,13 @@ Literal
     from typing import Literal
 
 
-    def allow_access(who: Literal['Cosmonaut', 'Astronaut']) -> None:
-        pass
-
-
-    allow_access('Astronaut')   # OK
-    allow_access('Pilot')       # Error
-
-.. code-block:: python
-
-    from typing import Literal
-
-
     def open(filename: str, mode: Literal['r','w','a']) -> None:
         pass
+
+    open('data.csv', mode='w')  # Ok
+    open('data.csv', mode='r')  # Ok
+    open('data.csv', mode='a')  # Ok
+    open('data.csv', mode='x')  # Error
 
 
 Annotations

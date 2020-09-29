@@ -199,7 +199,7 @@ Loop For Counter
     #. Use data from "Input" section (see below)
     #. Iterate over ``DATA``
     #. Count occurrences of each number
-    #. Create empty ``result: Dict[int, int]``:
+    #. Create empty ``result: dict[int, int]``:
 
         * key - digit
         * value - number of occurrences
@@ -215,7 +215,7 @@ Loop For Counter
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Iteruj po ``DATA``
     #. Policz wystąpienia każdej z cyfr
-    #. Stwórz pusty ``result: Dict[int, int]``:
+    #. Stwórz pusty ``result: dict[int, int]``:
 
         * klucz - cyfra
         * wartość - liczba wystąpień
@@ -239,7 +239,7 @@ Loop For Counter
 :Output:
     .. code-block:: python
 
-        result: Dict[int, int]
+        result: dict[int, int]
         # {1: 7, 4: 8, 6: 4, 7: 4, 5: 4, 0: 7, 9: 5, 8: 6, 2: 2, 3: 3}
 
 :The whys and wherefores:
@@ -263,7 +263,7 @@ Loop For Segmentation
         * ``medium`` - numbers in range [3-7)
         * ``large`` - numbers in range [8-9]
 
-    #. Print ``result: Dict[str, int]``:
+    #. Print ``result: dict[str, int]``:
 
         * key - group
         * value - number of occurrences
@@ -279,7 +279,7 @@ Loop For Segmentation
         * ``medium`` - liczby z przedziału <3-7)
         * ``large`` - liczby z przedziału <7-9>
 
-    #. Wypisz ``result: Dict[str, int]``:
+    #. Wypisz ``result: dict[str, int]``:
 
         * klucz - grupa
         * wartość - liczba wystąpień
@@ -298,7 +298,7 @@ Loop For Segmentation
 :Output:
     .. code-block:: python
 
-        result: Dict[str, int]
+        result: dict[str, int]
         # {'small': 16, 'medium': 19, 'large': 15}
 
 :The whys and wherefores:

@@ -11,9 +11,9 @@ DATA = {
     9: 'niner',
 }
 
-CONVERT = {str(k):v for k,v in DATA.items()}
-CONVERT['-'] = 'minus'
-CONVERT['.'] = 'and'
+data = {str(k):v for k,v in DATA.items()}
+data['-'] = 'minus'
+data['.'] = 'and'
 
 
 def translate(number):
@@ -39,4 +39,4 @@ def translate(number):
     >>> translate(-49.35)
     'minus fower niner and tree fife'
     """
-    return ' '.join(CONVERT[c] for c in str(number))
+    return ' '.join(data[c] for c in str(number))

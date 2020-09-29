@@ -299,12 +299,12 @@ Loop Dict from Dict to Dict
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Convert to ``result: Dict[str, str]``
+    #. Convert to ``result: dict[str, str]``
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Przekonwertuj do ``result: Dict[str, str]``
+    #. Przekonwertuj do ``result: dict[str, str]``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
@@ -322,7 +322,7 @@ Loop Dict from Dict to Dict
 :Output:
     .. code-block:: python
 
-        result: Dict[str, str]
+        result: dict[str, str]
         # {'Doctorate': '6',
         #  'Prof-school': '6',
         #  'Masters': '5',
@@ -348,7 +348,7 @@ Loop Dict from List to Dict
 :English:
     #. Use data from "Input" section (see below)
     #. Separate header and data
-    #. Print ``List[dict]``:
+    #. Print ``list[dict]``:
 
         * key - name from the header
         * value - measurement or species
@@ -358,7 +358,7 @@ Loop Dict from List to Dict
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Odseparuj nagłówek od danych
-    #. Wypisz ``List[dict]``:
+    #. Wypisz ``list[dict]``:
 
         * klucz: nazwa z nagłówka
         * wartość: wyniki pomiarów lub gatunek
@@ -396,7 +396,7 @@ Loop Dict from List to Dict
 :Output:
     .. code-block:: python
 
-        result: List[dict]
+        result: list[dict]
         # [{'Sepal length': 5.8,
         #   'Sepal width': 2.7,
         #   'Petal length': 5.1,
@@ -424,12 +424,12 @@ Loop Dict Label Encoder
     #. Use data from "Input" section (see below)
     #. Define:
 
-        * ``features: List[tuple]`` - measurements
-        * ``labels: List[int]`` - species
-        * ``label_encoder: Dict[int, str]`` - dictionary with encoded (as numbers) species names
+        * ``features: list[tuple]`` - measurements
+        * ``labels: list[int]`` - species
+        * ``label_encoder: dict[int, str]`` - dictionary with encoded (as numbers) species names
 
     #. Separate header from data
-    #. To encode and decode ``labels`` (species) we need ``label_encoder: Dict[int, str]``:
+    #. To encode and decode ``labels`` (species) we need ``label_encoder: dict[int, str]``:
 
         * key - id (incremented integer value)
         * value - species name
@@ -443,12 +443,12 @@ Loop Dict Label Encoder
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Zdefiniuj:
 
-        * ``features: List[tuple]`` - pomiary
-        * ``labels: List[int]`` - gatunki
-        * ``label_encoder: Dict[int, str]`` - słownik zakodowanych (jako cyfry) nazw gatunków
+        * ``features: list[tuple]`` - pomiary
+        * ``labels: list[int]`` - gatunki
+        * ``label_encoder: dict[int, str]`` - słownik zakodowanych (jako cyfry) nazw gatunków
 
     #. Odseparuj nagłówek od danych
-    #. Aby móc zakodować i odkodować ``labels`` (gatunki) potrzebny jest ``label_encoder: Dict[int, str]``:
+    #. Aby móc zakodować i odkodować ``labels`` (gatunki) potrzebny jest ``label_encoder: dict[int, str]``:
 
         * key - identyfikator (kolejna liczba rzeczywista)
         * value - nazwa gatunku
@@ -489,7 +489,7 @@ Loop Dict Label Encoder
 :Output:
     .. code-block:: python
 
-        features: List[tuple]
+        features: list[tuple]
         # [(5.8, 2.7, 5.1, 1.9),
         #  (5.1, 3.5, 1.4, 0.2),
         #  (5.7, 2.8, 4.1, 1.3),
@@ -497,10 +497,10 @@ Loop Dict Label Encoder
         #  (6.4, 3.2, 4.5, 1.5),
         #  (4.7, 3.2, 1.3, 0.2), ...]
 
-        labels: List[int]
+        labels: list[int]
         # [0, 1, 2, 0, 2, 1, 2, 0, 1, 0, 0, 1, 1, 2, 1, 2, 0, 2, 0, 2, 1]
 
-        label_encoder: Dict[int, str]
+        label_encoder: dict[int, str]
         # {0: 'virginica',
         #  1: 'setosa',
         #  2: 'versicolor'}

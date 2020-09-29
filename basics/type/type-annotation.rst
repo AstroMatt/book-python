@@ -7,20 +7,21 @@ Type Annotation
 
 .. epigraph::
     Types are not required, and never will be
-    -- Guido van Rossum, Python BDFL
+    -- Guido van Rossum, Python initiator, core developer, former BDFL
 
 
 Rationale
 =========
 .. highlights::
-    * Since Python 3.5
+    * Since Python 3.5, :pep:`484`, :pep:`526`, :pep:`544`
     * ``SyntaxError`` in Python before 3.5
     * Also known as "type hints"
     * Good IDE will give you hints
     * Types are used extensively in system libraries
     * More and more books and documentations use types
-    * To type check use: ``mypy`` or ``pyre-check``
+    * To type check use: ``mypy``, ``pyre-check``, ``pytypes``
     * More information in :ref:`cicd-tools`
+    * https://www.infoq.com/presentations/dynamic-static-typing/
 
 
 Int
@@ -63,10 +64,27 @@ Optional
 
     from typing import Optional
 
+    data: Optional[int] = 1
+    data: Optional[int] = None
+
+.. code-block:: python
+
+    from typing import Optional
+
 
     firstname: str = 'Melissa'
     lastname: str = 'Lewis'
     age: Optional[float] = None
+
+
+Union
+=====
+.. code-block:: python
+
+    from typing import Optional
+
+    data: Union[int, float] = 1
+    data: Union[int, float] = 1.1
 
 
 Final
@@ -79,8 +97,17 @@ Final
     from typing import Final
 
 
-    METER: Final = 1
-    KILOMETER: Final[int] = 1000 * METER
+    m: Final[int] = 1
+    km: Final[int] = 1000 * m
+
+.. code-block:: python
+
+    from typing import Final
+
+    second: Final[int] = 1
+    minute: Final[int] = 60 * second
+    hour: Final[int] = 60 * hour
+    day: Final[int] = 24 * day
 
 
 Type Check is not Enforced
@@ -94,6 +121,36 @@ Type Check is not Enforced
     name: int = 'Jan Twardowski'
     age: float = 30
     is_adult: int = True
+
+
+Futute
+======
+* Those are only my speculations
+* Based on other languages
+
+.. code-block:: python
+
+    from typing import Union
+
+    age: Union[int, float] = 44
+
+    age: [int,float] = 44
+    age: [int|float] = 44
+
+    age: (int,float) = 44
+    age: (int|float) = 44
+
+    age: <int,float> = 44
+    age: <int|float> = 44
+
+.. code-block:: python
+    :force:
+
+    from typing import Optional
+
+    age: Optional[int] = 44
+
+    age: int? = 44
 
 
 More Information
