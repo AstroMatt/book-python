@@ -254,6 +254,53 @@ Decorator Arguments Type Check
         echo(b=2, a='b')
         echo('b', b=2)
 
+:Output:
+    .. code-block:: text
+
+        >>> echo('one', 1)
+        True
+        >>> echo('one', 1, 1.1)
+        True
+        >>> echo('one', b=1)
+        True
+        >>> echo('one', 1, c=1.1)
+        True
+        >>> echo('one', b=1, c=1.1)
+        True
+        >>> echo(a='one', b=1, c=1.1)
+        True
+        >>> echo(c=1.1, b=1, a='one')
+        True
+        >>> echo(b=1, c=1.1, a='one')
+        True
+        >>> echo('one', c=1.1, b=1)
+        True
+
+        >>> echo(1, 1)
+        Traceback (most recent call last):
+        ...
+        TypeError: Argument "a" is <class 'int'>, but <class 'str'> was expected
+
+        >>> echo('one', 'two')
+        Traceback (most recent call last):
+        ...
+        TypeError: Argument "b" is <class 'str'>, but <class 'int'> was expected
+
+        >>> echo('one', 1, 'two')
+        Traceback (most recent call last):
+        ...
+        TypeError: Argument "c" is <class 'str'>, but <class 'float'> was expected
+
+        >>> echo(b='one', a='two')
+        Traceback (most recent call last):
+        ...
+        TypeError: Argument "b" is <class 'str'>, but <class 'int'> was expected
+
+        >>> echo('one', c=1.1, b=1.1)
+        Traceback (most recent call last):
+        ...
+        TypeError: Argument "b" is <class 'float'>, but <class 'int'> was expected
+
 :Hint:
     .. code-block:: python
 

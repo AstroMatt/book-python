@@ -202,43 +202,55 @@ Decorator Class Type Check
     .. code-block:: python
 
         @CheckTypes
-        def isworking(a: str, b: int, c: float = 0) -> bool:
+        def echo(a: str, b: int, c: float = 0) -> bool:
             return True
 
-:Tests:
-    .. doctest::
+:Output:
+    .. code-block:: text
 
-        >>> isworking('hello', 1)
+        >>> echo('one', 1)
+        True
+        >>> echo('one', 1, 1.1)
+        True
+        >>> echo('one', b=1)
+        True
+        >>> echo('one', 1, c=1.1)
+        True
+        >>> echo('one', b=1, c=1.1)
+        True
+        >>> echo(a='one', b=1, c=1.1)
+        True
+        >>> echo(c=1.1, b=1, a='one')
+        True
+        >>> echo(b=1, c=1.1, a='one')
+        True
+        >>> echo('one', c=1.1, b=1)
         True
 
-        >>> isworking('hello', b=1)
-        True
-
-        >>> isworking(a='hello', b=1)
-        True
-
-        >>> isworking(b=1, a='hello')
-        True
-
-        >>> isworking(1, 'hello')
+        >>> echo(1, 1)
         Traceback (most recent call last):
-            ...
-        TypeError: Argument 1 is <class 'int'>, but <class 'str'> was expected
+        ...
+        TypeError: Argument "a" is <class 'int'>, but <class 'str'> was expected
 
-        >>> isworking(1, b='hello')
+        >>> echo('one', 'two')
         Traceback (most recent call last):
-            ...
-        TypeError: Argument 1 is <class 'int'>, but <class 'str'> was expected
+        ...
+        TypeError: Argument "b" is <class 'str'>, but <class 'int'> was expected
 
-        >>> isworking(a=1, b='hello')
+        >>> echo('one', 1, 'two')
         Traceback (most recent call last):
-            ...
-        TypeError: Argument a is <class 'str'>, but <class 'str'> was expected
+        ...
+        TypeError: Argument "c" is <class 'str'>, but <class 'float'> was expected
 
-        >>> isworking(b='hello', a=1)
+        >>> echo(b='one', a='two')
         Traceback (most recent call last):
-            ...
-        TypeError: Argument b is <class 'str'>, but <class 'int'> was expected
+        ...
+        TypeError: Argument "b" is <class 'str'>, but <class 'int'> was expected
+
+        >>> echo('one', c=1.1, b=1.1)
+        Traceback (most recent call last):
+        ...
+        TypeError: Argument "b" is <class 'float'>, but <class 'int'> was expected
 
 :Hint:
     .. code-block:: python
