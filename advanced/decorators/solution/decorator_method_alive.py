@@ -10,6 +10,7 @@ Traceback (most recent call last):
 RuntimeError: Hero is dead and cannot make damage
 """
 
+
 def if_alive(method):
     def wrapper(hero, *args, **kwargs):
         if hero.current_health > 0:

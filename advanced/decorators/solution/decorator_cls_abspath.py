@@ -1,3 +1,14 @@
+"""
+>>> from pathlib import Path
+>>> cwd = str(Path().cwd())
+>>> display('iris.csv').startswith(cwd)
+True
+>>> display('iris.csv').endswith('iris.csv')
+True
+>>> display('/home/python/iris.csv')
+'/home/python/iris.csv'
+"""
+
 from pathlib import Path
 
 
@@ -12,12 +23,5 @@ class Abspath:
 
 
 @Abspath
-def display(file):
-    print(f'Reading file {file}')
-
-
-display('iris.csv')
-# Reading file /home/python/iris.csv
-
-display('/home/python/iris.csv')
-# Reading file /home/python/iris.csv
+def display(path):
+    return str(path)

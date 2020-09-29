@@ -199,18 +199,15 @@ Decorator Arguments Astronauts
 
         @check(field='is_astronaut', value=True)
         def launch(crew):
-            print('Launch')
-
-
-        launch(CREW_PRIMARY)
-        launch(CREW_BACKUP)
+            crew = ', '.join(astro['name'] for astro in crew)
+            return f'Launching: {crew}'
 
 :Output:
     .. code-block:: python
 
         """
         >>> launch(CREW_PRIMARY)
-        Launching Jan Twardowski, Mark Watney, Melissa Lewis
+        Launching: Jan Twardowski, Mark Watney, Melissa Lewis
 
         >>> launch(CREW_BACKUP)
         Traceback (most recent call last):

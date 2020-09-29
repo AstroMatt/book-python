@@ -1,6 +1,6 @@
 """
 >>> launch(CREW_PRIMARY)
-Launching Jan Twardowski, Mark Watney, Melissa Lewis
+'Launching: Jan Twardowski, Mark Watney, Melissa Lewis'
 
 >>> launch(CREW_BACKUP)
 Traceback (most recent call last):
@@ -31,4 +31,4 @@ def check_astronauts(func):
 @check_astronauts
 def launch(crew):
     crew = ', '.join(astro['name'] for astro in crew)
-    print(f'Launching {crew}')
+    return f'Launching: {crew}'

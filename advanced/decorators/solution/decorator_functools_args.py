@@ -1,3 +1,11 @@
+"""
+>>> hello.__name__
+'hello'
+
+>>> hello.__doc__
+'Hello Docstring'
+"""
+
 from functools import wraps
 
 
@@ -13,11 +21,3 @@ def mydecorator(happy=True):
 @mydecorator(happy=False)
 def hello():
     """Hello Docstring"""
-    pass
-
-
-print('Function:', hello.__name__)
-# Function: hello
-
-print('Doctring:', hello.__doc__)
-# Doctring: Hello Docstring

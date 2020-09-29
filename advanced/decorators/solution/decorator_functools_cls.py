@@ -1,3 +1,11 @@
+"""
+>>> hello = Hello()
+>>> hello.__name__
+'Hello'
+>>> hello.__doc__
+'Hello Docstring'
+"""
+
 def mydecorator(cls):
     class Wrapper(cls):
         __doc__ = cls.__doc__
@@ -8,12 +16,3 @@ def mydecorator(cls):
 @mydecorator
 class Hello:
     """Hello Docstring"""
-
-
-hello = Hello()
-
-print('Class:', hello.__name__)
-# Class: Hello
-
-print('Doctring:', hello.__doc__)
-# Doctring: Hello Docstring

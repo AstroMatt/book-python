@@ -138,14 +138,39 @@ Decorator Class Abspath
 * Solution: :download:`solution/decorator_cls_abspath.py`
 
 :English:
-    #. Create function ``print_file(filename: str) -> str`` which prints file content (filename given as an argument)
-    #. Create decorator ``ToAbsolutePath``
-    #. Decorator converts to absolute path (``path`` + ``filename``), if filename given as an argument is a relative path
+    #. Use data from "Input" section (see below)
+    #. Absolute path is when ``path`` starts with ``current_directory``
+    #. Create class decorator ``Abspath``
+    #. If ``path`` is relative, then ``Abspath`` will convert it to absolute
+    #. If ``path`` is absolute, then ``Abspath`` will not modify it
+    #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Stwórz funkcję ``print_file(filename: str) -> str`` która wyświetla zawartość pliku (nazwa pliku podana jako argument)
-    #. Stwórz dekorator ``ToAbsolutePath``
-    #. Dekorator zamienia ścieżkę na bezwzględną (``path`` + ``filename``), jeżeli nazwa pliku podana jako argument jest względna
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Ścieżka bezwzględna jest gdy ``path`` zaczyna się od ``current_directory``
+    #. Stwórz klasę dekorator ``Abspath``
+    #. Jeżeli ``path`` jest względne, to ``Abspath`` zamieni ją na bezwzględną
+    #. Jeżeli ``path`` jest bezwzględna, to ``Abspath`` nie będzie jej modyfikował
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Input:
+    .. code-block:: python
+
+        @Abspath
+        def display(path):
+            return str(path)
+
+:Output:
+    .. code-block:: text
+
+        >>> from pathlib import Path
+        >>> cwd = str(Path().cwd())
+        >>> display('iris.csv').startswith(cwd)
+        True
+        >>> display('iris.csv').endswith('iris.csv')
+        True
+        >>> display('/home/python/iris.csv')
+        '/home/python/iris.csv'
 
 :Hint:
     * ``from pathlib import Path``

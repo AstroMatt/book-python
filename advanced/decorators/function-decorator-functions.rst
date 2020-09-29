@@ -411,47 +411,46 @@ Examples
 Assignments
 ===========
 
-Decorator Function Allowed
---------------------------
+Decorator Function Disabled
+---------------------------
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/decorator_func_allowed.py`
+* Solution: :download:`solution/decorator_func_disabled.py`
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Create decorator ``if_allowed``
-    #. Decorator calls function, only when ``_allowed`` is ``True``
+    #. Create decorator ``check``
+    #. Decorator calls function, only when ``check.disabled`` is ``False``
     #. Else raise an exception ``PermissionError``
-    #. Run program and check what happend
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
-    #. Stwórz dekorator ``if_allowed``
-    #. Dekorator wywołuje funkcję, tylko gdy ``_allowed`` jest ``True``
+    #. Stwórz dekorator ``check``
+    #. Dekorator wywołuje funkcję, tylko gdy ``echo.disabled`` jest ``False``
     #. W przeciwnym przypadku podnieś wyjątek ``PermissionError``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. code-block:: python
 
-        @if_allowed
+        @check
         def echo(text):
             print(text)
 
 :Output:
     .. code-block:: text
 
-        >>> _allowed = True
+        >>> echo.disabled = False
         >>> echo('hello')
         hello
 
-        >>> _allowed = False
+        >>> echo.disabled = True
         >>> echo('hello')
         Traceback (most recent call last):
             ...
-        PermissionError
+        PermissionError: Function is disabled
 
 Decorator Function Astronauts
 -----------------------------
@@ -493,13 +492,13 @@ Decorator Function Astronauts
         @check_astronauts
         def launch(crew):
             crew = ', '.join(astro['name'] for astro in crew)
-            print(f'Launching {crew}')
+            return f'Launching: {crew}'
 
 :Output:
     .. code-block:: text
 
         >>> launch(CREW_PRIMARY)
-        Launching Jan Twardowski, Mark Watney, Melissa Lewis
+        'Launching: Jan Twardowski, Mark Watney, Melissa Lewis'
 
         >>> launch(CREW_BACKUP)
         Traceback (most recent call last):
@@ -579,7 +578,7 @@ Decorator Function Abspath
 :English:
     #. Use data from "Input" section (see below)
     #. Absolute path is when ``path`` starts with ``current_directory``
-    #. Create decorator ``abspath``
+    #. Create function decorator ``abspath``
     #. If ``path`` is relative, then ``abspath`` will convert it to absolute
     #. If ``path`` is absolute, then ``abspath`` will not modify it
     #. Compare result with "Output" section (see below)
@@ -587,7 +586,7 @@ Decorator Function Abspath
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Ścieżka bezwzględna jest gdy ``path`` zaczyna się od ``current_directory``
-    #. Stwórz dekorator ``abspath``
+    #. Stwórz funkcję dekorator ``abspath``
     #. Jeżeli ``path`` jest względne, to ``abspath`` zamieni ją na bezwzględną
     #. Jeżeli ``path`` jest bezwzględna, to ``abspath`` nie będzie jej modyfikował
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)

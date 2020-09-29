@@ -140,16 +140,14 @@ Decorator Functools Func
     @mydecorator
     def hello():
         """Hello Docstring"""
-        pass
 
-:Ouput:
-    .. code-block:: python
+:Output:
+    .. code-block:: text
 
-        print('Function:', hello.__name__)
-        # Function: hello
-
-        print('Doctring:', hello.__doc__)
-        # Doctring: Hello Docstring
+        >>> hello.__name__
+        'hello'
+        >>> hello.__doc__
+        'Hello Docstring'
 
 Decorator Functools Args
 ------------------------
@@ -181,16 +179,14 @@ Decorator Functools Args
     @mydecorator(happy=False)
     def hello():
         """Hello Docstring"""
-        pass
 
-:Ouput:
-    .. code-block:: python
+:Output:
+    .. code-block:: text
 
-        print('Function:', hello.__name__)
-        # Function: hello
-
-        print('Doctring:', hello.__doc__)
-        # Doctring: Hello Docstring
+        >>> hello.__name__
+        'hello'
+        >>> hello.__doc__
+        'Hello Docstring'
 
 Decorator Functools Cls
 -----------------------
@@ -222,14 +218,11 @@ Decorator Functools Cls
         class Hello:
             """Hello Docstring"""
 
-
-        hello = Hello()
-
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        print('Class:', hello.__name__)
-        # Class: Hello
-
-        print('Doctring:', hello.__doc__)
-        # Doctring: Hello Docstring
+        >>> hello = Hello()
+        >>> hello.__name__
+        'Hello'
+        >>> hello.__doc__
+        'Hello Docstring'
