@@ -35,12 +35,8 @@ Tuple
 
     data: tuple = ()
     data: tuple = tuple()
-
     data: tuple = 'a', 2, 3.3
     data: tuple = ('a', 2, 3.3)
-
-.. code-block:: python
-    :caption: Explicit type annotation since Python 3.9
 
     data: tuple[int, int, int] = (1, 2, 3)
     data: tuple[str, str, str] = ('setosa', 'virginica', 'versicolor')
@@ -50,14 +46,17 @@ Tuple
     data: tuple[str, ...] = ('setosa', 'virginica', 'versicolor')
 
 .. code-block:: python
-    :caption: Explicit type annotation before Python 3.9
+    :caption: Before Python 3.9
 
     from typing import Tuple
 
+    data: tuple = ()
+    data: tuple = tuple()
+    data: tuple = 'a', 2, 3.3
+    data: tuple = ('a', 2, 3.3)
     data: Tuple[int, int, int] = (1, 2, 3)
     data: Tuple[str, str, str] = ('setosa', 'virginica', 'versicolor')
     data: Tuple[str, int, float] = ('a', 2, 3.3)
-
     data: Tuple[int, ...] = (1, 2, 3)
     data: Tuple[str, ...] = ('setosa', 'virginica', 'versicolor')
 
@@ -113,7 +112,6 @@ Set
 Frozenset
 =========
 .. code-block:: python
-    :caption: Generic type annotation
 
     data: frozenset = set()
     data: frozenset = {'a', 1, 2.2}
