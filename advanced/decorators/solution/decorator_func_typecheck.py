@@ -1,31 +1,78 @@
-from typing import Callable, NoReturn
+"""
+>>> echo('one', 1)
+True
+>>> echo('one', 1, 1.1)
+True
+>>> echo('one', b=1)
+True
+>>> echo('one', 1, c=1.1)
+True
+>>> echo('one', b=1, c=1.1)
+True
+>>> echo(a='one', b=1, c=1.1)
+True
+>>> echo(c=1.1, b=1, a='one')
+True
+>>> echo(b=1, c=1.1, a='one')
+True
+>>> echo('one', c=1.1, b=1)
+True
+
+>>> echo(1, 1)
+Traceback (most recent call last):
+...
+TypeError: "a" is <class 'int'>, but <class 'str'> was expected
+
+>>> echo('one', 'two')
+Traceback (most recent call last):
+...
+TypeError: "b" is <class 'str'>, but <class 'int'> was expected
+
+>>> echo('one', 1, 'two')
+Traceback (most recent call last):
+...
+TypeError: "c" is <class 'str'>, but <class 'float'> was expected
+
+>>> echo(b='one', a='two')
+Traceback (most recent call last):
+...
+TypeError: "b" is <class 'str'>, but <class 'int'> was expected
+
+>>> echo('one', c=1.1, b=1.1)
+Traceback (most recent call last):
+...
+TypeError: "b" is <class 'float'>, but <class 'int'> was expected
+"""
+
+from typing import NoReturn, Any, Callable
 
 
+def typecheck(func: Callable):
+    def valid(argname: str, argval: Any) -> NoReturn:
+        argtype = type(argval)
+        expected = func.__annotations__[argname]
 
-def check_types(func: Callable) -> Callable:
-    def check_positional(func: Callable, args: tuple) -> NoReturn:
-        expected = func.__annotations__.copy()
-        expected.pop('return')
+        if argtype is not expected:
+            raise TypeError(f'"{argname}" is {argtype}, but {expected} was expected')
 
-        for arg, exp in zip(args, expected.values()):
-            if not isinstance(arg, exp):
-                raise TypeError(f'Argument {arg} is {type(arg)}, but {exp} was expected')
-
-    def check_keyword(func: Callable, kwargs: dict) -> NoReturn:
-        expected = func.__annotations__.copy()
-
-        for argname, argvalue in kwargs.items():
-            exp = expected.get(argname)
-            if not isinstance(argvalue, exp):
-                raise TypeError(f'Argument {argname} is {type(argname)}, but {exp} was expected')
+    def merge(*args, **kwargs):
+        arguments = zip(func.__annotations__.keys(), args)
+        return {**kwargs, **dict(arguments)}.items()
 
     def wrapper(*args, **kwargs):
-        check_positional(func, args)
-        check_keyword(func, kwargs)
-        return func(*args, **kwargs)
+        # Check if all arguments are valid types
+        for argname, argval in merge(*args, **kwargs):
+            valid(argname, argval)
+
+        # Check result
+        result = func(*args, **kwargs)
+        valid('return', result)
+
+        # Return function result
+        return result
     return wrapper
 
 
-@check_types
-def isworking(a: str, b: int, c: float = 0) -> bool:
-    return True
+@typecheck
+def echo(a: str, b: int, c: float = 0.0) -> bool:
+    return bool(a * b)

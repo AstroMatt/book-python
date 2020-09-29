@@ -185,25 +185,37 @@ Decorator Class Type Check
 * Solution: :download:`solution/decorator_cls_typecheck.py`
 
 :English:
-    .. todo:: English translation
+    #. Use data from "Input" section (see below)
+    #. Create decorator class ``TypeCheck``
+    #. Decorator checks types of all arguments (``*args`` oraz ``**kwargs``)
+    #. Decorator checks return type
+    #. In case when received type is not expected throw an exception ``TypeError`` with:
+
+        * argument name
+        * actual type
+        * expected type
+
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Stwórz dekorator - klasę ``CheckTypes``
-    #. Dekorator ma sprawdzać typy danych, wszystkich parametrów wchodzących do funkcji
-    #. Jeżeli, którykolwiek się nie zgadza, wyrzuć wyjątek ``TypeError``
-    #. Wyjątek ma wypisywać:
+    #. Stwórz dekorator klasę ``TypeCheck``
+    #. Dekorator sprawdza typy wszystkich argumentów (``*args`` oraz ``**kwargs``)
+    #. Dekorator sprawdza typ zwracany
+    #. W przypadku gdy otrzymany typ nie jest równy oczekiwanemu wyrzuć wyjątek ``TypeError`` z:
 
-        * nazwę parametru
-        * typ, który parametr ma (nieprawidłowy)
-        * typ, który był oczekiwany
+        * nazwa argumentu
+        * aktualny typ
+        * oczekiwany typ
+
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. code-block:: python
 
-        @CheckTypes
-        def echo(a: str, b: int, c: float = 0) -> bool:
-            return True
+        @TypeCheck
+        def echo(a: str, b: int, c: float = 0.0) -> bool:
+            return bool(a * b)
 
 :Output:
     .. code-block:: text
@@ -230,30 +242,30 @@ Decorator Class Type Check
         >>> echo(1, 1)
         Traceback (most recent call last):
         ...
-        TypeError: Argument "a" is <class 'int'>, but <class 'str'> was expected
+        TypeError: "a" is <class 'int'>, but <class 'str'> was expected
 
         >>> echo('one', 'two')
         Traceback (most recent call last):
         ...
-        TypeError: Argument "b" is <class 'str'>, but <class 'int'> was expected
+        TypeError: "b" is <class 'str'>, but <class 'int'> was expected
 
         >>> echo('one', 1, 'two')
         Traceback (most recent call last):
         ...
-        TypeError: Argument "c" is <class 'str'>, but <class 'float'> was expected
+        TypeError: "c" is <class 'str'>, but <class 'float'> was expected
 
         >>> echo(b='one', a='two')
         Traceback (most recent call last):
         ...
-        TypeError: Argument "b" is <class 'str'>, but <class 'int'> was expected
+        TypeError: "b" is <class 'str'>, but <class 'int'> was expected
 
         >>> echo('one', c=1.1, b=1.1)
         Traceback (most recent call last):
         ...
-        TypeError: Argument "b" is <class 'float'>, but <class 'int'> was expected
+        TypeError: "b" is <class 'float'>, but <class 'int'> was expected
 
 :Hint:
     .. code-block:: python
 
         echo.__annotations__
-        # {'a': <class 'str'>, 'b': <class 'int'>, 'c':  <class 'float'>, 'return': <class 'bool'>}
+        # {'a': <class 'str'>, 'b': <class 'int'>, 'c': <class 'float'>, 'return': <class 'bool'>}

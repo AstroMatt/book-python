@@ -1,40 +1,82 @@
-from typing import Callable
+"""
+>>> echo('one', 1)
+True
+>>> echo('one', 1, 1.1)
+True
+>>> echo('one', b=1)
+True
+>>> echo('one', 1, c=1.1)
+True
+>>> echo('one', b=1, c=1.1)
+True
+>>> echo(a='one', b=1, c=1.1)
+True
+>>> echo(c=1.1, b=1, a='one')
+True
+>>> echo(b=1, c=1.1, a='one')
+True
+>>> echo('one', c=1.1, b=1)
+True
+
+>>> echo(1, 1)
+Traceback (most recent call last):
+...
+TypeError: "a" is <class 'int'>, but <class 'str'> was expected
+
+>>> echo('one', 'two')
+Traceback (most recent call last):
+...
+TypeError: "b" is <class 'str'>, but <class 'int'> was expected
+
+>>> echo('one', 1, 'two')
+Traceback (most recent call last):
+...
+TypeError: "c" is <class 'str'>, but <class 'float'> was expected
+
+>>> echo(b='one', a='two')
+Traceback (most recent call last):
+...
+TypeError: "b" is <class 'str'>, but <class 'int'> was expected
+
+>>> echo('one', c=1.1, b=1.1)
+Traceback (most recent call last):
+...
+TypeError: "b" is <class 'float'>, but <class 'int'> was expected
+"""
+
+from typing import Callable, Any, NoReturn
 
 
-class CheckType:
+class TypeCheck:
     def __init__(self, func: Callable) -> None:
         self._func = func
 
     def __call__(self, *args, **kwargs):
-        self.check_positional(self._func, args)
-        self.check_keyword(self._func, kwargs)
-        return self._func(*args, **kwargs)
+        self.check_arguments(*args, **kwargs)
+        result = self._func(*args, **kwargs)
+        self.check_result(result)
+        return result
 
-    def check_positional(self, func: Callable, args: tuple):
-        expected = func.__annotations__.copy()
-        expected.pop('return')
+    def check_arguments(self, *args, **kwargs):
+        for argname, argval in self.merge(*args, **kwargs):
+            self.valid(argname, argval)
 
-        for arg, exp in zip(args, expected.values()):
-            if not isinstance(arg, exp):
-                raise TypeError(f'Argument {arg} is {type(arg)}, but {exp} was expected')
+    def check_result(self, result):
+        self.valid('return', result)
 
-    def check_keyword(self, func: Callable, kwargs: dict):
-        expected = func.__annotations__.copy()
+    def merge(self, *args, **kwargs):
+        """Convert args to named arguments and merge with kwargs"""
+        arguments = zip(self._func.__annotations__.keys(), args)
+        return {**kwargs, **dict(arguments)}.items()
 
-        for argname, argvalue in kwargs.items():
-            exp = expected.get(argname)
-            if not isinstance(argvalue, exp):
-                raise TypeError(f'Argument {argname} is {type(argname)}, but {exp} was expected')
+    def valid(self, argname: str, argval: Any) -> NoReturn:
+        argtype = type(argval)
+        expected = self._func.__annotations__[argname]
 
-
-@CheckType
-def echo(a: str, b: int, c: int = 0) -> bool:
-    return a * b
+        if argtype is not expected:
+            raise TypeError(f'"{argname}" is {argtype}, but {expected} was expected')
 
 
-print(echo('a', 2))
-print(echo('a', 2))
-print(echo('b', 2))
-print(echo(a='b', b=2))
-print(echo(b=2, a='b'))
-print(echo('b', b=2))
+@TypeCheck
+def echo(a: str, b: int, c: float = 0.0) -> bool:
+    return bool(a * b)
