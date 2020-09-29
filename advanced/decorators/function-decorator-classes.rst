@@ -5,32 +5,24 @@ Function Decorator with Classes
 
 Syntax
 ======
-* ``decorator`` is a decorator name
+* ``mydecorator`` is a decorator name
 * ``MyClass`` is a class name
 
 Syntax:
     .. code-block:: python
 
-        @decorator
+        @mydecorator
         class MyClass:
             pass
 
 Is equivalent to:
     .. code-block:: python
 
-        MyClass = decorator(MyClass)
+        MyClass = mydecorator(MyClass)
 
 
 Definition
 ==========
-* ``decorator`` is decorator name
-* ``cls`` is a pointer to class which is being decorated (``MyClass`` in this case)
-* Decorator must return pointer to ``Wrapper``
-* ``Wrapper`` is a closure class
-* ``Wrapper`` name is a convention, but you can name it anyhow
-* ``Wrapper`` inherits from ``MyClass`` so it is almost identical
-* decorator must return pointer to ``Wrapper``
-
 .. code-block:: python
 
     def decorator(cls):

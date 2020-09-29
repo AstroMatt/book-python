@@ -3,26 +3,32 @@ Class Decorator with Functions
 ******************************
 
 
-Syntax
+Rationale
 ======
-* ``Decorator`` is a decorator name
-* ``my_function`` is a function name
+* ``MyDecorator`` is a decorator name
+* ``myfunction`` is a function name
 
 Syntax:
     .. code-block:: python
 
-        @Decorator
-        def my_function(*args, **kwargs):
+        @MyDecorator
+        def myfunction(*args, **kwargs):
             pass
 
 Is equivalent to:
     .. code-block:: python
 
-        my_function = Decorator(my_function)
+        myfunction = MyDecorator(myfunction)
 
 
 Definition
 ==========
+* ``cls`` is a pointer to class which is being decorated (``MyClass`` in this case)
+* ``Wrapper`` is a closure class
+* ``Wrapper`` name is a convention, but you can name it anyhow
+* ``Wrapper`` can inherit from ``MyClass``
+* Decorator must return pointer to ``Wrapper``
+
 .. code-block:: python
 
     class Decorator:
@@ -98,21 +104,21 @@ Examples
 
 
     @Cache
-    def my_function(a, b):
+    def myfunction(a, b):
         return a * b
 
 
-    my_function(2, 4)           # 8         # Computed
-    my_function('hi', 3)        # 'hihihi'  # Computed
-    my_function('ha', 3)        # 'hahaha'  # Computed
+    myfunction(2, 4)           # 8         # Computed
+    myfunction('hi', 3)        # 'hihihi'  # Computed
+    myfunction('ha', 3)        # 'hahaha'  # Computed
 
-    my_function('ha', 3)        # 'hahaha'  # Fetched from cache
-    my_function('hi', 3)        # 'hihihi'  # Fetched from cache
-    my_function(2, 4)           # 8         # Fetched from cache
-    my_function(4, 2)           # 8         # Computed
+    myfunction('ha', 3)        # 'hahaha'  # Fetched from cache
+    myfunction('hi', 3)        # 'hihihi'  # Fetched from cache
+    myfunction(2, 4)           # 8         # Fetched from cache
+    myfunction(4, 2)           # 8         # Computed
 
 
-    my_function
+    myfunction
     # {
     #   (2, 4): 8,
     #   ('hi ', 3): 'hihihi',

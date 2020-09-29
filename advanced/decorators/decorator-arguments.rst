@@ -9,13 +9,13 @@ Decorator:
     .. code-block:: python
 
         @mydecorator(a, b)
-        def my_function(*args, **kwargs):
+        def myfunction(*args, **kwargs):
             pass
 
 Is equivalent to:
     .. code-block:: python
 
-        mydecorator = mydecorator(a, b)(my_function)
+        mydecorator = mydecorator(a, b)(myfunction)
 
 
 Definition
@@ -64,12 +64,12 @@ Examples
 
 
     @deprecated(removed_in_version=2.0)
-    def my_function():
+    def myfunction():
         pass
 
 
-    my_function()
-    # /tmp/my_script.py:11: DeprecationWarning: Call to deprecated function my_function in /tmp/my_script.py at line 19
+    myfunction()
+    # /tmp/my_script.py:11: DeprecationWarning: Call to deprecated function myfunction in /tmp/my_script.py at line 19
     # It will be removed in 2.0
 
 .. code-block:: python

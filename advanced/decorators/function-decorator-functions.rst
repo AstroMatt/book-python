@@ -5,28 +5,21 @@ Function Decorator with Functions
 
 Syntax
 ======
-* ``mydecorator`` is a decorator name
-* ``my_function`` is a function name
-* ``args`` arbitrary number of positional arguments
-* ``kwargs`` arbitrary number of keyword arguments
-
 Syntax:
     .. code-block:: python
 
         @mydecorator
-        def my_function(*args, **kwargs):
+        def myfunction(*args, **kwargs):
             pass
 
 Is equivalent to:
     .. code-block:: python
 
-        my_function = mydecorator(my_function)
+        myfunction = mydecorator(myfunction)
 
 
 Definition
 ==========
-* ``func`` is a pointer to function which is being decorated
-* By calling ``func(*args, **kwargs)`` you actually run original (wrapped) function with it's original arguments
 * Decorator must return pointer to ``wrapper``
 * ``wrapper`` is a closure function
 * ``wrapper`` name is a convention, but you can name it anyhow
@@ -50,34 +43,103 @@ Definition
     # hello
 
 
-Examples
-========
+Single Decorator
+================
 .. code-block:: python
     :caption: File exists
 
-    import os
-
 
     def if_file_exists(func):
-        def wrapper(filename):
-            if os.path.exists(filename):
-                return func(filename)
+        def wrapper(file):
+            import os
+            if os.path.exists(file):
+                return func(file)
             else:
-                print(f'File "{filename}" does not exists')
+                print(f'File "{file}" does not exists')
         return wrapper
 
 
     @if_file_exists
-    def print_file(filename):
-        with open(filename) as file:
-            content = file.read()
-            print(content)
+    def display(file):
+        with open(file) as f:
+            print(f.read())
 
 
     if __name__ == '__main__':
-        print_file('/etc/passwd')
-        print_file('/tmp/passwd')
+        display('/etc/passwd')
+        display('/tmp/passwd')
 
+.. code-block:: python
+
+    from datetime import datetime
+
+
+    def timeit(func):
+        def wrapper(*args, **kwargs):
+            start = datetime.now()
+            func(*args, **kwargs)
+            end = datetime.now()
+            print(f'Time: {end-start}')
+        return wrapper
+
+
+    @timeit
+    def add_numbers(a, b):
+        return a + b
+
+
+    add_numbers(1, 2)
+    # Time: 0:00:00.000007
+
+    add_numbers(1, b=2)
+    # Time: 0:00:00.000007
+
+    add_numbers(a=1, b=2)
+    # Time: 0:00:00.000007
+
+
+.. code-block:: python
+
+    import logging
+
+    log = logging.getLogger()
+    log.setLevel('DEBUG')
+
+
+    def debug(func):
+        def wrapper(*args, **kwargs):
+            function = func.__name__
+            log.debug(f'Calling: {function=}, {args=}, {kwargs=}')
+            result = func(*args, **kwargs)
+            log.debug(f'Result: {result}')
+            return result
+
+        return wrapper
+
+
+    @debug
+    def add_numbers(a, b):
+        return a + b
+
+
+    add_numbers(1, 2)
+    # DEBUG:root:Calling: function='add_numbers', args=(1, 2), kwargs={}
+    # DEBUG:root:Result: 3
+    # 3
+
+    add_numbers(1, b=2)
+    # DEBUG:root:Calling: function='add_numbers', args=(1,), kwargs={'b': 2}
+    # DEBUG:root:Result: 3
+    # 3
+
+    add_numbers(a=1, b=2)
+    # DEBUG:root:Calling: function='add_numbers', args=(), kwargs={'a': 1, 'b': 2}
+    # DEBUG:root:Result: 3
+    # 3
+
+
+Stack Decorators
+================
 .. code-block:: python
     :caption: Debug
 
@@ -88,8 +150,7 @@ Examples
         level='DEBUG',
         datefmt='"%Y-%m-%d", "%H:%M:%S"',
         format='{asctime}, "{levelname}", "{message}"',
-        style='{'
-    )
+        style='{')
 
 
     def timeit(func):
@@ -100,7 +161,6 @@ Examples
             time = time_end - time_start
             logging.debug(f'Time: {time}')
             return result
-
         return wrapper
 
 
@@ -111,7 +171,6 @@ Examples
             result = func(*args, **kwargs)
             logging.debug(f'Result: {result}')
             return result
-
         return wrapper
 
 
@@ -135,6 +194,32 @@ Examples
     # [DEBUG] Calling: function='add_numbers', args=(), kwargs={'a': 1, 'b': 2}
     # [DEBUG] Result: 3
     # [DEBUG] Time: 0:00:00.000040
+
+
+Scope
+=====
+.. code-block:: python
+    :caption: Cache with hidden cache
+
+    def cache(func):
+        _cache = {}
+        def wrapper(n):
+            if n not in _cache:
+                _cache[n] = func(n)
+            return _cache[n]
+        return wrapper
+
+
+    @cache
+    def factorial(n):
+        if n == 0:
+            return 1
+        else:
+            return n * factorial(n - 1)
+
+
+    factorial(5)
+    # 120
 
 .. code-block:: python
     :caption: Cache with exposed cache
@@ -162,29 +247,6 @@ Examples
 
     print(_cache)
     # {0: 1, 1: 1, 2: 2, 3: 6, 4: 24, 5: 120}
-
-.. code-block:: python
-    :caption: Cache with hidden cache
-
-    def cache(func):
-        _cache = {}
-        def wrapper(n):
-            if n not in _cache:
-                _cache[n] = func(n)
-            return _cache[n]
-        return wrapper
-
-
-    @cache
-    def factorial(n):
-        if n == 0:
-            return 1
-        else:
-            return n * factorial(n - 1)
-
-
-    factorial(5)
-    # 120
 
 .. code-block:: python
     :caption: Memoize
@@ -244,6 +306,9 @@ Examples
     print(factorial.__cache__)
     # {3: 6, 4: 24, 5: 120, 6: 720}
 
+
+Examples
+========
 .. code-block:: python
     :caption: Flask URL Routing
 
@@ -360,9 +425,8 @@ Decorator Function Allowed
             print(text)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        """
         >>> _allowed = True
         >>> echo('hello')
         hello
@@ -372,7 +436,6 @@ Decorator Function Allowed
         Traceback (most recent call last):
             ...
         PermissionError
-        """
 
 Decorator Function Astronauts
 -----------------------------
@@ -417,9 +480,8 @@ Decorator Function Astronauts
             print(f'Launching {crew}')
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        """
         >>> launch(CREW_PRIMARY)
         Launching Jan Twardowski, Mark Watney, Melissa Lewis
 
@@ -427,7 +489,6 @@ Decorator Function Astronauts
         Traceback (most recent call last):
             ...
         PermissionError: Alex Vogel is not an astronaut
-        """
 
 Decorator Function Memoization
 ------------------------------

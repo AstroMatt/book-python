@@ -3,8 +3,8 @@ About Decorators
 ****************
 
 
-What are decorators?
-====================
+Rationale
+=========
 * Introduced in :pep:`318` - Decorators for Functions and Methods in 2003 for Python 2.4
 * Decorator is an object, which takes another object as it's argument
 * Decorators can:
@@ -16,6 +16,26 @@ What are decorators?
     * Avoid calling
     * Modify globals
     * Add or change metadata
+
+.. code-block:: python
+
+    def mydecorator(func):
+        def wrapper(*args, **kwargs):
+            return func(*args, **kwargs)
+        return wrapper
+
+
+    @mydecorator
+    def myfunction(*args, **kwargs):
+        pass
+
+
+Convention
+==========
+* ``func`` is a pointer to function which is being decorated
+* ``args`` arbitrary number of positional arguments
+* ``kwargs`` arbitrary number of keyword arguments
+* By calling ``func(*args, **kwargs)`` you actually run original (wrapped) function with it's original arguments
 
 
 Types of decorators
@@ -42,51 +62,43 @@ By number of arguments:
     * Without arguments
     * With arguments
 
-
-Function Decorate Function
-==========================
+Usage
+=====
 .. code-block:: python
+    :caption: Function Decorate Function
 
-    @decorator
-    def my_function(*args, **kwargs):
+    @mydecorator
+    def myfunction(*args, **kwargs):
         pass
 
-
-Function Decorate Method
-========================
 .. code-block:: python
+    :caption: Function Decorate Method
 
     class MyClass:
-        @decorator
+
+        @mydecorator
         def my_method(self, *args, **kwargs):
             pass
 
-
-Function Decorate Class
-=======================
 .. code-block:: python
+    :caption: Function Decorate Class
 
-    @decorator
+    @mydecorator
     class MyClass:
         pass
 
-
-Class Decorate Function
-=======================
 .. code-block:: python
+    :caption: Class Decorate Function
 
-    @Decorator
-    def my_function(*args, **kwargs):
+    @MyDecorator
+    def myfunction(*args, **kwargs):
         pass
 
-
-Decorator with arguments
-========================
 .. code-block:: python
     :caption: Decorator with arguments
 
-    @decorator(a, b)
-    def my_function(*args, **kwargs):
+    @mydecorator(a, b)
+    def myfunction(*args, **kwargs):
         pass
 
 

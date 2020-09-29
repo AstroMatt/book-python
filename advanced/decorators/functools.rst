@@ -19,15 +19,15 @@ Wraps
 
 
     @my_decorator
-    def my_function(x):
-        """my_function docstring"""
+    def myfunction(x):
+        """myfunction docstring"""
         print(x)
 
 
-    print(my_function.__name__)
+    print(myfunction.__name__)
     # wrapper
 
-    print(my_function.__doc__)
+    print(myfunction.__doc__)
     # wrapper docstring
 
 .. code-block:: python
@@ -45,16 +45,16 @@ Wraps
 
 
     @my_decorator
-    def my_function(x):
-        """my_function docstring"""
+    def myfunction(x):
+        """myfunction docstring"""
         print(x)
 
 
-    print(my_function.__name__)
-    # my_function
+    print(myfunction.__name__)
+    # myfunction
 
-    print(my_function.__doc__)
-    # my_function docstring
+    print(myfunction.__doc__)
+    # myfunction docstring
 
 
 Cached Property
