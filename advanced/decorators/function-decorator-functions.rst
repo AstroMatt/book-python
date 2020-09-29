@@ -450,7 +450,7 @@ Decorator Function Astronauts
     #. To answer if person is an astronaut check field ``is_astronaut`` in ``crew: List[dict]``
     #. Decorator will call decorated function, only if all crew members are astronauts
     #. If any member is not an astronaut raise ``PermissionError`` and print his first name and last name
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
@@ -561,33 +561,41 @@ Decorator Function Abspath
 * Solution: :download:`solution/decorator_func_abspath.py`
 
 :English:
-    #. Ask user to input file path
-    #. Create function ``display(file: str) -> str`` which prints file content
+    #. Use data from "Input" section (see below)
+    #. Absolute path is when ``path`` starts with ``current_directory``
     #. Create decorator ``abspath``
-    #. Decorator converts to absolute path (``current_directory`` + ``filename``), if filename given as an argument is a relative path
+    #. If ``path`` is relative, then ``abspath`` will convert it to absolute
+    #. If ``path`` is absolute, then ``abspath`` will not modify it
+    #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Poproś użytkownika o podanie ścieżki do pliku
-    #. Stwórz funkcję ``display(file: str) -> str`` która wyświetla zawartość pliku
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Ścieżka bezwzględna jest gdy ``path`` zaczyna się od ``current_directory``
     #. Stwórz dekorator ``abspath``
-    #. Dekorator zamienia ścieżkę na bezwzględną (``current_directory`` + ``filename``), jeżeli nazwa pliku podana jako argument jest względna
+    #. Jeżeli ``path`` jest względne, to ``abspath`` zamieni ją na bezwzględną
+    #. Jeżeli ``path`` jest bezwzględna, to ``abspath`` nie będzie jej modyfikował
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
-:Output:
+:Input:
     .. code-block:: python
 
         @abspath
-        def display(file):
-            print(f'Reading file {file}')
+        def display(path):
+            return str(path)
 
+:Output:
+    .. code-block:: text
 
-        display('iris.csv')
-        # Reading file /home/python/iris.csv
-
-        display('/home/python/iris.csv')
-        # Reading file /home/python/iris.csv
+        >>> from pathlib import Path
+        >>> cwd = str(Path().cwd())
+        >>> display('iris.csv').startswith(cwd)
+        True
+        >>> display('iris.csv').endswith('iris.csv')
+        True
+        >>> display('/home/python/iris.csv')
+        '/home/python/iris.csv'
 
 :Hint:
-    * ``intput()``
     * ``from pathlib import Path``
     * ``current_directory = Path.cwd()``
     * ``path = Path(current_directory, filename)``

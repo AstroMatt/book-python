@@ -42,14 +42,8 @@ Types of decorators
 ===================
 By type:
 
-    * Function Decorators
-    * Class Decorators
-
-By wrapper type:
-
-    * Wrapper function
-    * Wrapper class
-    * Wrapper method (``__call__``)
+    * Function decorators
+    * Class decorators
 
 By decorated object:
 
@@ -57,49 +51,142 @@ By decorated object:
     * Decorating class
     * Decorating methods
 
+By wrapper type:
+
+    * Wrapper function
+    * Wrapper class
+
 By number of arguments:
 
     * Without arguments
     * With arguments
 
-Usage
-=====
+
+Decorator Types
+===============
+* Function decorators
+* Class decorators
+
 .. code-block:: python
-    :caption: Function Decorate Function
+
+    def mydecorator(x):
+        ...
+
+.. code-block:: python
+
+    class MyDecorator:
+        def __init__(self, x):
+            ...
+
+
+Decorated Object
+================
+* Decorating function
+* Decorating class
+* Decorating methods
+
+.. code-block:: python
+
+    def mydecorator(func):
+        ...
+
+    def mydecorator(cls):
+        ...
+
+    def mydecorator(mth):
+        ...
+
+.. code-block:: python
+
+    class MyDecorator:
+        def __init__(self, func):
+            ...
+
+    class MyDecorator:
+        def __init__(self, cls):
+            ...
+
+    class MyDecorator:
+        def __init__(self, mth):
+            ...
+
+
+Wrapper Type
+============
+* Wrapper function
+* Wrapper class
+
+.. code-block:: python
+
+    def mydecorator(x):
+        def wrapper(*args, **kwargs)
+            ...
+        return wrapper
+
+    def mydecorator(x):
+        class Wrapper:
+            def __init__(*args, **kwargs)
+                ...
+        return Wrapper
+
+
+Arguments
+=========
+* Without arguments
+* With arguments
+
+.. code-block:: python
 
     @mydecorator
     def myfunction(*args, **kwargs):
-        pass
-
-.. code-block:: python
-    :caption: Function Decorate Method
-
-    class MyClass:
-
-        @mydecorator
-        def my_method(self, *args, **kwargs):
-            pass
-
-.. code-block:: python
-    :caption: Function Decorate Class
-
-    @mydecorator
-    class MyClass:
-        pass
-
-.. code-block:: python
-    :caption: Class Decorate Function
-
-    @MyDecorator
-    def myfunction(*args, **kwargs):
-        pass
-
-.. code-block:: python
-    :caption: Decorator with arguments
+        ...
 
     @mydecorator(a, b)
     def myfunction(*args, **kwargs):
-        pass
+        ...
+
+.. code-block:: python
+
+    @MyClass
+    def myfunction(*args, **kwargs):
+        ...
+
+    @MyClass(a, b)
+    def myfunction(*args, **kwargs):
+        ...
+
+
+Usage
+=====
+* Decorating function
+* Decorating class
+* Decorating methods
+
+.. code-block:: python
+
+    @mydecorator
+    def myfunction(*args, **kwargs):
+        ...
+
+    class MyClass:
+        @mydecorator
+        def my_method(self, *args, **kwargs):
+            ...
+
+    @mydecorator
+    class MyClass:
+        ...
+
+.. code-block:: python
+
+    @MyDecorator
+    def myfunction(*args, **kwargs):
+        ...
+
+    @MyDecorator
+    class MyClass:
+        ...
+
 
 
 Decorator library

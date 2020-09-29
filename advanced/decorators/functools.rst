@@ -11,14 +11,14 @@ Wraps
 .. code-block:: python
     :emphasize-lines: 15,18
 
-    def my_decorator(func):
+    def mydecorator(func):
         def wrapper(*args, **kwargs):
             """wrapper docstring"""
             return func(*args, **kwargs)
         return wrapper
 
 
-    @my_decorator
+    @mydecorator
     def myfunction(x):
         """myfunction docstring"""
         print(x)
@@ -36,7 +36,7 @@ Wraps
     from functools import wraps
 
 
-    def my_decorator(func):
+    def mydecorator(func):
         @wraps(func)
         def wrapper(*args, **kwargs):
             """wrapper docstring"""
@@ -44,7 +44,7 @@ Wraps
         return wrapper
 
 
-    @my_decorator
+    @mydecorator
     def myfunction(x):
         """myfunction docstring"""
         print(x)

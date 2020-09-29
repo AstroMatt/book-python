@@ -1,21 +1,25 @@
+""""
+>>> from pathlib import Path
+>>> cwd = str(Path().cwd())
+>>> display('iris.csv').startswith(cwd)
+True
+>>> display('iris.csv').endswith('iris.csv')
+True
+>>> display('/home/python/iris.csv')
+'/home/python/iris.csv'
+"""
+
 from pathlib import Path
 
 
 def abspath(func):
-    def wrapper(file):
+    def wrapper(path):
         current_directory = Path().cwd()
-        file = Path(current_directory, file)
-        return func(file)
+        path = Path(current_directory, path)
+        return func(path)
     return wrapper
 
 
 @abspath
-def display(file):
-    print(f'Reading file {file}')
-
-
-display('iris.csv')
-# Reading file /home/python/iris.csv
-
-display('/home/python/iris.csv')
-# Reading file /home/python/iris.csv
+def display(path):
+    return str(path)
