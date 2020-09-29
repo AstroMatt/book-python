@@ -88,19 +88,8 @@ Typed Dict
 
     pt1: Point = {'x':1, 'y':2}         # Ok
     pt2: Point = {'x':1, 'y':2, 'z':0}  # Error
-
-.. code-block:: python
-
-    from typing import TypedDict
-
-
-    class Point(TypedDict):
-        x: int
-        y: int
-
-
-    pt1: Point = Point(x=1, y=2)       # Ok
-    pt2: Point = Point(x=1, y=2, z=0)  # Error
+    pt3: Point = Point(x=1, y=2)       # Ok
+    pt4: Point = Point(x=1, y=2, z=0)  # Error
 
 
 More Information

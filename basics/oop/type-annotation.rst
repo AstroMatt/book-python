@@ -39,6 +39,26 @@ Rationale
     fs: Cache = FilesystemCache()
 
 
+Attributes
+==========
+.. code-block:: python
+
+    class Point:
+        x: int
+        y: int
+
+        def __init__(self, x, y):
+            self.x = x
+            self.y = y
+
+.. code-block:: python
+
+    class Point:
+        def __init__(self, x, y):
+            self.x: int = x
+            self.y: int = y
+
+
 Method Return Types
 ===================
 .. code-block:: python
