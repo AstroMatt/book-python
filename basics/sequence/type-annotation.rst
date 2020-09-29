@@ -54,9 +54,11 @@ Tuple
     data: tuple = tuple()
     data: tuple = 'a', 2, 3.3
     data: tuple = ('a', 2, 3.3)
+
     data: Tuple[int, int, int] = (1, 2, 3)
     data: Tuple[str, str, str] = ('setosa', 'virginica', 'versicolor')
     data: Tuple[str, int, float] = ('a', 2, 3.3)
+
     data: Tuple[int, ...] = (1, 2, 3)
     data: Tuple[str, ...] = ('setosa', 'virginica', 'versicolor')
 
@@ -81,6 +83,7 @@ List
     data: list = list()
     data: list = []
     data: list = ['a', 1, 2.2]
+
     data: List[int] = [1, 2, 3, 4]
     data: List[float] = [5.8, 2.7, 5.1, 1.9]
     data: List[str] = ['a', 'b', 'c', 'd']
@@ -104,6 +107,7 @@ Set
 
     data: set = set()
     data: set = {'a', 1, 2.2}
+
     data: Set[int] = {1, 2, 3}
     data: Set[float] = {0.0, 1.1, 2.2}
     data: Set[str] = {'a', 'b', 'c'}
@@ -127,6 +131,7 @@ Frozenset
 
     data: frozenset = set()
     data: frozenset = {'a', 1, 2.2}
+
     data: FrozenSet[int] = {1, 2, 3}
     data: FrozenSet[float] = {0.0, 1.1, 2.2}
     data: FrozenSet[str] = {'a', 'b', 'c'}
