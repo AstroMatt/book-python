@@ -323,7 +323,7 @@ Function Unpack Flat
         >>> hosts
         ['nasa.gov', 'esa.int', 'roscosmos.ru']
 
-:Hint:
+:Hints:
     * ``help(str.split)``
 
 Function Unpack Nested
@@ -410,5 +410,5 @@ Function Unpack Loop
         >>> result
         ['virginica', 'setosa', 'virginica', 'setosa']
 
-:Hint:
+:Hints:
     * ``str.endswith()``

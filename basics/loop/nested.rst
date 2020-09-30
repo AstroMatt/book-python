@@ -294,6 +294,6 @@ Loop Nested Unique Keys
     * Iterating over nested structure
     * Updating ``set``
 
-:Hint:
+:Hints:
     * ``row.keys()``
     * Compare solutions with :ref:`Micro-benchmarking use case`

@@ -643,7 +643,7 @@ Decorator Function Abspath
         >>> display('/home/python/iris.csv')
         '/home/python/iris.csv'
 
-:Hint:
+:Hints:
     * ``from pathlib import Path``
     * ``current_directory = Path.cwd()``
     * ``path = Path(current_directory, filename)``
@@ -735,7 +735,7 @@ Decorator Function Type Check
         ...
         TypeError: "b" is <class 'float'>, but <class 'int'> was expected
 
-:Hint:
+:Hints:
     .. code-block:: python
 
         echo.__annotations__

@@ -314,7 +314,7 @@ Decorator Arguments Type Check
         ...
         TypeError: "b" is <class 'float'>, but <class 'int'> was expected
 
-:Hint:
+:Hints:
     .. code-block:: python
 
         echo.__annotations__

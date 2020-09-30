@@ -209,4 +209,4 @@ Using ``is`` in REPL (evaluated at once)
 
 Assignments
 ===========
-.. todo:: Create Assignments
+.. todo:: Create assignments

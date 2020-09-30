@@ -305,5 +305,5 @@ Numpy Indexing
     * Defining ``np.ndarray``
     * Indexing ``np.ndarray``
 
-:Hint:
+:Hints:
     * ``np.zeros(shape, dtype)``

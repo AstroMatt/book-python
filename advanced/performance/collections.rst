@@ -162,4 +162,4 @@ UserString
 
 Assignments
 ===========
-.. todo:: Create Assignments
+.. todo:: Create assignments

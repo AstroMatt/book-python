@@ -336,7 +336,7 @@ Series Slice Datetime
         # 2000-02-29   -0.362741
         # Freq: D, dtype: float64
 
-:Hint:
+:Hints:
     * ``np.random.seed(0)``
     * ``np.random.randn(10)``
 
@@ -381,5 +381,5 @@ Slicing Slice Str
         # p    75
         # dtype: int64
 
-:Hint:
+:Hints:
     * ``np.random.randint(..., ..., size=...)``

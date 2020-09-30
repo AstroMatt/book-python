@@ -116,7 +116,7 @@ Type Int Distance
         Kármán Line Mars: 80 km
         Kármán Line Venus: 250 km
 
-:Hint:
+:Hints:
     * 1 km = 1000 m
 
 Type Int Time
@@ -156,7 +156,7 @@ Type Int Time
     * Naming convention
     * Mathematical operations
 
-:Hint:
+:Hints:
     * 1 h = 60 min
     * 1 min = 60 s
 
@@ -192,7 +192,7 @@ Type Int Bits
     * Naming convention
     * Mathematical operations
 
-:Hint:
+:Hints:
     * 1 Kb = 1024 b
     * 1 Mb = 1024 Kb
 
@@ -226,7 +226,7 @@ Type Int Bytes
     * Naming convention
     * Mathematical operations
 
-:Hint:
+:Hints:
     * 1 Kb = 1024 b
     * 1 Mb = 1024 Kb
     * 1 B = 8 b
@@ -264,7 +264,7 @@ Type Int Bandwidth
     * Naming convention
     * Mathematical operations
 
-:Hint:
+:Hints:
     * 1 Kb = 1024 b
     * 1 Mb = 1024 Kb
     * 1 B = 8 b

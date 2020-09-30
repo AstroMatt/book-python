@@ -85,5 +85,5 @@ Numpy Trigonometry
     #. Ctg dla wartości 180 oraz Tan dla 90 stopni ma wartość nieskończoną
     #. Wypisz wyliczone wartości lub ``np.inf``
 
-:Hint:
+:Hints:
     * ``input('Type angle [deg]: ')``

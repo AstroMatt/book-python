@@ -448,5 +448,5 @@ OOP Constructor Passwd
         #  UserAccount(username='jimenez'),
         #  UserAccount(username='ivanovic')]
 
-:Hint:
+:Hints:
     * ``open(..., encoding='utf-8')``

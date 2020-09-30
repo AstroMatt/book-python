@@ -88,4 +88,4 @@ Python 2 vs 3
 
 Assignments
 ===========
-.. todo:: Create Assignments
+.. todo:: Create assignments

@@ -263,7 +263,7 @@ Pandas Read CSV Dates
 
         DATA = 'https://python.astrotech.io/_static/martian-en.csv'
 
-:Hint:
+:Hints:
     * ``parse_dates`` argument
 
 Pandas Read CSV Replace
@@ -309,7 +309,7 @@ Pandas Read CSV Replace
 :The whys and wherefores:
     * Read Pandas ``DataFrame``
 
-:Hint:
+:Hints:
     * ``pd.read_csv(url, nrows=0).columns``
     * ``df['label'].replace({'from': 'to'}, inplace=True)``
 
@@ -381,7 +381,7 @@ Pandas Read HTML
 
         DATA = 'https://en.wikipedia.org/wiki/European_Astronaut_Corps'
 
-:Hint:
+:Hints:
     * Might require ``lxml`` and ``html5lib``: ``pip install --upgrade lxml html5lib``
     * 3rd table
 
@@ -409,7 +409,7 @@ Pandas Read XSLT Books
 
         DATA = 'https://python.astrotech.io/_static/plants.csv'
 
-:Hint:
+:Hints:
     * Require ``lxml``: ``pip install lxml``
 
 Pandas Read XSLT Plants
@@ -438,5 +438,5 @@ Pandas Read XSLT Plants
 
         DATA = 'https://python.astrotech.io/_static/plants.csv'
 
-:Hint:
+:Hints:
     * Require ``lxml``: ``pip install lxml``

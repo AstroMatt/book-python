@@ -380,7 +380,7 @@ Datetime Parse Local
         print(result)
         # 1961-04-12T06:07:00.000000Z
 
-:Hint:
+:Hints:
     * Add string ``local time`` to format statement
 
 Datetime Parse US
@@ -420,7 +420,7 @@ Datetime Parse US
         print(result)
         # 7/21/69 2:56 AM
 
-:Hint:
+:Hints:
     * Add quote sign ``"`` like normal text to ``fmt`` parameter of ``.strptime()``
     * Use ``%-I`` or ``%_I`` on \*nix systems (macOS, BSD, Linux) to remove leading zero
     * Use ``%#I`` on Windows to remove leading zero

@@ -205,4 +205,4 @@ The different patterns and principles used in GRASP are controller, creator, ind
 
 Assignments
 ===========
-.. todo:: Create Assignments
+.. todo:: Create assignments

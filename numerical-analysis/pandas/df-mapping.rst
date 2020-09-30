@@ -342,7 +342,7 @@ DataFrame Mapping Split
 
         DATA = 'https://python.astrotech.io/_static/phones-pl.csv'
 
-:Hint:
+:Hints:
     * ``help(phones['date'].dt)``
 
 DataFrame Mapping Translate
@@ -384,7 +384,7 @@ DataFrame Mapping Translate
                        'listopad': 'November',
                        'grudzień': 'December'}
 
-:Hint:
+:Hints:
     * ``df['column'].replace(regex=True)``
     * ``pd.Timestamp``
 
@@ -421,7 +421,7 @@ DataFrame Mapping Month
                      'May', 'June', 'July', 'August', 'September',
                      'October', 'November', 'December']
 
-:Hint:
+:Hints:
     * ``Series.str.split(expand=True)``
     * ``df[ ['A', 'B'] ] = ...``
 

@@ -192,7 +192,7 @@ Type Float Altitude
     * Naming convention
     * Mathematical operations
 
-:Hint:
+:Hints:
     * 1 ft = 0.3048 m
 
 Type Float Volume
@@ -224,7 +224,7 @@ Type Float Volume
     * Naming convention
     * Mathematical operations
 
-:Hint:
+:Hints:
     * 1 Fl Oz = 0.02957344 l
 
 Type Float Distance
@@ -353,7 +353,7 @@ Type Float Pressure
 
     EMU and Orlan
 
-:Hint:
+:Hints:
     * 1 hPa = 100 Pa
     * 1 kPa = 1000 Pa
     * 1 psi = 6894.757 Pa
@@ -392,7 +392,7 @@ Type Float Percent
     * Mathematical operations
     * Separation of business logic and view
 
-:Hint:
+:Hints:
     * 1 hPa = 100 Pa
     * 1 kPa = 1000 Pa
     * 1 ata = 1013.25 hPa (ISA - International Standard Atmosphere)
@@ -439,7 +439,7 @@ Type Float Gradient
     * Mathematical operations
     * Separation of business logic and view
 
-:Hint:
+:Hints:
     * pressure gradient (decrease) = 11.3 Pa / 1 m
     * 1 hPa = 100 Pa
     * 1 kPa = 1000 Pa

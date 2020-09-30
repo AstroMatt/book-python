@@ -376,7 +376,7 @@ Database SQLite Relations
         Alex Vogel
             Linder Hoehe, 51147, Köln, Germany
 
-:Hint:
+:Hints:
     .. code-block:: sql
         :caption: Hint
 

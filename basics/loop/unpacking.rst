@@ -221,7 +221,7 @@ Loop Unpacking Endswith
     * Iterating over nested structure
     * Unpacking in ``for`` loop
 
-:Hint:
+:Hints:
     * ``str.endswith()``
     * ``set.pop()``
     * ``isinstance`` or ``type``

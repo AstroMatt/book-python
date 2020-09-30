@@ -483,4 +483,4 @@ Date Index
 
 Assignments
 ===========
-.. todo:: Create Assignments
+.. todo:: Create assignments

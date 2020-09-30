@@ -47,5 +47,5 @@ Dragon (version beta)
     #. Przeprowadź walkę, tak długo aż ktoś pierwszy nie zginie
     #. Jeżeli konieczne jest wprowadzenie nowej metody, klasy lub pól to należy to zrobić
 
-:Hint:
+:Hints:
     * Aby zaimportować trzeba najpierw w katalogu stworzyć pusty plik ``__init__.py``

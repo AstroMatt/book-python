@@ -200,5 +200,5 @@ Numpy Iteration
 :The whys and wherefores:
     * Iterating 2-dimensional ``np.ndarray``
 
-:Hint:
+:Hints:
     * ``number % 2 == 0``

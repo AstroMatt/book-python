@@ -333,7 +333,7 @@ File Read CSV
     * String methods
     * Working with nested sequences
 
-:Hint:
+:Hints:
     * ``tuple(float(x) for x in X)``
 
 File Read Parsing Dict
@@ -396,7 +396,7 @@ File Read Parsing Dict
     * String methods
     * Working with nested sequences
 
-:Hint:
+:Hints:
     * ``str.isspace()``
     * ``str.split()``
 

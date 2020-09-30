@@ -547,7 +547,7 @@ DataFrame Groupby Astro EVA
 
         DATA = 'https://python.astrotech.io/_static/astro-eva-all.csv'
 
-:Hint:
+:Hints:
     * Parse CSV and replace newlines inside fields with ``","``
     * Split names into separate columns for each spacewalker (first, second, third)
     * Split names into separate rows for each spacewalker (use ffill)

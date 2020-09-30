@@ -161,4 +161,4 @@ Columns by Index
 
 Assignments
 ===========
-.. todo:: Create Assignments
+.. todo:: Create assignments

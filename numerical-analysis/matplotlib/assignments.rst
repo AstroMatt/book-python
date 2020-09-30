@@ -26,7 +26,7 @@ Trigonometry
     #. Na obu wykresach pokaż grid
     #. Narysuj drugi obrazek z nałożonymi na jeden plot wykresami obu funkcji
 
-:Hint:
+:Hints:
     * ``np.sin()``
     * ``np.cos()``
 
@@ -51,7 +51,7 @@ Iris scatter
 
         DATA = 'https://python.astrotech.io/_static/iris.csv'
 
-:Hint:
+:Hints:
     * ``pd.groupby()``
 
 Random points

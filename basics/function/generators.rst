@@ -388,6 +388,6 @@ Function Generator Chain
         result: float
         # 11502.0
 
-:Hint:
+:Hints:
     * type cast to ``list()`` before calculating mean to expand generator
     * ``mean = sum(...) / len(...)``

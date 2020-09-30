@@ -500,6 +500,6 @@ DataFrame Plot
 
         DATA = 'https://python.astrotech.io/_static/sensors-optima.xlsx'
 
-:Hint:
+:Hints:
     * ``pd.Series.apply(np.sign)`` :ref:`Numpy signum`
     * ``pd.Series.resample('H').sum()``

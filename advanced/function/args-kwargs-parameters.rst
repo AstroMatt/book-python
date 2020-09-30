@@ -251,7 +251,7 @@ Function Args/Kwargs Parameters Define
             ...
         ValueError: At least one argument is required
 
-:Hint:
+:Hints:
     * ``sum(...) / len(...)``
 
 Function Args/Kwargs Parameters Args
@@ -312,7 +312,7 @@ Function Args/Kwargs Parameters Args
     * Function arguments checking
     * Type casting
 
-:Hint:
+:Hints:
     * ``isinstance(obj, (type1, type2))``
     * ``type(obj)``
 
@@ -384,6 +384,6 @@ Function Args/Kwargs Parameters Kwargs
     * Function arguments checking
     * Type casting
 
-:Hint:
+:Hints:
     * ``isinstance(obj, (type1, type2))``
     * ``type(obj)``

@@ -352,7 +352,7 @@ Sequence Unpack Flat
         hosts: list
         # ['nasa.gov', 'esa.int', 'roscosmos.ru']
 
-:Hint:
+:Hints:
     * ``help(str.split)``
 
 Sequence Unpack Nested
@@ -414,6 +414,6 @@ Sequence Unpack Nested
         #  (5.7, 2.8, 4.1, 1.3, 'versicolor'),
         #  ... ]
 
-:Hint:
+:Hints:
     * ``from pprint import pprint``
     * ``pprint(data)``

@@ -166,5 +166,5 @@ OOP Interface Iris
         iris = IrisInterface(5.8, 2.7, 5.1, 1.9)
         # NotImplementedError
 
-:Hint:
+:Hints:
     * ``self.__dict__``

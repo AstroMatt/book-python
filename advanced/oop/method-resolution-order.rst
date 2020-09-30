@@ -82,4 +82,4 @@ Inheritance Diamond
 
 Assignments
 ===========
-.. todo:: Create Assignments
+.. todo:: Create assignments

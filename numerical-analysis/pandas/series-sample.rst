@@ -99,6 +99,6 @@ Series Sample
         * trzy losowe element,
         * 125% losowych elementów z powtórzeniami.
 
-:Hint:
+:Hints:
     * ``np.random.seed(0)``
     * ``np.random.randn(n)``

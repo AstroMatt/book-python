@@ -46,11 +46,6 @@ Definicja intuicyjna
 Przykłady praktyczne
 ====================
 
-
-Assignments
-===========
-
-
 Lektura uzupełniająca
 =====================
 
@@ -63,4 +58,8 @@ Przydatne odnośniki
 Nowe Słownictwo
 ---------------
 .. glossary::
+
+
+Assignments
+===========
 

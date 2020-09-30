@@ -173,6 +173,6 @@ Series Getitem
         * ostatnią wartość w serii (nie używając ``.tail()``),
         * środkowa wartość serii.
 
-:Hint:
+:Hints:
     * ``np.random.seed(0)``
     * ``np.random.randn(10)``

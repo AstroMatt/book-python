@@ -285,4 +285,4 @@ Example 2
 
 Assignments
 ===========
-.. todo:: Create Assignments
+.. todo:: Create assignments

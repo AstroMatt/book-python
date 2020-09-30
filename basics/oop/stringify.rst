@@ -417,7 +417,7 @@ OOP Stringify Nested
 :The whys and wherefores:
     * :ref:`OOP Stringify Objects`
 
-:Hint:
+:Hints:
     * Define ``Crew.__str__()``
     * Define ``Astronaut.__str__()`` and ``Astronaut.__repr__()``
     * Define ``Mission.__repr__()``

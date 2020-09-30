@@ -510,5 +510,5 @@ Loop Dict Label Encoder
     * Dynamic ``dict`` generating
     * ``dict`` reversal
 
-:Hint:
+:Hints:
     * Create reversed lookup dict

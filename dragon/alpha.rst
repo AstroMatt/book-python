@@ -172,6 +172,6 @@ Dragon (version alpha)
     * Keep it Simple
     * Open to extensions, close for modifications
 
-:Hint:
+:Hints:
     * ``from random import randint``
     * ``randint`` returns random integer in range [a, b], including both end point

@@ -153,7 +153,7 @@ DataFrame Create
         "Backup", "LMP", "William Anders"
         "Backup", "CMP", "Fred Haise"
 
-:Hint:
+:Hints:
     * Use selection with ``alt`` key in your IDE
     * If it's not working use CSV:
 

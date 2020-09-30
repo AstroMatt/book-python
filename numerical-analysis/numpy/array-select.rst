@@ -516,6 +516,6 @@ Numpy Select Isin
     #. Posortuj ``result`` w kolejności malejącej
     #. Wypisz ``result``
 
-:Hint:
+:Hints:
     * ``np.isin(a, b)``
     * ``np.flip(a)``

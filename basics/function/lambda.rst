@@ -199,6 +199,6 @@ Function Lambda Chain
         result: float
         # 11502.0
 
-:Hint:
+:Hints:
     * ``mean = sum(...) / len(...)``
     * type cast to ``list()`` before calculating mean to expand generator

@@ -285,5 +285,5 @@ Wielowątkowość
     #. Parametry rozbij za pomocą ``shlex``
     #. Użyj logowania za pomocą biblioteki ``logging`` tak aby przy wyświetlaniu wyników widoczny był identyfikator procesu i wątku.
 
-:Hint:
+:Hints:
     Ustaw parametr ``shell=True`` dla ``subprocess.run()``

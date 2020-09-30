@@ -302,5 +302,5 @@ File Write CSV
             (4.6, 3.1, 1.5, 0.2, 'setosa'),
         ]
 
-:Hint:
+:Hints:
     * ``[str(x) for x in ...]``

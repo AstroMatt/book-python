@@ -312,7 +312,7 @@ Numpy Algebra Euclidean 2D
 
     Calculate Euclidean distance in Cartesian coordinate system
 
-:Hint:
+:Hints:
     * :math:`distance(a, b) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}`
 
 Numpy Algebra Euclidean Ndim
@@ -368,7 +368,7 @@ Numpy Algebra Euclidean Ndim
             1.7320508075688772
             """
 
-:Hint:
+:Hints:
     * ``import doctest``
     * :math:`distance(a, b) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + ... + (n_2 - n_1)^2}`
     * ``for n1, n2 in zip(A, B)``

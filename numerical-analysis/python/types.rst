@@ -65,7 +65,7 @@ Assignments
     * Naming convention
     * Mathematical operations
 
-:Hint:
+:Hints:
     * 1 h = 60 min
     * 1 min = 60 s
 

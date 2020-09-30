@@ -243,7 +243,7 @@ Trigonometry
     #. Wyświetl wartość funkcji trygonometrycznych (sin, cos, tg, ctg)
     #. Jeżeli funkcja trygonometryczna nie istnieje dla danego kąta podnieś stosowny wyjątek
 
-:Hint:
+:Hints:
     * ``input('Type angle [deg]: ')``
 
 Euclidean distance 2D
@@ -303,7 +303,7 @@ Euclidean distance 2D
 
     Calculate Euclidean distance in Cartesian coordinate system
 
-:Hint:
+:Hints:
     * :math:`distance(a, b) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2`
 
 Euclidean distance ``n`` dimensions
@@ -360,7 +360,7 @@ Euclidean distance ``n`` dimensions
             """
             return ...
 
-:Hint:
+:Hints:
     * :math:`distance(a, b) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + ... + (n_2 - n_1)^2}`
     * ``for n1, n2 in zip(A, B)``
 

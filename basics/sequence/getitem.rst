@@ -201,6 +201,6 @@ Sequence Getitem Select
     * Using indexes
     * Type casting
 
-:Hint:
+:Hints:
     * ``from pprint import pprint``
     * ``pprint(result)``

@@ -326,5 +326,5 @@ OOP Method Nested
         total=10.20 mean=2.55 setosa
         total=15.50 mean=3.88 virginica
 
-:Hint:
+:Hints:
     * ``isinstance(value, float)``

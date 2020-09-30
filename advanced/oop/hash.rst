@@ -139,4 +139,4 @@ Hash Method
 
 Assignments
 ===========
-.. todo:: Create Assignments
+.. todo:: Create assignments

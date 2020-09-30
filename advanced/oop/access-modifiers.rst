@@ -411,7 +411,7 @@ OOP Attribute Access Dict
         #     Setosa   9.4  2.35]
 
 
-:Hint:
+:Hints:
     * ``self.__class__.__name__``
     * ``self.__dict__.values()``
     * ``f'\n{name:>10} {total:>5.1f} {avg:>5.2f}'``

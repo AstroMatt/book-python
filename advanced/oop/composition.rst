@@ -249,5 +249,5 @@ OOP Composition Moveable
         Point(x=0, y=0)
         """
 
-:Hint:
+:Hints:
     * ``@dataclass(frozen=True)``
