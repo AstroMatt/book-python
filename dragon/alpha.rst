@@ -11,12 +11,12 @@ Dragon (version alpha)
     Firkraag dragon from game Baldur's Gate II: Shadows of Amn
 
 * Assignment name: Dragon (version alpha)
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 100 lines
 * Estimated time of completion: 60 min, then 90 min live coding with instructor
 * Solution (basic): :download:`solution/dragon_alpha_basic.py`
 * Solution (advanced): :download:`solution/dragon_alpha_adv.py`
-* Last update: 2020-10-01
 * Warning: Don't delete code, assignment will be continued
 
 :English:
