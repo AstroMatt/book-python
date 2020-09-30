@@ -390,6 +390,7 @@ Assignments
 
 Function Args/Kwargs Arguments Define
 -------------------------------------
+* Assignment name: Function Args/Kwargs Arguments Define
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
@@ -401,7 +402,7 @@ Function Args/Kwargs Arguments Define
     #. Create function ``mean(*args)``, which calculates arithmetic mean for ``args``
     #. Do not import any libraries and modules
     #. Separate header from data
-    #. Define ``result: List[Tuple[str, float]]``
+    #. Define ``result: list[tuple[str, float]]``
     #. Iterate over ``DATA`` separating ``features`` from ``label``
     #. To ``result`` append ``label`` and arithmetic mean of ``features``
     #. Compare result with "Output" section (see below)
@@ -411,7 +412,7 @@ Function Args/Kwargs Arguments Define
     #. Stwórz funkcję ``mean(*args)``, która liczy średnią arytmetyczną dla ``args``
     #. Nie importuj żadnych biliotek i modułów
     #. Odseparuj nagłówek od danych
-    #. Zdefiniuj ``result: List[Tuple[str, float]]``
+    #. Zdefiniuj ``result: list[tuple[str, float]]``
     #. Iteruj po ``DATA`` separując ``features`` od ``label``
     #. Do ``result`` dodawaj ``label`` oraz wynik średniej arytmetycznej ``features``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)

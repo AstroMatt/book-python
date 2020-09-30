@@ -133,6 +133,7 @@ Assignments
 
 Dokumentacja
 ------------
+* Assignment name: Dokumentacja
 * Complexity level: easy
 * Lines of code to write: 30 lines
 * Estimated time of completion: 13 min

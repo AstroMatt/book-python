@@ -529,6 +529,7 @@ Assignments
 
 Type String Normalize
 ---------------------
+* Assignment name: Type String Normalize
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
@@ -563,6 +564,7 @@ Type String Normalize
 
 Type String Clean
 -----------------
+* Assignment name: Type String Clean
 * Complexity level: easy
 * Lines of code to write: 11 lines
 * Estimated time of completion: 13 min

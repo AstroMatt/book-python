@@ -121,6 +121,7 @@ Assignments
 
 OOP Interface Iris
 ------------------
+* Assignment name: OOP Interface Iris
 * Complexity level: easy
 * Lines of code to write: 21 lines
 * Estimated time of completion: 13 min

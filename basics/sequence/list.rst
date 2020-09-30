@@ -287,6 +287,7 @@ Assignments
 
 Sequence List Create
 --------------------
+* Assignment name: Sequence List Create
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -318,6 +319,7 @@ Sequence List Create
 
 Sequence List Many
 ------------------
+* Assignment name: Sequence List Many
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
@@ -352,6 +354,7 @@ Sequence List Many
 
 Sequence List Modify
 --------------------
+* Assignment name: Sequence List Modify
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min

@@ -5,6 +5,9 @@ Mapping
 
 Dict
 ====
+* Python 3.9 introduced :pep:`585` -- Type Hinting Generics In Standard Collections
+* Before Python 3.9 you need ``from typing import Dict``
+
 .. code-block:: python
 
     my_dict: dict = {
@@ -15,9 +18,7 @@ Dict
 
 .. code-block:: python
 
-    from typing import Dict
-
-    my_dict: Dict[str, int] = {
+    my_dict: dict[str, int] = {
         'a': 1,
         'b': 2,
         'c': 3,

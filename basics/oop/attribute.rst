@@ -210,6 +210,7 @@ Assignments
 
 OOP Attribute Model
 -------------------
+* Assignment name: OOP Attribute Model
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 8 min

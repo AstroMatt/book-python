@@ -129,6 +129,7 @@ Assignments
 
 Series Create Float
 -------------------
+* Assignment name: Series Create Float
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
@@ -145,6 +146,7 @@ Series Create Float
 
 Series Create Randint
 ---------------------
+* Assignment name: Series Create Randint
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
@@ -161,6 +163,7 @@ Series Create Randint
 
 Series Create Even
 ------------------
+* Assignment name: Series Create Even
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
@@ -175,6 +178,7 @@ Series Create Even
 
 Series Create Dates
 -------------------
+* Assignment name: Series Create Dates
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min

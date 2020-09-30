@@ -135,6 +135,7 @@ Zadania praktyczne
 
 Nearest Neighbor Classifier
 ---------------------------
+* Assignment name: Nearest Neighbor Classifier
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
@@ -196,6 +197,7 @@ Nearest Neighbor Classifier
 
 Porównanie classifierów
 -----------------------
+* Assignment name: Porównanie classifierów
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min

@@ -241,6 +241,7 @@ Assignments
 
 Pandas Read CSV Dates
 ---------------------
+* Assignment name: Pandas Read CSV Dates
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
@@ -269,6 +270,7 @@ Pandas Read CSV Dates
 
 Pandas Read CSV Replace
 -----------------------
+* Assignment name: Pandas Read CSV Replace
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
@@ -317,6 +319,7 @@ Pandas Read CSV Replace
 
 Pandas Read JSON
 ----------------
+* Assignment name: Pandas Read JSON
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
@@ -340,6 +343,7 @@ Pandas Read JSON
 
 Pandas Read JSON OpenAPI
 ------------------------
+* Assignment name: Pandas Read JSON OpenAPI
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
@@ -365,6 +369,7 @@ Pandas Read JSON OpenAPI
 
 Pandas Read HTML
 ----------------
+* Assignment name: Pandas Read HTML
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
@@ -392,6 +397,7 @@ Pandas Read HTML
 
 Pandas Read XSLT Books
 ----------------------
+* Assignment name: Pandas Read XSLT Books
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
@@ -420,6 +426,7 @@ Pandas Read XSLT Books
 
 Pandas Read XSLT Plants
 -----------------------
+* Assignment name: Pandas Read XSLT Plants
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min

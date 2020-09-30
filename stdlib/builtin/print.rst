@@ -611,6 +611,7 @@ Assignments
 
 Powielanie napisów
 ------------------
+* Assignment name: Powielanie napisów
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
@@ -639,6 +640,7 @@ Powielanie napisów
 
 Przeliczanie temperatury
 ------------------------
+* Assignment name: Przeliczanie temperatury
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min

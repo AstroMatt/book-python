@@ -162,6 +162,7 @@ Assignments
 
 Numpy Round Rint
 ----------------
+* Assignment name: Numpy Round Rint
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
@@ -197,6 +198,7 @@ Numpy Round Rint
 
 Numpy Round Floor and Ceil
 --------------------------
+* Assignment name: Numpy Round Floor and Ceil
 * Complexity level: medium
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -243,6 +245,7 @@ Numpy Round Floor and Ceil
 
 Numpy Round Clip
 ----------------
+* Assignment name: Numpy Round Clip
 * Complexity level: medium
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min

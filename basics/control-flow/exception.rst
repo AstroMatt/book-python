@@ -645,6 +645,7 @@ Assignments
 
 Exception Example
 -----------------
+* Assignment name: Exception Example
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 3 min
@@ -669,6 +670,7 @@ Exception Example
 
 Exception Raise
 ---------------
+* Assignment name: Exception Raise
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
@@ -687,6 +689,7 @@ Exception Raise
 
 Exception Catch
 ---------------
+* Assignment name: Exception Catch
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
@@ -707,6 +710,7 @@ Exception Catch
 
 Exception Define
 ----------------
+* Assignment name: Exception Define
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min

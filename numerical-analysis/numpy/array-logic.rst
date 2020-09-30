@@ -356,6 +356,7 @@ Assignments
 
 Numpy Logic Even
 ----------------
+* Assignment name: Numpy Logic Even
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
@@ -378,6 +379,7 @@ Numpy Logic Even
 
 Numpy Logic Isin
 ----------------
+* Assignment name: Numpy Logic Isin
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 5 min

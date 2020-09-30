@@ -534,6 +534,7 @@ Assignments
 
 Function Generator Iris
 -----------------------
+* Assignment name: Function Generator Iris
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
@@ -612,6 +613,7 @@ Function Generator Iris
 
 Function Generator Passwd
 -------------------------
+* Assignment name: Function Generator Passwd
 * Complexity level: medium
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min

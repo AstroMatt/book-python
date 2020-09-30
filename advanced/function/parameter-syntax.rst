@@ -103,6 +103,7 @@ Assignments
 
 Function Parameter Syntax Kwargs
 --------------------------------
+* Assignment name: Function Parameter Syntax Kwargs
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
@@ -157,6 +158,7 @@ Function Parameter Syntax Kwargs
 
 Function Parameter Syntax Args
 ------------------------------
+* Assignment name: Function Parameter Syntax Args
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min

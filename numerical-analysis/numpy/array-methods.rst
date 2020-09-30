@@ -244,6 +244,7 @@ Assignments
 
 Numpy Methods
 -------------
+* Assignment name: Numpy Methods
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min

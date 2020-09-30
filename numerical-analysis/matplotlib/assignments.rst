@@ -3,6 +3,7 @@ Assignments
 
 Trigonometry
 ------------
+* Assignment name: Trigonometry
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
@@ -33,6 +34,7 @@ Trigonometry
 
 Iris scatter
 ------------
+* Assignment name: Iris scatter
 * Complexity level: medium
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
@@ -58,6 +60,7 @@ Iris scatter
 
 Random points
 -------------
+* Assignment name: Random points
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
@@ -118,6 +121,7 @@ Random points
 
 Color graph
 -----------
+* Assignment name: Color graph
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min

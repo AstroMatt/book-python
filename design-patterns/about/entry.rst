@@ -1,20 +1,21 @@
 **********
-Entry Exam
+Entry Test
 **********
 
 
-``List[tuple]`` to ``List[dict]``
-=================================
+Entry Test Listdict
+===================
+* Assignment name: Entry Test Listdict
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
-* Solution: loop_dict_to_list.py
+* Solution: entry_test_listdict.py
 * Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
     #. Separate header and data
-    #. Print ``result: List[dict]``
+    #. Print ``result: list[dict]``
 
         * key - name from the header
         * value - measurement or species
@@ -24,7 +25,7 @@ Entry Exam
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Odseparuj nagłówek i dane
-    #. Wypisz ``result: List[dict]``
+    #. Wypisz ``result: list[dict]``
 
         * klucz: nazwa z nagłówka
         * wartość: wyniki pomiarów lub gatunek
@@ -60,26 +61,26 @@ Entry Exam
         ]
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: List[dict] = [
-            {'Sepal length': 5.8, 'Sepal width': 2.7, 'Petal length': 5.1, 'Petal width': 1.9, 'Species': 'virginica'},
-            {'Sepal length': 5.1, 'Sepal width': 3.5, 'Petal length': 1.4, 'Petal width': 0.2, 'Species': 'setosa'},
-            {'Sepal length': 5.7, 'Sepal width': 2.8, 'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
-            ...
-        ]
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        [{'Sepal length': 5.8, 'Sepal width': 2.7, 'Petal length': 5.1, 'Petal width': 1.9, 'Species': 'virginica'},
+         {'Sepal length': 5.1, 'Sepal width': 3.5, 'Petal length': 1.4, 'Petal width': 0.2, 'Species': 'setosa'},
+         {'Sepal length': 5.7, 'Sepal width': 2.8, 'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
+         ...]
 
 :The whys and wherefores:
     * Working with nested data structures
     * Iterating over dict and lists
 
 
-Get elements from nested data structure
-=======================================
+Entry Test Nested
+=================
+* Assignment name: Entry Test Nested
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
-* Solution: for_nested.py
+* Solution: entry_test_nested.py
 * Last update: 2020-10-01
 
 :English:
@@ -115,12 +116,13 @@ Get elements from nested data structure
     * Iterating over nested structure
 
 
-``/etc/hosts`` - parsing to ``List[dict]``
-==========================================
+Entry Test Hosts
+================
+* Assignment name: Entry Test Hosts
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
-* Solution: file_parsing_advanced.py
+* Solution: entry_test_hosts.py
 * Last update: 2020-10-01
 
 :English:
@@ -135,7 +137,7 @@ Get elements from nested data structure
         #. Separate IP address and hosts names
         #. Use one line ``if`` to check whether dot ``.`` is in the IP address
         #. If is present then protocol is IPv4 otherwise IPv6
-        #. Append IP address and hosts names to ``result: List[dict]``
+        #. Append IP address and hosts names to ``result: list[dict]``
 
     #. Merge hostnames for the same IP
     #. Compare result with "Output" section (see below)
@@ -152,7 +154,7 @@ Get elements from nested data structure
         #. Odseparuj adres IP i nazwy hostów
         #. Wykorzystaj jednolinikowego ``if`` do sprawdzenia czy jest kropka ``.`` w adresie IP
         #. Jeżeli jest obecna to protokół  jest IPv4, w przeciwnym przypadku IPv6
-        #. Dodaj adres IP i nazwy hostów do ``result: List[dict]``
+        #. Dodaj adres IP i nazwy hostów do ``result: list[dict]``
 
     #. Scal nazwy hostów dla tego samego IP
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
@@ -173,14 +175,13 @@ Get elements from nested data structure
         ::1             localhost
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: List[dict] = [
-            {'ip': '127.0.0.1', 'protocol': 'ipv4', 'hostnames': {'localhost', 'astromatt'}},
-            {'ip': '10.13.37.1', 'protocol': 'ipv4', 'hostnames': {'nasa.gov', 'esa.int', 'roscosmos.ru'}},
-            {'ip': '255.255.255.255', 'protocol': 'ipv4', 'hostnames': {'broadcasthost'}},
-            {'ip': '::1', 'protocol': 'ipv6', 'hostnames': {'localhost'}}
-        ]
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        [{'ip': '127.0.0.1', 'protocol': 'ipv4', 'hostnames': {'localhost', 'astromatt'}},
+         {'ip': '10.13.37.1', 'protocol': 'ipv4', 'hostnames': {'nasa.gov', 'esa.int', 'roscosmos.ru'}},
+         {'ip': '255.255.255.255', 'protocol': 'ipv4', 'hostnames': {'broadcasthost'}},
+         {'ip': '::1', 'protocol': 'ipv6', 'hostnames': {'localhost'}}]
 
 :The whys and wherefores:
     * czytanie i parsowanie pliku

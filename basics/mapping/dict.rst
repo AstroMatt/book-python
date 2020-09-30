@@ -454,6 +454,7 @@ Assignments
 
 Mapping Dict Define
 -------------------
+* Assignment name: Mapping Dict Define
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -477,6 +478,7 @@ Mapping Dict Define
 
 Mapping Dict Items
 ------------------
+* Assignment name: Mapping Dict Items
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -524,6 +526,7 @@ Mapping Dict Items
 
 Mapping Dict Substitute
 -----------------------
+* Assignment name: Mapping Dict Substitute
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
@@ -563,6 +566,7 @@ Mapping Dict Substitute
 
 Mapping Dict Get
 ----------------
+* Assignment name: Mapping Dict Get
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min

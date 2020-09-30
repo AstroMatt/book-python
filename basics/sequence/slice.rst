@@ -328,6 +328,7 @@ Assignments
 
 Sequence Slice Substr
 ---------------------
+* Assignment name: Sequence Slice Substr
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
@@ -361,6 +362,7 @@ Sequence Slice Substr
 
 Sequence Slice Sequence
 -----------------------
+* Assignment name: Sequence Slice Sequence
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
@@ -394,6 +396,7 @@ Sequence Slice Sequence
 
 Sequence Slice Text
 -------------------
+* Assignment name: Sequence Slice Text
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 8 min
@@ -451,6 +454,7 @@ Sequence Slice Text
 
 Sequence Slice Split
 --------------------
+* Assignment name: Sequence Slice Split
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 8 min

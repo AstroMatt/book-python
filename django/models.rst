@@ -123,6 +123,7 @@ Assignments
 
 Address Book
 ------------
+* Assignment name: Address Book
 * Complexity level: medium
 * Lines of code to write: 50 lines
 * Estimated time of completion: 21 min

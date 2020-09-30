@@ -175,6 +175,7 @@ Assignments
 
 Numpy Iteration
 ---------------
+* Assignment name: Numpy Iteration
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 3 min

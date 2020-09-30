@@ -127,8 +127,8 @@ DB API v2
     sqlite3.connect(...) -> connection
 
     connection.execute(...) -> result
-    connection.executemany(...) -> List[result]
-    connection.fetchmany(...) -> List[result]
+    connection.executemany(...) -> list[result]
+    connection.fetchmany(...) -> list[result]
     connection.fetchone(...) -> result
     connection.cursor(...) -> cursor
     connection.commit(...)
@@ -189,13 +189,13 @@ Execute
 Executemany
 ===========
 
-``List[tuple]``
+``list[tuple]``
 ---------------
 .. literalinclude:: src/database-executemany-tuple.py
     :language: python
     :caption: Execute many
 
-``List[dict]``
+``list[dict]``
 --------------
 .. literalinclude:: src/database-executemany-dict.py
     :language: python
@@ -205,13 +205,13 @@ Executemany
 Results
 =======
 
-Fetch as ``List[tuple]``
+Fetch as ``list[tuple]``
 ------------------------
 .. literalinclude:: src/database-results.py
     :language: python
     :caption: Results
 
-Fetch as ``List[dict]``
+Fetch as ``list[dict]``
 -----------------------
 .. literalinclude:: src/database-results-dict.py
     :language: python
@@ -238,6 +238,7 @@ Assignments
 
 Database SQLite Iris
 --------------------
+* Assignment name: Database SQLite Iris
 * Complexity level: easy
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min
@@ -338,6 +339,7 @@ Database SQLite Iris
 
 Database SQLite Relations
 -------------------------
+* Assignment name: Database SQLite Relations
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
@@ -433,6 +435,7 @@ Database SQLite Relations
 
 Database SQLite Logs
 --------------------
+* Assignment name: Database SQLite Logs
 * Complexity level: medium
 * Lines of code to write: 25 lines
 * Estimated time of completion: 21 min
@@ -443,24 +446,24 @@ Database SQLite Logs
     #. Use data from "Input" section (see below)
     #. Save input data to file ``apollo11-timeline.log``
     #. Extract ``datetime`` object, level name and message from each line
-    #. Collect data to ``DATA: List[dict]`` (see below)
+    #. Collect data to ``DATA: list[dict]`` (see below)
     #. Create database schema for logs
     #. Add all logs to database
     #. Select only ``WARNING`` logs between 1969-07-20 and 1969-07-21
     #. Order logs by datetime descending
-    #. Print ``result: List[dict]``
+    #. Print ``result: list[dict]``
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Zapisz dane wejściowe do pliku ``apollo11-timeline.log``
     #. Wyciągnij obiekt ``datetime``, poziom logowania oraz wiadomość z każdej linii
-    #. Zbierz dane do ``DATA: List[dict]`` (patrz sekcja input)
+    #. Zbierz dane do ``DATA: list[dict]`` (patrz sekcja input)
     #. Stwórz schemat bazy danych dla logów
     #. Dodaj wszystkie linie do bazy danych
     #. Wybierz tylko logi ``WARNING`` z przedziału 1969-07-20 i 1969-07-21
     #. Posortuj logi w kolejności datetime malejąco
-    #. Wyświetl ``result: List[dict]``
+    #. Wyświetl ``result: list[dict]``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
@@ -497,20 +500,19 @@ Database SQLite Logs
         1969-07-24, 17:29, INFO, Crew egress"""
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: List[dict] = [
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        [{'date': datetime.datetime(1969, 7, 21, 17, 54, 00, tzinfo=datetime.timezone.utc),
+          'level': 'WARNING',
+          'message': 'LM lunar liftoff ignition (LM APS)'},
 
-            {'date': datetime.datetime(1969, 7, 21, 17, 54, 00, tzinfo=datetime.timezone.utc),
-             'level': 'WARNING',
-             'message': 'LM lunar liftoff ignition (LM APS)'},
+         {'date': datetime.datetime(1969, 7, 21, 2, 56, 15, tzinfo=datetime.timezone.utc),
+          'level': 'WARNING',
+          'message': '1st step taken lunar surface (CDR) "That\'s one small step for [a] man... one giant leap for mankind"'},
 
-            {'date': datetime.datetime(1969, 7, 21, 2, 56, 15, tzinfo=datetime.timezone.utc),
-             'level': 'WARNING',
-             'message': '1st step taken lunar surface (CDR) "That\'s one small step for [a] man... one giant leap for mankind"'},
-
-            {'date': datetime.datetime(1969, 7, 20, 20, 17, 39, tzinfo=datetime.timezone.utc),
-             'level': 'WARNING',
-             'message': 'LM lunar landing'},
+         {'date': datetime.datetime(1969, 7, 20, 20, 17, 39, tzinfo=datetime.timezone.utc),
+          'level': 'WARNING',
+          'message': 'LM lunar landing'},
 
         ...]

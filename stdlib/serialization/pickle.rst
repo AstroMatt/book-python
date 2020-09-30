@@ -237,6 +237,7 @@ Assignments
 
 Pickle Serialization
 --------------------
+* Assignment name: Pickle Serialization
 * Complexity level: easy
 * Lines of code to write: 7 lines
 * Estimated time of completion: 7 min

@@ -10,7 +10,7 @@ Dragon (version release candidate)
 
     Firkraag dragon from game Baldur's Gate II: Shadows of Amn
 
-
+* Assignment name: Dragon (version release candidate)
 * Complexity level: hard
 * Lines of code to write: 50 lines
 * Estimated time of completion: 21 min

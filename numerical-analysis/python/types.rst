@@ -41,6 +41,7 @@ Converting to ``int``
 
 Assignments
 -----------
+* Assignment name: Assignments
 * Complexity level: easy
 * Lines of code to write: 12 lines
 * Estimated time of completion: 5 min
@@ -119,6 +120,7 @@ Converting to ``float``
 
 Assignments
 -----------
+* Assignment name: Assignments
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
@@ -334,6 +336,7 @@ Methods
 
 Assignments
 -----------
+* Assignment name: Assignments
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -476,6 +479,7 @@ Assignments
 
 To ``bool`` or not to ``bool``
 ------------------------------
+* Assignment name: To ``bool`` or not to ``bool``
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min

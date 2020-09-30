@@ -241,6 +241,7 @@ Assignments
 
 Loop Dict Months
 ----------------
+* Assignment name: Loop Dict Months
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
@@ -293,6 +294,7 @@ Loop Dict Months
 
 Loop Dict from Dict to Dict
 ---------------------------
+* Assignment name: Loop Dict from Dict to Dict
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 8 min
@@ -342,6 +344,7 @@ Loop Dict from Dict to Dict
 
 Loop Dict from List to Dict
 ---------------------------
+* Assignment name: Loop Dict from List to Dict
 * Complexity level: medium
 * Lines of code to write: 6 lines
 * Estimated time of completion: 8 min
@@ -418,6 +421,7 @@ Loop Dict from List to Dict
 
 Loop Dict Label Encoder
 -----------------------
+* Assignment name: Loop Dict Label Encoder
 * Complexity level: hard
 * Lines of code to write: 13 lines
 * Estimated time of completion: 13 min

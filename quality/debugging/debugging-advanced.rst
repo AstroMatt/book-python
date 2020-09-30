@@ -212,6 +212,7 @@ Assignments
 
 Own ``doctest``
 ---------------
+* Assignment name: Own ``doctest``
 * Complexity level: easy
 * Lines of code to write: 60 lines
 * Estimated time of completion: 21 min

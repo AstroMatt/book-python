@@ -111,8 +111,8 @@ Example 3
 
         def __init__(self, title: str, episode_id: int, opening_crawl: str,
                      director: str, producer: str, release_date: datetime,
-                     characters: Tuple[str], planets: Tuple[str], starships: Tuple[str],
-                     vehicles: Tuple[str], species: Tuple[str], created: datetime,
+                     characters: tuple[str], planets: tuple[str], starships: tuple[str],
+                     vehicles: tuple[str], species: tuple[str], created: datetime,
                      edited: datetime, url: str):
 
             self.title = title
@@ -144,11 +144,11 @@ Example 3
         director: str
         producer: str
         release_date: datetime
-        characters: Tuple[str]
-        planets: Tuple[str]
-        starships: Tuple[str]
-        vehicles: Tuple[str]
-        species: Tuple[str]
+        characters: tuple[str]
+        planets: tuple[str]
+        starships: tuple[str]
+        vehicles: tuple[str]
+        species: tuple[str]
         created: datetime
         edited: datetime
         url: str
@@ -244,12 +244,11 @@ List attributes
     :emphasize-lines: 7
 
     from dataclasses import dataclass, field
-    from typing import List
 
 
     @dataclass
     class Container:
-        data: List[int] = field(default_factory=list)
+        data: list[int] = field(default_factory=list)
 
     c = Container([1, 2, 3])
     c.data += [4, 5, 6]
@@ -522,6 +521,7 @@ Assignments
 
 Address Book (dataclass)
 ------------------------
+* Assignment name: Address Book (dataclass)
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
@@ -564,6 +564,7 @@ Address Book (dataclass)
 
 Deserialize data from API
 -------------------------
+* Assignment name: Deserialize data from API
 * Complexity level: easy
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min

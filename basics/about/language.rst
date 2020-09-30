@@ -161,6 +161,7 @@ Assignments
 
 About Version
 -------------
+* Assignment name: About Version
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 3 min
@@ -203,6 +204,7 @@ About Version
 
 About Environment
 -----------------
+* Assignment name: About Environment
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 3 min

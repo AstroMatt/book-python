@@ -3,12 +3,13 @@ Pre-Intermediate
 ****************
 
 
-Select
-======
+Entry Test Select
+=================
+* Assignment name: Entry Test Select
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
-* Solution: nested_select.py
+* Solution: entry_test_select.py
 * Last update: 2020-10-01
 
 :English:
@@ -73,12 +74,13 @@ Select
     * Type casting
 
 
-Iris dataset
-============
+Entry Test Slice
+================
+* Assignment name: Entry Test Slice
 * Complexity level: easy
 * Lines of code to write: 20 lines
 * Estimated time of completion: 13 min
-* Solution: slice_iris.py
+* Solution: entry_test_slice.py
 * Last update: 2020-10-01
 
 :English:
@@ -141,18 +143,19 @@ Iris dataset
     * Slicing sequences
 
 
-``List[tuple]`` to ``List[dict]``
-=================================
+Entry Test Listdict
+===================
+* Assignment name: Entry Test Listdict
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
-* Solution: loop_dict_to_list.py
+* Solution: entry_test_listdict.py
 * Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
     #. Separate header and data
-    #. Print ``List[dict]``
+    #. Print ``result: list[dict]``
 
         * key - name from the header
         * value - measurement or species
@@ -162,7 +165,7 @@ Iris dataset
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Odseparuj nagłówek i dane
-    #. Wypisz ``List[dict]``
+    #. Wypisz ``result: list[dict]``
 
         * klucz: nazwa z nagłówka
         * wartość: wyniki pomiarów lub gatunek
@@ -200,7 +203,7 @@ Iris dataset
 :Output:
     .. code-block:: python
 
-        result: List[dict] = [
+        result: list[dict] = [
             {'Sepal length': 5.8, 'Sepal width': 2.7, 'Petal length': 5.1, 'Petal width': 1.9, 'Species': 'virginica'},
             {'Sepal length': 5.1, 'Sepal width': 3.5, 'Petal length': 1.4, 'Petal width': 0.2, 'Species': 'setosa'},
             {'Sepal length': 5.7, 'Sepal width': 2.8, 'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
@@ -212,12 +215,13 @@ Iris dataset
     * Iterating over dict and lists
 
 
-Get elements from nested data structure
-=======================================
+Entry Test Nested
+=================
+* Assignment name: Entry Test Nested
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 13 min
-* Solution: for_nested.py
+* Solution: entry_test_nested.py
 * Last update: 2020-10-01
 
 :English:
@@ -251,104 +255,3 @@ Get elements from nested data structure
 :The whys and wherefores:
     * Accessing ``dict`` keys
     * Iterating over nested structure
-
-
-Label encoder
-=============
-* Complexity level: medium
-* Lines of code to write: 13 lines
-* Estimated time of completion: 13 min
-* Solution: loop_label_encoder.py
-* Last update: 2020-10-01
-
-:English:
-    #. Use data from "Input" section (see below)
-    #. Define:
-
-        * ``features: List[tuple]`` - measurements
-        * ``labels: List[int]`` - species
-
-    #. Separate header from data
-    #. To encode and decode ``labels`` (species) we need ``label_encoder: Dict[int, str]``:
-
-        * key - id (incremented integer value)
-        * value - species name
-
-    #. ``label_encoder`` must be generated from ``DATA``
-    #. For each row add appropriate data to ``features``, ``labels`` and ``label_encoder``
-    #. Print ``features``, ``labels`` and ``label_encoder``
-    #. Compare result with "Output" section (see below)
-
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Zdefiniuj:
-
-        * ``features: List[tuple]`` - pomiary
-        * ``labels: List[int]`` - gatunki
-        * ``label_encoder: Dict[int, str]`` - słownik podmiany nazw gatunków
-
-    #. Odseparuj nagłówek od danych
-    #. Aby móc zakodować i odkodować ``labels`` (gatunki) potrzebny jest ``label_encoder: Dict[int, str]``:
-
-        * key - identyfikator (kolejna liczba rzeczywista)
-        * value - nazwa gatunku
-
-    #. ``label_encoder`` musi być wygenerowany z ``DATA``
-    #. Dla każdego wiersza dodawaj odpowiednie dane do ``feature``, ``labels`` i ``label_encoder``
-    #. Wypisz ``feature``, ``labels`` i ``label_encoder``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-:Input:
-    .. code-block:: python
-
-        DATA = [
-            ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
-            (5.8, 2.7, 5.1, 1.9, 'virginica'),
-            (5.1, 3.5, 1.4, 0.2, 'setosa'),
-            (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-            (6.3, 2.9, 5.6, 1.8, 'virginica'),
-            (6.4, 3.2, 4.5, 1.5, 'versicolor'),
-            (4.7, 3.2, 1.3, 0.2, 'setosa'),
-            (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-            (7.6, 3.0, 6.6, 2.1, 'virginica'),
-            (4.9, 3.0, 1.4, 0.2, 'setosa'),
-            (4.9, 2.5, 4.5, 1.7, 'virginica'),
-            (7.1, 3.0, 5.9, 2.1, 'virginica'),
-            (4.6, 3.4, 1.4, 0.3, 'setosa'),
-            (5.4, 3.9, 1.7, 0.4, 'setosa'),
-            (5.7, 2.8, 4.5, 1.3, 'versicolor'),
-            (5.0, 3.6, 1.4, 0.3, 'setosa'),
-            (5.5, 2.3, 4.0, 1.3, 'versicolor'),
-            (6.5, 3.0, 5.8, 2.2, 'virginica'),
-            (6.5, 2.8, 4.6, 1.5, 'versicolor'),
-            (6.3, 3.3, 6.0, 2.5, 'virginica'),
-            (6.9, 3.1, 4.9, 1.5, 'versicolor'),
-            (4.6, 3.1, 1.5, 0.2, 'setosa'),
-        ]
-
-:Output:
-    .. code-block:: python
-
-        from typing import List, Dict
-
-
-        features: List[tuple] = [
-            (5.8, 2.7, 5.1, 1.9),
-            (5.1, 3.5, 1.4, 0.2),
-            (5.7, 2.8, 4.1, 1.3),
-            (6.3, 2.9, 5.6, 1.8),
-            (6.4, 3.2, 4.5, 1.5),
-            (4.7, 3.2, 1.3, 0.2), ...]
-
-        labels: List[int] = [0, 1, 2, 1, 2, 0, ...]
-
-        label_encoder: Dict[int, str] = {
-            0: 'virginica',
-            1: 'setosa',
-            2: 'versicolor'}
-
-
-:The whys and wherefores:
-    * ``dict`` lookups
-    * Dynamic ``dict`` generating
-    * ``dict`` reversal

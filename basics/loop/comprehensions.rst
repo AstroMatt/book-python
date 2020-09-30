@@ -657,6 +657,7 @@ Assignments
 
 Loop Comprehension Create
 -------------------------
+* Assignment name: Loop Comprehension Create
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
@@ -675,6 +676,7 @@ Loop Comprehension Create
 
 Loop Comprehension Translate
 ----------------------------
+* Assignment name: Loop Comprehension Translate
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
@@ -714,6 +716,7 @@ Loop Comprehension Translate
 
 Loop Comprehension Months
 -------------------------
+* Assignment name: Loop Comprehension Months
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
@@ -768,6 +771,7 @@ Loop Comprehension Months
 
 Loop Comprehension Split
 ------------------------
+* Assignment name: Loop Comprehension Split
 * Complexity level: medium
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min

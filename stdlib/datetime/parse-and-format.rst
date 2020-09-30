@@ -327,6 +327,7 @@ Assignments
 
 Datetime Parse ISO
 ------------------
+* Assignment name: Datetime Parse ISO
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
@@ -350,6 +351,7 @@ Datetime Parse ISO
 
 Datetime Parse Local
 --------------------
+* Assignment name: Datetime Parse Local
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -387,6 +389,7 @@ Datetime Parse Local
 
 Datetime Parse US
 -----------------
+* Assignment name: Datetime Parse US
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
@@ -430,6 +433,7 @@ Datetime Parse US
 
 Datetime Parse Logs
 -------------------
+* Assignment name: Datetime Parse Logs
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
@@ -440,7 +444,7 @@ Datetime Parse Logs
     #. Use data from "Input" section (see below)
     #. Save input data to file ``apollo11-timeline.log``
     #. Extract ``datetime`` object, level name and message from each line
-    #. Collect data to ``result: List[dict]``
+    #. Collect data to ``result: list[dict]``
     #. Print ``result``
     #. Compare result with "Output" section (see below)
 
@@ -448,7 +452,7 @@ Datetime Parse Logs
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Zapisz dane wejściowe do pliku ``apollo11-timeline.log``
     #. Wyciągnij obiekt ``datetime``, poziom logowania oraz wiadomość z każdej linii
-    #. Zbierz dane do ``result: List[dict]``
+    #. Zbierz dane do ``result: list[dict]``
     #. Wyświetl ``result``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
@@ -490,14 +494,14 @@ Datetime Parse Logs
 :Output:
     .. code-block:: python
 
-        result: List[dict]
-        # [{'date': datetime.datetime(1969, 7, 14, 21, 0),
-        #   'level': 'INFO',
-        #   'message': 'Terminal countdown started'},
-        #  {'date': datetime.datetime(1969, 7, 16, 13, 31, 53),
-        #   'level': 'WARNING',
-        #   'message': 'S-IC engine ignition (#5)'},
-        #  {'date': datetime.datetime(1969, 7, 16, 13, 33, 23),
-        #   'level': 'DEBUG',
-        #   'message': 'Maximum dynamic pressure (735.17 lb/ft^2)'},
-        #  ...]
+        result  # doctest: +NORMALIZE_WHITESPACE
+        [{'date': datetime.datetime(1969, 7, 14, 21, 0),
+          'level': 'INFO',
+          'message': 'Terminal countdown started'},
+         {'date': datetime.datetime(1969, 7, 16, 13, 31, 53),
+          'level': 'WARNING',
+          'message': 'S-IC engine ignition (#5)'},
+         {'date': datetime.datetime(1969, 7, 16, 13, 33, 23),
+          'level': 'DEBUG',
+          'message': 'Maximum dynamic pressure (735.17 lb/ft^2)'},
+         ...]

@@ -842,6 +842,7 @@ Assignments
 
 Cleanup your file
 -----------------
+* Assignment name: Cleanup your file
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min

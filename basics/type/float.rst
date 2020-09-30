@@ -131,6 +131,7 @@ Assignments
 
 Type Float Tax
 --------------
+* Assignment name: Type Float Tax
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
@@ -164,6 +165,7 @@ Type Float Tax
 
 Type Float Altitude
 -------------------
+* Assignment name: Type Float Altitude
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
@@ -199,6 +201,7 @@ Type Float Altitude
 
 Type Float Volume
 ------------------
+* Assignment name: Type Float Volume
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
@@ -232,6 +235,7 @@ Type Float Volume
 
 Type Float Distance
 -------------------
+* Assignment name: Type Float Distance
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
@@ -286,6 +290,7 @@ Type Float Distance
 
 Type Float Velocity
 -------------------
+* Assignment name: Type Float Velocity
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 3 min
@@ -318,6 +323,7 @@ Type Float Velocity
 
 Type Float Pressure
 -------------------
+* Assignment name: Type Float Pressure
 * Complexity level: medium
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
@@ -366,6 +372,7 @@ Type Float Pressure
 
 Type Float Percent
 ------------------
+* Assignment name: Type Float Percent
 * Complexity level: medium
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
@@ -413,6 +420,7 @@ Type Float Percent
 
 Type Float Gradient
 -------------------
+* Assignment name: Type Float Gradient
 * Complexity level: hard
 * Lines of code to write: 9 lines
 * Estimated time of completion: 8 min

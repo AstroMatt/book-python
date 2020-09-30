@@ -348,6 +348,7 @@ Assignments
 
 Average
 -------
+* Assignment name: Average
 * Complexity level: easy
 * Lines of code to write: 12 lines
 * Estimated time of completion: 13 min
@@ -357,7 +358,7 @@ Average
 :English:
     #. Use data from "Input" section (see below)
     #. Separate header and data
-    #. Define dict ``result: Dict[str, list]``, keys are column names from header
+    #. Define dict ``result: dict[str, list]``, keys are column names from header
     #. For each row in data, add values to proper lists in ``result``
     #. Define function ``mean()``, calculating mean for arbitrary number of arguments
     #. Return ``None`` if any argument to the function is not ``float`` or ``int``
@@ -368,7 +369,7 @@ Average
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Odseparuj nagłówek od danych
-    #. Zdefiniuj słownik ``result: Dict[str, list]``, klucze to nazwy kolumn z nagłówka
+    #. Zdefiniuj słownik ``result: dict[str, list]``, klucze to nazwy kolumn z nagłówka
     #. Dla każdego wiersza w danych, dodawaj wartości do odpowiednich list w ``result``
     #. Zdefiniuj funkcję ``mean()``, liczącą średnią dla dowolnej ilości argumentów
     #. Zwróć ``None`` jeżeli którykolwiek z argumentów do funkcji nie jest ``float`` lub ``int``
@@ -407,13 +408,13 @@ Average
 :Output:
     .. code-block:: python
 
-        result: Dict[str, list] = {
-            'Sepal length': [5.8, 5.1, ...],
-            'Sepal width': [2.7, 3.5, ...],
-            'Petal length': [5.1, 1.4, ...],
-            'Petal width': [1.9, 0.2, ...],
-            'Species': ['virginica', 'setosa', ...],
-        }
+        result  # doctest: +NORMALIZE_WHITESPACE
+        {'Sepal length': [5.8, 5.1, ...],
+         'Sepal width': [2.7, 3.5, ...],
+         'Petal length': [5.1, 1.4, ...],
+         'Petal width': [1.9, 0.2, ...],
+         'Species': ['virginica', 'setosa',
+         ...],}
 
 :The whys and wherefores:
     * :ref:`Builtin Functions`

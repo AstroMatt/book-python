@@ -178,6 +178,7 @@ Assignments
 
 Sequence Nested Create
 ----------------------
+* Assignment name: Sequence Nested Create
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min

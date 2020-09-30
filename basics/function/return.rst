@@ -176,6 +176,7 @@ Assignments
 
 Function Return Numbers
 -----------------------
+* Assignment name: Function Return Numbers
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min

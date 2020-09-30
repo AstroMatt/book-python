@@ -112,6 +112,7 @@ Assignments
 
 Sequence Frozenset Create
 -------------------------
+* Assignment name: Sequence Frozenset Create
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -143,6 +144,7 @@ Sequence Frozenset Create
 
 Sequence Frozenset Newline
 --------------------------
+* Assignment name: Sequence Frozenset Newline
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min

@@ -134,6 +134,7 @@ Assignments
 
 Loop Unpacking Months
 ---------------------
+* Assignment name: Loop Unpacking Months
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
@@ -184,6 +185,7 @@ Loop Unpacking Months
 
 Loop Unpacking Endswith
 -----------------------
+* Assignment name: Loop Unpacking Endswith
 * Complexity level: medium
 * Lines of code to write: 3 lines
 * Estimated time of completion: 8 min

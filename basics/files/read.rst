@@ -183,6 +183,7 @@ Assignments
 
 File Read Str
 -------------
+* Assignment name: File Read Str
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -217,6 +218,7 @@ File Read Str
 
 File Read Multiline
 -------------------
+* Assignment name: File Read Multiline
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -251,6 +253,7 @@ File Read Multiline
 
 File Read CSV
 -------------
+* Assignment name: File Read CSV
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 8 min
@@ -341,6 +344,7 @@ File Read CSV
 
 File Read Parsing Dict
 ----------------------
+* Assignment name: File Read Parsing Dict
 * Complexity level: medium
 * Lines of code to write: 10 lines
 * Estimated time of completion: 8 min
@@ -406,6 +410,7 @@ File Read Parsing Dict
 
 File Read Parsing List of Dicts
 -------------------------------
+* Assignment name: File Read Parsing List of Dicts
 * Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min

@@ -167,6 +167,7 @@ Assignments
 
 Function Closure Define
 -----------------------
+* Assignment name: Function Closure Define
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
@@ -198,6 +199,7 @@ Function Closure Define
 
 Function Closure Call
 ---------------------
+* Assignment name: Function Closure Call
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 5 min

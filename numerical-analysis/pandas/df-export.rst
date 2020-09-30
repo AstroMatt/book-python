@@ -48,6 +48,7 @@ Assignments
 
 DataFrame Export CSV
 --------------------
+* Assignment name: DataFrame Export CSV
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -72,6 +73,7 @@ DataFrame Export CSV
 
 DataFrame Export JSON
 ---------------------
+* Assignment name: DataFrame Export JSON
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -96,6 +98,7 @@ DataFrame Export JSON
 
 DataFrame Export Pickle
 -----------------------
+* Assignment name: DataFrame Export Pickle
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -120,6 +123,7 @@ DataFrame Export Pickle
 
 DataFrame Export Pickle
 -----------------------
+* Assignment name: DataFrame Export Pickle
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min

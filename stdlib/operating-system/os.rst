@@ -647,6 +647,7 @@ Assignments
 
 Recursive folders walking
 -------------------------
+* Assignment name: Recursive folders walking
 * Complexity level: easy
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min
@@ -689,6 +690,7 @@ Recursive folders walking
 
 Tree
 ----
+* Assignment name: Tree
 * Complexity level: hard
 * Lines of code to write: 60 lines
 * Estimated time of completion: 21 min

@@ -37,6 +37,7 @@ Assignments
 
 FTP Download
 ------------
+* Assignment name: FTP Download
 * Complexity level: easy
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
@@ -60,6 +61,7 @@ FTP Download
 
 FTP Upload
 ----------
+* Assignment name: FTP Upload
 * Complexity level: easy
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min

@@ -85,6 +85,7 @@ Assignments
 
 Regexp Standards PESEL
 ----------------------
+* Assignment name: Regexp Standards PESEL
 * Complexity level: medium
 * Lines of code to write: 0 lines (**discussion only**)
 * Estimated time of completion: 5 min

@@ -11,7 +11,7 @@ Rationale
     sqlite3.connect(...) -> connection
 
     connection.execute(...) -> result
-    connection.executemany(...) -> List[result]
-    connection.fetchmany(...) -> List[result]
+    connection.executemany(...) -> list[result]
+    connection.fetchmany(...) -> list[result]
     connection.fetchone(...) -> result
     connection.cursor(...) -> cursor

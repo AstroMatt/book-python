@@ -7,12 +7,9 @@ Type Aliases
 ============
 .. code-block:: python
 
-    from typing import List, Tuple
+    GeographicCoordinate = tuple[float, float]
 
-
-    GeographicCoordinate = Tuple[float, float]
-
-    locations: List[GeographicCoordinate] = [
+    locations: list[GeographicCoordinate] = [
         (25.91375, -60.15503),
         (-11.01983, -166.48477),
         (-11.01983, -166.48477)
@@ -40,7 +37,7 @@ Type Vars
     from typing import TypeVar, Iterable, Tuple
 
     T = TypeVar('T', int, float, complex)
-    Vector = Iterable[Tuple[T, T]]
+    Vector = Iterable[tuple[T, T]]
 
     def inproduct(v: Vector[T]) -> T:
         return sum(x*y for x, y in v)

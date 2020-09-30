@@ -114,6 +114,7 @@ Assignments
 
 Decorator Functools Func
 ------------------------
+* Assignment name: Decorator Functools Func
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
@@ -152,6 +153,7 @@ Decorator Functools Func
 
 Decorator Functools Args
 ------------------------
+* Assignment name: Decorator Functools Args
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
@@ -192,6 +194,7 @@ Decorator Functools Args
 
 Decorator Functools Cls
 -----------------------
+* Assignment name: Decorator Functools Cls
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min

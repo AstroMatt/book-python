@@ -69,6 +69,7 @@ Assignments
 
 Type Int Distance
 -----------------
+* Assignment name: Type Int Distance
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
@@ -122,6 +123,7 @@ Type Int Distance
 
 Type Int Time
 -------------
+* Assignment name: Type Int Time
 * Complexity level: easy
 * Lines of code to write: 12 lines
 * Estimated time of completion: 8 min
@@ -164,6 +166,7 @@ Type Int Time
 
 Type Int Bits
 -------------
+* Assignment name: Type Int Bits
 * Complexity level: medium
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
@@ -201,6 +204,7 @@ Type Int Bits
 
 Type Int Bytes
 --------------
+* Assignment name: Type Int Bytes
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 3 min
@@ -239,6 +243,7 @@ Type Int Bytes
 
 Type Int Bandwidth
 ------------------
+* Assignment name: Type Int Bandwidth
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 3 min
@@ -278,6 +283,7 @@ Type Int Bandwidth
 
 Type Int Temperature
 --------------------
+* Assignment name: Type Int Temperature
 * Complexity level: medium
 * Lines of code to write: 18 lines
 * Estimated time of completion: 8 min

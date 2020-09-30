@@ -293,6 +293,7 @@ Assignments
 
 Protocol Context Manager File
 -----------------------------
+* Assignment name: Protocol Context Manager File
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
@@ -329,6 +330,7 @@ Protocol Context Manager File
 
 Protocol Context Manager Buffer
 -------------------------------
+* Assignment name: Protocol Context Manager Buffer
 * Complexity level: easy
 * Lines of code to write: 32 lines
 * Estimated time of completion: 13 min

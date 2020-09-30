@@ -403,6 +403,7 @@ Assignments
 
 Series Mapping Clean
 --------------------
+* Assignment name: Series Mapping Clean
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min

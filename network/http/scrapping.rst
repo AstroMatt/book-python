@@ -163,6 +163,7 @@ Assignments
 
 Iris
 ----
+* Assignment name: Iris
 * Complexity level: medium
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
@@ -181,6 +182,7 @@ Iris
 
 EVA
 ---
+* Assignment name: EVA
 * Complexity level: medium
 * Lines of code to write: 100 lines
 * Estimated time of completion: 21 min

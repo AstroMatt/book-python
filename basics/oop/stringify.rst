@@ -247,6 +247,7 @@ Assignments
 
 OOP Stringify Str
 -----------------
+* Assignment name: OOP Stringify Str
 * Complexity level: easy
 * Lines of code to write: 18 lines
 * Estimated time of completion: 5 min
@@ -294,6 +295,7 @@ OOP Stringify Str
 
 OOP Stringify Repr
 ------------------
+* Assignment name: OOP Stringify Repr
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 5 min
@@ -341,6 +343,7 @@ OOP Stringify Repr
 
 OOP Stringify Nested
 --------------------
+* Assignment name: OOP Stringify Nested
 * Complexity level: medium
 * Lines of code to write: 9 lines
 * Estimated time of completion: 21 min

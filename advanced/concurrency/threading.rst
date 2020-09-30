@@ -261,6 +261,7 @@ Assignments
 
 Wielowątkowość
 --------------
+* Assignment name: Wielowątkowość
 * Complexity level: easy
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min

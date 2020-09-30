@@ -205,6 +205,7 @@ Assignments
 
 Loop Nested Mean
 ----------------
+* Assignment name: Loop Nested Mean
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
@@ -248,6 +249,7 @@ Loop Nested Mean
 
 Loop Nested Unique Keys
 -----------------------
+* Assignment name: Loop Nested Unique Keys
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min

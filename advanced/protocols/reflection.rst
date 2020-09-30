@@ -295,6 +295,7 @@ Assignments
 
 Protocol Reflection
 -------------------
+* Assignment name: Protocol Reflection
 * Complexity level: medium
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min

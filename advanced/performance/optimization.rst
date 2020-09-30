@@ -211,6 +211,7 @@ Assignments
 
 Memoization
 -----------
+* Assignment name: Memoization
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min

@@ -239,6 +239,7 @@ Assignments
 
 OOP Attribute Access Modifiers
 ------------------------------
+* Assignment name: OOP Attribute Access Modifiers
 * Complexity level: easy
 * Lines of code to write: 11 lines
 * Estimated time of completion: 8 min
@@ -282,6 +283,7 @@ OOP Attribute Access Modifiers
 
 OOP Attribute Access Dict
 -------------------------
+* Assignment name: OOP Attribute Access Dict
 * Complexity level: medium
 * Lines of code to write: 35 lines
 * Estimated time of completion: 21 min

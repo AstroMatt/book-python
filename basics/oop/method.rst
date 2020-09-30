@@ -96,6 +96,7 @@ Assignments
 
 OOP Method Sequence
 -------------------
+* Assignment name: OOP Method Sequence
 * Complexity level: easy
 * Lines of code to write: 18 lines
 * Estimated time of completion: 13 min

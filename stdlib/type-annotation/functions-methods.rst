@@ -70,7 +70,7 @@ Overload
         ...
 
     @overload
-    def process(response: int) -> Tuple[int, str]:
+    def process(response: int) -> tuple[int, str]:
         ...
 
     @overload

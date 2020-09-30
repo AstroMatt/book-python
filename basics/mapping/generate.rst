@@ -156,6 +156,7 @@ Assignments
 
 Mapping Generate Pairs
 ----------------------
+* Assignment name: Mapping Generate Pairs
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
@@ -197,6 +198,7 @@ Mapping Generate Pairs
 
 Mapping Generate Enumerate
 --------------------------
+* Assignment name: Mapping Generate Enumerate
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -230,6 +232,7 @@ Mapping Generate Enumerate
 
 Mapping Generate Zip
 --------------------
+* Assignment name: Mapping Generate Zip
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min

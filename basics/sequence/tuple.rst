@@ -179,6 +179,7 @@ Assignments
 
 Sequence Tuple Create
 ---------------------
+* Assignment name: Sequence Tuple Create
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -207,6 +208,7 @@ Sequence Tuple Create
 
 Sequence Tuple Many
 -------------------
+* Assignment name: Sequence Tuple Many
 * Complexity level: medium
 * Lines of code to write: 13 lines
 * Estimated time of completion: 13 min

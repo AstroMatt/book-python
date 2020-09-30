@@ -1,27 +1,29 @@
-.. _Stdlib Exam:
+.. _Stdlib Exit Test:
 
-***********
-Stdlib Exam
-***********
+****************
+Stdlib Exit Test
+****************
 
 
-Label encoder
-=============
+Exit Test Encoder
+=================
+* Assignment name: Exit Test Encoder
 * Complexity level: medium
 * Lines of code to write: 13 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/loop_label_encoder.py`
+* Solution: exit_test_encoder.py
 * Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
     #. Define:
 
-        * ``features: List[tuple]`` - measurements
-        * ``labels: List[int]`` - species
+        * ``features: list[tuple]`` - measurements
+        * ``labels: list[int]`` - species
+        * ``label_encoder: dict[int, str]`` - species name encoder
 
     #. Separate header from data
-    #. To encode and decode ``labels`` (species) we need ``label_encoder: Dict[int, str]``:
+    #. To encode and decode ``labels`` (species) we need ``label_encoder: dict[int, str]``:
 
         * key - id (incremented integer value)
         * value - species name
@@ -35,12 +37,12 @@ Label encoder
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Zdefiniuj:
 
-        * ``features: List[tuple]`` - pomiary
-        * ``labels: List[int]`` - gatunki
-        * ``label_encoder: Dict[int, str]`` - słownik podmiany nazw gatunków
+        * ``features: list[tuple]`` - pomiary
+        * ``labels: list[int]`` - gatunki
+        * ``label_encoder: dict[int, str]`` - słownik podmiany nazw gatunków
 
     #. Odseparuj nagłówek od danych
-    #. Aby móc zakodować i odkodować ``labels`` (gatunki) potrzebny jest ``label_encoder: Dict[int, str]``:
+    #. Aby móc zakodować i odkodować ``labels`` (gatunki) potrzebny jest ``label_encoder: dict[int, str]``:
 
         * key - identyfikator (kolejna liczba rzeczywista)
         * value - nazwa gatunku
@@ -79,26 +81,23 @@ Label encoder
         ]
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        from typing import List, Dict
+        >>> features  # doctest: +NORMALIZE_WHITESPACE
+        [(5.8, 2.7, 5.1, 1.9),
+         (5.1, 3.5, 1.4, 0.2),
+         (5.7, 2.8, 4.1, 1.3),
+         (6.3, 2.9, 5.6, 1.8),
+         (6.4, 3.2, 4.5, 1.5),
+         (4.7, 3.2, 1.3, 0.2), ...]
 
+        >>> labels
+        [0, 1, 2, 1, 2, 0, ...]
 
-        features: List[tuple] = [
-            (5.8, 2.7, 5.1, 1.9),
-            (5.1, 3.5, 1.4, 0.2),
-            (5.7, 2.8, 4.1, 1.3),
-            (6.3, 2.9, 5.6, 1.8),
-            (6.4, 3.2, 4.5, 1.5),
-            (4.7, 3.2, 1.3, 0.2), ...]
-
-        labels: List[int] = [0, 1, 2, 1, 2, 0, ...]
-
-        label_encoder: Dict[int, str] = {
-            0: 'virginica',
-            1: 'setosa',
-            2: 'versicolor'}
-
+        >>> label_encoder  # doctest: +NORMALIZE_WHITESPACE
+        {0: 'virginica',
+         1: 'setosa',
+         2: 'versicolor'}
 
 :The whys and wherefores:
     * ``dict`` lookups
@@ -106,12 +105,13 @@ Label encoder
     * ``dict`` reversal
 
 
-Relational Files Database
-=========================
+Exit Test Passwd
+================
+* Assignment name: Exit Test Passwd
 * Complexity level: medium
 * Lines of code to write: 100-150 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/exam.py`
+* Solution: exit_test_passwd.py
 * Last update: 2020-10-01
 
 :English:
@@ -123,7 +123,7 @@ Relational Files Database
         * ``etc_group.txt`` - :numref:`code-exam-etc-group`
 
     #. Copy also comments and empty lines
-    #. Parse files and convert it to ``result: List[dict]``
+    #. Parse files and convert it to ``result: list[dict]``
     #. Return list of users with ``UID`` greater than 1000
     #. User dict should contains data collected from all files
     #. Compare result with "Output" section (see below)
@@ -137,7 +137,7 @@ Relational Files Database
         * ``etc_group.txt`` - :numref:`code-exam-etc-group`
 
     #. Skopiuj również komentarze i puste linie
-    #. Sparsuj plik i przedstaw go w formacie ``result: List[dict]``
+    #. Sparsuj plik i przedstaw go w formacie ``result: list[dict]``
     #. Zwróć listę użytkowników, których ``UID`` jest większy niż 1000
     #. Dict użytkownika powinien zawierać dane z wszystkich plików
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
@@ -159,24 +159,21 @@ Relational Files Database
         :caption: Przykładowa zawartość pliku ``/etc/group``
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: List[dict] = [
-            {
-                'username': 'twardowski',
-                'uid': 1001,
-                'gid': 1001,
-                'home': '/home/twardowski',
-                'shell': '/bin/bash',
-                'algorithm': 'SHA-512',
-                'password': 'tgfvvFWJJ5...k4kijuhE50',
-                'salt': 'P9zn0KwR',
-                'groups': {'astronauts', 'sysadmin'},
-                'last_changed': datetime.date(2015, 7, 16),
-                'locked': False,
-            },
-            ...
-        ]
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        [{'username': 'twardowski',
+          'uid': 1001,
+          'gid': 1001,
+          'home': '/home/twardowski',
+          'shell': '/bin/bash',
+          'algorithm': 'SHA-512',
+          'password': 'tgfvvFWJJ5...k4kijuhE50',
+          'salt': 'P9zn0KwR',
+          'groups': {'astronauts', 'sysadmin'},
+          'last_changed': datetime.date(2015, 7, 16),
+          'locked': False},
+        ...]
 
 :The whys and wherefores:
     * :ref:`Basic Types`

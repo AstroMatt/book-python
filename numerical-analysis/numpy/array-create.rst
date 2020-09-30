@@ -368,6 +368,7 @@ Assignments
 
 Numpy Create Arange
 -------------------
+* Assignment name: Numpy Create Arange
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min

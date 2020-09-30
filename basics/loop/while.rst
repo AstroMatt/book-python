@@ -213,6 +213,7 @@ Assignments
 
 Loop While Cast
 ---------------
+* Assignment name: Loop While Cast
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 3 min
@@ -248,6 +249,7 @@ Loop While Cast
 
 Loop While Convert
 ------------------
+* Assignment name: Loop While Convert
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
@@ -289,6 +291,7 @@ Loop While Convert
 
 Loop While Translate
 --------------------
+* Assignment name: Loop While Translate
 * Complexity level: medium
 * Lines of code to write: 9 lines
 * Estimated time of completion: 8 min
@@ -327,6 +330,7 @@ Loop While Translate
 
 Loop While Input
 ----------------
+* Assignment name: Loop While Input
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min

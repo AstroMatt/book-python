@@ -362,6 +362,7 @@ Assignments
 
 DataFrame Statistics
 --------------------
+* Assignment name: DataFrame Statistics
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min

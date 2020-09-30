@@ -37,6 +37,7 @@ Assignments
 
 Regexp Search Astronauts
 ------------------------
+* Assignment name: Regexp Search Astronauts
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
@@ -83,6 +84,7 @@ Regexp Search Astronauts
 
 Regexp Search Moon Speech
 -------------------------
+* Assignment name: Regexp Search Moon Speech
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
@@ -108,6 +110,7 @@ Regexp Search Moon Speech
 
 Regexp Search Time
 ------------------
+* Assignment name: Regexp Search Time
 * Complexity level: medium
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
@@ -145,6 +148,7 @@ Regexp Search Time
 
 Regexp Search Datetime
 ----------------------
+* Assignment name: Regexp Search Datetime
 * Complexity level: hard
 * Lines of code to write: 4 lines
 * Estimated time of completion: 13 min

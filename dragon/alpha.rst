@@ -10,6 +10,7 @@ Dragon (version alpha)
 
     Firkraag dragon from game Baldur's Gate II: Shadows of Amn
 
+* Assignment name: Dragon (version alpha)
 * Complexity level: medium
 * Lines of code to write: 100 lines
 * Estimated time of completion: 60 min, then 90 min live coding with instructor

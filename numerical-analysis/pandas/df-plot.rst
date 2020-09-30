@@ -468,6 +468,7 @@ Assignments
 
 DataFrame Plot
 --------------
+* Assignment name: DataFrame Plot
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min

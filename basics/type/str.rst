@@ -368,6 +368,7 @@ Assignments
 
 Type String Input
 -----------------
+* Assignment name: Type String Input
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -384,6 +385,7 @@ Type String Input
 
 Type String Emoticon
 --------------------
+* Assignment name: Type String Emoticon
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
@@ -411,6 +413,7 @@ Type String Emoticon
 
 Type String Quotes
 ------------------
+* Assignment name: Type String Quotes
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 8 min

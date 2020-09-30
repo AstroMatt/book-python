@@ -226,6 +226,7 @@ Assignments
 
 Trigonometry
 ------------
+* Assignment name: Trigonometry
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
@@ -249,6 +250,7 @@ Trigonometry
 
 Euclidean distance 2D
 ---------------------
+* Assignment name: Euclidean distance 2D
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
@@ -257,7 +259,7 @@ Euclidean distance 2D
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Given are two points ``A: Tuple[int, int]`` and ``B: Tuple[int, int]``
+    #. Given are two points ``A: tuple[int, int]`` and ``B: tuple[int, int]``
     #. Coordinates are in cartesian system
     #. Points ``A`` and ``B`` are in two dimensional space
     #. Calculate distance between points using Euclidean algorithm
@@ -265,7 +267,7 @@ Euclidean distance 2D
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Dane są dwa punkty ``A: Tuple[int, int]`` i ``B: Tuple[int, int]``
+    #. Dane są dwa punkty ``A: tuple[int, int]`` i ``B: tuple[int, int]``
     #. Koordynaty są w systemie kartezjańskim
     #. Punkty ``A`` i ``B`` są w dwuwymiarowej przestrzeni
     #. Oblicz odległość między nimi wykorzystując algorytm Euklidesa
@@ -310,6 +312,7 @@ Euclidean distance 2D
 
 Euclidean distance ``n`` dimensions
 -----------------------------------
+* Assignment name: Euclidean distance ``n`` dimensions
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
@@ -369,6 +372,7 @@ Euclidean distance ``n`` dimensions
 
 Matrix multiplication
 ---------------------
+* Assignment name: Matrix multiplication
 * Complexity level: hard
 * Lines of code to write: 6 lines
 * Estimated time of completion: 21 min
@@ -408,6 +412,7 @@ Matrix multiplication
 
 Triangle
 --------
+* Assignment name: Triangle
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min

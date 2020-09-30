@@ -426,6 +426,7 @@ Assignments
 
 Wykorzystanie biblioteki ``sklearn``
 ------------------------------------
+* Assignment name: Wykorzystanie biblioteki ``sklearn``
 * Complexity level: medium
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min

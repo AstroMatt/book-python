@@ -124,6 +124,7 @@ Assignments
 
 Virtualenv
 ----------
+* Assignment name: Virtualenv
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 2 min

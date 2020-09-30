@@ -587,6 +587,7 @@ Assignments
 
 Protocol Iterator Implementation
 --------------------------------
+* Assignment name: Protocol Iterator Implementation
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 8 min
@@ -640,6 +641,7 @@ Protocol Iterator Implementation
 
 Protocol Iterator Range
 -----------------------
+* Assignment name: Protocol Iterator Range
 * Complexity level: medium
 * Lines of code to write: 25 lines
 * Estimated time of completion: 21 min

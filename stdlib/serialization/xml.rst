@@ -740,6 +740,7 @@ Assignments
 
 XML Parsing
 -----------
+* Assignment name: XML Parsing
 * Complexity level: easy
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
@@ -748,11 +749,11 @@ XML Parsing
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Convert input data to Python ``List[dict]``
+    #. Convert input data to Python ``list[dict]``
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Przekonwertuj dane wejściowe do Pythonowego ``List[dict]``
+    #. Przekonwertuj dane wejściowe do Pythonowego ``list[dict]``
 
 :Input:
     .. literalinclude:: data/xml_plants.xml
@@ -760,6 +761,7 @@ XML Parsing
 
 XSLT Transformation
 -------------------
+* Assignment name: XSLT Transformation
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
@@ -768,11 +770,11 @@ XSLT Transformation
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Convert input data to Python ``List[dict]``
+    #. Convert input data to Python ``list[dict]``
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Przekonwertuj dane wejściowe do Pythonowego ``List[dict]``
+    #. Przekonwertuj dane wejściowe do Pythonowego ``list[dict]``
 
 :Input:
     .. literalinclude:: data/xml_transform.xml

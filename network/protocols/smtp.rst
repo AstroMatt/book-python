@@ -29,6 +29,7 @@ Assignments
 
 Send email
 ----------
+* Assignment name: Send email
 * Complexity level: medium
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min

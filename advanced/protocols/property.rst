@@ -385,6 +385,7 @@ Assignments
 
 Protocol Property
 -----------------
+* Assignment name: Protocol Property
 * Complexity level: medium
 * Lines of code to write: 35 lines
 * Estimated time of completion: 21 min

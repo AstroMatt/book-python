@@ -319,6 +319,7 @@ Assignments
 
 Sequence Unpack Flat
 --------------------
+* Assignment name: Sequence Unpack Flat
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
@@ -358,6 +359,7 @@ Sequence Unpack Flat
 
 Sequence Unpack Nested
 ----------------------
+* Assignment name: Sequence Unpack Nested
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min

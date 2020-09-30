@@ -315,6 +315,7 @@ Assignments
 
 Argument parsing
 ----------------
+* Assignment name: Argument parsing
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min

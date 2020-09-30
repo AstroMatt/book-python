@@ -267,6 +267,7 @@ Assignments
 
 DataFrame NaN
 -------------
+* Assignment name: DataFrame NaN
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 8 min

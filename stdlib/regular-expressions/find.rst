@@ -41,6 +41,7 @@ Assignments
 
 Regexp Find Dates
 -----------------
+* Assignment name: Regexp Find Dates
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
@@ -61,12 +62,12 @@ Regexp Find Dates
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: List[str]
-        # ['October 4, 1957',
-        #  'April 12, 1961',
-        #  'May 5, 1961',
-        #  'May 25, 1961',
-        #  'September 12, 1962',
-        #  'September 12, 1962']
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        ['October 4, 1957',
+         'April 12, 1961',
+         'May 5, 1961',
+         'May 25, 1961',
+         'September 12, 1962',
+         'September 12, 1962']

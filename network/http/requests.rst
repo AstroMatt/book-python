@@ -279,6 +279,7 @@ Assignments
 
 REST API
 --------
+* Assignment name: REST API
 * Complexity level: medium
 * Lines of code to write: 35 lines
 * Estimated time of completion: 21 min

@@ -549,6 +549,7 @@ Assignments
 
 Jupyter First
 -------------
+* Assignment name: Jupyter First
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
@@ -568,6 +569,7 @@ Jupyter First
 
 Jupyter Slides
 --------------
+* Assignment name: Jupyter Slides
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 5 min

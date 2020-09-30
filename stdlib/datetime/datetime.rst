@@ -189,6 +189,7 @@ Assignments
 
 Datetime Create Custom
 ----------------------
+* Assignment name: Datetime Create Custom
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -207,6 +208,7 @@ Datetime Create Custom
 
 Datetime Create Current
 -----------------------
+* Assignment name: Datetime Create Current
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min

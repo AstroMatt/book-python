@@ -372,6 +372,7 @@ Assignments
 
 Sequence Set Create
 -------------------
+* Assignment name: Sequence Set Create
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -400,6 +401,7 @@ Sequence Set Create
 
 Sequence Set Many
 -----------------
+* Assignment name: Sequence Set Many
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 8 min

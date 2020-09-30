@@ -381,6 +381,7 @@ Assignments
 
 OOP Constructor Passwd
 ----------------------
+* Assignment name: OOP Constructor Passwd
 * Complexity level: easy
 * Lines of code to write: 21 lines
 * Estimated time of completion: 13 min
@@ -436,18 +437,18 @@ OOP Constructor Passwd
 :Output:
     .. code-block:: python
 
-        result: List[Union[UserAccount, SystemAccount]]
-        # [SystemAccount(username='root'),
-        #  SystemAccount(username='bin'),
-        #  SystemAccount(username='daemon'),
-        #  SystemAccount(username='adm'),
-        #  SystemAccount(username='shutdown'),
-        #  SystemAccount(username='halt'),
-        #  SystemAccount(username='nobody'),
-        #  SystemAccount(username='sshd'),
-        #  UserAccount(username='peck'),
-        #  UserAccount(username='jimenez'),
-        #  UserAccount(username='ivanovic')]
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        [SystemAccount(username='root'),
+         SystemAccount(username='bin'),
+         SystemAccount(username='daemon'),
+         SystemAccount(username='adm'),
+         SystemAccount(username='shutdown'),
+         SystemAccount(username='halt'),
+         SystemAccount(username='nobody'),
+         SystemAccount(username='sshd'),
+         UserAccount(username='peck'),
+         UserAccount(username='jimenez'),
+         UserAccount(username='ivanovic')]
 
 :Hints:
     * ``open(..., encoding='utf-8')``

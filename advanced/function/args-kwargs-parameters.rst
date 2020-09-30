@@ -222,6 +222,7 @@ Assignments
 
 Function Args/Kwargs Parameters Define
 --------------------------------------
+* Assignment name: Function Args/Kwargs Parameters Define
 * Complexity level: easy
 * Lines of code to write: 4 lines + doctests
 * Estimated time of completion: 5 min
@@ -257,6 +258,7 @@ Function Args/Kwargs Parameters Define
 
 Function Args/Kwargs Parameters Args
 ------------------------------------
+* Assignment name: Function Args/Kwargs Parameters Args
 * Complexity level: easy
 * Lines of code to write: 7 lines + doctests
 * Estimated time of completion: 5 min
@@ -320,6 +322,7 @@ Function Args/Kwargs Parameters Args
 
 Function Args/Kwargs Parameters Kwargs
 --------------------------------------
+* Assignment name: Function Args/Kwargs Parameters Kwargs
 * Complexity level: medium
 * Lines of code to write: 8 lines + doctests
 * Estimated time of completion: 5 min

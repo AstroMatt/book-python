@@ -75,6 +75,7 @@ Assignments
 
 Function Recurrence Brackets
 ----------------------------
+* Assignment name: Function Recurrence Brackets
 * Complexity level: medium
 * Lines of code to write: 10 lines
 * Estimated time of completion: 21 min

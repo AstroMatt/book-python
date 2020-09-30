@@ -196,6 +196,7 @@ Assignments
 
 Datetime Timedelta Period
 -------------------------
+* Assignment name: Datetime Timedelta Period
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min

@@ -320,6 +320,7 @@ Assignments
 
 DataFrame Mapping Split
 -----------------------
+* Assignment name: DataFrame Mapping Split
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
@@ -348,6 +349,7 @@ DataFrame Mapping Split
 
 DataFrame Mapping Translate
 ---------------------------
+* Assignment name: DataFrame Mapping Translate
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
@@ -392,6 +394,7 @@ DataFrame Mapping Translate
 
 DataFrame Mapping Month
 -----------------------
+* Assignment name: DataFrame Mapping Month
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
@@ -430,6 +433,7 @@ DataFrame Mapping Month
 
 DataFrame Mapping Substitute
 ----------------------------
+* Assignment name: DataFrame Mapping Substitute
 * Complexity level: medium
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min

@@ -25,7 +25,7 @@ JSON Syntax
     ]
 
 .. code-block:: json
-    :caption: JSON or Python ``List[dict]``?
+    :caption: JSON or Python ``list[dict]``?
 
     [
         {"firstname": "Jan", "lastname": "Twardowski", "addresses": [
@@ -86,7 +86,7 @@ Mapping to JSON
 Sequence to JSON
 ================
 * ``json.dumps(DATA: Sequence[dict]) -> str``
-* ``json.loads(DATA: str) -> List[dict]``
+* ``json.loads(DATA: str) -> list[dict]``
 
 .. code-block:: python
     :caption: Serializing sequence to JSON
@@ -442,6 +442,7 @@ Assignments
 
 Serialization JSON Dump
 -----------------------
+* Assignment name: Serialization JSON Dump
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
@@ -451,7 +452,7 @@ Serialization JSON Dump
 :English:
     #. Use data from "Input" section (see below)
     #. Extract from input a header and data
-    #. Create ``List[dict]``
+    #. Create ``result: list[dict]``
 
         * key: name from the header
         * value: measurement or species
@@ -462,7 +463,7 @@ Serialization JSON Dump
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Z danych wydziel nagłówek i pomiary
-    #. Wygeneruj ``List[dict]``
+    #. Wygeneruj ``result: list[dict]``
 
         * klucz: nazwa z nagłówka
         * wartość: wyniki pomiarów lub gatunek
@@ -508,15 +509,15 @@ Serialization JSON Dump
     .. code-block:: python
         :caption: Output
 
-        result: List[dict] = [
-            {'Sepal length': 5.8, 'Sepal width': 2.7, 'Petal length': 5.1, 'Petal width': 1.9, 'Species': 'virginica'},
-            {'Sepal length': 5.1, 'Sepal width': 3.5, 'Petal length': 1.4, 'Petal width': 0.2, 'Species': 'setosa'},
-            {'Sepal length': 5.7, 'Sepal width': 2.8, 'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
-            ...
-        ]
+        result  # doctest: +NORMALIZE_WHITESPACE
+        [{'Sepal length': 5.8, 'Sepal width': 2.7, 'Petal length': 5.1, 'Petal width': 1.9, 'Species': 'virginica'},
+         {'Sepal length': 5.1, 'Sepal width': 3.5, 'Petal length': 1.4, 'Petal width': 0.2, 'Species': 'setosa'},
+         {'Sepal length': 5.7, 'Sepal width': 2.8, 'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
+         ...]
 
 Serialization JSON Load
 -----------------------
+* Assignment name: Serialization JSON Load
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
@@ -526,14 +527,14 @@ Serialization JSON Load
 :English:
     #. Use data from "Input" section (see below)
     #. Save input data to "iris_deserialize.json" file
-    #. Read file and print data in ``List[tuple]`` format
+    #. Read file and print data in ``list[tuple]`` format
     #. First line must be a header
     #. Other lines must contain data
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Zapisz dane wejściowe do pliku "iris_deserialize.json"
-    #. Odczytaj dane z pliku, i wyświetl je w formacie ``List[tuple]``
+    #. Odczytaj dane z pliku, i wyświetl je w formacie ``list[tuple]``
     #. Pierwsza linijka ma zawierać nagłówek
     #. Kolejne linie mają mieć dane
 
@@ -549,6 +550,7 @@ Serialization JSON Load
 
 Serialization JSON Datetime
 ---------------------------
+* Assignment name: Serialization JSON Datetime
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
@@ -590,6 +592,7 @@ Serialization JSON Datetime
 
 Serialization JSON Object
 -------------------------
+* Assignment name: Serialization JSON Object
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
@@ -651,6 +654,7 @@ Serialization JSON Object
 
 Serialization JSON HTTP
 -----------------------
+* Assignment name: Serialization JSON HTTP
 * Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min

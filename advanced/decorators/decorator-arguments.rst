@@ -171,6 +171,7 @@ Assignments
 
 Decorator Arguments Astronauts
 ------------------------------
+* Assignment name: Decorator Arguments Astronauts
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 13 min
@@ -181,7 +182,7 @@ Decorator Arguments Astronauts
 :English:
     #. Use data from "Input" section (see below)
     #. Create decorator ``check_astronauts``
-    #. To answer if person is an astronaut check field ``is_astronaut`` in ``crew: List[dict]``
+    #. To answer if person is an astronaut check field ``is_astronaut`` in ``crew: list[dict]``
     #. Decorator will call decorated function, only if all crew members has field with specified value
     #. Both field name and value are given as keyword arguments to decorator
     #. If any member is not an astronaut raise ``PermissionError`` and print his first name and last name
@@ -190,7 +191,7 @@ Decorator Arguments Astronauts
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
     #. Stwórz dekorator ``check_astronauts``
-    #. Aby odpowiedzieć czy osoba jest astronautą sprawdź pole ``is_astronaut`` in ``crew: List[dict]``
+    #. Aby odpowiedzieć czy osoba jest astronautą sprawdź pole ``is_astronaut`` in ``crew: list[dict]``
     #. Dekorator wywoła dekorowaną funkcję tylko wtedy, gdy każdy członek załogi ma pole o podanej wartości
     #. Zarówno nazwa pola jak i wartość są podawane jako argumenty nazwane do dekoratora
     #. Jeżeli, jakikolwiek członek nie jest astronautą, podnieś wyjątek ``PermissionError`` i wypisz jego imię i nazwisko
@@ -230,6 +231,7 @@ Decorator Arguments Astronauts
 
 Decorator Arguments Type Check
 ------------------------------
+* Assignment name: Decorator Arguments Type Check
 * Complexity level: medium
 * Lines of code to write: 20 lines
 * Estimated time of completion: 13 min

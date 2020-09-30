@@ -162,6 +162,7 @@ Assignments
 
 Numpy Slice 1
 -------------
+* Assignment name: Numpy Slice 1
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -201,6 +202,7 @@ Numpy Slice 1
 
 Numpy Slice 2
 -------------
+* Assignment name: Numpy Slice 2
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min

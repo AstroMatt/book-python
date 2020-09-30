@@ -171,6 +171,7 @@ Assignments
 
 Database SQL Relations
 ----------------------
+* Assignment name: Database SQL Relations
 * Complexity level: medium
 * Lines of code to write: 0 lines
 * Estimated time of completion: 13 min

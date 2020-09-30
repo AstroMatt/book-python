@@ -264,6 +264,7 @@ Assignments
 
 Least square regression 3 points
 --------------------------------
+* Assignment name: Least square regression 3 points
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
@@ -281,6 +282,7 @@ Least square regression 3 points
 
 Least square regression 4 points
 --------------------------------
+* Assignment name: Least square regression 4 points
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
@@ -297,6 +299,7 @@ Least square regression 4 points
 
 Company sales
 -------------
+* Assignment name: Company sales
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min

@@ -8,6 +8,7 @@ Assignments
 
 Mini Botnet
 -----------
+* Assignment name: Mini Botnet
 * Complexity level: medium
 * Lines of code to write: 45 lines
 * Estimated time of completion: 21 min
@@ -32,6 +33,7 @@ Mini Botnet
 
 Heartbeat Receiver
 ------------------
+* Assignment name: Heartbeat Receiver
 * Complexity level: medium
 * Lines of code to write: 45 lines
 * Estimated time of completion: 21 min
@@ -54,6 +56,7 @@ Heartbeat Receiver
 
 Victim
 ------
+* Assignment name: Victim
 * Complexity level: medium
 * Lines of code to write: 150 lines
 * Estimated time of completion: 34 min
@@ -90,6 +93,7 @@ Victim
 
 Attacker
 --------
+* Assignment name: Attacker
 * Complexity level: medium
 * Lines of code to write: 150 lines
 * Estimated time of completion: 34 min

@@ -161,6 +161,7 @@ Assignments
 
 Loop For Count
 --------------
+* Assignment name: Loop For Count
 * Complexity level: easy
 * Lines of code to write: 14 lines
 * Estimated time of completion: 5 min
@@ -191,6 +192,7 @@ Loop For Count
 
 Loop For Counter
 ----------------
+* Assignment name: Loop For Counter
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
@@ -251,6 +253,7 @@ Loop For Counter
 
 Loop For Segmentation
 ---------------------
+* Assignment name: Loop For Segmentation
 * Complexity level: easy
 * Lines of code to write: 12 lines
 * Estimated time of completion: 8 min
@@ -311,6 +314,7 @@ Loop For Segmentation
 
 Loop For Newline
 ----------------
+* Assignment name: Loop For Newline
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
@@ -349,6 +353,7 @@ Loop For Newline
 
 Loop For Translate
 ------------------
+* Assignment name: Loop For Translate
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
@@ -387,6 +392,7 @@ Loop For Translate
 
 Loop For Text
 -------------
+* Assignment name: Loop For Text
 * Complexity level: medium or hard
 * Lines of code to write: 30 lines
 * Estimated time of completion: 13 min

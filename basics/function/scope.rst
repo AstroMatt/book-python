@@ -292,6 +292,7 @@ Assignments
 
 Function Scope Filter
 ---------------------
+* Assignment name: Function Scope Filter
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
@@ -344,6 +345,7 @@ Function Scope Filter
 
 Function Scope Roman to Int
 ---------------------------
+* Assignment name: Function Scope Roman to Int
 * Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
@@ -394,6 +396,7 @@ Function Scope Roman to Int
 
 Function Scope Int To Roman
 ---------------------------
+* Assignment name: Function Scope Int To Roman
 * Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min

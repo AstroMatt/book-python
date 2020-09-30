@@ -363,6 +363,7 @@ Assignments
 
 OOP Inheritance Simple
 ----------------------
+* Assignment name: OOP Inheritance Simple
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 3 min
@@ -383,6 +384,7 @@ OOP Inheritance Simple
 
 OOP Inheritance Multiple
 ------------------------
+* Assignment name: OOP Inheritance Multiple
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 5 min
@@ -399,6 +401,7 @@ OOP Inheritance Multiple
 
 OOP Inheritance Super
 ---------------------
+* Assignment name: OOP Inheritance Super
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 8 min

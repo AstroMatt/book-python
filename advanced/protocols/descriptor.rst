@@ -287,6 +287,7 @@ Assignments
 
 Protocol Descriptor Simple
 --------------------------
+* Assignment name: Protocol Descriptor Simple
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 13 min
@@ -330,6 +331,7 @@ Protocol Descriptor Simple
 
 Protocol Descriptor Inheritance
 -------------------------------
+* Assignment name: Protocol Descriptor Inheritance
 * Complexity level: medium
 * Lines of code to write: 25 lines
 * Estimated time of completion: 21 min

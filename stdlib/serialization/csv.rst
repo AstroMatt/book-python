@@ -484,6 +484,7 @@ Assignments
 
 Serialization CSV DictReader
 ----------------------------
+* Assignment name: Serialization CSV DictReader
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 7 min
@@ -531,6 +532,7 @@ Serialization CSV DictReader
 
 Serialization CSV DictWriter
 ----------------------------
+* Assignment name: Serialization CSV DictWriter
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 7 min
@@ -586,6 +588,7 @@ Serialization CSV DictWriter
 
 Serialization CSV List of Tuples
 --------------------------------
+* Assignment name: Serialization CSV List of Tuples
 * Complexity level: easy
 * Lines of code to write: 7 lines
 * Estimated time of completion: 7 min
@@ -594,7 +597,7 @@ Serialization CSV List of Tuples
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Convert ``DATA`` to ``List[dict]``
+    #. Convert ``DATA`` to ``list[dict]``
     #. Using ``csv.DictWriter()`` save ``DATA`` to file
     #. Compare result with "Output" section (see below)
     #. Non functional requirements:
@@ -606,7 +609,7 @@ Serialization CSV List of Tuples
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Przekonwertuj ``DATA`` do ``List[dict]``
+    #. Przekonwertuj ``DATA`` do ``list[dict]``
     #. Za pomocą ``csv.DictWriter()`` zapisz ``DATA`` do pliku
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
     #. Wymagania niefunkcjonalne:
@@ -672,6 +675,7 @@ Serialization CSV List of Tuples
 
 Serialization CSV Schemaless
 -----------------------------
+* Assignment name: Serialization CSV Schemaless
 * Complexity level: medium
 * Lines of code to write: 8 lines
 * Estimated time of completion: 7 min
@@ -734,6 +738,7 @@ Serialization CSV Schemaless
 
 Serialization CSV Objects
 -------------------------
+* Assignment name: Serialization CSV Objects
 * Complexity level: medium
 * Lines of code to write: 7 lines
 * Estimated time of completion: 13 min
@@ -785,6 +790,7 @@ Serialization CSV Objects
 
 Serialization CSV Relations
 ---------------------------
+* Assignment name: Serialization CSV Relations
 * Complexity level: hard
 * Lines of code to write: 18 lines
 * Estimated time of completion: 21 min

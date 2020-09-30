@@ -354,6 +354,7 @@ Assignments
 
 Numpy Broadcasting Arithmetic
 -----------------------------
+* Assignment name: Numpy Broadcasting Arithmetic
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 3 min
@@ -393,6 +394,7 @@ Numpy Broadcasting Arithmetic
 
 Numpy Broadcasting Type Cast
 ----------------------------
+* Assignment name: Numpy Broadcasting Type Cast
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
@@ -419,6 +421,7 @@ Numpy Broadcasting Type Cast
 
 Numpy Broadcasting Matmul
 -------------------------
+* Assignment name: Numpy Broadcasting Matmul
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min

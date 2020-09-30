@@ -446,6 +446,7 @@ Assignments
 
 Decorator Function Disabled
 ---------------------------
+* Assignment name: Decorator Function Disabled
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
@@ -488,6 +489,7 @@ Decorator Function Disabled
 
 Decorator Function Astronauts
 -----------------------------
+* Assignment name: Decorator Function Astronauts
 * Complexity level: easy
 * Lines of code to write: 7 lines
 * Estimated time of completion: 8 min
@@ -497,7 +499,7 @@ Decorator Function Astronauts
 :English:
     #. Use data from "Input" section (see below)
     #. Create decorator ``check_astronauts``
-    #. To answer if person is an astronaut check field ``is_astronaut`` in ``crew: List[dict]``
+    #. To answer if person is an astronaut check field ``is_astronaut`` in ``crew: list[dict]``
     #. Decorator will call decorated function, only if all crew members are astronauts
     #. If any member is not an astronaut raise ``PermissionError`` and print his first name and last name
     #. Compare result with "Output" section (see below)
@@ -505,7 +507,7 @@ Decorator Function Astronauts
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
     #. Stwórz dekorator ``check_astronauts``
-    #. Aby odpowiedzieć czy osoba jest astronautą sprawdź pole ``is_astronaut`` in ``crew: List[dict]``
+    #. Aby odpowiedzieć czy osoba jest astronautą sprawdź pole ``is_astronaut`` in ``crew: list[dict]``
     #. Dekorator wywoła dekorowaną funkcję, tylko gdy wszyscy członkowe załogi są astronautami
     #. Jeżeli, jakikolwiek członek nie jest astronautą, podnieś wyjątek ``PermissionError`` i wypisz jego imię i nazwisko
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
@@ -542,6 +544,7 @@ Decorator Function Astronauts
 
 Decorator Function Memoization
 ------------------------------
+* Assignment name: Decorator Function Memoization
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
@@ -606,6 +609,7 @@ Decorator Function Memoization
 
 Decorator Function Abspath
 --------------------------
+* Assignment name: Decorator Function Abspath
 * Complexity level: easy
 * Lines of code to write: 7 lines
 * Estimated time of completion: 13 min
@@ -654,6 +658,7 @@ Decorator Function Abspath
 
 Decorator Function Type Check
 -----------------------------
+* Assignment name: Decorator Function Type Check
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min

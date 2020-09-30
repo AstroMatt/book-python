@@ -290,6 +290,7 @@ Assignments
 
 Function Unpack Flat
 --------------------
+* Assignment name: Function Unpack Flat
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
@@ -329,6 +330,7 @@ Function Unpack Flat
 
 Function Unpack Nested
 ----------------------
+* Assignment name: Function Unpack Nested
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
@@ -376,6 +378,7 @@ Function Unpack Nested
 
 Function Unpack Loop
 --------------------
+* Assignment name: Function Unpack Loop
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
@@ -385,13 +388,13 @@ Function Unpack Loop
 :English:
     #. Use data from "Input" section (see below)
     #. Iterate over data splitting ``*features`` from ``label``
-    #. Define ``result: List[str]`` with species names ending with "ca" or "osa"
+    #. Define ``result: list[str]`` with species names ending with "ca" or "osa"
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Iteruj po danych rozdzielając ``*features`` od ``label``
-    #. Zdefiniuj ``result: List[str]`` z nazwami gatunków kończącymi się na "ca" lub "osa"
+    #. Zdefiniuj ``result: list[str]`` z nazwami gatunków kończącymi się na "ca" lub "osa"
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:

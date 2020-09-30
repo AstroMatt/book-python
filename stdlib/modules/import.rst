@@ -104,7 +104,7 @@ What is Python Module
 * Python does not recognize whether it is a file or dir with init
 * Useful when you start simple, and then expand
 * Usually ``__init__.py`` is empty
-* If you define ``__all__: List[str]`` in ``__init__.py`` it will import only those functions when ``from MODULE import *``
+* If you define ``__all__: list[str]`` in ``__init__.py`` it will import only those functions when ``from MODULE import *``
 
 Python file is a module
 -----------------------

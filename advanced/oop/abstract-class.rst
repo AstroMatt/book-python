@@ -160,6 +160,7 @@ Assignments
 
 OOP Abstract Iris
 -----------------
+* Assignment name: OOP Abstract Iris
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 5 min

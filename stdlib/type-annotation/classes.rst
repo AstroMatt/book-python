@@ -5,11 +5,8 @@ Classes
 
 .. code-block:: python
 
-    from typing import List
-
-
     class Astronaut:
-        def __init__(self, name: str, missions: List[Mission] = ()) -> None:
+        def __init__(self, name: str, missions: list[Mission] = ()) -> None:
             self.name = name
             self.missions = missions
 

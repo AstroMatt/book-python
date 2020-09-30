@@ -530,6 +530,7 @@ Assignments
 
 ``map()``, ``filter()`` and ``lambda``
 --------------------------------------
+* Assignment name: ``map()``, ``filter()`` and ``lambda``
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
@@ -547,6 +548,7 @@ Assignments
 
 Balanced Brackets
 -----------------
+* Assignment name: Balanced Brackets
 * Complexity level: medium
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min

@@ -435,6 +435,7 @@ Assignments
 
 Function Doctest Temperature
 ----------------------------
+* Assignment name: Function Doctest Temperature
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
@@ -477,6 +478,7 @@ Function Doctest Temperature
 
 Function Doctest Distance
 -------------------------
+* Assignment name: Function Doctest Distance
 * Complexity level: easy
 * Lines of code to write: 21 lines
 * Estimated time of completion: 13 min
@@ -513,6 +515,7 @@ Function Doctest Distance
 
 Function Doctest Regexp
 -----------------------
+* Assignment name: Function Doctest Regexp
 * Complexity level: hard
 * Lines of code to write: 0 lines (**discussion only**)
 * Estimated time of completion: 5 min

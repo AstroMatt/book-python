@@ -340,6 +340,7 @@ Assignments
 
 Klastrowanie zbioru Iris
 ------------------------
+* Assignment name: Klastrowanie zbioru Iris
 * Complexity level: medium
 * Lines of code to write: 30 lines
 * Estimated time of completion: 13 min

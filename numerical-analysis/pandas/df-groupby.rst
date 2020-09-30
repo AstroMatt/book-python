@@ -483,6 +483,7 @@ Assignments
 
 DataFrame Groupby Phones
 ------------------------
+* Assignment name: DataFrame Groupby Phones
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
@@ -506,6 +507,7 @@ DataFrame Groupby Phones
 
 DataFrame Groupby Astro Flights
 -------------------------------
+* Assignment name: DataFrame Groupby Astro Flights
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
@@ -529,6 +531,7 @@ DataFrame Groupby Astro Flights
 
 DataFrame Groupby Astro EVA
 ---------------------------
+* Assignment name: DataFrame Groupby Astro EVA
 * Complexity level: medium
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min

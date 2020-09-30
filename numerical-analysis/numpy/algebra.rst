@@ -258,6 +258,7 @@ Assignments
 
 Numpy Algebra Euclidean 2D
 --------------------------
+* Assignment name: Numpy Algebra Euclidean 2D
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
@@ -266,7 +267,7 @@ Numpy Algebra Euclidean 2D
 
 :English:
     #. Use code from "Input" section (see below)
-    #. Given are two points ``A: Tuple[int, int]`` and ``B: Tuple[int, int]``
+    #. Given are two points ``A: tuple[int, int]`` and ``B: tuple[int, int]``
     #. Coordinates are in cartesian system
     #. Points ``A`` and ``B`` are in two dimensional space
     #. Calculate distance between points using Euclidean algorithm
@@ -274,7 +275,7 @@ Numpy Algebra Euclidean 2D
 
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
-    #. Dane są dwa punkty ``A: Tuple[int, int]`` i ``B: Tuple[int, int]``
+    #. Dane są dwa punkty ``A: tuple[int, int]`` i ``B: tuple[int, int]``
     #. Koordynaty są w systemie kartezjańskim
     #. Punkty ``A`` i ``B`` są w dwuwymiarowej przestrzeni
     #. Oblicz odległość między nimi wykorzystując algorytm Euklidesa
@@ -318,6 +319,7 @@ Numpy Algebra Euclidean 2D
 
 Numpy Algebra Euclidean Ndim
 ----------------------------
+* Assignment name: Numpy Algebra Euclidean Ndim
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 8 min

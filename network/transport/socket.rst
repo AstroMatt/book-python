@@ -129,6 +129,7 @@ Assignments
 
 Heartbeat
 ---------
+* Assignment name: Heartbeat
 * Complexity level: medium
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
@@ -157,6 +158,7 @@ Heartbeat
 
 Backdoor
 --------
+* Assignment name: Backdoor
 * Complexity level: medium
 * Lines of code to write: 150 lines
 * Estimated time of completion: 34 min

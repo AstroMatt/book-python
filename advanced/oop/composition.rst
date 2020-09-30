@@ -173,6 +173,7 @@ Assignments
 
 OOP Composition Mars
 --------------------
+* Assignment name: OOP Composition Mars
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
@@ -193,6 +194,7 @@ OOP Composition Mars
 
 OOP Composition Moveable
 ------------------------
+* Assignment name: OOP Composition Moveable
 * Complexity level: medium
 * Lines of code to write: 20 lines
 * Estimated time of completion: 13 min

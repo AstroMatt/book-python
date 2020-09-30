@@ -207,6 +207,7 @@ Assignments
 
 Type Bool True or False
 -----------------------
+* Assignment name: Type Bool True or False
 * Complexity level: easy
 * Lines of code to write: 16 lines
 * Estimated time of completion: 5 min
@@ -255,6 +256,7 @@ Type Bool True or False
 
 Type Bool Simple
 ----------------
+* Assignment name: Type Bool Simple
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min

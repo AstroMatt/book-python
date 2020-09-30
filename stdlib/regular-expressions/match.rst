@@ -190,6 +190,7 @@ Assignments
 
 Regexp Match Phones
 -------------------
+* Assignment name: Regexp Match Phones
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
@@ -260,6 +261,7 @@ Regexp Match Phones
 
 Regexp Match Git Flow
 ---------------------
+* Assignment name: Regexp Match Git Flow
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min

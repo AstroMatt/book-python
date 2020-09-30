@@ -274,6 +274,7 @@ Assignments
 
 OOP Init Print
 --------------
+* Assignment name: OOP Init Print
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 3 min
@@ -319,6 +320,7 @@ OOP Init Print
 
 OOP Init Model
 --------------
+* Assignment name: OOP Init Model
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 8 min

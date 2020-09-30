@@ -38,18 +38,13 @@ Tuple
 -----
 .. code-block:: python
 
-    my_tuple: tuple = 'a', 2, 3.3
-    my_tuple: tuple = ('a', 2, 3.3)
+    data: tuple = 'a', 2, 3.3
+    data: tuple = ('a', 2, 3.3)
 
-.. code-block:: python
-
-    from typing import Tuple
-
-    my_tuple: Tuple[int, int, int] = (1, 2, 3)
-    my_tuple: Tuple[float, float, float] = (1.1, 2.2, 3.3)
-    my_tuple: Tuple[str, str, str] = ('a', 'b', 'c')
-
-    my_tuple: Tuple[str, int, float] = ('a', 2, 3.3)
+    data: tuple[int, int, int] = (1, 2, 3)
+    data: tuple[float, float, float] = (1.1, 2.2, 3.3)
+    data: tuple[str, str, str] = ('a', 'b', 'c')
+    data: tuple[str, int, float] = ('a', 2, 3.3)
 
 .. code-block:: python
 

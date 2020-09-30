@@ -169,6 +169,7 @@ Assignments
 
 Pima Indians Diabetes problem
 -----------------------------
+* Assignment name: Pima Indians Diabetes problem
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
@@ -183,6 +184,7 @@ Pima Indians Diabetes problem
 
 Płeć
 ----
+* Assignment name: Płeć
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min

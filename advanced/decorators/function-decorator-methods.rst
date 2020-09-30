@@ -158,6 +158,7 @@ Assignments
 
 Decorator Methods Alive
 -----------------------
+* Assignment name: Decorator Methods Alive
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min

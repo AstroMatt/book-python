@@ -295,6 +295,7 @@ Assignments
 
 Series Slice Datetime
 ---------------------
+* Assignment name: Series Slice Datetime
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
@@ -343,6 +344,7 @@ Series Slice Datetime
 
 Slicing Slice Str
 -----------------
+* Assignment name: Slicing Slice Str
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min

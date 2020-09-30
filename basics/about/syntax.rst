@@ -226,6 +226,7 @@ Assignments
 
 About Print
 ------------
+* Assignment name: About Print
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
@@ -249,6 +250,7 @@ About Print
 
 About Syntax
 ------------
+* Assignment name: About Syntax
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 3 min

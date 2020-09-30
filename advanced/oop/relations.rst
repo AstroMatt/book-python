@@ -20,10 +20,10 @@ Relations
     class Astronaut:
         def __init__(self, name: str, experience: Sequence[Mission] = ()) -> None:
             self.name: str = name
-            self.experience: List[Mission] = list(experience)
+            self.experience: list[Mission] = list(experience)
 
 
-    CREW: List[Astronaut] = [
+    CREW: list[Astronaut] = [
         Astronaut('Jan Twardowski', experience=[
             Mission(1969, 'Apollo 11'),
             Mission(2024, 'Artemis 3')]),
@@ -40,6 +40,7 @@ Assignments
 
 OOP Relations Model
 -------------------
+* Assignment name: OOP Relations Model
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
@@ -66,7 +67,7 @@ OOP Relations Model
 
 :Input:
     .. code-block:: json
-        :caption: Python List[dict] or JSON?
+        :caption: Python list[dict] or JSON?
 
         [
             {"firstname": "Jan", "lastname": "Twardowski", "addresses": [
@@ -92,6 +93,7 @@ OOP Relations Model
 
 OOP Relations Flatten
 ---------------------
+* Assignment name: OOP Relations Flatten
 * Complexity level: hard
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
@@ -151,6 +153,7 @@ OOP Relations Flatten
 
 OOP Relations Nested
 --------------------
+* Assignment name: OOP Relations Nested
 * Complexity level: medium
 * Lines of code to write: 45 lines
 * Estimated time of completion: 13 min

@@ -195,6 +195,7 @@ Assignments
 
 C Types
 -------
+* Assignment name: C Types
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
