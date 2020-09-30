@@ -311,11 +311,11 @@ Assignments
 Numpy Dtype Astype
 ------------------
 * Assignment name: Numpy Dtype Astype
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_astype.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

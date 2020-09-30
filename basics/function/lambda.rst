@@ -161,11 +161,11 @@ Assignments
 Function Lambda Chain
 ---------------------
 * Assignment name: Function Lambda Chain
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/function_lambda_chain.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

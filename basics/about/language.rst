@@ -162,11 +162,11 @@ Assignments
 About Version
 -------------
 * Assignment name: About Version
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/about_version.py`
-* Last update: 2020-10-01
 
 :English:
     #. Create file wih name ``about_version.py``
@@ -205,11 +205,11 @@ About Version
 About Environment
 -----------------
 * Assignment name: About Environment
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/about_environment.py`
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

@@ -116,11 +116,11 @@ Assignments
 File Write Str
 --------------
 * Assignment name: File Write Str
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/file_write_str.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -143,11 +143,11 @@ File Write Str
 File Write Multiline
 --------------------
 * Assignment name: File Write Multiline
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/file_write_multiline.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -175,11 +175,11 @@ File Write Multiline
 File Write List
 ---------------
 * Assignment name: File Write List
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/file_write_list.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -202,11 +202,11 @@ File Write List
 File Write Non-Str
 ------------------
 * Assignment name: File Write Non-Str
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/file_write_nonstr.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -229,11 +229,11 @@ File Write Non-Str
 File Write Iris
 ---------------
 * Assignment name: File Write Iris
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/file_write_iris.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -259,11 +259,11 @@ File Write Iris
 File Write CSV
 --------------
 * Assignment name: File Write CSV
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 6 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/file_write_csv.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

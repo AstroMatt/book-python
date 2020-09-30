@@ -262,11 +262,11 @@ Assignments
 Wielowątkowość
 --------------
 * Assignment name: Wielowątkowość
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/threading_timer.py`
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

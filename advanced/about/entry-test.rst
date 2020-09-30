@@ -6,11 +6,11 @@ Entry Test
 Entry Test List of Dict
 =======================
 * Assignment name: Entry Test List of Dict
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 8 min
 * Solution: entry_test_listdict.py
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -71,11 +71,11 @@ Entry Test List of Dict
 Entry Test Endswith
 ===================
 * Assignment name: Entry Test Endswith
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 8 min
 * Solution: entry_test_endswith.py
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -113,11 +113,11 @@ Entry Test Endswith
 Entry Test File
 ===============
 * Assignment name: Entry Test File
+* Last update: 2020-10-01
 * Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
 * Solution: entry_test_file.py
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

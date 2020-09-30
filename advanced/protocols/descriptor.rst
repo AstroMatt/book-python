@@ -288,11 +288,11 @@ Assignments
 Protocol Descriptor Simple
 --------------------------
 * Assignment name: Protocol Descriptor Simple
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/protocol_descriptor_simple.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -332,11 +332,11 @@ Protocol Descriptor Simple
 Protocol Descriptor Inheritance
 -------------------------------
 * Assignment name: Protocol Descriptor Inheritance
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 25 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/protocol_descriptor_inheritance.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

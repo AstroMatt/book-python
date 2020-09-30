@@ -165,11 +165,11 @@ Assignments
 OOP Class Iris
 --------------
 * Assignment name: OOP Class Iris
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/oop_class_iris.py`
-* Last update: 2020-10-01
 
 :English:
     #. Define class ``Iris``
@@ -189,11 +189,11 @@ OOP Class Iris
 OOP Class Instance
 ------------------
 * Assignment name: OOP Class Instance
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/oop_class_instance.py`
-* Last update: 2020-10-01
 
 :English:
     #. Define class ``Astronaut``

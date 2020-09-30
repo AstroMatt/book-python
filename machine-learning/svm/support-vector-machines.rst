@@ -427,11 +427,11 @@ Assignments
 Wykorzystanie biblioteki ``sklearn``
 ------------------------------------
 * Assignment name: Wykorzystanie biblioteki ``sklearn``
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/svm_sklearn.py`
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

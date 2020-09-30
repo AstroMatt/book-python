@@ -42,11 +42,11 @@ Assignments
 Regexp Find Dates
 -----------------
 * Assignment name: Regexp Find Dates
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/regexp_find_dates.py`
-* Last update: 2020-10-01
 * References: :cite:`RegexpWikipediaApollo11`
 
 :English:

@@ -122,11 +122,11 @@ Assignments
 OOP Interface Iris
 ------------------
 * Assignment name: OOP Interface Iris
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 21 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/oop_interface_iris.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)

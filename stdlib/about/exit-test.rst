@@ -8,11 +8,11 @@ Stdlib Exit Test
 Exit Test Encoder
 =================
 * Assignment name: Exit Test Encoder
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 13 lines
 * Estimated time of completion: 13 min
 * Solution: exit_test_encoder.py
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -108,11 +108,11 @@ Exit Test Encoder
 Exit Test Passwd
 ================
 * Assignment name: Exit Test Passwd
+* Last update: 2020-10-01
 * Complexity level: medium
-* Lines of code to write: 100-150 lines
+* Lines of code to write: 100 lines
 * Estimated time of completion: 21 min
 * Solution: exit_test_passwd.py
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

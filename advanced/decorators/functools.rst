@@ -115,11 +115,11 @@ Assignments
 Decorator Functools Func
 ------------------------
 * Assignment name: Decorator Functools Func
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/decorator_functools_func.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)
@@ -154,11 +154,11 @@ Decorator Functools Func
 Decorator Functools Args
 ------------------------
 * Assignment name: Decorator Functools Args
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/decorator_functools_args.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)
@@ -195,11 +195,11 @@ Decorator Functools Args
 Decorator Functools Cls
 -----------------------
 * Assignment name: Decorator Functools Cls
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/decorator_functools_cls.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)

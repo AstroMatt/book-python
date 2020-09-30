@@ -535,11 +535,11 @@ Assignments
 Function Generator Iris
 -----------------------
 * Assignment name: Function Generator Iris
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/function_generator_iris.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)
@@ -614,11 +614,11 @@ Function Generator Iris
 Function Generator Passwd
 -------------------------
 * Assignment name: Function Generator Passwd
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/function_generator_passwd.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)

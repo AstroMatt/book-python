@@ -288,11 +288,11 @@ Assignments
 Sequence List Create
 --------------------
 * Assignment name: Sequence List Create
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/sequence_list_create.py`
-* Last update: 2020-10-01
 
 :English:
     #. Create list ``result`` with elements:
@@ -320,11 +320,11 @@ Sequence List Create
 Sequence List Many
 ------------------
 * Assignment name: Sequence List Many
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/sequence_list_many.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -355,11 +355,11 @@ Sequence List Many
 Sequence List Modify
 --------------------
 * Assignment name: Sequence List Modify
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/sequence_list_modify.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

@@ -239,11 +239,11 @@ Assignments
 Database SQLite Iris
 --------------------
 * Assignment name: Database SQLite Iris
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/database_sqlite_iris.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -340,11 +340,11 @@ Database SQLite Iris
 Database SQLite Relations
 -------------------------
 * Assignment name: Database SQLite Relations
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/database_sqlite_relations.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -436,11 +436,11 @@ Database SQLite Relations
 Database SQLite Logs
 --------------------
 * Assignment name: Database SQLite Logs
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 25 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/database_sqlite_logs.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

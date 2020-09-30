@@ -113,11 +113,11 @@ Assignments
 Sequence Frozenset Create
 -------------------------
 * Assignment name: Sequence Frozenset Create
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/sequence_frozenset_create.py`
-* Last update: 2020-10-01
 
 :English:
     #. Create frozenset ``result`` with elements:
@@ -145,11 +145,11 @@ Sequence Frozenset Create
 Sequence Frozenset Newline
 --------------------------
 * Assignment name: Sequence Frozenset Newline
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/sequence_frozenset_newline.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

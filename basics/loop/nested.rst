@@ -206,11 +206,11 @@ Assignments
 Loop Nested Mean
 ----------------
 * Assignment name: Loop Nested Mean
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_nested_mean.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -250,11 +250,11 @@ Loop Nested Mean
 Loop Nested Unique Keys
 -----------------------
 * Assignment name: Loop Nested Unique Keys
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/loop_nested_unique_keys.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

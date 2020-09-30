@@ -427,11 +427,11 @@ Assignments
 Conditional Statements
 ----------------------
 * Assignment name: Conditional Statements
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/conditional_statements.py`
-* Last update: 2020-10-01
 
 :English:
     #. Ask user to input age

@@ -191,11 +191,11 @@ Assignments
 Regexp Match Phones
 -------------------
 * Assignment name: Regexp Match Phones
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/regexp_match_phones.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -262,11 +262,11 @@ Regexp Match Phones
 Regexp Match Git Flow
 ---------------------
 * Assignment name: Regexp Match Git Flow
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/regexp_match_gitflow.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use regular expressions to validate Git branch names

@@ -296,11 +296,11 @@ Assignments
 Series Slice Datetime
 ---------------------
 * Assignment name: Series Slice Datetime
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/series_slice_datetime.py`
-* Last update: 2020-10-01
 
 :English:
     #. Set random seed to zero
@@ -345,11 +345,11 @@ Series Slice Datetime
 Slicing Slice Str
 -----------------
 * Assignment name: Slicing Slice Str
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/series_slice_str.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

@@ -328,11 +328,11 @@ Assignments
 Datetime Parse ISO
 ------------------
 * Assignment name: Datetime Parse ISO
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/datetime_parse_iso.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -352,11 +352,11 @@ Datetime Parse ISO
 Datetime Parse Local
 --------------------
 * Assignment name: Datetime Parse Local
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/datetime_parse_local.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -390,11 +390,11 @@ Datetime Parse Local
 Datetime Parse US
 -----------------
 * Assignment name: Datetime Parse US
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/datetime_parse_us.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -434,11 +434,11 @@ Datetime Parse US
 Datetime Parse Logs
 -------------------
 * Assignment name: Datetime Parse Logs
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/datetime_parse_logs.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

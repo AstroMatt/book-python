@@ -391,11 +391,11 @@ Assignments
 REST API
 --------
 * Assignment name: REST API
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 60 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/http_github.py`
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

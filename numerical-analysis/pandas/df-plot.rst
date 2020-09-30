@@ -469,11 +469,11 @@ Assignments
 DataFrame Plot
 --------------
 * Assignment name: DataFrame Plot
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/df_plot.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

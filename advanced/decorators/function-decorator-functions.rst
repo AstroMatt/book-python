@@ -447,11 +447,11 @@ Assignments
 Decorator Function Disabled
 ---------------------------
 * Assignment name: Decorator Function Disabled
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/decorator_func_disabled.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -490,11 +490,11 @@ Decorator Function Disabled
 Decorator Function Astronauts
 -----------------------------
 * Assignment name: Decorator Function Astronauts
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 7 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/decorator_func_astronauts.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -545,11 +545,11 @@ Decorator Function Astronauts
 Decorator Function Memoization
 ------------------------------
 * Assignment name: Decorator Function Memoization
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/decorator_func_memoization.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -610,11 +610,11 @@ Decorator Function Memoization
 Decorator Function Abspath
 --------------------------
 * Assignment name: Decorator Function Abspath
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 7 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/decorator_func_abspath.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -659,11 +659,11 @@ Decorator Function Abspath
 Decorator Function Type Check
 -----------------------------
 * Assignment name: Decorator Function Type Check
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/decorator_func_typecheck.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

@@ -152,11 +152,11 @@ Assignments
 Conditional Expression
 ----------------------
 * Assignment name: Conditional Expression
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 25 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/conditional_expression.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

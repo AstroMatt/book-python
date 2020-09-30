@@ -132,11 +132,11 @@ Assignments
 Type Float Tax
 --------------
 * Assignment name: Type Float Tax
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_float_tax.py`
-* Last update: 2020-10-01
 
 :English:
     #. Cost of the service is 100 PLN net
@@ -166,11 +166,11 @@ Type Float Tax
 Type Float Altitude
 -------------------
 * Assignment name: Type Float Altitude
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_float_altitude.py`
-* Last update: 2020-10-01
 
 :English:
     #. Plane altitude is 10.000 ft
@@ -202,11 +202,11 @@ Type Float Altitude
 Type Float Volume
 ------------------
 * Assignment name: Type Float Volume
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_float_volume.py`
-* Last update: 2020-10-01
 
 :English:
     #. Bottle volume is 20 Fl Oz
@@ -236,11 +236,11 @@ Type Float Volume
 Type Float Distance
 -------------------
 * Assignment name: Type Float Distance
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/type_float_distance.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)
@@ -291,11 +291,11 @@ Type Float Distance
 Type Float Velocity
 -------------------
 * Assignment name: Type Float Velocity
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_float_velocity.py`
-* Last update: 2020-10-01
 
 :English:
     #. Speed limit is 75 MPH
@@ -324,11 +324,11 @@ Type Float Velocity
 Type Float Pressure
 -------------------
 * Assignment name: Type Float Pressure
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/type_float_pressure.py`
-* Last update: 2020-10-01
 
 :English:
     #. Operational pressure of EMU spacesuit: 4.3 PSI
@@ -373,11 +373,11 @@ Type Float Pressure
 Type Float Percent
 ------------------
 * Assignment name: Type Float Percent
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_float_percent.py`
-* Last update: 2020-10-01
 
 :English:
     #. International Standard Atmosphere (ISA) at sea level is 1013.25 hPa
@@ -421,11 +421,11 @@ Type Float Percent
 Type Float Gradient
 -------------------
 * Assignment name: Type Float Gradient
+* Last update: 2020-10-01
 * Complexity level: hard
 * Lines of code to write: 9 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/type_float_gradient.py`
-* Last update: 2020-10-01
 
 :English:
     #. At what altitude above sea level, pressure is equal to partial pressure of Oxygen

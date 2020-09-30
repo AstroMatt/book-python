@@ -167,11 +167,11 @@ Assignments
 Series Arithmetic
 -----------------
 * Assignment name: Series Arithmetic
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/series_arithmetic.py`
-* Last update: 2020-10-01
 
 :English:
     #. Set random seed to zero

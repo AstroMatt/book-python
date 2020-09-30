@@ -843,11 +843,11 @@ Assignments
 Cleanup your file
 -----------------
 * Assignment name: Cleanup your file
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/cleanup.py`
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

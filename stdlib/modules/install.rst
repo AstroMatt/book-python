@@ -32,11 +32,11 @@ Assignments
 Installing from ``requirements.txt``
 ------------------------------------
 * Assignment name: Installing from ``requirements.txt``
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 1 line
 * Estimated time of completion: 5 min
 * Solution: :download:``requirements.txt``
-* Last update: 2020-10-01
 
 :English:
     #. Create ``requirements.txt`` file

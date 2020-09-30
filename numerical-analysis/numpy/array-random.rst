@@ -282,11 +282,11 @@ Assignments
 Numpy Random Float
 ------------------
 * Assignment name: Numpy Random Float
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_random_float.py`
-* Last update: 2020-10-01
 
 :English:
     #. Set random seed to zero
@@ -303,11 +303,11 @@ Numpy Random Float
 Numpy Random Int
 ----------------
 * Assignment name: Numpy Random Int
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_random_int.py`
-* Last update: 2020-10-01
 
 :English:
     #. Set random seed to zero
@@ -324,11 +324,11 @@ Numpy Random Int
 Numpy Random Sample
 -------------------
 * Assignment name: Numpy Random Sample
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_random_sample.py`
-* Last update: 2020-10-01
 
 :English:
     #. Set random seed to zero

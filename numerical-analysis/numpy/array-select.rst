@@ -496,11 +496,11 @@ Assignments
 Numpy Select Isin
 -----------------
 * Assignment name: Numpy Select Isin
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/numpy_select_isin.py`
-* Last update: 2020-10-01
 
 :English:
     #. Set random seed to 0

@@ -157,11 +157,11 @@ Assignments
 Decorator Class Abspath
 -----------------------
 * Assignment name: Decorator Class Abspath
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/decorator_cls_abspath.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -206,11 +206,11 @@ Decorator Class Abspath
 Decorator Class Type Check
 --------------------------
 * Assignment name: Decorator Class Type Check
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/decorator_cls_typecheck.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

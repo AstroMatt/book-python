@@ -214,11 +214,11 @@ Assignments
 Loop While Cast
 ---------------
 * Assignment name: Loop While Cast
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/loop_while_cast.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -250,11 +250,11 @@ Loop While Cast
 Loop While Convert
 ------------------
 * Assignment name: Loop While Convert
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_while_convert.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -292,11 +292,11 @@ Loop While Convert
 Loop While Translate
 --------------------
 * Assignment name: Loop While Translate
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 9 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/loop_while_translate.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -331,11 +331,11 @@ Loop While Translate
 Loop While Input
 ----------------
 * Assignment name: Loop While Input
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/loop_while_input.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

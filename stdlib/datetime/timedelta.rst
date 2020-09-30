@@ -197,11 +197,11 @@ Assignments
 Datetime Timedelta Period
 -------------------------
 * Assignment name: Datetime Timedelta Period
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/datetime_timedelta_period.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

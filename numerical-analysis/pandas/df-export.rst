@@ -49,11 +49,11 @@ Assignments
 DataFrame Export CSV
 --------------------
 * Assignment name: DataFrame Export CSV
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/df_export_csv.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -74,11 +74,11 @@ DataFrame Export CSV
 DataFrame Export JSON
 ---------------------
 * Assignment name: DataFrame Export JSON
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/df_export_json.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -99,11 +99,11 @@ DataFrame Export JSON
 DataFrame Export Pickle
 -----------------------
 * Assignment name: DataFrame Export Pickle
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/df_export_pickle.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -124,11 +124,11 @@ DataFrame Export Pickle
 DataFrame Export Pickle
 -----------------------
 * Assignment name: DataFrame Export Pickle
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/df_export_sql.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

@@ -184,11 +184,11 @@ Assignments
 File Read Str
 -------------
 * Assignment name: File Read Str
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/file_read_str.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -219,11 +219,11 @@ File Read Str
 File Read Multiline
 -------------------
 * Assignment name: File Read Multiline
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/file_read_multiline.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -254,11 +254,11 @@ File Read Multiline
 File Read CSV
 -------------
 * Assignment name: File Read CSV
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/file_read_csv.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -345,11 +345,11 @@ File Read CSV
 File Read Parsing Dict
 ----------------------
 * Assignment name: File Read Parsing Dict
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 10 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/file_read_parsing_dict.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -411,11 +411,11 @@ File Read Parsing Dict
 File Read Parsing List of Dicts
 -------------------------------
 * Assignment name: File Read Parsing List of Dicts
+* Last update: 2020-10-01
 * Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/file_read_parsing_listdict.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

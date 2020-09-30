@@ -329,11 +329,11 @@ Assignments
 Sequence Slice Substr
 ---------------------
 * Assignment name: Sequence Slice Substr
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/sequence_slice_substr.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -363,11 +363,11 @@ Sequence Slice Substr
 Sequence Slice Sequence
 -----------------------
 * Assignment name: Sequence Slice Sequence
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/sequence_slice_sequence.py`
-* Last update: 2020-10-01
 
 :English:
     #. Create tuple ``a`` with digits: 0, 1, 2, 3
@@ -397,11 +397,11 @@ Sequence Slice Sequence
 Sequence Slice Text
 -------------------
 * Assignment name: Sequence Slice Text
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/sequence_slice_text.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -455,11 +455,11 @@ Sequence Slice Text
 Sequence Slice Split
 --------------------
 * Assignment name: Sequence Slice Split
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/sequence_slice_split.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

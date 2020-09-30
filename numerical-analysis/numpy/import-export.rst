@@ -125,11 +125,11 @@ Assignments
 Numpy Loadtext
 --------------
 * Assignment name: Numpy Loadtext
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/numpy_loadtext.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

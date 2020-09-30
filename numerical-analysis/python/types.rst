@@ -42,11 +42,11 @@ Converting to ``int``
 Assignments
 -----------
 * Assignment name: Assignments
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 12 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/types_int.py`
-* Last update: 2020-10-01
 
 :English:
     #. Calculate how many seconds is five minutes
@@ -121,11 +121,11 @@ Converting to ``float``
 Assignments
 -----------
 * Assignment name: Assignments
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/types_float.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)
@@ -337,11 +337,11 @@ Methods
 Assignments
 -----------
 * Assignment name: Assignments
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/types_str.py`
-* Last update: 2020-10-01
 
 :English:
     * Ask user to input text
@@ -480,11 +480,11 @@ Assignments
 To ``bool`` or not to ``bool``
 ------------------------------
 * Assignment name: To ``bool`` or not to ``bool``
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/types_bool.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

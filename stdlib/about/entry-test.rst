@@ -6,11 +6,11 @@ Pre-Intermediate
 Entry Test Select
 =================
 * Assignment name: Entry Test Select
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
 * Solution: entry_test_select.py
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -77,11 +77,11 @@ Entry Test Select
 Entry Test Slice
 ================
 * Assignment name: Entry Test Slice
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 20 lines
 * Estimated time of completion: 13 min
 * Solution: entry_test_slice.py
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -146,11 +146,11 @@ Entry Test Slice
 Entry Test Listdict
 ===================
 * Assignment name: Entry Test Listdict
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
 * Solution: entry_test_listdict.py
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -218,11 +218,11 @@ Entry Test Listdict
 Entry Test Nested
 =================
 * Assignment name: Entry Test Nested
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 13 min
 * Solution: entry_test_nested.py
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

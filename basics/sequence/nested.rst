@@ -179,11 +179,11 @@ Assignments
 Sequence Nested Create
 ----------------------
 * Assignment name: Sequence Nested Create
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/sequence_nested_create.py`
-* Last update: 2020-10-01
 
 :English:
     #. Create nested sequence ``result`` with elements:

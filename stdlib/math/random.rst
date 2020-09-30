@@ -33,11 +33,11 @@ Assignments
 Random numbers
 --------------
 * Assignment name: Random numbers
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/random_sample.py`
-* Last update: 2020-10-01
 
 :English:
     #. Print 6 random integers without repetition in range from 1 to 49
@@ -48,11 +48,11 @@ Random numbers
 Sum of inner elements
 ---------------------
 * Assignment name: Sum of inner elements
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/random_matrix.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use only ``random`` module

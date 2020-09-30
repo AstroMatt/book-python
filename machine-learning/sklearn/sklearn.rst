@@ -136,11 +136,11 @@ Zadania praktyczne
 Nearest Neighbor Classifier
 ---------------------------
 * Assignment name: Nearest Neighbor Classifier
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/sklearn_classifier.py`
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -198,11 +198,11 @@ Nearest Neighbor Classifier
 Porównanie classifierów
 -----------------------
 * Assignment name: Porównanie classifierów
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/sklearn_comparision.py`
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

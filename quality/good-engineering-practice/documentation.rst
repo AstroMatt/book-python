@@ -134,11 +134,11 @@ Assignments
 Dokumentacja
 ------------
 * Assignment name: Dokumentacja
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 30 lines
 * Estimated time of completion: 13 min
 * Solution: TODO
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

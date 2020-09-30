@@ -531,11 +531,11 @@ Assignments
 ``map()``, ``filter()`` and ``lambda``
 --------------------------------------
 * Assignment name: ``map()``, ``filter()`` and ``lambda``
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/functional_map_filter_lambda.py`
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -549,11 +549,11 @@ Assignments
 Balanced Brackets
 -----------------
 * Assignment name: Balanced Brackets
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/functional_brackets.py`
-* Last update: 2020-10-01
 
 :English:
     #. Create function which checks if brackets are balanced

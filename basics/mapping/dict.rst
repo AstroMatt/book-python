@@ -455,11 +455,11 @@ Assignments
 Mapping Dict Define
 -------------------
 * Assignment name: Mapping Dict Define
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/mapping_dict_define.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -479,11 +479,11 @@ Mapping Dict Define
 Mapping Dict Items
 ------------------
 * Assignment name: Mapping Dict Items
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/mapping_dict_items.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -527,11 +527,11 @@ Mapping Dict Items
 Mapping Dict Substitute
 -----------------------
 * Assignment name: Mapping Dict Substitute
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/mappting_dict_substitute.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -567,11 +567,11 @@ Mapping Dict Substitute
 Mapping Dict Get
 ----------------
 * Assignment name: Mapping Dict Get
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/mapping_dict_get.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

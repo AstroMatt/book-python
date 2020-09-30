@@ -658,11 +658,11 @@ Assignments
 Loop Comprehension Create
 -------------------------
 * Assignment name: Loop Comprehension Create
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/loop_comprehension_create.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use list comprehension
@@ -677,11 +677,11 @@ Loop Comprehension Create
 Loop Comprehension Translate
 ----------------------------
 * Assignment name: Loop Comprehension Translate
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_comprehension_translate.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -717,11 +717,11 @@ Loop Comprehension Translate
 Loop Comprehension Months
 -------------------------
 * Assignment name: Loop Comprehension Months
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_comprehension_months.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -772,11 +772,11 @@ Loop Comprehension Months
 Loop Comprehension Split
 ------------------------
 * Assignment name: Loop Comprehension Split
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/loop_comprehension_split.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

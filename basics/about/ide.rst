@@ -71,11 +71,11 @@ Assignments
 About IDE Create from VCS
 -------------------------
 * Assignment name: About IDE Create from VCS
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 5 min
 * Solution: TODO
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -93,11 +93,11 @@ About IDE Create from VCS
 About IDE Create Project
 ------------------------
 * Assignment name: About IDE Create Project
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 5 min
 * Solution: TODO
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -113,11 +113,11 @@ About IDE Create Project
 About IDE Usage
 ---------------
 * Assignment name: About IDE Usage
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 8 min
 * Solution: TODO
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -150,11 +150,11 @@ About IDE Usage
 About IDE Spellchecker
 ----------------------
 * Assignment name: About IDE Spellchecker
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 5 min
 * Solution: TODO
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

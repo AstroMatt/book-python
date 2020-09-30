@@ -316,11 +316,11 @@ Assignments
 Argument parsing
 ----------------
 * Assignment name: Argument parsing
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/argparse_avg.py`
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

@@ -125,11 +125,11 @@ Assignments
 Virtualenv
 ----------
 * Assignment name: Virtualenv
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 2 min
 * Solution: :download:`solution/venv.py`
-* Last update: 2020-10-01
 
 :English:
     #. Create ``venv``

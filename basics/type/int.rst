@@ -70,11 +70,11 @@ Assignments
 Type Int Distance
 -----------------
 * Assignment name: Type Int Distance
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/type_int_distance.py`
-* Last update: 2020-10-01
 
 :English:
     #. Calculate altitude in meters:
@@ -124,11 +124,11 @@ Type Int Distance
 Type Int Time
 -------------
 * Assignment name: Type Int Time
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 12 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/type_int_time.py`
-* Last update: 2020-10-01
 
 :English:
     #. Calculate how many seconds is one day
@@ -167,11 +167,11 @@ Type Int Time
 Type Int Bits
 -------------
 * Assignment name: Type Int Bits
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_int_bits.py`
-* Last update: 2020-10-01
 
 :English:
     #. File size is 1 megabit
@@ -205,11 +205,11 @@ Type Int Bits
 Type Int Bytes
 --------------
 * Assignment name: Type Int Bytes
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_int_bytes.py`
-* Last update: 2020-10-01
 
 :English:
     #. File size is 1 megabyte
@@ -244,11 +244,11 @@ Type Int Bytes
 Type Int Bandwidth
 ------------------
 * Assignment name: Type Int Bandwidth
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_int_bandwidth.py`
-* Last update: 2020-10-01
 
 :English:
     #. Having internet connection with speed up to 100 Mb/s
@@ -284,11 +284,11 @@ Type Int Bandwidth
 Type Int Temperature
 --------------------
 * Assignment name: Type Int Temperature
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 18 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/type_int_temperature.py`
-* Last update: 2020-10-01
 
 :English:
     #. One Kelvin is equal to 1 Celsius degree (1K = 1°C)

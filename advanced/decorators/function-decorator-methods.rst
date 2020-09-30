@@ -159,11 +159,11 @@ Assignments
 Decorator Methods Alive
 -----------------------
 * Assignment name: Decorator Methods Alive
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/decorator_method_alive.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

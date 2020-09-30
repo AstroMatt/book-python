@@ -180,11 +180,11 @@ Assignments
 Sequence Tuple Create
 ---------------------
 * Assignment name: Sequence Tuple Create
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/sequence_tuple_create.py`
-* Last update: 2020-10-01
 
 :English:
     #. Create tuple ``result`` with elements:
@@ -209,11 +209,11 @@ Sequence Tuple Create
 Sequence Tuple Many
 -------------------
 * Assignment name: Sequence Tuple Many
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 13 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/sequence_tuple_many.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

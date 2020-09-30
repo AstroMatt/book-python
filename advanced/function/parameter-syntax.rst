@@ -104,11 +104,11 @@ Assignments
 Function Parameter Syntax Kwargs
 --------------------------------
 * Assignment name: Function Parameter Syntax Kwargs
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/function_parameter_syntax_kwargs.py`
-* Last update: 2020-10-01
 
 :English:
     #. Create function ``set_position``
@@ -159,11 +159,11 @@ Function Parameter Syntax Kwargs
 Function Parameter Syntax Args
 ------------------------------
 * Assignment name: Function Parameter Syntax Args
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/function_parameter_syntax_args.py`
-* Last update: 2020-10-01
 * Warning: This assignment will work only in Python 3.8+
 
 :English:

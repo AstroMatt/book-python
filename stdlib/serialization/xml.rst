@@ -741,11 +741,11 @@ Assignments
 XML Parsing
 -----------
 * Assignment name: XML Parsing
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/xml_parse.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -762,11 +762,11 @@ XML Parsing
 XSLT Transformation
 -------------------
 * Assignment name: XSLT Transformation
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/xml_xslt.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

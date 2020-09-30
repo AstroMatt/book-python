@@ -612,11 +612,11 @@ Assignments
 Powielanie napisów
 ------------------
 * Assignment name: Powielanie napisów
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/print_lines.py`
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English translation
@@ -641,11 +641,11 @@ Powielanie napisów
 Przeliczanie temperatury
 ------------------------
 * Assignment name: Przeliczanie temperatury
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/print_formatting.py`
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English translation

@@ -76,11 +76,11 @@ Assignments
 Function Recurrence Brackets
 ----------------------------
 * Assignment name: Function Recurrence Brackets
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 10 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/function_recurrence_brackets.py`
-* Last update: 2020-10-01
 
 :English:
     #. Create function which checks if brackets are balanced

@@ -321,11 +321,11 @@ Assignments
 DataFrame Mapping Split
 -----------------------
 * Assignment name: DataFrame Mapping Split
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/df_mapping_split.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -350,11 +350,11 @@ DataFrame Mapping Split
 DataFrame Mapping Translate
 ---------------------------
 * Assignment name: DataFrame Mapping Translate
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/df_mapping_translate.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -395,11 +395,11 @@ DataFrame Mapping Translate
 DataFrame Mapping Month
 -----------------------
 * Assignment name: DataFrame Mapping Month
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/df_mapping_month.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -434,11 +434,11 @@ DataFrame Mapping Month
 DataFrame Mapping Substitute
 ----------------------------
 * Assignment name: DataFrame Mapping Substitute
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/df_mapping_substitute.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

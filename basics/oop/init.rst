@@ -275,11 +275,11 @@ Assignments
 OOP Init Print
 --------------
 * Assignment name: OOP Init Print
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/oop_init_print.py`
-* Last update: 2020-10-01
 
 :English:
     #. Create one class ``Temperature``
@@ -321,11 +321,11 @@ OOP Init Print
 OOP Init Model
 --------------
 * Assignment name: OOP Init Model
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/oop_init_model.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

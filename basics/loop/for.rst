@@ -162,11 +162,11 @@ Assignments
 Loop For Count
 --------------
 * Assignment name: Loop For Count
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 14 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_for_count.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -193,11 +193,11 @@ Loop For Count
 Loop For Counter
 ----------------
 * Assignment name: Loop For Counter
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_for_counter.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -254,11 +254,11 @@ Loop For Counter
 Loop For Segmentation
 ---------------------
 * Assignment name: Loop For Segmentation
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 12 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/loop_for_segmentation.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -315,11 +315,11 @@ Loop For Segmentation
 Loop For Newline
 ----------------
 * Assignment name: Loop For Newline
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_for_newline.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -354,11 +354,11 @@ Loop For Newline
 Loop For Translate
 ------------------
 * Assignment name: Loop For Translate
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_for_translate.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -393,11 +393,11 @@ Loop For Translate
 Loop For Text
 -------------
 * Assignment name: Loop For Text
+* Last update: 2020-10-01
 * Complexity level: medium or hard
 * Lines of code to write: 30 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/loop_for_text.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

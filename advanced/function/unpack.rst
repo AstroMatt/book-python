@@ -291,11 +291,11 @@ Assignments
 Function Unpack Flat
 --------------------
 * Assignment name: Function Unpack Flat
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/function_unpack_flat.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -331,11 +331,11 @@ Function Unpack Flat
 Function Unpack Nested
 ----------------------
 * Assignment name: Function Unpack Nested
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/function_unpack_nested.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -379,11 +379,11 @@ Function Unpack Nested
 Function Unpack Loop
 --------------------
 * Assignment name: Function Unpack Loop
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/function_unpack_loop.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

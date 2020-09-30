@@ -123,11 +123,11 @@ Assignments
 Sequence Getitem Select
 ------------------------
 * Assignment name: Sequence Getitem Select
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/sequence_getitem_select.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

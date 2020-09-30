@@ -41,11 +41,11 @@ Assignments
 OOP Relations Model
 -------------------
 * Assignment name: OOP Relations Model
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/oop_relations_model.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -94,11 +94,11 @@ OOP Relations Model
 OOP Relations Flatten
 ---------------------
 * Assignment name: OOP Relations Flatten
+* Last update: 2020-10-01
 * Complexity level: hard
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/oop_relations_flatten.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)
@@ -154,11 +154,11 @@ OOP Relations Flatten
 OOP Relations Nested
 --------------------
 * Assignment name: OOP Relations Nested
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 45 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/oop_relations_nested.py`
-* Last update: 2020-10-01
 
 :English:
     #. Client can open a bank account

@@ -588,11 +588,11 @@ Assignments
 Protocol Iterator Implementation
 --------------------------------
 * Assignment name: Protocol Iterator Implementation
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/protocol_iterator_implementation.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -642,11 +642,11 @@ Protocol Iterator Implementation
 Protocol Iterator Range
 -----------------------
 * Assignment name: Protocol Iterator Range
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 25 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/protocol_iterator_range.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)

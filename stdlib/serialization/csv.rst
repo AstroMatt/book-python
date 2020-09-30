@@ -485,11 +485,11 @@ Assignments
 Serialization CSV DictReader
 ----------------------------
 * Assignment name: Serialization CSV DictReader
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 7 min
 * Solution: :download:`solution/serialization_csv_dictreader.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -533,11 +533,11 @@ Serialization CSV DictReader
 Serialization CSV DictWriter
 ----------------------------
 * Assignment name: Serialization CSV DictWriter
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 7 min
 * Solution: :download:`solution/serialization_csv_dictwriter.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -589,11 +589,11 @@ Serialization CSV DictWriter
 Serialization CSV List of Tuples
 --------------------------------
 * Assignment name: Serialization CSV List of Tuples
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 7 lines
 * Estimated time of completion: 7 min
 * Solution: :download:`solution/serialization_csv_list_of_tuple.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -676,11 +676,11 @@ Serialization CSV List of Tuples
 Serialization CSV Schemaless
 -----------------------------
 * Assignment name: Serialization CSV Schemaless
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 8 lines
 * Estimated time of completion: 7 min
 * Solution: :download:`solution/serialization_csv_schemaless.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -739,11 +739,11 @@ Serialization CSV Schemaless
 Serialization CSV Objects
 -------------------------
 * Assignment name: Serialization CSV Objects
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 7 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/serialization_csv_objects.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -791,11 +791,11 @@ Serialization CSV Objects
 Serialization CSV Relations
 ---------------------------
 * Assignment name: Serialization CSV Relations
+* Last update: 2020-10-01
 * Complexity level: hard
 * Lines of code to write: 18 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/serialization_csv_relations.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

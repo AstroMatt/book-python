@@ -646,11 +646,11 @@ Assignments
 Exception Example
 -----------------
 * Assignment name: Exception Example
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/exception_example.py`
-* Last update: 2020-10-01
 
 :English:
     #. Ask user to input angle in degrees
@@ -671,11 +671,11 @@ Exception Example
 Exception Raise
 ---------------
 * Assignment name: Exception Raise
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/exception_raise.py`
-* Last update: 2020-10-01
 
 :English:
     #. Ask user to input age
@@ -690,11 +690,11 @@ Exception Raise
 Exception Catch
 ---------------
 * Assignment name: Exception Catch
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/exception_catch.py`
-* Last update: 2020-10-01
 
 :English:
     #. Ask user to input temperature in Kelvins
@@ -711,11 +711,11 @@ Exception Catch
 Exception Define
 ----------------
 * Assignment name: Exception Define
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/exception_define.py`
-* Last update: 2020-10-01
 
 :English:
     #. Ask user to input temperature in Kelvins

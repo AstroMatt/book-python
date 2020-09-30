@@ -530,11 +530,11 @@ Assignments
 Type String Normalize
 ---------------------
 * Assignment name: Type String Normalize
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/type_str_normalize.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -565,11 +565,11 @@ Type String Normalize
 Type String Clean
 -----------------
 * Assignment name: Type String Clean
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 11 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/type_str_clean.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

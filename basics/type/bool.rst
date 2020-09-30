@@ -208,11 +208,11 @@ Assignments
 Type Bool True or False
 -----------------------
 * Assignment name: Type Bool True or False
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 16 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/type_bool_true_or_false.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -257,11 +257,11 @@ Type Bool True or False
 Type Bool Simple
 ----------------
 * Assignment name: Type Bool Simple
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/type_bool_simple.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

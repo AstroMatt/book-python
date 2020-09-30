@@ -9,11 +9,11 @@ Assignments
 Mini Botnet
 -----------
 * Assignment name: Mini Botnet
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 45 lines
 * Estimated time of completion: 21 min
 * Solution: TODO
-* Last update: 2020-10-01
 
 #. Stwórz mini botnet o architekturze podanej :numref:`figure-botnet`. Mini botnet składa się z trzech części:
 
@@ -34,11 +34,11 @@ Mini Botnet
 Heartbeat Receiver
 ------------------
 * Assignment name: Heartbeat Receiver
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 45 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/botnet_heartbeat_receiver.py`
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -57,11 +57,11 @@ Heartbeat Receiver
 Victim
 ------
 * Assignment name: Victim
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 150 lines
 * Estimated time of completion: 34 min
 * Solution: :download:`solution/botnet_victim.py`
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -94,11 +94,11 @@ Victim
 Attacker
 --------
 * Assignment name: Attacker
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 150 lines
 * Estimated time of completion: 34 min
 * Solution: :download:`solution/botnet_attacker.py`
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

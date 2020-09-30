@@ -220,11 +220,11 @@ Assignments
 Column Stats
 ------------
 * Assignment name: Column Stats
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/statistics_column_stats.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -297,11 +297,11 @@ Column Stats
 Iris Stats
 ----------
 * Assignment name: Iris Stats
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/statistics_iris.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

@@ -164,11 +164,11 @@ Assignments
 Iris
 ----
 * Assignment name: Iris
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/scrapping_iris.py`
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -183,11 +183,11 @@ Iris
 EVA
 ---
 * Assignment name: EVA
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 100 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/scrapping_eva.py`
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

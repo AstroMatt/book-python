@@ -240,11 +240,11 @@ Assignments
 OOP Attribute Access Modifiers
 ------------------------------
 * Assignment name: OOP Attribute Access Modifiers
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 11 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/oop_attribute_access_modifiers.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -284,11 +284,11 @@ OOP Attribute Access Modifiers
 OOP Attribute Access Dict
 -------------------------
 * Assignment name: OOP Attribute Access Dict
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 35 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/oop_attribute_access_dict.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

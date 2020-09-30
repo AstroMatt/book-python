@@ -391,11 +391,11 @@ Assignments
 Function Args/Kwargs Arguments Define
 -------------------------------------
 * Assignment name: Function Args/Kwargs Arguments Define
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/function_argskwargs_arguments_define.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

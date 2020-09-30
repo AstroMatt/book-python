@@ -190,11 +190,11 @@ Assignments
 Datetime Create Custom
 ----------------------
 * Assignment name: Datetime Create Custom
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/datetime_create_custom.py`
-* Last update: 2020-10-01
 
 :English:
     #. Create ``date`` object with date of your birth
@@ -209,11 +209,11 @@ Datetime Create Custom
 Datetime Create Current
 -----------------------
 * Assignment name: Datetime Create Current
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/datetime_create_current.py`
-* Last update: 2020-10-01
 
 :English:
     #. Create ``date`` object with current date

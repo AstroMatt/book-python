@@ -242,11 +242,11 @@ Assignments
 Pandas Read CSV Dates
 ---------------------
 * Assignment name: Pandas Read CSV Dates
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/pandas_read_csv_dates.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -271,11 +271,11 @@ Pandas Read CSV Dates
 Pandas Read CSV Replace
 -----------------------
 * Assignment name: Pandas Read CSV Replace
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/pandas_read_csv_replace.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -320,11 +320,11 @@ Pandas Read CSV Replace
 Pandas Read JSON
 ----------------
 * Assignment name: Pandas Read JSON
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/pandas_read_json_iris.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -344,11 +344,11 @@ Pandas Read JSON
 Pandas Read JSON OpenAPI
 ------------------------
 * Assignment name: Pandas Read JSON OpenAPI
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/pandas_read_json_openapi.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -370,11 +370,11 @@ Pandas Read JSON OpenAPI
 Pandas Read HTML
 ----------------
 * Assignment name: Pandas Read HTML
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/pandas_read_html.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -398,11 +398,11 @@ Pandas Read HTML
 Pandas Read XSLT Books
 ----------------------
 * Assignment name: Pandas Read XSLT Books
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/pandas_read_xslt_books.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -427,11 +427,11 @@ Pandas Read XSLT Books
 Pandas Read XSLT Plants
 -----------------------
 * Assignment name: Pandas Read XSLT Plants
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/pandas_read_xslt_plants.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

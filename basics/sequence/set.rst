@@ -373,11 +373,11 @@ Assignments
 Sequence Set Create
 -------------------
 * Assignment name: Sequence Set Create
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/sequence_set_create.py`
-* Last update: 2020-10-01
 
 :English:
     #. Create set ``result`` with elements:
@@ -402,11 +402,11 @@ Sequence Set Create
 Sequence Set Many
 -----------------
 * Assignment name: Sequence Set Many
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/sequence_set_many.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

@@ -136,11 +136,11 @@ Assignments
 Function Arguments Sequence
 ---------------------------
 * Assignment name: Function Arguments Sequence
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/function_args_sequence.py`
-* Last update: 2020-10-01
 
 :English:
     #. Define function which takes sequence of integers as an argument
@@ -155,11 +155,11 @@ Function Arguments Sequence
 Function Arguments Divide
 -------------------------
 * Assignment name: Function Arguments Divide
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/function_args_divide.py`
-* Last update: 2020-10-01
 
 :English:
     #. Define function ``divide``
@@ -191,11 +191,11 @@ Function Arguments Divide
 Function Arguments Power
 ------------------------
 * Assignment name: Function Arguments Power
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/function_args_power.py`
-* Last update: 2020-10-01
 
 :English:
     #. Define function ``power``
@@ -227,11 +227,11 @@ Function Arguments Power
 Function Arguments Translate
 ----------------------------
 * Assignment name: Function Arguments Translate
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/function_args_translate.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -280,11 +280,11 @@ Function Arguments Translate
 Function Arguments Clean
 ------------------------
 * Assignment name: Function Arguments Clean
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/function_args_clean.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -361,11 +361,11 @@ Function Arguments Clean
 Function Arguments Numbers to Str
 ---------------------------------
 * Assignment name: Function Arguments Numbers to Str
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/function_args_numstr_simple.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -444,11 +444,11 @@ Function Arguments Numbers to Str
 Function Arguments Numbers to Human
 -----------------------------------
 * Assignment name: Function Arguments Numbers to Human
+* Last update: 2020-10-01
 * Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/function_args_numstr_human.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

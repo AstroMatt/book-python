@@ -369,11 +369,11 @@ Assignments
 Type String Input
 -----------------
 * Assignment name: Type String Input
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_str_input.py`
-* Last update: 2020-10-01
 
 :English:
     #. Ask user to input text
@@ -386,11 +386,11 @@ Type String Input
 Type String Emoticon
 --------------------
 * Assignment name: Type String Emoticon
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_str_emoticon.py`
-* Last update: 2020-10-01
 
 :English:
     #. Ask user to input name
@@ -414,11 +414,11 @@ Type String Emoticon
 Type String Quotes
 ------------------
 * Assignment name: Type String Quotes
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/type_str_quotes.py`
-* Last update: 2020-10-01
 
 :English:
     #. Ask user to input name

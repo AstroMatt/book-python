@@ -157,11 +157,11 @@ Assignments
 Mapping Generate Pairs
 ----------------------
 * Assignment name: Mapping Generate Pairs
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/mapping_generate_pairs.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -199,11 +199,11 @@ Mapping Generate Pairs
 Mapping Generate Enumerate
 --------------------------
 * Assignment name: Mapping Generate Enumerate
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/mapping_generate_enumerate.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -233,11 +233,11 @@ Mapping Generate Enumerate
 Mapping Generate Zip
 --------------------
 * Assignment name: Mapping Generate Zip
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/mapping_generate_zip.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

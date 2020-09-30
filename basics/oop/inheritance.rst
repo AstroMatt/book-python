@@ -364,11 +364,11 @@ Assignments
 OOP Inheritance Simple
 ----------------------
 * Assignment name: OOP Inheritance Simple
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/oop_inheritance_simple.py`
-* Last update: 2020-10-01
 
 :English:
     #. Create class ``Mars``
@@ -385,11 +385,11 @@ OOP Inheritance Simple
 OOP Inheritance Multiple
 ------------------------
 * Assignment name: OOP Inheritance Multiple
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/oop_inheritance_multiple.py`
-* Last update: 2020-10-01
 
 :English:
     #. Create classes ``Engineer``, ``Scientist``, ``Pilot``, ``MedicalDoctor``
@@ -402,11 +402,11 @@ OOP Inheritance Multiple
 OOP Inheritance Super
 ---------------------
 * Assignment name: OOP Inheritance Super
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/oop_inheritance_super.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

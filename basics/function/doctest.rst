@@ -436,11 +436,11 @@ Assignments
 Function Doctest Temperature
 ----------------------------
 * Assignment name: Function Doctest Temperature
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/function_doctest_temperature.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -479,11 +479,11 @@ Function Doctest Temperature
 Function Doctest Distance
 -------------------------
 * Assignment name: Function Doctest Distance
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 21 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/function_doctest_distance.py`
-* Last update: 2020-10-01
 
 :English:
     #. Write functions which convert distance given in kilometers to meters
@@ -516,11 +516,12 @@ Function Doctest Distance
 Function Doctest Regexp
 -----------------------
 * Assignment name: Function Doctest Regexp
+* Last update: 2020-10-01
 * Complexity level: hard
-* Lines of code to write: 0 lines (**discussion only**)
+* Lines of code to write: 0 lines
 * Estimated time of completion: 5 min
 * Solution: TODO
-* Last update: 2020-10-01
+* Warning: Do not write any code - **discussion only**
 
 :English:
     #. Use data from "Input" section (see below)

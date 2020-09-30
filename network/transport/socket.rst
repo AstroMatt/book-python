@@ -130,11 +130,11 @@ Assignments
 Heartbeat
 ---------
 * Assignment name: Heartbeat
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/socket_heartbeat_client.py` and :download:`solution/socket_heartbeat_server.py`
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -159,11 +159,11 @@ Heartbeat
 Backdoor
 --------
 * Assignment name: Backdoor
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 150 lines
 * Estimated time of completion: 34 min
 * Solution: :download:`solution/socket_backdoor.py`
-* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

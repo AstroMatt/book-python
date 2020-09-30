@@ -163,11 +163,11 @@ Assignments
 Numpy Round Rint
 ----------------
 * Assignment name: Numpy Round Rint
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_round_rint.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -199,11 +199,11 @@ Numpy Round Rint
 Numpy Round Floor and Ceil
 --------------------------
 * Assignment name: Numpy Round Floor and Ceil
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_round_ceilfloor.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -246,11 +246,11 @@ Numpy Round Floor and Ceil
 Numpy Round Clip
 ----------------
 * Assignment name: Numpy Round Clip
+* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_round_clip.py`
-* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

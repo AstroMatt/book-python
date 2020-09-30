@@ -67,11 +67,11 @@ Assignments
 Numpy Trigonometry
 ------------------
 * Assignment name: Numpy Trigonometry
+* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/numpy_trigonometry.py`
-* Last update: 2020-10-01
 
 :English:
     #. Read input (angle in degrees) from user
