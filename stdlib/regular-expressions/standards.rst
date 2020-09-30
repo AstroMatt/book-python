@@ -89,6 +89,7 @@ Regexp Standards PESEL
 * Lines of code to write: 0 lines (**discussion only**)
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/regexp_standards_pesel.py` (naive implementation)
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English translation

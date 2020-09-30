@@ -216,6 +216,7 @@ Own ``doctest``
 * Lines of code to write: 60 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/debugging_doctest.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

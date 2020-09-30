@@ -41,6 +41,7 @@ FTP Download
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/ftp_download.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -63,6 +64,7 @@ FTP Upload
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/ftp_upload.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

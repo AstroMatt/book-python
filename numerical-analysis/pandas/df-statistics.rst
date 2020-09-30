@@ -366,6 +366,7 @@ DataFrame Statistics
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/df_statistics_cars.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

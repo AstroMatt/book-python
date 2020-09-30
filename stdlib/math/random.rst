@@ -36,6 +36,7 @@ Random numbers
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/random_sample.py`
+* Last update: 2020-10-01
 
 :English:
     #. Print 6 random integers without repetition in range from 1 to 49
@@ -49,6 +50,7 @@ Sum of inner elements
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/random_matrix.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use only ``random`` module

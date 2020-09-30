@@ -385,6 +385,7 @@ OOP Constructor Passwd
 * Lines of code to write: 21 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/oop_constructor_passwd.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)

@@ -187,6 +187,7 @@ File Read Str
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/file_read_str.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -220,6 +221,7 @@ File Read Multiline
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/file_read_multiline.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -253,6 +255,7 @@ File Read CSV
 * Lines of code to write: 15 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/file_read_csv.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -342,6 +345,7 @@ File Read Parsing Dict
 * Lines of code to write: 10 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/file_read_parsing_dict.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -406,6 +410,7 @@ File Read Parsing List of Dicts
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/file_read_parsing_listdict.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

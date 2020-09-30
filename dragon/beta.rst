@@ -14,6 +14,7 @@ Dragon (version beta)
 * Lines of code to write: 120 lines
 * Estimated time of completion: 60 min (±10 min), then 30 min live coding with instructor
 * Solution: :download:`solution/dragon_beta.py`
+* Last update: 2020-10-01
 * Warning: Don't delete code, assignment will be continued
 
 :English:

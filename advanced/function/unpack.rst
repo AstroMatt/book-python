@@ -294,6 +294,7 @@ Function Unpack Flat
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/function_unpack_flat.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -332,6 +333,7 @@ Function Unpack Nested
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/function_unpack_nested.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -378,6 +380,7 @@ Function Unpack Loop
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/function_unpack_loop.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

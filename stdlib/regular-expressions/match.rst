@@ -194,6 +194,7 @@ Regexp Match Phones
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/regexp_match_phones.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -263,6 +264,7 @@ Regexp Match Git Flow
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/regexp_match_gitflow.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use regular expressions to validate Git branch names

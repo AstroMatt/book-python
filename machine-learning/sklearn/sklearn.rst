@@ -139,6 +139,7 @@ Nearest Neighbor Classifier
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/sklearn_classifier.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -199,6 +200,7 @@ Porównanie classifierów
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/sklearn_comparision.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

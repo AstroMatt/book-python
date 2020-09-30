@@ -252,6 +252,7 @@ Numpy Shape
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_shape.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

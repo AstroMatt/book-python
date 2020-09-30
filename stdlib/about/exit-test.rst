@@ -11,6 +11,7 @@ Label encoder
 * Lines of code to write: 13 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/loop_label_encoder.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -111,6 +112,7 @@ Relational Files Database
 * Lines of code to write: 100-150 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/exam.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

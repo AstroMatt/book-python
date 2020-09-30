@@ -846,6 +846,7 @@ Cleanup your file
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/cleanup.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

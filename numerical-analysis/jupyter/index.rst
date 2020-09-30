@@ -553,6 +553,7 @@ Jupyter First
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/jupyter_first.ipynb`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -571,6 +572,7 @@ Jupyter Slides
 * Lines of code to write: 1 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/jupyter_slides.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

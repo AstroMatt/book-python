@@ -297,6 +297,7 @@ Protocol Context Manager File
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/protocol_contextmanager_file.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use kodu from "Input" section (see below)
@@ -332,6 +333,7 @@ Protocol Context Manager Buffer
 * Lines of code to write: 32 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/protocol_contextmanager_buffer.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use kodu from "Input" section (see below)

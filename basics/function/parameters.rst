@@ -187,6 +187,7 @@ Function Parameters Sequence
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/function_parameters_sequence.py`
+* Last update: 2020-10-01
 
 :English:
     #. Define function ``add``
@@ -204,6 +205,7 @@ Function Parameters Echo
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/function_parameters_echo.py`
+* Last update: 2020-10-01
 
 :English:
     #. Define function ``echo`` with two parameters
@@ -234,6 +236,7 @@ Function Parameters Default
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/function_parameters_default.py`
+* Last update: 2020-10-01
 
 :English:
     #. Define function ``default`` with two parameters

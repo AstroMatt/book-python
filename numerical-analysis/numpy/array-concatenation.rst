@@ -79,6 +79,7 @@ Numpy Concatenation
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_concatenation.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

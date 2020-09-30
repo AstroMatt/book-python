@@ -487,6 +487,7 @@ DataFrame Groupby Phones
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/df_groupby_phones.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -509,6 +510,7 @@ DataFrame Groupby Astro Flights
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/df_groupby_astro_flights.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -531,6 +533,7 @@ DataFrame Groupby Astro EVA
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/df_groupby_astro_eva.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

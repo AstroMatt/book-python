@@ -94,6 +94,7 @@ C Modules
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/cmodules_datetime.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

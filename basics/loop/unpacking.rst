@@ -138,6 +138,7 @@ Loop Unpacking Months
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_unpacking_months.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -187,6 +188,7 @@ Loop Unpacking Endswith
 * Lines of code to write: 3 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/loop_unpacking_endswith.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

@@ -223,6 +223,7 @@ Column Stats
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/statistics_column_stats.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -298,6 +299,7 @@ Iris Stats
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/statistics_iris.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

@@ -127,6 +127,7 @@ Address Book
 * Lines of code to write: 50 lines
 * Estimated time of completion: 21 min
 * Solution: TODO
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

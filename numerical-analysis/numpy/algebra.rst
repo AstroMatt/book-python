@@ -262,6 +262,7 @@ Numpy Algebra Euclidean 2D
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/numpy_algebra_euclidean_2d.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)
@@ -321,6 +322,7 @@ Numpy Algebra Euclidean Ndim
 * Lines of code to write: 10 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/numpy_algebra_euclidean_ndim.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)

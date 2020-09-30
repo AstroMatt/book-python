@@ -9,6 +9,7 @@ Select
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
 * Solution: nested_select.py
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -78,6 +79,7 @@ Iris dataset
 * Lines of code to write: 20 lines
 * Estimated time of completion: 13 min
 * Solution: slice_iris.py
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -145,6 +147,7 @@ Iris dataset
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
 * Solution: loop_dict_to_list.py
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -215,6 +218,7 @@ Get elements from nested data structure
 * Lines of code to write: 3 lines
 * Estimated time of completion: 13 min
 * Solution: for_nested.py
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -255,6 +259,7 @@ Label encoder
 * Lines of code to write: 13 lines
 * Estimated time of completion: 13 min
 * Solution: loop_label_encoder.py
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

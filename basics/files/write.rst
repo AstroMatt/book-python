@@ -119,6 +119,7 @@ File Write Str
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/file_write_str.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -144,6 +145,7 @@ File Write Multiline
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/file_write_multiline.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -174,6 +176,7 @@ File Write List
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/file_write_list.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -199,6 +202,7 @@ File Write Non-Str
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/file_write_nonstr.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -224,6 +228,7 @@ File Write Iris
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/file_write_iris.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -252,6 +257,7 @@ File Write CSV
 * Lines of code to write: 6 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/file_write_csv.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

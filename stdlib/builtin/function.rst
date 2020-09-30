@@ -352,6 +352,7 @@ Average
 * Lines of code to write: 12 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/builtin_average.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

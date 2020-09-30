@@ -332,6 +332,7 @@ Sequence Slice Substr
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/sequence_slice_substr.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -364,6 +365,7 @@ Sequence Slice Sequence
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/sequence_slice_sequence.py`
+* Last update: 2020-10-01
 
 :English:
     #. Create tuple ``a`` with digits: 0, 1, 2, 3
@@ -396,6 +398,7 @@ Sequence Slice Text
 * Lines of code to write: 8 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/sequence_slice_text.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -452,6 +455,7 @@ Sequence Slice Split
 * Lines of code to write: 6 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/sequence_slice_split.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

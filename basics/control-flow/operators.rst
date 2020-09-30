@@ -167,6 +167,7 @@ Conditional Operators Modulo
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/conditional_operators_modulo.py`
+* Last update: 2020-10-01
 
 :English:
     #. Read a number from user

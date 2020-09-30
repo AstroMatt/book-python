@@ -341,6 +341,7 @@ Iris transformations
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/matplotlib_lifecycle.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

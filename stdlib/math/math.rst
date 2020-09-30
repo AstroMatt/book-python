@@ -230,6 +230,7 @@ Trigonometry
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/math_trigonometry.py`
+* Last update: 2020-10-01
 
 :English:
     #. Read input (angle in degrees) from user
@@ -252,6 +253,7 @@ Euclidean distance 2D
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/math_euclidean_2d.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -312,6 +314,7 @@ Euclidean distance ``n`` dimensions
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/math_euclidean_multi_dim.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -370,6 +373,7 @@ Matrix multiplication
 * Lines of code to write: 6 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/math_matmul.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)
@@ -408,6 +412,7 @@ Triangle
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/math_triangle.py`
+* Last update: 2020-10-01
 
 :English:
     #. Calculate triangle area

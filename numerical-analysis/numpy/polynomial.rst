@@ -189,6 +189,7 @@ Numpy Polyfit
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/numpy_polyfit.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

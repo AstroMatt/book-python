@@ -166,6 +166,7 @@ Numpy Round Rint
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_round_rint.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -200,6 +201,7 @@ Numpy Round Floor and Ceil
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_round_ceilfloor.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -245,6 +247,7 @@ Numpy Round Clip
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_round_clip.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

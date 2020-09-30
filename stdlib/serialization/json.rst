@@ -446,6 +446,7 @@ Serialization JSON Dump
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/serialization_json_dump.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -520,6 +521,7 @@ Serialization JSON Load
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/serialization_json_load.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -551,6 +553,7 @@ Serialization JSON Datetime
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/serialization_json_datetime.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -591,6 +594,7 @@ Serialization JSON Object
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/serialization_json_object.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -651,6 +655,7 @@ Serialization JSON HTTP
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/serialization_json_http.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use ``requests`` library (requires installation)

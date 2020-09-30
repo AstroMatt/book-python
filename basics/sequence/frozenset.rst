@@ -116,6 +116,7 @@ Sequence Frozenset Create
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/sequence_frozenset_create.py`
+* Last update: 2020-10-01
 
 :English:
     #. Create frozenset ``result`` with elements:
@@ -146,6 +147,7 @@ Sequence Frozenset Newline
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/sequence_frozenset_newline.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

@@ -367,6 +367,7 @@ OOP Inheritance Simple
 * Lines of code to write: 8 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/oop_inheritance_simple.py`
+* Last update: 2020-10-01
 
 :English:
     #. Create class ``Mars``
@@ -386,6 +387,7 @@ OOP Inheritance Multiple
 * Lines of code to write: 10 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/oop_inheritance_multiple.py`
+* Last update: 2020-10-01
 
 :English:
     #. Create classes ``Engineer``, ``Scientist``, ``Pilot``, ``MedicalDoctor``
@@ -401,6 +403,7 @@ OOP Inheritance Super
 * Lines of code to write: 8 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/oop_inheritance_super.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

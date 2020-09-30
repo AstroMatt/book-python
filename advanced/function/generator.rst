@@ -538,6 +538,7 @@ Function Generator Iris
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/function_generator_iris.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)
@@ -615,6 +616,7 @@ Function Generator Passwd
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/function_generator_passwd.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)

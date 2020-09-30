@@ -285,6 +285,7 @@ Numpy Random Float
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_random_float.py`
+* Last update: 2020-10-01
 
 :English:
     #. Set random seed to zero
@@ -304,6 +305,7 @@ Numpy Random Int
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_random_int.py`
+* Last update: 2020-10-01
 
 :English:
     #. Set random seed to zero
@@ -323,6 +325,7 @@ Numpy Random Sample
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_random_sample.py`
+* Last update: 2020-10-01
 
 :English:
     #. Set random seed to zero

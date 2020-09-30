@@ -299,6 +299,7 @@ Series Slice Datetime
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/series_slice_datetime.py`
+* Last update: 2020-10-01
 
 :English:
     #. Set random seed to zero
@@ -346,6 +347,7 @@ Slicing Slice Str
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/series_slice_str.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

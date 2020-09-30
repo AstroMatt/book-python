@@ -439,6 +439,7 @@ Function Doctest Temperature
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/function_doctest_temperature.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -480,6 +481,7 @@ Function Doctest Distance
 * Lines of code to write: 21 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/function_doctest_distance.py`
+* Last update: 2020-10-01
 
 :English:
     #. Write functions which convert distance given in kilometers to meters
@@ -515,6 +517,7 @@ Function Doctest Regexp
 * Lines of code to write: 0 lines (**discussion only**)
 * Estimated time of completion: 5 min
 * Solution: TODO
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

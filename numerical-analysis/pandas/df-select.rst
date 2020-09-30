@@ -223,6 +223,7 @@ DataFrame Select
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/df_select.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: Translate to English

@@ -217,6 +217,7 @@ Loop While Cast
 * Lines of code to write: 8 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/loop_while_cast.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -251,6 +252,7 @@ Loop While Convert
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_while_convert.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -291,6 +293,7 @@ Loop While Translate
 * Lines of code to write: 9 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/loop_while_translate.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -328,6 +331,7 @@ Loop While Input
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/loop_while_input.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

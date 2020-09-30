@@ -651,6 +651,7 @@ Recursive folders walking
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/system_walk.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -692,6 +693,7 @@ Tree
 * Lines of code to write: 60 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/system_tree.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

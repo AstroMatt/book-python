@@ -100,6 +100,7 @@ OOP Method Sequence
 * Lines of code to write: 18 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/oop_method_iris.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

@@ -591,6 +591,7 @@ Protocol Iterator Implementation
 * Lines of code to write: 9 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/protocol_iterator_implementation.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -643,6 +644,7 @@ Protocol Iterator Range
 * Lines of code to write: 25 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/protocol_iterator_range.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)

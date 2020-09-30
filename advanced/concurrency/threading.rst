@@ -265,6 +265,7 @@ Wielowątkowość
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/threading_timer.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

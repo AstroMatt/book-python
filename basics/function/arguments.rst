@@ -139,6 +139,7 @@ Function Arguments Sequence
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/function_args_sequence.py`
+* Last update: 2020-10-01
 
 :English:
     #. Define function which takes sequence of integers as an argument
@@ -156,6 +157,7 @@ Function Arguments Divide
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/function_args_divide.py`
+* Last update: 2020-10-01
 
 :English:
     #. Define function ``divide``
@@ -190,6 +192,7 @@ Function Arguments Power
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/function_args_power.py`
+* Last update: 2020-10-01
 
 :English:
     #. Define function ``power``
@@ -224,6 +227,7 @@ Function Arguments Translate
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/function_args_translate.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -275,6 +279,7 @@ Function Arguments Clean
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/function_args_clean.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -354,6 +359,7 @@ Function Arguments Numbers to Str
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/function_args_numstr_simple.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -435,6 +441,7 @@ Function Arguments Numbers to Human
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/function_args_numstr_human.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

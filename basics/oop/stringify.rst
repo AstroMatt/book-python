@@ -251,6 +251,7 @@ OOP Stringify Str
 * Lines of code to write: 18 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/oop_stringify_str.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)
@@ -297,6 +298,7 @@ OOP Stringify Repr
 * Lines of code to write: 9 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/oop_stringify_repr.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)
@@ -343,6 +345,7 @@ OOP Stringify Nested
 * Lines of code to write: 9 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/oop_stringify_nested.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)

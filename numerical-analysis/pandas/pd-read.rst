@@ -245,6 +245,7 @@ Pandas Read CSV Dates
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/pandas_read_csv_dates.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -272,6 +273,7 @@ Pandas Read CSV Replace
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/pandas_read_csv_replace.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -319,6 +321,7 @@ Pandas Read JSON
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/pandas_read_json_iris.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -341,6 +344,7 @@ Pandas Read JSON OpenAPI
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/pandas_read_json_openapi.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -365,6 +369,7 @@ Pandas Read HTML
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/pandas_read_html.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -391,6 +396,7 @@ Pandas Read XSLT Books
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/pandas_read_xslt_books.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -418,6 +424,7 @@ Pandas Read XSLT Plants
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/pandas_read_xslt_plants.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

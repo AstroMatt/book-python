@@ -191,6 +191,7 @@ File Path Abspath
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/file_path_abspath.py`
+* Last update: 2020-10-01
 
 :English:
     #. Using ``input()`` ask user for a file path

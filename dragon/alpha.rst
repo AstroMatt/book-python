@@ -15,6 +15,7 @@ Dragon (version alpha)
 * Estimated time of completion: 60 min, then 90 min live coding with instructor
 * Solution (basic): :download:`solution/dragon_alpha_basic.py`
 * Solution (advanced): :download:`solution/dragon_alpha_adv.py`
+* Last update: 2020-10-01
 * Warning: Don't delete code, assignment will be continued
 
 :English:

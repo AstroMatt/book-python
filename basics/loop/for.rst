@@ -165,6 +165,7 @@ Loop For Count
 * Lines of code to write: 14 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_for_count.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -194,6 +195,7 @@ Loop For Counter
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_for_counter.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -253,6 +255,7 @@ Loop For Segmentation
 * Lines of code to write: 12 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/loop_for_segmentation.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -312,6 +315,7 @@ Loop For Newline
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_for_newline.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -349,6 +353,7 @@ Loop For Translate
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_for_translate.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -386,6 +391,7 @@ Loop For Text
 * Lines of code to write: 30 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/loop_for_text.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

@@ -52,6 +52,7 @@ DataFrame Export CSV
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/df_export_csv.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -75,6 +76,7 @@ DataFrame Export JSON
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/df_export_json.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -98,6 +100,7 @@ DataFrame Export Pickle
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/df_export_pickle.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -121,6 +124,7 @@ DataFrame Export Pickle
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/df_export_sql.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

@@ -209,6 +209,7 @@ Loop Nested Mean
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_nested_mean.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -251,6 +252,7 @@ Loop Nested Unique Keys
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/loop_nested_unique_keys.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

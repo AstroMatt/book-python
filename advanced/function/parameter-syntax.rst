@@ -107,6 +107,7 @@ Function Parameter Syntax Kwargs
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/function_parameter_syntax_kwargs.py`
+* Last update: 2020-10-01
 
 :English:
     #. Create function ``set_position``
@@ -160,6 +161,7 @@ Function Parameter Syntax Args
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/function_parameter_syntax_args.py`
+* Last update: 2020-10-01
 * Warning: This assignment will work only in Python 3.8+
 
 :English:

@@ -79,6 +79,7 @@ Function Recurrence Brackets
 * Lines of code to write: 10 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/function_recurrence_brackets.py`
+* Last update: 2020-10-01
 
 :English:
     #. Create function which checks if brackets are balanced

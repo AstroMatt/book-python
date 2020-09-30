@@ -299,6 +299,7 @@ Protocol Reflection
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/protocol_reflection.py`
+* Last update: 2020-10-01
 
 :English:
     #. Create class ``Point`` with ``x``, ``y``, ``z`` attributes

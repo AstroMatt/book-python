@@ -211,6 +211,7 @@ Type Bool True or False
 * Lines of code to write: 16 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/type_bool_true_or_false.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -258,6 +259,7 @@ Type Bool Simple
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/type_bool_simple.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

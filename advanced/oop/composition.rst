@@ -177,6 +177,7 @@ OOP Composition Mars
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/oop_composition_mars.py`
+* Last update: 2020-10-01
 
 :English:
     #. Create class ``Habitat``
@@ -196,6 +197,7 @@ OOP Composition Moveable
 * Lines of code to write: 20 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/oop_composition_moveable.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

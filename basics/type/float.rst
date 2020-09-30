@@ -135,6 +135,7 @@ Type Float Tax
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_float_tax.py`
+* Last update: 2020-10-01
 
 :English:
     #. Cost of the service is 100 PLN net
@@ -167,6 +168,7 @@ Type Float Altitude
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_float_altitude.py`
+* Last update: 2020-10-01
 
 :English:
     #. Plane altitude is 10.000 ft
@@ -201,6 +203,7 @@ Type Float Volume
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_float_volume.py`
+* Last update: 2020-10-01
 
 :English:
     #. Bottle volume is 20 Fl Oz
@@ -233,6 +236,7 @@ Type Float Distance
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/type_float_distance.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)
@@ -286,6 +290,7 @@ Type Float Velocity
 * Lines of code to write: 10 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_float_velocity.py`
+* Last update: 2020-10-01
 
 :English:
     #. Speed limit is 75 MPH
@@ -317,6 +322,7 @@ Type Float Pressure
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/type_float_pressure.py`
+* Last update: 2020-10-01
 
 :English:
     #. Operational pressure of EMU spacesuit: 4.3 PSI
@@ -364,6 +370,7 @@ Type Float Percent
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_float_percent.py`
+* Last update: 2020-10-01
 
 :English:
     #. International Standard Atmosphere (ISA) at sea level is 1013.25 hPa
@@ -410,6 +417,7 @@ Type Float Gradient
 * Lines of code to write: 9 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/type_float_gradient.py`
+* Last update: 2020-10-01
 
 :English:
     #. At what altitude above sea level, pressure is equal to partial pressure of Oxygen

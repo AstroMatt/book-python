@@ -615,6 +615,7 @@ Powielanie napisów
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/print_lines.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English translation
@@ -642,6 +643,7 @@ Przeliczanie temperatury
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/print_formatting.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English translation

@@ -323,6 +323,7 @@ Sequence Unpack Flat
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/sequence_unpack_flat.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -361,6 +362,7 @@ Sequence Unpack Nested
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/sequence_unpack_nested.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

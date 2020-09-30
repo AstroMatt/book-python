@@ -296,6 +296,7 @@ Function Scope Filter
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/function_scope_filter.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -347,6 +348,7 @@ Function Scope Roman to Int
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/function_scope_romanint.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -396,6 +398,7 @@ Function Scope Int To Roman
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/function_scope_introman.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

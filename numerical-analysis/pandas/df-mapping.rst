@@ -324,6 +324,7 @@ DataFrame Mapping Split
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/df_mapping_split.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -351,6 +352,7 @@ DataFrame Mapping Translate
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/df_mapping_translate.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -394,6 +396,7 @@ DataFrame Mapping Month
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/df_mapping_month.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -431,6 +434,7 @@ DataFrame Mapping Substitute
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/df_mapping_substitute.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

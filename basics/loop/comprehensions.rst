@@ -661,6 +661,7 @@ Loop Comprehension Create
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/loop_comprehension_create.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use list comprehension
@@ -678,6 +679,7 @@ Loop Comprehension Translate
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_comprehension_translate.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -716,6 +718,7 @@ Loop Comprehension Months
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_comprehension_months.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -769,6 +772,7 @@ Loop Comprehension Split
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/loop_comprehension_split.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

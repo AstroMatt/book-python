@@ -331,6 +331,7 @@ Datetime Parse ISO
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/datetime_parse_iso.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -353,6 +354,7 @@ Datetime Parse Local
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/datetime_parse_local.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -389,6 +391,7 @@ Datetime Parse US
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/datetime_parse_us.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -431,6 +434,7 @@ Datetime Parse Logs
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/datetime_parse_logs.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

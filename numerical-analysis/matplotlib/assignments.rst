@@ -7,6 +7,7 @@ Trigonometry
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/matplotlib_trigonometry.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -36,6 +37,7 @@ Iris scatter
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/matplotlib_iris.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -60,6 +62,7 @@ Random points
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/matplotlib_random_points.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -119,6 +122,7 @@ Color graph
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: TODO
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

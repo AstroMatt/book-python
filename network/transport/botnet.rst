@@ -12,6 +12,7 @@ Mini Botnet
 * Lines of code to write: 45 lines
 * Estimated time of completion: 21 min
 * Solution: TODO
+* Last update: 2020-10-01
 
 #. Stwórz mini botnet o architekturze podanej :numref:`figure-botnet`. Mini botnet składa się z trzech części:
 
@@ -35,6 +36,7 @@ Heartbeat Receiver
 * Lines of code to write: 45 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/botnet_heartbeat_receiver.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -56,6 +58,7 @@ Victim
 * Lines of code to write: 150 lines
 * Estimated time of completion: 34 min
 * Solution: :download:`solution/botnet_victim.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -91,6 +94,7 @@ Attacker
 * Lines of code to write: 150 lines
 * Estimated time of completion: 34 min
 * Solution: :download:`solution/botnet_attacker.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

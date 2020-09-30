@@ -450,6 +450,7 @@ Decorator Function Disabled
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/decorator_func_disabled.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -491,6 +492,7 @@ Decorator Function Astronauts
 * Lines of code to write: 7 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/decorator_func_astronauts.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -544,6 +546,7 @@ Decorator Function Memoization
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/decorator_func_memoization.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -607,6 +610,7 @@ Decorator Function Abspath
 * Lines of code to write: 7 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/decorator_func_abspath.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -654,6 +658,7 @@ Decorator Function Type Check
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/decorator_func_typecheck.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

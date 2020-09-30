@@ -166,6 +166,7 @@ Numpy Slice 1
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_slice_1.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -204,6 +205,7 @@ Numpy Slice 2
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_slice_2.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

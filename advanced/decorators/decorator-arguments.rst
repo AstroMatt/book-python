@@ -175,6 +175,7 @@ Decorator Arguments Astronauts
 * Lines of code to write: 9 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/decorator_arguments_astronauts.py`
+* Last update: 2020-10-01
 
 
 :English:
@@ -233,6 +234,7 @@ Decorator Arguments Type Check
 * Lines of code to write: 20 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/decorator_arguments_typecheck.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

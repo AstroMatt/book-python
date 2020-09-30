@@ -193,6 +193,7 @@ Datetime Create Custom
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/datetime_create_custom.py`
+* Last update: 2020-10-01
 
 :English:
     #. Create ``date`` object with date of your birth
@@ -210,6 +211,7 @@ Datetime Create Current
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/datetime_create_current.py`
+* Last update: 2020-10-01
 
 :English:
     #. Create ``date`` object with current date

@@ -41,6 +41,7 @@ Regexp Search Astronauts
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/regexp_search_astronauts.py`
+* Last update: 2020-10-01
 * References: First paragraph from Apollo 11 Wikipedia entry :cite:`RegexpWikipediaApollo11`
 
 :English:
@@ -86,6 +87,7 @@ Regexp Search Moon Speech
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/regexp_search_moon_speech.py`
+* Last update: 2020-10-01
 * References: "Moon Speech" by John F. Kennedy at Rice Stadium, Houston, TX on 1962-09-12 :cite:`RegexpKennedy1962`
 
 :English:
@@ -110,6 +112,7 @@ Regexp Search Time
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/regexp_search_time.py`
+* Last update: 2020-10-01
 * References: First paragraph from Apollo 11 Wikipedia entry :cite:`RegexpWikipediaApollo11`
 
 :English:
@@ -146,6 +149,7 @@ Regexp Search Datetime
 * Lines of code to write: 4 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/regexp_search_datetime.py`
+* Last update: 2020-10-01
 * References: (modified) First paragraph from Apollo 11 Wikipedia entry :cite:`RegexpWikipediaApollo11`
 
 :English:

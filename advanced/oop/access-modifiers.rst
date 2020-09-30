@@ -243,6 +243,7 @@ OOP Attribute Access Modifiers
 * Lines of code to write: 11 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/oop_attribute_access_modifiers.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -285,6 +286,7 @@ OOP Attribute Access Dict
 * Lines of code to write: 35 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/oop_attribute_access_dict.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

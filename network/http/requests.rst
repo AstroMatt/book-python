@@ -283,6 +283,7 @@ REST API
 * Lines of code to write: 35 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/requests_github.py`
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

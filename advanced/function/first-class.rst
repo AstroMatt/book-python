@@ -241,6 +241,7 @@ Function First Class Define
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/function_firstclass_define.py`
+* Last update: 2020-10-01
 
 :English:
     #. Define function ``wrapper``

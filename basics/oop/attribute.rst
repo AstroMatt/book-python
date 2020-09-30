@@ -214,6 +214,7 @@ OOP Attribute Model
 * Lines of code to write: 15 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/oop_attribute_model.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

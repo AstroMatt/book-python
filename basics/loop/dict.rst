@@ -245,6 +245,7 @@ Loop Dict Months
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_dict_months.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -296,6 +297,7 @@ Loop Dict from Dict to Dict
 * Lines of code to write: 4 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/loop_dict_to_dict.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -344,6 +346,7 @@ Loop Dict from List to Dict
 * Lines of code to write: 6 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/loop_dict_to_list.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -419,6 +422,7 @@ Loop Dict Label Encoder
 * Lines of code to write: 13 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/loop_dict_label_encoder.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

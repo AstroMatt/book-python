@@ -72,6 +72,7 @@ Series Sample
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/series_sample.py`
+* Last update: 2020-10-01
 
 :English:
     #. Set random seed to zero

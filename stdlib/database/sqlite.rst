@@ -242,6 +242,7 @@ Database SQLite Iris
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/database_sqlite_iris.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -341,6 +342,7 @@ Database SQLite Relations
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/database_sqlite_relations.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -435,6 +437,7 @@ Database SQLite Logs
 * Lines of code to write: 25 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/database_sqlite_logs.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

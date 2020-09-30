@@ -9,6 +9,7 @@ Entry Exam
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
 * Solution: loop_dict_to_list.py
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -79,6 +80,7 @@ Get elements from nested data structure
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
 * Solution: for_nested.py
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -119,6 +121,7 @@ Get elements from nested data structure
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
 * Solution: file_parsing_advanced.py
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

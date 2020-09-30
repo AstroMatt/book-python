@@ -649,6 +649,7 @@ Exception Example
 * Lines of code to write: 0 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/exception_example.py`
+* Last update: 2020-10-01
 
 :English:
     #. Ask user to input angle in degrees
@@ -672,6 +673,7 @@ Exception Raise
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/exception_raise.py`
+* Last update: 2020-10-01
 
 :English:
     #. Ask user to input age
@@ -689,6 +691,7 @@ Exception Catch
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/exception_catch.py`
+* Last update: 2020-10-01
 
 :English:
     #. Ask user to input temperature in Kelvins
@@ -708,6 +711,7 @@ Exception Define
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/exception_define.py`
+* Last update: 2020-10-01
 
 :English:
     #. Ask user to input temperature in Kelvins

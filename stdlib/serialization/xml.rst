@@ -744,6 +744,7 @@ XML Parsing
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/xml_parse.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -763,6 +764,7 @@ XSLT Transformation
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/xml_xslt.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

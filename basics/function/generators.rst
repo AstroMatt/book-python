@@ -365,6 +365,7 @@ Function Generator Chain
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/function_generators_chain.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use generator expression to create ``numbers``

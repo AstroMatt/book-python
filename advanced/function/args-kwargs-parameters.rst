@@ -226,6 +226,7 @@ Function Args/Kwargs Parameters Define
 * Lines of code to write: 4 lines + doctests
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/function_argskwargs_parameters_define.py`
+* Last update: 2020-10-01
 
 :English:
     #. Create function ``mean()``, which calculates arithmetic mean
@@ -260,6 +261,7 @@ Function Args/Kwargs Parameters Args
 * Lines of code to write: 7 lines + doctests
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/function_argskwargs_parameters_args.py`
+* Last update: 2020-10-01
 
 :English:
     #. Create function ``isnumeric``
@@ -322,6 +324,7 @@ Function Args/Kwargs Parameters Kwargs
 * Lines of code to write: 8 lines + doctests
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/function_argskwargs_parameters_kwargs.py`
+* Last update: 2020-10-01
 
 :English:
     #. Create function ``isnumeric``

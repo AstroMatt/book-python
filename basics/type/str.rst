@@ -372,6 +372,7 @@ Type String Input
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_str_input.py`
+* Last update: 2020-10-01
 
 :English:
     #. Ask user to input text
@@ -387,6 +388,7 @@ Type String Emoticon
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_str_emoticon.py`
+* Last update: 2020-10-01
 
 :English:
     #. Ask user to input name
@@ -413,6 +415,7 @@ Type String Quotes
 * Lines of code to write: 3 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/type_str_quotes.py`
+* Last update: 2020-10-01
 
 :English:
     #. Ask user to input name

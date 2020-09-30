@@ -74,6 +74,7 @@ About IDE Create from VCS
 * Lines of code to write: 0 lines
 * Estimated time of completion: 5 min
 * Solution: TODO
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -94,6 +95,7 @@ About IDE Create Project
 * Lines of code to write: 0 lines
 * Estimated time of completion: 5 min
 * Solution: TODO
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -112,6 +114,7 @@ About IDE Usage
 * Lines of code to write: 0 lines
 * Estimated time of completion: 8 min
 * Solution: TODO
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation
@@ -147,6 +150,7 @@ About IDE Spellchecker
 * Lines of code to write: 0 lines
 * Estimated time of completion: 5 min
 * Solution: TODO
+* Last update: 2020-10-01
 
 :English:
     .. todo:: English Translation

@@ -458,6 +458,7 @@ Mapping Dict Define
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/mapping_dict_define.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -480,6 +481,7 @@ Mapping Dict Items
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/mapping_dict_items.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -526,6 +528,7 @@ Mapping Dict Substitute
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/mappting_dict_substitute.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -564,6 +567,7 @@ Mapping Dict Get
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/mapping_dict_get.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

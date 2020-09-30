@@ -488,6 +488,7 @@ Serialization CSV DictReader
 * Lines of code to write: 6 lines
 * Estimated time of completion: 7 min
 * Solution: :download:`solution/serialization_csv_dictreader.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -534,6 +535,7 @@ Serialization CSV DictWriter
 * Lines of code to write: 5 lines
 * Estimated time of completion: 7 min
 * Solution: :download:`solution/serialization_csv_dictwriter.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -588,6 +590,7 @@ Serialization CSV List of Tuples
 * Lines of code to write: 7 lines
 * Estimated time of completion: 7 min
 * Solution: :download:`solution/serialization_csv_list_of_tuple.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -673,6 +676,7 @@ Serialization CSV Schemaless
 * Lines of code to write: 8 lines
 * Estimated time of completion: 7 min
 * Solution: :download:`solution/serialization_csv_schemaless.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -734,6 +738,7 @@ Serialization CSV Objects
 * Lines of code to write: 7 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/serialization_csv_objects.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -784,6 +789,7 @@ Serialization CSV Relations
 * Lines of code to write: 18 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/serialization_csv_relations.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

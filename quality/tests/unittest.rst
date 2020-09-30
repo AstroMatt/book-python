@@ -174,6 +174,7 @@ Dragon
 * Lines of code to write: 100 lines
 * Estimated time of completion: 21 min
 * Solution: TODO
+* Last update: 2020-10-01
 
 :English:
     #. Write unittest for the dragon from :ref:`Dragon Alpha`

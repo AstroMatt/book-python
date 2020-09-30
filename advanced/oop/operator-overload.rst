@@ -292,6 +292,7 @@ OOP Operator Overload
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/oop_operator_overload.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use code from "Input" section (see below)

@@ -183,6 +183,7 @@ Sequence Tuple Create
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/sequence_tuple_create.py`
+* Last update: 2020-10-01
 
 :English:
     #. Create tuple ``result`` with elements:
@@ -210,6 +211,7 @@ Sequence Tuple Many
 * Lines of code to write: 13 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/sequence_tuple_many.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

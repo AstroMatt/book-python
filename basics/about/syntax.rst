@@ -230,6 +230,7 @@ About Print
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/about_print.py`
+* Last update: 2020-10-01
 
 :English:
     #. Print "Hello World" on the screen
@@ -252,6 +253,7 @@ About Syntax
 * Lines of code to write: 8 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/about_syntax.py`
+* Last update: 2020-10-01
 
 :English:
     #. Write a multiline comment with program description (todo from this assignments)

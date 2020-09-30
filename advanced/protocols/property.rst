@@ -389,6 +389,7 @@ Protocol Property
 * Lines of code to write: 35 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/protocol_property.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)

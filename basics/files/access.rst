@@ -205,6 +205,7 @@ File Access Error
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/file_access_error.py`
+* Last update: 2020-10-01
 
 :English:
     #. Using ``input()`` ask user for a file path

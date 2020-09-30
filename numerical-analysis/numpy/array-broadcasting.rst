@@ -358,6 +358,7 @@ Numpy Broadcasting Arithmetic
 * Lines of code to write: 10 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_broadcasting_arithmetic.py`
+* Last update: 2020-10-01
 
 :English:
     #. Use data from "Input" section (see below)
@@ -396,6 +397,7 @@ Numpy Broadcasting Type Cast
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_broadcasting_typecast.py`
+* Last update: 2020-10-01
 
 :English:
     #. For given: ``a: np.ndarray``, ``b: np.ndarray`` (see below)
@@ -421,6 +423,7 @@ Numpy Broadcasting Matmul
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/numpy_broadcasting_matmul.py`
+* Last update: 2020-10-01
 
 :English:
     #. For given: ``a: np.ndarray``, ``b: np.ndarray`` (see below)
