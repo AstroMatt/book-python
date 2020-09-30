@@ -11,16 +11,16 @@ Rationale
 
     Attributes:
 
-        * ``_name`` - protected attribute (by convention)
-        * ``__name`` - private attribute (by convention)
         * ``__name__`` - system attribute or method
+        * ``__name`` - private attribute
+        * ``_name`` - protected attribute (by convention)
         * ``name_`` - used while name collision
 
     Methods:
 
-        * ``_name(self)`` - protected method (by convention)
-        * ``__name(self)`` - private method (by convention)
         * ``__name__(self)`` - system method
+        * ``__name(self)`` - private method
+        * ``_name(self)`` - protected method (by convention)
         * ``name_(self)`` - used while name collision
 
 
@@ -53,6 +53,15 @@ Protected Attribute
 
     mark = Astronaut('Mark', 'Watney')
 
+    print(mark._firstname)  # IDE should warn: "Access to a protected member _firstname of a class "
+    # Mark
+
+    print(mark._lastname)  # IDE should warn: "Access to a protected member _lastname of a class "
+    # Watney
+
+    print(mark.publicname)
+    # Mark W.
+
     print(mark.firstname)
     # Traceback (most recent call last):
     #    ...
@@ -62,15 +71,6 @@ Protected Attribute
     # Traceback (most recent call last):
     #    ...
     # AttributeError: 'Astronaut' object has no attribute 'lastname'
-
-    print(mark._firstname)      # IDE should warn: "Access to a protected member _firstname of a class "
-    # Mark
-
-    print(mark._lastname)       # IDE should warn: "Access to a protected member _lastname of a class "
-    # Watney
-
-    print(mark.publicname)
-    # Mark W.
 
 
 Private Attribute
