@@ -3,12 +3,12 @@ Class Decorator with Methods
 ****************************
 
 
+Rationale
+=========
+
+
 Syntax
 ======
-
-
-Definition
-==========
 
 
 Examples

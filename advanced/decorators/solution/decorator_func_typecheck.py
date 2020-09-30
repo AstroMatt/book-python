@@ -64,8 +64,9 @@ def typecheck(func: Callable):
         for argname, argval in merge(*args, **kwargs):
             valid(argname, argval)
 
-        # Check result
         result = func(*args, **kwargs)
+
+        # Check result
         valid('return', result)
 
         # Return function result

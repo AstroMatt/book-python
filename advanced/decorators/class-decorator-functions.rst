@@ -4,7 +4,7 @@ Class Decorator with Functions
 
 
 Rationale
-======
+=========
 * ``MyDecorator`` is a decorator name
 * ``myfunction`` is a function name
 
@@ -13,7 +13,7 @@ Syntax:
 
         @MyDecorator
         def myfunction(*args, **kwargs):
-            pass
+            ...
 
 Is equivalent to:
     .. code-block:: python
@@ -21,8 +21,8 @@ Is equivalent to:
         myfunction = MyDecorator(myfunction)
 
 
-Definition
-==========
+Syntax
+======
 * ``cls`` is a pointer to class which is being decorated (``MyClass`` in this case)
 * ``Wrapper`` is a closure class
 * ``Wrapper`` name is a convention, but you can name it anyhow
@@ -30,8 +30,9 @@ Definition
 * Decorator must return pointer to ``Wrapper``
 
 .. code-block:: python
+    :caption: Definition
 
-    class Decorator:
+    class MyDecorator:
         def __init__(self, func):
             self._func = func
 
@@ -39,18 +40,39 @@ Definition
             return self._func(*args, **kwargs)
 
 .. code-block:: python
+    :caption: Decoration
 
-    @Decorator
-    def echo(name):
-        print(name)
+    @MyDecorator
+    def myfunction():
+        ...
+
+.. code-block:: python
+    :caption: Usage
+
+    myfunction()
 
 
-    echo('Mark Watney')
-    # Mark Watney
+Example
+=======
+.. code-block:: python
+
+    class Run:
+        def __init__(self, func):
+            self._func = func
+
+        def __call__(self, *args, **kwargs):
+            return self._func(*args, **kwargs)
+
+    @Run
+    def hello(name):
+        return f'My name... {name}'
+
+    hello('José Jiménez')
+    # 'My name... José Jiménez'
 
 
-Examples
-========
+Use Cases
+=========
 .. code-block:: python
     :caption: Login Check
 

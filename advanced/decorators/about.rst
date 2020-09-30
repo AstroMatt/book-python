@@ -17,6 +17,14 @@ Rationale
     * Modify globals
     * Add or change metadata
 
+
+Syntax
+======
+* ``func`` is a pointer to function which is being decorated
+* ``args`` arbitrary number of positional arguments
+* ``kwargs`` arbitrary number of keyword arguments
+* By calling ``func(*args, **kwargs)`` you actually run original (wrapped) function with it's original arguments
+
 .. code-block:: python
 
     def mydecorator(func):
@@ -30,14 +38,6 @@ Rationale
         pass
 
 
-Convention
-==========
-* ``func`` is a pointer to function which is being decorated
-* ``args`` arbitrary number of positional arguments
-* ``kwargs`` arbitrary number of keyword arguments
-* By calling ``func(*args, **kwargs)`` you actually run original (wrapped) function with it's original arguments
-
-
 Types of decorators
 ===================
 By type:
@@ -49,12 +49,13 @@ By decorated object:
 
     * Decorating function
     * Decorating class
-    * Decorating methods
+    * Decorating method
 
 By wrapper type:
 
     * Wrapper function
     * Wrapper class
+    * Wrapper method
 
 By number of arguments:
 
@@ -66,24 +67,64 @@ Decorator Types
 ===============
 * Function decorators
 * Class decorators
+* In this example:
+
+    * ``obj`` is a decorated object
+    * doesn't matter, whether is a function, class or method
 
 .. code-block:: python
 
-    def mydecorator(x):
+    def mydecorator(obj):
         ...
 
 .. code-block:: python
 
     class MyDecorator:
-        def __init__(self, x):
+        def __init__(self, obj):
             ...
 
 
+Wrapper Type
+============
+* Wrapper function
+* Wrapper class
+* Wrapper method
+* In this example:
+
+    * ``obj`` is a decorated object
+    * doesn't matter, whether is a function, class or method
+
+* If ``obj`` and ``Wrapper`` are classes, ``Wrapper`` can inherit from ``obj`` (to extend it)
+
+.. code-block:: python
+
+    def mydecorator(obj):
+        def wrapper(*args, **kwargs)
+            ...
+        return wrapper
+
+.. code-block:: python
+
+    def mydecorator(obj):
+        class Wrapper:
+            def __init__(*args, **kwargs)
+                ...
+        return Wrapper
+
+.. code-block:: python
+
+    class MyDecorator:
+        def __init__(self, obj):
+            ...
+
+        def __call__(*args, **kwargs):
+            ...
+
 Decorated Object
 ================
-* Decorating function
-* Decorating class
-* Decorating methods
+* Decorating function (by convention ``func`` or ``fn``)
+* Decorating class (by convention ``cls``)
+* Decorating method (by convention ``mth``, ``meth`` or ``method``)
 
 .. code-block:: python
 
@@ -111,23 +152,37 @@ Decorated Object
             ...
 
 
-Wrapper Type
-============
-* Wrapper function
-* Wrapper class
+Usage
+=====
+.. code-block:: python
+
+    @mydecorator
+    def myfunction(*args, **kwargs):
+        ...
+
+    class MyClass:
+        @mydecorator
+        def mymethod(self, *args, **kwargs):
+            ...
+
+    @mydecorator
+    class MyClass:
+        ...
 
 .. code-block:: python
 
-    def mydecorator(x):
-        def wrapper(*args, **kwargs)
-            ...
-        return wrapper
+    @MyDecorator
+    def myfunction(*args, **kwargs):
+        ...
 
-    def mydecorator(x):
-        class Wrapper:
-            def __init__(*args, **kwargs)
-                ...
-        return Wrapper
+    class MyClass:
+        @MyDecorator
+        def mymethod(self, *args, **kwargs):
+            ...
+
+    @MyDecorator
+    class MyClass:
+        ...
 
 
 Arguments
@@ -153,38 +208,6 @@ Arguments
 
     @MyClass(a, b)
     def myfunction(*args, **kwargs):
-        ...
-
-
-Usage
-=====
-* Decorating function
-* Decorating class
-* Decorating methods
-
-.. code-block:: python
-
-    @mydecorator
-    def myfunction(*args, **kwargs):
-        ...
-
-    class MyClass:
-        @mydecorator
-        def my_method(self, *args, **kwargs):
-            ...
-
-    @mydecorator
-    class MyClass:
-        ...
-
-.. code-block:: python
-
-    @MyDecorator
-    def myfunction(*args, **kwargs):
-        ...
-
-    @MyDecorator
-    class MyClass:
         ...
 
 

@@ -3,8 +3,8 @@ Function Decorator with Methods
 *******************************
 
 
-Syntax
-======
+Rationale
+=========
 * ``mydecorator`` is a decorator name
 * ``method`` is a method name
 * ``instance`` is an instance
@@ -16,43 +16,78 @@ Syntax:
 
         class MyClass:
             @mydecorator
-            def my_method(self, *args, **kwargs):
+            def mymethod(self, *args, **kwargs):
                 pass
 
 
         obj = MyClass()
-        obj.my_method()
+        obj.mymethod()
 
 Is equivalent to:
     .. code-block:: python
 
         class MyClass:
-            def my_method(self, *args, **kwargs):
+            def mymethod(self, *args, **kwargs):
                 pass
 
 
         obj = MyClass()
-        obj.my_method = mydecorator(obj.my_method)
+        obj.mymethod = mydecorator(obj.mymethod)
 
 
-Definition
-==========
-* ``decorator`` is a decorator name
-* ``method`` is a method name
+Syntax
+======
+* ``mydecorator`` is a decorator name
+* ``mymethod`` is a method name
 * ``instance`` is an instance
 * ``args`` arbitrary number of positional arguments
 * ``kwargs`` arbitrary number of keyword arguments
 
 .. code-block:: python
+    :caption: Definition
 
-    def decorator(method):
+    def mydecorator(method):
         def wrapper(instance, *args, **kwargs):
             return method(instance, *args, **kwargs)
         return wrapper
 
+.. code-block:: python
+    :caption: Decoration
 
-Usage
-=====
+    class MyClass:
+
+        @mydecorator
+        def mymethod(self):
+            ...
+
+.. code-block:: python
+    :caption: Usage
+
+    my = MyClass()
+    my.mymethod()
+
+
+Example
+=======
+.. code-block:: python
+
+    def run(method):
+        def wrapper(instance, *args, **kwargs):
+            return method(instance, *args, **kwargs)
+        return wrapper
+
+    class Astronaut:
+        @run
+        def hello(self, name):
+            return f'My name... {name}'
+
+    astro = Astronaut()
+    astro.hello('José Jiménez')
+    # 'My name... José Jiménez'
+
+
+Use Cases
+=========
 .. code-block:: python
 
     def if_allowed(method):
@@ -87,9 +122,6 @@ Usage
     my.do_something()           # Sorry, you cannot do anything
     my.do_something_else()      # Sorry, you cannot do anything
 
-
-Examples
-========
 .. code-block:: python
 
     def make_paragraph(method):

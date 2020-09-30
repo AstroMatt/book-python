@@ -3,8 +3,8 @@ Decorator with Arguments
 ************************
 
 
-Syntax
-======
+Rationale
+=========
 Decorator:
     .. code-block:: python
 
@@ -18,33 +18,56 @@ Is equivalent to:
         mydecorator = mydecorator(a, b)(myfunction)
 
 
-Definition
-==========
+Syntax
+======
 .. code-block:: python
+    :caption: Definition
 
     def mydecorator(a=1, b=2):
         def decorator(func):
-
             def wrapper(*args, **kwargs):
                 return func(*args, **kwargs)
             return wrapper
-
         return decorator
 
+.. code-block:: python
+    :caption: Decoration
 
     @mydecorator(a=0)
-    def echo(name):
-        print(name)
+    def myfunction():
+        ...
+
+.. code-block:: python
+    :caption: Usage
+
+    myfunction()
 
 
-    echo('Mark Watney')
-    # Mark Watney
+Example
+=======
+.. code-block:: python
+
+    def run(lang='en'):
+        def decorator(func):
+            def wrapper(*args, **kwargs):
+                return func(*args, **kwargs)
+            return wrapper
+        return decorator
+
+    @run(lang='en')
+    def hello(name):
+        return f'My name... {name}'
+
+    hello('José Jiménez')
+    # 'My name... José Jiménez'
 
 
-Examples
-========
+Use Cases
+=========
 .. code-block:: python
     :caption: Deprecated
+
+    import warnings
 
     def deprecated(removed_in_version=None):
         def decorator(func):
@@ -54,22 +77,17 @@ Examples
                 line = func.__code__.co_firstlineno + 1
                 message = f"Call to deprecated function {name} in {file} at line {line}"
                 message += f'\nIt will be removed in {removed_in_version}'
-
-                import warnings
                 warnings.warn(message, DeprecationWarning)
                 return func(*args, **kwargs)
-
             return wrapper
         return decorator
-
 
     @deprecated(removed_in_version=2.0)
     def myfunction():
         pass
 
-
     myfunction()
-    # /tmp/my_script.py:11: DeprecationWarning: Call to deprecated function myfunction in /tmp/my_script.py at line 19
+    # /home/python/myscript.py:11: DeprecationWarning: Call to deprecated function myfunction in /home/python/myscript.py at line 19
     # It will be removed in 2.0
 
 .. code-block:: python
@@ -87,14 +105,12 @@ Examples
             def wrapper(*args, **kwargs):
                 signal(SIGALRM, on_timeout)
                 alarm(int(seconds))
-
                 try:
                     func(*args, **kwargs)
                 except TimeoutError:
                     print(error_message)
                 finally:
                     alarm(0)
-
             return wrapper
         return decorator
 
@@ -106,9 +122,7 @@ Examples
             sleep(1)
         print('countdown finished')
 
-
-    if __name__ == '__main__':
-        countdown(5)
+    countdown(5)
     # 4
     # 3
     # 2
@@ -145,9 +159,7 @@ Examples
             sleep(1)
         print('countdown finished')
 
-
-    if __name__ == '__main__':
-        countdown(5)
+    countdown(5)
     # 4
     # 3
     # 2
@@ -223,36 +235,37 @@ Decorator Arguments Type Check
 * Solution: :download:`solution/decorator_arguments_typecheck.py`
 
 :English:
-    .. todo:: English translation
+    #. Use data from "Input" section (see below)
+    #. Create decorator function ``typecheck``
+    #. Decorator checks types of all arguments (``*args`` oraz ``**kwargs``)
+    #. Decorator checks return type only if ``check_return`` is ``True``
+    #. In case when received type is not expected throw an exception ``TypeError`` with:
+
+        * argument name
+        * actual type
+        * expected type
+
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Stwórz dekorator do sprawdzania typów
-    #. Dekorator ma sprawdzać typy danych, wszystkich parametrów wchodzących do funkcji
-    #. Jeżeli, którykolwiek się nie zgadza, wyrzuć wyjątek ``TypeError``
-    #. Dekorator może przyjmować argument ``check_return: bool``
-    #. Jeżeli argument jest ``True`` to sprawdź również poprawność typu danych zwracanych przez funkcję
-    #. Wyjątek ma wypisywać:
+    #. Stwórz dekorator funkcję ``typecheck``
+    #. Dekorator sprawdza typy wszystkich argumentów (``*args`` oraz ``**kwargs``)
+    #. Dekorator sprawdza typ zwracany tylko gdy ``check_return`` jest ``True``
+    #. W przypadku gdy otrzymany typ nie jest równy oczekiwanemu wyrzuć wyjątek ``TypeError`` z:
 
-        * nazwę parametru
-        * typ, który parametr ma (nieprawidłowy)
-        * typ, który był oczekiwany
+        * nazwa argumentu
+        * aktualny typ
+        * oczekiwany typ
+
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. code-block:: python
 
-        @check_types(check_return=True)
-        def echo(a: str, b: int, c: float = 0) -> bool:
-            print('Function run as expected')
-            return a * b
-
-
-        echo('a', 2)
-        echo('a', 2)
-        echo('b', 2)
-        echo(a='b', b=2)
-        echo(b=2, a='b')
-        echo('b', b=2)
+        @typecheck(check_return=True)
+        def echo(a: str, b: int, c: float = 0.0) -> bool:
+            return bool(a * b)
 
 :Output:
     .. code-block:: text
@@ -279,27 +292,27 @@ Decorator Arguments Type Check
         >>> echo(1, 1)
         Traceback (most recent call last):
         ...
-        TypeError: Argument "a" is <class 'int'>, but <class 'str'> was expected
+        TypeError: "a" is <class 'int'>, but <class 'str'> was expected
 
         >>> echo('one', 'two')
         Traceback (most recent call last):
         ...
-        TypeError: Argument "b" is <class 'str'>, but <class 'int'> was expected
+        TypeError: "b" is <class 'str'>, but <class 'int'> was expected
 
         >>> echo('one', 1, 'two')
         Traceback (most recent call last):
         ...
-        TypeError: Argument "c" is <class 'str'>, but <class 'float'> was expected
+        TypeError: "c" is <class 'str'>, but <class 'float'> was expected
 
         >>> echo(b='one', a='two')
         Traceback (most recent call last):
         ...
-        TypeError: Argument "b" is <class 'str'>, but <class 'int'> was expected
+        TypeError: "b" is <class 'str'>, but <class 'int'> was expected
 
         >>> echo('one', c=1.1, b=1.1)
         Traceback (most recent call last):
         ...
-        TypeError: Argument "b" is <class 'float'>, but <class 'int'> was expected
+        TypeError: "b" is <class 'float'>, but <class 'int'> was expected
 
 :Hint:
     .. code-block:: python

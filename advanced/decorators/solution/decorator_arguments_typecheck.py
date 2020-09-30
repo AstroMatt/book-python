@@ -1,54 +1,82 @@
-from typing import Callable, NoReturn
+"""
+>>> echo('one', 1)
+True
+>>> echo('one', 1, 1.1)
+True
+>>> echo('one', b=1)
+True
+>>> echo('one', 1, c=1.1)
+True
+>>> echo('one', b=1, c=1.1)
+True
+>>> echo(a='one', b=1, c=1.1)
+True
+>>> echo(c=1.1, b=1, a='one')
+True
+>>> echo(b=1, c=1.1, a='one')
+True
+>>> echo('one', c=1.1, b=1)
+True
+
+>>> echo(1, 1)
+Traceback (most recent call last):
+...
+TypeError: "a" is <class 'int'>, but <class 'str'> was expected
+
+>>> echo('one', 'two')
+Traceback (most recent call last):
+...
+TypeError: "b" is <class 'str'>, but <class 'int'> was expected
+
+>>> echo('one', 1, 'two')
+Traceback (most recent call last):
+...
+TypeError: "c" is <class 'str'>, but <class 'float'> was expected
+
+>>> echo(b='one', a='two')
+Traceback (most recent call last):
+...
+TypeError: "b" is <class 'str'>, but <class 'int'> was expected
+
+>>> echo('one', c=1.1, b=1.1)
+Traceback (most recent call last):
+...
+TypeError: "b" is <class 'float'>, but <class 'int'> was expected
+"""
+
+from typing import NoReturn, Any, Callable
 
 
-def check_positional(func: Callable, args: tuple) -> NoReturn:
-    expected = func.__annotations__.copy()
-    expected.pop('return')
+def typecheck(check_return: bool = True):
+    def decorator(func: Callable):
+        def valid(argname: str, argval: Any) -> NoReturn:
+            argtype = type(argval)
+            expected = func.__annotations__[argname]
 
-    for arg, exp in zip(args, expected.values()):
-        if not isinstance(arg, exp):
-            raise TypeError(f'Argument {arg} is {type(arg)}, but {exp} was expected')
+            if argtype is not expected:
+                raise TypeError(f'"{argname}" is {argtype}, but {expected} was expected')
 
+        def merge(*args, **kwargs):
+            arguments = zip(func.__annotations__.keys(), args)
+            return {**kwargs, **dict(arguments)}.items()
 
-def check_keyword(func: Callable, kwargs: dict) -> NoReturn:
-    expected = func.__annotations__.copy()
-
-    for argname, argvalue in kwargs.items():
-        exp = expected.get(argname)
-        if not isinstance(argvalue, exp):
-            raise TypeError(f'Argument {argname} is {type(argname)}, but {exp} was expected')
-
-
-def check_result(func, argvalue):
-    expected = func.__annotations__['return']
-
-    if not isinstance(argvalue, expected):
-        raise TypeError(f'Return is {type(argvalue)}, but {expected} was expected')
-
-
-def check_types(check_return: bool = False):
-    def decorator(func: Callable) -> Callable:
         def wrapper(*args, **kwargs):
-            check_positional(func, args)
-            check_keyword(func, kwargs)
+            # Check if all arguments are valid types
+            for argname, argval in merge(*args, **kwargs):
+                valid(argname, argval)
+
             result = func(*args, **kwargs)
 
+            # Check result
             if check_return:
-                check_result(func, result)
+                valid('return', result)
 
+            # Return function result
             return result
         return wrapper
     return decorator
 
 
-@check_types(check_return=False)
-def echo(a: str, b: int, c: int = 0) -> bool:
-    return a * b
-
-
-print(echo('a', 2))
-print(echo('a', 2))
-print(echo('b', 2))
-print(echo(a='b', b=2))
-print(echo(b=2, a='b'))
-print(echo('b', b=2))
+@typecheck(check_return=True)
+def echo(a: str, b: int, c: float = 0.0) -> bool:
+    return bool(a * b)

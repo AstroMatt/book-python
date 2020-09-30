@@ -3,13 +3,12 @@ Class Decorator with Classes
 ****************************
 
 
+Rationale
+=========
+
+
 Syntax
 ======
-
-
-Definition
-==========
-
 
 
 Examples
