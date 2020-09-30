@@ -842,14 +842,20 @@ Assignments
 
 Cleanup your file
 -----------------
+* Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
+* Solution: :download:`solution/cleanup.py`
 
-#. Install ``pycodestyle``
-#. Run ``pycodestyle`` on your last script
-#. Fix all errors
-#. Run ``pycodestyle`` on directory with all of your scripts
-#. Fix all errors
+:English:
+    .. todo:: English Translation
+
+:Polish:
+    #. Install ``pycodestyle``
+    #. Run ``pycodestyle`` on your last script
+    #. Fix all errors
+    #. Run ``pycodestyle`` on directory with all of your scripts
+    #. Fix all errors
 
 :The whys and wherefores:
     * Umiejętność czytania komunikatów

@@ -123,37 +123,43 @@ Assignments
 
 Address Book
 ------------
+* Complexity level: medium
 * Lines of code to write: 50 lines
 * Estimated time of completion: 21 min
+* Solution: TODO
 
-#. Stwórz projekt ``addressbook``
-#. Stwórz apkę ``contact``
-#. Stwórz model ``Address`` z polami:
+:English:
+    .. todo:: English Translation
 
-    * Typ (do wyboru typ: domowy, praca, komórka)
-    * Ulica
-    * Numer bloku
-    * Numer mieszkania
-    * Kod pocztowy
-    * Miasto
-    * Region
-    * Kraj
+:Polish:
+    #. Stwórz projekt ``addressbook``
+    #. Stwórz apkę ``contact``
+    #. Stwórz model ``Address`` z polami:
 
-#. Stwórz model ``Person`` z polami:
+        * Typ (do wyboru typ: domowy, praca, komórka)
+        * Ulica
+        * Numer bloku
+        * Numer mieszkania
+        * Kod pocztowy
+        * Miasto
+        * Region
+        * Kraj
 
-    * Imię
-    * Nazwisko
-    * Data Urodzenia
-    * Zdjęcie
-    * Telefon (do wyboru typ: domowy, praca, komórka)
-    * Email (do wyboru typ: domowy, praca, komórka)
-    * Adres
+    #. Stwórz model ``Person`` z polami:
 
-#. Osoba może mieć wiele adresów, telefonów i emaili
-#. Wygeneruj panel administracyjny
-#. Moża wylistować kontakty i na głównym ekranie widoczne są podstawowe pola osoby
-#. Dodaj wyszukiwarkę po nazwisku
-#. Dodaj filtrowanie po dacie urodzenia
+        * Imię
+        * Nazwisko
+        * Data Urodzenia
+        * Zdjęcie
+        * Telefon (do wyboru typ: domowy, praca, komórka)
+        * Email (do wyboru typ: domowy, praca, komórka)
+        * Adres
+
+    #. Osoba może mieć wiele adresów, telefonów i emaili
+    #. Wygeneruj panel administracyjny
+    #. Moża wylistować kontakty i na głównym ekranie widoczne są podstawowe pola osoby
+    #. Dodaj wyszukiwarkę po nazwisku
+    #. Dodaj filtrowanie po dacie urodzenia
 
 :The whys and wherefores:
     * Umiejętność modelowania obiektów świata rzeczywistego

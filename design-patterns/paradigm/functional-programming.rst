@@ -535,6 +535,9 @@ Assignments
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/functional_map_filter_lambda.py`
 
+:English:
+    .. todo:: English Translation
+
 :Polish:
     #. Używając generatora zbuduj listę zawierającą wszystkie liczby podzielne przez 3 z zakresu od 1 do 33:
     #. Używając funkcji ``filter()`` usuń z niej wszystkie liczby parzyste

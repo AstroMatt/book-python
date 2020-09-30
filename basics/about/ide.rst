@@ -73,6 +73,10 @@ About IDE Create from VCS
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 5 min
+* Solution: TODO
+
+:English:
+    .. todo:: English Translation
 
 :Polish:
     #. Stwórz projekt w Twoim IDE wykorzystując opcję 'Create from VCS'
@@ -89,6 +93,10 @@ About IDE Create Project
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 5 min
+* Solution: TODO
+
+:English:
+    .. todo:: English Translation
 
 :Polish:
     #. Stwórz projekt w Twoim IDE
@@ -103,6 +111,10 @@ About IDE Usage
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 8 min
+* Solution: TODO
+
+:English:
+    .. todo:: English Translation
 
 :Polish:
     #. Jak zrobić w Twoim IDE:
@@ -134,6 +146,10 @@ About IDE Spellchecker
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 5 min
+* Solution: TODO
+
+:English:
+    .. todo:: English Translation
 
 :Polish:
     #. Zainstaluj w PyCharm plugin 'Hunspell' (File -> Settings -> Plugins -> Marketplace -> 'Hunspell')

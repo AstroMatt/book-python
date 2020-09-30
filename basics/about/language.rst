@@ -207,22 +207,26 @@ About Environment
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/about_environment.py`
 
-#. Stwórz plik o nazwie ``about_env.py``
-#. Plik ma mieć zawartość:
+:English:
+    .. todo:: English Translation
 
-    .. code-block:: python
+:Polish:
+    #. Stwórz plik o nazwie ``about_env.py``
+    #. Plik ma mieć zawartość:
 
-        import sys
-        import os
+        .. code-block:: python
 
-        print(f'Python Executable: {sys.executable}')
-        print(f'Python Version: {sys.version}')
-        print(f'Virtualenv: {os.getenv("VIRTUAL_ENV")}')
+            import sys
+            import os
 
-#. Uruchom go w swoim IDE (menu ``Run -> Run... -> nazwa Twojego skryptu``)
-#. Gdzie Python jest zainstalowany?
-#. Czy korzystasz z "Virtualenv"?
-#. Upewnij się, że w linijce z "Virtualenv" nie masz ``None``
+            print(f'Python Executable: {sys.executable}')
+            print(f'Python Version: {sys.version}')
+            print(f'Virtualenv: {os.getenv("VIRTUAL_ENV")}')
+
+    #. Uruchom go w swoim IDE (menu ``Run -> Run... -> nazwa Twojego skryptu``)
+    #. Gdzie Python jest zainstalowany?
+    #. Czy korzystasz z "Virtualenv"?
+    #. Upewnij się, że w linijce z "Virtualenv" nie masz ``None``
 
 :The whys and wherefores:
     * Czy Python działa

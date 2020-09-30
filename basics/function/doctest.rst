@@ -514,6 +514,7 @@ Function Doctest Regexp
 * Complexity level: hard
 * Lines of code to write: 0 lines (**discussion only**)
 * Estimated time of completion: 5 min
+* Solution: TODO
 
 :English:
     #. Use data from "Input" section (see below)

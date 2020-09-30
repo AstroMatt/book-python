@@ -652,19 +652,23 @@ Recursive folders walking
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/system_walk.py`
 
-#. Sprawdź czy katalog "Python" już istnieje na pulpicie w Twoim systemie
-#. Jeżeli nie istnieje to za pomocą ``os.mkdir()`` stwórz go w tym miejscu
-#. Za pomocą ``subprocess.call()`` w tym katalogu stwórz plik ``README.rst`` i dodaj do niego tekst "Ehlo World"
-#. Przeszukaj rekurencyjnie wszystkie katalogi na pulpicie
-#. Znajdź wszystkie pliki ``README`` (z dowolnym rozszerzeniem)
-#. Wyświetl ich zawartość za pomocą polecenia:
+:English:
+    .. todo:: English Translation
 
-    * ``cat`` (macOS, Linux)
-    * ``type`` (Windows)
+:Polish:
+    #. Sprawdź czy katalog "Python" już istnieje na pulpicie w Twoim systemie
+    #. Jeżeli nie istnieje to za pomocą ``os.mkdir()`` stwórz go w tym miejscu
+    #. Za pomocą ``subprocess.call()`` w tym katalogu stwórz plik ``README.rst`` i dodaj do niego tekst "Ehlo World"
+    #. Przeszukaj rekurencyjnie wszystkie katalogi na pulpicie
+    #. Znajdź wszystkie pliki ``README`` (z dowolnym rozszerzeniem)
+    #. Wyświetl ich zawartość za pomocą polecenia:
 
-#. Ścieżkę do powyższego pliku ``README`` skonstruuj za pomocą ``os.path.join()``
-#. Ścieżka ma być względna w stosunku do pliku, który aktualnie jest uruchamiany
-#. Jeżeli po przeszukaniu całego Pulpitu rekurencyjnie skrypt nie znajdzie pliku ``LICENSE.rst``, to ma rzucić informację ``logging.critical()`` i wyjść z kodem błędu ``1``.
+        * ``cat`` (macOS, Linux)
+        * ``type`` (Windows)
+
+    #. Ścieżkę do powyższego pliku ``README`` skonstruuj za pomocą ``os.path.join()``
+    #. Ścieżka ma być względna w stosunku do pliku, który aktualnie jest uruchamiany
+    #. Jeżeli po przeszukaniu całego Pulpitu rekurencyjnie skrypt nie znajdzie pliku ``LICENSE.rst``, to ma rzucić informację ``logging.critical()`` i wyjść z kodem błędu ``1``.
 
 :Hints:
     * Gdyby był problem ze znalezieniem pliku, a ścieżka jest poprawna to zastosuj ``shell=True``
@@ -689,31 +693,36 @@ Tree
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/system_tree.py`
 
-#. Za pomocą znaków unicode: "┣━", "┗━" , "┃  "
-#. Wygeneruj wynik przypominający wynik polecenia ``tree``.
+:English:
+    .. todo:: English Translation
 
-.. code-block:: text
+:Polish:
+    #. Za pomocą znaków unicode: "┣━", "┗━" , "┃  "
+    #. Wygeneruj wynik przypominający wynik polecenia ``tree``.
 
-    root:.
-    [.]
-    ┣━[.idea]
-    ┃  ┣━[scopes]
-    ┃  ┃  ┗━scope_settings.xml
-    ┃  ┣━.name
-    ┃  ┣━Demo.iml
-    ┃  ┣━encodings.xml
-    ┃  ┣━misc.xml
-    ┃  ┣━modules.xml
-    ┃  ┣━vcs.xml
-    ┃  ┗━workspace.xml
-    ┣━[test1]
-    ┃  ┗━test1.txt
-    ┣━[test2]
-    ┃  ┣━[test2-2]
-    ┃  ┃  ┗━[test2-3]
-    ┃  ┃      ┣━test2
-    ┃  ┃      ┗━test2-3-1
-    ┃  ┗━test2
-    ┣━folder_tree_maker.py
-    ┗━tree.py
+:Output:
+    .. code-block:: text
+
+        root:.
+        [.]
+        ┣━[.idea]
+        ┃  ┣━[scopes]
+        ┃  ┃  ┗━scope_settings.xml
+        ┃  ┣━.name
+        ┃  ┣━demo.iml
+        ┃  ┣━encodings.xml
+        ┃  ┣━misc.xml
+        ┃  ┣━modules.xml
+        ┃  ┣━vcs.xml
+        ┃  ┗━workspace.xml
+        ┣━[test1]
+        ┃  ┗━test1.txt
+        ┣━[test2]
+        ┃  ┣━[test2-2]
+        ┃  ┃  ┗━[test2-3]
+        ┃  ┃      ┣━test2
+        ┃  ┃      ┗━test2-3-1
+        ┃  ┗━test2
+        ┣━folder_tree_maker.py
+        ┗━tree.py
 

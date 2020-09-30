@@ -430,12 +430,19 @@ Wykorzystanie biblioteki ``sklearn``
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/svm_sklearn.py`
-* Input data: https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/
 
-Naucz algorytm rozpoznawania danych wykorzystując algorytm Support Vector Machines.
+:English:
+    .. todo:: English Translation
 
-.. todo::
-    * Własna implementacja
+:Polish:
+    #. Naucz algorytm rozpoznawania danych wykorzystując algorytm Support Vector Machines.
+
+:Input:
+    .. code-block:: python
+
+        DATA = 'https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/'
+
+.. todo:: Własna implementacja
 
 
 Lektura uzupełniająca

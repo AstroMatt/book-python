@@ -354,7 +354,7 @@ Datetime Parse Local
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/datetime_parse_local.py`
 
-:Enlish:
+:English:
     #. Use data from "Input" section (see below)
     #. Create ``datetime`` object by parsing the given date
     #. Using formatting parameters print the date and time in ISO format

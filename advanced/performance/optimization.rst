@@ -215,24 +215,28 @@ Memoization
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/optimization_memoize.py`
-* Input data: :numref:`listing-performance-memoize`
 
-#. Skopiuj kod z listingu poniżej
-#. Stwórz pusty ``dict`` o nazwie ``CACHE``
-#. W słowniku będziemy przechowywali wyniki wyliczenia funkcji dla zadanych parametrów:
+:English:
+    .. todo:: English Translation
 
-    * klucz: argument funkcji
-    * wartość: wynik obliczeń
+:Polish:
+    #. Skopiuj kod z listingu poniżej
+    #. Stwórz pusty ``dict`` o nazwie ``CACHE``
+    #. W słowniku będziemy przechowywali wyniki wyliczenia funkcji dla zadanych parametrów:
 
-#. Zmodyfikuj funkcję ``factorial_cache(n: int)``
-#. Przed uruchomieniem funkcji, sprawdź czy wynik został już wcześniej obliczony:
+        * klucz: argument funkcji
+        * wartość: wynik obliczeń
 
-    * jeżeli tak, to zwraca dane z ``CACHE``
-    * jeżeli nie, to oblicza, aktualizuje ``CACHE``, a następnie zwraca wartość
+    #. Zmodyfikuj funkcję ``factorial_cache(n: int)``
+    #. Przed uruchomieniem funkcji, sprawdź czy wynik został już wcześniej obliczony:
 
-#. Porównaj prędkość działania
+        * jeżeli tak, to zwraca dane z ``CACHE``
+        * jeżeli nie, to oblicza, aktualizuje ``CACHE``, a następnie zwraca wartość
 
-.. literalinclude:: src/performance-memoize.py
-    :language: python
-    :caption: Memoization
-    :name: listing-performance-memoize
+    #. Porównaj prędkość działania
+
+:Input:
+    .. literalinclude:: src/performance-memoize.py
+        :language: python
+        :caption: Memoization
+        :name: listing-performance-memoize

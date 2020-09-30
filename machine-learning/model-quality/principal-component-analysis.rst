@@ -139,4 +139,8 @@ PCA dla zbioru Pima Indian Diabetes
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/pca_pima.py`
 
-#. Przeprowadź analizę PCA dla zbioru Indian Pima
+:English:
+    .. todo:: English Translation
+
+:Polish:
+    #. Przeprowadź analizę PCA dla zbioru Indian Pima

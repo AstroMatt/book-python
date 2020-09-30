@@ -4,6 +4,11 @@
 Dragon (version alpha)
 **********************
 
+.. figure:: img/dragon.gif
+    :width: 75%
+    :align: center
+
+    Firkraag dragon from game Baldur's Gate II: Shadows of Amn
 
 * Complexity level: medium
 * Lines of code to write: 100 lines
@@ -11,12 +16,6 @@ Dragon (version alpha)
 * Solution (basic): :download:`solution/dragon_alpha_basic.py`
 * Solution (advanced): :download:`solution/dragon_alpha_adv.py`
 * Warning: Don't delete code, assignment will be continued
-
-.. figure:: img/dragon.gif
-    :width: 75%
-    :align: center
-
-    Firkraag dragon from game Baldur's Gate II: Shadows of Amn
 
 :English:
     #. Dragon has (attributes):

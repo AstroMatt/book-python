@@ -8,7 +8,7 @@ Select
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/nested_select.py`
+* Solution: nested_select.py
 
 :English:
     #. Use data from "Input" section (see below)
@@ -77,7 +77,7 @@ Iris dataset
 * Complexity level: easy
 * Lines of code to write: 20 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/slice_iris.py`
+* Solution: slice_iris.py
 
 :English:
     #. Use data from "Input" section (see below)
@@ -144,7 +144,7 @@ Iris dataset
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/loop_dict_to_list.py`
+* Solution: loop_dict_to_list.py
 
 :English:
     #. Use data from "Input" section (see below)
@@ -214,7 +214,7 @@ Get elements from nested data structure
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/for_nested.py`
+* Solution: for_nested.py
 
 :English:
     #. Use data from "Input" section (see below)
@@ -248,12 +248,13 @@ Get elements from nested data structure
     * Accessing ``dict`` keys
     * Iterating over nested structure
 
+
 Label encoder
 =============
 * Complexity level: medium
 * Lines of code to write: 13 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/loop_label_encoder.py`
+* Solution: loop_label_encoder.py
 
 :English:
     #. Use data from "Input" section (see below)

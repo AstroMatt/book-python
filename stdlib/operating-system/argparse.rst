@@ -320,13 +320,17 @@ Argument parsing
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/argparse_avg.py`
 
-#. Napisz parser parametrów linii poleceń
-#. Ma przyjmować tylko ``int`` i ``float``
-#. Dla parametrów ma uruchomić funkcje ``avg()`` z listingu poniżej:
+:English:
+    .. todo:: English Translation
 
-    .. code-block:: python
+:Polish:
+    #. Napisz parser parametrów linii poleceń
+    #. Ma przyjmować tylko ``int`` i ``float``
+    #. Dla parametrów ma uruchomić funkcje ``avg()`` z listingu poniżej:
 
-        def avg(*args):
-            return sum(args) / len(args)
+        .. code-block:: python
 
-#. Uruchamianie ``python argparse_avg.py --numbers 5 10 100 32 -90 27.5``
+            def avg(*args):
+                return sum(args) / len(args)
+
+    #. Uruchamianie ``python argparse_avg.py --numbers 5 10 100 32 -90 27.5``

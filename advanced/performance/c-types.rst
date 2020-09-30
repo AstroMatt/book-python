@@ -200,4 +200,8 @@ C Types
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/ctypes_datetime.py`
 
-Wykorzystując C Types wypisz datę i czas, za pomocą funkcji zdefiniowanej w C ``<time.h>``
+:English:
+    .. todo:: English Translation
+
+:Polish:
+    #. Wykorzystując C Types wypisz datę i czas, za pomocą funkcji zdefiniowanej w C ``<time.h>``

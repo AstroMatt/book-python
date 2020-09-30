@@ -168,11 +168,15 @@ Iris
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/scrapping_iris.py`
 
-#. Za pomocą beautifulsoup4 ze strony https://github.com/AstroMatt/book-python/blob/master/numerical-analysis/data/iris-dirty.csv pobierz dane zbióru Irysów.
-#. Parsując kod HTML oczyść dane.
-#. Skasuj pierwszy wiersz nagłówkowy.
-#. Kolumny nazwij: ``Sepal length``, ``Sepal width``, ``Petal length``, ``Petal width``, ``Species``
-#. Wyświetl dane w formacie listy dictów, kluczami mają być nazwy kolumn.
+:English:
+    .. todo:: English Translation
+
+:Polish:
+    #. Za pomocą beautifulsoup4 ze strony https://github.com/AstroMatt/book-python/blob/master/numerical-analysis/data/iris-dirty.csv pobierz dane zbióru Irysów.
+    #. Parsując kod HTML oczyść dane.
+    #. Skasuj pierwszy wiersz nagłówkowy.
+    #. Kolumny nazwij: ``Sepal length``, ``Sepal width``, ``Petal length``, ``Petal width``, ``Species``
+    #. Wyświetl dane w formacie listy dictów, kluczami mają być nazwy kolumn.
 
 EVA
 ---
@@ -181,19 +185,23 @@ EVA
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/scrapping_eva.py`
 
-#. Na podstawie podanych URL:
+:English:
+    .. todo:: English Translation
 
-    * https://www.worldspaceflight.com/bios/eva/eva.php
-    * https://www.worldspaceflight.com/bios/eva/eva2.php
-    * https://www.worldspaceflight.com/bios/eva/eva3.php
-    * https://www.worldspaceflight.com/bios/eva/eva4.php
+:Polish:
+    #. Na podstawie podanych URL:
 
-#. Scrappuj stronę wykorzystując ``beautifulsoup4``
-#. Przygotuj plik CSV z danymi dotyczącymi spacerów kosmicznych
-#. Spróbuj to samo zrobić za pomocą ``pandas.read_html()``:
+        * https://www.worldspaceflight.com/bios/eva/eva.php
+        * https://www.worldspaceflight.com/bios/eva/eva2.php
+        * https://www.worldspaceflight.com/bios/eva/eva3.php
+        * https://www.worldspaceflight.com/bios/eva/eva4.php
 
-    * Podając jako parametr czwarty URL
-    * Dla częściowo sparsowanej strony, np. wyciągniętej tabelki
+    #. Scrappuj stronę wykorzystując ``beautifulsoup4``
+    #. Przygotuj plik CSV z danymi dotyczącymi spacerów kosmicznych
+    #. Spróbuj to samo zrobić za pomocą ``pandas.read_html()``:
+
+        * Podając jako parametr czwarty URL
+        * Dla częściowo sparsowanej strony, np. wyciągniętej tabelki
 
 :The whys and wherefores:
     * Komunikacja HTTP (request, response)

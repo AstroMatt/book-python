@@ -164,19 +164,23 @@ Feature Engineering
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/features_engineering.py`
 
-#. Celem zadania będzie opracowanie tabeli, cech osób, które czynią z niego astronautę.
-#. Istotne jest dobranie odpowiednich kolumn cech oraz wpisanie wartości
-#. Dane kontr-argumentowe możesz dobrać dowolnie
-#. Na podstawie danych wybranych astronautów:
+:English:
+    .. todo:: English Translation
 
-    * https://github.com/AstroMatt/astroBio/tree/master/raw
-    * https://github.com/AstroMatt/astroBio/tree/master/dat
+:Polish:
+    #. Celem zadania będzie opracowanie tabeli, cech osób, które czynią z niego astronautę.
+    #. Istotne jest dobranie odpowiednich kolumn cech oraz wpisanie wartości
+    #. Dane kontr-argumentowe możesz dobrać dowolnie
+    #. Na podstawie danych wybranych astronautów:
 
-#. Stwórz listę features dla kilkunastu cech osób
-#. Stwórz CSV z wybranych przez Ciebie danych i załaduj za pomocą biblioteki ``pandas``
-#. Do
-#. Uruchom test wagi parametrów
-#. Czy Twoje features mają wysokie znaczenie?
+        * https://github.com/AstroMatt/astroBio/tree/master/raw
+        * https://github.com/AstroMatt/astroBio/tree/master/dat
+
+    #. Stwórz listę features dla kilkunastu cech osób
+    #. Stwórz CSV z wybranych przez Ciebie danych i załaduj za pomocą biblioteki ``pandas``
+    #. Do
+    #. Uruchom test wagi parametrów
+    #. Czy Twoje features mają wysokie znaczenie?
 
 :Hints:
     * ``np.genfromtxt()``

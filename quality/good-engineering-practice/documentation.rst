@@ -133,22 +133,32 @@ Assignments
 
 Dokumentacja
 ------------
+* Complexity level: easy
 * Lines of code to write: 30 lines
 * Estimated time of completion: 13 min
-* Input data: https://raw.githubusercontent.com/AstroMatt/book-python/master/database/data/iris.csv
+* Solution: TODO
 
-#. Za pomocą ``sphinx-quickstart`` stwórz dokumentację.
-#. Zmień theme na ``sphinx_rtd_theme``
-#. Dokument zatytułuj "Szkolenie z Pythona"
-#. Stwórz nagłówek pierwszego poziomu "Obrazki i teksty" i w nim osadź obrazek jako figure, wraz tekstem opisującym, obrazek ma być połowy wielkości i wycentrowany, nazwany
-#. Stwórz nagłówek pierwszego poziomu "Lorem Ipsum" i wklej tekst lorem ipsum do dokumentacji.
-#. W tekście lorem ipsum wstaw numref do obrazka
-#. Stwórz nagłówek pierwszego poziomu i zamieść tabelę Irysów na podstawie danych Iris Dataset
-#. Stwórz nagłówek pierwszego poziomu "Listingi kodu" i osadź dwa swoje skrypty z poprzednich zadań:
+:English:
+    .. todo:: English Translation
 
-    * książka adresowa jako ``literalinclude`` w nagłówku drugiego poziomu "Książka Adresowa"
-    * prosty skrypt jako ``code-block`` w nagłówku drugiego poziomu "Pozostałe przykłady"
-    * które podejście jest lepsze?
+:Polish:
+    #. Za pomocą ``sphinx-quickstart`` stwórz dokumentację.
+    #. Zmień theme na ``sphinx_rtd_theme``
+    #. Dokument zatytułuj "Szkolenie z Pythona"
+    #. Stwórz nagłówek pierwszego poziomu "Obrazki i teksty" i w nim osadź obrazek jako figure, wraz tekstem opisującym, obrazek ma być połowy wielkości i wycentrowany, nazwany
+    #. Stwórz nagłówek pierwszego poziomu "Lorem Ipsum" i wklej tekst lorem ipsum do dokumentacji.
+    #. W tekście lorem ipsum wstaw numref do obrazka
+    #. Stwórz nagłówek pierwszego poziomu i zamieść tabelę Irysów na podstawie danych Iris Dataset
+    #. Stwórz nagłówek pierwszego poziomu "Listingi kodu" i osadź dwa swoje skrypty z poprzednich zadań:
 
-#. Tekst lorem ipsum oznacz jako cytowanie cycerona wykorzystując bibtext
+        * książka adresowa jako ``literalinclude`` w nagłówku drugiego poziomu "Książka Adresowa"
+        * prosty skrypt jako ``code-block`` w nagłówku drugiego poziomu "Pozostałe przykłady"
+        * które podejście jest lepsze?
+
+    #. Tekst lorem ipsum oznacz jako cytowanie cycerona wykorzystując bibtext
+
+:Input:
+    .. code-block:: python
+
+        DATA = 'https://python.astrotech.io/_static/iris.csv'
 

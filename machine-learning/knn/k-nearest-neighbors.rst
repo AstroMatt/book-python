@@ -174,7 +174,11 @@ Pima Indians Diabetes problem
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/knn_pima.py`
 
-#. Dla Pima Indians Diabetes wykonaj analizę algorytmem KNN z biblioteki ``sklearn``.
+:English:
+    .. todo:: English Translation
+
+:Polish:
+    #. Dla Pima Indians Diabetes wykonaj analizę algorytmem KNN z biblioteki ``sklearn``.
 
 Płeć
 ----
@@ -183,34 +187,38 @@ Płeć
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/knn_gender.py`
 
-#. Napisz własną implementacje k Nearest Neighbors, która dla danych:
+:English:
+    .. todo:: English Translation
 
-    .. csv-table::
-        :header: "Gender", "Height", "Weight", "Foot Size"
+:Polish:
+    #. Napisz własną implementacje k Nearest Neighbors, która dla danych:
 
-        male,6.00,180,12
-        male,5.92,190,11
-        male,5.58,170,12
-        male,5.92,165,10
-        female,5.00,100,6
-        female,5.50,150,8
-        female,5.42,130,7
-        female,5.75,150,9
+        .. csv-table::
+            :header: "Gender", "Height", "Weight", "Foot Size"
 
-#. Odpowie na pytanie jaką płeć ma osoba o parametrach:
+            male,6.00,180,12
+            male,5.92,190,11
+            male,5.58,170,12
+            male,5.92,165,10
+            female,5.00,100,6
+            female,5.50,150,8
+            female,5.42,130,7
+            female,5.75,150,9
 
-    * Height: 6
-    * Weight: 130
-    * Foot Size: 8
+    #. Odpowie na pytanie jaką płeć ma osoba o parametrach:
 
-#. Jaki jest najlepszy parametr :math:`k` dla tego zadania?
-#. Która z cech ma najwięszy wpływ?
-#. Czy algorytm lepiej działa z:
+        * Height: 6
+        * Weight: 130
+        * Foot Size: 8
 
-    * normalizacją i skalownaiem?
-    * bez normalizacji i skalowania?
-    * tylko z normalizacją?
-    * tylko skalowaniem?
+    #. Jaki jest najlepszy parametr :math:`k` dla tego zadania?
+    #. Która z cech ma najwięszy wpływ?
+    #. Czy algorytm lepiej działa z:
+
+        * normalizacją i skalownaiem?
+        * bez normalizacji i skalowania?
+        * tylko z normalizacją?
+        * tylko skalowaniem?
 
 :Hints:
     * ``preprocessing.LabelEncoder()``

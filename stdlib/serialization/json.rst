@@ -552,7 +552,7 @@ Serialization JSON Datetime
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/serialization_json_datetime.py`
 
-:Enlish:
+:English:
     #. Use data from "Input" section (see below)
     #. Save data to file in JSON format
     #. Read data from file

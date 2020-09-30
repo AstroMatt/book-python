@@ -547,25 +547,33 @@ Github pages with Jupyter Slides
 Assignments
 ===========
 
-Podstawy korzystania
---------------------
+Jupyter First
+-------------
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/jupyter_first.ipynb`
 
-#. Stwórz notebook jupyter o nazwie ``jupyter_first.ipynb``
-#. Dodaj tekst opisujący następne polecenia
-#. Dodaj trzy różne 'Code Cell'
-#. Uruchom Code Cell z wynikiem wszystkich powyżej
-#. Dodaj Code Cell, który pokaże czas wykonywania instrukcji
-#. Dodaj Code Cell, który wyświetli wykres funkcji ``sin()`` inplace
+:English:
+    .. todo:: English Translation
 
-Slajdy
-------
+:Polish:
+    #. Stwórz notebook jupyter o nazwie ``jupyter_first.ipynb``
+    #. dodaj tekst opisujący następne polecenia
+    #. dodaj trzy różne 'code cell'
+    #. uruchom code cell z wynikiem wszystkich powyżej
+    #. dodaj code cell, który pokaże czas wykonywania instrukcji
+    #. dodaj Code Cell, który wyświetli wykres funkcji ``sin()`` inplace
+
+Jupyter Slides
+--------------
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/jupyter_slides.py`
 
-#. Poprzedni skrypt przekonwertuj na slajdy i uruchom prezentację w przeglądarce
+:English:
+    .. todo:: English Translation
+
+:Polish:
+    #. Poprzedni skrypt przekonwertuj na slajdy i uruchom prezentację w przeglądarce

@@ -266,15 +266,19 @@ Wielowątkowość
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/threading_timer.py`
 
-#. Stwórz kolejkę ``queue`` do której dodasz różne polecenia systemowe do wykonania, np.:
+:English:
+    .. todo:: English Translation
 
-    * Linux/macOS: ``['/bin/ls /etc/', '/bin/echo "test"', '/bin/sleep 2']``,
-    * Windows: ``['dir c:\\Users', 'echo "test"', 'type %HOMEPATH%\Desktop\README.txt']``.
+:Polish:
+    #. Stwórz kolejkę ``queue`` do której dodasz różne polecenia systemowe do wykonania, np.:
 
-#. Następnie przygotuj trzy wątki workerów, które będą wykonywały polecenia z kolejki
-#. Wątki powinny być uruchamiane jako ``subprocess.run()`` w systemie operacyjnym z timeoutem równym ``TIMEOUT = 2.0`` sekundy
-#. Ilość poleceń może się zwiększać w miarę wykonywania zadania.
-#. Wątki mają być uruchomione w tle (ang. ``daemon``)
+        * Linux/macOS: ``['/bin/ls /etc/', '/bin/echo "test"', '/bin/sleep 2']``,
+        * Windows: ``['dir c:\\Users', 'echo "test"', 'type %HOMEPATH%\Desktop\README.txt']``.
+
+    #. Następnie przygotuj trzy wątki workerów, które będą wykonywały polecenia z kolejki
+    #. Wątki powinny być uruchamiane jako ``subprocess.run()`` w systemie operacyjnym z timeoutem równym ``TIMEOUT = 2.0`` sekundy
+    #. Ilość poleceń może się zwiększać w miarę wykonywania zadania.
+    #. Wątki mają być uruchomione w tle (ang. ``daemon``)
 
 :Extra task:
     #. Wątki powinny być uśpione za pomocą ``Timer`` przez ``DELAY = 5.0`` sekund, a następnie ruszyć do roboty

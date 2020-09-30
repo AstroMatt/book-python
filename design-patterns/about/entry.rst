@@ -8,7 +8,7 @@ Entry Exam
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/loop_dict_to_list.py`
+* Solution: loop_dict_to_list.py
 
 :English:
     #. Use data from "Input" section (see below)
@@ -78,7 +78,7 @@ Get elements from nested data structure
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/for_nested.py`
+* Solution: for_nested.py
 
 :English:
     #. Use data from "Input" section (see below)
@@ -118,7 +118,7 @@ Get elements from nested data structure
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/file_parsing_advanced.py`
+* Solution: file_parsing_advanced.py
 
 :English:
     #. Use data from "Input" section (see below)

@@ -140,15 +140,19 @@ Nearest Neighbor Classifier
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/sklearn_classifier.py`
 
-#. Napisz klasyfikator najbliższego sąsiada
-#. Podziel dane treningowe i testowe pół-na-pół
-#. Dla zbioru Iris ma osiągać accuracy na poziomie powyżej 90%
-#. Klasa ``NearestNeighborClassifier`` powinna mieć interfejs zgodny z ``scikit-learn``:
+:English:
+    .. todo:: English Translation
 
-    * ``.fit()`` - do uczenia funkcji
-    * ``.predict()`` - do predykcji
+:Polish:
+    #. Napisz klasyfikator najbliższego sąsiada
+    #. Podziel dane treningowe i testowe pół-na-pół
+    #. Dla zbioru Iris ma osiągać accuracy na poziomie powyżej 90%
+    #. Klasa ``NearestNeighborClassifier`` powinna mieć interfejs zgodny z ``scikit-learn``:
 
-#. Do porównania użyj ``accuracy = metrics.accuracy_score(labels_test, labels_predicted)``
+        * ``.fit()`` - do uczenia funkcji
+        * ``.predict()`` - do predykcji
+
+    #. Do porównania użyj ``accuracy = metrics.accuracy_score(labels_test, labels_predicted)``
 
 :Hints:
     * Dla każdego feature sprawdzasz jaka jest najmniejsza odległość
@@ -196,10 +200,14 @@ Porównanie classifierów
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/sklearn_comparision.py`
 
-* Pobierz dane Brest Cancer Dataset (``datasets.load_breast_cancer()``)
-* Podziel zestaw na dane testowe (15%) i dane treningowe (85%) i ustaw ``random_state=0``
-* Dla danych przeprowadź analizę wykorzystując różne modele danych
-* Wyświetl nazwę, dokładność oraz odchylenie standardowe modelu
+:English:
+    .. todo:: English Translation
+
+:Polish:
+    #. Pobierz dane Brest Cancer Dataset (``datasets.load_breast_cancer()``)
+    #. Podziel zestaw na dane testowe (15%) i dane treningowe (85%) i ustaw ``random_state=0``
+    #. Dla danych przeprowadź analizę wykorzystując różne modele danych
+    #. Wyświetl nazwę, dokładność oraz odchylenie standardowe modelu
 
 .. code-block:: text
 

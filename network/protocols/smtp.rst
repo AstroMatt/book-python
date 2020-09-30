@@ -34,6 +34,10 @@ Send email
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/smtp_ssl.py`
 
-#. Połącz się z serwerem podanym przez prowadzącego
-#. Wyślij wiadomość email na podany przez prowadzącego adres
-#. Do wiadomości załącz plik ``pep20.txt``, który będzie wynikiem polecenia ``import this`` :pep:`20`
+:English:
+    .. todo:: English Translation
+
+:Polish:
+    #. Połącz się z serwerem podanym przez prowadzącego
+    #. Wyślij wiadomość email na podany przez prowadzącego adres
+    #. Do wiadomości załącz plik ``pep20.txt``, który będzie wynikiem polecenia ``import this`` :pep:`20`

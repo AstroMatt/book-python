@@ -341,10 +341,18 @@ Iris transformations
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/matplotlib_lifecycle.py`
-* Input data: https://raw.githubusercontent.com/AstroMatt/book-python/master/data-vizualization/data/iris.csv
 
-#. Opracuj podobny wykres dla danych Irysów
-#. Weź pod uwagę jedynie ``sepal_length`` oraz ``species``
-#. Species ma być w osi ``y``
-#. Na osi ``x`` ma być ``sepal_length``
-#. Czerwony marker opisuje średnią długość ``sepal_length`` dla wszystkich gatunków
+:English:
+    .. todo:: English Translation
+
+:Polish:
+    #. Opracuj podobny wykres dla danych Irysów
+    #. Weź pod uwagę jedynie ``sepal_length`` oraz ``species``
+    #. Species ma być w osi ``y``
+    #. Na osi ``x`` ma być ``sepal_length``
+    #. Czerwony marker opisuje średnią długość ``sepal_length`` dla wszystkich gatunków
+
+:Input:
+    .. code-block:: python
+
+        DATA = 'https://python.astrotech.io/_static/iris.csv'

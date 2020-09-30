@@ -42,16 +42,20 @@ FTP Download
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/ftp_download.py`
 
-#. Stwórz na swoim komputerze plik o nazwie ``imie-nazwisko.txt``, gdzie:
+:English:
+    .. todo:: English Translation
 
-    * zamiast ``imie`` wpisz swoje imię
-    * zamiast ``nazwisko`` wpisz swoje nazwisko
+:Polish:
+    #. Stwórz na swoim komputerze plik o nazwie ``imie-nazwisko.txt``, gdzie:
 
-#. Do pliku wklej treść tekstu :pep:`20` (wynik polecenia ``import this``)
-#. Połącz się z serwerem podanym przez prowadzącego
-#. Pobierz plik ``README.txt`` z głównego folderu
-#. Do katalogu ``files`` uploaduj plik ``imie-nazwisko.txt``
-#. Skorzystaj z Contex Managera do połączenia
+        * zamiast ``imie`` wpisz swoje imię
+        * zamiast ``nazwisko`` wpisz swoje nazwisko
+
+    #. Do pliku wklej treść tekstu :pep:`20` (wynik polecenia ``import this``)
+    #. Połącz się z serwerem podanym przez prowadzącego
+    #. Pobierz plik ``README.txt`` z głównego folderu
+    #. Do katalogu ``files`` uploaduj plik ``imie-nazwisko.txt``
+    #. Skorzystaj z Contex Managera do połączenia
 
 FTP Upload
 ----------
@@ -60,13 +64,17 @@ FTP Upload
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/ftp_upload.py`
 
-#. Pobierz na swój komputer plik :download:`http://python.astrotech.io/_static/favicon.png`
-#. Nazwij plik ``imie-nazwisko.png``, gdzie:
+:English:
+    .. todo:: English Translation
 
-    * zamiast ``imie`` wpisz swoje imię
-    * zamiast ``nazwisko`` wpisz swoje nazwisko
+:Polish:
+    #. Pobierz na swój komputer plik :download:`http://python.astrotech.io/_static/favicon.png`
+    #. Nazwij plik ``imie-nazwisko.png``, gdzie:
 
-#. Połącz się z serwerem podanym przez prowadzącego
-#. Do katalogu ``img`` uploaduj plik pobrany w poprzednim kroku
-#. Skorzystaj z Contex Managera do połączenia
-#. Przesyłanie danych ma odbywać się w trybie binarnym
+        * zamiast ``imie`` wpisz swoje imię
+        * zamiast ``nazwisko`` wpisz swoje nazwisko
+
+    #. Połącz się z serwerem podanym przez prowadzącego
+    #. Do katalogu ``img`` uploaduj plik pobrany w poprzednim kroku
+    #. Skorzystaj z Contex Managera do połączenia
+    #. Przesyłanie danych ma odbywać się w trybie binarnym

@@ -345,6 +345,10 @@ Klastrowanie zbioru Iris
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/clustering_iris.py`
 
-#. Dla zbioru Iris dokonaj klastrowania za pomocą alborytmu ``KMeans`` z biblioteki ``sklearn``.
-#. Dla jakiego hiperparametru ``n_clusters`` osiągniemy najwięsze accuracy?
-#. Zwizualizuj graficznie rozwiązanie problemu
+:English:
+    .. todo:: English Translation
+
+:Polish:
+    #. Dla zbioru Iris dokonaj klastrowania za pomocą alborytmu ``KMeans`` z biblioteki ``sklearn``.
+    #. Dla jakiego hiperparametru ``n_clusters`` osiągniemy najwięsze accuracy?
+    #. Zwizualizuj graficznie rozwiązanie problemu

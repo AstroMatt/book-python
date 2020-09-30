@@ -352,7 +352,7 @@ Protocol Descriptor Inheritance
     #. Zezwól na ustawianie pola ``elevation`` podczas inicjalizacji
     #. Wszystkie testy muszą przejść
 
-:Input Data:
+:Input:
     .. code-block:: text
 
         latitude - type: float, min: -90, max 90

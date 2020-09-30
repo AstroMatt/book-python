@@ -174,6 +174,7 @@ Database SQL Relations
 * Complexity level: medium
 * Lines of code to write: 0 lines
 * Estimated time of completion: 13 min
+* Solution: TODO
 
 :English:
     #. Use data from "Input" section (see below)

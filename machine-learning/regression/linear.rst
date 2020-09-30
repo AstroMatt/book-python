@@ -269,10 +269,14 @@ Least square regression 3 points
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/linreg_least_square_3pts.py`
 
-#. Consider the following set of points: :math:`{(-2 , -1) , (1 , 1) , (3 , 2)}`
-#. Find the least square regression line for the given data points.
-#. Plot the given points and the regression line in the same rectangular system of axes.
-#. Napisz własny kod implementujący rozwiązanie
+:English:
+    #. Consider the following set of points: :math:`{(-2 , -1) , (1 , 1) , (3 , 2)}`
+    #. Find the least square regression line for the given data points.
+    #. Plot the given points and the regression line in the same rectangular system of axes.
+    #. Napisz własny kod implementujący rozwiązanie
+
+:Polish:
+    .. todo:: Polish Translation
 
 Least square regression 4 points
 --------------------------------
@@ -281,10 +285,13 @@ Least square regression 4 points
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/linreg_least_square_4pts.py`
 
-#. Find the least square regression line for the following set of data: :math:`{(-1 , 0),(0 , 2),(1 , 4),(2 , 5)}`
-#. Plot the given points and the regression line in the same rectangular system of axes.
-#. Użyj kodu z przykładu własnej implementacji do rozwiązania
+:English:
+    #. Find the least square regression line for the following set of data: :math:`{(-1 , 0),(0 , 2),(1 , 4),(2 , 5)}`
+    #. Plot the given points and the regression line in the same rectangular system of axes.
+    #. Użyj kodu z przykładu własnej implementacji do rozwiązania
 
+:Polish:
+    .. todo:: Polish Translation
 
 Company sales
 -------------
@@ -293,16 +300,17 @@ Company sales
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/linreg_company_sales.py`
 
-The sales of a company (in million dollars) for each year are shown in the table below.
+:English:
+    #. The sales of a company (in million dollars) for each year are shown in the table below.
 
-.. todo:: przepisać tabelkę
+        .. code-block:: text
 
-.. code-block:: text
+            x (year)    2005    2006    2007    2008    2009
+            y (sales)   12      19      29      37      45
 
-    x (year)    2005    2006    2007    2008    2009
-    y (sales)   12      19      29      37      45
+    #. Find the least square regression line :math:`y = ax + b` .
+    #. Use the least squares regression line as a model to estimate the sales of the company in 2012.
+    #. Use ``sklearn``
 
-
-#. Find the least square regression line :math:`y = ax + b` .
-#. Use the least squares regression line as a model to estimate the sales of the company in 2012.
-#. Użyj biblioteki ``sklearn``
+:Polish:
+    .. todo:: Polish Translation

@@ -27,6 +27,41 @@ Plot kinds
 
 Parameters
 ==========
+.. csv-table:: Parameters
+    :header: "Parameter", "Default value"
+
+    "x", ``None``
+    "y", ``None``
+    "kind", "line"
+    "ax", ``None``
+    "subplots", ``False``
+    "sharex", ``None``
+    "sharey", ``False``
+    "layout", ``None``
+    "figsize", ``None``
+    "use_index", ``True``
+    "title", ``None``
+    "grid", ``None``
+    "legend", ``True``
+    "style", ``None``
+    "logx", ``False``
+    "logy", ``False``
+    "loglog", ``False``
+    "xticks", ``None``
+    "yticks", ``None``
+    "xlim", ``None``
+    "ylim", ``None``
+    "rot", ``None``
+    "fontsize", ``None``
+    "colormap", ``None``
+    "table", ``False``
+    "yerr", ``None``
+    "xerr", ``None``
+    "secondary_y", ``False``
+    "sort_columns", ``False``
+    "xlabel", ``None``
+    "ylabel", ``None``
+
 .. list-table:: Parameters
     :header-rows: 1
     :widths: 5, 15, 15, 65

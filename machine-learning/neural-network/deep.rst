@@ -345,19 +345,3 @@ The first column of images shows true faces. The next columns illustrate how ext
     This example shows the use of multi-output estimator to complete images. The goal is to predict the lower half of a face given its upper half.
 
 
-Assignments
-===========
-
-Kto jest na zdjęciu? - używanie ``TensorFlow for Poets``
---------------------------------------------------------
-* Lines of code to write: 0 lines
-* Estimated time of completion: 21 min
-
-#. Stwórz zbiór obrazów zawierający zwierzęta:
-
-    * tygrysy,
-    * lwy,
-    * pantery
-    * koty.
-
-#. Naucz algorytm ich rozpoznawania i przedstaw Mu jakieś nowe zwierze i zobacz czy potrafi rozpoznać i z jaką dokładnością.

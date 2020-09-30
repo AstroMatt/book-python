@@ -134,16 +134,20 @@ Heartbeat
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/socket_heartbeat_client.py` and :download:`solution/socket_heartbeat_server.py`
 
-#. Stwórz klienta i serwer Heart Beat
-#. Zarówno klient jak i serwer ma być uruchamiany w wątkach
-#. Serwer ma przyjmować komunikaty UDP/IPv4 na porcie 1337
-#. Komunikacja ma odbywać się za pomocą protokołu JSON
-#. Klient ma mieć informację o swoim adresie IP i PORT
-#. Klient ma co 5 sekund wysyłać informację do serwera o swoim IP i PORT
-#. Wypisz:
+:English:
+    .. todo:: English Translation
 
-    * datę UTC przyjścia pakietu,
-    * IP i PORT przesłany przez klienta.
+:Polish:
+    #. Stwórz klienta i serwer Heart Beat
+    #. Zarówno klient jak i serwer ma być uruchamiany w wątkach
+    #. Serwer ma przyjmować komunikaty UDP/IPv4 na porcie 1337
+    #. Komunikacja ma odbywać się za pomocą protokołu JSON
+    #. Klient ma mieć informację o swoim adresie IP i PORT
+    #. Klient ma co 5 sekund wysyłać informację do serwera o swoim IP i PORT
+    #. Wypisz:
+
+        * datę UTC przyjścia pakietu,
+        * IP i PORT przesłany przez klienta.
 
 :Hints:
     * ``threading.Timer(frequency: int, fn: Callable).start()``
@@ -157,24 +161,28 @@ Backdoor
 * Estimated time of completion: 34 min
 * Solution: :download:`solution/socket_backdoor.py`
 
-#. Stwórz uruchamiany w wątku serwer TCP
-#. Serwer ma być uruchamiany na losowym porcie z przedziału 1025-65535 (dlaczego taki zakres portów?)
-#. Wyciągnij informację o adresie IP i PORT na którym nasłuchuje serwer
-#. Serwer oczekuje na komunikaty w formacie JSON:
+:English:
+    .. todo:: English Translation
 
-    * ``date: datetime`` (UTC),
-    * ``command: str``,
-    * ``timeout: int``.
+:Polish:
+    #. Stwórz uruchamiany w wątku serwer TCP
+    #. Serwer ma być uruchamiany na losowym porcie z przedziału 1025-65535 (dlaczego taki zakres portów?)
+    #. Wyciągnij informację o adresie IP i PORT na którym nasłuchuje serwer
+    #. Serwer oczekuje na komunikaty w formacie JSON:
 
-#. Serwer wykonuje polecenie zapisane w ``command`` w systemie operacyjnym uwzględniając ``timeout``
-#. Prześlij nadawcy JSON z wynikiem wykonania polecenia, tj.:
+        * ``date: datetime`` (UTC),
+        * ``command: str``,
+        * ``timeout: int``.
 
-    * ``date: datetime`` (UTC),
-    * ``host: str``,
-    * ``port: int``,
-    * ``stdout: str``,
-    * ``stderr: str``,
-    * ``exit_code: int``
+    #. Serwer wykonuje polecenie zapisane w ``command`` w systemie operacyjnym uwzględniając ``timeout``
+    #. Prześlij nadawcy JSON z wynikiem wykonania polecenia, tj.:
+
+        * ``date: datetime`` (UTC),
+        * ``host: str``,
+        * ``port: int``,
+        * ``stdout: str``,
+        * ``stderr: str``,
+        * ``exit_code: int``
 
 :Hints:
     * ``random.randint()``
