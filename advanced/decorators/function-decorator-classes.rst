@@ -31,8 +31,15 @@ Syntax
 
     def decorator(cls):
         class Wrapper(cls):
-            ...
+            def __new__(cls, *args, **kwargs):
+                ...
         return Wrapper
+
+
+    def decorator(cls):
+        def wrapper(*args, **kwargs):
+            ...
+        return wrapper
 
 .. code-block:: python
     :caption: Decoration
@@ -56,10 +63,12 @@ Example
             return method(instance, *args, **kwargs)
         return wrapper
 
+
     @run
     class Astronaut:
         def hello(self, name):
             return f'My name... {name}'
+
 
     astro = Astronaut()
     astro.hello('José Jiménez')
@@ -69,6 +78,7 @@ Example
 Use Case
 ========
 .. code-block:: python
+    :caption: Add attribute
 
     def mydecorator(cls):
         class Wrapper(cls):

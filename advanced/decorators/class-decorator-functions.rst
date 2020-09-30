@@ -63,9 +63,11 @@ Example
         def __call__(self, *args, **kwargs):
             return self._func(*args, **kwargs)
 
+
     @Run
     def hello(name):
         return f'My name... {name}'
+
 
     hello('José Jiménez')
     # 'My name... José Jiménez'

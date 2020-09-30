@@ -32,10 +32,11 @@ Syntax
             return func(*args, **kwargs)
         return wrapper
 
-
     @mydecorator
     def myfunction(*args, **kwargs):
         pass
+
+    myfunction()
 
 
 Types of decorators

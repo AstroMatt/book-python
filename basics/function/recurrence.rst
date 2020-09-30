@@ -37,7 +37,7 @@ Example
             return n * factorial(n-1)
 
 .. code-block:: python
-    :caption: Recap information about factorial (``!``)
+    :caption: Recap information about factorial (``n!``)
 
     """
     5! = 5 * 4!

@@ -17,7 +17,7 @@ Syntax:
         class MyClass:
             @mydecorator
             def mymethod(self, *args, **kwargs):
-                pass
+                ...
 
 
         obj = MyClass()
@@ -28,7 +28,7 @@ Is equivalent to:
 
         class MyClass:
             def mymethod(self, *args, **kwargs):
-                pass
+                ...
 
 
         obj = MyClass()
@@ -76,10 +76,12 @@ Example
             return method(instance, *args, **kwargs)
         return wrapper
 
+
     class Astronaut:
         @run
         def hello(self, name):
             return f'My name... {name}'
+
 
     astro = Astronaut()
     astro.hello('José Jiménez')
@@ -124,35 +126,31 @@ Use Cases
 
 .. code-block:: python
 
-    def make_paragraph(method):
-
+    def paragraph(method):
         def wrapper(instance, *args, **kwargs):
-            value = method(instance, *args, **kwargs)
-            print(f'<p>{value}</p>')
-            return value
-
+            result = method(instance, *args, **kwargs)
+            return f'<p>{result}</p>'
         return wrapper
 
 
     class HTMLReport:
 
-        @make_paragraph
-        def first_method(self, *args, **kwargs):
-            return 'First Method'
+        @paragraph
+        def first(self, *args, **kwargs):
+            return 'First'
 
-        @make_paragraph
-        def second_method(self, *args, **kwargs):
-            return 'Second Method'
-
-
-    if __name__ == "__main__":
-        x = HTMLReport()
-        x.first_method()
-        x.second_method()
+        @paragraph
+        def second(self, *args, **kwargs):
+            return 'Second'
 
 
-    # <p>First Method</p>
-    # <p>Second Method</p>
+    x = HTMLReport()
+
+    x.first()
+    # '<p>First</p>'
+
+    x.second()
+    # '<p>Second</p>'
 
 
 Assignments

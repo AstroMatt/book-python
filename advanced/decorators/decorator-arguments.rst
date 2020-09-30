@@ -91,7 +91,7 @@ Use Cases
     # It will be removed in 2.0
 
 .. code-block:: python
-    :caption: Timeout
+    :caption: Timeout using ``signal(SIGALRM)``
 
     from signal import signal, alarm, SIGALRM
     from time import sleep
@@ -129,7 +129,7 @@ Use Cases
     # Sorry, timeout
 
 .. code-block:: python
-    :caption: Timeout
+    :caption: Timeout using ``threading.Timer``
 
     from _thread import interrupt_main
     from threading import Timer

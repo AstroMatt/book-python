@@ -45,6 +45,7 @@ Syntax
 
     myfunction()
 
+
 Example
 =======
 .. code-block:: python
@@ -62,9 +63,8 @@ Example
     # 'My name... José Jiménez'
 
 
-Single Decorator
-================
-
+Use Cases
+=========
 .. code-block:: python
     :caption: File exists
 
@@ -91,6 +91,7 @@ Single Decorator
     # File /tmp/passwd does not exist
 
 .. code-block:: python
+    :caption: Timeit
 
     from datetime import datetime
 
@@ -123,6 +124,7 @@ Single Decorator
     # 3
 
 .. code-block:: python
+    :caption: Debug
 
     def debug(func):
         def wrapper(*args, **kwargs):
@@ -154,11 +156,8 @@ Single Decorator
     # Result: 3
     # 3
 
-
-Stack Decorators
-================
 .. code-block:: python
-    :caption: Debug
+    :caption: Stacked decorators
 
     from datetime import datetime
     import logging
@@ -197,7 +196,6 @@ Stack Decorators
     def add(a, b):
         return a + b
 
-
     add(1, 2)
     # "1969-07-21", "02:56:15", "DEBUG", "Calling: function='add', args=(1, 2), kwargs={}"
     # "1969-07-21", "02:56:15", "DEBUG", "Result: 3"
@@ -220,7 +218,7 @@ Stack Decorators
 Scope
 =====
 .. code-block:: python
-    :caption: Recap information about factorial (``!``)
+    :caption: Recap information about factorial (``n!``)
 
     """
     5! = 5 * 4!
