@@ -8,10 +8,20 @@ Rationale
 .. highlights::
     * Attributes and methods are always public
     * No protected and private keywords
-    * ``_name()`` - protected attribute or method (by convention)
-    * ``__name`` - private attribute or method (by convention)
-    * ``__name__`` - system attribute or method
-    * ``name_`` - used while name collision
+
+    Attributes:
+
+        * ``_name`` - protected attribute (by convention)
+        * ``__name`` - private attribute (by convention)
+        * ``__name__`` - system attribute or method
+        * ``name_`` - used while name collision
+
+    Methods:
+
+        * ``_name(self)`` - protected method (by convention)
+        * ``__name(self)`` - private method (by convention)
+        * ``__name__(self)`` - system method
+        * ``name_(self)`` - used while name collision
 
 
 Protected Attribute
@@ -230,43 +240,44 @@ Assignments
 OOP Attribute Access Modifiers
 ------------------------------
 * Complexity level: easy
-* Lines of code to write: 20 lines
+* Lines of code to write: 11 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/oop_attribute_access_modifiers.py`
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Create class ``Iris``
-    #. In ``Iris._init__()`` add protected attributes ``sepal_length``, ``sepal_width``, ``petal_length``, ``petal_width``
-    #. In ``Iris._init__()`` add public attribute ``species``
-    #. Create class ``Setosa``, ``Versicolor``, ``Virginica`` inheriting from ``Iris``
-    #. Iterate over ``result`` and print all public fields of each element
+    #. Define ``result: list[dict]``
+    #. Define class ``Iris`` with attributes
+    #. Protected attributes: ``sepal_length``, ``sepal_width``, ``petal_length``, ``petal_width``
+    #. Public attribute: ``species``
+    #. Iterate over ``DATA`` and add all public attributes to ``result``
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Stwórz klasę ``Iris``
-    #. W ``Iris._init__()`` dodaj chronione atrybuty ``sepal_length``, ``sepal_width``, ``petal_length``, ``petal_width``
-    #. W ``Iris._init__()`` dodaj publiczny atrybut ``species``
-    #. Stwórz klasy ``Setosa``, ``Versicolor``, ``Virginica`` dziedziczące po ``Iris``
-    #. Iteruj po ``result`` i wypisz wszystkie publiczne pola każdego elementu
+    #. Zdefiniuj ``result: list[dict]``
+    #. Define klasę ``Iris``
+    #. Chronione atrybuty: ``sepal_length``, ``sepal_width``, ``petal_length``, ``petal_width``
+    #. Publiczne atrybuty: ``species``
+    #. Iteruj po ``DATA`` i dodaj wszystkie publiczne atrybuty do ``result``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. code-block:: python
 
-        result = [
-            Virginica(5.8, 2.7, 5.1, 1.9, 'virginica'),
-            Setosa(5.1, 3.5, 1.4, 0.2, 'setosa'),
-            Versicolor(5.7, 2.8, 4.1, 1.3, 'versicolor'),
+        DATA = [
+            Iris(5.8, 2.7, 5.1, 1.9, 'virginica'),
+            Iris(5.1, 3.5, 1.4, 0.2, 'setosa'),
+            Iris(5.7, 2.8, 4.1, 1.3, 'versicolor'),
         ]
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        {'species': 'virginica'}
-        {'species': 'setosa'}
-        {'species': 'versicolor'}
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        [{'species', 'virginica'},
+         {'species', 'setosa'},
+         {'species', 'versicolor'}]
 
 OOP Attribute Access Dict
 -------------------------
