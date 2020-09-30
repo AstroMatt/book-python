@@ -1,4 +1,6 @@
 """
+>>> import random
+>>> random.seed(0)
 >>> dragon = Dragon(name='Wawelski', position_x=50, position_y=120)
 >>> dragon.position_set(x=10, y=20)
 >>> dragon.position_change(left=10, down=20)
@@ -15,26 +17,18 @@ True
 ...     dragon.take_damage(15)
 ...     dragon.take_damage(25)
 ...     dragon.take_damage(75)
-... except IsDead:
+... except dragon.IsDead:
 ...     drop = dragon.get_drop()
 ...     print(f'{dragon:name} is dead at position {dragon:position}')
+...     print(f'Gold dropped {drop["gold"]}')
 Wawelski is dead at position x=20, y=40
+Gold dropped 50
 """
-import logging
 from dataclasses import dataclass
-from enum import Enum
 from functools import wraps
 from random import randint
 from typing import TypedDict, Optional, NoReturn, Callable
 from unittest import TestCase
-
-
-logging.basicConfig(
-    # filename='/tmp/game.csv',
-    level='DEBUG',
-    datefmt='"%Y-%m-%d", "%H:%M:%S"',
-    format='{asctime}, "{levelname}", "{message}"',
-    style='{')
 
 
 # TODO: dragon << Damage(...)
@@ -45,16 +39,13 @@ logging.basicConfig(
 # TODO: hero[gold] = dragon[gold]
 
 
-class IsDead(Exception):
-    pass
-
 def if_alive(method: Callable) -> Callable:
     @wraps(method)
     def wrapper(instance: 'Destructable', *args, **kwargs) -> Optional[Callable]:
         if instance.is_alive():
             return method(instance, *args, **kwargs)
         else:
-            raise IsDead
+            raise instance.IsDead
     return wrapper
 
 
@@ -82,6 +73,7 @@ class Point:
         return f'x={self.x}, y={self.y}'
 
 
+@dataclass
 class Moveable:
     _position: Point = Point()
 
@@ -100,16 +92,20 @@ class Moveable:
         return self._position
 
 
-class Status(Enum):
+class Status:
     ALIVE: str = 'alive'
     DEAD: str = 'dead'
 
 
+@dataclass
 class Destructable:
     _current_health: int = 0
     _status: Status = Status.ALIVE
 
-    def _set_initial_health(self) -> None:
+    class IsDead(Exception):
+        pass
+
+    def __post_init__(self) -> None:
         self._current_health = randint(self.HEALTH_MIN, self.HEALTH_MAX)
 
     def _update_status(self) -> None:
@@ -133,27 +129,27 @@ class Drop(TypedDict):
     position: Point
 
 
+@dataclass(init=False)
 class Dragon(Moveable, Destructable):
+    TEXTURE_DEAD: str = 'img/dragon/dead.png'
+    TEXTURE_ALIVE: str = 'img/dragon/alive.png'
+    GOLD_MIN: int = 1
+    GOLD_MAX: int = 100
+    DAMAGE_MIN: int = 5
+    DAMAGE_MAX: int = 20
+    HEALTH_MIN: int = 50
+    HEALTH_MAX: int = 100
+
+    _name: str = None
+    _texture: str = None
+    _gold: int = None
+
     position = property()
 
-    _name: str
-    _texture: str
-    _gold: int
-
-    TEXTURE_DEAD = 'img/dragon/dead.png'
-    TEXTURE_ALIVE = 'img/dragon/alive.png'
-    GOLD_MIN = 1
-    GOLD_MAX = 100
-    DAMAGE_MIN = 5
-    DAMAGE_MAX = 20
-    HEALTH_MIN = 50
-    HEALTH_MAX = 100
-
-    def __init__(self, name: str = 'Wawelski', position_x: int = 0, position_y: int = 0) -> None:
+    def __init__(self, name, position_x: int = 0, position_y: int = 0):
         self._name = name
         self._texture = self.TEXTURE_ALIVE
         self._gold = randint(self.GOLD_MIN, self.GOLD_MAX)
-        self._set_initial_health()
         self.position_set(position_x, position_y)
 
     def __str__(self) -> str:
@@ -174,28 +170,27 @@ class Dragon(Moveable, Destructable):
         return self._position
 
     @if_alive
+    def make_damage(self) -> int:
+        return randint(self.DAMAGE_MIN, self.DAMAGE_MAX)
+
+    @if_alive
     def take_damage(self, damage) -> Optional[NoReturn]:
         self._current_health -= damage
         self._update_status()
-        logging.warning(self)
 
         if self.is_dead():
             self._make_dead()
-            raise IsDead
+            raise self.IsDead
 
     def _make_dead(self) -> None:
         self._current_health = 0
         self._texture = self.TEXTURE_DEAD
-        self._status = Status.DEAD
+        self._update_status()
 
     @if_dead
     def get_drop(self) -> Drop:
         gold, self._gold = self._gold, 0
         return Drop(gold=gold, position=self.position)
-
-    @if_alive
-    def make_damage(self) -> int:
-        return randint(self.DAMAGE_MIN, self.DAMAGE_MAX)
 
 
 class MovableTest(TestCase):
@@ -205,11 +200,10 @@ class MovableTest(TestCase):
         self.dead._make_dead()
 
     def test_position_default(self):
-        dragon = Dragon()
-        self.assertEqual(dragon.position, Point(x=0, y=0))
+        self.assertEqual(self.alive.position, Point(x=0, y=0))
 
     def test_position_init(self):
-        dragon = Dragon(position_x=1, position_y=2)
+        dragon = Dragon('Alive', position_x=1, position_y=2)
         self.assertEqual(dragon.position, Point(x=1, y=2))
 
     def test_position_get(self):
@@ -219,49 +213,49 @@ class MovableTest(TestCase):
         self.alive.position_set(x=1, y=2)
         self.assertEqual(self.alive.position, Point(x=1, y=2))
 
-        with self.assertRaises(IsDead):
+        with self.assertRaises(self.dead.IsDead):
             self.dead.position_set(x=1, y=2)
 
     def test_position_change_right(self):
         self.alive.position_change(right=1)
         self.assertEqual(self.alive.position, Point(x=1, y=0))
 
-        with self.assertRaises(IsDead):
+        with self.assertRaises(self.dead.IsDead):
             self.dead.position_change(right=1)
 
     def test_position_change_left(self):
         self.alive.position_change(left=1)
         self.assertEqual(self.alive.position, Point(x=-1, y=0))
 
-        with self.assertRaises(IsDead):
+        with self.assertRaises(self.dead.IsDead):
             self.dead.position_change(left=1)
 
     def test_position_change_down(self):
         self.alive.position_change(down=1)
         self.assertEqual(self.alive.position, Point(x=0, y=1))
 
-        with self.assertRaises(IsDead):
+        with self.assertRaises(self.dead.IsDead):
             self.dead.position_change(down=1)
 
     def test_position_change_up(self):
         self.alive.position_change(up=1)
         self.assertEqual(self.alive.position, Point(x=0, y=-1))
 
-        with self.assertRaises(IsDead):
+        with self.assertRaises(self.dead.IsDead):
             self.dead.position_change(up=1)
 
     def test_position_change_horizontal(self):
         self.alive.position_change(right=1, left=1)
         self.assertEqual(self.alive.position, Point(x=0, y=0))
 
-        with self.assertRaises(IsDead):
+        with self.assertRaises(self.dead.IsDead):
             self.dead.position_change(right=1, left=1)
 
     def test_position_change_vertical(self):
         self.alive.position_change(up=1, down=1)
         self.assertEqual(self.alive.position, Point(x=0, y=0))
 
-        with self.assertRaises(IsDead):
+        with self.assertRaises(self.dead.IsDead):
             self.dead.position_change(up=1, down=1)
 
 
@@ -284,7 +278,7 @@ class DestructableTest(TestCase):
         self.assertEqual(self.alive.is_alive(), True)
 
     def test_destroy_alive(self):
-        with self.assertRaises(IsDead):
+        with self.assertRaises(self.alive.IsDead):
             self.alive._current_health = 1
             self.alive.take_damage(1)
 
@@ -292,7 +286,7 @@ class DestructableTest(TestCase):
         self.assertEqual(self.alive.is_dead(), True)
 
     def test_destroy_dead(self):
-        with self.assertRaises(IsDead):
+        with self.assertRaises(self.dead.IsDead):
             self.dead.take_damage(1)
 
         self.assertEqual(self.dead._status, Status.DEAD)
@@ -349,10 +343,10 @@ class DragonTest(TestCase):
         self.alive.take_damage(1)
         self.assertEqual(self.alive._current_health, 1)
 
-        with self.assertRaises(IsDead):
+        with self.assertRaises(self.dead.IsDead):
             self.dead.take_damage(1)
 
-        with self.assertRaises(IsDead):
+        with self.assertRaises(self.dead.IsDead):
             self.alive._current_health = 1
             self.alive.take_damage(1)
 
@@ -360,8 +354,23 @@ class DragonTest(TestCase):
         expected = range(Dragon.DAMAGE_MIN, Dragon.DAMAGE_MAX+1)
         self.assertIn(self.alive.make_damage(), expected)
 
-        with self.assertRaises(IsDead):
+        with self.assertRaises(self.dead.IsDead):
             self.dead.make_damage()
+
+# >>> from collections import NamedTuple
+# >>> Position = NamedTuple('Position', ['x', 'y'])
+# >>> pt = Position(x=50, y=120)
+# >>> pt.x
+# 50
+# >>> pt.y
+# 120
+
+# >>> from typing import TypedDict
+# >>> class Position(TypedDict):
+# ...     x: int
+# ...     y: int
+# >>> pt1 = Position(x=50, y=120)
+# >>> pt2: Position = {'x': 50, 'y': 120}
 
 
 # a1 = Dragon(texture='...', name='Wawelski', x=50, y=120)
@@ -437,6 +446,11 @@ class DragonTest(TestCase):
 
 # LEFT = 61
 # dragon.move(direction=LEFT, distance=20)
+
+# class Direction(Enum):
+#     LEFT = ...
+#
+# dragon.move(direction=Direction.LEFT, distance=5)
 
 # dragon.move([
 #     {'direction': 'left', 'distance': 20},
