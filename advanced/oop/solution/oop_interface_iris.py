@@ -1,3 +1,14 @@
+"""
+>>> setosa = Setosa(5.1, 3.5, 1.4, 0.2)
+>>> print(setosa.mean())
+2.55
+
+>>> iris = IrisInterface(5.8, 2.7, 5.1, 1.9)
+Traceback (most recent call last):
+    ...
+NotImplementedError
+"""
+
 class IrisInterface:
     sepal_length: float
     sepal_width: float
@@ -30,12 +41,5 @@ class Setosa(IrisInterface):
     def sum(self):
         return sum(self.__dict__.values())
 
-    def avg(self):
+    def mean(self):
         return self.sum() / self.len()
-
-
-setosa = Setosa(5.1, 3.5, 1.4, 0.2)
-print('Setosa', setosa.avg())
-
-iris = IrisInterface(5.8, 2.7, 5.1, 1.9)
-# NotImplementedError

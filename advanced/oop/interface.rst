@@ -125,48 +125,40 @@ OOP Interface Iris
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 21 lines
-* Estimated time of completion: 13 min
+* Estimated time of completion: 8 min
 * Solution: :download:`solution/oop_interface_iris.py`
 
 :English:
     #. Use code from "Input" section (see below)
     #. Define interface ``IrisInterface``
-    #. Define methods ``sum()``, ``avg()``, ``len()`` in ``IrisInterface``
+    #. Constuctor parameters: ``sepal_length, sepal_width, petal_length, petal_width``
+    #. Define methods ``sum()``, ``mean()``, ``len()`` in ``IrisInterface``
     #. Methods must raise exception ``NotImplementedError``
     #. Create class ``Setosa`` inheriting from ``IrisInterface``
-    #. Create instance of a class ``Setosa`` and call ``avg()`` method
-    #. Create instance of a class ``IrisInterface`` and call ``avg()`` method
+    #. Create instance of a class ``Setosa`` and call ``mean()`` method
+    #. Create instance of a class ``IrisInterface`` and call ``mean()`` method
 
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
     #. Zdefiniuj interfejs ``IrisInterface``
-    #. Zdefiniuj metody ``sum()``, ``avg()``, ``len()`` w ``IrisInterface``
+    #. Parametry konstuktora: ``sepal_length, sepal_width, petal_length, petal_width``
+    #. Zdefiniuj metody ``sum()``, ``mean()``, ``len()`` w ``IrisInterface``
     #. Metody muszą podnosić wyjątek ``NotImplementedError``
     #. Stwórz klasę ``Setosa`` dziedziczące po ``IrisInterface``
-    #. Stwórz instancje klasy ``Setosa`` i wywołaj metodę ``avg()``
-    #. Stwórz instancje klasy ``IrisInterface`` i wywołaj metodę ``avg()``
-
-:Input:
-    .. code-block:: python
-
-        class IrisInterface:
-            def __init__(self, sepal_length, sepal_width, petal_length, petal_width):
-                raise NotImplementedError
-
-    .. code-block:: python
-
-        iris = IrisInterface(5.8, 2.7, 5.1, 1.9)
-        setosa = Setosa(5.1, 3.5, 1.4, 0.2)
+    #. Stwórz instancje klasy ``Setosa`` i wywołaj metodę ``mean()``
+    #. Stwórz instancje klasy ``IrisInterface`` i wywołaj metodę ``mean()``
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        setosa = Setosa(5.1, 3.5, 1.4, 0.2)
-        print(setosa.avg())
-        # 2.55
+        >>> setosa = Setosa(5.1, 3.5, 1.4, 0.2)
+        >>> print(setosa.mean())
+        2.55
 
-        iris = IrisInterface(5.8, 2.7, 5.1, 1.9)
-        # NotImplementedError
+        >>> iris = IrisInterface(5.8, 2.7, 5.1, 1.9)
+        Traceback (most recent call last):
+            ...
+        NotImplementedError
 
 :Hints:
     * ``self.__dict__``

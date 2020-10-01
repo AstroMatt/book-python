@@ -1,9 +1,22 @@
+"""
+>>> result  # doctest: +NORMALIZE_WHITESPACE
+[SystemAccount(username='root'),
+ SystemAccount(username='bin'),
+ SystemAccount(username='daemon'),
+ SystemAccount(username='adm'),
+ SystemAccount(username='shutdown'),
+ SystemAccount(username='halt'),
+ SystemAccount(username='nobody'),
+ SystemAccount(username='sshd'),
+ UserAccount(username='twardowski'),
+ UserAccount(username='jimenez'),
+ UserAccount(username='ivanovic'),
+ UserAccount(username='lewis')]
+"""
 from dataclasses import dataclass
-from pprint import pprint
 
-FILE = r'/tmp/etc-passwd.txt'
-
-DATA = """##
+DATA = """
+##
 # User Database
 #   - User name
 #   - Encrypted password
@@ -22,44 +35,37 @@ shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
 halt:x:7:0:halt:/sbin:/sbin/halt
 nobody:x:99:99:Nobody:/:/sbin/nologin
 sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
-peck:x:1000:1000:Max Peck:/home/peck:/bin/bash
+twardowski:x:1000:1000:Jan Twarodowski:/home/twardowski:/bin/bash
 jimenez:x:1001:1001:José Jiménez:/home/jimenez:/bin/bash
-ivanovic:x:1002:1002:Ivan Иванович:/home/ivanovic:/bin/bash
+ivanovic:x:1002:1002:Иван Иванович:/home/ivanovic:/bin/bash
+lewis:x:1002:1002:Melissa Lewis:/home/lewis:/bin/bash
 """
 
-with open(FILE, mode='w') as file:
-    file.write(DATA)
+
+class Account:
+    def __new__(cls, username: str, uid: int):
+        if int(uid) >= 1000:
+            return UserAccount(username)
+        else:
+            return SystemAccount(username)
 
 
 @dataclass
-class Account:
+class SystemAccount:
     username: str
 
 
-class SystemAccount(Account):
-    pass
+@dataclass
+class UserAccount:
+    username: str
 
 
-class UserAccount(Account):
-    pass
+result = []
+for line in DATA.splitlines():
+    line = line.strip()
 
+    if len(line) == 0 or line.startswith('#'):
+        continue
 
-class Parse:
-    def __new__(cls, *args, **kwargs):
-        with open(FILE, encoding='utf-8') as file:
-            for line in file:
-                line = line.strip()
-
-                if len(line) == 0 or line.startswith('#'):
-                    continue
-
-                username, _, uid, *_ = line.split(':')
-
-                if int(uid) >= 1000:
-                    yield UserAccount(username)
-                else:
-                    yield SystemAccount(username)
-
-
-result = Parse()
-pprint(list(result))
+    username, _, uid, *_ = line.split(':')
+    result.append(Account(username, uid))

@@ -122,6 +122,7 @@ Return invalid from initializer
     Astronaut()
     # TypeError: __init__() should return None, not 'int'
 
+
 Examples
 ========
 * Factory method
@@ -375,6 +376,25 @@ Do not trigger methods for user
             self.position_x = min(1024, max(0, x))
             self.position_y = min(1024, max(0, y))
 
+Use Cases
+=========
+.. code-block:: python
+    :caption: Note, that this unfortunately does not work this way. ``Path()`` always returuns ``PosixPath``
+
+    from pathlib import Path
+
+    Path('/etc/passwd')
+    # PosixPath('/etc/passwd')
+
+    Path('c:\\Users\\Admin\\myfile.txt')
+    # WindowsPath('c:\\Users\\Admin\\myfile.txt')
+
+    Path(r'C:\Users\Admin\myfile.txt')
+    # WindowsPath('C:\\Users\\Admin\\myfile.txt')
+
+    Path(r'C:/Users/Admin/myfile.txt')
+    # WindowsPath('C:/Users/Admin/myfile.txt')
+
 
 Assignments
 ===========
@@ -389,19 +409,14 @@ OOP Constructor Passwd
 * Solution: :download:`solution/oop_constructor_passwd.py`
 
 :English:
-    #. Use code from "Input" section (see below)
     .. todo:: English translation
 
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
-    #. Zapisz ``DATA`` do pliku ``etc-passwd.txt``
-    #. Wczytaj plik i iteruj po liniach
+    #. Iteruj po liniach w ``DATA``
     #. Odrzuć puste linie i komentarze
-    #. Stwórz klasę ``Parser``, która:
-
-        * Podzieli linię po dwukropku
-        * Klasa ``Parser`` zwraca instancje klas ``UserAccount`` lub ``SystemAccount`` w zależności od wartości pola UID
-
+    #. Podziel linię po dwukropku
+    #. Stwórz klasę ``Account``, która zwraca instancje klas ``UserAccount`` lub ``SystemAccount`` w zależności od wartości pola UID
     #. User ID (UID) to trzecie pole, np. ``root:x:0:0:root:/root:/bin/bash`` to UID jest równy ``0``
     #. Konta systemowe (``SystemAccount``) to takie, które w polu UID mają wartość poniżej ``1000``
     #. Konta użytkowników (``UserAccount``) to takie, które w polu UID mają wartość ``1000`` lub więcej
@@ -429,13 +444,14 @@ OOP Constructor Passwd
         halt:x:7:0:halt:/sbin:/sbin/halt
         nobody:x:99:99:Nobody:/:/sbin/nologin
         sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
-        peck:x:1000:1000:Max Peck:/home/peck:/bin/bash
+        twardowski:x:1000:1000:Jan Twarodowski:/home/twardowski:/bin/bash
         jimenez:x:1001:1001:José Jiménez:/home/jimenez:/bin/bash
-        ivanovic:x:1002:1002:Ivan Иванович:/home/ivanovic:/bin/bash
+        ivanovic:x:1002:1002:Иван Иванович:/home/ivanovic:/bin/bash
+        lewis:x:1002:1002:Melissa Lewis:/home/lewis:/bin/bash
         """
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> result  # doctest: +NORMALIZE_WHITESPACE
         [SystemAccount(username='root'),
@@ -446,9 +462,7 @@ OOP Constructor Passwd
          SystemAccount(username='halt'),
          SystemAccount(username='nobody'),
          SystemAccount(username='sshd'),
-         UserAccount(username='peck'),
+         UserAccount(username='twardowski'),
          UserAccount(username='jimenez'),
-         UserAccount(username='ivanovic')]
-
-:Hints:
-    * ``open(..., encoding='utf-8')``
+         UserAccount(username='ivanovic'),
+         UserAccount(username='lewis')]

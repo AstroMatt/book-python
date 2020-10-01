@@ -31,11 +31,13 @@ Syntax
     class Astronaut(ABC):
 
         @abstractmethod
-        def hello(self):
+        def say_hello(self):
             pass
 
 
     astro = Astronaut()
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: Can't instantiate abstract class Astronaut with abstract methods hello
 
 .. code-block:: python
@@ -46,12 +48,14 @@ Syntax
     class Astronaut(metaclass=ABCMeta):
 
         @abstractmethod
-        def hello(self):
+        def say_hello(self):
             pass
 
 
     astro = Astronaut()
-    # TypeError: Can't instantiate abstract class Astronaut with abstract methods hello
+    # Traceback (most recent call last):
+    #     ...
+    # TypeError: Can't instantiate abstract class Astronaut with abstract methods say_hello
 
 
 Errors
@@ -65,25 +69,39 @@ Errors
         pass
 
     astro = Astronaut()
-    print('ok')
-    # ok
+    print('no errors')
+    # no errors
+
+.. code-block:: python
+    :caption: In order to use Abstract Base Class you must create abstract method. Otherwise it won't prevent from instantiating.
+
+    from abc import ABCMeta
+
+    class Astronaut(metaclass=ABCMeta):
+        pass
+
+    astro = Astronaut()
+    print('no errors')
+    # no errors
 
 .. code-block:: python
     :caption: Must implement all abstract methods
 
-    from abc import ABC, abstractmethod
+    from abc import ABCMeta, abstractmethod
 
-    class Human(ABC):
+    class Human(metaclass=ABCMeta):
         @abstractmethod
-        def get_name(self):
+        def say_hello(self):
             pass
 
-    class Asrtronaut(Human):
+    class Astronaut(Human):
         pass
 
 
-    astro = Asrtronaut()
-    # TypeError: Can't instantiate abstract class Asrtronaut with abstract methods get_name
+    astro = Astronaut()
+    # Traceback (most recent call last):
+    #     ...
+    # TypeError: Can't instantiate abstract class Astronaut with abstract methods say_hello
 
 .. code-block:: python
     :caption: ``abc`` is common name and it is very easy to create file, variable lub module with the same name as the library, hence overwrite it. In case of error. Check all entries in ``sys.path`` or ``sys.modules['abc']`` to find what is overwriting it.
@@ -136,23 +154,26 @@ Examples
                 return file.read()
 
         @abstractmethod
-        def display(self):
+        def display(self, content):
             pass
 
 
     class PDFDocument(Document):
         def display(self):
-            # display "self.content" as PDF Document
+            # display self.content as PDF Document
 
     class WordDocument(Document):
         def display(self):
-            # display "self.content" as Word Document
+            # display self.content as Word Document
 
 
     file1 = PDFDocument('filename.pdf')
     file1.display()
 
-    file2 = Document('filename.txt')  # TypeError: Can't instantiate abstract class Document with abstract methods display
+    file2 = Document('filename.txt')
+    # Traceback (most recent call last):
+    #     ...
+    # TypeError: Can't instantiate abstract class Document with abstract methods display
 
 
 Assignments

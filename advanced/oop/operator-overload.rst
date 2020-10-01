@@ -303,50 +303,52 @@ OOP Operator Overload
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
     #. Nadpisz operatory ``Astronaut`` i ``Mission`` aby poniższy kod zadziałał poprawnie
 
-.. code-block:: python
+:Input:
+    .. code-block:: python
 
-    class Astronaut:
-        def __init__(self, name, experience=()):
-            self.name = name
-            self.experience = list(experience)
+        class Astronaut:
+            def __init__(self, name, experience=()):
+                self.name = name
+                self.experience = list(experience)
 
-        def __str__(self):
-            return f'{self.name}, {self.experience}'
+            def __str__(self):
+                return f'{self.name}, {self.experience}'
 
-        def __iadd__(self, other):
-            raise NotImplementedError
+            def __iadd__(self, other):
+                raise NotImplementedError
 
-        def __contains__(self, flight):
-            raise NotImplementedError
-
-
-    class Mission:
-        def __init__(self, year, name):
-            self.year = year
-            self.name = name
-
-        def __repr__(self):
-            return f'\n\t{self.year}: {self.name}'
-
-        def __eq__(self, other):
-            raise NotImplementedError
+            def __contains__(self, flight):
+                raise NotImplementedError
 
 
-    astro = Astronaut('Jan Twardowski', experience=[
-        Mission(1969, 'Apollo 11'),
-    ])
+        class Mission:
+            def __init__(self, year, name):
+                self.year = year
+                self.name = name
 
-    astro += Mission(2024, 'Artemis 3')
-    astro += Mission(2035, 'Ares 3')
+            def __repr__(self):
+                return f'\n\t{self.year}: {self.name}'
 
-    print(astro)
-    # Jan Twardowski, [
-    # 	1969: Apollo 11,
-    # 	2024: Artemis 3,
-    # 	2035: Ares 3]
+            def __eq__(self, other):
+                raise NotImplementedError
 
-    if Mission(2024, 'Artemis 3') in astro:
-        print(True)
-    else:
-        print(False)
-    # True
+:Output:
+    .. code-block:: text
+
+        >>> astro = Astronaut('Jan Twardowski', missions=[
+        ...     Mission(1969, 'Apollo 11'),
+        ... ])
+        >>> astro += Mission(2024, 'Artemis 3')
+        >>> astro += Mission(2035, 'Ares 3')
+
+        >>> print(astro)  # doctest: +NORMALIZE_WHITESPACE
+        Jan Twardowski, [
+            1969: Apollo 11,
+            2024: Artemis 3,
+            2035: Ares 3]
+
+        >>> if Mission(2024, 'Artemis 3') in astro:
+        ...    print(True)
+        ... else:
+        ...   print(False)
+        True
