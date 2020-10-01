@@ -16,7 +16,7 @@ class Mission:
         self.name = name
 
 
-CREW = [
+DATA = [
     Astronaut('Jan', 'Twardowski', missions=[
         Mission(1969, 'Apollo 11'),
         Mission(2024, 'Artemis 3')]),
@@ -30,7 +30,7 @@ CREW = [
 
 result = []
 
-for astronaut in CREW:
+for astronaut in DATA:
     astro = astronaut.__dict__
     missions = [list(x.__dict__.values()) for x in astronaut.missions]
     astro['missions'] = ', '.join(map(str, missions))
@@ -38,8 +38,8 @@ for astronaut in CREW:
 
 
 header = set(key
-             for key in astro.keys()
-             for astro in result)
+             for astro in result
+             for key in astro.keys())
 
 
 with open(FILE, mode='w') as file:
@@ -53,6 +53,4 @@ with open(FILE, mode='w') as file:
         lineterminator='\n')
 
     writer.writeheader()
-
-    for row in result:
-        writer.writerow(row)
+    writer.writerows(result)

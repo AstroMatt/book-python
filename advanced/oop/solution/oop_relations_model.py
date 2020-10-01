@@ -1,7 +1,13 @@
 """
 >>> assert type(result) is list
->>> assert all(type(astro) is Astronaut for astro in result)
->>> assert all(type(addr) is Address for astro in result for addr in astro.addresses)
+
+>>> assert all(type(astro) is Astronaut
+...            for astro in result)
+
+>>> assert all(type(addr) is Address
+...            for astro in result
+...            for addr in astro.addresses)
+
 >>> result  # doctest: +NORMALIZE_WHITESPACE
 [Astronaut(firstname='Jan', lastname='Twardowski', addresses=[Address(street='Kamienica Pod św. Janem Kapistranem', city='Kraków', postcode='31-008', region='Małopolskie', country='Poland')]),
  Astronaut(firstname='José', lastname='Jiménez',

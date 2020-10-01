@@ -30,6 +30,19 @@ Recap information about classes and objects
     User.hello()
     # TypeError: hello() missing 1 required positional argument: 'self'
 
+.. code-block:: python
+
+    class User:
+        def __init__(self):
+            self.name = 'José Jiménez'
+
+        @staticmethod
+        def hello():
+            print(f'My name...')
+
+    User.hello()
+    # My name...
+
 
 Injecting fields
 ================
@@ -43,7 +56,7 @@ Injecting fields
             print(f'My name... {self.name}')
 
 
-    User.agency = 'NASA'    # Injecting static field
+    User.agency = 'NASA'    # Injecting field
 
     print(User.agency)
     # NASA
