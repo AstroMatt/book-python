@@ -206,32 +206,40 @@ OOP Relations Flatten
         * Użyj kodowania ``utf-8``
         * Użyj zakończenia linii Unix ``\n``
 
-
 :Input:
     .. code-block:: python
 
-       class Contact:
-            def __init__(self, firstname, lastname, addresses=()):
+        class Astronaut:
+            def __init__(self, firstname, lastname, missions=()):
                 self.firstname = firstname
                 self.lastname = lastname
-                self.addresses = addresses
+                self.missions = list(missions)
 
 
-        class Address:
-            def __init__(self, location, city):
-                self.location = location
-                self.city = city
+        class Mission:
+            def __init__(self, year, name):
+                self.year = year
+                self.name = name
 
 
         DATA = [
-            Contact(firstname='Jan', lastname='Twardowski', addresses=(
-                Address(location='Johnson Space Center', city='Houston, TX'),
-                Address(location='Kennedy Space Center', city='Merritt Island, FL'),
-                Address(location='Jet Propulsion Laboratory', city='Pasadena, CA'),
-            )),
-            Contact(firstname='Mark', lastname='Watney'),
-            Contact(firstname='Melissa', lastname='Lewis', addresses=()),
+            Astronaut('Jan', 'Twardowski', missions=[
+                Mission(1969, 'Apollo 11'),
+                Mission(2024, 'Artemis 3')]),
+
+            Astronaut('Mark', 'Watney', missions=[
+                Mission(2035, 'Ares 3')]),
+
+            Astronaut('Melissa', 'Lewis'),
         ]
+
+:Output:
+    .. code-block:: text
+
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        [{'firstname': 'Jan', 'lastname': 'Twardowski', 'missions': '1969,Apollo 11;2024,Artemis 3'},
+         {'firstname': 'Mark', 'lastname': 'Watney', 'missions': '2035,Ares 3'},
+         {'firstname': 'Melissa', 'lastname': 'Lewis', 'missions': ''}]
 
 OOP Relations Nested
 --------------------
