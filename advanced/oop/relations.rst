@@ -23,7 +23,7 @@ Relations
             self.experience: list[Mission] = list(experience)
 
 
-    CREW: list[Astronaut] = [
+    result = [
         Astronaut('Jan Twardowski', experience=[
             Mission(1969, 'Apollo 11'),
             Mission(2024, 'Artemis 3')]),
@@ -110,14 +110,14 @@ OOP Relations Model
 
 :English:
     #. Use data from "Input" section (see below)
+    #. In ``DATA`` we have two classes
     #. Model data using classes and relations
-    #. We should have three classes, name it
     #. Create instances dynamically based on ``DATA``
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. W ``DATA`` mamy dwie klasy
     #. Zamodeluj problem wykorzystując klasy i relacje między nimi
-    #. W zadaniu mamy do czynienia z trzema klasami, wymień je
     #. Twórz instancje dynamicznie na podstawie ``DATA``
 
 :The whys and wherefores:
@@ -130,27 +130,42 @@ OOP Relations Model
     .. code-block:: json
         :caption: Python list[dict] or JSON?
 
-        [
+        DATA = [
             {"firstname": "Jan", "lastname": "Twardowski", "addresses": [
                 {"street": "Kamienica Pod św. Janem Kapistranem", "city": "Kraków", "postcode": "31-008", "region": "Małopolskie", "country": "Poland"}]},
-
             {"firstname": "José", "lastname": "Jiménez", "addresses": [
                 {"street": "2101 E NASA Pkwy", "city": "Houston", "postcode": 77058, "region": "Texas", "country": "USA"},
                 {"street": "", "city": "Kennedy Space Center", "postcode": 32899, "region": "Florida", "country": "USA"}]},
-
             {"firstname": "Mark", "lastname": "Watney", "addresses": [
                 {"street": "4800 Oak Grove Dr", "city": "Pasadena", "postcode": 91109, "region": "California", "country": "USA"},
                 {"street": "2825 E Ave P", "city": "Palmdale", "postcode": 93550, "region": "California", "country": "USA"}]},
-
             {"firstname": "Иван", "lastname": "Иванович", "addresses": [
                 {"street": "", "city": "Космодро́м Байкону́р", "postcode": "", "region": "Кызылординская область", "country": "Қазақстан"},
                 {"street": "", "city": "Звёздный городо́к", "postcode": 141160, "region": "Московская область", "country": "Россия"}]},
-
             {"firstname": "Melissa", "lastname": "Lewis", "addresses": []},
-
             {"firstname": "Alex", "lastname": "Vogel", "addresses": [
                 {"street": "Linder Hoehe", "city": "Köln", "postcode": 51147, "region": "North Rhine-Westphalia", "country": "Germany"}]}
         ]
+
+:Output:
+    .. code-block:: text
+
+        >>> assert type(result) is list
+        >>> assert all(type(astro) is Astronaut for astro in result)
+        >>> assert all(type(addr) is Address for astro in result for addr in astro.addresses)
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        [Astronaut(firstname='Jan', lastname='Twardowski', addresses=[Address(street='Kamienica Pod św. Janem Kapistranem', city='Kraków', postcode='31-008', region='Małopolskie', country='Poland')]),
+         Astronaut(firstname='José', lastname='Jiménez',
+                   addresses=[Address(street='2101 E NASA Pkwy', city='Houston', postcode=77058, region='Texas', country='USA'),
+                              Address(street='', city='Kennedy Space Center', postcode=32899, region='Florida', country='USA')]),
+         Astronaut(firstname='Mark', lastname='Watney',
+                   addresses=[Address(street='4800 Oak Grove Dr', city='Pasadena', postcode=91109, region='California', country='USA'),
+                              Address(street='2825 E Ave P', city='Palmdale', postcode=93550, region='California', country='USA')]),
+         Astronaut(firstname='Иван', lastname='Иванович',
+                   addresses=[Address(street='', city='Космодро́м Байкону́р', postcode='', region='Кызылординская область', country='Қазақстан'),
+                              Address(street='', city='Звёздный городо́к', postcode=141160, region='Московская область', country='Россия')]),
+         Astronaut(firstname='Alex', lastname='Vogel',
+                   addresses=[Address(street='Linder Hoehe', city='Köln', postcode=51147, region='North Rhine-Westphalia', country='Germany')])]
 
 OOP Relations Flatten
 ---------------------
