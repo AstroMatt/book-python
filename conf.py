@@ -90,6 +90,8 @@ exclude_patterns = [
     '.*',
     'venv*',
     'virtualenv*',
+    '.venv*',
+    '.virtualenv*',
     '_build',
     '_extensions',
     '_img',

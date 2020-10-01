@@ -5,15 +5,15 @@ Introduction
     :maxdepth: 1
     :caption: Introduction
 
-    /machine-learning/introduction/data.rst
-    /machine-learning/introduction/statistics.rst
-    /machine-learning/introduction/machine-learning.rst
-    /machine-learning/introduction/glossary-pl.rst
-    /machine-learning/introduction/glossary.rst
-    /machine-learning/introduction/datasets.rst
-    /machine-learning/introduction/algorithms.rst
-    /machine-learning/introduction/features.rst
-    /machine-learning/introduction/classifiers.rst
+    introduction/data.rst
+    introduction/statistics.rst
+    introduction/machine-learning.rst
+    introduction/glossary-pl.rst
+    introduction/g lossary.rst
+    introduction/datasets.rst
+    introduction/algorithms.rst
+    introduction/features.rst
+    introduction/classifiers.rst
 
 *******
 Sklearn
@@ -22,7 +22,7 @@ Sklearn
     :maxdepth: 1
     :caption: Sklearn
 
-    /machine-learning/sklearn/sklearn.rst
+    sklearn/sklearn.rst
 
 *************
 Model Quality
@@ -31,8 +31,8 @@ Model Quality
     :maxdepth: 1
     :caption: Model Quality
 
-    /machine-learning/model-quality/model-quality.rst
-    /machine-learning/model-quality/principal-component-analysis.rst
+    model-quality/model-quality.rst
+    model-quality/principal-component-analysis.rst
 
 
 **************
@@ -42,7 +42,7 @@ Decision Trees
     :maxdepth: 1
     :caption: Decision Trees
 
-    /machine-learning/tree/decision-tree.rst
+    tree/decision-tree.rst
 
 ***********
 Regressions
@@ -51,8 +51,8 @@ Regressions
     :maxdepth: 1
     :caption: Regressions
 
-    /machine-learning/regression/linear.rst
-    /machine-learning/regression/logistics.rst
+    regression/linear.rst
+    regression/logistics.rst
 
 *******************
 K-Nearest Neighbors
@@ -61,7 +61,7 @@ K-Nearest Neighbors
     :maxdepth: 1
     :caption: K-Nearest Neighbors
 
-    /machine-learning/knn/k-nearest-neighbors.rst
+    knn/k-nearest-neighbors.rst
 
 *****
 Bayes
@@ -70,7 +70,7 @@ Bayes
     :maxdepth: 1
     :caption: Bayes
 
-    /machine-learning/bayes/naive.rst
+    bayes/naive.rst
 
 ***********************
 Support Vector Machines
@@ -79,7 +79,7 @@ Support Vector Machines
     :maxdepth: 1
     :caption: Support Vector Machines
 
-    /machine-learning/svm/support-vector-machines.rst
+    svm/support-vector-machines.rst
 
 **********
 Clustering
@@ -88,7 +88,7 @@ Clustering
     :maxdepth: 1
     :caption: Clustering
 
-    /machine-learning/clustering/k-means.rst
+    clustering/k-means.rst
 
 ***************
 Neural Networks
@@ -97,8 +97,8 @@ Neural Networks
     :maxdepth: 1
     :caption: Neural Networks
 
-    /machine-learning/neural-network/deep.rst
-    /machine-learning/neural-network/convolutional.rst
+    neural-network/deep.rst
+    neural-network/convolutional.rst
 
 **********
 References
@@ -107,5 +107,5 @@ References
     :maxdepth: 1
     :caption: References
 
-    /machine-learning/introduction/references.rst
-    /machine-learning/_notes.rst
+    introduction/references.rst
+    _notes.rst
