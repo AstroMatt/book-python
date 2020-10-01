@@ -54,7 +54,7 @@ List of keywords
 .. code-block:: python
 
     print(__file__)
-    # /home/twardowski/bin/my_file.py
+    # /home/twardowski/bin/myfile.py
 
 .. code-block:: python
 

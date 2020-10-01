@@ -161,15 +161,15 @@ Importing submodules
     from game.dragon import white
 
 
-    my_dragon1 = red.RedDragon()
-    my_dragon2 = white.WhiteDragon()
+    dragon1 = red.RedDragon()
+    dragon2 = white.WhiteDragon()
 
 .. code-block:: python
 
     from game.dragon import red, white
 
-    my_dragon1 = red.RedDragon()
-    my_dragon2 = white.WhiteDragon()
+    dragon1 = red.RedDragon()
+    dragon2 = white.WhiteDragon()
 
 Importing all
 -------------
@@ -177,8 +177,8 @@ Importing all
 
     from game.dragon import *
 
-    my_dragon1 = red.RedDragon()
-    my_dragon2 = white.WhiteDragon()
+    dragon1 = red.RedDragon()
+    dragon2 = white.WhiteDragon()
 
 Importing objects from modules
 ------------------------------
@@ -187,8 +187,8 @@ Importing objects from modules
     from game.dragon.red import RedDragon
     from game.dragon.white import WhiteDragon
 
-    my_dragon1 = RedDragon()
-    my_dragon2 = WhiteDragon()
+    dragon1 = RedDragon()
+    dragon2 = WhiteDragon()
 
 Importing with aliases
 ----------------------
@@ -196,7 +196,7 @@ Importing with aliases
 
     from game.dragon.red import RedDragon as Smok
 
-    wawelski = Smok()
+    dragon = Smok()
 
 
 Import path

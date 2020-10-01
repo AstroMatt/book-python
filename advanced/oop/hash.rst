@@ -7,7 +7,7 @@ Rationale
 =========
 .. highlights::
     * Return the hash value of the object (if it has one)
-    * ``hash() ->  int``
+    * ``hash(obj) ->  int``
     * They are used to quickly compare dictionary keys during a dictionary lookup
     * ``set()`` elements has to be hashable
     * ``dict()`` keys has to be hashable
@@ -21,15 +21,33 @@ Examples
 .. code-block:: python
     :caption: ``dict()`` keys has to be hashable
 
-    key = 'my_key'
+    data = {}
 
-    my_dict = {
-        'a': 'key can be str',
-        2: 'key can be int',
-        3.3: 'key can be float',
-        ('a', 2, 3.3): 'key can be tuple',
-        key: 'key can be str',
-    }
+    data[1] = 'whatever'
+    data[1.1] = 'whatever'
+    data['a'] = 'whatever'
+    data[True] = 'whatever'
+    data[False] = 'whatever'
+    data[None] = 'whatever'
+
+    data[(1,2)] = 'whatever'
+
+    data[[1,2]] = 'whatever'
+    # Traceback (most recent call last):
+    #   ...
+    # TypeError: unhashable type: 'list'
+
+    data[{1,2}] = 'cokolwiek'
+    # Traceback (most recent call last):
+    #   ...
+    # TypeError: unhashable type: 'set'
+
+    data[frozenset({1,2})] = 'cokolwiek'
+
+    data[{'a':1}] = 'cokolwiek'
+    # Traceback (most recent call last):
+    #   ...
+    # TypeError: unhashable type: 'dict'
 
 .. code-block:: python
     :caption: ``set()`` elements has to be hashable
@@ -44,60 +62,113 @@ Examples
     # {'a', (1, 2)}
 
 
-Dict Keys
+Use Cases
 =========
 .. code-block:: python
-
-    data = tuple((1, 2, 3))
-
-    result = {}
-    result[data] = 'Mark Watney'
-    # {(1, 2, 3): 'Mark Watney'}
-
-.. code-block:: python
-
-    data = list([1, 2, 3])
-
-    result = {}
-    result[data] = 'Mark Watney'
-    # TypeError: unhashable type: 'list'
-
-.. code-block:: python
-
-    class list(list):
-        def __hash__(self):
-            return 1
-
-
-    data = list([1, 2, 3])
-
-    result = {}
-    result[data] = 'Mark Watney'
-
-    print(result)
-    # {[1, 2, 3]: 'Mark Watney'}
-
-.. code-block:: python
-    :caption: ``set()`` elements has to be hashable
 
     class Astronaut:
         def __init__(self, name):
             self.name = name
 
 
-    jan = Astronaut('Jan Twardowski')
-    data = {jan, jan}
-    len(data)
-    # 1
+    data = set()
 
-    data = {Astronaut('Jan Twardowski'), Astronaut('Jan Twardowski')}
+    data.add(Astronaut('Mark Watney'))
+    data
+    # {<__main__.Astronaut object at 0x10a66d850>}
+
+    data.add(Astronaut('Mark Watney'))
+    data
+    # {<__main__.Astronaut object at 0x10a66df10>,
+    #  <__main__.Astronaut object at 0x10a66d850>}
+
     len(data)
     # 2
 
+.. code-block:: python
+
+    class Astronaut:
+        def __init__(self, name):
+            self.name = name
+
+
+    data = set()
+    astro = Astronaut('Mark Watney')
+
+    data.add(astro)
+    data
+    # {<__main__.Astronaut object at 0x10a6627c0>}
+
+    data.add(astro)
+    data
+    # {<__main__.Astronaut object at 0x10a6627c0>}
+
+    len(data)
+    # 1
+
+.. code-block:: python
+
+    class Astronaut:
+        def __init__(self, name):
+            self.name = name
+
+
+    astro = Astronaut('Mark Watney')
+    data = {astro, astro}
+    len(data)
+    # 1
+
+    data = {Astronaut('Mark Watney'), Astronaut('Mark Watney')}
+    len(data)
+    # 2
+
+
+Hashable
+========
+.. code-block:: python
+
+    key = list([1, 2, 3])
+    hash(key)
+    # Traceback (most recent call last):
+    #   ...
+    # TypeError: unhashable type: 'list'
+
+.. code-block:: python
+
+    class list(list):
+        def __hash__(self):
+            return 0
+
+    key = list([1, 2, 3])
+    hash(key)
+    0
+
+.. code-block:: python
+
+    data = {}
+
+    key = list([1,2,3])
+    data[key] = 'whatever'
+    # Traceback (most recent call last):
+    #   ...
+    # TypeError: unhashable type: 'list'
+
+    class list(list):
+        def __hash__(self):
+            return 0
+
+    data[key] = 'whatever'
+    data
+    # {[1, 2, 3]: 'whatever'}
+
+
 Hash Method
 ===========
+* ``__hash__`` should return the same value for objects that are equal
+* It also shouldn't change over the lifetime of the object
+* Generally you only implement it for immutable objects
+
 .. code-block:: python
-    :caption: Generating hash and object comparision
 
     class Astronaut:
         def __init__(self, firstname, lastname):
@@ -105,36 +176,13 @@ Hash Method
             self.lastname = lastname
 
         def __hash__(self, *args, **kwargs):
-            """
-            __hash__ should return the same value for objects that are equal.
-            It also shouldn't change over the lifetime of the object;
-            generally you only implement it for immutable objects.
-            """
-            return hash(self.firstname) + hash(self.lastname)
+            firstname = hash(self.firstname)
+            lastname = hash(self.lastname)
+            return hash(firstname + lastname)
 
         def __eq__(self, other):
-            if self.firstname == other.firstname and \
-                    self.lastname == other.lastname:
-                return True
-            else:
-                return False
-
-.. code-block:: python
-    :caption: Generating hash and object comparision. Since Python 3.7 ``dict`` has fixed order
-
-    class Astronaut:
-        def __init__(self, firstname, lastname):
-            self.firstname = firstname
-            self.lastname = lastname
-
-        def __hash__(self):
-            return hash(self.__dict__)
-
-        def __eq__(self, other):
-            if self.__dict__ == other.__dict__:
-                return True
-            else:
-                return False
+            return (self.firstname == other.firstname) \
+                    and (self.lastname == other.lastname)
 
 
 Assignments

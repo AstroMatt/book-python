@@ -25,7 +25,7 @@ Definition
         BLUE = '#0000FF'
 
 
-    my_color = Color.RED
+    color = Color.RED
 
 .. code-block:: python
     :caption: Defining ``enum``
@@ -101,9 +101,9 @@ Identity check
 .. code-block:: python
     :caption: Identity check
 
-    my_color = Color('#00FF00')     # <Color.GREEN: '#00FF00'>
-    my_color is Color.RED           # False
-    my_color is Color.GREEN         # True
+    color = Color('#00FF00')     # <Color.GREEN: '#00FF00'>
+    color is Color.RED           # False
+    color is Color.GREEN         # True
 
 
 

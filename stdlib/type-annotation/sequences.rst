@@ -10,29 +10,29 @@ List
 ----
 .. code-block:: python
 
-    my_list: list = ['a', 2, 3.3]
+    data: list = ['a', 2, 3.3]
 
 .. code-block:: python
 
     from typing import List
 
-    my_list: List[int] = [1, 2, 3]
-    my_list: List[float] = [1.1, 2.2, 3.3]
-    my_list: List[str] = ['a', 'b', 'c']
+    data: List[int] = [1, 2, 3]
+    data: List[float] = [1.1, 2.2, 3.3]
+    data: List[str] = ['a', 'b', 'c']
 
 Set
 ---
 .. code-block:: python
 
-    my_set: set = {'a', 2, 3.3}
+    data: set = {'a', 2, 3.3}
 
 .. code-block:: python
 
     from typing import Set
 
-    my_set: Set[int] = {1, 2, 3}
-    my_set: Set[float] = {1.1, 2.2, 3.3}
-    my_set: Set[str] = {'a', 'b', 'c'}
+    data: Set[int] = {1, 2, 3}
+    data: Set[float] = {1.1, 2.2, 3.3}
+    data: Set[str] = {'a', 'b', 'c'}
 
 Tuple
 -----
@@ -86,7 +86,7 @@ List of tuples
 
     from typing import List
 
-    my_data: List[tuple] = [
+    data: List[tuple] = [
         (1, 2, 3),
         (1.1, 2.2, 3.3),
         ('a', 'b', 'c'),
@@ -97,7 +97,7 @@ List of tuples
 
     from typing import List, Tuple
 
-    my_data: List[Tuple[int, int, int]] = [
+    data: List[Tuple[int, int, int]] = [
         (1, 2, 3),
         (1, 2, 3),
         (1, 2, 3),

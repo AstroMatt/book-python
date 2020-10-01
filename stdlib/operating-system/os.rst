@@ -321,7 +321,7 @@ Execute command in OS
     BASE_DIR = os.path.dirname(__file__)
     path = os.path.join(BASE_DIR, 'README.rst')
 
-    subprocess.run(f'echo "ehlo world" > {my_path}')
+    subprocess.run(f'echo "ehlo world" > {path}')
 
 .. code-block:: python
 

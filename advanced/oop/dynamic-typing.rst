@@ -8,28 +8,19 @@ Duck typing
 * `The Unreasonable Effectiveness of Dynamic Typing for Practical Programs by Robert Smallshire <http://www.infoq.com/presentations/dynamic-static-typing>`_
 
 .. code-block:: python
-    :caption: Syntax similarities and Dynamic Typing
+    :caption: Syntax similarities
 
-    {}              # dict
-    {1}             # set
-    {1, 2}          # set
-    {1: 2}          # dict
-    {1: 1, 2: 2}    # dict
+    data = {1}
+    isinstance(data, set)   # True
+    isinstance(data, dict)  # False
 
+    data = {1: 1}
+    isinstance(data, set)   # False
+    isinstance(data, dict)  # True
 
-    my_data = {1}
-    isinstance(my_data, set)   # True
-    isinstance(my_data, dict)  # False
-
-    my_data = {1: 1}
-    isinstance(my_data, set)   # False
-    isinstance(my_data, dict)  # True
-
-    my_data = {}
-    isinstance(my_data, (set, dict))  # True
-
-    isinstance(my_data, dict)  # True
-    isinstance(my_data, set)   # False
+    data = {}
+    isinstance(data, set)   # False
+    isinstance(data, dict)  # True
 
 
 Everything is an object
@@ -86,9 +77,9 @@ Injecting properties
         return a + b
 
 
-    add_numbers.my_variable = 10
+    add_numbers.myattr = 10
 
-    print(add_numbers.my_variable)
+    print(add_numbers.myattr)
     # 10
 
 Injecting methods

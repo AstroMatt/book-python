@@ -22,7 +22,7 @@ Type Aliases
 
     AllowedTypes = Union[list, set, tuple]
 
-    def my_print(args: AllowedTypes) -> None:
+    def echo(args: AllowedTypes) -> None:
         if not isinstance(args, AllowedTypes.__args__):
             raise TypeError(f'Collection must be instance of {AllowedTypes.__args__}')
 

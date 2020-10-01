@@ -173,18 +173,18 @@ Assignments
 =======
 .. code-block:: python
 
-    name = ''
-    name = 'Jan Twardowski'
+    data = ''
+    data = 'Jan Twardowski'
 
 .. code-block:: python
     :caption: Multiline ``str``. Always use double quote characters to be consistent with the docstring convention :pep:`257`
 
-    text = """First line
+    data = """First line
     Second line
     Third line"""
     # 'First line\nSecond line\nThird line'
 
-    text = """
+    data = """
         First line
         Second line
         Third line
@@ -201,19 +201,19 @@ Single or double quote?
 
 .. code-block:: python
 
-    name = "Jan Twardowski"
-    name = 'Jan Twardowski'
-    name = """Jan Twardowski"""
-    name = '''Jan Twardowski'''
-    name = """My name's "José Jiménez""""
-    name = '''My name's "José Jiménez"'''
+    data = "Jan Twardowski"
+    data = 'Jan Twardowski'
+    data = """Jan Twardowski"""
+    data = '''Jan Twardowski'''
+    data = """My name's "José Jiménez""""
+    data = '''My name's "José Jiménez"'''
 
 .. code-block:: python
     :caption: When to use single or double quotes?
 
-    my_str = 'It\'s Twardowski\'s Moon.'
-    my_str = "It's Twardowski's Moon."
-    my_str = '<a href="http://python.astrotech.io">Python and Machine Learning</a>'
+    data = 'It\'s Twardowski\'s Moon.'
+    data = "It's Twardowski's Moon."
+    data = '<a href="http://python.astrotech.io">Python and Machine Learning</a>'
 
 Type casting to ``str``
 -----------------------
@@ -356,8 +356,8 @@ Assignments
 ========
 .. code-block:: python
 
-    my_var = True               # True
-    my_var = False              # False
+    data = True                 # True
+    data = False                # False
 
 Converting to ``bool``
 ----------------------

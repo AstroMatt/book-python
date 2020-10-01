@@ -94,11 +94,11 @@ Static Methods
             print('Old version')
 
 
-    def my_function():
+    def myfunction():
         print('New version')
 
 
-    User.hello = my_function
+    User.hello = myfunction
     User.hello()
     # New version
 
@@ -109,7 +109,7 @@ Static Methods
             print('Old version')
 
 
-    def my_function(self):
+    def myfunction(self):
         print('New version')
 
 
@@ -119,7 +119,7 @@ Static Methods
     u1.hello()      # Old version
     u2.hello()      # Old version
 
-    User.hello = my_function
+    User.hello = myfunction
 
     u1.hello()      # New version
     u2.hello()      # New version
@@ -131,7 +131,7 @@ Static Methods
             print('Old version')
 
 
-    def my_function():
+    def myfunction():
         print('New version')
 
 
@@ -141,7 +141,7 @@ Static Methods
     u1.hello()      # Old version
     u2.hello()      # Old version
 
-    u1.hello = my_function
+    u1.hello = myfunction
 
     u1.hello()      # New version
     u2.hello()      # Old version
@@ -330,25 +330,48 @@ Object Initialization
     # hello
 
 
-Examples
-========
+User Cases
+==========
 .. code-block:: python
 
-    import datetime
+    from datetime import datetime
+    import json
+
+    json.dumps({'gagarin': datetime(1961, 4, 12, 6, 7)})
+    # Traceback (most recent call last):
+    #     ...
+    # TypeError: Object of type datetime is not JSON serializable
+
+    json.JSONEncoder.default = lambda self, dt: dt.isoformat()
+    json.dumps({'gagarin': datetime(1961, 4, 12, 6, 7)})
+    # '{"gagarin": "1961-04-12T06:07:00"}'
+
+.. code-block:: python
+
+    import numpy as np
+
+    numpy.array = debug(numpy.array)
+    numpy.array = trace_usage(numpy.array)
+    numpy.array = profiling(numpy.array)
+
+.. code-block:: python
+
+    from datetime import date, datetime
     import json
 
 
-    def datetime_encoder(self, obj):
-        if isinstance(obj, datetime.date):
-            return f'{obj:%Y-%m-%d}'
+    def datetime_encoder(self, value):
+        if type(value) is date:
+            return f'{value:%Y-%m-%d}'
+        if type(value) is datetime:
+            return value.isoformat()
         else:
-            return str(obj)
+            return str(value)
 
     json.JSONEncoder.default = datetime_encoder
 
-    result = {"datetime": datetime.date(1961, 4, 12)}
-    json.dumps(result)
-    # {"datetime": "1961-04-12"}
+    json.dumps({'gagarin': date(1961, 4, 12)})
+    # {"gagarin": "1961-04-12"}
 
 
 Assignments

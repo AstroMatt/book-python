@@ -43,7 +43,7 @@ Any
     from typing import Any
 
 
-    def my_print(value: Any) -> None:
+    def echo(value: Any) -> None:
         print(value)
 
 

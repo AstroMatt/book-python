@@ -31,7 +31,7 @@ Running tests
 
 Running tests with your IDE
 ---------------------------
-* View menu -> Run... -> Unittest in ``my_function``
+* View menu -> Run... -> Unittest in ``myfunction``
 
 From code
 ---------

@@ -22,7 +22,7 @@ Build
 .. code-block:: console
 
     $ INCLUDES='-I/usr/local/Cellar/python/3.7.2_2/Frameworks/Python.framework/Versions/3.7/include/python3.7m/'
-    $ FILE='my_library'
+    $ FILE='mylibrary'
     $ gcc -fPIC -c -o ${FILE}.o ${FILE}.c ${INCLUDE}
     $ gcc -shared ${FILE}.o -o ${FILE}.so
 
@@ -33,7 +33,7 @@ Run
     import ctypes
 
 
-    lib = ctypes.CDLL('my_library.so')
+    lib = ctypes.CDLL('mylibrary.so')
 
     lib.factorial(16)  # 2004189184
     lib.factorial(17)  # -288522240
@@ -49,7 +49,7 @@ Arguments
 
 .. code-block:: python
 
-    lib.my_function.argtypes = [
+    lib.myfunction.argtypes = [
         ctypes.c_char_p,
         ctypes.c_int,
         ctypes.POINTER(ctypes.c_double),
@@ -57,7 +57,7 @@ Arguments
 
 .. code-block:: python
 
-    lib.my_function.restype = ctypes.c_char_p
+    lib.myfunction.restype = ctypes.c_char_p
 
 
 Use cases
@@ -78,7 +78,7 @@ Example 1
     import ctypes
 
 
-    lib = ctypes.CDLL('my_library.so')
+    lib = ctypes.CDLL('mylibrary.so')
     lib.ehlo()
 
 Example 2
@@ -96,7 +96,7 @@ Example 2
     import ctypes
 
 
-    lib = ctypes.CDLL('my_library.so')
+    lib = ctypes.CDLL('mylibrary.so')
 
     lib.greeting.argtypes = [ctypes.c_char_p]
     name = ctypes.create_string_buffer('Twardowski'.encode('ASCII'))
@@ -117,7 +117,7 @@ Example 3
     import ctypes
 
 
-    lib = ctypes.CDLL('my_library.so')
+    lib = ctypes.CDLL('mylibrary.so')
     lib.number(10)
 
 Example 4
@@ -133,7 +133,7 @@ Example 4
     import ctypes
 
 
-    lib = ctypes.CDLL('my_library.so')
+    lib = ctypes.CDLL('mylibrary.so')
 
     i = lib.return_int(15)
     print(i)
@@ -162,7 +162,7 @@ Multi OS code
     import ctypes
 
 
-    lib = ctypes.CDLL('my_library.so')
+    lib = ctypes.CDLL('mylibrary.so')
     print(dir(lib))
 
 Overflow
@@ -180,7 +180,7 @@ Overflow
     import ctypes
 
 
-    lib = ctypes.CDLL('my_library.so')
+    lib = ctypes.CDLL('mylibrary.so')
 
     lib.wypisz_liczbe(10 ** 10)  # Liczba to: 1410065408
 

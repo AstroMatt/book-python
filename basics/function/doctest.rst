@@ -49,7 +49,7 @@ Running Tests
 #. Running tests in Pycharm IDE (either option):
 
     * Right click on source code with doctests -> Run 'Doctest for ...'
-    * View menu -> Run... -> Doctest in ``my_function``
+    * View menu -> Run... -> Doctest in ``myfunction``
 
 #. Running Tests from Python Code:
 

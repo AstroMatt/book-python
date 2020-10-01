@@ -10,19 +10,17 @@ Dict
 
 .. code-block:: python
 
-    my_dict: dict = {
+    data: dict = {
         'a': 'a',
         2: 2,
-        3.3: 3.3
-    }
+        3.3: 3.3}
 
 .. code-block:: python
 
-    my_dict: dict[str, int] = {
+    data: dict[str, int] = {
         'a': 1,
         'b': 2,
-        'c': 3,
-    }
+        'c': 3,}
 
 
 TypedDict

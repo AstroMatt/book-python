@@ -110,7 +110,7 @@ Multi-language
 
     .. code-block:: console
 
-        $ coverage run my_program.py arg1 arg2
+        $ coverage run myprogram.py arg1 arg2
         blah blah ..your program's output.. blah blah
 
     Use coverage report to report on the results:
@@ -120,8 +120,8 @@ Multi-language
         $ coverage report -m
         Name                      Stmts   Miss  Cover   Missing
         -------------------------------------------------------
-        my_program.py                20      4    80%   33-35, 39
-        my_other_module.py           56      6    89%   17-23
+        myprogram.py                 20      4    80%   33-35, 39
+        mymodule.py                  56      6    89%   17-23
         -------------------------------------------------------
         TOTAL                        76     10    87%
 

@@ -84,7 +84,7 @@ Unordered Sequences
 Slice Forwards
 ==============
 .. highlights::
-    * ``my_sequence[start:stop]``
+    * ``sequence[start:stop]``
 
 .. code-block:: python
 
@@ -131,7 +131,7 @@ Step
 ====
 .. highlights::
     * Every ``n``-th element
-    * ``my_sequence[start:stop:step]``
+    * ``sequence[start:stop:step]``
 
 .. code-block:: python
 

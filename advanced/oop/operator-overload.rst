@@ -10,110 +10,135 @@ Rationale
 .. highlights::
     * Readable syntax
     * Simpler operations
+    * Follong examples uses ``dataclasses`` to focus on action code, not boilerplate
 
 .. code-block:: python
 
+    from dataclasses import dataclass
+
+    @dataclass
     class Vector:
-        def __init__(self, x=0, y=0):
-            self.x = x
-            self.y = y
+        x: int = 0
+        y: int = 0
 
-        def __str__(self):
-            return f'Vector(x={self.x}, y={self.y})'
 
-    vector1 = Vector(x=1, y=2)
-    vector2 = Vector(x=3, y=4)
-    vector3 = Vector(x=5, y=6)
-
-    result = vector1 + vector2
+    Vector(x=1, y=2) + Vector(x=3, y=4)
+    # Traceback (most recent call last):
+    #   ...
     # TypeError: unsupported operand type(s) for +: 'Vector' and 'Vector'
 
-    result = vector1 + vector2 + vector3
+    Vector(x=1, y=2) + Vector(x=3, y=4) + Vector(x=5, y=6)
+    # Traceback (most recent call last):
+    #   ...
     # TypeError: unsupported operand type(s) for +: 'Vector' and 'Vector'
 
 .. code-block:: python
 
-    class Vector:
-        def __init__(self, x=0, y=0):
-            self.x = x
-            self.y = y
+    from dataclasses import dataclass
 
-        def __str__(self):
-            return f'Vector(x={self.x}, y={self.y})'
+    @dataclass
+    class Vector:
+        x: int = 0
+        y: int = 0
 
         def __add__(self, other):
             return Vector(
                 self.x + other.x,
                 self.y + other.y)
 
-    vector1 = Vector(x=1, y=2)
-    vector2 = Vector(x=3, y=4)
-    vector3 = Vector(x=5, y=6)
 
-    result = vector1 + vector2
-    print(result)
+    Vector(x=1, y=2) + Vector(x=3, y=4)
     # Vector(x=4, y=6)
 
-    result = vector1 + vector2 + vector3
-    print(result)
+    Vector(x=1, y=2) + Vector(x=3, y=4) + Vector(x=5, y=6)
     # Vector(x=9, y=12)
 
 
-Syntax
-======
-
 Numerical Operators
--------------------
+===================
 .. csv-table:: Numerical Operator Overload
     :header: "Operator", "Method"
 
-    "``a + b``",        "``a.__add__(b)``"
-    "``a += b``",       "``a.__iadd__(b)``"
-    "``a - b``",        "``a.__sub__(b)``"
-    "``a -= b``",       "``a.__isub__(b)``"
-    "``a * b``",        "``a.__mul__(b)``"
-    "``a *= b``",       "``a.__imul__(b)``"
-    "``a / b``",        "``a.__div__(b)``"
-    "``a /= b``",       "``a.__idiv__(b)``"
-    "``a % b``",        "``a.__mod__(b)``"
-    "``a @ b``",        "``a.__matmul__(b)``"
+    "``obj + other``",     "``obj.__add__(other)``"
+    "``obj += other``",    "``obj.__iadd__(other)``"
+    "``obj - other``",     "``obj.__sub__(other)``"
+    "``obj -= other``",    "``obj.__isub__(other)``"
+    "``obj * other``",     "``obj.__mul__(other)``"
+    "``obj *= other``",    "``obj.__imul__(other)``"
+    "``obj / other``",     "``obj.__div__(other)``"
+    "``obj /= other``",    "``obj.__idiv__(other)``"
+    "``obj % other``",     "``obj.__mod__(other)``"
+    "``obj @ other``",     "``obj.__matmul__(other)``"
 
 .. code-block:: python
-    :caption: Modulo operator for ``int`` and ``str``
+    :caption: ``%`` (``__mod__``) operator behavior for ``int`` and ``str``
 
-    7 % 2                   # 1
-    'My number' % 2         # TypeError: not all arguments converted during string formatting
-    'My number %s' % 2      # My number 2
-    'My number %d' % 2      # My number 2
-    'My number %f' % 2      # My number 2.0
+    3 % 2                         # 1
+    4 % 2                         # 0
 
-.. note:: ``%s``, ``%d``, ``%f`` is currently deprecated in favor of ``f'...'`` string formatting. The topic will be continued in :ref:`Builtin Printing` chapter.
+    'Echo' % 2                    # TypeError: not all arguments converted during string formatting
+    'Echo %s' % 2                 # 'Echo 2'
+    'Echo %d' % 2                 # 'Echo 2'
+    'Echo %f' % 2                 # 'Echo 2.0'
+    'Echo %s %s' % (1, 2)         # 'Echo 1 2'
+    'Echo %s %d %f' % (1, 2, 3)   # 'Echo 1 2 3.000000'
+
+    'Echo %(firstname)s %(lastname)s' % {'firstname': 'Mark', 'lastname': 'Watney'}
+    # 'Echo Mark Watney'
+
+    'Echo %(name)s %(age)d' % {'name': 'Mark Watney', 'age': 44}
+    # 'Echo Mark Watney 44'
+
+.. note:: ``%s``, ``%d``, ``%f`` is currently deprecated in favor of ``f'...'`` string formatting. More information in :ref:`Builtin Printing`.
+
 
 Comparison Operators
---------------------
+====================
 .. csv-table:: Comparison Operators Overload
     :header: "Operator", "Method"
 
-    "``a == b``",       "``a.__eq__(b)``"
-    "``a != b``",       "``a.__ne__(b)``"
-    "``a < b``",        "``a.__lt__(b)``"
-    "``a <= b``",       "``a.__le__(b)``"
-    "``a > b``",        "``a.__gt__(b)``"
-    "``a >= b``",       "``a.__ge__(b)``"
+    "``obj == other``",   "``obj.__eq__(other)``"
+    "``obj != other``",   "``obj.__ne__(other)``"
+    "``obj < other``",    "``obj.__lt__(other)``"
+    "``obj <= other``",   "``obj.__le__(other)``"
+    "``obj > other``",    "``obj.__gt__(other)``"
+    "``obj >= other``",   "``obj.__ge__(other)``"
+
+.. code-block:: python
+
+    from dataclasses import dataclass
+
+    @dataclass
+    class Vector:
+        x: int = 0
+        y: int = 0
+
+        def __eq__(self, other):
+            if (self.x == other.x) and (self.y == other.y):
+                return True
+            else:
+                return False
+
+    Vector(x=1, y=2) == Vector(x=3, y=4)
+    # False
+
+    Vector(x=1, y=2) == Vector(x=1, y=2)
+    # True
+
 
 Boolean Operators
------------------
+=================
 .. csv-table:: Boolean Operators Overload
     :header: "Operator", "Method"
 
-    "``-a``",           "``a.__neg__()``"
-    "``+a``",           "``a.__pos__()``"
-    "``~a``",           "``a.__invert__()``"
-    "``a & b``",        "``a.__and__(b)``"
-    "``a | b``",        "``a.__or__(b)``"
-    "``a ^ b``",        "``a.__xor__(b)``"
-    "``a << b``",       "``a.__lshift__(b)``"
-    "``a >> b``",       "``a.__rshift__(b)``"
+    "``-obj``",           "``obj.__neg__()``"
+    "``+obj``",           "``obj.__pos__()``"
+    "``~obj``",           "``obj.__invert__()``"
+    "``obj & other``",    "``obj.__and__(other)``"
+    "``obj | other``",    "``obj.__or__(other)``"
+    "``obj ^ other``",    "``obj.__xor__(other)``"
+    "``obj << other``",   "``obj.__lshift__(other)``"
+    "``obj >> other``",   "``obj.__rshift__(other)``"
 
 .. code-block:: python
 
@@ -124,59 +149,64 @@ Boolean Operators
         def __str__(self):
             return str(self.value)
 
-        def __rshift__(self, other):
-            return Digit(self.value + other.value)
+        def __xor__(self, other):
+            return Digit(self.value ** other.value)
 
 
-    a = Digit(1)
-    b = Digit(3)
+    a = Digit(2)
+    b = Digit(4)
 
-    print(a >> b)
-    # 4
+    a ^ b
+    # 16
 
 
 Builtin Functions and Keywords
-------------------------------
+==============================
 .. csv-table:: Builtin Functions Overload
     :header: "Function", "Method"
 
-    "``abs(a)``",             "``a.__abs__()``"
-    "``bool(a)``",            "``a.__bool__()``"
-    "``divmod(a, b)``",       "``a.__divmod__(b)``"
-    "``pow(a)``",             "``a.__pow__()``"
-    "``round(a, prec)``",     "``a.__round__(prec)``"
-    "``dir(a)``",             "``a.__dir__()``"
-    "``len(a)``",             "``a.__len__()``"
-    "``complex(a)``",         "``a.__complex__()``"
-    "``int(a)``",             "``a.__int__()``"
-    "``float(a)``",           "``a.__float__()``"
-    "``oct(a)``",             "``a.__oct__()``"
-    "``hex(a)``",             "``a.__hex__()``"
-    "``reversed(a)``",        "``a.__reversed__()``"
-    "``delattr(a, attr)``",   "``a.__delattr__(attr)``"
-    "``del a``",              "``a.__del__()``"
+    "``abs(obj)``",             "``obj.__abs__()``"
+    "``bool(obj)``",            "``obj.__bool__()``"
+    "``complex(obj)``",         "``obj.__complex__()``"
+    "``del obj``",              "``obj.__del__()``"
+    "``delattr(obj, name)``",   "``obj.__delattr__(name)``"
+    "``dir(obj)``",             "``obj.__dir__()``"
+    "``divmod(obj, other)``",   "``obj.__divmod__(other)``"
+    "``float(obj)``",           "``obj.__float__()``"
+    "``hash(obj)``",            "``obj.__hash__()``"
+    "``hex(obj)``",             "``obj.__hex__()``"
+    "``int(obj)``",             "``obj.__int__()``"
+    "``iter(obj)``",            "``obj.__iter__()``"
+    "``len(obj)``",             "``obj.__len__()``"
+    "``next(obj)``",            "``obj.__next__()``"
+    "``oct(obj)``",             "``obj.__oct__()``"
+    "``pow(obj)``",             "``obj.__pow__()``"
+    "``reversed(obj)``",        "``obj.__reversed__()``"
+    "``round(obj, ndigits)``",  "``obj.__round__(ndigits)``"
 
 .. code-block:: python
 
     from math import sqrt
+    from dataclasses import dataclass
 
-
+    @dataclass
     class Vector:
-        def __init__(self, x=0, y=0):
-            self.x = x
-            self.y = y
+        x: int = 0
+        y: int = 0
 
         def __abs__(self):
             return sqrt(self.x**2 + self.y**2)
 
 
-    vector = Vector(x=3, y=4)
-    abs(vector)
+    abs(Vector(x=3, y=4))
     # 5.0
 
 .. code-block:: python
 
     class Astronaut:
+        def __float__(self) -> float:
+            return 1961.0
+
         def __int__(self) -> int:
             return 1969
 
@@ -186,60 +216,69 @@ Builtin Functions and Keywords
         def __str__(self) -> str:
             return 'My name... José Jiménez'
 
+        def __repr__(self) -> str:
+            return f'Astronaut()'
 
-    jose = Astronaut()
+    astro = Astronaut()
 
-    int(jose)
+    float(astro)
+    # 1961.0
+
+    int(astro)
     # 1969
 
-    len(jose)
+    len(astro)
     # 170
 
-    str(jose)
+    repr(astro)
+    # Astronaut()
+
+    str(astro)
     # 'My name... José Jiménez'
 
-    print(jose)
+    print(astro)
     # My name... José Jiménez
 
+
 Accessors Overload
-------------------
+==================
 .. csv-table:: Operator Overload
     :header: "Operator", "Method", "Remarks"
     :widths: 15, 45, 40
 
-    "``a(b)``",      "``a.__call__(b)``"
-    "``a[b]``",      "``a.__getitem__(b)``"
-    "``del a[b]``",  "``a.__delitem__(b)``"
-    "``a[b]``",      "``a.__missing__(b)``", "(when ``b`` is not in ``a``)"
-    "``a[b] = 10``", "``a.__setitem__(b, 10)``"
-    "``b in a``",    "``a.__contains__(b)``"
+    "``obj(x)``",      "``obj.__call__(x)``"
+    "``obj[x]``",      "``obj.__getitem__(x)``"
+    "``obj[x]``",      "``obj.__missing__(x)``", "(when ``x`` is not in ``obj``)"
+    "``obj[x] = 10``", "``obj.__setitem__(x, 10)``"
+    "``del obj[x]``",  "``obj.__delitem__(x)``"
+    "``x in obj``",    "``obj.__contains__(x)``"
 
 .. code-block:: python
 
-    my_dict = dict()
+    data = dict()
 
-    my_dict['a'] = 10
-    # my_dict.__setitem__('a', 10) -> None
+    data['a'] = 10
+    # data.__setitem__('a', 10) -> None
 
-    my_dict['a']
-    # my_dict.__getitem__('a') -> 10
+    data['a']
+    # data.__getitem__('a') -> 10
 
-    my_dict['x']
-    # my_dict.__getitem__('x') -> my_dict.__missing__() -> KeyError: 'x'
+    data['x']
+    # data.__getitem__('x') -> data.__missing__() -> KeyError: 'x'
 
-    my_dict()
-    # my_dict.__call__() -> TypeError: 'dict' object is not callable
+    data()
+    # data.__call__() -> TypeError: 'dict' object is not callable
 
 .. code-block:: python
     :caption: Contains in ``numpy``
 
     import numpy as np
 
-    a = np.array([[1, 2, 3],
-                  [4, 5, 6]])
+    data = np.array([[1, 2, 3],
+                     [4, 5, 6]])
 
-    a[1][2]  # 6
-    a[1,2]   # 6
+    data[1][2]  # 6
+    data[1,2]   # 6
 
 .. code-block:: python
     :caption: Intuitive implementation of numpy ``array[row,col]`` accessor
@@ -250,31 +289,48 @@ Accessors Overload
                 return super().__getitem__(key)
 
             if isinstance(key, tuple):
-                row = key[0]
-                col = key[1]
                 return super().__getitem__(row).__getitem__(col)
 
             if isinstance(key, slice):
-                start = key[0]
-                stop = key[1]
-                step = key[2] if key[2] else 0
+                start = key[0] if key[0] else 0
+                stop = key[1] if key[0] else len(self)
+                step = key[2] if key[2] else 1
                 return ...
 
 
-    a[1]
-    # a.__getitem__(1)
+    data[1]
+    # data.__getitem__(1)
 
-    a[1,2]
-    # a.__getitem__((1,2))
+    data[1,2]
+    # data.__getitem__((1,2))
 
-    a[1:2]
-    # a.__getitem__(1:2)
+    data[1:2]
+    # data.__getitem__(1:2)
+
+    data[:, 2]
+    # data.__getitem__((:, 1))
 
 .. code-block:: python
 
     class Cache(dict):
         def __missing__(self, key):
             ...
+
+Use Case
+========
+.. code-block:: python
+
+    dragon @ Position(x=50, y=120)
+    dragon >> Position(x=50, y=120)
+
+.. code-block:: python
+
+    dragon < Damage(20)
+    dragon > Damage(20)
+
+.. code-block:: python
+
+    hero["gold"] += dragon["gold"]
 
 
 Further Reading
