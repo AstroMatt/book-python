@@ -382,6 +382,17 @@ OOP Inheritance Simple
     #. Stwórz klasę ``Woman``, która dziedziczy po ``Venus``
     #. Stwórz klasę ``Man``, która dziedziczy po ``Mars``
 
+:Output:
+    .. code-block:: text
+
+        >>> from inspect import isclass
+        >>> assert isclass(Venus)
+        >>> assert isclass(Woman)
+        >>> assert isclass(Mars)
+        >>> assert isclass(Man)
+        >>> assert issubclass(Woman, Venus)
+        >>> assert issubclass(Man, Mars)
+
 OOP Inheritance Multiple
 ------------------------
 * Assignment name: OOP Inheritance Multiple

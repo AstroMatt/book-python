@@ -9,7 +9,7 @@ Relations
 
 .. code-block:: python
 
-    from typing import Sequence, List
+    from typing import Sequence
 
 
     class Mission:
@@ -33,6 +33,68 @@ Relations
 
         Astronaut('Melissa Lewis'),
     ]
+
+
+Serialization
+=============
+* ``pickle`` - has relations
+* ``json`` - has relations
+* ``csv`` - non-relational format
+
+
+.. figure:: img/oop-relations-serialize-dbdump.png
+    :scale: 30%
+    :align: center
+
+    Relational files or database dump
+
+.. figure:: img/oop-relations-serialize-ffill1.png
+    :scale: 30%
+    :align: center
+
+    Ffill - Forward fill
+
+.. figure:: img/oop-relations-serialize-ffill2.png
+    :scale: 30%
+    :align: center
+
+    Fill in specified columns
+
+.. figure:: img/oop-relations-serialize-uniqid.png
+    :scale: 30%
+    :align: center
+
+    Data duplication with unique ID
+
+.. figure:: img/oop-relations-serialize-colattr.png
+    :scale: 30%
+    :align: center
+
+    Each relations attribute adds one column
+
+.. figure:: img/oop-relations-serialize-colobj.png
+    :scale: 30%
+    :align: center
+
+    Each relations instance adds one column
+
+.. figure:: img/oop-relations-serialize-colcls.png
+    :scale: 30%
+    :align: center
+
+    Each relations class adds one column
+
+.. figure:: img/oop-relations-serialize-split.png
+    :scale: 30%
+    :align: center
+
+    Relations attributes split into columns
+
+.. figure:: img/oop-relations-serialize-hybrid.png
+    :scale: 30%
+    :align: center
+
+    Hybrid compact and separate columns
 
 
 Assignments

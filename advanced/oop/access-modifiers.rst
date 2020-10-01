@@ -303,7 +303,6 @@ OOP Attribute Access Dict
 
     #. Initialize instances with ``features`` using ``*args`` notation
     #. Print instance class name and then both sum and mean
-    #. Format output to receive a table as shown in output data
     #. Compare result with "Output" section (see below)
 
 :Polish:
@@ -318,14 +317,11 @@ OOP Attribute Access Dict
         * jeżeli ``species`` jest "virginica" to dodaj instancję klasy ``Virginica``
 
     #. Instancje inicjalizuj danymi z ``features`` używając notacji ``*args``
-    #. Wypisz nazwę stworzonej klasy oraz sumę i średnią z pomiarów
-    #. Wynik sformatuj aby wyglądał jak tabelka z danych wyjściowych
+    #. Wypisz nazwę stworzonej klasy oraz średnią z pomiarów
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. code-block:: python
-        :caption: Iris sample dataset
-        :name: listing-oop-classes
 
         DATA = [
             ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
@@ -335,21 +331,6 @@ OOP Attribute Access Dict
             (6.3, 2.9, 5.6, 1.8, 'virginica'),
             (6.4, 3.2, 4.5, 1.5, 'versicolor'),
             (4.7, 3.2, 1.3, 0.2, 'setosa'),
-            (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-            (7.6, 3.0, 6.6, 2.1, 'virginica'),
-            (4.9, 3.0, 1.4, 0.2, 'setosa'),
-            (4.9, 2.5, 4.5, 1.7, 'virginica'),
-            (7.1, 3.0, 5.9, 2.1, 'virginica'),
-            (4.6, 3.4, 1.4, 0.3, 'setosa'),
-            (5.4, 3.9, 1.7, 0.4, 'setosa'),
-            (5.7, 2.8, 4.5, 1.3, 'versicolor'),
-            (5.0, 3.6, 1.4, 0.3, 'setosa'),
-            (5.5, 2.3, 4.0, 1.3, 'versicolor'),
-            (6.5, 3.0, 5.8, 2.2, 'virginica'),
-            (6.5, 2.8, 4.6, 1.5, 'versicolor'),
-            (6.3, 3.3, 6.0, 2.5, 'virginica'),
-            (6.9, 3.1, 4.9, 1.5, 'versicolor'),
-            (4.6, 3.1, 1.5, 0.2, 'setosa'),
         ]
 
         class Iris:
@@ -362,14 +343,11 @@ OOP Attribute Access Dict
             def __repr__(self):
                 raise NotImplementedError
 
-            def length(self):
-                raise NotImplementedError
-
-            def sum(self):
+            def values(self):
                 raise NotImplementedError
 
             def mean(self):
-                raise NotImplementedError
+                return sum(self.values()) / len(self.values())
 
 
         class Setosa(Iris):
@@ -381,39 +359,16 @@ OOP Attribute Access Dict
         class Virginica(Iris):
             pass
 
-
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        print('Species    Total   Avg')
-        print('-' * 22)
-
-        print(result)
-        # Species    Total   Avg
-        # ----------------------
-        # [
-        #  Virginica  15.5  3.88,
-        #     Setosa  10.2  2.55,
-        # Versicolor  13.9  3.48,
-        #  Virginica  16.6  4.15,
-        # Versicolor  15.6  3.90,
-        #     Setosa   9.4  2.35,
-        # Versicolor  16.3  4.07,
-        #  Virginica  19.3  4.83,
-        #     Setosa   9.5  2.38,
-        #  Virginica  13.6  3.40,
-        #  Virginica  18.1  4.53,
-        #     Setosa   9.7  2.43,
-        #     Setosa  11.4  2.85,
-        # Versicolor  14.3  3.58,
-        #     Setosa  10.3  2.58,
-        # Versicolor  13.1  3.28,
-        #  Virginica  17.5  4.38,
-        # Versicolor  15.4  3.85,
-        #  Virginica  18.1  4.53,
-        # Versicolor  16.4  4.10,
-        #     Setosa   9.4  2.35]
-
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        [{'name': 'Virginica',  'mean': 3.88},
+         {'name': 'Setosa',     'mean': 2.55},
+         {'name': 'Versicolor', 'mean': 3.48},
+         {'name': 'Virginica',  'mean': 4.15},
+         {'name': 'Versicolor', 'mean': 3.9},
+         {'name': 'Setosa',     'mean': 2.35}]
 
 :Hints:
     * ``self.__class__.__name__``

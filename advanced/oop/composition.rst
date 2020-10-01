@@ -177,7 +177,7 @@ OOP Composition Mars
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 8 lines
-* Estimated time of completion: 5 min
+* Estimated time of completion: 3 min
 * Solution: :download:`solution/oop_composition_mars.py`
 
 :English:
@@ -185,33 +185,61 @@ OOP Composition Mars
     #. Create class ``Rocket``
     #. Create class ``Astronaut``
     #. Compose class ``MarsMission`` from ``Habitat``, ``Rocket``, ``Astronaut``
+    #. Assignment demonstrates syntax, so do not add any attributes and methods
 
 :Polish:
     #. Stwórz klasę ``Habitat``
     #. Stwórz klasę ``Rocket``
     #. Stwórz klasę ``Astronaut``
     #. Skomponuj klasę ``MarsMission`` z ``Habitat``, ``Rocket``, ``Astronaut``
+    #. Zadanie demonstruje skłądnię, nie dodawaj żadnych atrybutów i metod
 
-OOP Composition Moveable
+:Output:
+    .. code-block:: text
+
+        >>> from inspect import isclass
+        >>> assert isclass(Habitat)
+        >>> assert isclass(Astronaut)
+        >>> assert isclass(Rocket)
+        >>> assert isclass(MarsMission)
+        >>> assert issubclass(MarsMission, Habitat)
+        >>> assert issubclass(MarsMission, Astronaut)
+        >>> assert issubclass(MarsMission, Rocket)
+
+OOP Composition Movable
 ------------------------
-* Assignment name: OOP Composition Moveable
+* Assignment name: OOP Composition Movable
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 20 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/oop_composition_moveable.py`
+* Solution: :download:`solution/oop_composition_movable.py`
 
 :English:
-    .. todo:: English Translation
+    #. Define class ``Point``
+    #. Class ``Point`` has attibutes ``x: int = 0`` and ``y: int = 0``
+    #. When ``x`` or ``y`` has negative value raise en exception ``ValueError('Coordinate cannot be negative')``
+    #. Define class ``Movable``
+    #. In ``Movable`` define method ``get_position(self) -> Point``
+    #. In ``Movable`` define method ``set_position(self, x: int, y: int) -> None``
+    #. In ``Movable`` define method ``change_position(self, left: int = 0, right: int = 0, up: int = 0, down: int = 0) -> None``
+    #. Assume left-top screen corner as a initial coordinates position:
+
+        #. going right add to ``x``
+        #. going left subtract from ``x``
+        #. going up subtract from ``y``
+        #. going down add to ``y``
+
+    #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Stwórz niemutowalną klasę ``Point``
-    #. Klasa ``Point`` ma ``x: int`` oraz ``y: int``
-    #. Gdy ``x`` lub ``y`` są ujemne (podnieś ``ValueError``)
-    #. Stwórz klasę ``Movable``
-    #. W klasie ``Movable`` zdefiniuj metodę ``get_position() -> Point``
-    #. W klasie ``Movable`` zdefiniuj metodę ``set_position(x: int, y: int) -> NoReturn``
-    #. W klasie ``Movable`` zdefiniuj metodę ``change_position(left: int = 0, right: int = 0, up: int = 0, down: int = 0)``
+    #. Zdefiniuj klasę ``Point``
+    #. Klasa ``Point`` ma atrybuty ``x: int = 0`` oraz ``y: int = 0``
+    #. Gdy ``x`` lub ``y`` mają wartość ujemną podnieś wyjątek ``ValueError('Coordinate cannot be negative')``
+    #. Zdefiniuj klasę ``Movable``
+    #. W ``Movable`` zdefiniuj metodę ``get_position(self) -> Point``
+    #. W ``Movable`` zdefiniuj metodę ``set_position(self, x: int, y: int) -> None``
+    #. W ``Movable`` zdefiniuj metodę ``change_position(self, left: int = 0, right: int = 0, up: int = 0, down: int = 0) -> None``
     #. Przyjmij górny lewy róg ekranu za punkt początkowy:
 
         * idąc w prawo dodajesz ``x``
@@ -219,39 +247,60 @@ OOP Composition Moveable
         * idąc w górę odejmujesz ``y``
         * idąc w dół dodajesz ``y``
 
-    #. Testy muszą przechodzić
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
-:Tests:
-    .. code-block:: python
+:Output:
+    .. code-block:: text
 
-        """
+        >>> from inspect import isclass, ismethod
+        >>> assert isclass(Point)
+        >>> assert isclass(Moveable)
+        >>> assert hasattr(Point, 'x')
+        >>> assert hasattr(Point, 'y')
+        >>> assert hasattr(Moveable, 'get_position')
+        >>> assert hasattr(Moveable, 'set_position')
+        >>> assert hasattr(Moveable, 'change_position')
+        >>> assert ismethod(Moveable().get_position)
+        >>> assert ismethod(Moveable().set_position)
+        >>> assert ismethod(Moveable().change_position)
+
         >>> class Astronaut(Moveable):
         ...     pass
 
         >>> astro = Astronaut()
-        >>> astro.get_position()
-        Point(x=0, y=0)
 
-        >>> astro.change_position(right=10)
+        >>> astro.set_position(x=1, y=2)
         >>> astro.get_position()
-        Point(x=10, y=0)
+        Point(x=1, y=2)
 
-        >>> astro.change_position(left=5)
+        >>> astro.set_position(x=1, y=1)
+        >>> astro.change_position(right=1)
         >>> astro.get_position()
-        Point(x=5, y=0)
+        Point(x=2, y=1)
 
-        >>> astro.change_position(down=10)
+        >>> astro.set_position(x=1, y=1)
+        >>> astro.change_position(left=1)
         >>> astro.get_position()
-        Point(x=5, y=10)
+        Point(x=0, y=1)
 
-        >>> astro.change_position(up=5)
+        >>> astro.set_position(x=1, y=1)
+        >>> astro.change_position(down=1)
         >>> astro.get_position()
-        Point(x=5, y=5)
+        Point(x=1, y=2)
 
-        >>> astro.set_position(x=0, y=0)
+        >>> astro.set_position(x=1, y=1)
+        >>> astro.change_position(up=1)
         >>> astro.get_position()
-        Point(x=0, y=0)
-        """
+        Point(x=1, y=0)
 
-:Hints:
-    * ``@dataclass(frozen=True)``
+        >>> astro.set_position(x=1, y=1)
+        >>> astro.change_position(left=2)
+        Traceback (most recent call last):
+            ...
+        ValueError: Coordinate cannot be negative
+
+        >>> astro.set_position(x=1, y=1)
+        >>> astro.change_position(up=2)
+        Traceback (most recent call last):
+            ...
+        ValueError: Coordinate cannot be negative
