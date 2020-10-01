@@ -468,6 +468,63 @@ Parsing Non-CSV Files
     # {'property': 'sonar.verbose', 'value': 'true'}
 
 
+Serialization
+=============
+.. figure:: img/csv-relations-serialize-dbdump.png
+    :scale: 30%
+    :align: center
+
+    Relational files or database dump
+
+.. figure:: img/csv-relations-serialize-ffill1.png
+    :scale: 30%
+    :align: center
+
+    Ffill - Forward fill
+
+.. figure:: img/csv-relations-serialize-ffill2.png
+    :scale: 30%
+    :align: center
+
+    Fill in specified columns
+
+.. figure:: img/csv-relations-serialize-uniqid.png
+    :scale: 30%
+    :align: center
+
+    Data duplication with unique ID
+
+.. figure:: img/csv-relations-serialize-colattr.png
+    :scale: 30%
+    :align: center
+
+    Each relations attribute adds one column
+
+.. figure:: img/csv-relations-serialize-colobj.png
+    :scale: 30%
+    :align: center
+
+    Each relations instance adds one column
+
+.. figure:: img/csv-relations-serialize-colcls.png
+    :scale: 30%
+    :align: center
+
+    Each relations class adds one column
+
+.. figure:: img/csv-relations-serialize-split.png
+    :scale: 30%
+    :align: center
+
+    Relations attributes split into columns
+
+.. figure:: img/csv-relations-serialize-hybrid.png
+    :scale: 30%
+    :align: center
+
+    Hybrid compact and separate columns
+
+
 Good Practices
 ==============
 * Always specify:

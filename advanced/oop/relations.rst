@@ -41,7 +41,6 @@ Serialization
 * ``json`` - has relations
 * ``csv`` - non-relational format
 
-
 .. figure:: img/oop-relations-serialize-dbdump.png
     :scale: 30%
     :align: center
