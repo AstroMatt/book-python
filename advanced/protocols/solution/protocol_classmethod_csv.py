@@ -1,54 +1,45 @@
+"""
+>>> mark = Astronaut('Mark', 'Watney')
+>>> jan = Cosmonaut('Jan', 'Twardowski')
+>>> csv = mark.to_csv() + jan.to_csv()
+
+>>> with open('_temporary.txt', mode='wt') as file:
+...    file.writelines(csv)
+
+>>> result = []
+>>> with open('_temporary.txt', mode='rt') as file:
+...     lines = file.readlines()
+...     result += [Astronaut.from_csv(lines[0])]
+...     result += [Cosmonaut.from_csv(lines[1])]
+
+>>> result  # doctest: +NORMALIZE_WHITESPACE
+[Astronaut(firstname='Mark', lastname='Watney'),
+ Cosmonaut(firstname='Jan', lastname='Twardowski')]
+"""
+
 from dataclasses import dataclass
-from pprint import pprint
+from typing import Union
 
 
 class CSVMixin:
-    def to_csv(self):
-        return ','.join(self.__dict__.values())
+    def to_csv(self) -> str:
+        return ','.join(str(x) for x in self.__dict__.values()) + '\n'
 
     @classmethod
-    def from_csv(cls, data):
-        return cls(*data.split(','))
+    def from_csv(cls, text: str) -> Union['Astronaut', 'Cosmonaut']:
+        data = text.strip().split(',')
+        return cls(*data)
 
 
 @dataclass
-class Person:
+class Human:
     firstname: str
     lastname: str
 
 
-class Astronaut(Person, CSVMixin):
+class Astronaut(Human, CSVMixin):
     pass
 
 
-class Cosmonaut(Person, CSVMixin):
+class Cosmonaut(Human, CSVMixin):
     pass
-
-
-
-
-FILE = r'/tmp/protocol-classmethod.csv'
-
-watney = Astronaut('Mark', 'Watney')
-twardowski = Cosmonaut('Jan', 'Twardowski')
-
-with open(FILE, mode='wt') as file:
-    file.write(watney.to_csv() + '\n')
-    file.write(twardowski.to_csv() + '\n')
-
-del watney
-del twardowski
-
-result = []
-
-with open(FILE, mode='rt') as file:
-    line1 = file.readline().strip()
-    line2 = file.readline().strip()
-
-    result.append(Astronaut.from_csv(line1))
-    result.append(Cosmonaut.from_csv(line2))
-
-
-pprint(result)
-# [Astronaut(firstname='Mark', lastname='Watney'),
-#  Cosmonaut(firstname='Jan', lastname='Twardowski')]

@@ -187,59 +187,74 @@ Protocol Classmethod CSV
 * Assignment name: Protocol Classmethod CSV
 * Last update: 2020-10-02
 * Complexity level: easy
-* Lines of code to write: 15 lines
+* Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/protocol_classmethod_csv.py`
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Model class based on input data
-    #. Create class ``CSVMixin`` with methods ``.to_csv()`` and ``.from_csv()``
-    #. Use ``@classmethod`` decorator
-    #. Create instances for input data
-    #. Dump instances data to CSV
-    #. Restore intances from CSV
-    #. Take care only about data, do not mind the header
+    #. To class ``CSVMixin`` add methods:
+
+        * ``to_csv(self) -> str``
+        * ``from_csv(self, text: str) -> Union['Astronaut', 'Cosmonaut']``
+
+    #. ``CSVMixin.to_csv()`` should return attibute values separated with coma
+    #. ``CSVMixin.from_csv()`` should return instance of a class on which it was called
+    #. Use ``@classmethod`` decorator in proper place
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Zamodeluj klasę na podstawie danych wejściowych
-    #. Stwórz klasę ``CSVMixin`` z metodami ``.to_csv()`` i ``.from_csv()``
-    #. Użyj dekoratora ``@classmethod``
-    #. Stwórz instancje obu klas wejściowych
-    #. Zrzuć dane obu instancji do pliku CSV ``protocol-classmethod.csv``
-    #. Pierwszą linią ma być Astronaut Mark Watney
-    #. Drugą linią ma być Cosmonaut Jan Twardowski
-    #. Przywróć instancje z CSV
-    #. Zatroszcz się tylko danymi, nie przejmuj się nagłówkiem
+    #. Do klasy ``CSVMixin`` dodaj metody:
+
+        * ``to_csv(self) -> str``
+        * ``from_csv(self, text: str) -> Union['Astronaut', 'Cosmonaut']``
+
+    #. ``CSVMixin.to_csv()`` powinna zwracać wartości atrybutów klasy rozdzielone po przecinku
+    #. ``CSVMixin.from_csv()`` powinna zwracać instancje klasy na której została wywołana
+    #. Użyj dekoratora ``@classmethod`` w odpowiednim miejscu
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. code-block:: python
 
-        FILE = r'protocol-classmethod.csv'
+        from dataclasses import dataclass
 
-        watney = Astronaut('Mark', 'Watney')
-        twardowski = Cosmonaut('Jan', 'Twardowski')
 
-        with open(FILE, mode='wt') as file:
-            file.write(line1 + '\n')
-            file.write(line2 + '\n')
+        class CSVMixin:
+            raise NotImplementedError
 
-        del watney
-        del twardowski
 
-        result = []
+        @dataclass
+        class Human:
+            firstname: str
+            lastname: str
 
-        with open(FILE, mode='rt') as file:
-            line1 = file.readline().strip()
-            line2 = file.readline().strip()
-            ...
+        class Astronaut(Human, CSVMixin):
+            pass
+
+        class Cosmonaut(Human, CSVMixin):
+            pass
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        from pprint import pprint
+        >>> mark = Astronaut('Mark', 'Watney')
+        >>> jan = Cosmonaut('Jan', 'Twardowski')
+        >>> csv = mark.to_csv() + jan.to_csv()
 
-        pprint(result)
-        # [Astronaut(firstname='Mark', lastname='Watney'),
-        #  Cosmonaut(firstname='Jan', lastname='Twardowski')]
+        >>> with open('_temporary.txt', mode='wt') as file:
+        ...    file.writelines(csv)
+
+        >>> result = []
+        >>> with open('_temporary.txt', mode='rt') as file:
+        ...     lines = file.readlines()
+        ...     result += [Astronaut.from_csv(lines[0])]
+        ...     result += [Cosmonaut.from_csv(lines[1])]
+
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        [Astronaut(firstname='Mark', lastname='Watney'),
+         Cosmonaut(firstname='Jan', lastname='Twardowski')]
+
+:Hint:
+    * ``CSVMixin.to_csv()`` should add newline ``\n`` at the end of line

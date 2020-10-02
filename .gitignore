@@ -1,6 +1,9 @@
 ## Temporary
 _tmp/
 */_tmp*.py
+_temporary.txt
+*/_temporary.txt
+**/_temporary.txt
 
 ## Compiled and environmental
 __pycache__/
