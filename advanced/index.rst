@@ -70,6 +70,7 @@ Object Oriented Programming
     oop/constructor.rst
     oop/slots.rst
     oop/metaclass.rst
+    oop/solid.rst
     oop/good-practices.rst
 
 *************

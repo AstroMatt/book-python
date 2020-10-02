@@ -4,22 +4,34 @@ Slots
 *****
 
 
-.. highlights::
-    * faster attribute access
-    * space savings in memory
+Rationale
+=========
+* Faster attribute access
+* Space savings in memory (overhead of dict for every object)
+* Prevents from adding new attibutes
+* The space savings is from:
+* Store value references in slots instead of ``__dict__``
+* Denying ``__dict__`` and ``__weakref__`` creation if parent classes deny them and you declare ``__slots__``
 
-Instead of having a dynamic dict that allows adding attributes to objects at anytime, there is a static structure which does not allow additions after creation. This saves the overhead of one dict for every object that uses slots
+.. code-block:: python
 
-Unfortunately there is a side effect to slots. They change the behavior of the objects that have slots in a way that can be abused by control freaks and static typing weenies. This is bad, because the control freaks should be abusing the metaclasses and the static typing weenies should be abusing decorators, since in Python, there should be only one obvious way of doing something.
-
-The space savings is from:
-
-    * Storing value references in slots instead of ``__dict__``.
-    * Denying ``__dict__`` and ``__weakref__`` creation if parent classes deny them and you declare ``__slots__``.
+    class Astronaut:
+        __slots__ = ('firstname', 'lastname')
 
 
-Using
-=====
+    astro = Astronaut()
+
+    astro.firstname = 'Mark'
+    astro.lastname = 'Watney'
+
+    astro.mission = 'Ares 3'
+    # Traceback (most recent call last):
+    #     ...
+    # AttributeError: 'Astronaut' object has no attribute 'mission'
+
+
+Example
+=======
 .. code-block:: python
 
     class Astronaut:
@@ -36,70 +48,119 @@ Using
 .. code-block:: python
 
     class Astronaut:
-        __slots__ = ('firstname',)
+        __slots__ = ('name',)
 
 
     astro = Astronaut()
 
-    astro.firstname = 'Mark'
-    astro.lastname = 'Watney'
+    astro.name = 'Mark Watney'
+    astro.mission = 'Ares 3'
     # Traceback (most recent call last):
     #     ...
-    # AttributeError: 'Astronaut' object has no attribute 'lastname'
+    # AttributeError: 'Astronaut' object has no attribute 'mission'
 
 
 ``__slots__`` and ``__dict__``
 ==============================
+* Using ``__slots__`` will prevent from creating ``__dict__``
+
 .. code-block:: python
-    :caption: Using ``__slots__`` will prevent from creating ``__dict__``
 
     class Astronaut:
-        __slots__ = ('firstname', 'lastname')
+        __slots__ = ('name',)
 
 
     astro = Astronaut()
-    astro.firstname = 'Mark'    # will use __slots__
-    astro.lastname = 'Watney'   # will use __slots__
+    astro.name = 'Mark Watney'
 
     print(astro.__slots__)
-    # ('firstname', 'lastname')
+    # ('name',)
 
     print(astro.__dict__)
+    # Traceback (most recent call last):
+    #     ...
     # AttributeError: 'Astronaut' object has no attribute '__dict__'
 
 .. code-block:: python
 
     class Astronaut:
-        __slots__ = ('__dict__', 'firstname')
+        __slots__ = ('__dict__', 'name')
 
 
     astro = Astronaut()
-    astro.firstname = 'Mark'   # will use __slots__
-    astro.lastname = 'Watney'  # not in __slots__, will use __dict__
+    astro.name = 'Mark Watney'   # will use __slots__
+    astro.mission = 'Ares 3'     # will use __dict__
 
     print(astro.__slots__)
-    # ('__dict__', 'firstname')
+    # ('__dict__', 'name')
 
     print(astro.__dict__)
-    # {'lastname': 'Watney'}
+    # {'mission': 'Ares 3'}
+
+
+Slots and Methods
+=================
+.. code-block:: python
+
+    class Astronaut:
+        __slots__ = ('name',)
+
+        def say_hello(self):
+            print(f'My name... {self.name}')
+
+
+    astro = Astronaut()
+    astro.name = 'Mark Watney'
+    astro.say_hello()
+
+
+Slots and Init
+==============
+.. code-block:: python
+
+    class Astronaut:
+        __slots__ = ('name',)
+
+        def __init__(self, name)
+            self.name = name
+
+
+    astro = Astronaut('Mark Watney')
+    print(astro.name)
+    # Mark Watney
+
+.. code-block:: python
+
+    class Astronaut:
+        __slots__ = ('name',)
+
+        def __init__(self, name, mission):
+            self.name = name
+            self.mission = mission
+
+
+    astro = Astronaut('Mark Watney', 'Ares 3')
+    # Traceback (most recent call last):
+    #    ...
+    # AttributeError: 'Astronaut' object has no attribute 'mission'
 
 
 Inheritance
 ===========
+* Slots do not inherit, unless they are specified in subclass
 * Slots are added on inheritance
 
 .. code-block:: python
 
     class Pilot:
-        __slots__ = ('firstname', 'lastname')
+        __slots__ = ('name',)
 
     class Astronaut(Pilot):
         pass
 
 
     astro = Astronaut()
-    astro.firstname = 'Mark'
-    astro.lastname = 'Watney'
+    astro.name = 'Mark Watney'
     astro.mission = 'Ares 3'
 
     print(astro.mission)
@@ -108,15 +169,14 @@ Inheritance
 .. code-block:: python
 
     class Pilot:
-        __slots__ = ('firstname', 'lastname')
+        __slots__ = ('name',)
 
     class Astronaut(Pilot):
-        __slots__ = ('firstname', 'firstname', 'mission')
+        __slots__ = ('name', 'mission')
 
 
     astro = Astronaut()
-    astro.firstname = 'Mark'
-    astro.lastname = 'Watney'
+    astro.firstname = 'Mark Watney'
     astro.mission = 'Ares 3'
     astro.rank = 'Senior'
     # Traceback (most recent call last):
@@ -126,7 +186,7 @@ Inheritance
 .. code-block:: python
 
     class Pilot:
-        __slots__ = ('firstname', 'lastname')
+        __slots__ = ('name',)
 
 
     class Astronaut(Pilot):
@@ -134,8 +194,7 @@ Inheritance
 
 
     astro = Astronaut()
-    astro.firstname = 'Mark'
-    astro.lastname = 'Watney'
+    astro.name = 'Mark Watney'
     astro.mission = 'Ares 3'
     astro.rank = 'Senior'
     # Traceback (most recent call last):
@@ -143,8 +202,8 @@ Inheritance
     # AttributeError: 'Astronaut' object has no attribute 'rank'
 
 
-Examples
-========
+Use Cases
+=========
 .. code-block:: python
 
     class Astronaut:
@@ -189,19 +248,29 @@ OOP Slots Define
 * Solution: :download:`solution/oop_slots_define.py`
 
 :English:
-    .. todo:: English translation
-
+    #. Use code from "Input" section (see below)
+    #. Define class ``Iris`` with attributes: ``sepal_length, sepal_width, petal_length, petal_width, species``
+    #. All attributes must be in ``__slots__``
+    #. Define method ``__repr__`` which prints class name and all values positionally, ie. ``Iris(5.8, 2.7, 5.1, 1.9, 'virginica')``
+    #. Define ``result: list[Iris]``
+    #. Iterate over ``DATA`` rows
+    #. From row data create ``Iris`` instances and add it to ``result``
+    #. Define ``iris: Iris``
+    #. From ``result`` get element at index 0 and assign it to ``iris``
+    #. Print all attibutes and values of ``iris`` in dict format
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Zdefiniuj klasę ``Iris``
-    #. Klasa ma atrybuty: ``sepal_length, sepal_width, petal_length, petal_width, species``
-    #. Atrybuty mają być w ``__slots__``
+    #. Użyj kodu z sekcji "Input" (patrz poniżej)
+    #. Zdefiniuj klasę ``Iris`` z atrybutami: ``sepal_length, sepal_width, petal_length, petal_width, species``
+    #. Wszystkie atrybuty muszą być w ``__slots__``
     #. Zdefiniuj metodę ``__repr__`` wypisującą nazwę klasy i wszystkie wartości atrybutów pozycyjnie, np. ``Iris(5.8, 2.7, 5.1, 1.9, 'virginica')``
-    #. Iterując po ``DATA`` twórz instancje ``Iris`` na podstawie danych z wiersza
-    #. Tak tworzone insjancje dodawaj do ``result: list[Iris]``
-    #. Zdefiniuj ``iris: Iris``, który ma być pierwszym obiektem z ``result``
-    #. Wypisz wszystkie atrybuty i wartości ``iris``
+    #. Zdefiniuj ``result: list[Iris]``
+    #. Iteruj po wierszach ``DATA``
+    #. Z danych z wiersza twórz instancje ``Iris`` i dodaj ją do ``result``
+    #. Zdefiniuj ``iris: Iris``
+    #. Z ``result`` wybierz element o indeksie 0 i zapiisz do ``iris``
+    #. Wypisz wszystkie atrybuty i wartości ``iris`` w formacie słownika
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:

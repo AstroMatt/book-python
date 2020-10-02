@@ -1,8 +1,13 @@
-.. _Iterators:
+.. _OOP Iterator:
 
-*********
-Iterators
-*********
+********
+Iterator
+********
+
+
+Rationale
+=========
+* Used for iterating in a ``for`` loop
 
 
 Protocol
@@ -28,8 +33,8 @@ Protocol
             return element
 
 
-Mechanism
-=========
+Example
+=======
 .. code-block:: python
     :caption: For loop
 

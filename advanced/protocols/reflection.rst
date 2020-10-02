@@ -1,3 +1,5 @@
+.. _OOP Reflection:
+
 **********
 Reflection
 **********
@@ -6,23 +8,52 @@ Reflection
 Rationale
 =========
 * Act on accessing an attribute
-
-
-Syntax
-======
-Built-in Functions:
+* Built-in Functions:
 
     * ``setattr(obj, 'attribute_name', 'new value') -> None``
     * ``delattr(obj, 'attribute_name') -> None``
     * ``getattr(obj, 'attribute_name', 'default value') -> Any``
     * ``hasattr(obj, 'attribute_name') -> bool``
 
-Protocol:
+* Protocol:
 
-    * ``__setattr__(self, attribute_name, value)``
-    * ``__delattr__(self, attribute_name)``
-    * ``__getattr__(self, attribute_name, default)``
-    * ``__getattribute__(self, attribute_name, default)``
+    * ``__setattr__(self, attribute_name, value) -> None``
+    * ``__delattr__(self, attribute_name) -> None``
+    * ``__getattribute__(self, attribute_name, default) -> Any``
+    * ``__getattr__(self, attribute_name, default) -> Any``
+
+.. code-block:: python
+
+    class Reflection:
+
+        def __setattr__(self, attribute_name, value):
+            ...
+
+        def __delattr__(self, attribute_name):
+            ...
+
+        def __getattribute__(self, attribute_name, default):
+            ...
+
+        def __getattr__(self, attribute_name, default):
+            ...
+
+Example
+=======
+.. code-block:: python
+
+    class Immutable:
+        def __setattr__(self, name, value):
+            raise PermissionError('Immutable')
+
+.. code-block:: python
+
+    class Protected:
+        def __setattr__(self, name, value):
+            if name.startswith('_'):
+                raise PermissionError('Field is protected')
+            else:
+                return super().__setattr__(name, value)
 
 
 Set Attribute
@@ -40,7 +71,7 @@ Set Attribute
 
         def __setattr__(self, name, value):
             if name.startswith('_'):
-                raise PermissionError(f'Field is protected')
+                raise PermissionError('Field is protected')
             else:
                 return super().__setattr__(name, value)
 
@@ -70,7 +101,7 @@ Delete Attribute
 
         def __delattr__(self, name):
             if name.startswith('_'):
-                raise PermissionError(f'Field is protected')
+                raise PermissionError('Field is protected')
             else:
                 return super().__delattr__(name)
 
@@ -104,7 +135,7 @@ Get Attribute
 
         def __getattribute__(self, name):
             if name.startswith('_'):
-                raise PermissionError(f'Field is protected')
+                raise PermissionError('Field is protected')
             else:
                 return super().__getattribute__(name)
 
@@ -214,13 +245,13 @@ Examples
 
         def __getattribute__(self, name):
             if name.startswith('_'):
-                raise PermissionError(f'Field is protected')
+                raise PermissionError('Field is protected')
             else:
                 return super().__getattribute__(name)
 
         def __setattr__(self, name, value):
             if name.startswith('_'):
-                raise PermissionError(f'Field is protected')
+                raise PermissionError('Field is protected')
             else:
                 return super().__setattr__(name, value)
 

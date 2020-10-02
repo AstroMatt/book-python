@@ -3,6 +3,27 @@ Good Engineering Practises
 **************************
 
 
+Objects and instances
+=====================
+.. code-block:: python
+
+    text = str('Jan,Twardowski')
+    text.split(',')
+    # ['Jan', 'Twardowski']
+
+    text = str('Jan,Twardowski')
+    str.split(text, ',')
+    # ['Jan', 'Twardowski']
+
+.. code-block:: python
+
+    'Jan,Twardowski'.split(',')
+    # ['Jan', 'Twardowski']
+
+    str.split('Jan,Twardowski', ',')
+    # ['Jan', 'Twardowski']
+
+
 Tell - don't ask
 ================
 * Tell-Don't-Ask is a principle that helps people remember that object-orientation is about bundling data with the functions that operate on that data.
@@ -12,13 +33,13 @@ Tell - don't ask
 .. code-block:: python
     :caption: Tell - don't ask (Bad)
 
-    class Lamp:
+    class Ligt:
         status = 'off'
 
 
-    lamp = Ligt()
-    lamp.status = 'on'
-    lamp.status = 'off'
+    light = Ligt()
+    light.status = 'on'
+    light.status = 'off'
 
 .. code-block:: python
     :caption: Tell - don't ask (Good)
@@ -45,6 +66,7 @@ Tell - don't ask
 
 
     dragon = Dragon()
+
     while dragon.status == 'alive':
         ...
 
@@ -54,8 +76,9 @@ Tell - don't ask
     class Dragon:
         self.status = 'alive'
 
-        def is_alive():
-            return True
+        def is_alive(self):
+            return self.status == 'alive'
+
 
     dragon = Dragon()
 
@@ -63,219 +86,119 @@ Tell - don't ask
         ...
 
 
-Objects and instances
-=====================
-.. code-block:: python
-
-    text = str('Jan,Twardowski')
-    text.split(',')
-    # ['Jan', 'Twardowski']
-
-    text = str('Jan,Twardowski')
-    str.split(text, ',')
-    # ['Jan', 'Twardowski']
+Setter and Getter Methods
+=========================
+* This is Java way
+* Don't do that in Python
+* In Python you prefer direct attibute access
+* Use ``@property`` or Reflection methods or Descriptors
 
 .. code-block:: python
-
-    'Jan,Twardowski'.split(',')
-    # ['Jan', 'Twardowski']
-
-    str.split('Jan,Twardowski', ',')
-    # ['Jan', 'Twardowski']
-
-
-.. _OOP SOLID:
-
-S.O.L.I.D.
-==========
-
-Single responsibility principle
--------------------------------
-a class should have only a single responsibility (i.e. changes to only one part of the software's specification should be able to affect the specification of the class)
-
-The single responsibility principle is a computer programming principle that states that every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class. All its services should be narrowly aligned with that responsibility. Robert C. Martin expresses the principle as, "A class should have only one reason to change."
-
-.. code-block:: python
-
-    class Position:
-        x: int
-        y: int
-
-        def __init__(self, x=0, y=0):
-            self.set(x,y)
-
-        def set(self, x, y):
-            self.x = x
-            self.y = y
-
-        def change(self, right=0, left=0, down=0, up=0):
-            x = self.x + right - left
-            x = self.y + down - up
-            self.set(x, y)
-
-        def get(self):
-            return self._position
-
-.. code-block:: python
-
-    @dataclass
-    class Destructable:
-        _current_health: int = 0
-        _status: Status = Status.ALIVE
-
-        class IsDead(Exception):
-            pass
-
-        def __post_init__(self) -> None:
-            self._current_health = randint(self.HEALTH_MIN, self.HEALTH_MAX)
-
-        def _update_status(self) -> None:
-            if self._current_health > 0:
-                self._status = Status.ALIVE
-            else:
-                self._status = Status.DEAD
-
-        def is_dead(self) -> bool:
-            if self._status == Status.DEAD:
-                return True
-            else:
-                return False
-
-        def is_alive(self) -> bool:
-            return not self.is_dead()
-
-
-Open/closed principle
----------------------
-software entities ... should be open for extension, but closed for modification
-
-The name open/closed principle has been used in two ways.
-Both ways use generalizations (for instance, inheritance or delegate functions) to resolve the apparent dilemma, but the goals, techniques, and results are different.
-
-.. code-block:: python
-
-    class Dragon:
-        def __init__(self):
-            self.health = self._get_initial_health()
-
-
-    class DragonLevel1(Dragon):
-        def _get_initial_health(self):
-            return 10
-
-    class DragonLevel2(Dragon):
-        def _get_initial_health(self):
-            return 20
-
-
-    lvl1 = DragonLevel1()
-    lvl2 = DragonLevel2()
-
-    print(lvl1.health)
-    print(lvl2.health)
-
-Liskov substitution principle
------------------------------
-objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program. See also design by contract.
-
-Substitutability is a principle in object-oriented programming stating that, in a computer program, if S is a subtype of T, then objects of type T may be replaced with objects of type S (i.e. an object of type T may be substituted with any object of a subtype S) without altering any of the desirable properties of the program (correctness, task performed, etc.).
-
-.. code-block:: python
-    :emphasize-lines: 23
-
-    class CacheInterface:
-        def get(self, key: str) -> str:
-            raise NotImplementedError
-
-        def set(self, key: str, value: str) -> None:
-            raise NotImplementedError
-
-        def is_valid(self, key: str) -> bool:
-            raise NotImplementedError
-
-
-    class CacheDatabase(CacheInterface):
-        def is_valid(self, key: str) -> bool:
-            ...
-
-        def get(self, key: str) -> str:
-            ...
-
-        def set(self, key: str, value: str) -> None:
-            ...
-
-
-    db: CacheInterface = CacheDatabase()
-    db.set('name', 'Jan Twardowski')
-    db.is_valid('name')
-    db.get('name')
-
-Interface segregation principle
--------------------------------
-many client-specific interfaces are better than one general-purpose interface
-
-The interface-segregation principle (ISP) states that no client should be forced to depend on methods it does not use. ISP splits interfaces that are very large into smaller and more specific ones so that clients will only have to know about the methods that are of interest to them. Such shrunken interfaces are also called role interfaces. ISP is intended to keep a system decoupled and thus easier to refactor, change, and redeploy. ISP is one of the five SOLID principles of object-oriented design, similar to the High Cohesion Principle of GRASP.
-
-.. code-block:: python
-
-    class JSONSerializable:
-        def to_json(self):
-            import json
-            return json.dumps(self.__dict__)
-
-
-    class PickleSerializable:
-        def to_pickle(self):
-            import pickle
-            return pickle.dumps(self)
-
-
-    class User(JSONSerializable, PickleSerializable):
-        def __init__(self, firstname, lastname):
-            self.firstname = firstname
-            self.lastname = lastname
-
-Dependency inversion principle
-------------------------------
-one should depend upon abstractions, [not] concretions
-
-In object-oriented design, the dependency inversion principle refers to a specific form of decoupling software modules. When following this principle, the conventional dependency relationships established from high-level, policy-setting modules to low-level, dependency modules are reversed, thus rendering high-level modules independent of the low-level module implementation details. The principle states:
-
-    #. High-level modules should not depend on low-level modules. Both should depend on abstractions.
-    #. Abstractions should not depend on details. Details should depend on abstractions.
-
-By dictating that both high-level and low-level objects must depend on the same abstraction this design principle inverts the way some people may think about object-oriented programming.
-
-.. code-block:: python
-    :caption: Switch moves business logic to the execution place
-
-    watney = 'Astronaut'
-
-    if watney == 'Astronaut':
-        print('Hello')
-    elif watney == 'Cosmonaut':
-        print('Привет!')
-    elif watney == 'Taikonaut':
-        print('你好')
-    else:
-        print('Default Value')
-
-.. code-block:: python
+    :caption: Accessing class fields using setter and getter
 
     class Astronaut:
-        def say_hello():
-            print('Hello')
+        def __init__(self, name):
+            self._name = name
 
-    class Cosmonaut:
-        def say_hello():
-            print('Привет!')
+        def set_name(self, name):
+            self._name = name
 
-    class Taikonaut:
-        def say_hello():
-            print('你好')
+        def get_name(self):
+            return self._name
 
-    watney = Astronaut()
-    watney.say_hello()
+
+    astro = Astronaut()
+
+    astro.set_name('Mark Watney')
+    print(astro.get_name())
+    # Mark Watney
+
+.. code-block:: python
+    :caption: Problem with setters and getters
+
+    class MyClass:
+        def __init__(self, x, y):
+            self._x = x
+            self._y = y
+
+        def get_x(self):
+            return self._x
+
+        def set_x(self, value):
+            self._x = value
+
+        def del_x(self):
+            del self._x
+
+        def get_y(self):
+            return self._y
+
+        def set_y(self, value):
+            self._x = value
+
+        def del_y(self):
+            del self._y
+
+.. code-block:: python
+    :caption: Rationale for Setters and Getters
+
+    class Astronaut:
+        def __init__(self, name):
+            self._name = name
+
+        def set_name(self, name):
+            self._name = name.title()
+
+        def get_name(self):
+            return self._name
+
+
+    astro = Astronaut()
+    astro.set_name('JaN TwARdoWskI')
+    print(astro.get_name())
+    # Jan Twardowski
+
+.. code-block:: python
+    :caption: Rationale for Setters and Getters
+
+    class Temperature:
+        def __init__(self, kelvin):
+            self._kelvin = kelvin
+
+        def set_kelvin(self, kelvin):
+            if kelvin < 0:
+                raise ValueError('Kelvin cannot be negative')
+            else:
+                self._kelvin = kelvin
+
+    t = Temperature()
+    t.set_kelvin(-1)
+    # ValueError: Kelvin cannot be negative
+
+.. code-block:: python
+    :caption: Rationale for Setters and Getters `HabitatOS <https://www.habitatos.space>`_ Z-Wave sensor admin
+    :emphasize-lines: 9,14-20
+
+    from django.contrib import admin
+    from habitat._common.admin import HabitatAdmin
+    from habitat.sensors.models import ZWaveSensor
+
+
+    @admin.register(ZWaveSensor)
+    class ZWaveSensorAdmin(HabitatAdmin):
+        change_list_template = 'sensors/change_list_charts.html'
+        list_display = ['mission_date', 'mission_time', 'type', 'device', 'value', 'unit']
+        list_filter = ['created', 'type', 'unit', 'device']
+        search_fields = ['^date', 'device']
+        ordering = ['-datetime']
+
+        def get_list_display(self, request):
+            list_display = self.list_display
+
+            if request.user.is_superuser:
+                list_display = ['earth_datetime'] + list_display
+
+            return list_display
 
 
 GRASP

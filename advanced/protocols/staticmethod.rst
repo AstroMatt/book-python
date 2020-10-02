@@ -1,3 +1,5 @@
+.. _OOP Staticmethod:
+
 ************
 Staticmethod
 ************
@@ -12,9 +14,6 @@ Rationale
 * No need to create a class instance
 * Will not pass instance (``self``) as a first method argument
 
-
-Implementation
-==============
 .. code-block:: python
 
     class MyClass:
@@ -27,8 +26,8 @@ Implementation
      MyClass.mymethod()
 
 
-Use Case
-========
+Example
+=======
 .. code-block:: python
     :caption: Functions on a high level of a module lack namespace
 
@@ -54,12 +53,21 @@ Use Case
             return a - b
 
 
-    Calculator.add(10, 20)  # TypeError: add() missing 1 required positional argument: 'b'
-    Calculator.sub(8, 4)    # TypeError: add() missing 1 required positional argument: 'b'
+    Calculator.add(10, 20)
+    # Traceback (most recent call last):
+    #   ...
+    # TypeError: add() missing 1 required positional argument: 'b'
+
+    Calculator.sub(8, 4)
+    # Traceback (most recent call last):
+    #   ...
+    # TypeError: add() missing 1 required positional argument: 'b'
 
     calc = Calculator()
-    calc.add(1, 2)          # 3
-    calc.sub(8, 4)          # 4
+    calc.add(1, 2)
+    # 3
+    calc.sub(8, 4)
+    # 4
 
 .. code-block:: python
     :caption: Class ``Calculator`` is a namespace for functions. ``@staticmethod`` remove instance (``self``) argument to method.
@@ -79,11 +87,28 @@ Use Case
     Calculator.sub(8, 4)
 
 
-Examples
-========
+Use Cases
+=========
 
-Example 1
----------
+Http Client
+-----------
+.. code-block:: python
+
+    class http:
+
+        @staticmethod
+        def get(url):
+            ...
+
+        @staticmethod
+        def post(url, data):
+            ...
+
+    http.get('https://python.astrotech.io')
+    http.post('https://python.astrotech.io', data={'name': 'Jan'})
+
+Astronaut Say Hello
+-------------------
 .. code-block:: python
 
     def astronaut_say_hello():
@@ -98,10 +123,8 @@ Example 1
 
 
     a = Astronaut()
-
     astronaut_say_hello()
     # hello
-
     astronaut_say_goodbye()
     # 'goodbye'
 
@@ -116,12 +139,20 @@ Example 1
 
 
     a = Astronaut()
-
     a.say_hello()
     # hello
-
     a.say_goodbye()
     # 'goodbye'
+
+    Astronaut.say_hello()
+    # Traceback (most recent call last):
+    #   ...
+    # TypeError: say_hello() missing 1 required positional argument: 'self'
+
+    Astronaut.say_goodbye()
+    # Traceback (most recent call last):
+    #   ...
+    # TypeError: say_goodbye() missing 1 required positional argument: 'self'
 
 .. code-block:: python
 
@@ -142,25 +173,8 @@ Example 1
     Astronaut.say_goodbye()
     # 'goodbye'
 
-Example 2
----------
-.. code-block:: python
-
-    class http:
-
-        @staticmethod
-        def get(url):
-            ...
-
-        @staticmethod
-        def post(url, data):
-            ...
-
-    http.get('https://python.astrotech.io')
-    http.post('https://python.astrotech.io', data={'name': 'Jan'})
-
-Example 3
----------
+Helper
+------
 .. code-block:: python
     :caption: `HabitatOS <https://www.habitatos.space>`_ Z-Wave sensor model
 

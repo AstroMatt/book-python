@@ -1,6 +1,8 @@
-**********
-Properties
-**********
+.. _OOP Property:
+
+********
+Property
+********
 
 
 Rationale
@@ -10,11 +12,15 @@ Rationale
 * Check boundary
 * Raise exceptions (TypeError)
 * Check argument type
-* ``property()`` - creates property
-* ``@property`` - creates property and getter
-* ``@value.getter`` - defining getter for field (field has to be ``property``)
-* ``@value.setter`` - defining setter for field (field has to be ``property``)
-* ``@value.deleter`` - defining deleter for field (field has to be ``property``)
+
+
+Protocol
+========
+* ``value = property()`` - creates property
+* ``@value.getter`` - getter for attribute (``value`` has to be ``property``)
+* ``@value.setter`` - setter for attribute (``value`` has to be ``property``)
+* ``@value.deleter`` - deleter for attribute (``value`` has to be ``property``)
+* ``@property`` - creates property and a getter
 
 Syntax:
     .. code-block:: python
@@ -22,31 +28,83 @@ Syntax:
         class MyClass:
 
             @property
-            def attribute(self):
-                return self._attribute
+            def myattribute(self):
+                return ...
 
-Is equivalent to:
+Alternative:
+    .. code-block:: python
+
+        class MyClass:
+            myattribute = property()
+
+            @myattribute.getter
+            def myattribute(self):
+                return ...
+
+Are equivalent to:
     .. code-block:: python
 
         class MyClass:
 
-            def attribute(self):
-                return self._attribute
+            def myattribute(self):
+                return ...
 
-            attribute = property(attribute)
+            myattribute = property(myattribute)
 
 
-Setter and Getter Methods
-=========================
-* Java way
-* don't do that in Python
+Example
+=======
+.. code-block:: python
+
+    class Astronaut:
+        name = property()
+
+        def __init__(self, firstname, lastname):
+            self._firstname = firstname
+            self._lastname = lastname
+
+        @property
+        def name(self, value):
+            return f'{self.firstname} {self.lastname[0]}.'
+
+
+    astro = Astronaut('Mark', 'Watney')
+    astro.name
+    # Mark W.
+
+.. code-block:: python
+
+    class Temperature:
+        kelvin = property()
+
+        def __init__(self, kelvin=None):
+            self._kelvin = kelvin
+
+        @kelvin.setter
+        def kelvin(self, value):
+            if value < 0:
+                raise ValueError('Negative Kelvin Temperature')
+
+
+    t = Temperature()
+    t.kelvin = 10
+    t.kelvin = -1
+    # Traceback (most recent call last):
+    #     ...
+    # ValueError: Negative Kelvin Temperature
+
+
+Attribute Access
+================
+* Java way: Setter and Getter
+* Pythonic way: Properties, Reflection, Descriptors
 
 .. code-block:: python
     :caption: Accessing class fields using setter and getter
 
     class Astronaut:
         def __init__(self, name=None):
-            self.name = name
+            self._name = name
 
         def set_name(self, name):
             self._name = name
@@ -56,102 +114,9 @@ Setter and Getter Methods
 
 
     astro = Astronaut()
-
     astro.set_name('Mark Watney')
     print(astro.get_name())
     # Mark Watney
-
-.. code-block:: python
-    :caption: Problem with setters and getters
-
-    class MyClass:
-        def __init__(self):
-            self._x = None
-            self._y = None
-
-        def get_x(self):
-            return self._x
-
-        def set_x(self, value):
-            self._x = value
-
-        def del_x(self):
-            del self._x
-
-        def get_y(self):
-            return self._y
-
-        def set_y(self, value):
-            self._x = value
-
-        def del_y(self):
-            del self._y
-
-.. code-block:: python
-    :caption: Rationale for Setters and Getters
-
-    class Astronaut:
-        def __init__(self):
-            self._name = None
-
-        def set_name(self, name):
-            self._name = name.title()
-
-        def get_name(self):
-            return self._name
-
-
-    astro = Astronaut()
-    astro.set_name('JaN TwARdoWskI')
-    print(astro.get_name())
-    # Jan Twardowski
-
-.. code-block:: python
-    :caption: Rationale for Setters and Getters
-
-    class Temperature:
-        def __init__(self):
-            self._kelvin = None
-
-        def set_kelvin(self, kelvin):
-            if kelvin < 0:
-                raise ValueError('Kelvin cannot be negative')
-            else:
-                self._kelvin = kelvin
-
-    t = Temperature()
-    t.set_kelvin(-1)
-    # ValueError: Kelvin cannot be negative
-
-.. code-block:: python
-    :caption: Rationale for Setters and Getters `HabitatOS <https://www.habitatos.space>`_ Z-Wave sensor admin
-    :emphasize-lines: 9,14-20
-
-    from django.contrib import admin
-    from habitat._common.admin import HabitatAdmin
-    from habitat.sensors.models import ZWaveSensor
-
-
-    @admin.register(ZWaveSensor)
-    class ZWaveSensorAdmin(HabitatAdmin):
-        change_list_template = 'sensors/change_list_charts.html'
-        list_display = ['mission_date', 'mission_time', 'type', 'device', 'value', 'unit']
-        list_filter = ['created', 'type', 'unit', 'device']
-        search_fields = ['^date', 'device']
-        ordering = ['-datetime']
-
-        def get_list_display(self, request):
-            list_display = self.list_display
-
-            if request.user.is_superuser:
-                list_display = ['earth_datetime'] + list_display
-
-            return list_display
-
-
-Direct Attribute Access
-=======================
-* Pythonic way
 
 .. code-block:: python
     :caption: Accessing class fields. Either put ``name`` as an argument for ``__init__()`` or create dynamic field in runtime
@@ -163,81 +128,81 @@ Direct Attribute Access
 
     astro = Astronaut()
     astro.name = 'Jan Twardowski'
-
     print(astro.name)
     # Jan Twardowski
 
 
-Properties
-==========
-
 Creating properties with ``property`` class
--------------------------------------------
+===========================================
 * Property's arguments are method pointers ``get_name``, ``set_name``, ``del_name`` and a docstring
+* Don't do that
 
 .. code-block:: python
-    :caption: Properties
 
     class Astronaut:
-        def __init__(self):
-            self._protected = None
+        def __init__(self, name=None):
+            self._name = name
 
         def get_name(self):
-            return self._protected
+            return self._name
 
         def set_name(self, value):
-            self._protected = value
+            self._name = value
 
         def del_name(self):
-            del self._protected
+            del self._name
 
         name = property(get_name, set_name, del_name, "I am the 'name' property.")
 
+
 Creating properties with ``@property`` decorator
-------------------------------------------------
+================================================
+* Prefer ``name = property()``
+
 .. code-block:: python
 
     class Astronaut:
         name = property()
 
-        def __init__(self):
-            self._protected = None
+        def __init__(self, name=None):
+            self._name = name
 
         @name.getter
         def name(self):
-            return self._protected
+            return self._name
 
         @name.setter
         def name(self, value):
-            self._protected = value
+            self._name = value
 
         @name.deleter
         def name(self):
-            del self._protected
+            del self._name
 
 .. code-block:: python
-    :caption: Properties as a decorators
-    :emphasize-lines: 5-7
 
     class Astronaut:
-        def __init__(self):
-            self._protected = None
+        def __init__(self, name=None):
+            self._name = name
 
         @property
         def name(self):
-            return self._protected
+            return self._name
 
         @name.setter
         def name(self, value):
-            self._protected = value
+            self._name = value
 
         @name.deleter
         def name(self):
-            del self._protected
+            del self._name
 
 
 Use Cases
 =========
+
+Astronaut
+---------
 .. code-block:: python
 
     class Astronaut:
@@ -299,11 +264,9 @@ Use Cases
     print(astro.name)
     # None
 
-
-Examples
-========
+Temperature
+-----------
 .. code-block:: python
-    :caption: Using ``@property`` as a getter
 
     class Temperature:
         def __init__(self, initial_temperature):
@@ -322,7 +285,6 @@ Examples
     # 100
 
 .. code-block:: python
-    :caption: ``@x.setter``
 
     class Temperature:
         def __init__(self, initial_temperature):
@@ -341,18 +303,10 @@ Examples
 
 
     t = Temperature(100)
-
     t.value = -10
     # ValueError: Kelvin Temperature cannot be negative
 
-
-Deleter
--------
-* ``@value.deleter`` - for defining deleter for field ``value``
-* Require ``value`` to be ``@property``
-
 .. code-block:: python
-    :caption: ``@x.deleter``
 
     class Temperature:
         def __init__(self, initial_temperature):
