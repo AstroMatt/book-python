@@ -1,3 +1,4 @@
+
 *****
 Slots
 *****
@@ -27,6 +28,8 @@ Using
     astro = Astronaut()
 
     astro.name = 'Mark Watney'
+    # Traceback (most recent call last):
+    #     ...
     # AttributeError: 'Astronaut' object has no attribute 'name'
 
 .. code-block:: python
@@ -39,6 +42,8 @@ Using
 
     astro.firstname = 'Mark'
     astro.lastname = 'Watney'
+    # Traceback (most recent call last):
+    #     ...
     # AttributeError: 'Astronaut' object has no attribute 'lastname'
 
 
@@ -82,16 +87,19 @@ Using
 
 Inheritance
 ===========
+* Slots are inherited too
+
 .. code-block:: python
 
-    class Iris:
-        __slots__ = ('species', 'kingdom')
+    class Astronaut:
+        __slots__ = ('firstname', 'lastname')
 
-    class Setosa(Iris):
-        __slots__ = ('name',)
+    class NASAAstronaut(Iris):
+        __slots__ = ('mission',)
 
-    class Virginica(Iris):
-        __slots__ = ('species', 'kingdom', 'name')  # redundant species and kingdom
+    class ESAAstronaut(Iris):
+        # redundant 'firstname' and 'mission'
+        __slots__ = ('firstname', 'firstname', 'mission')
 
 
 Examples
@@ -158,40 +166,23 @@ Examples
         (6.3, 2.9, 5.6, 1.8, 'virginica'),
         (6.4, 3.2, 4.5, 1.5, 'versicolor'),
         (4.7, 3.2, 1.3, 0.2, 'setosa'),
-        (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-        (7.6, 3.0, 6.6, 2.1, 'virginica'),
-        (4.9, 3.0, 1.4, 0.2, 'setosa'),
-        (4.9, 2.5, 4.5, 1.7, 'virginica'),
-        (7.1, 3.0, 5.9, 2.1, 'virginica'),
-        (4.6, 3.4, 1.4, 0.3, 'setosa'),
-        (5.4, 3.9, 1.7, 0.4, 'setosa'),
-        (5.7, 2.8, 4.5, 1.3, 'versicolor'),
-        (5.0, 3.6, 1.4, 0.3, 'setosa'),
-        (5.5, 2.3, 4.0, 1.3, 'versicolor'),
-        (6.5, 3.0, 5.8, 2.2, 'virginica'),
-        (6.5, 2.8, 4.6, 1.5, 'versicolor'),
-        (6.3, 3.3, 6.0, 2.5, 'virginica'),
-        (6.9, 3.1, 4.9, 1.5, 'versicolor'),
-        (4.6, 3.1, 1.5, 0.2, 'setosa'),
     ]
 
-    resultDict = [IrisDict(*row) for row in DATA[1:]]
-    resultSlots = [IrisSlots(*row) for row in DATA[1:]]
+    result_dict = [IrisDict(*row) for row in DATA[1:]]
+    result_slots = [IrisSlots(*row) for row in DATA[1:]]
 
-    print(result)
-
-    i = result[0]
-
-    i.__dict__
+    result_slots[0].__dict__
+    # Traceback (most recent call last):
+    #     ...
     # AttributeError: 'Iris' object has no attribute '__dict__'
 
-    i.__slots__
+    result_slots[0].__slots__
     # ('sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species')
 
-    [getattr(i,x) for x in i.__slots__]
+    [getattr(i,x) for x in result_slots[0].__slots__]
     # [5.8, 2.7, 5.1, 1.9, 'virginica']
 
-    {x: getattr(i,x) for x in i.__slots__}
+    {x: getattr(i,x) for x in result_slots[0].__slots__}
     # {'sepal_length': 5.8, 'sepal_width': 2.7, 'petal_length': 5.1, 'petal_width': 1.9, 'species': 'virginica'}
 
 
