@@ -171,20 +171,50 @@ Examples
     result_dict = [IrisDict(*row) for row in DATA[1:]]
     result_slots = [IrisSlots(*row) for row in DATA[1:]]
 
-    result_slots[0].__dict__
+    d = result_dict[0]
+    s = result_slots[0]
+
+    s.__dict__
     # Traceback (most recent call last):
     #     ...
     # AttributeError: 'Iris' object has no attribute '__dict__'
 
-    result_slots[0].__slots__
+    s.__slots__
     # ('sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species')
 
-    [getattr(i,x) for x in result_slots[0].__slots__]
+    [getattr(s, x) for x in s.__slots__]
     # [5.8, 2.7, 5.1, 1.9, 'virginica']
 
-    {x: getattr(i,x) for x in result_slots[0].__slots__}
+    {x: getattr(s, x) for x in s.__slots__}
     # {'sepal_length': 5.8, 'sepal_width': 2.7, 'petal_length': 5.1, 'petal_width': 1.9, 'species': 'virginica'}
 
+    d.__dict__
+    # {'sepal_length': 5.8, 'sepal_width': 2.7, 'petal_length': 5.1, 'petal_width': 1.9, 'species': 'virginica'}
+
+    d.__slots__
+    # Traceback (most recent call last):
+    #   ...
+    # AttributeError: 'IrisDict' object has no attribute '__slots__'
+
+    [getattr(s, x) for x in s.__slots__]
+    # [5.8, 2.7, 5.1, 1.9, 'virginica']
+
+    [getattr(d, x) for x in d.__dict__]
+    # [5.8, 2.7, 5.1, 1.9, 'virginica']
+
+    {x: getattr(s, x) for x in s.__slots__}
+    # {'sepal_length': 5.8, 'sepal_width': 2.7, 'petal_length': 5.1, 'petal_width': 1.9, 'species': 'virginica'}
+
+    {x: getattr(d, x) for x in d.__slots__}
+    # Traceback (most recent call last):
+    #   ...
+    # AttributeError: 'IrisDict' object has no attribute '__slots__'
+
+    {x: getattr(d, x) for x in d.__dict__}
+    # {'sepal_length': 5.8, 'sepal_width': 2.7, 'petal_length': 5.1, 'petal_width': 1.9, 'species': 'virginica'}
+
+    d.__dict__
+    # {'sepal_length': 5.8, 'sepal_width': 2.7, 'petal_length': 5.1, 'petal_width': 1.9, 'species': 'virginica'}
 
 
 Assignments
