@@ -31,15 +31,14 @@ Example
 
     DATA = '{"firstname": "Jan", "lastname": "Twardowski"}'
 
-    # User.from_json(DATA)
+    result = User.from_json(DATA)
     # TypeError: from_json() missing 1 required positional argument: 'data'
 
-    # User().from_json(DATA)
+    result = User().from_json(DATA)
     # TypeError: __init__() missing 2 required positional arguments: 'firstname' and 'lastname'
 
     result = User(None, None).from_json(DATA)
     result = User(**result)
-
     print(result)
     # User(firstname='Jan', lastname='Twardowski')
 
@@ -95,6 +94,45 @@ Example
     print(reslt)
     # User(firstname='Jan', lastname='Twardowski')
 
+.. code-block:: python
+
+    import json
+    from dataclasses import dataclass
+
+
+    class JSONMixin:
+
+        @classmethod
+        def from_json(cls, data):
+            data = json.loads(data)
+            return cls(**data)
+
+
+    @dataclass
+    class User(JSONMixin):
+        firstname: str
+        lastname: str
+
+
+    class Guest(User, JSONMixin):
+        pass
+
+
+    class Admin(User, JSONMixin):
+        pass
+
+
+    DATA = '{"firstname": "Jan", "lastname": "Twardowski"}'
+
+    guest = Guest.from_json(DATA)
+    admin = Admin.from_json(DATA)
+
+    type(guest)     # <class '__main__.Guest'>
+    print(guest)    # Guest(firstname="Jan", lastname="Twardowski")
+
+    type(admin)     # <class '__main__.Admin'>
+    print(admin)    # Admin(firstname="Jan", lastname="Twardowski")
+
 
 Use Cases
 =========
@@ -131,55 +169,9 @@ Use Cases
 
     UTC = '1969-07-21T02:53:07Z'
 
-    now = mission_time.parse(UTC)
-    print(now.tzname)
+    dt = mission_time.parse(UTC)
+    print(dt.tzname)
     # Coordinated Mars Time
-
-
-.. code-block:: python
-
-    import json
-
-
-    class JSONMixin:
-        def to_json(self):
-            return json.dumps(self.__dict__)
-
-        @classmethod
-        def from_json(cls, data):
-            data = json.loads(data)
-            return cls(**data)
-
-
-    class User:
-        def __init__(self, firstname, lastname):
-            self.firstname = firstname
-            self.lastname = lastname
-
-        def __str__(self):
-            cls = self.__class__.__name__
-            return f'{cls}(firstname="{self.firstname}", lastname="{self.lastname}")'
-
-
-    class Guest(User, JSONMixin):
-        pass
-
-
-    class Admin(User, JSONMixin):
-        pass
-
-
-    DATA = '{"firstname": "Jan", "lastname": "Twardowski"}'
-
-    guest = Guest.from_json(DATA)
-    admin = Admin.from_json(DATA)
-
-    type(guest)     # <class '__main__.Guest'>
-    print(guest)    # Guest(firstname="Jan", lastname="Twardowski")
-
-    type(admin)     # <class '__main__.Admin'>
-    print(admin)    # Admin(firstname="Jan", lastname="Twardowski")
-
 
 
 Assignments
