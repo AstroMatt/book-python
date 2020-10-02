@@ -19,7 +19,7 @@ Protocol
 
 .. code-block:: python
 
-    class MyField:
+    class Descriptor:
         def __get__(self, parent, *args):
             return ...
 
@@ -103,22 +103,20 @@ Use Cases
 
     class Celsius:
         def __get__(self, parent, *args):
-            temp = parent._value - 273.15
-            return round(temp, 2)
+            value = parent._value - 273.15
+            return round(value, 2)
 
         def __set__(self, parent, value):
-            temp = value + 273.15
-            parent._value = temp
+            parent._value = value + 273.15
 
 
     class Fahrenheit:
         def __get__(self, parent, *args):
-            temp = (parent._value - 273.15) * 9 / 5 + 32
-            return round(temp, 2)
+            value = (parent._value - 273.15) * 9 / 5 + 32
+            return round(value, 2)
 
         def __set__(self, parent, fahrenheit):
-            temp = (fahrenheit - 32) * 5 / 9 + 273.15
-            parent._value = temp
+            parent._value = (fahrenheit - 32) * 5 / 9 + 273.15
 
 
     class Temperature:
@@ -152,8 +150,8 @@ Use Cases
     print(f'F: {t.fahrenheit}')     # 212.0
 
 .. code-block:: python
-    :caption: Timezone Conversion
-    :name: Timezone Conversion
+    :caption: Descriptor Timezone Converter
+    :name: Descriptor Timezone Converter
 
     from dataclasses import dataclass
     from datetime import datetime
