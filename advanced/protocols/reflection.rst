@@ -28,7 +28,6 @@ Protocol:
 Set Attribute
 =============
 * Called when trying to set attribute to a value
-* ``setattr(astro, 'name', 'value')`` is equivalent to ``astro.name = 'value'``
 * Call Stack:
 
     * ``astro.name = 'Mark Watney'``
@@ -41,7 +40,7 @@ Set Attribute
 
         def __setattr__(self, name, value):
             if name.startswith('_'):
-                raise PermissionError(f'Field "{name}" is protected, cannot "set" value.')
+                raise PermissionError(f'Field is protected')
             else:
                 return super().__setattr__(name, value)
 
@@ -53,13 +52,12 @@ Set Attribute
     # Mark Watney
 
     astro._salary = 100
-    # PermissionError: Field "_salary" is protected, cannot "set" value.
+    # PermissionError: Field is protected
 
 
 Delete Attribute
 ================
 * Called when trying to delete attribute
-* ``delattr(astro, 'name')`` is equivalent to ``del astro.name``
 * Call stack:
 
     * ``del astro.name``
@@ -72,7 +70,7 @@ Delete Attribute
 
         def __delattr__(self, name):
             if name.startswith('_'):
-                raise PermissionError(f'Field "{name}" is protected, cannot "delete" value.')
+                raise PermissionError(f'Field is protected')
             else:
                 return super().__delattr__(name)
 
@@ -84,31 +82,29 @@ Delete Attribute
 
     del astro.name
     del astro._salary
-    # PermissionError: Field "_salary" is protected, cannot "delete" value.
+    # PermissionError: Field is protected
 
 
 Get Attribute
 =============
 * Called for every time, when you want to access any attribute
 * Before even checking if this attribute exists
-* ``getattr(astro, 'name')`` is equivalent to ``astro.name``
-* if ``__getattribute__()`` raises ``AttributeError`` it calls ``__getattr__()``
+* If attribute is not found, then raises ``AttributeError`` and calls ``__getattr__()``
 * Call stack:
 
     * ``astro.name``
     * => ``getattr(astro, 'name')``
     * => ``astro.__getattribute__('name')``
-    * if ``astro.__getattribute__('name')`` raise ``AttributeError``
+    * if ``astro.__getattribute__('name')`` raises ``AttributeError``
     * => ``astro.__getattr__('name')``
 
 .. code-block:: python
-    :caption: Example ``__getattribute__()``
 
     class Astronaut:
 
         def __getattribute__(self, name):
             if name.startswith('_'):
-                raise PermissionError(f'Field "{name}" is protected, cannot "get" value.')
+                raise PermissionError(f'Field is protected')
             else:
                 return super().__getattribute__(name)
 
@@ -120,7 +116,7 @@ Get Attribute
     # Mark Watney
 
     print(astro._salary)
-    # PermissionError: Field "_salary" is protected, cannot "get" value.
+    # PermissionError: Field is protected
 
 
 Get Attribute if Does Not Exist
@@ -128,14 +124,13 @@ Get Attribute if Does Not Exist
 * Called whenever you request an attribute that hasn't already been defined
 * It will not execute, when attribute already exist
 * Implementing a fallback for missing attributes
-* If ``__getattribute__()`` raises ``AttributeError`` it calls ``__getattr__()``
 
 .. code-block:: python
     :caption: Example ``__getattr__()``
 
     class Astronaut:
         def __init__(self):
-            self.fullname = None
+            self.name = None
 
         def __getattr__(self, name):
             return 'Sorry, field does not exist'
@@ -154,7 +149,7 @@ Get Attribute if Does Not Exist
 
     class Astronaut:
         def __init__(self):
-            self.fullname = None
+            self.name = None
 
         def __getattribute__(self, name):
             print('Getattribute called... ')
@@ -194,20 +189,20 @@ Has Attribute
 .. code-block:: python
 
     class Astronaut:
-        def __init__(self, firstname, lastname):
-            self.firstname = firstname
-            self.lastname = lastname
+        def __init__(self, name):
+            self.name = name
 
 
-    astro = Astronaut('Mark', 'Watney')
+    astro = Astronaut('Mark Watney')
 
-    print(hasattr(astro, 'firstname'))     # True
-    print(hasattr(astro, 'lastname'))      # True
-    print(hasattr(astro, 'fullname'))      # False
+    hasattr(astro, 'name')
+    # True
 
-    astro.fullname = 'Mark Watney'
+    hasattr(astro, 'mission')
+    # False
 
-    print(hasattr(astro, 'fullname'))
+    astro.mission = 'Ares3'
+    hasattr(astro, 'mission')
     # True
 
 
@@ -219,13 +214,13 @@ Examples
 
         def __getattribute__(self, name):
             if name.startswith('_'):
-                raise PermissionError(f'Field "{name}" is protected, cannot "get" value.')
+                raise PermissionError(f'Field is protected')
             else:
                 return super().__getattribute__(name)
 
         def __setattr__(self, name, value):
             if name.startswith('_'):
-                raise PermissionError(f'Field "{name}" is protected, cannot "set" value.')
+                raise PermissionError(f'Field is protected')
             else:
                 return super().__setattr__(name, value)
 
@@ -237,14 +232,16 @@ Examples
     # Mark Watney
 
     astro._salary = 100
-    # PermissionError: Field "_salary" is protected, cannot "set" value.
+    # PermissionError: Field is protected
 
     print(astro._salary)
-    # PermissionError: Field "_salary" is protected, cannot "get" value.
+    # PermissionError: Field is protected
 
 .. code-block:: python
 
     class Temperature:
+        kelvin: float
+
         def __init__(self, kelvin):
             self.kelvin = kelvin
 
@@ -267,6 +264,10 @@ Examples
 .. code-block:: python
 
     class Temperature:
+        kelvin: float
+        celsius: float
+        fahrenheit: float
+
         def __init__(self, kelvin):
             self.kelvin = kelvin
 
@@ -296,10 +297,10 @@ Assignments
 Protocol Reflection
 -------------------
 * Assignment name: Protocol Reflection
-* Last update: 2020-10-01
+* Last update: 2020-10-02
 * Complexity level: medium
-* Lines of code to write: 30 lines
-* Estimated time of completion: 21 min
+* Lines of code to write: 17 lines
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/protocol_reflection.py`
 
 :English:
@@ -318,36 +319,29 @@ Protocol Reflection
     #. Pozwól na ustawianie atrybutów tylko przy inicjalizacji klasy
     #. Wszystkie testy muszą przejść
 
-:Input:
-    .. code-block:: python
+:Output:
+    .. code-block:: text
 
-        class Point:
-            """
-            >>> pt = Point(1, 2, 3)
-            >>> pt.x
-            1
-            >>> pt.y
-            2
-            >>> pt.z
-            3
+        >>> pt = Point(1, 2, 3)
+        >>> pt.x, pt.y, pt.z
+        (1, 2, 3)
 
-            >>> del pt.x
-            Traceback (most recent call last):
-                ...
-            PermissionError: Cannot delete attibutes
+        >>> del pt.x
+        Traceback (most recent call last):
+            ...
+        PermissionError: Cannot delete attibutes
 
-            >>> del pt.notexisting
-            Traceback (most recent call last):
-                ...
-            PermissionError: Cannot delete attibutes
+        >>> del pt.notexisting
+        Traceback (most recent call last):
+            ...
+        PermissionError: Cannot delete attibutes
 
-            >>> pt.x = 10
-            Traceback (most recent call last):
-                ...
-            PermissionError: Cannot modify existing attributes
+        >>> pt.x = 10
+        Traceback (most recent call last):
+            ...
+        PermissionError: Cannot modify existing attributes
 
-            >>> pt.notexisting = 10
-            Traceback (most recent call last):
-                ...
-            PermissionError: Cannot set other attributes than x,y,z
-            """
+        >>> pt.notexisting = 10
+        Traceback (most recent call last):
+            ...
+        PermissionError: Cannot set other attributes than x,y,z

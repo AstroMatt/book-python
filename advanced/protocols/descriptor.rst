@@ -7,31 +7,20 @@ Rationale
 =========
 * Add managed attributes to objects
 * Outsource functionality into specialized classes
+* Descriptors: ``classmethod``, ``staticmethod``, ``property``, functions in general
 * ``__del__(self)`` is reserved when object is being deleted by garbage collector (destructor)
 
 
 Protocol
 ========
-* ``__get__(self, parent, parent_type=None) -> self``
+* ``__get__(self, parent, *args) -> self``
 * ``__set__(self, parent, value) -> None``
 * ``__delete__(self, parent) -> None``
 
-
-Use Cases
-=========
-* ``@classmethod``
-* ``@staticmethod``
-* ``@property``
-* functions in general
-
-
-Syntax
-======
 .. code-block:: python
-    :caption: Definition
 
     class MyField:
-        def __get__(self, parent, parent_type):
+        def __get__(self, parent, *args):
             return ...
 
         def __set__(self, parent, value):
@@ -40,11 +29,12 @@ Syntax
         def __delete__(self, parent):
             ...
 
+Example
+=======
 .. code-block:: python
-    :caption: Usage
 
     class MyField:
-        def __get__(self, parent, parent_type):
+        def __get__(self, parent, *args):
             print('Getter')
 
         def __set__(self, parent, value):
@@ -57,133 +47,78 @@ Syntax
     class MyClass:
         value = MyField()
 
-        def __init__(self):
-            self._currentvalue = 0.0
-
 
     my = MyClass()
 
     my.value = 'something'
-    # Getter
+    # Setter
 
     my.value
-    # Setter
+    # Getter
 
     del my.value
     # Deleter
 
 
-.. code-block:: python
-    :caption: Inside class
-
-    class MyClass:
-        class MyField:
-            def __get__(self, parent, parent_type):
-                print('Calling MyField.__get__()')
-
-            def __set__(self, parent, value):
-                print('Calling MyField.__set__()')
-
-            def __delete__(self, parent):
-                print('Calling MyField.__delete__()')
-
-        value = MyField()
-
-        def __init__(self):
-            self._currentvalue = 0.0
-
-
-    my = MyClass()
-
-    my.value = 'something'
-    # Calling MyField.__set__()
-
-    my.value
-    # Calling MyField.__get__()
-
-    del my.value
-    # Calling MyField.__delete__()
-
-
-Examples
-========
+Use Cases
+=========
 .. code-block:: python
     :caption: Kelvin Temperature Validator
 
     class KelvinValidator:
-        def __get__(self, parent, parent_type):
-            return round(parent._current_value, 2)
-
         def __set__(self, parent, value):
             if value < 0.0:
                 raise ValueError('Cannot set negative Kelvin')
-            parent._current_value = value
-
-        def __delete__(self, parent):
-            parent._current_value = 0.0
+            parent._value = value
 
 
     class Temperature:
         kelvin = KelvinValidator()
 
         def __init__(self):
-            self._current_value = 0.0
+            self._value = None
 
 
     t = Temperature()
 
-    t.kelvin = -1
-    # Traceback (most recent call last):
-    # ValueError: Cannot set negative Kelvin
-
     t.kelvin = 10
-
     print(t.kelvin)
     # 10
 
-    del t.kelvin
-
-    print(t.kelvin)
-    # 0.0
+    t.kelvin = -1
+    # Traceback (most recent call last):
+    #    ...
+    # ValueError: Cannot set negative Kelvin
 
 .. code-block:: python
     :caption: Temperature Conversion
 
     class Kelvin:
-        def __get__(self, parent, parent_type):
-            return round(parent._current_value, 2)
+        def __get__(self, parent, *args):
+            return round(parent._value, 2)
 
         def __set__(self, parent, value):
-            parent._current_value = value
-
-        def __delete__(self, parent):
-            parent._current_value = 0
+            parent._value = value
 
 
     class Celsius:
-        def __get__(self, parent, parent_type):
-            temp = parent._current_value - 273.15
+        def __get__(self, parent, *args):
+            temp = parent._value - 273.15
             return round(temp, 2)
 
         def __set__(self, parent, value):
             temp = value + 273.15
-            parent._current_value = temp
-
-        def __delete__(self, parent):
-            self.__set__(parent, 0)
+            parent._value = temp
 
 
     class Fahrenheit:
-        def __get__(self, parent, parent_type):
-            temp = (parent._current_value - 273.15) * 9 / 5 + 32
+        def __get__(self, parent, *args):
+            temp = (parent._value - 273.15) * 9 / 5 + 32
             return round(temp, 2)
 
         def __set__(self, parent, fahrenheit):
             temp = (fahrenheit - 32) * 5 / 9 + 273.15
-            parent._current_value = temp
-
-        def __delete__(self, parent):
-            self.__set__(parent, 0)
+            parent._value = temp
 
 
     class Temperature:
@@ -192,7 +127,7 @@ Examples
         fahrenheit = Fahrenheit()
 
         def __init__(self):
-            self._current_value = 0.0
+            self._value = 0.0
 
 
     t = Temperature()
@@ -216,20 +151,6 @@ Examples
     print(f'C: {t.celsius}')        # 100.0
     print(f'F: {t.fahrenheit}')     # 212.0
 
-    print()
-
-    del t.celsius
-    print(f'K: {t.kelvin}')         # 273.15
-    print(f'C: {t.celsius}')        # 0.0
-    print(f'F: {t.fahrenheit}')     # 32.0
-
-    print()
-
-    del t.fahrenheit
-    print(f'K: {t.kelvin}')         # 255.37
-    print(f'C: {t.celsius}')        # -17.78
-    print(f'F: {t.fahrenheit}')     # 0
-
 .. code-block:: python
     :caption: Timezone Conversion
     :name: Timezone Conversion
@@ -243,7 +164,7 @@ Examples
         def __init__(self, name):
             self.timezone = timezone(name)
 
-        def __get__(self, parent, *args, **kwargs):
+        def __get__(self, parent, *args):
             return parent.utc.astimezone(self.timezone)
 
         def __set__(self, parent, new_datetime):
@@ -310,20 +231,17 @@ Protocol Descriptor Simple
     #. Użyj deskryptorów do sprawdzania wartości granicznych przy każdej modyfikacji
     #. Wszystkie testy muszą przejść
 
-:Input:
-    .. code-block:: python
+:Output:
+    .. code-block:: text
 
-        class Temperature:
-            """
-            >>> t = Temperature()
-            >>> t.kelvin = 1
-            >>> t.kelvin
-            1
-            >>> t.kelvin = -1
-            Traceback (most recent call last):
-                ...
-            ValueError: Negative temperature
-            """
+        >>> t = Temperature()
+        >>> t.kelvin = 1
+        >>> t.kelvin
+        1
+        >>> t.kelvin = -1
+        Traceback (most recent call last):
+            ...
+        ValueError: Negative temperature
 
 :The whys and wherefores:
     * Using descriptors
@@ -359,87 +277,88 @@ Protocol Descriptor Inheritance
 :Input:
     .. code-block:: text
 
-        latitude - type: float, min: -90, max 90
-        longitude - type: float, min: -180, max: 180
-        elevation - type: float, min: -10994, max: 8848
+        latitude - min: -90.0, max 90.0
+        longitude -  min: -180.0, max: 180.0
+        elevation -  min: -10994.0, max: 8848.0
 
     .. code-block:: python
 
         class GeographicCoordinate:
-            """
-            >>> GeographicCoordinate(90, 0, 0)
-            Latitude: 90, Longitude: 0, Elevation: 0
-            >>> GeographicCoordinate(-90, 0, 0)
-            Latitude: -90, Longitude: 0, Elevation: 0
-            >>> GeographicCoordinate(0, +180, 0)
-            Latitude: 0, Longitude: 180, Elevation: 0
-            >>> GeographicCoordinate(0, -180, 0)
-            Latitude: 0, Longitude: -180, Elevation: 0
-            >>> GeographicCoordinate(0, 0, +8848)
-            Latitude: 0, Longitude: 0, Elevation: 8848
-            >>> GeographicCoordinate(0, 0, -10994)
-            Latitude: 0, Longitude: 0, Elevation: -10994
-
-            >>> place1 = GeographicCoordinate(50, 120, 8000)
-            >>> str(place1)
-            'Latitude: 50, Longitude: 120, Elevation: 8000'
-
-            >>> place2 = GeographicCoordinate(22, 33, 44)
-            >>> str(place2)
-            'Latitude: 22, Longitude: 33, Elevation: 44'
-
-            >>> place1.longitude = 0
-            >>> place1.latitude = 0
-            >>> place1.elevation = 0
-            Traceback (most recent call last):
-              ...
-            PermissionError: Changing value is prohibited.
-
-            >>> place1.latitude = 1
-            >>> place1.longitude = 2
-            >>> str(place1)
-            'Latitude: 1, Longitude: 2, Elevation: 8000'
-
-            >>> str(place2)
-            'Latitude: 22, Longitude: 33, Elevation: 44'
-
-
-            >>> GeographicCoordinate(-91, 0, 0)
-            Traceback (most recent call last):
-              ...
-            ValueError: Out of bounds
-
-            >>> GeographicCoordinate(+91, 0, 0)
-            Traceback (most recent call last):
-              ...
-            ValueError: Out of bounds
-
-            >>> GeographicCoordinate(0, -181, 0)
-            Traceback (most recent call last):
-              ...
-            ValueError: Out of bounds
-
-            >>> GeographicCoordinate(0, +181, 0)
-            Traceback (most recent call last):
-              ...
-            ValueError: Out of bounds
-
-            >>> GeographicCoordinate(0, 0, -10995)
-            Traceback (most recent call last):
-              ...
-            ValueError: Out of bounds
-
-            >>> GeographicCoordinate(0, 0, +8849)
-            Traceback (most recent call last):
-              ...
-            ValueError: Out of bounds
-            """
             def __str__(self):
                 return f'Latitude: {self.latitude}, Longitude: {self.longitude}, Elevation: {self.elevation}'
 
             def __repr__(self):
                 return self.__str__()
 
+:Output:
+    .. code-block:: text
+
+        >>> GeographicCoordinate(90, 0, 0)
+        Latitude: 90, Longitude: 0, Elevation: 0
+        >>> GeographicCoordinate(-90, 0, 0)
+        Latitude: -90, Longitude: 0, Elevation: 0
+        >>> GeographicCoordinate(0, +180, 0)
+        Latitude: 0, Longitude: 180, Elevation: 0
+        >>> GeographicCoordinate(0, -180, 0)
+        Latitude: 0, Longitude: -180, Elevation: 0
+        >>> GeographicCoordinate(0, 0, +8848)
+        Latitude: 0, Longitude: 0, Elevation: 8848
+        >>> GeographicCoordinate(0, 0, -10994)
+        Latitude: 0, Longitude: 0, Elevation: -10994
+
+        >>> place1 = GeographicCoordinate(50, 120, 8000)
+        >>> str(place1)
+        'Latitude: 50, Longitude: 120, Elevation: 8000'
+
+        >>> place2 = GeographicCoordinate(22, 33, 44)
+        >>> str(place2)
+        'Latitude: 22, Longitude: 33, Elevation: 44'
+
+        >>> place1.longitude = 0
+        >>> place1.latitude = 0
+        >>> place1.elevation = 0
+        Traceback (most recent call last):
+          ...
+        PermissionError: Changing value is prohibited.
+
+        >>> place1.latitude = 1
+        >>> place1.longitude = 2
+        >>> str(place1)
+        'Latitude: 1, Longitude: 2, Elevation: 8000'
+
+        >>> str(place2)
+        'Latitude: 22, Longitude: 33, Elevation: 44'
+
+
+        >>> GeographicCoordinate(-91, 0, 0)
+        Traceback (most recent call last):
+          ...
+        ValueError: Out of bounds
+
+        >>> GeographicCoordinate(+91, 0, 0)
+        Traceback (most recent call last):
+          ...
+        ValueError: Out of bounds
+
+        >>> GeographicCoordinate(0, -181, 0)
+        Traceback (most recent call last):
+          ...
+        ValueError: Out of bounds
+
+        >>> GeographicCoordinate(0, +181, 0)
+        Traceback (most recent call last):
+          ...
+        ValueError: Out of bounds
+
+        >>> GeographicCoordinate(0, 0, -10995)
+        Traceback (most recent call last):
+          ...
+        ValueError: Out of bounds
+
+        >>> GeographicCoordinate(0, 0, +8849)
+        Traceback (most recent call last):
+          ...
+        ValueError: Out of bounds
 
 :The whys and wherefores:
     * Using descriptors

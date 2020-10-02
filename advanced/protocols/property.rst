@@ -3,6 +3,39 @@ Properties
 **********
 
 
+Rationale
+=========
+* Disable attribute modification
+* Logging value access
+* Check boundary
+* Raise exceptions (TypeError)
+* Check argument type
+* ``property()`` - creates property
+* ``@property`` - creates property and getter
+* ``@value.getter`` - defining getter for field (field has to be ``property``)
+* ``@value.setter`` - defining setter for field (field has to be ``property``)
+* ``@value.deleter`` - defining deleter for field (field has to be ``property``)
+
+Syntax:
+    .. code-block:: python
+
+        class MyClass:
+
+            @property
+            def attribute(self):
+                return self._attribute
+
+Is equivalent to:
+    .. code-block:: python
+
+        class MyClass:
+
+            def attribute(self):
+                return self._attribute
+
+            attribute = property(attribute)
+
+
 Setter and Getter Methods
 =========================
 * Java way
@@ -65,15 +98,30 @@ Setter and Getter Methods
             self._name = name.title()
 
         def get_name(self):
-            firstname, lastname = self._name.split()
-            return f'{firstname} {lastname[0]}.'
+            return self._name
 
 
     astro = Astronaut()
-
     astro.set_name('JaN TwARdoWskI')
     print(astro.get_name())
-    # Jan T.
+    # Jan Twardowski
+
+.. code-block:: python
+    :caption: Rationale for Setters and Getters
+
+    class Temperature:
+        def __init__(self):
+            self._kelvin = None
+
+        def set_kelvin(self, kelvin):
+            if kelvin < 0:
+                raise ValueError('Kelvin cannot be negative')
+            else:
+                self._kelvin = kelvin
+
+    t = Temperature()
+    t.set_kelvin(-1)
+    # ValueError: Kelvin cannot be negative
 
 .. code-block:: python
     :caption: Rationale for Setters and Getters `HabitatOS <https://www.habitatos.space>`_ Z-Wave sensor admin
@@ -122,56 +170,6 @@ Direct Attribute Access
 
 Properties
 ==========
-* ``@property`` - for defining getters
-* ``@value.getter`` - defining getter for field (require field to be ``@property``)
-* ``@value.setter`` - defining setter for field (require field to be ``@property``)
-* ``@value.deleter`` - defining deleter for field (require field to be ``@property``)
-
-Rationale
----------
-* Disable attribute modification
-* Logging value access
-* Check boundary
-* Raise exceptions (TypeError)
-* Check argument type
-
-.. code-block:: python
-    :caption: Property class
-
-    property()
-    # <property object at 0x10ff07940>
-
-    property().getter
-    # <built-in method getter of property object at 0x10ff07998>
-
-    property().setter
-    # <built-in method setter of property object at 0x10ff07940>
-
-    property().deleter
-    # <built-in method deleter of property object at 0x10ff07998>
-
-Property decorator
-------------------
-* ``@decorator`` syntax is just syntactic sugar; the syntax:
-
-    .. code-block:: python
-
-        class MyClass:
-
-            @property
-            def attribute(self):
-                return self._attribute
-
-* really means the same thing as
-
-    .. code-block:: python
-
-        class MyClass:
-
-            def attribute(self):
-                return self._attribute
-
-            attribute = property(attribute)
 
 Creating properties with ``property`` class
 -------------------------------------------
@@ -198,7 +196,6 @@ Creating properties with ``property`` class
 Creating properties with ``@property`` decorator
 ------------------------------------------------
 .. code-block:: python
-    :emphasize-lines: 5-11
 
     class Astronaut:
         name = property()
@@ -386,15 +383,15 @@ Assignments
 Protocol Property
 -----------------
 * Assignment name: Protocol Property
-* Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 35 lines
-* Estimated time of completion: 21 min
+* Last update: 2020-10-02
+* Complexity level: easy
+* Lines of code to write: 14 lines
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/protocol_property.py`
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Create class ``Point`` with ``x``, ``y``, ``z`` attributes
+    #. Define class ``Point`` with ``x``, ``y``, ``z`` attributes
     #. Add ``position`` property which returns tuple ``(x, y, z)``
     #. Deleting ``position`` sets all attributes to 0 (``x=0``, ``y=0``, ``z=0``)
     #. Prevent setting position
@@ -402,25 +399,22 @@ Protocol Property
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Stwórz klasę ``Point`` z atrybutami ``x``, ``y``, ``z``
+    #. Define klasę ``Point`` z atrybutami ``x``, ``y``, ``z``
     #. Dodaj property ``position``, który zwraca tuple ``(x, y, z)``
     #. Usunięcie ``position`` ustawia wszystkie atrybuty na 0 (``x=0``, ``y=0``, ``z=0``)
     #. Zablokuj edycję atrybutów
     #. Wszystkie testy muszą przejść
 
-:Input:
-    .. code-block:: python
+:Output:
+    .. code-block:: text
 
-        class Point:
-            """
-            >>> pt = Point(x=1, y=2, z=3)
-            >>> pt.position
-            (1, 2, 3)
-            >>> del pt.position
-            >>> pt.position
-            (0, 0, 0)
-            >>> pt.position = (4, 5, 6)
-            Traceback (most recent call last):
-                ...
-            PermissionError: Cannot modify values
-            """
+        >>> pt = Point(x=1, y=2, z=3)
+        >>> pt.position
+        (1, 2, 3)
+        >>> del pt.position
+        >>> pt.position
+        (0, 0, 0)
+        >>> pt.position = (4, 5, 6)
+        Traceback (most recent call last):
+            ...
+        PermissionError: Cannot modify values

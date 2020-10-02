@@ -5,28 +5,8 @@ Context Managers
 ****************
 
 
-Protocol
-========
-* ``__enter__(self) -> self``
-* ``__exit__(self, *args) -> None``
-
-.. code-block:: python
-    :caption: How to create Context Managers
-
-    class ContextManager:
-        def __enter__(self):
-            return self
-
-        def __exit__(self, *args):
-            return None
-
-
-    with ContextManager() as cm:
-        pass
-
-
-Application
-===========
+Rationale
+=========
 * Files
 * Buffering data
 * Database connection
@@ -37,11 +17,23 @@ Application
 * Network streams
 * HTTP sessions
 
+Protocol
+========
+* ``__enter__(self) -> self``
+* ``__exit__(self, *args) -> None``
 
-Implementation
-==============
 .. code-block:: python
-    :caption: How to create Context Managers
+
+    class ContextManager:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args):
+            return None
+
+Example
+=======
+.. code-block:: python
 
     class MyClass:
         def __enter__(self):
@@ -64,8 +56,8 @@ Implementation
     # Exiting the block
 
 
-Examples
-========
+Use Cases
+=========
 
 Files
 -----
