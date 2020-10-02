@@ -10,6 +10,31 @@ Metaclass
 
 Metaclass mechanism
 ===================
+.. code-block:: python
+
+    class Astronaut:
+        pass
+
+    astro = Astronaut()
+
+.. code-block:: python
+
+    class Astronaut(metaclass=object):
+        pass
+
+    astro = Astronaut()
+
+.. code-block:: python
+
+    class MyMetaclass:
+        pass
+
+    class Astronaut(metaclass=MyMetaclass):
+        pass
+
+    astro = Astronaut()
+
+
 
 What are Metaclasses?
 ---------------------
@@ -28,7 +53,7 @@ How Metaclasses works?
 ----------------------
 .. highlights::
     * Instances are created by calling the class
-    * Python creates a new class (when it executes the 'class' statement) by calling the metaclass
+    * Python creates a new class (when it executes the ``class`` statement) by calling the metaclass
     * Combined with the normal ``__init__`` and ``__new__`` methods
     * Metaclasses allow you to do 'extra things' when creating a class
 
@@ -39,6 +64,8 @@ Example use of Metaclasses
     * Most commonly used as a class-factory
     * Registering the new class with some registry
     * Replace the class with something else entirely
+    * Inject logger instance
+    * Injecting static fields
 
 
 Type and objects
@@ -48,13 +75,16 @@ Types
 -----
 .. code-block:: python
 
+    type(1)         # <class 'int'>
     type(int)       # <class 'type'>
+    type(type)      # <class 'type'>
+
+.. code-block:: python
+
     type(float)     # <class 'type'>
     type(dict)      # <class 'type'>
     type(list)      # <class 'type'>
     type(tuple)     # <class 'type'>
-
-    type(type)      # <class 'type'>
 
 .. figure:: img/metaclass-class-chain.png
     :width: 75%
@@ -88,12 +118,14 @@ Examples
 ========
 .. code-block:: python
 
+    import logging
+
     class Iris:
         pass
 
     def new(cls):
         obj = object.__new__(cls)
-        obj.kingdom = 'Plantae'
+        obj._logger = logging.getLogger()
         return obj
 
     Iris.__new__ = new
@@ -101,8 +133,8 @@ Examples
     setosa = Iris()
     versicolor = Iris()
 
-    setosa.kingdom      # Plantae
-    versicolor.kingdom  # Plantae
+    setosa._logger      # Logger instance
+    versicolor._logger  # Logger instance
 
 .. code-block:: python
     :caption: Spoiler alert:  This doesn't work!
@@ -114,6 +146,19 @@ Examples
 
     type.__new__ = new
     # TypeError: can't set attributes of built-in/extension type 'type'
+
+.. code-block:: python
+    :caption: Spoiler alert:  This doesn't work!
+
+    def new(cls):
+        obj = object.__new__(cls)
+        obj.kingdom = 'Plantae'
+        return obj
+
+    str.__new__ = new
+    # TypeError: can't set attributes of built-in/extension type 'type'
+
+
 
 .. code-block:: python
 
@@ -184,6 +229,26 @@ Class Factory
     Versicolor.kingdom     # Plantae
 
 
+Use Case
+========
+.. code-block:: python
+
+    from abc import ABCMeta, abstractmethod
+
+
+    class Astronaut(metaclass=ABCMeta):
+
+        @abstractmethod
+        def say_hello(self):
+            pass
+
+
+    astro = Astronaut()
+    # Traceback (most recent call last):
+    #     ...
+    # TypeError: Can't instantiate abstract class Astronaut with abstract methods say_hello
+
+
 Metaclass replacements
 ======================
 .. highlights::
@@ -201,6 +266,23 @@ Inheritance
 
     Setosa.kingdom
     # Plantae
+
+.. code-block:: python
+
+    from abc import ABC, abstractmethod
+
+
+    class Astronaut(ABC):
+
+        @abstractmethod
+        def say_hello(self):
+            pass
+
+
+    astro = Astronaut()
+    # Traceback (most recent call last):
+    #     ...
+    # TypeError: Can't instantiate abstract class Astronaut with abstract methods hello
 
 Class Decorator
 ---------------

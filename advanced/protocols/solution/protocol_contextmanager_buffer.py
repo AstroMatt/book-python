@@ -1,3 +1,21 @@
+"""
+>>> from inspect import isclass, ismethod
+>>> assert isclass(File)
+>>> assert hasattr(File, 'append')
+>>> assert hasattr(File, '__enter__')
+>>> assert hasattr(File, '__exit__')
+>>> assert ismethod(File(None).append)
+>>> assert ismethod(File(None).__enter__)
+>>> assert ismethod(File(None).__exit__)
+
+>>> with File('_temporary.txt') as file:
+...    file.append('One')
+...    file.append('Two')
+
+>>> open('_temporary.txt').read()
+'One\\nTwo\\n'
+"""
+
 from typing import List
 
 FILE = r'/tmp/context-manager.txt'

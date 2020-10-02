@@ -1,29 +1,39 @@
-from dataclasses import dataclass, field
-from typing import List
+"""
+>>> from inspect import isclass, ismethod
+>>> assert isclass(File)
+>>> assert hasattr(File, 'append')
+>>> assert hasattr(File, '__enter__')
+>>> assert hasattr(File, '__exit__')
+>>> assert ismethod(File(None).append)
+>>> assert ismethod(File(None).__enter__)
+>>> assert ismethod(File(None).__exit__)
 
-FILE = r'/tmp/context-manager.txt'
+>>> with File('_temporary.txt') as file:
+...    file.append('One')
+...    file.append('Two')
+
+>>> open('_temporary.txt').read()
+'One\\nTwo\\n'
+"""
 
 
-@dataclass
-class BufferedFile:
-    name: str
-    content: List[str] = field(default_factory=[])
+class File:
+    filename: str
+    _buffer: list
+
+    def __init__(self, filename: str) -> None:
+        self.filename = filename
+        self._buffer = list()
 
     def __enter__(self):
         return self
 
     def __exit__(self, *args):
-        return self.save_file()
+        return self._write()
 
-    def append_line(self, line):
-        self.content.append(line + '\n')
+    def append(self, line):
+        self._buffer.append(line + '\n')
 
-    def save_file(self):
-        with open(self.name, mode='w', encoding='utf-8') as file:
-            file.writelines(self.content)
-
-
-with BufferedFile(FILE) as file:
-    file.append_line('first line')
-    file.append_line('second line')
-    file.append_line('third line')
+    def _write(self):
+        with open(self.filename, mode='w', encoding='utf-8') as file:
+            file.writelines(self._buffer)

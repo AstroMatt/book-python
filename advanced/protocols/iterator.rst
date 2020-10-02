@@ -9,20 +9,22 @@ Protocol
 ========
 * ``__iter__(self) -> self``
 * ``__next__(self) -> raise StopIteration``
+* ``iter(obj)`` -> ``obj.__iter__()``
+* ``next(obj)`` -> ``obj.__next__()``
 
 .. code-block:: python
 
     class Iterator:
         def __iter__(self):
-            self._iter_index = 0
+            self._current = 0
             return self
 
         def __next__(self):
-            if self._iter_index >= len(self.values):
+            if self._current >= len(self.values):
                 raise StopIteration
 
-            element = self.values[self._iter_index]
-            self._iter_index += 1
+            element = self.values[self._current]
+            self._current += 1
             return element
 
 
@@ -40,11 +42,9 @@ Mechanism
     :caption: Intuitive implementation of the ``for`` loop
 
     DATA = [1, 2, 3]
-
     iterator = iter(DATA)
 
     try:
-
         current = next(iterator)
         print(current)
 
@@ -56,7 +56,6 @@ Mechanism
 
         current = next(iterator)
         print(current)
-
     except StopIteration:
         pass
 
@@ -64,11 +63,9 @@ Mechanism
     :caption: Intuitive implementation of the ``for`` loop
 
     DATA = [1, 2, 3]
-
     iterator = DATA.__iter__()
 
     try:
-
         current = iterator.__next__()
         print(current)
 
@@ -80,7 +77,6 @@ Mechanism
 
         current = iterator.__next__()
         print(current)
-
     except StopIteration:
         pass
 
@@ -110,16 +106,6 @@ Built-in Type Iteration
     # 3
 
 .. code-block:: python
-    :caption: Iterating nested sequences
-
-    for key, value in [('a',1), ('b',2), ('c',3)]:
-        print(f'{key} -> {value}')
-
-    # a -> 1
-    # b -> 2
-    # c -> 3
-
-.. code-block:: python
     :caption: Iterating ``dict``
 
     DATA = {'a': 1, 'b': 2, 'c': 3}
@@ -141,6 +127,16 @@ Built-in Type Iteration
     # b -> 2
     # c -> 3
 
+.. code-block:: python
+    :caption: Iterating nested sequences
+
+    for key, value in [('a',1), ('b',2), ('c',3)]:
+        print(f'{key} -> {value}')
+
+    # a -> 1
+    # b -> 2
+    # c -> 3
+
 
 Implementation
 ==============
@@ -155,15 +151,15 @@ Implementation
             self._parked_cars.append(car)
 
         def __iter__(self):
-            self._iter_index = 0
+            self._current = 0
             return self
 
         def __next__(self):
-            if self._iter_index >= len(self._parked_cars):
+            if self._current >= len(self._parked_cars):
                 raise StopIteration
 
-            element = self._parked_cars[self._iter_index]
-            self._iter_index += 1
+            element = self._parked_cars[self._current]
+            self._current += 1
             return element
 
 
@@ -175,10 +171,10 @@ Implementation
     for car in parking:
         print(car)
 
-
     # Mercedes
     # Maluch
     # Toyota
+
 
 .. _Itertools:
 
@@ -208,16 +204,15 @@ Standard Library Itertools
 
     from itertools import cycle
 
-    DATA = ['even', 'odd']
+    DATA = ['white', 'gray']
 
-    for x in cycle(DATA):
-        print(x)
+    for color in cycle(DATA):
+        print(color)
 
-    # even
-    # odd
-    # even
-    # odd
-    # even
+    # white
+    # gray
+    # white
+    # gray
     # ...
 
 .. code-block:: python
@@ -230,13 +225,11 @@ Standard Library Itertools
     for i, status in enumerate(cycle(DATA)):
         print(i, status)
 
-        if i == 3:
-            break
-
     # 0, even
     # 1, odd
     # 2, even
     # 3, odd
+    # ...
 
 .. code-block:: python
     :caption: ``itertools.repeat(object[, times])``
@@ -244,7 +237,6 @@ Standard Library Itertools
     from itertools import repeat
 
     data = repeat(10, 3)
-
     data
     # repeat(10, 3)
 
@@ -314,15 +306,15 @@ Standard Library Itertools
 
     class Iterator:
         def __iter__(self):
-            self._iter_index = 0
+            self._current = 0
             return self
 
         def __next__(self):
-            if self._iter_index >= len(self.values):
+            if self._current >= len(self.values):
                 raise StopIteration
 
-            element = self.values[self._iter_index]
-            self._iter_index += 1
+            element = self.values[self._current]
+            self._current += 1
             return element
 
 
@@ -588,7 +580,7 @@ Assignments
 Protocol Iterator Implementation
 --------------------------------
 * Assignment name: Protocol Iterator Implementation
-* Last update: 2020-10-01
+* Last update: 2020-10-02
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 8 min
@@ -596,16 +588,16 @@ Protocol Iterator Implementation
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Modify classes to implement iterator
-    #. Iterate over object using ``for`` loop
-    #. Print data
+    #. Modify classes to implement iterator protocol
+    #. Iterator should return instances of ``Mission``
+    #. Iterate over ``astro`` using ``for`` loop
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj data z sekcji "Input" (patrz poniżej)
     #. Zmodyfikuj klasy aby zaimplementować protokół iterator
-    #. Iteruj po obiekcie używając pętli ``for``
-    #. Wypisz dane
+    #. Iterator powinien zwracać instancje ``Mission``
+    #. Iteruj po ``astro`` używając pętli ``for``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
@@ -625,16 +617,29 @@ Protocol Iterator Implementation
             year: int
             name: str
 
-
-        twardowski = Astronaut('Jan', 'Twardowski', missions=(
-            Mission(1969, 'Apollo 11'),
-            Mission(2024, 'Artemis 3'),
-            Mission(2035, 'Ares 3'),
-        ))
-
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
+        >>> from inspect import isclass, ismethod
+        >>> assert isclass(Astronaut)
+
+        >>> astro = Astronaut('Mark', 'Watney')
+        >>> assert hasattr(astro, 'firstname')
+        >>> assert hasattr(astro, 'lastname')
+        >>> assert hasattr(astro, 'missions')
+        >>> assert hasattr(astro, '__iter__')
+        >>> assert hasattr(astro, '__next__')
+        >>> assert ismethod(astro.__iter__)
+        >>> assert ismethod(astro.__next__)
+
+        >>> astro = Astronaut('Jan', 'Twardowski', missions=(
+        ...     Mission(1969, 'Apollo 11'),
+        ...     Mission(2024, 'Artemis 3'),
+        ...     Mission(2035, 'Ares 3'),
+        ... ))
+
+        >>> for mission in astro:
+        ...     print(mission)
         Mission(year=1969, name='Apollo 11')
         Mission(year=2024, name='Artemis 3')
         Mission(year=2035, name='Ares 3')
@@ -642,7 +647,7 @@ Protocol Iterator Implementation
 Protocol Iterator Range
 -----------------------
 * Assignment name: Protocol Iterator Range
-* Last update: 2020-10-01
+* Last update: 2020-10-02
 * Complexity level: medium
 * Lines of code to write: 25 lines
 * Estimated time of completion: 21 min
@@ -650,39 +655,60 @@ Protocol Iterator Range
 
 :English:
     #. Use code from "Input" section (see below)
-    #. Write own implementation of a ``range()`` function
+    #. Define class ``Range`` with parameters: ``start``, ``strop``, ``step``
+    #. Write own implementation of a built-in ``range(start, strop, step)`` function
     #. Use iterator protocol
-    #. Arguments: start, stop, step
-    #. How to implement passing only stop argument?
+    #. How to implement passing only stop argument (``range(start=0, stop=???, step=1)``)?
 
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
-    #. Zaimplementuj własne rozwiązanie ``range()``
-    #. Use iterator protocol
-    #. Argumenty: początek, koniec, krok
-    #. Jak zaimplementować możliwość podawania tylko końca?
+    #. Zdefiniuj klasę ``Range`` z parametrami: ``start``, ``strop``, ``step``
+    #. Zaimplementuj własne rozwiązanie wbudowanej funkcji ``range(start, strop, step)``
+    #. Użyj protokołu iteratora iterator
+    #. Jak zaimplementować możliwość podawania tylko końca (``range(start=0, stop=???, step=1)``)?
 
-:Input:
-    .. code-block:: python
+:Output:
+    .. code-block:: text
 
-        class Range:
-            """
-            >>> list(Range(0, 10, 2))
-            [0, 2, 4, 6, 8]
+        >>> from inspect import isclass, ismethod
+        >>> assert isclass(Range)
 
-            >>> list(Range(0, 5))
-            [0, 1, 2, 3, 4]
+        >>> r = Range(0, 0, 0)
+        >>> assert hasattr(r, '__iter__')
+        >>> assert hasattr(r, '__next__')
+        >>> assert ismethod(r.__iter__)
+        >>> assert ismethod(r.__next__)
 
-            >>> list(Range(5))
-            [0, 1, 2, 3, 4]
+        >>> list(Range(0, 10, 2))
+        [0, 2, 4, 6, 8]
 
-            >>> list(Range())
-            Traceback (most recent call last):
-              ...
-            ValueError: Invalid arguments
+        >>> list(Range(0, 5))
+        [0, 1, 2, 3, 4]
 
-            >>> list(Range(1,2,3,4))
-            Traceback (most recent call last):
-              ...
-            ValueError: Invalid arguments
-            """
+        >>> list(Range(5))
+        [0, 1, 2, 3, 4]
+
+        >>> list(Range())
+        Traceback (most recent call last):
+          ...
+        ValueError: Invalid arguments
+
+        >>> list(Range(1,2,3,4))
+        Traceback (most recent call last):
+          ...
+        ValueError: Invalid arguments
+
+        >>> Range(stop=2)
+        Traceback (most recent call last):
+          ...
+        TypeError: Range() takes no keyword arguments
+
+        >>> Range(start=1, stop=2)
+        Traceback (most recent call last):
+          ...
+        TypeError: Range() takes no keyword arguments
+
+        >>> Range(start=1, stop=2, step=2)
+        Traceback (most recent call last):
+          ...
+        TypeError: Range() takes no keyword arguments

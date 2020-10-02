@@ -74,7 +74,7 @@ class Point:
 
 
 @dataclass
-class Moveable:
+class Movable:
     _position: Point = Point()
 
     @if_alive
@@ -130,7 +130,7 @@ class Drop(TypedDict):
 
 
 @dataclass(init=False)
-class Dragon(Moveable, Destructable):
+class Dragon(Movable, Destructable):
     TEXTURE_DEAD: str = 'img/dragon/dead.png'
     TEXTURE_ALIVE: str = 'img/dragon/alive.png'
     GOLD_MIN: int = 1

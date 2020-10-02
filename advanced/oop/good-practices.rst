@@ -12,62 +12,76 @@ Tell - don't ask
 .. code-block:: python
     :caption: Tell - don't ask (Bad)
 
-    class Rocket:
+    class Lamp:
         status = 'off'
 
 
-    soyuz = Rocket()
-    soyuz.status = 'on'
+    lamp = Ligt()
+    lamp.status = 'on'
+    lamp.status = 'off'
 
 .. code-block:: python
     :caption: Tell - don't ask (Good)
 
-    class Rocket:
+    class Ligt:
         status = 'off'
 
-        def ignite(self):
+        def turn_on(self):
             self.status = 'on'
 
+        def turn_off(self):
+            self.status = 'off'
 
-    soyuz = Rocket()
-    soyuz.ignite()
 
+    light = Ligt()
+    light.turn_on()
+    light.turn_off()
 
 .. code-block:: python
+    :caption: Tell - don't ask (Bad)
 
     class Dragon:
-        def __init__(self):
-            self.status = 'dead'
+        self.status = 'alive'
 
 
-    wawelski = Dragon()
+    dragon = Dragon()
+    while dragon.status == 'alive':
+        ...
 
+.. code-block:: python
+    :caption: Tell - don't ask (Good)
 
-    while wawelski.status != 'dead':
+    class Dragon:
+        self.status = 'alive'
+
+        def is_alive():
+            return True
+
+    dragon = Dragon()
+
+    while dragon.is_alive():
         ...
 
 
 Objects and instances
 =====================
 .. code-block:: python
-    :caption: Implicit passing instance to class as ``self``.
 
-    text = 'Jan,Twardowski'
+    text = str('Jan,Twardowski')
+    text.split(',')
+    # ['Jan', 'Twardowski']
 
-    text.split(',')                     # ['Jan', 'Twardowski']
-
-.. code-block:: python
-    :caption: Explicit passing instance to class overriding ``self``.
-
-    text = 'Jan,Twardowski'
-
-    str.split(text, ',')                # ['Jan', 'Twardowski']
+    text = str('Jan,Twardowski')
+    str.split(text, ',')
+    # ['Jan', 'Twardowski']
 
 .. code-block:: python
-    :caption: Passing anonymous objects as instances.
 
-    'Jan,Twardowski'.split(',')         # ['Jan', 'Twardowski']
-    str.split('Jan,Twardowski', ',')    # ['Jan', 'Twardowski']
+    'Jan,Twardowski'.split(',')
+    # ['Jan', 'Twardowski']
+
+    str.split('Jan,Twardowski', ',')
+    # ['Jan', 'Twardowski']
 
 
 .. _OOP SOLID:
@@ -81,6 +95,56 @@ a class should have only a single responsibility (i.e. changes to only one part 
 
 The single responsibility principle is a computer programming principle that states that every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class. All its services should be narrowly aligned with that responsibility. Robert C. Martin expresses the principle as, "A class should have only one reason to change."
 
+.. code-block:: python
+
+    class Position:
+        x: int
+        y: int
+
+        def __init__(self, x=0, y=0):
+            self.set(x,y)
+
+        def set(self, x, y):
+            self.x = x
+            self.y = y
+
+        def change(self, right=0, left=0, down=0, up=0):
+            x = self.x + right - left
+            x = self.y + down - up
+            self.set(x, y)
+
+        def get(self):
+            return self._position
+
+.. code-block:: python
+
+    @dataclass
+    class Destructable:
+        _current_health: int = 0
+        _status: Status = Status.ALIVE
+
+        class IsDead(Exception):
+            pass
+
+        def __post_init__(self) -> None:
+            self._current_health = randint(self.HEALTH_MIN, self.HEALTH_MAX)
+
+        def _update_status(self) -> None:
+            if self._current_health > 0:
+                self._status = Status.ALIVE
+            else:
+                self._status = Status.DEAD
+
+        def is_dead(self) -> bool:
+            if self._status == Status.DEAD:
+                return True
+            else:
+                return False
+
+        def is_alive(self) -> bool:
+            return not self.is_dead()
+
+
 Open/closed principle
 ---------------------
 software entities ... should be open for extension, but closed for modification
@@ -90,24 +154,25 @@ Both ways use generalizations (for instance, inheritance or delegate functions) 
 
 .. code-block:: python
 
-    class DragonLevel1:
-        def _initial_health(self):
+    class Dragon:
+        def __init__(self):
+            self.health = self._get_initial_health()
+
+
+    class DragonLevel1(Dragon):
+        def _get_initial_health(self):
             return 10
 
-        def __init__(self):
-            self.current_health = self._get_initial_health()
-
-
     class DragonLevel2(Dragon):
-        def _initial_health(self):
+        def _get_initial_health(self):
             return 20
 
 
     lvl1 = DragonLevel1()
     lvl2 = DragonLevel2()
 
-    print(lvl1.current_health)
-    print(lvl2.current_health)
+    print(lvl1.health)
+    print(lvl2.health)
 
 Liskov substitution principle
 -----------------------------
@@ -152,7 +217,6 @@ many client-specific interfaces are better than one general-purpose interface
 The interface-segregation principle (ISP) states that no client should be forced to depend on methods it does not use. ISP splits interfaces that are very large into smaller and more specific ones so that clients will only have to know about the methods that are of interest to them. Such shrunken interfaces are also called role interfaces. ISP is intended to keep a system decoupled and thus easier to refactor, change, and redeploy. ISP is one of the five SOLID principles of object-oriented design, similar to the High Cohesion Principle of GRASP.
 
 .. code-block:: python
-    :caption: Mixin classes - multiple inheritance.
 
     class JSONSerializable:
         def to_json(self):
@@ -171,19 +235,6 @@ The interface-segregation principle (ISP) states that no client should be forced
             self.firstname = firstname
             self.lastname = lastname
 
-
-    user = User(
-        firstname='Jan',
-        lastname='Twardowski',
-        address='Copernicus Crater, Moon'
-    )
-
-    print(user.to_json())
-    # {"firstname": "Jan", "lastname": "Twardowski", "address": "Copernicus Crater, Moon"}
-
-    print(user.to_pickle())
-    # b'\x80\x03c__main__\nUser\nq\x00)\x81q\x01}q\x02(X\n\x00\x00\x00firstnameq\x03X\x03\x00\x00\x00Janq\x04X\t\x00\x00\x00lastnameq\x05X\n\x00\x00\x00Twardowskiq\x06X\x07\x00\x00\x00addressq\x07X\x17\x00\x00\x00Copernicus Crater, Moonq\x08ub.'
-
 Dependency inversion principle
 ------------------------------
 one should depend upon abstractions, [not] concretions
@@ -194,6 +245,37 @@ In object-oriented design, the dependency inversion principle refers to a specif
     #. Abstractions should not depend on details. Details should depend on abstractions.
 
 By dictating that both high-level and low-level objects must depend on the same abstraction this design principle inverts the way some people may think about object-oriented programming.
+
+.. code-block:: python
+    :caption: Switch moves business logic to the execution place
+
+    watney = 'Astronaut'
+
+    if watney == 'Astronaut':
+        print('Hello')
+    elif watney == 'Cosmonaut':
+        print('Привет!')
+    elif watney == 'Taikonaut':
+        print('你好')
+    else:
+        print('Default Value')
+
+.. code-block:: python
+
+    class Astronaut:
+        def say_hello():
+            print('Hello')
+
+    class Cosmonaut:
+        def say_hello():
+            print('Привет!')
+
+    class Taikonaut:
+        def say_hello():
+            print('你好')
+
+    watney = Astronaut()
+    watney.say_hello()
 
 
 GRASP

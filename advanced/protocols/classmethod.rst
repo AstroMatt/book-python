@@ -10,8 +10,132 @@ Rationale
 * ``self`` is not required
 
 
-Examples
-========
+Example
+=======
+.. code-block:: python
+
+    import json
+    from dataclasses import dataclass
+
+
+    class JSONMixin:
+        def from_json(self, data):
+            data = json.loads(data)
+            return data
+
+    @dataclass
+    class User(JSONMixin):
+        firstname: str
+        lastname: str
+
+
+    DATA = '{"firstname": "Jan", "lastname": "Twardowski"}'
+
+    # User.from_json(DATA)
+    # TypeError: from_json() missing 1 required positional argument: 'data'
+
+    # User().from_json(DATA)
+    # TypeError: __init__() missing 2 required positional arguments: 'firstname' and 'lastname'
+
+    result = User(None, None).from_json(DATA)
+    result = User(**result)
+
+    print(result)
+    # User(firstname='Jan', lastname='Twardowski')
+
+.. code-block:: python
+    :caption: Trying to use staticmethod
+
+    import json
+    from dataclasses import dataclass
+
+    class JSONMixin:
+
+        @staticmethod
+        def from_json(data):
+            data = json.loads(data)
+            return data
+
+    @dataclass
+    class User(JSONMixin):
+        firstname: str
+        lastname: str
+
+
+    DATA = '{"firstname": "Jan", "lastname": "Twardowski"}'
+
+    result = User.from_json(DATA)
+    result = User(**result)
+    print(result)
+    # User(firstname='Jan', lastname='Twardowski')
+
+.. code-block:: python
+
+    import json
+    from dataclasses import dataclass
+
+
+    class JSONMixin:
+
+        @classmethod
+        def from_json(cls, data):
+            data = json.loads(data)
+            return cls(**data)
+
+
+    @dataclass
+    class User(JSONMixin):
+        firstname: str
+        lastname: str
+
+
+    DATA = '{"firstname": "Jan", "lastname": "Twardowski"}'
+
+    result = User.from_json(DATA)
+    print(reslt)
+    # User(firstname='Jan', lastname='Twardowski')
+
+
+Use Cases
+=========
+.. code-block:: python
+
+    class AbstractTime:
+        tzname: str
+        tzcode: str
+
+        @classmethod
+        def parse(cls, text):
+            result = ...
+            return cls(**result)
+
+    class MartianTime(AbstractTime):
+        tzname = 'Coordinated Mars Time'
+        tzcode = 'MTC'
+
+    class LunarTime(AbstractTime):
+        tzname = 'Lunar Standard Time'
+        tzcode = 'LST'
+
+    class EarthTime(AbstractTime):
+        tzname = 'Universal Time Coordinated'
+        tzcode = 'UTC'
+
+
+    # settings.py
+    mission_time = MartianTime
+
+
+    # kod
+    from settings import mission_time
+
+    UTC = '1969-07-21T02:53:07Z'
+
+    now = mission_time.parse(UTC)
+    print(now.tzname)
+    # Coordinated Mars Time
+
+
 .. code-block:: python
 
     import json

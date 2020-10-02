@@ -86,19 +86,61 @@ Using
 
 Inheritance
 ===========
-* Slots are inherited too
+* Slots are added on inheritance
 
 .. code-block:: python
 
-    class Astronaut:
+    class Pilot:
         __slots__ = ('firstname', 'lastname')
 
-    class NASAAstronaut(Iris):
+    class Astronaut(Pilot):
+        pass
+
+
+    astro = Astronaut()
+    astro.firstname = 'Mark'
+    astro.lastname = 'Watney'
+    astro.mission = 'Ares 3'
+
+    print(astro.mission)
+    # Ares 3
+
+.. code-block:: python
+
+    class Pilot:
+        __slots__ = ('firstname', 'lastname')
+
+    class Astronaut(Pilot):
+        __slots__ = ('firstname', 'firstname', 'mission')
+
+
+    astro = Astronaut()
+    astro.firstname = 'Mark'
+    astro.lastname = 'Watney'
+    astro.mission = 'Ares 3'
+    astro.rank = 'Senior'
+    # Traceback (most recent call last):
+    #   ...
+    # AttributeError: 'Astronaut' object has no attribute 'rank'
+
+.. code-block:: python
+
+    class Pilot:
+        __slots__ = ('firstname', 'lastname')
+
+
+    class Astronaut(Pilot):
         __slots__ = ('mission',)
 
-    class ESAAstronaut(Iris):
-        # redundant 'firstname' and 'lastname'
-        __slots__ = ('firstname', 'firstname', 'mission')
+
+    astro = Astronaut()
+    astro.firstname = 'Mark'
+    astro.lastname = 'Watney'
+    astro.mission = 'Ares 3'
+    astro.rank = 'Senior'
+    # Traceback (most recent call last):
+    #   ...
+    # AttributeError: 'Astronaut' object has no attribute 'rank'
 
 
 Examples
@@ -142,7 +184,7 @@ OOP Slots Define
 * Assignment name: OOP Slots Define
 * Last update: 2020-10-02
 * Complexity level: easy
-* Lines of code to write: 12 lines
+* Lines of code to write: 11 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/oop_slots_define.py`
 
@@ -204,6 +246,10 @@ OOP Slots Define
         Traceback (most recent call last):
           ...
         AttributeError: 'Iris' object has no attribute '__dict__'
+
+        >>> values = tuple(getattr(iris, x) for x in iris.__slots__)
+        >>> print(f'Iris{values}')
+        Iris(5.8, 2.7, 5.1, 1.9, 'virginica')
 
 :Hint:
     * In ``__repr__()`` use tuple comprehension to get ``self.__slots__`` values

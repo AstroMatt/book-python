@@ -1,25 +1,25 @@
+"""
+>>> list(Range(0, 10, 2))
+[0, 2, 4, 6, 8]
+
+>>> list(Range(0, 5))
+[0, 1, 2, 3, 4]
+
+>>> list(Range(5))
+[0, 1, 2, 3, 4]
+
+>>> list(Range())
+Traceback (most recent call last):
+  ...
+ValueError: Invalid arguments
+
+>>> list(Range(1,2,3,4))
+Traceback (most recent call last):
+  ...
+ValueError: Invalid arguments
+"""
+
 class Range:
-    """
-    >>> list(Range(0, 10, 2))
-    [0, 2, 4, 6, 8]
-
-    >>> list(Range(0, 5))
-    [0, 1, 2, 3, 4]
-
-    >>> list(Range(5))
-    [0, 1, 2, 3, 4]
-
-    >>> list(Range())
-    Traceback (most recent call last):
-      ...
-    ValueError: Invalid arguments
-
-    >>> list(Range(1,2,3,4))
-    Traceback (most recent call last):
-      ...
-    ValueError: Invalid arguments
-    """
-
     def __init__(self, *args):
         if len(args) == 3:
             self.start = args[0]

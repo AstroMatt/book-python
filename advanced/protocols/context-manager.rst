@@ -291,10 +291,10 @@ Contextmanager decorator
 Assignments
 ===========
 
-Protocol Context Manager File
------------------------------
-* Assignment name: Protocol Context Manager File
-* Last update: 2020-10-01
+Protocol ContextManager File
+----------------------------
+* Assignment name: Protocol ContextManager File
+* Last update: 2020-10-02
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
@@ -302,36 +302,44 @@ Protocol Context Manager File
 
 :English:
     #. Use kodu from "Input" section (see below)
-    #. Create Context manager for file which buffers data before save
-    #. When block closes, then open file and write data
+    #. Define class ``File`` with parameter: ``filename: str``
+    #. ``File`` must implement Context Manager protocol
+    #. ``File`` buffers lines added using ``File.append(text: str)`` method
+    #. On ``with`` block exit ``File`` class opens file and write buffer
 
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
-    #. Stwórz Context Manager dla plików, który buforuje dane przed zapisem
-    #. Gdy nastąpi wyjście z bloku context managera, to otwórz plik i zapisz dane
+    #. Stwórz klasę ``File`` z parametrem: ``filename: str``
+    #. ``File`` ma implementować protokół Context Manager
+    #. ``File`` buforuje linie dodawane za pomocą metody ``File.append(text: str)``
+    #. Na wyjściu z bloku ``with`` klasa ``File`` otwiera plik i zapisuje bufor
 
-:Input:
-    .. code-block:: python
+:Output:
+    .. code-block:: text
 
-        FILE = r'/tmp/protocol_contextmanager_file.txt'
+        >>> from inspect import isclass, ismethod
+        >>> assert isclass(File)
+        >>> assert hasattr(File, 'append')
+        >>> assert hasattr(File, '__enter__')
+        >>> assert hasattr(File, '__exit__')
+        >>> assert ismethod(File(None).append)
+        >>> assert ismethod(File(None).__enter__)
+        >>> assert ismethod(File(None).__exit__)
 
+        >>> with File('_temporary.txt') as file:
+        ...    file.append('One')
+        ...    file.append('Two')
 
-        class BufferedFile:
-            raise NotImplementedError
+        >>> open('_temporary.txt').read()
+        'One\\nTwo\\n'
 
+:Hint:
+    * Append newline character (``\n``) before adding to buffer
 
-        with BufferedFile(FILE) as file:
-            file.append_line('One')
-            file.append_line('Two')
-            file.append_line('Three')
-            file.append_line('Four')
-            file.append_line('Five')
-            file.append_line('Six')
-
-Protocol Context Manager Buffer
--------------------------------
+Protocol ContextManagerBuffer
+-----------------------------
 * Assignment name: Protocol Context Manager Buffer
-* Last update: 2020-10-01
+* Last update: 2020-10-02
 * Complexity level: easy
 * Lines of code to write: 32 lines
 * Estimated time of completion: 13 min
@@ -352,20 +360,23 @@ Protocol Context Manager Buffer
     #. Operacje zapisu i odczytu trwają, jak zrobić, aby do bufora podczas zapisu na dysk, nadal można było pisać?
 
 :Input:
-    .. code-block:: python
 
-        FILE = r'/tmp/protocol_contextmanager_buffer.txt'
+    .. code-block:: text
 
+        >>> from inspect import isclass, ismethod
+        >>> assert isclass(File)
+        >>> assert hasattr(File, 'append')
+        >>> assert hasattr(File, '__enter__')
+        >>> assert hasattr(File, '__exit__')
+        >>> assert ismethod(File(None).append)
+        >>> assert ismethod(File(None).__enter__)
+        >>> assert ismethod(File(None).__exit__)
 
-        class BufferedFile:
-            raise NotImplementedError
-
-
-        with BufferedFile(FILE) as file:
-            file.append_line('One')
-            file.append_line('Two')
-            file.append_line('Three')
-            file.append_line('Four')
-            file.append_line('Five')
-            file.append_line('Six')
+        >>> with File('_temporary.txt') as file:
+        ...    file.append('One')
+        ...    file.append('Two')
+        ...    file.append('Three')
+        ...    file.append('Four')
+        ...    file.append('Five')
+        ...    file.append('Six')
 

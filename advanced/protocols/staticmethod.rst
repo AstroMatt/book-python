@@ -145,6 +145,23 @@ Example 1
 Example 2
 ---------
 .. code-block:: python
+
+    class http:
+
+        @staticmethod
+        def get(url):
+            ...
+
+        @staticmethod
+        def post(url, data):
+            ...
+
+    http.get('https://python.astrotech.io')
+    http.post('https://python.astrotech.io', data={'name': 'Jan'})
+
+Example 3
+---------
+.. code-block:: python
     :caption: `HabitatOS <https://www.habitatos.space>`_ Z-Wave sensor model
 
     from datetime import datetime, timezone
