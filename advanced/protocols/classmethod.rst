@@ -38,6 +38,9 @@ Example
     # TypeError: __init__() missing 2 required positional arguments: 'firstname' and 'lastname'
 
     result = User(None, None).from_json(DATA)
+    print(result)
+    # {'firstname': 'Jan', 'lastname': 'Twardowski'}
+
     result = User(**result)
     print(result)
     # User(firstname='Jan', lastname='Twardowski')
@@ -64,6 +67,9 @@ Example
     DATA = '{"firstname": "Jan", "lastname": "Twardowski"}'
 
     result = User.from_json(DATA)
+    print(result)
+    # {'firstname': 'Jan', 'lastname': 'Twardowski'}
+
     result = User(**result)
     print(result)
     # User(firstname='Jan', lastname='Twardowski')
@@ -128,10 +134,10 @@ Example
     admin = Admin.from_json(DATA)
 
     type(guest)     # <class '__main__.Guest'>
-    print(guest)    # Guest(firstname="Jan", lastname="Twardowski")
-
     type(admin)     # <class '__main__.Admin'>
-    print(admin)    # Admin(firstname="Jan", lastname="Twardowski")
+
+    print(guest)    # Guest(firstname='Jan', lastname='Twardowski')
+    print(admin)    # Admin(firstname='Jan', lastname='Twardowski')
 
 
 Use Cases
@@ -160,16 +166,15 @@ Use Cases
         tzcode = 'UTC'
 
 
-    # settings.py
-    mission_time = MartianTime
+    # Settings
+    time = MartianTime
 
-
-    # kod
-    from settings import mission_time
+    # Usage
+    from settings import time
 
     UTC = '1969-07-21T02:53:07Z'
 
-    dt = mission_time.parse(UTC)
+    dt = time.parse(UTC)
     print(dt.tzname)
     # Coordinated Mars Time
 
@@ -180,7 +185,7 @@ Assignments
 Protocol Classmethod CSV
 ------------------------
 * Assignment name: Protocol Classmethod CSV
-* Last update: 2020-10-01
+* Last update: 2020-10-02
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min

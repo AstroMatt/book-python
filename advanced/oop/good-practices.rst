@@ -62,22 +62,22 @@ Tell - don't ask
     :caption: Tell - don't ask (Bad)
 
     class Dragon:
-        self.status = 'alive'
+        health: int = 10
 
 
     dragon = Dragon()
 
-    while dragon.status == 'alive':
+    while dragon.health <= 0:
         ...
 
 .. code-block:: python
     :caption: Tell - don't ask (Good)
 
     class Dragon:
-        self.status = 'alive'
+        health: int = 10
 
         def is_alive(self):
-            return self.status == 'alive'
+            return self.health > 0
 
 
     dragon = Dragon()
@@ -97,8 +97,7 @@ Setter and Getter Methods
     :caption: Accessing class fields using setter and getter
 
     class Astronaut:
-        def __init__(self, name):
-            self._name = name
+        _name: str
 
         def set_name(self, name):
             self._name = name
@@ -108,7 +107,6 @@ Setter and Getter Methods
 
 
     astro = Astronaut()
-
     astro.set_name('Mark Watney')
     print(astro.get_name())
     # Mark Watney
@@ -116,10 +114,9 @@ Setter and Getter Methods
 .. code-block:: python
     :caption: Problem with setters and getters
 
-    class MyClass:
-        def __init__(self, x, y):
-            self._x = x
-            self._y = y
+    class Point:
+        _x: int
+        _y: int
 
         def get_x(self):
             return self._x
@@ -143,8 +140,7 @@ Setter and Getter Methods
     :caption: Rationale for Setters and Getters
 
     class Astronaut:
-        def __init__(self, name):
-            self._name = name
+        _name: str
 
         def set_name(self, name):
             self._name = name.title()
@@ -162,14 +158,14 @@ Setter and Getter Methods
     :caption: Rationale for Setters and Getters
 
     class Temperature:
-        def __init__(self, kelvin):
-            self._kelvin = kelvin
+        kelvin: int
 
         def set_kelvin(self, kelvin):
             if kelvin < 0:
                 raise ValueError('Kelvin cannot be negative')
             else:
                 self._kelvin = kelvin
+
 
     t = Temperature()
     t.set_kelvin(-1)

@@ -52,6 +52,7 @@ The single responsibility principle is a computer programming principle that sta
 
 
 .. code-block:: python
+    :caption: Good
 
     from dataclasses import dataclass
 
@@ -60,7 +61,6 @@ The single responsibility principle is a computer programming principle that sta
     class HasHealth:
         HEALTH_MIN: int = 0
         HEALTH_MAX: int = 10
-        _status: Status = Status.ALIVE
         _health: int = 0
 
         def __post_init__(self) -> None:
@@ -104,6 +104,25 @@ Open/Closed Principle
 
 .. code-block:: python
 
+    class Dragon:
+        HEALTH_MIN: int = 0
+        HEALTH_MAX: int = 10
+
+        def __init__(self) -> None:
+            self._health = randint(self.HEALTH_MIN, self.HEALTH_MAX)
+
+
+    class RedDragon(Dragon):
+        HEALTH_MIN: int = 10
+        HEALTH_MAX: int = 20
+
+
+    class BlackDragon(Dragon):
+        HEALTH_MIN: int = 30
+        HEALTH_MAX: int = 40
+
+.. code-block:: python
+
     from random import randint
 
 
@@ -123,27 +142,6 @@ Open/Closed Principle
     class BlackDragon(Dragon):
         def _get_initial_health(self):
             return randint(20, 30)
-
-
-.. code-block:: python
-
-    class Dragon:
-        HEALTH_MIN: int = 0
-        HEALTH_MAX: int = 10
-
-        def __init__(self) -> None:
-            self._health = randint(self.HEALTH_MIN, self.HEALTH_MAX)
-
-
-    class RedDragon(Dragon):
-        HEALTH_MIN: int = 10
-        HEALTH_MAX: int = 20
-
-
-    class BlackDragon(Dragon):
-        HEALTH_MIN: int = 30
-        HEALTH_MAX: int = 40
-
 
 
 Liskov substitution principle
@@ -245,7 +243,7 @@ When following this principle, the conventional dependency relationships establi
 By dictating that both high-level and low-level objects must depend on the same abstraction this design principle inverts the way some people may think about object-oriented programming.
 
 .. code-block:: python
-    :caption: Switch moves business logic to the execution place
+    :caption: Bad
 
     watney = 'Astronaut'
 
@@ -259,6 +257,7 @@ By dictating that both high-level and low-level objects must depend on the same 
         print('Default Value')
 
 .. code-block:: python
+    :caption: Good
 
     class Astronaut:
         def say_hello():

@@ -105,7 +105,7 @@ Http Client
             ...
 
     http.get('https://python.astrotech.io')
-    http.post('https://python.astrotech.io', data={'name': 'Jan'})
+    http.post('https://python.astrotech.io', data={'astronaut': 'Mark Watney'})
 
 Astronaut Say Hello
 -------------------
@@ -172,6 +172,12 @@ Astronaut Say Hello
 
     Astronaut.say_goodbye()
     # 'goodbye'
+
+    astro = Astronaut()
+    astro.say_hello()
+    # hello
+    astro.say_goodbye()
+    # goodbye
 
 Helper
 ------
