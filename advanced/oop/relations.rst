@@ -113,12 +113,14 @@ OOP Relations Model
     #. In ``DATA`` we have two classes
     #. Model data using classes and relations
     #. Create instances dynamically based on ``DATA``
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. W ``DATA`` mamy dwie klasy
     #. Zamodeluj problem wykorzystując klasy i relacje między nimi
     #. Twórz instancje dynamicznie na podstawie ``DATA``
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :The whys and wherefores:
     * OOP modeling
@@ -194,6 +196,8 @@ OOP Relations Flatten
         * Use ``utf-8`` encoding
         * Use Unix ``\n`` newline
 
+    #. Compare result with "Output" section (see below)
+
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
     #. Za pomocą ``csv.DictWriter()`` zapisz kontakty z książki adresowej w pliku
@@ -205,6 +209,8 @@ OOP Relations Flatten
         * Użyj ``;`` do oddzielenia kolumn
         * Użyj kodowania ``utf-8``
         * Użyj zakończenia linii Unix ``\n``
+
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. code-block:: python
@@ -258,6 +264,7 @@ OOP Relations Nested
     #. Client can ask about number of all of his accounts
     #. Client can add money to the account
     #. Client can withdraw money from the account
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Klient może otworzyć konto w banku
@@ -267,3 +274,4 @@ OOP Relations Nested
     #. Klient może odpytać o numery wszystkich swoich kont
     #. Klient może wpłacić pieniądze na swoje konto
     #. Klient może wybrać pieniądze z bankomatu
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)

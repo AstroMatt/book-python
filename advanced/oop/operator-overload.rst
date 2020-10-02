@@ -354,10 +354,12 @@ OOP Operator Overload
 :English:
     #. Use code from "Input" section (see below)
     #. Override operators of ``Astronaut`` and ``Mission`` for code to work correctly
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
     #. Nadpisz operatory ``Astronaut`` i ``Mission`` aby poniższy kod zadziałał poprawnie
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. code-block:: python

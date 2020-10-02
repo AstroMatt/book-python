@@ -420,6 +420,7 @@ OOP Constructor Passwd
     #. User ID (UID) to trzecie pole, np. ``root:x:0:0:root:/root:/bin/bash`` to UID jest równy ``0``
     #. Konta systemowe (``SystemAccount``) to takie, które w polu UID mają wartość poniżej ``1000``
     #. Konta użytkowników (``UserAccount``) to takie, które w polu UID mają wartość ``1000`` lub więcej
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. code-block:: python

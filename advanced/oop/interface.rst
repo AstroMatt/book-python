@@ -137,6 +137,7 @@ OOP Interface Iris
     #. Create class ``Setosa`` inheriting from ``IrisInterface``
     #. Create instance of a class ``Setosa`` and call ``mean()`` method
     #. Create instance of a class ``IrisInterface`` and call ``mean()`` method
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
@@ -147,6 +148,7 @@ OOP Interface Iris
     #. Stwórz klasę ``Setosa`` dziedziczące po ``IrisInterface``
     #. Stwórz instancje klasy ``Setosa`` i wywołaj metodę ``mean()``
     #. Stwórz instancje klasy ``IrisInterface`` i wywołaj metodę ``mean()``
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
     .. code-block:: text

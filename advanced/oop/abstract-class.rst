@@ -194,6 +194,7 @@ OOP Abstract Iris
     #. Create class ``Setosa`` inheriting from ``Iris``
     #. Try to create instance of a class ``Setosa``
     #. Try to create instance of a class ``Iris``
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Stwórz klasę abstrakcyjną ``Iris``
@@ -201,3 +202,4 @@ OOP Abstract Iris
     #. Stwórz klasę ``Setosa`` dziedziczące po ``Iris``
     #. Spróbuj stworzyć instancje klasy ``Setosa``
     #. Spróbuj stworzyć instancję klasy ``Iris``
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)

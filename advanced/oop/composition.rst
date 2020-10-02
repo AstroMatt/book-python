@@ -186,6 +186,7 @@ OOP Composition Mars
     #. Create class ``Astronaut``
     #. Compose class ``MarsMission`` from ``Habitat``, ``Rocket``, ``Astronaut``
     #. Assignment demonstrates syntax, so do not add any attributes and methods
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Stwórz klasę ``Habitat``
@@ -193,6 +194,7 @@ OOP Composition Mars
     #. Stwórz klasę ``Astronaut``
     #. Skomponuj klasę ``MarsMission`` z ``Habitat``, ``Rocket``, ``Astronaut``
     #. Zadanie demonstruje skłądnię, nie dodawaj żadnych atrybutów i metod
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
     .. code-block:: text
