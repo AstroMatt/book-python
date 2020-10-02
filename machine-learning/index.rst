@@ -9,7 +9,7 @@ Introduction
     introduction/statistics.rst
     introduction/machine-learning.rst
     introduction/glossary-pl.rst
-    introduction/g lossary.rst
+    introduction/glossary.rst
     introduction/datasets.rst
     introduction/algorithms.rst
     introduction/features.rst
