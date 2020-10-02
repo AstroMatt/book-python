@@ -31,6 +31,7 @@ Protocol
         def __exit__(self, *args):
             return None
 
+
 Example
 =======
 .. code-block:: python
@@ -54,6 +55,27 @@ Example
     # Entering the block
     # I am inside
     # Exiting the block
+
+.. code-block:: python
+
+    class Rocket:
+        def __enter__(self):
+            print('Launching')
+            return self
+
+        def __exit__(self, *args):
+            print('Landing')
+
+        def fly_to_space(self):
+            print('I am in space!')
+
+
+    with Rocket() as rocket:
+        rocket.fly_to_space()
+
+    # Launching
+    # I am in space!
+    # Landing
 
 
 Use Cases
@@ -150,22 +172,21 @@ Contextmanager decorator
 .. code-block:: python
 
     from contextlib import contextmanager
-    import time
+    from time import time
 
 
     @contextmanager
-    def benchmark():
-        start_time = time.time()
+    def timeit():
+        start = time()
         yield
-        end_time = time.time()
-        duration = end_time - start_time
-        print(f'Duration {duration:.4f} seconds')
+        end = time()
+        print(f'Duration {end-start:.4f} seconds')
 
 
-    with benchmark():
+    with timeit():
         list(range(100_000_000))
 
-    # Duration 3.3795 seconds
+    # Duration 4.0250 seconds
 
 .. code-block:: python
 
@@ -174,48 +195,47 @@ Contextmanager decorator
 
     @contextmanager
     def tag(name):
-        print(f"<{name}>")
+        print(f'<{name}>')
         yield
-        print(f"</{name}>")
+        print(f'</{name}>')
 
 
-    with tag("p"):
-        print("foo")
+    with tag('p'):
+        print('foo')
 
     # <p>
     # foo
     # </p>
 
-``ContextDecorator`` class
---------------------------
+ContextDecorator class
+----------------------
 .. code-block:: python
 
     from contextlib import ContextDecorator
-    import time
+    from time import time
 
 
     class Timeit(ContextDecorator):
         def __enter__(self):
-            self.start_time = time.time()
+            self.start = time()
             return self
 
         def __exit__(self, *args):
-            end_time = time.time()
-            duration = end_time - self.start_time
-            print(f'Duration {duration:.4f} seconds')
+            end = time()
+            print(f'Duration {end-self.start:.2f} seconds')
 
 
     @Timeit()
-    def my_function():
+    def myfunction():
         list(range(100_000_000))
 
 
-    my_function()
-    # Duration 3.4697 seconds
+    myfunction()
+    # Duration 3.90 seconds
 
 .. code-block:: python
 
-    import time
+    from time import time
 
 
     class Timeit:
@@ -223,13 +243,13 @@ Contextmanager decorator
             self.name = name
 
         def __enter__(self):
-            self.start_time = time.time()
+            self.start = time()
             return self
 
         def __exit__(self, *arg, **kwargs):
-            self.end_time = time.time()
-            duration = self.end_time - self.start_time
-            print(f'Duration of {self.name} is {duration:f} seconds')
+            end = time()
+            duration = (end - self.start) * 10e6
+            print(f'Duration of {self.name} is {duration:.2f} µs (microsecond)')
 
 
     a = 'a'
@@ -247,37 +267,10 @@ Contextmanager decorator
     with Timeit('%-style'):
         'result of a+b is: %s%s' % (a, b)
 
-    # Duration of f-string is 0.000002 seconds
-    # Duration of string concat is 0.000001 seconds
-    # Duration of str.format() is 0.000003 seconds
-    # Duration of %-style is 0.000002 seconds
-
-.. code-block:: python
-
-    class Timeit:
-        def __init__(self, name):
-            self.name = name
-
-        def __enter__(self):
-            self.start_time = datetime.now().timestamp()
-
-        def __exit__(self, *arg, **kwargs):
-            self.end_time = datetime.now().timestamp()
-            duration = self.end_time - self.start_time
-            print(f'Duration of {self.name} is {duration:f} seconds')
-
-
-    with Timeit('function'):
-        list(get_for_species_function(data, 'setosa'))
-
-    with Timeit('comprehension'):
-        list([row for row in data if row[4] == 'setosa'])
-
-    with Timeit('generator short'):
-        list((row for row in data if row[4] == 'setosa'))
-
-    with Timeit('generator'):
-        list(get_for_species_generator(data, 'setosa'))
+    # Duration of f-string is 21.46 µs (microsecond)
+    # Duration of string concat is 9.54 µs (microsecond)
+    # Duration of str.format() is 30.99 µs (microsecond)
+    # Duration of %-style is 21.46 µs (microsecond)
 
 
 Assignments
