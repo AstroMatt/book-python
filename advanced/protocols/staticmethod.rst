@@ -1,4 +1,4 @@
-.. _OOP Staticmethod:
+.. _Protocol Staticmethod:
 
 ************
 Staticmethod

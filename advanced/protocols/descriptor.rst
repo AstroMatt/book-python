@@ -1,4 +1,4 @@
-.. _OOP Descriptor:
+.. _Protocol Descriptor:
 
 **********
 Descriptor

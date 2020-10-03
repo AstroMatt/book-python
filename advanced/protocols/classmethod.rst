@@ -1,3 +1,5 @@
+.. _Protocol Classmethod:
+
 ***********
 Classmethod
 ***********

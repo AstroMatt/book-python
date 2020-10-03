@@ -73,13 +73,13 @@ Object Oriented Programming
     oop/solid.rst
     oop/good-practices.rst
 
-*************
-OOP Protocols
-*************
+*********
+Protocols
+*********
 .. toctree::
     :maxdepth: 1
-    :caption: OOP Protocols
-    :name: Advanced OOP Protocols
+    :caption: Protocols
+    :name: Advanced Protocols
 
     protocols/iterator.rst
     protocols/context-manager.rst

@@ -1,4 +1,4 @@
-.. _OOP Property:
+.. _Protocol Property:
 
 ********
 Property

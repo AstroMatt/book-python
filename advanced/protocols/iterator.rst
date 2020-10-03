@@ -1,4 +1,4 @@
-.. _OOP Iterator:
+.. _Protocol Iterator:
 
 ********
 Iterator

@@ -1,8 +1,8 @@
-.. _Context Managers:
+.. _Protocol Context Manager:
 
-****************
-Context Managers
-****************
+***************
+Context Manager
+***************
 
 
 Rationale

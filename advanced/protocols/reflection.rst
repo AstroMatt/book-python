@@ -1,4 +1,4 @@
-.. _OOP Reflection:
+.. _Protocol Reflection:
 
 **********
 Reflection
