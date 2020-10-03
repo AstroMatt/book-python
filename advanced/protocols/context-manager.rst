@@ -379,8 +379,7 @@ Protocol ContextManagerBuffer
     #. Wszystkie testy muszą przejść
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
-:Input:
-
+:Output:
     .. code-block:: text
 
         >>> from inspect import isclass, ismethod

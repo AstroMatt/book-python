@@ -217,9 +217,8 @@ Decorator Arguments Astronauts
             return f'Launching: {crew}'
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        """
         >>> launch(CREW_PRIMARY)
         Launching: Jan Twardowski, Mark Watney, Melissa Lewis
 
@@ -227,7 +226,6 @@ Decorator Arguments Astronauts
         Traceback (most recent call last):
             ...
         PermissionError: Alex Vogel is not an astronaut
-        """
 
 Decorator Arguments Type Check
 ------------------------------

@@ -203,3 +203,15 @@ OOP Abstract Iris
     #. Spróbuj stworzyć instancje klasy ``Setosa``
     #. Spróbuj stworzyć instancję klasy ``Iris``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: text
+
+        """
+        >>> iris = Iris()
+        Traceback (most recent call last):
+          ...
+        TypeError: Can't instantiate abstract class Iris with abstract methods get_name
+
+        >>> setosa = Setosa()
+        """
