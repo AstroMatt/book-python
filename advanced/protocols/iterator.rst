@@ -71,8 +71,8 @@ Example
     # Melissa Lewis
 
 
-Loop Under the Hood
-===================
+Loop and Iterators
+==================
 .. code-block:: python
     :caption: For loop
 
@@ -181,8 +181,8 @@ Built-in Type Iteration
     # c -> 3
 
 
-Implementation
-==============
+Use Cases
+=========
 .. code-block:: python
     :caption: Iterator implementation
 
@@ -634,13 +634,15 @@ Protocol Iterator Implementation
     #. Modify classes to implement iterator protocol
     #. Iterator should return instances of ``Mission``
     #. Iterate over ``astro`` using ``for`` loop
+    #. All tests must pass
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Użyj data z sekcji "Input" (patrz poniżej)
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Zmodyfikuj klasy aby zaimplementować protokół iterator
     #. Iterator powinien zwracać instancje ``Mission``
     #. Iteruj po ``astro`` używając pętli ``for``
+    #. Wszystkie testy muszą przejść
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
@@ -697,18 +699,22 @@ Protocol Iterator Range
 * Solution: :download:`solution/protocol_iterator_range.py`
 
 :English:
-    #. Use code from "Input" section (see below)
+    #. Use data from "Input" section (see below)
     #. Define class ``Range`` with parameters: ``start``, ``strop``, ``step``
     #. Write own implementation of a built-in ``range(start, strop, step)`` function
     #. Use iterator protocol
     #. How to implement passing only stop argument (``range(start=0, stop=???, step=1)``)?
+    #. All tests must pass
+    #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Użyj kodu z sekcji "Input" (patrz poniżej)
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Zdefiniuj klasę ``Range`` z parametrami: ``start``, ``strop``, ``step``
     #. Zaimplementuj własne rozwiązanie wbudowanej funkcji ``range(start, strop, step)``
     #. Użyj protokołu iteratora iterator
     #. Jak zaimplementować możliwość podawania tylko końca (``range(start=0, stop=???, step=1)``)?
+    #. Wszystkie testy muszą przejść
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
     .. code-block:: text

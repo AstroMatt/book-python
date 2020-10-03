@@ -107,8 +107,8 @@ Http Client
     http.get('https://python.astrotech.io')
     http.post('https://python.astrotech.io', data={'astronaut': 'Mark Watney'})
 
-Astronaut Say Hello
--------------------
+Astronaut Hello
+---------------
 .. code-block:: python
 
     def astronaut_say_hello():

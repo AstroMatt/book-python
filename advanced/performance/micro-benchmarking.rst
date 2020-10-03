@@ -66,6 +66,73 @@ Console use
 
 .. _Micro-benchmarking use case:
 
+String Concatenation
+====================
+.. code-block:: python
+
+    from time import time
+
+
+    class Timeit:
+        def __init__(self, name):
+            self.name = name
+
+        def __enter__(self):
+            self.start = time()
+            return self
+
+        def __exit__(self, *arg):
+            end = time()
+            print(f'Duration of {self.name} is {end-self.start:.2f} second')
+
+
+    a = 1
+    b = 2
+    repetitions = int(1e7)
+
+
+    with Timeit('f-string'):
+        for _ in range(repetitions):
+            f'{a}{b}'
+
+    with Timeit('string concat'):
+        for _ in range(repetitions):
+            a + b
+
+    with Timeit('str.format()'):
+        for _ in range(repetitions):
+            '{0}{1}'.format(a, b)
+
+    with Timeit('str.format()'):
+        for _ in range(repetitions):
+            '{}{}'.format(a, b)
+
+    with Timeit('str.format()'):
+        for _ in range(repetitions):
+            '{a}{b}'.format(a=a, b=b)
+
+    with Timeit('%-style'):
+        for _ in range(repetitions):
+            '%s%s' % (a, b)
+
+    with Timeit('%-style'):
+        for _ in range(repetitions):
+            '%d%d' % (a, b)
+
+    with Timeit('%-style'):
+        for _ in range(repetitions):
+            '%f%f' % (a, b)
+
+    # Duration of f-string is 2.70 second
+    # Duration of string concat is 0.68 second
+    # Duration of str.format() is 3.46 second
+    # Duration of str.format() is 3.37 second
+    # Duration of str.format() is 4.85 second
+    # Duration of %-style is 2.59 second
+    # Duration of %-style is 2.59 second
+    # Duration of %-style is 3.82 second
+
+
 Case Studies - Unique Keys
 ==========================
 * Runtime: Jupyter ``%%timeit``
@@ -82,9 +149,8 @@ Case Studies - Unique Keys
         {'Sepal width': 2.9, 'Petal width': 1.8, 'Species': 'virginica'},
     ]
 
-Append if object not in the list
---------------------------------
 .. code-block:: python
+    :caption: Append if object not in the list
 
     %%timeit -r 10 -n 1000000
 
@@ -97,9 +163,8 @@ Append if object not in the list
 
     # 2.16 µs ± 26.5 ns per loop (mean ± std. dev. of 10 runs, 1000000 loops each)
 
-Append to list and deduplicate at the end
------------------------------------------
 .. code-block:: python
+    :caption: Append to list and deduplicate at the end
 
     %%timeit -r 10 -n 1000000
 
@@ -113,9 +178,8 @@ Append to list and deduplicate at the end
 
     # 2.5 µs ± 32.9 ns per loop (mean ± std. dev. of 10 runs, 1000000 loops each)
 
-Add to set
-----------
 .. code-block:: python
+    :caption: Add to set
 
     %%timeit -r 10 -n 1000000
 
@@ -127,9 +191,8 @@ Add to set
 
     # 2.12 µs ± 32.4 ns per loop (mean ± std. dev. of 10 runs, 1000000 loops each)
 
-Update set
-----------
 .. code-block:: python
+    :caption: Update set
 
     %%timeit -r 10 -n 1000000
 
@@ -140,9 +203,8 @@ Update set
 
     # 1.57 µs ± 26.7 ns per loop (mean ± std. dev. of 10 runs, 1000000 loops each)
 
-Set Comprehension
------------------
 .. code-block:: python
+    :caption: Set Comprehension
 
     %%timeit -r 10 -n 1000000
 
@@ -152,12 +214,8 @@ Set Comprehension
 
     # 2.06 µs ± 79.7 ns per loop (mean ± std. dev. of 10 runs, 1000000 loops each)
 
-Add to Set Comprehension
-------------------------
-.. highlights::
-    * Code appends generator object not values, this is why it is so fast!
-
 .. code-block:: python
+    :caption: Add to Set Comprehension. Code appends generator object not values, this is why it is so fast!
 
     %%timeit -r 10 -n 1000000
 
@@ -169,9 +227,8 @@ Add to Set Comprehension
 
     # 447 ns ± 9.52 ns per loop (mean ± std. dev. of 10 runs, 1000000 loops each)
 
-Update Set Comprehension
-------------------------
 .. code-block:: python
+    :caption: Update Set Comprehension
 
     %%timeit -r 10 -n 1000000
 
@@ -180,8 +237,6 @@ Update Set Comprehension
 
     # 2.06 µs ± 45.9 ns per loop (mean ± std. dev. of 10 runs, 1000000 loops each)
 
-Others
-------
 .. code-block:: python
 
     %%timeit -r 10 -n 1000000
@@ -216,63 +271,153 @@ Others
     # 1.71 µs ± 54 ns per loop (mean ± std. dev. of 10 runs, 1000000 loops each)
 
 
-Case Study - Fibonacci
+Case Study - Factorial
 ======================
-
-Without cache
--------------
 .. code-block:: python
+    :caption: Recap information about factorial (``n!``)
 
-    %%timeit
+    """
+    5! = 5 * 4!
+    4! = 4 * 3!
+    3! = 3 * 2!
+    2! = 2 * 1!
+    1! = 1 * 0!
+    0! = 1
+    """
 
-    def factorial_nocache(n: int) -> int:
+    factorial(5)                                    # = 120
+        return 5 * factorial(4)                     # 5 * 24 = 120
+            return 4 * factorial(3)                 # 4 * 6 = 24
+                return 3 * factorial(2)             # 3 * 2 = 6
+                    return 2 * factorial(1)         # 2 * 1 = 2
+                        return 1 * factorial(0)     # 1 * 1 = 1
+                            return 1                # 1
+
+.. code-block:: python
+    :caption: Cache with global scope
+
+    _cache = {}
+
+    def cache(func):
+        def wrapper(n):
+            if n not in _cache:
+                _cache[n] = func(n)
+            return _cache[n]
+        return wrapper
+
+
+    @cache
+    def factorial(n):
         if n == 0:
             return 1
         else:
-            return n * factorial_nocache(n - 1)
+            return n * factorial(n-1)
 
 
-    factorial_nocache(500)
-    factorial_nocache(400)
-    factorial_nocache(450)
+    factorial(500)
+    factorial(400)
+    factorial(450)
+
+.. code-block:: python
+    :caption: Cache with local scope
+
+    def cache(func):
+        _cache = {}
+        def wrapper(n):
+            if n not in _cache:
+                _cache[n] = func(n)
+            return _cache[n]
+        return wrapper
+
+
+    @cache
+    def factorial(n):
+        if n == 0:
+            return 1
+        else:
+            return n * factorial(n-1)
+
+
+    factorial(500)
+    factorial(400)
+    factorial(450)
+
+.. code-block:: python
+    :caption: Cache with embedded scope
+
+    def cache(func):
+        def wrapper(n):
+            if n not in wrapper._cache:
+                wrapper._cache[n] = func(n)
+            return wrapper._cache[n]
+        if not hasattr(wrapper, '_cache'):
+            setattr(wrapper, '_cache', {})
+        return wrapper
+
+
+    @cache
+    def factorial(n: int) -> int:
+        if n == 0:
+            return 1
+        else:
+            return n * factorial(n-1)
+
+
+    factorial(500)
+    factorial(400)
+    factorial(450)
+
+.. code-block:: python
+    :caption: Without cache
+
+    %%timeit
+
+    def factorial(n: int) -> int:
+        if n == 0:
+            return 1
+        else:
+            return n * factorial(n-1)
+
+
+    factorial(500)
+    factorial(400)
+    factorial(450)
 
     # 283 µs ± 6.63 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 
-Cache contains
---------------
 .. code-block:: python
+    :caption: Cache contains
 
     %%timeit
 
-    CACHE = {}
+    _cache = {}
 
-    def factorial_cache(n: int) -> int:
-        if n in CACHE:
-            return CACHE[n]
+    def factorial(n: int) -> int:
+        if n in _cache:
+            return _cache[n]
 
         if n == 0:
             return 1
         else:
-            result = CACHE[n] = n * factorial_cache(n-1)
+            result = _cache[n] = n * factorial(n-1)
             return result
 
 
-    factorial_cache(500)
-    factorial_cache(400)
-    factorial_cache(450)
+    factorial(500)
+    factorial(400)
+    factorial(450)
 
     # 153 µs ± 2.49 µs per loop (mean ± std. dev. of 7 runs, 10000 loops each)
 
-Cache get
----------
 .. code-block:: python
+    :caption: Cache get
 
     %%timeit
 
-    CACHE = {}
+    _cache = {}
 
-    def factorial_cache(n: int) -> int:
-        result = CACHE.get(n)
+    def factorial(n: int) -> int:
+        result = _cache.get(n)
 
         if result:
             return result
@@ -280,90 +425,87 @@ Cache get
         if n == 0:
             return 1
         else:
-            result = CACHE[n] = n * factorial_cache(n-1)
+            result = _cache[n] = n * factorial(n-1)
             return result
 
 
-    factorial_cache(500)
-    factorial_cache(400)
-    factorial_cache(450)
+    factorial(500)
+    factorial(400)
+    factorial(450)
 
     # 181 µs ± 10.3 µs per loop (mean ± std. dev. of 7 runs, 10000 loops each)
 
-Cache contains with exceptions
-------------------------------
 .. code-block:: python
+    :caption: Cache contains with exceptions
 
     %%timeit
 
-    CACHE = {}
+    _cache = {}
 
-    def factorial_cache(n: int) -> int:
+    def factorial(n: int) -> int:
         if n == 0:
             return 1
 
         try:
-            return CACHE[n]
+            return _cache[n]
         except KeyError:
-            CACHE[n] = result = n * factorial_cache(n-1)
+            _cache[n] = result = n * factorial(n-1)
             return result
 
 
-    factorial_cache(500)
-    factorial_cache(400)
-    factorial_cache(450)
+    factorial(500)
+    factorial(400)
+    factorial(450)
 
     # 618 µs ± 6.6 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 
-Adding cache layer
-------------------
 .. code-block:: python
+    :caption: Adding cache layer
 
     %%timeit
 
-    CACHE = {}
+    _cache = {}
 
-    def factorial_1(n: int) -> int:
+    def fac(n: int) -> int:
 
         def factorial(n: int) -> int:
             if n == 0:
                 return 1
             return n * factorial(n-1)
 
-        if not n in CACHE:
-            CACHE[n] = factorial(n)
+        if not n in _cache:
+            _cache[n] = factorial(n)
 
-        return CACHE[n]
+        return _cache[n]
 
 
-    factorial_1(500)
-    factorial_1(400)
-    factorial_1(450)
+    fac(500)
+    fac(400)
+    fac(450)
 
     # 283 µs ± 6.44 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 
-Get from cache
---------------
 .. code-block:: python
+    :caption: Get from cache
 
     %%timeit
 
-    CACHE = {}
+    _cache = {}
 
-    def factorial2(n: int) -> int:
+    def factorial(n: int) -> int:
         if n == 0:
             return 1
 
-        if n in CACHE:
-            return CACHE[n]
+        if n in _cache:
+            return _cache[n]
 
-        result = CACHE[n] = n * factorial2(n-1)
+        result = _cache[n] = n * factorial(n-1)
         return result
 
 
-    factorial2(500)
-    factorial2(400)
-    factorial2(450)
+    factorial(500)
+    factorial(400)
+    factorial(450)
 
     # 153 µs ± 9.64 µs per loop (mean ± std. dev. of 7 runs, 10000 loops each)
 

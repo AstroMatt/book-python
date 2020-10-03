@@ -15,12 +15,13 @@ Rationale
     * ``getattr(obj, 'attribute_name', 'default value') -> Any``
     * ``hasattr(obj, 'attribute_name') -> bool``
 
-* Protocol:
 
-    * ``__setattr__(self, attribute_name, value) -> None``
-    * ``__delattr__(self, attribute_name) -> None``
-    * ``__getattribute__(self, attribute_name, default) -> Any``
-    * ``__getattr__(self, attribute_name, default) -> Any``
+* Protocol
+==========
+* ``__setattr__(self, attribute_name, value) -> None``
+* ``__delattr__(self, attribute_name) -> None``
+* ``__getattribute__(self, attribute_name, default) -> Any``
+* ``__getattr__(self, attribute_name, default) -> Any``
 
 .. code-block:: python
 
@@ -37,6 +38,7 @@ Rationale
 
         def __getattr__(self, attribute_name, default):
             ...
+
 
 Example
 =======
@@ -83,6 +85,8 @@ Set Attribute
     # Mark Watney
 
     astro._salary = 100
+    # Traceback (most recent call last):
+    #   ...
     # PermissionError: Field is protected
 
 
@@ -113,6 +117,8 @@ Delete Attribute
 
     del astro.name
     del astro._salary
+    # Traceback (most recent call last):
+    #   ...
     # PermissionError: Field is protected
 
 
@@ -147,11 +153,13 @@ Get Attribute
     # Mark Watney
 
     print(astro._salary)
+    # Traceback (most recent call last):
+    #   ...
     # PermissionError: Field is protected
 
 
-Get Attribute if Does Not Exist
-===============================
+Get Attribute if Missing
+========================
 * Called whenever you request an attribute that hasn't already been defined
 * It will not execute, when attribute already exist
 * Implementing a fallback for missing attributes
@@ -237,8 +245,8 @@ Has Attribute
     # True
 
 
-Examples
-========
+Use Cases
+=========
 .. code-block:: python
 
     class Astronaut:
@@ -263,9 +271,13 @@ Examples
     # Mark Watney
 
     astro._salary = 100
+    # Traceback (most recent call last):
+    #   ...
     # PermissionError: Field is protected
 
     print(astro._salary)
+    # Traceback (most recent call last):
+    #   ...
     # PermissionError: Field is protected
 
 .. code-block:: python
@@ -290,6 +302,8 @@ Examples
     # 20
 
     t.kelvin = -10
+    # Traceback (most recent call last):
+    #   ...
     # ValueError: Kelvin temperature cannot be negative
 
 .. code-block:: python
@@ -335,20 +349,24 @@ Protocol Reflection
 * Solution: :download:`solution/protocol_reflection.py`
 
 :English:
+    #. Use data from "Input" section (see below)
     #. Create class ``Point`` with ``x``, ``y``, ``z`` attributes
     #. Prevent adding new attributes
     #. Prevent deleting attributes
     #. Prevent changing attributes
     #. Allow to set attributes only at the initialization
     #. All tests must pass
+    #. Compare result with "Output" section (see below)
 
 :Polish:
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Stwórz klasę ``Point`` z atrybutami ``x``, ``y``, ``z``
     #. Zablokuj możliwość dodawania nowych atrybutów
     #. Zablokuj możliwość usuwania atrybutów
     #. Zablokuj edycję atrybutów
     #. Pozwól na ustawianie atrybutów tylko przy inicjalizacji klasy
     #. Wszystkie testy muszą przejść
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
     .. code-block:: text

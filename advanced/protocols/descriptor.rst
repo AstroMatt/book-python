@@ -222,6 +222,7 @@ Protocol Descriptor Simple
     #. Temperature must always be positive
     #. Use descriptors to check boundaries at each value modification
     #. All tests must pass
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
@@ -230,6 +231,7 @@ Protocol Descriptor Simple
     #. Temperatura musi być zawsze być dodatnia
     #. Użyj deskryptorów do sprawdzania wartości granicznych przy każdej modyfikacji
     #. Wszystkie testy muszą przejść
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
     .. code-block:: text
@@ -264,6 +266,7 @@ Protocol Descriptor Inheritance
     #. Disable modification of ``elevation`` field
     #. Allow to set ``elevation`` field at the class initialization
     #. All tests must pass
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
@@ -273,6 +276,7 @@ Protocol Descriptor Inheritance
     #. Zablokuj modyfikację pola ``elevation``
     #. Zezwól na ustawianie pola ``elevation`` podczas inicjalizacji
     #. Wszystkie testy muszą przejść
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. code-block:: text

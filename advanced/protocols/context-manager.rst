@@ -17,6 +17,7 @@ Rationale
 * Network streams
 * HTTP sessions
 
+
 Protocol
 ========
 * ``__enter__(self) -> self``
@@ -78,97 +79,39 @@ Example
     # Landing
 
 
-Use Cases
+Inheritance
+===========
+.. code-block:: python
+
+    from contextlib import ContextDecorator
+    from time import time
+
+
+    class Timeit(ContextDecorator):
+        def __enter__(self):
+            self.start = time()
+            return self
+
+        def __exit__(self, *args):
+            end = time()
+            print(f'Duration {end-self.start:.2f} seconds')
+
+
+    @Timeit()
+    def myfunction():
+        list(range(100_000_000))
+
+
+    myfunction()
+    # Duration 3.90 seconds
+
+
+Decorator
 =========
-
-Files
------
-.. code-block:: python
-
-    f = open(FILE)
-
-    try:
-        content = f.read()
-    finally:
-        f.close()
-
-.. code-block:: python
-
-    with open(FILE) as f:
-        content = f.read()
-
-Database
---------
-.. code-block:: python
-
-    import sqlite3
-
-
-    SQL_CREATE_TABLE = """
-        CREATE TABLE IF NOT EXISTS astronauts (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            pesel INTEGER UNIQUE,
-            firstname TEXT,
-            lastname TEXT)"""
-    SQL_INSERT = 'INSERT INTO astronauts VALUES (NULL, :pesel, :firstname, :lastname)'
-    SQL_SELECT = 'SELECT * from astronauts'
-
-
-    astronauts = [
-        {'pesel': '61041212345', 'firstname': 'José', 'lastname': 'Jiménez'},
-        {'pesel': '61041212346', 'firstname': 'Jan', 'lastname': 'Twardowski'},
-        {'pesel': '61041212347', 'firstname': 'Melissa', 'lastname': 'Lewis'},
-        {'pesel': '61041212348', 'firstname': 'Alex', 'lastname': 'Vogel'},
-        {'pesel': '61041212349', 'firstname': 'Ryan', 'lastname': 'Stone'},
-    ]
-
-
-    with sqlite3.connect(':memory:') as db:
-        db.execute(SQL_CREATE_TABLE)
-        db.executemany(SQL_INSERT, astronauts)
-
-        for row in db.execute(SQL_SELECT):
-            print(row)
-
-Lock
-----
-.. code-block:: python
-
-    from threading import Lock
-
-    # Make lock
-    lock = Lock()
-
-    # Use lock
-    lock.acquire()
-
-    try:
-        print('Critical section 1')
-        print('Critical section 2')
-    finally:
-        lock.release()
-
-.. code-block:: python
-
-    from threading import Lock
-
-    # Make lock
-    lock = Lock()
-
-    # Use lock
-    with lock:
-        print('Critical section 1')
-        print('Critical section 2')
-
-
-Contextmanager decorator
-========================
 * Split function for before and after ``yield``
 * Code before ``yield`` becomes ``__enter__()``
 * Code after ``yield`` becomes ``__exit__()``
 
-``contextmanager`` decorator
-----------------------------
 .. code-block:: python
 
     from contextlib import contextmanager
@@ -207,31 +150,90 @@ Contextmanager decorator
     # foo
     # </p>
 
-ContextDecorator class
-----------------------
+
+Use Cases
+=========
+
+Files
+-----
 .. code-block:: python
 
-    from contextlib import ContextDecorator
-    from time import time
+    f = open(FILE)
+
+    try:
+        content = f.read()
+    finally:
+        f.close()
+
+.. code-block:: python
+
+    with open(FILE) as f:
+        content = f.read()
+
+Database
+--------
+.. code-block:: python
+
+    import sqlite3
 
 
-    class Timeit(ContextDecorator):
-        def __enter__(self):
-            self.start = time()
-            return self
+    SQL_CREATE_TABLE = """
+        CREATE TABLE IF NOT EXISTS astronauts (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            pesel INTEGER UNIQUE,
+            firstname TEXT,
+            lastname TEXT)"""
+    SQL_INSERT = 'INSERT INTO astronauts VALUES (NULL, :pesel, :firstname, :lastname)'
+    SQL_SELECT = 'SELECT * from astronauts'
 
-        def __exit__(self, *args):
-            end = time()
-            print(f'Duration {end-self.start:.2f} seconds')
+    DATA = [
+        {'pesel': '61041212345', 'firstname': 'José', 'lastname': 'Jiménez'},
+        {'pesel': '61041212346', 'firstname': 'Jan', 'lastname': 'Twardowski'},
+        {'pesel': '61041212347', 'firstname': 'Melissa', 'lastname': 'Lewis'},
+        {'pesel': '61041212348', 'firstname': 'Alex', 'lastname': 'Vogel'},
+        {'pesel': '61041212349', 'firstname': 'Ryan', 'lastname': 'Stone'},
+    ]
 
 
-    @Timeit()
-    def myfunction():
-        list(range(100_000_000))
+    with sqlite3.connect(':memory:') as db:
+        db.execute(SQL_CREATE_TABLE)
+        db.executemany(SQL_INSERT, DATA)
 
+        for row in db.execute(SQL_SELECT):
+            print(row)
 
-    myfunction()
-    # Duration 3.90 seconds
+Lock
+----
+.. code-block:: python
+
+    from threading import Lock
+
+    # Make lock
+    lock = Lock()
+
+    # Use lock
+    lock.acquire()
+
+    try:
+        print('Critical section 1')
+        print('Critical section 2')
+    finally:
+        lock.release()
+
+.. code-block:: python
+
+    from threading import Lock
+
+    # Make lock
+    lock = Lock()
+
+    # Use lock
+    with lock:
+        print('Critical section 1')
+        print('Critical section 2')
+
+String Microbenchmark
+---------------------
 
 .. code-block:: python
 
@@ -246,31 +248,56 @@ ContextDecorator class
             self.start = time()
             return self
 
-        def __exit__(self, *arg, **kwargs):
+        def __exit__(self, *arg):
             end = time()
-            duration = (end - self.start) * 10e6
-            print(f'Duration of {self.name} is {duration:.2f} µs (microsecond)')
+            print(f'Duration of {self.name} is {end-self.start:.2f} second')
 
 
-    a = 'a'
-    b = 'b'
+    a = 1
+    b = 2
+    repetitions = int(1e7)
+
 
     with Timeit('f-string'):
-        f'result of a+b is: {a} {b}'
+        for _ in range(repetitions):
+            f'{a}{b}'
 
     with Timeit('string concat'):
-        'result of a+b is: ' + a + b
+        for _ in range(repetitions):
+            a + b
 
     with Timeit('str.format()'):
-        'result of a+b is: {0}{1}'.format(a, b)
+        for _ in range(repetitions):
+            '{0}{1}'.format(a, b)
+
+    with Timeit('str.format()'):
+        for _ in range(repetitions):
+            '{}{}'.format(a, b)
+
+    with Timeit('str.format()'):
+        for _ in range(repetitions):
+            '{a}{b}'.format(a=a, b=b)
 
     with Timeit('%-style'):
-        'result of a+b is: %s%s' % (a, b)
+        for _ in range(repetitions):
+            '%s%s' % (a, b)
 
-    # Duration of f-string is 21.46 µs (microsecond)
-    # Duration of string concat is 9.54 µs (microsecond)
-    # Duration of str.format() is 30.99 µs (microsecond)
-    # Duration of %-style is 21.46 µs (microsecond)
+    with Timeit('%-style'):
+        for _ in range(repetitions):
+            '%d%d' % (a, b)
+
+    with Timeit('%-style'):
+        for _ in range(repetitions):
+            '%f%f' % (a, b)
+
+    # Duration of f-string is 2.70 second
+    # Duration of string concat is 0.68 second
+    # Duration of str.format() is 3.46 second
+    # Duration of str.format() is 3.37 second
+    # Duration of str.format() is 4.85 second
+    # Duration of %-style is 2.59 second
+    # Duration of %-style is 2.59 second
+    # Duration of %-style is 3.82 second
 
 
 Assignments
@@ -286,18 +313,22 @@ Protocol ContextManager File
 * Solution: :download:`solution/protocol_contextmanager_file.py`
 
 :English:
-    #. Use kodu from "Input" section (see below)
+    #. Use data from "Input" section (see below)
     #. Define class ``File`` with parameter: ``filename: str``
     #. ``File`` must implement Context Manager protocol
     #. ``File`` buffers lines added using ``File.append(text: str)`` method
     #. On ``with`` block exit ``File`` class opens file and write buffer
+    #. All tests must pass
+    #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Użyj kodu z sekcji "Input" (patrz poniżej)
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Stwórz klasę ``File`` z parametrem: ``filename: str``
     #. ``File`` ma implementować protokół Context Manager
     #. ``File`` buforuje linie dodawane za pomocą metody ``File.append(text: str)``
     #. Na wyjściu z bloku ``with`` klasa ``File`` otwiera plik i zapisuje bufor
+    #. Wszystkie testy muszą przejść
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
     .. code-block:: text
@@ -331,18 +362,22 @@ Protocol ContextManagerBuffer
 * Solution: :download:`solution/protocol_contextmanager_buffer.py`
 
 :English:
-    #. Use kodu from "Input" section (see below)
+    #. Use data from "Input" section (see below)
     #. Set max buffer limit to 100 bytes
     #. File has to be written to disk every X bytes of buffer
     #. How to make buffer save data every X seconds?
     #. Writing and reading takes time, how to make buffer save data in the background, but it could be still used?
+    #. All tests must pass
+    #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Użyj kodu z sekcji "Input" (patrz poniżej)
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Ustaw maksymalny limit bufora na 100 bajtów
     #. Plik na dysku ma być zapisywany co X bajtów bufora
     #. Jak zrobić, aby bufor zapisywał dane na dysku co X sekund?
     #. Operacje zapisu i odczytu trwają, jak zrobić, aby do bufora podczas zapisu na dysk, nadal można było pisać?
+    #. Wszystkie testy muszą przejść
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
 

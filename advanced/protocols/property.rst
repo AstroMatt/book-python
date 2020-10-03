@@ -64,12 +64,12 @@ Example
             self._lastname = lastname
 
         @property
-        def name(self, value):
-            return f'{self.firstname} {self.lastname[0]}.'
+        def name(self):
+            return f'{self._firstname} {self._lastname[0]}.'
 
 
     astro = Astronaut('Mark', 'Watney')
-    astro.name
+    print(astro.name)
     # Mark W.
 
 .. code-block:: python
@@ -132,8 +132,8 @@ Attribute Access
     # Jan Twardowski
 
 
-Creating properties with ``property`` class
-===========================================
+Property class
+==============
 * Property's arguments are method pointers ``get_name``, ``set_name``, ``del_name`` and a docstring
 * Don't do that
 
@@ -155,8 +155,8 @@ Creating properties with ``property`` class
         name = property(get_name, set_name, del_name, "I am the 'name' property.")
 
 
-Creating properties with ``@property`` decorator
-================================================
+@property Decorator
+===================
 * Prefer ``name = property()``
 
 .. code-block:: python
@@ -304,6 +304,8 @@ Temperature
 
     t = Temperature(100)
     t.value = -10
+    # Traceback (most recent call last):
+    #   ...
     # ValueError: Kelvin Temperature cannot be negative
 
 .. code-block:: python
@@ -350,6 +352,7 @@ Protocol Property
     #. Deleting ``position`` sets all attributes to 0 (``x=0``, ``y=0``, ``z=0``)
     #. Prevent setting position
     #. All tests must pass
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
@@ -358,6 +361,7 @@ Protocol Property
     #. Usunięcie ``position`` ustawia wszystkie atrybuty na 0 (``x=0``, ``y=0``, ``z=0``)
     #. Zablokuj edycję atrybutów
     #. Wszystkie testy muszą przejść
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
     .. code-block:: text

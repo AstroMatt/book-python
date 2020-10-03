@@ -201,6 +201,7 @@ Protocol Classmethod CSV
     #. ``CSVMixin.to_csv()`` should return attibute values separated with coma
     #. ``CSVMixin.from_csv()`` should return instance of a class on which it was called
     #. Use ``@classmethod`` decorator in proper place
+    #. All tests must pass
     #. Compare result with "Output" section (see below)
 
 :Polish:
@@ -213,6 +214,7 @@ Protocol Classmethod CSV
     #. ``CSVMixin.to_csv()`` powinna zwracać wartości atrybutów klasy rozdzielone po przecinku
     #. ``CSVMixin.from_csv()`` powinna zwracać instancje klasy na której została wywołana
     #. Użyj dekoratora ``@classmethod`` w odpowiednim miejscu
+    #. Wszystkie testy muszą przejść
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
