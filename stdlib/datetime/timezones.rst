@@ -3,16 +3,12 @@ Datetime Timezones
 ******************
 
 
-Standard Library
-================
-* :pep:`615` - Support for the IANA Time Zone Database in the Standard Library
+Rationale
+=========
 * Always keep dates and times only in UTC (**important!**)
 * Datetimes should be converted to local time only when displaying to user
 * Computerphile Time & Time Zones :cite:`VideoComputerphileTimeZones`
 * Refer to :ref:`Descriptor Timezone Converter` for automated solution
-
-Timezone Naive
---------------
 * ``datetime.utcnow()`` - produces timezone naive date!
 
 .. code-block:: python
@@ -30,8 +26,6 @@ Timezone Naive
     datetime.utcnow()
     # datetime.datetime(1957, 10, 4, 17, 28, 34)
 
-Timezone Aware
---------------
 .. code-block:: python
     :caption: Timezone aware datetime
 
@@ -54,8 +48,18 @@ Timezone Aware
     datetime.utcnow(timezone.utc)
     # TypeError: utcnow() takes no arguments (1 given)
 
+
+IANA Time Zone Database
+=======================
+* https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
+* https://www.iana.org/time-zones
+
+
+Standard Library
+================
+* :pep:`615` - Support for the IANA Time Zone Database in the Standard Library
+
 .. code-block:: python
-    :caption: :pep:`615` – Support for the IANA Time Zone Database in the Standard Library
 
     from zoneinfo import ZoneInfo
     from datetime import datetime, timedelta
@@ -77,12 +81,6 @@ Timezone Aware
 
 ``pytz``
 ========
-
-List of Timezones
------------------
-* https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
-* https://www.iana.org/time-zones
-
 .. code-block:: python
     :caption: ``pytz`` brings the Olson tz database into Python.
 
@@ -94,8 +92,6 @@ List of Timezones
     timezone('Europe/Warsaw')
     timezone('Asia/Almaty')
 
-From Naive to UTC
------------------
 .. code-block:: python
     :caption: From naive to local time
 
@@ -108,8 +104,6 @@ From Naive to UTC
     timezone('UTC').localize(my_date)
     # datetime.datetime(1969, 7, 21, 2, 56, 15, tzinfo=<UTC>)
 
-From Naive to Local
--------------------
 .. code-block:: python
     :caption: From naive to local time
 
@@ -122,8 +116,6 @@ From Naive to Local
     timezone('Asia/Almaty').localize(my_date)
     # datetime.datetime(1961, 4, 12, 6, 7, tzinfo=<DstTzInfo 'Asia/Almaty' +06+6:00:00 STD>)
 
-From UTC to local time
-----------------------
 .. code-block:: python
     :caption: From UTC to local time
 
@@ -135,10 +127,6 @@ From UTC to local time
 
     my_date.astimezone(timezone('Europe/Warsaw'))
     # datetime.datetime(1969, 7, 21, 3, 56, 15, tzinfo=<DstTzInfo 'Europe/Warsaw' CET+1:00:00 STD>)
-
-Between timezones
------------------
-* Problem with precision
 
 .. code-block:: python
     :caption: Between timezones
