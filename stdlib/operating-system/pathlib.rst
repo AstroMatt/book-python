@@ -1,6 +1,8 @@
-***********
-``pathlib``
-***********
+.. _Stdlib Pathlib:
+
+*******
+Pathlib
+*******
 
 
 Getting filenames and extensions

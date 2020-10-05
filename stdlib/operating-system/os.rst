@@ -1,3 +1,5 @@
+.. _Stdlib OS:
+
 ****************
 Operating System
 ****************

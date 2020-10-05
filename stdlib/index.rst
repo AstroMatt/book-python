@@ -184,6 +184,7 @@ Operating System
     :caption: Operating System
     :name: Stdlib Operating System
 
+    operating-system/tempfile.rst
     operating-system/about.rst
     operating-system/argparse.rst
     operating-system/os.rst
