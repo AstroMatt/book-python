@@ -1,3 +1,5 @@
+.. _OOP Relations:
+
 *********
 Relations
 *********
@@ -5,7 +7,7 @@ Relations
 
 Relations
 =========
-* :ref:`Initial arguments mutability and shared state`
+* :ref:`OOP Argument Mutability`
 
 .. code-block:: python
 

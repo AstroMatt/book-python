@@ -1,3 +1,5 @@
+.. _OOP Constructor:
+
 ***********
 Constructor
 ***********
@@ -9,12 +11,27 @@ Rationale
 
     my = MyClass()
 
-    # instance = MyClass.__new__()
-    # instance.__init__()
-
 .. code-block:: python
 
-    __new__() -> __init__()
+    instance = MyClass.__new__()
+    instance.__init__()
+
+
+Example
+=======
+.. code-block:: python
+
+    class Astronaut:
+        def __new__(cls):
+            return super().__new__(cls)
+
+        def __init__(self):
+            pass
+
+
+    Astronaut()
+    # Astronaut.__new__() called
+    # Astronaut.__init__() called
 
 
 New Method
@@ -26,7 +43,6 @@ New Method
     * when calling ``__new__()`` you actually don't have an instance yet, therefore no ``self`` exists at that moment
 
 .. code-block:: python
-    :emphasize-lines: 2,3,4
 
     class Astronaut:
         def __new__(cls):
@@ -47,7 +63,6 @@ Init Method
     * it's purpose is just to alter the fresh state of the newly created instance
 
 .. code-block:: python
-    :emphasize-lines: 2,3
 
     class Astronaut:
         def __init__(self):
@@ -57,10 +72,9 @@ Init Method
     # Astronaut.__init__() called
 
 
-Examples
-========
+Return
+======
 .. code-block:: python
-    :emphasize-lines: 3,4
 
     class Astronaut:
         def __new__(cls):
@@ -70,18 +84,14 @@ Examples
         def __init__(self):
             print('Astronaut.__init__() called')
 
+
     Astronaut()
     # Astronaut.__new__() called
     # Astronaut.__init__() called
 
 
-Returning values
-================
-
-Missing ``return`` from constructor
------------------------------------
 .. code-block:: python
-    :emphasize-lines: 3
+    :caption: Missing ``return`` from constructor. The instantiation is evaluated to ``None`` since we don't return anything from the constructor.
 
     class Astronaut:
         def __new__(cls):
@@ -90,15 +100,12 @@ Missing ``return`` from constructor
         def __init__(self):
             print('Astronaut.__init__() called')  # -> is actually never called
 
+
     Astronaut()
     # Astronaut.__new__() called
 
-The instantiation is evaluated to ``None`` since we don't return anything from the constructor.
-
-Return invalid from constructor
--------------------------------
 .. code-block:: python
-    :emphasize-lines: 4
+    :caption: Return invalid from constructor
 
     class Astronaut:
         def __new__(cls):
@@ -109,10 +116,8 @@ Return invalid from constructor
     # Astronaut.__new__() called
     # 1337
 
-Return invalid from initializer
--------------------------------
 .. code-block:: python
-    :emphasize-lines: 4
+    :caption: Return invalid from initializer
 
     class Astronaut:
         def __init__(self):
@@ -123,8 +128,8 @@ Return invalid from initializer
     # TypeError: __init__() should return None, not 'int'
 
 
-Examples
-========
+Use Cases
+=========
 * Factory method
 * Could be used to implement Singleton
 
@@ -246,50 +251,6 @@ Examples
     # Setosa(4.6, 3.1, 1.5, 0.2)]
 
 
-Initial arguments mutability and shared state
-=============================================
-
-.. _Initial arguments mutability and shared state:
-
-Bad
----
-.. code-block:: python
-    :caption: Initial arguments mutability and shared state
-
-    class Astronaut:
-        def __init__(self, name, missions=[]):
-            self.name = name
-            self.missions = missions
-
-
-    watney = Astronaut('Mark Watney')
-    watney.missions.append('Ares 3')
-    print(watney.missions)
-    # ['Ares 3']
-
-    twardowski = Astronaut('Jan Twardowski')
-    print(twardowski.missions)
-    # ['Ares 3']
-
-Good
-----
-.. code-block:: python
-    :caption: Initial arguments mutability and shared state
-
-    class Astronaut:
-        def __init__(self, name, missions=()):
-            self.name = name
-            self.missions = list(missions)
-
-
-    watney = Astronaut('Mark Watney')
-    watney.missions.append('Ares 3')
-    print(watney.missions)
-    # ['Ares 3']
-
-    twardowski = Astronaut('Jan Twardowski')
-    print(twardowski.missions)
-    # []
 
 
 Do not trigger methods for user

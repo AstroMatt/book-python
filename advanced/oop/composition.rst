@@ -1,14 +1,18 @@
+.. _OOP Composition:
+
 ***************************
 Inheritance vs. Composition
 ***************************
 
 
+Rationale
+=========
 * Mixin Classes
 * Composition over Inheritance
 
 
-Problem with inheritance
-========================
+Example
+=======
 .. code-block:: python
     :caption: Inheritance pattern
 
@@ -96,7 +100,7 @@ Problem with inheritance
         pass
 
 
-Multi level inheritance problem
+Multi Level Inheritance Problem
 ===============================
 .. code-block:: python
     :caption: Multi level inheritance is a bad pattern here
@@ -113,27 +117,25 @@ Multi level inheritance problem
             return pickle.dumps(self)
 
 
-    class User(ToPickle):
+    class Astronaut(ToPickle):
         def __init__(self, firstname, lastname):
             self.firstname = firstname
             self.lastname = lastname
 
 
-    user = User(
-        firstname='Jan',
-        lastname='Twardowski',
-        address='Copernicus Crater, Moon'
-    )
+    astro = Astronaut('Mark', 'Watney')
 
-    print(user.to_json())
-    # {"firstname": "Jan", "lastname": "Twardowski", "address": "Copernicus Crater, Moon"}
+    print(astro.to_json())
+    # {"firstname": "Mark", "lastname": "Watney"}
 
-    print(user.to_pickle())
-    # b'\x80\x03c__main__\nUser\nq\x00)\x81q\x01}q\x02(X\n\x00\x00\x00firstnameq\x03X\x03\x00\x00\x00Janq\x04X\t\x00\x00\x00lastnameq\x05X\n\x00\x00\x00Twardowskiq\x06X\x07\x00\x00\x00addressq\x07X\x17\x00\x00\x00Copernicus Crater, Moonq\x08ub.'
+    print(astro.to_pickle())
+    # b'\x80\x04\x95I\x00\x00\x00\x00\x00\x00\x00\x8c\x08__main__\x94\x8c\tAstronaut' \
+    # b'\x94\x93\x94)\x81\x94}\x94(\x8c\tfirstname\x94\x8c\x04Mark' \
+    # b'\x94\x8c\x08lastname\x94\x8c\x06Watney\x94ub.'
 
 
-Composition using Mixin classes
-===============================
+Mixin Classes
+=============
 .. code-block:: python
     :caption: Mixin classes - multiple inheritance.
 
@@ -149,23 +151,21 @@ Composition using Mixin classes
             return pickle.dumps(self)
 
 
-    class User(JSONMixin, PickleMixin):
+    class Astronaut(JSONMixin, PickleMixin):
         def __init__(self, firstname, lastname):
             self.firstname = firstname
             self.lastname = lastname
 
 
-    user = User(
-        firstname='Jan',
-        lastname='Twardowski',
-        address='Copernicus Crater, Moon'
-    )
+    astro = Astronaut('Mark', 'Watney')
 
-    print(user.to_json())
-    # {"firstname": "Jan", "lastname": "Twardowski", "address": "Copernicus Crater, Moon"}
+    print(astro.to_json())
+    # {"firstname": "Mark", "lastname": "Watney"}
 
-    print(user.to_pickle())
-    # b'\x80\x03c__main__\nUser\nq\x00)\x81q\x01}q\x02(X\n\x00\x00\x00firstnameq\x03X\x03\x00\x00\x00Janq\x04X\t\x00\x00\x00lastnameq\x05X\n\x00\x00\x00Twardowskiq\x06X\x07\x00\x00\x00addressq\x07X\x17\x00\x00\x00Copernicus Crater, Moonq\x08ub.'
+    print(astro.to_pickle())
+    # b'\x80\x04\x95I\x00\x00\x00\x00\x00\x00\x00\x8c\x08__main__\x94\x8c\tAstronaut' \
+    # b'\x94\x93\x94)\x81\x94}\x94(\x8c\tfirstname\x94\x8c\x04Mark' \
+    # b'\x94\x8c\x08lastname\x94\x8c\x06Watney\x94ub.'
 
 
 Assignments

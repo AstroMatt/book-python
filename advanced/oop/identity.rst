@@ -1,3 +1,5 @@
+.. _OOP Object Identity:
+
 ***************
 Object Identity
 ***************
@@ -20,52 +22,43 @@ Identity
     hex(id('Watney'))
     # '0x10c336cb0'
 
+.. code-block:: python
 
-.. _String interning:
+    >>> a = 'Jan Twardowski'
+    >>> b = 'Jan Twardowski'
 
-String interning
-================
-.. highlights::
-    * https://en.wikipedia.org/wiki/String_interning
-    * Method of storing only one copy of each distinct string value, which must be immutable
-    * many high level languages use it
-    * string literals and values are internally kept in a hashed list called 'string intern pool' and those which are identical are rendered as references to the same object
-    * possible because ``str`` are immutable
-    * implementation dependent
-    * Jython, IronPython, PyPy and others may intern more aggressively
-    * Calling the ``intern()`` function on strings will "force" a string to have the same object identity as any equivalent and previously interned string
+    >>> a == b
+    True
+    >>> a is b
+    False
+
+    >>> id(a) == id(b)
+    False
+    >>> hex(id(a)) == hex(id(b))
+    False
+    >>> hash(a) == hash(b)
+    True
 
 .. code-block:: python
-    :caption: CPython 3.7.4
 
-    ('a' * 4096) is ('a' * 4096)
-    # True
+    >>> a = 'Jan Twardowski'
+    ... b = 'Jan Twardowski'
 
-    ('a' * 4097) is ('a' * 4097)
-    # False
+    >>> a == b
+    True
+    >>> a is b
+    True
 
-
-.. figure:: img/identity-str-1.png
-    :align: center
-    :scale: 50%
-
-    Define str
-
-.. figure:: img/identity-str-2.png
-    :align: center
-    :scale: 50%
-
-    Define another str with the same value
-
-.. figure:: img/identity-str-3.png
-    :align: center
-    :scale: 50%
-
-    Define another str with different value
+    >>> id(a) == id(b)
+    True
+    >>> hex(id(a)) == hex(id(b))
+    True
+    >>> hash(a) == hash(b)
+    True
 
 
-``is``
-======
+Identity Check
+==============
 .. highlights::
     * ``is`` checks for object identity
     * ``is`` tests for identity, not equality
@@ -74,22 +67,22 @@ String interning
     * Is used for checking if ``None``
     * Testing strings with ``is`` only works when the strings are interned
 
-Test if empty
--------------
 .. code-block:: python
+    :caption: Test if empty
 
     if name is None:
         print('Your name is empty')
     else:
         print(f'Hello {name}')
 
-Test if value is equal
-----------------------
+
+Value Comparison
+================
 .. versionchanged:: Python 3.8
     Compiler produces a ``SyntaxWarning`` when identity checks (``is`` and ``is not``) are used with certain types of literals (e.g. ``str``, ``int``). These can often work by accident in *CPython*, but are not guaranteed by the language spec. The warning advises users to use equality tests (``==`` and ``!=``) instead.
 
  .. code-block:: python
-    :caption: Bad
+    :caption: Bad - Test if value is equal
 
      if name is 'Mark Watney':
         print('You are Space Pirate!')
@@ -97,114 +90,12 @@ Test if value is equal
         print('You are just a regular astronaut...')
 
  .. code-block:: python
-    :caption: Good
+    :caption: Good - Test if value is equal
 
      if name == 'Mark Watney':
         print('You are Space Pirate!')
      else:
         print('You are just a regular astronaut...')
-
-Using ``is`` in script
-----------------------
-.. highlights::
-    * both objects has the same ``id``.
-
-.. code-block:: python
-
-    a = 'Jan Twardowski'
-    b = 'Jan Twardowski'
-
-.. code-block:: python
-
-    print('==', a == b)
-    print('is', a is b)
-
-    print('id(a)', id(a))
-    print('id(b)', id(b))
-
-    print('memory(a)', hex(id(a)))
-    print('memory(b)', hex(id(b)))
-
-    print('hash(a)', hash(a))
-    print('hash(b)', hash(b))
-
-.. code-block:: text
-
-    == True
-    is False
-    id(a) 4851919024
-    id(b) 4851920112
-    memory(a) 0x1213268b0
-    memory(b) 0x121326cf0
-    hash(a) 2589808896583376772
-    hash(b) 2589808896583376772
-
-Using ``is`` in REPL (evaluated line by line)
----------------------------------------------
-.. code-block:: python
-
-    a = 'Jan Twardowski'
-
-.. code-block:: python
-
-    b = 'Jan Twardowski'
-
-.. code-block:: python
-
-    print('==', a == b)
-    print('is', a is b)
-
-    print('id(a)', id(a))
-    print('id(b)', id(b))
-
-    print('memory(a)', hex(id(a)))
-    print('memory(b)', hex(id(b)))
-
-    print('hash(a)', hash(a))
-    print('hash(b)', hash(b))
-
-.. code-block:: text
-
-    == True
-    is True
-    id(a) 4814965616
-    id(b) 4814965616
-    memory(a) 0x11efe8b70
-    memory(b) 0x11efe8b70
-    hash(a) -65752624953756666
-    hash(b) -65752624953756666
-
-Using ``is`` in REPL (evaluated at once)
-----------------------------------------
-.. code-block:: python
-
-    a = 'Jan Twardowski'
-    b = 'Jan Twardowski'
-
-.. code-block:: python
-
-    print('==', a == b)
-    print('is', a is b)
-
-    print('id(a)', id(a))
-    print('id(b)', id(b))
-
-    print('memory(a)', hex(id(a)))
-    print('memory(b)', hex(id(b)))
-
-    print('hash(a)', hash(a))
-    print('hash(b)', hash(b))
-
-.. code-block:: text
-
-    == True
-    is False
-    id(a) 4851919024
-    id(b) 4851920112
-    memory(a) 0x1213268b0
-    memory(b) 0x121326cf0
-    hash(a) 2589808896583376772
-    hash(b) 2589808896583376772
 
 
 Assignments

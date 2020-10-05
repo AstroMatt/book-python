@@ -1,11 +1,12 @@
-**********
-Interfaces
-**********
+.. _OOP Interface:
+
+*********
+Interface
+*********
 
 
-
-What it is?
-===========
+Rationale
+=========
 * Python don't have interfaces
 * Cannot instantiate
 * Inheriting class must implement all methods
@@ -13,9 +14,16 @@ What it is?
 * :pep:`544` Protocols: Structural subtyping (static duck typing)
 
 .. glossary::
-    interface
-    implement
 
+    interface
+        Software entity with public methods and attibutes declaration
+
+    implement
+        Class implements interface if has all public fields and methods from interface
+
+
+Example
+=======
 .. code-block:: python
     :caption: Interfaces
 
@@ -35,12 +43,8 @@ What it is?
             raise NotImplementedError
 
 
-When use it?
-============
-
-
-Examples
-========
+Use Cases
+=========
 .. code-block:: python
     :caption: Interfaces
 

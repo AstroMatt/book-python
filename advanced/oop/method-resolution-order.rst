@@ -1,3 +1,5 @@
+.. _OOP Method Resolution Order:
+
 ***********************
 Method Resolution Order
 ***********************
@@ -78,6 +80,53 @@ Inheritance Diamond
     #  <class '__main__.C'>,
     #  <class '__main__.A'>,
     #  <class 'object'>)
+
+.. code-block:: python
+    :caption: Inheritance Diamond
+
+    class A:
+        def show(self):
+            print('a')
+
+
+    class B(A):
+        def show(self):
+            print('b')
+
+
+    class C(A):
+        def show(self):
+            print('c')
+
+
+    class E(B):
+        def show(self):
+            print('e')
+
+
+    class F(C):
+        def show(self):
+            print('f')
+
+
+    class G(E, F):
+        pass
+
+
+    obj = G()
+
+    obj.show()
+    # e
+
+    print(G.__mro__)
+    # (<class '__main__.G'>,
+    #  <class '__main__.E'>,
+    #  <class '__main__.B'>,
+    #  <class '__main__.F'>,
+    #  <class '__main__.C'>,
+    #  <class '__main__.A'>,
+    #  <class 'object'>)
+
 
 
 Assignments

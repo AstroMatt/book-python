@@ -1,3 +1,5 @@
+.. _OOP Hash:
+
 ****
 Hash
 ****
@@ -37,12 +39,12 @@ Examples
     #   ...
     # TypeError: unhashable type: 'list'
 
-    data[{1,2}] = 'cokolwiek'
+    data[{1,2}] = 'whatever'
     # Traceback (most recent call last):
     #   ...
     # TypeError: unhashable type: 'set'
 
-    data[frozenset({1,2})] = 'cokolwiek'
+    data[frozenset({1,2})] = 'whatever'
 
     data[{'a':1}] = 'cokolwiek'
     # Traceback (most recent call last):

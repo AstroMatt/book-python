@@ -220,7 +220,7 @@ List attributes
 * ``field()`` creates new empty ``list`` for each object
 * It does not reuse pointer
 
-.. warning:: Note, :ref:`initial arguments mutability and shared state <Initial arguments mutability and shared state>`.
+.. warning:: Note, :ref:`Argument Mutability <OOP Argument Mutability>`.
 
     .. code-block:: python
         :emphasize-lines: 2,10,14

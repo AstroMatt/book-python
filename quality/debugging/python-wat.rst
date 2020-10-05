@@ -37,7 +37,7 @@ Python WAT?!
     ('a' * 4097) is ('a' * 4097)
     # False
 
-* More details at :ref:`String interning`
+* More details at :ref:`OOP String Interning`
 
 .. code-block:: python
 

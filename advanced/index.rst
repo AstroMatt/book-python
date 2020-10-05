@@ -52,11 +52,12 @@ Object Oriented Programming
     :caption: Object Oriented Programming
     :name: Advanced Object Oriented Programming
 
-    oop/fields-static-dynamic.rst
+    oop/static-dynamic.rst
     oop/access-modifiers.rst
+    oop/argument-mutability.rst
     oop/operator-overload.rst
     oop/composition.rst
-    oop/inner-classes.rst
+    oop/namespace.rst
     oop/method-resolution-order.rst
     oop/relations.rst
     oop/polymorphism.rst
@@ -67,6 +68,7 @@ Object Oriented Programming
     oop/abstract-class.rst
     oop/identity.rst
     oop/hash.rst
+    oop/str-interning.rst
     oop/constructor.rst
     oop/slots.rst
     oop/metaclass.rst

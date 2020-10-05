@@ -1,3 +1,5 @@
+.. _OOP Polymorphism:
+
 ************
 Polymorphism
 ************

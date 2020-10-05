@@ -1,14 +1,48 @@
-.. _Metaclass:
+.. _OOP Metaclass:
 
 *********
 Metaclass
 *********
 
+
+Rationale
+=========
 .. epigraph::
     "Metaclasses are deeper magic than 99% of users should ever worry about. If you wonder whether you need them, you don’t (the people who actually need them know with certainty that they need them, and don’t need an explanation about why)." -- Tim Peters
 
+.. highlights::
+    * Class is an instance of a Metaclass
+    * Class defines how an instance of the class behaves
+    * Metaclass defines how a class behaves
 
-Metaclass mechanism
+.. figure:: img/metaclass-instances.png
+    :width: 50%
+    :align: center
+
+    Class is an instance of a metaclass.
+
+
+How Metaclasses works?
+======================
+.. highlights::
+    * Instances are created by calling the class
+    * Python creates a new class (when it executes the ``class`` statement) by calling the metaclass
+    * Combined with the normal ``__init__`` and ``__new__`` methods
+    * Metaclasses allow you to do 'extra things' when creating a class
+
+
+Usage
+=====
+.. highlights::
+    * Allow customization of class instantiation
+    * Most commonly used as a class-factory
+    * Registering the new class with some registry
+    * Replace the class with something else entirely
+    * Inject logger instance
+    * Injecting static fields
+
+
+Metaclass Mechanism
 ===================
 .. code-block:: python
 
@@ -19,6 +53,14 @@ Metaclass mechanism
 
 .. code-block:: python
 
+    class Astronaut(object):
+        pass
+
+    astro = Astronaut()
+
+
+.. code-block:: python
+
     class Astronaut(metaclass=object):
         pass
 
@@ -26,7 +68,7 @@ Metaclass mechanism
 
 .. code-block:: python
 
-    class MyMetaclass:
+    class MyMetaclass(type):
         pass
 
     class Astronaut(metaclass=MyMetaclass):
@@ -35,44 +77,36 @@ Metaclass mechanism
     astro = Astronaut()
 
 
+Example
+=======
+.. code-block:: python
 
-What are Metaclasses?
----------------------
-.. highlights::
-    * Class is an instance of a Metaclass
-    * Class defines how an instance of the class behaves
-    * Metaclass defines how a class behaves
-
-.. figure:: img/metaclass-instances.png
-    :width: 75%
-    :align: center
-
-    Class is an instance of a metaclass.
-
-How Metaclasses works?
-----------------------
-.. highlights::
-    * Instances are created by calling the class
-    * Python creates a new class (when it executes the ``class`` statement) by calling the metaclass
-    * Combined with the normal ``__init__`` and ``__new__`` methods
-    * Metaclasses allow you to do 'extra things' when creating a class
-
-Example use of Metaclasses
---------------------------
-.. highlights::
-    * Allow customization of class instantiation
-    * Most commonly used as a class-factory
-    * Registering the new class with some registry
-    * Replace the class with something else entirely
-    * Inject logger instance
-    * Injecting static fields
+    import logging
 
 
-Type and objects
-================
+    class Logger(type):
+        def __init__(cls, *args, **kwargs):
+            cls._logger = logging.getLogger(cls.__name__)
 
-Types
------
+
+    class Astronaut(metaclass=Logger):
+        pass
+
+
+    class Cosmonaut(metaclass=Logger):
+        pass
+
+
+
+    print(Astronaut._logger)
+    # <Logger Astronaut (WARNING)>
+
+    print(Cosmonaut._logger)
+    # <Logger Cosmonaut (WARNING)>
+
+
+Type Metaclass
+==============
 .. code-block:: python
 
     type(1)         # <class 'int'>
@@ -86,152 +120,120 @@ Types
     type(list)      # <class 'type'>
     type(tuple)     # <class 'type'>
 
-.. figure:: img/metaclass-class-chain.png
-    :width: 75%
-    :align: center
-
-    Class is an instance of a metaclass.
-
-Objects
--------
-.. code-block:: python
-    :caption: Metaclass
-
-    class Iris:
-        pass
-
-    flower = Iris()
-
-    isinstance(flower, Iris)    # True
-    isinstance(flower, object)  # True
-
-    Iris.__mro__
-    # (<class '__main__.Iris'>, <class 'object'>)
-
 .. code-block:: python
 
     type(object)    # <class 'type'>
     type(type)      # <class 'type'>
 
+.. figure:: img/metaclass-class-chain.png
+    :width: 25%
+    :align: center
 
-Examples
-========
+    Class is an instance of a metaclass.
+
+
+Method Resolution Order
+=======================
+.. code-block:: python
+
+    class Astronaut:
+        pass
+
+
+    astro = Astronaut()
+    isinstance(astro, Astronaut)    # True
+    isinstance(astro, Astronaut)    # True
+
+    print(astro.__mro__)
+    # (<class '__main__.Astronaut'>, <class 'object'>)
+
+
+Example
+=======
 .. code-block:: python
 
     import logging
 
-    class Iris:
+
+    class Astronaut:
         pass
 
+
     def new(cls):
-        obj = object.__new__(cls)
-        obj._logger = logging.getLogger()
+        obj = super().__new__(cls)
+        obj._logger = logging.getLogger(cls.__name__)
         return obj
 
-    Iris.__new__ = new
+    Astronaut.__new__ = new
 
-    setosa = Iris()
-    versicolor = Iris()
+    mark = Astronaut()
+    melissa = Astronaut()
 
-    setosa._logger      # Logger instance
-    versicolor._logger  # Logger instance
+    print(mark._logger)
+    # <Logger Astronaut (WARNING)>
+
+    print(melissa._logger)
+    # <Logger Astronaut (WARNING)>
 
 .. code-block:: python
-    :caption: Spoiler alert:  This doesn't work!
+    :caption: This doesn't work!
+
+    import logging
+
 
     def new(cls):
-        obj = type.__new__(cls)
-        obj.kingdom = 'Plantae'
+        obj = super().__new__(cls)
+        obj._logger = logging.getLogger(cls.__name__)
         return obj
 
     type.__new__ = new
     # TypeError: can't set attributes of built-in/extension type 'type'
 
 .. code-block:: python
-    :caption: Spoiler alert:  This doesn't work!
+    :caption: This doesn't work!
+
+    import logging
+
 
     def new(cls):
-        obj = object.__new__(cls)
-        obj.kingdom = 'Plantae'
+        obj = super().__new__(cls)
+        obj._logger = logging.getLogger(cls.__name__)
         return obj
 
     str.__new__ = new
-    # TypeError: can't set attributes of built-in/extension type 'type'
-
-
-
-.. code-block:: python
-
-    class Iris(type):
-        def __new__(cls, *args, **kwargs):
-            obj = super().__new__(cls, *args, **kwargs)
-            obj.kingdom = 'Plantae'
-            return obj
-
-    class Setosa(metaclass=Iris):
-        pass
-
-    class Virginica(metaclass=Iris):
-        pass
-
-    class Versicolor(metaclass=Iris):
-        pass
-
-
-    Setosa.kingdom         # Plantae
-    Virginica.kingdom      # Plantae
-    Versicolor.kingdom     # Plantae
-
-
-Factories
-=========
-
-Object factory
---------------
-.. code-block:: python
-    :caption: Object factory
-
-    class Iris:
-        def __init__(self):
-            self.kingdom = 'Plantae'
-
-
-    setosa = Iris()
-    versicolor = Iris()
-    virginica = Iris()
-
-    setosa.kingdom          # Plantae
-    versicolor.kingdom      # Plantae
-    virginica.kingdom       # Plantae
-
-Class Factory
--------------
-.. code-block:: python
-    :caption: Class Factory
-
-    class Iris(type):
-        def __init__(cls, *args, **kwargs):
-            cls.kingdom = 'Plantae'
-
-
-     class Setosa(metaclass=Iris):
-        pass
-
-    class Virginica(metaclass=Iris):
-        pass
-
-    class Versicolor(metaclass=Iris):
-        pass
-
-
-    Setosa.kingdom         # Plantae
-    Virginica.kingdom      # Plantae
-    Versicolor.kingdom     # Plantae
+    # TypeError: can't set attributes of built-in/extension type 'str'
 
 
 Use Case
 ========
 .. code-block:: python
+    :caption: Injecting logger instance
+
+    import logging
+
+
+    class Logger(type):
+        def __init__(cls, *args, **kwargs):
+            cls._logger = logging.getLogger(cls.__name__)
+
+
+    class Astronaut(metaclass=Logger):
+        pass
+
+
+    class Cosmonaut(metaclass=Logger):
+        pass
+
+
+
+    print(Astronaut._logger)
+    # <Logger Astronaut (WARNING)>
+
+    print(Cosmonaut._logger)
+    # <Logger Cosmonaut (WARNING)>
+
+.. code-block:: python
+    :caption: Abstract Base Class
 
     from abc import ABCMeta, abstractmethod
 
@@ -254,20 +256,48 @@ Metaclass replacements
 .. highlights::
     * Effectively accomplish the same thing
 
-Inheritance
------------
 .. code-block:: python
+    :caption: Inheritance and ``__init__()`` method
 
-    class Iris:
-        kingdom = 'Plantae'
+    import logging
 
-    class Setosa(Iris):
+
+    class Logger:
+        def __init__(self):
+            self._logger = logging.getLogger(self.__class__.__name__)
+
+
+    class Astronaut(Logger):
         pass
 
-    Setosa.kingdom
-    # Plantae
+
+    astro = Astronaut()
+    print(astro._logger)
+    # <Logger Astronaut (WARNING)>
 
 .. code-block:: python
+    :caption: Inheritance and ``__new__()`` method
+
+    import logging
+
+
+    class Logger:
+        def __new__(cls, *args, **kwargs):
+            obj = super().__new__(cls)
+            obj._logger = logging.getLogger(obj.__class__.__name__)
+            return obj
+
+
+    class Astronaut(Logger):
+        pass
+
+
+    astro = Astronaut()
+    print(astro._logger)
+    # <Logger Astronaut (WARNING)>
+
+.. code-block:: python
+    :caption: Inheritance for abstract base class validation
 
     from abc import ABC, abstractmethod
 
@@ -284,21 +314,25 @@ Inheritance
     #     ...
     # TypeError: Can't instantiate abstract class Astronaut with abstract methods hello
 
-Class Decorator
----------------
 .. code-block:: python
+    :caption: Class Decorator
 
-    def add_kingdom(cls):
-        class NewIris(cls):
-            kingdom = 'Plantae'
-        return NewIris
+    import logging
 
-    @add_kingdom
-    class Iris:
+
+    def add_logger(cls):
+        class Wrapper(cls):
+            _logger = logging.getLogger(cls.__name__)
+        return Wrapper
+
+
+    @add_logger
+    class Astronaut:
         pass
 
-    Iris.kingdom
-    # Plantae
+
+    print(Astronaut._logger)
+    # <Logger Astronaut (WARNING)>
 
 
 Assignments

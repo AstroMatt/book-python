@@ -1,6 +1,8 @@
-****************
-Abstract Classes
-****************
+.. _OOP Abstract Class:
+
+**************
+Abstract Class
+**************
 
 
 Rationale
@@ -11,6 +13,7 @@ Rationale
 * Some methods can have implementation
 
 .. glossary::
+
     abstract class
         Class which can only be inherited, not instanciated
 
@@ -21,8 +24,8 @@ Rationale
         Static method which must be implemented in a subclass
 
 
-Syntax
-======
+Example
+=======
 .. code-block:: python
 
     from abc import ABC, abstractmethod
@@ -136,8 +139,8 @@ Errors
     #   '/Users/matt/Developer/book-python/_tmp']
 
 
-Examples
-========
+Use Cases
+=========
 .. code-block:: python
     :caption: Abstract Class
 
