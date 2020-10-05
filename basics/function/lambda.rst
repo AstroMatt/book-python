@@ -181,7 +181,7 @@ Function Lambda Chain
     .. code-block:: python
 
         def odd(x):
-            return x % 2 != 0
+            return x % 2
 
         def cube(x):
             return x ** 3
@@ -196,10 +196,10 @@ Function Lambda Chain
         print(result)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: float
-        # 11502.0
+        >>> result
+        11502.0
 
 :Hints:
     * ``mean = sum(...) / len(...)``

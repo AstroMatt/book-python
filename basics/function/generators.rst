@@ -385,10 +385,10 @@ Function Generator Chain
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: float
-        # 11502.0
+        >>> result
+        11502.0
 
 :Hints:
     * type cast to ``list()`` before calculating mean to expand generator
