@@ -54,6 +54,27 @@ Timezone Aware
     datetime.utcnow(timezone.utc)
     # TypeError: utcnow() takes no arguments (1 given)
 
+.. code-block:: python
+    :caption: :pep:`615` – Support for the IANA Time Zone Database in the Standard Library
+
+    from zoneinfo import ZoneInfo
+    from datetime import datetime, timedelta
+
+
+    dt = datetime(2020, 10, 31, 12, tzinfo=ZoneInfo("America/Los_Angeles"))  # Daylight saving time
+    print(dt)
+    # 2020-10-31 12:00:00-07:00
+    dt.tzname()
+    # 'PDT'
+
+
+    dt += timedelta(days=7)  # Standard time
+    print(dt)
+    # 2020-11-07 12:00:00-08:00
+    print(dt.tzname())
+    # PST
+
+
 ``pytz``
 ========
 
