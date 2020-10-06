@@ -9,6 +9,20 @@ About
     about/entry-test.rst
     about/agenda.rst
 
+***************
+Type Annotation
+***************
+.. toctree::
+    :maxdepth: 1
+    :caption: Type Annotation
+    :name: Advanced Type Annotation
+
+    type-annotation/type.rst
+    type-annotation/sequence.rst
+    type-annotation/mapping.rst
+    type-annotation/function.rst
+    type-annotation/oop.rst
+
 *********
 Functions
 *********
