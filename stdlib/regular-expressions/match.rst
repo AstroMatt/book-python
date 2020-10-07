@@ -112,28 +112,30 @@ Good Engineering Practices
 .. code-block:: python
     :caption: Doctests
 
+    """
+    >>> is_valid_email('jose.jimenez@nasa.gov')
+    True
+    >>> is_valid_email('José.Jiménez@nasa.gov')
+    True
+    >>> is_valid_email('+jose.jimenez@nasa.gov')
+    False
+    >>> is_valid_email('jose.jimenez+@nasa.gov')
+    True
+    >>> is_valid_email('jose.jimenez+newsletter@nasa.gov')
+    True
+    >>> is_valid_email('jose.jimenez@.gov')
+    False
+    >>> is_valid_email('@nasa.gov')
+    False
+    >>> is_valid_email('jose.jimenez@nasa.g')
+    False
+    """
+
     import re
 
 
     def is_valid_email(email: str) -> bool:
-        """Function check email address against Regular Expression
-        >>> is_valid_email('jose.jimenez@nasa.gov')
-        True
-        >>> is_valid_email('José.Jiménez@nasa.gov')
-        True
-        >>> is_valid_email('+jose.jimenez@nasa.gov')
-        False
-        >>> is_valid_email('jose.jimenez+@nasa.gov')
-        True
-        >>> is_valid_email('jose.jimenez+newsletter@nasa.gov')
-        True
-        >>> is_valid_email('jose.jimenez@.gov')
-        False
-        >>> is_valid_email('@nasa.gov')
-        False
-        >>> is_valid_email('jose.jimenez@nasa.g')
-        False
-        """
+        """Function check email address against Regular Expression"""
         PATTERN = r'^[a-zA-Z0-9][\w.+-]*@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]{2,20}$'
 
         if re.match(PATTERN, email):
@@ -142,6 +144,33 @@ Good Engineering Practices
             return False
 
 .. code-block:: python
+
+    """
+    >>> is_valid('3ares@nasa.gov')
+    False
+    >>> is_valid('ares3@nasa.gov')
+    True
+    >>> is_valid('a3@nasa.gov')
+    True
+    >>> is_valid('3@nasa.gov')
+    False
+    >>> is_valid('m@nasa.gov')
+    True
+    >>> is_valid('m.watney@nasa.gov')
+    True
+    >>> is_valid('m_watney@nasa.gov')
+    True
+    >>> is_valid('m-watney@nasa.gov')
+    True
+    >>> is_valid('mark.watney@nasa.gov')
+    True
+    >>> is_valid('markwatney@nasa.gov')
+    True
+    >>> is_valid('jan.twardowski@polsa.gov.pl')
+    True
+    >>> is_valid('jan.twardowski@polsa24.gov.pl')
+    True
+    """
 
     import re
 
@@ -153,32 +182,6 @@ Good Engineering Practices
 
 
     def is_valid(data):
-        """
-        >>> is_valid('3ares@nasa.gov')
-        False
-        >>> is_valid('ares3@nasa.gov')
-        True
-        >>> is_valid('a3@nasa.gov')
-        True
-        >>> is_valid('3@nasa.gov')
-        False
-        >>> is_valid('m@nasa.gov')
-        True
-        >>> is_valid('m.watney@nasa.gov')
-        True
-        >>> is_valid('m_watney@nasa.gov')
-        True
-        >>> is_valid('m-watney@nasa.gov')
-        True
-        >>> is_valid('mark.watney@nasa.gov')
-        True
-        >>> is_valid('markwatney@nasa.gov')
-        True
-        >>> is_valid('jan.twardowski@polsa.gov.pl')
-        True
-        >>> is_valid('jan.twardowski@polsa24.gov.pl')
-        True
-        """
         if pattern.match(data):
             return True
         else:
@@ -219,45 +222,35 @@ Regexp Match Phones
 
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
-:Input:
-    .. code-block:: python
-
-        DATA = [
-            '+48 (12) 355 5678',
-            '+48 123 555 678',
-            '123 555 678',
-            '+48 12 355 5678',
-            '+48 123-555-678',
-            '+48 123 555 6789',
-            '+1 (123) 555-6789',
-            '+1 (123).555.6789',
-            '+1 800-python',
-            '+48123555678',
-            '+48 123 555 678 wew. 1337',
-            '+48 123555678,1',
-            '+48 123555678,1,2,3',
-        ]
-
-        for number in DATA:
-            result = is_valid_phone(number)
-            print(f'{result}\t{number}')
-
 :Output:
     .. code-block:: text
 
-        False	+48 (12) 355 5678
-        True	+48 123 555 678
-        False	123 555 678
-        True	+48 12 355 5678
-        False	+48 123-555-678
-        False	+48 123 555 6789
-        False	+1 (123) 555-6789
-        False	+1 (123).555.6789
-        False	+1 800-python
-        False	+48123555678
-        False	+48 123 555 678 wew. 1337
-        False	+48 123555678,1
-        False	+48 123555678,1,2,3
+        >>> is_valid_phone('+48 (12) 355 5678')
+        False
+        >>> is_valid_phone('+48 123 555 678')
+        True
+        >>> is_valid_phone('123 555 678')
+        False
+        >>> is_valid_phone('+48 12 355 5678')
+        True
+        >>> is_valid_phone('+48 123-555-678')
+        False
+        >>> is_valid_phone('+48 123 555 6789')
+        False
+        >>> is_valid_phone('+1 (123) 555-6789')
+        False
+        >>> is_valid_phone('+1 (123).555.6789')
+        False
+        >>> is_valid_phone('+1 800-python')
+        False
+        >>> is_valid_phone('+48123555678')
+        False
+        >>> is_valid_phone('+48 123 555 678 wew. 1337')
+        False
+        >>> is_valid_phone('+48 123555678,1')
+        False
+        >>> is_valid_phone('+48 123555678,1,2,3')
+        False
 
 Regexp Match Git Flow
 ---------------------

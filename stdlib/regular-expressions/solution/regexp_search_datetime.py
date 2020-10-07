@@ -4,8 +4,8 @@ TEXT = """Apollo 11 was the spaceflight that first landed humans on the Moon. Co
 import re
 
 
-re.search('[0-9]{2}:[0-9]{2} UTC', TEXT)
+re.search(r'[0-9]{2}:[0-9]{2} UTC', TEXT)
 # <re.Match object; span=(216, 225), match='20:17 UTC'>
 
-re.search('[0-9]{2}:[0-9]{2} UTC', TEXT).group()
+re.search(r'[0-9]{2}:[0-9]{2} UTC', TEXT).group()
 # '20:17 UTC'
