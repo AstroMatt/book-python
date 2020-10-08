@@ -9,6 +9,10 @@ Rationale
 =========
 * List of finite choices
 * Enumerations
+* ``Enum``
+* ``IntEnum``
+* ``Flag``
+* ``IntFlag``
 
 
 Definition

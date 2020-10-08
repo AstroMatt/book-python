@@ -1,4 +1,4 @@
-sphinx==3.1.*
+sphinx==3.2.*
 sphinx_rtd_theme
 sphinxcontrib-bibtex
 

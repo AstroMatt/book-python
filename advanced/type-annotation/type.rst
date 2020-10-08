@@ -123,34 +123,38 @@ Type Check is not Enforced
     is_adult: int = True
 
 
-Futute
+Future
 ======
-* Those are only my speculations
-* Based on other languages
+* :pep:`604` - Allow writing union types as X | Y (since Python 3.10)
 
 .. code-block:: python
 
     from typing import Union
 
-    age: Union[int, float] = 44
-
-    age: [int,float] = 44
-    age: [int|float] = 44
-
-    age: (int,float) = 44
-    age: (int|float) = 44
-
-    age: <int,float> = 44
-    age: <int|float> = 44
+    age: Union[int, float] = 1337
+    age: int|float = 1337
 
 .. code-block:: python
+    :caption: Result of this expression would then be valid in isinstance() and issubclass()
+
+    isinstance(1337, int|float)
+    issubclass(bool, int|float)
+
+.. code-block:: python
+    :caption: Optional
+
+    isinstance(None, int|None)
+    isinstance(1337, int|None)
+
+
+.. code-block:: python
+    :caption: This is only my speculations how Optional might be represented someday.
     :force:
 
     from typing import Optional
 
-    age: Optional[int] = 44
-
-    age: int? = 44
+    age: Optional[int] = 1337
+    age: int? = 1337
 
 
 More Information
