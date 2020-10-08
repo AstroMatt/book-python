@@ -15,7 +15,7 @@ Decorator:
 Is equivalent to:
     .. code-block:: python
 
-        mydecorator = mydecorator(a, b)(myfunction)
+        myfunction = mydecorator(a, b)(myfunction)
 
 
 Syntax
