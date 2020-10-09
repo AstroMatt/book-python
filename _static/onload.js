@@ -73,6 +73,17 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     } catch (e) {}
 
-    let search_input = '<iframe src="https://duckduckgo.com/search.html?site=python.astrotech.io&prefill=Search..." id="search" frameborder="0"></iframe>';
+
+    // let search_input = '<iframe src="https://duckduckgo.com/search.html?site=python.astrotech.io&prefill=Search..." id="search" frameborder="0"></iframe>';
+    let search_input = '<form id="search" action="https://duckduckgo.com/"><input id="search-input" type="search" placeholder="Search..." name="q" onfocusout="onFormSubmit(); this.form"><input id="search-submit" type="submit" value="" onclick="onFormSubmit();"></form>'
     document.querySelectorAll('div[role="search"]')[0].innerHTML = search_input;
+
+
 });
+
+
+function onFormSubmit() {
+    document.getElementById("search-input").value += ' site:python.astrotech.io';
+    document.getElementById("search").submit();
+    return true;
+}
