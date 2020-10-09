@@ -115,7 +115,7 @@ exclude_patterns = [
 master_doc = 'index'
 templates_path = ['_templates']
 highlight_language = 'python3'
-pygments_style = 'borland'
+pygments_style = 'stata-dark'
 autodoc_typehints = "description"
 autosectionlabel_maxdepth = 4
 
@@ -158,7 +158,7 @@ html_context = {}
 
 if html_theme == 'sphinx_rtd_theme':
     html_context.update({
-        'css_files': ['_static/screen.css', '_static/print.css'],
+        'css_files': ['_static/dark.css', '_static/print.css'],
         'script_files': ['_static/jquery.min.js', '_static/onload.js', mathjax_path]})
 
 if html_theme == 'thesis':

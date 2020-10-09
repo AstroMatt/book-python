@@ -35,7 +35,7 @@ Read Using Context Manager
     * Context managers use ``with ... as ...:`` syntax
     * It closes file automatically upon block exit (dedent)
     * Using context manager is best practice
-    * More information in :ref:`Context Managers`
+    * More information in :ref:`Protocol Context Manager`
 
 .. code-block:: python
 

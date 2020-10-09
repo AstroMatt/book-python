@@ -121,7 +121,7 @@ html_static_path = ['_static']
 
 if html_theme == 'sphinx_rtd_theme':
     html_context.update({
-        'css_files': ['_static/screen.css', '_static/print.css'],
+        'css_files': ['_static/light.css', '_static/print.css'],
         'script_files': ['_static/jquery.min.js', '_static/onload.js', mathjax_path],
     })
 

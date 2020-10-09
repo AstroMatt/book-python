@@ -16,8 +16,8 @@ Rationale
     * ``hasattr(obj, 'attribute_name') -> bool``
 
 
-* Protocol
-==========
+Protocol
+========
 * ``__setattr__(self, attribute_name, value) -> None``
 * ``__delattr__(self, attribute_name) -> None``
 * ``__getattribute__(self, attribute_name, default) -> Any``

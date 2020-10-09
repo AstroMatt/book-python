@@ -9,7 +9,7 @@ Syntax
 ======
 .. highlights::
     * ``ITERABLE`` must implement ``iterator`` interface
-    * More information in :ref:`OOP Iterator`
+    * More information in :ref:`Protocol Iterator`
 
 .. code-block:: text
     :caption: ``for`` loop syntax

@@ -1,0 +1,142 @@
+:root {
+    --background: #000;
+    --title: #aaa;
+    --menu-background: #121212;
+    --menu-header: #aaa;
+    --menu-entry: #aaa;
+    --menu-entry-hover: #1e1e1e;
+    --menu-entry-active: #151515;
+    --header: #aaa;
+    --text: #ccc;
+    --links: #eee;
+    --todo: #bb86fc;
+    --warning: #cf6679;
+    --tip: #03dac6;
+    --code-background: #121212;
+    --code-border: none;
+    --code-text: #aaa;
+}
+
+@media screen {
+    body {color: var(--text)}
+
+    /* RTD theme's default is 800px as max width for the content */
+    .wy-nav-content {max-width: 1100px; background: var(--background)}
+    .wy-nav-content-wrap {background: var(--background)}
+
+    /* hide double entries on main page toc-tree */
+    .toctree-wrapper .caption {display: none}
+
+    /* hyperlinks */
+    a {color: var(--links) !important}
+    a:hover {text-decoration: underline !important}
+    .download span {color: var(--links) !important}
+    .download span:hover {color: var(--links) !important; text-decoration: underline !important}
+
+    /* headers */
+    h1 {font-family: sans-serif; page-break-after: avoid; color: var(--header) !important}
+    h2 {font-family: sans-serif; page-break-after: avoid; color: var(--header) !important}
+    h3 {font-family: sans-serif; page-break-after: avoid; color: var(--header) !important}
+    h4 {font-family: sans-serif; page-break-after: avoid; color: var(--header) !important}
+    h5 {font-family: sans-serif; page-break-after: avoid; color: var(--header) !important}
+    h6 {font-family: sans-serif; page-break-after: avoid; color: var(--header) !important}
+
+    /* top menu (while zoom) */
+    .wy-nav-top {background: var(--menu-background) !important}
+    .wy-nav-top a {color: var(--title) !important}
+
+    /* top menu with search input */
+    .wy-side-nav-search {background: var(--menu-background) !important; margin-bottom: 2rem}
+    .wy-side-nav-search a {color: var(--title) !important; font-size: 1.3rem; margin-top: 1rem}
+    .wy-side-nav-search a:hover {color: var(--title) !important; background: none !important; text-decoration: none !important;}
+    .wy-side-nav-search div.version {color: var(--menu-background)}
+    .wy-side-nav-search input[type=text] {border: none !important; border-radius: 0}
+
+    /* left vertical menu */
+    .wy-nav-side {background: var(--menu-background); width: 300px;}
+    .wy-nav-side a {color: var(--menu-header) !important}
+    .wy-nav-side a:before {content: none !important}
+
+    /* left vertical menu chapters */
+    .wy-menu-vertical p.caption {color: var(--menu-header) !important; margin: 0 !important;}
+    .wy-menu-vertical p.caption:hover {text-decoration: none !important; color: var(--menu-header); cursor: pointer}
+
+    /* left vertical menu sub-chapters */
+    .wy-menu-vertical li {font-size: 1rem !important; background: none !important; border: 0 !important}
+    .wy-menu-vertical li:last-child {margin-bottom: 1rem !important}
+    .wy-menu-vertical li a {color: var(--menu-entry) !important; border: 0 !important; background: none !important}
+    .wy-menu-vertical li a:hover {text-decoration: none !important; border: 0 !important; background: none !important;  background: var(--menu-entry-hover) !important}
+    .wy-menu-vertical li.current {background: none !important}
+    .wy-menu-vertical li.current a {color: var(--menu-entry) !important; border: 0 !important; background: var(--menu-entry-active) !important}
+    .wy-menu-vertical li.current a:hover {text-decoration: none !important; border: 0 !important; background: var(--menu-entry-hover) !important}
+    .wy-menu-vertical .literal {background: none !important; text-transform: capitalize; font-family: sans-serif; color: var(--menu-entry) !important; font-size: 0.85rem}
+
+    /* table:
+     *
+     *   - Sequences of whitespace should collapse into a single whitespace.
+     *   - make the overflow auto (scrollbar if needed)
+     *   - align caption "left" ("center" is unsuitable on vast tables)
+     */
+    table {border: 0 !important}
+    table td {border: none !important}
+    table th {border-bottom: 1px solid #222 !important}
+    table tr td {background: none !important}
+    table tr:hover td {background: #eee !important}
+    table thead {text-align: left !important; vertical-align: middle !important}
+    table thead p {margin-bottom: 0}
+    table thead th.stub {text-align: center; border-right: 0; border-bottom: 1px solid #000; }
+    table tbody th.stub {text-align: center; border-bottom: 0 !important; border-right: 1px solid #000 !important;}
+    .wy-table-responsive table td {white-space: normal}
+    .wy-table-responsive {overflow: auto}
+    .rst-content table.docutils caption {text-align: left; font-size: 100%}
+
+    /* hide the permalink symbol as long as link is not hovered */
+    caption a.headerlink {opacity: 0}
+    caption a.headerlink:hover {opacity: 1}
+
+    /* inline literal */
+    code.literal {color: var(--code-text) !important; background: var(--code-background) !important; border: 1px solid var(--code-border); padding-left: 0.5rem; padding-right: 0.5rem; font-family: monospace}
+
+    /* glossary entries */
+    dt {color: var(--header) !important; background: none !important; border: none !important}
+
+    /* lists */
+    .rst-content dl p {margin: 0 !important}
+
+    /* bibliography entries */
+    dl.citation dt:before {content: '['; color: var(--header) !important}
+    dl.citation dt:after {content: ']'; color: var(--header) !important}
+
+    /* caption */
+    .code-block-caption {color: var(--header) !important; text-align: center !important; font-weight: bold !important; font-style: normal !important; margin-top: 1rem; margin-bottom: 1rem}
+    .figure .caption {color: var(--header) !important; text-align: center !important; font-weight: bold !important; font-style: normal !important; margin-top: 1rem; margin-bottom: 1rem}
+    table caption {color: var(--header) !important; text-align: center !important; font-weight: bold !important; font-style: normal !important; margin-top: 1rem; margin-bottom: 1rem}
+
+    /* infoboxes */
+    .tip {background: none !important; border: 1px solid var(--tip)}
+    .tip .admonition-title {background: var(--tip) !important}
+
+    .warning {background: none !important; border: 1px solid var(--warning)}
+    .warning .admonition-title {background: var(--warning) !important}
+
+    .note {background: none !important; border: 1px solid var(--menu-background)}
+    .note .admonition-title {background: var(--menu-background) !important}
+
+    .admonition-todo {background: none !important; border: 1px solid var(--todo)}
+    .admonition-todo .admonition-title {background: var(--todo) !important}
+
+    /* buttons on bottom (next, prev)*/
+    .btn-neutral {color: var(--links) !important;background: none !important;border: 0; box-shadow: none}
+    .btn-neutral:hover {color: var(--links) !important; background: none !important; border: 0}
+    .btn-neutral:visited {color: var(--links) !important; background: none !important; border: 0}
+    .fa-arrow-circle-left:before {content: '<<'}
+    .fa-arrow-circle-right:before {content: '>>'}
+
+    /* Read the docs footer on bottom left menu */
+    .rst-current-version {background: var(--menu-background) !important;}
+    .rst-versions {display: none;}
+
+    .highlight {background: var(--code-background); border: var(--code-border)}
+    .rst-content div[class^=highlight], .rst-content pre.literal-block {border: var(--code-border)}
+    #search {overflow:hidden;margin:0;padding:0;width:200px;height:40px;background:var(--menu-background);}
+}

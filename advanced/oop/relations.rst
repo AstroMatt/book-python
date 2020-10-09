@@ -134,7 +134,7 @@ OOP Relations Model
     .. code-block:: json
         :caption: Python list[dict] or JSON?
 
-        DATA = [
+        [
             {"firstname": "Jan", "lastname": "Twardowski", "addresses": [
                 {"street": "Kamienica Pod św. Janem Kapistranem", "city": "Kraków", "postcode": "31-008", "region": "Małopolskie", "country": "Poland"}]},
             {"firstname": "José", "lastname": "Jiménez", "addresses": [

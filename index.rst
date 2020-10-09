@@ -78,22 +78,7 @@ CI/CD and Quality
     :numbered:
     :caption: CI/CD and Quality
 
-    /quality/good-engineering-practice/pep8.rst
-    /quality/good-engineering-practice/pep20.rst
-    /quality/good-engineering-practice/code-smells.rst
-    /quality/good-engineering-practice/documentation.rst
-    /quality/tests/unittest.rst
-    /quality/tests/pytest.rst
-    /quality/debugging/python-wat.rst
-    /quality/debugging/logging.rst
-    /quality/debugging/warnings.rst
-    /quality/debugging/debugging-basic.rst
-    /quality/debugging/debugging-advanced.rst
-    /quality/debugging/introspection.rst
-    /quality/type-annotation/checking.rst
-    /quality/type-annotation/annotating.rst
-    /quality/type-annotation/introspection.rst
-    /quality/ci-cd/index.rst
+    /quality/index.rst
 
 ****************
 Network and HTTP
