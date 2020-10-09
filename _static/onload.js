@@ -83,7 +83,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 function onFormSubmit() {
-    document.getElementById("search-input").value += ' site:python.astrotech.io';
-    document.getElementById("search").submit();
-    return true;
+    let query = document.getElementById("search-input");
+    if (query.value) {
+        query.value += ' site:python.astrotech.io';
+        document.getElementById("search").submit();
+        return true;
+    }
 }
