@@ -36,6 +36,7 @@ Functions
     function/args-kwargs-arguments.rst
     function/parameter-syntax.rst
     function/generator.rst
+    function/functional-paradigm.rst
     function/first-class.rst
     function/closures.rst
 
