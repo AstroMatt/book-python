@@ -47,9 +47,6 @@ suppress_warnings = [
 
 html_static_path = [
     '_static',
-]
-
-html_extra_path = [
     '_data/csv',
     '_data/json',
     '_data/sas',
