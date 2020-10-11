@@ -282,8 +282,8 @@ Database SQLite Iris
 :Input:
     .. code-block:: python
 
-        DATABASE = r'database-sqlite-iris.sqlite3'
-        FILE = r'database-sqlite-iris.csv'
+        DATABASE = r'_temporary.sqlite3'
+        FILE = r'_temporary.csv'
 
         SPECIES = {
             0: 'setosa',
@@ -348,7 +348,7 @@ Database SQLite Logs
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Save input data to file ``apollo11-timeline.log``
+    #. Save input data to file ``FILE``
     #. Extract ``datetime`` object, level name and message from each line
     #. Collect data to ``DATA: list[dict]`` (see below)
     #. Create database schema for logs
@@ -360,7 +360,7 @@ Database SQLite Logs
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Zapisz dane wejściowe do pliku ``apollo11-timeline.log``
+    #. Zapisz dane wejściowe do pliku ``FILE``
     #. Wyciągnij obiekt ``datetime``, poziom logowania oraz wiadomość z każdej linii
     #. Zbierz dane do ``DATA: list[dict]`` (patrz sekcja input)
     #. Stwórz schemat bazy danych dla logów
@@ -373,6 +373,9 @@ Database SQLite Logs
 :Input:
     .. code-block:: python
         :caption: Apollo 11 timeline https://history.nasa.gov/SP-4029/Apollo_11i_Timeline.htm
+
+        DATABASE = r'_temporary.sqlite3'
+        FILE = r'_temporary.log'
 
         DATA = """1969-07-14, 21:00:00, INFO, Terminal countdown started
         1969-07-16, 13:31:53, WARNING, S-IC engine ignition (#5)

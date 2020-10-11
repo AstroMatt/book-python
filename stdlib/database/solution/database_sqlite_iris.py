@@ -1,8 +1,8 @@
 import sqlite3
 from datetime import datetime, timezone
 
-DATABASE = r'/tmp/database-sqlite-iris.sqlite3'
-FILE = r'/tmp/database-sqlite-iris.csv'
+DATABASE = r'/tmp/_temporary.sqlite3'
+FILE = r'/tmp/_temporary.csv'
 
 SPECIES = {
     0: 'setosa',
