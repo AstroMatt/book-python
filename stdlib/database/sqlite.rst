@@ -337,102 +337,6 @@ Database SQLite Iris
         with open(FILE, mode='w') as file:
             file.write(DATA)
 
-Database SQLite Relations
--------------------------
-* Assignment name: Database SQLite Relations
-* Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 15 lines
-* Estimated time of completion: 21 min
-* Solution: :download:`solution/database_sqlite_relations.py`
-
-:English:
-    #. Use data from "Input" section (see below)
-    #. Create database for input data
-    #. Add support for many addresses
-    #. Insert data to database
-    #. Select data from database using JOIN relations
-
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Stwórz bazę danych na podstawie danych wejściowych
-    #. Dodaj obsługę dla wielu adresów
-    #. Zapisz dane do bazy
-    #. Wypisz dane z bazy wykorzystując relację JOIN
-
-:Input:
-    .. code-block:: text
-
-        José, Jiménez
-            2101 E NASA Pkwy, 77058, Houston, Texas, USA
-            , Kennedy Space Center, 32899, Florida, USA
-
-        Mark, Watney
-            4800 Oak Grove Dr, 91109, Pasadena, California, USA
-            2825 E Ave P, 93550, Palmdale, California, USA
-
-        Иван, Иванович
-            Kosmodrom Bajkonur, Bajkonur, Kazachstan
-
-        Melissa Lewis,
-            <NO ADDRESS>
-
-        Alex Vogel
-            Linder Hoehe, 51147, Köln, Germany
-
-:Hints:
-    .. code-block:: sql
-        :caption: Hint
-
-        CREATE TABLE IF NOT EXISTS contact (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            created DATETIME,
-            modified DATETIME,
-            first_name TEXT,
-            last_name TEXT,
-            date_of_birth DATE
-        );
-
-        CREATE UNIQUE INDEX IF NOT EXISTS last_name_index ON contact (last_name);
-        CREATE INDEX IF NOT EXISTS modified_index ON contact (modified);
-
-        CREATE TABLE IF NOT EXISTS address (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            contact_id INTEGER,
-            street TEXT,
-            city TEXT,
-            state TEXT,
-            code INT,
-            country TEXT
-        );
-
-        INSERT INTO contact VALUES (
-            NULL,
-            :created,
-            :modified,
-            :first_name,
-            :last_name,
-            :date_of_birth
-        );
-
-        INSERT INTO address VALUES (
-            NULL,
-            :contact_id
-            :street,
-            :city,
-            :state,
-            :code,
-            :country
-        );
-
-        UPDATE contact SET
-            first_name=:firstname,
-            last_name=:lastname,
-            modified=:modified
-        WHERE id=:id;
-
-        SELECT * FROM contact;
-
 Database SQLite Logs
 --------------------
 * Assignment name: Database SQLite Logs
@@ -516,3 +420,96 @@ Database SQLite Logs
           'message': 'LM lunar landing'},
 
         ...]
+
+Database SQLite Relations
+-------------------------
+* Assignment name: Database SQLite Relations
+* Last update: 2020-10-11
+* Complexity level: medium
+* Lines of code to write: 15 lines
+* Estimated time of completion: 21 min
+* Solution: :download:`solution/database_sqlite_relations.py`
+
+:English:
+    #. Use data from "Input" section (see below)
+    #. Create database for input data
+    #. Add support for many addresses
+    #. Insert data to database
+    #. Select data from database using JOIN relations
+
+:Polish:
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Stwórz bazę danych na podstawie danych wejściowych
+    #. Dodaj obsługę dla wielu adresów
+    #. Zapisz dane do bazy
+    #. Wypisz dane z bazy wykorzystując relację JOIN
+
+:Input:
+    .. code-block:: python
+
+        DATA = [
+            {"firstname": "José", "lastname": "Jiménez", "addresses": [
+                {"street": "2101 E NASA Pkwy", "code": 77058, "city": "Houston", "state": "Texas", "country": "USA"},
+                {"street": None, "code": 32899, "city": "Kennedy Space Center", "state": "Florida", "country": "USA"}]},
+
+            {"firstname": "Mark", "lastname": "Watney", "addresses": [
+                {"street": "4800 Oak Grove Dr", "code": 91109, "city": "Pasadena", "state": "California", "country": "USA"},
+                {"street": "2825 E Ave P", "code": 93550, "city": "Palmdale", "state": "California", "country": "USA"}]},
+
+            {"firstname": "Иван", "lastname": "Иванович", "addresses": [
+                {"street": "", "code": None, "city": "Космодро́м Байкону́р", "state": "Кызылординская область", "country": "Қазақстан"}]},
+
+            {"firstname": "Melissa", "lastname": "Lewis", "addresses": []},
+
+            {"firstname": "Alex", "lastname": "Vogel", "addresses": [
+                {"street": "Linder Hoehe", "city": "Köln", "code": 51147, "state": None, "country": "Germany"}]}
+        ]
+
+:Hint:
+    .. code-block:: python
+
+        SQL_CREATE_TABLE_ASTRONAUT = """
+            CREATE TABLE IF NOT EXISTS astronaut (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                created DATETIME DEFAULT CURRENT_TIMESTAMP,
+                firstname TEXT,
+                lastname TEXT);"""
+
+        SQL_CREATE_TABLE_ADDRESS = """
+            CREATE TABLE IF NOT EXISTS address (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                created DATETIME DEFAULT CURRENT_TIMESTAMP,
+                astronaut_id INTEGER,
+                street TEXT,
+                city TEXT,
+                state TEXT,
+                code INT,
+                country TEXT);"""
+
+        SQL_CREATE_INDEX_ASTRONAUT_LASTNAME = """
+            CREATE UNIQUE INDEX IF NOT EXISTS lastname_index ON astronaut (lastname);"""
+
+        SQL_INSERT_ASTRONAUT = """
+            INSERT INTO astronaut VALUES (
+                NULL,
+                CURRENT_TIMESTAMP,
+                :firstname,
+                :lastname);"""
+
+        SQL_INSERT_ADDRESS = """
+            INSERT INTO address VALUES (
+                NULL,
+                CURRENT_TIMESTAMP,
+                :astronaut_id,
+                :street,
+                :city,
+                :state,
+                :code,
+                :country);"""
+
+        SQL_SELECT = """
+            SELECT *
+            FROM astronaut
+            JOIN address
+            ON astronaut.id=address.astronaut_id;
+        """

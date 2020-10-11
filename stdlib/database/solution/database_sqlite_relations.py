@@ -1,89 +1,54 @@
 import sqlite3
-from datetime import datetime
 
-DATABASE = r'/tmp/_temporary.sqlite3'
+DATABASE = r':memory:'
 
-SQL_CREATE_TABLE_CONTACT = """
-    CREATE TABLE IF NOT EXISTS contact (
+SQL_CREATE_TABLE_ASTRONAUT = """
+    CREATE TABLE IF NOT EXISTS astronaut (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        created DATETIME,
-        modified DATETIME,
+        created DATETIME DEFAULT CURRENT_TIMESTAMP,
         firstname TEXT,
-        lastname TEXT,
-        date_of_birth DATE);"""
+        lastname TEXT);"""
 
 SQL_CREATE_TABLE_ADDRESS = """
     CREATE TABLE IF NOT EXISTS address (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        contact_id INTEGER,
+        created DATETIME DEFAULT CURRENT_TIMESTAMP,
+        astronaut_id INTEGER,
         street TEXT,
         city TEXT,
         state TEXT,
         code INT,
         country TEXT);"""
 
-SQL_CREATE_INDEX_CONTACT_LASTNAME = """
-    CREATE UNIQUE INDEX IF NOT EXISTS lastname_index ON contact (lastname);"""
+SQL_CREATE_INDEX_ASTRONAUT_LASTNAME = """
+    CREATE UNIQUE INDEX IF NOT EXISTS lastname_index ON astronaut (lastname);"""
 
-SQL_CREATE_INDEX_CONTACT_MODIFIED = """
-    CREATE INDEX IF NOT EXISTS modified_index ON contact (modified);"""
-
-SQL_INSERT_CONTACT = """
-    INSERT INTO contact VALUES (
+SQL_INSERT_ASTRONAUT = """
+    INSERT INTO astronaut VALUES (
         NULL,
-        :created,
-        :modified,
+        CURRENT_TIMESTAMP,
         :firstname,
-        :lastname,
-        :date_of_birth);"""
+        :lastname);"""
 
 SQL_INSERT_ADDRESS = """
     INSERT INTO address VALUES (
         NULL,
-        :contact_id,
+        CURRENT_TIMESTAMP,
+        :astronaut_id,
         :street,
         :city,
         :state,
         :code,
         :country);"""
 
-SQL_UPDATE_CONTACT = """
-    UPDATE contact SET
-        firstname=:firstname,
-        lastname=:lastname,
-        modified=:modified
-    WHERE id=:id;"""
-
-SQL_SELECT_CONTACT = """
-    SELECT * FROM contact;"""
-
 SQL_SELECT = """
     SELECT *
-    FROM contact
+    FROM astronaut
     JOIN address
-    ON contact.id=address.contact_id;
+    ON astronaut.id=address.astronaut_id;
 """
 
-DATA = """
-José, Jiménez
-    2101 E NASA Pkwy, 77058, Houston, Texas, USA
-    , Kennedy Space Center, 32899, Florida, USA
-
-Mark, Watney
-    4800 Oak Grove Dr, 91109, Pasadena, California, USA
-    2825 E Ave P, 93550, Palmdale, California, USA
-
-Иван, Иванович
-    Kosmodrom Bajkonur, Bajkonur, Kazachstan
-
-Melissa Lewis,
-    <NO ADDRESS>
-
-Alex Vogel
-    Linder Hoehe, 51147, Köln, Germany
-"""
-
-addressbook = [
+DATA = [
     {"firstname": "José", "lastname": "Jiménez", "addresses": [
         {"street": "2101 E NASA Pkwy", "code": 77058, "city": "Houston", "state": "Texas", "country": "USA"},
         {"street": None, "code": 32899, "city": "Kennedy Space Center", "state": "Florida", "country": "USA"}]},
@@ -101,31 +66,23 @@ addressbook = [
         {"street": "Linder Hoehe", "city": "Köln", "code": 51147, "state": None, "country": "Germany"}]}
 ]
 
-addresses = []
 
-for i, contact in enumerate(addressbook, start=1):
-    contact['created'] = datetime.now()
-    contact['modified'] = datetime.now()
-    contact['date_of_birth'] = None
-    addr = contact.pop('addresses')
-
-    for a in addr:
-        a['contact_id'] = i
-        addresses.append(a)
-
-with sqlite3.connect(DATABASE) as db:
+with sqlite3.connect(DATABASE) as connection:
+    db = connection.cursor()
     db.row_factory = sqlite3.Row
-    db.execute(SQL_CREATE_TABLE_CONTACT)
+
+    db.execute(SQL_CREATE_TABLE_ASTRONAUT)
     db.execute(SQL_CREATE_TABLE_ADDRESS)
-    db.execute(SQL_CREATE_INDEX_CONTACT_LASTNAME)
-    db.execute(SQL_CREATE_INDEX_CONTACT_MODIFIED)
+    db.execute(SQL_CREATE_INDEX_ASTRONAUT_LASTNAME)
 
-    try:
-        db.executemany(SQL_INSERT_CONTACT, addressbook)
-        db.executemany(SQL_INSERT_ADDRESS, addresses)
-    except sqlite3.IntegrityError:
-        pass
+    for astronaut in DATA:
+        addresses = astronaut.pop('addresses')
+        db.execute(SQL_INSERT_ASTRONAUT, astronaut)
+        astronaut_id = db.lastrowid
 
-    cursor = db.cursor()
-    for row in cursor.execute(SQL_SELECT):
+        for addr in addresses:
+            addr['astronaut_id'] = astronaut_id
+            db.execute(SQL_INSERT_ADDRESS, addr)
+
+    for row in db.execute(SQL_SELECT):
         print(dict(row))
