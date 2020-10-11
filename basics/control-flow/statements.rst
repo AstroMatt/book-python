@@ -224,7 +224,7 @@ Unconditional Alternative
         job = 'cosmonaut'
 
     print(job)
-    # astronaut
+    # cosmonaut
 
 .. code-block:: python
     :caption: Checking if variable is certain value
