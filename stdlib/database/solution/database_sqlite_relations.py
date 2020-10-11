@@ -21,7 +21,7 @@ SQL_CREATE_TABLE_ADDRESS = """
         country TEXT);"""
 
 SQL_CREATE_INDEX_ASTRONAUT_LASTNAME = """
-    CREATE UNIQUE INDEX IF NOT EXISTS lastname_index ON astronaut (lastname);"""
+    CREATE INDEX IF NOT EXISTS lastname_index ON astronaut (lastname);"""
 
 SQL_INSERT_ASTRONAUT = """
     INSERT INTO astronaut VALUES (
