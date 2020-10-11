@@ -432,17 +432,15 @@ Database SQLite Relations
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Create database for input data
-    #. Add support for many addresses
-    #. Insert data to database
-    #. Select data from database using JOIN relations
+    #. Create database and two tables ``astronaut`` and ``address``
+    #. Insert data to separate tables
+    #. Print data joining information from both tables
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Stwórz bazę danych na podstawie danych wejściowych
-    #. Dodaj obsługę dla wielu adresów
-    #. Zapisz dane do bazy
-    #. Wypisz dane z bazy wykorzystując relację JOIN
+    #. Stwórz bazę danych i dwie tabele ``astronaut`` i ``address``
+    #. Zapisz dane do osobnych tabel
+    #. Wypisz dane łącząc informacje z obu tabel
 
 :Input:
     .. code-block:: python
