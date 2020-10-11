@@ -30,7 +30,7 @@ DATA = """4.3,3.0,1.1,0.1,0
 SQL_CREATE_TABLE = """
     CREATE TABLE IF NOT EXISTS iris (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        datetime DATETIME,
+        created DATETIME DEFAULT CURRENT_TIMESTAMP,
         species TEXT,
         sepal_length REAL,
         sepal_width REAL,
@@ -39,19 +39,22 @@ SQL_CREATE_TABLE = """
 
 SQL_CREATE_INDEX = """
     CREATE INDEX IF NOT EXISTS
-        iris_datetime_index ON iris (datetime);"""
+        iris_created_index ON iris (created);"""
 
 SQL_INSERT = """
     INSERT INTO iris VALUES (
         NULL,
-        :datetime,
+        CURRENT_TIMESTAMP,
         :species,
         :sepal_length,
         :sepal_width,
         :petal_length,
         :petal_width);"""
 
-SQL_SELECT = 'SELECT * FROM iris ORDER BY datetime DESC'
+SQL_SELECT = """
+    SELECT *
+    FROM iris
+    ORDER BY created DESC"""
 
 data = []
 
@@ -63,7 +66,6 @@ with open(FILE) as file:
         line = line.strip().split(',')
 
         data.append({
-            'datetime': datetime.now(tz=timezone.utc),
             'sepal_length': float(line[0]),
             'sepal_width': float(line[1]),
             'petal_length': float(line[2]),
@@ -74,14 +76,13 @@ with open(FILE) as file:
 
 with sqlite3.connect(DATABASE) as db:
     db.execute(SQL_CREATE_TABLE)
-    db.execute(SQL_CREATE_INDEX)
     db.executemany(SQL_INSERT, data)
     db.row_factory = sqlite3.Row
 
     for row in db.execute(SQL_SELECT):
         print(dict(row))
 
-# {'id': 17, 'datetime': '1961-04-12 06:07:00.952431+00:00', 'species': 'setosa', 'sepal_length': 4.7, 'sepal_width': 3.2, 'petal_length': 1.6, 'petal_width': 0.2}
-# {'id': 16, 'datetime': '1961-04-12 06:07:00.952414+00:00', 'species': 'virginica', 'sepal_length': 5.2, 'sepal_width': 3.4, 'petal_length': 1.4, 'petal_width': 0.2}
-# {'id': 15, 'datetime': '1961-04-12 06:07:00.952411+00:00', 'species': 'versicolor', 'sepal_length': 5.2, 'sepal_width': 3.5, 'petal_length': 1.5, 'petal_width': 0.2}
 # ...
+# {'id': 15, 'datetime': '1961-04-12 06:07:00.952411+00:00', 'species': 'versicolor', 'sepal_length': 5.2, 'sepal_width': 3.5, 'petal_length': 1.5, 'petal_width': 0.2}
+# {'id': 16, 'datetime': '1961-04-12 06:07:00.952414+00:00', 'species': 'virginica', 'sepal_length': 5.2, 'sepal_width': 3.4, 'petal_length': 1.4, 'petal_width': 0.2}
+# {'id': 17, 'datetime': '1961-04-12 06:07:00.952431+00:00', 'species': 'setosa', 'sepal_length': 4.7, 'sepal_width': 3.2, 'petal_length': 1.6, 'petal_width': 0.2}

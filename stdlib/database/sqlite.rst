@@ -236,112 +236,11 @@ Use cases
 Assignments
 ===========
 
-Database SQLite Iris
---------------------
-* Assignment name: Database SQLite Iris
-* Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 30 lines
-* Estimated time of completion: 21 min
-* Solution: :download:`solution/database_sqlite_iris.py`
-
-:English:
-    #. Use data from "Input" section (see below)
-    #. Read data from ``FILE`` (don't use ``csv`` or ``pandas`` library)
-    #. Reading data replace species ``int`` to ``str`` according to ``SPECIES`` conversion table
-    #. Connect to the ``sqlite3`` using context manager (``with``)
-    #. Create table ``iris`` with column specified in "Input" section
-    #. Save data to database table
-    #. Print results using ``SELECT * FROM iris ORDER BY datetime DESC``
-
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Wczytaj dane z ``FILE`` (nie używaj biblioteki ``csv`` lub ``pandas``)
-    #. Czytając dane podmień ``int`` z gatunkiem na ``str`` zgodnie z tabelą podstawień ``SPECIES``
-    #. Połącz się do bazy danych ``sqlite3`` używając context managera (``with``)
-    #. Stwórz tabelę ``iris`` o kolumnach podanych w sekcji "Input"
-    #. Zapisz dane do tabeli w bazie danych
-    #. Wypisz wyniki z bazy danych ``SELECT * FROM iris ORDER BY datetime DESC``
-
-:Non functional requirements:
-    * Add data in ``dict`` format using ``.executemany()``
-    * Return data as ``sqlite3.Row``
-    * Create index on ``datetime`` column
-    * Save date and time to database in UTC
-
-:The whys and wherefores:
-    * Parsing ``csv`` files
-    * Using ``sqlite3`` database
-    * Creating database
-    * Inserting data to database
-    * Selecting data from database
-    * Type casting
-    * Using ``datetime`` and UTC timezone
-    * Creating indexes (extra task)
-
-:Input:
-    .. code-block:: python
-
-        DATABASE = r'_temporary.sqlite3'
-        FILE = r'_temporary.csv'
-
-        SPECIES = {
-            0: 'setosa',
-            1: 'versicolor',
-            2: 'virginica'}
-
-        DATA = """4.3,3.0,1.1,0.1,0
-        5.8,4.0,1.2,0.2,0
-        5.7,4.4,1.5,0.4,1
-        5.4,3.9,1.3,0.4,2
-        5.1,3.5,1.4,0.3,1
-        5.7,3.8,1.7,0.3,0
-        5.1,3.8,1.5,0.3,0
-        5.4,3.4,1.7,0.2,1
-        5.1,3.7,1.5,0.4,0
-        4.6,3.6,1.0,0.2,0
-        5.1,3.3,1.7,0.5,2
-        4.8,3.4,1.9,0.2,0
-        5.0,3.0,1.6,0.2,1
-        5.0,3.4,1.6,0.4,2
-        5.2,3.5,1.5,0.2,1
-        5.2,3.4,1.4,0.2,2
-        4.7,3.2,1.6,0.2,0"""
-
-        SQL_CREATE_TABLE = """
-            CREATE TABLE IF NOT EXISTS iris (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                datetime DATETIME,
-                species TEXT,
-                sepal_length REAL,
-                sepal_width REAL,
-                petal_length REAL,
-                petal_width REAL);"""
-
-        SQL_CREATE_INDEX = """
-            CREATE INDEX IF NOT EXISTS
-                iris_datetime_index ON iris (datetime);"""
-
-        SQL_INSERT = """
-            INSERT INTO iris VALUES (
-                NULL,
-                :datetime,
-                :species,
-                :sepal_length,
-                :sepal_width,
-                :petal_length,
-                :petal_width);"""
-
-        SQL_SELECT = 'SELECT * FROM iris ORDER BY datetime DESC'
-
-        with open(FILE, mode='w') as file:
-            file.write(DATA)
-
 Database SQLite Logs
 --------------------
 * Assignment name: Database SQLite Logs
-* Last update: 2020-10-01
-* Complexity level: medium
+* Last update: 2020-10-11
+* Complexity level: easy
 * Lines of code to write: 25 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/database_sqlite_logs.py`
@@ -424,14 +323,113 @@ Database SQLite Logs
 
         ...]
 
-Database SQLite Relations
--------------------------
-* Assignment name: Database SQLite Relations
+:Hint:
+    * ``datetime.fromisoformat()``
+
+Database SQLite CSV
+-------------------
+* Assignment name: Database SQLite CSV
+* Last update: 2020-10-11
+* Complexity level: easy
+* Lines of code to write: 30 lines
+* Estimated time of completion: 21 min
+* Solution: :download:`solution/database_sqlite_csv.py`
+
+:English:
+    #. Use data from "Input" section (see below)
+    #. Save ``DATA`` to ``FILE``
+    #. Read data from ``FILE`` (don't use ``csv`` or ``pandas`` library)
+    #. Replace species from ``int`` to ``str`` according to ``SPECIES`` conversion table
+    #. Connect to the ``sqlite3`` using context manager (``with``)
+    #. Create table ``iris`` and write data to it
+    #. Print all rows as dicts
+
+:Polish:
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Zapisz ``DATA`` do ``FILE``
+    #. Wczytaj dane z ``FILE`` (nie używaj biblioteki ``csv`` lub ``pandas``)
+    #. Podmień gatunk z ``int`` na ``str`` zgodnie z tabelą podstawień ``SPECIES``
+    #. Połącz się do bazy danych ``sqlite3`` używając context managera (``with``)
+    #. Stwórz tabelę ``iris`` i zapisz do niej dane
+    #. Wypisz wszystkie wiersze jako słowniki
+
+:The whys and wherefores:
+    * Parsing ``csv`` files
+    * Using ``sqlite3`` database
+    * Creating database
+    * Inserting data to database
+    * Selecting data from database
+    * Type casting
+    * Using ``datetime`` and UTC timezone
+    * Creating indexes (extra task)
+
+:Input:
+    .. code-block:: python
+
+        DATABASE = r'_temporary.sqlite3'
+        FILE = r'_temporary.csv'
+
+        SPECIES = {
+            0: 'setosa',
+            1: 'versicolor',
+            2: 'virginica'}
+
+        DATA = """4.3,3.0,1.1,0.1,0
+        5.8,4.0,1.2,0.2,0
+        5.7,4.4,1.5,0.4,1
+        5.4,3.9,1.3,0.4,2
+        5.1,3.5,1.4,0.3,1
+        5.7,3.8,1.7,0.3,0
+        5.1,3.8,1.5,0.3,0
+        5.4,3.4,1.7,0.2,1
+        5.1,3.7,1.5,0.4,0
+        4.6,3.6,1.0,0.2,0
+        5.1,3.3,1.7,0.5,2
+        4.8,3.4,1.9,0.2,0
+        5.0,3.0,1.6,0.2,1
+        5.0,3.4,1.6,0.4,2
+        5.2,3.5,1.5,0.2,1
+        5.2,3.4,1.4,0.2,2
+        4.7,3.2,1.6,0.2,0"""
+
+        SQL_CREATE_TABLE = """
+            CREATE TABLE IF NOT EXISTS iris (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                created DATETIME DEFAULT CURRENT_TIMESTAMP,
+                species TEXT,
+                sepal_length REAL,
+                sepal_width REAL,
+                petal_length REAL,
+                petal_width REAL);"""
+
+        SQL_CREATE_INDEX = """
+            CREATE INDEX IF NOT EXISTS
+                iris_created_index ON iris (created);"""
+
+        SQL_INSERT = """
+            INSERT INTO iris VALUES (
+                NULL,
+                CURRENT_TIMESTAMP,
+                :species,
+                :sepal_length,
+                :sepal_width,
+                :petal_length,
+                :petal_width);"""
+
+        SQL_SELECT = """
+            SELECT *
+            FROM iris
+            ORDER BY created DESC"""
+
+
+Database SQLite JSON
+--------------------
+* Assignment name: Database SQLite JSON
 * Last update: 2020-10-11
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/database_sqlite_relations.py`
+* Solution: :download:`solution/database_sqlite_json.py`
 
 :English:
     #. Use data from "Input" section (see below)
