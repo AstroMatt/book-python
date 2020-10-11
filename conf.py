@@ -4,6 +4,7 @@ email = 'book-python@astronaut.center'
 
 language = 'en'
 html_theme = 'sphinx_rtd_theme'
+html_baseurl = 'https://python.astrotech.io'
 
 todo_emit_warnings = False
 todo_include_todos = True
@@ -46,6 +47,9 @@ suppress_warnings = [
 
 html_static_path = [
     '_static',
+]
+
+html_extra_path = [
     '_data/csv',
     '_data/json',
     '_data/sas',
