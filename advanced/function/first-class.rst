@@ -189,6 +189,28 @@ Type Annotation
 
 .. code-block:: python
 
+    from typing import Callable
+
+
+    def lower() -> str:
+        return 'hello'
+
+
+    def higher() -> Callable:
+        return lower
+
+.. code-block:: python
+
+    from typing import Callable
+
+
+    def http_request(url: str,
+                     on_success: Callable = lambda *args: None,
+                     on_error: Callable = lambda *args: None) -> None:
+        ...
+
+.. code-block:: python
+
     from typing import Callable, Iterator, Iterable
 
 
@@ -203,31 +225,6 @@ Type Annotation
 
     def enumerate(data: Iterable) -> Iterator[int, Any]:
         ...
-
-.. code-block:: python
-
-    from typing import Callable
-
-
-    def http_request(url: str,
-                     on_success: Callable = lambda *args: None,
-                     on_error: Callable = lambda *args: None) -> None:
-        ...
-
-.. code-block:: python
-
-    from typing import Callable
-
-
-    def lower() -> str:
-        return 'hello'
-
-    def higher() -> Callable:
-        return lower
-
-
-    result = higher()     # <function __main__.lower()>
-    result()              # 'hello'
 
 
 Assignments
