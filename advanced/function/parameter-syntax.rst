@@ -106,7 +106,7 @@ Function Parameter Syntax Kwargs
 * Assignment name: Function Parameter Syntax Kwargs
 * Last update: 2020-10-01
 * Complexity level: easy
-* Lines of code to write: 4 lines
+* Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/function_parameter_syntax_kwargs.py`
 
@@ -128,6 +128,10 @@ Function Parameter Syntax Kwargs
 
 :Output:
     .. code-block:: text
+
+        >>> from inspect import isfunction
+        >>> assert callable(set_position)
+        >>> assert isfunction(set_position)
 
         >>> set_position(x=1, y=2)
 
@@ -161,7 +165,7 @@ Function Parameter Syntax Args
 * Assignment name: Function Parameter Syntax Args
 * Last update: 2020-10-01
 * Complexity level: easy
-* Lines of code to write: 4 lines
+* Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/function_parameter_syntax_args.py`
 * Warning: This assignment will work only in Python 3.8+
@@ -185,18 +189,19 @@ Function Parameter Syntax Args
 :Output:
     .. code-block:: text
 
-        >>> take_damage(1)
+        >>> from inspect import isfunction
+        >>> assert callable(take_damage)
+        >>> assert isfunction(take_damage)
 
+        >>> take_damage(1)
         >>> take_damage(1, 2)
         Traceback (most recent call last):
             ...
         TypeError: take_damage() takes 1 positional argument but 2 were given
-
         >>> take_damage()
         Traceback (most recent call last):
             ...
         TypeError: take_damage() missing 1 required positional argument: 'dmg'
-
         >>> take_damage(dmg=1)
         Traceback (most recent call last):
             ...

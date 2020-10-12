@@ -429,7 +429,7 @@ Assignments
 Function Args/Kwargs Arguments Define
 -------------------------------------
 * Assignment name: Function Args/Kwargs Arguments Define
-* Last update: 2020-10-01
+* Last update: 2020-10-12
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
@@ -439,7 +439,6 @@ Function Args/Kwargs Arguments Define
     #. Use data from "Input" section (see below)
     #. Create function ``mean(*args)``, which calculates arithmetic mean for ``args``
     #. Do not import any libraries and modules
-    #. Separate header from data
     #. Define ``result: list[tuple[str, float]]``
     #. Iterate over ``DATA`` separating ``features`` from ``label``
     #. To ``result`` append ``label`` and arithmetic mean of ``features``
@@ -449,7 +448,6 @@ Function Args/Kwargs Arguments Define
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
     #. Stwórz funkcję ``mean(*args)``, która liczy średnią arytmetyczną dla ``args``
     #. Nie importuj żadnych biliotek i modułów
-    #. Odseparuj nagłówek od danych
     #. Zdefiniuj ``result: list[tuple[str, float]]``
     #. Iteruj po ``DATA`` separując ``features`` od ``label``
     #. Do ``result`` dodawaj ``label`` oraz wynik średniej arytmetycznej ``features``
@@ -473,17 +471,17 @@ Function Args/Kwargs Arguments Define
 
         >>> mean(1)
         1.0
-
         >>> mean(1, 3)
         2.0
-
         >>> mean(1, 2, 3)
         2.0
-
         >>> mean()
         Traceback (most recent call last):
             ...
         ValueError: At least one argument is required
+
+        >>> assert type(result) is list
+        >>> assert all(type(row) is tuple for row in result)
 
         >>> result  # doctest: +NORMALIZE_WHITESPACE
         [('virginica', 3.875),
@@ -492,4 +490,3 @@ Function Args/Kwargs Arguments Define
          ('virginica', 6.0),
          ('versicolor', 3.95),
          ('setosa', 4.7)]
-

@@ -1,4 +1,8 @@
 """
+>>> from inspect import isfunction
+>>> assert callable(take_damage)
+>>> assert isfunction(take_damage)
+
 >>> take_damage(1)
 >>> take_damage(1, 2)
 Traceback (most recent call last):
@@ -16,4 +20,4 @@ TypeError: take_damage() got some positional-only arguments passed as keyword ar
 
 
 def take_damage(dmg, /):
-    return None
+    ...

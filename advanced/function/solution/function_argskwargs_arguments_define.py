@@ -10,6 +10,9 @@ Traceback (most recent call last):
     ...
 ValueError: At least one argument is required
 
+>>> assert type(result) is list
+>>> assert all(type(row) is tuple for row in result)
+
 >>> result  # doctest: +NORMALIZE_WHITESPACE
 [('virginica', 3.875),
  ('setosa', 2.65),
@@ -18,14 +21,6 @@ ValueError: At least one argument is required
  ('versicolor', 3.95),
  ('setosa', 4.7)]
 """
-
-
-def mean(*args):
-    if not args:
-        raise ValueError('At least one argument is required')
-
-    return sum(args) / len(args)
-
 
 DATA = [
     ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
@@ -37,7 +32,13 @@ DATA = [
     (4.7,  'setosa'),
 ]
 
-header, *data = DATA
+
+def mean(*args):
+    if not args:
+        raise ValueError('At least one argument is required')
+
+    return sum(args) / len(args)
+
 
 result = [(label, mean(*features))
-          for *features, label in data]
+          for *features, label in DATA[1:]]
