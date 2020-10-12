@@ -125,36 +125,29 @@ Type Check is not Enforced
 
 Future
 ======
-* :pep:`604` - Allow writing union types as X | Y (since Python 3.10)
+.. versionadded:: Python 3.10
+    :pep:`604` - Allow writing union types as X | Y
+
+.. code-block:: python
+    :caption: Union and Optional before Python 3.10
+
+    from typing import Union, Optional
+
+    age: Union[int, float] = 1337
+    age: Optional[int] = 1337
 
 .. code-block:: python
 
-    from typing import Union
-
-    age: Union[int, float] = 1337
     age: int|float = 1337
+    age: int|None = 1337
+
 
 .. code-block:: python
     :caption: Result of this expression would then be valid in isinstance() and issubclass()
 
+    isinstance(1337, int|None)
     isinstance(1337, int|float)
     issubclass(bool, int|float)
-
-.. code-block:: python
-    :caption: Optional
-
-    isinstance(None, int|None)
-    isinstance(1337, int|None)
-
-
-.. code-block:: python
-    :caption: This is only my speculations how Optional might be represented someday.
-    :force:
-
-    from typing import Optional
-
-    age: Optional[int] = 1337
-    age: int? = 1337
 
 
 More Information

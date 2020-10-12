@@ -357,7 +357,20 @@ Count Occurrences
 Remove Prefix or Suffix
 =======================
 .. versionadded:: Python 3.9
-    :pep:`616` New ``str.removeprefix()`` and ``str.removesuffix()`` string methods
+    :pep:`616` String methods to remove prefixes and suffixes
+
+.. code-block:: python
+
+    filename = '1969-apollo11.tmp'
+
+    filename.removeprefix('1969-')
+    # 'apollo11.tmp'
+
+    filename.removesuffix('.tmp')
+    # '1969-apollo11'
+
+    filename.removeprefix('1969-').removesuffix('.tmp')
+    # 'apollo11'
 
 
 Method Chaining
