@@ -1,7 +1,7 @@
 import numpy as np
 
 
-URL = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/numpy/data/iris-dirty.csv'
+URL = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris-dirty.csv'
 
 species = np.loadtxt(URL, max_rows=1, delimiter=',', dtype=str, usecols=(2,3,4))
 # array(['setosa', 'versicolor', 'virginica'], dtype='<U10')

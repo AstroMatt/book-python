@@ -10,7 +10,7 @@ np.loadtxt()
     import numpy as np
 
 
-    url = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/numpy/data/iris.csv'
+    url = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris.csv'
 
     a = np.loadtxt(url)
     # ValueError: could not convert string to float: 'sepal_length,sepal_width,petal_length,petal_width,species'
@@ -158,7 +158,7 @@ Numpy Loadtext
 :Input:
     .. code-block:: python
 
-        URL = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/numpy/data/iris-dirty.csv'
+        URL = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris-dirty.csv'
 
 :Output:
     .. code-block:: python

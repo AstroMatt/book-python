@@ -45,7 +45,7 @@ Working with dirty CSV
 ======================
 .. code-block:: python
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/
+    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris-dirty.csv'
 
     nrows, nfeatures, *species = pd.read_csv(DATA, nrows=0).columns
     species = dict(enumerate(species))
