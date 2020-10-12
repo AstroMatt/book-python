@@ -16,7 +16,7 @@
 }
 
 @media screen {
-    body {color: var(--text)}
+    body {color: var(--text); background-color: var(--background) !important;}
 
     /* RTD theme's default is 800px as max width for the content */
     .wy-nav-content {max-width: 1100px; background: var(--background)}
