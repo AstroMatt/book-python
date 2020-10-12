@@ -5,8 +5,8 @@ Function Unpack
 ***************
 
 
-Rationale
-=========
+Recap
+=====
 .. code-block:: python
 
     a = 1
@@ -24,6 +24,15 @@ Rationale
 
     [a, b, c] = [1, 2, 3]
     [a, b, c] = (1, 2, 3)
+
+
+Rationale
+=========
+.. figure:: img/function-unpacking,args,kwargs.png
+    :scale: 66%
+    :align: center
+
+    Unpacking and Arbitrary Number of Parameters and Arguments
 
 
 Errors
@@ -382,7 +391,7 @@ Function Unpack Nested
         >>> assert type(header) is tuple
         >>> assert all(type(x) is str for x in header)
         >>> assert type(data) is list
-        >>> assert  all(type(row) is tuple for row in data)
+        >>> assert all(type(row) is tuple for row in data)
 
         >>> header
         ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species')

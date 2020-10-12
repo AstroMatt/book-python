@@ -3,6 +3,35 @@ Arbitrary Number of Arguments
 *****************************
 
 
+Recap
+=====
+* argument - Value/variable/reference being passed to the function
+* positional argument - Value passed to function - order is important
+* keyword arguments - Value passed to function resolved by name - order is not important
+* keyword arguments must be on the right side
+* order of keyword arguments doesn't matter
+
+.. code-block:: python
+
+    echo(1)          # positional argument
+    echo(a=1)        # keyword argument
+    echo(1, 2)       # positional arguments
+    echo(2, 1)       # positional arguments
+    echo(a=1, b=2)   # keyword arguments
+    echo(b=2, a=1)   # keyword arguments, order doesn't matter
+    echo(1, b=2)     # positional and keyword arguments
+    echo(a=1, 2)     # SyntaxError: positional argument follows keyword argument
+
+
+Rationale
+=========
+.. figure:: img/function-unpacking,args,kwargs.png
+    :scale: 66%
+    :align: center
+
+    Unpacking and Arbitrary Number of Parameters and Arguments
+
+
 Positional Arguments
 ====================
 * ``*`` is used for positional arguments
@@ -120,8 +149,12 @@ Objects From Sequence
 .. code-block:: python
 
     DATA = [
-        (6.0, 3.4, 4.5, 1.6, 'versicolor'),
-        (4.9, 3.1, 1.5, 0.1, 'setosa'),
+        (5.8, 2.7, 5.1, 1.9, 'virginica'),
+        (5.1, 3.5, 1.4, 0.2, 'setosa'),
+        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+        (6.3, 2.9, 5.6, 1.8, 'virginica'),
+        (6.4, 3.2, 4.5, 1.5, 'versicolor'),
+        (4.7, 3.2, 1.3, 0.2, 'setosa'),
     ]
 
     class Iris:
@@ -137,7 +170,8 @@ Objects From Sequence
 
     result = [Iris(*row) for row in DATA]
     print(result)
-    # [versicolor, setosa]
+    # [virginica, setosa, versicolor,
+    #  virginica, versicolor, setosa]
 
 .. code-block:: python
 
@@ -192,17 +226,20 @@ Objects From Mappings
 
 .. code-block:: python
 
-    DATA = [
-        {"sepal_length": 6.0, "sepal_width": 3.4, "petal_length": 4.5, "petal_width": 1.6, "species": "versicolor"},
-        {"sepal_length": 4.9, "sepal_width": 3.1, "petal_length": 1.5, "petal_width": 0.1, "species": "setosa"},
-    ]
+    DATA = [{"sepalLength":5.8,"sepalWidth":2.7,"petalLength":5.1,"petalWidth":1.9,"species":"virginica"},
+            {"sepalLength":5.1,"sepalWidth":3.5,"petalLength":1.4,"petalWidth":0.2,"species":"setosa"},
+            {"sepalLength":5.7,"sepalWidth":2.8,"petalLength":4.1,"petalWidth":1.3,"species":"versicolor"},
+            {"sepalLength":6.3,"sepalWidth":2.9,"petalLength":5.6,"petalWidth":1.8,"species":"virginica"},
+            {"sepalLength":6.4,"sepalWidth":3.2,"petalLength":4.5,"petalWidth":1.5,"species":"versicolor"},
+            {"sepalLength":4.7,"sepalWidth":3.2,"petalLength":1.3,"petalWidth":0.2,"species":"setosa"}]
+
 
     class Iris:
-        def __init__(self, sepal_length, sepal_width, petal_length, petal_width, species):
-            self.sepal_length = sepal_length
-            self.sepal_width = sepal_width
-            self.petal_length = petal_length
-            self.petal_width = petal_width
+        def __init__(self, sepalLength, sepalWidth, petalLength, petalWidth, species):
+            self.sepal_length = sepalLength
+            self.sepal_width = sepalWidth
+            self.petal_length = petalLength
+            self.petal_width = petalWidth
             self.species = species
 
         def __repr__(self):
@@ -211,7 +248,8 @@ Objects From Mappings
 
     result = [Iris(**row) for row in DATA]
     print(result)
-    # ['versicolor', 'setosa']
+    # [virginica, setosa, versicolor,
+    #  virginica, versicolor, setosa]
 
 
 Examples

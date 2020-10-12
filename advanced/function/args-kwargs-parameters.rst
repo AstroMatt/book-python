@@ -3,28 +3,26 @@ Arbitrary Number of Parameters
 ******************************
 
 
-Recap information about function parameters
-===========================================
-* positional arguments
-* keyword arguments
-* required parameters
-* optional parameters (with default value)
-* keyword arguments must be on the right side
-* order of keyword arguments doesn't matter
+Recap
+=====
+* parameter - Receiving variable used within the function/block
+* required parameters - Parameter which is necessary to call function
+* optional parameters (with default value) - Parameter which is optional and has default value (if not specified at call time)
 
 .. code-block:: python
 
-    def echo(a, b):
+    def echo(a, b=0):
         print(a)
         print(b)
 
 
-    echo(1, 2)       # positional arguments
-    echo(2, 1)       # positional arguments
-    echo(a=1, b=2)   # keyword arguments
-    echo(b=2, a=1)   # keyword arguments, order doesn't matter
-    echo(1, b=2)     # positional and keyword arguments
-    echo(a=1, 2)     # SyntaxError: positional argument follows keyword argument
+Rationale
+=========
+.. figure:: img/function-unpacking,args,kwargs.png
+    :scale: 66%
+    :align: center
+
+    Unpacking and Arbitrary Number of Parameters and Arguments
 
 
 Positional Parameters
