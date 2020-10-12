@@ -200,6 +200,17 @@ Examples
 ========
 .. code-block:: python
 
+    import sys
+
+    sys.version_info
+    # sys.version_info(major=3, minor=9, micro=0, releaselevel='final', serial=0)
+
+    major, minor, *_ = sys.version_info
+    print(major, minor)
+    # 3.9
+
+.. code-block:: python
+
     *features, label = (5.8, 2.7, 5.1, 1.9, 'virginica')
 
     features                # [5.8, 2.7, 5.1, 1.9]
@@ -291,7 +302,7 @@ Assignments
 Function Unpack Flat
 --------------------
 * Assignment name: Function Unpack Flat
-* Last update: 2020-10-01
+* Last update: 2020-10-12
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
@@ -317,11 +328,14 @@ Function Unpack Flat
         DATA = '10.13.37.1      nasa.gov esa.int roscosmos.ru'
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
+
+        >>> assert type(ip) is str
+        >>> assert type(hosts) is list
+        >>> assert all(type(host) is str for host in hosts)
 
         >>> ip
         '10.13.37.1'
-
         >>> hosts
         ['nasa.gov', 'esa.int', 'roscosmos.ru']
 
@@ -331,7 +345,7 @@ Function Unpack Flat
 Function Unpack Nested
 ----------------------
 * Assignment name: Function Unpack Nested
-* Last update: 2020-10-01
+* Last update: 2020-10-12
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
@@ -365,6 +379,11 @@ Function Unpack Nested
 :Output:
     .. code-block:: text
 
+        >>> assert type(header) is tuple
+        >>> assert all(type(x) is str for x in header)
+        >>> assert type(data) is list
+        >>> assert  all(type(row) is tuple for row in data)
+
         >>> header
         ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species')
 
@@ -379,7 +398,7 @@ Function Unpack Nested
 Function Unpack Loop
 --------------------
 * Assignment name: Function Unpack Loop
-* Last update: 2020-10-01
+* Last update: 2020-10-12
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
@@ -412,6 +431,9 @@ Function Unpack Loop
 
 :Output:
     .. code-block:: text
+
+        >>> assert type(result) is list
+        >>> assert all(type(x) is str for x in result)
 
         >>> result
         ['virginica', 'setosa', 'virginica', 'setosa']

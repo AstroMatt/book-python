@@ -1,4 +1,9 @@
 """
+>>> assert type(header) is tuple
+>>> assert all(type(x) is str for x in header)
+>>> assert type(data) is list
+>>> assert  all(type(row) is tuple for row in data)
+
 >>> header
 ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species')
 

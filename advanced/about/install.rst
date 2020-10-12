@@ -105,7 +105,7 @@ About Push
     #. Z menu wybierz ``Git -> Commit Directory...``  lub użyj skrótu klawiszowego ``ctrl+k``
     #. Wpisać opis zamin (np. Python szkolenie)
     #. Na dole wybrać ``Commit and Push``
-    #. Jeżeli wyskoczy informacja o niekatualnym branchu i zapytanie czy odświeżyć, zaznacz checkbox "Always add" i wybierz "Yes"
+    #. Jeżeli wyskoczy informacja o niekatualnym branchu i zapytanie czy odświeżyć, zaznacz checkbox "Remember the update method and update silently in future" i wybierz "Yes"
     #. Sprawdzić Github
 
 .. figure:: img/pycharm-vsc-merge-rebase.png

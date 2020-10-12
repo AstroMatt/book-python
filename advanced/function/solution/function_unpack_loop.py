@@ -1,4 +1,6 @@
 """
+>>> assert type(result) is list
+>>> assert all(type(x) is str for x in result)
 >>> result
 ['virginica', 'setosa', 'virginica', 'setosa']
 """
