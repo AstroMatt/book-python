@@ -5,8 +5,8 @@ Generators
 **********
 
 
-Generator expressions vs. Comprehensions
-========================================
+Recap
+=====
 .. code-block:: python
 
     list(x for x in range(0,5))        # [0, 1, 2, 3, 4]
@@ -16,7 +16,7 @@ Generator expressions vs. Comprehensions
     {x for x in range(0,5)}            # {0, 1, 2, 3, 4}
 
     dict((x,x) for x in range(0,5))    # {0: 0, 1: 1, 2: 2, 3: 3, 4: 4}
-    {x: x for x in range(0,5)}         # {0: 0, 1: 1, 2: 2, 3: 3, 4: 4}
+    {x:x for x in range(0,5)}          # {0: 0, 1: 1, 2: 2, 3: 3, 4: 4}
 
     tuple(x for x in range(0,5))       # (0, 1, 2, 3, 4)
     (x for x in range(0,5))            # <generator object <genexpr> at 0x118c1aed0>
@@ -25,8 +25,9 @@ Generator expressions vs. Comprehensions
     any(x for x in range(0,5))         # True
     sum(x for x in range(0,5))         # 10
 
-What is the difference?
------------------------
+
+Rationale
+=========
 .. highlights::
     * Comprehensions executes instantly
     * Generators are lazy evaluated
@@ -36,36 +37,27 @@ What is the difference?
 
     .. code-block:: python
 
-        a = [x for x in range(0, 5)]
+        data = [x for x in range(0, 5)]
 
-        print(a)
+        list(data)
         # [0, 1, 2, 3, 4]
 
-        print(a)
+        list(data)
         # [0, 1, 2, 3, 4]
 
     .. code-block:: python
 
-        a = (x for x in range(0, 5))
+        data = (x for x in range(0, 5))
 
-        print(a)
-        # <generator object <genexpr> at 0x111e7acd0>
-
-        print(list(a))
+        list(data)
         # [0, 1, 2, 3, 4]
 
-        print(list(a))
+        list(data)
         # []
 
 
-Lazy evaluation
-===============
-.. highlights::
-    * Code do not execute instantly
-    * Sometimes code is not executed at all!
-
-Declaring generators
---------------------
+Define Generator
+================
 .. code-block:: python
     :caption: This will not generate any numbers!
 
@@ -81,43 +73,52 @@ Declaring generators
     print(a)
     # <generator object <genexpr> at 0x11cb45950>
 
-Evaluating generator instantly
-------------------------------
+
+Lazy evaluation
+===============
+.. highlights::
+    * Code do not execute instantly
+    * Sometimes code is not executed at all!
+
+.. code-block:: python
+
+    data = (x for x in range(0,3))
+
+    next(data)
+    # 0
+
+    next(data)
+    # 1
+
+    next(data)
+    # 2
+
+    next(data)
+    # Traceback (most recent call last):
+    #   File "<input>", line 1, in <module>
+    # StopIteration
+
+
+Evaluating Generator Instantly
+==============================
 .. highlights::
     * Not very efficient
     * If you need values evaluated instantly, there is no point in using generators
 
 .. code-block:: python
 
-    a = (x for x in range(0,5))
+    data = (x for x in range(0,5))
 
-    list(a)
+    list(data)
     # [0, 1, 2, 3, 4]
 
+
 Evaluate generator iteratively
-------------------------------
+==============================
 .. highlights::
     * Generator will calculate next number for every loop iteration
     * Forgets previous number
     * Doesn't know the next number
-
-.. code-block:: python
-
-    a = (x for x in range(0,5))
-
-    for i in a:
-        print(i)
-    # 0
-    # 1
-    # 2
-    # 3
-    # 4
-
-Halting and resuming iteration
-------------------------------
-.. highlights::
-    * Will generate only three numbers, then stop
-    * Forget generator
 
 .. code-block:: python
     :caption: Comprehension will generate a sequence instantly, and iterate over it. It will be in the memory until end of a program
@@ -179,15 +180,16 @@ Halting and resuming iteration
     list(numbers)
     # []
 
-Which one is better?
---------------------
+
+Which is Better?
+================
 .. highlights::
     * Comprehensions - Using values more than one
     * Generators - Using values once (for example in the loop iterator)
 
 
-``yield`` Operator
-==================
+Generator Functions
+===================
 .. code-block:: python
 
     DATA = [
@@ -249,88 +251,208 @@ Which one is better?
 Built-in generators
 ===================
 
+``enumerate()``
+---------------
+* ``enumerate(iterable)``
+
+.. code-block:: python
+
+    data = ['a', 'b', 'c']
+    result = enumerate(data)
+
+    next(result)
+    # (0, 'a')
+
+    next(result)
+    # (1, 'b')
+
+    next(result)
+    # (2, 'c')
+
+    next(result)
+    # Traceback (most recent call last):
+    #   File "<input>", line 1, in <module>
+    # StopIteration
+
+.. code-block:: python
+
+    data = ['a', 'b', 'c']
+    result = enumerate(data)
+
+    list(result)
+    # [(0, 'a'), (1, 'b'), (2, 'c')]
+
+.. code-block:: python
+
+    data = ['a', 'b', 'c']
+    result = enumerate(data)
+
+    dict(result)
+    # {0: 'a', 1: 'b', 2: 'c'}
+
+.. code-block:: python
+
+    CREW = ['Mark Watney', 'Melissa Lewis', 'Alex Vogel']
+
+    for i, astro in enumerate(CREW):
+        print(i, astro)
+
+    # 0 Mark Watney
+    # 1 Melissa Lewis
+    # 2 Alex Vogel
+
 ``zip()``
 ---------
-.. code-block:: python
-    :caption: ``map()`` syntax
-
-    zip(<sequence>, <sequence>, ...)
+* ``zip(*iterable)``
 
 .. code-block:: python
 
     header = ['a', 'b', 'c']
     data = [1, 2, 3]
+    result = zip(header, data)
 
-    zip(header, data)
-    # <zip object at 0x11cf54b90>
+    next(result)
+    # ('a', 1)
 
-    list(zip(header, data))
+    next(result)
+    # ('b', 2)
+
+    next(result)
+    # ('c', 3)
+
+    next(result)
+    # Traceback (most recent call last):
+    #   File "<input>", line 1, in <module>
+    # StopIteration
+
+.. code-block:: python
+
+    header = ['a', 'b', 'c']
+    data = [1, 2, 3]
+    row = [True, False, None]
+    result = zip(header, data, row)
+
+    next(result)
+    # ('a', 1, True)
+
+    next(result)
+    # ('b', 2, False)
+
+    next(result)
+    # ('c', 3, None)
+    next(result)
+    # Traceback (most recent call last):
+    #   File "<input>", line 1, in <module>
+    # StopIteration
+
+.. code-block:: python
+
+    header = ['a', 'b', 'c']
+    data = [1, 2, 3]
+    result = zip(header, data)
+
+    list(result)
     # [('a', 1), ('b', 2), ('c', 3)]
 
-    tuple(zip(header, data))
-    # (('a', 1), ('b', 2), ('c', 3))
+.. code-block:: python
 
-    dict(zip(header, data))
+    header = ['a', 'b', 'c']
+    data = [1, 2, 3]
+    result = zip(header, data)
+
+    dict(result)
     # {'a': 1, 'b': 2, 'c': 3}
 
 .. code-block:: python
 
-    header = ['a', 'b', 'c']
-    data = [1, 2, 3]
-    row = [77,88,99]
+    CREW = ['Mark Watney', 'Melissa Lewis', 'Alex Vogel']
+    ROLES = ['botanist', 'commander', 'chemist']
 
-    [(h,d,r) for h,d,r in zip(header, data, row)]
-    # [('a', 1, 77), ('b', 2, 88), ('c', 3, 99)]
+    for astro, role in zip(CREW, ROLES):
+        print(astro, role)
+
+    # Mark Watney botanist
+    # Melissa Lewis commander
+    # Alex Vogel chemist
 
 ``map()``
 ---------
-.. code-block:: python
-    :caption: ``map()`` syntax
-
-    map(<callable>, <sequence>)
+* ``map(callable, *iterable)``
 
 .. code-block:: python
 
     data = [1, 2, 3]
+    result = map(float, data)
 
-    list(map(float, data))
-    # [1.0, 2.0, 3.0]
+    next(result)
+    # 1.0
+
+    next(result)
+    # 2.0
+
+    next(result)
+    # 3.0
+
+    next(result)
+    # Traceback (most recent call last):
+    #   File "<input>", line 1, in <module>
+    # StopIteration
 
 .. code-block:: python
 
-    map(float, [1, 2, 3])
+    data = [1, 2, 3]
+    result = map(float, data)
+
+    print(result)
     # <map object at 0x11d15a190>
 
-    list(map(float, [1, 2, 3]))
+    list(result)
     # [1.0, 2.0, 3.0]
-
-    tuple(map(float, [1, 2, 3]))
-    # (1.0, 2.0, 3.0)
 
 ``filter()``
 ------------
-.. code-block:: python
-    :caption: ``filter()`` syntax
-
-    filter(<callable>, <sequence>)
+* ``filter(callable, *iterable)``
 
 .. code-block:: python
-    :caption: Show only even numbers
-
-    data = [1, 2, 3, 4, 5, 6]
 
     def is_even(x):
         return x % 2 == 0
 
-    list(filter(is_even, data))
+    data = [1, 2, 3, 4, 5, 6]
+    result = filter(is_even, data)
+
+    next(result)
+    # 2
+
+    next(result)
+    # 4
+
+    next(result)
+    # 6
+
+    next(result)
+    # Traceback (most recent call last):
+    #   File "<input>", line 1, in <module>
+    # StopIteration
+
+.. code-block:: python
+
+    def is_even(x):
+        return x % 2 == 0
+
+    data = [1, 2, 3, 4, 5, 6]
+    result = filter(is_even, data)
+
+    list(result)
     # [2, 4, 6]
 
 .. code-block:: python
     :caption: Show only even numbers
 
     data = [1, 2, 3, 4, 5, 6]
+    result = filter(lambda x: x % 2 == 0, data)
 
-    list(filter(lambda x: x % 2 == 0, data))
+    list(result)
     # [2, 4, 6]
 
 .. code-block:: python
@@ -350,77 +472,10 @@ Built-in generators
     # [{'age': 21, 'name': 'Jan Twardowski'},
     #  {'age': 25, 'name': 'Mark Watney'}]
 
-``enumerate()``
----------------
-.. code-block:: python
-    :caption: ``enumerate()`` syntax
-
-    enumerate(<sequence>)
-
-.. code-block:: python
-
-    data = ['a', 'b', 'c']
-
-    list(enumerate(data))
-    # [(0, 'a'), (1, 'b'), (2, 'c')]
-
-    dict(enumerate(data))
-    # {0: 'a', 1: 'b', 2: 'c'}
-
-    dict((v,k) for k,v in enumerate(data))
-    # {'a': 0, 'b': 1, 'c': 2}
-
-    {v:k for k,v in enumerate(data, start=5)}
-    # {'a': 5, 'b': 6, 'c': 7}
-
-.. code-block:: python
-
-    header = ['a', 'b', 'c']
-    data = [1, 2, 3]
-    result = {}
-
-    for i, _ in enumerate(header):
-        key = header[i]
-        value = data[i]
-        result[key] = value
-
-    print(result)
-    # {'a': 1, 'b': 2, 'c': 3}
-
-.. code-block:: python
-
-    header = ['a', 'b', 'c']
-    data = [1, 2, 3]
-    result = {}
-
-    for i, header in enumerate(header):
-        result[header] = data[i]
-
-    print(result)
-    # {'a': 1, 'b': 2, 'c': 3}
 
 
-Generator as Iterator
-=====================
-.. code-block:: python
-
-    a = (x for x in range(0,3))
-
-    next(a)
-    # 0
-
-    next(a)
-    # 1
-
-    next(a)
-    # 2
-
-    next(a)
-    # Traceback (most recent call last):
-    #   File "<input>", line 1, in <module>
-    # StopIteration
-
-
+Loops Under the Hood
+====================
 .. code-block:: python
 
     data = (x for x in range(0,3))
@@ -454,24 +509,24 @@ Is Generator
 ============
 .. code-block:: python
 
-    import inspect
+    from inspect import isgenerator
 
     a = [x for x in range(0,5)]
     b = (x for x in range(0,5))
 
-    inspect.isgenerator(a)
+    isgenerator(a)
     # False
 
-    inspect.isgenerator(b)
+    isgenerator(b)
     # True
 
 .. code-block:: python
 
-    import inspect
+    from inspect import isgenerator
 
     data = range(0, 10)
 
-    inspect.isgenerator(data)
+    isgenerator(data)
     # False
 
 
@@ -479,32 +534,32 @@ Generator Introspection
 =======================
 .. code-block:: python
 
-    a = (x for x in range(0,10))
+    data = (x for x in range(0,10))
 
-    next(a)
+    next(data)
     # 0
 
-    a.gi_code
+    data.gi_code
     # <code object <genexpr> at 0x11fc4dc90, file "<input>", line 1>
 
-    a.gi_running
+    data.gi_running
     # False
 
-    a.gi_yieldfrom
+    data.gi_yieldfrom
 
-    a.gi_frame
+    data.gi_frame
     # <frame at 0x7f93a1723200, file '<input>', line 1, code <genexpr>>
 
-    a.gi_frame.f_locals
+    data.gi_frame.f_locals
     # {'.0': <range_iterator object at 0x11fc4c840>, 'x': 0}
 
-    a.gi_frame.f_code
+    data.gi_frame.f_code
     # <code object <genexpr> at 0x11fc4dc90, file "<input>", line 1>
 
-    a.gi_frame.f_lineno
+    data.gi_frame.f_lineno
     # 1
 
-    a.gi_frame.f_lasti
+    data.gi_frame.f_lasti
     # 8
 
 
@@ -516,17 +571,40 @@ Memory Size
 
 .. code-block:: python
 
-    import sys
+    from sys import getsizeof
+
 
     a = (x for x in range(0,10))
+    b = (x for x in range(0,10))
+    c = (x for x in range(0,100))
+    d = (x for x in range(0,1000))
+
+    getsizeof(a)
+    # 112
+    getsizeof(b)
+    # 112
+    getsizeof(c)
+    # 112
+    getsizeof(d)
+    # 112
+
+.. code-block:: python
+
+    from sys import getsizeof
+
+    a = [x for x in range(0,10)]
     b = [x for x in range(0,10)]
-    c = (x for x in range(0,1000))
+    c = [x for x in range(0,100)]
     d = [x for x in range(0,1000)]
 
-    sys.getsizeof(a)     # 112
-    sys.getsizeof(b)     # 184
-    sys.getsizeof(c)     # 112
-    sys.getsizeof(d)     # 9016
+    getsizeof(a)
+    # 184
+    getsizeof(b)
+    # 184
+    getsizeof(c)
+    # 920
+    getsizeof(d)
+    # 8856
 
 
 Assignments
@@ -608,19 +686,21 @@ Function Generator Iris
             (4.7, 3.2, 1.3, 0.2, 'setosa'),
         ]
 
+
         def function(data: list, species: str):
-            raise NotImplementedError
+            ...
+
 
         def generator(data: list, species: str):
-            raise NotImplementedError
+            ...
 
 
         result = {
             'function x1': getsizeof(function(DATA, 'setosa')),
-            'generator x1': getsizeof(generator(DATA, 'setosa')),
             'function x10': getsizeof(function(DATA*10, 'setosa')),
-            'generator x10': getsizeof(generator(DATA*10, 'setosa')),
             'function x100': getsizeof(function(DATA*100, 'setosa')),
+            'generator x1': getsizeof(generator(DATA, 'setosa')),
+            'generator x10': getsizeof(generator(DATA*10, 'setosa')),
             'generator x100': getsizeof(generator(DATA*100, 'setosa')),
         }
 
@@ -631,10 +711,15 @@ Function Generator Iris
         >>> assert isfunction(function)
         >>> assert isgeneratorfunction(generator)
 
+        >>> list(function(DATA, 'setosa'))
+        [[5.1, 3.5, 1.4, 0.2], [4.7, 3.2, 1.3, 0.2]]
+        >>> list(generator(DATA, 'setosa'))
+        [[5.1, 3.5, 1.4, 0.2], [4.7, 3.2, 1.3, 0.2]]
+
         >>> result  # doctest: +NORMALIZE_WHITESPACE
         {'function x1': 88,
-         'function x10': 256,
-         'function x100': 1664,
+         'function x10': 248,
+         'function x100': 1656,
          'generator x1': 112,
          'generator x10': 112,
          'generator x100': 112}
@@ -693,11 +778,14 @@ Function Generator Passwd
         ivanovic:x:1002:1002:Иван Иванович:/home/ivanovic:/bin/bash
         lewis:x:1003:1002:Melissa Lewis:/home/ivanovic:/bin/bash"""
 
-        def function(data: list):
-            raise NotImplementedError
 
-        def generator(data: list):
-            raise NotImplementedError
+        def function(data: str):
+            ...
+
+
+        def generator(data: str):
+            ...
+
 
         result = {
             'function': getsizeof(function(DATA)),
@@ -710,6 +798,11 @@ Function Generator Passwd
         >>> from inspect import isfunction, isgeneratorfunction
         >>> assert isfunction(function)
         >>> assert isgeneratorfunction(generator)
+
+        >>> list(function(DATA))
+        ['root', 'bin', 'daemon', 'adm', 'shutdown', 'halt', 'nobody', 'sshd']
+        >>> list(generator(DATA))
+        ['root', 'bin', 'daemon', 'adm', 'shutdown', 'halt', 'nobody', 'sshd']
 
         >>> result
         {'function': 120, 'generator': 112}

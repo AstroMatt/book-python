@@ -26,7 +26,7 @@ Recap
 Rationale
 =========
 .. figure:: img/function-unpacking,args,kwargs.png
-    :scale: 66%
+    :scale: 40%
     :align: center
 
     Unpacking and Arbitrary Number of Parameters and Arguments
@@ -210,19 +210,19 @@ Objects From Mappings
 =====================
 .. code-block:: python
 
-    DATA = {"sepal_length": 6.0, "sepal_width": 3.4, "petal_length": 4.5, "petal_width": 1.6, "species": "versicolor"}
+    DATA = {"sepalLength":5.8,"sepalWidth":2.7,"petalLength":5.1,"petalWidth":1.9,"species":"virginica"}
 
     class Iris:
-        def __init__(self, sepal_length, sepal_width, petal_length, petal_width, species):
-            self.sepal_length = sepal_length
-            self.sepal_width = sepal_width
-            self.petal_length = petal_length
-            self.petal_width = petal_width
+        def __init__(self, sepalLength, sepalWidth, petalLength, petalWidth, species):
+            self.sepal_length = sepalLength
+            self.sepal_width = sepalWidth
+            self.petal_length = petalLength
+            self.petal_width = petalWidth
             self.species = species
 
     iris = Iris(**DATA)
     iris.species
-    # 'versicolor'
+    # 'virginica'
 
 .. code-block:: python
 
@@ -405,16 +405,11 @@ Examples
 .. code-block:: python
     :caption: Decorators. Decorators are functions, which get pointer to the decorated function as it's argument, and has closure which gets original function arguments as positional and keyword arguments.
 
-    def login_required(original_function):
-
-        def wrapper(*args, **kwargs):
-            user = kwargs['request'].user
-
-            if user.is_authenticated():
-                return original_function(*args, **kwargs)
-            else:
-                print('Permission denied')
-
+    def login_required(func):
+        def wrapper(request, *args, **kwargs):
+            if not request.user.is_authenticated():
+                raise PermissionError
+            return func(*args, **kwargs)
         return wrapper
 
 

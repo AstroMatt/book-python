@@ -19,7 +19,7 @@ Recap
 Rationale
 =========
 .. figure:: img/function-unpacking,args,kwargs.png
-    :scale: 66%
+    :scale: 40%
     :align: center
 
     Unpacking and Arbitrary Number of Parameters and Arguments

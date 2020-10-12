@@ -3,10 +3,15 @@
 >>> assert isfunction(function)
 >>> assert isgeneratorfunction(generator)
 
+>>> list(function(DATA, 'setosa'))
+[[5.1, 3.5, 1.4, 0.2], [4.7, 3.2, 1.3, 0.2]]
+>>> list(generator(DATA, 'setosa'))
+[[5.1, 3.5, 1.4, 0.2], [4.7, 3.2, 1.3, 0.2]]
+
 >>> result  # doctest: +NORMALIZE_WHITESPACE
 {'function x1': 88,
- 'function x10': 256,
- 'function x100': 1664,
+ 'function x10': 248,
+ 'function x100': 1656,
  'generator x1': 112,
  'generator x10': 112,
  'generator x100': 112}

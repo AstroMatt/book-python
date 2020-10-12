@@ -123,11 +123,14 @@ Callable
 
     astro = str('Mark Watney')
 
-    type(astro)
-    # <class 'str'>
-
     astro()
     # TypeError: 'str' object is not callable
+
+    callable(astro)
+    # False
+
+    type(astro)
+    # <class 'str'>
 
 .. code-block:: python
 
@@ -138,11 +141,14 @@ Callable
 
     astro = str('Mark Watney')
 
-    type(astro)
-    # <class '__main__.str'>
-
     astro()
     # hello
+
+    callable(astro)
+    # True
+
+    type(astro)
+    # <class '__main__.str'>
 
 
 Callbacks
@@ -166,18 +172,10 @@ Callbacks
             return on_error(result)
 
 
-    def success(result):
-        print('Success')
-
-
-    def error(result):
-        print('Error')
-
-
     http_request(
-        url='http://python.astrotech.io',
-        on_success=success,
-        on_error=error)
+        url = 'http://python.astrotech.io',
+        on_success = lambda result: print('Success'),
+        on_error= lambda error: print('Error'))
 
 
 Type Annotation

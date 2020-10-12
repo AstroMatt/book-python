@@ -33,6 +33,29 @@ Higher-Order Function
 =====================
 * Higher-order functions are functions that can either take other functions as arguments or return them as results.
 
+.. code-block:: python
+
+    def lower():
+        ...
+
+    def higher():
+        return lower
+
+.. code-block:: python
+
+    def fetch(on_success, on_error):
+        try:
+            result = ...
+        except Exception as error:
+            return on_error(error)
+        else:
+            return on_success(result)
+
+
+    fetch(
+        on_success = lambda result: print(result),
+        on_error = lambda error: print(error))
+
 
 Pure Functions
 ==============
@@ -43,6 +66,58 @@ Pure Functions
     * If a pure function is called with arguments that cause no side-effects, the result is constant with respect to that argument list (sometimes called referential transparency), i.e., calling the pure function again with the same arguments returns the same result. (This can enable caching optimizations such as memoization.)
     * If there is no data dependency between two pure expressions, their order can be reversed, or they can be performed in parallel and they cannot interfere with one another (in other terms, the evaluation of any pure expression is thread-safe).
     * If the entire language does not allow side-effects, then any evaluation strategy can be used; this gives the compiler freedom to reorder or combine the evaluation of expressions in a program (for example, using deforestation). [WikipediaFunc]_
+
+.. code-block:: python
+    :caption: Pure functions
+
+    def add(a, b):
+        return a + b
+
+    def odd(x):
+        return x % 2
+
+    def cube(x):
+        return x ** 3
+
+.. code-block:: python
+    :caption: Pure functions
+
+    DATA = [
+        (5.8, 2.7, 5.1, 1.9, 'virginica'),
+        (5.1, 3.5, 1.4, 0.2, 'setosa'),
+        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+        (6.3, 2.9, 5.6, 1.8, 'virginica'),
+        (6.4, 3.2, 4.5, 1.5, 'versicolor'),
+        (4.7, 3.2, 1.3, 0.2, 'setosa'),
+    ]
+
+
+    def function(data, species):
+        result = []
+        for *features, label in data:
+            if label == species:
+                result.append(features)
+        return result
+
+.. code-block:: python
+    :caption: Impure functions
+
+    DATA = [
+        (5.8, 2.7, 5.1, 1.9, 'virginica'),
+        (5.1, 3.5, 1.4, 0.2, 'setosa'),
+        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+        (6.3, 2.9, 5.6, 1.8, 'virginica'),
+        (6.4, 3.2, 4.5, 1.5, 'versicolor'),
+        (4.7, 3.2, 1.3, 0.2, 'setosa'),
+    ]
+
+
+    def function(species):
+        result = []
+        for *features, label in DATA:
+            if label == species:
+                result.append(features)
+        return result
 
 
 Recursion
@@ -55,6 +130,35 @@ Recursion
 * Tail recursion is not a particularly efficient technique in Python
 * Unbridled recursion causes stack overflows!
 * Rewriting the algorithm iteratively, is generally a better idea
+
+.. code-block:: python
+    :caption: Recap information about factorial (``n!``)
+
+    """
+    5! = 5 * 4!
+    4! = 4 * 3!
+    3! = 3 * 2!
+    2! = 2 * 1!
+    1! = 1 * 0!
+    0! = 1
+    """
+
+    factorial(5)                                    # = 120
+        return 5 * factorial(4)                     # 5 * 24 = 120
+            return 4 * factorial(3)                 # 4 * 6 = 24
+                return 3 * factorial(2)             # 3 * 2 = 6
+                    return 2 * factorial(1)         # 2 * 1 = 2
+                        return 1 * factorial(0)     # 1 * 1 = 1
+                            return 1                # 1
+
+.. code-block:: python
+    :caption: Cache with global scope
+
+    def factorial(n):
+        if n == 0:
+            return 1
+        else:
+            return n * factorial(n-1)
 
 
 Data Structures

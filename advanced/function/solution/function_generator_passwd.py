@@ -2,6 +2,12 @@
 >>> from inspect import isfunction, isgeneratorfunction
 >>> assert isfunction(function)
 >>> assert isgeneratorfunction(generator)
+
+>>> list(function(DATA))
+['root', 'bin', 'daemon', 'adm', 'shutdown', 'halt', 'nobody', 'sshd']
+>>> list(generator(DATA))
+['root', 'bin', 'daemon', 'adm', 'shutdown', 'halt', 'nobody', 'sshd']
+
 >>> result
 {'function': 120, 'generator': 112}
 """
