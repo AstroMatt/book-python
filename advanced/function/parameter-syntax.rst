@@ -10,6 +10,7 @@ Recap
     def echo(a, b, c=3):
          print(a, b, c)
 
+
     echo(1, 2)              # 1 2 3
     echo(1, b=2)            # 1 2 3
     echo(1, c=3)            # TypeError: echo() missing 1 required positional argument: 'b'
@@ -19,7 +20,7 @@ Recap
     echo(a=1, b=2, c=3)     # 1 2 3
 
 
-Keyword-only parameters
+Keyword-only Parameters
 =======================
 * All parameters after ``*`` must be keyword-only
 
@@ -27,6 +28,7 @@ Keyword-only parameters
 
     def echo(a, *, b, c=3):
         print(a, b, c)
+
 
     echo(1, 2)              # TypeError: echo() takes 1 positional argument but 2 were given
     echo(1, b=2)            # 1 2 3
@@ -37,7 +39,7 @@ Keyword-only parameters
     echo(a=1, b=2, c=3)     # 1 2 3
 
 
-Positional-only parameters
+Positional-only Parameters
 ==========================
 .. versionadded:: Python 3.8
     See :pep:`570` Python Positional-Only Parameters
@@ -49,6 +51,7 @@ Positional-only parameters
     def echo(a, /, b, c=3):
         print(a, b, c)
 
+
     echo(1, 2)              # 1 2 3
     echo(1, b=2)            # 1 2 3
     echo(1, c=3)            # TypeError: echo() missing 1 required positional argument: 'b'
@@ -58,12 +61,13 @@ Positional-only parameters
     echo(a=1, b=2, c=3)     # TypeError: echo() got some positional-only arguments passed as keyword arguments: 'a'
 
 
-Positional and Keyword parameters
+Positional and Keyword Parameters
 =================================
 .. code-block:: python
 
     def echo(a, /, b, *, c=3):
         print(a, b, c)
+
 
     echo(1, 2)              # 1 2 3
     echo(1, b=2)            # 1 2 3
@@ -91,8 +95,12 @@ Examples
     def add(a, b, /):
         return a + b
 
+.. code-block:: python
+
     def divmod(a, b, /):
         return (a // b, a % b)
+
+.. code-block:: python
 
     def quantiles(dist, /, *, n=4, method='exclusive')
         ...

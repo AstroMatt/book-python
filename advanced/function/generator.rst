@@ -7,6 +7,9 @@ Generators
 
 Recap
 =====
+* Comprehensions executes instantly
+* Generators are lazy evaluated
+
 .. code-block:: python
 
     list(x for x in range(0,5))        # [0, 1, 2, 3, 4]
@@ -28,53 +31,58 @@ Recap
 
 Rationale
 =========
-.. highlights::
-    * Comprehensions executes instantly
-    * Generators are lazy evaluated
-    * Create generator object and assign pointer (do not execute)
-    * Comprehensions will be in the memory until end of a program
-    * Generators are cleared once they are executed
-
-    .. code-block:: python
-
-        data = [x for x in range(0, 5)]
-
-        list(data)
-        # [0, 1, 2, 3, 4]
-
-        list(data)
-        # [0, 1, 2, 3, 4]
-
-    .. code-block:: python
-
-        data = (x for x in range(0, 5))
-
-        list(data)
-        # [0, 1, 2, 3, 4]
-
-        list(data)
-        # []
-
-
-Define Generator
-================
-.. code-block:: python
-    :caption: This will not generate any numbers!
-
-    a = (x for x in range(0,5))
-    b = (x for x in range(0,5))
-    c = (x for x in range(0,5))
+* Create generator object and assign pointer (do not execute)
+* Comprehensions will be in the memory until end of a program
+* Generators are cleared once they are executed
+* Comprehensions - Using values more than one
+* Generators - Using values once (for example in the loop iterator)
 
 .. code-block:: python
-    :caption: This will only create generator expression, but not evaluate it!
 
-    a = (x for x in range(0,5))
+    data = [x for x in range(0, 5)]
 
-    print(a)
+    list(data)
+    # [0, 1, 2, 3, 4]
+
+    list(data)
+    # [0, 1, 2, 3, 4]
+
+.. code-block:: python
+
+    data = (x for x in range(0, 5))
+
+    list(data)
+    # [0, 1, 2, 3, 4]
+
+    list(data)
+    # []
+
+
+Define
+======
+.. code-block:: python
+    :caption: This will only create generator expression object, but not evaluate it!
+
+    data = (x for x in range(0,5))
+
+    print(data)
     # <generator object <genexpr> at 0x11cb45950>
 
 
-Lazy evaluation
+Instant Evaluation
+==================
+.. highlights::
+    * If you need values evaluated instantly, there is no point in using generators
+
+.. code-block:: python
+
+    data = (x for x in range(0,5))
+
+    list(data)
+    # [0, 1, 2, 3, 4]
+
+
+Lazy Evaluation
 ===============
 .. highlights::
     * Code do not execute instantly
@@ -98,27 +106,20 @@ Lazy evaluation
     #   File "<input>", line 1, in <module>
     # StopIteration
 
-
-Evaluating Generator Instantly
-==============================
-.. highlights::
-    * Not very efficient
-    * If you need values evaluated instantly, there is no point in using generators
-
 .. code-block:: python
+    :caption: None of those lines will generate any numbers (util executed)!
 
-    data = (x for x in range(0,5))
+    a = (x for x in range(0,5))
+    b = (x for x in range(0,5))
+    c = (x for x in range(0,5))
 
-    list(data)
-    # [0, 1, 2, 3, 4]
 
-
-Evaluate generator iteratively
-==============================
+Iterative Evaluation
+====================
 .. highlights::
     * Generator will calculate next number for every loop iteration
-    * Forgets previous number
-    * Doesn't know the next number
+    * Generator forgets previous number
+    * Generator doesn't know the next number
 
 .. code-block:: python
     :caption: Comprehension will generate a sequence instantly, and iterate over it. It will be in the memory until end of a program
@@ -181,15 +182,8 @@ Evaluate generator iteratively
     # []
 
 
-Which is Better?
-================
-.. highlights::
-    * Comprehensions - Using values more than one
-    * Generators - Using values once (for example in the loop iterator)
-
-
-Generator Functions
-===================
+Generator Function
+==================
 .. code-block:: python
 
     DATA = [
@@ -201,6 +195,7 @@ Generator Functions
         (6.4, 3.2, 4.5, 1.5, 'versicolor'),
         (4.7, 3.2, 1.3, 0.2, 'setosa'),
     ]
+
 
     def get_values(species):
         result = []
@@ -232,10 +227,12 @@ Generator Functions
         (4.7, 3.2, 1.3, 0.2, 'setosa'),
     ]
 
+
     def get_values(species):
         for row in DATA:
             if row[4] == species:
                 yield row
+
 
     data = get_values('setosa')
 
@@ -292,14 +289,14 @@ Built-in generators
 
 .. code-block:: python
 
-    CREW = ['Mark Watney', 'Melissa Lewis', 'Alex Vogel']
+    crew = ['Mark Watney', 'Melissa Lewis', 'Alex Vogel']
 
-    for i, astro in enumerate(CREW):
-        print(i, astro)
+    for i, astro in enumerate(crew):
+        print(i, astro, sep=' -> ')
 
-    # 0 Mark Watney
-    # 1 Melissa Lewis
-    # 2 Alex Vogel
+    # 0 -> Mark Watney
+    # 1 -> Melissa Lewis
+    # 2 -> Alex Vogel
 
 ``zip()``
 ---------
@@ -340,6 +337,7 @@ Built-in generators
 
     next(result)
     # ('c', 3, None)
+
     next(result)
     # Traceback (most recent call last):
     #   File "<input>", line 1, in <module>
@@ -365,15 +363,15 @@ Built-in generators
 
 .. code-block:: python
 
-    CREW = ['Mark Watney', 'Melissa Lewis', 'Alex Vogel']
-    ROLES = ['botanist', 'commander', 'chemist']
+    roles = ['botanist', 'commander', 'chemist']
+    crew = ['Mark Watney', 'Melissa Lewis', 'Alex Vogel']
 
-    for astro, role in zip(CREW, ROLES):
-        print(astro, role)
+    for role, astro in zip(roles, crew):
+        print(role, astro, sep=' -> ')
 
-    # Mark Watney botanist
-    # Melissa Lewis commander
-    # Alex Vogel chemist
+    # botanist -> Mark Watney
+    # commander -> Melissa Lewis
+    # chemist -> Alex Vogel
 
 ``map()``
 ---------
@@ -403,9 +401,6 @@ Built-in generators
     data = [1, 2, 3]
     result = map(float, data)
 
-    print(result)
-    # <map object at 0x11d15a190>
-
     list(result)
     # [1.0, 2.0, 3.0]
 
@@ -415,11 +410,12 @@ Built-in generators
 
 .. code-block:: python
 
-    def is_even(x):
+    def even(x):
         return x % 2 == 0
 
-    data = [1, 2, 3, 4, 5, 6]
-    result = filter(is_even, data)
+
+    numbers = [1, 2, 3, 4, 5, 6]
+    result = filter(even, numbers)
 
     next(result)
     # 2
@@ -437,20 +433,20 @@ Built-in generators
 
 .. code-block:: python
 
-    def is_even(x):
+    def even(x):
         return x % 2 == 0
 
-    data = [1, 2, 3, 4, 5, 6]
-    result = filter(is_even, data)
+
+    numbers = [1, 2, 3, 4, 5, 6]
+    result = filter(even, numbers)
 
     list(result)
     # [2, 4, 6]
 
 .. code-block:: python
-    :caption: Show only even numbers
 
-    data = [1, 2, 3, 4, 5, 6]
-    result = filter(lambda x: x % 2 == 0, data)
+    numbers = [1, 2, 3, 4, 5, 6]
+    result = filter(lambda x: x % 2 == 0, numbers)
 
     list(result)
     # [2, 4, 6]
@@ -458,17 +454,20 @@ Built-in generators
 .. code-block:: python
     :caption: ``filter()`` example
 
-    DATA = [
+    PEOPLE = [
         {'age': 21, 'name': 'Jan Twardowski'},
         {'age': 25, 'name': 'Mark Watney'},
         {'age': 18, 'name': 'Melissa Lewis'},
     ]
 
-    def is_adult(person):
+
+    def adult(person):
         return person['age'] >= 21:
 
-    result = filter(is_adult, DATA)
-    print(list(result))
+
+    result = filter(adult, PEOPLE)
+
+    list(result)
     # [{'age': 21, 'name': 'Jan Twardowski'},
     #  {'age': 25, 'name': 'Mark Watney'}]
 
@@ -505,8 +504,8 @@ Loops Under the Hood
         pass
 
 
-Is Generator
-============
+Inspection
+==========
 .. code-block:: python
 
     from inspect import isgenerator
@@ -530,8 +529,8 @@ Is Generator
     # False
 
 
-Generator Introspection
-=======================
+Introspection
+=============
 .. code-block:: python
 
     data = (x for x in range(0,10))
@@ -563,8 +562,8 @@ Generator Introspection
     # 8
 
 
-Memory Size
-===========
+Memory Footprint
+================
 * ``sys.getsizeof(object)`` returns the size of an object in bytes
 * ``sys.getsizeof(object)`` calls the object's ``__sizeof__`` method
 * ``sys.getsizeof(object)`` adds an additional garbage collector overhead if the object is managed by the garbage collector
@@ -581,16 +580,20 @@ Memory Size
 
     getsizeof(a)
     # 112
+
     getsizeof(b)
     # 112
+
     getsizeof(c)
     # 112
+
     getsizeof(d)
     # 112
 
 .. code-block:: python
 
     from sys import getsizeof
+
 
     a = [x for x in range(0,10)]
     b = [x for x in range(0,10)]
@@ -599,10 +602,13 @@ Memory Size
 
     getsizeof(a)
     # 184
+
     getsizeof(b)
     # 184
+
     getsizeof(c)
     # 920
+
     getsizeof(d)
     # 8856
 
