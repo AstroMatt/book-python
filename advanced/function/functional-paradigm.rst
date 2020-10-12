@@ -22,6 +22,7 @@ Rationale
     def hello():
         print('Hello')
 
+
     type(hello)
     # <class 'function'>
 
@@ -38,12 +39,13 @@ Higher-Order Function
     def lower():
         ...
 
+
     def higher():
         return lower
 
 .. code-block:: python
 
-    def fetch(on_success, on_error):
+    def http_request(url, on_success, on_error):
         try:
             result = ...
         except Exception as error:
@@ -52,7 +54,8 @@ Higher-Order Function
             return on_success(result)
 
 
-    fetch(
+    http_request(
+        url = 'https://python.astrotech.io',
         on_success = lambda result: print(result),
         on_error = lambda error: print(error))
 
@@ -73,8 +76,10 @@ Pure Functions
     def add(a, b):
         return a + b
 
+
     def odd(x):
         return x % 2
+
 
     def cube(x):
         return x ** 3
@@ -183,15 +188,39 @@ First-class Function
 .. code-block:: python
 
     def lower():
-        return 'My name... José Jiménez'
+        return 'hello'
+
 
     def higher():
         return lower
 
 
     result = higher()     # <function __main__.lower()>
-    result()              # 'My name... José Jiménez'
+    result()              # 'hello'
 
+.. code-block:: python
+
+    from datetime import datetime
+    from time import sleep
+
+
+    now = datetime.now()
+
+    print(now)            # 1969-07-21 02:56:15
+    sleep(10)
+    print(now)            # 1969-07-21 02:56:15
+
+.. code-block:: python
+
+    from datetime import datetime
+    from time import sleep
+
+
+    now = datetime.now
+
+    print(now())          # 1969-07-21 02:56:15
+    sleep(10)
+    print(now())          # 1969-07-21 02:56:25
 
 
 References
