@@ -43,7 +43,7 @@ Examples
 
     import pandas as pd
 
-    DATA = 'https://python.astrotech.io/_static/iris-clean.csv'
+    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris-clean.csv
     header = pd.read_csv(DATA, nrows=0).columns
 
 .. code-block:: python
@@ -51,7 +51,7 @@ Examples
     import pandas as pd
 
 
-    DATA = 'https://python.astrotech.io/_static/iris-clean.csv'
+    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris-clean.csv'
     df = pd.read_csv(DATA)
 
     df.head(3)
@@ -65,7 +65,7 @@ Examples
     import pandas as pd
 
 
-    DATA = 'https://python.astrotech.io/_static/iris-dirty.csv'
+    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris-dirty.csv'
     COLUMNS =  ['sepal_length', 'sepal_width',
                 'petal_length', 'petal_width', 'species']
 
@@ -118,6 +118,8 @@ Read HTML
 
     import requests
 
+    URL = 'https://python.astrotech.io/numerical-analysis/pandas/df-create.html'
+
     resp = requests.get(URL, headers={
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36'})
 
@@ -165,7 +167,8 @@ StringIO
     from io import StringIO
 
 
-    DATA = 'https://python.astrotech.io/_static/astro-flights.csv'
+    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/astro-flights.csv'
+
     resp = requests.get(DATA)
     data = StringIO(resp.text)
 
@@ -193,7 +196,7 @@ Read SQL
     import requests
 
     DATABASE = r'/tmp/astro-timeline.sqlite3'
-    DATA = r'https://python.astrotech.io/_static/astro-timeline.sqlite3'
+    DATA = r'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/sqlite3/astro-timeline.sqlite3'
     SQL = r'SELECT * FROM logs'
 
     with open(DATABASE, mode='wb') as db:
@@ -263,7 +266,7 @@ Pandas Read CSV Dates
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/martian-en.csv'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/martian-en.csv'
 
 :Hints:
     * ``parse_dates`` argument
@@ -297,7 +300,7 @@ Pandas Read CSV Replace
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/breast-cancer.csv'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/breast-cancer.csv'
 
         COLUMNS = ['mean radius', 'mean texture', 'mean perimeter', 'mean area',
                    'mean smoothness', 'mean compactness', 'mean concavity',
@@ -339,7 +342,7 @@ Pandas Read JSON
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/iris.json'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/json/iris.json'
 
 Pandas Read JSON OpenAPI
 ------------------------
@@ -365,7 +368,7 @@ Pandas Read JSON OpenAPI
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/openapi.json'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/json/openapi.json'
 
 Pandas Read HTML
 ----------------
@@ -419,7 +422,7 @@ Pandas Read XSLT Books
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/plants.csv'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/plants.csv'
 
 :Hints:
     * Require ``lxml``: ``pip install lxml``
@@ -450,7 +453,7 @@ Pandas Read XSLT Plants
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/plants.csv'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/plants.csv'
 
 :Hints:
     * Require ``lxml``: ``pip install lxml``

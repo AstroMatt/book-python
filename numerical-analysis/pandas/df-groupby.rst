@@ -8,7 +8,7 @@ DataFrame Group By
     import pandas as pd
 
 
-    DATA = 'https://python.astrotech.io/_static/phones-en.csv'
+    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/phones-en.csv'
 
     df = pd.read_csv(DATA, parse_dates=['date'])
     df.drop(columns='index', inplace=True)
@@ -503,7 +503,7 @@ DataFrame Groupby Phones
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/phones-pl.csv'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/phones-pl.csv'
 
 DataFrame Groupby Astro Flights
 -------------------------------
@@ -527,7 +527,7 @@ DataFrame Groupby Astro Flights
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/astro-flights.csv'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/astro-flights.csv'
 
 DataFrame Groupby Astro EVA
 ---------------------------
@@ -551,7 +551,7 @@ DataFrame Groupby Astro EVA
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/astro-eva-all.csv'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/astro-eva-all.csv'
 
 :Hints:
     * Parse CSV and replace newlines inside fields with ``","``

@@ -342,7 +342,7 @@ DataFrame Mapping Split
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/phones-pl.csv'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/phones-pl.csv'
 
 :Hints:
     * ``help(phones['date'].dt)``
@@ -373,7 +373,7 @@ DataFrame Mapping Translate
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/martian-pl.csv'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/martian-pl.csv'
 
         MONTHS_PLEN = {'styczeń': 'January',
                        'luty': 'February',
@@ -421,7 +421,7 @@ DataFrame Mapping Month
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/phones-pl.csv'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/phones-pl.csv'
 
         MONTHS_EN = ['January', 'February', 'March', 'April',
                      'May', 'June', 'July', 'August', 'September',
@@ -461,7 +461,7 @@ DataFrame Mapping Substitute
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/astro-trl.xslx'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/xslx/astro-trl.xslx'
 
         LETTERS_PLEN = {'ą': 'a', 'ć': 'c', 'ę': 'e',
                         'ł': 'l', 'ń': 'n', 'ó': 'o',

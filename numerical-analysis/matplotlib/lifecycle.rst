@@ -357,4 +357,4 @@ Iris transformations
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/iris.csv'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris.csv'

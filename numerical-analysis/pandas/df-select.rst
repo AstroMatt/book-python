@@ -238,4 +238,4 @@ DataFrame Select
 :Input:
     .. code-block:: python
 
-        DATA = 'https://python.astrotech.io/_static/iris-clean.csv'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris-clean.csv'
