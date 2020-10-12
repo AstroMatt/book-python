@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/iris.csv'
+DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris.csv'
 
 
 ## Solution 1

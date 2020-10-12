@@ -1,6 +1,6 @@
 import pandas as pd
 
-DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/numerical-analysis/pandas/data/phones.csv'
+DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/phones-en.csv'
 
 MONTHS_EN = ['January', 'February', 'March', 'April',
              'May', 'June', 'July', 'August', 'September',

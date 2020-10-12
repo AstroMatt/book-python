@@ -422,7 +422,7 @@ Pandas Read XSLT Books
 :Input:
     .. code-block:: python
 
-        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/plants.csv'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/xml/plants.xml'
 
 :Hints:
     * Require ``lxml``: ``pip install lxml``
@@ -453,7 +453,7 @@ Pandas Read XSLT Plants
 :Input:
     .. code-block:: python
 
-        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/plants.csv'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/xml/plants.xml'
 
 :Hints:
     * Require ``lxml``: ``pip install lxml``

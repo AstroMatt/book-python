@@ -385,7 +385,7 @@ Hist
     import pandas as pd
 
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/serialization/data/iris.csv'
+    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris.csv'
 
     df = pd.read_csv(DATA)
     df.hist()
@@ -405,7 +405,7 @@ Density
     import pandas as pd
 
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/serialization/data/iris.csv'
+    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris.csv'
 
 
     df = pd.read_csv(DATA)
@@ -426,7 +426,7 @@ Box
     import pandas as pd
 
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/serialization/data/iris.csv'
+    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris.csv'
 
 
     df = pd.read_csv(DATA)
@@ -451,7 +451,7 @@ Scatter matrix
     from pandas.plotting import scatter_matrix
 
 
-    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/serialization/data/iris.csv'
+    DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris.csv'
 
 
     df = pd.read_csv(DATA)
