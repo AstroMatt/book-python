@@ -1,3 +1,10 @@
+"""
+>>> assert type(result) is list
+>>> assert all(type(row) is str for row in result)
+>>> result
+['virginica', 'setosa', 'virginica', 'setosa', 'virginica', 'setosa']
+"""
+
 DATA = [
     ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
     (5.8, 2.7, 5.1, 1.9, {'virginica'}),

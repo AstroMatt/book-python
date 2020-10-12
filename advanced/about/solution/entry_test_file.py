@@ -1,3 +1,13 @@
+"""
+>>> assert type(result) is list
+>>> assert all(type(row) is dict for row in result)
+>>> result  # doctest: +NORMALIZE_WHITESPACE
+[{'ip': '127.0.0.1', 'hosts': {'localhost', 'astromatt'}, 'protocol': 'ipv4'},
+ {'ip': '10.13.37.1', 'hosts': {'roscosmos.ru', 'nasa.gov', 'esa.int'}, 'protocol': 'ipv4'},
+ {'ip': '255.255.255.255', 'hosts': {'broadcasthost'}, 'protocol': 'ipv4'},
+ {'ip': '::1', 'hosts': {'localhost'}, 'protocol': 'ipv6'}]
+"""
+
 DATA = """
 ##
 # ``/etc/hosts`` structure:

@@ -41,31 +41,20 @@ Entry Test List of Dict
             (6.3, 2.9, 5.6, 1.8, 'virginica'),
             (6.4, 3.2, 4.5, 1.5, 'versicolor'),
             (4.7, 3.2, 1.3, 0.2, 'setosa'),
-            (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-            (7.6, 3.0, 6.6, 2.1, 'virginica'),
-            (4.9, 3.0, 1.4, 0.2, 'setosa'),
-            (4.9, 2.5, 4.5, 1.7, 'virginica'),
-            (7.1, 3.0, 5.9, 2.1, 'virginica'),
-            (4.6, 3.4, 1.4, 0.3, 'setosa'),
-            (5.4, 3.9, 1.7, 0.4, 'setosa'),
-            (5.7, 2.8, 4.5, 1.3, 'versicolor'),
-            (5.0, 3.6, 1.4, 0.3, 'setosa'),
-            (5.5, 2.3, 4.0, 1.3, 'versicolor'),
-            (6.5, 3.0, 5.8, 2.2, 'virginica'),
-            (6.5, 2.8, 4.6, 1.5, 'versicolor'),
-            (6.3, 3.3, 6.0, 2.5, 'virginica'),
-            (6.9, 3.1, 4.9, 1.5, 'versicolor'),
-            (4.6, 3.1, 1.5, 0.2, 'setosa'),
         ]
 
 :Output:
     .. code-block:: text
 
+        >>> assert type(result) is list
+        >>> assert all(type(row) is dict for row in result)
         >>> result  # doctest: +NORMALIZE_WHITESPACE
         [{'Sepal length': 5.8, 'Sepal width': 2.7, 'Petal length': 5.1, 'Petal width': 1.9, 'Species': 'virginica'},
          {'Sepal length': 5.1, 'Sepal width': 3.5, 'Petal length': 1.4, 'Petal width': 0.2, 'Species': 'setosa'},
          {'Sepal length': 5.7, 'Sepal width': 2.8, 'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
-         ...]
+         {'Sepal length': 6.3, 'Sepal width': 2.9, 'Petal length': 5.6, 'Petal width': 1.8, 'Species': 'virginica'},
+         {'Sepal length': 6.4, 'Sepal width': 3.2, 'Petal length': 4.5, 'Petal width': 1.5, 'Species': 'versicolor'},
+         {'Sepal length': 4.7, 'Sepal width': 3.2, 'Petal length': 1.3, 'Petal width': 0.2, 'Species': 'setosa'}]
 
 
 Entry Test Endswith
@@ -106,6 +95,8 @@ Entry Test Endswith
 :Output:
     .. code-block:: text
 
+        >>> assert type(result) is list
+        >>> assert all(type(row) is str for row in result)
         >>> result
         ['virginica', 'setosa', 'virginica', 'setosa', 'virginica', 'setosa']
 
@@ -158,8 +149,10 @@ Entry Test File
 :Output:
     .. code-block:: text
 
+        >>> assert type(result) is list
+        >>> assert all(type(row) is dict for row in result)
         >>> result  # doctest: +NORMALIZE_WHITESPACE
-        [{'ip': '127.0.0.1', 'protocol': 'ipv4', 'hostnames': {'localhost', 'astromatt'}},
-         {'ip': '10.13.37.1', 'protocol': 'ipv4', 'hostnames': {'nasa.gov', 'esa.int', 'roscosmos.ru'}},
-         {'ip': '255.255.255.255', 'protocol': 'ipv4', 'hostnames': {'broadcasthost'}},
-         {'ip': '::1', 'protocol': 'ipv6', 'hostnames': {'localhost'}}]
+        [{'ip': '127.0.0.1', 'hosts': {'localhost', 'astromatt'}, 'protocol': 'ipv4'},
+         {'ip': '10.13.37.1', 'hosts': {'roscosmos.ru', 'nasa.gov', 'esa.int'}, 'protocol': 'ipv4'},
+         {'ip': '255.255.255.255', 'hosts': {'broadcasthost'}, 'protocol': 'ipv4'},
+         {'ip': '::1', 'hosts': {'localhost'}, 'protocol': 'ipv6'}]

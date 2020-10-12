@@ -193,14 +193,7 @@ About Version
 :Output:
     .. code-block:: text
 
-        3.8.5
-
-:The whys and wherefores:
-    * Czy Python działa
-    * Jaka jest wersja Python
-    * Korzystanie z print
-    * Umiejętność uruchamiania skryptów
-    * Szukanie rozwiązań zadań z książki
+        3.9.0
 
 About Environment
 -----------------
@@ -231,11 +224,3 @@ About Environment
     #. Gdzie Python jest zainstalowany?
     #. Czy korzystasz z "Virtualenv"?
     #. Upewnij się, że w linijce z "Virtualenv" nie masz ``None``
-
-:The whys and wherefores:
-    * Czy Python działa
-    * Jaka jest wersja Python
-    * Czy korzystasz z Virtualenv
-    * Korzystanie z print
-    * Umiejętność uruchamiania skryptów
-    * Szukanie rozwiązań zadań z książki
