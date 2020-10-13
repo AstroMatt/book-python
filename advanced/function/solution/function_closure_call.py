@@ -1,11 +1,14 @@
 """
->>> add(1, 2)
-3
->>> add(-1.1, 1.1)
-0.0
+>>> from inspect import isfunction
+>>> assert isfunction(hello)
+>>> assert isfunction(result)
+>>> assert not hasattr(__name__, 'check')
+
+>>> hello()
+hello from function
 
 >>> result()
-hello
+hello from wrapper
 
 >>> check()
 Traceback (most recent call last):
@@ -14,17 +17,16 @@ NameError: name 'check' is not defined
 """
 
 
-def add(a, b):
-    return a + b
-
-
-def check(func):
+def check(func: callable):
     def wrapper(*args, **kwargs):
-        print('hello')
+        print('hello from wrapper')
     return wrapper
 
 
-result = check(add)
+def hello():
+    print('hello from function')
+
+
+result = check(hello)
 del check
 result()
-# hello

@@ -1,14 +1,15 @@
 """
->>> assert callable(check)
->>> assert callable(check(lambda x: x))
->>> result = check(lambda x: x).__call__()
->>> result is None
-True
+>>> from inspect import isfunction
+>>> assert isfunction(check)
+>>> assert isfunction(wrapper)
+>>> assert isfunction(check(lambda: None))
+>>> check(lambda: None)()
+hello from wrapper
 """
 
 
 def wrapper(*args, **kwargs):
-    return None
+    print('hello from wrapper')
 
 
 def check(func):

@@ -377,9 +377,9 @@ Examples
             mimetype='application/json')
 
 
-    @app.route('/post/<int:post_id>')
-    def show_post(post_id):
-        post = ... # get post from Database by post_id
+    @app.route('/post/<int:pk>')
+    def post(pk):
+        post = ... # get post from Database by pk
         return render_template('post.html', post=post)
 
 
@@ -398,13 +398,13 @@ Examples
 
 
     @app.get('/')
-    async def read_root():
+    async def index():
         return {'Hello': 'World'}
 
 
-    @app.get('/items/{item_id}')
-    async def read_item(item_id: int, q: Optional[str] = None):
-        return {'item_id': item_id, 'q': q}
+    @app.get('/items/{pk}')
+    async def items(pk: int, q: Optional[str] = None):
+        return {'pk': pk, 'q': q}
 
 .. code-block:: python
     :caption: Django Login Required. Decorator checks whether user is_authenticated. If not, user will be redirected to login page.
@@ -444,19 +444,61 @@ Examples
 Assignments
 ===========
 
-Decorator Function Disabled
----------------------------
-* Assignment name: Decorator Function Disabled
-* Last update: 2020-10-01
+Decorator Function Disable
+--------------------------
+* Assignment name: Decorator Function Disable
+* Last update: 2020-10-13
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/decorator_func_disabled.py`
+* Solution: :download:`solution/decorator_func_disable.py`
+
+:English:
+    #. Use data from "Input" section (see below)
+    #. Create decorator ``disable``
+    #. Decorator raises an exception ``PermissionError`` and does not execute function
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Użyj kodu z sekcji "Input" (patrz poniżej)
+    #. Stwórz dekorator ``disable``
+    #. Dekorator podnosi wyjątek ``PermissionError`` i nie wywołuje funkcji
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Input:
+    .. code-block:: python
+
+        @disable
+        def echo(text):
+            print(text)
+
+:Output:
+    .. code-block:: text
+
+        >>> from inspect import isfunction
+        >>> assert isfunction(check)
+        >>> assert isfunction(check(lambda: None))
+        >>> assert isfunction(echo)
+
+        >>> echo('hello')
+        Traceback (most recent call last):
+            ...
+        PermissionError: Function is disabled
+
+Decorator Function Check
+------------------------
+* Assignment name: Decorator Function Check
+* Last update: 2020-10-13
+* Complexity level: easy
+* Lines of code to write: 5 lines
+* Estimated time of completion: 8 min
+* Solution: :download:`solution/decorator_func_check.py`
 
 :English:
     #. Use data from "Input" section (see below)
     #. Create decorator ``check``
-    #. Decorator calls function, only when ``check.disabled`` is ``False``
+    #. Decorator calls function, only when ``echo.disabled`` is ``False``
+    #. Note that decorators overwrite pointers and in ``wrapper`` you must check if ``wrapper.disabled`` is ``False``
     #. Else raise an exception ``PermissionError``
     #. Compare result with "Output" section (see below)
 
@@ -464,6 +506,7 @@ Decorator Function Disabled
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
     #. Stwórz dekorator ``check``
     #. Dekorator wywołuje funkcję, tylko gdy ``echo.disabled`` jest ``False``
+    #. Zwróć uwagę, że dekoratory nadpisują wskaźniki i we ``wrapper`` musisz sprawdzić czy ``wrapper.disabled`` jest ``False``
     #. W przeciwnym przypadku podnieś wyjątek ``PermissionError``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
@@ -476,6 +519,12 @@ Decorator Function Disabled
 
 :Output:
     .. code-block:: text
+
+        >>> from inspect import isfunction
+        >>> assert isfunction(check)
+        >>> assert isfunction(check(lambda: None))
+        >>> assert isfunction(echo)
+        >>> assert hasattr(echo, 'disabled')
 
         >>> echo.disabled = False
         >>> echo('hello')
@@ -533,6 +582,11 @@ Decorator Function Astronauts
 
 :Output:
     .. code-block:: text
+
+        >>> from inspect import isfunction
+        >>> assert isfunction(check_astronauts)
+        >>> assert isfunction(check_astronauts(lambda: None))
+        >>> assert isfunction(launch)
 
         >>> launch(CREW_PRIMARY)
         'Launching: Jan Twardowski, Mark Watney, Melissa Lewis'

@@ -13,94 +13,34 @@ Rationale
         return g
 
 
+
 Nested Function
 ===============
 * Function inside the function
-* nested functions can access the variables of the enclosing scope
+* Nested functions can access the variables of the enclosing scope
 
 .. code-block:: python
 
     def run():
         def hello():
-            print('Watney')
-
-.. code-block:: python
-
-    def run():
-        lastname = 'Watney'
-
-        def hello():
-            firstname = 'Mark'
-            print(firstname, lastname)
-
-
-Calling Nested Functions
-========================
-.. code-block:: python
-
-    def run():
-        lastname = 'Watney'
-
-        def hello():
-            print(lastname)
-
+            print('hello')
         return hello
 
+
     hello()
+    # Traceback (most recent call last):
+    #   ...
     # NameError: name 'hello' is not defined
 
     run()
-    # <function __main__.run.<locals>.hello()>
+    # <function run.<locals>.hello at 0x104e13700>
+
+    run()()
+    # hello
 
     result = run()
     result()
-    # Watney
-
-
-Functions as a Namespace
-========================
-.. code-block:: python
-
-    def run():
-        firstname = 'Mark'
-        lastname = 'Watney'
-
-.. code-block:: python
-
-    def run():
-        firstname = 'Mark'
-        lastname = 'Watney'
-
-        def hello():
-            print(firstname, lastname)
-
-.. code-block:: python
-
-    def run():
-        firstname = 'Mark'
-        lastname = 'Watney'
-
-        def hello():
-            print(firstname, lastname)
-
-        class Astronaut:
-            pass
-
-.. code-block:: python
-
-    def run():
-        firstname = 'Mark'
-        lastname = 'Watney'
-
-        def hello():
-            print(firstname, lastname)
-
-        class Astronaut:
-            firstname = 'Mark'
-            lastname = 'Watney'
-
-            def hello(self):
-                print(self.firstname, self.lastname)
+    # hello
 
 
 What is closure?
@@ -122,6 +62,7 @@ What is closure?
 
     def hello():
         print(firstname, lastname)
+
 
     hello()
     # Mark Watney
@@ -168,10 +109,10 @@ Assignments
 Function Closure Define
 -----------------------
 * Assignment name: Function Closure Define
-* Last update: 2020-10-01
+* Last update: 2020-10-13
 * Complexity level: easy
 * Lines of code to write: 4 lines
-* Estimated time of completion: 3 min
+* Estimated time of completion: 5 min
 * Solution: :download:`solution/function_closure_define.py`
 
 :English:
@@ -200,47 +141,49 @@ Function Closure Define
 Function Closure Call
 ---------------------
 * Assignment name: Function Closure Call
-* Last update: 2020-10-01
+* Last update: 2020-10-13
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/function_closure_call.py`
 
 :English:
-    #. Define function ``add(a: int, b: int) -> int``, which returns sum of ``a`` and ``b``
-    #. Define function ``check`` which takes ``func: Callable`` as an argument
+    #. Define function ``check`` with parameter ``func: Callable``
     #. Define closure function ``wrapper`` inside ``check``
-    #. Function ``wrapper`` takes ``*args`` and ``**kwargs`` as arguments
-    #. Function ``wrapper`` prints ``hello`` on the screen
+    #. Function ``wrapper`` takes arbitrary number of positional and keyword arguments
+    #. Function ``wrapper`` prints ``hello from wrapper`` on the screen
     #. Function ``check`` must return ``wrapper: Callable``
-    #. Call ``check`` with ``add`` as and argument and capture pointer to ``wrapper``
+    #. Define function ``hello()`` which prints ``hello from function``
+    #. Define ``result`` with result of calling ``check(hello)``
     #. Delete ``check`` using ``del`` keyword
-    #. Call pointer
+    #. Call ``result``
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Zdefiniuj funkcję ``add(a: int, b: int) -> int``, która zwraca sumę ``a`` i ``b``
-    #. Zdefiniuj funkcję ``check``, która przyjmuje ``func: Callable`` jako argument
+    #. Zdefiniuj funkcję ``check`` z parametrem ``func: Callable``
     #. Zdefiniuj funkcję closure ``wrapper`` wewnątrz ``check``
-    #. Funkcja ``wrapper`` przyjmuje ``*args`` i ``**kwargs`` jako argumenty
-    #. Funckja ``wrapper`` wypisuje ``hello`` na ekranie
+    #. Funkcja ``wrapper`` przyjmuje dowolną ilość argumentów pozycyjnych i nazwanych
+    #. Funkcja ``wrapper`` wypisuje ``hello from wrapper``
     #. Funkcja ``check`` ma zwracać ``wrapper: Callable``
-    #. Wywołaj ``check`` z argumentem ``add`` i przechwyć wskaźnik do ``wrapper``
+    #. Zdefiniuj funkcję ``hello()``, która wypisuje ``hello from function``
+    #. Zdefiniuj zmienną ``result``, która jest wynikiem wywołania ``check(hello)``
     #. Skasuj ``check`` za pomocą słowa kluczowego ``del``
-    #. Wywołaj wskaźnik
+    #. Wywołaj ``result``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
     .. code-block:: text
 
-        >>> add(1, 2)
-        3
+        >>> from inspect import isfunction
+        >>> assert isfunction(hello)
+        >>> assert isfunction(result)
+        >>> assert not hasattr(__name__, 'check')
 
-        >>> add(-1.1, 1.1)
-        0.0
+        >>> hello()
+        hello from function
 
         >>> result()
-        hello
+        hello from wrapper
 
         >>> check()
         Traceback (most recent call last):

@@ -1,4 +1,9 @@
 """
+>>> from inspect import isfunction
+>>> assert isfunction(check_astronauts)
+>>> assert isfunction(check_astronauts(lambda: None))
+>>> assert isfunction(launch)
+
 >>> launch(CREW_PRIMARY)
 'Launching: Jan Twardowski, Mark Watney, Melissa Lewis'
 

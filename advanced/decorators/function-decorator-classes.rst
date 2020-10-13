@@ -27,7 +27,7 @@ Syntax
 * ``MyClass`` is a class name
 
 .. code-block:: python
-    :caption: Definiton
+    :caption: Definition
 
     def decorator(cls):
         class Wrapper(cls):

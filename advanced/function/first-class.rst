@@ -11,20 +11,34 @@ Rationale
         print('Hello')
 
 
-    type(hello)
-    # <class 'function'>
-
     callable(hello)
     # True
 
+    hello()
+    # Hello
 
-First-class Function
+
+Function Object
+===============
+.. code-block:: python
+
+    def hello():
+        print('Hello')
+
+
+    type(hello)
+    # <class 'function'>
+
+    hello.__call__()
+    # Hello
+
+
+First-Class Function
 ====================
-* If a function can be assigned to a variable or passed as object/variable to other function.
-* Can be used as parameters
-* Can be used as a return value
-* Can be assigned to variables
-* Can be stored in data structures such as hash tables, lists, ...
+* Function can be assigned to a variable
+* Function can be used as parameters
+* Function can be used as a return value
+* Function can be stored in data structures such as lists, mappings, etc
 
 .. code-block:: python
 
@@ -41,27 +55,9 @@ First-class Function
 
 .. code-block:: python
 
-    from datetime import datetime
-    from time import sleep
+    def hello():
 
 
-    now = datetime.now()
-
-    print(now)            # 1969-07-21 02:56:15
-    sleep(10)
-    print(now)            # 1969-07-21 02:56:15
-
-.. code-block:: python
-
-    from datetime import datetime
-    from time import sleep
-
-
-    now = datetime.now
-
-    print(now())          # 1969-07-21 02:56:15
-    sleep(10)
-    print(now())          # 1969-07-21 02:56:25
 
 
 Callable
@@ -214,17 +210,33 @@ Type Annotation
     from typing import Callable, Iterator, Iterable
 
 
+    def zip(a: Iterable, b: Iterable) -> Iterator:
+        ...
+
+    def enumerate(data: Iterable) -> Iterator[int, Any]:
+        ...
+
     def map(func: Callable, data: Iterable) -> Iterator:
         ...
 
     def filter(func: Callable, data: Iterable) -> Iterator:
         ...
 
-    def zip(a: Iterable, b: Iterable) -> Iterator:
-        ...
 
-    def enumerate(data: Iterable) -> Iterator[int, Any]:
-        ...
+Case Studies
+============
+.. code-block:: python
+
+    from datetime import datetime
+    from time import sleep
+
+
+    now = datetime.now
+
+    print(now())          # 1969-07-21 02:56:15
+    sleep(10)
+    print(now())          # 1969-07-21 02:56:25
+
 
 
 Assignments
@@ -233,30 +245,31 @@ Assignments
 Function First Class Define
 ---------------------------
 * Assignment name: Function First Class Define
-* Last update: 2020-10-01
+* Last update: 2020-10-13
 * Complexity level: easy
 * Lines of code to write: 4 lines
-* Estimated time of completion: 3 min
+* Estimated time of completion: 5 min
 * Solution: :download:`solution/function_firstclass_define.py`
 
 :English:
     #. Define function ``wrapper``
-    #. ``wrapper`` takes ``*args`` and ``**kwargs`` as arguments
-    #. ``wrapper`` returns ``None``
-    #. Define function ``check`` which takes ``func: Callable`` as an argument
+    #. Function ``wrapper`` takes arbitrary number of positional and keyword arguments
+    #. Function ``wrapper`` prints ``hello from wrapper``
+    #. Define function ``check`` with ``func: Callable`` as a parameter
     #. Function ``check`` must return ``wrapper: Callable``
 
 :Polish:
     #. Zdefiniuj funkcję ``wrapper``
-    #. ``wrapper`` przyjmuje ``*args`` i ``**kwargs`` jako argumenty
-    #. ``wrapper`` zwraca ``None``
-    #. Zdefiniuj funkcję ``check``, która przyjmuje ``func: Callable`` jako argument
+    #. Funkcja ``wrapper`` przyjmuje dowolną ilość argumentów pozycyjnych i nazwanych
+    #. Funkcja ``wrapper`` wypisuje ``hello from wrapper``
+    #. Zdefiniuj funkcję ``check`` z ``func: Callable`` jako parametr
     #. Funkcja ``check`` ma zwracać ``wrapper: Callable``
 
 .. code-block:: text
 
-    >>> assert callable(check)
-    >>> assert callable(check(lambda x: x))
-    >>> result = check(lambda x: x).__call__()
-    >>> result is None
-    True
+    >>> from inspect import isfunction
+    >>> assert isfunction(check)
+    >>> assert isfunction(wrapper)
+    >>> assert isfunction(check(lambda: None))
+    >>> check(lambda: None)()
+    hello from wrapper
