@@ -176,7 +176,7 @@ Use Cases
             start = datetime.now()
             result = func(*args, **kwargs)
             end = datetime.now()
-            print(f'Duration: {end - start}')
+            log.info(f'Duration: {end - start}')
             return result
         return wrapper
 
@@ -196,23 +196,21 @@ Use Cases
     def add(a, b):
         return a + b
 
+
     add(1, 2)
     # "1969-07-21", "02:56:15", "DEBUG", "Calling: function='add', args=(1, 2), kwargs={}"
     # "1969-07-21", "02:56:15", "DEBUG", "Result: 3"
-    # Duration: 0:00:00.000159
-    # 3
+    # "1969-07-21", "02:56:15", "INFO", "Duration: 0:00:00.000209"
 
     add(1, b=2)
     # "1969-07-21", "02:56:15", "DEBUG", "Calling: function='add', args=(1,), kwargs={'b': 2}"
     # "1969-07-21", "02:56:15", "DEBUG", "Result: 3"
-    # Duration: 0:00:00.000162
-    # 3
+    # "1969-07-21", "02:56:15", "INFO", "Duration: 0:00:00.000154"
 
     add(a=1, b=2)
     # "1969-07-21", "02:56:15", "DEBUG", "Calling: function='add', args=(), kwargs={'a': 1, 'b': 2}"
     # "1969-07-21", "02:56:15", "DEBUG", "Result: 3"
-    # Duration: 0:00:00.000153
-    # 3
+    # "1969-07-21", "02:56:15", "INFO", "Duration: 0:00:00.000083"
 
 
 Scope
@@ -710,11 +708,60 @@ Decorator Function Abspath
     * ``current_directory = Path.cwd()``
     * ``path = Path(current_directory, filename)``
 
+Decorator Function Numeric
+--------------------------
+* Assignment name: Decorator Function Numeric
+* Last update: 2020-10-13
+* Complexity level: easy
+* Lines of code to write: 8 lines
+* Estimated time of completion: 8 min
+* Solution: :download:`solution/decorator_func_numeric.py`
+
+:English:
+    #. Use data from "Input" section (see below)
+    #. Create decorator function ``numeric``
+    #. Decorator checks types arguments ``a`` and ``b``
+    #. If type ``a`` or ``b`` are not ``int`` or ``float`` raise exception ``TypeError``
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Stwórz dekorator funkcję ``numeric``
+    #. Dekorator sprawdza typy argumentów ``a`` oraz ``b``
+    #. Jeżeli typ ``a`` lub ``b`` nie jest ``int`` lub ``float`` to podnieś wyjątek ``TypeError``
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: text
+
+        >>> from inspect import isfunction
+        >>> assert isfunction(numeric)
+        >>> assert isfunction(numeric(lambda: None))
+
+        >>> @numeric
+        ... def add(a, b):
+        ...     return a + b
+
+        >>> add(1, 1)
+        2
+        >>> add(1.5, 2.5)
+        4.0
+        >>> add(-1, 1.5)
+        0.5
+        >>> add('one', 1)
+        Traceback (most recent call last):
+            ...
+        TypeError: Argument "a" must be int or float
+        >>> add(1, 'two')
+        Traceback (most recent call last):
+            ...
+        TypeError: Argument "b" must be int or float
+
 Decorator Function Type Check
 -----------------------------
 * Assignment name: Decorator Function Type Check
 * Last update: 2020-10-01
-* Complexity level: medium
+* Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/decorator_func_typecheck.py`

@@ -17,7 +17,7 @@ NameError: name 'check' is not defined
 """
 
 
-def check(func: callable):
+def check(func):
     def wrapper(*args, **kwargs):
         print('hello from wrapper')
     return wrapper

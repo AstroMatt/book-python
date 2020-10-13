@@ -9,6 +9,6 @@ True
 
 def check(func):
     def wrapper(*args, **kwargs):
-        return None
+        print('hello from wrapper')
     return wrapper
 

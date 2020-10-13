@@ -38,7 +38,8 @@ Syntax
 
     def decorator(cls):
         def wrapper(*args, **kwargs):
-            ...
+            instance = cls.__new__(cls, *args, **kwargs)
+            return instance
         return wrapper
 
 .. code-block:: python
@@ -60,7 +61,8 @@ Example
 
     def run(cls):
         def wrapper(*args, **kwargs):
-            return method(instance, *args, **kwargs)
+            instance = cls.__new__(cls, *args, **kwargs)
+            return instance
         return wrapper
 
 
@@ -78,21 +80,24 @@ Example
 Use Case
 ========
 .. code-block:: python
-    :caption: Add attribute
+    :caption: Add logger attribute to class
 
-    def mydecorator(cls):
+    import logging
+
+    def logger(cls):
         class Wrapper(cls):
-            attribute = 'some value...'
+            logger = logging.getLogger(cls.__name__)
         return Wrapper
 
 
-    @mydecorator
-    class MyClass:
+    @logger
+    class Astronaut:
         pass
 
 
-    print(MyClass.attribute)
-    # some value...
+    print(Astronaut.logger)
+    # <Logger Astronaut (WARNING)>
+
 
 .. code-block:: python
     :caption: Singleton using functional wrapper
@@ -114,11 +119,11 @@ Use Case
 
     a = DatabaseConnection()  # Creating instance
     a.connect()
-    # Connecting... using <__main__.singleton.<locals>.Wrapper object at 0x10372d310>
+    # Connecting... using <__main__.DatabaseConnection object at 0x10cd56fa0>
 
     b = DatabaseConnection()  # Reusing instance
     b.connect()
-    # Connecting... using <__main__.singleton.<locals>.Wrapper object at 0x10372d310>
+    # Connecting... using <__main__.DatabaseConnection object at 0x10cd56fa0>
 
 .. code-block:: python
     :caption: Singleton using class wrapper
@@ -141,11 +146,11 @@ Use Case
 
     a = DatabaseConnection()  # Creating instance
     a.connect()
-    # Connecting... using <__main__.singleton.<locals>.Wrapper object at 0x10372d310>
+    # Connecting... using <__main__.singleton.<locals>.Wrapper object at 0x1085b6fa0>
 
     b = DatabaseConnection()  # Reusing instance
     b.connect()
-    # Connecting... using <__main__.singleton.<locals>.Wrapper object at 0x10372d310>
+    # Connecting... using <__main__.singleton.<locals>.Wrapper object at 0x1085b6fa0>
 
 
 Assignments

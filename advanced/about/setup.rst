@@ -1,6 +1,8 @@
-*******
-Install
-*******
+.. _Advanced Setup:
+
+*****
+Setup
+*****
 
 
 Requirements
@@ -24,7 +26,7 @@ Requirements
 Assignments
 ===========
 
-About IDE
+Setup IDE
 ---------
 * Assignment name: About IDE
 * Last update: 2020-10-12
@@ -49,17 +51,17 @@ About IDE
     #. WAŻNE: Już do końca szkolenia w tym katalogu będą tworzone rozwiązania do wszystkich zadań
     #. Dzięki oddzielnym katalogom dla każdego uczestnika unikniemy konfliktów w Git
 
-About Version
--------------
-* Assignment name: About Version
+Setup Interpreter
+-----------------
+* Assignment name: About Interpreter
 * Last update: 2020-10-12
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/about_version.py`
+* Solution: TODO
 
 :English:
-    #. In your directory create file ``about_version.py``
+    #. In your directory create file ``about_interpreter.py``
     #. If question about adding file to GIT repository pops-up, mark checkbox "Always add" and click "Yes"
     #. Use code from "Input" section (see below)
     #. Run code in your IDE (right click on code -> "Run File in Python Console")
@@ -68,7 +70,7 @@ About Version
     #. Write result (version number) in shared spreadsheet
 
 :Polish:
-    #. W swoim katalogu stwórz plik ``about_version.py``
+    #. W swoim katalogu stwórz plik ``about_interpreter.py``
     #. Jeżeli wyskoczy pytanie czy dodać plik do repozytorium GIT, zaznacz checkbox "Always add" i wybierz "Yes"
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
     #. Uruchom kod swoim IDE (prawy klawisz myszy na kodzie -> "Run File in Python Console")
@@ -87,9 +89,9 @@ About Version
 
         3.9.0
 
-About Push
-----------
-* Assignment name: About Push
+Setup VCS
+---------
+* Assignment name: Setup VCS
 * Last update: 2020-10-12
 * Complexity level: easy
 * Lines of code to write: 0 lines

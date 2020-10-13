@@ -6,7 +6,7 @@ About
     :caption: About
     :name: Advanced About
 
-    about/install.rst
+    about/setup.rst
     about/entry-test.rst
     about/agenda.rst
 

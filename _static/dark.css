@@ -1,28 +1,50 @@
 :root {
-    --background: #000;
-    --menu-background: #121212;
-    --menu-chapter: #aaa;
-    --menu-entry: #aaa;
-    --header: #aaa;
-    --text: #aaa;
-    --links: #eee;
-    --code-background: #121212;
+    --menu-background: #111;
+    --menu-header: #aaa;
+    --menu-text: #aaa;
+
+    --body-background: #000;
+    --body-header: #aaa;
+    --body-text: #aaa;
+
+    --selection-background: #888;
+    --selection-text: #eee;
+
+    --code-background: #111;
     --code-border: none;
+    --code-text: #aaa;
+
+    --table-background: none;
+    --table-border: #000;
+    --table-header: #aaa;
+    --table-text: #aaa;
+
+    --search-text: #aaa;
+    --search-border: #aaa;
+    --search-background: none;
+
+    --links: #eee;
     --hover: #1e1e1e;
     --active: #151515;
+
     --todo: #121212;
     --warning: #cf6679;
     --tip: #03dac6;
+    --note: #111;
+
 }
 
 @media screen {
-    body {color: var(--text); background-color: var(--background) !important;}
-    ::-moz-selection {color: var(--background); background: var(--text);}
-    ::selection {color: var(--background); background: var(--text);}
+    /* body */
+    body {color: var(--body-text); background-color: var(--body-background) !important;}
+
+    /* text selection */
+    ::-moz-selection {color: var(--selection-text); background: var(--selection-background);}
+    ::selection {color: var(--selection-text); background: var(--selection-background);}
 
     /* RTD theme's default is 800px as max width for the content */
-    .wy-nav-content {max-width: 1100px; background: var(--background)}
-    .wy-nav-content-wrap {background: var(--background)}
+    .wy-nav-content {max-width: 1100px; background: var(--body-background)}
+    .wy-nav-content-wrap {background: var(--body-background)}
 
     /* hide double entries on main page toc-tree */
     .toctree-wrapper .caption {display: none}
@@ -34,58 +56,53 @@
     .download span:hover {color: var(--links) !important; text-decoration: underline !important}
 
     /* headers */
-    h1 {font-family: sans-serif; page-break-after: avoid; color: var(--header) !important}
-    h2 {font-family: sans-serif; page-break-after: avoid; color: var(--header) !important}
-    h3 {font-family: sans-serif; page-break-after: avoid; color: var(--header) !important}
-    h4 {font-family: sans-serif; page-break-after: avoid; color: var(--header) !important}
-    h5 {font-family: sans-serif; page-break-after: avoid; color: var(--header) !important}
-    h6 {font-family: sans-serif; page-break-after: avoid; color: var(--header) !important}
+    h1 {font-family: sans-serif; page-break-after: avoid; color: var(--body-header) !important}
+    h2 {font-family: sans-serif; page-break-after: avoid; color: var(--body-header) !important}
+    h3 {font-family: sans-serif; page-break-after: avoid; color: var(--body-header) !important}
+    h4 {font-family: sans-serif; page-break-after: avoid; color: var(--body-header) !important}
+    h5 {font-family: sans-serif; page-break-after: avoid; color: var(--body-header) !important}
+    h6 {font-family: sans-serif; page-break-after: avoid; color: var(--body-header) !important}
 
     /* top menu (while zoom) */
     .wy-nav-top {background: var(--menu-background) !important}
-    .wy-nav-top a {color: var(--menu-chapter) !important}
+    .wy-nav-top a {color: var(--menu-header) !important}
 
     /* top menu with search input */
     .wy-side-nav-search {background: var(--menu-background) !important; margin-bottom: 2rem}
-    .wy-side-nav-search a {color: var(--menu-chapter) !important; font-size: 1.3rem; margin-top: 1rem}
-    .wy-side-nav-search a:hover {color: var(--menu-chapter) !important; background: none !important; text-decoration: none !important;}
+    .wy-side-nav-search a {color: var(--menu-header) !important; font-size: 1.3rem; margin-top: 1rem}
+    .wy-side-nav-search a:hover {color: var(--menu-header) !important; background: none !important; text-decoration: none !important;}
     .wy-side-nav-search div.version {color: var(--menu-background)}
     .wy-side-nav-search input[type=text] {border: none !important; border-radius: 0}
 
     /* left vertical menu */
     .wy-nav-side {background: var(--menu-background); width: 300px;}
-    .wy-nav-side a {color: var(--menu-chapter) !important}
+    .wy-nav-side a {color: var(--menu-header) !important}
     .wy-nav-side a:before {content: none !important}
 
     /* left vertical menu chapters */
-    .wy-menu-vertical p.caption {color: var(--menu-chapter) !important; margin: 0 !important;}
-    .wy-menu-vertical p.caption:hover {text-decoration: none !important; color: var(--menu-chapter); cursor: pointer}
+    .wy-menu-vertical p.caption {color: var(--menu-header) !important; margin: 0 !important;}
+    .wy-menu-vertical p.caption:hover {text-decoration: none !important; color: var(--menu-header); cursor: pointer}
 
     /* left vertical menu sub-chapters */
     .wy-menu-vertical li {font-size: 1rem !important; background: none !important; border: 0 !important}
     .wy-menu-vertical li:last-child {margin-bottom: 1rem !important}
-    .wy-menu-vertical li a {color: var(--menu-entry) !important; border: 0 !important; background: none !important}
+    .wy-menu-vertical li a {color: var(--menu-text) !important; border: 0 !important; background: none !important}
     .wy-menu-vertical li a:hover {text-decoration: none !important; border: 0 !important; background: none !important;  background: var(--hover) !important}
     .wy-menu-vertical li.current {background: none !important}
-    .wy-menu-vertical li.current a {color: var(--menu-entry) !important; border: 0 !important; background: var(--active) !important}
+    .wy-menu-vertical li.current a {color: var(--menu-text) !important; border: 0 !important; background: var(--active) !important}
     .wy-menu-vertical li.current a:hover {text-decoration: none !important; border: 0 !important; background: var(--hover) !important}
-    .wy-menu-vertical .literal {background: none !important; text-transform: capitalize; font-family: sans-serif; color: var(--menu-entry) !important; font-size: 0.85rem}
+    .wy-menu-vertical .literal {background: none !important; text-transform: capitalize; font-family: sans-serif; color: var(--menu-text) !important; font-size: 0.85rem}
 
-    /* table:
-     *
-     *   - Sequences of whitespace should collapse into a single whitespace.
-     *   - make the overflow auto (scrollbar if needed)
-     *   - align caption "left" ("center" is unsuitable on vast tables)
-     */
-    table {border: 0 !important}
-    table td {border: 0 !important; color: var(--text)}
-    table th {border: 1px solid var(--code-border) !important; border-bottom: 1px solid var(--text) !important; color: var(--text)}
+    /* table */
+    table {border: 0 !important; background-color: var(--table-background)}
+    table td {border: 0 !important; color: var(--table-text)}
+    table th {border: 1px solid var(--table-border) !important; border-bottom: 1px solid var(--table-border) !important; color: var(--table-text)}
     table tr td {background: none !important}
-    table tr:hover td {background: var(--hover) !important; color: var(--text)}
+    table tr:hover td {background: var(--hover) !important; color: var(--table-text)}
     table thead {text-align: left !important; vertical-align: middle !important}
     table thead p {margin-bottom: 0}
-    table thead th.stub {text-align: center; border-right: 0; border-bottom: 1px solid #000; }
-    table tbody th.stub {text-align: center; border-bottom: 0 !important; border-right: 1px solid #000 !important;}
+    table thead th.stub {text-align: center; border-right: 0; border-bottom: 1px solid var(--table-border); }
+    table tbody th.stub {text-align: center; border-bottom: 0 !important; border-right: 1px solid var(--table-border) !important;}
     .wy-table-responsive table td {white-space: normal}
     .wy-table-responsive {overflow: auto}
     .rst-content table.docutils caption {text-align: left; font-size: 100%}
@@ -94,34 +111,34 @@
     caption a.headerlink {opacity: 0}
     caption a.headerlink:hover {opacity: 1}
 
-    /* inline literal */
-    code.literal {color: var(--text) !important; background: var(--code-background) !important; border: 1px solid var(--code-border); padding-left: 0.5rem; padding-right: 0.5rem; font-family: monospace}
-
     /* glossary entries */
-    dt {color: var(--header) !important; background: none !important; border: none !important}
+    dt {color: var(--body-header) !important; background: none !important; border: none !important}
 
     /* lists */
     .rst-content dl p {margin: 0 !important}
 
     /* bibliography entries */
-    dl.citation dt:before {content: '['; color: var(--header) !important}
-    dl.citation dt:after {content: ']'; color: var(--header) !important}
+    dl.citation dt:before {content: '['; color: var(--body-header) !important}
+    dl.citation dt:after {content: ']'; color: var(--body-header) !important}
 
     /* caption */
-    .code-block-caption {color: var(--header) !important; text-align: center !important; font-weight: bold !important; font-style: normal !important; margin-top: 1rem; margin-bottom: 1rem}
-    .figure .caption {color: var(--header) !important; text-align: center !important; font-weight: bold !important; font-style: normal !important; margin-top: 1rem; margin-bottom: 1rem}
-    table caption {color: var(--header) !important; text-align: center !important; font-weight: bold !important; font-style: normal !important; margin-top: 1rem; margin-bottom: 1rem}
+    .code-block-caption {color: var(--body-header) !important; text-align: center !important; font-weight: bold !important; font-style: normal !important; margin-top: 1rem; margin-bottom: 1rem}
+    .figure .caption {color: var(--body-header) !important; text-align: center !important; font-weight: bold !important; font-style: normal !important; margin-top: 1rem; margin-bottom: 1rem}
+    table caption {color: var(--body-header) !important; text-align: center !important; font-weight: bold !important; font-style: normal !important; margin-top: 1rem; margin-bottom: 1rem}
 
-    /* infoboxes */
+    /* infobox - tip */
     .tip {background: none !important; border: 1px solid var(--tip)}
     .tip .admonition-title {background: var(--tip) !important}
 
+    /* infobox - warning */
     .warning {background: none !important; border: 1px solid var(--warning)}
     .warning .admonition-title {background: var(--warning) !important}
 
-    .note {background: none !important; border: 1px solid var(--menu-background)}
-    .note .admonition-title {background: var(--menu-background) !important}
+    /* infobox - note */
+    .note {background: none !important; border: 1px solid var(--note)}
+    .note .admonition-title {background: var(--note) !important}
 
+    /* infobox - todo */
     .admonition-todo {background: none !important; border: 1px solid var(--todo)}
     .admonition-todo .admonition-title {background: var(--todo) !important}
 
@@ -136,10 +153,13 @@
     .rst-current-version {background: var(--menu-background) !important;}
     .rst-versions {display: none;}
 
+    /* code listings */
+    code.literal {color: var(--code-text) !important; background: var(--code-background) !important; border: 1px solid var(--code-border); padding-left: 0.5rem; padding-right: 0.5rem; font-family: monospace}
     .highlight {background: var(--code-background); border: var(--code-border)}
     .rst-content div[class^=highlight], .rst-content pre.literal-block {border: var(--code-border)}
 
+    /* search */
     form#search {text-align: center}
-    form#search input#search-submit {overflow: hidden; margin: 0; padding: 0.5em; width: 1px; height: 30px; color: var(--text); background: var(--menu-background); border: 0; display: inline; box-shadow: none;}
-    form#search input#search-input {overflow: hidden; margin: 0; padding: 0.5em; height: 30px; width: 200px; color: var(--text); background: var(--menu-background); border: 0; border-bottom: 1px solid var(--text); display: inline; box-shadow: none}
+    form#search input#search-submit {overflow: hidden; margin: 0; padding: 0.5em; width: 1px; height: 30px; color: var(--search-text); background: var(--search-background); border: 0; display: inline; box-shadow: none;}
+    form#search input#search-input {overflow: hidden; margin: 0; padding: 0.5em; height: 30px; width: 200px; color: var(--search-text); background: var(--search-background); border: 0; border-bottom: 1px solid var(--search-border); display: inline; box-shadow: none}
 }

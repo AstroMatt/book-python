@@ -57,8 +57,8 @@ def typecheck(check_return: bool = True):
                 raise TypeError(f'"{argname}" is {argtype}, but {expected} was expected')
 
         def merge(*args, **kwargs):
-            arguments = zip(func.__annotations__.keys(), args)
-            return {**kwargs, **dict(arguments)}.items()
+            args = zip(func.__annotations__.keys(), args)
+            return (dict(args) | kwargs).items()
 
         def wrapper(*args, **kwargs):
             # Check if all arguments are valid types

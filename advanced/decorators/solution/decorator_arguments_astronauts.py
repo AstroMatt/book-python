@@ -1,4 +1,19 @@
 """
+>>> CREW_PRIMARY = [
+...    {'is_astronaut': True, 'name': 'Jan Twardowski'},
+...    {'is_astronaut': True, 'name': 'Mark Watney'},
+...    {'is_astronaut': True, 'name': 'Melissa Lewis'}]
+
+>>> CREW_BACKUP = [
+...    {'is_astronaut': True, 'name': 'Melissa Lewis'},
+...    {'is_astronaut': True, 'name': 'Mark Watney'},
+...    {'is_astronaut': False, 'name': 'Alex Vogel'}]
+
+>>> @check_astronauts(field='is_astronaut', value=True)
+... def launch(crew):
+...    crew = ', '.join(astro['name'] for astro in crew)
+...    return f'Launching: {crew}'
+
 >>> launch(CREW_PRIMARY)
 'Launching: Jan Twardowski, Mark Watney, Melissa Lewis'
 
@@ -6,20 +21,24 @@
 Traceback (most recent call last):
     ...
 PermissionError: Alex Vogel is not an astronaut
+
+>>> @check_astronauts(field='name', value='Melissa Lewis')
+... def launch(crew):
+...    crew = ', '.join(astro['name'] for astro in crew)
+...    return f'Launching: {crew}'
+
+>>> launch(CREW_PRIMARY)
+Traceback (most recent call last):
+    ...
+PermissionError: Jan Twardowski is not an astronaut
+
+>>> launch(CREW_BACKUP)
+Traceback (most recent call last):
+    ...
+PermissionError: Mark Watney is not an astronaut
 """
 
-CREW_PRIMARY = [
-    {'is_astronaut': True, 'name': 'Jan Twardowski'},
-    {'is_astronaut': True, 'name': 'Mark Watney'},
-    {'is_astronaut': True, 'name': 'Melissa Lewis'}]
-
-CREW_BACKUP = [
-    {'is_astronaut': True, 'name': 'Melissa Lewis'},
-    {'is_astronaut': True, 'name': 'Mark Watney'},
-    {'is_astronaut': False, 'name': 'Alex Vogel'}]
-
-
-def check(field, value):
+def check_astronauts(field, value):
     def decorator(func):
         def wrapper(crew):
             for member in crew:
@@ -29,9 +48,3 @@ def check(field, value):
             return func(crew)
         return wrapper
     return decorator
-
-
-@check(field='is_astronaut', value=True)
-def launch(crew):
-    crew = ', '.join(astro['name'] for astro in crew)
-    return f'Launching: {crew}'
