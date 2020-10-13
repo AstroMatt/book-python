@@ -1,8 +1,8 @@
 """
 >>> result  # doctest: +NORMALIZE_WHITESPACE
-[{'species', 'virginica'},
- {'species', 'setosa'},
- {'species', 'versicolor'}]
+[{'species': 'virginica'},
+ {'species': 'setosa'},
+ {'species': 'versicolor'}]
 """
 
 
@@ -21,7 +21,7 @@ DATA = [
     Iris(5.7, 2.8, 4.1, 1.3, 'versicolor'),
 ]
 
-result = [{attrname, attrvalue}
+result = [{attribute: value}
           for row in DATA
-          for attrname, attrvalue in row.__dict__.items()
-          if not attrname.startswith('_')]
+          for attribute, value in row.__dict__.items()
+          if not attribute.startswith('_')]

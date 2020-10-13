@@ -88,20 +88,25 @@ Private Attribute
             self.publicname = f'{firstname} {lastname[0]}.'
 
 
-    mark = Astronaut('Mark', 'Watney')
+    astro = Astronaut('Mark', 'Watney')
 
-    print(mark.publicname)
+    print(astro.publicname)
     # Mark W.
 
-    print(mark.__firstname)
+    print(astro.__firstname)
     # Traceback (most recent call last):
     #    ...
     # AttributeError: 'Astronaut' object has no attribute '__firstname'
 
-    print(mark.__lastname)
+    print(astro.__lastname)
     # Traceback (most recent call last):
     #    ...
     # AttributeError: 'Astronaut' object has no attribute '__firstname'
+
+    print(astro.__dict__)
+    # {'_Astronaut__firstname': 'Mark',
+    #  '_Astronaut__lastname': 'Watney',
+    #  'publicname': 'Mark W.'}
 
 
 System Attributes
@@ -117,9 +122,9 @@ System Attributes
             self.lastname = lastname
 
 
-    mark = Astronaut('Mark', 'Watney')
+    astro = Astronaut('Mark', 'Watney')
 
-    print(mark.__dict__)
+    print(astro.__dict__)
     # {'firstname': 'Mark',
     #  'lastname': 'Watney'}
 
@@ -133,17 +138,20 @@ System Attributes
             self.publicname = f'{firstname} {lastname[0]}.'
 
 
-    mark = Astronaut('Mark', 'Watney')
+    astro = Astronaut('Mark', 'Watney')
 
-
-    print(mark.__dict__)
+    print(astro.__dict__)
     # {'_firstname': 'Mark',
     #  '_lastname': 'Watney',
     #  'publicname': 'Mark W.'}
 
-    public_attrs = {k:v for k,v in mark.__dict__.items() if not k.startswith('_')}
-    print(public_attrs)
+    public_attributes = {attribute: value
+                         for attribute, value in astro.__dict__.items()
+                         if not attribute.startswith('_')}
+
+    print(public_attributes)
     # {'publicname': 'Mark W.'}
+
 
 
 Protected Method
@@ -162,15 +170,18 @@ Protected Method
             return f'{self._firstname} {self._lastname[0]}.'
 
 
-    mark = Astronaut('Mark', 'Watney')
+    astro = Astronaut('Mark', 'Watney')
 
-    print(dir(mark))
+    print(dir(astro))
     # ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__',
     # '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__',
     # '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_firstname',
     # '_get_fullname', '_lastname', 'get_publicname']
 
-    public_methods = [mth for mth in dir(mark) if not mth.startswith('_')]
+    public_methods = [method
+                      for method in dir(astro)
+                      if not method.startswith('_')]
+
     print(public_methods)
     # ['get_publicname']
 
@@ -201,7 +212,10 @@ Private Method
     #  '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__',
     #  '__weakref__', '_firstname', '_lastname', 'get_publicname']
 
-    public_methods = [mth for mth in dir(mark) if not mth.startswith('_')]
+    public_methods = [method
+                      for method in dir(astro)
+                      if not method.startswith('_')]
+
     print(public_methods)
     # ['get_publicname']
 
@@ -279,9 +293,9 @@ OOP Attribute Access Modifiers
     .. code-block:: text
 
         >>> result  # doctest: +NORMALIZE_WHITESPACE
-        [{'species', 'virginica'},
-         {'species', 'setosa'},
-         {'species', 'versicolor'}]
+        [{'species': 'virginica'},
+         {'species': 'setosa'},
+         {'species': 'versicolor'}]
 
 OOP Attribute Access Dict
 -------------------------

@@ -78,14 +78,23 @@ Static vs. Dynamic Fields
     print(ivanovic.agency)         # NASA
     print(Astronaut.agency)        # NASA
 
+    # Change field on a class
+    Astronaut.agency = 'ESA'
+
+    # Print field
+    print(watney.agency)           # ESA
+    print(twardowski.agency)       # ESA
+    print(ivanovic.agency)         # ESA
+    print(Astronaut.agency)        # ESA
+
     # Change field on the instance
     ivanovic.agency = 'Roscosmos'
 
     # Print field
-    print(watney.agency)           # NASA
-    print(twardowski.agency)       # NASA
+    print(watney.agency)           # ESA
+    print(twardowski.agency)       # ESA
     print(ivanovic.agency)         # Roscosmos
-    print(Astronaut.agency)        # NASA
+    print(Astronaut.agency)        # ESA
 
     # Change field on a class
     Astronaut.agency = 'POLSA'
@@ -100,19 +109,33 @@ Static vs. Dynamic Fields
 Static or Dynamic?
 ==================
 .. code-block:: python
+    :caption: Static Fields
 
     class Astronaut:
         firstname = ...
         lastname = ...
 
 .. code-block:: python
+    :caption: Dynamic Fields
 
     class Cosmonaut:
-        def __init__(self, firstname, lastname):
-            self.firstname = firstname
-            self.lastname = lastname
+        def __init__(self):
+            self.firstname = ...
+            self.lastname = ...
 
 .. code-block:: python
+    :caption: Dynamic Fields
+
+    from dataclasses import dataclass
+
+
+    @dataclass
+    class GaganYatri:
+        firstname: str = ...
+        lastname: list = ...
+
+.. code-block:: python
+    :caption: Dynamic Fields
 
     class Taikonaut:
         pass
@@ -122,23 +145,25 @@ Static or Dynamic?
     t.lastname = ...
 
 .. code-block:: python
+    :caption: Static Fields
 
     class Taikonaut:
         pass
 
-    Taikonaut.firstname
-    Taikonaut.lastname
+    Taikonaut.firstname = ...
+    Taikonaut.lastname = ...
 
 .. code-block:: python
+    :caption: Static Fields
 
-    from dataclasses import dataclass
+    class Taikonaut:
+        pass
 
+    Taikonaut.firstname = ...
+    Taikonaut.lastname = ...
 
-    @dataclass
-    class GaganYatri:
-        firstname: str
-        lastname: list
-
+    t = Taikonaut()
+    print(t.__dict__)
 
 
 Assignments
