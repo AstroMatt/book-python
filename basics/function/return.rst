@@ -112,10 +112,10 @@ Return Mapping
 .. code-block:: python
 
     def my_function():
-        return dict(first_name='Mark', last_name='Watney')
+        return dict(firstname='Mark', lastname='Watney')
 
     def my_function():
-        return {'first_name': 'Mark', 'last_name': 'Watney'}
+        return {'firstname': 'Mark', 'lastname': 'Watney'}
 
 
 Return Nested Sequence

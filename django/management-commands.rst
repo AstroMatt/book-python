@@ -89,8 +89,8 @@ Cleaning data in database
 
         def handle(self, *args, **options):
             for p in Person.objects.all():
-                p.first_name = p.first_name.title()
-                p.last_name = p.last_name.title()
+                p.firstname = p.firstname.title()
+                p.lastname = p.lastname.title()
                 p.save()
 
 Parse file line by line

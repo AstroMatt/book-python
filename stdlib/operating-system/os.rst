@@ -594,7 +594,7 @@ Alternative syntax and using variables in config
 
     [Arthur]
     nickname: Two Sheds
-    last_name: Jackson
+    lastname: Jackson
     my_dir: ${Common:home_dir}/twosheds
     my_pictures: ${my_dir}/Pictures
     python_dir: ${Frameworks:path}/Python/Versions/${Frameworks:Python}

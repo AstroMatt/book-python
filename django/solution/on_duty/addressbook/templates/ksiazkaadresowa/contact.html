@@ -9,8 +9,8 @@
 
 {% block css %}
     <style>
-        th.last_name {color: blue}
-        td.last_name {color: green}
+        th.lastname {color: blue}
+        td.lastname {color: green}
         img {width: 15rem;}
         .red {color: red}
         .gray {color: gray}
@@ -30,8 +30,8 @@
     <table>
         <thead>
             <tr>
-                <th class="first_name">{% trans "First Name" %}</th>
-                <th class="last_name">{% trans "Last Name" %}</th>
+                <th class="firstname">{% trans "First Name" %}</th>
+                <th class="lastname">{% trans "Last Name" %}</th>
                 <th class="date_of_birth">{% trans "Date of birth" %}</th>
                 <th class="adult">{% trans "Status" %}</th>
             </tr>
@@ -41,8 +41,8 @@
         {% for contact in contacts %}
 
             <tr>
-                <td class="first_name">{{ contact.first_name |lower |upper }}</td>
-                <td class="last_name">{{ contact.last_name |title }}</td>
+                <td class="firstname">{{ contact.firstname |lower |upper }}</td>
+                <td class="lastname">{{ contact.lastname |title }}</td>
                 <td class="date_of_birth
                     {% if contact.date_of_birth %}
                         red

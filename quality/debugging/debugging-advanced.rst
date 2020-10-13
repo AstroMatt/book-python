@@ -8,7 +8,7 @@ Advanced Debugging
 .. code-block:: console
 
     $ curl -s http://localhost:8000/contact/api/
-    {"contacts": [{"id": 1, "created": "2018-06-13T09:57:55.405Z", "modified": "2018-06-13T10:16:13.975Z", "reporter_id": 1, "is_deleted": false, "first_name": "José", "last_name": "Jiménez", "date_of_birth": "1969-07-24", "email": "jose.jimenez@nasa.gov", "bio": "", "image": "33950257662_d7561fb140_o.jpg", "status": null, "gender": null}, {"id": 2, "created": "2018-06-13T10:26:46.948Z", "modified": "2018-06-13T10:26:46.948Z", "reporter_id": 1, "is_deleted": false, "first_name": "Mark", "last_name": "Watney", "date_of_birth": null, "email": null, "bio": "", "image": "", "status": null, "gender": null}, {"id": 3, "created": "2018-06-13T10:26:55.820Z", "modified": "2018-06-13T10:26:55.820Z", "reporter_id": 1, "is_deleted": false, "first_name": "Иван", "last_name": "Иванович", "date_of_birth": null, "email": null, "bio": "", "image": "", "status": null, "gender": null}]}
+    {"contacts": [{"id": 1, "created": "2018-06-13T09:57:55.405Z", "modified": "2018-06-13T10:16:13.975Z", "reporter_id": 1, "is_deleted": false, "firstname": "José", "lastname": "Jiménez", "date_of_birth": "1969-07-24", "email": "jose.jimenez@nasa.gov", "bio": "", "image": "33950257662_d7561fb140_o.jpg", "status": null, "gender": null}, {"id": 2, "created": "2018-06-13T10:26:46.948Z", "modified": "2018-06-13T10:26:46.948Z", "reporter_id": 1, "is_deleted": false, "firstname": "Mark", "lastname": "Watney", "date_of_birth": null, "email": null, "bio": "", "image": "", "status": null, "gender": null}, {"id": 3, "created": "2018-06-13T10:26:55.820Z", "modified": "2018-06-13T10:26:55.820Z", "reporter_id": 1, "is_deleted": false, "firstname": "Иван", "lastname": "Иванович", "date_of_birth": null, "email": null, "bio": "", "image": "", "status": null, "gender": null}]}
 
 .. code-block:: console
 
@@ -21,8 +21,8 @@ Advanced Debugging
                 "modified": "2018-06-13T10:16:13.975Z",
                 "reporter_id": 1,
                 "is_deleted": false,
-                "first_name": "José",
-                "last_name": "Jiménez",
+                "firstname": "José",
+                "lastname": "Jiménez",
                 "date_of_birth": "1969-07-24",
                 "email": "jose.jimenez@nasa.gov",
                 "bio": "",
@@ -36,8 +36,8 @@ Advanced Debugging
                 "modified": "2018-06-13T10:26:46.948Z",
                 "reporter_id": 1,
                 "is_deleted": false,
-                "first_name": "Mark",
-                "last_name": "Watney",
+                "firstname": "Mark",
+                "lastname": "Watney",
                 "date_of_birth": null,
                 "email": null,
                 "bio": "",
@@ -51,8 +51,8 @@ Advanced Debugging
                 "modified": "2018-06-13T10:26:55.820Z",
                 "reporter_id": 1,
                 "is_deleted": false,
-                "first_name": "Иван",
-                "last_name": "Иванович",
+                "firstname": "Иван",
+                "lastname": "Иванович",
                 "date_of_birth": null,
                 "email": null,
                 "bio": "",
@@ -257,13 +257,13 @@ Own ``doctest``
                 здраствуйте Иван Иванович!
                 """
                 if lang == 'en':
-                    print(f'hello {self.first_name}')
+                    print(f'hello {self.firstname}')
                 elif lang == 'es':
-                    print(f'¡hola {self.first_name}!')
+                    print(f'¡hola {self.firstname}!')
                 elif lang == 'ru':
-                    print(f'здраствуйте {self.first_name}!')
+                    print(f'здраствуйте {self.firstname}!')
                 else:
-                    print(f'witaj {self.first_name}!')
+                    print(f'witaj {self.firstname}!')
 
 
         astronaut = Astronaut(name='José Jiménez')

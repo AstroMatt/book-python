@@ -175,23 +175,23 @@ Merge
 
 .. code-block:: python
 
-    first_names = pd.DataFrame({
+    firstnames = pd.DataFrame({
         'id': [1, 2, 3, 4],
-        'first_name': ['Mark', 'Jan', 'Ivan', 'Melissa']})
+        'firstname': ['Mark', 'Jan', 'Ivan', 'Melissa']})
 
-    last_names = pd.DataFrame({
+    lastnames = pd.DataFrame({
         'id': [1, 2, 3, 4],
-        'last_name': ['Watney', 'Twardowski', 'Ivanovic', 'Lewis']})
+        'lastname': ['Watney', 'Twardowski', 'Ivanovic', 'Lewis']})
 
-    first_names
-    #    id first_name
+    firstnames
+    #    id firstname
     # 0   1       Mark
     # 1   2        Jan
     # 2   3       Ivan
     # 3   4    Melissa
 
-    last_names
-    #    id   last_name
+    lastnames
+    #    id   lastname
     # 0   1      Watney
     # 1   2  Twardowski
     # 2   3    Ivanovic
@@ -199,29 +199,29 @@ Merge
 
 .. code-block:: python
 
-    first_names.merge(last_names)
-    #    id first_name   last_name
+    firstnames.merge(lastnames)
+    #    id firstname   lastname
     # 0   1       Mark      Watney
     # 1   2        Jan  Twardowski
     # 2   3       Ivan    Ivanovic
     # 3   4    Melissa       Lewis
 
-    first_names.merge(last_names, on='id')
-    #    id first_name   last_name
+    firstnames.merge(lastnames, on='id')
+    #    id firstname   lastname
     # 0   1       Mark      Watney
     # 1   2        Jan  Twardowski
     # 2   3       Ivan    Ivanovic
     # 3   4    Melissa       Lewis
 
-    first_names.merge(last_names, left_on='id', right_on='id')
-    #    id first_name   last_name
+    firstnames.merge(lastnames, left_on='id', right_on='id')
+    #    id firstname   lastname
     # 0   1       Mark      Watney
     # 1   2        Jan  Twardowski
     # 2   3       Ivan    Ivanovic
     # 3   4    Melissa       Lewis
 
-    first_names.merge(last_names).set_index('id')
-    #    first_name   last_name
+    firstnames.merge(lastnames).set_index('id')
+    #    firstname   lastname
     # id
     # 1        Mark      Watney
     # 2         Jan  Twardowski
@@ -268,23 +268,23 @@ Join
 
 .. code-block:: python
 
-    first_names = pd.DataFrame({
+    firstnames = pd.DataFrame({
         'id': [1, 2, 3, 4],
-        'first_name': ['Mark', 'Jan', 'Ivan', 'Melissa']})
+        'firstname': ['Mark', 'Jan', 'Ivan', 'Melissa']})
 
-    last_names = pd.DataFrame({
+    lastnames = pd.DataFrame({
         'id': [1, 2, 3, 4],
-        'last_name': ['Watney', 'Twardowski', 'Ivanovic', 'Lewis']})
+        'lastname': ['Watney', 'Twardowski', 'Ivanovic', 'Lewis']})
 
-    first_names
-    #    id first_name
+    firstnames
+    #    id firstname
     # 0   1       Mark
     # 1   2        Jan
     # 2   3       Ivan
     # 3   4    Melissa
 
-    last_names
-    #    id   last_name
+    lastnames
+    #    id   lastname
     # 0   1      Watney
     # 1   2  Twardowski
     # 2   3    Ivanovic
@@ -293,8 +293,8 @@ Join
 .. code-block:: python
     :caption: Join DataFrames using their indexes.
 
-    first_names.join(last_names, lsuffix='_fname', rsuffix='_lname')
-    #    id_fname first_name  id_lname   last_name
+    firstnames.join(lastnames, lsuffix='_fname', rsuffix='_lname')
+    #    id_fname firstname  id_lname   lastname
     # 0         1       Mark         1      Watney
     # 1         2        Jan         2  Twardowski
     # 2         3       Ivan         3    Ivanovic
@@ -302,8 +302,8 @@ Join
 
 .. code-block:: python
 
-    first_names.set_index('id').join(last_names.set_index('id'))
-    #    first_name   last_name
+    firstnames.set_index('id').join(lastnames.set_index('id'))
+    #    firstname   lastname
     # id
     # 1        Mark      Watney
     # 2         Jan  Twardowski
@@ -313,8 +313,8 @@ Join
 .. code-block:: python
     :caption: This method preserves the original DataFrame's index in the result.
 
-    first_names.join(last_names.set_index('id'), on='id')
-    #    id first_name   last_name
+    firstnames.join(lastnames.set_index('id'), on='id')
+    #    id firstname   lastname
     # 0   1       Mark      Watney
     # 1   2        Jan  Twardowski
     # 2   3       Ivan    Ivanovic

@@ -28,8 +28,8 @@ class Contact(models.Model):
     reporter = models.ForeignKey(verbose_name=_('Reporter'), to='auth.User', on_delete=models.CASCADE, null=True, default=None)
     is_deleted = models.BooleanField(verbose_name=_('Is deleted?'), default=False)
 
-    first_name = models.CharField(verbose_name=_('First Name'), max_length=30)
-    last_name = models.CharField(verbose_name=_('Last Name'), max_length=30, db_index=True)
+    firstname = models.CharField(verbose_name=_('First Name'), max_length=30)
+    lastname = models.CharField(verbose_name=_('Last Name'), max_length=30, db_index=True)
     date_of_birth = models.DateField(verbose_name=_('Date of birth'), null=True, blank=True, default=None)
     email = models.EmailField(verbose_name=_('Email'), null=True, blank=True, default=None)
     bio = models.TextField(verbose_name=_('Bio'), null=True, blank=True, default=None)
@@ -39,7 +39,7 @@ class Contact(models.Model):
     friends = models.ManyToManyField(verbose_name=_('Friends'), to='contact.Contact', blank=True, default=None)
 
     def __str__(self):
-        return f'{self.first_name} {self.last_name}'
+        return f'{self.firstname} {self.lastname}'
 
     def get_age(self):
         if not self.date_of_birth:
@@ -56,4 +56,4 @@ class Contact(models.Model):
     class Meta:
         verbose_name = _('Contact')
         verbose_name_plural = _('Contacts')
-        unique_together = ['first_name', 'last_name']
+        unique_together = ['firstname', 'lastname']

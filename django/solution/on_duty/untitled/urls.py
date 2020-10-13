@@ -10,7 +10,7 @@ from addressbook.contact_us import ContactUsView
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    # path('contact/<str:last_name>/', ContactHTML.as_view()),
+    # path('contact/<str:lastname>/', ContactHTML.as_view()),
     path('contact/create/', ContactCreateView.as_view()),
     path('contact.csv', ContactCSV.as_view(), name='contact-csv'),
     path('contact.json', ContactJSON.as_view(), name='contact-json'),

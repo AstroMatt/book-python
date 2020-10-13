@@ -2,24 +2,24 @@ from dataclasses import dataclass, field
 from typing import List
 
 DATA = [
-    {"first_name": "Jan", "last_name": "Twardowski", "addresses": [
+    {"firstname": "Jan", "lastname": "Twardowski", "addresses": [
         {"street": "Kamienica Pod św. Janem Kapistranem", "city": "Kraków", "post_code": "31-008", "region": "Małopolskie", "country": "Poland"}]},
 
-    {"first_name": "José", "last_name": "Jiménez", "addresses": [
+    {"firstname": "José", "lastname": "Jiménez", "addresses": [
         {"street": "2101 E NASA Pkwy", "city": "Houston", "post_code": 77058, "region": "Texas", "country": "USA"},
         {"street": "", "city": "Kennedy Space Center", "post_code": 32899, "region": "Florida", "country": "USA"}]},
 
-    {"first_name": "Mark", "last_name": "Watney", "addresses": [
+    {"firstname": "Mark", "lastname": "Watney", "addresses": [
         {"street": "4800 Oak Grove Dr", "city": "Pasadena", "post_code": 91109, "region": "California", "country": "USA"},
         {"street": "2825 E Ave P", "city": "Palmdale", "post_code": 93550, "region": "California", "country": "USA"}]},
 
-    {"first_name": "Иван", "last_name": "Иванович", "addresses": [
+    {"firstname": "Иван", "lastname": "Иванович", "addresses": [
         {"street": "", "city": "Космодро́м Байкону́р", "post_code": "", "region": "Кызылординская область", "country": "Қазақстан"},
         {"street": "", "city": "Звёздный городо́к", "post_code": 141160, "region": "Московская область", "country": "Россия"}]},
 
-    {"first_name": "Melissa", "last_name": "Lewis"},
+    {"firstname": "Melissa", "lastname": "Lewis"},
 
-    {"first_name": "Alex", "last_name": "Vogel", "addresses": [
+    {"firstname": "Alex", "lastname": "Vogel", "addresses": [
         {"street": "Linder Hoehe", "city": "Köln", "post_code": 51147, "region": "North Rhine-Westphalia", "country": "Germany"}]}
 ]
 
@@ -35,8 +35,8 @@ class Address:
 
 @dataclass
 class Astronaut:
-    first_name: str = ''
-    last_name: str = ''
+    firstname: str = ''
+    lastname: str = ''
     addresses: List[Address] = field(default_factory=list)
 
 

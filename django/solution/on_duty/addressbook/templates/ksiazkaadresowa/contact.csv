@@ -3,6 +3,6 @@
 
 {% for contact in contacts %}
 
-			"{{ contact.first_name }}", "{{ contact.last_name }}"<br>
+			"{{ contact.firstname }}", "{{ contact.lastname }}"<br>
 
 {% endfor %}

@@ -11,11 +11,11 @@ Nested Comprehensions
 .. code-block:: python
 
    DATA = [
-        {'last_name': 'Jiménez'},
-        {'first_name': 'Mark', 'last_name': 'Watney'},
-        {'first_name': 'Иван'},
-        {'first_name': 'Jan', 'last_name': 'Twardowski', 'born': 1961},
-        {'first_name': 'Melissa', 'last_name': 'Lewis'},
+        {'lastname': 'Jiménez'},
+        {'firstname': 'Mark', 'lastname': 'Watney'},
+        {'firstname': 'Иван'},
+        {'firstname': 'Jan', 'lastname': 'Twardowski', 'born': 1961},
+        {'firstname': 'Melissa', 'lastname': 'Lewis'},
     ]
 
     fieldnames = set(key
@@ -24,16 +24,16 @@ Nested Comprehensions
     )
 
     print(fieldnames)
-    # {'born', 'last_name', 'first_name'}
+    # {'born', 'lastname', 'firstname'}
 
 .. code-block:: python
 
    DATA = [
-        {'last_name': 'Jiménez'},
-        {'first_name': 'Mark', 'last_name': 'Watney'},
-        {'first_name': 'Иван'},
-        {'first_name': 'Jan', 'last_name': 'Twardowski', 'born': 1961},
-        {'first_name': 'Melissa', 'last_name': 'Lewis'},
+        {'lastname': 'Jiménez'},
+        {'firstname': 'Mark', 'lastname': 'Watney'},
+        {'firstname': 'Иван'},
+        {'firstname': 'Jan', 'lastname': 'Twardowski', 'born': 1961},
+        {'firstname': 'Melissa', 'lastname': 'Lewis'},
     ]
 
     fieldnames = set()
@@ -43,23 +43,23 @@ Nested Comprehensions
     )
 
     print(fieldnames)
-    # {'born', 'last_name', 'first_name'}
+    # {'born', 'lastname', 'firstname'}
 
 .. code-block:: python
 
    DATA = [
-        {'last_name': 'Jiménez'},
-        {'first_name': 'Mark', 'last_name': 'Watney'},
-        {'first_name': 'Иван'},
-        {'first_name': 'Jan', 'last_name': 'Twardowski', 'born': 1961},
-        {'first_name': 'Melissa', 'last_name': 'Lewis'},
+        {'lastname': 'Jiménez'},
+        {'firstname': 'Mark', 'lastname': 'Watney'},
+        {'firstname': 'Иван'},
+        {'firstname': 'Jan', 'lastname': 'Twardowski', 'born': 1961},
+        {'firstname': 'Melissa', 'lastname': 'Lewis'},
     ]
 
     fieldnames = set()
     fieldnames.update(key for row in DATA for key in row.keys())
 
     print(fieldnames)
-    # {'born', 'last_name', 'first_name'}
+    # {'born', 'lastname', 'firstname'}
 
 
 Generator comprehensions
@@ -67,11 +67,11 @@ Generator comprehensions
 .. code-block:: python
 
    DATA = [
-        {'last_name': 'Jiménez'},
-        {'first_name': 'Mark', 'last_name': 'Watney'},
-        {'first_name': 'Иван'},
-        {'first_name': 'Jan', 'last_name': 'Twardowski', 'born': 1961},
-        {'first_name': 'Melissa', 'last_name': 'Lewis'},
+        {'lastname': 'Jiménez'},
+        {'firstname': 'Mark', 'lastname': 'Watney'},
+        {'firstname': 'Иван'},
+        {'firstname': 'Jan', 'lastname': 'Twardowski', 'born': 1961},
+        {'firstname': 'Melissa', 'lastname': 'Lewis'},
     ]
 
     fieldnames = set()

@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/summary')
 def summary():
-    data = {'first_name': 'José', 'last_name': 'Jiménez'}
+    data = {'firstname': 'José', 'lastname': 'Jiménez'}
 
     return Response(
         response=json.dumps(data),

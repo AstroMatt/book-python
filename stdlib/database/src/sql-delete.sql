@@ -2,9 +2,9 @@ DELETE FROM table_name WHERE condition;
 
 
 DELETE FROM contacts
-  WHERE last_name='Jimenez';
+  WHERE lastname='Jimenez';
 
 
 DELETE FROM contacts
-  WHERE first_name='Jose'
-    AND last_name='Jimenez';
+  WHERE firstname='Jose'
+    AND lastname='Jimenez';

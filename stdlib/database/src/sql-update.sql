@@ -1,10 +1,10 @@
 UPDATE kontakty SET
-    first_name='José'
-  WHERE last_name='Jiménez';
+    firstname='José'
+  WHERE lastname='Jiménez';
 
 
 UPDATE kontakty SET
-    first_name=:firstname,
-    last_name=:lastname,
+    firstname=:firstname,
+    lastname=:lastname,
     address=:address
 WHERE id=:id

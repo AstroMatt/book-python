@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
         ),
         migrations.AlterField(
             model_name='person',
-            name='last_name',
+            name='lastname',
             field=models.CharField(db_index=True, max_length=30, verbose_name='Last Name'),
         ),
     ]

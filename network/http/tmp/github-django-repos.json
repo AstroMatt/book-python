@@ -2,7 +2,7 @@
   {
     "id": 667705,
     "name": "djangosnippets.org",
-    "full_name": "django/djangosnippets.org",
+    "fullname": "django/djangosnippets.org",
     "owner": {
       "login": "django",
       "id": 27804,
@@ -95,7 +95,7 @@
   {
     "id": 690903,
     "name": "djangoproject.com",
-    "full_name": "django/djangoproject.com",
+    "fullname": "django/djangoproject.com",
     "owner": {
       "login": "django",
       "id": 27804,
@@ -188,7 +188,7 @@
   {
     "id": 729602,
     "name": "djangobench",
-    "full_name": "django/djangobench",
+    "fullname": "django/djangobench",
     "owner": {
       "login": "django",
       "id": 27804,
@@ -281,7 +281,7 @@
   {
     "id": 1540985,
     "name": "djangopeople",
-    "full_name": "django/djangopeople",
+    "fullname": "django/djangopeople",
     "owner": {
       "login": "django",
       "id": 27804,
@@ -374,7 +374,7 @@
   {
     "id": 1646442,
     "name": "django-dev-dashboard",
-    "full_name": "django/django-dev-dashboard",
+    "fullname": "django/django-dev-dashboard",
     "owner": {
       "login": "django",
       "id": 27804,
@@ -467,7 +467,7 @@
   {
     "id": 2524373,
     "name": "ticketbot",
-    "full_name": "django/ticketbot",
+    "fullname": "django/ticketbot",
     "owner": {
       "login": "django",
       "id": 27804,
@@ -560,7 +560,7 @@
   {
     "id": 4137797,
     "name": "code.djangoproject.com",
-    "full_name": "django/code.djangoproject.com",
+    "fullname": "django/code.djangoproject.com",
     "owner": {
       "login": "django",
       "id": 27804,
@@ -653,7 +653,7 @@
   {
     "id": 4164482,
     "name": "django",
-    "full_name": "django/django",
+    "fullname": "django/django",
     "owner": {
       "login": "django",
       "id": 27804,
@@ -746,7 +746,7 @@
   {
     "id": 8710168,
     "name": "django-contrib-comments",
-    "full_name": "django/django-contrib-comments",
+    "fullname": "django/django-contrib-comments",
     "owner": {
       "login": "django",
       "id": 27804,
@@ -839,7 +839,7 @@
   {
     "id": 9177785,
     "name": "django-docs-translations",
-    "full_name": "django/django-docs-translations",
+    "fullname": "django/django-docs-translations",
     "owner": {
       "login": "django",
       "id": 27804,
@@ -932,7 +932,7 @@
   {
     "id": 10264130,
     "name": "django-localflavor",
-    "full_name": "django/django-localflavor",
+    "fullname": "django/django-localflavor",
     "owner": {
       "login": "django",
       "id": 27804,
@@ -1025,7 +1025,7 @@
   {
     "id": 18764735,
     "name": "deps",
-    "full_name": "django/deps",
+    "fullname": "django/deps",
     "owner": {
       "login": "django",
       "id": 27804,
@@ -1118,7 +1118,7 @@
   {
     "id": 24818563,
     "name": "django-formtools",
-    "full_name": "django/django-formtools",
+    "fullname": "django/django-formtools",
     "owner": {
       "login": "django",
       "id": 27804,
@@ -1211,7 +1211,7 @@
   {
     "id": 36818673,
     "name": "channels",
-    "full_name": "django/channels",
+    "fullname": "django/channels",
     "owner": {
       "login": "django",
       "id": 27804,
@@ -1304,7 +1304,7 @@
   {
     "id": 48501841,
     "name": "daphne",
-    "full_name": "django/daphne",
+    "fullname": "django/daphne",
     "owner": {
       "login": "django",
       "id": 27804,
@@ -1397,7 +1397,7 @@
   {
     "id": 48501860,
     "name": "asgiref",
-    "full_name": "django/asgiref",
+    "fullname": "django/asgiref",
     "owner": {
       "login": "django",
       "id": 27804,
@@ -1490,7 +1490,7 @@
   {
     "id": 48919093,
     "name": "asgi_redis",
-    "full_name": "django/asgi_redis",
+    "fullname": "django/asgi_redis",
     "owner": {
       "login": "django",
       "id": 27804,
@@ -1583,7 +1583,7 @@
   {
     "id": 58187705,
     "name": "asgi_ipc",
-    "full_name": "django/asgi_ipc",
+    "fullname": "django/asgi_ipc",
     "owner": {
       "login": "django",
       "id": 27804,
@@ -1676,7 +1676,7 @@
   {
     "id": 59279103,
     "name": "code-of-conduct",
-    "full_name": "django/code-of-conduct",
+    "fullname": "django/code-of-conduct",
     "owner": {
       "login": "django",
       "id": 27804,
@@ -1769,7 +1769,7 @@
   {
     "id": 65818218,
     "name": "django-box",
-    "full_name": "django/django-box",
+    "fullname": "django/django-box",
     "owner": {
       "login": "django",
       "id": 27804,

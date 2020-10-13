@@ -33,14 +33,14 @@ Examples
 
     import re
 
-    PATTERN = r'(?P<first_name>\w+) (?P<last_name>\w+)'
+    PATTERN = r'(?P<firstname>\w+) (?P<lastname>\w+)'
     TEXT = 'Jan Twardowski'
 
     matches = re.match(PATTERN, TEXT)
 
-    matches.group('first_name')     # 'Jan'
-    matches.group('last_name')      # 'Twardowski'
+    matches.group('firstname')     # 'Jan'
+    matches.group('lastname')      # 'Twardowski'
     matches.group(1)                # 'Jan'
     matches.group(2)                # 'Twardowski'
     matches.groups()                # ('Jan', 'Twardowski')
-    matches.groupdict()             # {'first_name': 'Jan', 'last_name': 'Twardowski'}
+    matches.groupdict()             # {'firstname': 'Jan', 'lastname': 'Twardowski'}

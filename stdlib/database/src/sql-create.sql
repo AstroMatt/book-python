@@ -1,8 +1,8 @@
 -- SQLite3
 CREATE TABLE contacts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    first_name VARCHAR(20),
-    last_name VARCHAR(50),
+    firstname VARCHAR(20),
+    lastname VARCHAR(50),
     pesel INTEGER UNIQUE,
     age INTEGER
 );

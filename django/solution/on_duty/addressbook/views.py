@@ -24,7 +24,7 @@ class ContactCSV(TemplateView):
 
     def get_context_data(self, **kwargs):
         contacts = Person.objects.all()
-        contacts = contacts.filter(last_name__startswith='T')
+        contacts = contacts.filter(lastname__startswith='T')
         return locals()
 
 
@@ -73,8 +73,8 @@ class ContactCreateView(FormView):
 
     def form_valid(self, form):
         Person.objects.create(
-            first_name=form.cleaned_data['first_name'],
-            last_name=form.cleaned_data['last_name'],
+            firstname=form.cleaned_data['firstname'],
+            lastname=form.cleaned_data['lastname'],
         )
         return super().form_valid(form)
 

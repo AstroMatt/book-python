@@ -272,13 +272,13 @@ Characters before strings
 .. code-block:: python
     :caption: Format string (string interpolation)
 
-    first_name = 'Jan'
-    last_name = 'Twardowski'
+    firstname = 'Jan'
+    lastname = 'Twardowski'
 
-    print(f'My name is {last_name}')
+    print(f'My name is {lastname}')
     # My name is Twardowski
 
-    name = f'{first_name} {last_name}'
+    name = f'{firstname} {lastname}'
     print(name)
     # Jan Twardowski
 

@@ -83,14 +83,14 @@ List of keywords
 .. code-block:: python
 
     DATA = {
-        'first_name': 'Jan',
-        'last_name': 'Twardowski',
+        'firstname': 'Jan',
+        'lastname': 'Twardowski',
     }
 
     print(DATA)
-    # {'first_name': 'Jan', 'last_name': 'Twardowski'}
+    # {'firstname': 'Jan', 'lastname': 'Twardowski'}
 
-    del DATA['first_name']
+    del DATA['firstname']
 
     print(DATA)
-    # {'last_name': 'Twardowski'}
+    # {'lastname': 'Twardowski'}

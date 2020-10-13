@@ -4,17 +4,17 @@ from django.utils.translation import gettext_lazy as _
 
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
-    list_display = ['last_name', 'first_name', 'date_of_birth', 'column_age']
-    list_display_links = ['last_name']
-    search_fields = ['^last_name']
+    list_display = ['lastname', 'firstname', 'date_of_birth', 'column_age']
+    list_display_links = ['lastname']
+    search_fields = ['^lastname']
     list_filter = ['created', 'modified', AgeFilter]
     inlines = [AddressInline]
     exclude = ['reporter', 'created', 'updated']
     readonly_fields = []
-    ordering = ['last_name', 'first_name']
+    ordering = ['lastname', 'firstname']
     autocomplete_fields = ['friends']
     fieldsets = [
-        (_('Personal Data'), {'fields': ['last_name', 'first_name', 'date_of_birth', 'gender']}),
+        (_('Personal Data'), {'fields': ['lastname', 'firstname', 'date_of_birth', 'gender']}),
         (_('Additional Data'), {'fields': ['email', 'bio', 'image']}),
         (_('Relations'), {'fields': ['status', 'friends']})]
     radio_fields = {

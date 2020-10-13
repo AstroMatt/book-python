@@ -14,4 +14,4 @@ ALTER TABLE table_name MODIFY column_name datatype;
 ALTER TABLE table_name ADD PRIMARY KEY (id);
 
 -- MySQL / SQL Server / Oracle / MS Access:
-ALTER TABLE table_name ADD CONSTRAINT PK_contacts PRIMARY KEY (id, last_name);
+ALTER TABLE table_name ADD CONSTRAINT PK_contacts PRIMARY KEY (id, lastname);

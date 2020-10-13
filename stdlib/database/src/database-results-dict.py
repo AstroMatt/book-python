@@ -32,8 +32,8 @@ with sqlite3.connect(DATABASE) as db:
     for row in db.execute(SQL_SELECT):
         print(dict(row))
 
-# {'id': 1, 'pesel': 61041212345, 'first_name': 'José', 'last_name': 'Jiménez'}
-# {'id': 2, 'pesel': 61041212346, 'first_name': 'Jan', 'last_name': 'Twardowski'}
-# {'id': 3, 'pesel': 61041212347, 'first_name': 'Melissa', 'last_name': 'Lewis'}
-# {'id': 4, 'pesel': 61041212348, 'first_name': 'Alex', 'last_name': 'Vogel'}
-# {'id': 5, 'pesel': 61041212349, 'first_name': 'Ryan', 'last_name': 'Stone'}
+# {'id': 1, 'pesel': 61041212345, 'firstname': 'José', 'lastname': 'Jiménez'}
+# {'id': 2, 'pesel': 61041212346, 'firstname': 'Jan', 'lastname': 'Twardowski'}
+# {'id': 3, 'pesel': 61041212347, 'firstname': 'Melissa', 'lastname': 'Lewis'}
+# {'id': 4, 'pesel': 61041212348, 'firstname': 'Alex', 'lastname': 'Vogel'}
+# {'id': 5, 'pesel': 61041212349, 'firstname': 'Ryan', 'lastname': 'Stone'}

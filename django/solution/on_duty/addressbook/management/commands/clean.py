@@ -34,8 +34,8 @@ class Command(BaseCommand):
         return
 
         for p in Person.objects.all():
-            p.first_name = p.first_name.title()
-            p.last_name = p.last_name.title()
+            p.firstname = p.firstname.title()
+            p.lastname = p.lastname.title()
             p.save()
 
     def parse_line(self, line):

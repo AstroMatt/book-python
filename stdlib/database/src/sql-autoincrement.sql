@@ -1,12 +1,12 @@
 CREATE TABLE astronauts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    first_name TEXT,
-    last_name TEXT
+    firstname TEXT,
+    lastname TEXT
 );
 
 
 INSERT INTO astronauts VALUES ("José", "Jiménez");
-INSERT INTO astronauts (first_name, last_name) VALUES ("Max", "Peck");
+INSERT INTO astronauts (firstname, lastname) VALUES ("Max", "Peck");
 
 
 SELECT * FROM astronauts;

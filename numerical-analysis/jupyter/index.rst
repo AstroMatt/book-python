@@ -191,7 +191,7 @@ Tables
 
 .. code-block:: md
 
-    | id | first_name | last_name |    agency |
+    | id | firstname | lastname |    agency |
     |----|:-----------|:---------:|----------:|
     | 1  | José       |  Jiménez  |      NASA |
     | 2  | Иван       |  Иванович | Roscosmos |

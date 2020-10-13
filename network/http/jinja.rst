@@ -41,8 +41,8 @@ Example usage
 
             {% for user in users %}
                 <tr>
-                    <td>{{ user.first_name }}</td>
-                    <td>{{ user.last_name }}</td>
+                    <td>{{ user.firstname }}</td>
+                    <td>{{ user.lastname }}</td>
 
                     {% if user.role == 'admin' %}
                         <td>Administrator</td>

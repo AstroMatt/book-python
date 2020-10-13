@@ -34,8 +34,8 @@ Classes
 
         @dataclass
         class Astronaut:
-            first_name: str
-            last_name: str
+            firstname: str
+            lastname: str
             missions: tuple = ()
 
         @dataclass

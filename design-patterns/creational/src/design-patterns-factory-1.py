@@ -19,7 +19,7 @@ class GatewayLive(HttpClientInterface):
 
 class GatewayStub(HttpClientInterface):
     def GET(self):
-        return {'first_name': 'José', 'last_name': 'Jiménez'}
+        return {'firstname': 'José', 'lastname': 'Jiménez'}
 
     def POST(self):
         return {'status': 200, 'reason': 'OK'}

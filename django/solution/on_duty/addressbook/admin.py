@@ -48,9 +48,9 @@ class AddressInline(admin.TabularInline):
 
 @admin.register(Person)
 class PersonAdmin(admin.ModelAdmin, ExportCsvMixin):
-    list_display = ['first_name', 'last_name', 'phone', 'date_of_birth']
-    search_fields = ['^last_name']
-    ordering = ['last_name']
+    list_display = ['firstname', 'lastname', 'phone', 'date_of_birth']
+    search_fields = ['^lastname']
+    ordering = ['lastname']
     autocomplete_fields = ['friends']
     inlines = [AddressInline]
     readonly_fields = ['id']
@@ -61,7 +61,7 @@ class PersonAdmin(admin.ModelAdmin, ExportCsvMixin):
         readonly_fields = self.readonly_fields
 
         if not request.user.is_superuser:
-            return readonly_fields + ['first_name', 'last_name', 'phone', 'date_of_birth']
+            return readonly_fields + ['firstname', 'lastname', 'phone', 'date_of_birth']
         else:
             return readonly_fields
 

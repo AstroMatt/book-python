@@ -175,10 +175,10 @@ Skipping Values
 
     line = 'twardowski:x:1001:1001:Jan Twardowski:/home/twardowski:/bin/bash'
 
-    username, _, _, _, full_name, *_ = line.split(':')
+    username, _, _, _, fullname, *_ = line.split(':')
 
     username                # twardowski
-    full_name               # Jan Twardowski
+    fullname               # Jan Twardowski
 
 .. code-block:: python
 

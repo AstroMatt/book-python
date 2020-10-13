@@ -387,12 +387,12 @@ Get from ``dict``
 .. code-block:: python
 
     data = {
-        'first_name': 'Jan',
-        'last_name': 'Twardowski'
+        'firstname': 'Jan',
+        'lastname': 'Twardowski'
     }
 
-    f'{data["first_name"]}'         # 'Jan'
-    f'{data["last_name"]}'          # 'Twardowski'
+    f'{data["firstname"]}'         # 'Jan'
+    f'{data["lastname"]}'          # 'Twardowski'
 
 Get from ``sequence``
 ---------------------
@@ -589,18 +589,18 @@ Quick and easy debugging
 
     from pprint import pprint
 
-    data = [{'first_name': 'José', 'last_name': 'Jiménez'}, {'first_name': 'Mark', 'last_name': 'Watney'}, {'first_name': 'Иван', 'last_name': 'Иванович'}]
+    data = [{'firstname': 'José', 'lastname': 'Jiménez'}, {'firstname': 'Mark', 'lastname': 'Watney'}, {'firstname': 'Иван', 'lastname': 'Иванович'}]
 
     pprint(data)
-    # [{'first_name': 'José', 'last_name': 'Jiménez'},
-    #  {'first_name': 'Mark', 'last_name': 'Watney'},
-    #  {'first_name': 'Иван', 'last_name': 'Иванович'}]
+    # [{'firstname': 'José', 'lastname': 'Jiménez'},
+    #  {'firstname': 'Mark', 'lastname': 'Watney'},
+    #  {'firstname': 'Иван', 'lastname': 'Иванович'}]
 
 .. code-block:: python
 
     from pprint import pformat
 
-    data = [{'first_name': 'José', 'last_name': 'Jiménez'}, {'first_name': 'Mark', 'last_name': 'Watney'}, {'first_name': 'Иван', 'last_name': 'Иванович'}]
+    data = [{'firstname': 'José', 'lastname': 'Jiménez'}, {'firstname': 'Mark', 'lastname': 'Watney'}, {'firstname': 'Иван', 'lastname': 'Иванович'}]
 
     # returns formatted data
     my_string = pformat(data)

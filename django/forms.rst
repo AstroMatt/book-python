@@ -95,19 +95,19 @@ Model Forms
     from django.db import models
 
     class Person(models.Model):
-        first_name = models.CharField(verbose_name=_('First Name'), max_length=30)
-        last_name = models.CharField(verbose_name=_('Last Name'), max_length=30, db_index=True)
+        firstname = models.CharField(verbose_name=_('First Name'), max_length=30)
+        lastname = models.CharField(verbose_name=_('Last Name'), max_length=30, db_index=True)
         phone = models.IntegerField(verbose_name=_('Phone'), null=True, blank=True)
         date_of_birth = models.DateField(verbose_name=_('Date of birth'), null=True, blank=True)
         image = models.ImageField(verbose_name=_('Image'), upload_to='person/', null=True, blank=True)
 
         def __str__(self):
-            return f'{self.first_name} {self.last_name}'
+            return f'{self.firstname} {self.lastname}'
 
         class Meta:
             verbose_name = _('Person')
             verbose_name_plural = _('People')
-            unique_together = ['first_name', 'last_name']
+            unique_together = ['firstname', 'lastname']
 
 .. code-block:: python
 
@@ -118,15 +118,15 @@ Model Forms
     class PersonForm(forms.ModelForm):
         class Meta:
             model = Person
-            fields = ['first_name', 'last_name']
+            fields = ['firstname', 'lastname']
 
-        def clean_first_name(self):
-            first_name = self.cleaned_data['first_name']
+        def clean_firstname(self):
+            firstname = self.cleaned_data['firstname']
 
-            if 'x' in first_name:
-                raise forms.ValidationError("X in first_name")
+            if 'x' in firstname:
+                raise forms.ValidationError("X in firstname")
             else:
-                return first_name
+                return firstname
 
 
 .. code-block:: python
@@ -142,8 +142,8 @@ Model Forms
 
         def form_valid(self, form):
             Person.objects.create(
-                first_name=form.cleaned_data['first_name'],
-                last_name=form.cleaned_data['last_name'],
+                firstname=form.cleaned_data['firstname'],
+                lastname=form.cleaned_data['lastname'],
             )
             return super().form_valid(form)
 

@@ -28,8 +28,8 @@ class Migration(migrations.Migration):
             name='Person',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('first_name', models.CharField(max_length=30, verbose_name='First Name')),
-                ('last_name', models.CharField(max_length=30, verbose_name='First Name')),
+                ('firstname', models.CharField(max_length=30, verbose_name='First Name')),
+                ('lastname', models.CharField(max_length=30, verbose_name='First Name')),
                 ('phone', models.IntegerField(verbose_name='Phone')),
                 ('date_of_birth', models.DateField(verbose_name='Date of birth')),
                 ('image', models.ImageField(upload_to='person/', verbose_name='Image')),

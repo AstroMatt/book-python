@@ -120,8 +120,8 @@ Constants and Variables
 
         name = 'José Jiménez'
 
-        first_name = 'José'
-        last_name = 'Jiménez'
+        firstname = 'José'
+        lastname = 'Jiménez'
 
 * ``CONSTANT`` or ``CONSTANT_NAME``
 

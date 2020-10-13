@@ -190,8 +190,8 @@ Threaded server with JSON response
     class RequestHandler(BaseHTTPRequestHandler):
         def do_GET(self):
             data = {
-                'first_name': 'José',
-                'last_name': 'Jiménez'
+                'firstname': 'José',
+                'lastname': 'Jiménez'
             }
             response = bytes(json.dumps(data), 'UTF-8')
 
@@ -431,6 +431,6 @@ REST API
 
         ...
         "name": "django",
-        "full_name": "django/django",
+        "fullname": "django/django",
         ...
         # wyszukaj "commits_url"

@@ -19,8 +19,8 @@ Variables
 
     name = 'Mark Watney'
 
-    first_name = 'Mark'
-    last_name = 'Watney'
+    firstname = 'Mark'
+    lastname = 'Watney'
 
     firstname = 'Mark'
     lastname = 'Watney'

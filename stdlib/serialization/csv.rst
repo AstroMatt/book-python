@@ -424,7 +424,7 @@ Parsing Non-CSV Files
     with open(FILE) as file:
         result = csv.DictReader(
             file,
-            fieldnames=['username', 'password', 'uid', 'gid', 'full_name', 'home', 'shell'],
+            fieldnames=['username', 'password', 'uid', 'gid', 'fullname', 'home', 'shell'],
             delimiter=':',
             lineterminator='\n',
             quoting=csv.QUOTE_NONE)

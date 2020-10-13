@@ -196,14 +196,14 @@ Introspecting Objects
                 setattr(self, name, value)
 
         def __str__(self):
-            if hasattr(self, 'first_name'):
-                first_name = getattr(self, 'first_name')
+            if hasattr(self, 'firstname'):
+                firstname = getattr(self, 'firstname')
 
-            last_name = getattr(self, 'last_name', 'n/a')
-            return f'My name... {first_name} {last_name}'
+            lastname = getattr(self, 'lastname', 'n/a')
+            return f'My name... {firstname} {lastname}'
 
 
-     jose = Astronaut(first_name='José', last_name='Jiménez')
+     jose = Astronaut(firstname='José', lastname='Jiménez')
 
      print(jose)
      # My name... José Jiménez

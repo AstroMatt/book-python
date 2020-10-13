@@ -138,8 +138,8 @@ Variable declaration
 
 .. code-block:: python
 
-    first_name = 'José'
-    last_name = 'Jiménez'
+    firstname = 'José'
+    lastname = 'Jiménez'
 
 Constant declaration
 --------------------

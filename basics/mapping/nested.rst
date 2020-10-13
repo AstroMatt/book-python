@@ -69,9 +69,9 @@ Dict Values
 .. code-block:: python
 
     data = {
-        'commander': {'first_name': 'Jan', 'last_name': 'Twardowski'},
-        'medical_officer': {'first_name': 'José', 'last_name': 'Jiménez'},
-        'flight_engineer': {'first_name': 'Иван', 'last_name': 'Иванович'},
+        'commander': {'firstname': 'Jan', 'lastname': 'Twardowski'},
+        'medical_officer': {'firstname': 'José', 'lastname': 'Jiménez'},
+        'flight_engineer': {'firstname': 'Иван', 'lastname': 'Иванович'},
     }
 
 .. code-block:: python

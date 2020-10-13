@@ -102,7 +102,7 @@ POST Request with data
     import requests
 
 
-    data = {'first_name': 'José', 'last_name': 'Jiménez'}
+    data = {'firstname': 'José', 'lastname': 'Jiménez'}
 
     response = requests.post('https://httpbin.org/post', data=data)
     # <Response [200]>
@@ -146,8 +146,8 @@ POST Request with JSON
 
 
     data = {
-        'first_name': 'José',
-        'last_name': 'Jiménez',
+        'firstname': 'José',
+        'lastname': 'Jiménez',
     }
 
     response = requests.post('https://httpbin.org/post', data=json.dumps(data))
@@ -164,8 +164,8 @@ POST Request with JSON
 
 
     data = {
-        'first_name': 'José',
-        'last_name': 'Jiménez',
+        'firstname': 'José',
+        'lastname': 'Jiménez',
     }
 
     response = requests.post('https://httpbin.org/post', json=data)
@@ -320,6 +320,6 @@ REST API
 
         ...
         "name": "django",
-        "full_name": "django/django",
+        "fullname": "django/django",
         ...
         # wyszukaj "commits_url"

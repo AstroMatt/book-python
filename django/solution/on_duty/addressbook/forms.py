@@ -15,30 +15,30 @@ class ContactUsForm(forms.Form):
 class ContactCreateForm(forms.ModelForm):
     class Meta:
         model = Person
-        fields = ['first_name', 'last_name']
+        fields = ['firstname', 'lastname']
 
     def regex(self, pattern, text):
         if not re.match(pattern, text):
             raise ValidationError(_(f'Invalid character'))
 
-    def clean_first_name(self):
-        first_name = self.cleaned_data['first_name']
-        first_name = first_name.title()
+    def clean_firstname(self):
+        firstname = self.cleaned_data['firstname']
+        firstname = firstname.title()
 
         self.regex(
             pattern=r'^\w\w[\s\w-]*\w$',
-            text=first_name,
+            text=firstname,
         )
 
-        return first_name
+        return firstname
 
-    def clean_last_name(self):
-        last_name = self.cleaned_data['last_name']
-        last_name = last_name.title()
+    def clean_lastname(self):
+        lastname = self.cleaned_data['lastname']
+        lastname = lastname.title()
 
         self.regex(
             pattern=r'^\w\w[\s\w-]*\w$',
-            text=last_name,
+            text=lastname,
         )
 
-        return last_name
+        return lastname

@@ -79,7 +79,7 @@ Use cases
     import json
     from pprint import pprint
 
-    DANE = '{"contacts": [{"id": 1, "created": "2018-06-13T09:57:55.405Z", "modified": "2018-06-13T10:16:13.975Z", "reporter_id": 1, "is_deleted": false, "first_name": "José", "last_name": "Jiménez", "date_of_birth": "1969-07-24", "email": "jose.jimenez@nasa.gov", "bio": "", "image": "33950257662_d7561fb140_o.jpg", "status": null, "gender": null}, {"id": 2, "created": "2018-06-13T10:26:46.948Z", "modified": "2018-06-13T10:26:46.948Z", "reporter_id": 1, "is_deleted": false, "first_name": "Jan", "last_name": "Twardowski", "date_of_birth": null, "email": null, "bio": "", "image": "", "status": null, "gender": null}, {"id": 3, "created": "2018-06-13T10:26:55.820Z", "modified": "2018-06-13T10:26:55.820Z", "reporter_id": 1, "is_deleted": false, "first_name": "Иван", "last_name": "Иванович", "date_of_birth": null, "email": null, "bio": "", "image": "", "status": null, "gender": null}, {"id": 15, "created": "2018-06-13T14:34:42.353Z", "modified": "2018-06-13T14:34:43.638Z", "reporter_id": null, "is_deleted": false, "first_name": "Mark", "last_name": "Watney", "date_of_birth": null, "email": null, "bio": null, "image": "", "status": null, "gender": null}]}'
+    DANE = '{"contacts": [{"id": 1, "created": "2018-06-13T09:57:55.405Z", "modified": "2018-06-13T10:16:13.975Z", "reporter_id": 1, "is_deleted": false, "firstname": "José", "lastname": "Jiménez", "date_of_birth": "1969-07-24", "email": "jose.jimenez@nasa.gov", "bio": "", "image": "33950257662_d7561fb140_o.jpg", "status": null, "gender": null}, {"id": 2, "created": "2018-06-13T10:26:46.948Z", "modified": "2018-06-13T10:26:46.948Z", "reporter_id": 1, "is_deleted": false, "firstname": "Jan", "lastname": "Twardowski", "date_of_birth": null, "email": null, "bio": "", "image": "", "status": null, "gender": null}, {"id": 3, "created": "2018-06-13T10:26:55.820Z", "modified": "2018-06-13T10:26:55.820Z", "reporter_id": 1, "is_deleted": false, "firstname": "Иван", "lastname": "Иванович", "date_of_birth": null, "email": null, "bio": "", "image": "", "status": null, "gender": null}, {"id": 15, "created": "2018-06-13T14:34:42.353Z", "modified": "2018-06-13T14:34:43.638Z", "reporter_id": null, "is_deleted": false, "firstname": "Mark", "lastname": "Watney", "date_of_birth": null, "email": null, "bio": null, "image": "", "status": null, "gender": null}]}'
 
     dane = json.loads(DANE)
     pprint(dane)
@@ -96,8 +96,8 @@ Use cases
     pprint(globals())
 
     def hello(a, b, text='My name...'):
-        first_name = 'José'
-        last_name = 'Jiménez'
+        firstname = 'José'
+        lastname = 'Jiménez'
         pprint(locals())
         return locals()
 
@@ -136,8 +136,8 @@ Use cases
 .. code-block:: python
 
     def hello(a, b, text='My name...'):
-        first_name = 'José'
-        last_name = 'Jiménez'
+        firstname = 'José'
+        lastname = 'Jiménez'
         my_vars = locals()
         del my_vars['text']
         return my_vars

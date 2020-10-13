@@ -71,16 +71,19 @@ Example 2
     :caption: ``class``
 
     class Astronaut:
-        def __init__(self, first_name: str, last_name: str, agency: str = 'POLSA'):
-            self.first_name = first_name
-            self.last_name = last_name
+        firstname: str
+        lastname: str
+
+        def __init__(self, firstname: str, lastname: str, agency: str = 'POLSA'):
+            self.firstname = firstname
+            self.lastname = lastname
             self.agency = agency
 
 
     twardowski = Astronaut('Jan', 'Twardowski')
 
-    print(twardowski.first_name)   # Jan
-    print(twardowski.last_name)    # Twardowski
+    print(twardowski.firstname)   # Jan
+    print(twardowski.lastname)    # Twardowski
     print(twardowski.agency)       # POLSA
 
 .. code-block:: python
@@ -91,15 +94,15 @@ Example 2
 
     @dataclass
     class Astronaut:
-        first_name: str
-        last_name: str
+        firstname: str
+        lastname: str
         agency: str = 'POLSA'
 
 
     twardowski = Astronaut('Jan', 'Twardowski')
 
-    print(twardowski.first_name)   # Jan
-    print(twardowski.last_name)    # Twardowski
+    print(twardowski.firstname)   # Jan
+    print(twardowski.lastname)    # Twardowski
     print(twardowski.agency)       # POLSA
 
 Example 3
@@ -107,7 +110,24 @@ Example 3
 .. code-block:: python
     :caption: ``class``
 
+    from datetime import datetime
+
+
     class StarWarsMovie:
+        title: str
+        episode_id: int
+        opening_crawl: str
+        director: str
+        producer: str
+        release_date: datetime
+        characters: tuple[str]
+        planets: tuple[str]
+        starships: tuple[str]
+        vehicles: tuple[str]
+        species: tuple[str]
+        created: datetime
+        edited: datetime
+        url: str
 
         def __init__(self, title: str, episode_id: int, opening_crawl: str,
                      director: str, producer: str, release_date: datetime,
@@ -134,6 +154,7 @@ Example 3
     :caption: ``dataclass``
 
     from dataclasses import dataclass
+    from datetime import datetime
 
 
     @dataclass
@@ -352,8 +373,8 @@ eq
 
     @dataclass(eq=True)
     class Astronaut:
-        first_name: str
-        last_name: str
+        firstname: str
+        lastname: str
 
 
     astro1 = Astronaut('Mark', 'Watney')
@@ -375,8 +396,8 @@ eq
 
     @dataclass(eq=False)
     class Astronaut:
-        first_name: str
-        last_name: str
+        firstname: str
+        lastname: str
 
 
     astro1 = Astronaut('Mark', 'Watney')
@@ -399,8 +420,8 @@ other flags
 
     @dataclass(init=True, repr=True, eq=True, order=False, unsafe_hash=False, frozen=False)
     class Astronaut:
-        first_name: str
-        last_name: str
+        firstname: str
+        lastname: str
 
     astro1 = Astronaut('Mark', 'Watney')
     astro2 = Astronaut('Mark', 'Watney')
@@ -541,24 +562,24 @@ Address Book (dataclass)
         :caption: Data for AddressBook
 
         [
-            {"first_name": "Jan", "last_name": "Twardowski", "addresses": [
+            {"firstname": "Jan", "lastname": "Twardowski", "addresses": [
                 {"street": "Kamienica Pod św. Janem Kapistranem", "city": "Kraków", "post_code": "31-008", "region": "Małopolskie", "country": "Poland"}]},
 
-            {"first_name": "José", "last_name": "Jiménez", "addresses": [
+            {"firstname": "José", "lastname": "Jiménez", "addresses": [
                 {"street": "2101 E NASA Pkwy", "city": "Houston", "post_code": 77058, "region": "Texas", "country": "USA"},
                 {"street": "", "city": "Kennedy Space Center", "post_code": 32899, "region": "Florida", "country": "USA"}]},
 
-            {"first_name": "Mark", "last_name": "Watney", "addresses": [
+            {"firstname": "Mark", "lastname": "Watney", "addresses": [
                 {"street": "4800 Oak Grove Dr", "city": "Pasadena", "post_code": 91109, "region": "California", "country": "USA"},
                 {"street": "2825 E Ave P", "city": "Palmdale", "post_code": 93550, "region": "California", "country": "USA"}]},
 
-            {"first_name": "Иван", "last_name": "Иванович", "addresses": [
+            {"firstname": "Иван", "lastname": "Иванович", "addresses": [
                 {"street": "", "city": "Космодро́м Байкону́р", "post_code": "", "region": "Кызылординская область", "country": "Қазақстан"},
                 {"street": "", "city": "Звёздный городо́к", "post_code": 141160, "region": "Московская область", "country": "Россия"}]},
 
-            {"first_name": "Melissa", "last_name": "Lewis", "addresses": []},
+            {"firstname": "Melissa", "lastname": "Lewis", "addresses": []},
 
-            {"first_name": "Alex", "last_name": "Vogel", "addresses": [
+            {"firstname": "Alex", "lastname": "Vogel", "addresses": [
                 {"street": "Linder Hoehe", "city": "Köln", "post_code": 51147, "region": "North Rhine-Westphalia", "country": "Germany"}]}
         ]
 
@@ -598,4 +619,4 @@ Deserialize data from API
 :Input:
     .. code-block:: text
 
-        [{"model":"authorization.user","pk":1,"fields":{"password":"pbkdf2_sha256$120000$gvEBNiCeTrYa0$5C+NiCeTrYsha1PHogqvXNiCeTrY0CRSLYYAA90=","last_login":"1970-01-01T00:00:00.000Z","is_superuser":false,"username":"commander","first_name":"Иван","last_name":"Иванович","email":"","is_staff":true,"is_active":true,"date_joined":"1970-01-01T00:00:00.000Z","groups":[1],"user_permissions":[{"eclss":["add","modify","view"]},{"communication":["add","modify","view"]},{"medical":["add","modify","view"]},{"science":["add","modify","view"]}]}},{"model":"authorization.user","pk":2,"fields":{"password":"pbkdf2_sha256$120000$eUNiCeTrYHoh$X32NiCeTrYZOWFdBcVT1l3NiCeTrY4WJVhr+cKg=","last_login":null,"is_superuser":false,"username":"executive-officer","first_name":"José","last_name":"Jiménez","email":"","is_staff":true,"is_active":true,"date_joined":"1970-01-01T00:00:00.000Z","groups":[1],"user_permissions":[{"eclss":["add","modify","view"]},{"communication":["add","modify","view"]},{"medical":["add","modify","view"]},{"science":["add","modify","view"]}]}},{"model":"authorization.user","pk":3,"fields":{"password":"pbkdf2_sha256$120000$3G0RNiCeTrYlaV1$mVb62WNiCeTrYQ9aYzTsSh74NiCeTrY2+c9/M=","last_login":"1970-01-01T00:00:00.000Z","is_superuser":false,"username":"crew-medical-officer","first_name":"Melissa","last_name":"Lewis","email":"","is_staff":true,"is_active":true,"date_joined":"1970-01-01T00:00:00.000Z","groups":[1],"user_permissions":[{"communication":["add","view"]},{"medical":["add","modify","view"]},{"science":["add","modify","view"]}]}},{"model":"authorization.user","pk":4,"fields":{"password":"pbkdf2_sha256$120000$QmSNiCeTrYBv$Nt1jhVyacNiCeTrYSuKzJ//WdyjlNiCeTrYYZ3sB1r0g=","last_login":null,"is_superuser":false,"username":"science-data-officer","first_name":"Mark","last_name":"Watney","email":"","is_staff":true,"is_active":true,"date_joined":"1970-01-01T00:00:00.000Z","groups":[1],"user_permissions":[{"communication":["add","view"]},{"science":["add","modify","view"]}]}},{"model":"authorization.user","pk":5,"fields":{"password":"pbkdf2_sha256$120000$bxS4dNiCeTrY1n$Y8NiCeTrYRMa5bNJhTFjNiCeTrYp5swZni2RQbs=","last_login":null,"is_superuser":false,"username":"communication-officer","first_name":"Jan","last_name":"Twardowski","email":"","is_staff":true,"is_active":true,"date_joined":"1970-01-01T00:00:00.000Z","groups":[1],"user_permissions":[{"communication":["add","modify","view"]},{"science":["add","modify","view"]}]}},{"model":"authorization.user","pk":6,"fields":{"password":"pbkdf2_sha256$120000$aXNiCeTrY$UfCJrBh/qhXohNiCeTrYH8nsdANiCeTrYnShs9M/c=","last_login":null,"is_superuser":false,"username":"eclss-officer","first_name":"Harry","last_name":"Stamper","email":"","is_staff":true,"is_active":true,"date_joined":"1970-01-01T00:00:00.000Z","groups":[1],"user_permissions":[{"communication":["add","view"]},{"eclss":["add","modify","view"]},{"science":["add","modify","view"]}]}}]
+        [{"model":"authorization.user","pk":1,"fields":{"password":"pbkdf2_sha256$120000$gvEBNiCeTrYa0$5C+NiCeTrYsha1PHogqvXNiCeTrY0CRSLYYAA90=","last_login":"1970-01-01T00:00:00.000Z","is_superuser":false,"username":"commander","firstname":"Иван","lastname":"Иванович","email":"","is_staff":true,"is_active":true,"date_joined":"1970-01-01T00:00:00.000Z","groups":[1],"user_permissions":[{"eclss":["add","modify","view"]},{"communication":["add","modify","view"]},{"medical":["add","modify","view"]},{"science":["add","modify","view"]}]}},{"model":"authorization.user","pk":2,"fields":{"password":"pbkdf2_sha256$120000$eUNiCeTrYHoh$X32NiCeTrYZOWFdBcVT1l3NiCeTrY4WJVhr+cKg=","last_login":null,"is_superuser":false,"username":"executive-officer","firstname":"José","lastname":"Jiménez","email":"","is_staff":true,"is_active":true,"date_joined":"1970-01-01T00:00:00.000Z","groups":[1],"user_permissions":[{"eclss":["add","modify","view"]},{"communication":["add","modify","view"]},{"medical":["add","modify","view"]},{"science":["add","modify","view"]}]}},{"model":"authorization.user","pk":3,"fields":{"password":"pbkdf2_sha256$120000$3G0RNiCeTrYlaV1$mVb62WNiCeTrYQ9aYzTsSh74NiCeTrY2+c9/M=","last_login":"1970-01-01T00:00:00.000Z","is_superuser":false,"username":"crew-medical-officer","firstname":"Melissa","lastname":"Lewis","email":"","is_staff":true,"is_active":true,"date_joined":"1970-01-01T00:00:00.000Z","groups":[1],"user_permissions":[{"communication":["add","view"]},{"medical":["add","modify","view"]},{"science":["add","modify","view"]}]}},{"model":"authorization.user","pk":4,"fields":{"password":"pbkdf2_sha256$120000$QmSNiCeTrYBv$Nt1jhVyacNiCeTrYSuKzJ//WdyjlNiCeTrYYZ3sB1r0g=","last_login":null,"is_superuser":false,"username":"science-data-officer","firstname":"Mark","lastname":"Watney","email":"","is_staff":true,"is_active":true,"date_joined":"1970-01-01T00:00:00.000Z","groups":[1],"user_permissions":[{"communication":["add","view"]},{"science":["add","modify","view"]}]}},{"model":"authorization.user","pk":5,"fields":{"password":"pbkdf2_sha256$120000$bxS4dNiCeTrY1n$Y8NiCeTrYRMa5bNJhTFjNiCeTrYp5swZni2RQbs=","last_login":null,"is_superuser":false,"username":"communication-officer","firstname":"Jan","lastname":"Twardowski","email":"","is_staff":true,"is_active":true,"date_joined":"1970-01-01T00:00:00.000Z","groups":[1],"user_permissions":[{"communication":["add","modify","view"]},{"science":["add","modify","view"]}]}},{"model":"authorization.user","pk":6,"fields":{"password":"pbkdf2_sha256$120000$aXNiCeTrY$UfCJrBh/qhXohNiCeTrYH8nsdANiCeTrYnShs9M/c=","last_login":null,"is_superuser":false,"username":"eclss-officer","firstname":"Harry","lastname":"Stamper","email":"","is_staff":true,"is_active":true,"date_joined":"1970-01-01T00:00:00.000Z","groups":[1],"user_permissions":[{"communication":["add","view"]},{"eclss":["add","modify","view"]},{"science":["add","modify","view"]}]}}]

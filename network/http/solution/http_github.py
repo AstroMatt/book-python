@@ -38,7 +38,7 @@ def GET(url):
 
 
 for repository in GET('/orgs/django/repos'):
-    if repository['full_name'] == 'django/django':
+    if repository['fullname'] == 'django/django':
         break
 
 

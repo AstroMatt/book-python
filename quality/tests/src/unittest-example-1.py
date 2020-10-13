@@ -7,8 +7,8 @@ from unittest import TestCase
 
 @dataclass
 class User:
-    first_name: str
-    last_name: str
+    firstname: str
+    lastname: str
     date_of_birth: Optional[datetime] = None
     permission: list = ()
 
@@ -25,7 +25,7 @@ class User:
         self.permission.remove(permission)
 
     def __str__(self):
-        return f'User(first_name="{self.first_name}", last_name="{self.last_name}")'
+        return f'User(firstname="{self.firstname}", lastname="{self.lastname}")'
 
 
 class UserTest(TestCase):
@@ -40,15 +40,15 @@ class UserTest(TestCase):
 
     def setUp(self) -> None:
         now = datetime.now(tz=timezone.utc)
-        self.user = User(first_name='Jan', last_name='Twardowski', date_of_birth=now)
+        self.user = User(firstname='Jan', lastname='Twardowski', date_of_birth=now)
 
     def tearDown(self) -> None:
         pass
 
     def test_create_user(self):
-        user = User(first_name='Jan', last_name='Twardowski')
-        self.assertEqual(user.first_name, 'Jan')
-        self.assertEqual(user.last_name, 'Twardowski')
+        user = User(firstname='Jan', lastname='Twardowski')
+        self.assertEqual(user.firstname, 'Jan')
+        self.assertEqual(user.lastname, 'Twardowski')
 
     def test_permission_add(self):
         self.user.add_permission('read')
@@ -65,8 +65,8 @@ class UserTest(TestCase):
     def test_date_of_birth_not_in_utc(self):
         with self.assertRaises(ValueError):
             now = datetime.now()
-            user = User(first_name='Jan', last_name='Twardowski', date_of_birth=now)
+            user = User(firstname='Jan', lastname='Twardowski', date_of_birth=now)
             self.assertEqual(user.date_of_birth.tzinfo, timezone.utc)
 
     def test_str(self):
-        self.assertEqual(str(self.user), 'User(first_name="Jan", last_name="Twardowski")')
+        self.assertEqual(str(self.user), 'User(firstname="Jan", lastname="Twardowski")')
