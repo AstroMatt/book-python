@@ -1,4 +1,4 @@
-FILE = r'../data/etc-hosts.txt'
+FILE = r'../_data/etc-hosts.txt'
 result = []
 
 

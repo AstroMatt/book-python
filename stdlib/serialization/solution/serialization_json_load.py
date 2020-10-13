@@ -1,7 +1,7 @@
 import json
 from pprint import pprint
 
-FILE = r'../data/iris.json'
+FILE = r'../../_data/iris.json'
 result = list()
 
 

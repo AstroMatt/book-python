@@ -1,6 +1,6 @@
 from csv import DictWriter, QUOTE_ALL
 
-FILENAME = r'../../_tmp/dictwriter_variable.csv'
+FILE = r'/tmp/_temporary.csv'
 DATA = [
     {'Sepal length': 5.1, 'Sepal width': 3.5, 'Species': 'setosa'},
     {'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
@@ -17,7 +17,7 @@ for row in DATA:
 
 # fieldnames == {'Sepal length', 'Sepal width', 'Petal length', 'Species', 'Petal width'}
 
-with open(FILENAME, mode='w') as file:
+with open(FILE, mode='w') as file:
     result = DictWriter(
         f=file,
         fieldnames=sorted(fieldnames),

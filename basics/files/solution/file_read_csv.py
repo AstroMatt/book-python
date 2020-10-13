@@ -1,4 +1,4 @@
-FILE = r'/tmp/iris.csv'
+FILE = r'/tmp/_temporary.csv'
 features = []
 label = []
 

@@ -1,4 +1,4 @@
-FILE = r'/tmp/file_write_hello.txt'
+FILE = r'/tmp/_temporary.txt'
 DATA = 'hello world'
 result = DATA + '\n'
 

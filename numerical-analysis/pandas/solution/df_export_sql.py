@@ -1,8 +1,8 @@
 import sqlite3
 import pandas as pd
 
-DATA = 'https://www.worldspaceflight.com/bios/eva/eva4.php'
-FILE = 'astro-eva4.sqlite3'
+DATA = r'https://www.worldspaceflight.com/bios/eva/eva4.php'
+FILE = r'/tmp/_temporary.sqlite3'
 
 
 with sqlite3.connect(FILE) as db:

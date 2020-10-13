@@ -308,9 +308,9 @@ Workflow
     import pandas as pd
 
 
-    FILE = 'https://raw.githubusercontent.com/scikit-learn/scikit-learn/master/sklearn/datasets/data/iris.csv'
+    URL = 'https://raw.githubusercontent.com/scikit-learn/scikit-learn/master/sklearn/datasets/data/iris.csv'
 
-    df = pd.read_csv(FILE, skiprows=1)
+    df = pd.read_csv(URL, skiprows=1)
 
     df.head(5)
     #      5.1  3.5  1.4  0.2  0

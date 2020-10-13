@@ -1,6 +1,6 @@
 import pandas as pd
 
-DATA = '../data/astro-dates.csv'
+DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/astro-dates.csv'
 
 MONTHS_PLEN = {'styczeń': 'January',
                'luty': 'February',

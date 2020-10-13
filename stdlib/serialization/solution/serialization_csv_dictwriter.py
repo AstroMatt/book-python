@@ -1,7 +1,7 @@
 from csv import DictWriter, QUOTE_ALL
 
 
-FILE = r'/tmp/serialization_csv_dictwriter.csv'
+FILE = r'/tmp/_temporary.csv'
 DATA = [
     {'firstname': 'Jan', 'lastname': 'Twardowski'},
     {'firstname': 'José', 'lastname': 'Jiménez'},

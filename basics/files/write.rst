@@ -137,7 +137,7 @@ File Write Str
 :Input:
     .. code-block:: python
 
-        FILE = r'file_write_hello.txt'
+        FILE = r'_temporary.txt'
         DATA = 'hello'
 
 File Write Multiline
@@ -164,7 +164,7 @@ File Write Multiline
 :Input:
     .. code-block:: python
 
-        FILE = r'file_write_multiline.txt'
+        FILE = r'_temporary.txt'
         DATA = """
         127.0.0.1       localhost
         10.13.37.1      nasa.gov esa.int roscosmos.ru
@@ -196,7 +196,7 @@ File Write List
 :Input:
     .. code-block:: python
 
-        FILE = r'file_write_newline.txt'
+        FILE = r'_temporary.txt'
         DATA = ['hello', 'world']
 
 File Write Non-Str
@@ -223,7 +223,7 @@ File Write Non-Str
 :Input:
     .. code-block:: python
 
-        FILE = r'file_write_nonstr.txt'
+        FILE = r'_temporary.txt'
         DATA = (5.1, 3.5, 1.4, 0.2, 'setosa')
 
 File Write Iris
@@ -250,7 +250,7 @@ File Write Iris
 :Input:
     .. code-block:: python
 
-        FILE = r'file_write_iris.txt'
+        FILE = r'_temporary.txt'
         DATA = [
             (5.8, 2.7, 5.1, 1.9, 'virginica'),
             (5.1, 3.5, 1.4, 0.2, 'setosa'),
@@ -288,7 +288,7 @@ File Write CSV
 :Input:
     .. code-block:: python
 
-        FILE = r'file_write_csv.csv'
+        FILE = r'_temporary.csv'
         DATA = [
             ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
             (5.8, 2.7, 5.1, 1.9, 'virginica'),

@@ -166,7 +166,7 @@ Write JSON File
     import json
 
 
-    FILE = r'/tmp/json-dump.json'
+    FILE = r'/tmp/_temporary.json'
     DATA = {
         'firstname': 'Jan',
         'lastname': 'Twardowski'}
@@ -188,7 +188,7 @@ Read JSON File
     import json
 
 
-    FILE = r'/tmp/json-loads.json'
+    FILE = r'/tmp/_temporary.json'
 
 
     with open(FILE) as file:

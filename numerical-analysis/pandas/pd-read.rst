@@ -196,7 +196,7 @@ Read SQL
     import requests
 
     DATABASE = r'/tmp/astro-timeline.sqlite3'
-    DATA = r'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/sqlite3/astro-timeline.sqlite3'
+    URL = r'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/sqlite3/astro-timeline.sqlite3'
     SQL = r'SELECT * FROM logs'
 
     with open(DATABASE, mode='wb') as db:

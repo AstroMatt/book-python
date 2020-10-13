@@ -25,7 +25,7 @@ txt = MIMEText(EMAIL_BODY)
 msg.attach(txt)
 
 
-FILE = '/path/to/image/file.png'
+FILE = r'/path/to/image/file.png'
 
 with open(FILE, mode='rb') as file:
     img = MIMEImage(file.read())

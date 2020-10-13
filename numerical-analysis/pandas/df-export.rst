@@ -69,7 +69,7 @@ DataFrame Export CSV
     .. code-block:: python
 
         DATA = 'https://www.worldspaceflight.com/bios/eva/eva.php'
-        FILE = 'astro-eva1.csv'
+        FILE = r'_temporary.csv'
 
 DataFrame Export JSON
 ---------------------
@@ -93,8 +93,8 @@ DataFrame Export JSON
 :Input:
     .. code-block:: python
 
-        DATA = 'https://www.worldspaceflight.com/bios/eva/eva2.php'
-        FILE = 'astro-eva2.json'
+        DATA = r'https://www.worldspaceflight.com/bios/eva/eva2.php'
+        FILE = r'_temporary.json'
 
 DataFrame Export Pickle
 -----------------------
@@ -118,8 +118,8 @@ DataFrame Export Pickle
 :Input:
     .. code-block:: python
 
-        DATA = 'https://www.worldspaceflight.com/bios/eva/eva3.php'
-        FILE = 'astro-eva3.pkl'
+        DATA = r'https://www.worldspaceflight.com/bios/eva/eva3.php'
+        FILE = r'_temporary.pkl'
 
 DataFrame Export Pickle
 -----------------------
@@ -145,6 +145,6 @@ DataFrame Export Pickle
 :Input:
     .. code-block:: python
 
-        DATA = 'https://www.worldspaceflight.com/bios/eva/eva4.php'
-        FILE = 'astro-eva4.sqlite3'
+        DATA = r'https://www.worldspaceflight.com/bios/eva/eva4.php'
+        FILE = r'_temporary.sqlite3'
 

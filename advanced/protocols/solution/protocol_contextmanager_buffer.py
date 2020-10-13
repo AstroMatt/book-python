@@ -18,7 +18,7 @@
 
 from typing import List
 
-FILE = r'/tmp/context-manager.txt'
+FILE = r'/tmp/_temporary.json'
 
 
 class BufferedFile:

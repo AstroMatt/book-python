@@ -1,4 +1,4 @@
-FILE = r'file_write_hello.txt'
+FILE = r'/tmp/_temporary.txt'
 DATA = 'sepal_length\nsepal_width\npetal_length\npetal_width\nspecies\n'
 
 with open(FILE, mode='wt') as file:

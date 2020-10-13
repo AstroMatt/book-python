@@ -1,4 +1,4 @@
-FILE = r'/tmp/file_write_multiline.txt'
+FILE = r'/tmp/_temporary.txt'
 DATA = """
 127.0.0.1       localhost
 10.13.37.1      nasa.gov esa.int roscosmos.ru

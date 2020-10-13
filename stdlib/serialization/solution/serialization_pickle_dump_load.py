@@ -1,6 +1,6 @@
 import pickle
 
-FILE = r'/tmp/serialization_pickle_dump_load.pkl'
+FILE = r'/tmp/_temporary.pkl'
 
 class Astronaut:
     def __init__(self, name, missions=()):
@@ -31,11 +31,11 @@ CREW = [
     Astronaut('Melissa Lewis'),
 ]
 
-with open(r'/tmp/astronauts.pkl', mode='wb') as file:
+with open(FILE, mode='wb') as file:
     pickle.dump(CREW, file)
 
 
-with open(r'/tmp/astronauts.pkl', mode='rb') as file:
+with open(FILE, mode='rb') as file:
     result = pickle.load(file)
 
 

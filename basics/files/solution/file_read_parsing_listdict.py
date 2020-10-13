@@ -1,4 +1,4 @@
-FILE = r'/tmp/hosts-advanced.txt'
+FILE = r'/tmp/_temporary.txt'
 DATA = """
 ##
 # ``/etc/hosts`` structure:

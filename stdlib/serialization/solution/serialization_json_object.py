@@ -2,7 +2,7 @@ import json
 from dataclasses import dataclass
 from pprint import pprint
 
-FILE = '../data/iris.json'
+FILE = r'../../../_data/iris.json'
 
 @dataclass
 class Iris:

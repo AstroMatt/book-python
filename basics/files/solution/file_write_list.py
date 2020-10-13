@@ -1,4 +1,4 @@
-FILE = r'/tmp/file_write_newline.txt'
+FILE = r'/tmp/_temporary.txt'
 DATA = ['hello', 'world']
 result = '\n'.join(DATA) + '\n'
 

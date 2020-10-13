@@ -198,7 +198,7 @@ Reader Object
 
     import csv
 
-    FILE = r'/tmp/csv-reader.csv'
+    FILE = r'/tmp/_temporary.csv'
     # sepal_length,sepal_width,petal_length,petal_width,species
     # 5.4,3.9,1.3,0.4,setosa
     # 5.9,3.0,5.1,1.8,virginica
@@ -224,7 +224,7 @@ Writer Object
 
     import csv
 
-    FILE = r'/tmp/csv-writer.csv'
+    FILE = r'/tmp/_temporary.csv'
 
     DATA = [
         ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
@@ -250,7 +250,7 @@ DictReader
 
     import csv
 
-    FILE = r'/tmp/csv-dictreader.csv'
+    FILE = r'/tmp/_temporary.csv'
     # sepal_length,sepal_width,petal_length,petal_width,species
     # 5.4,3.9,1.3,0.4,setosa
     # 5.9,3.0,5.1,1.8,virginica
@@ -272,7 +272,7 @@ DictReader
 
     import csv
 
-    FILE = r'/tmp/csv-dictreader.csv'
+    FILE = r'/tmp/_temporary.csv'
     # 'sepal_length';'sepal_width';'petal_length';'petal_width';'species'
     # '5,4';'3,9';'1,3';'0,4';'setosa'
     # '5,9';'3,0';'5,1';'1,8';'virginica'
@@ -310,7 +310,7 @@ DictReader
 
     import csv
 
-    FILE = r'/tmp/csv-dictreader.csv'
+    FILE = r'/tmp/_temporary.csv'
     # sepal_length,sepal_width,petal_length,petal_width,species
     # 5.4,3.9,1.3,0.4,setosa
     # 5.9,3.0,5.1,1.8,virginica
@@ -346,7 +346,7 @@ DictWriter
 
     import csv
 
-    FILE = r'/tmp/csv-dictwriter.csv'
+    FILE = r'/tmp/_temporary.csv'
 
     DATA = [
         {'Sepal Length': 5.4, 'Sepal Width': 3.9, 'Petal Length': 1.3, 'Petal Width': 0.4, 'Species': 'setosa'},
@@ -373,7 +373,7 @@ DictWriter
 
     import csv
 
-    FILE = r'/tmp/csv-dictwriter.csv'
+    FILE = r'/tmp/_temporary.csv'
 
     DATA = [
         {'sepal_length': 5.4, 'sepal_width': 3.9, 'petal_length': 1.3, 'petal_width': 0.4, 'species': 'setosa'},
@@ -415,7 +415,7 @@ Parsing Non-CSV Files
     import csv
 
 
-    FILE = r'/tmp/etc-passwd.txt'
+    FILE = r'/tmp/_temporary.txt'
     # root:x:0:0:root:/root:/bin/bash
     # watney:x:1000:1000:Mark Watney:/home/watney:/bin/bash
     # jimenez:x:1001:1001:José Jiménez:/home/jimenez:/bin/bash
@@ -443,7 +443,7 @@ Parsing Non-CSV Files
     import csv
 
 
-    FILE = r'/tmp/sonar-project.properties'
+    FILE = r'/tmp/_temporary.properties'
     # sonar.projectKey=habitatOS
     # sonar.projectName=habitatOS
     # sonar.language=py

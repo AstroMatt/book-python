@@ -1,6 +1,6 @@
 import csv
 
-FILE = r'/tmp/serialization_csv_objects.txt'
+FILE = r'/tmp/_temporary.txt'
 
 
 class Iris:

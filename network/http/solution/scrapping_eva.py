@@ -6,8 +6,8 @@ import requests
 
 
 URL = 'https://www.worldspaceflight.com/bios/eva/eva.php'
-FILE_HTML = 'eva.html'
-FILE_CSV = 'eva.csv'
+FILE_HTML = r'eva.html'
+FILE_CSV = r'eva.csv'
 
 
 # When you dump page for the first time, you can test parsing on local file

@@ -207,7 +207,7 @@ File Read Str
 :Input:
     .. code-block:: python
 
-        FILE = r'file_write_hello.txt'
+        FILE = r'_temporary.txt'
         DATA = 'hello world'
 
 :Output:
@@ -242,7 +242,7 @@ File Read Multiline
 :Input:
     .. code-block:: python
 
-        FILE = r'file_write_hello.txt'
+        FILE = r'_temporary.txt'
         DATA = 'sepal_length\nsepal_width\npetal_length\npetal_width\nspecies\n'
 
 :Output:
@@ -297,7 +297,7 @@ File Read CSV
 :Input:
     .. code-block:: python
 
-        FILE = r'file_read_csv.csv'
+        FILE = r'_temporary.csv'
         DATA = """sepal_length,sepal_width,petal_length,petal_width,species
         5.4,3.9,1.3,0.4,setosa
         5.9,3.0,5.1,1.8,virginica
@@ -382,7 +382,7 @@ File Read Parsing Dict
 :Input:
     .. code-block:: python
 
-        FILE = r'file_read_parsing_dict.txt'
+        FILE = r'_temporary.txt'
         DATA = """
         127.0.0.1       localhost
         10.13.37.1      nasa.gov esa.int roscosmos.ru

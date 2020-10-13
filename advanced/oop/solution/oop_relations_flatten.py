@@ -7,7 +7,7 @@
 
 import csv
 
-FILE = r'/tmp/oop-relations.csv'
+FILE = r'/tmp/_temporary.json'
 
 
 class Astronaut:
