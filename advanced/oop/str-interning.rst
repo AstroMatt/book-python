@@ -20,7 +20,7 @@ Rationale
 Example
 =======
 .. code-block:: python
-    :caption: CPython 3.7.4
+    :caption: CPython 3.7, 3.8, 3.9
 
     ('a' * 4096) is ('a' * 4096)
     # True
