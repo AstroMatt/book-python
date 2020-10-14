@@ -231,6 +231,9 @@ OOP Relations Flatten
 :Input:
     .. code-block:: python
 
+        import csv
+
+
         class Astronaut:
             def __init__(self, firstname, lastname, missions=()):
                 self.firstname = firstname
@@ -243,6 +246,7 @@ OOP Relations Flatten
                 self.year = year
                 self.name = name
 
+        FILE = r'_temporary.csv'
 
         DATA = [
             Astronaut('Jan', 'Twardowski', missions=[
@@ -259,6 +263,21 @@ OOP Relations Flatten
 
             Astronaut('Melissa', 'Lewis'),
         ]
+
+        result = []
+
+
+        with open(FILE, mode='w') as file:
+            writer = csv.DictWriter(
+                f=file,
+                fieldnames=sorted(result[0].keys()),
+                delimiter=',',
+                quotechar='"',
+                quoting=csv.QUOTE_ALL,
+                lineterminator='\n')
+
+            writer.writeheader()
+            writer.writerows(result)
 
 
 :Output:

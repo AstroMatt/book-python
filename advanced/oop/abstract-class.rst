@@ -182,14 +182,14 @@ Use Cases
 Assignments
 ===========
 
-OOP Abstract Iris
------------------
-* Assignment name: OOP Abstract Iris
+OOP Abstract Define
+-------------------
+* Assignment name: OOP Abstract Define
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/oop_abstract_iris.py`
+* Solution: :download:`solution/oop_abstract_define.py`
 
 :English:
     #. Create abstract class ``Iris``
@@ -218,3 +218,46 @@ OOP Abstract Iris
 
         >>> setosa = Setosa()
         """
+
+OOP Abstract Interface
+----------------------
+* Assignment name: OOP Abstract Interface
+* Last update: 2020-10-14
+* Complexity level: easy
+* Lines of code to write: 25 lines
+* Estimated time of completion: 13 min
+* Solution: :download:`solution/oop_interface_interface.py`
+
+:English:
+    #. Define interface ``IrisInterface``
+    #. Constructor parameters: ``sepal_length, sepal_width, petal_length, petal_width``
+    #. Define methods ``sum()``, ``len()``, ``mean()`` in ``IrisInterface``
+    #. All methods and constructor must raise exception ``NotImplementedError``
+    #. Create class ``Setosa`` inheriting from ``IrisInterface``
+    #. Implement interface
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Zdefiniuj interfejs ``IrisInterface``
+    #. Parametry konstuktora: ``sepal_length, sepal_width, petal_length, petal_width``
+    #. Zdefiniuj metody ``sum()``, ``len()``, ``mean()`` w ``IrisInterface``
+    #. Wszystkie metody oraz konstruktor muszą podnosić wyjątek ``NotImplementedError``
+    #. Stwórz klasę ``Setosa`` dziedziczące po ``IrisInterface``
+    #. Zaimplementuj interfejs
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: text
+
+        >>> setosa = Setosa(5.1, 3.5, 1.4, 0.2)
+        >>> print(setosa.mean())
+        2.55
+
+        >>> iris = IrisInterface(5.8, 2.7, 5.1, 1.9)
+        Traceback (most recent call last):
+            ...
+        NotImplementedError
+
+:Hints:
+    * ``self.__dict__.values()``
+    * ``mean = sum() / len()``

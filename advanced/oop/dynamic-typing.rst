@@ -24,6 +24,38 @@ Duck typing
     isinstance(data, set)   # False
     isinstance(data, dict)  # True
 
+.. code-block:: python
+
+    data = {1:1}
+
+    type(data)
+    # <class 'dict'>
+    data
+    # {1:1}
+
+    _ = data.pop(1)
+
+    type(data)
+    # <class 'dict'>
+    data
+    # {}
+
+.. code-block:: python
+
+    data = {1}
+
+    type(data)
+    # <class 'set'>
+    data
+    # {1}
+
+    _ = data.pop()
+
+    type(data)
+    # <class 'set'>
+    data
+    # set()
+
 
 Everything is an object
 =======================
@@ -191,8 +223,6 @@ Container Class
 
     b = Container(species='Setosa')
     print(b.species)             # 'Setosa'
-    print(b.firstname)           # AttributeError: 'Container' object has no attribute 'firstname'
-    print(b.lastname)            # AttributeError: 'Container' object has no attribute 'lastname'
 
 
 Example
@@ -229,7 +259,6 @@ Example
 
         def __repr__(self):
             name = self.__class__.__name__
-            # arguments = tuple(f'{k}="{v}"' for k,v in self.__dict__.items())
             arguments = tuple(self.__dict__.values())
             return f'\n\n{name}{arguments}'
 
@@ -237,25 +266,12 @@ Example
               for data in DATA]
 
     print(result)
-    # [Container('Jan', 'Twardowski', [{'street': 'Kamienica Pod św. Janem Kapistranem', 'city': 'Kraków', 'postcode': '31-008',
-    # 'region': 'Małopolskie', 'country': 'Poland'}]),
-    #
-    # Container('José', 'Jiménez', [{'street': '2101 E NASA Pkwy', 'city': 'Houston', 'postcode': 77058, 'region': 'Texas',
-    # 'country': 'USA'}, {'street': '', 'city': 'Kennedy Space Center', 'postcode': 32899, 'region': 'Florida', 'country': 'USA'}]),
-    #
-    # Container('Mark', 'Watney', [{'street': '4800 Oak Grove Dr', 'city': 'Pasadena', 'postcode': 91109, 'region': 'California',
-    # 'country': 'USA'}, {'street': '2825 E Ave P', 'city': 'Palmdale', 'postcode': 93550, 'region': 'California',
-    # 'country': 'USA'}]),
-    #
-    # Container('Иван', 'Иванович', [{'street': '', 'city': 'Космодро́м Байкону́р', 'postcode': '', 'region': 'Кызылординская
-    # область', 'country': 'Қазақстан'}, {'street': '', 'city': 'Звёздный городо́к', 'postcode': 141160, 'region': 'Московская
-    # область', 'country': 'Россия'}]),
-    #
-    # Container('Melissa', 'Lewis', []),
-    #
-    # Container('Alex', 'Vogel', [{'street': 'Linder Hoehe', 'city': 'Köln', 'postcode': 51147, 'region': 'North Rhine-Westphalia',
-    # 'country': 'Germany'}])]
-
+    # [Container('Jan', 'Twardowski', [{'street': 'Kamienica Pod św. Janem Kapistranem', 'city': 'Kraków', 'postcode': '31-008', 'region': 'Małopolskie', 'country': 'Poland'}]),
+    #  Container('José', 'Jiménez', [{'street': '2101 E NASA Pkwy', 'city': 'Houston', 'postcode': 77058, 'region': 'Texas', 'country': 'USA'}, {'street': '', 'city': 'Kennedy Space Center', 'postcode': 32899, 'region': 'Florida', 'country': 'USA'}]),
+    #  Container('Mark', 'Watney', [{'street': '4800 Oak Grove Dr', 'city': 'Pasadena', 'postcode': 91109, 'region': 'California', 'country': 'USA'}, {'street': '2825 E Ave P', 'city': 'Palmdale', 'postcode': 93550, 'region': 'California', 'country': 'USA'}]),
+    #  Container('Иван', 'Иванович', [{'street': '', 'city': 'Космодро́м Байкону́р', 'postcode': '', 'region': 'Кызылординская область', 'country': 'Қазақстан'}, {'street': '', 'city': 'Звёздный городо́к', 'postcode': 141160, 'region': 'Московская область', 'country': 'Россия'}]),
+    #  Container('Melissa', 'Lewis', []),
+    #  Container('Alex', 'Vogel', [{'street': 'Linder Hoehe', 'city': 'Köln', 'postcode': 51147, 'region': 'North Rhine-Westphalia', 'country': 'Germany'}])]
 
 
 Assignments

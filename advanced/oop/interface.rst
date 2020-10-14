@@ -123,48 +123,116 @@ Use Cases
 Assignments
 ===========
 
-OOP Interface Iris
-------------------
-* Assignment name: OOP Interface Iris
-* Last update: 2020-10-01
+OOP Interface Define
+--------------------
+* Assignment name: OOP Interface Define
+* Last update: 2020-10-14
 * Complexity level: easy
-* Lines of code to write: 21 lines
-* Estimated time of completion: 8 min
-* Solution: :download:`solution/oop_interface_iris.py`
+* Lines of code to write: 13 lines
+* Estimated time of completion: 13 min
+* Solution: :download:`solution/oop_interface_define.py`
 
 :English:
-    #. Use code from "Input" section (see below)
     #. Define interface ``IrisInterface``
-    #. Constuctor parameters: ``sepal_length, sepal_width, petal_length, petal_width``
-    #. Define methods ``sum()``, ``mean()``, ``len()`` in ``IrisInterface``
-    #. Methods must raise exception ``NotImplementedError``
-    #. Create class ``Setosa`` inheriting from ``IrisInterface``
-    #. Create instance of a class ``Setosa`` and call ``mean()`` method
-    #. Create instance of a class ``IrisInterface`` and call ``mean()`` method
+    #. Attributes: ``sepal_length, sepal_width, petal_length, petal_width``
+    #. Methods: ``sum()``, ``len()``, ``mean()`` in ``IrisInterface``
+    #. All methods and constructor must raise exception ``NotImplementedError``
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Użyj kodu z sekcji "Input" (patrz poniżej)
     #. Zdefiniuj interfejs ``IrisInterface``
-    #. Parametry konstuktora: ``sepal_length, sepal_width, petal_length, petal_width``
-    #. Zdefiniuj metody ``sum()``, ``mean()``, ``len()`` w ``IrisInterface``
-    #. Metody muszą podnosić wyjątek ``NotImplementedError``
-    #. Stwórz klasę ``Setosa`` dziedziczące po ``IrisInterface``
-    #. Stwórz instancje klasy ``Setosa`` i wywołaj metodę ``mean()``
-    #. Stwórz instancje klasy ``IrisInterface`` i wywołaj metodę ``mean()``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Attributes: ``sepal_length, sepal_width, petal_length, petal_width``
+    #. Metody: ``sum()``, ``len()``, ``mean()`` w ``IrisInterface``
+    #. Wszystkie metody oraz konstruktor muszą podnosić wyjątek ``NotImplementedError``
 
 :Output:
     .. code-block:: text
 
-        >>> setosa = Setosa(5.1, 3.5, 1.4, 0.2)
-        >>> print(setosa.mean())
-        2.55
+        >>> assert hasattr(IrisInterface, 'mean')
+        >>> assert hasattr(IrisInterface, 'sum')
+        >>> assert hasattr(IrisInterface, 'len')
+
+        >>> IrisInterface.__annotations__  # doctest: +NORMALIZE_WHITESPACE
+        {'sepal_length': <class 'float'>,
+         'sepal_width': <class 'float'>,
+         'petal_length': <class 'float'>,
+         'petal_width': <class 'float'>}
 
         >>> iris = IrisInterface(5.8, 2.7, 5.1, 1.9)
         Traceback (most recent call last):
             ...
         NotImplementedError
 
+OOP Interface Implement
+-----------------------
+* Assignment name: OOP Interface Implement
+* Last update: 2020-10-14
+* Complexity level: easy
+* Lines of code to write: 12 lines
+* Estimated time of completion: 13 min
+* Solution: :download:`solution/oop_interface_implement.py`
+
+:English:
+    #. Use data from "Input" section (see below)
+    #. Define class ``Setosa`` implementing ``IrisInterface``
+    #. Implement interface
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Stwórz klasę ``Setosa`` implementującą ``IrisInterface``
+    #. Zaimplementuj interfejs
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Input:
+    .. code-block:: python
+
+        class IrisInterface:
+            sepal_length: float
+            sepal_width: float
+            petal_length: float
+            petal_width: float
+
+            def __init__(self,
+                         sepal_length: float,
+                         sepal_width: float,
+                         petal_length: float,
+                         petal_width: float) -> None:
+
+                raise NotImplementedError
+
+            def mean(self) -> float:
+                raise NotImplementedError
+
+            def sum(self) -> float:
+                raise NotImplementedError
+
+            def len(self) -> int:
+                raise NotImplementedError
+
+
+:Output:
+    .. code-block:: text
+
+        >>> assert issubclass(Setosa, IrisInterface)
+        >>> assert hasattr(Setosa, 'mean')
+        >>> assert hasattr(Setosa, 'sum')
+        >>> assert hasattr(Setosa, 'len')
+
+        >>> Setosa.__annotations__  # doctest: +NORMALIZE_WHITESPACE
+        {'sepal_length': <class 'float'>,
+         'sepal_width': <class 'float'>,
+         'petal_length': <class 'float'>,
+         'petal_width': <class 'float'>}
+
+        >>> setosa = Setosa(5.1, 3.5, 1.4, 0.2)
+        >>> setosa.len()
+        4
+        >>> setosa.sum()
+        10.2
+        >>> setosa.mean()
+        2.55
+
 :Hints:
-    * ``self.__dict__``
+    * ``self.__dict__.values()``
+    * ``mean = sum() / len()``

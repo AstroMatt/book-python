@@ -1,12 +1,22 @@
 """
->>> setosa = Setosa(5.1, 3.5, 1.4, 0.2)
->>> print(setosa.mean())
-2.55
+>>> assert issubclass(Setosa, IrisInterface)
+>>> assert hasattr(Setosa, 'mean')
+>>> assert hasattr(Setosa, 'sum')
+>>> assert hasattr(Setosa, 'len')
 
->>> iris = IrisInterface(5.8, 2.7, 5.1, 1.9)
-Traceback (most recent call last):
-    ...
-NotImplementedError
+>>> Setosa.__annotations__  # doctest: +NORMALIZE_WHITESPACE
+{'sepal_length': <class 'float'>,
+ 'sepal_width': <class 'float'>,
+ 'petal_length': <class 'float'>,
+ 'petal_width': <class 'float'>}
+
+>>> setosa = Setosa(5.1, 3.5, 1.4, 0.2)
+>>> setosa.len()
+4
+>>> setosa.sum()
+10.2
+>>> setosa.mean()
+2.55
 """
 
 class IrisInterface:
