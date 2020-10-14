@@ -389,7 +389,4 @@ OOP Attribute Access Dict
 :Hints:
     * ``self.__class__.__name__``
     * ``self.__dict__.values()``
-    * ``f'\n{name:>10} {total:>5.1f} {avg:>5.2f}'``
-    * ``locals()[classname]``
     * ``globals()[classname]``
-    * ``getattr(sys.modules[__name__], classname)``

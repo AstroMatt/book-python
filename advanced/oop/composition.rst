@@ -219,7 +219,7 @@ OOP Composition Movable
 
 :English:
     #. Define class ``Point``
-    #. Class ``Point`` has attibutes ``x: int = 0`` and ``y: int = 0``
+    #. Class ``Point`` has attributes ``x: int = 0`` and ``y: int = 0``
     #. When ``x`` or ``y`` has negative value raise en exception ``ValueError('Coordinate cannot be negative')``
     #. Define class ``Movable``
     #. In ``Movable`` define method ``get_position(self) -> Point``
@@ -256,17 +256,17 @@ OOP Composition Movable
 
         >>> from inspect import isclass, ismethod
         >>> assert isclass(Point)
-        >>> assert isclass(Moveable)
+        >>> assert isclass(Movable)
         >>> assert hasattr(Point, 'x')
         >>> assert hasattr(Point, 'y')
-        >>> assert hasattr(Moveable, 'get_position')
-        >>> assert hasattr(Moveable, 'set_position')
-        >>> assert hasattr(Moveable, 'change_position')
-        >>> assert ismethod(Moveable().get_position)
-        >>> assert ismethod(Moveable().set_position)
-        >>> assert ismethod(Moveable().change_position)
+        >>> assert hasattr(Movable, 'get_position')
+        >>> assert hasattr(Movable, 'set_position')
+        >>> assert hasattr(Movable, 'change_position')
+        >>> assert ismethod(Movable().get_position)
+        >>> assert ismethod(Movable().set_position)
+        >>> assert ismethod(Movable().change_position)
 
-        >>> class Astronaut(Moveable):
+        >>> class Astronaut(Movable):
         ...     pass
 
         >>> astro = Astronaut()

@@ -5,10 +5,35 @@ Argument Mutability
 *******************
 
 
-Bad
-===
+Rationale
+=========
+* Function and method arguments should not be mutable
+
+
+Immutable Types
+===============
+* ``int``
+* ``float``
+* ``complex``
+* ``bool``
+* ``None``
+* ``str``
+* ``bytes``
+* ``tuple``
+* ``frozenset``
+
+
+Mutable Types
+=============
+* ``list``
+* ``set``
+* ``dict``
+
+
+Case Study
+==========
 .. code-block:: python
-    :caption: Initial arguments mutability and shared state
+    :caption: Bad
 
     class Astronaut:
         def __init__(self, name, missions=[]):
@@ -18,18 +43,15 @@ Bad
 
     watney = Astronaut('Mark Watney')
     watney.missions.append('Ares 3')
-    print(watney.missions)
-    # ['Ares 3']
+    print('Watney:', watney.missions)
+    # Watney: ['Ares 3']
 
     twardowski = Astronaut('Jan Twardowski')
-    print(twardowski.missions)
-    # ['Ares 3']
+    print('Twardowski:', twardowski.missions)
+    # 'Twardowski:' ['Ares 3']
 
-
-Good
-====
 .. code-block:: python
-    :caption: Initial arguments mutability and shared state
+    :caption: Good
 
     class Astronaut:
         def __init__(self, name, missions=()):
@@ -39,12 +61,12 @@ Good
 
     watney = Astronaut('Mark Watney')
     watney.missions.append('Ares 3')
-    print(watney.missions)
-    # ['Ares 3']
+    print('Watney:', watney.missions)
+    # Watney: ['Ares 3']
 
     twardowski = Astronaut('Jan Twardowski')
-    print(twardowski.missions)
-    # []
+    print('Twardowski:', twardowski.missions)
+    # 'Twardowski:' []
 
 
 Assignments

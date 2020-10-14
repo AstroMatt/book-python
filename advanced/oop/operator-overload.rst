@@ -1,16 +1,17 @@
-.. _OOP Operator Overload:
+.. _OOP Operator:
 
-*****************
-Operator Overload
-*****************
+********
+Operator
+********
 
 
 Rationale
 =========
 .. highlights::
+    * Operator Overload
     * Readable syntax
     * Simpler operations
-    * Follong examples uses ``dataclasses`` to focus on action code, not boilerplate
+    * Following examples uses ``dataclasses`` to focus on action code, not boilerplate
 
 .. code-block:: python
 
@@ -142,12 +143,11 @@ Boolean Operators
 
 .. code-block:: python
 
-    class Digit:
-        def __init__(self, initial_value):
-            self.value = initial_value
+    from dataclasses import dataclass
 
-        def __str__(self):
-            return str(self.value)
+    @dataclass
+    class Digit:
+        value: int
 
         def __xor__(self, other):
             return Digit(self.value ** other.value)
@@ -157,7 +157,7 @@ Boolean Operators
     b = Digit(4)
 
     a ^ b
-    # 16
+    # Digit(value=16)
 
 
 Builtin Functions and Keywords
@@ -165,24 +165,26 @@ Builtin Functions and Keywords
 .. csv-table:: Builtin Functions Overload
     :header: "Function", "Method"
 
-    "``abs(obj)``",             "``obj.__abs__()``"
-    "``bool(obj)``",            "``obj.__bool__()``"
-    "``complex(obj)``",         "``obj.__complex__()``"
-    "``del obj``",              "``obj.__del__()``"
-    "``delattr(obj, name)``",   "``obj.__delattr__(name)``"
-    "``dir(obj)``",             "``obj.__dir__()``"
-    "``divmod(obj, other)``",   "``obj.__divmod__(other)``"
-    "``float(obj)``",           "``obj.__float__()``"
-    "``hash(obj)``",            "``obj.__hash__()``"
-    "``hex(obj)``",             "``obj.__hex__()``"
-    "``int(obj)``",             "``obj.__int__()``"
-    "``iter(obj)``",            "``obj.__iter__()``"
-    "``len(obj)``",             "``obj.__len__()``"
-    "``next(obj)``",            "``obj.__next__()``"
-    "``oct(obj)``",             "``obj.__oct__()``"
-    "``pow(obj)``",             "``obj.__pow__()``"
-    "``reversed(obj)``",        "``obj.__reversed__()``"
-    "``round(obj, ndigits)``",  "``obj.__round__(ndigits)``"
+    "``abs(obj)``",                      "``obj.__abs__()``"
+    "``bool(obj)``",                     "``obj.__bool__()``"
+    "``complex(obj)``",                  "``obj.__complex__()``"
+    "``del obj``",                       "``obj.__del__()``"
+    "``delattr(obj, name)``",            "``obj.__delattr__(name)``"
+    "``dir(obj)``",                      "``obj.__dir__()``"
+    "``divmod(obj, other)``",            "``obj.__divmod__(other)``"
+    "``float(obj)``",                    "``obj.__float__()``"
+    "``getattr(obj, name, default)``",   "``obj.__getattr__(name, default)``"
+    "``hash(obj)``",                     "``obj.__hash__()``"
+    "``hex(obj)``",                      "``obj.__hex__()``"
+    "``int(obj)``",                      "``obj.__int__()``"
+    "``iter(obj)``",                     "``obj.__iter__()``"
+    "``len(obj)``",                      "``obj.__len__()``"
+    "``next(obj)``",                     "``obj.__next__()``"
+    "``oct(obj)``",                      "``obj.__oct__()``"
+    "``pow(obj)``",                      "``obj.__pow__()``"
+    "``reversed(obj)``",                 "``obj.__reversed__()``"
+    "``round(obj, ndigits)``",           "``obj.__round__(ndigits)``"
+    "``setattr(obj, name)``",            "``obj.__setattr__(name)``"
 
 .. code-block:: python
 
@@ -274,11 +276,25 @@ Accessors Overload
 
     import numpy as np
 
+
     data = np.array([[1, 2, 3],
                      [4, 5, 6]])
 
-    data[1][2]  # 6
-    data[1,2]   # 6
+    data[1][2]
+    # 6
+
+    data[1,2]
+    # 6
+
+    data[1:2]
+    # array([[2,3],
+    #        [5,6]])
+
+    data[1:2, 0]
+    # array([2,3])
+
+    data[1:2, 1:]
+    # array([[5,6]])
 
 .. code-block:: python
     :caption: Intuitive implementation of numpy ``array[row,col]`` accessor
@@ -289,6 +305,8 @@ Accessors Overload
                 return super().__getitem__(key)
 
             if isinstance(key, tuple):
+                row = key[0]
+                col = key[1]
                 return super().__getitem__(row).__getitem__(col)
 
             if isinstance(key, slice):
@@ -306,9 +324,11 @@ Accessors Overload
 
     data[1:2]
     # data.__getitem__(1:2)
+    # data.__getitem__(slice(1,2))
 
     data[:, 2]
-    # data.__getitem__((:, 1))
+    # data.__getitem__((:, 2))
+    # data.__getitem__((slice(), 2))
 
 .. code-block:: python
 
@@ -320,13 +340,13 @@ Use Case
 ========
 .. code-block:: python
 
-    dragon @ Position(x=50, y=120)
-    dragon >> Position(x=50, y=120)
+    hero @ Position(x=50, y=120)
+    hero >> Position(x=50, y=120)
 
 .. code-block:: python
 
-    dragon < Damage(20)
-    dragon > Damage(20)
+    hero < Damage(20)
+    hero > Damage(20)
 
 .. code-block:: python
 
@@ -342,14 +362,102 @@ Further Reading
 Assignments
 ===========
 
-OOP Operator Overload
+OOP Operator Matmul
+-------------------
+* Assignment name: OOP Operator Matmul
+* Last update: 2020-10-14
+* Complexity level: easy
+* Lines of code to write: 4 lines
+* Estimated time of completion: 3 min
+* Solution: :download:`solution/oop_operator_matmul.py`
+
+:English:
+    #. Use code from "Input" section (see below)
+    #. Overload ``@`` operator
+    #. Set position based on argument ``tuple[int, int]``
+    #. Compare result with "Output" section (see below)
+
+
+:Polish:
+    #. Użyj kodu z sekcji "Input" (patrz poniżej)
+    #. Przeciąż operator ``@``
+    #. Ustaw pozycję na podstawie argumentu ``tuple[int, int]``
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Input:
+    .. code-block:: python
+
+        from dataclasses import dataclass
+
+
+        @dataclass
+        class Position:
+            x: int = 0
+            y: int = 0
+
+:Output:
+    .. code-block:: text
+
+        >>> position = Position()
+        >>> position
+        Position(x=0, y=0)
+        >>> position @ (1, 2)
+        >>> position
+        Position(x=1, y=2)
+
+OOP Operator Shift
+------------------
+* Assignment name: OOP Operator Shift
+* Last update: 2020-10-14
+* Complexity level: easy
+* Lines of code to write: 6 lines
+* Estimated time of completion: 5 min
+* Solution: :download:`solution/oop_operator_matmul.py`
+
+.. warning:: unfinished
+
+:English:
+    #. Use code from "Input" section (see below)
+    #. Overload operators ``<<`` and``>>``
+    #. Move position based on argument ``tuple[int, int]``
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Użyj kodu z sekcji "Input" (patrz poniżej)
+    #. Przeciąż operatory ``<<`` and``>>``
+    #. Ustaw pozycję na podstawie argumentu ``tuple[int, int]``
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Input:
+    .. code-block:: python
+
+        from dataclasses import dataclass
+
+
+        @dataclass
+        class Position:
+            x: int = 0
+            y: int = 0
+
+:Output:
+    .. code-block:: text
+
+        >>> position = Position()
+        >>> position
+        Position(x=0, y=0)
+        >>> position @ (1, 2)
+        >>> position
+        Position(x=1, y=2)
+
+
+OOP Operator Contains
 ---------------------
-* Assignment name: OOP Operator Overload
-* Last update: 2020-10-01
+* Assignment name: OOP Operator Contains
+* Last update: 2020-10-14
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/oop_operator_overload.py`
+* Solution: :download:`solution/oop_operator_overload_astro.py`
 
 :English:
     #. Use code from "Input" section (see below)
@@ -365,12 +473,12 @@ OOP Operator Overload
     .. code-block:: python
 
         class Astronaut:
-            def __init__(self, name, experience=()):
+            def __init__(self, name, missions=()):
                 self.name = name
-                self.experience = list(experience)
+                self.missions = list(missions)
 
             def __str__(self):
-                return f'{self.name}, {self.experience}'
+                return f'{self.name}, {self.missions}'
 
             def __iadd__(self, other):
                 raise NotImplementedError
@@ -410,3 +518,6 @@ OOP Operator Overload
         ... else:
         ...   print(False)
         True
+
+:Hint:
+    * ``return self`` in ``__iadd__()``

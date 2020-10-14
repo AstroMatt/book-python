@@ -210,9 +210,3 @@ Arguments
     @MyClass(a, b)
     def myfunction(*args, **kwargs):
         ...
-
-
-
-Decorator library
-=================
-* https://wiki.python.org/moin/PythonDecoratorLibrary
