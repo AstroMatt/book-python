@@ -11,26 +11,28 @@ Relations
 
 .. code-block:: python
 
-    from typing import Sequence
+    class Astronaut:
+        def __init__(self, name, missions):
+            self.name = name
+            self.missions = missions
 
 
     class Mission:
-        def __init__(self, year: int, name: str) -> None:
-            self.year: int = year
-            self.name: str = name
-
-    class Astronaut:
-        def __init__(self, name: str, experience: Sequence[Mission] = ()) -> None:
-            self.name: str = name
-            self.experience: list[Mission] = list(experience)
-
+        def __init__(self, year, name):
+            self.year = year
+            self.name = name
 
     result = [
-        Astronaut('Jan Twardowski', experience=[
-            Mission(1969, 'Apollo 11'),
+        Astronaut('Jan Twardowski', missions=[
+            Mission(1967, 'Apollo 1'),
+            Mission(1970, 'Apollo 13'),
+            Mission(1973, 'Apollo 18')]),
+
+        Astronaut('Ivan Ivanovic', missions=[
+            Mission(2023, 'Artemis 2')],
             Mission(2024, 'Artemis 3')]),
 
-        Astronaut('Mark Watney', experience=[
+        Astronaut('Mark Watney', missions=[
             Mission(2035, 'Ares 3')]),
 
         Astronaut('Melissa Lewis'),
@@ -131,10 +133,10 @@ OOP Relations Model
     * casting objects to ``str``
 
 :Input:
-    .. code-block:: json
+    .. code-block:: python
         :caption: Python list[dict] or JSON?
 
-        [
+        DATA = [
             {"firstname": "Jan", "lastname": "Twardowski", "addresses": [
                 {"street": "Kamienica Pod św. Janem Kapistranem", "city": "Kraków", "postcode": "31-008", "region": "Małopolskie", "country": "Poland"}]},
             {"firstname": "José", "lastname": "Jiménez", "addresses": [

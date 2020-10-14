@@ -367,7 +367,7 @@ OOP Operator Matmul
 * Assignment name: OOP Operator Matmul
 * Last update: 2020-10-14
 * Complexity level: easy
-* Lines of code to write: 4 lines
+* Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/oop_operator_matmul.py`
 
@@ -405,27 +405,23 @@ OOP Operator Matmul
         >>> position
         Position(x=1, y=2)
 
-OOP Operator Shift
-------------------
-* Assignment name: OOP Operator Shift
+OOP Operator IAdd
+-----------------
+* Assignment name: OOP Operator IAdd
 * Last update: 2020-10-14
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/oop_operator_matmul.py`
-
-.. warning:: unfinished
+* Solution: :download:`solution/oop_operator_iadd.py`
 
 :English:
     #. Use code from "Input" section (see below)
-    #. Overload operators ``<<`` and``>>``
-    #. Move position based on argument ``tuple[int, int]``
+    #. Override operator ``+=`` for code to work correctly
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
-    #. Przeciąż operatory ``<<`` and``>>``
-    #. Ustaw pozycję na podstawie argumentu ``tuple[int, int]``
+    #. Nadpisz operatory ``+=`` aby poniższy kod zadziałał poprawnie
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
@@ -435,68 +431,15 @@ OOP Operator Shift
 
 
         @dataclass
-        class Position:
-            x: int = 0
-            y: int = 0
-
-:Output:
-    .. code-block:: text
-
-        >>> position = Position()
-        >>> position
-        Position(x=0, y=0)
-        >>> position @ (1, 2)
-        >>> position
-        Position(x=1, y=2)
-
-
-OOP Operator Contains
----------------------
-* Assignment name: OOP Operator Contains
-* Last update: 2020-10-14
-* Complexity level: easy
-* Lines of code to write: 10 lines
-* Estimated time of completion: 13 min
-* Solution: :download:`solution/oop_operator_overload_astro.py`
-
-:English:
-    #. Use code from "Input" section (see below)
-    #. Override operators of ``Astronaut`` and ``Mission`` for code to work correctly
-    #. Compare result with "Output" section (see below)
-
-:Polish:
-    #. Użyj kodu z sekcji "Input" (patrz poniżej)
-    #. Nadpisz operatory ``Astronaut`` i ``Mission`` aby poniższy kod zadziałał poprawnie
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-:Input:
-    .. code-block:: python
-
         class Astronaut:
-            def __init__(self, name, missions=()):
-                self.name = name
-                self.missions = list(missions)
-
-            def __str__(self):
-                return f'{self.name}, {self.missions}'
-
-            def __iadd__(self, other):
-                raise NotImplementedError
-
-            def __contains__(self, flight):
-                raise NotImplementedError
+            name: str
+            missions: list
 
 
+        @dataclass
         class Mission:
-            def __init__(self, year, name):
-                self.year = year
-                self.name = name
-
-            def __repr__(self):
-                return f'\n\t{self.year}: {self.name}'
-
-            def __eq__(self, other):
-                raise NotImplementedError
+            year: int
+            name: str
 
 :Output:
     .. code-block:: text
@@ -508,16 +451,60 @@ OOP Operator Contains
         >>> astro += Mission(2035, 'Ares 3')
 
         >>> print(astro)  # doctest: +NORMALIZE_WHITESPACE
-        Jan Twardowski, [
-            1969: Apollo 11,
-            2024: Artemis 3,
-            2035: Ares 3]
+        Astronaut(name='Jan Twardowski',
+                  missions=[Mission(year=1969, name='Apollo 11'),
+                            Mission(year=2024, name='Artemis 3'),
+                            Mission(year=2035, name='Ares 3')])
+
+:Hint:
+    * ``obj.__iadd__(other) -> self``
+
+OOP Operator Contains
+---------------------
+* Assignment name: OOP Operator Contains
+* Last update: 2020-10-14
+* Complexity level: easy
+* Lines of code to write: 10 lines
+* Estimated time of completion: 13 min
+* Solution: :download:`solution/oop_operator_contains.py`
+
+:English:
+    #. Use code from "Input" section (see below)
+    #. Override operators for code to work correctly
+    #. Do not use ``dataclasses``
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Użyj kodu z sekcji "Input" (patrz poniżej)
+    #. Nadpisz operatory aby poniższy kod zadziałał poprawnie
+    #. Nie używaj ``dataclasses``
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Input:
+    .. code-block:: python
+
+        class Astronaut:
+            def __init__(self, name, missions):
+                self.name = name
+                self.missions = missions
+
+
+        class Mission:
+            def __init__(self, year, name):
+                self.year = year
+                self.name = name
+
+:Output:
+    .. code-block:: text
+
+        >>> astro = Astronaut('Jan Twardowski', missions=[
+        ...     Mission(1969, 'Apollo 11'),
+        ...     Mission(2024, 'Artemis 3'),
+        ...     Mission(2035, 'Ares 3'),
+        ... ])
 
         >>> if Mission(2024, 'Artemis 3') in astro:
         ...    print(True)
         ... else:
         ...   print(False)
         True
-
-:Hint:
-    * ``return self`` in ``__iadd__()``

@@ -7,20 +7,58 @@ Inheritance vs. Composition
 
 Rationale
 =========
-* Mixin Classes
 * Composition over Inheritance
 
 
-Example
-=======
+Code Duplication
+================
 .. code-block:: python
-    :caption: Inheritance pattern
 
-    class Vehicle:
-        def run(self):
+    class Car(Vehicle):
+        def engine_start(self):
             pass
 
-        def drive(self):
+        def engine_stop(self):
+            pass
+
+
+    class Truck(Vehicle):
+        def engine_start(self):
+            pass
+
+        def engine_stop(self):
+            pass
+
+
+Inheritance
+===========
+.. code-block:: python
+
+    class Vehicle:
+        def engine_start(self):
+            pass
+
+        def engine_stop(self):
+            pass
+
+
+    class Car(Vehicle):
+        pass
+
+
+    class Truck(Vehicle):
+        pass
+
+
+Inheritance Problem
+===================
+.. code-block:: python
+
+    class Vehicle:
+        def engine_start(self):
+            pass
+
+        def engine_stop(self):
             pass
 
         def window_open(self):
@@ -38,47 +76,30 @@ Example
         pass
 
 
-.. code-block:: python
-    :caption: Problem with inheritance
+    class Motorbike(Vehicle):
+        """Motorbike is a vehicle, but doesn't have windows."""
 
-     class Vehicle:
-         def run(self):
-             pass
+        def window_open(self):
+            raise NotImplementedError
 
-         def drive(self):
-             pass
-
-         def window_open(self):
-             pass
-
-         def window_close(self):
-             pass
+        def window_close(self):
+            raise NotImplementedError
 
 
-     class Car(Vehicle):
-         pass
-
-
-     class Truck(Vehicle):
-         pass
-
-
-     class Motorbike(Vehicle):
-         """Motorbike is a vehicle, but doesn't have windows."""
-
-         def window_open(self):
-             raise NotImplementedError
-
-         def window_close(self):
-             raise NotImplementedError
+Composition
+===========
+* Mixin Classes
 
 .. code-block:: python
 
     class Vehicle:
-        def run(self):
+        pass
+
+    class HasEngine:
+        def engine_start(self):
             pass
 
-        def drive(self):
+        def engine_stop(self):
             pass
 
 
@@ -90,18 +111,18 @@ Example
             pass
 
 
-    class Car(Vehicle, HasWindows):
+    class Car(Vehicle, HasEngine, HasWindows):
         pass
 
-    class Truck(Vehicle, HasWindows):
+    class Truck(Vehicle, HasEngine, HasWindows):
         pass
 
-    class Motorbike(Vehicle):
+    class Motorbike(Vehicle, HasEngine):
         pass
 
 
-Multi Level Inheritance Problem
-===============================
+Case Study
+==========
 .. code-block:: python
     :caption: Multi level inheritance is a bad pattern here
 
@@ -133,25 +154,22 @@ Multi Level Inheritance Problem
     # b'\x94\x93\x94)\x81\x94}\x94(\x8c\tfirstname\x94\x8c\x04Mark' \
     # b'\x94\x8c\x08lastname\x94\x8c\x06Watney\x94ub.'
 
-
-Mixin Classes
-=============
 .. code-block:: python
     :caption: Mixin classes - multiple inheritance.
 
-    class JSONMixin:
+    class ToJSON:
         def to_json(self):
             import json
             return json.dumps(self.__dict__)
 
 
-    class PickleMixin:
+    class ToPickle:
         def to_pickle(self):
             import pickle
             return pickle.dumps(self)
 
 
-    class Astronaut(JSONMixin, PickleMixin):
+    class Astronaut(ToJSON, ToPickle):
         def __init__(self, firstname, lastname):
             self.firstname = firstname
             self.lastname = lastname
