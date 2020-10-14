@@ -47,7 +47,7 @@ New Method
     class Astronaut:
         def __new__(cls):
             print(f'Astronaut.__new__() called')
-            return object.__new__(cls)
+            return super().__new__(cls)
 
     Astronaut()
     # Astronaut.__new__() called
@@ -79,7 +79,7 @@ Return
     class Astronaut:
         def __new__(cls):
             print('Astronaut.__new__() called')
-            return object.__new__(cls)
+            return super().__new__(cls)
 
         def __init__(self):
             print('Astronaut.__init__() called')
@@ -184,7 +184,7 @@ Use Cases
             else:
                 raise TypeError
 
-            return object.__new__(cls)
+            return super().__new__(cls)
 
         def __init__(self, sepal_length, sepal_width,
                      petal_length, petal_width, species):
