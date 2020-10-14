@@ -41,7 +41,7 @@ Example
     astro = Astronaut()
     # Traceback (most recent call last):
     #     ...
-    # TypeError: Can't instantiate abstract class Astronaut with abstract methods hello
+    # TypeError: Can't instantiate abstract class Astronaut with abstract method say_hello
 
 .. code-block:: python
 
@@ -58,7 +58,7 @@ Example
     astro = Astronaut()
     # Traceback (most recent call last):
     #     ...
-    # TypeError: Can't instantiate abstract class Astronaut with abstract methods say_hello
+    # TypeError: Can't instantiate abstract class Astronaut with abstract method say_hello
 
 
 Errors
@@ -104,7 +104,7 @@ Errors
     astro = Astronaut()
     # Traceback (most recent call last):
     #     ...
-    # TypeError: Can't instantiate abstract class Astronaut with abstract methods say_hello
+    # TypeError: Can't instantiate abstract class Astronaut with abstract method say_hello
 
 .. code-block:: python
     :caption: ``abc`` is common name and it is very easy to create file, variable lub module with the same name as the library, hence overwrite it. In case of error. Check all entries in ``sys.path`` or ``sys.modules['abc']`` to find what is overwriting it.
@@ -118,11 +118,8 @@ Errors
 
     pprint(sys.path)
     # ['/Users/matt/Developer/book-python/advanced/oop/solution',
-    #   '/Users/matt/Developer/pythonadv-capgemini/MattH',
     #   '/Applications/PyCharm 2020.2 EAP.app/Contents/plugins/python/helpers/pydev',
-    #   '/Users/matt/Developer/pythonadv-capgemini',
     #   '/Users/matt/Developer/book-python',
-    #   '/Users/matt/Developer/pythonadv-capgemini/MattH',
     #   '/Users/matt/Developer/book-python/_tmp',
     #   '/Applications/PyCharm 2020.2 '
     #   'EAP.app/Contents/plugins/python/helpers/pycharm_display',
@@ -176,7 +173,7 @@ Use Cases
     file2 = Document('filename.txt')
     # Traceback (most recent call last):
     #     ...
-    # TypeError: Can't instantiate abstract class Document with abstract methods display
+    # TypeError: Can't instantiate abstract class Document with abstract method display
 
 
 Assignments
@@ -207,57 +204,51 @@ OOP Abstract Define
     #. Spróbuj stworzyć instancję klasy ``Iris``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
+.. note::
+    * Last line of doctest, second to last word of ``TypeError`` message
+    * In Python 3.7, 3.8 there is "methods" word in doctest
+    * In Python 3.9 there is "method" word in doctest
+    * So it differs by "s" at the end of "method" word
+
 :Output:
     .. code-block:: text
 
-        """
         >>> iris = Iris()
         Traceback (most recent call last):
           ...
-        TypeError: Can't instantiate abstract class Iris with abstract methods get_name
+        TypeError: Can't instantiate abstract class Iris with abstract method get_name
 
         >>> setosa = Setosa()
-        """
 
 OOP Abstract Interface
 ----------------------
 * Assignment name: OOP Abstract Interface
 * Last update: 2020-10-14
 * Complexity level: easy
-* Lines of code to write: 25 lines
+* Lines of code to write: 14 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/oop_interface_interface.py`
+* Solution: :download:`solution/oop_abstract_interface.py`
 
 :English:
-    #. Define interface ``IrisInterface``
-    #. Constructor parameters: ``sepal_length, sepal_width, petal_length, petal_width``
-    #. Define methods ``sum()``, ``len()``, ``mean()`` in ``IrisInterface``
+    #. Define abstract class ``IrisAbstract``
+    #. Attributes: ``sepal_length, sepal_width, petal_length, petal_width``
+    #. Methods: ``sum()``, ``len()``, ``mean()``
     #. All methods and constructor must raise exception ``NotImplementedError``
     #. Create class ``Setosa`` inheriting from ``IrisInterface``
     #. Implement interface
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Zdefiniuj interfejs ``IrisInterface``
-    #. Parametry konstuktora: ``sepal_length, sepal_width, petal_length, petal_width``
-    #. Zdefiniuj metody ``sum()``, ``len()``, ``mean()`` w ``IrisInterface``
-    #. Wszystkie metody oraz konstruktor muszą podnosić wyjątek ``NotImplementedError``
-    #. Stwórz klasę ``Setosa`` dziedziczące po ``IrisInterface``
-    #. Zaimplementuj interfejs
+    #. Zdefiniuj klasę abstrakcyjną ``IrisAbstract``
+    #. Attributes: ``sepal_length, sepal_width, petal_length, petal_width``
+    #. Metody: ``sum()``, ``len()``, ``mean()``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
     .. code-block:: text
 
-        >>> setosa = Setosa(5.1, 3.5, 1.4, 0.2)
-        >>> print(setosa.mean())
-        2.55
-
-        >>> iris = IrisInterface(5.8, 2.7, 5.1, 1.9)
-        Traceback (most recent call last):
-            ...
-        NotImplementedError
-
-:Hints:
-    * ``self.__dict__.values()``
-    * ``mean = sum() / len()``
+        >>> from inspect import isabstract
+        >>> assert isabstract(IrisAbstract)
+        >>> assert hasattr(IrisAbstract, 'mean')
+        >>> assert hasattr(IrisAbstract, 'sum')
+        >>> assert hasattr(IrisAbstract, 'len')
