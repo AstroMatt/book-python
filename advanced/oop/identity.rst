@@ -81,21 +81,17 @@ Value Comparison
 .. versionchanged:: Python 3.8
     Compiler produces a ``SyntaxWarning`` when identity checks (``is`` and ``is not``) are used with certain types of literals (e.g. ``str``, ``int``). These can often work by accident in *CPython*, but are not guaranteed by the language spec. The warning advises users to use equality tests (``==`` and ``!=``) instead.
 
- .. code-block:: python
-    :caption: Bad - Test if value is equal
+.. code-block:: python
 
-     if name is 'Mark Watney':
-        print('You are Space Pirate!')
-     else:
-        print('You are just a regular astronaut...')
+    'Mark Watney' is 'Mark Watney'
+    # <stdin>:1: SyntaxWarning: "is" with a literal. Did you mean "=="?
+    # True
 
- .. code-block:: python
-    :caption: Good - Test if value is equal
+.. code-block:: python
 
-     if name == 'Mark Watney':
-        print('You are Space Pirate!')
-     else:
-        print('You are just a regular astronaut...')
+    'Mark Watney' == 'Mark Watney'
+    # True
+
 
 
 Assignments

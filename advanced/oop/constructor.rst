@@ -168,23 +168,7 @@ Use Cases
         (5.7, 2.8, 4.1, 1.3, 'versicolor'),
         (6.3, 2.9, 5.6, 1.8, 'virginica'),
         (6.4, 3.2, 4.5, 1.5, 'versicolor'),
-        (4.7, 3.2, 1.3, 0.2, 'setosa'),
-        (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-        (7.6, 3.0, 6.6, 2.1, 'virginica'),
-        (4.9, 3.0, 1.4, 0.2, 'setosa'),
-        (4.9, 2.5, 4.5, 1.7, 'virginica'),
-        (7.1, 3.0, 5.9, 2.1, 'virginica'),
-        (4.6, 3.4, 1.4, 0.3, 'setosa'),
-        (5.4, 3.9, 1.7, 0.4, 'setosa'),
-        (5.7, 2.8, 4.5, 1.3, 'versicolor'),
-        (5.0, 3.6, 1.4, 0.3, 'setosa'),
-        (5.5, 2.3, 4.0, 1.3, 'versicolor'),
-        (6.5, 3.0, 5.8, 2.2, 'virginica'),
-        (6.5, 2.8, 4.6, 1.5, 'versicolor'),
-        (6.3, 3.3, 6.0, 2.5, 'virginica'),
-        (6.9, 3.1, 4.9, 1.5, 'versicolor'),
-        (4.6, 3.1, 1.5, 0.2, 'setosa'),
-    ]
+        (4.7, 3.2, 1.3, 0.2, 'setosa')]
 
 
     class Iris:
@@ -226,29 +210,13 @@ Use Cases
 
 
     result = [Iris(*row) for row in DATA]
-    print(result)
-    # [
-    # Virginica(5.8, 2.7, 5.1, 1.9),
-    # Setosa(5.1, 3.5, 1.4, 0.2),
-    # Versicolor(5.7, 2.8, 4.1, 1.3),
-    # Virginica(6.3, 2.9, 5.6, 1.8),
-    # Versicolor(6.4, 3.2, 4.5, 1.5),
-    # Setosa(4.7, 3.2, 1.3, 0.2),
-    # Versicolor(7.0, 3.2, 4.7, 1.4),
-    # Virginica(7.6, 3.0, 6.6, 2.1),
-    # Setosa(4.9, 3.0, 1.4, 0.2),
-    # Virginica(4.9, 2.5, 4.5, 1.7),
-    # Virginica(7.1, 3.0, 5.9, 2.1),
-    # Setosa(4.6, 3.4, 1.4, 0.3),
-    # Setosa(5.4, 3.9, 1.7, 0.4),
-    # Versicolor(5.7, 2.8, 4.5, 1.3),
-    # Setosa(5.0, 3.6, 1.4, 0.3),
-    # Versicolor(5.5, 2.3, 4.0, 1.3),
-    # Virginica(6.5, 3.0, 5.8, 2.2),
-    # Versicolor(6.5, 2.8, 4.6, 1.5),
-    # Virginica(6.3, 3.3, 6.0, 2.5),
-    # Versicolor(6.9, 3.1, 4.9, 1.5),
-    # Setosa(4.6, 3.1, 1.5, 0.2)]
+    result
+    # [Virginica(5.8, 2.7, 5.1, 1.9),
+    #  Setosa(5.1, 3.5, 1.4, 0.2),
+    #  Versicolor(5.7, 2.8, 4.1, 1.3),
+    #  Virginica(6.3, 2.9, 5.6, 1.8),
+    #  Versicolor(6.4, 3.2, 4.5, 1.5),
+    #  Setosa(4.7, 3.2, 1.3, 0.2)]
 
 
 
@@ -386,19 +354,7 @@ OOP Constructor Passwd
 :Input:
     .. code-block:: python
 
-        DATA = """
-        ##
-        # User Database
-        #   - User name
-        #   - Encrypted password
-        #   - User ID number (UID)
-        #   - User's group ID number (GID)
-        #   - Full name of the user (GECOS)
-        #   - User home directory
-        #   - Login shell
-        ##
-
-        root:x:0:0:root:/root:/bin/bash
+        DATA = """root:x:0:0:root:/root:/bin/bash
         bin:x:1:1:bin:/bin:/sbin/nologin
         daemon:x:2:2:daemon:/sbin:/sbin/nologin
         adm:x:3:4:adm:/var/adm:/sbin/nologin
@@ -406,11 +362,10 @@ OOP Constructor Passwd
         halt:x:7:0:halt:/sbin:/sbin/halt
         nobody:x:99:99:Nobody:/:/sbin/nologin
         sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
-        twardowski:x:1000:1000:Jan Twarodowski:/home/twardowski:/bin/bash
+        twardowski:x:1000:1000:Jan Twardowski:/home/twardowski:/bin/bash
         jimenez:x:1001:1001:José Jiménez:/home/jimenez:/bin/bash
         ivanovic:x:1002:1002:Иван Иванович:/home/ivanovic:/bin/bash
-        lewis:x:1002:1002:Melissa Lewis:/home/lewis:/bin/bash
-        """
+        lewis:x:1002:1002:Melissa Lewis:/home/lewis:/bin/bash"""
 
 :Output:
     .. code-block:: text
