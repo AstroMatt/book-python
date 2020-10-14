@@ -1,7 +1,7 @@
-.. _OOP Operator:
+.. _OOP Overload:
 
 ********
-Operator
+Overload
 ********
 
 
@@ -341,7 +341,7 @@ Use Case
 .. code-block:: python
 
     hero @ Position(x=50, y=120)
-    hero >> Position(x=50, y=120)
+    hero >> Direction(left=10, up=20)
 
 .. code-block:: python
 
@@ -362,14 +362,14 @@ Further Reading
 Assignments
 ===========
 
-OOP Operator Matmul
+OOP Overload Matmul
 -------------------
-* Assignment name: OOP Operator Matmul
+* Assignment name: OOP Overload Matmul
 * Last update: 2020-10-14
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/oop_operator_matmul.py`
+* Solution: :download:`solution/oop_overload_matmul.py`
 
 :English:
     #. Use code from "Input" section (see below)
@@ -405,14 +405,14 @@ OOP Operator Matmul
         >>> position
         Position(x=1, y=2)
 
-OOP Operator IAdd
+OOP Overload IAdd
 -----------------
-* Assignment name: OOP Operator IAdd
+* Assignment name: OOP Overload IAdd
 * Last update: 2020-10-14
 * Complexity level: easy
-* Lines of code to write: 6 lines
+* Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/oop_operator_iadd.py`
+* Solution: :download:`solution/oop_overload_iadd.py`
 
 :English:
     #. Use code from "Input" section (see below)
@@ -459,14 +459,14 @@ OOP Operator IAdd
 :Hint:
     * ``obj.__iadd__(other) -> self``
 
-OOP Operator Contains
+OOP Overload Contains
 ---------------------
-* Assignment name: OOP Operator Contains
+* Assignment name: OOP Overload Contains
 * Last update: 2020-10-14
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/oop_operator_contains.py`
+* Solution: :download:`solution/oop_overload_contains.py`
 
 :English:
     #. Use code from "Input" section (see below)

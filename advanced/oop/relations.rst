@@ -12,9 +12,10 @@ Relations
 .. code-block:: python
 
     class Astronaut:
-        def __init__(self, name, missions):
-            self.name = name
-            self.missions = missions
+        def __init__(self, firstname, lastname, missions=()):
+            self.firstname = firstname
+            self.lastname = lastname
+            self.missions = list(missions)
 
 
     class Mission:
@@ -22,21 +23,23 @@ Relations
             self.year = year
             self.name = name
 
-    result = [
-        Astronaut('Jan Twardowski', missions=[
-            Mission(1967, 'Apollo 1'),
-            Mission(1970, 'Apollo 13'),
-            Mission(1973, 'Apollo 18')]),
 
-        Astronaut('Ivan Ivanovic', missions=[
-            Mission(2023, 'Artemis 2')],
-            Mission(2024, 'Artemis 3')]),
+    DATA = [
+        Astronaut('Jan', 'Twardowski', missions=[
+            Mission('1967', 'Apollo 1'),
+            Mission('1970', 'Apollo 13'),
+            Mission('1973', 'Apollo 18')]),
 
-        Astronaut('Mark Watney', missions=[
-            Mission(2035, 'Ares 3')]),
+        Astronaut('Ivan', 'Ivanovic', missions=[
+            Mission('2023', 'Artemis 2'),
+            Mission('2024', 'Artemis 3')]),
 
-        Astronaut('Melissa Lewis'),
+        Astronaut('Mark', 'Watney', missions=[
+            Mission('2035', 'Ares 3')]),
+
+        Astronaut('Melissa', 'Lewis'),
     ]
+
 
 
 Serialization
@@ -166,17 +169,26 @@ OOP Relations Model
         ...            for addr in astro.addresses)
 
         >>> result  # doctest: +NORMALIZE_WHITESPACE
-        [Astronaut(firstname='Jan', lastname='Twardowski', addresses=[Address(street='Kamienica Pod św. Janem Kapistranem', city='Kraków', postcode='31-008', region='Małopolskie', country='Poland')]),
-         Astronaut(firstname='José', lastname='Jiménez',
+        [Astronaut(firstname='Jan',
+                   lastname='Twardowski',
+                   addresses=[Address(street='Kamienica Pod św. Janem Kapistranem', city='Kraków', postcode='31-008', region='Małopolskie', country='Poland')]),
+         Astronaut(firstname='José',
+                   lastname='Jiménez',
                    addresses=[Address(street='2101 E NASA Pkwy', city='Houston', postcode=77058, region='Texas', country='USA'),
                               Address(street='', city='Kennedy Space Center', postcode=32899, region='Florida', country='USA')]),
-         Astronaut(firstname='Mark', lastname='Watney',
+         Astronaut(firstname='Mark',
+                   lastname='Watney',
                    addresses=[Address(street='4800 Oak Grove Dr', city='Pasadena', postcode=91109, region='California', country='USA'),
                               Address(street='2825 E Ave P', city='Palmdale', postcode=93550, region='California', country='USA')]),
-         Astronaut(firstname='Иван', lastname='Иванович',
+         Astronaut(firstname='Иван',
+                   lastname='Иванович',
                    addresses=[Address(street='', city='Космодро́м Байкону́р', postcode='', region='Кызылординская область', country='Қазақстан'),
                               Address(street='', city='Звёздный городо́к', postcode=141160, region='Московская область', country='Россия')]),
-         Astronaut(firstname='Alex', lastname='Vogel',
+         Astronaut(firstname='Melissa',
+                   lastname='Lewis',
+                   addresses=[]),
+         Astronaut(firstname='Alex',
+                   lastname='Vogel',
                    addresses=[Address(street='Linder Hoehe', city='Köln', postcode=51147, region='North Rhine-Westphalia', country='Germany')])]
 
 OOP Relations Flatten
@@ -234,20 +246,27 @@ OOP Relations Flatten
 
         DATA = [
             Astronaut('Jan', 'Twardowski', missions=[
-                Mission(1969, 'Apollo 11'),
-                Mission(2024, 'Artemis 3')]),
+                Mission('1967', 'Apollo 1'),
+                Mission('1970', 'Apollo 13'),
+                Mission('1973', 'Apollo 18')]),
+
+            Astronaut('Ivan', 'Ivanovic', missions=[
+                Mission('2023', 'Artemis 2'),
+                Mission('2024', 'Artemis 3')]),
 
             Astronaut('Mark', 'Watney', missions=[
-                Mission(2035, 'Ares 3')]),
+                Mission('2035', 'Ares 3')]),
 
             Astronaut('Melissa', 'Lewis'),
         ]
+
 
 :Output:
     .. code-block:: text
 
         >>> result  # doctest: +NORMALIZE_WHITESPACE
-        [{'firstname': 'Jan', 'lastname': 'Twardowski', 'missions': '1969,Apollo 11;2024,Artemis 3'},
+        [{'firstname': 'Jan', 'lastname': 'Twardowski', 'missions': '1967,Apollo 1;1970,Apollo 13;1973,Apollo 18'},
+         {'firstname': 'Ivan', 'lastname': 'Ivanovic', 'missions': '2023,Artemis 2;2024,Artemis 3'},
          {'firstname': 'Mark', 'lastname': 'Watney', 'missions': '2035,Ares 3'},
          {'firstname': 'Melissa', 'lastname': 'Lewis', 'missions': ''}]
 

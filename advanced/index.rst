@@ -71,7 +71,7 @@ Object Oriented Programming
     oop/static-dynamic.rst
     oop/access-modifiers.rst
     oop/argument-mutability.rst
-    oop/operator-overload.rst
+    oop/overload.rst
     oop/composition.rst
     oop/namespace.rst
     oop/method-resolution-order.rst
