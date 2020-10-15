@@ -33,20 +33,20 @@ Tell - don't ask
 * This encourages to move behavior into an object to go with the data.
 
 .. code-block:: python
-    :caption: Tell - don't ask (Bad)
+    :caption: Bad
 
-    class Ligt:
+    class Light:
         status = 'off'
 
 
-    light = Ligt()
+    light = Light()
     light.status = 'on'
     light.status = 'off'
 
 .. code-block:: python
-    :caption: Tell - don't ask (Good)
+    :caption: Good
 
-    class Ligt:
+    class Light:
         status = 'off'
 
         def turn_on(self):
@@ -56,44 +56,43 @@ Tell - don't ask
             self.status = 'off'
 
 
-    light = Ligt()
+    light = Light()
     light.turn_on()
     light.turn_off()
 
 .. code-block:: python
-    :caption: Tell - don't ask (Bad)
+    :caption: Bad
 
-    class Dragon:
+    class Hero:
         health: int = 10
 
 
-    dragon = Dragon()
+    hero = Hero()
 
-    while dragon.health <= 0:
+    while hero.health > 0:
         ...
 
 .. code-block:: python
-    :caption: Tell - don't ask (Good)
+    :caption: Good
 
-    class Dragon:
+    class Hero:
         health: int = 10
 
         def is_alive(self):
             return self.health > 0
 
 
-    dragon = Dragon()
+    hero = Hero()
 
-    while dragon.is_alive():
+    while hero.is_alive():
         ...
 
 
-Setter and Getter Methods
-=========================
-* This is Java way
-* Don't do that in Python
-* In Python you prefer direct attibute access
-* Use ``@property`` or Reflection methods or Descriptors
+Setters, Getters, Deleters
+==========================
+* Java way: setters, getters, deleters
+* Python way: :ref:`properties <Protocol Property>`, :ref:`reflection <Protocol Reflection>` or :ref:`descriptors <Protocol Descriptor>`
+* In Python you prefer direct attribute access
 
 .. code-block:: python
     :caption: Accessing class fields using setter and getter
@@ -141,6 +140,25 @@ Setter and Getter Methods
 .. code-block:: python
     :caption: Rationale for Setters and Getters
 
+    class Temperature:
+        kelvin: int
+
+        def set_kelvin(self, kelvin):
+            if kelvin < 0:
+                raise ValueError('Kelvin cannot be negative')
+            else:
+                self._kelvin = kelvin
+
+
+    t = Temperature()
+    t.set_kelvin(-1)
+    # Traceback (most recent call last):
+    #     ...
+    # ValueError: Kelvin cannot be negative
+
+.. code-block:: python
+    :caption: Rationale for Setters and Getters
+
     class Astronaut:
         _name: str
 
@@ -155,23 +173,6 @@ Setter and Getter Methods
     astro.set_name('JaN TwARdoWskI')
     print(astro.get_name())
     # Jan Twardowski
-
-.. code-block:: python
-    :caption: Rationale for Setters and Getters
-
-    class Temperature:
-        kelvin: int
-
-        def set_kelvin(self, kelvin):
-            if kelvin < 0:
-                raise ValueError('Kelvin cannot be negative')
-            else:
-                self._kelvin = kelvin
-
-
-    t = Temperature()
-    t.set_kelvin(-1)
-    # ValueError: Kelvin cannot be negative
 
 .. code-block:: python
     :caption: Rationale for Setters and Getters `HabitatOS <https://www.habitatos.space>`_ Z-Wave sensor admin

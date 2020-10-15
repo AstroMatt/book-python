@@ -30,6 +30,8 @@ Recap information about classes and objects
             print(f'My name... {self.name}')
 
     User.hello()
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: hello() missing 1 required positional argument: 'self'
 
 .. code-block:: python
@@ -232,9 +234,13 @@ Dynamic Methods
     u.hello = lambda self: print(f'My name... {self.name}')
 
     u.hello()
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: <lambda>() missing 1 required positional argument: 'self'
 
     u.hello('José Jiménez')
+    # Traceback (most recent call last):
+    #     ...
     # AttributeError: 'str' object has no attribute 'name'
 
 .. code-block:: python
@@ -273,6 +279,8 @@ Backups
 
     User.hello = User._old_hello
     User.hello()
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: hello() missing 1 required positional argument: 'self'
 
 

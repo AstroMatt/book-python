@@ -56,6 +56,8 @@ Dynamic Fields
     # NASA
 
     print(Astronaut.agency)
+    # Traceback (most recent call last):
+    #     ...
     # AttributeError: type object 'Astronaut' has no attribute 'agency'
 
 

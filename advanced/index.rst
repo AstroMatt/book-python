@@ -73,23 +73,11 @@ Object Oriented Programming
     oop/argument-mutability.rst
     oop/overload.rst
     oop/composition.rst
-    oop/namespace.rst
-    oop/method-resolution-order.rst
     oop/relations.rst
-    oop/polymorphism.rst
-    oop/dynamic-typing.rst
-    oop/monkey-patching.rst
-    oop/new-style-classes.rst
-    oop/interface.rst
     oop/abstract-class.rst
     oop/identity.rst
-    oop/hash.rst
-    oop/str-interning.rst
     oop/constructor.rst
-    oop/slots.rst
-    oop/metaclass.rst
     oop/solid.rst
-    oop/good-practices.rst
 
 *********
 Protocols

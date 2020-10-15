@@ -142,7 +142,7 @@ Slots and Init
 
     astro = Astronaut('Mark Watney', 'Ares 3')
     # Traceback (most recent call last):
-    #    ...
+    #     ...
     # AttributeError: 'Astronaut' object has no attribute 'mission'
 
 
@@ -181,7 +181,7 @@ Inheritance
     astro.mission = 'Ares 3'
     astro.rank = 'Senior'
     # Traceback (most recent call last):
-    #   ...
+    #     ...
     # AttributeError: 'Astronaut' object has no attribute 'rank'
 
 .. code-block:: python
@@ -199,7 +199,7 @@ Inheritance
     astro.mission = 'Ares 3'
     astro.rank = 'Senior'
     # Traceback (most recent call last):
-    #   ...
+    #     ...
     # AttributeError: 'Astronaut' object has no attribute 'rank'
 
 
@@ -253,12 +253,6 @@ OOP Slots Define
     #. Define class ``Iris`` with attributes: ``sepal_length, sepal_width, petal_length, petal_width, species``
     #. All attributes must be in ``__slots__``
     #. Define method ``__repr__`` which prints class name and all values positionally, ie. ``Iris(5.8, 2.7, 5.1, 1.9, 'virginica')``
-    #. Define ``result: list[Iris]``
-    #. Iterate over ``DATA`` rows
-    #. From row data create ``Iris`` instances and add it to ``result``
-    #. Define ``iris: Iris``
-    #. From ``result`` get element at index 0 and assign it to ``iris``
-    #. Print all attibutes and values of ``iris`` in dict format
     #. Compare result with "Output" section (see below)
 
 :Polish:
@@ -266,12 +260,6 @@ OOP Slots Define
     #. Zdefiniuj klasę ``Iris`` z atrybutami: ``sepal_length, sepal_width, petal_length, petal_width, species``
     #. Wszystkie atrybuty muszą być w ``__slots__``
     #. Zdefiniuj metodę ``__repr__`` wypisującą nazwę klasy i wszystkie wartości atrybutów pozycyjnie, np. ``Iris(5.8, 2.7, 5.1, 1.9, 'virginica')``
-    #. Zdefiniuj ``result: list[Iris]``
-    #. Iteruj po wierszach ``DATA``
-    #. Z danych z wiersza twórz instancje ``Iris`` i dodaj ją do ``result``
-    #. Zdefiniuj ``iris: Iris``
-    #. Z ``result`` wybierz element o indeksie 0 i zapiisz do ``iris``
-    #. Wypisz wszystkie atrybuty i wartości ``iris`` w formacie słownika
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:

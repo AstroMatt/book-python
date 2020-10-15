@@ -19,11 +19,11 @@ The single responsibility principle is a computer programming principle that sta
 
 
     @dataclass
-    class Dragon:
+    class Hero:
         HEALTH_MIN: int = 0
         HEALTH_MAX: int = 10
-        _positinion_x: int = 0
-        _positinion_y: int = 0
+        _position_x: int = 0
+        _position_y: int = 0
         _health: int = 0
 
         def __post_init__(self) -> None:
@@ -39,16 +39,16 @@ The single responsibility principle is a computer programming principle that sta
             return not self.is_dead()
 
         def position_set(self, x: int, y: int) -> None:
-            self._positinion_x = x
-            self._positinion_y = y
+            self._position_x = x
+            self._position_y = y
 
         def position_change(self, right=0, left=0, down=0, up=0):
-            x = self._positinion_x + right - left
-            y = self._positinion_y + down - up
+            x = self._position_x + right - left
+            y = self._position_y + down - up
             self.set(x, y)
 
         def position_get(self) -> tuple[int, int]:
-            return self._positinion_x, self._positinion_y
+            return self._position_x, self._position_y
 
 
 .. code-block:: python
@@ -78,24 +78,24 @@ The single responsibility principle is a computer programming principle that sta
 
     @dataclass
     class HasPosition:
-        _positinion_x: int = 0
-        _positinion_y: int = 0
+        _position_x: int = 0
+        _position_y: int = 0
 
         def position_set(self, x: int, y: int) -> None:
-            self._positinion_x = x
-            self._positinion_y = y
+            self._position_x = x
+            self._position_y = y
 
         def position_change(self, right=0, left=0, down=0, up=0):
-            x = self._positinion_x + right - left
-            y = self._positinion_y + down - up
+            x = self._position_x + right - left
+            y = self._position_y + down - up
             self.set(x, y)
 
         def position_get(self) -> tuple[int, int]:
-            return self._positinion_x, self._positinion_y
+            return self._position_x, self._position_y
 
 
-        class Dragon(HasHealth, HasPosition):
-            pass
+    class Hero(HasHealth, HasPosition):
+        pass
 
 
 Open/Closed Principle
@@ -104,7 +104,7 @@ Open/Closed Principle
 
 .. code-block:: python
 
-    class Dragon:
+    class Hero:
         HEALTH_MIN: int = 0
         HEALTH_MAX: int = 10
 
@@ -112,12 +112,11 @@ Open/Closed Principle
             self._health = randint(self.HEALTH_MIN, self.HEALTH_MAX)
 
 
-    class RedDragon(Dragon):
-        HEALTH_MIN: int = 10
-        HEALTH_MAX: int = 20
+    class Mage(Dragon):
+        pass
 
 
-    class BlackDragon(Dragon):
+    class Warrior(Dragon):
         HEALTH_MIN: int = 30
         HEALTH_MAX: int = 40
 
@@ -126,7 +125,7 @@ Open/Closed Principle
     from random import randint
 
 
-    class Dragon:
+    class Hero:
         def __init__(self):
             self._health = self._get_initial_health()
 
@@ -134,12 +133,11 @@ Open/Closed Principle
             return randint(10, 20)
 
 
-    class RedDragon(Dragon):
-        def _get_initial_health(self):
-            return randint(30, 40)
+    class Mage(Dragon):
+        pass
 
 
-    class BlackDragon(Dragon):
+    class Warrior(Dragon):
         def _get_initial_health(self):
             return randint(20, 30)
 
@@ -263,13 +261,16 @@ By dictating that both high-level and low-level objects must depend on the same 
         def say_hello():
             print('Hello')
 
+
     class Cosmonaut:
         def say_hello():
             print('Привет!')
 
+
     class Taikonaut:
         def say_hello():
             print('你好')
+
 
     watney = Astronaut()
     watney.say_hello()

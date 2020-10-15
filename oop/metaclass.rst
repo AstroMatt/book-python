@@ -11,9 +11,8 @@ Rationale
     "Metaclasses are deeper magic than 99% of users should ever worry about. If you wonder whether you need them, you don’t (the people who actually need them know with certainty that they need them, and don’t need an explanation about why)." -- Tim Peters
 
 .. highlights::
+    * Object is an instance of a class
     * Class is an instance of a Metaclass
-    * Class defines how an instance of the class behaves
-    * Metaclass defines how a class behaves
 
 .. figure:: img/metaclass-instances.png
     :width: 50%
@@ -26,14 +25,31 @@ How Metaclasses works?
 ======================
 .. highlights::
     * Instances are created by calling the class
-    * Python creates a new class (when it executes the ``class`` statement) by calling the metaclass
+    * Classes are created by calling the metaclass (when it executes the ``class`` statement)
     * Combined with the normal ``__init__`` and ``__new__`` methods
-    * Metaclasses allow you to do 'extra things' when creating a class
+    * Class defines how an object behaves
+    * Metaclass defines how a class behaves
+
+.. code-block:: python
+
+    name = 'Mark Watney'
+
+
+    def hello():
+        print('My name... José Jiménez')
+
+
+    class Astronaut:
+        pass
+
+
+    astro = Astronaut()
 
 
 Usage
 =====
 .. highlights::
+    * Metaclasses allow you to do 'extra things' when creating a class
     * Allow customization of class instantiation
     * Most commonly used as a class-factory
     * Registering the new class with some registry
@@ -109,21 +125,26 @@ Type Metaclass
 ==============
 .. code-block:: python
 
-    type(1)         # <class 'int'>
-    type(int)       # <class 'type'>
-    type(type)      # <class 'type'>
+    type(1)           # <class 'int'>
+    type(int)         # <class 'type'>
+    type(type)        # <class 'type'>
 
 .. code-block:: python
 
-    type(float)     # <class 'type'>
-    type(dict)      # <class 'type'>
-    type(list)      # <class 'type'>
-    type(tuple)     # <class 'type'>
+    type(float)       # <class 'type'>
+    type(bool)        # <class 'type'>
+    type(str)         # <class 'type'>
+    type(bytes)       # <class 'type'>
+    type(list)        # <class 'type'>
+    type(tuple)       # <class 'type'>
+    type(set)         # <class 'type'>
+    type(frozenset)   # <class 'type'>
+    type(dict)        # <class 'type'>
 
 .. code-block:: python
 
-    type(object)    # <class 'type'>
-    type(type)      # <class 'type'>
+    type(object)      # <class 'type'>
+    type(type)        # <class 'type'>
 
 .. figure:: img/metaclass-class-chain.png
     :width: 25%
@@ -141,10 +162,41 @@ Method Resolution Order
 
 
     astro = Astronaut()
-    isinstance(astro, Astronaut)    # True
-    isinstance(astro, Astronaut)    # True
 
-    print(astro.__mro__)
+    isinstance(astro, Astronaut)
+    # True
+
+    isinstance(astro, object)
+    # True
+
+    Astronaut.__mro__
+    # (<class '__main__.Astronaut'>, <class 'object'>)
+
+.. code-block:: python
+
+    class AstroMeta(type):
+        pass
+
+
+    class Astronaut(metaclass=AstroMeta):
+        pass
+
+
+    astro = Astronaut()
+
+    isinstance(astro, Astronaut)
+    # True
+
+    isinstance(astro, object)
+    # True
+
+    isinstance(astro, AstroMeta)
+    # False
+
+    isinstance(Astronaut, AstroMeta)
+    # True
+
+    Astronaut.__mro__
     # (<class '__main__.Astronaut'>, <class 'object'>)
 
 
@@ -155,14 +207,15 @@ Example
     import logging
 
 
-    class Astronaut:
-        pass
-
-
     def new(cls):
         obj = super().__new__(cls)
         obj._logger = logging.getLogger(cls.__name__)
         return obj
+
+
+    class Astronaut:
+        pass
+
 
     Astronaut.__new__ = new
 
@@ -176,21 +229,6 @@ Example
     # <Logger Astronaut (WARNING)>
 
 .. code-block:: python
-    :caption: This doesn't work!
-
-    import logging
-
-
-    def new(cls):
-        obj = super().__new__(cls)
-        obj._logger = logging.getLogger(cls.__name__)
-        return obj
-
-    type.__new__ = new
-    # TypeError: can't set attributes of built-in/extension type 'type'
-
-.. code-block:: python
-    :caption: This doesn't work!
 
     import logging
 
@@ -201,7 +239,24 @@ Example
         return obj
 
     str.__new__ = new
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: can't set attributes of built-in/extension type 'str'
+
+.. code-block:: python
+
+    import logging
+
+
+    def new(cls):
+        obj = super().__new__(cls)
+        obj._logger = logging.getLogger(cls.__name__)
+        return obj
+
+    type.__new__ = new
+    # Traceback (most recent call last):
+    #     ...
+    # TypeError: can't set attributes of built-in/extension type 'type'
 
 
 Use Case

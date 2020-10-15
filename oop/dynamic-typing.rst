@@ -97,9 +97,13 @@ Object methods
     # 3
 
     add_numbers()
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: function() missing 2 required positional arguments: 'a' and 'b'
 
     add_numbers.__call__()
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: function() missing 2 required positional arguments: 'a' and 'b'
 
 Injecting properties

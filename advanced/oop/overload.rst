@@ -25,12 +25,12 @@ Rationale
 
     Vector(x=1, y=2) + Vector(x=3, y=4)
     # Traceback (most recent call last):
-    #   ...
+    #     ...
     # TypeError: unsupported operand type(s) for +: 'Vector' and 'Vector'
 
     Vector(x=1, y=2) + Vector(x=3, y=4) + Vector(x=5, y=6)
     # Traceback (most recent call last):
-    #   ...
+    #     ...
     # TypeError: unsupported operand type(s) for +: 'Vector' and 'Vector'
 
 .. code-block:: python
