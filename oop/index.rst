@@ -1,6 +1,8 @@
-***************************
-Object Oriented Programming
-***************************
+..
+    ***************************
+    Object Oriented Programming
+    ***************************
+
 .. toctree::
     :maxdepth: 1
     :caption: Object Oriented Programming
