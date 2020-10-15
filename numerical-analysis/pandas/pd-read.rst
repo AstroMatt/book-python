@@ -111,7 +111,7 @@ Read HTML
 
     pd.read_html(URL)
     # Traceback (most recent call last):
-    #   ...
+    #     ...
     # urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 .. code-block:: python

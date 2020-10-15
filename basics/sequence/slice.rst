@@ -70,6 +70,8 @@ Unordered Sequences
     data = {'a', 'b', 'c', 'd', 'e'}
 
     data[:3]
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: 'set' object is not subscriptable
 
 .. code-block:: python
@@ -78,6 +80,8 @@ Unordered Sequences
     data = frozenset({'a', 'b', 'c', 'd', 'e'})
 
     data[:3]
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: 'frozenset' object is not subscriptable
 
 
@@ -209,6 +213,8 @@ Slice All
     # [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
     data[:, 1]
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: list indices must be integers or slices, not tuple
 
     data[:][1]

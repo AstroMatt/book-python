@@ -305,7 +305,7 @@ Temperature
     t = Temperature(100)
     t.value = -10
     # Traceback (most recent call last):
-    #   ...
+    #     ...
     # ValueError: Kelvin Temperature cannot be negative
 
 .. code-block:: python

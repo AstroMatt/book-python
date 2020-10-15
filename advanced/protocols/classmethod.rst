@@ -34,9 +34,13 @@ Example
     DATA = '{"firstname": "Jan", "lastname": "Twardowski"}'
 
     result = User.from_json(DATA)
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: from_json() missing 1 required positional argument: 'data'
 
     result = User().from_json(DATA)
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: __init__() missing 2 required positional arguments: 'firstname' and 'lastname'
 
     result = User(None, None).from_json(DATA)

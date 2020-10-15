@@ -79,7 +79,7 @@ Comparision
 
     IPv4Address('255.255.255.255') + 1
     # Traceback (most recent call last):
-    #  File "<stdin>", line 1, in <module>
+    #     ...
     # ipaddress.AddressValueError: 4294967296 (>= 2**32) is not permitted as an IPv4 address
 
 The name of the reverse DNS PTR record for the IP address
@@ -145,8 +145,7 @@ Subnet
 
     list(ip_network('192.0.2.0/24').subnets(new_prefix=23))
     # Traceback (most recent call last):
-    #  File "<stdin>", line 1, in <module>
-    #    raise ValueError('new prefix must be longer')
+    #     ...
     # ValueError: new prefix must be longer
 
     list(ip_network('192.0.2.0/24').subnets(new_prefix=25))

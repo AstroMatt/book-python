@@ -25,7 +25,7 @@ Python WAT?!
 
     list('ABCDE','asd')
     # Traceback (most recent call last):
-    #  File "<input>", line 1, in <module>
+    #     ...
     # TypeError: list expected at most 1 arguments, got 2
 
 .. code-block:: python

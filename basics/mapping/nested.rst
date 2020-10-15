@@ -27,12 +27,16 @@ Dict Keys
         {1}: 'setosa',
         {1,2,3}: 'virginica',
     }
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: unhashable type: 'set'
 
     data = {
         [1]: 'setosa',
         [1,2,3]: 'virginica',
     }
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: unhashable type: 'list'
 
 

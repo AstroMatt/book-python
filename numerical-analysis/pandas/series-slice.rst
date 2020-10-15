@@ -81,6 +81,8 @@ String Index
     # dtype: float64
 
     s['a':'d':'b']
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: '>=' not supported between instances of 'str' and 'int'
 
     s['d':'a']

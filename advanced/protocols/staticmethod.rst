@@ -55,12 +55,12 @@ Example
 
     Calculator.add(10, 20)
     # Traceback (most recent call last):
-    #   ...
+    #     ...
     # TypeError: add() missing 1 required positional argument: 'b'
 
     Calculator.sub(8, 4)
     # Traceback (most recent call last):
-    #   ...
+    #     ...
     # TypeError: add() missing 1 required positional argument: 'b'
 
     calc = Calculator()
@@ -146,12 +146,12 @@ Astronaut Hello
 
     Astronaut.say_hello()
     # Traceback (most recent call last):
-    #   ...
+    #     ...
     # TypeError: say_hello() missing 1 required positional argument: 'self'
 
     Astronaut.say_goodbye()
     # Traceback (most recent call last):
-    #   ...
+    #     ...
     # TypeError: say_goodbye() missing 1 required positional argument: 'self'
 
 .. code-block:: python

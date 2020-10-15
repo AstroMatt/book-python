@@ -28,7 +28,7 @@ Most Common Exceptions
     name = 'Jan'
     name.append('Twardowski')
     # Traceback (most recent call last):
-    #   File "<stdin>", line 1, in <module>
+    #     ...
     # AttributeError: 'str' object has no attribute 'append'
 
 .. code-block:: python
@@ -38,7 +38,7 @@ Most Common Exceptions
     import math
     import match
     # Traceback (most recent call last):
-    #   File "<stdin>", line 1, in <module>
+    #     ...
     # ModuleNotFoundError: No module named 'match'
 
 .. code-block:: python
@@ -48,7 +48,7 @@ Most Common Exceptions
     DATA = ['a', 'b', 'c']
     DATA[100]
     # Traceback (most recent call last):
-    #   File "<stdin>", line 1, in <module>
+    #     ...
     # IndexError: list index out of range
 
 .. code-block:: python
@@ -58,7 +58,7 @@ Most Common Exceptions
     DATA = {'a': 1, 'b': 2}
     DATA['x']
     # Traceback (most recent call last):
-    #   File "<stdin>", line 1, in <module>
+    #     ...
     # KeyError: 'x'
 
 .. code-block:: python
@@ -67,7 +67,7 @@ Most Common Exceptions
 
     print(firstname)
     # Traceback (most recent call last):
-    #   File "<stdin>", line 1, in <module>
+    #     ...
     # NameError: name 'firstname' is not defined
 
 .. code-block:: python
@@ -102,22 +102,22 @@ Most Common Exceptions
 
     42 + 'a'
     # Traceback (most recent call last):
-    #   File "<stdin>", line 1, in <module>
+    #     ...
     # TypeError: unsupported operand type(s) for +: 'int' and 'str'
 
     'a' + 42
     # Traceback (most recent call last):
-    #   File "<stdin>", line 1, in <module>
+    #     ...
     # TypeError: can only concatenate str (not "int") to str
 
     a[1.5]
     # Traceback (most recent call last):
-    #   File "<stdin>", line 1, in <module>
+    #     ...
     # TypeError: list indices must be integers or slices, not float
 
     a, b = 1
     # Traceback (most recent call last):
-    #   File "<input>", line 1, in <module>
+    #     ...
     # TypeError: cannot unpack non-iterable int object
 
 .. code-block:: python
@@ -126,22 +126,22 @@ Most Common Exceptions
 
     a, b, c = 1, 2
     # Traceback (most recent call last):
-    #   File "<stdin>", line 1, in <module>
+    #     ...
     # ValueError: not enough values to unpack (expected 3, got 2)
 
     a, b = 1, 2, 3
     # Traceback (most recent call last):
-    #   File "<stdin>", line 1, in <module>
+    #     ...
     # ValueError: too many values to unpack (expected 2)
 
     float('one')
     # Traceback (most recent call last):
-    #   File "<stdin>", line 1, in <module>
+    #     ...
     # ValueError: could not convert string to float: 'one'
 
     int('one')
     # Traceback (most recent call last):
-    #   File "<stdin>", line 1, in <module>
+    #     ...
     # ValueError: invalid literal for int() with base 10: 'one'
 
 
@@ -222,7 +222,7 @@ Raising Exceptions
 
     raise RuntimeError
     # Traceback (most recent call last):
-    #   File "<stdin>", line 1, in <module>
+    #     ...
     # RuntimeError
 
 .. code-block:: python
@@ -231,7 +231,7 @@ Raising Exceptions
 
     raise RuntimeError('Some message')
     # Traceback (most recent call last):
-    #   File "<stdin>", line 1, in <module>
+    #     ...
     # RuntimeError: Some message
 
 
@@ -246,7 +246,7 @@ Use Case
     if float(temperature) < 0:
         raise ValueError('Kelvin temperature cannot be negative')
     # Traceback (most recent call last):
-    #   File "<stdin>", line 2, in <module>
+    #     ...
     # ValueError: Kelvin temperature cannot be negative
 
 .. code-block:: python
@@ -267,10 +267,10 @@ Use Case
     def apollo13():
         raise RuntimeError('Oxygen tank explosion')
 
+
     apollo13()
     # Traceback (most recent call last):
-    #   File "<stdin>", line 5, in <module>
-    #   File "<stdin>", line 2, in apollo13
+    #     ...
     # RuntimeError: Oxygen tank explosion
 
 .. code-block:: python
@@ -279,10 +279,10 @@ Use Case
     def apollo18():
         raise NotImplementedError('Mission dropped due to budget cuts')
 
+
     apollo18()
     # Traceback (most recent call last):
-    #   File "<stdin>", line 5, in <module>
-    #   File "<stdin>", line 2, in apollo18
+    #     ...
     # NotImplementedError: Mission dropped due to budget cuts
 
 
@@ -298,12 +298,12 @@ Assertion
 
     assert sys.version_info >= (3, 8)
     # Traceback (most recent call last):
-    #   File "<stdin>", line 1, in <module>
+    #     ...
     # AssertionError
 
     assert sys.version_info >= (3, 8), "Python 3.8+ required."
     # Traceback (most recent call last):
-    #   File "<stdin>", line 1, in <module>
+    #     ...
     # AssertionError: Python 3.8+ required.
 
 
@@ -334,6 +334,7 @@ Traceback Analysis
     def apollo13():
         raise RuntimeError('Oxygen tank explosion')
 
+
     apollo13()
     # Traceback (most recent call last):
     #   File "<stdin>", line 1, in <module>
@@ -345,6 +346,7 @@ Traceback Analysis
 
     def apollo13():
         raise RuntimeError('Oxygen tank explosion')
+
 
     apollo13()
     # Traceback (most recent call last):
@@ -359,6 +361,7 @@ Traceback Analysis
 
     def apollo13():
         raise RuntimeError('Oxygen tank explosion')
+
 
     apollo13()
     # Traceback (most recent call last):
@@ -576,12 +579,12 @@ Defining Own Exceptions
 
     raise MyError
     # Traceback (most recent call last):
-    #   File "<stdin>", line 5, in <module>
+    #     ...
     # MyError
 
     raise MyError('More verbose description')
     # Traceback (most recent call last):
-    #   File "<stdin>", line 5, in <module>
+    #     ...
     # MyError: More verbose description
 
 .. code-block:: python

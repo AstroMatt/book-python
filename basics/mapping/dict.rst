@@ -70,6 +70,8 @@ Get Item
     # Melissa Lewis
 
     crew['pilot']
+    # Traceback (most recent call last):
+    #     ...
     # KeyError: 'pilot'
 
 .. code-block:: python
@@ -103,6 +105,8 @@ Get Item
     # 'First Human Space Flight'
 
     calendarium['1961']
+    # Traceback (most recent call last):
+    #     ...
     # KeyError: '1961'
 
     calendarium.get('1961')

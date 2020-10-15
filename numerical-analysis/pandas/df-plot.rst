@@ -501,6 +501,8 @@ DataFrame Plot
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/xlsx/sensors-optima.xlsx'
+        WHERE = 'Sleeping Quarters upper'
+        WHEN = '2019-09-28'
 
 :Hints:
     * ``pd.Series.apply(np.sign)`` :ref:`Numpy signum`

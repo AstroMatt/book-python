@@ -118,6 +118,8 @@ Range of rows and single column
 .. code-block:: python
 
     df.loc[['2000-01-02','2000-01-04'], 'Noon']
+    # Traceback (most recent call last):
+    #     ...
     # KeyError: "None of [Index(['2000-01-02', '2000-01-04'], dtype='object')] are in the [index]"
 
 .. code-block:: python

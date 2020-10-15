@@ -89,7 +89,7 @@ Use Cases
 
     t.kelvin = -1
     # Traceback (most recent call last):
-    #    ...
+    #     ...
     # ValueError: Cannot set negative Kelvin
 
 .. code-block:: python

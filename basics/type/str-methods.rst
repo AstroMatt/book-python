@@ -431,6 +431,8 @@ Method Chaining
     a = 'Python'
 
     a = a.upper().startswith('P').replace('P', 'C')
+    # Traceback (most recent call last):
+    #     ...
     # AttributeError: 'bool' object has no attribute 'replace'
 
 

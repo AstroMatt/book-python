@@ -97,6 +97,8 @@ Set Item
 
     data = ['a', 'b', 'c', 'd']
     data[4] = 'x'
+    # Traceback (most recent call last):
+    #     ...
     # IndexError: list assignment index out of range
 
 
@@ -246,6 +248,8 @@ Method Chaining
     data = [3, 1, 2]
 
     data.sort().append(4)
+    # Traceback (most recent call last):
+    #     ...
     # AttributeError: 'NoneType' object has no attribute 'append'
 
 

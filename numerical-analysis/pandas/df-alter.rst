@@ -28,9 +28,13 @@ Add Rows and Columns
     # 2  12  22  32  c
 
     df['X'] = ['a', 'b']
+    # Traceback (most recent call last):
+    #     ...
     # ValueError: Length of values does not match length of index
 
     df['X'] = ['a', 'b', 'c', 'd']
+    # Traceback (most recent call last):
+    #     ...
     # ValueError: Length of values does not match length of index
 
     df['Z'] = np.arange(3.0)
@@ -132,7 +136,7 @@ Drop Rows and Columns
 
     df.drop('1999-12-30')
     # Traceback (most recent call last):
-    #    ...
+    #     ...
     # KeyError: "['1999-12-30'] not found in axis"
 
     df.drop(pd.Timestamp('1999-12-30'))

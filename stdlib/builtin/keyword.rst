@@ -36,6 +36,8 @@ List of keywords
 
 
     print('hello')
+    # Traceback (most recent call last):
+    #     ...
     # IndentationError: expected an indented block
 
 .. code-block:: python

@@ -136,6 +136,8 @@ Add
 
     data = {1, 2}
     data.add([3, 4])
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: unhashable type: 'list'
 
 .. code-block:: python
@@ -148,6 +150,8 @@ Add
 
     data = {1, 2}
     data.add({3, 4})
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: unhashable type: 'set'
 
 .. code-block:: python

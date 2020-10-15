@@ -163,6 +163,8 @@ Use Cases
     # 4
     # 3
     # 2
+    # Traceback (most recent call last):
+    #     ...
     # TimeoutError: Timeout
 
 

@@ -14,6 +14,8 @@ Array Concatenation
     b = np.array([4, 5, 6])
 
     np.concatenate(a, b)
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: only integer scalar arrays can be converted to a scalar index
 
     np.concatenate((a, b))

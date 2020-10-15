@@ -29,7 +29,7 @@ Nested Function
 
     hello()
     # Traceback (most recent call last):
-    #   ...
+    #     ...
     # NameError: name 'hello' is not defined
 
     run()

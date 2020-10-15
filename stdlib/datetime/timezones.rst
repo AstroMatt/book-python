@@ -43,9 +43,13 @@ Rationale
     # datetime.datetime(1957, 10, 4, 19, 28, 34, tzinfo=datetime.timezone.utc)
 
     datetime.utcnow(tz=timezone.utc)
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: utcnow() takes no keyword arguments
 
     datetime.utcnow(timezone.utc)
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: utcnow() takes no arguments (1 given)
 
 

@@ -115,7 +115,7 @@ NoReturn
 
     valid_email('jose.jimenez_at_nasa.gov')
     # Traceback (most recent call last):
-    #   ...
+    #     ...
     # ValueError: Invalid Email
 
 

@@ -451,6 +451,8 @@ singledispatch
     # [274.15, 275.15]
 
     celsius_to_kelvin((1,2))
+    # Traceback (most recent call last):
+    #     ...
     # NotImplementedError: Argument must be int or list
 
 singledispatchmethod
@@ -489,6 +491,8 @@ singledispatchmethod
     # [274.15, 275.15]
 
     conv.celsius_to_kelvin((1,2))
+    # Traceback (most recent call last):
+    #     ...
     # NotImplementedError: Argument must be int or list
 
 

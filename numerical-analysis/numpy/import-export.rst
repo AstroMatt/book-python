@@ -13,12 +13,18 @@ np.loadtxt()
     url = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris.csv'
 
     a = np.loadtxt(url)
+    # Traceback (most recent call last):
+    #     ...
     # ValueError: could not convert string to float: 'sepal_length,sepal_width,petal_length,petal_width,species'
 
     a = np.loadtxt(url, skiprows=1)
+    # Traceback (most recent call last):
+    #     ...
     # ValueError: could not convert string to float: '5.4,3.9,1.3,0.4,setosa'
 
     a = np.loadtxt(url, skiprows=1, delimiter=',')
+    # Traceback (most recent call last):
+    #     ...
     # ValueError: could not convert string to float: 'setosa'
 
     a = np.loadtxt(url, skiprows=1, delimiter=',', usecols=(0,1,2,3))

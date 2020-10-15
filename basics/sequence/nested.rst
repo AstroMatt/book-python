@@ -149,6 +149,8 @@ Many Types
     # {7, 8, 9}
 
     data[2][1]
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: 'set' object is not subscriptable
 
 .. code-block:: python

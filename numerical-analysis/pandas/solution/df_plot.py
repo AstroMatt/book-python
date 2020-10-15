@@ -3,6 +3,9 @@ import pandas as pd
 
 
 DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/xlsx/sensors-optima.xlsx'
+WHERE = 'Sleeping Quarters upper'
+WHEN = '2019-09-28'
+
 
 df = pd.read_excel(
     io=DATA,
@@ -11,12 +14,9 @@ df = pd.read_excel(
     header=1,
     index_col=0)
 
-location = 'Sleeping Quarters upper'
-date = '2019-09-28'
-
 activity = (df
-            .loc[df['location'] == location]
-            .loc[date, 'value']
+            .loc[df['location'] == WHERE]
+            .loc[WHEN, 'value']
             .apply(np.sign)
             .resample('H')
             .sum())

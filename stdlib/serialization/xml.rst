@@ -271,6 +271,8 @@ Elements as a dict
     # 'plantae'
 
     tag.attrib['not-existing']
+    # Traceback (most recent call last):
+    #     ...
     # KeyError: 'not-existing'
 
     tag.attrib['species'] = 'Setosa'

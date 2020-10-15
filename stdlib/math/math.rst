@@ -183,9 +183,13 @@ Absolute value
     vector = [1, 0, 1]
 
     abs(vector)
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: bad operand type for abs(): 'list'
 
     fabs(vector)
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: must be real number, not list
 
 .. code-block:: python

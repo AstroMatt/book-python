@@ -77,6 +77,8 @@ Type Casting
 
     data = [1, 2, 3, [4, 5]]
     frozenset(data)
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: unhashable type: 'list'
 
 .. code-block:: python

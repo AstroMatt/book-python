@@ -88,6 +88,8 @@ Append
     # 2  12  22  32
 
     df.append({'A': 77, 'B': 88, 'C': 99})
+    # Traceback (most recent call last):
+    #     ...
     # TypeError: Can only append a Series if ignore_index=True or if the Series has a name
 
     df.append({'A': 77, 'B': 88, 'C': 99}, ignore_index=True)
