@@ -633,7 +633,6 @@ Protocol Iterator Implementation
     #. Use data from "Input" section (see below)
     #. Modify classes to implement iterator protocol
     #. Iterator should return instances of ``Mission``
-    #. Iterate over ``astro`` using ``for`` loop
     #. All tests must pass
     #. Compare result with "Output" section (see below)
 
@@ -641,7 +640,6 @@ Protocol Iterator Implementation
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Zmodyfikuj klasy aby zaimplementować protokół iterator
     #. Iterator powinien zwracać instancje ``Mission``
-    #. Iteruj po ``astro`` używając pętli ``for``
     #. Wszystkie testy muszą przejść
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
