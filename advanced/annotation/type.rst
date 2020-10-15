@@ -1,7 +1,7 @@
-.. _Advanced Type Annotation:
+.. _Advanced Annotation Type:
 
 ***************
-Type Annotation
+Annotation Type
 ***************
 
 
@@ -15,7 +15,7 @@ Rationale
 .. highlights::
     * Since Python 3.5, :pep:`484`, :pep:`526`, :pep:`544`
     * ``SyntaxError`` in Python before 3.5
-    * Also known as "type hints"
+    * Names: "type annotations", "type hints", "gradual typing"
     * Good IDE will give you hints
     * Types are used extensively in system libraries
     * More and more books and documentations use types

@@ -1,8 +1,8 @@
-.. _Advanced Mapping Type Annotation:
+.. _Advanced Annotation Mapping:
 
-***********************
-Mapping Type Annotation
-***********************
+******************
+Annotation Mapping
+******************
 
 
 Rationale

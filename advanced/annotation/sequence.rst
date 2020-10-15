@@ -1,8 +1,8 @@
-.. _Advanced Sequence Type Annotation:
+.. _Advanced Annotation Sequence:
 
-************************
-Sequence Type Annotation
-************************
+*******************
+Annotation Sequence
+*******************
 
 
 Rationale

@@ -10,19 +10,19 @@ About
     about/entry-test.rst
     about/agenda.rst
 
-***************
-Type Annotation
-***************
+**********
+Annotation
+**********
 .. toctree::
     :maxdepth: 1
-    :caption: Type Annotation
-    :name: Advanced Type Annotation
+    :caption: Annotation
+    :name: Advanced Annotation
 
-    type-annotation/type.rst
-    type-annotation/sequence.rst
-    type-annotation/mapping.rst
-    type-annotation/function.rst
-    type-annotation/oop.rst
+    annotation/type.rst
+    annotation/sequence.rst
+    annotation/mapping.rst
+    annotation/function.rst
+    annotation/oop.rst
 
 *********
 Functions
@@ -47,7 +47,7 @@ Decorators
 .. toctree::
     :maxdepth: 1
     :caption: Decorators
-    :name: Decorators
+    :name: Advanced Decorators
 
     decorators/about.rst
     decorators/function-decorator-functions.rst

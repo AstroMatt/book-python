@@ -10,7 +10,7 @@ todo_emit_warnings = False
 todo_include_todos = True
 
 extensions = [
-    'sphinx.ext.autosectionlabel',
+    # 'sphinx.ext.autosectionlabel',
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
     'sphinx.ext.extlinks',
@@ -52,7 +52,7 @@ html_static_path = [
     '_data/sas',
     '_data/sqlite3',
     '_data/xml',
-    '_data/xslx',
+    '_data/xlsx',
 ]
 
 # article - for articles in scientific journals, presentations, short reports, program documentation, invitations, etc

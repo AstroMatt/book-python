@@ -1,8 +1,8 @@
-.. _Advanced Function Type Annotation:
+.. _Advanced Annotation Function:
 
-************************
-Function Type Annotation
-************************
+*******************
+Annotation Function
+*******************
 
 
 Rationale

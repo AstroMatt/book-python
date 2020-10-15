@@ -17,5 +17,4 @@ Object Oriented Programming
     str-interning.rst
     slots.rst
     metaclass.rst
-    solid.rst
     good-practices.rst

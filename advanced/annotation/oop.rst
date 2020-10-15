@@ -1,8 +1,8 @@
-.. _Advanced OOP Type Annotation:
+.. _Advanced Annotation OOP:
 
-*******************
-OOP Type Annotation
-*******************
+**************
+Annotation OOP
+**************
 
 
 Rationale
