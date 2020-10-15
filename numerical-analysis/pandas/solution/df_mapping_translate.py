@@ -1,6 +1,6 @@
 import pandas as pd
 
-DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/astro-dates.csv'
+URL = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/martian-pl.csv'
 
 MONTHS_PLEN = {'styczeń': 'January',
                'luty': 'February',
@@ -17,7 +17,7 @@ MONTHS_PLEN = {'styczeń': 'January',
 
 
 ## Solution 1
-astro = pd.read_csv(DATA)
+astro = pd.read_csv(URL)
 
 astro['Mission Date'] = astro['Mission Date'] \
      .replace(MONTHS_PLEN, regex=True) \
@@ -34,7 +34,7 @@ def substitute(original):
             return translated
 
 
-astro = pd.read_csv(DATA)
+astro = pd.read_csv(URL)
 astro['Mission Date'] = astro['Mission Date']\
                              .apply(substitute)\
                              .apply(pd.Timestamp)

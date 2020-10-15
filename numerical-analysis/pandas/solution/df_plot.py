@@ -1,34 +1,26 @@
 import numpy as np
 import pandas as pd
-from matplotlib.dates import HourLocator, DateFormatter
+
+
+DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/xlsx/sensors-optima.xlsx'
 
 df = pd.read_excel(
-    io='../data/sensors-optima.xlsx',
+    io=DATA,
     parse_dates=['datetime'],
-    sheet_name=['Luminance'],
+    sheet_name='Luminance',
     header=1,
-    index_col=0,
-)
+    index_col=0)
 
-df = df['Luminance']
-df['value'] = df['value'].apply(np.sign)
+location = 'Sleeping Quarters upper'
+date = '2019-09-28'
 
-where = df['location'] == 'Sleeping Quarters upper'
-date = df['date'] == '2019-09-28'
+activity = (df
+            .loc[df['location'] == location]
+            .loc[date, 'value']
+            .apply(np.sign)
+            .resample('H')
+            .sum())
 
-activity = df.loc[where & date, 'value'].resample('H').sum()
-ax = activity.plot(kind='line', color='red', label='')
-
-# ax.xaxis.set_major_locator(HourLocator())
-# ax.xaxis.set_major_formatter(DateFormatter('%H'))
-
-ax.set_yticks([0, 1])
-
-
-# Only for PyCharm to display chart
-import matplotlib.pyplot as plt
-
-plt.plot([], [], color='red', label='0 - sleep')
-plt.plot([], [], color='red', label='1 - awake')
-plt.legend()
-plt.show()
+ax = activity.plot(color='red', figsize=(16,5))
+_ = ax.set_yticks([0, 1])
+_ = ax.set_yticklabels(['sleep', 'awake'])
