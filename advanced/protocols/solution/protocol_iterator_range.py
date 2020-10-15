@@ -1,4 +1,13 @@
 """
+>>> from inspect import isclass, ismethod
+>>> assert isclass(Range)
+
+>>> r = Range(0, 0, 0)
+>>> assert hasattr(r, '__iter__')
+>>> assert hasattr(r, '__next__')
+>>> assert ismethod(r.__iter__)
+>>> assert ismethod(r.__next__)
+
 >>> list(Range(0, 10, 2))
 [0, 2, 4, 6, 8]
 
@@ -17,10 +26,28 @@ ValueError: Invalid arguments
 Traceback (most recent call last):
   ...
 ValueError: Invalid arguments
+
+>>> Range(stop=2)
+Traceback (most recent call last):
+  ...
+TypeError: Range() takes no keyword arguments
+
+>>> Range(start=1, stop=2)
+Traceback (most recent call last):
+  ...
+TypeError: Range() takes no keyword arguments
+
+>>> Range(start=1, stop=2, step=2)
+Traceback (most recent call last):
+  ...
+TypeError: Range() takes no keyword arguments
 """
 
+
 class Range:
-    def __init__(self, *args):
+    def __init__(self, *args, **kwargs):
+        if kwargs:
+            raise TypeError('Range() takes no keyword arguments')
         if len(args) == 3:
             self.start = args[0]
             self.stop = args[1]
