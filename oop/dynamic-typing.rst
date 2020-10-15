@@ -90,6 +90,7 @@ Object methods
         """Function add numbers"""
         return a + b
 
+
     add_numbers(1, 2)
     # 3
 
@@ -122,7 +123,7 @@ Injecting properties
 
 Injecting methods
 -----------------
- .. code-block:: python
+.. code-block:: python
 
     def add_numbers(a, b):
         """Function add numbers"""
@@ -266,8 +267,10 @@ Example
             arguments = tuple(self.__dict__.values())
             return f'\n\n{name}{arguments}'
 
+
     result = [Container(**data)
               for data in DATA]
+
 
     print(result)
     # [Container('Jan', 'Twardowski', [{'street': 'Kamienica Pod św. Janem Kapistranem', 'city': 'Kraków', 'postcode': '31-008', 'region': 'Małopolskie', 'country': 'Poland'}]),
