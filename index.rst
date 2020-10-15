@@ -64,6 +64,7 @@ Object Oriented Programming
 ***************************
 .. toctree::
     :maxdepth: 2
+    :numbered:
     :caption: Object Oriented Programming
 
     /oop/index.rst
