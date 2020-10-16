@@ -3,25 +3,23 @@
 >>> pt.x, pt.y, pt.z
 (1, 2, 3)
 
->>> del pt.x
+>>> pt.notexisting = 10
 Traceback (most recent call last):
     ...
-PermissionError: Cannot delete attibutes
-
->>> del pt.notexisting
-Traceback (most recent call last):
-    ...
-PermissionError: Cannot delete attibutes
+PermissionError: Cannot set other attributes than x,y,z
 
 >>> pt.x = 10
 Traceback (most recent call last):
     ...
 PermissionError: Cannot modify existing attributes
-
->>> pt.notexisting = 10
+>>> pt.y = 20
 Traceback (most recent call last):
     ...
-PermissionError: Cannot set other attributes than x,y,z
+PermissionError: Cannot modify existing attributes
+>>> pt.z = 30
+Traceback (most recent call last):
+    ...
+PermissionError: Cannot modify existing attributes
 """
 
 
@@ -30,9 +28,6 @@ class Point:
         self.x = x
         self.y = y
         self.z = z
-
-    def __delattr__(self, item):
-        raise PermissionError('Cannot delete attibutes')
 
     def __setattr__(self, name, value):
         if name not in ('x', 'y', 'z'):

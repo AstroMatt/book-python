@@ -1,5 +1,7 @@
+.. _Stdlib Datetime Timezone:
+
 ******************
-Datetime Timezones
+Datetime Timezone
 ******************
 
 
@@ -10,6 +12,12 @@ Rationale
 * Computerphile Time & Time Zones :cite:`VideoComputerphileTimeZones`
 * Refer to :ref:`Descriptor Timezone Converter` for automated solution
 * ``datetime.utcnow()`` - produces timezone naive date!
+
+.. figure:: img/datetime-compare.png
+    :scale: 66%
+    :align: center
+
+    Comparing datetime works only when all has the same timezone (UTC)
 
 .. code-block:: python
     :caption: Timezone naive datetimes.

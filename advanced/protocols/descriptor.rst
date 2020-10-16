@@ -152,6 +152,61 @@ Use Cases
     print(f'F: {t.fahrenheit}')     # 212.0
 
 .. code-block:: python
+
+    class ValueRange:
+        name: str
+        min: float
+        max: float
+        value: float
+
+        def __init__(self, name, min, max):
+            self.name = name
+            self.min = min
+            self.max = max
+
+        def __set__(self, parent, value):
+            if value not in range(self.min, self.max):
+                raise ValueError(f'{self.name} is not between {self.min} to {self.max}')
+            self.value = value
+
+
+    class Astronaut:
+        name: str
+        age = ValueRange('Age', min=28, max=42)
+        height = ValueRange('Height', min=150, max=200)
+
+        def __init__(self, name, age, height):
+            self.name = name
+            self.height = height
+            self.age = age
+
+        def __repr__(self):
+            name = self.name
+            age = self.age.value
+            height = self.height.value
+            return f'Astronaut({name=}, {age=}, {height=})'
+
+
+    Astronaut('Mark Watney', age=38, height=170)
+    # Astronaut(name='Mark Watney', age=38, height=170)
+
+    Astronaut('Mark Watney', age=44, height=170)
+    # Traceback (most recent call last):
+    #    ...
+    # ValueError: Age is not between 28 to 42
+
+    Astronaut('Mark Watney', age=38, height=210)
+    # Traceback (most recent call last):
+    #     ...
+    # ValueError: Height is not between 150 to 200
+
+.. figure:: img/datetime-compare.png
+    :scale: 66%
+    :align: center
+
+    Comparing datetime works only when all has the same timezone (UTC). More information in :ref:`Stdlib Datetime Timezone`
+
+.. code-block:: python
     :caption: Descriptor Timezone Converter
     :name: Descriptor Timezone Converter
 
@@ -170,9 +225,6 @@ Use Cases
         def __set__(self, parent, new_datetime):
             local_time = self.timezone.localize(new_datetime)
             parent.utc = local_time.astimezone(timezone('UTC'))
-
-        def __delete__(self, parent):
-            parent.utc = datetime(1, 1, 1)
 
 
     @dataclass
@@ -216,7 +268,47 @@ Protocol Descriptor Simple
 * Solution: :download:`solution/protocol_descriptor_simple.py`
 
 :English:
-    #. Use data from "Input" section (see below)
+    #. Define class ``Temperature``
+    #. Class stores values in Kelvins using descriptor
+    #. Temperature must always be positive
+    #. Use descriptors to check boundaries at each value modification
+    #. All tests must pass
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Zdefiniuj klasę ``Temperature``
+    #. Klasa przetrzymuje wartości jako Kelwiny używając deskryptora
+    #. Temperatura musi być zawsze być dodatnia
+    #. Użyj deskryptorów do sprawdzania wartości granicznych przy każdej modyfikacji
+    #. Wszystkie testy muszą przejść
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: text
+
+        >>> t = Temperature()
+        >>> t.kelvin = 1
+        >>> t.kelvin
+        1
+        >>> t.kelvin = -1
+        Traceback (most recent call last):
+            ...
+        ValueError: Negative temperature
+
+:The whys and wherefores:
+    * Using descriptors
+    * Data validation
+
+Protocol Descriptor ValueRange
+------------------------------
+* Assignment name: Protocol Descriptor ValueRange
+* Last update: 2020-10-01
+* Complexity level: easy
+* Lines of code to write: 9 lines
+* Estimated time of completion: 13 min
+* Solution: :download:`solution/protocol_descriptor_valuerange.py`
+
+:English:
     #. Implement class ``Temperature``
     #. Class stores values in Kelvins using descriptor
     #. Temperature must always be positive
@@ -225,7 +317,6 @@ Protocol Descriptor Simple
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Zaimplementuj klasę ``Temperature``
     #. Klasa przetrzymuje wartości jako Kelwiny używając deskryptora
     #. Temperatura musi być zawsze być dodatnia
@@ -272,18 +363,15 @@ Protocol Descriptor Inheritance
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Zamodeluj klasę ``GeographicCoordinate``
     #. Użyj deskryptory do sprawdzania wartości brzegowych
-    #. Kasowanie pola powinno ustawiać jego wartość na ``None``
-    #. Zablokuj modyfikację pola ``elevation``
-    #. Zezwól na ustawianie pola ``elevation`` podczas inicjalizacji
     #. Wszystkie testy muszą przejść
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. code-block:: text
 
-        latitude - min: -90.0, max 90.0
-        longitude -  min: -180.0, max: 180.0
-        elevation -  min: -10994.0, max: 8848.0
+        latitude - min: -90.0, max: 90.0
+        longitude - min: -180.0, max: 180.0
+        elevation - min: -10994.0, max: 8848.0
 
     .. code-block:: python
 
@@ -297,6 +385,22 @@ Protocol Descriptor Inheritance
 :Output:
     .. code-block:: text
 
+        >>> place1 = GeographicCoordinate(50, 120, 8000)
+        >>> place1
+        Latitude: 50, Longitude: 120, Elevation: 8000
+
+        >>> place2 = GeographicCoordinate(22, 33, 44)
+        >>> place2
+        Latitude: 22, Longitude: 33, Elevation: 44
+
+        >>> place1.latitude = 1
+        >>> place1.longitude = 2
+        >>> place1
+        Latitude: 1, Longitude: 2, Elevation: 8000
+
+        >>> place2
+        Latitude: 22, Longitude: 33, Elevation: 44
+
         >>> GeographicCoordinate(90, 0, 0)
         Latitude: 90, Longitude: 0, Elevation: 0
         >>> GeographicCoordinate(-90, 0, 0)
@@ -309,30 +413,6 @@ Protocol Descriptor Inheritance
         Latitude: 0, Longitude: 0, Elevation: 8848
         >>> GeographicCoordinate(0, 0, -10994)
         Latitude: 0, Longitude: 0, Elevation: -10994
-
-        >>> place1 = GeographicCoordinate(50, 120, 8000)
-        >>> str(place1)
-        'Latitude: 50, Longitude: 120, Elevation: 8000'
-
-        >>> place2 = GeographicCoordinate(22, 33, 44)
-        >>> str(place2)
-        'Latitude: 22, Longitude: 33, Elevation: 44'
-
-        >>> place1.longitude = 0
-        >>> place1.latitude = 0
-        >>> place1.elevation = 0
-        Traceback (most recent call last):
-          ...
-        PermissionError: Changing value is prohibited.
-
-        >>> place1.latitude = 1
-        >>> place1.longitude = 2
-        >>> str(place1)
-        'Latitude: 1, Longitude: 2, Elevation: 8000'
-
-        >>> str(place2)
-        'Latitude: 22, Longitude: 33, Elevation: 44'
-
 
         >>> GeographicCoordinate(-91, 0, 0)
         Traceback (most recent call last):

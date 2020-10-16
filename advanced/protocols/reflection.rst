@@ -337,33 +337,23 @@ Use Cases
 Assignments
 ===========
 
-Protocol Reflection
--------------------
-* Assignment name: Protocol Reflection
-* Last update: 2020-10-02
-* Complexity level: medium
-* Lines of code to write: 17 lines
-* Estimated time of completion: 13 min
-* Solution: :download:`solution/protocol_reflection.py`
+Protocol Reflection Delattr
+---------------------------
+* Assignment name: Protocol Reflection Delattr
+* Last update: 2020-10-16
+* Complexity level: easy
+* Lines of code to write: 7 lines
+* Estimated time of completion: 5 min
+* Solution: :download:`solution/protocol_reflection_delattr.py`
 
 :English:
-    #. Use data from "Input" section (see below)
     #. Create class ``Point`` with ``x``, ``y``, ``z`` attributes
-    #. Prevent adding new attributes
     #. Prevent deleting attributes
-    #. Prevent changing attributes
-    #. Allow to set attributes only at the initialization
-    #. All tests must pass
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Stwórz klasę ``Point`` z atrybutami ``x``, ``y``, ``z``
-    #. Zablokuj możliwość dodawania nowych atrybutów
-    #. Zablokuj możliwość usuwania atrybutów
-    #. Zablokuj edycję atrybutów
-    #. Pozwól na ustawianie atrybutów tylko przy inicjalizacji klasy
-    #. Wszystkie testy muszą przejść
+    #. Zablokuj usuwanie atrybutów
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
@@ -383,12 +373,90 @@ Protocol Reflection
             ...
         PermissionError: Cannot delete attibutes
 
-        >>> pt.x = 10
-        Traceback (most recent call last):
-            ...
-        PermissionError: Cannot modify existing attributes
+Protocol Reflection Setattr
+---------------------------
+* Assignment name: Protocol Reflection Setattr
+* Last update: 2020-10-16
+* Complexity level: easy
+* Lines of code to write: 7 lines
+* Estimated time of completion: 5 min
+* Solution: :download:`solution/protocol_reflection_setattr.py`
+
+:English:
+    #. Create class ``Point`` with ``x``, ``y``, ``z`` attributes
+    #. Prevent creation of new attributes
+    #. Allow to modify values of ``x``, ``y``, ``z``
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Stwórz klasę ``Point`` z atrybutami ``x``, ``y``, ``z``
+    #. Zablokuj tworzenie nowych atrybutów
+    #. Zeswól na modyfikowanie wartości ``x``, ``y``, ``z``
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: text
+
+        >>> pt = Point(1, 2, 3)
+        >>> pt.x, pt.y, pt.z
+        (1, 2, 3)
 
         >>> pt.notexisting = 10
         Traceback (most recent call last):
             ...
         PermissionError: Cannot set other attributes than x,y,z
+
+        >>> pt.x = 10
+        >>> pt.y = 20
+        >>> pt.z = 30
+
+        >>> pt.x, pt.y, pt.z
+        (10, 20, 30)
+
+Protocol Reflection Frozen
+--------------------------
+* Assignment name: Protocol Reflection Frozen
+* Last update: 2020-10-16
+* Complexity level: easy
+* Lines of code to write: 7 lines
+* Estimated time of completion: 5 min
+* Solution: :download:`solution/protocol_reflection_frozen.py`
+
+:English:
+    #. Create class ``Point`` with ``x``, ``y``, ``z`` attributes
+    #. Prevent creation of new attributes
+    #. Allow to define ``x``, ``y``, ``z`` but only at the initialization
+    #. Prevent later modification of ``x``, ``y``, ``z``
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Stwórz klasę ``Point`` z atrybutami ``x``, ``y``, ``z``
+    #. Zablokuj tworzenie nowych atrybutów
+    #. Pozwól na zdefiniowanie ``x``, ``y``, ``z`` ale tylko przy inicjalizacji
+    #. Zablokuj późniejsze modyfikacje ``x``, ``y``, ``z``
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: text
+
+        >>> pt = Point(1, 2, 3)
+        >>> pt.x, pt.y, pt.z
+        (1, 2, 3)
+
+        >>> pt.notexisting = 10
+        Traceback (most recent call last):
+            ...
+        PermissionError: Cannot set other attributes than x,y,z
+
+        >>> pt.x = 10
+        Traceback (most recent call last):
+            ...
+        PermissionError: Cannot modify existing attributes
+        >>> pt.y = 20
+        Traceback (most recent call last):
+            ...
+        PermissionError: Cannot modify existing attributes
+        >>> pt.z = 30
+        Traceback (most recent call last):
+            ...
+        PermissionError: Cannot modify existing attributes
