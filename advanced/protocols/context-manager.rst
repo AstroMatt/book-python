@@ -32,6 +32,11 @@ Protocol
         def __exit__(self, *args):
             return None
 
+.. code-block:: python
+
+    with ContextManager as cm:
+        ...
+
 
 Example
 =======
@@ -308,7 +313,7 @@ Protocol ContextManager File
 * Assignment name: Protocol ContextManager File
 * Last update: 2020-10-02
 * Complexity level: easy
-* Lines of code to write: 15 lines
+* Lines of code to write: 13 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/protocol_contextmanager_file.py`
 
@@ -318,7 +323,6 @@ Protocol ContextManager File
     #. ``File`` must implement Context Manager protocol
     #. ``File`` buffers lines added using ``File.append(text: str)`` method
     #. On ``with`` block exit ``File`` class opens file and write buffer
-    #. All tests must pass
     #. Compare result with "Output" section (see below)
 
 :Polish:
@@ -327,7 +331,6 @@ Protocol ContextManager File
     #. ``File`` ma implementować protokół Context Manager
     #. ``File`` buforuje linie dodawane za pomocą metody ``File.append(text: str)``
     #. Na wyjściu z bloku ``with`` klasa ``File`` otwiera plik i zapisuje bufor
-    #. Wszystkie testy muszą przejść
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
@@ -352,31 +355,27 @@ Protocol ContextManager File
 :Hint:
     * Append newline character (``\n``) before adding to buffer
 
-Protocol ContextManagerBuffer
+Protocol ContextManager Buffer
 -----------------------------
-* Assignment name: Protocol Context Manager Buffer
-* Last update: 2020-10-02
-* Complexity level: easy
-* Lines of code to write: 32 lines
-* Estimated time of completion: 13 min
+* Assignment name: Protocol ContextManager Buffer
+* Last update: 2020-10-16
+* Complexity level: medium
+* Lines of code to write: 22 lines
+* Estimated time of completion: 21 min
 * Solution: :download:`solution/protocol_contextmanager_buffer.py`
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Set max buffer limit to 100 bytes
+    #. Define class configuration attribute ``BUFFER_LIMIT: int = 100`` bytes
     #. File has to be written to disk every X bytes of buffer
-    #. How to make buffer save data every X seconds?
     #. Writing and reading takes time, how to make buffer save data in the background, but it could be still used?
-    #. All tests must pass
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Ustaw maksymalny limit bufora na 100 bajtów
+    #. Zdefiniuj klasowy atrybut konfiguracyjny ``BUFFER_LIMIT: int = 100`` bajtów
     #. Plik na dysku ma być zapisywany co X bajtów bufora
-    #. Jak zrobić, aby bufor zapisywał dane na dysku co X sekund?
     #. Operacje zapisu i odczytu trwają, jak zrobić, aby do bufora podczas zapisu na dysk, nadal można było pisać?
-    #. Wszystkie testy muszą przejść
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
@@ -385,11 +384,13 @@ Protocol ContextManagerBuffer
         >>> from inspect import isclass, ismethod
         >>> assert isclass(File)
         >>> assert hasattr(File, 'append')
+        >>> assert hasattr(File, 'BUFFER_LIMIT')
         >>> assert hasattr(File, '__enter__')
         >>> assert hasattr(File, '__exit__')
         >>> assert ismethod(File(None).append)
         >>> assert ismethod(File(None).__enter__)
         >>> assert ismethod(File(None).__exit__)
+        >>> assert FILE.BUFFER_LIMIT == 100
 
         >>> with File('_temporary.txt') as file:
         ...    file.append('One')
@@ -399,3 +400,56 @@ Protocol ContextManagerBuffer
         ...    file.append('Five')
         ...    file.append('Six')
 
+        >>> open('_temporary.txt').read()
+        'One\\nTwo\\nThree\\nFour\\nFive\\nSix\\n'
+
+:Hint:
+    * ``sys.getsizeof()``
+
+Protocol ContextManager AutoSave
+--------------------------------
+* Assignment name: Protocol Context Manager AutoSave
+* Last update: 2020-10-16
+* Complexity level: hard
+* Lines of code to write: 32 lines
+* Estimated time of completion: 21 min
+* Solution: :download:`solution/protocol_contextmanager_autosave.py`
+
+:English:
+    #. Use data from "Input" section (see below)
+    #. Define class configuration attribute ``AUTOSAVE_SECONDS: float = 2.0``
+    #. Save buffer content to file every ``AUTOSAVE_SECONDS`` seconds
+    #. Writing and reading takes time, how to make buffer save data in the background, but it could be still used?
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Zdefiniuj klasowy atrybut konfiguracyjny ``AUTOSAVE_SECONDS: float = 2.0``
+    #. Zapisuj zawartość bufora do pliku co ``AUTOSAVE_SECONDS`` sekund
+    #. Operacje zapisu i odczytu trwają, jak zrobić, aby do bufora podczas zapisu na dysk, nadal można było pisać?
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: text
+
+        >>> from inspect import isclass, ismethod
+        >>> assert isclass(File)
+        >>> assert hasattr(File, 'append')
+        >>> assert hasattr(File, 'AUTOSAVE_SECONDS')
+        >>> assert hasattr(File, '__enter__')
+        >>> assert hasattr(File, '__exit__')
+        >>> assert ismethod(File(None).append)
+        >>> assert ismethod(File(None).__enter__)
+        >>> assert ismethod(File(None).__exit__)
+        >>> assert FILE.AUTOSAVE_SECONDS == 2.0
+
+        >>> with File('_temporary.txt') as file:
+        ...    file.append('One')
+        ...    file.append('Two')
+        ...    file.append('Three')
+        ...    file.append('Four')
+        ...    file.append('Five')
+        ...    file.append('Six')
+
+        >>> open('_temporary.txt').read()
+        'One\\nTwo\\nThree\\nFour\\nFive\\nSix\\n'

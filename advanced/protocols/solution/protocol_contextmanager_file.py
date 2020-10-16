@@ -19,21 +19,18 @@
 
 class File:
     filename: str
-    _buffer: list
+    content: list[str]
 
     def __init__(self, filename: str) -> None:
         self.filename = filename
-        self._buffer = list()
+        self.content = list()
 
-    def __enter__(self):
+    def append(self, line: str) -> None:
+        self.content.append(line + '\n')
+
+    def __enter__(self) -> 'File':
         return self
 
-    def __exit__(self, *args):
-        return self._write()
-
-    def append(self, line):
-        self._buffer.append(line + '\n')
-
-    def _write(self):
-        with open(self.filename, mode='w', encoding='utf-8') as file:
-            file.writelines(self._buffer)
+    def __exit__(self, *arg) -> None:
+        with open(self.filename, mode='w') as file:
+            file.writelines(self.content)

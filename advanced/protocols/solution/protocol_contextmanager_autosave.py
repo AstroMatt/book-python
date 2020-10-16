@@ -19,33 +19,56 @@
 >>> open('_temporary.txt').read()
 'One\\nTwo\\nThree\\nFour\\nFive\\nSix\\n'
 """
-from sys import getsizeof
+import logging
+from threading import Timer
+
+logging.basicConfig(
+    level='DEBUG',
+    datefmt='"%Y-%m-%d", "%H:%M:%S"',
+    format='{asctime}, "{levelname}", "{message}"',
+    # filename='_temporary.log',
+    style='{')
+
+log = logging.getLogger(__name__)
 
 
 class File:
-    BUFFER_LIMIT: int = 100
+    AUTOSAVE_SECONDS: float = 2.0
 
     filename: str
     content: list[str]
+    exit: bool
 
     def __init__(self, filename: str) -> None:
         self.filename = filename
         self.content = list()
+        self.exit = False
 
     def append(self, line: str) -> None:
         self.content.append(line + '\n')
-        if getsizeof(self.content) >= self.BUFFER_LIMIT:
-            self._write()
 
     def _write(self):
         with open(self.filename, mode='a') as file:
             file.writelines(self.content)
         self.content = []
 
+    def _autosave(self):
+        log.debug('Setting autosave timer')
+        if self.content:
+            self._write()
+        if not self.exit:
+            self._timer = Timer(interval=self.AUTOSAVE_SECONDS,
+                                function=self._autosave)
+            self._timer.start()
+
     def __enter__(self) -> 'File':
         with open(self.filename, mode='w') as file:
             file.writelines(self.content)
+        self.exit = False
+        self._autosave()
         return self
 
     def __exit__(self, *arg) -> None:
+        self.exit = True
         self._write()
+        self._timer.join()
