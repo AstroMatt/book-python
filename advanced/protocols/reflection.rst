@@ -7,7 +7,7 @@ Reflection
 
 Rationale
 =========
-* Act on accessing an attribute
+* When accessing an attribute
 * Built-in Functions:
 
     * ``setattr(obj, 'attribute_name', 'new value') -> None``
@@ -198,7 +198,7 @@ Get Attribute if Missing
 
         def __getattr__(self, name):
             print('Not found. Getattr called...')
-            print(f'Creating attibute {name} with `None` value')
+            print(f'Creating attribute {name} with `None` value')
             super().__setattr__(name, None)
 
 
@@ -212,7 +212,7 @@ Get Attribute if Missing
     astro._salary
     # Getattribute called...
     # Not found. Getattr called...
-    # Creating attibute _salary with `None` value
+    # Creating attribute _salary with `None` value
 
     astro._salary
     # Getattribute called...
@@ -313,27 +313,25 @@ Use Cases
         celsius: float
         fahrenheit: float
 
-        def __init__(self, kelvin):
-            self.kelvin = kelvin
-
         def __setattr__(self, name, value):
             super().__setattr__(name, value)
 
-            if name == 'kelvin':
-                self.celsius = 273.15 + self.kelvin
-                self.fahrenheit = (self.kelvin-273.15) * 1.8 + 32
+            if name == 'celsius':
+                self.kelvin = value + 273.15
+                self.fahrenheit = value * (9/5) + 32
 
 
-    t = Temperature(100)
+    t = Temperature()
+    t.celsius = 100
 
     print(t.kelvin)
-    # 100
-
-    print(t.celsius)
     # 373.15
 
+    print(t.celsius)
+    # 100
+
     print(t.fahrenheit)
-    # -279.66999999999996
+    # 212.0
 
 
 Assignments
