@@ -16,6 +16,24 @@ Profilers
 * PyCharm IDE
 * vmprof https://vmprof.readthedocs.io/en/latest/
 
+.. figure:: img/performance-profiler-factorial.png
+    :scale: 75%
+    :align: center
+
+    PyCharm Profiler Factorial [jetbrains]_
+
+.. figure:: img/performance-profiler-fibonacci.png
+    :scale: 100%
+    :align: center
+
+    PyCharm Profiler Fibonacci [koderdojo]_
+
+.. figure:: img/performance-profiler-pycharm.png
+    :scale: 50%
+    :align: center
+
+    PyCharm Profiler [csdnimg]_
+
 
 Profiling with yappi
 ====================
@@ -213,3 +231,12 @@ Profiling with cProfile
 .. code-block:: console
 
     $ python -m cProfile [-o output_file] [-s sort_order] FILE.py
+
+References
+==========
+
+.. [koderdojo] https://www.koderdojo.com/media/default/articles/profile-fibonacci-number-30-pycharm.png
+
+.. [jetbrains] https://resources.jetbrains.com/help/img/idea/2020.3/profiler_call_graph.png
+
+.. [csdnimg] https://img-blog.csdnimg.cn/20191008141801582.png
