@@ -23,7 +23,8 @@ Example
     class JSONMixin:
         def from_json(self, data):
             data = json.loads(data)
-            return data
+            return User(**data)
+
 
     @dataclass
     class User(JSONMixin):
@@ -33,23 +34,89 @@ Example
 
     DATA = '{"firstname": "Jan", "lastname": "Twardowski"}'
 
-    result = User.from_json(DATA)
+    User.from_json(DATA)
     # Traceback (most recent call last):
     #     ...
     # TypeError: from_json() missing 1 required positional argument: 'data'
 
-    result = User().from_json(DATA)
+    User().from_json(DATA)
+    # Traceback (most recent call last):
+    #     ...
+    # TypeError: __init__() missing 2 required positional arguments: 'firstname' and 'lastname'
+
+    User(None, None).from_json(DATA)
+    # User(firstname='Jan', lastname='Twardowski')
+
+.. code-block:: python
+    :caption: Trying to use method with ``self``
+
+    import json
+    from dataclasses import dataclass
+
+
+    class JSONMixin:
+        def from_json(self, data):
+            data = json.loads(data)
+            return self(**data)
+
+
+    @dataclass
+    class User(JSONMixin):
+        firstname: str
+        lastname: str
+
+
+    DATA = '{"firstname": "Jan", "lastname": "Twardowski"}'
+
+    User.from_json(DATA)
+    # Traceback (most recent call last):
+    #     ...
+    # TypeError: from_json() missing 1 required positional argument: 'data'
+
+    User().from_json(DATA)
+    # Traceback (most recent call last):
+    #     ...
+    # TypeError: __init__() missing 2 required positional arguments: 'firstname' and 'lastname'
+
+    User(None, None).from_json(DATA)
+    # Traceback (most recent call last):
+    #     ...
+    # TypeError: 'User' object is not callable
+
+.. code-block:: python
+    :caption: Trying to use method with ``self.__init__()``
+
+    import json
+    from dataclasses import dataclass
+
+
+    class JSONMixin:
+        def from_json(self, data):
+            data = json.loads(data)
+            return self.__init__(**data)
+
+
+    @dataclass
+    class User(JSONMixin):
+        firstname: str
+        lastname: str
+
+
+    DATA = '{"firstname": "Jan", "lastname": "Twardowski"}'
+
+    User.from_json(DATA)
+    # Traceback (most recent call last):
+    #     ...
+    # TypeError: from_json() missing 1 required positional argument: 'data'
+
+    User().from_json(DATA)
     # Traceback (most recent call last):
     #     ...
     # TypeError: __init__() missing 2 required positional arguments: 'firstname' and 'lastname'
 
     result = User(None, None).from_json(DATA)
-    print(result)
-    # {'firstname': 'Jan', 'lastname': 'Twardowski'}
-
-    result = User(**result)
-    print(result)
-    # User(firstname='Jan', lastname='Twardowski')
+    type(result)
+    # <class 'NoneType'>
 
 .. code-block:: python
     :caption: Trying to use staticmethod
@@ -62,7 +129,7 @@ Example
         @staticmethod
         def from_json(data):
             data = json.loads(data)
-            return data
+            return User(**data)
 
     @dataclass
     class User(JSONMixin):
@@ -72,12 +139,7 @@ Example
 
     DATA = '{"firstname": "Jan", "lastname": "Twardowski"}'
 
-    result = User.from_json(DATA)
-    print(result)
-    # {'firstname': 'Jan', 'lastname': 'Twardowski'}
-
-    result = User(**result)
-    print(result)
+    User.from_json(DATA)
     # User(firstname='Jan', lastname='Twardowski')
 
 .. code-block:: python
@@ -102,10 +164,12 @@ Example
 
     DATA = '{"firstname": "Jan", "lastname": "Twardowski"}'
 
-    result = User.from_json(DATA)
-    print(reslt)
+    User.from_json(DATA)
     # User(firstname='Jan', lastname='Twardowski')
 
+
+Use Cases
+=========
 .. code-block:: python
 
     import json
@@ -121,7 +185,7 @@ Example
 
 
     @dataclass
-    class User(JSONMixin):
+    class User:
         firstname: str
         lastname: str
 
@@ -145,9 +209,6 @@ Example
     print(guest)    # Guest(firstname='Jan', lastname='Twardowski')
     print(admin)    # Admin(firstname='Jan', lastname='Twardowski')
 
-
-Use Cases
-=========
 .. code-block:: python
 
     class AbstractTime:

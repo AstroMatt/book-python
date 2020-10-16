@@ -31,6 +31,9 @@ Example
 .. code-block:: python
     :caption: Functions on a high level of a module lack namespace
 
+    def echo(name):
+
+
     def add(a, b):
         return a + b
 

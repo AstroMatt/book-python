@@ -336,43 +336,95 @@ Temperature
 Assignments
 ===========
 
-Protocol Property
------------------
-* Assignment name: Protocol Property
-* Last update: 2020-10-02
+Protocol Property Getter
+------------------------
+* Assignment name: Protocol Property Getter
+* Last update: 2020-10-16
 * Complexity level: easy
-* Lines of code to write: 14 lines
-* Estimated time of completion: 13 min
-* Solution: :download:`solution/protocol_property.py`
+* Lines of code to write: 9 lines
+* Estimated time of completion: 5 min
+* Solution: :download:`solution/protocol_property_getter.py`
 
 :English:
-    #. Use data from "Input" section (see below)
     #. Define class ``Point`` with ``x``, ``y``, ``z`` attributes
-    #. Add ``position`` property which returns tuple ``(x, y, z)``
-    #. Deleting ``position`` sets all attributes to 0 (``x=0``, ``y=0``, ``z=0``)
-    #. Prevent setting position
-    #. All tests must pass
+    #. Define property ``position`` in class ``Point``
+    #. Accessing ``position`` returns ``(x, y, z)``
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Define klasę ``Point`` z atrybutami ``x``, ``y``, ``z``
-    #. Dodaj property ``position``, który zwraca tuple ``(x, y, z)``
-    #. Usunięcie ``position`` ustawia wszystkie atrybuty na 0 (``x=0``, ``y=0``, ``z=0``)
-    #. Zablokuj edycję atrybutów
-    #. Wszystkie testy muszą przejść
+    #. Zdefiniuj klasę ``Point`` z atrybutami ``x``, ``y``, ``z``
+    #. Zdefiniuj property ``position`` w klasie ``Point``
+    #. Dostęp do ``position`` zwraca ``(x, y, z)``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
     .. code-block:: text
 
         >>> pt = Point(x=1, y=2, z=3)
+        >>> pt.x, pt.y, pt.z
+        (1, 2, 3)
         >>> pt.position
         (1, 2, 3)
-        >>> del pt.position
-        >>> pt.position
-        (0, 0, 0)
+
+Protocol Property Setter
+------------------------
+* Assignment name: Protocol Property Setter
+* Last update: 2020-10-16
+* Complexity level: easy
+* Lines of code to write: 9 lines
+* Estimated time of completion: 5 min
+* Solution: :download:`solution/protocol_property_setter.py`
+
+:English:
+    #. Define class ``Point`` with ``x``, ``y``, ``z`` attributes
+    #. Define property ``position`` in class ``Point``
+    #. Deleting ``position`` sets all attributes to 0 (``x=0``, ``y=0``, ``z=0``)
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Zdefiniuj klasę ``Point`` z atrybutami ``x``, ``y``, ``z``
+    #. Zdefiniuj property ``position`` w klasie ``Point``
+    #. Usunięcie ``position`` ustawia wszystkie atrybuty na 0 (``x=0``, ``y=0``, ``z=0``)
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: text
+
+        >>> pt = Point(x=1, y=2, z=3)
+        >>> pt.x, pt.y, pt.z
+        (1, 2, 3)
         >>> pt.position = (4, 5, 6)
         Traceback (most recent call last):
             ...
         PermissionError: Cannot modify values
+
+Protocol Property Deleter
+-------------------------
+* Assignment name: Protocol Property Deleter
+* Last update: 2020-10-16
+* Complexity level: easy
+* Lines of code to write: 11 lines
+* Estimated time of completion: 5 min
+* Solution: :download:`solution/protocol_property_deleter.py`
+
+:English:
+    #. Define class ``Point`` with ``x``, ``y``, ``z`` attributes
+    #. Define property ``position`` in class ``Point``
+    #. Deleting ``position`` sets all attributes to 0 (``x=0``, ``y=0``, ``z=0``)
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Zdefiniuj klasę ``Point`` z atrybutami ``x``, ``y``, ``z``
+    #. Zdefiniuj property ``position`` w klasie ``Point``
+    #. Usunięcie ``position`` ustawia wszystkie atrybuty na 0 (``x=0``, ``y=0``, ``z=0``)
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: text
+
+        >>> pt = Point(x=1, y=2, z=3)
+        >>> pt.x, pt.y, pt.z
+        (1, 2, 3)
+        >>> del pt.position
+        >>> pt.x. pt,y, pt.z
+        (0, 0, 0)
