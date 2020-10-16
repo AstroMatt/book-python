@@ -378,8 +378,8 @@ Protocol Reflection Setattr
 * Assignment name: Protocol Reflection Setattr
 * Last update: 2020-10-16
 * Complexity level: easy
-* Lines of code to write: 7 lines
-* Estimated time of completion: 5 min
+* Lines of code to write: 9 lines
+* Estimated time of completion: 8 min
 * Solution: :download:`solution/protocol_reflection_setattr.py`
 
 :English:
@@ -418,8 +418,8 @@ Protocol Reflection Frozen
 * Assignment name: Protocol Reflection Frozen
 * Last update: 2020-10-16
 * Complexity level: easy
-* Lines of code to write: 7 lines
-* Estimated time of completion: 5 min
+* Lines of code to write: 11 lines
+* Estimated time of completion: 13 min
 * Solution: :download:`solution/protocol_reflection_frozen.py`
 
 :English:
