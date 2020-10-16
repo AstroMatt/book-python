@@ -171,8 +171,8 @@ Overflow
 
     #include <stdio.h>
 
-    void wypisz_liczbe(int liczba) {
-        printf("Liczba to: %d", liczba);
+    void echo(int number) {
+        printf("Number: %d", number);
     }
 
 .. code-block:: python
@@ -182,9 +182,9 @@ Overflow
 
     lib = ctypes.CDLL('mylibrary.so')
 
-    lib.wypisz_liczbe(10 ** 10)  # Liczba to: 1410065408
+    lib.echo(10 ** 10)  # Number: 1410065408
 
-    lib.wypisz_liczbe(10 ** 30)
+    lib.echo(10 ** 30)
     # Traceback (most recent call last):
     #     ...
     # ctypes.ArgumentError: argument 1: <class 'OverflowError'>: int too long to convert

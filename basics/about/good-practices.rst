@@ -9,7 +9,7 @@ Rationale
     :align: center
     :scale: 50%
 
-    Code Complexity vs. Programmer Experiance
+    Code Complexity vs. Programmer Experience
 
 
 Range

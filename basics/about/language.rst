@@ -27,7 +27,7 @@ Rationale
 Which Version?
 ==============
 * You should use newest official Python version
-* Soruce: https://devguide.python.org/#status-of-python-branches
+* Source: https://devguide.python.org/#status-of-python-branches
 * Source: https://www.python.org/downloads/
 
 .. csv-table:: Future Versions

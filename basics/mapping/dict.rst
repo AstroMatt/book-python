@@ -537,7 +537,7 @@ Mapping Dict Substitute
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/mappting_dict_substitute.py`
+* Solution: :download:`solution/mapping_dict_substitute.py`
 
 :English:
     #. Use data from "Input" section (see below)

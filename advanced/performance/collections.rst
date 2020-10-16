@@ -4,9 +4,9 @@ Collections
 
 * https://docs.python.org/3/library/collections.html
 
-It is an unordered collection where elements are stored as dictionary keys and their counts are stored as dictionary values. Counts are allowed to be any integer value including zero or negative counts. The Counter class is similar to bags or multisets in other languages.
+It is an unordered collection where elements are stored as dictionary keys and their counts are stored as dictionary values. Counts are allowed to be any integer value including zero or negative counts. The Counter class is similar to bags or multi-sets in other languages.
 
-This module implements specialized container datatypes providing alternatives to Python’s general purpose built-in containers, dict, list, set, and tuple.
+This module implements specialized container data types providing alternatives to Python’s general purpose built-in containers, dict, list, set, and tuple.
 
     ================  ====================================================================
     Name              Description

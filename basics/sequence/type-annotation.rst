@@ -25,7 +25,7 @@ Rationale
 
     for row in DATA:
         species: str = row[-1]
-        species  # IDE knows exacly what type is species
+        species  # IDE knows exactly what type is species
                  # and what methods hint for autocompletion
 
 Tuple
@@ -278,7 +278,7 @@ Unions
         {7, 8, 9},
     ]
 
-    data: llist[Union[list[int], tuple[int, ...], set[int]]] = [
+    data: list[Union[list[int], tuple[int, ...], set[int]]] = [
         [1, 2, 3],
         (4, 5, 6),
         {7, 8, 9},

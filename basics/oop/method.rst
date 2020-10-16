@@ -119,8 +119,8 @@ OOP Method Sequence
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Zdefinuj klasę ``Iris``
-    #. Zdefinuj metodę ``mean()`` w klasie ``Iris``
+    #. Zdefiniuj klasę ``Iris``
+    #. Zdefiniuj metodę ``mean()`` w klasie ``Iris``
     #. Metoda przyjmuje sekwencję jako argument
     #. Metoda ma zwracać średnią arytmetyczną z sekwencji
     #. Iteruj po ``DATA`` pomijając nagłówek

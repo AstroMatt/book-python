@@ -37,12 +37,11 @@ client.send('close')
 client.close()
 
 
-
 ## Stworzenie Listenera
 # stworzenie listenera
-# akceptacja polaczen przychodzacych
-# petla
-#     przyjecie wiadomosci
-#     if wiadomosc == close: zamkniecie polaczenia, wyjscie z petli
-#     else: wyswietl tresc
-# zamkiecie listenera
+# akceptacja połączeń przychodzących
+# pętla
+#     przyjecie wiadomości
+#     if wiadomość == close: zamkniecie połączenia, wyjście z pętli
+#     else: wyświetl treść
+# zamknięcie listenera

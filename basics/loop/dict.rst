@@ -265,7 +265,7 @@ Loop Dict Months
         * klucz: numer miesiąca
         * wartość: nazwa miesiąca
 
-    #. Numer miesiąca ma być dwyznakowym stringiem (wypełnij zerem)
+    #. Numer miesiąca ma być dwuznakowym stringiem (wypełnij zerem)
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:

@@ -174,7 +174,7 @@ Decorator Methods Alive
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
     #. Stwórz dekorator metod ``if_alive``
-    #. Dekotrator pozwoli na wykonanie metody ``make_damage``, tylko gdy ``current_health`` jest większe niż 0
+    #. Dekorator pozwoli na wykonanie metody ``make_damage``, tylko gdy ``current_health`` jest większe niż 0
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:

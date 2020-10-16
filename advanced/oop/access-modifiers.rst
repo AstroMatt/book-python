@@ -315,7 +315,7 @@ OOP Attribute Access Dict
 
         * if ``species`` is "setosa" append instance of a class ``Setosa``
         * if ``species`` is "versicolor" append instance of a class ``Versicolor``
-        * if ``spceies`` is "virginica" append instance of a class ``Virginica``
+        * if ``species`` is "virginica" append instance of a class ``Virginica``
 
     #. Initialize instances with ``features`` using ``*args`` notation
     #. Print instance class name and then both sum and mean

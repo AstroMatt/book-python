@@ -759,7 +759,7 @@ Function Generator Passwd
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
     #. Podziel ``DATA`` po liniach a następnie po dwukropku ``:``
-    #. Wyciągnnij konta systemowe (użytkownicy z UID (trzecie pole) mniejszym niż 1000)
+    #. Wyciągnij konta systemowe (użytkownicy z UID (trzecie pole) mniejszym niż 1000)
     #. Zwróć listę loginów użytkowników systemowych
     #. Zaimplementuj rozwiązanie wykorzystując funkcję
     #. Zaimplementuj rozwiązanie wykorzystując generator i słowo kluczowe ``yield``

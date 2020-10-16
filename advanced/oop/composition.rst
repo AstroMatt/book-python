@@ -211,7 +211,7 @@ OOP Composition Mars
     #. Stwórz klasę ``Rocket``
     #. Stwórz klasę ``Astronaut``
     #. Skomponuj klasę ``MarsMission`` z ``Habitat``, ``Rocket``, ``Astronaut``
-    #. Zadanie demonstruje skłądnię, nie dodawaj żadnych atrybutów i metod
+    #. Zadanie demonstruje składnię, nie dodawaj żadnych atrybutów i metod
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:

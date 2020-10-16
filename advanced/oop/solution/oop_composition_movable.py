@@ -1,17 +1,17 @@
 """
 >>> from inspect import isclass, ismethod
 >>> assert isclass(Point)
->>> assert isclass(Moveable)
+>>> assert isclass(Movable)
 >>> assert hasattr(Point, 'x')
 >>> assert hasattr(Point, 'y')
->>> assert hasattr(Moveable, 'get_position')
->>> assert hasattr(Moveable, 'set_position')
->>> assert hasattr(Moveable, 'change_position')
->>> assert ismethod(Moveable().get_position)
->>> assert ismethod(Moveable().set_position)
->>> assert ismethod(Moveable().change_position)
+>>> assert hasattr(Movable, 'get_position')
+>>> assert hasattr(Movable, 'set_position')
+>>> assert hasattr(Movable, 'change_position')
+>>> assert ismethod(Movable().get_position)
+>>> assert ismethod(Movable().set_position)
+>>> assert ismethod(Movable().change_position)
 
->>> class Astronaut(Moveable):
+>>> class Astronaut(Movable):
 ...     pass
 
 >>> astro = Astronaut()
@@ -66,7 +66,7 @@ class Point:
             raise ValueError('Coordinate cannot be negative')
 
 
-# # Solutuion 2
+# # Solution 2
 # class Point:
 #     x: int = 0
 #     y: int = 0
@@ -81,7 +81,7 @@ class Point:
 #         return f'Point(x={self.x}, y={self.y})'
 
 
-class Moveable:
+class Movable:
     _position: Point
 
     def get_position(self) -> Point:

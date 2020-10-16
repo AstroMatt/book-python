@@ -20,7 +20,7 @@ GIL
 ===
 * Global Interpreter Lock
 * CPython has a lock for its internal shared global state
-* One lock insteads of hundreds smaller
+* One lock instead of hundreds smaller
 * The unfortunate effect of GIL is that no more than one thread can run at a time
 * For I/O bound applications, GIL doesn't present much of an issue
 * For CPU bound applications, using threads makes the application speed worse

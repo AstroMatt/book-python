@@ -124,7 +124,7 @@ Entry Test File
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Pomiń komentarze (``#``) i puste linie
     #. Wyciągnij z każdej linii: ip, host i protokół i dodaj do ``result: list[dict]``
-    #. Każda linia ma być osobnym dictem
+    #. Każda linia ma być osobnym słownikiem
     #. Protokół IPv4 jest gdy kropka (``.``) znajduje się w adresie
     #. Scal nazwy hostów dla tego samego IP
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)

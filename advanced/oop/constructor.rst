@@ -310,7 +310,7 @@ Do not trigger methods for user
 Use Cases
 =========
 .. code-block:: python
-    :caption: Note, that this unfortunately does not work this way. ``Path()`` always returuns ``PosixPath``
+    :caption: Note, that this unfortunately does not work this way. ``Path()`` always returns ``PosixPath``
 
     from pathlib import Path
 

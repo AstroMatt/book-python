@@ -390,7 +390,7 @@ Type Float Percent
     #. International Standard Atmosphere (ISA) na poziomie morza wynosi 1013.25 hPa
     #. Oblicz ciśnienie parcjalne tlenu na poziomie morza
     #. Wypisz ISA oraz ciśnienie parcjalne O2 wyniki w kPa zaokrąglając do dwóch miejsc po przecinku
-    #. Aby policzyć ciśnienie parcialne skorzystaj z proporcji (100% to 1013.25 hPa, 20.946% to ile hPa?)
+    #. Aby policzyć ciśnienie parcjalne skorzystaj z proporcji (100% to 1013.25 hPa, 20.946% to ile hPa?)
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
@@ -438,8 +438,8 @@ Type Float Gradient
 :Polish:
     #. Na jakiej wysokości nad poziomem morza panuje ciśnienie równe ciśnieniu parcjalnemu tlenu?
     #. Wypisz rezultat w metrach zaokrąglając do dwóch miejsc po przecinku
-    #. Aby policzyć ciśnienie parcialne skorzystaj z proporcji (100% to 1013.25 hPa, 20.946% to ile hPa?)
-    #. Wyliczona wysokość to ciśnienie atmosferyczne na poziomie morza minus ciśnienie parcialne tlenu podzielone przez gradient
+    #. Aby policzyć ciśnienie parcjalne skorzystaj z proporcji (100% to 1013.25 hPa, 20.946% to ile hPa?)
+    #. Wyliczona wysokość to ciśnienie atmosferyczne na poziomie morza minus ciśnienie parcjalne tlenu podzielone przez gradient
     #. Zwróć uwagę na kolejność wykonywania działań
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 

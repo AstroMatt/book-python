@@ -1,3 +1,4 @@
+# noinspection Annotator
 """
 >>> from inspect import isfunction
 >>> assert callable(set_position)

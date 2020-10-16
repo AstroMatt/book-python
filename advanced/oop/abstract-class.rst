@@ -15,7 +15,7 @@ Rationale
 .. glossary::
 
     abstract class
-        Class which can only be inherited, not instanciated
+        Class which can only be inherited, not instantiated
 
     abstract method
         Method must be implemented in a subclass

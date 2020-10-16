@@ -366,12 +366,12 @@ Protocol Reflection Delattr
         >>> del pt.x
         Traceback (most recent call last):
             ...
-        PermissionError: Cannot delete attibutes
+        PermissionError: Cannot delete attributes
 
         >>> del pt.notexisting
         Traceback (most recent call last):
             ...
-        PermissionError: Cannot delete attibutes
+        PermissionError: Cannot delete attributes
 
 Protocol Reflection Setattr
 ---------------------------
@@ -391,7 +391,7 @@ Protocol Reflection Setattr
 :Polish:
     #. Stwórz klasę ``Point`` z atrybutami ``x``, ``y``, ``z``
     #. Zablokuj tworzenie nowych atrybutów
-    #. Zeswól na modyfikowanie wartości ``x``, ``y``, ``z``
+    #. Zezwól na modyfikowanie wartości ``x``, ``y``, ``z``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:

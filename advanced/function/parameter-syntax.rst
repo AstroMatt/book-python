@@ -127,7 +127,7 @@ Function Parameter Syntax Kwargs
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Stwórz funckję ``set_position``
+    #. Stwórz funkcję ``set_position``
     #. Funkcja przyjmuje dwa argumenty ``x``, ``y`` i zawsze zwraca ``None``
     #. Argumenty można podawać tylko nazwanie (keyword)
     #. Przetestuj funkcję uruchamiając z nazwanymi parametrami
@@ -187,7 +187,7 @@ Function Parameter Syntax Args
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Stwórz funckję ``take_damage``
+    #. Stwórz funkcję ``take_damage``
     #. Funkcja przyjmuje jeden argument ``dmg`` i zawsze zwraca ``None``
     #. Argument można podawać tylko pozycyjnie
     #. Przetestuj funkcję uruchamiając z pozycyjnymi parametrami

@@ -309,7 +309,7 @@ Protocol Descriptor ValueRange
 * Solution: :download:`solution/protocol_descriptor_valuerange.py`
 
 :English:
-    #. Implement class ``Temperature``
+    #. Define class ``Temperature``
     #. Class stores values in Kelvins using descriptor
     #. Temperature must always be positive
     #. Use descriptors to check boundaries at each value modification
@@ -317,7 +317,7 @@ Protocol Descriptor ValueRange
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Zaimplementuj klasę ``Temperature``
+    #. Zdefiniuj klasę ``Temperature``
     #. Klasa przetrzymuje wartości jako Kelwiny używając deskryptora
     #. Temperatura musi być zawsze być dodatnia
     #. Użyj deskryptorów do sprawdzania wartości granicznych przy każdej modyfikacji
@@ -351,7 +351,7 @@ Protocol Descriptor Inheritance
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Model the class ``GeographicCoordinate``
+    #. Define class ``GeographicCoordinate``
     #. Use descriptors to check value boundaries
     #. Deleting field should set it to ``None``
     #. Disable modification of ``elevation`` field
@@ -361,7 +361,7 @@ Protocol Descriptor Inheritance
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Zamodeluj klasę ``GeographicCoordinate``
+    #. Zdefiniuj klasę ``GeographicCoordinate``
     #. Użyj deskryptory do sprawdzania wartości brzegowych
     #. Wszystkie testy muszą przejść
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)

@@ -444,7 +444,7 @@ Function Args/Kwargs Arguments Define
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
     #. Stwórz funkcję ``mean(*args)``, która liczy średnią arytmetyczną dla ``args``
-    #. Nie importuj żadnych biliotek i modułów
+    #. Nie importuj żadnych bibliotek i modułów
     #. Zdefiniuj ``result: list[tuple[str, float]]``
     #. Iteruj po ``DATA`` separując ``features`` od ``label``
     #. Do ``result`` dodawaj ``label`` oraz wynik średniej arytmetycznej ``features``

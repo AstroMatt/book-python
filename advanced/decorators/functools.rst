@@ -208,7 +208,7 @@ Decorator Functools Cls
 
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
-    #. Zmodyfikuj kod aby przywrócić doctring oraz nazwę z dekorowanej klasy
+    #. Zmodyfikuj kod aby przywrócić docstring oraz nazwę z dekorowanej klasy
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:

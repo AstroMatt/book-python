@@ -555,7 +555,7 @@ Decorator Function Astronauts
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
     #. Stwórz dekorator ``check_astronauts``
     #. Aby odpowiedzieć czy osoba jest astronautą sprawdź pole ``is_astronaut`` in ``crew: list[dict]``
-    #. Dekorator wywoła dekorowaną funkcję, tylko gdy wszyscy członkowe załogi są astronautami
+    #. Dekorator wywoła dekorowaną funkcję, tylko gdy wszyscy członkowie załogi są astronautami
     #. Jeżeli, jakikolwiek członek nie jest astronautą, podnieś wyjątek ``PermissionError`` i wypisz jego imię i nazwisko
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
@@ -616,7 +616,7 @@ Decorator Function Memoization
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
     #. Stwórz dekorator ``@cache``
-    #. Decorator ma sprawdzać przed uruchomieniem funkcji, czy dla danego argumenu wynik został już wcześniej obliczony:
+    #. Decorator ma sprawdzać przed uruchomieniem funkcji, czy dla danego argumentu wynik został już wcześniej obliczony:
 
         * jeżeli tak, to zwraca dane z ``_cache``
         * jeżeli nie, to oblicza, aktualizuje ``_cache``, a następnie zwraca wartość

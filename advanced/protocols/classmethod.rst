@@ -265,7 +265,7 @@ Protocol Classmethod CSV
         * ``to_csv(self) -> str``
         * ``from_csv(self, text: str) -> Union['Astronaut', 'Cosmonaut']``
 
-    #. ``CSVMixin.to_csv()`` should return attibute values separated with coma
+    #. ``CSVMixin.to_csv()`` should return attribute values separated with coma
     #. ``CSVMixin.from_csv()`` should return instance of a class on which it was called
     #. Use ``@classmethod`` decorator in proper place
     #. All tests must pass

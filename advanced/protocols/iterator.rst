@@ -700,7 +700,7 @@ Protocol Iterator Range
     #. Use data from "Input" section (see below)
     #. Define class ``Range`` with parameters: ``start``, ``stop``, ``step``
     #. Write own implementation of a built-in ``range(start, stop, step)`` function
-    #. Use iterator protocol
+    #. Use Iterator protocol
     #. How to implement passing only stop argument (``range(start=0, stop=???, step=1)``)?
     #. All tests must pass
     #. Compare result with "Output" section (see below)
@@ -709,7 +709,7 @@ Protocol Iterator Range
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Zdefiniuj klasę ``Range`` z parametrami: ``start``, ``stop``, ``step``
     #. Zaimplementuj własne rozwiązanie wbudowanej funkcji ``range(start, stop, step)``
-    #. Użyj protokołu iteratora iterator
+    #. Użyj protokołu Iterator
     #. Jak zaimplementować możliwość podawania tylko końca (``range(start=0, stop=???, step=1)``)?
     #. Wszystkie testy muszą przejść
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)

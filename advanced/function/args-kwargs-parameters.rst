@@ -236,7 +236,7 @@ Function Args/Kwargs Parameters Define
 :Polish:
     #. Napisz funkcję ``mean()``, wyliczającą średnią arytmetyczną
     #. Funkcja przyjmuje dowolną ilość pozycyjnych argumentów
-    #. Nie importuj żadnych biliotek i modułów
+    #. Nie importuj żadnych bibliotek i modułów
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:

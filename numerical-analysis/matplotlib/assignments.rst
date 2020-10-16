@@ -23,7 +23,7 @@ Trigonometry
     #. Wykresy (``subplot``) mają być jeden nad drugim
     #. Wykresy podpisz nazwą funkcji trygonometrycznej
     #. Tekst etykiety osi ``y`` ustaw na "Wartość funkcji"
-    #. Pokoloruj nazwy thicków ``x`` dla wykresu ``sin`` na czerwono
+    #. Pokoloruj nazwy tików ``x`` dla wykresu ``sin`` na czerwono
     #. Pokoloruj nazwę (label) dla ``cos`` na kolor zielony
     #. Na obu wykresach pokaż grid
     #. Narysuj drugi obrazek z nałożonymi na jeden plot wykresami obu funkcji
@@ -133,7 +133,7 @@ Color graph
 
 :Polish:
     #. Dokonano pomiarów z urządzeń temperatury
-    #. Wygeneruj listę ``dict`` z datami z ostatniego miesiąca oraz wartością pomiarów losowo 10-15 plus szum na poziomie 0.5 stopnia celsiusza (wykrzystaj ``np.gauss()``)
+    #. Wygeneruj listę ``dict`` z datami z ostatniego miesiąca oraz wartością pomiarów losowo 10-15 plus szum na poziomie 0.5 stopnia celsiusza (wykorzystaj ``np.gauss()``)
     #. Mając do dyspozycji szereg czasowy, gdzie dla każdego dnia wykonano pomiar temperatury
     #. Przedstaw na wykresie dane szeregu czasowego
     #. Oś z datami przedstaw przekrzywioną o 45 stopni

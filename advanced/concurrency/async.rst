@@ -164,7 +164,7 @@ Low-level API
 ``async``/``await``
 -------------------
 * run coroutines
-* streams, sockets, subprocesses, locks, timeouts, cancelations
+* streams, sockets, subprocesses, locks, timeouts, cancellations
 
 Mainstream
 ----------
@@ -186,7 +186,7 @@ Pluggable event loop
     loop.run_until_complete()
     loop.run_forever()
 
-    asyncio.geather()
+    asyncio.gather()
     loop.run_in_executor()
 
 

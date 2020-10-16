@@ -527,7 +527,7 @@ Else and Finally
     try:
         apollo11()
     except RuntimeError:
-        print("Yo're GO for landing")
+        print("You're GO for landing")
     except Exception:
         print('Abort')
     else:
@@ -536,7 +536,7 @@ Else and Finally
         print('Returning safely to the Earth')
 
     # Program P63 - Landing Manoeuvre Approach Phase
-    # Yo're GO for landing
+    # You're GO for landing
     # Returning safely to the Earth
 
 

@@ -222,7 +222,7 @@ Memoization
     .. todo:: English Translation
 
 :Polish:
-    #. Skopiuj kod z listingu poniżej
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Stwórz pusty ``dict`` o nazwie ``CACHE``
     #. W słowniku będziemy przechowywali wyniki wyliczenia funkcji dla zadanych parametrów:
 

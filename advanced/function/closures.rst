@@ -126,7 +126,7 @@ Function Closure Define
     #. Zdefiniuj funkcję ``check``, która przyjmuje ``func: Callable`` jako argument
     #. Zdefiniuj funkcję closure ``wrapper`` wewnątrz ``check``
     #. Funkcja ``wrapper`` przyjmuje ``*args`` i ``**kwargs`` jako argumenty
-    #. Funckja ``wrapper`` zwraca ``None``
+    #. Funkcja ``wrapper`` zwraca ``None``
     #. Funkcja ``check`` ma zwracać ``wrapper: Callable``
 
 :Output:

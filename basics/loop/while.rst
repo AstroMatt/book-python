@@ -343,7 +343,7 @@ Loop While Input
     #. User will type only valid ``int`` or ``float``
     #. To iterate use only ``while`` loop
     #. If grade is in ``GRADE_SCALE`` - add it to report card
-    #. If grade is not in ``GRADE_SCALE`` - prin1t "Grade is not allowed" and continue input
+    #. If grade is not in ``GRADE_SCALE`` - print "Grade is not allowed" and continue input
     #. If user pressed Enter key, end inserting data
     #. At the end, print calculated mean
     #. Test case when report list is empty

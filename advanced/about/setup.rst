@@ -44,7 +44,7 @@ Setup IDE
     #. Kliknij "clone" i zaczekaj na pobranie repozytorium
     #. Po stworzeniu projektu załóż katalog gdzie będziesz przechowywał kod tworzony podczas szkolenia
 
-        * Katalog ma mieć nazwę jak Twoje imie i pierwsza litera naziwska, np. ``JanT`` albo ``MarkW``, ``MelissaL``
+        * Katalog ma mieć nazwę jak Twoje imie i pierwsza litera nazwiska, np. ``JanT`` albo ``MarkW``, ``MelissaL``
         * W nazwie katalogu nie powinno być polskich znaków diakrytycznych
         * W nazwie katalogu nie powinno być spacji ani żadnych znaków specjalnych
 
@@ -105,9 +105,9 @@ Setup VCS
     #. W Twoim IDE
     #. Kliknij prawym klawiszem na nazwę projektu
     #. Z menu wybierz ``Git -> Commit Directory...``  lub użyj skrótu klawiszowego ``ctrl+k``
-    #. Wpisać opis zamin (np. Python szkolenie)
+    #. Wpisać opis zmian (np. Python szkolenie)
     #. Na dole wybrać ``Commit and Push``
-    #. Jeżeli wyskoczy informacja o niekatualnym branchu i zapytanie czy odświeżyć, zaznacz checkbox "Remember the update method and update silently in future" i wybierz "Yes"
+    #. Jeżeli wyskoczy informacja o niekatulanym branchu i zapytanie czy odświeżyć, zaznacz checkbox "Remember the update method and update silently in future" i wybierz "Yes"
     #. Sprawdzić Github
 
 .. figure:: img/pycharm-vsc-merge-rebase.png
