@@ -39,7 +39,7 @@ Type Vars
     T = TypeVar('T', int, float, complex)
     Vector = Iterable[tuple[T, T]]
 
-    def inproduct(v: Vector[T]) -> T:
+    def product(v: Vector[T]) -> T:
         return sum(x*y for x, y in v)
 
     def dilate(v: Vector[T], scale: T) -> Vector[T]:

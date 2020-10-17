@@ -51,7 +51,7 @@ html_static_path = [
     '../_data/sas',
     '../_data/sqlite3',
     '../_data/xml',
-    '../_data/xslx',
+    '../_data/xlsx',
 ]
 
 # article - for articles in scientific journals, presentations, short reports, program documentation, invitations, etc

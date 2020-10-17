@@ -138,7 +138,7 @@ Clustering Algorithms
 =====================
 Clustering, like regression, describes the class of problem and the class of methods.
 
-Clustering methods are typically organized by the modeling approaches such as centroid-based and hierarchal. All methods are concerned with using the inherent structures in the data to best organize the data into groups of maximum commonality.
+Clustering methods are typically organized by the modeling approaches such as centroid-based and hierarchical. All methods are concerned with using the inherent structures in the data to best organize the data into groups of maximum commonality.
 
 .. figure:: img/algorithms-clustering.png
     :width: 75%
@@ -154,7 +154,7 @@ The most popular clustering algorithms are:
     * Hierarchical Clustering
     * Association Rule Learning Algorithms
 
-Assoication Rule Learning Algorithms
+Association Rule Learning Algorithms
 ====================================
 Association rule learning methods extract rules that best explain observed relationships between variables in data.
 
@@ -164,7 +164,7 @@ These rules can discover important and commercially useful associations in large
     :width: 75%
     :align: center
 
-    Assoication Rule Learning Algorithms
+    Association Rule Learning Algorithms
 
 The most popular association rule learning algorithms are:
 

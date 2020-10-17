@@ -60,7 +60,7 @@ Qualifier
 Examples:
 
     * ``[d-m]`` - dowolna mała litera z przedziału: d-m
-    * ``[3-7]`` - dowlna cyfra z przedziału 3-7
+    * ``[3-7]`` - dowolna cyfra z przedziału 3-7
     * ``[d-mK-P3-8]`` - dowolna mała litera z przedziału d-m oraz dowolna duża litera K-P oraz dowolna cyfra 3-8
     * ``[xz2]`` - x lub z lub 2
     * ``d|x`` - d lub x
@@ -125,7 +125,7 @@ Define:
 Backreference:
 
     * ``\1`` - odwołaj się pozycyjnie do pierwszej grupy
-    * ``$1`` - odwołaj się pozycyjnie do pierwszej grupy (niektóre języki programwania)
+    * ``$1`` - odwołaj się pozycyjnie do pierwszej grupy (niektóre języki programowania)
     * ``(?P=name)`` - odwołaj się do grupy nazwanej ``name``
 
 Examples:

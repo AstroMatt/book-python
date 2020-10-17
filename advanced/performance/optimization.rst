@@ -154,9 +154,49 @@ Jeżeli masz listę w której sprawdzasz czy element występuje, to zamień list
         pass
 
 
-Use ``list.append()`` instead of ``str + str``
-===============================================
+String Concatenation
+====================
 .. code-block:: python
+    :caption: How many string are there in a memory?
+
+    firstname = 'Jan'
+    lastname = 'Twardowski'
+
+    firstname + ' ' + lastname
+    # Jan Twardowski
+
+.. code-block:: python
+    :caption: How many string are there in a memory?
+
+    firstname = 'Jan'
+    lastname = 'Twardowski'
+
+    f'{firstname} {lastname}'
+    # Jan Twardowski
+
+.. code-block:: python
+    :caption: How many string are there in a memory?
+
+    firstname = 'Jan'
+    lastname = 'Twardowski'
+    age = 42
+
+    'Hello ' + firstname + ' ' + lastname + ' ' + str(age) + '!'
+    # 'Hello Jan Twardowski 42!'
+
+.. code-block:: python
+    :caption: How many string are there in a memory?
+
+    firstname = 'Jan'
+    lastname = 'Twardowski'
+    age = 42
+
+    f'Hello {firstname} {lastname} {age}!'
+    # 'Hello Jan Twardowski 42!'
+
+
+.. code-block:: python
+    :caption: Use ``list.append()`` instead of ``str + str``
 
     # Performance - Method concatenates strings using + in a loop
     html = '<table>'

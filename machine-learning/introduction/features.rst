@@ -62,7 +62,7 @@ Weight  Texture  Label
 130g    Smooth   Apple
 ======  =======  ======
 
-**Training Data table contains features and lables**
+**Training Data table contains features and labels**
 
 .. code-block:: python
 

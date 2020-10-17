@@ -4,7 +4,7 @@ Pie Chart
 
 
 * Display sections in whole group
-* Automaticly calculate percentage
+* Automatically calculate percentage
 * optional features:
 
     * slice labels

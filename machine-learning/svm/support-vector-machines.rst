@@ -47,7 +47,7 @@ Zalety algorytmu
 
 Wady algorytmu
 --------------
-* In Natural Language Processing, structured representations of text yield better performances. Sadly, SVMs can not accomodate such structures(word embeddings) and are used through Bag-of-Words representation which loses sequantiality information and leads to worse performance.
+* In Natural Language Processing, structured representations of text yield better performances. Sadly, SVMs can not accommodate such structures(word embeddings) and are used through Bag-of-Words representation which loses sequentially information and leads to worse performance.
 
 * SVM in its vanilla form cannot return a probabilistic confidence value like logistic regression does, in some sense it’s not ‘explanatory’ enough.
 

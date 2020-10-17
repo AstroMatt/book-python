@@ -319,6 +319,7 @@ String Immutability
     # Jan Twardowski
 
 .. code-block:: python
+    :caption: How many string are there in a memory?
 
     firstname = 'Jan'
     lastname = 'Twardowski'

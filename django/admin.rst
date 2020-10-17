@@ -2,7 +2,7 @@
 Admin panel
 ***********
 
-Customizong
+Customizing
 ===========
 .. code-block:: python
 
@@ -139,7 +139,7 @@ Settings
 
     GRAPPELLI_SWITCH_USER = True
     GRAPPELLI_ADMIN_TITLE = _('HabitatOS')
-    GRAPPELLI_INDEX_DASHBOARD = 'habitat.dashboard.icares1.AdminDashboard'
+    GRAPPELLI_INDEX_DASHBOARD = 'habitat.dashboard.aatc.AdminDashboard'
     GRAPPELLI_AUTOCOMPLETE_SEARCH_FIELDS = {
         'auth': {
             'user': ['username__icontains']
@@ -159,7 +159,7 @@ Settings
 
             # Column 1
             self.children.append(modules.ModelList(
-                title=_('Questionaries - Visible only to you'),
+                title=_('Questionnaires - Visible only to you'),
                 column=1,
                 collapsible=False,
                 models=[

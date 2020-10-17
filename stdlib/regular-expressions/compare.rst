@@ -6,7 +6,7 @@ Regexp Compare
 Examples
 ========
 .. code-block:: python
-    :caption: Comparision between ``re.match()``, ``re.search()`` and ``re.findall()``
+    :caption: Comparison between ``re.match()``, ``re.search()`` and ``re.findall()``
 
     import re
 

@@ -594,7 +594,7 @@ Np ilość osób które mają raka. Zdecydowana większość nie ma raka.
 * Trzeba losować próbki tak, by rozkład był jak najbardziej podobny do rozkładu zbioru oryginalnego
 * Sprawdzasz jak bardzo zbiór oryginalny jest skrzywiony, a później coś robisz. zawsze popełniasz błąd, ale kwestia jak wielki
 * Decydujesz się którą rzecz optymalizujesz, false positive czy false negative
-* Recall = minimalizacja false negativów (lepiej zrobić fałszywy alarm, niż nie wykryć)
+* Recall = minimalizacja false negative (lepiej zrobić fałszywy alarm, niż nie wykryć)
 
 Łańcuchy Markova
 ----------------
@@ -617,7 +617,7 @@ Recall
 ------
 * Liczymy to ilościowo, tzn. czy zgadł czy nie
 * Precision - ile zgadł poprawnie z wszystkich
-* Recall - ile false positiwów wystąpiło
+* Recall - ile false positive wystąpiło
 * F1 - średnia precyzji i recall
 * ``F1 = 2 * (precision * recall) / (precision + recall)``
 
@@ -630,7 +630,7 @@ Recall
     * Type 1 czyli tzw. false positive - powiedzieć mężczyźnie że jest w ciąży
     * Type 2 czyli tzw. false negative - ciężarnej kobiecie powiedzieć, że nie jest w ciąży
 
-* False negativy staramy się eliminować, szczególnie w systemach medycznych
+* False negative staramy się eliminować, szczególnie w systemach medycznych
 * Support = ile mamy elementów w naszym zbiorze testowym
 
 .. code-block:: python
@@ -641,7 +641,7 @@ Recall
     print(classification_report(iris_test['target'], logreg.predict(iris_test[features])))
 
 * Jak użyjemy płatków, to nasz problem jest dużo lepiej liniowo separowalny.
-* Jeżeli użyjemy kielichów, to cenchy bardziej się se sobą mieszają.
+* Jeżeli użyjemy kielichów, to cechy bardziej się se sobą mieszają.
 * Dla problemów muiltiklasowych, można zamienić model na:
 
 .. code-block:: python
@@ -657,7 +657,7 @@ Recall
 
     logreg = linear_model.LogisticRegression(C=1e5, multi_class='multinomial', solver='sag', max_iter=1e6)
 
-* Model ``sag`` dobrze działa dla dużych dancyh, i wtedy dobrze zbiega i nie trzeba zwiększać ``max_iter``
+* Model ``sag`` dobrze działa dla dużych danych, i wtedy dobrze zbiega i nie trzeba zwiększać ``max_iter``
 
 .. code-block:: python
 
