@@ -1,13 +1,11 @@
 import pandas as pd
 import numpy as np
 
-
 NUMBER = 100
 
 s = pd.Series(
-    data = np.random.randn(NUMBER),
-    index = pd.date_range('1970-01-01', freq='D', periods=NUMBER)
-)
+    data=np.random.randn(NUMBER),
+    index=pd.date_range('1970-01-01', freq='D', periods=NUMBER))
 
 s['1970-02-14':'1970-02']
 # 1970-02-14   -0.189844

@@ -1,35 +1,35 @@
+"""
+>>> DATA = [
+...     'ul.Mieszka II',
+...     'UL. Zygmunta III WaZY',
+...     '  bolesława chrobrego ',
+...     'ul Jana III SobIESkiego',
+...     '\tul. Jana trzeciego Sobieskiego',
+...     'ulicaJana III Sobieskiego',
+...     'UL. JA    NA 3 SOBIES  KIEGO',
+...     'ULICA JANA III SOBIESKIEGO  ',
+...     'ULICA. JANA III SOBIeskieGO',
+...     ' Jana 3 Sobieskiego  ',
+...     'Jana III Sobi  eskiego ',
+... ]
+>>> for address in DATA:
+...     clean(address)
+'Mieszka II'
+'Zygmunta III Wazy'
+'Bolesława Chrobrego'
+'Jana III Sobieskiego'
+'Jana III Sobieskiego'
+'Jana III Sobieskiego'
+'Jana III Sobieskiego'
+'Jana III Sobieskiego'
+'Jana III Sobieskiego'
+'Jana III Sobieskiego'
+'Jana III Sobieskiego'
+"""
 import pandas as pd
 
-def clean(text: str) -> str:
-    """
-    >>> DATA = [
-    ...     'ul.Mieszka II',
-    ...     'UL. Zygmunta III WaZY',
-    ...     '  bolesława chrobrego ',
-    ...     'ul Jana III SobIESkiego',
-    ...     '\tul. Jana trzeciego Sobieskiego',
-    ...     'ulicaJana III Sobieskiego',
-    ...     'UL. JA    NA 3 SOBIES  KIEGO',
-    ...     'ULICA JANA III SOBIESKIEGO  ',
-    ...     'ULICA. JANA III SOBIeskieGO',
-    ...     ' Jana 3 Sobieskiego  ',
-    ...     'Jana III Sobi  eskiego ',
-    ... ]
-    >>> for address in DATA:
-    ...     clean(address)
-    'Mieszka II'
-    'Zygmunta III Wazy'
-    'Bolesława Chrobrego'
-    'Jana III Sobieskiego'
-    'Jana III Sobieskiego'
-    'Jana III Sobieskiego'
-    'Jana III Sobieskiego'
-    'Jana III Sobieskiego'
-    'Jana III Sobieskiego'
-    'Jana III Sobieskiego'
-    'Jana III Sobieskiego'
-    """
 
+def clean(text: str) -> str:
     # Common format
     text = text.upper()
 

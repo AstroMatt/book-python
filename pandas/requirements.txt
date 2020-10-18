@@ -1,8 +1,7 @@
 sphinx==3.2.*
 sphinx_rtd_theme
-sphinxcontrib-bibtex
 
-## Pandas
+
 # pandas
 # numpy
 # matplotlib

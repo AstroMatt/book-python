@@ -2,9 +2,5 @@ sphinx==3.2.*
 sphinx_rtd_theme
 sphinxcontrib-bibtex
 
-## Profiling
-# yappi
-
-
 # sphinxcontrib-book
 # sphinxjp.themes.revealjs

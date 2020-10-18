@@ -4,8 +4,8 @@ np.random.seed(0)
 
 
 s = pd.Series(
-    data = np.random.randint(0, 9, size=5),
-    index = list('abcde'))
+    data=np.random.randint(0, 9, size=5),
+    index=list('abcde'))
 # a    5
 # b    0
 # c    3

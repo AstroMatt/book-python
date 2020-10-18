@@ -24,8 +24,8 @@ print(np.isin(a, b))
 print(np.isin(b, a))
 # [False False False False False  True  True]
 
-a[ np.isin(a, b) ]
+a[np.isin(a, b)]
 # array([64, 64, 32, 32])
 
-b[ np.isin(b, a) ]
+b[np.isin(b, a)]
 # array([32, 64])

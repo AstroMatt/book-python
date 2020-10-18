@@ -15,7 +15,7 @@ features = np.loadtxt(URL, skiprows=1, delimiter=',', usecols=(0,1,2,3))
 #        [6.8, 3.2, 5.9, 2.3]])
 
 
-labels = np.loadtxt(URL, skiprows=1, delimiter=',', usecols=(4))
+labels = np.loadtxt(URL, skiprows=1, delimiter=',', usecols=4)
 # array([0, 2, 1, 2, 1, 0, 1, 1, 0, 2, 2, 0, 0, 2, 2, 1, 2, 2, 2, 1, 0, 1,
 #        1, 0, 0, 0, 2, 2, 0, 2, 2, 0, 1, 1, 2, 2, 0, 1, 2, 1, 1, 1, 2, 2,
 #        0, 1, 1, 1, 1, 1, 2, 0, 2, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 2, 0, 0,

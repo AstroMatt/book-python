@@ -1,17 +1,13 @@
-sphinx==2.4.*
+sphinx==3.2.*
 sphinx_rtd_theme
-sphinxcontrib-bibtex
 
-# sphinxcontrib-book
-# sphinxjp.themes.revealjs
-
-matplotlib
-numpy
-scikit-learn
-scipy
-jupyter
-pandas
-tensorflow
-keras
-pytorch
-plotly
+# matplotlib
+# numpy
+# scikit-learn
+# scipy
+# jupyter
+# pandas
+# tensorflow
+# keras
+# pytorch
+# plotly

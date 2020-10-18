@@ -3,7 +3,7 @@ Code Smells
 ***********
 
 
-Source :cite:`CodeSmells`
+Source [CodeSmells]_
 
 
 #. Using globals - but that is a code smell in any language.
@@ -301,3 +301,9 @@ Example 6
 
         if species.startswith('v'):
             print(species)
+
+
+References
+==========
+.. [CodeSmells] Flury, Tony. What are some major code smells in Python? https://www.quora.com/What-are-some-major-code-smells-in-Python 2019. Accessed: 2019-03-28
+

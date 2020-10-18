@@ -495,7 +495,7 @@ DataFrame Plot
     #. Aktywność jest gdy ``Luminance`` jest różna od zera
     #. Wyświetl wykres (line) z godzinami aktywności w dla lokacji "Sleeping Quarters upper"
     #. Łatwe: dla dnia 2019-09-28
-    #. Zaawansowane: dla wszystkich dni, jako subploty
+    #. Zaawansowane: dla wszystkich dni, jako subplot
 
 :Input:
     .. code-block:: python

@@ -5,7 +5,7 @@ About
 *****
 .. toctree::
     :maxdepth: 2
-    :caption: Numpy
+    :caption: About
     :name: Numpy About
 
     about.rst
@@ -17,7 +17,7 @@ Array
 *****
 .. toctree::
     :maxdepth: 2
-    :caption: Numpy
+    :caption: Array
     :name: Numpy Array
 
     array-create.rst
@@ -40,7 +40,7 @@ Select
 ******
 .. toctree::
     :maxdepth: 2
-    :caption: Numpy
+    :caption: Select
     :name: Numpy Select
 
     array-arithmetic.rst
@@ -54,7 +54,7 @@ Import & Export
 ***************
 .. toctree::
     :maxdepth: 2
-    :caption: Numpy
+    :caption: Import & Export
     :name: Numpy Import & Export
 
     array-serialize.rst
@@ -65,7 +65,7 @@ Math
 ****
 .. toctree::
     :maxdepth: 2
-    :caption: Numpy
+    :caption: Math
     :name: Numpy Math
 
     statistics.rst

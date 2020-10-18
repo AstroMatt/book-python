@@ -1,9 +1,5 @@
-sphinx==2.4.*
+sphinx==3.2.*
 sphinx_rtd_theme
-sphinxcontrib-bibtex
 
-# sphinxcontrib-book
-# sphinxjp.themes.revealjs
-
-pycodestyle
-mypy
+# pycodestyle
+# mypy

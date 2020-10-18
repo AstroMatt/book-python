@@ -48,7 +48,7 @@ Concatenate
 
 Append
 ======
-* jak robi appenda, to nie zmienia indeksów (uwaga na indeksy powtórzone)
+* jak robi append, to nie zmienia indeksów (uwaga na indeksy powtórzone)
 * Resulting ``DataFrame`` will have auto-incremented indexes
 
 .. code-block:: python
@@ -365,7 +365,7 @@ DataFrame Join
         * https://www.worldspaceflight.com/bios/eva/eva3.php
         * https://www.worldspaceflight.com/bios/eva/eva4.php
 
-    #. Scrappuj stronę wykorzystując ``pandas.read_html()``
+    #. Scrapuj stronę wykorzystując ``pandas.read_html()``
     #. Połącz dane wykorzystując ``pd.concat``
     #. Przygotuj plik ``CSV`` z danymi dotyczącymi spacerów kosmicznych
     #. Zapisz dane do pliku

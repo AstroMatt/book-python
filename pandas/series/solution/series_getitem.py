@@ -4,8 +4,8 @@ np.random.seed(0)
 
 
 s = pd.Series(
-    data = np.random.randn(100),
-    index = pd.date_range('2000-01-01', freq='D', periods=100))
+    data=np.random.randn(100),
+    index=pd.date_range('2000-01-01', freq='D', periods=100))
 
 
 s['2000-02-29']

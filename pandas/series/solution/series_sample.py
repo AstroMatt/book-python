@@ -1,11 +1,11 @@
 import pandas as pd
 import numpy as np
+
 np.random.seed(0)
 
-
 s = pd.Series(
-    data = np.random.randn(100),
-    index = pd.date_range('2000-01-01', freq='D', periods=100))
+    data=np.random.randn(100),
+    index=pd.date_range('2000-01-01', freq='D', periods=100))
 
 s.head(1)
 # 2000-01-01   -0.291394
