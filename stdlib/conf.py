@@ -1,4 +1,4 @@
-project = 'Python 3: from None to Machine Learning - Stdlib'
+project = 'Python: Stdlib'
 author = 'Matt Harasymczuk'
 email = 'matt@astrotech.io'
 language = 'en'

@@ -1,4 +1,4 @@
-project = 'Python 3: From None to Machine Learning - Quality'
+project = 'Python: Object Oriented Programming'
 author = 'Matt Harasymczuk'
 email = 'book-python@astronaut.center'
 

@@ -1,4 +1,4 @@
-project = 'Python 3: From None to Machine Learning - Pandas'
+project = 'Python: Matplotlib'
 author = 'Matt Harasymczuk'
 email = 'book-python@astronaut.center'
 

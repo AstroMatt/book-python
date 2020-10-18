@@ -1,4 +1,4 @@
-project = 'Python 3: from None to Machine Learning - Network'
+project = 'Python: Network'
 author = 'Matt Harasymczuk'
 email = 'matt@astrotech.io'
 language = 'en'

@@ -1,4 +1,4 @@
-project = 'Python 3: From None to Machine Learning - Numpy'
+project = 'Python: Numpy'
 author = 'Matt Harasymczuk'
 email = 'book-python@astronaut.center'
 
