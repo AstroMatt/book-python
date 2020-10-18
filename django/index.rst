@@ -4,7 +4,7 @@
     ******
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Django
 
     http-protocol.rst

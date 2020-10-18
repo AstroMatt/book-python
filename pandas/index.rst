@@ -1,17 +1,34 @@
-******
-Pandas
-******
+.. _Pandas:
 
+*****
+About
+*****
 .. toctree::
-    :maxdepth: 1
-    :caption: Pandas
-    :name: Pandas
+    :maxdepth: 2
+    :caption: About
+    :name: Pandas About
 
     about/pandas.rst
     about/types.rst
 
+***************
+Import & Export
+***************
+.. toctree::
+    :maxdepth: 2
+    :caption: Import & Export
+    :name: Pandas Import & Export
+
     import-export/read.rst
     import-export/to.rst
+
+******
+Series
+******
+.. toctree::
+    :maxdepth: 2
+    :caption: Series
+    :name: Pandas Series
 
     series/create.rst
     series/attributes.rst
@@ -25,6 +42,14 @@ Pandas
     series/arithmetic.rst
     series/statistics.rst
     series/mapping.rst
+
+*********
+DataFrame
+*********
+.. toctree::
+    :maxdepth: 2
+    :caption: DataFrame
+    :name: Pandas DataFrame
 
     dataframe/create.rst
     dataframe/attributes.rst
@@ -47,11 +72,27 @@ Pandas
     dataframe/join.rst
     dataframe/plot.rst
 
+****
+Date
+****
+.. toctree::
+    :maxdepth: 2
+    :caption: Date
+    :name: Pandas Date
+
     date/types.rst
     date/timezone.rst
     date/timedelta.rst
     date/frequency.rst
     date/calendar.rst
+
+*****
+Recap
+*****
+.. toctree::
+    :maxdepth: 2
+    :caption: Recap
+    :name: Pandas Recap
 
     about/methodchaining.rst
     about/setoption.rst

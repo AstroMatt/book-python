@@ -2,18 +2,27 @@
 Entry Test
 **********
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Entry Test
     :name: Design Patterns Entry Test
 
-    about/entry.rst
+    about/entry-test.rst
+
+*****
+About
+*****
+.. toctree::
+    :maxdepth: 2
+    :caption: Entry Test
+    :name: Design Patterns About
+
     about/classification.rst
 
 **********
 Creational
 **********
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Creational
     :name: Design Patterns Creational
 
@@ -24,7 +33,7 @@ Creational
 Structural
 **********
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Structural
     :name: Design Patterns Structural
 
@@ -34,7 +43,7 @@ Structural
 Behavioral
 **********
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Behavioral
     :name: Design Patterns Behavioral
 
@@ -45,7 +54,7 @@ Behavioral
 Paradigms
 *********
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Paradigms
     :name: Design Patterns Paradigms
 
@@ -57,8 +66,8 @@ Paradigms
 Exit Test
 *********
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Exit Test
     :name: Design Patterns Exit Test
 
-    about/exit.rst
+    about/exit-test.rst

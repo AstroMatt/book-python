@@ -1,4 +1,4 @@
-.. include:: /README.rst
+.. include:: README.rst
 
 
 *****
@@ -7,11 +7,11 @@ About
 .. toctree::
     :maxdepth: 1
 
-    /LICENSE.rst
-    /PROGRESS.rst
-    /install.rst
-    /survey.rst
-    /about/references.rst
+    LICENSE.rst
+    PROGRESS.rst
+    install.rst
+    survey.rst
+    about/references.rst
 
 *************
 Python Basics
@@ -22,7 +22,7 @@ Python Basics
     :caption: Python Basics
     :name: Basics
 
-    /basics/index.rst
+    basics/index.rst
 
 ***********************
 Python Standard Library
@@ -33,7 +33,7 @@ Python Standard Library
     :caption: Python Standard Library
     :name: Stdlib
 
-    /stdlib/index.rst
+    stdlib/index.rst
 
 ***************
 Python Advanced
@@ -44,7 +44,7 @@ Python Advanced
     :caption: Python Advanced
     :name: Advanced
 
-    /advanced/index.rst
+    advanced/index.rst
 
 ******
 Dragon
@@ -55,9 +55,9 @@ Dragon
     :caption: Dragon
     :name: Dragon
 
-    /dragon/alpha.rst
-    /dragon/beta.rst
-    /dragon/rc.rst
+    dragon/alpha.rst
+    dragon/beta.rst
+    dragon/rc.rst
 
 
 *****
@@ -78,7 +78,6 @@ Pandas
 
     pandas/index.rst
 
-
 **********
 Matplotlib
 **********
@@ -96,7 +95,7 @@ Object Oriented Programming
     :numbered:
     :caption: Object Oriented Programming
 
-    /oop/index.rst
+    oop/index.rst
 
 ***************
 Design Patterns
@@ -107,17 +106,17 @@ Design Patterns
     :caption: Design Patterns
     :name: Design Patterns
 
-    /design-patterns/index.rst
+    design-patterns/index.rst
 
-*****************
-CI/CD and Quality
-*****************
+*********
+DevSecOps
+*********
 .. toctree::
     :maxdepth: 2
     :numbered:
-    :caption: CI/CD and Quality
+    :caption: DevSecOps
 
-    /quality/index.rst
+    devsecops/index.rst
 
 ****************
 Network and HTTP
@@ -127,7 +126,7 @@ Network and HTTP
     :numbered:
     :caption: Network and HTTP
 
-    /network/index.rst
+    network/index.rst
 
 ******
 Django
@@ -137,8 +136,7 @@ Django
     :numbered:
     :caption: Django
 
-    /django/index.rst
-
+    django/index.rst
 
 ************
 Data Science
@@ -148,7 +146,7 @@ Data Science
     :numbered:
     :caption: Data Science
 
-    /data-science/index.rst
+    data-science/index.rst
 
 ****************
 Machine Learning
@@ -158,7 +156,7 @@ Machine Learning
     :numbered:
     :caption: Machine Learning
 
-    /machine-learning/index.rst
+    machine-learning/index.rst
 
 *********
 Blogposts
@@ -168,7 +166,7 @@ Blogposts
     :numbered:
     :caption: Blogposts
 
-    /_blogpost/ml-introduction.rst
+    _blogpost/ml-introduction.rst
 
 
 **********
@@ -179,15 +177,15 @@ Appendixes
     :numbered:
     :caption: Appendixes
 
-    /about/history.rst
-    /about/further-reading.rst
-    /about/books.rst
-    /about/video.rst
-    /about/python-2vs3.rst
-    /appendix/workshop/intermediate.rst
-    /appendix/workshop/network.rst
-    /appendix/workshop/django.rst
-    /appendix/workshop/testing.rst
-    /appendix/workshop/scientific.rst
-    /appendix/workshop/machine-learning.rst
-    /_references/references.rst
+    about/history.rst
+    about/further-reading.rst
+    about/books.rst
+    about/video.rst
+    about/python-2vs3.rst
+    appendix/workshop/intermediate.rst
+    appendix/workshop/network.rst
+    appendix/workshop/django.rst
+    appendix/workshop/testing.rst
+    appendix/workshop/scientific.rst
+    appendix/workshop/machine-learning.rst
+    _references/references.rst

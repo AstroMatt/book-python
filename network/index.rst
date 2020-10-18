@@ -1,8 +1,12 @@
+.. _Network:
+
 ************
 HTTP and Web
 ************
 .. toctree::
+    :maxdepth: 2
     :caption: HTTP and Web
+    :name: Network HTTP and Web
 
     http/protocol.rst
     http/stdlib.rst
@@ -18,7 +22,9 @@ HTTP and Web
 Protocols
 *********
 .. toctree::
+    :maxdepth: 2
     :caption: Protocols
+    :name: Network Protocols
 
     protocols/ftp.rst
     protocols/imap.rst
@@ -32,7 +38,9 @@ Protocols
 Transport
 *********
 .. toctree::
+    :maxdepth: 2
     :caption: Transport
+    :name: Network Transport
 
     transport/osi-model.rst
     transport/interfaces.rst

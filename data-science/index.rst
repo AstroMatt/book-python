@@ -1,9 +1,10 @@
-************
-Data Science
-************
+.. _Data Science:
 
+************
+Introduction
+************
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Introduction
     :name: Data Science Introduction
 
@@ -16,7 +17,7 @@ Data Science
 Jupyter
 *******
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Jupyter
     :name: Data Science Jupyter
 
@@ -26,7 +27,7 @@ Jupyter
 Python
 ******
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Introduction
     :name: Data Science Python
 
@@ -45,12 +46,11 @@ Python
     python/serialization.rst
     python/performance.rst
 
-
 ******************
 Data Visualization
 ******************
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Data Visualization
     :name: Data Science Visualization
 
@@ -63,7 +63,7 @@ Data Visualization
 Scipy
 *****
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Scipy
     :name: Data Science Scipy
 

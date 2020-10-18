@@ -1,22 +1,40 @@
-..
-    ***************************
-    Object Oriented Programming
-    ***************************
+.. _Object Oriented Programming:
 
+********
+Paradigm
+********
 .. toctree::
-    :maxdepth: 1
-    :caption: Object Oriented Programming
-    :name: Object Oriented Programming
+    :maxdepth: 2
+    :caption: Paradigm
+    :name: Object Oriented Programming Paradigm
 
-    namespace.rst
-    method-resolution-order.rst
     polymorphism.rst
-    dynamic-typing.rst
-    monkey-patching.rst
-    new-style-classes.rst
     interface.rst
-    hash.rst
     str-interning.rst
+    good-practices.rst
+
+******
+Python
+******
+.. toctree::
+    :maxdepth: 2
+    :caption: Python
+    :name: Object Oriented Programming Python
+
+    method-resolution-order.rst
+    namespace.rst
+    new-style-classes.rst
+    hash.rst
     slots.rst
     metaclass.rst
-    good-practices.rst
+
+**************
+Dynamic Typing
+**************
+.. toctree::
+    :maxdepth: 2
+    :caption: Dynamic Typing
+    :name: Object Oriented Programming Dynamic Typing
+
+    dynamic-typing.rst
+    monkey-patching.rst

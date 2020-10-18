@@ -1,8 +1,10 @@
-************
-Introduction
-************
+.. _Machine Learning:
+
+*****
+About
+*****
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Introduction
 
     introduction/data.rst
@@ -10,6 +12,14 @@ Introduction
     introduction/machine-learning.rst
     introduction/glossary-pl.rst
     introduction/glossary.rst
+
+************
+Introduction
+************
+.. toctree::
+    :maxdepth: 2
+    :caption: Introduction
+
     introduction/datasets.rst
     introduction/algorithms.rst
     introduction/features.rst
@@ -19,7 +29,7 @@ Introduction
 Sklearn
 *******
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Sklearn
 
     sklearn/sklearn.rst
@@ -28,7 +38,7 @@ Sklearn
 Model Quality
 *************
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Model Quality
 
     model-quality/model-quality.rst
@@ -39,7 +49,7 @@ Model Quality
 Decision Trees
 **************
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Decision Trees
 
     tree/decision-tree.rst
@@ -48,7 +58,7 @@ Decision Trees
 Regressions
 ***********
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Regressions
 
     regression/linear.rst
@@ -58,7 +68,7 @@ Regressions
 K-Nearest Neighbors
 *******************
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: K-Nearest Neighbors
 
     knn/k-nearest-neighbors.rst
@@ -67,7 +77,7 @@ K-Nearest Neighbors
 Bayes
 *****
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Bayes
 
     bayes/naive.rst
@@ -76,7 +86,7 @@ Bayes
 Support Vector Machines
 ***********************
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Support Vector Machines
 
     svm/support-vector-machines.rst
@@ -85,7 +95,7 @@ Support Vector Machines
 Clustering
 **********
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Clustering
 
     clustering/k-means.rst
@@ -94,7 +104,7 @@ Clustering
 Neural Networks
 ***************
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Neural Networks
 
     neural-network/deep.rst
@@ -104,7 +114,7 @@ Neural Networks
 References
 **********
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: References
 
     introduction/references.rst

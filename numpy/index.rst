@@ -1,15 +1,24 @@
-*****
-Numpy
-*****
+.. _Numpy:
 
+*****
+About
+*****
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Numpy
-    :name: Numpy
+    :name: Numpy About
 
     about.rst
     precision.rst
     constants.rst
+
+*****
+Array
+*****
+.. toctree::
+    :maxdepth: 2
+    :caption: Numpy
+    :name: Numpy
 
     array-create.rst
     array-dtype.rst
@@ -26,14 +35,38 @@ Numpy
     array-methods.rst
     array-concatenation.rst
 
+******
+Select
+******
+.. toctree::
+    :maxdepth: 2
+    :caption: Numpy
+    :name: Numpy
+
     array-arithmetic.rst
     array-broadcasting.rst
     array-reduction.rst
     array-logic.rst
     array-select.rst
 
+***************
+Import & Export
+***************
+.. toctree::
+    :maxdepth: 2
+    :caption: Numpy
+    :name: Numpy Import & Export
+
     array-serialize.rst
     import-export.rst
+
+****
+Math
+****
+.. toctree::
+    :maxdepth: 2
+    :caption: Numpy
+    :name: Numpy Math
 
     statistics.rst
     trigonometry.rst

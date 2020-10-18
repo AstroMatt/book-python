@@ -153,7 +153,7 @@ html_add_permalinks = '¶'
 html_theme_path = ['_themes']
 html_secnumber_suffix = '. '
 html_title = project
-html_favicon = '_static/favicon.png'
+html_favicon = '../_static/favicon.png'
 html_context = {}
 
 if html_theme == 'sphinx_rtd_theme':
