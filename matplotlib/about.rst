@@ -1,5 +1,3 @@
-.. _Matplotlib About:
-
 ****************
 Matplotlib About
 ****************

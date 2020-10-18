@@ -18,7 +18,7 @@ Array
 .. toctree::
     :maxdepth: 2
     :caption: Numpy
-    :name: Numpy
+    :name: Numpy Array
 
     array-create.rst
     array-dtype.rst
@@ -41,7 +41,7 @@ Select
 .. toctree::
     :maxdepth: 2
     :caption: Numpy
-    :name: Numpy
+    :name: Numpy Select
 
     array-arithmetic.rst
     array-broadcasting.rst
