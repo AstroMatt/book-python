@@ -1,3 +1,5 @@
+.. _Design Patterns:
+
 **********
 Entry Test
 **********
