@@ -576,10 +576,15 @@ DataFrame Groupby Astro EVA
 :Input:
     .. code-block:: python
 
-        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/astro-eva-all.csv'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/astro-eva.csv'
 
 :Hints:
     * Parse CSV and replace newlines inside fields with ``","``
     * Split names into separate columns for each spacewalker (first, second, third)
     * Split names into separate rows for each spacewalker (use ffill)
     * Split times into separate columns (hours, minutes)
+
+
+References
+==========
+* https://finance.yahoo.com/quote/SPCE/history
