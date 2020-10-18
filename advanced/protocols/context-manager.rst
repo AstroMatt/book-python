@@ -356,7 +356,7 @@ Protocol ContextManager File
     * Append newline character (``\n``) before adding to buffer
 
 Protocol ContextManager Buffer
------------------------------
+------------------------------
 * Assignment name: Protocol ContextManager Buffer
 * Last update: 2020-10-16
 * Complexity level: medium

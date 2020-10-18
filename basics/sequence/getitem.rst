@@ -1,8 +1,8 @@
-.. _Sequence Getitem:
+.. _Sequence GetItem:
 
-*****************
-Sequence Get Item
-*****************
+****************
+Sequence GetItem
+****************
 
 
 Rationale
@@ -49,7 +49,7 @@ Out of Range
 Ordered Sequence
 ================
 .. code-block:: python
-    :caption: Get item from ``str``
+    :caption: GetItem from ``str``
 
     data = 'abcd'
 
@@ -62,7 +62,7 @@ Ordered Sequence
     data[-2]            # 'c'
 
 .. code-block:: python
-    :caption: Get item from ``list``
+    :caption: GetItem from ``list``
 
     data = ['a', 'b', 'c', 'd']
 
@@ -75,7 +75,7 @@ Ordered Sequence
     data[-2]            # 'c'
 
 .. code-block:: python
-    :caption: Get item from ``tuple``
+    :caption: GetItem from ``tuple``
 
     data = ('a', 'b', 'c', 'd')
 
@@ -91,7 +91,7 @@ Ordered Sequence
 Unordered Sequence
 ==================
 .. code-block:: python
-    :caption: Get item from ``set`` is impossible. ``set`` is unordered data structure.
+    :caption: GetItem from ``set`` is impossible. ``set`` is unordered data structure.
 
     data = {'a', 'b', 'c', 'd'}
 
@@ -104,7 +104,7 @@ Unordered Sequence
     data[-2]            # TypeError: 'set' object is not subscriptable
 
 .. code-block:: python
-    :caption: Get item from ``frozenset`` is impossible. ``frozenset`` is unordered data structure.
+    :caption: GetItem from ``frozenset`` is impossible. ``frozenset`` is unordered data structure.
 
     data = frozenset({'a', 'b', 'c', 'd'})
 
@@ -120,9 +120,9 @@ Unordered Sequence
 Assignments
 ===========
 
-Sequence Getitem Select
+Sequence GetItem Select
 ------------------------
-* Assignment name: Sequence Getitem Select
+* Assignment name: Sequence GetItem Select
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines

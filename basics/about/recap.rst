@@ -33,7 +33,7 @@ Summary
     * Sequence Set
     * Sequence Frozenset
     * Sequence Nested
-    * Sequence Get Item
+    * Sequence GetItem
     * Sequence Slice
     * Sequence Unpack
     * Sequence Type Annotation

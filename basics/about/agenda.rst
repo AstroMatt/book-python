@@ -34,7 +34,7 @@ Day 2
     "30 min", "Sequence Set"
     "15 min", "Sequence Frozenset"
     "30 min", "Sequence Nested"
-    "30 min", "Sequence Get Item"
+    "30 min", "Sequence GetItem"
     "30 min", "Sequence Slice"
     "30 min", "Sequence Unpack"
     "15 min", "Sequence Type Annotation"

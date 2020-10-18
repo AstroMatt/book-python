@@ -181,4 +181,4 @@ Exit Test Passwd
     * :ref:`Basic Control Flow`
     * :ref:`Basic Loops`
     * :ref:`Basic Files`
-    * :ref:`Datetime and Timezones`
+    * :ref:`Stdlib Datetime Timezone`

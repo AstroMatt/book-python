@@ -119,7 +119,7 @@ Dict Values
 List of Dicts
 =============
 .. code-block:: python
-    :caption: Get Item
+    :caption: GetItem
 
     data = [
         {'measurements': [4.7, 3.2, 1.3, 0.2], 'species': 'setosa'},

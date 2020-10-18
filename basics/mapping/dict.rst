@@ -51,8 +51,8 @@ Type Definition
     # {'commander': 'Jan Twardowski'}
 
 
-Get Item
-========
+GetItem
+=======
 .. highlights::
     * ``[...]`` throws ``KeyError`` exception if key not found in ``dict``
     * ``.get()`` returns ``None`` if key not found
@@ -267,10 +267,10 @@ Delete Item
     #  'botanist': 'Mark Watney'}
 
 
-Get Item and Slice
-==================
+GetItem and Slice
+=================
 .. highlights::
-    * Get item with index on ``dict`` is not possible
+    * GetItem with index on ``dict`` is not possible
     * Slicing on ``dict`` is not possible
 
 .. code-block:: python

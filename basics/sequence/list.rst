@@ -68,10 +68,10 @@ Type Casting
     # ['a', 'b', 'c', 'd']
 
 
-Get Item
-========
+GetItem
+=======
 .. highlights::
-    * More information in :ref:`Sequence Get Item` and :ref:`Sequence Slice`
+    * More information in :ref:`Sequence GetItem` and :ref:`Sequence Slice`
 
 .. code-block:: python
 

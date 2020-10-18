@@ -59,6 +59,35 @@ Dragon
     /dragon/beta.rst
     /dragon/rc.rst
 
+
+*****
+Numpy
+*****
+.. toctree::
+    :maxdepth: 1
+    :caption: Numpy
+
+    numpy/index.rst
+
+******
+Pandas
+******
+.. toctree::
+    :maxdepth: 1
+    :caption: Pandas
+
+    pandas/index.rst
+
+
+**********
+Matplotlib
+**********
+.. toctree::
+    :maxdepth: 1
+    :caption: Matplotlib
+
+    matplotlib/index.rst
+
 ***************************
 Object Oriented Programming
 ***************************
@@ -110,15 +139,16 @@ Django
 
     /django/index.rst
 
-********************************
-Numerical Analysis, Data Science
-********************************
+
+************
+Data Science
+************
 .. toctree::
     :maxdepth: 2
     :numbered:
-    :caption: Numerical Analysis, Data Science
+    :caption: Data Science
 
-    /numerical-analysis/index.rst
+    /data-science/index.rst
 
 ****************
 Machine Learning

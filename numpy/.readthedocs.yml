@@ -1,0 +1,23 @@
+# Read the Docs configuration file
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+
+version: 2
+
+sphinx:
+  builder: html
+  configuration: conf.py
+  fail_on_warning: false
+
+# Additional formats
+# formats:
+#   - pdf
+#   - htmlzip
+#   - epub
+
+python:
+  version: 3.7
+  install:
+    - requirements: requirements.txt
+
+build:
+  image: latest
