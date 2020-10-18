@@ -1,6 +1,5 @@
 .. include:: README.rst
 
-
 *****
 About
 *****
@@ -20,7 +19,6 @@ Python Basics
     :maxdepth: 2
     :numbered:
     :caption: Python Basics
-    :name: Basics
 
     basics/index.rst
 
@@ -31,7 +29,6 @@ Python Standard Library
     :maxdepth: 2
     :numbered:
     :caption: Python Standard Library
-    :name: Stdlib
 
     stdlib/index.rst
 
@@ -42,7 +39,6 @@ Python Advanced
     :maxdepth: 2
     :numbered:
     :caption: Python Advanced
-    :name: Advanced
 
     advanced/index.rst
 
@@ -53,18 +49,17 @@ Dragon
     :maxdepth: 2
     :numbered:
     :caption: Dragon
-    :name: Dragon
 
     dragon/alpha.rst
     dragon/beta.rst
     dragon/rc.rst
-
 
 *****
 Numpy
 *****
 .. toctree::
     :maxdepth: 2
+    :numbered:
     :caption: Numpy
 
     numpy/index.rst
@@ -74,6 +69,7 @@ Pandas
 ******
 .. toctree::
     :maxdepth: 2
+    :numbered:
     :caption: Pandas
 
     pandas/index.rst
@@ -83,6 +79,7 @@ Matplotlib
 **********
 .. toctree::
     :maxdepth: 2
+    :numbered:
     :caption: Matplotlib
 
     matplotlib/index.rst
@@ -166,7 +163,6 @@ Blogposts
     :caption: Blogposts
 
     _blogpost/ml-introduction.rst
-
 
 **********
 Appendixes

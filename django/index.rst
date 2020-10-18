@@ -1,7 +1,4 @@
-..
-    ******
-    Django
-    ******
+.. _Django:
 
 .. toctree::
     :maxdepth: 2
