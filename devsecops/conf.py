@@ -4,12 +4,13 @@ email = 'book-python@astronaut.center'
 
 language = 'en'
 html_theme = 'sphinx_rtd_theme'
+html_baseurl = 'https://python.astrotech.io'
 
 todo_emit_warnings = False
 todo_include_todos = True
 
 extensions = [
-    'sphinx.ext.autosectionlabel',
+    # 'sphinx.ext.autosectionlabel',
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
     'sphinx.ext.extlinks',
@@ -45,13 +46,13 @@ suppress_warnings = [
 ]
 
 html_static_path = [
-    '../_static',
-    '../_data/csv',
-    '../_data/json',
-    '../_data/sas',
-    '../_data/sqlite3',
-    '../_data/xml',
-    '../_data/xlsx',
+    '_static',
+    '_data/csv',
+    '_data/json',
+    '_data/sas',
+    '_data/sqlite3',
+    '_data/xml',
+    '_data/xlsx',
 ]
 
 # article - For articles in scientific journals, presentations, short reports,
@@ -157,8 +158,9 @@ html_add_permalinks = '¶'
 html_theme_path = ['_themes']
 html_secnumber_suffix = '. '
 html_title = project
-html_favicon = '../_static/favicon.png'
+html_favicon = '_static/favicon.png'
 html_context = {}
+html_copy_source = False
 
 if html_theme == 'sphinx_rtd_theme':
     html_context.update({

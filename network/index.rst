@@ -13,6 +13,7 @@ HTTP and Web
     http/requests.rst
     http/scrapping.rst
     http/frameworks.rst
+    http/fastapi.rst
     http/jinja.rst
     http/paas.rst
     http/soap-wsdl.rst

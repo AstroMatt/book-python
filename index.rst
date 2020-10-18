@@ -64,7 +64,7 @@ Dragon
 Numpy
 *****
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Numpy
 
     numpy/index.rst
@@ -73,7 +73,7 @@ Numpy
 Pandas
 ******
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Pandas
 
     pandas/index.rst
@@ -82,7 +82,7 @@ Pandas
 Matplotlib
 **********
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Matplotlib
 
     matplotlib/index.rst

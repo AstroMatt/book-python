@@ -1,4 +1,4 @@
-project = 'Python: Machine Learning'
+project = 'Python: Design Patterns'
 author = 'Matt Harasymczuk'
 email = 'book-python@astronaut.center'
 
