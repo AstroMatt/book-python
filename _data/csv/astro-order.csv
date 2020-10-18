@@ -1,0 +1,584 @@
+Order,Astronaut,Type,Date,Spacecraft
+1,Yuri Gagarin,Orbital,12 April 1961,Vostok
+2,Alan Shepard,Orbital,5 May 1961,Freedom 7
+3,Virgil Grissom,Orbital,21 July 1961,Liberty Bell 7
+4,Gherman Titov,Orbital,6 August 1961,Vostok 2
+5,John Glenn,Orbital,20 February 1962,Friendship 7
+6,Malcom Carpenter,Orbital,24 May 1962,Aurora 7
+7,Andrian Nikolayev,Orbital,11 August 1962,Vostok 3
+8,Pavel Popovich,Orbital,12 August 1962,Vostok 4
+9,Walter Schirra,Orbital,3 October 1962,Sigma 7
+10,Leroy Cooper,Orbital,15 May 1963,Faith 7
+11,Valeri Bykovsky,Orbital,14 June 1963,Vostok 5
+12,Valentina Tereshkova,Orbital,16 June 1963,Vostok 6
+13,Joseph Walker,Orbital,19 July 1963,X-15 Flight #90
+14,Konstantin Feoktistov,Orbital,12 October 1964,Voskhod
+,Vladimir Komarov,Orbital,12 October 1964,Voskhod
+,Boris Yegorov,Orbital,12 October 1964,Voskhod
+17,Pavel Belyayev,Orbital,18 March 1965,Voskhod 2
+,Alexi Leonov,Orbital,18 March 1965,Voskhod 2
+19,John Young,Orbital,23 March 1965,Gemini 3
+20,James McDivitt,Orbital,3 June 1965,Gemini IV
+,Edward White,Orbital,3 June 1965,Gemini IV
+22,Charles Conrad,Orbital,21 August 1965,Gemini V
+23,Frank Borman,Orbital,4 December 1965,Gemini VII
+,James Lovell,Orbital,4 December 1965,Gemini VII
+25,Thomas Stafford,Orbital,15 December 1965,Gemini VI-A
+26,Neil Armstrong,Orbital,16 March 1966,Gemini VIII
+,David Scott,Orbital,16 March 1966,Gemini VIII
+28,Eugene Cernan,Orbital,3 June 1966,Gemini IX-A
+29,Michael Collins,Orbital,18 July 1966,Gemini X
+30,Richard Gordon,Orbital,12 September 1966,Gemini XI
+31,Edwin Aldrin,Orbital,11 November 1966,Gemini XII
+32,Ronnie Cunningham,Orbital,11 October 1968,Apollo 7
+,Donn Eisele,Orbital,11 October 1968,Apollo 7
+34,Georgi Beregovoi,Orbital,26 October 1968,Soyuz 3
+35,William Anders,Orbital,21 December 1968,Apollo 8
+36,Vladimir Shatalov,Orbital,14 January 1969,Soyuz 4
+37,Yevgeni Khrunov,Orbital,15 January 1969,Soyuz 5
+,Boris Volynov,Orbital,15 January 1969,Soyuz 5
+,Aleksei Yeliseyev,Orbital,15 January 1969,Soyuz 5
+40,Russell Schweickart,Orbital,3 March 1969,Apollo 9
+41,Valeri Kubasov,Orbital,11 October 1969,Soyuz 6
+,Georgi Shonin,Orbital,11 October 1969,Soyuz 6
+43,Anatoli Filipchenko,Orbital,12 October 1969,Soyuz 7
+,Viktor Gorbatko,Orbital,12 October 1969,Soyuz 7
+,Vladislav Volkov,Orbital,12 October 1969,Soyuz 7
+46,Alan Bean,Orbital,14 November 1969,Apollo 12
+47,Fred Haise,Orbital,11 April 1970,Apollo 13
+,John Swigert,Orbital,11 April 1970,Apollo 13
+49,Vitali Sevastyanov,Orbital,1 June 1970,Soyuz 9
+50,Edgar Mitchell,Orbital,31 January 1971,Apollo 14
+,Stuart Roosa,Orbital,31 January 1971,Apollo 14
+52,Nikolai Rukavishnikov,Orbital,22 April 1971,Soyuz 10
+53,Georgi Dobrovolsky,Orbital,6 June 1971,Soyuz 11
+,Viktor Patsayev,Orbital,6 June 1971,Soyuz 11
+55,James Irwin,Orbital,26 July 1971,Apollo 15
+,Alfred Worden,Orbital,26 July 1971,Apollo 15
+57,Charles Duke,Orbital,16 April 1972,Apollo 16
+,Thomas Mattingly,Orbital,16 April 1972,Apollo 16
+59,Ronald Evans,Orbital,7 December 1972,Apollo 17
+,Harrison Schmitt,Orbital,7 December 1972,Apollo 17
+61,Joseph Kerwin,Orbital,25 May 1973,Skylab 1
+,Paul Weitz,Orbital,25 May 1973,Skylab 1
+63,Owen Garriott,Orbital,28 July 1973,Skylab 2
+,Jack Lousma,Orbital,28 July 1973,Skylab 2
+65,Vasily Lazarev,Orbital,27 September 1973,Soyuz 12
+,Oleg Makarov,Orbital,27 September 1973,Soyuz 12
+67,Gerald Carr,Orbital,16 November 1973,Skylab 3
+,Edward Gibson,Orbital,16 November 1973,Skylab 3
+,William Pogue,Orbital,16 November 1973,Skylab 3
+70,Pyotr Klimuk,Orbital,18 December 1973,Soyuz 13
+,Valentin Lebedev,Orbital,18 December 1973,Soyuz 13
+72,Yuri Artyukhin,Orbital,3 July 1974,Soyuz 14
+73,Lev Dyomin,Orbital,26 August 1974,Soyuz 15
+,Gennadi Sarafanov,Orbital,26 August 1974,Soyuz 15
+75,Georgi Grechko,Orbital,10 January 1975,Soyuz 17
+,Alexy Gubarev,Orbital,10 January 1975,Soyuz 17
+77,Vance Brand,Orbital,15 July 1975,ASTP
+,Donald Slayton,Orbital,15 July 1975,ASTP
+79,Vitaly Zholobov,Orbital,6 July 1976,Soyuz 21
+80,Vladimir Aksyonov,Orbital,15 September 1976,Soyuz 22
+81,Valeri Rozhdestvensky,Orbital,14 October 1976,Soyuz 23
+,Vyacheslav Zudov,Orbital,14 October 1976,Soyuz 23
+83,Yuri Glazkov,Orbital,7 February 1977,Soyuz 24
+84,Vladimir Kovalyonok,Orbital,9 October 1977,Soyuz 25
+,Valeri Ryumin,Orbital,9 October 1977,Soyuz 25
+86,Yuri Romanenko,Orbital,10 December 1977,Soyuz 26
+87,Vladimir Dzhanibekov,Orbital,10 January 1978,Soyuz 27
+88,Vladimir Remek,Orbital,2 March 1978,Soyuz 28
+89,Aleksandr Ivanchenkov,Orbital,15 June 1978,Soyuz 29
+90,Miroslav Hermaszewski,Orbital,27 June 1978,Soyuz 30
+91,Sigmund Jähn,Orbital,26 August 1978,Soyuz 31
+92,Vladimir Lyakhov,Orbital,25 February 1979,Soyuz 32
+93,Georgi Ivanov,Orbital,10 April 1979,Soyuz 33
+94,Leonid Popov,Orbital,9 April 1980,Soyuz 35
+95,Bertalan Farkas,Orbital,26 May 1980,Soyuz 36
+96,Yuri Malyshev,Orbital,5 June 1980,Soyuz T-2
+97,Pham Tuan,Orbital,23 July 1980,Soyuz 37
+98,Arnaldo Tamayo-Mendez,Orbital,18 September 1980,Soyuz 38
+99,Leonid Kizim,Orbital,27 November 1980,Soyuz T-3
+,Gennadi Strekalov,Orbital,27 November 1980,Soyuz T-3
+101,Viktor Savinykh,Orbital,12 March 1981,Soyuz T-4
+102,Jugderdemidliin Gurragcha,Orbital,22 March 1981,Soyuz 39
+103,Robert Crippen,Orbital,12 April 1981,STS-1
+104,Dumitru-Dorin Prunariu,Orbital,14 May 1981,Soyuz 40
+105,Joseph Engle,Orbital,12 November 1981,STS-2
+,Richard Truly,Orbital,12 November 1981,STS-2
+107,Charles Fullerton,Orbital,22 March 1982,STS-3
+108,Anatoli Berezovoi,Orbital,13 May 1982,Soyuz T-5
+109,Jean-Loup Chretien,Orbital,24 June 1982,Soyuz T-6
+110,Henry Hartsfield,Orbital,27 June 1982,STS-4
+111,Svetlana Savitskaya,Orbital,19 August 1982,Soyuz T-7
+,Aleksandr Serebrov,Orbital,19 August 1982,Soyuz T-7
+113,Joseph Allen,Orbital,11 November 1982,STS-5
+,William Lenoir,Orbital,11 November 1982,STS-5
+,Robert Overmyer,Orbital,11 November 1982,STS-5
+116,Karol Bobko,Orbital,4 April 1983,STS-6
+,Franklin Musgrave,Orbital,4 April 1983,STS-6
+,Donald Peterson,Orbital,4 April 1983,STS-6
+119,Vladimir Titov,Orbital,20 April 1983,Soyuz T-8
+120,John Fabian,Orbital,18 June 1983,STS-7
+,Frederick Hauck,Orbital,18 June 1983,STS-7
+,Sally Ride,Orbital,18 June 1983,STS-7
+,Norman Thagard,Orbital,18 June 1983,STS-7
+124,Aleksandr Pavlovich Aleksandrov,Orbital,27 June 1983,Soyuz T-9
+125,Guion Bluford,Orbital,30 August 1983,STS-8
+,Daniel Brandenstein,Orbital,30 August 1983,STS-8
+,Dale Gardner,Orbital,30 August 1983,STS-8
+,William Thornton,Orbital,30 August 1983,STS-8
+129,Bryon Lichtenberg,Orbital,28 November 1983,STS-9
+,Ulf Merbold,Orbital,28 November 1983,STS-9
+,Robert Parker,Orbital,28 November 1983,STS-9
+,Brewster Shaw,Orbital,28 November 1983,STS-9
+133,Robert Gibson,Orbital,3 February 1984,41-B
+,Bruce McCandless,Orbital,3 February 1984,41-B
+,Ronald McNair,Orbital,3 February 1984,41-B
+,Robert Stewart,Orbital,3 February 1984,41-B
+137,Oleg Atkov,Orbital,8 February 1984,Soyuz T-10
+,Vladimir Solovyov,Orbital,8 February 1984,Soyuz T-10
+139,Rakesh Sharma,Orbital,3 April 1984,Soyuz T-11
+140,Terry Hart,Orbital,6 April 1984,41-C
+,George Nelson,Orbital,6 April 1984,41-C
+,Francis Scobee,Orbital,6 April 1984,41-C
+,James van Hoften,Orbital,6 April 1984,41-C
+144,Igor Volk,Orbital,17 July 1984,Soyuz T-12
+145,Michael Coats,Orbital,30 August 1984,41-D
+,Steven Hawley,Orbital,30 August 1984,41-D
+,Richard Mullane,Orbital,30 August 1984,41-D
+,Judith Resnik,Orbital,30 August 1984,41-D
+,Charles Walker,Orbital,30 August 1984,41-D
+150,Marc Garneau,Orbital,5 October 1984,41-G
+,David Leestma,Orbital,5 October 1984,41-G
+,Jon McBride,Orbital,5 October 1984,41-G
+,Paul Scully-Power,Orbital,5 October 1984,41-G
+,Kathryn Sullivan,Orbital,5 October 1984,41-G
+155,Anna Fisher,Orbital,8 November 1984,51-A
+,David Walker,Orbital,8 November 1984,51-A
+157,James Buchli,Orbital,24 January 1985,51-C
+,Ellison Onizuka,Orbital,24 January 1985,51-C
+,Gary Payton,Orbital,24 January 1985,51-C
+,Loren Shriver,Orbital,24 January 1985,51-C
+161,Edwin Garn,Orbital,12 April 1985,51-D
+,Stanley Griggs,Orbital,12 April 1985,51-D
+,Jeffrey Hoffman,Orbital,12 April 1985,51-D
+,Margaret Seddon,Orbital,12 April 1985,51-D
+,Donald Williams,Orbital,12 April 1985,51-D
+166,Frederick Gregory,Orbital,29 April 1985,51-B
+,Don Lind,Orbital,29 April 1985,51-B
+,Lodewijk van den Berg,Orbital,29 April 1985,51-B
+,Taylor Wang,Orbital,29 April 1985,51-B
+170,Sultan Al-Saud,Orbital,17 June 1985,51-G
+,Patrick Baudry,Orbital,17 June 1985,51-G
+,John Creighton,Orbital,17 June 1985,51-G
+,Shannon Lucid,Orbital,17 June 1985,51-G
+,Steven Nagel,Orbital,17 June 1985,51-G
+175,Loren Acton,Orbital,29 July 1985,51-F
+,John Bartoe,Orbital,29 July 1985,51-F
+,Roy Bridges,Orbital,29 July 1985,51-F
+,Anthony England,Orbital,29 July 1985,51-F
+,Karl Henize,Orbital,29 July 1985,51-F
+180,Richard Covey,Orbital,27 August 1985,51-I
+,William Fisher,Orbital,27 August 1985,51-I
+,John Lounge,Orbital,27 August 1985,51-I
+183,Vladimir Vasyutin,Orbital,17 September 1985,Soyuz T-14
+,Aleksandr Volkov,Orbital,17 September 1985,Soyuz T-14
+185,Ronald Grabe,Orbital,3 October 1985,51-J
+,David Hilmers,Orbital,3 October 1985,51-J
+,William Pailes,Orbital,3 October 1985,51-J
+188,Bonnie Dunbar,Orbital,30 October 1985,61-A
+,Reinhard Furrer,Orbital,30 October 1985,61-A
+,Ernst Messerschmid,Orbital,30 October 1985,61-A
+,Wubbo Ockels,Orbital,30 October 1985,61-A
+192,Mary Cleave,Orbital,27 November 1985,61-B
+,Rodolfo Neri Vela,Orbital,27 November 1985,61-B
+,Bryan O'Connor,Orbital,27 November 1985,61-B
+,Jerry Ross,Orbital,27 November 1985,61-B
+,Sherwood Spring,Orbital,27 November 1985,61-B
+197,Charles Bolden,Orbital,12 January 1986,61-C
+,Robert Cenker,Orbital,12 January 1986,61-C
+,Franklin Chang-Diaz,Orbital,12 January 1986,61-C
+,Clarens Nelson,Orbital,12 January 1986,61-C
+201,Aleksandr Laveykin,Orbital,5 February 1987,Soyuz TM-2
+202,Mohammed Faris,Orbital,22 July 1987,Soyuz TM-3
+,Aleksandr Viktorenko,Orbital,22 July 1987,Soyuz TM-3
+204,Anatoli Levchenko,Orbital,21 December 1987,Soyuz TM-4
+,Musa Manarov,Orbital,21 December 1987,Soyuz TM-4
+206,Aleksandr Panayotov Aleksandrov,Orbital,7 June 1988,Soyuz TM-5
+,Anatoliy Solovyov,Orbital,7 June 1988,Soyuz TM-5
+208,Abdul Mohmand,Orbital,29 August 1988,Soyuz TM-6
+,Valeri Polyakov,Orbital,29 August 1988,Soyuz TM-6
+210,Sergei Krikalyov,Orbital,26 November 1988,Soyuz TM-7
+211,Guy Gardner,Orbital,2 December 1988,STS-27
+,William Shepherd,Orbital,2 December 1988,STS-27
+213,James Bagian,Orbital,13 March 1989,STS-29
+,John Blaha,Orbital,13 March 1989,STS-29
+,Robert Springer,Orbital,13 March 1989,STS-29
+216,Mark Lee,Orbital,4 May 1989,STS-30
+217,James Adamson,Orbital,8 August 1989,STS-28
+,Mark Brown,Orbital,8 August 1989,STS-28
+,Richard Richards,Orbital,8 August 1989,STS-28
+220,Ellen Baker,Orbital,18 October 1989,STS-34
+,Michael McCulley,Orbital,18 October 1989,STS-34
+222,Manly Carter,Orbital,23 November 1989,STS-33
+,Kathryn Thornton,Orbital,23 November 1989,STS-33
+224,Marsha Ivins,Orbital,9 January 1990,STS-32
+,George Low,Orbital,9 January 1990,STS-32
+,James Wetherbee,Orbital,9 January 1990,STS-32
+227,Aleksandr Balandin,Orbital,11 February 1990,Soyuz TM-9
+228,John Casper,Orbital,28 February 1990,STS-36
+,Pierre Thuot,Orbital,28 February 1990,STS-36
+230,Gennadi Manakov,Orbital,1 August 1990,Soyuz TM-10
+231,Thomas Akers,Orbital,6 October 1990,STS-41
+,Robert Cabana,Orbital,6 October 1990,STS-41
+,Bruce Melnick,Orbital,6 October 1990,STS-41
+234,Frank Culbertson,Orbital,15 November 1990,STS-38
+,Charles Gemar,Orbital,15 November 1990,STS-38
+,Carl Meade,Orbital,15 November 1990,STS-38
+237,Samuel Durrance,Orbital,2 December 1990,STS-35
+,Ronald Parise,Orbital,2 December 1990,STS-35
+239,Viktor Afanasyev,Orbital,2 December 1990,Soyuz TM-11
+,Tohiro Akiyama,Orbital,2 December 1990,Soyuz TM-11
+241,Jerome Apt,Orbital,5 April 1991,STS-37
+,Kenneth Cameron,Orbital,5 April 1991,STS-37
+,Linda Godwin,Orbital,5 April 1991,STS-37
+244,Lloyd Hammond,Orbital,28 April 1991,STS-39
+,Gregory Harbaugh,Orbital,28 April 1991,STS-39
+,Richard Hieb,Orbital,28 April 1991,STS-39
+,Donald McMonagle,Orbital,28 April 1991,STS-39
+,Charles Veach,Orbital,28 April 1991,STS-39
+249,Anatoli Artsebarsky,Orbital,18 May 1991,Soyuz TM-12
+,Helen Sharman,Orbital,18 May 1991,Soyuz TM-12
+251,Francis Gaffney,Orbital,5 June 1991,STS-40
+,Sidney Gutierrez,Orbital,5 June 1991,STS-40
+,Millie Hughes-Fulford,Orbital,5 June 1991,STS-40
+,Tamara Jernigan,Orbital,5 June 1991,STS-40
+255,Michael Baker,Orbital,2 August 1991,STS-43
+256,Kenneth Reightler,Orbital,12 September 1991,STS-48
+257,Toktar Aubakirov,Orbital,2 October 1991,Soyuz TM-13
+,Franz Viehböck,Orbital,2 October 1991,Soyuz TM-13
+259,Thomas Hennen,Orbital,25 November 1991,STS-44
+,Terence Henricks,Orbital,25 November 1991,STS-44
+,Mario Runco,Orbital,25 November 1991,STS-44
+,James Voss,Orbital,25 November 1991,STS-44
+263,Roberta Bondar,Orbital,22 January 1992,STS-42
+,Stephen Oswald,Orbital,22 January 1992,STS-42
+,William Readdy,Orbital,22 January 1992,STS-42
+266,Klaus-Dietrich Flade,Orbital,17 March 1992,Soyuz TM-14
+,Aleksandr Kaleri,Orbital,17 March 1992,Soyuz TM-14
+268,Brian Duffy,Orbital,24 March 1992,STS-45
+,Colin Foale,Orbital,24 March 1992,STS-45
+,Dirk Frimout,Orbital,24 March 1992,STS-45
+271,Kevin Chilton,Orbital,7 May 1992,STS-49
+272,Kenneth Bowersox,Orbital,25 June 1992,STS-50
+,Lawrence DeLucas,Orbital,25 June 1992,STS-50
+,Eugene Trinh,Orbital,25 June 1992,STS-50
+275,Sergei Avdeyev,Orbital,27 July 1992,Soyuz TM-15
+,Michel Tognini,Orbital,27 July 1992,Soyuz TM-15
+277,Andrew Allen,Orbital,31 July 1992,STS-46
+,Franco Malerba,Orbital,31 July 1992,STS-46
+,Claude Nicollier,Orbital,31 July 1992,STS-46
+280,Curtis Brown,Orbital,12 September 1992,STS-47
+,Nancy Davis,Orbital,12 September 1992,STS-47
+,Mae Jemison,Orbital,12 September 1992,STS-47
+,Mamoru Mohri,Orbital,12 September 1992,STS-47
+284,Steven MacLean,Orbital,22 October 1992,STS-52
+285,Michael Clifford,Orbital,2 December 1992,STS-53
+286,Susan Helms,Orbital,13 January 1993,STS-54
+287,Aleksandr Poleshchuk,Orbital,24 January 1993,Soyuz TM-16
+288,Kenneth Cockrell,Orbital,8 April 1993,STS-56
+,Ellen Ochoa,Orbital,8 April 1993,STS-56
+290,Bernard Harris,Orbital,26 April 1993,STS-55
+,Charles Precourt,Orbital,26 April 1993,STS-55
+,Hans Schlegel,Orbital,26 April 1993,STS-55
+,Ulrich Walter,Orbital,26 April 1993,STS-55
+294,Nancy Currie,Orbital,21 June 1993,STS-57
+,Janice Voss,Orbital,21 June 1993,STS-57
+,Peter Wisoff,Orbital,21 June 1993,STS-57
+297,Jean-Pierre Haignere,Orbital,1 July 1993,Soyuz TM-17
+,Vasili Tsibliyev,Orbital,1 July 1993,Soyuz TM-17
+299,Daniel Bursch,Orbital,12 September 1993,STS-51
+,James Newman,Orbital,12 September 1993,STS-51
+,Carl Walz,Orbital,12 September 1993,STS-51
+302,Martin Fettman,Orbital,18 October 1993,STS-58
+,William McArthur,Orbital,18 October 1993,STS-58
+,Richard Searfoss,Orbital,18 October 1993,STS-58
+,David Wolf,Orbital,18 October 1993,STS-58
+306,Yuri Usachyov,Orbital,8 January 1994,Soyuz TM-18
+307,Ronald Sega,Orbital,3 February 1994,STS-60
+308,Thomas Jones,Orbital,9 April 1994,STS-59
+309,Yuri Malenchenko,Orbital,1 July 1994,Soyuz TM-19
+,Talgat Musabayev,Orbital,1 July 1994,Soyuz TM-19
+311,Leroy Chiao,Orbital,8 July 1994,STS-65
+,James Halsell,Orbital,8 July 1994,STS-65
+,Chiaki Mukai,Orbital,8 July 1994,STS-65
+,Donald Thomas,Orbital,8 July 1994,STS-65
+315,Jerry Linenger,Orbital,9 September 1994,STS-64
+316,Stephen Smith,Orbital,30 September 1994,STS-68
+,Terrence Wilcutt,Orbital,30 September 1994,STS-68
+318,Yelena Kondakova,Orbital,3 October 1994,Soyuz TM-20
+319,Jean-Françis Clervoy,Orbital,3 November 1994,STS-66
+,Scott Parazynski,Orbital,3 November 1994,STS-66
+,Joseph Tanner,Orbital,3 November 1994,STS-66
+322,Eileen Collins,Orbital,3 February 1995,STS-63
+323,William Gregory,Orbital,2 March 1995,STS-67
+,John Grunsfeld,Orbital,2 March 1995,STS-67
+,Wendy Lawrence,Orbital,2 March 1995,STS-67
+326,Vladimir Dezhurov,Orbital,14 March 1995,Soyuz TM-21
+327,Nikolai Budarin,Orbital,27 June 1995,STS-71
+328,Kevin Kregel,Orbital,13 July 1995,STS-70
+,Mary Weber,Orbital,13 July 1995,STS-70
+330,Yuri Gidzenko,Orbital,3 September 1995,Soyuz TM-22
+,Thomas Reiter,Orbital,3 September 1995,Soyuz TM-22
+332,Michael Gernhardt,Orbital,7 September 1995,STS-69
+333,Catherine Coleman,Orbital,20 October 1995,STS-73
+,Fred Leslie,Orbital,20 October 1995,STS-73
+,Michael Lopez-Alegria,Orbital,20 October 1995,STS-73
+,Kent Rominger,Orbital,20 October 1995,STS-73
+,Albert Sacco,Orbital,20 October 1995,STS-73
+338,Chris Hadfield,Orbital,12 November 1995,STS-74
+339,Daniel Barry,Orbital,11 January 1996,STS-72
+,Brent Jett,Orbital,11 January 1996,STS-72
+,Winston Scott,Orbital,11 January 1996,STS-72
+,Koichi Wakata,Orbital,11 January 1996,STS-72
+343,Yuri Onufrienko,Orbital,21 February 1996,Soyuz TM-23
+344,Maurizio Cheli,Orbital,22 February 1996,STS-75
+,Umberto Guidoni,Orbital,22 February 1996,STS-75
+,Scott Horowitz,Orbital,22 February 1996,STS-75
+347,Andrew Thomas,Orbital,19 May 1996,STS-77
+348,Charles Brady,Orbital,20 June 1996,STS-78
+,Jean-Jacques Favier,Orbital,20 June 1996,STS-78
+,Richard Linnehan,Orbital,20 June 1996,STS-78
+,Robert Thirsk,Orbital,20 June 1996,STS-78
+352,Claudie Haignere,Orbital,17 August 1996,Soyuz TM-24
+,Valeri Korzun,Orbital,17 August 1996,Soyuz TM-24
+354,Reinhold Ewald,Orbital,10 February 1997,Soyuz TM-25
+,Aleksandr Lazutkin,Orbital,10 February 1997,Soyuz TM-25
+356,Roger Crouch,Orbital,4 April 1997,STS-83
+,Gregory Linteris,Orbital,4 April 1997,STS-83
+,Susan Still-Kilrain,Orbital,4 April 1997,STS-83
+359,Edward Lu,Orbital,15 May 1997,STS-84
+,Carlos Noriega,Orbital,15 May 1997,STS-84
+361,Pavel Vinogradov,Orbital,5 August 1997,Soyuz TM-26
+362,Robert Curbeam,Orbital,7 August 1997,STS-85
+,Stephen Robinson,Orbital,7 August 1997,STS-85
+,Bjarni Tryggvason,Orbital,7 August 1997,STS-85
+365,Michael Bloomfield,Orbital,26 September 1997,STS-86
+366,Kalpana Chawla,Orbital,19 November 1997,STS-87
+,Takao Doi,Orbital,19 November 1997,STS-87
+,Leonid Kadenyuk,Orbital,19 November 1997,STS-87
+,Steven Lindsey,Orbital,19 November 1997,STS-87
+370,Michael Anderson,Orbital,23 January 1998,STS-89
+,Joe Edwards,Orbital,23 January 1998,STS-89
+,James Reilly,Orbital,23 January 1998,STS-89
+,Saliszan Sharipov,Orbital,23 January 1998,STS-89
+374,Léopold Eyharts,Orbital,29 January 1998,Soyuz TM-27
+375,Scott Altman,Orbital,17 April 1998,STS-90
+,Jay Buckey,Orbital,17 April 1998,STS-90
+,Kathryn Hire,Orbital,17 April 1998,STS-90
+,James Pawelczyk,Orbital,17 April 1998,STS-90
+,Dafydd Williams,Orbital,17 April 1998,STS-90
+380,Dominic Gorie,Orbital,2 June 1998,STS-91
+,Janet Kavandi,Orbital,2 June 1998,STS-91
+382,Yuri Baturin,Orbital,13 August 1998,Soyuz TM-28
+,Gennadi Padalka,Orbital,13 August 1998,Soyuz TM-28
+384,Pedro Duque,Orbital,29 October 1998,STS-95
+385,Frederick Sturckow,Orbital,4 December 1998,STS-88
+386,Ivan Bella,Orbital,20 February 1999,Soyuz TM-29
+387,Rick Husband,Orbital,27 May 1999,STS-96
+,Julie Payette,Orbital,27 May 1999,STS-96
+,Valery Tokarev,Orbital,27 May 1999,STS-96
+390,Jeffrey Ashby,Orbital,23 July 1999,STS-93
+391,Scott Kelly,Orbital,20 December 1999,STS-103
+392,Gerhard Thiele,Orbital,11 February 2000,STS-99
+393,Sergy Zalyotin,Orbital,4 April 2000,Soyuz TM-30
+394,Jeffrey Williams,Orbital,19 May 2000,STS-101
+395,Daniel Burbank,Orbital,8 September 2000,STS-106
+,Richard Mastracchio,Orbital,8 September 2000,STS-106
+,Boris Morukov,Orbital,8 September 2000,STS-106
+398,Pamela Melroy,Orbital,11 October 2000,STS-92
+399,Mark Polansky,Orbital,7 February 2001,STS-98
+400,James Kelly,Orbital,8 March 2001,STS-102
+,Paul Richards,Orbital,8 March 2001,STS-102
+402,Yuri Lonchakov,Orbital,19 April 2001,STS-100
+,John Phillips,Orbital,19 April 2001,STS-100
+404,Dennis Tito,Orbital,28 April 2001,Soyuz TM-32
+405,Charles Hobaugh,Orbital,12 July 2001,STS-104
+406,Patrick Forrester,Orbital,10 August 2001,STS-105
+,Mikhail Tyurin,Orbital,10 August 2001,STS-105
+408,Konstantin Kozeyev,Orbital,21 October 2001,Soyuz TM-33
+409,Mark Kelly,Orbital,5 December 2001,STS-108
+,Daniel Tani,Orbital,5 December 2001,STS-108
+411,Duane Carey,Orbital,1 March 2002,STS-109
+,Michael Massimino,Orbital,1 March 2002,STS-109
+413,Stephen Frick,Orbital,8 April 2002,STS-110
+,Lee Morin,Orbital,8 April 2002,STS-110
+,Rex Walheim,Orbital,8 April 2002,STS-110
+416,Mark Shuttleworth,Orbital,25 April 2002,Soyuz TM-34
+,Roberto Vittori,Orbital,25 April 2002,Soyuz TM-34
+418,Paul Lockhart,Orbital,5 June 2002,STS-111
+,Philippe Perrin,Orbital,5 June 2002,STS-111
+,Sergei Treschev,Orbital,5 June 2002,STS-111
+,Peggy Whitson,Orbital,5 June 2002,STS-111
+422,Sandra Magnus,Orbital,7 October 2002,STS-112
+,Piers Sellers,Orbital,7 October 2002,STS-112
+,Fyodor Yurchikhin,Orbital,7 October 2002,STS-112
+425,Frank De Winne,Orbital,30 October 2002,Soyuz TMA-1
+426,John Herrington,Orbital,24 November 2002,STS-113
+,Donald Pettit,Orbital,24 November 2002,STS-113
+428,David Brown,Orbital,16 January 2003,STS-107
+,Laurel Clark,Orbital,16 January 2003,STS-107
+,William McCool,Orbital,16 January 2003,STS-107
+,Ilan Ramon,Orbital,16 January 2003,STS-107
+432,Yang Liwei,Orbital,15 October 2003,ShenZhou 5
+433,Edward Fincke,Orbital,19 April 2004,Soyuz TMA-4
+,André Kuipers,Orbital,19 April 2004,Soyuz TMA-4
+435,Michael Melvill,Orbital,21 June 2004,SpaceShipOne 15P
+436,Brian Binnie,Orbital,4 October 2004,SpaceShipOne 17P
+437,Yuri Shargin,Orbital,14 October 2004,Soyuz TMA-5
+438,Charles Camarda,Orbital,26 July 2005,STS-114
+,Soichi Noguchi,Orbital,26 July 2005,STS-114
+440,Gregory Olsen,Orbital,1 October 2005,Soyuz TMA-7
+441,Fei Junlong,Orbital,12 October 2005,ShenZhou 6
+,Nie Haisheng,Orbital,12 October 2005,ShenZhou 6
+443,Marcos Pontes,Orbital,30 March 2006,Soyuz TMA-8
+444,Michael Fossum,Orbital,4 July 2006,STS-121
+,Lisa Nowak,Orbital,4 July 2006,STS-121
+,Stephanie Wilson,Orbital,4 July 2006,STS-121
+447,Christopher Ferguson,Orbital,9 September 2006,STS-115
+,Heidemarie Stefanyshyn-Piper,Orbital,9 September 2006,STS-115
+449,Anousheh Ansari,Orbital,18 September 2006,Soyuz TMA-9
+450,Christer Fuglesang,Orbital,10 December 2006,STS-116
+,Joan Higginbotham,Orbital,10 December 2006,STS-116
+,William Oefelein,Orbital,10 December 2006,STS-116
+,Nicholas Patrick,Orbital,10 December 2006,STS-116
+,Sunita Williams,Orbital,10 December 2006,STS-116
+455,Oleg Kotov,Orbital,7 April 2007,Soyuz TMA-10
+,Charles Simonyi,Orbital,7 April 2007,Soyuz TMA-10
+457,Clayton Anderson,Orbital,8 June 2007,STS-117
+,Lee Archambault,Orbital,8 June 2007,STS-117
+,John Olivas,Orbital,8 June 2007,STS-117
+,Steven Swanson,Orbital,8 June 2007,STS-117
+461,Tracy Caldwell-Dyson,Orbital,8 August 2007,STS-118
+,Benjamin Drew,Orbital,8 August 2007,STS-118
+,Barbara Morgan,Orbital,8 August 2007,STS-118
+464,Sheikh Muszaphar,Orbital,10 October 2007,Soyuz TMA-11
+465,Paolo Nespoli,Orbital,23 October 2007,STS-120
+,Douglas Wheelock,Orbital,23 October 2007,STS-120
+,George Zamka,Orbital,23 October 2007,STS-120
+468,Stanley Love,Orbital,7 February 2008,STS-122
+,Leland Melvin,Orbital,7 February 2008,STS-122
+,Alan Poindexter,Orbital,7 February 2008,STS-122
+471,Robert Behnken,Orbital,11 March 2008,STS-123
+,Michael Foreman,Orbital,11 March 2008,STS-123
+,Gregory H. Johnson,Orbital,11 March 2008,STS-123
+,Garrett Reisman,Orbital,11 March 2008,STS-123
+475,Oleg D. Kononenko,Orbital,8 April 2008,Soyuz TMA-12
+,Sergey Volkov,Orbital,8 April 2008,Soyuz TMA-12
+,Yi So-yeon,Orbital,8 April 2008,Soyuz TMA-12
+478,Gregory Chamitoff,Orbital,31 May 2008,STS-124
+,Robert Garan,Orbital,31 May 2008,STS-124
+,Kenneth Ham,Orbital,31 May 2008,STS-124
+,Akihiko Hoshide,Orbital,31 May 2008,STS-124
+,Karen Nyberg,Orbital,31 May 2008,STS-124
+483,Jing Haipen,Orbital,25 September 2008,ShenZhou 7
+,Liu Buoming,Orbital,25 September 2008,ShenZhou 7
+,Zhai Zhigang,Orbital,25 September 2008,ShenZhou 7
+486,Richard Garriott,Orbital,12 October 2008,Soyuz TMA-13
+487,Eric Boe,Orbital,15 November 2008,STS-126
+,Stephen Bowen,Orbital,15 November 2008,STS-126
+,Robert Kimbrough,Orbital,15 November 2008,STS-126
+490,Joseph Acaba,Orbital,15 March 2009,STS-119
+,Dominic Antonelli,Orbital,15 March 2009,STS-119
+,Richard Arnold,Orbital,15 March 2009,STS-119
+493,Michael Barratt,Orbital,26 March 2009,Soyuz TMA-14
+494,Andrew Feustel,Orbital,11 May 2009,STS-125
+,Michael Good,Orbital,11 May 2009,STS-125
+,Gregory C. Johnson,Orbital,11 May 2009,STS-125
+,K. Megan McArthur,Orbital,11 May 2009,STS-125
+498,Roman Romanenko,Orbital,27 May 2009,Soyuz TMA-15
+499,Christopher Cassidy,Orbital,15 July 2009,STS-127
+,Douglas Hurley,Orbital,15 July 2009,STS-127
+,Timothy Kopra,Orbital,15 July 2009,STS-127
+,Thomas Marshburn,Orbital,15 July 2009,STS-127
+503,Kevin Ford,Orbital,29 August 2009,STS-128
+,Jose Hernandez,Orbital,29 August 2009,STS-128
+,Nicole Stott,Orbital,29 August 2009,STS-128
+506,Guy Laliberté,Orbital,30 September 2009,Soyuz TMA-16
+,Maksim Surayev,Orbital,30 September 2009,Soyuz TMA-16
+508,Randolph Bresnik,Orbital,16 November 2009,STS-129
+,Robert Satcher,Orbital,16 November 2009,STS-129
+,Barry Wilmore,Orbital,16 November 2009,STS-129
+511,Timothy Creamer,Orbital,20 December 2009,Soyuz TMA-17
+512,Terry Virts,Orbital,8 February 2010,STS-130
+513,Mikhail Korniyenko,Orbital,2 April 2010,Soyuz TMA-18
+,Aleksandr Skvortsov,Orbital,2 April 2010,Soyuz TMA-18
+515,James Dutton,Orbital,5 April 2010,STS-131
+,Dorothy Metcalf-Lindenburger,Orbital,5 April 2010,STS-131
+,Naoko Yamazaki,Orbital,5 April 2010,STS-131
+518,Shannon Walker,Orbital,15 June 2010,Soyuz TMA-19
+519,Oleg Skripochka,Orbital,7 October 2010,Soyuz TMA-01M
+520,Dmitry Kondratiyev,Orbital,15 December 2010,Soyuz TMA-20
+521,Andrei Borisenko,Orbital,4 April 2011,Soyuz TMA-21
+,Aleksandr Samokutyayev,Orbital,4 April 2011,Soyuz TMA-21
+523,Satoshi Furukawa,Orbital,7 June 2011,Soyuz TMA-02M
+524,Anotoli Ivanishin,Orbital,14 November 2011,Soyuz TMA-22
+,Anton Shkaplerov,Orbital,14 November 2011,Soyuz TMA-22
+526,Sergey Revin,Orbital,15 May 2012,Soyuz TMA-04M
+527,Liu Wang,Orbital,16 June 2012,ShenZhou 9
+,Liu Yang,Orbital,16 June 2012,ShenZhou 9
+529,Oleg Novitskiy,Orbital,23 October 2012,Soyuz TMA-06M
+,Yevgeni Tarelkin,Orbital,23 October 2012,Soyuz TMA-06M
+531,Aleksandr Misurkin,Orbital,28 March 2013,Soyuz TMA-08M
+532,Luca Parmitano,Orbital,28 May 2013,Soyuz TMA-09M
+533,Wang Ya-ping,Orbital,11 June 2013,Shenzhou 10
+,Zhang Xiao-guang,Orbital,11 June 2013,Shenzhou 10
+535,Michael Hopkins,Orbital,25 September 2013,Soyuz TMA-10M
+,Sergei Ryazansky,Orbital,25 September 2013,Soyuz TMA-10M
+537,Oleg Artemyev,Orbital,25 March 2014,Soyuz TMA-12M
+538,Alexander Gerst,Orbital,28 May 2014,Soyuz TMA-13M
+,Gregory Wiseman,Orbital,28 May 2014,Soyuz TMA-13M
+540,Elena Serova,Orbital,25 September 2014,Soyuz TMA-14M
+541,Samantha Cristoforetti,Orbital,23 November 2014,Soyuz TMA-15M
+542,Kjell Lindgren,Orbital,22 July 2015,Soyuz TMA-17M
+,Kimiya Yui,Orbital,22 July 2015,Soyuz TMA-17M
+544,Aydyn Aimbetov,Orbital,2 September 2015,Soyuz TMA-18M
+,Andreas Mogensen,Orbital,2 September 2015,Soyuz TMA-18M
+546,Timothy Peake,Orbital,15 December 2015,Soyuz TMA-19M
+547,Aleksei Ovchinin,Orbital,18 March 2016,Soyuz TMA-20M
+548,Takuya Onishi,Orbital,7 July 2016,Soyuz MS-01
+,Kathleen Rubins,Orbital,7 July 2016,Soyuz MS-01
+550,Chen Dong,Orbital,16 October 2016,Shenzhou 11
+551,Sergei Ryzhikov,Orbital,19 October 2016,Soyuz MS-02
+552,Thomas Pesquet,Orbital,17 November 2016,Soyuz MS-03
+553,Jack Fischer,Orbital,20 April 2017,Soyuz MS-04
+554,Mark Vande Hei,Orbital,12 September 2017,Soyuz MS-06
+555,Norishige Kanai,Orbital,17 December 2017,Soyuz MS-07
+,Scott Tingle,Orbital,17 December 2017,Soyuz MS-07
+557,Serena Auñón-Chancellor,Orbital,6 June 2018,Soyuz MS-09
+,Sergei Prokopyev,Orbital,6 June 2018,Soyuz MS-09
+559,Anne McClain,Orbital,3 December 2018,Soyuz MS-11
+,David Saint-Jacques,Orbital,3 December 2018,Soyuz MS-11
+561,Tyler Hague,Orbital,14 March 2019,Soyuz MS-12
+,Christina Koch,Orbital,14 March 2019,Soyuz MS-12
+563,Andrew Morgan,Orbital,20 July 2019,Soyuz MS-13
+564,Hazza Al-Mansouri,Orbital,25 September 2019,Soyuz MS-15
+,Jessica Meir,Orbital,25 September 2019,Soyuz MS-15
+566,Ivan Vagner,Orbital,9 April 2020,Soyuz MS-16
+567,Sergei Kud-Sverchkov,Orbital,14 October 2020,Soyuz MS-17
+1,Alan Shepard,Suborbital,5 May 1961,Freedom 7
+2,Virgil Grissom,Suborbital,21 July 1961,Liberty Bell 7
+3,Joseph Walker,Suborbital,19 July 1963,X-15 Flight #90
+4,Michael Melvill,Suborbital,21 June 2004,SpaceShipOne 15P
+5,Brian Binnie,Suborbital,4 October 2004,SpaceShipOne 17P
+1,Robert White,Near Space,17 July 1962,X-15 Flight #62
+2,Joseph Walker,Near Space,17 January 1963,X-15 Flight #77
+3,Robert Rushworth,Near Space,27 June 1963,X-15 Flight #87
+4,Joseph Engle,Near Space,29 June 1965,X-15 Flight #138
+5,John McKay,Near Space,28 September 1965,X-15 Flight #150
+6,William Dana,Near Space,1 November 1966,X-15 Flight #174
+7,William Knight,Near Space,17 October 1967,X-15 Flight #190
+8,Michael Adams,Near Space,15 November 1967,X-15 Flight #191
+9,Mark Stucky,Near Space,13 December 2018,VSS Unity PF04
+10,David Mackay,Near Space,22 February 2019,VSS Unity PF05
+,Michael Masucci,Near Space,22 February 2019,VSS Unity PF05

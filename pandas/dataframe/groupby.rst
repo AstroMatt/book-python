@@ -485,25 +485,50 @@ DataFrame Groupby Phones
 ------------------------
 * Assignment name: DataFrame Groupby Phones
 * Last update: 2020-10-01
-* Complexity level: medium
+* Complexity level: easy
 * Lines of code to write: 5 lines
-* Estimated time of completion: 13 min
+* Estimated time of completion: 8 min
 * Solution: :download:`solution/df_groupby_phones.py`
 
 :English:
     #. Use data from "Input" section (see below)
     #. Read data from ``DATA`` as ``phones: pd.DataFrame``
-    #. Give information about total number of all connection types for each month
+    #. Give information about total number of all phone calls for each calendar month
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``phones: pd.DataFrame``
-    #. Podaj informacje o łącznej liczbie wszystkich połączeń dla każdego miesiąca
+    #. Podaj informacje o łącznej liczbie wszystkich połączeń telefonicznych dla każdego miesiąca kalendarzowego
+    #.
 
 :Input:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/phones-pl.csv'
+
+DataFrame Groupby Astro Female
+------------------------------
+* Assignment name: DataFrame Groupby Astro Female
+* Last update: 2020-10-19
+* Complexity level: medium
+* Lines of code to write: 5 lines
+* Estimated time of completion: 8 min
+* Solution: :download:`solution/df_groupby_astro_female.py`
+
+:English:
+    #. Use data from "Input" section (see below)
+    #. Read data from ``DATA`` as ``astro_female: pd.DataFrame``
+    #. Which nationality has the most flight time of a female in space?
+
+:Polish:
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Wczytaj dane z ``DATA`` jako ``astro_eva_all: pd.DataFrame``
+    #. Który kraj ma największy nalot kobiet w kosmosie?
+
+:Input:
+    .. code-block:: python
+
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/astro-nationality-duration.csv'
 
 DataFrame Groupby Astro Flights
 -------------------------------
