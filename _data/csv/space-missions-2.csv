@@ -1,0 +1,151 @@
+Company,Launch Date,Launch Time,Launch Site,Temperature (° F),Wind speed (MPH),Humidity (%),Vehicle Type,Liftoff Thrust (kN),Payload to Orbit (kg),Rocket Height (m),Fairing Diameter (m),Payload Name,Payload Type,Payload Mass (kg),Payload Orbit,Mission Status,Failure Reason
+SpaceX,24 March 2006,22:30,Marshall Islands,86,9,74,Falcon 1,343,470,22.25,1.5,FalconSAT-2,Research Satellite,19.5,Low Earth Orbit,Failure,Engine Fire During Launch
+SpaceX,21 March 2007,1:10,Marshall Islands,NA,NA,NA,Falcon 1,343,470,22.25,1.5,DemoSat,Mass simulator,NA,Low Earth Orbit,Failure,Engine Shutdown During Launch
+SpaceX,3 August 2008,3:34,Marshall Islands,NA,NA,NA,Falcon 1,343,470,22.25,1.5,Trailblazer,Communication Satellite,NA,Low Earth Orbit,Failure,Collision During Launch
+SpaceX,3 August 2008,3:34,Marshall Islands,NA,NA,NA,Falcon 1,343,470,22.25,1.5,"PRESat, NanoSail-D",Research Satellites,8,Low Earth Orbit,Failure,Collision During Launch
+SpaceX,3 August 2008,3:34,Marshall Islands,NA,NA,NA,Falcon 1,343,470,22.25,1.5,Explorers,Human Remains,NA,Low Earth Orbit,Failure,Collision During Launch
+SpaceX,8 October 2012,0:35,Cape Canaveral,77,5,100,Falcon 9 (v1.0),4940,10450,54.9,5.2,Orbcomm-OG2,Communication Satellite,150,Low Earth Orbit,Failure,Engine Failure During Flight
+SpaceX,28 June 2015,14:21,Cape Canaveral,93,10,42,Falcon 9 (v1.1),5885,13150,68.4,5.2,SpaceX CRS-7,Space Station Supplies,1952,Low Earth Orbit,Failure,Vehicle Explosion During Flight
+SpaceX,1 September 2016,13:07,Cape Canaveral,87,15,80,Falcon 9 Full Thrust (v1.2),6804,8300,70,5.2,Amos-6,Communication Satellite,5500,Geostationary Transfer Orbit,Failure,Vehicle Explosion Before Launch
+Boeing,5 September 1995,11:10,Cape Canaveral,84,10,60,Delta II 7925,3511,1819,38.1,2.9,Koreasat 1,Communication Satellite,711,Geostationary Transfer Orbit,Failure,"One SRB failed to separate, retarding the booster's orbital velocity."
+Boeing,17 January 1997,16:28,Cape Canaveral,50,12,62,Delta II 7925,3511,1819,38.1,2.9,GPS IIR-1,Global Positioning System,2030,Medium Earth Orbit,Failure,Exploded 13 seconds after launch due to SRB failure.
+Boeing,27 August 1998,1:17,Cape Canaveral,82,7,89,Delta III 8930,628,3810,35,4,Galaxy 10,Communication Satellite,700,Geostationary Transfer Orbit,Failure,"Flight program, adapted to the Delta II, and not to the Delta III"
+Boeing,5 May 1999,1:00,Cape Canaveral,70,8,64,Delta III 8930,628,3810,35,4,Orion 3,Communication Satellite,NA,Geostationary Transfer Orbit,Failure,Launch failed due to an anomaly on the second stage
+Boeing,21 December 2004,21:50,Cape Canaveral,62,5,83,Delta IV Heavy,9411,28370,72,5.1,DemoSat / 3CS-1 & 2,Research Satellite,NA,Geostationary Transfer Orbit,Failure,Common Booster Cores shutdown prematurely putting the payloads in a lower than planned orbit
+Martin Marietta,5 October 1993,17:56,Vandenberg ,62,12,89,Titan II(23)G,1900,3600,42.9,3,Landsat 6,Enhanced Thematic Mapper,2750,Sun-Synchronous Orbit,Failure,"The kickstage was off axis during its burn, resulting in a failure to achieve orbit."
+US Air Force,26 August 1996,13:59,Cape Canaveral,90,12,70,Titan IIIC,13642,13100,42,3,IDCSP GGTS-2,Gravity Gradient Test Satellite,NA,Low Earth Orbit,Failure,Payload fairing disintegrated at T+78 seconds leading to a loss of the launch vehicle.
+US Air Force,26 June 1973,NA,Vandenberg ,50,10,80,Titan III(24)B,2410,4000,50,3,KH-8 no. 39,Reconnaissance Satellites,3000,Low Earth Orbit,Failure,Agena Failed to reach orbit
+US Air Force,20 May 1972,15:30,Vandenberg ,64,20,46,Titan III(24)B,2410,4000,50,3,KH-8 no. 35,Reconnaissance Satellites,3000,Low Earth Orbit,Failure,Agena pressurization failure
+US Air Force,20 June 1967,16:19,Vandenberg ,60,15,80,Titan IIIB,2300,3300,45,1.52,KH-8 Gambit no.06,Reconnaissance Satellites,3000,Polar Orbit,Failure,A problem with the second stage protective skirt caused a lower then planned orbit.
+US Air Force,26 April 1967,NA,Vandenberg ,56,12,75,Titan IIIB,2300,3300,45,1.52,KH-8 Gambit no.05,Reconnaissance Satellites,3000,Polar Orbit,Failure,A loss of thrust in the second stage means the rocket failed to achieve orbit.
+US Air Force,15 October 1965,17:23,Cape Canaveral,NA,NA,NA,Titan IIIC,13642,13100,42,3,LCS-2,Research Satellite,NA,Low Earth Orbit,Failure,The Transtage disintegrated causing a launch failure.
+US Air Force,1 September 1964,15:00,Cape Canaveral,NA,NA,NA,Titan IIIA,1936,3100,42,3,Transtage 1,None,0,Low Earth Orbit,Failure,Transtage failed to pressurize.
+European Space Agency,23 May 1980,14:29, Guiana Space Centre,NA,NA,NA,Ariane 1,2772,1850,50,NA,CAT-2 / Amsat P3A / Firewheel Subsat,Communication Satellite,NA,Geostationary Transfer Orbit,Failure,Combustion instability that had occurred in one of the Viking first stage engines.
+European Space Agency,9 September 1982,2:12, Guiana Space Centre,NA,NA,NA,Ariane 1,2772,1850,50,NA,MARCES-B / Sirio-2,Communication Satellite,1710,Geostationary Transfer Orbit,Failure,Third stage turbopump malfunction.
+Brazilian Space Agency,2 November 1997,NA,Alcântara Launch Center,NA,NA,NA,VLS-1,623,380,19,1,SCD-2A,Research Satellites,115,Low Earth Orbit,Failure,malfunction of the first stage
+Brazilian Space Agency,11 December 1999,19:40,Alcântara Launch Center,84,12,84,VLS-1,623,380,19,1,SACI-2,Research Satellites,80,Low Earth Orbit,Failure,malfunction of the second stage
+Brazilian Space Agency,25 August 2003,NA,Alcântara Launch Center,83,10,85,VLS-1,623,380,19,1,"SATEC, UNOSAT",Research Satellites,74,Low Earth Orbit,Failure,"launcher exploded on the pad two days before the launch, killing 21 people"
+Arianespace,11 July 2019,1:53, Guiana Space Centre,73,0,94,Vega,2200,1436,29.9,2.6,Falcon Eye 1,optical reconnaissance system,1197,Low Earth Orbit,Failure,"anomaly occurred shortly after the planned second stage ignition, leading to a loss of the launch vehicle and its payload"
+Arianespace,11 December 2002,22:22, Guiana Space Centre,77,0,94,Ariane 5 ECA,15120,21000,53,5.4,"Hot Bird 7, STENTOR",Communication Satellite,5480,Geostationary Transfer Orbit,Failure,"first stage engine failure, rocket destroyed by range safety."
+Arianespace,4 June 1996,12:34, Guiana Space Centre,NA,NA,NA,Ariane 5 G,11400,6900,52,NA,Cluster,European Space Agency spacecraft,NA,High Earth Orbit,Failure,"The Ariane 5 program's first launch failed because of a programming error. Range safety officers elected to destroy the rocket during the launch, according to the Ariane 5 Flight 501 failure report. Maiden flight of Ariane 5G"
+Arianespace,1 December 1994,22:57, Guiana Space Centre,NA,NA,NA,Ariane 42P,4334,2930,58.72,NA,Panamsat-3,Communication Satellite,2920,Geostationary Transfer Orbit,Failure,NA
+SpaceX,28 September 2008,23:15,Marshall Islands,NA,NA,NA,Falcon 1,343,470,22.25,1.5,RatSat (DemoSat),,165,Low Earth Orbit,Success,
+SpaceX,14 July 2009,3:35,Marshall Islands,NA,NA,NA,Falcon 1,343,470,22.25,1.5,RazakSAT,Weather Satellite,180,Low Earth Orbit,Success,
+SpaceX,4 June 2010,18:45,Cape Canaveral,78,7,88,Falcon 9 (v1.0),4940,10450,54.9,5.2,Dragon Spacecraft Qualification Unit,,NA,Low Earth Orbit,Success,
+SpaceX,8 December 2010,15:43,Cape Canaveral,61,8,40,Falcon 9 (v1.0),4940,10450,54.9,5.2,SpaceX CRS (Dragon C1),Space Station Supplies,NA,Low Earth Orbit,Success,
+SpaceX,22 May 2012,7:44,Cape Canaveral,74,0,74,Falcon 9 (v1.0),4940,10450,54.9,5.2,SpaceX CRS (Dragon C2+),Space Station Supplies,NA,Low Earth Orbit,Success,
+SpaceX,8 October 2012,0:35,Cape Canaveral,77,0,100,Falcon 9 (v1.0),4940,10450,54.9,5.2,SpaceX CRS-1,Space Station Supplies,500,Low Earth Orbit,Success,
+SpaceX,1 March 2013,15:10,Cape Canaveral,62,13,45,Falcon 9 (v1.0),4940,10450,54.9,5.2,SpaceX CRS-2,Space Station Supplies,677,Low Earth Orbit,Success,
+SpaceX,29 September 2013,16:00,Vandenberg ,68,13,59,Falcon 9 (v1.1),5885,13150,68.4,5.2,CASSIOPE,Communication/Research Satellite,500,Polar Orbit,Success,
+SpaceX,3 December 2013,22:41,Cape Canaveral,68,5,96,Falcon 9 (v1.1),5885,4850,68.4,5.2,SES-8,Communication Satellite,3170,Geostationary Transfer Orbit,Success,
+SpaceX,6 January 2014,22:06,Cape Canaveral,50,17,41,Falcon 9 (v1.1),5885,4850,68.4,5.2,Thaicom 6,Communication Satellite,3325,Geostationary Transfer Orbit,Success,
+SpaceX,18 April 2014,19:25,Cape Canaveral,69,0,93,Falcon 9 (v1.1),5885,13150,68.4,5.2,SpaceX CRS-3,Space Station Supplies,2296,Low Earth Orbit,Success,
+SpaceX,14 July 2014,15:15,Cape Canaveral,88,16,65,Falcon 9 (v1.1),5885,13150,68.4,5.2,OG2 Mission 1 (6 OG2 Satellites),Communication Satellite,NA,Low Earth Orbit,Success,
+SpaceX,5 August 2014,8:00,Cape Canaveral,83,12,79,Falcon 9 (v1.1),5885,4850,68.4,5.2,AsiaSat 8,Communication Satellite,4535,Geostationary Transfer Orbit,Success,
+SpaceX,7 September 2014,5:00,Cape Canaveral,75,3,90,Falcon 9 (v1.1),5885,4850,68.4,5.2,AsiaSat 6,Communication Satellite,4428,Geostationary Transfer Orbit,Success,
+SpaceX,21 September 2014,5:52,Cape Canaveral,73,0,93,Falcon 9 (v1.1),5885,4850,68.4,5.2,SpaceX CRS-4,Space Station Supplies,2216,Geostationary Transfer Orbit,Success,
+SpaceX,10 January 2015,9:47,Cape Canaveral,63,12,60,Falcon 9 (v1.1),5885,13150,68.4,5.2,SpaceX CRS-5,Space Station Supplies,2395,Low Earth Orbit,Success,
+SpaceX,11 February 2015,23:03,Cape Canaveral,51,0,83,Falcon 9 (v1.1),5885,4850,68.4,5.2,DSCOVR,Weather Satellite,570,Sun/Earth Orbit,Success,
+SpaceX,2 March 2015,3:50,Cape Canaveral,65,3,100,Falcon 9 (v1.1),5885,13150,68.4,5.2,ABS-3A,Communication Satellite,4159,Geostationary Transfer Orbit,Success,
+SpaceX,2 March 2015,3:50,Cape Canaveral,65,3,100,Falcon 9 (v1.1),5885,13150,68.4,5.2,Eutelsat 115 West B (Satmex 7),Communication Satellite,4159,Geostationary Transfer Orbit,Success,
+SpaceX,15 April 2015,20:10,Cape Canaveral,77,5,84,Falcon 9 (v1.1),5885,13150,68.4,5.2,SpaceX CRS-6,Space Station Supplies,1898,Low Earth Orbit,Success,
+SpaceX,27 April 2015,23:03,Cape Canaveral,74,6,74,Falcon 9 (v1.1),5885,4850,68.4,5.2,TurkmenAlem 52E/MonacoSAT,Communication Satellite,4707,Geostationary Transfer Orbit,Success,
+SpaceX,22 December 2015,1:29,Cape Canaveral,74,8,91,Falcon 9 Full Thrust (v1.2),6804,22800,70,5.2,OG2 Mission 2 (11 OG2 Satellites),Communication Satellite,NA,Low Earth Orbit,Success,
+SpaceX,17 January 2016,18:42,Vandenberg ,51,3,100,Falcon 9 (v1.1),5885,13150,68.4,5.2,Jason-3,Weather Satellite,553,Low Earth Orbit,Success,
+SpaceX,4 March 2016,23:35,Cape Canaveral,62,9,74,Falcon 9 Full Thrust (v1.2),6804,8300,70,5.2,SES-9,Communication Satellite,5271,Geostationary Transfer Orbit,Success,
+SpaceX,8 April 2016,20:43,Cape Canaveral,67,9,61,Falcon 9 Full Thrust (v1.2),6804,22800,70,5.2,SpaceX CRS-8,Space Station Supplies,3136,Low Earth Orbit,Success,
+SpaceX,6 May 2016,5:21,Cape Canaveral,60,7,72,Falcon 9 Full Thrust (v1.2),6804,8300,70,5.2,JCSAT-14,Communication Satellite,4696,Geostationary Transfer Orbit,Success,
+SpaceX,27 May 2016,21:39,Cape Canaveral,77,12,79,Falcon 9 Full Thrust (v1.2),6804,8300,70,5.2,Thaicom 8,Communication Satellite,3100,Geostationary Transfer Orbit,Success,
+SpaceX,15 June 2016,14:29,Cape Canaveral,89,13,70,Falcon 9 Full Thrust (v1.2),6804,8300,70,5.2,ABS-2A,Communication Satellite,3600,Geostationary Transfer Orbit,Success,
+SpaceX,15 June 2016,14:29,Cape Canaveral,89,13,70,Falcon 9 Full Thrust (v1.2),6804,8300,70,5.2,Eutelsat 117 West B (Satmex 9),Communication Satellite,3600,Geostationary Transfer Orbit,Success,
+SpaceX,18 July 2016,4:45,Cape Canaveral,83,10,77,Falcon 9 Full Thrust (v1.2),6804,22800,70,5.2,SpaceX CRS-9,Space Station Supplies,2257,Low Earth Orbit,Success,
+SpaceX,14 August 2016,5:26,Cape Canaveral,83,8,88,Falcon 9 Full Thrust (v1.2),6804,8300,70,5.2,JCSAT-16,Communication Satellite,4600,Geostationary Transfer Orbit,Success,
+SpaceX,14 January 2017,17:54,Vandenberg ,50,9,96,Falcon 9 Full Thrust (v1.2),6804,8300,70,5.2,Iridium NEXT 1-10,Communication Satellite,9600,Low Earth Orbit,Success,
+SpaceX,19 February 2017,14:39,Kennedy Space Center,73,13,61,Falcon 9 Full Thrust (v1.2),6804,22800,70,5.2,SpaceX CRS-10,Space Station Supplies,2490,Low Earth Orbit,Success,
+SpaceX,16 March 2017,6:00,Kennedy Space Center,37,12,48,Falcon 9 Full Thrust (v1.2),6804,8300,70,5.2,SpaceX Echostar 23,Communication Satellite,5600,Geostationary Transfer Orbit,Success,
+SpaceX,30 March 2017,22:27,Kennedy Space Center,73,20,65,Falcon 9 Full Thrust (v1.2),6804,8300,70,5.2,SpaceX SES-10,Communication Satellite,5300,Geostationary Transfer Orbit,Success,
+SpaceX,1 May 2017,11:15,Kennedy Space Center,81,14,94,Falcon 9 Full Thrust (v1.2),6804,22800,70,5.2,NROL-76,Classified,Classified,Low Earth Orbit,Success,
+SpaceX,15 May 2017,23:21,Kennedy Space Center,77,12,78,Falcon 9 Full Thrust (v1.2),6804,8300,70,5.2,Inmarsat-5 F4,high-speed mobile broadband service,6070,Geostationary Transfer Orbit,Success,
+SpaceX,3 June 2017,21:07,Kennedy Space Center,81,3,89,Falcon 9 Full Thrust (v1.2),6804,22800,70,5.2,SpaceX CRS-11,Space Station Supplies,2708,Low Earth Orbit,Success,
+SpaceX,23 June 2017,19:10,Kennedy Space Center,84,12,74,Falcon 9 Full Thrust (v1.2),6804,8300,70,5.2,BulgariaSat-1,Communication Satellite,3669,Geostationary Transfer Orbit,Success,
+SpaceX,25 June 2017,20:25,Vandenberg ,55,3,96,Falcon 9 Block 3,6804,8300,70,5.2,Iridium-2,Communication Satellite,9600,Polar Orbit,Success,
+SpaceX,5 July 2017,20:25,Kennedy Space Center,84,6,84,Falcon 9 Block 3,6804,8300,70,5.2,Intelsat 35e,Communication Satellite,6761,Geostationary Transfer Orbit,Success,
+SpaceX,14 August 2017,16:31,Kennedy Space Center,91,12,66,Falcon 9 Block 4,6804,22800,70,5.2,CRS-12,Space Station Supplies,3310,Low Earth Orbit,Success,
+SpaceX,24 August 2017,18:51,Vandenberg ,58,3,100,Falcon 9 Block 3,6804,22800,70,5.2,Formosat-5,Earth observation satellite,475,Sun-Synchronous Orbit,Success,
+SpaceX,7 September 2017,14:00,Kennedy Space Center,86,14,74,Falcon 9 Block 4,6804,22800,70,5.2,OTV-5,reusable uncrewed spacecraft,4990,Low Earth Orbit,Success,
+SpaceX,9 October 2017,12:37,Vandenberg ,77,9,45,Falcon 9 Block 4,6804,22800,70,5.2,Iridium-3,Communication Satellite,9600,Polar Orbit,Success,
+SpaceX,11 October 2017,22:53,Kennedy Space Center,82,18,70,Falcon 9 Block 3,6804,8300,70,5.2,SES-11 / EchoStar 105,Communication Satellite,5200,Geostationary Transfer Orbit,Success,
+SpaceX,30 October 2017,19:34,Kennedy Space Center,54,0,94,Falcon 9 Block 4,6804,8300,70,5.2,Koreasat 5A,"Direct-to-Home (DTH) broadcast, broadband, and backhaul services",3500,Geostationary Transfer Orbit,Success,
+SpaceX,15 December 2017,15:36,Cape Canaveral,75,9,53,Falcon 9 Block 3,6804,22800,70,5.2,CRS-13,Space Station Supplies,2205,Low Earth Orbit,Success,
+SpaceX,23 December 2017,1:27,Vandenberg ,37,3,73,Falcon 9 Block 3,6804,22800,70,5.2,Iridium-4,Communication Satellite,9600,Polar Orbit,Success,
+SpaceX,8 January 2018,1:00,Cape Canaveral,64,12,70,Falcon 9 Block 4,6804,22800,70,5.2,Zuma,Classified,Classified,Low Earth Orbit,Success,
+SpaceX,31 January 2018,21:25,Cape Canaveral,52,3,86,Falcon 9 Block 3,6804,8300,70,5.2,GovSat-1 / SES-16,Governmental and institutional security user needs satellite,4230,Geostationary Transfer Orbit,Success,
+SpaceX,6 February 2018,20:45,Kennedy Space Center,68,7,94,Falcon Heavy,22819,63800,70,5.2,Elon Musk's Tesla Roadster,Tesla carrying mannequin Starman – sporting SpaceX spacesuit,1300,Heliocentric Orbit,Success,
+SpaceX,22 February 2018,14:17,Vandenberg ,56,23,50,Falcon 9 Block 3,6804,22800,70,5.2,PAZ / Tintin A & B,Spain's spy satellite / internet satellite,2141,Sun-Synchronous Orbit,Success,
+SpaceX,6 March 2018,5:33,Cape Canaveral,53,0,86,Falcon 9 Block 4,6804,8300,70,5.2,Hispasat 30W-6,Communication Satellite,6092,Geostationary Transfer Orbit,Success,
+SpaceX,30 March 2018,14:14,Vandenberg ,68,9,65,Falcon 9 Block 4,6804,22800,70,5.2,Iridium-5,Communication Satellite,9600,Polar Orbit,Success,
+SpaceX,2 April 2018,20:30,Cape Canaveral,74,8,79,Falcon 9 Block 4,6804,22800,70,5.2,CRS-14,Space Station Supplies,2647,Low Earth Orbit,Success,
+SpaceX,18 April 2018,22:51,Cape Canaveral,69,9,75,Falcon 9 Block 4,6804,8300,70,5.2,Transiting Exoplanet Survey Satellite (TESS),Star monitor,362,High Earth Orbit,Success,
+SpaceX,11 May 2018,20:14,Kennedy Space Center,79,8,69,Falcon 9 Block 5,7607,8300,70,5.2,Bangabandhu-1,Communication Satellite,3600,Geostationary Transfer Orbit,Success,
+SpaceX,22 May 2018,19:47,Vandenberg ,55,8,83,Falcon 9 Block 4,6804,22800,70,5.2,Iridium-6 / GRACE-FO,Communication Satellite / Research satellite,5960,Polar Orbit,Success,
+SpaceX,4 June 2018,4:29,Cape Canaveral,79,9,90,Falcon 9 Block 4,6804,8300,70,5.2,SES-12,Communication Satellite,5400,Geostationary Transfer Orbit,Success,
+SpaceX,29 June 2018,9:42,Cape Canaveral,90,5,63,Falcon 9 Block 4,6804,22800,70,5.2,CRS-15,Space Station Supplies,2700,Low Earth Orbit,Success,
+SpaceX,22 July 2018,5:50,Cape Canaveral,81,8,91,Falcon 9 Block 5,7607,8300,70,5.2,Telstar 19V,Communication Satellite,7080,Geostationary Transfer Orbit,Success,
+SpaceX,25 July 2018,11:39,Vandenberg ,80,8,43,Falcon 9 Block 5,7607,22800,70,5.2,Iridium-7,Communication Satellite,9600,Polar Orbit,Success,
+SpaceX,7 August 2018,5:18,Cape Canaveral,80,8,79,Falcon 9 Block 5,7607,8300,70,5.2,Merah Putih (Telkom-4),Communication Satellite,5800,Geostationary Transfer Orbit,Success,
+SpaceX,10 September 2018,4:45,Cape Canaveral,75,6,90,Falcon 9 Block 5,7607,8300,70,5.2,Telstar 18V / APStar 5C,Communication Satellite,7060,Geostationary Transfer Orbit,Success,
+SpaceX,8 October 2018,2:21,Vandenberg ,50,5,80,Falcon 9 Block 5,7607,22800,70,5.2,SAOCOM 1A,Research Satellite,3000,Sun-Synchronous Orbit,Success,
+SpaceX,15 November 2018,20:46,Kennedy Space Center,63,5,88,Falcon 9 Block 5,7607,8300,70,5.2,Es'hail 2,Direct-to-Home Television Services,3000,Geostationary Transfer Orbit,Success,
+SpaceX,3 December 2018,18:34,Vandenberg ,51,6,80,Falcon 9 Block 5,7607,22800,70,5.2,Spaceflight SSO-A,Communication Satellite,3000,Sun-Synchronous Orbit,Success,
+SpaceX,5 December 2018,18:16,Cape Canaveral,53,8,52,Falcon 9 Block 5,7607,22800,70,5.2,CRS-16,Space Station Supplies,2573,Low Earth Orbit,Success,
+SpaceX,23 December 2018,13:51,Cape Canaveral,69,9,51,Falcon 9 Block 5,7607,22800,70,5.2,GPS III SV01,GPS III satellites,3880,Medium Earth Orbit,Success,
+SpaceX,11 January 2019,15:31,Vandenberg ,60,13,64,Falcon 9 Block 5,7607,22800,70,5.2,Iridium-8,Communication Satellite,9600,Polar Orbit,Success,
+SpaceX,22 February 2019,1:45,Cape Canaveral,70,0,90,Falcon 9 Block 5,7607,8300,70,5.2,Nusantara Satu / Beresheet / AFRL S5,Communication Satellite / Moon lander / Reseach Satellite,5380,Geostationary Transfer Orbit,Success,
+SpaceX,2 March 2019,7:49,Kennedy Space Center,72,5,94,Falcon 9 Block 5,7607,22800,70,5.2,SpaceX Demo-1,Uncrewed Test Commercial Crew program,0,Low Earth Orbit,Success,
+SpaceX,11 April 2019,22:35,Kennedy Space Center,79,6,74,Falcon Heavy,22819,26700,70,5.2,ArabSat 6A,Communication Satellite,6000,Geostationary Transfer Orbit,Success,
+SpaceX,4 May 2019,6:48,Cape Canaveral,75,7,94,Falcon 9 Block 5,7607,22800,70,5.2,CRS-17,Space Station Supplies,2500,Low Earth Orbit,Success,
+SpaceX,24 May 2019,2:30,Cape Canaveral,77,8,64,Falcon 9 Block 5,7607,22800,70,5.2,Starlink v0.9,Communication Satellite,13620,Low Earth Orbit,Success,
+SpaceX,12 June 2019,14:17,Vandenberg ,72,12,64,Falcon 9 Block 5,7607,22800,70,5.2,RADARSAT Constellation,Earth observation satellites,4200,Sun-Synchronous Orbit,Success,
+SpaceX,25 June 2019,6:30,Kennedy Space Center,84,3,94,Falcon Heavy,22819,26700,70,5.2,STP-2,Research Satellite,NA,Medium Earth Orbit,Success,
+SpaceX,25 July 2019,22:01,Cape Canaveral,77,8,88,Falcon 9 Block 5,7607,22800,70,5.2,CRS-18,Space Station Supplies,2500,Low Earth Orbit,Success,
+SpaceX,6 August 2019,23:23,Cape Canaveral,77,6,90,Falcon 9 Block 5,7607,8300,70,5.2,AMOS-17,Communication Satellite,6500,Geostationary Transfer Orbit,Success,
+SpaceX,11 November 2019,14:56,Cape Canaveral,75,9,79,Falcon 9 Block 5,7607,22800,70,5.2,Starlink V1 L1,Communication Satellite,15600,Low Earth Orbit,Success,
+SpaceX,5 December 2019,17:29,Cape Canaveral,58,7,72,Falcon 9 Block 5,7607,22800,70,5.2,CRS-19,Space Station Supplies,2500,Low Earth Orbit,Success,
+SpaceX,17 December 2019,0:10,Cape Canaveral,75,6,90,Falcon 9 Block 5,7607,8300,70,5.2,JCSAT-18 / Kacific-1,Communication Satellite,6956,Geostationary Transfer Orbit,Success,
+SpaceX,7 January 2020,2:19,Cape Canaveral,48,5,93,Falcon 9 Block 5,7607,22800,70,5.2,Starlink V1 L2,Communication Satellite,15600,Low Earth Orbit,Success,
+SpaceX,19 January 2020,15:30,Kennedy Space Center,81,8,54,Falcon 9 Block 5,7607,22800,70,5.2,Crew Dragon Inflight Abort Test,in-flight abort test,6350,Suborbital,Success,
+SpaceX,29 January 2020,14:06,Cape Canaveral,72,8,68,Falcon 9 Block 5,7607,22800,70,5.2,Starlink V1 L3,Communication Satellite,15600,Low Earth Orbit,Success,
+SpaceX,17 February 2020,15:05,Cape Canaveral,77,9,74,Falcon 9 Block 5,7607,22800,70,5.2,Starlink V1 L4,Communication Satellite,15600,Low Earth Orbit,Success,
+SpaceX,7 March 2020,4:50,Cape Canaveral,55,22,55,Falcon 9 Block 5,7607,22800,70,5.2,CRS-20,Space Station Supplies,2500,Low Earth Orbit,Success,
+Boeing,6 November 1998,13:37,Vandenberg ,55,13,80,Delta II 7920-10C,3511,4844,38.9,3,MS-11,Communication Satellite,NA,Low Earth Orbit,Success,
+Boeing,22 November 1998,23:54,Cape Canaveral,77,12,70,Delta II 7925,3511,1819,38.1,2.9,BONUM-1,Communication Satellite,NA,Geostationary Transfer Orbit,Success,
+Boeing,11 December 1998,18:45,Cape Canaveral,72,12,94,Delta II 7425,3020,1110,38.1,2.9,Mars Climate Orbiter,Robotic space probe,338,Heliocentric Orbit,Success,
+Boeing,3 January 1999,20:21,Cape Canaveral,64,12,77,Delta II 7425,3020,1110,38.1,2.9,Mars Polar Lander,Robotic spacecraft lander,290,Heliocentric Orbit,Success,
+Boeing,7 February 1999,21:04,Cape Canaveral,68,7,68,Delta II 7426,3020,1058,38.1,2.9,Stardust,Robotic space probe,305,Heliocentric Orbit,Success,
+Boeing,23 February 1999,10:29,Vandenberg ,68,9,37,Delta II 7920-10,3511,4800,38.9,3,ARGOS (P91-1 ARGOS),Research Satellite,2450,Polar Orbit,Success,
+Boeing,15 April 1999,18:32,Vandenberg ,58,0,78,Delta II 7920-10,3511,4800,38.9,3,Landsat 7,Research Satellite,2200,Sun-Synchronous Orbit,Success,
+Boeing,10 June 1999,13:48,Cape Canaveral,82,12,84,Delta II 7420-10C,3020,3099,38.9,3,Globalstar 3,Communication Satellite,550,Low Earth Orbit,Success,
+Boeing,24 June 1999,15:44,Cape Canaveral,84,9,62,Delta II 7320-10C,2533,2703,38.9,3,FUSE,Space-based Telescope,1360,Low Earth Orbit,Success,
+Boeing,10 July 1999,8:45,Cape Canaveral,88,10,66,Delta II 7420-10C,3020,3099,38.9,3,Globalstar 4,Communication Satellite,550,Low Earth Orbit,Success,
+Boeing,25 July 1999,7:46,Cape Canaveral,88,0,58,Delta II 7420-10C,3020,3099,38.9,3,Globalstar 5,Communication Satellite,550,Low Earth Orbit,Success,
+Boeing,7 August 1999,12:51,Cape Canaveral,90,8,62,Delta II 7925,3511,1819,38.1,2.9,USA-145 (GPS IIR-3),Global Positioning System,2032,Medium Earth Orbit,Success,
+Boeing,17 August 1999,4:37,Cape Canaveral,79,0,89,Delta II 7420-10C,3020,3099,38.9,3,Globalstar 6,Communication Satellite,550,Low Earth Orbit,Success,
+Boeing,8 February 2000,21:24,Cape Canaveral,57,0,82,Delta II 7920-10C,3511,4800,38.9,3,Globalstar 7,Communication Satellite,550,Low Earth Orbit,Success,
+Boeing,25 March 2000,20:34,Vandenberg ,47,3,86,Delta II 7326,2533,934,38.1,2.9,IMAGE,Research Satellite,210,Polar Orbit,Success,
+Boeing,11 May 2000,1:48,Cape Canaveral,72,5,94,Delta II 7925,3511,1819,38.1,2.9,USA-150 (GPS IIR-4),Global Positioning System,2032,Medium Earth Orbit,Success,
+Boeing,16 July 2000,9:17,Cape Canaveral,88,12,70,Delta II 7925,3511,1819,38.1,2.9,USA-151 (GPS IIR-5),Global Positioning System,2032,Medium Earth Orbit,Success,
+Boeing,23 August 2000,11:05,Cape Canaveral,NA,NA,NA,Delta III 8930,628,8290,35,4,DM F3,Test Satellite,4348,Medium Earth Orbit,Success,
+Boeing,10 November 2000,17:14,Cape Canaveral,75,6,73,Delta II 7925,3511,1819,38.1,2.9,USA-154 (GPS IIR-6),Global Positioning System,2032,Medium Earth Orbit,Success,
+Boeing,21 November 2000,18:24,Vandenberg ,45,0,100,Delta II 7320-10C,2533,2703,38.9,3,EO-1,Earth Observation Satellite,673,Low Earth Orbit,Success,
+Boeing,30 January 2001,7:55,Cape Canaveral,68,15,83,Delta II 7925,3511,1819,38.1,2.9,USA-156 (GPS IIR-7),Global Positioning System,2032,Medium Earth Orbit,Success,
+Boeing,7 April 2001,15:02,Cape Canaveral,78,15,64,Delta II 7925,3511,1819,38.1,2.9,Mars Odyssey,Orbiting Robotic Spacecraft,758,Mars Orbit,Success,
+Boeing,18 May 2001,17:45,Cape Canaveral,80,9,67,Delta II 7925,3511,1819,38.1,2.9,GeoLITE,Earth Observation Satellite,1800,Geostationary Transfer Orbit,Success,
+Boeing,30 June 2001,19:46,Cape Canaveral,81,9,82,Delta II 7425-10C,3020,1073,38.9,3,WMAP,Microwave Anisotropy Probe,835,Earth-Moon L2,Success,
+Boeing,8 August 2001,16:13,Cape Canaveral,87,9,65,Delta II 7326,2533,934,38.1,2.9,Genesis,Solar wind particles sample-return probe,636,Heliocentric Orbit,Success,
+Boeing,18 October 2001,18:51,Vandenberg ,56,0,97,Delta II 7320-10C,2533,2703,38.9,3,QuickBird,Earth Observation Satellite,1100,Sun-Synchronous Orbit,Success,
+Boeing,7 December 2001,15:07,Vandenberg ,71,9,42,Delta II 7920-10C,3511,4800,38.9,3,Jason-1 / TIMED,Earth Observation Satellite,660,Low Earth Orbit,Success,
+Boeing,11 February 2002,17:43,Vandenberg ,51,0,66,Delta II 7920-10C,3511,4800,38.9,3,Iridium IS-1,Communication Satellite,689,Low Earth Orbit,Success,
+Boeing,4 May 2002,9:54,Vandenberg ,59,8,67,Delta II 7920-10C,3511,4800,38.9,3,Aqua,Research Satellite,3117,Low Earth Orbit,Success,
+Boeing,3 July 2002,6:47,Cape Canaveral,76,3,87,Delta II 7425,3020,1110,38.1,2.9,CONTOUR,Space Probe,328,Heliocentric Orbit,Success,
+Boeing,20 November 2002,22:39,Cape Canaveral,72,5,73,"Delta IV Medium+ (4,2)",4895,6390,62.5,4,Eutelsat W5,Communication Satellite,3170,Geostationary Transfer Orbit,Success,
+Boeing,13 January 2003,0:45,Vandenberg ,50,0,100,Delta II 7320-10C,2533,2703,38.9,3,ICESat,Research Satellite,970,Sun-Synchronous Orbit,Success,

@@ -552,7 +552,7 @@ DataFrame Groupby Astro Flights
 :Input:
     .. code-block:: python
 
-        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/astro-flights.csv'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/astro-order.csv'
 
 DataFrame Groupby Astro EVA
 ---------------------------
@@ -588,3 +588,10 @@ DataFrame Groupby Astro EVA
 References
 ==========
 * https://finance.yahoo.com/quote/SPCE/history
+* https://www.kaggle.com/jessemostipak/astronaut-database
+* https://www.kaggle.com/nasa/astronaut-yearbook
+* https://www.kaggle.com/samruddhim/international-astronaut-database
+* https://www.kaggle.com/spacex/spacex-missions
+* https://www.kaggle.com/rosetabares/spacemissionsflightstatus
+* https://www.kaggle.com/rohanrao/rspacex-data
+* https://www.kaggle.com/agirlcoding/all-space-missions-from-1957

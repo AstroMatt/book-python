@@ -229,4 +229,4 @@ DataFrame Sample
 :Input:
     .. code-block:: python
 
-        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/astro-flights.csv'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/astro-order.csv'
