@@ -557,9 +557,9 @@ DataFrame Groupby Astro Flights
 DataFrame Groupby Astro EVA
 ---------------------------
 * Assignment name: DataFrame Groupby Astro EVA
-* Last update: 2020-10-01
+* Last update: 2020-10-19
 * Complexity level: medium
-* Lines of code to write: 30 lines
+* Lines of code to write: 13 lines
 * Estimated time of completion: 21 min
 * Solution: :download:`solution/df_groupby_astro_eva.py`
 
