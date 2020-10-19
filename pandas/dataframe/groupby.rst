@@ -528,7 +528,7 @@ DataFrame Groupby Astro Female
 :Input:
     .. code-block:: python
 
-        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/astro-nationality-duration.csv'
+        DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/astro-gender.csv'
 
 DataFrame Groupby Astro Flights
 -------------------------------
