@@ -10,6 +10,7 @@ Escape Characters
 .. highlights::
     * ``\r\n`` - is used on windows
     * ``\n`` - is used everywhere else
+    * https://en.wikipedia.org/wiki/List_of_Unicode_characters
 
 .. figure:: img/type-machine.jpg
     :width: 75%

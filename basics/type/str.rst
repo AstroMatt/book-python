@@ -111,6 +111,7 @@ Escape Characters
     * ``\"`` - Double quote ``"`` (escape in double quoted strings)
     * ``\\`` - Backslash ``\`` (to indicate, that this is not escape char)
     * More information in :ref:`Builtin Printing`
+    * https://en.wikipedia.org/wiki/List_of_Unicode_characters
 
 .. code-block:: python
 
