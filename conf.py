@@ -1,6 +1,6 @@
 project = 'Python: From None to Machine Learning'
 author = 'Matt Harasymczuk'
-email = 'book-python@astronaut.center'
+email = 'book-python@astrotech.io'
 
 language = 'en'
 html_theme = 'sphinx_rtd_theme'

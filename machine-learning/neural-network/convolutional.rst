@@ -153,8 +153,8 @@ Handwritten digits recognition (MNIST) with ``tensorflow``
     import tensorflow as tf
 
     # Data sets
-    IRIS_TRAINING = "../_data/iris_training.csv"
-    IRIS_TEST = "../_data/iris_test.csv"
+    IRIS_TRAINING = '../_data/iris_training.csv'
+    IRIS_TEST = '../_data/iris_test.csv'
 
 
     # Load datasets.
