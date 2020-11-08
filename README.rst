@@ -8,7 +8,7 @@ Python 3: From None to Machine Learning
 :Author: Matt Harasymczuk
 :Language: English
 :ISBN: 978-83-957186-2-5
-:Year: 2019-2020
+:Year: 2015-2020
 :Online Access: https://python.astrotech.io
 :License: Creative Commons Attribution-ShareAlike 4.0 International License
 
