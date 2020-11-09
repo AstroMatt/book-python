@@ -42,8 +42,8 @@ Simple "contact us" form
             def clean_sender(self):
                 data = self.cleaned_data['sender']
 
-                if "fred@myhost.com" not in data:
-                    raise forms.ValidationError("You have forgotten about Fred!")
+                if "mark.watney@nasa.gov" not in data:
+                    raise forms.ValidationError("You have forgotten about Watney!")
 
                 # Always return a value to use as the new cleaned data, even if
                 # this method didn't change it.

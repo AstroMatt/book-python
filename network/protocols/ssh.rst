@@ -11,10 +11,10 @@ SSH
 
     client = paramiko.SSHClient()
 
-    client.connect('myhost.com', username='myusername')
+    client.connect('example.com', username='myusername')
     # Traceback (most recent call last):
     #   ...
-    # paramiko.ssh_exception.SSHException: Server 'myhost.com' not found in known_hosts
+    # paramiko.ssh_exception.SSHException: Server 'example.com' not found in known_hosts
 
 .. code-block:: python
 
@@ -24,20 +24,20 @@ SSH
 
     client.load_system_host_keys()
     client.load_host_keys('/home/brandon/.ssh/known_hosts')
-    client.connect('myhost.com', username='myusername')
+    client.connect('example.com', username='myusername')
 
 Password Auth
 -------------
 .. code-block:: python
 
-    client.connect('myhost.com', username='myusername', password='mypassword')
-    client.connect('my.myhost.com')
+    client.connect('example.com', username='myusername', password='mypassword')
+    client.connect('example.com')
 
 Public/Private Key Auth
 -----------------------
 .. code-block:: python
 
-    client.connect('my.myhost.com', key_filename='/home/brandon/.ssh/id_sysadmin')
+    client.connect('example.com', key_filename='/home/brandon/.ssh/id_sysadmin')
 
 Running commands
 ----------------
@@ -85,7 +85,7 @@ SFTP
     import sys
     import paramiko
 
-    host = "myhost.com"
+    host = "example.com"
     port = 22
     username = "myusername"
     password = "mypassword"
@@ -116,7 +116,7 @@ SFTP
     import sys
 
 
-    host = "myhost.com"
+    host = "example.com"
     port = 22
     username = "myusername"
     password = "mypassword"
@@ -144,7 +144,7 @@ Examples
 
     from fabric.api import *
 
-    env.hosts = ['myhost.com']
+    env.hosts = ['example.com']
     env.user = 'myusername'
     env.password = 'mypassword'
 
@@ -271,7 +271,7 @@ Executing on remote host
 
         with settings(warn_only=True):
             if run("test -d %s" % code_dir).failed:
-                run("git clone user@vcshost:/path/to/repo/.git %s" % code_dir)
+                run("git clone myusername@example.com:/path/to/repo/.git %s" % code_dir)
 
         with cd(code_dir):
             run("git pull")

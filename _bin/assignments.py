@@ -3,7 +3,7 @@ from pathlib import Path
 import re
 
 
-OUTPUT = r'/tmp/assignments.csv'
+FILE = r'/tmp/assignments.csv'
 slug = re.compile(r'[a-zA-Z0-9 ]')
 toctree = []
 result = []
@@ -54,7 +54,7 @@ for path in toctree:
                 })
 
 
-with open(OUTPUT, mode='w') as file:
+with open(FILE, mode='w') as file:
     writer = csv.DictWriter(file, fieldnames=result[0].keys(), quoting=csv.QUOTE_ALL)
     writer.writeheader()
     writer.writerows(result)

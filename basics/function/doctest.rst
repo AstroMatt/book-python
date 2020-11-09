@@ -541,13 +541,13 @@ Function Doctest Regexp
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Pattern incorrectly classifies ``https://foo_bar.myhost.com/`` as invalid
+    #. Pattern incorrectly classifies ``https://foo_bar.example.com/`` as invalid
     #. Fix pattern without automated tests
     #. Don't break classification of the other cases
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Wyrażenie niepoprawnie klasyfikuje ``https://foo_bar.myhost.com/`` jako nieprawidłowy
+    #. Wyrażenie niepoprawnie klasyfikuje ``https://foo_bar.example.com/`` jako nieprawidłowy
     #. Popraw wyrażenie bez testów automatycznych
     #. Nie zepsuj klasyfikacji pozostałych przypadków
 
@@ -562,17 +562,17 @@ Function Doctest Regexp
             'http://foo.com/blah_blah/',
             'http://foo.com/blah_blah_(wikipedia)',
             'http://foo.com/blah_blah_(wikipedia)_(again)',
-            'http://www.myhost.com/wpstyle/?p=364',
-            'https://www.myhost.com/foo/?bar=baz&inga=42&quux',
+            'http://www.example.com/wpstyle/?p=364',
+            'https://www.example.com/foo/?bar=baz&inga=42&quux',
             'http://✪df.ws/123',
-            'http://userid:password@myhost.com:8080',
-            'http://userid:password@myhost.com:8080/',
-            'http://userid@myhost.com',
-            'http://userid@myhost.com/',
-            'http://userid@myhost.com:8080',
-            'http://userid@myhost.com:8080/',
-            'http://userid:password@myhost.com',
-            'http://userid:password@myhost.com/',
+            'http://myusername:mypassword@example.com:8080',
+            'http://myusername:mypassword@example.com:8080/',
+            'http://myusername@example.com',
+            'http://myusername@example.com/',
+            'http://myusername@example.com:8080',
+            'http://myusername@example.com:8080/',
+            'http://myusername:mypassword@example.com',
+            'http://myusername:mypassword@example.com/',
             'http://142.42.1.1/',
             'http://142.42.1.1:8080/',
             'http://➡.ws/䨹',
@@ -590,11 +590,11 @@ Function Doctest Regexp
             'http://مثال.إختبار',
             'http://例子.测试',
             'http://उदाहरण.परीक्षा',
-            'http://-.~_!$&\'()*+,;=:%40:80%2f::::::@myhost.com',
+            'http://-.~_!$&\'()*+,;=:%40:80%2f::::::@example.com',
             'http://1337.net',
             'http://a.b-c.de',
             'http://223.255.255.254',
-            'https://foo_bar.myhost.com/',
+            'https://foo_bar.example.com/',
         ]
 
         INVALID = [

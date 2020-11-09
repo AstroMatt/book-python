@@ -140,7 +140,7 @@ WSDL Binding to SOAP
        <soap:binding style="document"
        transport="http://schemas.xmlsoap.org/soap/http" />
        <operation>
-         <soap:operation soapAction="http://myhost.com/getTerm"/>
+         <soap:operation soapAction="http://example.com/getTerm"/>
          <input><soap:body use="literal"/></input>
          <output><soap:body use="literal"/></output>
       </operation>
@@ -165,7 +165,7 @@ Example WSDL file
        <types>
           <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
                     xmlns="http://www.tmsws.com/wsdl20sample"
-                    targetNamespace="http://www.myhost.com/wsdl20sample">
+                    targetNamespace="http://www.example.com/wsdl20sample">
 
              <xs:element name="request"> ... </xs:element>
              <xs:element name="response"> ... </xs:element>
@@ -199,10 +199,10 @@ Example WSDL file
        <service name="Service1" interface="tns:Interface1">
           <endpoint name="HttpEndpoint"
                     binding="tns:HttpBinding"
-                    address="http://www.myhost.com/rest/"/>
+                    address="http://www.example.com/rest/"/>
           <endpoint name="SoapEndpoint"
                     binding="tns:SoapBinding"
-                    address="http://www.myhost.com/soap/"/>
+                    address="http://www.example.com/soap/"/>
        </service>
     </description>
 
@@ -259,7 +259,7 @@ Example WADL
 
     from suds.client import Client
 
-    client = Client("http://myhost.com/foo.wsdl")
+    client = Client("http://example.com/foo.wsdl")
     client.service.someMethod(someParameter)
 
 .. code-block:: python
@@ -267,11 +267,11 @@ Example WADL
     from suds.client import Client
 
     # The service URL
-    soap_url = 'http://myapp.example.notreal/path/to/soap'
+    soap_url = 'http://myapp.example.com/path/to/soap'
 
     # The WSDL URL, we wont' use this but just illustrating for example. This
     # would be the file you download to your system and save as wsdl_file
-    wsdl_url = 'http://myapp.example.notreal/path/to/soap?wsdl'
+    wsdl_url = 'http://myapp.example.com/path/to/soap?wsdl'
 
     # The full path to the downloaded WSDL file on your local system
     wsdl_file = '/path/to/myapp.wsdl'

@@ -124,9 +124,9 @@ Introspecting Objects
         def login():
             """logs-in to the server"""
 
-    localhost = Server(host='127.0.0.1', port=1337)
+    connection = Server(host='example.com', port=1337)
 
-    result = dir(localhost)
+    result = dir(connection)
     print(result)
     # ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__',
     #  '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__',
@@ -152,9 +152,9 @@ Introspecting Objects
         def login():
             """logs-in to the server"""
 
-    localhost = Server(host='127.0.0.1', port=1337)
+    connection = Server(host='example.com', port=1337)
 
-    localhost.__dict__
+    connection.__dict__
     # {'host': '127.0.0.1', 'port': 1337}
 
 ``vars()``
@@ -173,7 +173,7 @@ Introspecting Objects
         def login():
             """logs-in to the server"""
 
-    localhost = Server(host='127.0.0.1', port=1337)
+    connection = Server(host='example.com', port=1337)
 
     vars(Server)
     # {
@@ -241,9 +241,9 @@ Introspecting Docstrings
         def login():
             """logs-in to the server"""
 
-    localhost = Server(host='127.0.0.1', port=1337)
+    connection = Server(host='example.com', port=1337)
 
-    help(localhost)
+    help(connection)
     # Help on Server in module __main__ object:
     #
     # class Server(builtins.object)
@@ -284,9 +284,9 @@ Introspecting Docstrings
         def login():
             """logs-in to the server"""
 
-    localhost = Server(host='127.0.0.1', port=1337)
+    connection = Server(host='example.com', port=1337)
 
-    localhost.login.__doc__
+    connection.login.__doc__
     # 'logs-in to the server'
 
 

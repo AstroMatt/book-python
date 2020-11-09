@@ -25,7 +25,7 @@ Nginx + uwsgi
         # the port your site will be served on
         listen      8000;
         # the domain name it will serve for
-        server_name myhost.com; # substitute your machine's IP address or FQDN
+        server_name example.com; # substitute your machine's IP address or FQDN
         charset     utf-8;
 
         # max upload size

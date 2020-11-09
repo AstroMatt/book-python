@@ -241,8 +241,8 @@ Do not trigger methods for user
             print(f'Logging to {self.host} using: {self.username}:{self.password}')
 
 
-    localhost = Server(
-        host='localhost',
+    connection = Server(
+        host='example.com',
         username='myusername',
         password='mypassword')
 
@@ -259,12 +259,12 @@ Do not trigger methods for user
             print(f'Logging to {self.host} using: {self.username}:{self.password}')
 
 
-    localhost = Server(
-        host='localhost',
+    connection = Server(
+        host='example.com',
         username='myusername',
         password='mypassword')
 
-    localhost.connect()
+    connection.connect()
 
 .. code-block:: python
     :caption: However... it is better to use ``self.set_position(position_x, position_y)`` than to set those values one by one and duplicate code. Imagine if there will be a condition boundary checking (for example for negative values)
@@ -365,7 +365,7 @@ OOP Constructor Passwd
         nobody:x:99:99:Nobody:/:/sbin/nologin
         sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
         twardowski:x:1000:1000:Jan Twardowski:/home/twardowski:/bin/bash
-        jimenez:x:1001:1001:José Jiménez:/home/jimenez:/bin/bash
+        watney:x:1001:1001:José Jiménez:/home/watney:/bin/bash
         ivanovic:x:1002:1002:Иван Иванович:/home/ivanovic:/bin/bash
         lewis:x:1002:1002:Melissa Lewis:/home/lewis:/bin/bash"""
 
@@ -382,6 +382,6 @@ OOP Constructor Passwd
          SystemAccount(username='nobody'),
          SystemAccount(username='sshd'),
          UserAccount(username='twardowski'),
-         UserAccount(username='jimenez'),
+         UserAccount(username='watney'),
          UserAccount(username='ivanovic'),
          UserAccount(username='lewis')]

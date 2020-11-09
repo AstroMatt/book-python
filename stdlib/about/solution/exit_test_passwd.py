@@ -2,9 +2,9 @@ from datetime import date
 from pprint import pprint
 
 
-ETC_GROUP = r'../data/etc-group.txt'
-ETC_SHADOW = r'../data/etc-shadow.txt'
-ETC_PASSWD = r'../data/etc-passwd.txt'
+FILE_GROUP = r'../data/etc-group.txt'
+FILE_SHADOW = r'../data/etc-shadow.txt'
+FILE_PASSWD = r'../data/etc-passwd.txt'
 
 SECOND = 1
 MINUTE = 60 * SECOND
@@ -25,7 +25,7 @@ result_passwd = {}
 result = []
 
 try:
-    with open(ETC_GROUP, encoding='utf-8') as file:
+    with open(FILE_GROUP, encoding='utf-8') as file:
         etc_groups = file.readlines()
 except FileNotFoundError:
     print('File does not exist')
@@ -34,7 +34,7 @@ except PermissionError:
 
 
 try:
-    with open(ETC_SHADOW, encoding='utf-8') as file:
+    with open(FILE_SHADOW, encoding='utf-8') as file:
         etc_shadow = file.readlines()
 except FileNotFoundError:
     print('File does not exist')
@@ -43,7 +43,7 @@ except PermissionError:
 
 
 try:
-    with open(ETC_PASSWD, encoding='utf-8') as file:
+    with open(FILE_PASSWD, encoding='utf-8') as file:
         etc_passwd = file.readlines()
 except FileNotFoundError:
     print('File does not exist')

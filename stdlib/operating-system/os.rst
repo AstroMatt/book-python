@@ -224,7 +224,7 @@ Stats and permissions
 
     import os
 
-    file = os.stat(r'/tmp/myfile.py')
+    file = os.stat(r'/tmp/_temporary.py')
 
     print(file)
     # os.stat_result(
@@ -309,7 +309,7 @@ Setting the shell argument to a true value causes subprocess to spawn an interme
     import subprocess
 
     subprocess.call('echo $HOME', shell=True)
-    # /home/jose-jimenez
+    # /home/myusername
 
 Execute command in OS
 ---------------------
@@ -555,11 +555,11 @@ Reading configuration
 
     config = configparser.ConfigParser()
 
-    config.read('example.ini')          # ['example.ini']
+    config.read('myfile.ini')          # ['myfile.ini']
     config.sections()                   # ['bitbucket.org', 'topsecret.server.com']
 
     'bitbucket.org' in config           # True
-    'myhost.com' in config             # False
+    'example.com' in config             # False
 
     config['bitbucket.org']['User']     # 'hg'
     config['DEFAULT']['Compression']    # 'yes'

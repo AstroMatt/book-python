@@ -289,23 +289,23 @@ Indents
 
     # More indentation included to distinguish this from the rest.
     def server(
-            host='localhost', port=443, secure=True,
+            host='example.com', port=443, secure=True,
             username='myusername', password='mypassword'):
         return locals()
 
 
     # Aligned with opening delimiter.
-    connection = server(host='localhost', port=443, secure=True,
+    connection = server(host='example.com', port=443, secure=True,
                         username='myusername', password='mypassword')
 
     # Hanging indents should add a level.
     connection = server(
-        host='localhost', port=443, secure=True,
+        host='example.com', port=443, secure=True,
         username='myusername', password='mypassword')
 
     # The best
     connection = server(
-        host='localhost',
+        host='example.com',
         username='myusername',
         password='mypassword',
         port=443,
@@ -317,13 +317,13 @@ Indents
 
     # Further indentation required as indentation is not distinguishable.
     def Connection(
-        host='localhost', port=1337,
+        host='example.com', port=1337,
         username='myusername', password='mypassword'):
         return host, port, username, password
 
 
     # Arguments on first line forbidden when not using vertical alignment.
-    connection = Connection(host='localhost', port=1337,
+    connection = Connection(host='example.com', port=1337,
         username='myusername', password='mypassword')
 
 Brackets
@@ -394,7 +394,7 @@ Linie możemy łamać poprzez stawianie znaku ukośnika ``\`` na końcu:
 .. code-block:: python
 
     class Server:
-        def __init__(self, username, password, host='localhost'
+        def __init__(self, username, password, host='example.com'
                      port=80, secure=False):
 
             if not instance(username, str) or not instance(password, str) or
@@ -411,7 +411,7 @@ Linie możemy łamać poprzez stawianie znaku ukośnika ``\`` na końcu:
             return f'{protocol}://{self.username}:{self.password}@{self.host}:{self.port}/'
 
     server = Server(
-        host='localhost',
+        host='example.com',
         username='myusername',
         password='mypassword',
         port=443,
@@ -428,7 +428,7 @@ Blank lines
 .. code-block:: python
 
     class Server:
-        def __init__(self, username, password, host='localhost'
+        def __init__(self, username, password, host='example.com'
                      port=80, secure=False):
 
             if not instance(username, str):

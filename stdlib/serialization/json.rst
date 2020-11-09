@@ -585,7 +585,7 @@ Serialization JSON Datetime
         DATA = {
             "astronaut": {
                 "date": date(1961, 4, 12),
-                "person": "jose.jimenez@nasa.gov"
+                "person": "mark.watney@nasa.gov"
             },
             "flight": [
                 {"datetime": datetime(1969, 7, 21, 2, 56, 15), "action": "landing"}

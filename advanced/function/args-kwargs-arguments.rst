@@ -328,11 +328,11 @@ Examples
     :caption: Database connection configuration read from config file
 
     config = {
-        'host': 'localhost',
+        'host': 'example.com',
         'port': 5432,
-        'username': 'my_username',
-        'password': 'my_password',
-        'database': 'my_database'}
+        'username': 'myusername',
+        'password': 'mypassword',
+        'database': 'mydatabase'}
 
 
     def database_connect(host, port, username, password, database):

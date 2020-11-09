@@ -196,7 +196,7 @@ Server-side operation
     context.load_cert_chain(certfile="mycertfile", keyfile="mykeyfile")
 
     bindsocket = socket.socket()
-    bindsocket.bind(('myaddr.mydomain.com', 10023))
+    bindsocket.bind(('myaddr.example.com', 10023))
     bindsocket.listen(5)
 
 

@@ -27,7 +27,7 @@ Insert data
     }
 
 
-    client = MongoClient('mongodb://localhost:27017/')
+    client = MongoClient('mongodb://example.com:27017/')
     db = client.test_database
     astronauts = db.astronauts
 

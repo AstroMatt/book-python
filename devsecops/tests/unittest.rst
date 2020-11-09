@@ -46,8 +46,8 @@ From command line
 .. code-block:: console
     :caption: Display only errors. With ``-v`` display progress
 
-    $ python -m unittest example.py
-    $ python -m unittest -v example.py
+    $ python -m unittest myfile.py
+    $ python -m unittest -v myfile.py
 
 
 Examples

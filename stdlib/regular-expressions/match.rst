@@ -113,21 +113,21 @@ Good Engineering Practices
     :caption: Doctests
 
     """
-    >>> is_valid_email('jose.jimenez@nasa.gov')
+    >>> is_valid_email('mark.watney@nasa.gov')
     True
-    >>> is_valid_email('José.Jiménez@nasa.gov')
+    >>> is_valid_email('Mark.Watney@nasa.gov')
     True
-    >>> is_valid_email('+jose.jimenez@nasa.gov')
+    >>> is_valid_email('+mark.watney@nasa.gov')
     False
-    >>> is_valid_email('jose.jimenez+@nasa.gov')
+    >>> is_valid_email('mark.watney+@nasa.gov')
     True
-    >>> is_valid_email('jose.jimenez+newsletter@nasa.gov')
+    >>> is_valid_email('mark.watney+newsletter@nasa.gov')
     True
-    >>> is_valid_email('jose.jimenez@.gov')
+    >>> is_valid_email('mark.watney@.gov')
     False
     >>> is_valid_email('@nasa.gov')
     False
-    >>> is_valid_email('jose.jimenez@nasa.g')
+    >>> is_valid_email('mark.watney@nasa.g')
     False
     """
 

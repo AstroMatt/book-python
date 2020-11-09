@@ -14,12 +14,12 @@ HTTP Frameworks
 
 
     jira = Jira(
-        url='http://localhost:8080',
+        url='http://example.com:8080',
         username='myusername',
         password='mypassword')
 
     confluence = Confluence(
-        url='http://localhost:8090',
+        url='http://example.com:8090',
         username='myusername',
         password='mypassword')
 

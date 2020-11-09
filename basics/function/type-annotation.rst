@@ -110,10 +110,10 @@ NoReturn
             raise ValueError('Invalid Email')
 
 
-    valid_email('jose.jimenez@nasa.gov')
-    # 'jose.jimenez@nasa.gov'
+    valid_email('mark.watney@nasa.gov')
+    # 'mark.watney@nasa.gov'
 
-    valid_email('jose.jimenez_at_nasa.gov')
+    valid_email('mark.watney_at_nasa.gov')
     # Traceback (most recent call last):
     #     ...
     # ValueError: Invalid Email

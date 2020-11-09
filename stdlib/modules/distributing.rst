@@ -311,7 +311,7 @@ Artifactory
     password: mypassword
 
     [local]
-    repository: http://localhost:8081/artifactory/api/pypi/pypi-local
+    repository: http://example.com:8081/artifactory/api/pypi/pypi-local
     username: myusername
     password: mypassword
 
@@ -324,7 +324,7 @@ Artifactory
 .. code-block:: console
     :caption: Search
 
-    $ pip search myapp --index http://localhost:8081/artifactory/api/pypi/pypi-local/
+    $ pip search myapp --index http://example.com:8081/artifactory/api/pypi/pypi-local/
     myapp                   - My Simple App
 
 

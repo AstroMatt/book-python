@@ -17,8 +17,8 @@ Starting new project
     $ python manage.py migrate
 
     $ python manage.py createsuperuser
-    Username (leave blank to use 'admin'): jose.jimenez
-    Email address: jose.jimenez@nasa.gov
+    Username (leave blank to use 'admin'): mark.watney
+    Email address: mark.watney@nasa.gov
     Password:
     Password (again):
     Superuser created successfully.

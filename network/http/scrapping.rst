@@ -67,9 +67,9 @@ Basic Usage
         <p class="title"><b>The Dormouse's story</b></p>
 
         <p class="story">Once upon a time there were three little sisters; and their names were
-        <a href="http://myhost.com/elsie" class="sister" id="link1">Elsie</a>,
-        <a href="http://myhost.com/lacie" class="sister" id="link2">Lacie</a> and
-        <a href="http://myhost.com/tillie" class="sister" id="link3">Tillie</a>;
+        <a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,
+        <a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and
+        <a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
         and they lived at the bottom of a well.</p>
 
         <p class="story">...</p>
@@ -92,15 +92,15 @@ Basic Usage
     #   </p>
     #   <p class="story">
     #    Once upon a time there were three little sisters; and their names were
-    #    <a class="sister" href="http://myhost.com/elsie" id="link1">
+    #    <a class="sister" href="http://example.com/elsie" id="link1">
     #     Elsie
     #    </a>
     #    ,
-    #    <a class="sister" href="http://myhost.com/lacie" id="link2">
+    #    <a class="sister" href="http://example.com/lacie" id="link2">
     #     Lacie
     #    </a>
     #    and
-    #    <a class="sister" href="http://myhost.com/tillie" id="link2">
+    #    <a class="sister" href="http://example.com/tillie" id="link2">
     #     Tillie
     #    </a>
     #    ; and they lived at the bottom of a well.
@@ -119,15 +119,15 @@ Basic Usage
     html.title.parent.name  # 'head'
     html.p                  # <p class="title"><b>The Dormouse's story</b></p>
     html.p['class']         # 'title'
-    html.a                  # <a class="sister" href="http://myhost.com/elsie" id="link1">Elsie</a>
+    html.a                  # <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
 
     html.find_all('a')
-    # [<a class="sister" href="http://myhost.com/elsie" id="link1">Elsie</a>,
-    #  <a class="sister" href="http://myhost.com/lacie" id="link2">Lacie</a>,
-    #  <a class="sister" href="http://myhost.com/tillie" id="link3">Tillie</a>]
+    # [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,
+    #  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,
+    #  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]
 
     html.find(id="link3")
-    # <a class="sister" href="http://myhost.com/tillie" id="link3">Tillie</a>
+    # <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>
 
 Iterating over items
 --------------------
@@ -136,9 +136,9 @@ Iterating over items
     for link in html.find_all('a'):
         print(link.get('href'))
 
-    # http://myhost.com/elsie
-    # http://myhost.com/lacie
-    # http://myhost.com/tillie
+    # http://example.com/elsie
+    # http://example.com/lacie
+    # http://example.com/tillie
 
 Getting Page Text
 -----------------

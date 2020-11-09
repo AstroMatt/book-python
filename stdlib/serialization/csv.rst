@@ -418,7 +418,7 @@ Parsing Non-CSV Files
     FILE = r'/tmp/_temporary.txt'
     # root:x:0:0:root:/root:/bin/bash
     # watney:x:1000:1000:Mark Watney:/home/watney:/bin/bash
-    # jimenez:x:1001:1001:José Jiménez:/home/jimenez:/bin/bash
+    # lewis:x:1001:1001:José Jiménez:/home/lewis:/bin/bash
     # twardowski:x:1002:1002:Jan Twardowski:/home/twardowski:/bin/bash
 
     with open(FILE) as file:
@@ -434,7 +434,7 @@ Parsing Non-CSV Files
 
     # {'username': 'root', 'password': 'x', 'uid': '0',...}
     # {'username': 'watney', 'password': 'x', 'uid': '1000',...}
-    # {'username': 'jimenez', 'password': 'x', 'uid': '1001',...}
+    # {'username': 'lewis', 'password': 'x', 'uid': '1001',...}
     # {'username': 'twardowski', 'password': 'x', 'uid': '1002',...}
 
 .. code-block:: python

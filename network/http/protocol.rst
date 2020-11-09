@@ -348,4 +348,4 @@ How to version API?
     "``/user/10?api=v2``", "Version as a parameter to URL"
     "``Accept: application/vnd.api.v2``", "API version as a custom vendor prefix for ``Accept`` header"
     "``Accept: application/vnd.api.v2;q=0.9,application/vnd.api.v1;q=0.8``", "API version negotiation with weights using ``Accept`` header"
-    "api-v2.myhost.com", "Subdomain"
+    "api-v2.example.com", "Subdomain"

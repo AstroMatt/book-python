@@ -150,7 +150,7 @@ Lambda with Filter
     astronauts = ['Mark Watney', 'Melissa Lewis']
 
     people = ['Jan Twardowski', 'Mark Watney',
-              'Melissa Lewis', 'Jimenez']
+              'Melissa Lewis', 'Jose Jimenez']
 
     result = filter(lambda x: x in astronauts, people)
     list(result)

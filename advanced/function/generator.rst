@@ -780,7 +780,7 @@ Function Generator Passwd
         nobody:x:99:99:Nobody:/:/sbin/nologin
         sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
         watney:x:1000:1000:Mark Watney:/home/watney:/bin/bash
-        jimenez:x:1001:1001:José Jiménez:/home/jimenez:/bin/bash
+        jtwardowski:x:1001:1001:José Jiménez:/home/jtwardowski:/bin/bash
         ivanovic:x:1002:1002:Иван Иванович:/home/ivanovic:/bin/bash
         lewis:x:1003:1002:Melissa Lewis:/home/ivanovic:/bin/bash"""
 

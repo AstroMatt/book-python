@@ -95,14 +95,14 @@ Examples
 .. code-block:: python
     :caption: Example 2
 
-    connect('admin', 'admin')
+    connect('myusername', 'mypassword')
 
-    connect('admin', 'admin', 'localhost', 22, False, 1, True)
+    connect('myusername', 'mypassword', 'example.com', 443, False, 1, True)
 
-    connect(host='localhost', username='myusername', password='mypassword')
+    connect(host='example.com', username='myusername', password='mypassword')
 
     connect(
-        host='localhost',
+        host='example.com',
         username='myusername',
         password='mypassword',
         port=443,

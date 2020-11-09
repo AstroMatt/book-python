@@ -8,13 +8,11 @@ import ssl
 import smtplib
 
 
-SMTP_USER = 'myusername'
-SMTP_PASS = 'mypassword'
-SMTP_HOST = 'localhost'
-SMTP_PORT = 465
+HOSTNAME = 'localhost'
+PORT = 465
 
 
-smtp = smtplib.SMTP_SSL(SMTP_HOST, port=SMTP_PORT)
+smtp = smtplib.SMTP_SSL(USERNAME, port=PORT)
 
 context = ssl.create_default_context()
 

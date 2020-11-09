@@ -6,7 +6,7 @@ from pprint import pprint
 
 HOST = "localhost"
 PORT = 1337
-XML_CMD_FILE = r'../_data/botnet-commands.xml'
+FILE = r'/tmp/_temporary.xml'
 
 
 logging.basicConfig(
@@ -15,7 +15,7 @@ logging.basicConfig(
 log = logging.getLogger('botnet.attacker.client')
 
 
-with open(XML_CMD_FILE) as file:
+with open(FILE) as file:
     commands = file.read()
 
 

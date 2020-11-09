@@ -163,7 +163,7 @@ IMAP4 Client
 
     @defer.inlineCallbacks
     def main(reactor, username=b"myusername", password=b"mypassword",
-             strport="tls:myhost.com:993"):
+             strport="tls:example.com:993"):
 
         endpoint = endpoints.clientFromString(reactor, strport)
         factory = protocol.Factory.forProtocol(imap4.IMAP4Client)
