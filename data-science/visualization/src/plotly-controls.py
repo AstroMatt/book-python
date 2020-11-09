@@ -21,7 +21,7 @@ for i in range(len(data)):
         'args': ['visible', [False] * len(data)],
     }
 
-    step['args'][1][i] = True  # Toggle i'th trace to "visible"
+    step['args'][1][i] = True  # Toggle 'i' trace to "visible"
     steps.append(step)
 
 sliders = [{

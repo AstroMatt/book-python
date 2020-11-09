@@ -23,7 +23,7 @@ The coefficients, the residual sum of squares and the variance score are also ca
 
 Przed zastosowaniem
 ===================
-* Trzeba usunac outlayery
+* Trzeba usunąć elementy odstające
 * Trzeba sprawdzić czy są osobne klastry danych, tzn. czy linia jest przedziałami ciągła, tzn. gdyby podzielić na segmenty, to można lepiej dostosować regresję
 
 
@@ -33,7 +33,7 @@ Wyznaczanie równania prostej
     :width: 75%
     :align: center
 
-    Manipulowanie parametrami prostej (classifiera) w celu określenia funkcji.
+    Manipulowanie parametrami prostej (klasyfikatora) w celu określenia funkcji.
 
 .. figure:: img/regression-function2.png
     :width: 75%
@@ -63,7 +63,7 @@ Wyznaczanie równania prostej
 
         Weight
 
-        Computatiion Graph
+        Computation Graph
 
         Forward Propagation
 

@@ -99,12 +99,12 @@ Examples
 
     connect('admin', 'admin', 'localhost', 22, False, 1, True)
 
-    connect(host='localhost', username='admin', password='admin')
+    connect(host='localhost', username='myusername', password='mypassword')
 
     connect(
         host='localhost',
-        username='admin',
-        password='admin',
+        username='myusername',
+        password='mypassword',
         port=443,
         ssl=True,
         persistent=True,

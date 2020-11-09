@@ -16,7 +16,7 @@ Rationale
 .. glossary::
 
     interface
-        Software entity with public methods and attibutes declaration
+        Software entity with public methods and attribute declaration
 
     implement
         Class implements interface if has all public fields and methods from interface

@@ -33,7 +33,7 @@ View
 Responses
 =========
 * ``HttpResponse``
-* ``JsonReponse``
+* ``JsonResponse``
 
 
 Permissions in Views

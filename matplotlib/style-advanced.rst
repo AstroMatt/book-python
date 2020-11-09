@@ -7,13 +7,13 @@ Label rotation
 ==============
 .. literalinclude:: src/matplotlib-tick-rotation.py
     :language: python
-    :caption: Lablel rotation
+    :caption: Label rotation
 
 .. figure:: img/matplotlib-tick-rotation.png
     :width: 75%
     :align: center
 
-    Lablel rotation
+    Label rotation
 
 
 Grid

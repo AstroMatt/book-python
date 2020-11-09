@@ -3,11 +3,11 @@ Szkolenie obejmowało 28 godzin wykładów oraz warsztatów i pokrywało zagadni
     * tworzenie aplikacji sieciowych w języku Python,
     * tworzenie i korzystanie ze struktur danych
     * moduły sieciowe w bibliotece standardowej
-    * Wykorzystnaie protokołu HTTP i REST API
+    * Wykorzystanie protokołu HTTP i REST API
     * HTML Scrapping
     * Przetwarzanie i transformacja danych JSON, XML, CSV, Pickle
     * Framework webowy Django
     * Sieciowe wzorce projektowe
-    * Omównienie komunikacji po protokołach SMTP, POP3, IMAP, SSH, FTP, DNS
+    * Omówienie komunikacji po protokołach SMTP, POP3, IMAP, SSH, FTP, DNS
     * Wykorzystanie Python do przetwarzania adresacji IPv4 and IPv6 oraz Interfejsów sieciowych
     * Wykorzystywanie bibliotek i frameworków sieciowych

@@ -67,8 +67,8 @@ Konfiguracja logowania
     logging.basicConfig(level=logging.INFO)
     log = logging.getLogger(__name__)
 
-    log.warning('warning!')  # zostanie zapisana do pliku
-    log.debug('wiadomosc debuggingowa')  # nie zostanie zapisana, bo level jest INFO, czyli powyżej DEBUG
+    log.warning('warning!')     # zostanie zapisana do pliku
+    log.debug('Debug message')  # nie zostanie zapisana, bo level jest INFO, czyli powyżej DEBUG
 
 .. code-block:: python
 
@@ -82,8 +82,8 @@ Konfiguracja logowania
 
     log = logging.getLogger(__name__)
 
-    log.warning('warning!')  # zostanie zapisana do pliku
-    log.debug('wiadomosc debuggingowa')  # nie zostanie zapisana, bo level jest INFO, czyli powyżej DEBUG
+    log.warning('warning!')     # zostanie zapisana do pliku
+    log.debug('Debug message')  # nie zostanie zapisana, bo level jest INFO, czyli powyżej DEBUG
 
 
 .. code-block:: python
@@ -97,14 +97,14 @@ Konfiguracja logowania
         filename="log.csv",
     )
 
-    logging.info('Rozpoczynam pętlę')
+    logging.info('Loop start')
 
     i = 0
     while i <= 3:
-        logging.info(f'Przetwarzam {i}')
+        logging.info(f'Computing {i}')
         i += 1
 
-    logging.info('Skończyłem pętlę')
+    logging.info('Loop end')
 
 .. code-block:: python
 
@@ -119,7 +119,7 @@ Konfiguracja logowania
     log = logging.getLogger(__name__)
 
     log.warning('warning!')  # zostanie zapisana do pliku
-    log.debug('wiadomosc debuggingowa')  # nie zostanie zapisana, bo level jest INFO, czyli powyżej DEBUG
+    log.debug('Debug message')  # nie zostanie zapisana, bo level jest INFO, czyli powyżej DEBUG
 
 .. code-block:: python
 
@@ -163,7 +163,7 @@ Wyciszanie logowania
     logging.getLogger('requests').setLevel(logging.WARNING)
     log = logging.getLogger(__name__)
 
-    log.debug('to jest moja debugowa wiadomosc')
+    log.debug('Debug message')
 
 
 Konfiguracja formatowania logów
@@ -330,11 +330,11 @@ Examples
     log.setLevel(level)
 
 
-    log.critical('Błąd krytyczny')
-    log.error('Błąd')
-    log.warning('Uwaga')
-    log.info('Informacja')
-    log.debug('Wiadomość debugowa')
+    log.critical('Critical error... finishing')
+    log.error('Some problem but can continue')
+    log.warning('Warning, this is important')
+    log.info('Typical message')
+    log.debug('Debug message with extra information')
 
 
     logging.getLogger('requests').setLevel('DEBUG')

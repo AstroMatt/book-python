@@ -70,3 +70,9 @@ Exporting plot as an image
 Charts Gallery
 ==============
 * https://matplotlib.org/gallery/index.html
+
+
+Further Reading
+===============
+* https://www.data-to-viz.com/#explore
+* https://www.data-to-viz.com/img/poster/poster_big.png

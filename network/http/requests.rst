@@ -29,8 +29,8 @@ Response
     # <Response [200]>
 
     if response.status_code == HTTPStatus.OK:
-        data = reponse.raw      # Raw Response Content
-        data = reponse.content  # Binary Response Content
+        data = response.raw      # Raw Response Content
+        data = response.content  # Binary Response Content
         data = response.text    # Response Content
         data = response.json()  # JSON Response Content
 
@@ -297,9 +297,9 @@ REST API
     #. Zaciągnij informacje o repozytoriach użytkownika Django na https://github.com
     #. Każdy request uwierzytelnij za pomocą Basic Auth i swojego Access Tokena
     #. Następnie przeglądnij listę z poziomu Pythona i znajdź URL dla repozytorium ``django``
-    #. Przeglądnij to repozytorium i jego listę commitów
-    #. Podaj datę i opis ostatniego commita
-    #. Znajdź numery ID ticketów (``Fixed #...``) z issue trackera, które zostały rozwiązane w ostatnim miesiącu
+    #. Przeglądnij to repozytorium i jego listę komitów
+    #. Podaj datę i opis ostatniego komita
+    #. Znajdź numery ID tiketów (``Fixed #...``) z issue trackera, które zostały rozwiązane w ostatnim miesiącu
 
 :The whys and wherefores:
     * Komunikacja HTTP (request, response)

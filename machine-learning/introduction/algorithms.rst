@@ -160,7 +160,7 @@ Association rule learning methods extract rules that best explain observed relat
 
 These rules can discover important and commercially useful associations in large multidimensional datasets that can be exploited by an organization.
 
-.. figure:: img/algorithms-assoication-rule-learning.png
+.. figure:: img/algorithms-association-rule-learning.png
     :width: 75%
     :align: center
 

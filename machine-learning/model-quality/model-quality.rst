@@ -43,7 +43,7 @@ Osiąganie kiepskich rezultatów na zbiorze testowym wiąże się zazwyczaj z je
 
 Ważne, żebyśmy zorientowali się, co jest naszym problemem. Mamy możliwe trzy sytuacje: wysoki bias, wysoką wariancję, bądź wreszcie dobre dopasowanie. Graficznie wygląda to tak:
 
-Jak można powyżej zauważyć, stopień wielomianu (który dopasowujemy do danych) rośnie, gdy przesuwamy się w stronę over fittingu.
+Jak można powyżej zauważyć, stopień wielomianu (który dopasowujemy do danych) rośnie, gdy przesuwamy się w stronę overfittingu.
 
 .. figure:: img/model-quality-bias-variance.png
     :width: 75%
@@ -241,13 +241,13 @@ Can we locate even better value for :math:`k`?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. **Testing accuracy raises** as model complexity increases
 #. **Testing accuracy penalizes** models that are too complex or not complex enough
-#. For KNN models complexity is determined by the value of :math:`k` (lower value = more compelex)
+#. For KNN models complexity is determined by the value of :math:`k` (lower value = more complex)
 
 .. figure:: img/model-quality-optimizations-knn.png
     :width: 75%
     :align: center
 
-    For KNN models complexity is determined by the value of :math:`k` (lower value = more compelex)
+    For KNN models complexity is determined by the value of :math:`k` (lower value = more complex)
 
 .. code-block:: python
 
@@ -293,7 +293,7 @@ Regularyzacja
 =============
 Regularyzacja – wprowadzenie dodatkowej informacji do rozwiązywanego zagadnienia źle postawionego w celu polepszenia jakości rozwiązania. Regularyzacja jest często wykorzystywana przy rozwiązywaniu problemów odwrotnych.
 
-Regularyzacja jest sposobem na zmniejszenie prawdopodobieństwa pojawienia się over fittingu
+Regularyzacja jest sposobem na zmniejszenie prawdopodobieństwa pojawienia się overfittingu
 
 .. figure:: img/model-quality-regularization.png
     :width: 75%
@@ -329,11 +329,11 @@ In machine learning ensemble refers only to a concrete finite set of alternative
         labels = dataset[:, -1]
 
 
-    # Normaize and Standardize the features so that it does not affect the learning algorithm
+    # Normalize and Standardize the features so that it does not affect the learning algorithm
     preprocessing.normalize(features)
     preprocessing.scale(features)
 
-    # Fit the Tree alogorithm
+    # Fit the Tree algorithm
     model = ExtraTreesClassifier()
     model.fit(features, labels)
 

@@ -463,6 +463,12 @@ Actinograms
     :align: center
 
 
+Further Reading
+===============
+* https://www.data-to-viz.com/#explore
+* https://www.data-to-viz.com/img/poster/poster_big.png
+
+
 Assignments
 ===========
 

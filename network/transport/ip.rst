@@ -56,8 +56,8 @@ IP Addresses
     ipaddress.IPv4Address(b'\xC0\xA8\x00\x01')
     # IPv4Address('192.168.0.1')
 
-Comparision
-^^^^^^^^^^^
+Comparison
+^^^^^^^^^^
 .. code-block:: python
 
     IPv4Address('127.0.0.2') > IPv4Address('127.0.0.1')
@@ -167,8 +167,8 @@ Supernet
     ip_network('192.0.2.0/24').supernet(new_prefix=20)
     # IPv4Network('192.0.0.0/20')
 
-Comparision
-^^^^^^^^^^^
+Comparison
+^^^^^^^^^^
 .. code-block:: python
 
     a = ip_network('192.168.1.0/24')

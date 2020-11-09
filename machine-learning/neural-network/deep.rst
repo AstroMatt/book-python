@@ -66,7 +66,7 @@ Przykład praktyczny
     * duży dom w gorszej lokalizacji
     * umiarkowana lokalizacja i rozmiar plus basen
 
-* Cena domu wpłwa na sumę wszyskich kombinacji elementów i ich wag z poprzedniech stopni.
+* Cena domu wpływa na sumę wszystkich kombinacji elementów i ich wag z poprzednich stopni.
 
 .. figure:: img/neural-network.png
     :width: 75%

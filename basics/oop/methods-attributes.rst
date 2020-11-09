@@ -149,8 +149,8 @@ Examples
 
     jira = Jira(
         url='http://localhost:8080',
-        username='admin',
-        password='admin')
+        username='myusername',
+        password='mypassword')
 
     JQL = 'project = DEMO AND status IN ("To Do", "In Progress") ORDER BY issuekey'
 
@@ -163,8 +163,8 @@ Examples
 
     confluence = Confluence(
         url='http://localhost:8090',
-        username='admin',
-        password='admin')
+        username='myusername',
+        password='mypassword')
 
     result = confluence.create_page(
         space='DEMO',

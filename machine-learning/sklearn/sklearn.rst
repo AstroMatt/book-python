@@ -113,7 +113,7 @@ Random Classifier
     import random
 
 
-    class RandomNeighborClassifer:
+    class RandomNeighborClassifier:
         def fit(self, features, labels):
             self.features_train = features
             self.labels_train = labels
@@ -159,7 +159,7 @@ Nearest Neighbor Classifier
 :Hints:
     * Dla każdego feature sprawdzasz jaka jest najmniejsza odległość
     * Wybierasz najmniejszą odległość ze wszystkich
-    * Do obliczania odległości skorzystaj z algorytmu Euclidesa.
+    * Do obliczania odległości skorzystaj z algorytmu Euklidesa.
     * ``from scipy.spatial.distance import euclidean as euclidean_distance``
 
     * .. code-block:: python
@@ -195,14 +195,14 @@ Nearest Neighbor Classifier
 
         print(accuracy)
 
-Porównanie classifierów
------------------------
-* Assignment name: Porównanie classifierów
+Sklearn Classifier Compare
+--------------------------
+* Assignment name: Sklearn Classifier Compare
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/sklearn_comparision.py`
+* Solution: :download:`solution/sklearn_classifier_compare.py`
 
 :English:
     .. todo:: English Translation
@@ -243,5 +243,5 @@ Porównanie classifierów
         ]
 
 :Extra task:
-    * Zrównoleglij uruchamianie predykcji za pomocą modułu ``threading`` oraz architektury opartej na Workerach.
+    * Zrównoleglij uruchamianie predykcji za pomocą modułu ``threading`` oraz architektury opartej na workerach.
     * Wyświetl posortowaną malejąco listę wg. dokładności

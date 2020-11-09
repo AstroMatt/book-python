@@ -41,7 +41,7 @@ Podstawowe pojęcia
 
 
     Models
-        Prototype for or the the rules that defines a body of classifier function. Typicly models have parameters that allows to adjust the data. We use the training data to adjust the parameters of a model.
+        Prototype for or the the rules that defines a body of classifier function. Typically models have parameters that allows to adjust the data. We use the training data to adjust the parameters of a model.
 
     Standard Deviation
         Average distance from the mean for all the points.

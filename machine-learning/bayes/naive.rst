@@ -88,7 +88,7 @@ Minusy
 ------
 * Jeżeli zmienna kategorialna ma kategorię (w testowanym zestawie danych), która nie została zaobserwowana w treningowym zestawie danych, wtedy model ustali zerowe prawdopodobieństwo i nie będzie w stanie niczego przewidzieć. Taką sytuację nazywa się często „Zerową Frekwencją”. By to rozwiązać, możemy użyć techniki wygładzającej. Jedną z najprostszych technik wygładzających jest tzw. oszacowanie Laplace’a.
 
-* Z drugiej strony Naiwny Bayes jest także znany jako kiepski oszacowywacz, więc nie zawsze należy na jego podstawie wnioskować ze śmiertelną powagą.
+* Z drugiej strony Naiwny Bayes jest także znany jako kiepski klasyfikator, więc nie zawsze należy na jego podstawie wnioskować ze 100% pewnością.
 
 * Innym ograniczeniem Naiwnego Bayesa jest założenie o niezależności wskaźników. W prawdziwym życiu, w zasadzie niemożliwym jest uzyskanie zestawu wskaźników kompletnie od siebie niezależnych.
 

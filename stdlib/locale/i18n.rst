@@ -33,7 +33,7 @@ Gettext
 * Using ``gettext`` in code
 * Generating translation files
 * Compiling translation files
-* Updateting translation files
+* Updating translation files
 * Transifex (``tx push`` and ``tx pull``)
 
 
@@ -41,8 +41,8 @@ Django
 ======
 * ``django-admin makemessages -l en``
 * ``django-admin compilemessages``
-* ``{% blocktranslate %}`` i ``{% endblocktranslate %}``
-* ``{% translate %}`` templatetag
+* ``{% blocktranslate %}`` and ``{% endblocktranslate %}``
+* ``{% translate %}``
 * ``from django.utils.translation import gettext_lazy as _``
 * transifex-client
 * gettext
@@ -60,7 +60,7 @@ Django
 
 .. code-block:: console
 
-    $ cd djangoproject
+    $ cd myproject
     $ mkdir locale
 
     $ django-admin makemessages -l en
@@ -70,5 +70,5 @@ Django
     processing locale pl
 
     $ django-admin compilemessages
-    processing file django.po in /tmp/djangoproject/locale/en/LC_MESSAGES
-    processing file django.po in /tmp/djangoproject/locale/pl/LC_MESSAGES
+    processing file django.po in /tmp/myproject/locale/en/LC_MESSAGES
+    processing file django.po in /tmp/myproject/locale/pl/LC_MESSAGES

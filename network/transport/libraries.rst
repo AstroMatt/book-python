@@ -162,8 +162,8 @@ IMAP4 Client
 
 
     @defer.inlineCallbacks
-    def main(reactor, username=b"alice", password=b"secret",
-             strport="tls:example.com:993"):
+    def main(reactor, username=b"myusername", password=b"mypassword",
+             strport="tls:myhost.com:993"):
 
         endpoint = endpoints.clientFromString(reactor, strport)
         factory = protocol.Factory.forProtocol(imap4.IMAP4Client)
@@ -186,7 +186,7 @@ IMAP4 Client
 * https://github.com/irmen/Pyro4
 * https://pyro4.readthedocs.io/en/stable/
 * Pyro means PYthon Remote Objects.
-* It is a library that enables you to build applications in which objects can talk to eachother over the network, with minimal programming effort.
+* It is a library that enables you to build applications in which objects can talk to each other over the network, with minimal programming effort.
 * You can just use normal Python method calls, with almost every possible parameter and return value type, and Pyro takes care of locating the right object on the right computer to execute the method.
 * It is designed to be very easy to use, and to generally stay out of your way.
 * But it also provides a set of powerful features that enables you to build distributed applications rapidly and effortlessly.

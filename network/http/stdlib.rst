@@ -109,7 +109,6 @@ All statuses
 ``urllib``
 ==========
 .. literalinclude:: src/http-urllib.py
-    :name: listing-http-urlib
     :language: python
     :caption: ściąganie danych z internetu, które trzeba rozpakować, Dane są w formacie TSV (tab separator values), można je rozpakować modułem CSV i podać jako ``delimiter='\t'``
 
@@ -408,9 +407,9 @@ REST API
     #. Zaciągnij informacje o repozytoriach użytkownika Django na https://github.com
     #. Każdy request uwierzytelnij za pomocą Basic Auth i swojego Access Tokena
     #. Następnie przeglądnij listę z poziomu Pythona i znajdź URL dla repozytorium ``django``
-    #. Przeglądnij to repozytorium i jego listę commitów
-    #. Podaj datę i opis ostatniego commita
-    #. Znajdź numery ID ticketów (``Fixed #...``) z issue trackera, które zostały rozwiązane w ostatnim miesiącu
+    #. Przeglądnij to repozytorium i jego listę komitów
+    #. Podaj datę i opis ostatniego komita
+    #. Znajdź numery ID zadań (``Fixed #...``) z issue trackera, które zostały rozwiązane w ostatnim miesiącu
 
 :The whys and wherefores:
     * Komunikacja HTTP (request, response)

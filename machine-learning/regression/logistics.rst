@@ -45,7 +45,7 @@ Podstawowe pojęcia
         Funkcja sigmoidalna
 
     Softmax function
-        takes logits and transforms them to probability distibutions
+        takes logits and transforms them to probability distributions
 
 .. todo::
     Bias term

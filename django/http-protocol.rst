@@ -119,11 +119,13 @@ HTTP Methods
 
 GET vs POST
 -----------
-* przekazywanie parametrów
-* ``?zmienna1=wartosc&zmienna2=wartosc``
-* przesylanie plikow
-* przesylanie tablicy zmiennych
-* bezpieczeństwo
+* ``?argument1=value&argument2=value``
+* single argument
+* multiple arguments
+* arrays
+* files
+* multipart
+* security
 
 POST vs. PUT
 ------------

@@ -25,7 +25,7 @@ Nginx + uwsgi
         # the port your site will be served on
         listen      8000;
         # the domain name it will serve for
-        server_name example.com; # substitute your machine's IP address or FQDN
+        server_name myhost.com; # substitute your machine's IP address or FQDN
         charset     utf-8;
 
         # max upload size
@@ -90,10 +90,10 @@ Docker + Gunicorn
         touch ./logs/gunicorn-access.log
         tail -n 0 -f ./logs/gunicorn*.log &
 
-        export DJANGO_SETTINGS_MODULE=projectx.settings
+        export DJANGO_SETTINGS_MODULE=myproject.settings
 
-        exec gunicorn projectx.wsgi:application \
-            --name projectx_django \
+        exec gunicorn myproject.wsgi:application \
+            --name myproject \
             --bind 0.0.0.0:8000 \
             --workers 5 \
             --log-level=info \
@@ -119,7 +119,7 @@ Docker + Gunicorn
             git
 
         # Set variables for project name, and where to place files in container.
-        ENV PROJECT=projectx
+        ENV PROJECT=myproject
         ENV CONTAINER_HOME=/opt
         ENV CONTAINER_PROJECT=$CONTAINER_HOME/$PROJECT
 
@@ -279,5 +279,5 @@ Packaging
     global-exclude *.pyo
 
 
-Staticfils serving
-==================
+Staticfiles serving
+===================

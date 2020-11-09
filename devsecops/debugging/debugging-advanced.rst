@@ -195,16 +195,16 @@ Wyciszanie logowania
 --------------------
 .. code-block:: python
 
-    import logging
+        import logging
 
-    logging.basicConfig(
+        logging.basicConfig(
         level=logging.DEBUG,
         format='[%(asctime).19s] [%(levelname)s] %(message)s')
 
-    logging.getLogger('requests').setLevel(logging.WARNING)
-    log = logging.getLogger(__name__)
+        logging.getLogger('requests').setLevel(logging.WARNING)
+        log = logging.getLogger(__name__)
 
-    log.debug('to jest moja debugowa wiadomosc')
+        log.debug('This is my debug message')
 
 
 Assignments
@@ -248,7 +248,7 @@ Own ``doctest``
 
             def say_hello(self, lang='en'):
                 """
-                wyświetla przywitanie w zalezności od języka
+                wyświetla przywitanie w zależności od języka
 
                 >>> Astronaut(name='José Jiménez').say_hello(lang='es')
                 ¡hola José Jiménez!

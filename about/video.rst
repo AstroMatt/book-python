@@ -38,7 +38,7 @@ Machine Learning and Data Science
 Filmy z ostatnich konferencji
 =============================
 * https://www.youtube.com/channel/UCrJhliKNQ8g0qoE_zvL8eVg - PyCon 2017
-* https://www.youtube.com/playlist?list=PLBGl1tVyiWQSVwxne3yOH79uaSqgbnCqL - Kiwi Pycon 2014
+* https://www.youtube.com/playlist?list=PLBGl1tVyiWQSVwxne3yOH79uaSqgbnCqL - Kiwi PyCon 2014
 * https://www.youtube.com/playlist?list=PLE7tQUdRKcybbNiuhLcc3h6WzmZGVBMr3 - Filmy z DjangoCon 2014
 * https://www.youtube.com/channel/UC45KSayx_kwQAnhpaPAuVkw/videos - Filmy z PyGotham 2014
 * http://pyvideo.org/category/56/pycon-australia-2014
@@ -47,4 +47,4 @@ Filmy z ostatnich konferencji
 * http://pyvideo.org/category/52/pyohio-2014
 * http://pyvideo.org/category/51/scipy-2014
 
-* http://www.codecademy.com/en/tracks/python - to interaktywny kurs pythona w przeglądarcę, nie trzeba nic instalować, wystarczy wykonywać polecenia. Jest całkiem w porządku, ale nie polecam go jako “jedynego” źródła wiedzy o Pythonie, oraz (ostatnio gdy sprawdzałem) nie wspierał Pythona 3.
+* http://www.codecademy.com/en/tracks/python - to interaktywny kurs pythona w przeglądarce, nie trzeba nic instalować, wystarczy wykonywać polecenia. Jest całkiem w porządku, ale nie polecam go jako “jedynego” źródła wiedzy o Pythonie, oraz (ostatnio gdy sprawdzałem) nie wspierał Pythona 3.

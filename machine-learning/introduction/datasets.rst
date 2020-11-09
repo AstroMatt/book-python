@@ -75,7 +75,7 @@ Each record has a class value that indicates whether the patient suffered an ons
 
 This is a standard dataset that has been studied a lot in machine learning literature. A good prediction accuracy is 70%-76%.
 
-.. _Machine Learning Breast Cancer Databset:
+.. _Machine Learning Breast Cancer Dataset:
 
 Wisconsin Breast Cancer Database
 --------------------------------
@@ -102,7 +102,7 @@ Wisconsin Breast Cancer Database
 
 Quandl
 ------
-Quandl (/ˈkwɑːndəl/) is a platform for financial, economic, and alternative data that serves investment professionals. Quandl sources data from over 500 publishers. All Quandl's data are accessible via an API. API access is possible through packages for multiple programming languages including R, Python, Matlab, Maple (software) and Stata.
+Quandl (/ˈkwɑːndəl/) is a platform for financial, economic, and alternative data that serves investment professionals. Quandl sources data from over 500 publishers. All Quandl data are accessible via an API. API access is possible through packages for multiple programming languages including R, Python, Matlab, Maple (software) and Stata.
 
 An Excel add-in allows access to data, including stock price information.
 

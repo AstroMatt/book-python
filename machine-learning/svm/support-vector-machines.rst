@@ -217,7 +217,7 @@ A discriminative classifier attempts to draw a line between the two sets of data
 
     Depending on which you choose, a new data point will be classified almost entirely differently!
 
-These are three very different separaters which perfectly discriminate between these samples. Depending on which you choose, a new data point will be classified almost entirely differently!
+These are three very different separators which perfectly discriminate between these samples. Depending on which you choose, a new data point will be classified almost entirely differently!
 
 How can we improve on this?
 

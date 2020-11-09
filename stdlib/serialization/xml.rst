@@ -16,7 +16,7 @@ Serialization XML, XSLT, XPath
     #     <command timeout="2">/bin/ls -la /etc/</command>
     #     <command>/bin/ls -l /home/ /tmp/</command>
     #     <command timeout="1">/bin/sleep 2</command>
-    #     <command timeout="2">/bin/echo 'juz wstalem'</command>
+    #     <command timeout="2">/bin/echo 'hello'</command>
     # </execute>
 
     root = parse(FILE).getroot()
@@ -40,7 +40,7 @@ Serialization XML, XSLT, XPath
     # {'timeout': '1'}
     #
     # command
-    # /bin/echo 'juz wstalem'
+    # /bin/echo 'hello'
     # {'timeout': '2'}
 
 
@@ -418,16 +418,16 @@ Comments
 
     for element in root.iter():
         if isinstance(element.tag, str):
-            print(f'TAG: {element.tag} -> {element.text}')
+            print(f'Tag: {element.tag} -> {element.text}')
         else:
-            print(f'SPECIAL: {element} -> {element.text}')
+            print(f'Special: {element} -> {element.text}')
 
-    # TAG: iris -> None
-    # TAG: species -> None
-    # TAG: species -> None
-    # TAG: flower -> None
-    # SPECIAL: &#234; -> &#234;
-    # SPECIAL: <!--Hello World--> -> Hello World
+    # Tag: iris -> None
+    # Tag: species -> None
+    # Tag: species -> None
+    # Tag: flower -> None
+    # Special: &#234; -> &#234;
+    # Special: <!--Hello World--> -> Hello World
 
 
     for element in root.iter(tag=Element):
@@ -751,11 +751,11 @@ XML Parsing
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Convert input data to Python ``list[dict]``
+    #. Convert input data to ``list[dict]``
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Przekonwertuj dane wejściowe do Pythonowego ``list[dict]``
+    #. Przekonwertuj dane wejściowe do ``list[dict]``
 
 :Input:
     .. literalinclude:: data/xml_plants.xml
@@ -772,11 +772,11 @@ XSLT Transformation
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Convert input data to Python ``list[dict]``
+    #. Convert input data to ``list[dict]``
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Przekonwertuj dane wejściowe do Pythonowego ``list[dict]``
+    #. Przekonwertuj dane wejściowe do ``list[dict]``
 
 :Input:
     .. literalinclude:: data/xml_transform.xml

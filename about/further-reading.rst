@@ -57,7 +57,7 @@ Strony z zadaniami i zagadkami algorytmicznymi, poćwiczą twoje myślenie i nie
 * https://www.reddit.com/r/dailyprogrammer
 
 Naucz się języka SQL i opanuj przynajmniej jeden system zarządzania bazą danych:
-O SQL jest 4 tony całkiem niezłych książek, kursów i tutoriali, łatwo znaleźć więc nic konkretnego nie podam.
+O SQL jest dużo niezłych książek i kursów.
 
 * PostgreSQL - gorąco polecam - http://www.postgresql.org/
 * MySQL (MariaDB) - https://www.mysql.com/

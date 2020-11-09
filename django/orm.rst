@@ -46,10 +46,10 @@ Field lookups
     Model.objects.get(title__exact='Man walk on Moon!')
     Model.objects.get(title__iexact='man walk on moon!')
     Model.objects.get(headline__contains='Moon')
-    Model.objects.filter(title__startswith='Imporntant')
-    Model.objects.filter(title__istartswith='Imporntant')
-    Model.objects.filter(title__endswith='Imporntant')
-    Model.objects.filter(title__iendswith='Imporntant')
+    Model.objects.filter(title__startswith='Important')
+    Model.objects.filter(title__istartswith='Important')
+    Model.objects.filter(title__endswith='Important')
+    Model.objects.filter(title__iendswith='Important')
 
 Lookups that span relationships
 -------------------------------

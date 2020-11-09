@@ -11,10 +11,10 @@ SSH
 
     client = paramiko.SSHClient()
 
-    client.connect('example.com', username='tester')
+    client.connect('myhost.com', username='myusername')
     # Traceback (most recent call last):
     #   ...
-    # paramiko.ssh_exception.SSHException: Server 'example.com' not found in known_hosts
+    # paramiko.ssh_exception.SSHException: Server 'myhost.com' not found in known_hosts
 
 .. code-block:: python
 
@@ -24,20 +24,20 @@ SSH
 
     client.load_system_host_keys()
     client.load_host_keys('/home/brandon/.ssh/known_hosts')
-    client.connect('example.com', username='test')
+    client.connect('myhost.com', username='myusername')
 
 Password Auth
 -------------
 .. code-block:: python
 
-    client.connect('example.com', username='brandon', password=mypass)
-    client.connect('my.example.com')
+    client.connect('myhost.com', username='myusername', password='mypassword')
+    client.connect('my.myhost.com')
 
 Public/Private Key Auth
 -----------------------
 .. code-block:: python
 
-    client.connect('my.example.com', key_filename='/home/brandon/.ssh/id_sysadmin')
+    client.connect('my.myhost.com', key_filename='/home/brandon/.ssh/id_sysadmin')
 
 Running commands
 ----------------
@@ -85,14 +85,14 @@ SFTP
     import sys
     import paramiko
 
-    host = "example.com"
+    host = "myhost.com"
     port = 22
-    password = "THEPASSWORD"
-    username = "THEUSERNAME"
+    username = "myusername"
+    password = "mypassword"
 
 
     transport = paramiko.Transport((host, port))
-    transport.connect(username = username, password = password)
+    transport.connect(username=username, password=password)
     sftp = paramiko.SFTPClient.from_transport(transport)
 
     path_local = 'README.txt'
@@ -116,10 +116,10 @@ SFTP
     import sys
 
 
-    host = "example.com"
+    host = "myhost.com"
     port = 22
-    password = "THEPASSWORD"
-    username = "THEUSERNAME"
+    username = "myusername"
+    password = "mypassword"
 
     path_local = 'README.txt'
     path_remote = '/tmp/README.txt'
@@ -144,12 +144,12 @@ Examples
 
     from fabric.api import *
 
-    env.hosts = ['THEHOST.com']
-    env.user = 'THEUSER'
-    env.password = 'THEPASSWORD'
+    env.hosts = ['myhost.com']
+    env.user = 'myusername'
+    env.password = 'mypassword'
 
     def put_file(file):
-        put(file, './THETARGETDIRECTORY/')
+        put(file, './mydirectory/')
 
 .. code-block:: console
 
@@ -283,13 +283,13 @@ Executing on remote host
 
     def deploy():
         sudo("~/install_script.py")
-        sudo("mkdir /var/www/new_docroot", user="www-data")
-        sudo("ls /home/jdoe", user=1001)
+        sudo("mkdir /var/www/", user="www-data")
+        sudo("ls /home/watney", user=1001)
         result = sudo("ls /tmp/")
 
-        with settings(sudo_user='mysql'):
-            sudo("whoami")
-            # 'mysql'
+        with settings(sudo_user='root'):
+            sudo('whoami')
+            # 'root'
 
 Host
 ----

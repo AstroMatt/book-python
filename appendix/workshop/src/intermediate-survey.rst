@@ -82,7 +82,7 @@
     * zawsze
     * Uncle Bob to mój bohater
 
-#. Doświadczenie z refactoringiem:
+#. Doświadczenie z refaktoringiem:
 
     * nie robię
     * robię raczej jak jest potrzeba

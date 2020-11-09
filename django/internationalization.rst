@@ -15,12 +15,24 @@ Timezone
     USE_TZ = True
     TIME_ZONE = 'UTC'
 
+
+Gettext
+=======
+* ``.po`` files
+* ``.mo`` files
+* Using ``gettext`` in code
+* Generating translation files
+* Compiling translation files
+* Updating translation files
+* Transifex (``tx push`` and ``tx pull``)
+
+
 i18n - internationalization
 ===========================
-* makemessages -l en
-* compilemessages
-* blocktrans
-* trans templatetag
+* ``django-admin makemessages -l en``
+* ``django-admin compilemessages``
+* ``{% blocktranslate %}`` and ``{% endblocktranslate %}``
+* ``{% translate %}``
 * ``from django.utils.translation import gettext_lazy as _``
 * transifex-client
 * gettext

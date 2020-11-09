@@ -17,7 +17,7 @@ A loose definition of clustering could be "the process of organizing objects int
 
 * When you sort data in unsupervised learning you quite often ends up with looking good at the beginning.
 * When you look at data from different perspective it's not so great.
-* Alghorithms only work when you tell them, how many groups you want data in.
+* Algorithms only work when you tell them, how many groups you want data in.
 
 Przykłady zastosowania
 ======================
@@ -152,7 +152,7 @@ Porównanie algorytmów
     :width: 75%
     :align: center
 
-    Porównanie algorytmów Clusteringu
+    Porównanie algorytmów klastrowania
 
 
 .. code-block:: python
@@ -311,7 +311,7 @@ K-means Clustering dla zbioru Iris
     ax = Axes3D(fig, rect=[0, 0, .95, 1], elev=48, azim=134)
 
     for name, label in [('Setosa', 0),
-                        ('Versicolour', 1),
+                        ('Versicolor', 1),
                         ('Virginica', 2)]:
         ax.text3D(X[y == label, 3].mean(),
                   X[y == label, 0].mean(),
@@ -351,6 +351,6 @@ Klastrowanie zbioru Iris
     .. todo:: English Translation
 
 :Polish:
-    #. Dla zbioru Iris dokonaj klastrowania za pomocą alborytmu ``KMeans`` z biblioteki ``sklearn``.
-    #. Dla jakiego hiperparametru ``n_clusters`` osiągniemy najwięsze accuracy?
+    #. Dla zbioru Iris dokonaj klastrowania za pomocą algorytmu ``KMeans`` z biblioteki ``sklearn``.
+    #. Dla jakiego hiperparametru ``n_clusters`` osiągniemy największe accuracy?
     #. Zwizualizuj graficznie rozwiązanie problemu

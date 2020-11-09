@@ -81,7 +81,7 @@ Cleaning data in database
 .. code-block:: python
 
     from django.core.management.base import BaseCommand
-    from ksiazkaadresowa.models import Person
+    from addressbook.models import Person
 
 
     class Command(BaseCommand):
@@ -98,7 +98,7 @@ Parse file line by line
 .. code-block:: python
 
     from django.core.management.base import BaseCommand
-    from ksiazkaadresowa.models import Person
+    from addressbook.models import Person
 
 
     class Command(BaseCommand):

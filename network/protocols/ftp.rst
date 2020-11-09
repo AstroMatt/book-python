@@ -57,7 +57,7 @@ FTP Download
     #. Połącz się z serwerem podanym przez prowadzącego
     #. Pobierz plik ``README.txt`` z głównego folderu
     #. Do katalogu ``files`` uploaduj plik ``imie-nazwisko.txt``
-    #. Skorzystaj z Contex Managera do połączenia
+    #. Skorzystaj z Context Managera do połączenia
 
 FTP Upload
 ----------
@@ -80,5 +80,5 @@ FTP Upload
 
     #. Połącz się z serwerem podanym przez prowadzącego
     #. Do katalogu ``img`` uploaduj plik pobrany w poprzednim kroku
-    #. Skorzystaj z Contex Managera do połączenia
+    #. Skorzystaj z Context Managera do połączenia
     #. Przesyłanie danych ma odbywać się w trybie binarnym

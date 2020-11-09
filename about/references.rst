@@ -158,13 +158,13 @@ Alex Vogel
 
     Alex Vogel, NASA Astronaut from Andy Weir's book "The Martian"
 
-National Geographic's Mars Crew Members
----------------------------------------
+National Geographic Mars Crew Members
+-------------------------------------
 .. figure:: img/crew-mars-natgeo.jpg
     :width: 75%
     :align: center
 
-    Crew from National Geographic's Mars: Robert Foucault (top left), Javier Delgado (top center), Amelie Durand (top right), Hana Seung (bottom left), Ben Sawyer (bottom center), Marta Kamen (bottom right)
+    Crew from National Geographic Mars: Robert Foucault (top left), Javier Delgado (top center), Amelie Durand (top right), Hana Seung (bottom left), Ben Sawyer (bottom center), Marta Kamen (bottom right)
 
 Martian Movie Crew Members
 --------------------------

@@ -34,10 +34,10 @@ Jak to działa na przykładzie Iris
 #. Poszukujemy :math:`k` obserwacji, które są najbliższe nieznanemu gatunkowi Iris.
 #. Użyj najczęściej pojawiającej się wartości z ":math:`k` najbliższych sąsiadów" jako wartość dla nieznanego Iris.
 
-    * tzn. jeżeli np. dla :math:`k=5` (czyli wśród 5 najbliżyszch Irisów) było 3 Iris Setosa, i po jednym z innych gatunków
+    * tzn. jeżeli np. dla :math:`k=5` (czyli wśród 5 najbliższych Iris) było 3 Iris Setosa, i po jednym z innych gatunków
     * to naszemu nieznanemu gatunkowi przypiszemy Iris Setosa.
 
-#. Najczęściej stosuje się algorytm Eukleidesa do wyznaczania odległości, ale można również i inne algorytmy.
+#. Najczęściej stosuje się algorytm Euklidesa do wyznaczania odległości, ale można również i inne algorytmy.
 
 
 Wykorzystanie ``sklearn.neighbors.KNeighborsClassifier``
@@ -216,10 +216,10 @@ Płeć
         * Foot Size: 8
 
     #. Jaki jest najlepszy parametr :math:`k` dla tego zadania?
-    #. Która z cech ma najwięszy wpływ?
+    #. Która z cech ma największy wpływ?
     #. Czy algorytm lepiej działa z:
 
-        * normalizacją i skalownaiem?
+        * normalizacją i skalowaniem?
         * bez normalizacji i skalowania?
         * tylko z normalizacją?
         * tylko skalowaniem?

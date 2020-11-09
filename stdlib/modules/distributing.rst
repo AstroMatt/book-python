@@ -307,13 +307,13 @@ Artifactory
 
     [pypi]
     repository: https://pypi.org/pypi
-    username: mrBagthrope
-    password: notToBeSeen
+    username: myusername
+    password: mypassword
 
     [local]
     repository: http://localhost:8081/artifactory/api/pypi/pypi-local
-    username: admin
-    password: password
+    username: myusername
+    password: mypassword
 
 .. code-block:: console
 

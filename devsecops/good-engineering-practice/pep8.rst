@@ -166,8 +166,8 @@ Methods/Functions
 
 Modules names
 -------------
-* ``nazwymodulow``
-* ``nazwy_modulow``
+* ``modulename``
+* ``module_name``
 * Preferable one word
 
     .. code-block:: python
@@ -254,17 +254,17 @@ Using ``__`` and ``_`` in names
 
 Single or double quotes?
 ------------------------
-* Python nie rozróżnia czy stosujemy pojedyncze znaki cudzysłowiu czy podwójne.
+* Python nie rozróżnia czy stosujemy pojedyncze znaki cudzysłowu czy podwójne.
 * Ważne jest aby wybrać jedną konwencję i się jej konsekwentnie trzymać.
-* Interpreter Pythona domyślnie stosuje pojedyncze znaki cudzysłowia.
+* Interpreter Pythona domyślnie stosuje pojedyncze znaki cudzysłowu.
 * Z tego powodu w tej książce będziemy trzymać się powyższej konwencji.
 * Ma to znaczenie przy ``doctest``, który zawsze korzysta z pojedynczych i rzuca errorem jak są podwójne
 * For triple-quoted strings, always use double quote characters to be consistent with the docstring convention in :pep:`257`
 
 .. code-block:: python
 
-    print('it\'s José\'s book')
-    print("it's José's book")
+    print('It\'s Watney\'s Mars')
+    print("It is Watney's Mars")
 
 .. code-block:: python
 
@@ -290,24 +290,24 @@ Indents
     # More indentation included to distinguish this from the rest.
     def server(
             host='localhost', port=443, secure=True,
-            username='admin', password='admin'):
+            username='myusername', password='mypassword'):
         return locals()
 
 
     # Aligned with opening delimiter.
     connection = server(host='localhost', port=443, secure=True,
-                        username='admin', password='admin')
+                        username='myusername', password='mypassword')
 
     # Hanging indents should add a level.
     connection = server(
         host='localhost', port=443, secure=True,
-        username='admin', password='admin')
+        username='myusername', password='mypassword')
 
     # The best
     connection = server(
         host='localhost',
-        username='admin',
-        password='admin',
+        username='myusername',
+        password='mypassword',
         port=443,
         secure=True,
     )
@@ -318,13 +318,13 @@ Indents
     # Further indentation required as indentation is not distinguishable.
     def Connection(
         host='localhost', port=1337,
-        username='admin', password='admin'):
+        username='myusername', password='mypassword'):
         return host, port, username, password
 
 
     # Arguments on first line forbidden when not using vertical alignment.
     connection = Connection(host='localhost', port=1337,
-        username='admin', password='admin')
+        username='myusername', password='mypassword')
 
 Brackets
 --------
@@ -412,8 +412,8 @@ Linie możemy łamać poprzez stawianie znaku ukośnika ``\`` na końcu:
 
     server = Server(
         host='localhost',
-        username='admin',
-        password='admin',
+        username='myusername',
+        password='mypassword',
         port=443,
         secure=True,
     )

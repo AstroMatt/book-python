@@ -9,7 +9,7 @@ Rationale
 =========
 * Faster attribute access
 * Space savings in memory (overhead of dict for every object)
-* Prevents from adding new attibutes
+* Prevents from adding new attributes
 * The space savings is from:
 * Store value references in slots instead of ``__dict__``
 * Denying ``__dict__`` and ``__weakref__`` creation if parent classes deny them and you declare ``__slots__``

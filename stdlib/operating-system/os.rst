@@ -559,7 +559,7 @@ Reading configuration
     config.sections()                   # ['bitbucket.org', 'topsecret.server.com']
 
     'bitbucket.org' in config           # True
-    'example.com' in config             # False
+    'myhost.com' in config             # False
 
     config['bitbucket.org']['User']     # 'hg'
     config['DEFAULT']['Compression']    # 'yes'

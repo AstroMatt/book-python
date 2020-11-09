@@ -333,7 +333,7 @@ Visualization
 * https://regexper.com/
 * https://regex101.com/
 
-.. figure:: img/regexp-vizualization.png
+.. figure:: img/regexp-visualization.png
     :width: 75%
     :align: center
 

@@ -41,7 +41,7 @@ from unittest import TestCase
 
 def if_alive(method: Callable) -> Callable:
     @wraps(method)
-    def wrapper(instance: 'Destructable', *args, **kwargs) -> Optional[Callable]:
+    def wrapper(instance: 'Destructible', *args, **kwargs) -> Optional[Callable]:
         if instance.is_alive():
             return method(instance, *args, **kwargs)
         else:
@@ -51,7 +51,7 @@ def if_alive(method: Callable) -> Callable:
 
 def if_dead(method: Callable) -> Callable:
     @wraps(method)
-    def wrapper(instance: 'Destructable', *args, **kwargs) -> Optional[Callable]:
+    def wrapper(instance: 'Destructible', *args, **kwargs) -> Optional[Callable]:
         if instance.is_dead():
             return method(instance, *args, **kwargs)
     return wrapper
@@ -98,7 +98,7 @@ class Status:
 
 
 @dataclass
-class Destructable:
+class Destructible:
     _current_health: int = 0
     _status: Status = Status.ALIVE
 
@@ -130,7 +130,7 @@ class Drop(TypedDict):
 
 
 @dataclass(init=False)
-class Dragon(Movable, Destructable):
+class Dragon(Movable, Destructible):
     TEXTURE_DEAD: str = 'img/dragon/dead.png'
     TEXTURE_ALIVE: str = 'img/dragon/alive.png'
     GOLD_MIN: int = 1
@@ -259,7 +259,7 @@ class MovableTest(TestCase):
             self.dead.position_change(up=1, down=1)
 
 
-class DestructableTest(TestCase):
+class DestructibleTest(TestCase):
     def setUp(self):
         self.alive = Dragon('Alive')
         self.dead = Dragon('Dead')
@@ -396,7 +396,7 @@ class DragonTest(TestCase):
 #-> dragon.set_position(x=10, y=20)
 # dragon.teleport()
 # dragon.fly()
-# dragon.ustawaw_pozycje()
+# dragon.ustaw_pozycje()
 # dragon.x = 10
 # dragon.y = 20
 # dragon.position_x = 10

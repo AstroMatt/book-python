@@ -196,7 +196,7 @@ Ważne pytania przed przystąpieniem do tworzenia algorytmu
 * How is the tree created?
 * What makes a good feature?
 
-.. figure:: img/machine-learninig-steps.png
+.. figure:: img/machine-learning-steps.png
     :width: 75%
     :align: center
 
@@ -251,12 +251,12 @@ Praca z bibliotekami
 Przykład pracy z ``scikit-learn``
 ---------------------------------
 #. Import the class you plan to use
-#. Instanciate the estimator
+#. Instantiate the estimator
 
     * Estimator is the ``scikit-learn`` word for model
-    * Instanciate means create an object from the class
+    * Instantiate means create an object from the class
     * Name of the object does not matter
-    * Can specify the tunning parameters also known as "hyperparameters" during this step
+    * Can specify the tuning parameters also known as "hyperparameters" during this step
     * All parameters not specified are set to their defaults
 
 #. Fit the model with data (aka "model training")
@@ -276,7 +276,7 @@ Przykład pracy z ``scikit-learn``
     # Import the class you plan to use
     from sklearn.neighbours import KNeighboursClassifier()
 
-    # Instanciate the estimator
+    # Instantiate the estimator
     model = KNeighboursClassifier(n_neighbours=1)
 
     # Fit the model with data (aka "model training")
@@ -388,12 +388,12 @@ Example algorithms are extensions to other flexible methods that make assumption
     Semi-Supervised Learning
 
 * połączenie obu światów
-* nie wszystkie dane są olabelkowane
+* nie wszystkie dane mają labele
 * przyszłość machine learning
-* ze względu na wolumen danych, nie wszystkie mogą mieć olabelkowane
+* ze względu na wolumen danych, nie wszystkie mogą labele
 * man (human) in the loop:
 
-    * ekspert labelkuje część danych
+    * ekspert labeluje część danych
     * komputer dokonuje wstępnej analizy części danych
     * przedstawia iterację człowiekowi
     * człowiek interaktywnie poprawia i określa jakość oznaczania

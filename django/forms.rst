@@ -17,13 +17,13 @@ Simple "contact us" form
 .. code-block:: python
 
     class ContactUsView(FormView):
-        template_name = 'ksiazkaadresowa/contact-form.html'
+        template_name = 'addressbook/contact-form.html'
         form_class = ContactUsForm
         success_url = '/thank-you.html'
 
 
     class ThankYouView(TemplateView):
-        template_name = 'ksiazkaadresowa/thank-you.html'
+        template_name = 'addressbook/thank-you.html'
 
 
 
@@ -42,7 +42,7 @@ Simple "contact us" form
             def clean_sender(self):
                 data = self.cleaned_data['sender']
 
-                if "fred@example.com" not in data:
+                if "fred@myhost.com" not in data:
                     raise forms.ValidationError("You have forgotten about Fred!")
 
                 # Always return a value to use as the new cleaned data, even if
@@ -136,7 +136,7 @@ Model Forms
 
 
     class ContactCreate(FormView):
-        template_name = 'ksiazkaadresowa/create.html'
+        template_name = 'addressbook/create.html'
         form_class = PersonForm
         success_url = '/contact.html'
 

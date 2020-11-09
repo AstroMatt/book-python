@@ -17,8 +17,8 @@ Numerical Analysis
 
 Numpy
 -----
-* Poprawić przykłady z argmin i argmax oraz unravel_index()
-* Zrobić rozpiskę, które funkcje zwracają np.arraye a które robią inplace
+* Poprawić przykłady z argmin i argmax oraz ``unravel_index()``
+* Zrobić rozpiskę, które funkcje zwracają ``np.array`` a które robią ``inplace``
 * Poprawić mnożenie macierzowe w np-arithmetic
 * Poprawić array-concatenate
 

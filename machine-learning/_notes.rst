@@ -683,14 +683,14 @@ Recall
     svc = svm.SVC(kernel='rbf', C=1)
 
 * Mapuje funkcję nieliniową na płaszczyznę.
-* Ten problem jest rozsądnie liniowo separowalny i nie warto używać bardziej skąplikowanych modelów, bo może skutkować to przeuczaniem.
+* Ten problem jest rozsądnie liniowo separowalny i nie warto używać bardziej skomplikowanych modelów, bo może skutkować to przeuczaniem.
 * Teraz są popularne modele XGBoost (model drzewiasty)
 * Modele drzewiaste dobrze sobie radzą z cechami dyskretnymi.
 * Cecha dla zgadnięcia tego wyniku jest bardzo silna.
 
-Ensamble
+Ensemble
 --------
-* Ensamble to jest połączenie wielu modeli.
+* Ensemble to jest połączenie wielu modeli.
 * Najczęściej się to stosuje w połączeniu Modeli drzewiastych.
 
 K-Nearest Neighbors
@@ -736,7 +736,7 @@ Duży model SVM może być wolniejszy
 Dobór parametru ``n_neighbors`` zwykle jest na czuja:
 
     * im więcej punktów tym więcej można sąsiadów dobrać
-    * standardowo zaczayna się od 5 lub 3 ale częściej 5
+    * standardowo zaczyna się od 5 lub 3 ale częściej 5
     * różnica pomiędzy 5 a 10 mówi o gęstości punków
     * zbyt duże wartości parametrów niekoniecznie wpływa na jakość
 
@@ -744,18 +744,18 @@ Model bardzo szybko się uczy i klasyfikuje, więc można zmieniać parametry w 
 
 Drzewa decyzyjne
 ----------------
-* Najszczęściej w postaci drzewa binarnego - z dwoma opcjami:
+* Najczęściej w postaci drzewa binarnego - z dwoma opcjami:
 
     * znajdują nam formę klastrów związane z danymi
-    * odzworowują procesy biznesowe
+    * odwzorowują procesy biznesowe
 
 * Entropia - uporządkowanie lub chaotyczność układu
-* Gini Index - używa się jako index ekonomiczny w konktekście nierówności społecznych
+* Gini Index - używa się jako index ekonomiczny w kontekście nierówności społecznych
 
 * Criterion # Indeks informacyjności  # The function to measure the quality of a split:
 
     * criterion='gini'  # Gini impurity (nierówności)
-    * critetion='entropy'  # for the information gain
+    * criterion='entropy'  # for the information gain
 
 * Albo chcesz dużą informacyjność albo dużą nierówność.
 * Przestrzenie decyzyjne są w formie prostokątów ze względu na binarność decyzji:
@@ -777,7 +777,7 @@ Wady:
     * zbyt dużo parametrów, którymi można sterować, co powoduje, że musimy sprawdzić bardzo dużo przypadków
     * best jest greedy algorytm, ale czasami ten podział późniejszy jest istotniejszy niż ten który dopasował na początku.
 
-Zawsze bierze ten który ma najwięszą wartość na wyższym stopniu.
+Zawsze bierze ten który ma największą wartość na wyższym stopniu.
 
 CART - Classification and Regression Trees
 ------------------------------------------
@@ -786,7 +786,7 @@ W drzewach jest dużo parametrów:
     * ograniczanie rozbudowy drzewa
     * podejmowanie losowych decyzji
     * feature_importance
-    * drzewa można nauczyć największej ilości featerów
+    * drzewa można nauczyć największej ilości feature'ów
 
 Kalibracja parametrów modeli
 ----------------------------
@@ -824,7 +824,7 @@ Greed search CV:
     >>> svc.cv_results_
     # można przejrzeć wartości
 
-Splity - podziały crosswalidacyjne
+Splity - podziały kroswalidacyjne
 
 
 Ocena jakości modelu
@@ -873,7 +873,7 @@ Confusion matrix:
     * najlepiej jeżeli na diagonalach jest 0 (to znaczy, że nie popełniliśmy błędów)
 
 
-Jaccard similarity score:
+Jacquard similarity score:
 
     * ile mamy elementów w części wspólnej (unii) zbirów
 
@@ -884,9 +884,9 @@ ROC (receiver operating characteristic):
     * pokazuje jak bardzo klasy są od siebie oddalone
 
 (linia konwolucji - splotu) czyli nachodzenie na siebie rozkładów na wykresie
-miara AUC - Aread under the curve - im bliżej 1.0 tym lepiej
+miara AUC - Area under the curve - im bliżej 1.0 tym lepiej
 
-Zgadywnie jak bardzo dobrze potrafimy klasyfikować poszczególne klasy
+Zgadywanie jak bardzo dobrze potrafimy klasyfikować poszczególne klasy
 
 Jeżeli mamy wiele klas to najczęściej je uśredniamy
 
@@ -896,22 +896,22 @@ Najczęściej:
 
 Dane tekstowe
 -------------
-* Jak zareprezentować tekst, aby można było coś na jego temat powiedzieć?
+* Jak reprezentować tekst, aby można było coś na jego temat powiedzieć?
 * Dane tekstowe zazwyczaj przychodzą w formie dokumentów
 * Najczęściej klasyfikujemy dokumenty i przypisujemy im klasy (spam - nie spam, pozytywny tekst - negatywny)
 
 MTD - Macierz TD (Term-Document):
 
-    * budowanie macieży z każdego słowa w zdaniu
+    * budowanie macierzy z każdego słowa w zdaniu
     * bardzo dużo wierszy i kolumn
     * każde słowo to osobna kolumna, a wartość to ile razy w zdaniu
     * dużo rzadkich danych - słowa wspólne rzadko występują we wszystkich zdaniach
     * trzeba wszystkie dane sprowadzić do małych znaków (inaczej będziemy mieli dużo wersji)
     * odmiana wyrazów ma znaczenie (usuwanie liczb mnogich, fleksja - odmiana słów itp)
-    * trzeba uwzględnić, że w dancyh mogą być literówki
+    * trzeba uwzględnić, że w danych mogą być literówki
     * stemer - odcinanie końcówek (databases utnie do database) - zależne od języka
     * lematyzator - hasłowanie
-    * part of speach tagger - rozpoznawanie części mowy
+    * part of speech tagger - rozpoznawanie części mowy
     * używając stemerów i lemazytorów powoduje utratę informacji (np. zamieniając databases na database, gubimy info o liczbach mnogich)
     * wordnet - słowniki
 
@@ -920,15 +920,15 @@ W klasyfikacji spamu, wielkość liter ma znaczenie
 CountVectorizer()
 HashVectorizer() - częściej wykorzystywany przy dużych danych,
 
-Dają nam sparse matrix czyli lista krotek, gdzie w naszej macieży znajduje się nasz wyraz, jest dużo zer i dlatego nie warto zapamiętywać tych danych a jedynie miejsca gdzie występują unikalne wartości
+Dają nam sparse matrix czyli lista krotek, gdzie w naszej macierzy znajduje się nasz wyraz, jest dużo zer i dlatego nie warto zapamiętywać tych danych a jedynie miejsca gdzie występują unikalne wartości
 
 Problemy tekstowe są generalnie rzadkie, więc często będzie wykorzystywało się sparse matrix
 
-Nie będzie stop list (stop wordów), czyli wyrazów pojawiających się tak często, że nie ma sensu ich analizować (I, and, or, itp) - zależne od języka (trzeba przekazać własną listę stopwordów).`
+Nie będzie stop list (stop wordów), czyli wyrazów pojawiających się tak często, że nie ma sensu ich analizować (I, and, or, itp) - zależne od języka (trzeba przekazać własną listę stopwords).
 
 Można ustawić CountVectorizer(analyzer='word') ale można również ustawić na podział na zdania.
 
-Tokenizacja - podził na wyrazy
+Tokenizacja - podział na wyrazy
 
 NLTK - standardowy do analizy mowy języka polskiego
 Dużo narzędzi do języka polskiego jest w Javie:
@@ -938,7 +938,7 @@ Dużo narzędzi do języka polskiego jest w Javie:
 Słowosieć PLWORDNET
 
 Tokenizator
-Sentence splitter - (splitowanie po kropce, ale nie uwzględnianie skrótów, m.in., itp)
+Sentence splitter - (rozdzielanie po kropce, ale nie uwzględnianie skrótów, m.in., itp)
 Apple może znaczyć jabłko ale również i firmę
 bigram - czyli okolice wyrazu Apple computers wskazuje na firmę
 
@@ -949,7 +949,7 @@ ma w sobie countVectorizer() oraz TfidfTransformer():
     * liczy ile razy coś się pojawiło (dzieli przez ile wyrazów pojawiło się w danym dokumencie)
     * waży się jeszcze przez to ile razy to się pojawiło we wszystkich dokumentach
     * im częściej coś się pojawia we wszystkich dokumentach tym wyraz jest ważniejszy
-    * im żadziej w danym dokumencie coś się pojawiło tym ważniejsze
+    * im rzadziej w danym dokumencie coś się pojawiło tym ważniejsze
 
 Nas interesuje jak często wyraz pojawia się w książce, ale nie ile razy:
 
@@ -961,14 +961,14 @@ Cosine Similarity
 ^^^^^^^^^^^^^^^^^
 * długie wektory wielowymiarowe
 * Czy dokumenty są podobne do siebie? - liczymy cosinus konta wektorów
-* Jeżli naszymi cechami są słowa, to jeżeli w dokuemntach są te same ilości słów - to dokumenty są takie same
+* Jeżeli naszymi cechami są słowa, to jeżeli w dokumentach są te same ilości słów - to dokumenty są takie same
 * uwaga, bo słowa mogą mieć różną kolejność
 * dostajemy macierz (nasze dokumenty) na diagonalach dostajemy podobieństwo dokumentów
 * każdy wiersz tabelki TF-IDF to wektor (ilość słów to liczba wymiarów), wartości to częstości występowania
 * często używana w modelach
 
-Miara Levensteina
-^^^^^^^^^^^^^^^^^
+Miara Levenshteina
+^^^^^^^^^^^^^^^^^^
 * jak bardzo jedna sekwencja jest podobna do drugiej
 * nie obchodzi jej gdzie ta sekwencja występuje
 * wykorzystanie difflib.SequenceMatcher(None, tekst_a, tekst_b).ratio()
@@ -977,10 +977,10 @@ Miara Levensteina
 * często się stosuje do tekstów
 * jest miarą pozycyjną
 
-Miara Jaccarda
-^^^^^^^^^^^^^^
+Miara Jacquarda
+^^^^^^^^^^^^^^^
 * można liczyć na wiele sposobów
-* ile mamy elementów na przecięciu setu
+* ile mamy elementów na przecięciu zbioru
 
 Transformatory i pipeline
 -------------------------
@@ -999,10 +999,10 @@ Sposób na rozszerzanie sklearn
 
 Pipeline
 ^^^^^^^^
-* stosowane do oczyszczania dancyh, np. usuwania liczb mnogich, usuwania ul. os. pl. itp z nazw ulic
-* jezeli jest coś bardziej skomplikowanego, to lepiej użyć klasy dziedziczącej po BaseEstimator i FunctionTransformer
+* stosowane do oczyszczania danych, np. usuwania liczb mnogich, usuwania ul. os. pl. itp z nazw ulic
+* jeżeli jest coś bardziej skomplikowanego, to lepiej użyć klasy dziedziczącej po BaseEstimator i FunctionTransformer
 
-Klasyfikacja dancyh tekstowych
+Klasyfikacja danych tekstowych
 ------------------------------
 * SMS Spam Collection (https://archive.ics.uci.edu/ml/machine-learning-databases/00228/smsspamcollection.zip)
 * Dane są jako TSV (Tab Separated Values)
@@ -1011,7 +1011,7 @@ Naive Bayes
 -----------
 * Naive dlatego, że uznaje wszystkie cechy za liniowo niezależne
 * dla dokumentów tekstowych jest to bardzo poprawne
-* prawdopodobieństwo jest nie tylko zależne od tego ile razy wystąpiło, ale również z naszą wiedzą ekspertcką
+* prawdopodobieństwo jest nie tylko zależne od tego ile razy wystąpiło, ale również z naszą wiedzą ekspercką
 
 .. code-block:: python
 
@@ -1041,7 +1041,7 @@ Modelowanie tematów
 -------------------
 * uczenie bez nadzoru
 * gensim i model LDA (Latent Dirichlet Allocation)
-* pakiet nie usuwa stopwordów
+* pakiet nie usuwa stopwords
 
 Metody bez nadzoru
 ==================
@@ -1057,14 +1057,14 @@ Metody bez nadzoru
 * K-Means jest prosty obliczeniowo
 
 * Dendrogramy - drzewa - przy klastrowaniu hierarchicznym możemy odcinać drzewa klastrów w hierarchii na interesującym nas poziomie zagnieżdżenia
-* Dendrogram - rysunej hierarhiczności klastrów w postaci drzewa
+* Dendrogram - rysunek hierarchiczności klastrów w postaci drzewa
 
 * Jeżeli nie wiemy ile klastrów, to lepiej zacząć od budowania dendrogramów i zobaczenie jak dane są połączone
 
 * K-Means nie bierze geometrii - tylko odległość
 * Klastry Aglomeracyjne
 
-Dryft - zmiana w danych (np. przy mierzeniu ilości ruchu (w ciągu dnia możemy mnieć mniej wrażliwy system, a w nocy bardziej wrażliwy na pojedyńcze alarmy)
+Dryft - zmiana w danych (np. przy mierzeniu ilości ruchu (w ciągu dnia możemy mieć mniej wrażliwy system, a w nocy bardziej wrażliwy na pojedyncze alarmy)
 
 * Stabilizacja klastrów
 * Adaptowanie modelu
@@ -1083,15 +1083,15 @@ PCA
     pca.explained_variance_ratio_
 
 * System jest odwrócony względem wektorów
-* Składa ze sobą wartości skorelowane, np. jeżeli długość działki rośnie to prawdopodonie i szerokość również, PCA złączy je ze sobą
+* Składa ze sobą wartości skorelowane, np. jeżeli długość działki rośnie to prawdopodobnie i szerokość również, PCA złączy je ze sobą
 
 Sieci neuronowe
 ---------------
 * Detekcja sentymentów na podstawie wyrazu twarzy która patrzy na reklamę
 * SKLearn nie jest narzędziem deeplearningowym, ale ma w sobie zaimplementowane sieci neuronowe
 * Sieci neuronowe są dość trudne w porównaniu z innymi rodzajami
-* Przy analizie obrazu na wejściu są pixele w skali szarości.
-* ``matshow`` (część ``plt.subplot`` pokazuje macież jako obrazek
+* Przy analizie obrazu na wejściu są piksele w skali szarości.
+* ``matshow`` (część ``plt.subplot`` pokazuje macierz jako obrazek
 * Sieć neuronowa uczy się backpropagation w każdym przejściu sieci
 * Większość sieci bazuje na obrazkach 300x300 px
 * Preprocessing:
@@ -1109,7 +1109,7 @@ Pojęcia
 * warstwy ukryte
 * warstwa wyjściowa
 * Przestrzeń wag
-* SGD - Stocastic Gradient Descent
-* Backpopagation
+* SGD - Stochastic Gradient Descent
+* Backpropagation
 * Epoki (kolejne przejścia dla propagacji)
 * Label detection - wykrywanie cech z obrazka

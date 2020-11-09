@@ -242,7 +242,7 @@ Example 1
 
 Example 2
 ---------
-* Jeżeli skrypt wywoływany jest z konsoli "z ręki" to uruchom funckję ``run()``
+* Jeżeli skrypt wywoływany jest z konsoli "z ręki" to uruchom funkcję ``run()``
 * Jeżeli został zaimportowany, to ten fragment będzie zignorowany
 * I trzeba uruchomić funkcję ``run()`` samodzielnie - kontrolowanie
 

@@ -22,7 +22,7 @@ Przykład praktyczny
 ===================
 Jak odróżnić jabłko od pomarańczy?
 
-* ilość pixeli pomarańczowych i ich stosunek do zielonych/czerwonych
+* ilość pikseli pomarańczowych i ich stosunek do zielonych/czerwonych
 * co z czarno białymi zdjęciami?
 * co ze zdjęciami bez jabłek i pomarańczy
 
@@ -66,7 +66,7 @@ Weight  Texture  Label
 
 .. code-block:: python
 
-    # Imput to the classifier
+    # Input to the classifier
     features = [
        [170, 'bumpy'],
        [150, 'bumpy'],
@@ -81,7 +81,7 @@ Weight  Texture  Label
 
     .. code-block:: python
 
-        # Imput to the classifier
+        # Input to the classifier
         # 0: bumpy
         # 1: smooth
         features = [
@@ -144,7 +144,7 @@ What Makes a Good Feature?
     Is this a good feature for classifier? Why?
 
 * Avoid useless features, it might lower classifier accuracy.
-* Independent features are the best. Aviod redundant features.
+* Independent features are the best. Avoid redundant features.
 * Dependent features looks like this:
 
     * Height in inches
@@ -172,7 +172,7 @@ Feature Engineering
 :Polish:
     #. Celem zadania będzie opracowanie tabeli, cech osób, które czynią z niego astronautę.
     #. Istotne jest dobranie odpowiednich kolumn cech oraz wpisanie wartości
-    #. Dane kontr-argumentowe możesz dobrać dowolnie
+    #. Dane kontrargumentowe możesz dobrać dowolnie
     #. Na podstawie danych wybranych astronautów:
 
         * https://github.com/AstroMatt/astroBio/tree/master/raw
@@ -207,11 +207,11 @@ Feature Engineering
         from sklearn import preprocessing
         from sklearn.ensemble import ExtraTreesClassifier
 
-        # Normaize the features so that it does not affect the learning algorithm
+        # Normalize the features so that it does not affect the learning algorithm
         preprocessing.normalize(features)
         preprocessing.scale(features)
 
-        # Fit the Tree alogorithm
+        # Fit the Tree algorithm
         # This class implements a meta estimator that fits a number of randomized decision trees (a.k.a. extra-trees) on various sub-samples of the dataset and use averaging to improve the predictive accuracy and control over-fitting.
         model = ExtraTreesClassifier()
         model.fit(features, labels)

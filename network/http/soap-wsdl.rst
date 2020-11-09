@@ -140,7 +140,7 @@ WSDL Binding to SOAP
        <soap:binding style="document"
        transport="http://schemas.xmlsoap.org/soap/http" />
        <operation>
-         <soap:operation soapAction="http://example.com/getTerm"/>
+         <soap:operation soapAction="http://myhost.com/getTerm"/>
          <input><soap:body use="literal"/></input>
          <output><soap:body use="literal"/></output>
       </operation>
@@ -165,7 +165,7 @@ Example WSDL file
        <types>
           <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
                     xmlns="http://www.tmsws.com/wsdl20sample"
-                    targetNamespace="http://www.example.com/wsdl20sample">
+                    targetNamespace="http://www.myhost.com/wsdl20sample">
 
              <xs:element name="request"> ... </xs:element>
              <xs:element name="response"> ... </xs:element>
@@ -199,10 +199,10 @@ Example WSDL file
        <service name="Service1" interface="tns:Interface1">
           <endpoint name="HttpEndpoint"
                     binding="tns:HttpBinding"
-                    address="http://www.example.com/rest/"/>
+                    address="http://www.myhost.com/rest/"/>
           <endpoint name="SoapEndpoint"
                     binding="tns:SoapBinding"
-                    address="http://www.example.com/soap/"/>
+                    address="http://www.myhost.com/soap/"/>
        </service>
     </description>
 
@@ -259,7 +259,7 @@ Example WADL
 
     from suds.client import Client
 
-    client = Client("http://example.com/foo.wsdl")
+    client = Client("http://myhost.com/foo.wsdl")
     client.service.someMethod(someParameter)
 
 .. code-block:: python
@@ -289,7 +289,7 @@ Example WADL
     from zeep import Client
 
     client = Client('http://www.webservicex.net/ConvertSpeed.asmx?WSDL')
-    result = client.service.ConvertSpeed(100, 'kilometersPerhour', 'milesPerhour')
+    result = client.service.ConvertSpeed(100, 'kilometersPerHour', 'milesPerHour')
 
     assert result == 62.137
 

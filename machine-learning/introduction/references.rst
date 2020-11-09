@@ -4,13 +4,22 @@
 References
 **********
 
+
+Data Visualization
+==================
+* https://www.data-to-viz.com/#explore
+* https://www.data-to-viz.com/img/poster/poster_big.png
+
+
 Neural Networks
 ===============
 * https://www.youtube.com/watch?v=oYbVFhK_olY&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v&index=43
 
+
 Understanding the Bias-Variance Tradeoff
 ========================================
 * http://scott.fortmann-roe.com/docs/BiasVariance.html
+
 
 Bayes
 =====
@@ -22,6 +31,7 @@ PyMC3
 =====
 * https://www.youtube.com/watch?v=5TyvJ6jXHYE
 
+
 Inne
 ====
 .. raw:: html
@@ -29,21 +39,21 @@ Inne
     <ul>
     <li>
     <b><a href="http://www.ics.uci.edu/~mlearn/MLRepository">UCI Machine Learning
-    Repository</a></b>&nbsp; Baza danych zawierajacą testowe problemy ML i
+    Repository</a></b>&nbsp; Baza danych zawierającą testowe problemy ML i
     zbiory uczące</li>
 
     <li>
     <b><a href="http://www.aic.nrl.navy.mil/~aha/research/machine-learning.html">David
     W. Aha: Machine Learning Page</a></b> Bardzo dobry przegląd informacji
-    nt Uczenia Maszynowego, duzo WWW linków</li>
+    nt Uczenia Maszynowego, dużo WWW linków</li>
 
 
     <li>
     <b><a href="http://id001.wkap.nl/mach/ml_links.htm">ML Online Net Info</a></b>.
-    Bardzo duzo uzytecznych WWW linkow, itp.</li>
+    Bardzo dużo użytecznych WWW odnośników, itp.</li>
 
     <li>
-    <b><a href="http://www.gmd.de/ml-archive">MLnet Machine Learning Archieve
+    <b><a href="http://www.gmd.de/ml-archive">MLnet Machine Learning Archive
     at GMD</a></b>. Informacje o ML konferencjach, badaniach, nauczaniu, software,
     zbiorach danych, itp.</li>
 
@@ -53,7 +63,7 @@ Inne
 
     <li>
     <b><a href="http://www.cs.cmu.edu/~tom/mlbook.html">Machine Learning textbook</a></b>
-    Ksiażka Mitchella - duzo ciekawach materiałów, slajdy wykladów</li>
+    Książka Mitchella - dużo ciekawych materiałów, slajdy wykładów</li>
 
     <li>
     <b><a href="http://www.swi.psy.uva.nl/mlteach/index.html">SWI/IFIP Machine
@@ -66,19 +76,19 @@ Inne
 
     <li>
     <b><a href="http://ijon.acn.waw.pl/~pawel/ml.html">Pawel Cichosz--Machine
-    Learning Page</a></b> Jedna z niewielu polskich stron poswięcona ML - strony przygotowane przez Pawła Cichosza,
-    zawierające dużo materiałów związanych z jego książką <a hreg="http://ijon.acn.waw.pl/~pawel/SU/su.html">"Systemy uczące się"</a>,
+    Learning Page</a></b> Jedna z niewielu polskich stron poświęcona ML - strony przygotowane przez Pawła Cichosza,
+    zawierające dużo materiałów związanych z jego książką <a href="http://ijon.acn.waw.pl/~pawel/SU/su.html">"Systemy uczące się"</a>,
     notatki do prowadzonych wykładów, zadania i programy.</li>
 
     <li>
-    <b><a href="http://www.phys.uni.torun.pl/~duch/">Wodzislaw Duch Home page</a></b>&nbsp;
+    <b><a href="http://www.phys.uni.torun.pl/~duch/">Wodzisław Duch Home page</a></b>&nbsp;
     - strona utrzymywana przez Profesora Wodzisława Ducha zawierająca dużo interesujących odnośników
     do innych stron WWW na temat systemów uczących się, sieci neuronowych, neurobiologii, kognitywistyki
     i dziedzin pokrewnych.</li>
 
     <li>
     <b><a href="http://www.cs.cmu.edu:8001/afs/cs.cmu.edu/user/mitchell/ftp/mlj.html">Machine
-    Learning Journal</a></b>. Najważniejsze czasopismo poswięcone ML.</li>
+    Learning Journal</a></b>. Najważniejsze czasopismo poświęcone ML.</li>
 
     <li>
     <b><a href="http://www.cs.washington.edu/research/jair/home.html">Journal

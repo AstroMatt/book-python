@@ -27,7 +27,7 @@ Glossary
             Process related to categorization, the process in which ideas and objects are recognized, differentiated, and understood.
 
         Classifier
-            A mapping from unlabeled instances to (discrete) classes. Classifiers have a form (e.g., decision tree) plus an interpretation procedure (including how to handle unknowns, etc.). Some classifiers also provide probability estimates (scores), which can be thresholded to yield a discrete class decision thereby taking into account a utility function.
+            A mapping from unlabeled instances to (discrete) classes. Classifiers have a form (e.g., decision tree) plus an interpretation procedure (including how to handle unknowns, etc.). Some classifiers also provide probability estimates (scores), which can be threshold to yield a discrete class decision thereby taking into account a utility function.
 
         Cluster
             Group of loosely coupled objects that belongs to the same category
@@ -82,7 +82,7 @@ Glossary
             A schema and a set of instances matching the schema. Generally, no ordering on instances is assumed. Most machine learning work uses a single fixed-format table.
 
         Decision Boundary
-            In a statistical-classification problem with two classes, a decision boundary or decision surface is a hypersurface that partitions the underlying vector space into two sets, one for each class. The classifier will classify all the points on one side of the decision boundary as belonging to one class and all those on the other side as belonging to the other class.
+            In a statistical-classification problem with two classes, a decision boundary or decision surface is a hyper-surface that partitions the underlying vector space into two sets, one for each class. The classifier will classify all the points on one side of the decision boundary as belonging to one class and all those on the other side as belonging to the other class.
 
             A decision boundary is the region of a problem space in which the output label of a classifier is ambiguous.
 

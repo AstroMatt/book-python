@@ -43,8 +43,8 @@ Test URLs
 
         def setUp(self):
             self.logger = logging.getLogger(__name__)
-            self.user = User.objects.create_superuser('testrunner', 'test@test.com', 'testrunner')
-            self.client.login(username='testrunner', password='testrunner')
+            self.user = User.objects.create_superuser('test', 'test@test.com', 'test')
+            self.client.login(username='test', password='test')
 
         def tearDown(self):
             self.client.logout()

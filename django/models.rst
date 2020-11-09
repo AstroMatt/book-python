@@ -113,7 +113,7 @@ Migrate
 
 Example Model
 =============
-.. literalinclude:: src/django-models-exmaple.py
+.. literalinclude:: src/django-models-example.py
     :language: python
     :caption: Example Model
 
@@ -157,9 +157,9 @@ Address Book
         * Email (do wyboru typ: domowy, praca, komórka)
         * Adres
 
-    #. Osoba może mieć wiele adresów, telefonów i emaili
+    #. Osoba może mieć wiele adresów, telefonów i e-maili
     #. Wygeneruj panel administracyjny
-    #. Moża wylistować kontakty i na głównym ekranie widoczne są podstawowe pola osoby
+    #. Można wypisać kontakty i na głównym ekranie widoczne są podstawowe pola osoby
     #. Dodaj wyszukiwarkę po nazwisku
     #. Dodaj filtrowanie po dacie urodzenia
 

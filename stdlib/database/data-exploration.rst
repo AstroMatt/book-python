@@ -56,7 +56,7 @@ Configuration
     SUPERSET_WEBSERVER_PORT = 8088
 
     # Change this for your setup
-    SECRET_KEY = '\2\1thisismyscretkey\1\2\e\y\y\h'
+    SECRET_KEY = '\2\1myscretkey\1\2\e\y\y\h'
 
     # Superset configuration database only
     # Datasources are managed in the web UI

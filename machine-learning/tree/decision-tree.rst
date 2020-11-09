@@ -14,7 +14,7 @@ Decision Tree
 
     from sklearn import tree
 
-    # Imput to the classifier
+    # Input to the classifier
     # as of Scikit-learn uses real-valued features, we use:
     # 0: bumpy
     # 1: smooth
@@ -140,7 +140,7 @@ Visualizing a Decision Tree
     # ['setosa' 'versicolor' 'virginica']
 
 
-    # Vizualization of Decision Tree Classifier
+    # Visualization of Decision Tree Classifier
     from sklearn.externals.six import StringIO
     import pydotplus
 
@@ -159,11 +159,11 @@ Visualizing a Decision Tree
     graph.write_pdf('/tmp/iris.pdf')
 
 
-.. figure:: img/decistion-tree-iris.png
+.. figure:: img/decision-tree-iris.png
     :width: 75%
     :align: center
 
-    Vizualization of Decision Tree Classifier
+    Visualization of Decision Tree Classifier
 
 
 Zadania praktyczne
@@ -200,7 +200,7 @@ Zwizualizuj drzewo decyzyjne
 
 Banknoty
 --------
-Na podstawie datasetu 1372 banknotów z 5 wartościami numerycznymi pobranymi z obrazu odpowiedz czy dany banknot jest prawdziwy wykorzystując algorymt drzewa decyzyjnego.
+Na podstawie dataset 1372 banknotów z 5 wartościami numerycznymi pobranymi z obrazu odpowiedz czy dany banknot jest prawdziwy wykorzystując algorytm drzewa decyzyjnego.
 
     * variance of Wavelet Transformed image (continuous).
     * skewness of Wavelet Transformed image (continuous).

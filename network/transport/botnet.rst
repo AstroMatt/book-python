@@ -19,7 +19,7 @@ Mini Botnet
 
     * Heartbeat Receiver - server przyjmujący informacje o ofiarach (czy wciąż żyją i jakie mają backdoory),
     * Victim - ofiara,
-    * Attacket - atakujący.
+    * Attacker - atakujący.
 
 .. figure:: img/botnet.png
     :name: figure-botnet
@@ -69,7 +69,7 @@ Victim
 :Polish:
     #. Po zainfekowaniu otwiera randomowy port TCP (backdoor) z przedziału 1025-65535 na którym nasłuchuje komunikatów
     #. Dlaczego taki zakres portów?
-    #. Co 5 sekund wysyła informację ze swoim numerem portu backdoor oraz swoim adresem IP do Heartbeat Receivera
+    #. Co 5 sekund wysyła informację ze swoim numerem portu backdoor oraz swoim adresem IP do Heartbeat Receiver
     #. Po otrzymaniu komunikatu XML na port backdoora wykonuje operację w nim zawarte
     #. Ofiara ma przesyłać JSON atakującemu w formacie:
 
@@ -77,7 +77,7 @@ Victim
         * ``host: str``,
         * ``port: int``,
         * ``stdout: str``,
-        * ``stderror: str``.
+        * ``stderr: str``.
 
     #. Stwórz dekorator ``is_valid_xml``, który sprawdzi czy XML się waliduje (czy ma poprawną strukturę) i tylko wtedy wykona polecenia
     #. Stwórz dekorator ``log_incoming_requests``, który zapisze do pliku ``botnet.log`` logi w formacie ``Request from IP:PORT to execute COMMAND ARGUMENTS`` dla każdego polecenia wykonywanego na systemie ofiary
@@ -141,7 +141,7 @@ Attacker
     * ``json.dumps()``, ``json.loads()``
 
 :Extra task:
-    Za pomocą ``Django`` stwórz panel administracyjny dla botnetu:
+    Za pomocą ``Django`` stwórz panel administracyjny dla botnet:
 
     * Wyszukiwanie aktywnych hostów
     * ``command``

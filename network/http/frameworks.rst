@@ -15,13 +15,13 @@ HTTP Frameworks
 
     jira = Jira(
         url='http://localhost:8080',
-        username='admin',
-        password='admin')
+        username='myusername',
+        password='mypassword')
 
     confluence = Confluence(
         url='http://localhost:8090',
-        username='admin',
-        password='admin')
+        username='myusername',
+        password='mypassword')
 
 
     JQL = 'project = DEMO AND status NOT IN (Closed, Resolved) ORDER BY issuekey'
@@ -173,7 +173,7 @@ webapp2 is a lightweight Python web framework compatible with Google App Engineâ
 
 .. code-block:: yaml
 
-    application: helloworld
+    application: myapp
     version: 1
     runtime: python27
     api_version: 1

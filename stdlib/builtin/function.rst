@@ -236,7 +236,7 @@ Konwersje typów
 
 ``oct()``
 ---------
-* Konwertuje liczbę na octalną
+* Konwertuje liczbę na oktalną
 * Przydatne do uprawnień w systemie operacyjnym
 
 .. code-block:: python
@@ -245,7 +245,7 @@ Konwersje typów
 
 ``ord()``
 ---------
-Zwraca kod ASCII jednoznakowego stringa.
+Zwraca kod ASCII jedno-znakowego stringa.
 
 .. code-block:: python
 

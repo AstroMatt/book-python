@@ -527,7 +527,7 @@ Generate HTML
 Slides
 ------
 #. View -> Cell Toolbar -> Slideshow
-#. Select slides, subslides and speaker notes
+#. Select slides, sub-slides and speaker notes
 #. File -> Save and Checkpoint
 #. File -> Download as -> Reveal.js slides (.slides.html)
 

@@ -184,7 +184,7 @@ Use cases
     from enum import IntEnum
 
     class IndexDrives(IntEnum):
-        """ This enum holds the index value of drive object entrys
+        """ This enum holds the index value of drive object entries
         """
         ControlWord = 0x6040
         StatusWord = 0x6041

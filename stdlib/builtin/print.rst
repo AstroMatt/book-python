@@ -568,18 +568,15 @@ Quick and easy debugging
 
 .. code-block:: python
 
-    user = 'eric_idle'
-    member_since = date(1975, 7, 31)
-
-    f'{user=} {member_since=}'
-    # "user='eric_idle' member_since=datetime.date(1975, 7, 31)"
-
-.. code-block:: python
-
+    astronaut = 'Watney'
+    date_of_birth = date(1975, 7, 31)
     delta = date.today() - member_since
 
-    f'{user=!s}  {delta.days=:,d}'
-    # 'user=eric_idle  delta.days=16,075'
+    f'{user=} {member_since=}'
+    # "astronaut='Watney' date_of_birth=datetime.date(1975, 7, 31)"
+
+    f'{astronaut=!s}  {delta.days=:,d}'
+    # 'astronaut=Watney  delta.days=16,075'
 
 .. code-block:: python
 

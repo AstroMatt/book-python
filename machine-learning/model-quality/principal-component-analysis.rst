@@ -102,7 +102,7 @@ PCA dla zbioru Iris
     plt.cla()
 
 
-    for name, label in [('Setosa', 0), ('Versicolour', 1), ('Virginica', 2)]:
+    for name, label in [('Setosa', 0), ('Versicolor', 1), ('Virginica', 2)]:
         ax.text3D(
             features[labels == label, 0].mean(),
             features[labels == label, 1].mean() + 1.5,

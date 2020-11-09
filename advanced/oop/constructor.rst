@@ -243,8 +243,8 @@ Do not trigger methods for user
 
     localhost = Server(
         host='localhost',
-        username='admin',
-        password='admin')
+        username='myusername',
+        password='mypassword')
 
 .. code-block:: python
     :caption: Let user to call method
@@ -261,8 +261,8 @@ Do not trigger methods for user
 
     localhost = Server(
         host='localhost',
-        username='admin',
-        password='admin')
+        username='myusername',
+        password='mypassword')
 
     localhost.connect()
 

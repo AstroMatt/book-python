@@ -53,7 +53,7 @@ Factory
         cls = {
             'setosa': Setosa,
             'versicolor': Versicolor,
-            'viriginica': Virginica,
+            'virginica': Virginica,
         }.get(species, None)
 
         if not cls:
@@ -80,7 +80,7 @@ Factory
         return {
             'setosa': Setosa,
             'versicolor': Versicolor,
-            'viriginica': Virginica,
+            'virginica': Virginica,
         }.get(species, None)
 
     iris = factory('setosa')
