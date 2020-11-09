@@ -31,6 +31,7 @@ class UDPHandler(BaseRequestHandler):
         data = json.loads(self.request[0])
         log.info(f'Received ping from {host}:{port}/UDP')
 
+        # noinspection PyShadowingNames
         with sqlite3.connect('botnet.sqlite3') as db:
             db.execute('INSERT INTO ping VALUES (NULL, :datetime, :host, :port)', {
                 'datetime': datetime.now(tz=timezone.utc),
@@ -41,6 +42,5 @@ class UDPHandler(BaseRequestHandler):
 
 if __name__ == '__main__':
     log.info(f'Listening for pings on {HOST}:{PORT}/UDP...')
-
     listener = ThreadingUDPServer((HOST, PORT), UDPHandler)
     listener.serve_forever()

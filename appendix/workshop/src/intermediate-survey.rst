@@ -4,13 +4,13 @@
     * tworzyłem pomniejsze programy / skrypty (wymagane szkolenie :ref:`Python Basics Agenda` przed zapisem)
     * mam na koncie kilka aplikacji, ale raczej nic dużego (wymagane szkolenie :ref:`Python Basics Agenda` przed zapisem)
     * w ciągu ostatnich dwóch lat byłem współautorem większego systemu (ponad 500k LOC)
-    * programuję na codzień
+    * programuję na co dzień
     * jestem zaawansowanym programistą i programuję systemy rozproszone
 
 #. Doświadczenie z paradygmatem obiektowym:
 
     * żadnego
-    * kiedyś coś było, ale nie wykorzystuję tego na codzień
+    * kiedyś coś było, ale nie wykorzystuję tego na co dzień
     * programuję obiektowo codziennie, wiem co to klasa, metody, właściwości (pola), dziedziczenie, kompozycja, polimorfizm,
     * wykorzystuję polimorfizm i dziedziczenie / kompozycję na co dzień
 
@@ -38,7 +38,7 @@
     * Nie, ale chcę się nauczyć
     * Tak, miałem kiedyś okazję stworzyć taki program
     * Tak, tworzę je często
-    * Tak, tworzę je na codzień
+    * Tak, tworzę je na co dzień
     * Pracowałem w Xerox jak Steve Jobs wpadł z wizytą
 
 #. Jakie masz doświadczenie z systemem Linux:
@@ -46,7 +46,7 @@
     * nigdy nie korzystałem
     * słabe, umiem się poruszać w trybie graficznym
     * znam Linuxa i korzystam z wiersza poleceń
-    * wykorzystuję Linuxa na codzień
+    * wykorzystuję Linuxa na co dzień
     * koduję kernela razem w piwnicy z Linusem Torvaldsem
 
 #. Czy tworzyłeś systemy webowe:

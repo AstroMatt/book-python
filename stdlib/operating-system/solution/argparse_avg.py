@@ -7,7 +7,7 @@ def avg(*args):
 
 parser = ArgumentParser()
 parser.add_argument('--numbers', nargs='+', type=float)
-args = parser.parse_args()
+arguments = parser.parse_args()
 
-result = avg(*args.numbers)
+result = avg(*arguments.numbers)
 print(result)

@@ -24,8 +24,8 @@ Numpy
 
 Pandas
 ------
-* Zrobić rozpiskę, które funkcje zwracają np.arraye a które robią inplace
-* poprawić przykłady z pd.DataFrame.fill() bfill oraz ffill
+* Zrobić rozpiskę, które funkcje zwracają ``np.array`` a które robią inplace
+* poprawić przykłady z ``pd.DataFrame.fill()``, ``bfill`` oraz ``ffill``
 * df.read_csv('filename.csv', chunksize=5) # five rows at a time, przydatne gdy czytasz plik np. 20GB
 * for df in df.read_csv('filename.csv', chunksize=5): print(df)
 * df[~...] # ~ - zaprzeczenie warunku
@@ -73,7 +73,7 @@ Python PEP
 * type_check decorator, sprawdzający ``function.__annotations__``
 * dict(keys=[...], values=[...])
 * time().now()
-* from pprint import pprint, print(pretty=True) (albo podawanie formattera)
+* from pprint import pprint, print(pretty=True) (albo podawanie formatter)
 * JSON datetime encoder, decoder to isoformat (UTC)
 * from datetime import parse(str, format)
 * from datetime import format(str, format)

@@ -546,10 +546,10 @@ XPATH
 .. code-block:: python
 
     print(html.xpath("string()")) # lxml.etree only!
-    # TEXTTAIL
+    # IrisSetosa
 
     print(html.xpath("//text()")) # lxml.etree only!
-    # ['TEXT', 'TAIL']
+    # ['Iris', 'Setosa']
 
 
 XSLT
