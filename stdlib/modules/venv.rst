@@ -141,6 +141,11 @@ Good practices
         export PS1="\n${blue}${project_name}> ${white}"
 
 
+Further Reading
+===============
+* https://github.com/pypa/virtualenv/issues/2007
+
+
 Assignments
 ===========
 
