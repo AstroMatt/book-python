@@ -23,7 +23,7 @@ Create
 .. code-block:: console
 
     $ cd PROJECT
-    $ python -m venv DIRECTORY
+    $ python3.9 -m venv DIRECTORY
 
 .. code-block:: console
     :caption: Example
