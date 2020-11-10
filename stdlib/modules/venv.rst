@@ -6,17 +6,18 @@ Module venv
 
 
 
-``venv`` Module
-===============
-* What is ``venv``
-* Isolated Python installation for project
-* Allows to have multiple versions of Python for one project (i.e. for testing)
-* Allows to test libraries and frameworks before upgrading
+Rationale
+=========
+* Bundled with Python since 3.3
+* Isolated Python environment
+* Allows to have multiple versions of Python for one project
+* For testing on different versions: ``py37``, ``py38``, ``py39``, ``py310a1``
+* Test libraries and frameworks before upgrading (create venv, install requirements, run tests, delete if fails)
 * Allows to have different versions of libraries and frameworks for each project
 
 
-Create ``venv``
-===============
+Create
+======
 * ``DIRECTORY`` is the name of venv folder (see "Directory Naming Convention" below)
 
 .. code-block:: console
@@ -24,8 +25,34 @@ Create ``venv``
     $ cd PROJECT
     $ python -m venv DIRECTORY
 
+.. code-block:: console
+    :caption: Example
+
+    $ cd PROJECT
+    $ python3.9 -m venv venv-3.9.0
+
+
+Activate
+========
+* ``Scripts`` for Windows
+* ``bin`` for macOS, Linux, BSD
+* Note the direction of slash and backslash (OS dependent)
+
+.. code-block:: console
+    :caption: Windows
+
+    $ cd PROJECT
+    $ venv-3.9.0\Scripts\activate.bat
+
+.. code-block:: console
+    :caption: macOS, Linux, BSD
+
+    $ cd PROJECT
+    $ venv-3.9.0/bin/activate
+
+
 Directory Naming Convention
----------------------------
+===========================
 * No standard naming convention
 * Naming directory like module (``venv``) name is a good idea
 * Adding Python version is also a good practice
@@ -98,28 +125,6 @@ Directory Naming Convention
     :caption: This convention is from ``virtualenv-wrapper`` module (mostly used in Python 2)
 
     ~/.virtualenv/PROJECT_NAME/
-
-Example
--------
-.. code-block:: console
-
-    $ cd PROJECT
-    $ python3.9 -m venv venv-3.9.0
-
-
-Activate Virtualenv
-===================
-.. code-block:: console
-    :caption: Windows
-
-    $ cd PROJECT
-    $ venv-3.9.0\Scripts\activate.bat
-
-.. code-block:: console
-    :caption: macOS, Linux, BSD
-
-    $ cd PROJECT
-    $ venv-3.9.0/bin/activate
 
 
 Good practices
