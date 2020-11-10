@@ -102,7 +102,7 @@ Directory Naming Convention
 Example
 -------
 .. code-block:: console
-s
+
     $ cd PROJECT
     $ python3.9 -m venv venv-3.9.0
 
