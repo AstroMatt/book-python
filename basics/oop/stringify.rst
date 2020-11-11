@@ -179,6 +179,37 @@ Format
 
 .. code-block:: python
 
+    SECOND = 1
+    MINUTE = 60 * SECOND
+    HOUR = 60 * MINUTE
+    DAY = 24 * HOUR
+
+
+    class Duration:
+        def __init__(self, seconds):
+            self.seconds = seconds
+
+        def __format__(self, unit):
+            if unit in ('s', 'sec', 'seconds'):
+                result = self.seconds / SECOND
+            elif unit in ('m', 'min', 'minutes'):
+                result = self.seconds / MINUTE
+            elif unit in ('h', 'hr', 'hours'):
+                result = self.seconds / HOUR
+            elif unit in ('d', 'days'):
+                result = self.seconds / DAY
+            return str(round(result, 2))
+
+
+    duration = Duration(seconds=3600)
+
+    print(f'Duration: {duration:sec} seconds')
+    print(f'Duration: {duration:min} minutes')
+    print(f'Duration: {duration:hours} hours')
+    print(f'Duration: {duration:days} days')
+
+.. code-block:: python
+
     class Temperature:
         def __init__(self, kelvin):
             self.kelvin = kelvin
