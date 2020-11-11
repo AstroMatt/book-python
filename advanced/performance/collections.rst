@@ -49,6 +49,7 @@ This module implements specialized container data types providing alternatives t
     dict(jose)
     {'firstname': 'José', 'lastname': 'Jiménez', 'agency': 'NASA'}
 
+
 ``namedtuple``
 ==============
 .. code-block:: python
@@ -117,6 +118,42 @@ Counter
 
     counter.most_common(5)
     # [(7, 12), (4, 8), (9, 6), (1, 5), (2, 4)]
+
+
+DefaultDict
+===========
+.. code-block:: python
+
+    colors = ['red', 'green', 'red', 'blue']
+
+    result = dict()
+
+    for color in colors:
+        if color not in result:
+            result[color] = 1
+        else:
+            result[color] += 1
+
+    print(result)
+    # {'red': 2, 'green': 1, 'blue': 1}
+
+.. code-block:: python
+
+    from collections import defaultdict
+
+    colors = ['red', 'green', 'red', 'blue']
+
+
+    # result = dict()
+    result = defaultdict(int)
+
+    for color in colors:
+        result[color] += 1
+
+
+    print(result)
+    # defaultdict(<class 'int'>, {'red': 2, 'green': 1, 'blue': 1})
+
 
 UserString
 ==========
