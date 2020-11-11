@@ -69,15 +69,15 @@ Day 4
     :widths: 15, 85
     :header: "Estimated Time", "Topic"
 
-    "45 min", "Function Definition"
-    "45 min", "Function Return"
-    "45 min", "Function Parameters"
-    "45 min", "Function Arguments"
-    "20 min", "Function Scope"
-    "20 min", "Function Recurrence"
-    "60 min", "Function Doctest"
-    "60 min", "Function Lambda"
-    "60 min", "Function Generator"
+    "60 min", "Function Definition"
+    "60 min", "Function Return"
+    "60 min", "Function Parameters"
+    "60 min", "Function Arguments"
+    "25 min", "Function Scope"
+    "15 min", "Function Recurrence"
+    "40 min", "Function Doctest"
+    "40 min", "Function Lambda"
+    "40 min", "Function Generator"
     "20 min", "Function Type Annotation"
 
 

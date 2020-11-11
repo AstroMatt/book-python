@@ -8,6 +8,7 @@ About
     :caption: About
     :name: Basics About
 
+    about/setup.rst
     about/agenda.rst
     about/ide.rst
     about/language.rst

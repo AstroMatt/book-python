@@ -2,25 +2,15 @@
 Certificate
 ***********
 
+
 Szkolenie obejmowało 40 godzin wykładów oraz warsztatów i pokrywało zagadnienia związane z:
 
-    * tworzenie aplikacji w języku Python,
-    * tworzenie i korzystanie ze struktur danych
-    * Zaawansowane struktury danych
-    * Wydajność i optymalizacja wykorzystania struktur danych
-    * korzystanie z generatorów i iteratorów,
-    * tworzenie klas i obiektów,
-    * modularyzacja oprogramowania,
-    * biblioteka standardowa,
-    * tworzenie testów, unittest, doctest, debugging i TDD,
-    * korzystanie z funkcji refaktoringu w środowisku IDE,
-    * dobre praktyki i standardy kodowania.
-    * Programowanie sieciowe i HTTP
-    * Przetwarzanie i transformacja danych JSON, XML, CSV
-    * Testowanie w języku Python
-    * Python w środowisku produkcyjnym
-    * Dekoratory
-    * Context Managers
-    * Python - moduły w języku C i C++
-    * Alternatywne wersje interpretera/kompilatora
-    * Programowanie wielowątkowe
+    * anotacją typów
+    * zaawansowanym użyciem funkcji i elementów paradygmatu programowania funkcyjnego
+    * dekoratorami klasowymi, funkcyjnymi i ze zmienną ilością argumentów
+    * testowanie w języku Python
+    * paradygmatem obiektowym, mechanizmy refleksji, dynamicznego typowania, Metaclass i Slots
+    * protokołami: Iterator, Generator, Comprehension, Context Manager, Descriptor
+    * zagadnienia wydajnościowe, profiling i mikrobenchmarking, moduły w C i C++
+    * programowanie wielowątkowe, wieloprocesowe i asynchroniczne
+    * konwencje programistyczne i dobre praktyki

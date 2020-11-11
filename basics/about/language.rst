@@ -153,47 +153,17 @@ Jupyter
 Python Developer Survey
 =======================
 * Annual survey
-* https://www.jetbrains.com/lp/python-developers-survey-2019
+* https://www.jetbrains.com/lp/devecosystem-2020/python/
+* https://www.jetbrains.com/lp/python-developers-survey-2019/
+* https://www.jetbrains.com/research/python-developers-survey-2018/
+* https://www.jetbrains.com/research/python-developers-survey-2017/
+* https://insights.stackoverflow.com/survey/2020
+* https://insights.stackoverflow.com/survey/2019
+* https://insights.stackoverflow.com/survey/2018
 
 
 Assignments
 ===========
-
-About Version
--------------
-* Assignment name: About Version
-* Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 0 lines
-* Estimated time of completion: 3 min
-* Solution: :download:`solution/about_version.py`
-
-:English:
-    #. Create file wih name ``about_version.py``
-    #. Use code from "Input" section (see below)
-    #. Run code in your IDE (right click on code -> "Run File in Python Console")
-    #. What Python version is installed?
-    #. Newest official Python is recommended
-    #. Compare result with "Output" section (see below)
-
-:Polish:
-    #. Stwórz skrypt o nazwie ``about_version.py``
-    #. Użyj kodu z sekcji "Input" (patrz poniżej)
-    #. Uruchom kod swoim IDE (prawy klawisz myszy na kodzie -> "Run File in Python Console")
-    #. Jaka wersja Python jest zainstalowana?
-    #. Zalecana jest najnowsza oficjalna wersja Python
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-:Input:
-    .. code-block:: python
-
-        import sys
-        print(sys.version[:5])
-
-:Output:
-    .. code-block:: text
-
-        3.9.0
 
 About Environment
 -----------------
@@ -209,18 +179,18 @@ About Environment
 
 :Polish:
     #. Stwórz plik o nazwie ``about_env.py``
-    #. Plik ma mieć zawartość:
-
-        .. code-block:: python
-
-            import sys
-            import os
-
-            print(f'Python Executable: {sys.executable}')
-            print(f'Python Version: {sys.version}')
-            print(f'Virtualenv: {os.getenv("VIRTUAL_ENV")}')
-
-    #. Uruchom go w swoim IDE (menu ``Run -> Run... -> nazwa Twojego skryptu``)
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Uruchom plik w swoim IDE (menu ``Run -> Run... -> nazwa Twojego skryptu``)
     #. Gdzie Python jest zainstalowany?
     #. Czy korzystasz z "Virtualenv"?
     #. Upewnij się, że w linijce z "Virtualenv" nie masz ``None``
+
+:Input:
+    .. code-block:: python
+
+        import sys
+        import os
+
+        print(f'Python Executable: {sys.executable}')
+        print(f'Python Version: {sys.version}')
+        print(f'Virtualenv: {os.getenv("VIRTUAL_ENV")}')

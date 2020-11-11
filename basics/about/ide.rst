@@ -68,48 +68,6 @@ Keyboard Shortcuts
 Assignments
 ===========
 
-About IDE Create from VCS
--------------------------
-* Assignment name: About IDE Create from VCS
-* Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 0 lines
-* Estimated time of completion: 5 min
-* Solution: TODO
-
-:English:
-    .. todo:: English Translation
-
-:Polish:
-    #. Stwórz projekt w Twoim IDE wykorzystując opcję 'Create from VCS'
-    #. Trener poda Ci link do repozytorium
-    #. Sugestia: możesz zapisać katalog z projektem na pulpicie, aby łatwiej było znaleźć pliki
-    #. Kliknij "clone" i zaczekaj na pobranie repozytorium
-    #. Upewnij się, że w repozytorium jest plik ``.gitignore`` i ma zawartość
-    #. Po stworzeniu projektu, załóż katalog o nazwie jak twoje nazwisko i imię ``nazwisko_imie``
-    #. WAŻNE: Już do końca książki w nim będą tworzone rozwiązania do wszystkich zadań
-    #. Dzięki oddzielnym katalogom dla każdego uczestnika unikniemy konfliktów w Git
-
-About IDE Create Project
-------------------------
-* Assignment name: About IDE Create Project
-* Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 0 lines
-* Estimated time of completion: 5 min
-* Solution: TODO
-
-:English:
-    .. todo:: English Translation
-
-:Polish:
-    #. Stwórz projekt w Twoim IDE
-    #. Wybierz "Pure Python" (opcja dostępna tylko w Pycharm Professional)
-    #. Rozwiń listę Project Interpreter i ustaw aby korzystać z "Virtualenv"
-    #. WAŻNE: Upewnij się, że masz Python 3.7 lub nowszy
-    #. Po stworzeniu projektu, załóż katalog o nazwie jak twoje nazwisko i imię ``nazwisko_imie``
-    #. WAŻNE: Już do końca książki w nim będą tworzone rozwiązania do wszystkich zadań
-
 About IDE Usage
 ---------------
 * Assignment name: About IDE Usage

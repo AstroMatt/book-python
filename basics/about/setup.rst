@@ -1,4 +1,4 @@
-.. _Advanced Setup:
+.. _Basic Setup:
 
 *****
 Setup
@@ -58,7 +58,7 @@ Setup Interpreter
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 3 min
-* Solution: TODO
+* Solution: :download:`solution/about_interpreter.py`
 
 :English:
     #. In your directory create file ``about_interpreter.py``
