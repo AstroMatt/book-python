@@ -19,8 +19,8 @@ Variables
 
     name = 'Mark Watney'
 
-    firstname = 'Mark'
-    lastname = 'Watney'
+    first_name = 'Mark'
+    last_name = 'Watney'
 
     firstname = 'Mark'
     lastname = 'Watney'
@@ -167,27 +167,52 @@ Indentation
 
     if True:
         print('True statement, first line')
+    else:
+        print('Else statement, first line')
+
+.. code-block:: python
+
+    if True:
+        print('True statement, first line')
         print('True statement, second line')
+        print('True statement, third line')
     else:
         print('Else statement, first line')
         print('Else statement, second line')
+        print('Else statement, third line')
+
+.. code-block:: python
+
+    if True:
+        print('Outer block, true statement, first line')
+        if True:
+            print('Inner block, true statement, first line')
+        else:
+            print('Inner block, else statement, fist line')
+    else:
+        print('Outer block, else statement, first line')
+
 
 .. code-block:: python
 
     if True:
         print('Outer block, true statement, first line')
         print('Outer block, true statement, second line')
+        print('Outer block, true statement, third line')
 
         if True:
             print('Inner block, true statement, first line')
             print('Inner block, true statement, second line')
+            print('Inner block, true statement, third line')
         else:
             print('Inner block, else statement, fist line')
             print('Inner block, else statement, second line')
+            print('Inner block, else statement, third line')
 
     else:
         print('Outer block, else statement, first line')
         print('Outer block, else statement, second line')
+        print('Outer block, else statement, third line')
 
 
 Good practices
@@ -245,13 +270,19 @@ About Print
     #. "World" ma być w drugiej linii
     #. Użyj tylko jednego wywołania funkcji ``print()``
 
+:Output:
+    .. code-block:: text
+
+        Hello
+        World
+
 :The whys and wherefores:
     * Wyświetlanie na ekranie
 
 About Syntax
 ------------
 * Assignment name: About Syntax
-* Last update: 2020-10-01
+* Last update: 2020-11-16
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 3 min
@@ -259,17 +290,22 @@ About Syntax
 
 :English:
     #. Write a multiline comment with program description (todo from this assignments)
-    #. Declare variable ``name`` and set its value to your name
-    #. Add inline comment to variable declaration with text: "This is my name"
-    #. Print "Hello World NAME", where NAME is your name (variable ``name``)
+    #. Declare variable ``name`` and set its value to ``Mark Watney``
+    #. Add inline comment to variable declaration with text: ``Space Pirate``
+    #. Print "Hello World Mark Watney", where "Mark Watney" is the ``name`` variable value
     #. Use f-string
 
 :Polish:
     #. Napisz wieloliniowy komentarz z opisem programu (punkty do wykonania z tego zadania)
-    #. Zadeklaruj zmienną ``name`` i ustaw jej wartość na Twoje imię
-    #. Dodaj komentarz "inline" do zmiennej o treści: "This is my name"
-    #. Wypisz "Hello World NAME", gdzie NAME to Twoje imię (zmienna ``name``)
+    #. Zadeklaruj zmienną ``name`` i ustaw jej wartość na ``Mark Watney``
+    #. Dodaj komentarz "inline" do zmiennej o treści: ``Space Pirate``
+    #. Wypisz "Hello World Mark Watney", gdzie "Mark Watney" jest wartością zmiennej ``name``
     #. Zastosuj f-string
+
+:Output:
+    .. code-block:: text
+
+        Hello World Mark Watney
 
 :The whys and wherefores:
     * Tworzenie skryptów Python

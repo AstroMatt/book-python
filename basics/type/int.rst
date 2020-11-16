@@ -50,6 +50,12 @@ Type Casting
     int('-13.37')               # ValueError: invalid literal for int() with base 10: '-13.37'
     int('-13,37')               # ValueError: invalid literal for int() with base 10: '-13,37'
 
+.. code-block:: python
+
+    int('0x69', base=16)        # 105
+    int('0x3C', base=16)        # 60
+    int('0o754', base=8)        # 492
+
 
 Type Checking
 =============
@@ -67,14 +73,104 @@ Type Checking
 Assignments
 ===========
 
-Type Int Distance
------------------
-* Assignment name: Type Int Distance
-* Last update: 2020-10-01
+Type Int Add
+------------
+* Assignment name: Type Int Add
+* Last update: 2020-11-16
+* Complexity level: easy
+* Lines of code to write: 4 lines
+* Estimated time of completion: 3 min
+* Solution: :download:`solution/type_int_add.py`
+
+:English:
+    #. One Kelvin is equal to 1 Celsius degree (1K = 1°C)
+    #. Zero Celsius degrees is equal to 273.15 Kelvins
+    #. For calculation use round number 273 (0°K = -273K)
+    #. How many Kelvins has average temperatures at surface :cite:`MSL_REMS`:
+
+        * Mars highest: 20 °C
+        * Mars lowest: -153 °C
+        * Mars average: −63 °C
+
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Jeden Kelwin to jeden stopień Celsiusza (1K = 1°C)
+    #. Zero stopni Celsiusza to 273.15 Kelwiny
+    #. W zadaniu przyjmij równe 273°C (0°K = -273K)
+    #. Ile Kelwinów wynoszą średnie temperatury powierzchni :cite:`MSL_REMS`:
+
+        * Mars najwyższa: 20 °C
+        * Mars najniższa: -153 °C
+        * Mars średnia: −63 °C
+
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: python
+
+        >>> mars_max
+        293
+        >>> mars_min
+        153
+        >>> mars_avg
+        210
+
+:The whys and wherefores:
+    * Defining constants and variables
+    * Mathematical operations
+
+Type Int Sub
+------------
+* Assignment name: Type Int Sub
+* Last update: 2020-11-16
 * Complexity level: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 5 min
-* Solution: :download:`solution/type_int_distance.py`
+* Estimated time of completion: 3 min
+* Solution: :download:`solution/type_int_sub.py`
+
+:English:
+    #. One Kelvin is equal to 1 Celsius degree (1K = 1°C)
+    #. Zero Kelvin (absolute) is equal to -273.15 Celsius degrees
+    #. For calculation use round number -273 (0K = -273°C)
+    #. How many Celsius degrees has average temperatures at surface :cite:`MSL_REMS`:
+
+        * Lunar day: 453 K
+        * Lunar night: 93 K
+
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Jeden Kelwin to jeden stopień Celsiusza (1K = 1°C)
+    #. Zero Kelwina (bezwzględne) to -273.15 stopni Celsiusza
+    #. W zadaniu przyjmij równe -273°C (0K = -273°C)
+    #. Ile stopni Celsiusza wynoszą średnie temperatury powierzchni :cite:`MSL_REMS`:
+
+        * Księżyca w dzień: 453 K
+        * Księżyca w nocy: 93 K
+
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: python
+
+        >>> moon_day
+        180
+        >>> moon_night
+        -180
+
+:The whys and wherefores:
+    * Defining constants and variables
+    * Mathematical operations
+
+Type Int Mul
+------------
+* Assignment name: Type Int Mul
+* Last update: 2020-11-16
+* Complexity level: easy
+* Lines of code to write: 3 lines
+* Estimated time of completion: 3 min
+* Solution: :download:`solution/type_int_mul.py`
 
 :English:
     #. Calculate altitude in meters:
@@ -83,6 +179,40 @@ Type Int Distance
         * Stratosphere: 20 km
         * USAF Space Line: 80 km
 
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Oblicz wysokości w metrach:
+
+        * Linia Armstronga: 18 km
+        * Stratosfera: 20 km
+        * Granica kosmosu wg. USAF: 80 km
+
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: python
+
+        >>> armstrong_line // m
+        18000
+        >>> stratosphere // m
+        20000
+        >>> usaf_space // m
+        80000
+
+:Hints:
+    * 1 km = 1000 m
+
+Type Int Truediv
+----------------
+* Assignment name: Type Int Truediv
+* Last update: 2020-11-16
+* Complexity level: easy
+* Lines of code to write: 3 lines
+* Estimated time of completion: 3 min
+* Solution: :download:`solution/type_int_truediv.py`
+
+:English:
     #. Calculate altitude in kilometers:
 
         * Kármán Line Earth: 100000 m
@@ -93,13 +223,7 @@ Type Int Distance
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Calculate altitude in meters:
-
-        * Linia Armstronga: 18 km
-        * Stratosfera: 20 km
-        * Granica kosmosu wg. USAF: 80 km
-
-    #. Calculate altitude in kilometers:
+    #. Oblicz wysokości w kilometrach:
 
         * Linia Kármána Ziemia: 100000 m
         * Linia Kármána Mars: 80000 m
@@ -109,14 +233,14 @@ Type Int Distance
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: text
+    .. code-block:: python
 
-        Armstrong Line: 18000 m
-        Stratosphere: 20000 m
-        USAF Space: 80000 m
-        Kármán Line Earth: 100 km
-        Kármán Line Mars: 80 km
-        Kármán Line Venus: 250 km
+        >>> karman_line_earth // km
+        100
+        >>> karman_line_mars // km
+        80
+        >>> karman_line_venus // km
+        250
 
 :Hints:
     * 1 km = 1000 m
@@ -124,7 +248,7 @@ Type Int Distance
 Type Int Time
 -------------
 * Assignment name: Type Int Time
-* Last update: 2020-10-01
+* Last update: 2020-11-16
 * Complexity level: easy
 * Lines of code to write: 12 lines
 * Estimated time of completion: 8 min
@@ -147,13 +271,18 @@ Type Int Time
     #. W obliczeniach użyj truediv (``//``)
 
 :Output:
-    .. code-block:: text
+    .. code-block:: python
 
-        Day: 86400 sec
-        Day: 1440 min
-        Work day: 28800 sec
-        Work week: 2400 min
-        Work month: 176 h
+    >>> DAY // SECOND
+    86400
+    >>> DAY // MINUTE
+    1440
+    >>> workday // SECOND
+    28800
+    >>> workweek // MINUTE
+    2400
+    >>> workmonth // HOUR
+    176
 
 :The whys and wherefores:
     * Defining constants and variables
@@ -167,7 +296,7 @@ Type Int Time
 Type Int Bits
 -------------
 * Assignment name: Type Int Bits
-* Last update: 2020-10-01
+* Last update: 2020-11-16
 * Complexity level: medium
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
@@ -177,21 +306,21 @@ Type Int Bits
     #. File size is 1 megabit
     #. Calculate size in bits
     #. Calculate size in kilobits
-    #. In Calculations use truediv (``//``)
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Wielkość pliku to 1 megabit
     #. Oblicz wielkość w bitach
     #. Oblicz wielkość w kilobitach
-    #. W obliczeniach użyj truediv (``//``)
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: text
+    .. code-block:: python
 
-        Size: 1048576 b
-        Size: 1024 kb
+        >>> size // b
+        1048576
+        >>> size // kb
+        1024
 
 :The whys and wherefores:
     * Defining constants and variables
@@ -205,29 +334,29 @@ Type Int Bits
 Type Int Bytes
 --------------
 * Assignment name: Type Int Bytes
-* Last update: 2020-10-01
+* Last update: 2020-11-16
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_int_bytes.py`
 
 :English:
-    #. File size is 1 megabyte
+    #. File size is 100 megabytes
     #. Calculate size in megabits
-    #. Print result in megabytes and megabits
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Wielkość pliku to 1 megabajt
+    #. Wielkość pliku to 100 megabajtów
     #. Oblicz wielkość w megabitach
-    #. Wypisz wielkość w megabajtach oraz megabitach
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: text
+    .. code-block:: python
 
-        Size: 1 MB
-        Size: 8 Mb
+        >>> size // MB
+        100
+        >>> size // Mb
+        800
 
 :The whys and wherefores:
     * Defining constants and variables
@@ -244,30 +373,29 @@ Type Int Bytes
 Type Int Bandwidth
 ------------------
 * Assignment name: Type Int Bandwidth
-* Last update: 2020-10-01
+* Last update: 2020-11-16
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_int_bandwidth.py`
 
 :English:
-    #. Having internet connection with speed up to 100 Mb/s
+    #. Having internet connection with speed 100 Mb/s
     #. How long will take to download 100 MB?
-    #. W obliczeniach użyj truediv (``//``)
+    #. In Calculations use truediv (``//``)
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Mając łącze internetowe "do 100 Mb/s"
+    #. Mając łącze internetowe 100 Mb/s
     #. Ile zajmie ściągnięcie pliku 100 MB?
-    #. In Calculations use truediv (``//``)
+    #. W obliczeniach użyj truediv (``//``)
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: text
+    .. code-block:: python
 
-        File size: 100 MB
-        Download speed: 12 sec
-        Download time: 8 sec
+        >>> duration // SECOND
+        8
 
 :The whys and wherefores:
     * Defining constants and variables
@@ -280,56 +408,3 @@ Type Int Bandwidth
     * 1 B = 8 b
     * 1 KB = 1024 B
     * 1 MB = 1024 KB
-
-Type Int Temperature
---------------------
-* Assignment name: Type Int Temperature
-* Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 18 lines
-* Estimated time of completion: 8 min
-* Solution: :download:`solution/type_int_temperature.py`
-
-:English:
-    #. One Kelvin is equal to 1 Celsius degree (1K = 1°C)
-    #. Zero Kelvin (absolute) is equal to -273.15 Celsius degrees
-    #. For calculation use round number -273 (0K = -273°C)
-    #. How many Kelvins and Celsius degrees has average temperatures at surface :cite:`MSL_REMS`:
-
-        * Lunar day: 453 K
-        * Lunar night: 93 K
-        * Mars highest: 20 °C
-        * Mars lowest: -153 °C
-        * Mars average: −63 °C
-
-    #. Compare result with "Output" section (see below)
-
-:Polish:
-    #. Jeden Kelwin to jeden stopień Celsiusza (1K = 1°C)
-    #. Zero Kelwina (bezwzględne) to -273.15 stopni Celsiusza
-    #. W zadaniu przyjmij równe -273°C (0K = -273°C)
-    #. Ile Kelwinów, a ile stopni Celsiusza wynoszą średnie temperatury powierzchni :cite:`MSL_REMS`:
-
-        * Księżyca w dzień: 453 K
-        * Księżyca w nocy: 93 K
-        * Mars najwyższa: 20 °C
-        * Mars najniższa: -153 °C
-        * Mars średnia: −63 °C
-
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-:Output:
-    .. code-block:: text
-
-        Moon day: 453K, 726°C
-        Moon night: 93K, 93°C
-        Mars high: -253K, 20°C
-        Mars low: -393K, -153°C
-        Mars avg: -336K, -63°C
-
-:The whys and wherefores:
-    * Defining constants and variables
-    * Naming convention
-    * Print formatting
-    * Mathematical operations
-

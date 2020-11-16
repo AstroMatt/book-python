@@ -42,6 +42,7 @@ About Setup IDE
     #. Trener poda Ci link do repozytorium
     #. Stwórz projekt w Twoim IDE wykorzystując opcję 'Create from VCS'
     #. Kliknij "clone" i zaczekaj na pobranie repozytorium
+    #. Jeżeli PyCharm zapyta Cię o autoryzację, wybi
     #. Po stworzeniu projektu załóż katalog gdzie będziesz przechowywał kod tworzony podczas szkolenia
 
         * Katalog ma mieć nazwę jak Twoje imie i pierwsza litera nazwiska, np. ``JanT``, ``MarkW`` lub ``MelissaL``

@@ -79,12 +79,12 @@ Power and Root
 Divisions
 =========
 * ``/`` - Division
-* ``//`` - True division
+* ``//`` - True division (preserving data type)
 * ``%`` - Modulo division (reminder)
 
 .. code-block:: python
 
-    12 / 6              # 2
+    12 / 6              # 2.0
     12 / 5              # 2.4
 
     12 // 6             # 2

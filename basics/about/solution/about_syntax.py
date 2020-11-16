@@ -5,5 +5,5 @@
 # Print "Hello World NAME", where NAME is your name (variable name)
 # Next line under print statement add line comment, with expected output
 
-name = 'Mark Watney'  # This is my name
+name = 'Mark Watney'  # Space Pirate
 print(f'Hello World {name}')
