@@ -268,6 +268,7 @@ Type Int Time
     #. Calculate how many minutes is work week (5 work days)
     #. Calculate how many hours is work month (22 work days)
     #. In Calculations use truediv (``//``)
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Oblicz ile sekund to jedna doba
@@ -276,6 +277,7 @@ Type Int Time
     #. Oblicz ile minut to tydzień pracy (5 dni pracy)
     #. Oblicz ile godzin to miesiąc pracy (22 dni pracy)
     #. W obliczeniach użyj truediv (``//``)
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
     .. code-block:: text

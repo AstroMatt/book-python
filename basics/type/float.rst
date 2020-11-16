@@ -320,6 +320,7 @@ Type Float Velocity
     #. Convert to metric (SI) system
     #. Speed limit print in KPH (km/h)
     #. Result round to one decimal place
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Ograniczenie prędkości wynosi 75 MPH
@@ -327,6 +328,7 @@ Type Float Velocity
     #. Przelicz je na system metryczny (układ SI)
     #. Ograniczenie prędkości wypisz w KPH (km/h)
     #. Wynik zaokrąglij do jednego miejsca po przecinku
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
     .. code-block:: text
