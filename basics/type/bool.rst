@@ -15,8 +15,8 @@ Type Definition
 .. code-block:: python
     :caption: ``bool`` Type Definition
 
-    data = True               # True
-    data = False              # False
+    data = True                     # True
+    data = False                    # False
 
 
 Type Casting
@@ -24,119 +24,119 @@ Type Casting
 .. code-block:: python
     :caption: ``bool()`` converts argument to ``bool``
 
-    bool(1)                     # True
-    bool(2)                     # True
-    bool(3)                     # True
+    bool(1)                         # True
+    bool(2)                         # True
+    bool(3)                         # True
 
-    bool(-1)                     # True
-    bool(-2)                     # True
-    bool(-3)                     # True
+    bool(-1)                        # True
+    bool(-2)                        # True
+    bool(-3)                        # True
 
-    bool(1.0)                   # True
-    bool('Jan Twardowski')      # True
+    bool(1.0)                       # True
+    bool('Jan Twardowski')          # True
 
 .. code-block:: python
     :caption: Negative values
 
-    bool(0)                     # False
-    bool(0.0)                   # False
-    bool(0+0j)                  # False
-    bool(0.0+0.0j)              # False
-    bool(False)                 # False
-    bool(None)                  # False
-    bool('')                    # False
-    bool(())                    # False
-    bool([])                    # False
-    bool({})                    # False
+    bool(0)                         # False
+    bool(0.0)                       # False
+    bool(0+0j)                      # False
+    bool(0.0+0.0j)                  # False
+    bool(False)                     # False
+    bool(None)                      # False
+    bool('')                        # False
+    bool(())                        # False
+    bool([])                        # False
+    bool({})                        # False
 
-    bool(int())                 # False
-    bool(float())               # False
-    bool(complex())             # False
-    bool(bool())                # False
-    bool(str())                 # False
-    bool(tuple())               # False
-    bool(list())                # False
-    bool(dict())                # False
-    bool(set())                 # False
-    bool(frozenset())           # False
+    bool(int())                     # False
+    bool(float())                   # False
+    bool(complex())                 # False
+    bool(bool())                    # False
+    bool(str())                     # False
+    bool(tuple())                   # False
+    bool(list())                    # False
+    bool(dict())                    # False
+    bool(set())                     # False
+    bool(frozenset())               # False
 
 
 Conjunction
 ===========
 .. code-block:: python
 
-    True and True               # True
-    True and False              # False
-    False and True              # False
-    False and False             # False
+    True and True                   # True
+    True and False                  # False
+    False and True                  # False
+    False and False                 # False
 
 .. code-block:: python
 
-    1 and 1                     # True
-    1 and 0                     # False
-    0 and 1                     # False
-    0 and 0                     # False
+    1 and 1                         # True
+    1 and 0                         # False
+    0 and 1                         # False
+    0 and 0                         # False
 
 .. code-block:: python
 
-    'Jan' and 'Jan'             # True
-    'Jan' and ''                # False
-    '' and 'Jan'                # False
-    '' and ''                   # False
+    'Jan' and 'Jan'                 # True
+    'Jan' and ''                    # False
+    '' and 'Jan'                    # False
+    '' and ''                       # False
 
 .. code-block:: python
 
-    'Jan' and 1                 # True
-    'Jan' and 0                 # False
-    0.0 and 'Jan'               # False
-    1 and False                 # False
+    'Jan' and 1                     # True
+    'Jan' and 0                     # False
+    0.0 and 'Jan'                   # False
+    1 and False                     # False
 
 
 Disjunction
 ===========
 .. code-block:: python
 
-    True or True                # True
-    True or False               # True
-    False or True               # True
-    False or False              # False
+    True or True                    # True
+    True or False                   # True
+    False or True                   # True
+    False or False                  # False
 
 .. code-block:: python
 
-    1 or 1                      # True
-    1 or 0                      # True
-    0 or 1                      # True
-    0 or 0                      # False
+    1 or 1                          # True
+    1 or 0                          # True
+    0 or 1                          # True
+    0 or 0                          # False
 
 .. code-block:: python
 
-    'José' or 'Иван'            # True
-    'José' or ''                # True
-    '' or 'José'                # True
-    '' or ''                    # False
+    'José' or 'Иван'                # True
+    'José' or ''                    # True
+    '' or 'José'                    # True
+    '' or ''                        # False
 
 .. code-block:: python
 
-    1 or 'Иван'                 # True
-    True or ''                  # True
-    0 or True                   # True
-    0.0 or False                # False
+    1 or 'Иван'                     # True
+    True or ''                      # True
+    0 or True                       # True
+    0.0 or False                    # False
 
 
 Boolean Algebra
 ===============
 .. code-block:: python
 
-    True and True or False      # True
-    False and False or True     # True
+    True and True or False          # True
+    False and False or True         # True
 
 .. code-block:: python
 
-    (True and True) or False    # True
-    True and (True or False)    # True
+    (True and True) or False        # True
+    True and (True or False)        # True
 
-    True and False or False     # False
-    True and (False or False)   # False
+    True and False or False         # False
+    True and (False or False)       # False
 
 .. code-block:: python
 
