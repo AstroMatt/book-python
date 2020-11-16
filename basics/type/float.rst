@@ -371,6 +371,7 @@ Type Float Pressure
         4.3
         >>> orlan / kPa
         40.0
+
         >>> round(emu/kPa, 2)
         29.65
         >>> round(orlan/psi, 2)
@@ -405,14 +406,14 @@ Type Float Percent
 
 :English:
     #. International Standard Atmosphere (ISA) at sea level is 1013.25 hPa
-    #. Calculate partial pressure of Oxygen at sea level
-    #. Print ISA and partial O2 pressure in kPa rounding to two decimal places
+    #. Calculate ``pO2`` - partial pressure of Oxygen at sea level
+    #. Print result in kPa rounding to two decimal places
     #. To calculate partial pressure use ratio (100% is 1013.25 hPa, 20.946% is how many hPa?)
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. International Standard Atmosphere (ISA) na poziomie morza wynosi 1013.25 hPa
-    #. Oblicz ciśnienie parcjalne tlenu na poziomie morza
+    #. Oblicz ``pO2`` - ciśnienie parcjalne tlenu na poziomie morza
     #. Wynik wypisz w kPa zaokrąglając do dwóch miejsc po przecinku
     #. Aby policzyć ciśnienie parcjalne skorzystaj z proporcji (100% to 1013.25 hPa, 20.946% to ile hPa?)
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)

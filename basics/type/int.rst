@@ -280,16 +280,16 @@ Type Int Time
 :Output:
     .. code-block:: text
 
-    >>> DAY // SECOND
-    86400
-    >>> DAY // MINUTE
-    1440
-    >>> workday // SECOND
-    28800
-    >>> workweek // MINUTE
-    2400
-    >>> workmonth // HOUR
-    176
+        >>> DAY // SECOND
+        86400
+        >>> DAY // MINUTE
+        1440
+        >>> workday // SECOND
+        28800
+        >>> workweek // MINUTE
+        2400
+        >>> workmonth // HOUR
+        176
 
 :The whys and wherefores:
     * Defining constants and variables
