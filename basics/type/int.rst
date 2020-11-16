@@ -33,22 +33,26 @@ Type Casting
 .. code-block:: python
     :caption: ``int()`` converts argument to ``int``
 
-    int(13)                     # 13
-    int(13.0)                   # 13
-    int(13.3)                   # 13
-    int(13.37)                  # 13
+    int(1)                      # 1
+    int(+1)                     # 1
+    int(-1)                     # -1
 
-    int(-13.37)                 # -13
+    int(1.337)                  # 1
+    int(+1.1337)                # 1
+    int(-1.337)                 # -1
 
     int('1')                    # 1
     int('+1')                   # 1
     int('-1')                   # -1
     int('1_000_000')            # 1000000
 
-    int('13.37')                # ValueError: invalid literal for int() with base 10: '13.37'
-    int('13,37')                # ValueError: invalid literal for int() with base 10: '13,37'
-    int('-13.37')               # ValueError: invalid literal for int() with base 10: '-13.37'
-    int('-13,37')               # ValueError: invalid literal for int() with base 10: '-13,37'
+    int('1.337')                # ValueError: invalid literal for int() with base 10: '13.37'
+    int('+1.337')               # ValueError: invalid literal for int() with base 10: '+13.37'
+    int('-1.337')               # ValueError: invalid literal for int() with base 10: '-13.37'
+
+    int('1,337')                # ValueError: invalid literal for int() with base 10: '13,37'
+    int('+1,337')               # ValueError: invalid literal for int() with base 10: '+13,37'
+    int('-1,337')               # ValueError: invalid literal for int() with base 10: '-13,37'
 
 .. code-block:: python
 
@@ -65,8 +69,11 @@ Type Checking
 .. code-block:: python
 
     type(1)                     # <class 'int'>
+    type(+1)                    # <class 'int'>
     type(-1)                    # <class 'int'>
+
     type(0)                     # <class 'int'>
+    type(+0)                    # <class 'int'>
     type(-0)                    # <class 'int'>
 
 
@@ -107,7 +114,7 @@ Type Int Add
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> mars_max
         293
@@ -152,7 +159,7 @@ Type Int Sub
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> moon_day
         180
@@ -191,7 +198,7 @@ Type Int Mul
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> armstrong_line // m
         18000
@@ -233,7 +240,7 @@ Type Int Truediv
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> karman_line_earth // km
         100
@@ -271,7 +278,7 @@ Type Int Time
     #. W obliczeniach użyj truediv (``//``)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
     >>> DAY // SECOND
     86400
@@ -315,7 +322,7 @@ Type Int Bits
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> size // b
         1048576
@@ -351,7 +358,7 @@ Type Int Bytes
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> size // MB
         100
@@ -392,7 +399,7 @@ Type Int Bandwidth
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> int(duration // SECOND)
         8

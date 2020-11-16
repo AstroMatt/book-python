@@ -13,13 +13,13 @@ Type Definition
 .. code-block:: python
     :caption: ``float`` Type Definition
 
-    data = 13.37             # 13.37
-    data = -13.37            # -13.37
+    data = 1.337             # 13.37
+    data = -1.337            # -13.37
 
 .. code-block:: python
     :caption: Notation without leading or trailing zero
 
-    data = 10.               # 10.0
+    data = 69.               # 69.0
     data = .44               # 0.44
 
 .. code-block:: python
@@ -48,21 +48,21 @@ Type Casting
 .. code-block:: python
     :caption: ``float()`` converts argument to ``float``
 
-    float(13)               # 13.0
-    float(+13)              # 13.0
-    float(-13)              # -13.0
+    float(1)                # 1.0
+    float(+1)               # 1.0
+    float(-1)               # -1.0
 
-    float(13.37)            # 13.37
-    float(+13.37)           # 13.37
-    float(-13.37)           # -13.37
+    float(1.337)            # 1.337
+    float(+1.337)           # 1.337
+    float(-1.337)           # -1.337
 
-    float('13.37')          # 13.37
-    float('+13.37')         # 13.37
-    float('-13.37')         # -13.37
+    float('1.337')          # 1.337
+    float('+1.337')         # 1.337
+    float('-1.337')         # -1.337
 
-    float('13,37')          # ValueError: could not convert string to float: '13,37'
-    float('+13,37')         # ValueError: could not convert string to float: '+13,37'
-    float('-13,37')         # ValueError: could not convert string to float: '-13,37'
+    float('1,337')          # ValueError: could not convert string to float: '1,337'
+    float('+1,337')         # ValueError: could not convert string to float: '+1,337'
+    float('-1,337')         # ValueError: could not convert string to float: '-1,337'
 
 
 Round Number
@@ -116,14 +116,26 @@ Built-in Functions
     pow(2, 1/2)         # 1.4142135623730951
     pow(27, 1/3)        # 3.0
 
+    pow(4, -1/2)        # 0.5
+    pow(2, -1/2)        # 0.7071067811865476
+    pow(27, -1/3)       # 0.33333333333333337
+
+    pow(-2, -1)         # -0.5
+    pow(-4, -1)         # -0.25
+
+    pow(-2, -1/2)       # (4.329780281177467e-17-0.7071067811865476j)
+    pow(-2, 1/2)        # (8.659560562354934e-17+1.4142135623730951j)
+    pow(-4, -1/2)       # (3.061616997868383e-17-0.5j)
+    pow(-4, 1/2)        # (1.2246467991473532e-16+2j)
+
 .. code-block:: python
     :caption: ``abs()`` - Absolute value
 
     abs(1)                      # 1
-    abs(13.37)                  # 13.37
+    abs(1.337)                  # 1.337
 
     abs(-1)                     # 1
-    abs(-13.37)                 # 13.37
+    abs(-1.337)                 # 1.337
 
 
 Assignments
@@ -132,14 +144,14 @@ Assignments
 Type Float Tax
 --------------
 * Assignment name: Type Float Tax
-* Last update: 2020-10-01
+* Last update: 2020-11-16
 * Complexity level: easy
-* Lines of code to write: 6 lines
+* Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_float_tax.py`
 
 :English:
-    #. Cost of the service is 100 PLN net
+    #. Cost of the service is 100.00 PLN net
     #. Service has value added tax (VAT) rate of 23%
     #. Calculate tax and gross values
     #. To calculate tax, multiply net times VAT
@@ -148,7 +160,7 @@ Type Float Tax
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Cena usługi wynosi 100 PLN netto
+    #. Cena usługi wynosi 100.00 PLN netto
     #. Usługa objęta jest 23% stawką VAT
     #. Oblicz wartości podatku oraz cenę brutto
     #. Aby obliczyć podatek, pomnóż cenę netto razy stawkę VAT
@@ -159,16 +171,19 @@ Type Float Tax
 :Output:
     .. code-block:: text
 
-        net=100 PLN
-        tax=23.0 PLN
-        gross=123.0 PLN
+        >>> net / PLN
+        100.0
+        >>> tax / PLN
+        23.0
+        >>> gross / PLN
+        123.0
 
 Type Float Altitude
 -------------------
 * Assignment name: Type Float Altitude
-* Last update: 2020-10-01
+* Last update: 2020-11-16
 * Complexity level: easy
-* Lines of code to write: 4 lines
+* Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_float_altitude.py`
 
@@ -189,7 +204,8 @@ Type Float Altitude
 :Output:
     .. code-block:: text
 
-        altitude=3048.0 m
+        >>> result / m
+        3048.0
 
 :The whys and wherefores:
     * Defining constants and variables
@@ -223,7 +239,8 @@ Type Float Volume
 :Output:
     .. code-block:: text
 
-        volume=0.5914688 l
+        >>> result / LITER
+        0.5914688
 
 :The whys and wherefores:
     * Defining constants and variables
@@ -314,7 +331,8 @@ Type Float Velocity
 :Output:
     .. code-block:: text
 
-        speed_limit=120.7 km/h
+        >>> round(result/KPH, 2)
+        120.7
 
 :The whys and wherefores:
     * Defining constants and variables
@@ -349,8 +367,14 @@ Type Float Pressure
 :Output:
     .. code-block:: text
 
-        EMU: 29.65 kPa, 4.30 psi
-        Orlan: 40.00 kPa, 5.80 psi
+        >>> emu / psi
+        4.3
+        >>> orlan / kPa
+        40.0
+        >>> round(emu/kPa, 2)
+        29.65
+        >>> round(orlan/psi, 2)
+        5.80
 
 :The whys and wherefores:
     * Defining constants and variables
@@ -389,15 +413,15 @@ Type Float Percent
 :Polish:
     #. International Standard Atmosphere (ISA) na poziomie morza wynosi 1013.25 hPa
     #. Oblicz ciśnienie parcjalne tlenu na poziomie morza
-    #. Wypisz ISA oraz ciśnienie parcjalne O2 wyniki w kPa zaokrąglając do dwóch miejsc po przecinku
+    #. Wynik wypisz w kPa zaokrąglając do dwóch miejsc po przecinku
     #. Aby policzyć ciśnienie parcjalne skorzystaj z proporcji (100% to 1013.25 hPa, 20.946% to ile hPa?)
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
     .. code-block:: text
 
-        International Standard Atmosphere: 101.33 kPa
-        O2 partial pressure at sea level: 21.22 kPa
+        >>> round(pO2/kPa, 2)
+        21.22
 
 :The whys and wherefores:
     * Defining constants and variables
@@ -446,7 +470,8 @@ Type Float Gradient
 :Output:
     .. code-block:: text
 
-        Oxygen starvation altitude: 7088.63 m
+        >>> round(result/m, 2)
+        7088.63
 
 :The whys and wherefores:
     * Defining constants and variables

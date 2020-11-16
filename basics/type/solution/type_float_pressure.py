@@ -1,11 +1,18 @@
+"""
+>>> emu / psi
+4.3
+>>> orlan / kPa
+40.0
+>>> round(emu/kPa, 2)
+29.65
+>>> round(orlan/psi, 2)
+5.80
+"""
+
 Pa = 1
 hPa = 100 * Pa
 kPa = 1000 * Pa
-PSI = 6894.757 * Pa
+psi = 6894.757 * Pa
 
-emu = 4.3 * PSI
+emu = 4.3 * psi
 orlan = 400 * hPa
-
-print(f'EMU operating pressure: {emu/kPa:.2f} kPa, {emu/PSI:.2f} psi')
-print(f'Orlan operating pressure: {orlan/kPa:.2f} kPa, {orlan/PSI:.2f} psi')
-

@@ -25,6 +25,13 @@ Type Casting
     :caption: ``bool()`` converts argument to ``bool``
 
     bool(1)                     # True
+    bool(2)                     # True
+    bool(3)                     # True
+
+    bool(-1)                     # True
+    bool(-2)                     # True
+    bool(-3)                     # True
+
     bool(1.0)                   # True
     bool('Jan Twardowski')      # True
 
