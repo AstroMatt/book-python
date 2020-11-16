@@ -75,13 +75,18 @@ Type None
             e = (bool(bool(...) is not bool(...)) == False and bool(...)) and (... is not None)   # False
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-            print(a)    # True
-            print(b)    # False
-            print(c)    # True
-            print(d)    # False
-            print(e)    # False
+        >>> a
+        True
+        >>> b
+        False
+        >>> c
+        True
+        >>> d
+        False
+        >>> e
+        False
 
 :The whys and wherefores:
     * Defining variables

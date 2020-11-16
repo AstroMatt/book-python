@@ -264,47 +264,58 @@ Type Bool True or False
 Type Bool Simple
 ----------------
 * Assignment name: Type Bool Simple
-* Last update: 2020-10-01
+* Last update: 2020-11-16
 * Complexity level: easy
-* Lines of code to write: 8 lines
+* Lines of code to write: 9 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/type_bool_simple.py`
 
 :English:
     #. Use data from "Input" section (see below)
     #. What you need to put in expressions to get the expected outcome?
-    #. Insert only ``True`` or ``False``
+    #. In place of ellipsis (``...``) insert only ``True`` or ``False``
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Co należy podstawić w wyrażeniach aby otrzymać wartość oczekiwaną?
-    #. Wstawiaj tylko ``True`` lub ``False``
+    #. W miejsce trzech kropek (``...``) wstawiaj tylko ``True`` lub ``False``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. code-block:: python
 
-        a = bool(...) == True                   # True
-        b = bool(...) == False                  # True
-        c = ... == True                         # True
-        d = ... != False                        # True
-        e = ... or ...                          # True
-        f = ... and ...                         # False
-        g = bool(bool(...) == False) or False   # True
-        h = bool(...) is not bool(...)          # False
+        a = True == ...
+        b = True != ...
+        c = not ...
+        d = bool(...) == True
+        e = bool(...) == False
+        f = ... or ...
+        g = ... and ...
+        h = bool(bool(...) == ...) or False
+        i = bool(...) is not bool(False)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        print(bool(a))                          # True
-        print(bool(b))                          # True
-        print(bool(c))                          # True
-        print(bool(d))                          # True
-        print(bool(e))                          # True
-        print(bool(f))                          # False
-        print(bool(g))                          # True
-        print(bool(h))                          # False
+        >>> bool(a)
+        True
+        >>> bool(b)
+        True
+        >>> bool(c)
+        False
+        >>> bool(d)
+        True
+        >>> bool(e)
+        True
+        >>> bool(f)
+        False
+        >>> bool(g)
+        True
+        >>> bool(h)
+        True
+        >>> bool(i)
+        False
 
 :The whys and wherefores:
     * Defining variables
