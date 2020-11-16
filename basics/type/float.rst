@@ -218,7 +218,7 @@ Type Float Altitude
 Type Float Volume
 ------------------
 * Assignment name: Type Float Volume
-* Last update: 2020-10-01
+* Last update: 2020-11-16
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
@@ -253,7 +253,7 @@ Type Float Volume
 Type Float Distance
 -------------------
 * Assignment name: Type Float Distance
-* Last update: 2020-10-01
+* Last update: 2020-11-16
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
@@ -308,7 +308,7 @@ Type Float Distance
 Type Float Velocity
 -------------------
 * Assignment name: Type Float Velocity
-* Last update: 2020-10-01
+* Last update: 2020-11-16
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 3 min
@@ -342,7 +342,7 @@ Type Float Velocity
 Type Float Pressure
 -------------------
 * Assignment name: Type Float Pressure
-* Last update: 2020-10-01
+* Last update: 2020-11-16
 * Complexity level: medium
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
@@ -398,7 +398,7 @@ Type Float Pressure
 Type Float Percent
 ------------------
 * Assignment name: Type Float Percent
-* Last update: 2020-10-01
+* Last update: 2020-11-16
 * Complexity level: medium
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
@@ -446,7 +446,7 @@ Type Float Percent
 Type Float Gradient
 -------------------
 * Assignment name: Type Float Gradient
-* Last update: 2020-10-01
+* Last update: 2020-11-16
 * Complexity level: hard
 * Lines of code to write: 9 lines
 * Estimated time of completion: 8 min
