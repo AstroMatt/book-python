@@ -32,7 +32,7 @@ Type Casting
 
     str('Moon')                     # 'Moon'
     str(1969)                       # '1969'
-    str(13.37)                      # '13.37'
+    str(1.337)                      # '1.337'
 
 
 Single and Double Quotes
@@ -185,7 +185,6 @@ Raw String
     r'[a-z0-9]\n'
 
 .. code-block:: python
-    :emphasize-lines: 1,4
 
     print(r'C:\Users\Admin\file.txt')
     # C:\Users\Admin\file.txt
@@ -440,7 +439,7 @@ Type String Quotes
     #. Zauważ, że druga linijka zaczyna się od tabulacji
     #. Wartość ``NAME`` w podwójnych cudzysłowach to ciąg od użytkownika
     #. Zwróć uwagę na znaki apostrofów, cudzysłowów, tabulacji i nowych linii
-    #. Nie używaj spacji ani entera - użyj ``\n`` i ``\t``
+    #. Nie używaj spacji ani klawisza enter - użyj ``\n`` i ``\t``
     #. Nie korzystaj z dodawania stringów (``str + str``)
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
