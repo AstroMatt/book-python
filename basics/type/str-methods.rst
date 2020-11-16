@@ -14,24 +14,40 @@ Rationale
 .. code-block:: python
 
     a = 'Python'
-    a.replace('P', 'J')
+    a.replace('P', 'C')
 
     print(a)  # Python
 
 .. code-block:: python
 
     a = 'Python'
-    b = a.replace('P', 'J')
+    b = a.replace('P', 'C')
 
     print(a)  # Python
-    print(b)  # Jython
+    print(b)  # Cython
 
 .. code-block:: python
 
     a = 'Python'
-    a = a.replace('P', 'J')
+    a = a.replace('P', 'C')
 
-    print(a)  # Jython
+    print(a)  # Cython
+
+
+Strip Whitespace
+================
+.. code-block:: python
+
+    name = '\tJan Twardowski    \n'
+
+    name.strip()        # 'Jan Twardowski'
+    name.rstrip()       # '\tJan Twardowski'
+    name.lstrip()       # 'Jan Twardowski    \n'
+
+.. code-block:: python
+
+    cmd = input('Type system command to execute: ').strip()
+    print(cmd)
 
 
 Change Case
@@ -67,22 +83,6 @@ Replace
     cmd = cmd.replace('&&', '#')
     print(cmd)
     # ls # rm -fr /
-
-
-Strip Whitespace
-================
-.. code-block:: python
-
-    name = '\tJan Twardowski    \n'
-
-    name.strip()        # 'Jan Twardowski'
-    name.rstrip()       # '\tJan Twardowski'
-    name.lstrip()       # 'Jan Twardowski    \n'
-
-.. code-block:: python
-
-    cmd = input('Type system command to execute: ').strip()
-    print(cmd)
 
 
 Starts With
@@ -523,16 +523,16 @@ Cleaning User Input
     +48 123 555 678
 
     123 555 678
-
+    123555678
+    +48123555678
     +48 12 355 5678
     +48 123-555-678
     +48 123 555 6789
-
     +1 (123) 555-6789
     +1 (123).555.6789
 
     +1 800-python
-    +48123555678
+    +1 800-798466
 
     +48 123 555 678 wew. 1337
     +48 123555678,1
