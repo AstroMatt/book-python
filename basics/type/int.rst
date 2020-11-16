@@ -298,7 +298,7 @@ Type Int Bits
 * Assignment name: Type Int Bits
 * Last update: 2020-11-16
 * Complexity level: medium
-* Lines of code to write: 6 lines
+* Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_int_bits.py`
 
@@ -336,7 +336,7 @@ Type Int Bytes
 * Assignment name: Type Int Bytes
 * Last update: 2020-11-16
 * Complexity level: easy
-* Lines of code to write: 9 lines
+* Lines of code to write: 7 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_int_bytes.py`
 
@@ -394,7 +394,7 @@ Type Int Bandwidth
 :Output:
     .. code-block:: python
 
-        >>> duration // SECOND
+        >>> int(duration // SECOND)
         8
 
 :The whys and wherefores:

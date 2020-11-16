@@ -1,5 +1,5 @@
 """
->>> size // speed
+>>> int(duration // SECOND)
 8
 """
 
@@ -13,5 +13,6 @@ B = 8 * b
 kB = 1024 * B
 MB = 1024 * kB
 
-speed = 100 * Mb/SECOND
-size = 100 * MB/SECOND
+speed = 100 * Mb / SECOND
+size = 100 * MB
+duration = size // speed
