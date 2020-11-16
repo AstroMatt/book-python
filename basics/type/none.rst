@@ -49,7 +49,7 @@ Assignments
 Type None
 ---------
 * Assignment name: Type None
-* Last update: 2020-10-01
+* Last update: 2020-11-16
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
@@ -68,11 +68,11 @@ Type None
 :Input:
     .. code-block:: python
 
-            a = ... is None                                                                       # True
-            b = ... is not None                                                                   # False
-            c = bool(bool(...) is not bool(...)) == False                                         # True
-            d = (bool(bool(...) is not bool(...)) == False and bool(...))                         # False
-            e = (bool(bool(...) is not bool(...)) == False and bool(...)) and (... is not None)   # False
+        a = ... is None                                                                       # True
+        b = ... is not None                                                                   # False
+        c = bool(bool(...) is not bool(...)) == False                                         # True
+        d = (bool(bool(...) is not bool(...)) == False and bool(...))                         # False
+        e = (bool(bool(...) is not bool(...)) == False and bool(...)) and (... is not None)   # False
 
 :Output:
     .. code-block:: text

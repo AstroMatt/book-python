@@ -1,26 +1,17 @@
-expected = 'Jana Twardowskiego III'
-text = 'UL. jana \tTWArdoWskIEGO 3'
+"""
+>>> result
+'Jana Twardowskiego III'
+"""
 
-# Convert to common format
-text = text.upper()
+DATA = 'UL. jana \tTWArdoWskIEGO 3'
 
-# Remove unwanted whitespaces
-text = text.replace('\t', '')
-
-# Remove unwanted special characters
-text = text.replace('.', '')
-
-# Remove unwanted text
-text = text.replace('UL', '')
-text = text.replace('3', 'III')
-
-# Formatting
-text = text.title()
-text = text.replace('Iii', 'III')
-text = text.strip()
-
-print('Matched:', text == expected)
-# Matched: True
-
-print(text)
-# Jana Twardowskiego III
+result = (
+    DATA.upper()                # Convert to common format
+        .replace('\t', '')      # Remove unwanted whitespaces
+        .replace('.', '')       # Remove unwanted special characters
+        .replace('UL', '')      # Remove unwanted text
+        .replace('3', 'III')    # Substitute text
+        .title()                # Formatting
+        .replace('Iii', 'III')  # Clean-up
+        .strip()
+)

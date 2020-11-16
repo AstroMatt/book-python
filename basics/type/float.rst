@@ -310,7 +310,7 @@ Type Float Velocity
 * Assignment name: Type Float Velocity
 * Last update: 2020-11-16
 * Complexity level: easy
-* Lines of code to write: 10 lines
+* Lines of code to write: 9 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_float_velocity.py`
 
@@ -344,7 +344,7 @@ Type Float Pressure
 * Assignment name: Type Float Pressure
 * Last update: 2020-11-16
 * Complexity level: medium
-* Lines of code to write: 8 lines
+* Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/type_float_pressure.py`
 
@@ -400,7 +400,7 @@ Type Float Percent
 * Assignment name: Type Float Percent
 * Last update: 2020-11-16
 * Complexity level: medium
-* Lines of code to write: 6 lines
+* Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/type_float_percent.py`
 
@@ -448,7 +448,7 @@ Type Float Gradient
 * Assignment name: Type Float Gradient
 * Last update: 2020-11-16
 * Complexity level: hard
-* Lines of code to write: 9 lines
+* Lines of code to write: 7 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/type_float_gradient.py`
 

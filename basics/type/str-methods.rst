@@ -545,9 +545,9 @@ Assignments
 Type String Normalize
 ---------------------
 * Assignment name: Type String Normalize
-* Last update: 2020-10-01
+* Last update: 2020-11-16
 * Complexity level: easy
-* Lines of code to write: 8 lines
+* Lines of code to write: 9 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/type_str_normalize.py`
 
@@ -567,10 +567,10 @@ Type String Normalize
         DATA = 'UL. jana \tTWArdoWskIEGO 3'
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: str
-        # Jana Twardowskiego III
+        >>> result
+        'Jana Twardowskiego III'
 
 :The whys and wherefores:
     * Variable definition
@@ -580,9 +580,9 @@ Type String Normalize
 Type String Clean
 -----------------
 * Assignment name: Type String Clean
-* Last update: 2020-10-01
+* Last update: 2020-11-16
 * Complexity level: easy
-* Lines of code to write: 11 lines
+* Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
 * Solution: :download:`solution/type_str_clean.py`
 
@@ -625,30 +625,27 @@ Type String Clean
         h = h
         i = i
 
-        expected = 'Jana III Sobieskiego'
-
-        print(f'{a == expected}\ta = "{a}"')
-        print(f'{b == expected}\tb = "{b}"')
-        print(f'{c == expected}\tc = "{c}"')
-        print(f'{d == expected}\td = "{d}"')
-        print(f'{e == expected}\te = "{e}"')
-        print(f'{f == expected}\tf = "{f}"')
-        print(f'{g == expected}\tg = "{g}"')
-        print(f'{h == expected}\th = "{h}"')
-        print(f'{i == expected}\ti = "{i}"')
-
 :Output:
     .. code-block:: text
 
-        True	a = "Jana III Sobieskiego"
-        True	b = "Jana III Sobieskiego"
-        True	c = "Jana III Sobieskiego"
-        True	d = "Jana III Sobieskiego"
-        True	e = "Jana III Sobieskiego"
-        True	f = "Jana III Sobieskiego"
-        True	g = "Jana III Sobieskiego"
-        True	h = "Jana III Sobieskiego"
-        True	i = "Jana III Sobieskiego"
+        >>> a
+        'Jana III Sobieskiego'
+        >>> b
+        'Jana III Sobieskiego'
+        >>> c
+        'Jana III Sobieskiego'
+        >>> d
+        'Jana III Sobieskiego'
+        >>> e
+        'Jana III Sobieskiego'
+        >>> f
+        'Jana III Sobieskiego'
+        >>> g
+        'Jana III Sobieskiego'
+        >>> h
+        'Jana III Sobieskiego'
+        >>> i
+        'Jana III Sobieskiego'
 
 :The whys and wherefores:
     * Variable definition
