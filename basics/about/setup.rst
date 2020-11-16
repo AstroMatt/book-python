@@ -26,9 +26,9 @@ Requirements
 Assignments
 ===========
 
-Setup IDE
----------
-* Assignment name: About IDE
+About Setup IDE
+---------------
+* Assignment name: About Setup IDE
 * Last update: 2020-10-12
 * Complexity level: easy
 * Lines of code to write: 0 lines
@@ -51,9 +51,9 @@ Setup IDE
     #. WAŻNE: Już do końca szkolenia w tym katalogu będą tworzone rozwiązania do wszystkich zadań
     #. Dzięki oddzielnym katalogom dla każdego uczestnika unikniemy konfliktów w Git
 
-Setup Interpreter
------------------
-* Assignment name: About Interpreter
+About Setup Interpreter
+-----------------------
+* Assignment name: About Setup Interpreter
 * Last update: 2020-10-12
 * Complexity level: easy
 * Lines of code to write: 0 lines
@@ -91,9 +91,9 @@ Setup Interpreter
         >>> print(sys.version[:5])
         3.9.0
 
-Setup VCS
----------
-* Assignment name: Setup VCS
+About Setup VCS
+---------------
+* Assignment name: About Setup VCS
 * Last update: 2020-10-12
 * Complexity level: easy
 * Lines of code to write: 0 lines
