@@ -1,13 +1,13 @@
 """
->>> a
+>>> bool(a)
 True
->>> b
+>>> bool(b)
 False
->>> c
+>>> bool(c)
 True
->>> d
+>>> bool(d)
 False
->>> e
+>>> bool(e)
 False
 """
 

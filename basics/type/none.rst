@@ -77,15 +77,15 @@ Type None
 :Output:
     .. code-block:: text
 
-        >>> a
+        >>> bool(a)
         True
-        >>> b
+        >>> bool(b)
         False
-        >>> c
+        >>> bool(c)
         True
-        >>> d
+        >>> bool(d)
         False
-        >>> e
+        >>> bool(e)
         False
 
 :The whys and wherefores:
