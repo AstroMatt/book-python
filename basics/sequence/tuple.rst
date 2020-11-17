@@ -224,11 +224,13 @@ Sequence Tuple Select
     #. Use data from "Input" section (see below)
     #. Create a ``tuple`` representing all Species
     #. To convert table use multiline select with ``alt`` key in your IDE
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Stwórz ``tuple`` z nazwami gatunków
-    #. Do przekonwertowania tabelki wykorzystaj zaznaczanie wielu linijek za pomocą klawisza ``alt`` w Twoim IDE
+    #. Do konwersji tabelki wykorzystaj zaznaczanie wielu linijek za pomocą klawisza ``alt`` w Twoim IDE
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. code-block:: text
@@ -276,11 +278,13 @@ Sequence Tuple Mean
     #. Use data from "Input" section (see below)
     #. Calculate mean for each numerical values column
     #. To convert table use multiline select with ``alt`` key in your IDE
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Wylicz średnią arytmetyczną dla każdej z kolumn numerycznych
-    #. Do przekonwertowania tabelki wykorzystaj zaznaczanie wielu linijek za pomocą klawisza ``alt`` w Twoim IDE
+    #. Do konwersji tabelki wykorzystaj zaznaczanie wielu linijek za pomocą klawisza ``alt`` w Twoim IDE
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. code-block:: text
