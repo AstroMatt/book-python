@@ -1,3 +1,23 @@
+"""
+>>> example
+'Mark Watney'
+>>> a
+'Jan Twardowski'
+>>> b
+'Jan Twardowski'
+>>> c
+'Mark Watney'
+>>> d
+'Melissa Lewis'
+>>> e
+'Ryan Stone'
+>>> f
+'Ryan Stone'
+>>> g
+'Jan Twardowski'
+"""
+
+example = 'lt. Mark Watney, PhD'
 a = 'dr hab. inż. Jan Twardowski, prof. AATC'
 b = 'gen. pil. Jan Twardowski'
 c = 'Mark Watney, PhD'
@@ -6,13 +26,14 @@ e = 'dr n. med. Ryan Stone'
 f = 'Ryan Stone, MD-PhD'
 g = 'lt. col. Jan Twardowski\t'
 
-print(a[13:-12])
-print(b[10:])
-print(c[:-5])
-print(d[14:])
-print(e[11:])
-print(f[:-8])
-print(g[9:-1])
+example = example[4:-5]
+a = a[13:-12]
+b = b[10:]
+c = c[:-5]
+d = d[14:]
+e = e[11:]
+f = f[:-8]
+g = g[9:-1]
 
-print(f'>{g[9:-1]}<')
+# print(f'>{g[9:-1]}<')
 # >Jan Twardowski<

@@ -291,6 +291,7 @@ Example
 
     from pprint import pprint
 
+
     DATA = [
         ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
         (5.8, 2.7, 5.1, 1.9, 'virginica'),
@@ -335,10 +336,10 @@ Assignments
 Sequence Slice Substr
 ---------------------
 * Assignment name: Sequence Slice Substr
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 5 lines
-* Estimated time of completion: 3 min
+* Estimated time of completion: 5 min
 * Solution: :download:`solution/sequence_slice_substr.py`
 
 :English:
@@ -360,18 +361,18 @@ Sequence Slice Substr
         REMOVE = 'to go to '
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-    result: str
-    # 'We choose the Moon!'
-
+        >>> assert type(result) is str
+        >>> result
+        'We choose the Moon!'
 
 Sequence Slice Sequence
 -----------------------
 * Assignment name: Sequence Slice Sequence
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
-* Lines of code to write: 5 lines
+* Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/sequence_slice_sequence.py`
 
@@ -390,10 +391,11 @@ Sequence Slice Sequence
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: set
-        # {0, 2, 4}
+        >>> assert type(result) is set
+        >>> result
+        {0, 2, 4}
 
 :The whys and wherefores:
     * Defining and using ``list``, ``tuple``, ``set``
@@ -403,7 +405,7 @@ Sequence Slice Sequence
 Sequence Slice Text
 -------------------
 * Assignment name: Sequence Slice Text
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 8 min
@@ -423,16 +425,10 @@ Sequence Slice Text
     #. Użyj tylko ``slice`` do oczyszczenia tekstu
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
-:Example:
-    .. code-block:: python
-
-        text = 'lt. Mark Watney, PhD'
-        text[4:-5]
-        # 'Mark Watney'
-
 :Input:
     .. code-block:: python
 
+        example = 'lt. Mark Watney, PhD'
         a = 'dr hab. inż. Jan Twardowski, prof. AATC'
         b = 'gen. pil. Jan Twardowski'
         c = 'Mark Watney, PhD'
@@ -441,16 +437,34 @@ Sequence Slice Text
         f = 'Ryan Stone, MD-PhD'
         g = 'lt. col. Jan Twardowski\t'
 
-:Output:
-    .. code-block:: python
+        example = example[4:-5]
+        a = a[:]
+        b = b[:]
+        c = c[:]
+        d = d[:]
+        e = e[:]
+        f = f[:]
+        g = g[:]
 
-        print(a == 'Jan Twardowski')       # True
-        print(b == 'Jan Twardowski')       # True
-        print(c == 'Mark Watney')          # True
-        print(d == 'Melissa Lewis')        # True
-        print(e == 'Ryan Stone')           # True
-        print(f == 'Ryan Stone')           # True
-        print(g == 'Jan Twardowski')       # True
+:Output:
+    .. code-block:: text
+
+        >>> example
+        'Mark Watney'
+        >>> a
+        'Jan Twardowski'
+        >>> b
+        'Jan Twardowski'
+        >>> c
+        'Mark Watney'
+        >>> d
+        'Melissa Lewis'
+        >>> e
+        'Ryan Stone'
+        >>> f
+        'Ryan Stone'
+        >>> g
+        'Jan Twardowski'
 
 :The whys and wherefores:
     * Variable definition
@@ -461,7 +475,7 @@ Sequence Slice Text
 Sequence Slice Split
 --------------------
 * Assignment name: Sequence Slice Split
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 8 min
@@ -526,35 +540,41 @@ Sequence Slice Split
         ]
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        header: tuple
-        # ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species')
+        >>> assert type(header) is tuple
+        >>> assert type(train) is list
+        >>> assert type(test) is list
+        >>> assert all(type(x) is tuple for x in train)
+        >>> assert all(type(x) is tuple for x in test)
 
-        train: list[tuple]
-        # [(5.8, 2.7, 5.1, 1.9, 'virginica'),
-        #  (5.1, 3.5, 1.4, 0.2, 'setosa'),
-        #  (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-        #  (6.3, 2.9, 5.6, 1.8, 'virginica'),
-        #  (6.4, 3.2, 4.5, 1.5, 'versicolor'),
-        #  (4.7, 3.2, 1.3, 0.2, 'setosa'),
-        #  (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-        #  (7.6, 3.0, 6.6, 2.1, 'virginica'),
-        #  (4.9, 3.0, 1.4, 0.2, 'setosa'),
-        #  (4.9, 2.5, 4.5, 1.7, 'virginica'),
-        #  (7.1, 3.0, 5.9, 2.1, 'virginica'),
-        #  (4.6, 3.4, 1.4, 0.3, 'setosa')]
+        >>> header  # doctest: +NORMALIZE_WHITESPACE
+        ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species')
 
-        test: list[tuple]
-        # [(5.4, 3.9, 1.7, 0.4, 'setosa'),
-        #  (5.7, 2.8, 4.5, 1.3, 'versicolor'),
-        #  (5.0, 3.6, 1.4, 0.3, 'setosa'),
-        #  (5.5, 2.3, 4.0, 1.3, 'versicolor'),
-        #  (6.5, 3.0, 5.8, 2.2, 'virginica'),
-        #  (6.5, 2.8, 4.6, 1.5, 'versicolor'),
-        #  (6.3, 3.3, 6.0, 2.5, 'virginica'),
-        #  (6.9, 3.1, 4.9, 1.5, 'versicolor'),
-        #  (4.6, 3.1, 1.5, 0.2, 'setosa')]
+        >>> train  # doctest: +NORMALIZE_WHITESPACE
+        [(5.8, 2.7, 5.1, 1.9, 'virginica'),
+         (5.1, 3.5, 1.4, 0.2, 'setosa'),
+         (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+         (6.3, 2.9, 5.6, 1.8, 'virginica'),
+         (6.4, 3.2, 4.5, 1.5, 'versicolor'),
+         (4.7, 3.2, 1.3, 0.2, 'setosa'),
+         (7.0, 3.2, 4.7, 1.4, 'versicolor'),
+         (7.6, 3.0, 6.6, 2.1, 'virginica'),
+         (4.9, 3.0, 1.4, 0.2, 'setosa'),
+         (4.9, 2.5, 4.5, 1.7, 'virginica'),
+         (7.1, 3.0, 5.9, 2.1, 'virginica'),
+         (4.6, 3.4, 1.4, 0.3, 'setosa')]
+
+        >>> test  # doctest: +NORMALIZE_WHITESPACE
+        [(5.4, 3.9, 1.7, 0.4, 'setosa'),
+         (5.7, 2.8, 4.5, 1.3, 'versicolor'),
+         (5.0, 3.6, 1.4, 0.3, 'setosa'),
+         (5.5, 2.3, 4.0, 1.3, 'versicolor'),
+         (6.5, 3.0, 5.8, 2.2, 'virginica'),
+         (6.5, 2.8, 4.6, 1.5, 'versicolor'),
+         (6.3, 3.3, 6.0, 2.5, 'virginica'),
+         (6.9, 3.1, 4.9, 1.5, 'versicolor'),
+         (4.6, 3.1, 1.5, 0.2, 'setosa')]
 
 :The whys and wherefores:
     * Using nested sequences
