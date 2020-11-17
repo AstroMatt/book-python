@@ -141,10 +141,14 @@ Step
 
     text = 'We choose to go to the Moon!'
 
-    text[::2]             # 'W hoet ot h on'
+    text[::2]
+    # 'W hoet ot h on'
 
-    text[::-1]            # '!nooM eht ot og ot esoohc eW'
-    text[::-2]            # '!oMeto go soce'
+    text[::-1]
+    # '!nooM eht ot og ot esoohc eW'
+
+    text[::-2]
+    # '!oMeto go soce'
 
 
 Out of Range
@@ -153,8 +157,11 @@ Out of Range
 
     text = 'We choose to go to the Moon!'
 
-    text[:100]      # 'We choose to go to the Moon!'
-    text[100:]      # ''
+    text[:100]
+    # 'We choose to go to the Moon!'
+
+    text[100:]
+    # ''
 
 
 Nested Sequences
@@ -338,7 +345,7 @@ Sequence Slice Substr
 * Assignment name: Sequence Slice Substr
 * Last update: 2020-11-17
 * Complexity level: easy
-* Lines of code to write: 5 lines
+* Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/sequence_slice_substr.py`
 

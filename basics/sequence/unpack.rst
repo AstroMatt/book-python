@@ -25,11 +25,16 @@ Rationale
     [a, b, c] = [1, 2, 3]
     [a, b, c] = (1, 2, 3)
 
+.. figure:: img/function-unpacking,args,kwargs.png
+    :scale: 40%
+    :align: center
+
+    Unpacking and Arbitrary Number of Parameters and Arguments
+
 
 Errors
 ======
 .. code-block:: python
-    :caption: Note, that ``set`` is unordered collection
 
     {a, b, c} = {1, 2, 3}
     # Traceback (most recent call last):
@@ -37,7 +42,6 @@ Errors
     # SyntaxError: can't assign to literal
 
 .. code-block:: python
-    :caption: Too many values to unpack
 
     a, b, c = [1, 2, 3, 4]
     # Traceback (most recent call last):
@@ -45,7 +49,6 @@ Errors
     # ValueError: too many values to unpack (expected 3)
 
 .. code-block:: python
-    :caption: Not enough values to unpack
 
     a, b, c, d = [1, 2, 3]
     # Traceback (most recent call last):
@@ -216,7 +219,7 @@ Examples
     # sys.version_info(major=3, minor=9, micro=0, releaselevel='final', serial=0)
 
     major, minor, *_ = sys.version_info
-    print(major, minor)
+    print(major, minor, sep='.')
     # 3.9
 
 .. code-block:: python
@@ -247,14 +250,14 @@ Examples
     def parse(line):
         mission, *crew = line.split(',')
         crew = ' and '.join(name.title() for name in crew)
-        print(mission.upper(), crew)
+        print(mission.upper(), crew, sep=': ')
 
 
     parse('ares3,watney,lewis,vogel,johanssen')
-    # ARES3 Watney and Lewis and Vogel and Johanssen
+    # ARES3: Watney and Lewis and Vogel and Johanssen
 
     parse('apollo18,twardowski,ivanovic')
-    # APOLLO18 Twardowski and Ivanovic
+    # APOLLO18: Twardowski and Ivanovic
 
 .. code-block:: python
 
@@ -392,7 +395,7 @@ Function Unpack Nested
         >>> assert type(header) is tuple
         >>> assert all(type(x) is str for x in header)
         >>> assert type(data) is list
-        >>> assert  all(type(row) is tuple for row in data)
+        >>> assert all(type(row) is tuple for row in data)
 
         >>> header
         ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species')
