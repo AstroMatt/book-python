@@ -52,7 +52,7 @@ Enumerate
 
     next(astronaut)
     # Traceback (most recent call last):
-    #   ...
+    #     ...
     # StopIteration
 
 .. code-block:: python
@@ -94,7 +94,7 @@ Zip
 
     next(astronaut)
     # Traceback (most recent call last):
-    #   ...
+    #     ...
     # StopIteration
 
 .. code-block:: python
@@ -132,7 +132,7 @@ Zip
 
     next(astronauts)
     # Traceback (most recent call last):
-    #   ...
+    #     ...
     # StopIteration
 
 .. code-block:: python

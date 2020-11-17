@@ -413,7 +413,7 @@ Loop Dict from List to Dict
         #   'Petal length': 1.4,
         #   'Petal width': 0.2,
         #   'Species': 'setosa'},
-        #  ...]
+        #   ...]
 
 :The whys and wherefores:
     * Working with nested data structures

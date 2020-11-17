@@ -19,7 +19,7 @@ Syntax
     "``{% ... %}``", "Statements"
     "``{{ ... }}``", "Expressions to print to the template output"
     "``{# ... #}``", "Comments not included in the template output"
-    "``#  ... ##``", "Line Statements"
+    "``# ... ##``", "Line Statements"
 
 
 Example usage

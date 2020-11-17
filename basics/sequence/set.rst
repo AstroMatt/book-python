@@ -17,6 +17,25 @@ Rationale
     * Do not support getitem
     * Do not support slice
 
+Hashable (Immutable)
+
+    * ``int``
+    * ``float``
+    * ``bool``
+    * ``NoneType``
+    * ``str``
+    * ``tuple``
+    * ``frozenset``
+
+Non-hashable (Mutable)
+
+    * ``list``
+    * ``set``
+    * ``dict``
+
+.. note:: "Hashable types are also immutable" is true for builtin types, but it's not a universal truth. More info: :ref:`OOP Hash` and :ref:`OOP Object Identity`.
+
+
 Type Definition
 ===============
 .. highlights::
@@ -377,10 +396,10 @@ Assignments
 Sequence Set Create
 -------------------
 * Assignment name: Sequence Set Create
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
-* Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Lines of code to write: 1 lines
+* Estimated time of completion: 2 min
 * Solution: :download:`solution/sequence_set_create.py`
 
 :English:
@@ -390,8 +409,7 @@ Sequence Set Create
         * ``1``
         * ``2.2``
 
-    #. Print ``result``
-    #. Print number of elements in ``result``
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Stwórz zbiór ``result`` z elementami:
@@ -400,15 +418,22 @@ Sequence Set Create
         * ``1``
         * ``2.2``
 
-    #. Wypisz ``result``
-    #. Wypisz liczbę elementów ``result``
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: text
+
+        >>> assert type(result) is set
+        >>> assert 'a' in result
+        >>> assert 1 in result
+        >>> assert 2.2 in result
 
 Sequence Set Many
 -----------------
 * Assignment name: Sequence Set Many
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
-* Lines of code to write: 9 lines
+* Lines of code to write: 8 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/sequence_set_many.py`
 
@@ -444,10 +469,11 @@ Sequence Set Many
         "5", "6.4", "3.2", "4.5", "1.5"
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: set
-        # {0.2, 1.9, 2.7, 3.5, 1.4, 5.8, 5.1, 1.3, 2.8, 4.1, 5.7, 6.3, 5.6, 6.4, 1.5, 4.5, 3.2, 1.8, 2.9}
+        >>> assert type(result) is set
+        >>> result
+        {0.2, 1.9, 2.7, 3.5, 1.4, 5.8, 5.1, 1.3, 2.8, 4.1, 5.7, 6.3, 5.6, 6.4, 1.5, 4.5, 3.2, 1.8, 2.9}
 
 :The whys and wherefores:
     * Defining ``set``

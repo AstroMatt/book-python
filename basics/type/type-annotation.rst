@@ -64,6 +64,7 @@ Optional
 
     from typing import Optional
 
+
     data: Optional[int] = 1
     data: Optional[int] = None
 
@@ -81,10 +82,24 @@ Union
 =====
 .. code-block:: python
 
-    from typing import Optional
+    from typing import Union
+
 
     data: Union[int, float] = 1
     data: Union[int, float] = 1.1
+
+
+Aliases
+=======
+.. code-block:: python
+
+    from typing import Union
+
+
+    Number = Union[float, int]
+
+    age: Number = 10
+    age: Number = 10.5
 
 
 Final
@@ -103,6 +118,7 @@ Final
 .. code-block:: python
 
     from typing import Final
+
 
     second: Final[int] = 1
     minute: Final[int] = 60 * second
@@ -133,6 +149,7 @@ Future
 
     from typing import Union, Optional
 
+
     age: Union[int, float] = 1337
     age: Optional[int] = 1337
 
@@ -140,7 +157,6 @@ Future
 
     age: int|float = 1337
     age: int|None = 1337
-
 
 .. code-block:: python
     :caption: Result of this expression would then be valid in isinstance() and issubclass()

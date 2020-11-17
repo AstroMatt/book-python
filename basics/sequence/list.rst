@@ -32,6 +32,16 @@ Type Definition
     data = ['a', 'b', 'c']
     data = ['a', 1, 2.2, True, None]
 
+.. code-block:: python
+
+    list(1, 2, 3, 4)
+    # Traceback (most recent call last):
+    #     ...
+    # TypeError: list expected at most 1 argument, got 4
+
+    list([1, 2, 3, 4])
+    # [1, 2, 3, 4]
+
 
 Type Casting
 ============
@@ -40,7 +50,8 @@ Type Casting
 
 .. code-block:: python
 
-    list('a', 'b', 'c', 'd')
+    data = 'abcd'
+    list(data)
     # ['a', 'b', 'c', 'd']
 
 .. code-block:: python
@@ -292,10 +303,10 @@ Assignments
 Sequence List Create
 --------------------
 * Assignment name: Sequence List Create
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
-* Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Lines of code to write: 1 lines
+* Estimated time of completion: 2 min
 * Solution: :download:`solution/sequence_list_create.py`
 
 :English:
@@ -305,8 +316,8 @@ Sequence List Create
         * ``1``
         * ``2.2``
 
-    #. Print ``result``
-    #. Print number of elements in ``result``
+    #. Compare result with "Output" section (see below)
+
 
 :Polish:
     #. Stwórz listę ``result`` z elementami:
@@ -315,8 +326,14 @@ Sequence List Create
         * ``1``
         * ``2.2``
 
-    #. Wypisz ``result``
-    #. Wypisz liczbę elementów ``result``
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: text
+
+        >>> assert type(result) is list
+        >>> result
+        ['a', 1, 2.2]
 
 :The whys and wherefores:
     * Defining ``list``
@@ -324,7 +341,7 @@ Sequence List Create
 Sequence List Many
 ------------------
 * Assignment name: Sequence List Many
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
@@ -336,6 +353,7 @@ Sequence List Many
     #. Create list ``b`` with data from row 2
     #. Create list ``c`` with data from row 3
     #. Do not use values from "Row" column
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
@@ -343,6 +361,7 @@ Sequence List Many
     #. Stwórz listę ``b`` z danymi z wiersza 2
     #. Stwórz listę ``c`` z danymi z wiersza 3
     #. Nie używaj wartości z kolumny "Row"
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. csv-table:: Input data
@@ -353,15 +372,28 @@ Sequence List Many
         "2", "5.1", "3.5", "1.4", "0.2", "setosa"
         "3", "5.7", "2.8", "4.1", "1.3", "versicolor"
 
+:Output:
+    .. code-block:: text
+
+        >>> assert type(a) is list
+        >>> assert type(b) is list
+        >>> assert type(c) is list
+        >>> a
+        # [5.8, 2.7, 5.1, 1.9, 'virginica']
+        >>> b
+        # [5.1, 3.5, 1.4, 0.2, 'setosa']
+        >>> c
+        # [5.7, 2.8, 4.1, 1.3, 'versicolor']
+
 :The whys and wherefores:
     * Defining ``list``
 
 Sequence List Modify
 --------------------
 * Assignment name: Sequence List Modify
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
-* Lines of code to write: 3 lines
+* Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/sequence_list_modify.py`
 
@@ -389,11 +421,17 @@ Sequence List Modify
         c = [7.6, 3.0, 6.6, 2.1, 'virginica']
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        a = ['versicolor', 4.7, 3.2, 1.3, 0.2]
-        b = [7.0, 3.2, 4.7, 1.4, 'setosa']
-        c = [7.6, 3.0, 6.6, 2.1]
+        >>> assert type(a) is list
+        >>> assert type(b) is list
+        >>> assert type(c) is list
+        >>> a
+        ['versicolor', 4.7, 3.2, 1.3, 0.2]
+        >>> b
+        [7.0, 3.2, 4.7, 1.4, 'setosa']
+        >>> c
+        [7.6, 3.0, 6.6, 2.1]
 
 :The whys and wherefores:
     * Defining ``list``

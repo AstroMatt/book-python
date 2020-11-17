@@ -13,7 +13,7 @@ SSH
 
     client.connect('example.com', username='myusername')
     # Traceback (most recent call last):
-    #   ...
+    #     ...
     # paramiko.ssh_exception.SSHException: Server 'example.com' not found in known_hosts
 
 .. code-block:: python
@@ -236,10 +236,8 @@ Executing on remote host
 
     # it's a dict!
     result.items()
-    # [
-    #   (<Connection host=web1>, <Result cmd='hostname' exited=0>),
-    #   ...
-    # ]
+    # [(<Connection host=web1>, <Result cmd='hostname' exited=0>),
+    # ...]
 
 .. code-block:: python
 

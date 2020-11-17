@@ -180,10 +180,10 @@ Assignments
 Sequence Tuple Create
 ---------------------
 * Assignment name: Sequence Tuple Create
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
-* Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Lines of code to write: 1 lines
+* Estimated time of completion: 2 min
 * Solution: :download:`solution/sequence_tuple_create.py`
 
 :English:
@@ -193,8 +193,7 @@ Sequence Tuple Create
         * ``1``
         * ``2.2``
 
-    #. Print ``result``
-    #. Print number of elements in ``result``
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Stwórz tuple ``result`` z elementami:
@@ -203,27 +202,83 @@ Sequence Tuple Create
         * ``1``
         * ``2.2``
 
-    #. Wypisz ``result``
-    #. Wypisz liczbę elementów ``result``
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
-Sequence Tuple Many
--------------------
-* Assignment name: Sequence Tuple Many
-* Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 13 lines
-* Estimated time of completion: 13 min
-* Solution: :download:`solution/sequence_tuple_many.py`
+:Output:
+    .. code-block:: text
+
+        >>> assert type(result) is tuple
+        >>> result
+        ('a', 1, 2.2)
+
+Sequence Tuple Select
+---------------------
+* Assignment name: Sequence Tuple Select
+* Last update: 2020-11-17
+* Complexity level: easy
+* Lines of code to write: 1 lines
+* Estimated time of completion: 5 min
+* Solution: :download:`solution/sequence_tuple_select.py`
 
 :English:
     #. Use data from "Input" section (see below)
     #. Create a ``tuple`` representing all Species
-    #. Calculate mean for each numerical values column
     #. To convert table use multiline select with ``alt`` key in your IDE
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Stwórz ``tuple`` z nazwami gatunków
+    #. Do przekonwertowania tabelki wykorzystaj zaznaczanie wielu linijek za pomocą klawisza ``alt`` w Twoim IDE
+
+:Input:
+    .. code-block:: text
+
+        "Sepal length", "Sepal width", "Petal length", "Petal width", "Species"
+        "5.8", "2.7", "5.1", "1.9", "virginica"
+        "5.1", "3.5", "1.4", "0.2", "setosa"
+        "5.7", "2.8", "4.1", "1.3", "versicolor"
+        "6.3", "2.9", "5.6", "1.8", "virginica"
+        "6.4", "3.2", "4.5", "1.5", "versicolor"
+        "4.7", "3.2", "1.3", "0.2", "setosa"
+        "7.0", "3.2", "4.7", "1.4", "versicolor"
+        "7.6", "3.0", "6.6", "2.1", "virginica"
+        "4.9", "3.0", "1.4", "0.2", "setosa"
+        "4.9", "2.5", "4.5", "1.7", "virginica"
+        "7.1", "3.0", "5.9", "2.1", "virginica"
+
+:Output:
+    .. code-block:: text
+
+        >>> assert type(species) is tuple
+        >>> species  # doctest: +NORMALIZE_WHITESPACE
+        ('virginica', 'setosa', 'versicolor', 'virginica',
+         'versicolor', 'setosa', 'versicolor', 'virginica',
+         'setosa', 'virginica', 'virginica')
+
+:The whys and wherefores:
+    * Defining ``tuple``
+    * Learning IDE features
+
+:Hints:
+    * ``ALT``+``left mouse button`` = multiple select
+    * ``ALT``+``SHIFT``+``left mouse button drag`` = vertical selection
+
+Sequence Tuple Mean
+-------------------
+* Assignment name: Sequence Tuple Mean
+* Last update: 2020-11-17
+* Complexity level: medium
+* Lines of code to write: 13 lines
+* Estimated time of completion: 8 min
+* Solution: :download:`solution/sequence_tuple_mean.py`
+
+:English:
+    #. Use data from "Input" section (see below)
+    #. Calculate mean for each numerical values column
+    #. To convert table use multiline select with ``alt`` key in your IDE
+
+:Polish:
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Wylicz średnią arytmetyczną dla każdej z kolumn numerycznych
     #. Do przekonwertowania tabelki wykorzystaj zaznaczanie wielu linijek za pomocą klawisza ``alt`` w Twoim IDE
 
@@ -243,9 +298,31 @@ Sequence Tuple Many
         "4.9", "2.5", "4.5", "1.7", "virginica"
         "7.1", "3.0", "5.9", "2.1", "virginica"
 
+:Output:
+    .. code-block:: text
+
+        >>> sepal_length
+        5.954545454545454
+        >>> sepal_width
+        3.0
+        >>> petal_length
+        4.1
+        >>> petal_width
+        1.3090909090909089
+
 :The whys and wherefores:
     * Defining ``tuple``
     * Learning IDE features
 
 :Hints:
     * ``mean = sum(...) / len(...)``
+    * ``ALT``+``left mouse button`` = multiple select
+    * ``ALT``+``SHIFT``+``left mouse button drag`` = vertical selection
+    * ``ALT``+``SHIFT``+``right`` = select word to the right (macOS)
+    * ``ALT``+``SHIFT``+``left`` = select word to the left (macOS)
+    * ``CTRL``+``SHIFT``+``right`` = select word to the right (Windows)
+    * ``CTRL``+``SHIFT``+``left`` = select word to the left (Windows)
+    * ``CTRL``+``right`` = jump over the word to the right
+    * ``CTRL``+``left`` = jump over the word to the left
+    * ``CTRL``+``ALT``+ L = Reformat Code on Windows
+    * ``CMD``+``ALT``+ L = Reformat Code on macOS

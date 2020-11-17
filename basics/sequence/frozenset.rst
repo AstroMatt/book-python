@@ -115,10 +115,10 @@ Assignments
 Sequence Frozenset Create
 -------------------------
 * Assignment name: Sequence Frozenset Create
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
-* Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Lines of code to write: 1 lines
+* Estimated time of completion: 2 min
 * Solution: :download:`solution/sequence_frozenset_create.py`
 
 :English:
@@ -128,8 +128,7 @@ Sequence Frozenset Create
         * ``1``
         * ``2.2``
 
-    #. Print ``result``
-    #. Print number of elements in ``result``
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Stwórz frozenset ``result`` z elementami:
@@ -138,8 +137,15 @@ Sequence Frozenset Create
         * ``1``
         * ``2.2``
 
-    #. Wypisz ``result``
-    #. Wypisz liczbę elementów ``result``
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: text
+
+        >>> assert type(result) is frozenset
+        >>> assert 'a' in result
+        >>> assert 1 in result
+        >>> assert 2.2 in result
 
 :The whys and wherefores:
     * Defining ``list``
@@ -147,9 +153,9 @@ Sequence Frozenset Create
 Sequence Frozenset Newline
 --------------------------
 * Assignment name: Sequence Frozenset Newline
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
-* Lines of code to write: 2 lines
+* Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/sequence_frozenset_newline.py`
 
@@ -174,7 +180,11 @@ Sequence Frozenset Newline
             'Not because they are easy, but because they are hard.'})
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: str
-        # 'We choose to go to the Moon.\nWe choose to go to the Moon in this decade and do the other things.\nNot because they are easy, but because they are hard.'
+        >>> assert type(result) is str
+        >>> assert 'We choose to go to the Moon.' in result
+        >>> assert 'We choose to go to the Moon in this decade and do the other things.' in result
+        >>> assert 'Not because they are easy, but because they are hard.' in result
+        >>> result.count('\\n')
+        2

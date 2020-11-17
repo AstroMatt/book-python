@@ -50,7 +50,7 @@ class Contact(models.Model):
 
 
     def save(self, *args, **kwargs):
-        # ... execute at Model.save()
+        # is called at Model.save()
         return super().save(*args, **kwargs)
 
     class Meta:
