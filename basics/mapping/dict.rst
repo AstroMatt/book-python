@@ -461,7 +461,7 @@ Assignments
 Mapping Dict Define
 -------------------
 * Assignment name: Mapping Dict Define
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -482,10 +482,23 @@ Mapping Dict Define
         Last Name: Twardowski
         Missions: Apollo, Artemis
 
+:Output:
+    .. code-block:: text
+
+        >>> assert type(result) is dict
+        >>> assert 'firstname' in result
+        >>> assert 'lastname' in result
+        >>> assert 'missions' in result
+        >>> assert result['firstname'] == 'Jan'
+        >>> assert result['lastname'] == 'Twardowski'
+        >>> assert 'Artemis' in result['missions']
+        >>> assert 'Ares' in result['missions']
+        >>> assert type(result['missions']) is list
+
 Mapping Dict Items
 ------------------
 * Assignment name: Mapping Dict Items
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -493,16 +506,16 @@ Mapping Dict Items
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Print list of ``DATA`` keys
-    #. Print list of ``DATA`` values
-    #. Print list of ``DATA`` key-value pairs
+    #. Define ``keys: list[str]`` with list of ``DATA`` keys
+    #. Define ``values: list[str]`` with list of ``DATA`` values
+    #. Define ``keys: list[tuple]`` with list of ``DATA`` key-value pairs
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Wypisz listę kluczy z ``DATA``
-    #. Wypisz listę wartości z ``DATA``
-    #. Wypisz listę pary klucz-wartość z ``DATA``
+    #. Zdefiniuj ``keys: list[str]`` z listą kluczy z ``DATA``
+    #. Zdefiniuj ``values: list[str]`` z listą wartości z ``DATA``
+    #. Zdefiniuj ``keys: list[tuple]`` z listą par klucz-wartość z ``DATA``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
@@ -516,24 +529,27 @@ Mapping Dict Items
         }
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        keys: list
-        # ['Sepal length', 'Sepal width', 'Petal length', 'Petal width']
+        >>> assert type(keys) is list
+        >>> assert type(values) is list
+        >>> assert type(items) is list
+        >>> assert all(type(x) is tuple for x in items)
 
-        values: list
-        # [5.8, 2.7, 5.1, 1.9]
-
-        items: list[tuple]
-        # [('Sepal length', 5.8),
-        #  ('Sepal width', 2.7),
-        #  ('Petal length', 5.1),
-        #  ('Petal width', 1.9)]
+        >>> keys
+        ['Sepal length', 'Sepal width', 'Petal length', 'Petal width']
+        >>> values
+        [5.8, 2.7, 5.1, 1.9]
+        >>> items  # doctest: +NORMALIZE_WHITESPACE
+        [('Sepal length', 5.8),
+         ('Sepal width', 2.7),
+         ('Petal length', 5.1),
+         ('Petal width', 1.9)]
 
 Mapping Dict Substitute
 -----------------------
 * Assignment name: Mapping Dict Substitute
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
@@ -570,10 +586,12 @@ Mapping Dict Substitute
         |   ś   |    s   |
         |   Ź   |    z   |
 
+.. todo:: Doctests
+
 Mapping Dict Get
 ----------------
 * Assignment name: Mapping Dict Get
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
@@ -594,7 +612,7 @@ Mapping Dict Get
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Stwórz tłumacza alfabetu pilotów
     #. Pojedynczym literom przyporządkuj ich fonetyczne odpowiedniki
-    #. Do przekonwertowania tabelki wykorzystaj zaznaczanie wielu linijek za pomocą klawisza ``alt`` w Twoim IDE (jeżeli skrót klawiszowy nie działa w Twoim IDE, użyj tylko cztery pierwsze litery)
+    #. Do konwersji tabelki wykorzystaj zaznaczanie wielu linijek za pomocą klawisza ``alt`` w Twoim IDE (jeżeli skrót klawiszowy nie działa w Twoim IDE, użyj tylko cztery pierwsze litery)
     #. Poproś użytkownika o wprowadzenie litery
     #. Użytkownik zawsze poda tylko jedną dużą literę lub cyfrę
     #. Wypisz fonetyczną wymowę litery
@@ -635,6 +653,8 @@ Mapping Dict Get
 :The whys and wherefores:
     * Defining ``dict`` with values
     * Type casting
+
+.. todo:: Doctests
 
 
 References

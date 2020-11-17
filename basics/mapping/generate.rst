@@ -157,7 +157,7 @@ Assignments
 Mapping Generate Pairs
 ----------------------
 * Assignment name: Mapping Generate Pairs
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
@@ -187,21 +187,21 @@ Mapping Generate Pairs
         ]
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: dict
-        # {'Sepal length': 5.8,
-        #  'Sepal width': 2.7,
-        #  'Petal length': 5.1,
-        #  'Petal width': 1.9,
-        #  'Species': 'virginica'}
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        {'Sepal length': 5.8,
+         'Sepal width': 2.7,
+         'Petal length': 5.1,
+         'Petal width': 1.9,
+         'Species': 'virginica'}
 
 Mapping Generate Enumerate
 --------------------------
 * Assignment name: Mapping Generate Enumerate
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
-* Lines of code to write: 3 lines
+* Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/mapping_generate_enumerate.py`
 
@@ -223,19 +223,19 @@ Mapping Generate Enumerate
         DATA = ['setosa', 'versicolor', 'virginica']
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: dict
-        # {0: 'setosa',
-        #  1: 'versicolor',
-        #  2: 'virginica'}
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        {0: 'setosa',
+         1: 'versicolor',
+         2: 'virginica'}
 
 Mapping Generate Zip
 --------------------
 * Assignment name: Mapping Generate Zip
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
-* Lines of code to write: 3 lines
+* Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/mapping_generate_zip.py`
 
@@ -258,11 +258,11 @@ Mapping Generate Zip
         VALUES = [5.8, 2.7, 5.1, 1.9, 'virginica']
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: dict
-        # {'Sepal length': 5.8,
-        #  'Sepal width': 2.7,
-        #  'Petal length': 5.1,
-        #  'Petal width': 1.9,
-        #  'Species': 'virginica'}
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        {'Sepal length': 5.8,
+         'Sepal width': 2.7,
+         'Petal length': 5.1,
+         'Petal width': 1.9,
+         'Species': 'virginica'}

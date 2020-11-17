@@ -31,6 +31,8 @@ Dict Keys
     #     ...
     # TypeError: unhashable type: 'set'
 
+.. code-block:: python
+
     data = {
         [1]: 'setosa',
         [1,2,3]: 'virginica',

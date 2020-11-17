@@ -386,6 +386,8 @@ Type String Input
     #. Poproś użytkownika o wprowadzenie tekstu
     #. Wypisz liczbę znaków
 
+.. todo:: Doctests
+
 Type String Emoticon
 --------------------
 * Assignment name: Type String Emoticon
@@ -414,10 +416,12 @@ Type String Emoticon
     * Print formatting
     * Reading input data from user
 
+.. todo:: Doctests
+
 Type String Quotes
 ------------------
 * Assignment name: Type String Quotes
-* Last update: 2020-10-01
+* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 8 min
@@ -446,10 +450,12 @@ Type String Quotes
 :Output:
     .. code-block:: text
 
-        '''My name... "NAME".
-            I'm an """astronaut!"""'''
+        >>> print(result)  # doctest: +NORMALIZE_WHITESPACE
+        '''My name... "José Jiménez".
+        \tI'm an \"\"\"astronaut!\"\"\"'''
 
 :The whys and wherefores:
     * Variable declaration
     * Print formatting
     * Reading input data from user
+
