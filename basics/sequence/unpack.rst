@@ -29,7 +29,7 @@ Rationale
     :scale: 40%
     :align: center
 
-    Unpacking and Arbitrary Number of Parameters and Arguments
+    Unpacking and Arbitrary Number of Parameters and Arguments. More info: :ref:`Sequence Unpack` :ref:`Function Arbitrary Number of Parameters`, :ref:`Function Arbitrary Number of Arguments`.
 
 
 Errors

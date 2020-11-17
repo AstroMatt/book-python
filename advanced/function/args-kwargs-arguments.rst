@@ -1,3 +1,5 @@
+.. _Function Arbitrary Number of Arguments:
+
 *****************************
 Arbitrary Number of Arguments
 *****************************

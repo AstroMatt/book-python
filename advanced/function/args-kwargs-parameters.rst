@@ -1,3 +1,5 @@
+.. _Function Arbitrary Number of Parameters:
+
 ******************************
 Arbitrary Number of Parameters
 ******************************
@@ -22,7 +24,7 @@ Rationale
     :scale: 40%
     :align: center
 
-    Unpacking and Arbitrary Number of Parameters and Arguments
+    Unpacking and Arbitrary Number of Parameters and Arguments. More info: :ref:`Function Unpack` :ref:`Function Arbitrary Number of Parameters`, :ref:`Function Arbitrary Number of Arguments`.
 
 
 Positional Parameters
