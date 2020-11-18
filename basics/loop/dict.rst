@@ -410,23 +410,32 @@ Loop Dict Label Encoder
         ]
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        features: list[tuple]
-        # [(5.8, 2.7, 5.1, 1.9),
-        #  (5.1, 3.5, 1.4, 0.2),
-        #  (5.7, 2.8, 4.1, 1.3),
-        #  (6.3, 2.9, 5.6, 1.8),
-        #  (6.4, 3.2, 4.5, 1.5),
-        #  (4.7, 3.2, 1.3, 0.2), ...]
+        >>> assert type(features) is list
+        >>> assert type(labels) is list
+        >>> assert type(label_encoder) is dict
 
-        labels: list[int]
-        # [0, 1, 2, 0, 2, 1, 2, 0, 1, 0, 0, 1, 1, 2, 1, 2, 0, 2, 0, 2, 1]
+        >>> assert all(type(x) is tuple for x in features)
+        >>> assert all(type(x) is int for x in labels)
+        >>> assert all(type(x) is int for x in label_encoder.keys())
+        >>> assert all(type(x) is str for x in label_encoder.values())
 
-        label_encoder: dict[int, str]
-        # {0: 'virginica',
-        #  1: 'setosa',
-        #  2: 'versicolor'}
+        >>> features  # doctest: +NORMALIZE_WHITESPACE
+        [(5.8, 2.7, 5.1, 1.9),
+         (5.1, 3.5, 1.4, 0.2),
+         (5.7, 2.8, 4.1, 1.3),
+         (6.3, 2.9, 5.6, 1.8),
+         (6.4, 3.2, 4.5, 1.5),
+         (4.7, 3.2, 1.3, 0.2)]
+
+        >>> labels
+        [0, 1, 2, 0, 2, 1]
+
+        >>> label_encoder  # doctest: +NORMALIZE_WHITESPACE
+        {0: 'virginica',
+         1: 'setosa',
+         2: 'versicolor'}
 
 :The whys and wherefores:
     * ``dict`` lookups
