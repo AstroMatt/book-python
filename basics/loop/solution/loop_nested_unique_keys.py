@@ -1,3 +1,9 @@
+"""
+>>> sorted(result)
+['Petal length', 'Petal width', 'Sepal length', 'Sepal width', 'Species']
+"""
+
+
 DATA = [
     {'Sepal length': 5.1, 'Sepal width': 3.5, 'Species': 'setosa'},
     {'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
@@ -11,5 +17,3 @@ result = set()
 
 for row in DATA:
     result.update(row.keys())
-
-print(sorted(result))

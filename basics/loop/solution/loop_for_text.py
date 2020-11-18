@@ -51,3 +51,55 @@ Characters: {total_chars}
 Letters: {total_letters}
 Commas: {total_commas}
 Adverbs: {total_adverbs}"""
+
+
+## Alternative Solution
+# """
+# >>> result  # doctest: +NORMALIZE_WHITESPACE
+# {'sentences': 7,
+# 'words': 71,
+# 'characters': 347,
+# 'letters': 283,
+# 'commas': 1,
+# 'adverbs': 0}
+# """
+#
+# TEXT = """
+#     We choose to go to the Moon.
+#     We choose to go to the Moon in this decade and do the other things.
+#     Not because they are easy, but because they are hard.
+#     Because that goal will serve to organize and measure the best of our energies and skills.
+#     Because that challenge is one that we are willing to accept.
+#     One we are unwilling to postpone.
+#     And one we intend to win
+# """
+#
+# result = {
+#     'sentences': 0,
+#     'words': 0,
+#     'characters': 0,
+#     'letters': 0,
+#     'commas': 0,
+#     'adverbs': 0,
+# }
+#
+#
+# for sentence in TEXT.split('.'):
+#
+#     sentence = sentence.strip()
+#     words = sentence.split()
+#     letters = sentence.replace(',', '').replace(' ', '')
+#     characters = sentence.replace(',', '')
+#     comas = sentence.count(',')
+#
+#     result['sentences'] += 1
+#     result['words'] += len(words)
+#     result['letters'] += len(letters)
+#     result['characters'] += len(characters)
+#     result['commas'] += comas
+#
+#     for word in words:
+#         if word.endswith('ly'):
+#             result['adverbs'] += 1
+#
+#

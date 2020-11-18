@@ -1,3 +1,9 @@
+"""
+>>> assert type(result) is float
+>>> result
+5.911111111111111
+"""
+
 DATA = [
     ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
     (5.8, 2.7, 5.1, 1.9, 'virginica'),
@@ -17,7 +23,4 @@ result = []
 for sepal_length, *others in data:
     result.append(sepal_length)
 
-mean = sum(result) / len(result)
-
-print(mean)
-# 5.911111111111111
+result = sum(result) / len(result)

@@ -148,13 +148,13 @@ Mixed
     DATA = [('Jan', 'Twardowski'), 'Watney', 42, 13.37, {True, None, False}]
 
     for obj in DATA:
-        print(f'{obj=}')
+        print(obj)
 
-    # obj=('Jan', 'Twardowski')
-    # obj='Watney'
-    # obj=42
-    # obj=13.37
-    # obj={False, True, None}
+    # ('Jan', 'Twardowski')
+    # Watney
+    # 42
+    # 13.37
+    # {False, True, None}
 
 .. code-block:: python
     :caption: Iterating over ``list`` with scalar and vector values - nested loop
@@ -163,16 +163,16 @@ Mixed
 
     for sequence in DATA:
         for obj in sequence:
-            print(f'{obj=}')
+            print(obj)
 
-    # obj='Jan'
-    # obj='Twardowski'
-    # obj='W'
-    # obj='a'
-    # obj='t'
-    # obj='n'
-    # obj='e'
-    # obj='y'
+    # Jan
+    # Twardowski
+    # W
+    # a
+    # t
+    # n
+    # e
+    # y
     # Traceback (most recent call last):
     #     ...
     # TypeError: 'int' object is not iterable
@@ -216,11 +216,13 @@ Loop Nested Mean
     #. Use data from "Input" section (see below)
     #. Separate header from data
     #. Calculate mean `Sepal length` value
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Odseparuj nagłówek od danych
     #. Wylicz średnią wartość `Sepal length`
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. code-block:: python
@@ -239,10 +241,11 @@ Loop Nested Mean
         ]
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: float
-        # 5.911111111111111
+        >>> assert type(result) is float
+        >>> result
+        5.911111111111111
 
 :The whys and wherefores:
     * Iterating over nested structure
@@ -250,9 +253,9 @@ Loop Nested Mean
 Loop Nested Unique Keys
 -----------------------
 * Assignment name: Loop Nested Unique Keys
-* Last update: 2020-10-01
+* Last update: 2020-11-18
 * Complexity level: medium
-* Lines of code to write: 5 lines
+* Lines of code to write: 3 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/loop_nested_unique_keys.py`
 
@@ -285,11 +288,8 @@ Loop Nested Unique Keys
 :Output:
     .. code-block:: text
 
-        Petal length
-        Petal width
-        Sepal length
-        Sepal width
-        Species
+        >>> sorted(result)
+        ['Petal length', 'Petal width', 'Sepal length', 'Sepal width', 'Species']
 
 :The whys and wherefores:
     * Generating ``set``
