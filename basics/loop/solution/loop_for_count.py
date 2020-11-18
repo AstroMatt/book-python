@@ -1,3 +1,12 @@
+"""
+>>> red
+3
+>>> green
+2
+>>> blue
+2
+"""
+
 DATA = ['red', 'green', 'blue', 'red', 'green', 'red', 'blue']
 
 red = 0
@@ -11,8 +20,3 @@ for color in DATA:
         green += 1
     elif color == 'blue':
         blue += 1
-
-
-print(f'red: {red}')
-print(f'green: {green}')
-print(f'blue: {blue}')

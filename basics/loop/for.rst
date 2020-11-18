@@ -33,10 +33,11 @@ Convention
     * ``obj`` - generic name (in Python everything is an object)
     * ``element`` - generic name
     * ``item`` - generic name
-    * ``e`` - bad, if scope is more than one line
-    * ``l`` - bad, for letter
+    * ``x`` - ok for oneliners, bad for more than one line
+    * ``e`` - ok for oneliners, bad for more than one line
+    * ``l`` - bad
     * ``o`` - bad
-    * ``d`` - for digit
+    * ``d`` - bad (for digit)
 
 * Locally meaningful name:
 
@@ -48,15 +49,16 @@ Convention
     * ``username``
     * etc.
 
-* Special meaning:
+* Special meaning (by convention):
 
     * ``i`` - for loop counter
+    * ``_`` - if value is not used
 
 
 Iterating Sequences
 ===================
 .. code-block:: python
-    :caption: Iterating over ``str`` will get character on each iteration
+    :caption: Iterating over ``str`` will get character on each iteration. Suggested variable name: ``letter``.
 
     for obj in 'setosa':
         print(obj)
@@ -69,7 +71,7 @@ Iterating Sequences
     # a
 
 .. code-block:: python
-    :caption: Iterating over ``list`` will get one element on each iteration
+    :caption: Iterating over ``list`` will get one element on each iteration. Suggested variable name: ``value``.
 
     DATA = [5.1, 3.5, 1.4, 0.2, 'setosa']
 
@@ -83,7 +85,7 @@ Iterating Sequences
     # 'setosa'
 
 .. code-block:: python
-    :caption: Iterating over ``tuple`` will get one element on each iteration
+    :caption: Iterating over ``tuple`` will get one element on each iteration. Suggested variable name: ``value``.
 
     DATA = (5.1, 3.5, 1.4, 0.2, 'setosa')
 
@@ -97,7 +99,7 @@ Iterating Sequences
     # 'setosa'
 
 .. code-block:: python
-    :caption: Iterating over ``set`` will get one element on each iteration
+    :caption: Iterating over ``set`` will get one element on each iteration.  Suggested variable name: ``value``.
 
     DATA = {5.1, 3.5, 1.4, 0.2, 'setosa'}
 
@@ -111,7 +113,7 @@ Iterating Sequences
     # 'setosa'
 
 .. code-block:: python
-    :caption: Iterating over ``frozenset`` will get one element on each iteration
+    :caption: Iterating over ``frozenset`` will get one element on each iteration.  Suggested variable name: ``value``.
 
     DATA = frozenset({5.1, 3.5, 1.4, 0.2, 'setosa'})
 
@@ -129,10 +131,29 @@ Range
 =====
 .. highlights::
     * ``range(start, stop, step)``
-    * ``range(0, 3)`` will generate ``(0, 1, 2)``
+    * ``range(0,3)`` will generate ``(0, 1, 2)``
     * ``start`` is inclusive, default: ``0``
     * ``stop`` is exclusive, required
     * ``step`` default: ``1``
+
+.. code-block:: python
+
+    list(range(5))
+    # [0, 1, 2, 3, 4]
+
+    list(range(0, 5))
+    # [0, 1, 2, 3, 4]
+
+    list(range(0, 5, 1))
+    # [0, 1, 2, 3, 4]
+
+    list(range(0, 5, 2))
+    # [0, 2, 4]
+
+.. code-block:: python
+
+    range(0, 5)
+    # range(0, 5)
 
 .. code-block:: python
     :caption: Loops with ``range``
@@ -155,6 +176,13 @@ Range
     # 8
     # 10
 
+.. code-block:: python
+
+    for _ in range(0,10):
+        print('-', end='')
+
+    # ----------
+
 
 Assignments
 ===========
@@ -162,9 +190,9 @@ Assignments
 Loop For Count
 --------------
 * Assignment name: Loop For Count
-* Last update: 2020-10-01
+* Last update: 2020-11-18
 * Complexity level: easy
-* Lines of code to write: 14 lines
+* Lines of code to write: 10 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_for_count.py`
 
@@ -186,14 +214,17 @@ Loop For Count
 :Output:
     .. code-block:: text
 
-        red: 3
-        green: 2
-        blue: 2
+        >>> red
+        3
+        >>> green
+        2
+        >>> blue
+        2
 
 Loop For Counter
 ----------------
 * Assignment name: Loop For Counter
-* Last update: 2020-10-01
+* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
@@ -243,8 +274,11 @@ Loop For Counter
 :Output:
     .. code-block:: python
 
-        result: dict[int, int]
-        # {1: 7, 4: 8, 6: 4, 7: 4, 5: 4, 0: 7, 9: 5, 8: 6, 2: 2, 3: 3}
+        >>> assert type(result) is dict
+        >>> assert all(type(x) is int for x in result.keys())
+        >>> assert all(type(x) is int for x in result.values())
+        >>> result
+        {1: 7, 4: 8, 6: 4, 7: 4, 5: 4, 0: 7, 9: 5, 8: 6, 2: 2, 3: 3}
 
 :The whys and wherefores:
     * Defining ``dict`` :ref:`Mapping Dict`
@@ -254,9 +288,9 @@ Loop For Counter
 Loop For Segmentation
 ---------------------
 * Assignment name: Loop For Segmentation
-* Last update: 2020-10-01
+* Last update: 2020-11-18
 * Complexity level: easy
-* Lines of code to write: 12 lines
+* Lines of code to write: 14 lines
 * Estimated time of completion: 8 min
 * Solution: :download:`solution/loop_for_segmentation.py`
 
@@ -304,8 +338,11 @@ Loop For Segmentation
 :Output:
     .. code-block:: python
 
-        result: dict[str, int]
-        # {'small': 16, 'medium': 19, 'large': 15}
+        >>> assert type(result) is dict
+        >>> assert all(type(x) is str for x in result.keys())
+        >>> assert all(type(x) is int for x in result.values())
+        >>> result
+        {'small': 16, 'medium': 19, 'large': 15}
 
 :The whys and wherefores:
     * Defining ``dict``
@@ -315,9 +352,9 @@ Loop For Segmentation
 Loop For Newline
 ----------------
 * Assignment name: Loop For Newline
-* Last update: 2020-10-01
+* Last update: 2020-11-18
 * Complexity level: easy
-* Lines of code to write: 4 lines
+* Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_for_newline.py`
 
@@ -346,10 +383,13 @@ Loop For Newline
             'Not because they are easy, but because they are hard.']
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: str
-        # 'We choose to go to the Moon.\nWe choose to go to the Moon in this decade and do the other things.\nNot because they are easy, but because they are hard.'
+        >>> assert type(result) is str
+        >>> result.count('\\n')
+        3
+        >>> result
+        'We choose to go to the Moon.\\nWe choose to go to the Moon in this decade and do the other things.\\nNot because they are easy, but because they are hard.\\n'
 
 Loop For Translate
 ------------------
@@ -385,10 +425,11 @@ Loop For Translate
         DATA = 'zażółć gęślą jaźń'
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: str
-        # 'zazolc gesla jazn'
+        >>> assert type(result) is str
+        >>> result
+        'zazolc gesla jazn'
 
 Loop For Text
 -------------
@@ -411,7 +452,7 @@ Loop For Text
         * sentences
         * words
         * letters
-        * characters (including spaces inside sentences, but without periods ``.``)
+        * characters (including spaces inside sentences, but without comas ``,``)
         * comas (``,``)
 
     #. Compare results with "Output" section below
@@ -428,7 +469,7 @@ Loop For Text
         * zdań
         * słów
         * liter
-        * znaków (łącznie ze spacjami wewnątrz zdań, ale bez kropek ``.``)
+        * znaków (łącznie ze spacjami wewnątrz zdań, ale bez przecinków ``,``)
         * przecinków (``,``)
 
     #. Porównaj wynik z sekcją "Output" poniżej
@@ -450,10 +491,11 @@ Loop For Text
 :Output:
     .. code-block:: text
 
+        >>> print(result)  # doctest: +NORMALIZE_WHITESPACE
         Sentences: 7
         Words: 71
-        Characters: 345
-        Letters: 281
+        Characters: 347
+        Letters: 283
         Commas: 1
         Adverbs: 0
 

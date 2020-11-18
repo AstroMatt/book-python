@@ -1,3 +1,9 @@
+"""
+>>> assert type(result) is str
+>>> result
+'zazolc gesla jazn'
+"""
+
 PL = {'ą': 'a', 'ć': 'c', 'ę': 'e',
       'ł': 'l', 'ń': 'n', 'ó': 'o',
       'ś': 's', 'ż': 'z', 'ź': 'z'}
@@ -11,5 +17,4 @@ for letter in DATA:
     result.append(letter)
 
 result = ''.join(result)
-print(result)
-# zazolc gesla jazn
+

@@ -1,3 +1,13 @@
+"""
+>>> print(result)  # doctest: +NORMALIZE_WHITESPACE
+Sentences: 7
+Words: 71
+Characters: 347
+Letters: 283
+Commas: 1
+Adverbs: 0
+"""
+
 TEXT = """
     We choose to go to the Moon.
     We choose to go to the Moon in this decade and do the other things.
@@ -34,9 +44,9 @@ for sentence in TEXT.split('.'):
             total_adverbs += 1
 
 
-print(f'Sentences: {total_sentences}')
-print(f'Words: {total_words}')
-print(f'Characters: {total_chars}')
-print(f'Letters: {total_letters}')
-print(f'Commas: {total_commas}')
-print(f'Adverbs: {total_adverbs}')
+result = f"""Sentences: {total_sentences}
+Words: {total_words}
+Characters: {total_chars}
+Letters: {total_letters}
+Commas: {total_commas}
+Adverbs: {total_adverbs}"""
