@@ -15,96 +15,143 @@ Rationale
 Range
 =====
 .. code-block:: python
-    :caption: Replace it with ``range()``
 
     i = 0
 
-    while i < ...:
+    while i < 10:
         i += 1
+
+.. code-block:: python
+
+    for i in range(10):
+        ...
+
+
+ForEach
+=======
+.. code-block:: python
+
+    for i in range(len(DATA)):
+        value = DATA[i]
+
+.. code-block:: python
+
+    for value in DATA:
+        ...
+
+
+Sum
+===
+.. code-block:: python
+
+    total = 0
+
+    for i in range(len(DATA)):
+        total += DATA[i]
+
+.. code-block:: python
+
+    sum(DATA)
 
 
 Enumerate
 =========
 .. code-block:: python
-    :caption: Replace it with ``enumerate()``
 
     i = 0
 
-    for ...:
+    while i < len(DATA):
         value = DATA[i]
         i += 1
 
-Sum
-===
 .. code-block:: python
-    :caption: Replace it with ``sum()``
 
-    total = 0
-
-    for ...:
-        total += ...
+    for i, value in enumerate(DATA):
+        ...
 
 
 Zip
 ===
 .. code-block:: python
-    :caption: Replace it with ``zip()``
+
+    header = [...]
+    values = [...]
+    result = {}
+
+    for i in range(len(header)):
+        key = header[i]
+        val = values[i]
+        result[key] = value
+
+.. code-block:: python
 
     header = [...]
     values = [...]
 
-    for ...:
-        header[i]
-        values[i]
+    zip(header, values)
 
 
 List Comprehension
 ==================
 .. code-block:: python
-    :caption: Replace it with list comprehension
 
     result = list()
 
-    for ...:
-        result.append(...)
+    for x in DATA:
+        result.append(x)
 
-
-Dict Comprehension
-==================
 .. code-block:: python
-    :caption: Replace it with dict comprehension
 
-    result = dict()
-
-    for ...:
-        result[...] = ...
+    result = [x for x in DATA]
 
 
 Set Comprehension
 =================
 .. code-block:: python
-    :caption: Replace it with set comprehension
 
     result = set()
 
-    for ...:
-        result.add(...)
+    for x in DATA:
+        result.add(x)
+
+.. code-block:: python
+
+    result = {x for x in DATA}
+
+
+Dict Comprehension
+==================
+.. code-block:: python
+
+    result = dict()
+
+    for key, value in DATA.items():
+        result[key] = value
+
+.. code-block:: python
+
+    result = {k:v for k,v in DATA.items()}
+
 
 Map
 ===
 .. code-block:: python
-    :caption: Replace it with ``map()``
 
     result = (func(x) for x in DATA)
+
+.. code-block:: python
+
     result = map(func, DATA)
 
 
 Filter
 ======
 .. code-block:: python
-    :caption: Replace it with ``filter()``
 
     result = (x for x in DATA if func(x))
+
+.. code-block:: python
+
     result = filter(func, DATA)
 
 
@@ -131,6 +178,7 @@ For Else
     else:
         ....
 
+
 While Else
 ==========
 .. code-block:: python
@@ -155,23 +203,29 @@ While Else
         ....
 
 
-
-Str
-===
+Str Endswith
+============
 .. code-block:: python
 
     result = str[-3:] == 'osa'
-    result = str.endswith('osa')
-
     result = str[-3:] == 'osa' or str[-2:] == 'ca'
-    result = str.endswith(('osa', 'ca'))
 
 .. code-block:: python
 
-    result = str[:1] == 'v'
-    result = str.startswith('v')
+    result = str.endswith('osa')
+    result = str.endswith(('osa', 'ca'))
 
+
+Str Startswith
+==============
+.. code-block:: python
+
+    result = str[:1] == 'v'
     result = str[:1] == 'v' or str[:1] == 's'
+
+.. code-block:: python
+
+    result = str.startswith('v')
     result = str.startswith(('v', 's'))
 
 .. code-block:: python

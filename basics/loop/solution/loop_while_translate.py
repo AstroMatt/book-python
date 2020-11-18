@@ -1,3 +1,9 @@
+"""
+>>> assert type(result) is str
+>>> result
+'zazolc gesla jazn'
+"""
+
 PL = {'ą': 'a', 'ć': 'c', 'ę': 'e',
       'ł': 'l', 'ń': 'n', 'ó': 'o',
       'ś': 's', 'ż': 'z', 'ź': 'z'}
@@ -14,5 +20,3 @@ while i < len(DATA):
     i += 1
 
 result = ''.join(result)
-print(result)
-# zazolc gesla jazn

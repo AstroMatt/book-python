@@ -1,3 +1,10 @@
+"""
+>>> import statistics
+>>> assert type(mean) is float
+>>> assert all(type(x) is float for x in result)
+>>> assert statistics.mean(result) == mean
+"""
+
 GRADE_SCALE = (2.0, 3.0, 3.5, 4.0, 4.5, 5.0)
 report_card = []
 

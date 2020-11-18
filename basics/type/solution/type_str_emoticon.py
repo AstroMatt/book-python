@@ -1,3 +1,8 @@
-name = input('What is your name?: ')
+"""
+>>> assert type(result) is str
+>>> assert '\U0001F642' in result
+>>> assert name in result
+"""
 
-print(f'Hello {name} \U0001F642')
+name = input('What is your name?: ')
+result = f'Hello {name} \U0001F642'

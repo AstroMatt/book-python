@@ -404,6 +404,8 @@ Type String Emoticon
         * NAME is a name read from user
         * EMOTICON is Unicode Codepoint "\U0001F642"
 
+    #. Compare result with "Output" section (see below)
+
 :Polish:
     #. Poproś użytkownika o wprowadzenie imienia
     #. Wypisz ``hello NAME EMOTICON``, gdzie:
@@ -411,12 +413,19 @@ Type String Emoticon
         * NAME to imię wczytane od użytkownika
         * EMOTICON to Unicode Codepoint "\U0001F642"
 
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: text
+
+        >>> assert type(result) is str
+        >>> assert '\U0001F642' in result
+        >>> assert name in result
+
 :The whys and wherefores:
     * Variable declaration
     * Print formatting
     * Reading input data from user
-
-.. todo:: Doctests
 
 Type String Quotes
 ------------------

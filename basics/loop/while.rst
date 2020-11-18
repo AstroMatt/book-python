@@ -216,8 +216,8 @@ Loop While Cast
 * Assignment name: Loop While Cast
 * Last update: 2020-10-01
 * Complexity level: easy
-* Lines of code to write: 8 lines
-* Estimated time of completion: 3 min
+* Lines of code to write: 6 lines
+* Estimated time of completion: 5 min
 * Solution: :download:`solution/loop_while_cast.py`
 
 :English:
@@ -242,10 +242,12 @@ Loop While Cast
         DATA = ['1', '2', '3']
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: list[int]
-        # [1, 2, 3]
+        >>> assert type(result) is list
+        >>> assert all(type(x) is int for x in result)
+        >>> result
+        [1, 2, 3]
 
 Loop While Convert
 ------------------
@@ -278,10 +280,12 @@ Loop While Convert
         DATA = (2, 3, 3.5, 4, 4.5, 5)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: list[float]
-        # [2.0, 3.0, 3.5, 4.0, 4.5, 5.0]
+        >>> assert type(result) is list
+        >>> assert all(type(x) is float for x in result)
+        >>> result
+        [2.0, 3.0, 3.5, 4.0, 4.5, 5.0]
 
 :The whys and wherefores:
     * Type casting
@@ -309,7 +313,7 @@ Loop While Translate
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Użyj ``while`` do iteracji po ``DATA``
-    #. Jeżeli litera jest w ``PL`` to użyj przekonwertowanej wartości jako litera
+    #. Jeżeli litera jest w ``PL`` to użyj skonwertowanej wartości jako litera
     #. Dodaj literę do ``result``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
@@ -323,10 +327,11 @@ Loop While Translate
         DATA = 'zażółć gęślą jaźń'
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: str
-        # 'zazolc gesla jazn'
+        >>> assert type(result) is str
+        >>> result
+        'zazolc gesla jazn'
 
 Loop While Input
 ----------------
@@ -339,30 +344,40 @@ Loop While Input
 
 :English:
     #. Use data from "Input" section (see below)
+    #. Define ``result: list[float]``
     #. Using ``input()`` ask user about grade, one at a time
     #. User will type only valid ``int`` or ``float``
     #. To iterate use only ``while`` loop
-    #. If grade is in ``GRADE_SCALE`` - add it to report card
+    #. If grade is in ``GRADE_SCALE`` - add it to ``result``
     #. If grade is not in ``GRADE_SCALE`` - print "Grade is not allowed" and continue input
     #. If user pressed Enter key, end inserting data
-    #. At the end, print calculated mean
+    #. At the end, print calculated mean of ``result``
     #. Test case when report list is empty
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Zdefiniuj ``result: list[float]``
     #. Do iterowania użyj tylko pętli ``while``
     #. Używając ``input()`` poproś użytkownika o ocenę, jedną na raz
     #. Użytkownik poda tylko poprawne ``int`` lub ``float``
-    #. Jeżeli ocena jest w ``GRADE_SCALE`` - dodaj ją do dzienniczka
+    #. Jeżeli ocena jest w ``GRADE_SCALE`` - dodaj ją do ``result``
     #. Jeżeli oceny nie ma w ``GRADE_SCALE`` - wyświetl "Grade is not allowed" i kontynuuj wpisywanie
     #. Jeżeli użytkownik wcisnął Enter, zakończ wprowadzanie danych
-    #. Na zakończenie wyświetl wyliczoną dla dzienniczka średnią arytmetyczną
+    #. Na zakończenie wyświetl wyliczoną dla ``result`` średnią arytmetyczną
     #. Przetestuj przypadek, gdy dzienniczek jest pusty
 
 :Input:
     .. code-block:: python
 
         GRADE_SCALE = (2.0, 3.0, 3.5, 4.0, 4.5, 5.0)
+
+:Output:
+    .. code-block:: text
+
+        >>> import statistics
+        >>> assert type(mean) is float
+        >>> assert all(type(x) is float for x in result)
+        >>> assert statistics.mean(result) == mean
 
 :The whys and wherefores:
     * Reading user input
@@ -375,3 +390,4 @@ Loop While Input
 
 :Hints:
     * ``mean = sum(...) / len(...)``
+
