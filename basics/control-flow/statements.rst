@@ -431,7 +431,7 @@ Conditional Statements
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/conditional_statements.py`
+* Solution: :download:`solution/controlflow_conditional_statements.py`
 
 :English:
     #. Ask user to input age
@@ -449,3 +449,5 @@ Conditional Statements
     * Conditional statements
     * Defining variables
     * Magic Number
+
+.. todo:: Doctests

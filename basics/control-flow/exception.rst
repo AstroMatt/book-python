@@ -252,13 +252,10 @@ Use Case
 .. code-block:: python
 
     def convert(temperature):
-
         if type(temperature) not in {float, int}:
             raise TypeError('Temperature must be int or float')
-
         if temperature < 0:
             raise ValueError('Kelvin temperature cannot be negative')
-
         return temperature
 
 .. code-block:: python
@@ -290,6 +287,14 @@ Assertion
 =========
 * Raises ``AssertionError`` if argument is ``False``
 * Can have optional message
+
+.. code-block:: python
+
+    assert type(header) is tuple
+    assert type(train) is list
+    assert type(test) is list
+    assert all(type(x) is tuple for x in train)
+    assert all(type(x) is tuple for x in test)
 
 .. code-block:: python
     :emphasize-lines: 3,8
@@ -646,31 +651,6 @@ Exit Status Code
 Assignments
 ===========
 
-Exception Example
------------------
-* Assignment name: Exception Example
-* Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 0 lines
-* Estimated time of completion: 3 min
-* Solution: :download:`solution/exception_example.py`
-
-:English:
-    #. Ask user to input angle in degrees
-    #. Cotangens for 180 degrees is infinite
-    #. Define own exception
-    #. If user typed angle equal to 180, raise your exception
-
-:Polish:
-    #. Poproś użytkownika o wprowadzenie kąta
-    #. Cotangens dla konta 180 ma nieskończoną wartość
-    #. Zdefiniuj własny wyjątek
-    #. Jeżeli użytkownik wprowadził kąt równy 180, podnieś swój wyjątek
-
-:Solution:
-    .. literalinclude:: solution/exception_example.py
-        :language: python
-
 Exception Raise
 ---------------
 * Assignment name: Exception Raise
@@ -678,7 +658,7 @@ Exception Raise
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/exception_raise.py`
+* Solution: :download:`solution/controlflow_exception_raise.py`
 
 :English:
     #. Ask user to input age
@@ -690,6 +670,8 @@ Exception Raise
     #. Jeżeli użytkownik ma mniej niż 18 lat
     #. Wyrzuć wyjątek ``PermissionError`` z komunikatem "Adults only"
 
+.. todo:: Doctests
+
 Exception Catch
 ---------------
 * Assignment name: Exception Catch
@@ -697,7 +679,7 @@ Exception Catch
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/exception_catch.py`
+* Solution: :download:`solution/controlflow_exception_catch.py`
 
 :English:
     #. Ask user to input temperature in Kelvins
@@ -711,6 +693,8 @@ Exception Catch
     #. Jeżeli nie można rzutować do ``float``, to wypisz "Invalid temperature" i wyjdź z kodem błędu 1
     #. Wypisz temperaturę
 
+.. todo:: Doctests
+
 Exception Define
 ----------------
 * Assignment name: Exception Define
@@ -718,7 +702,7 @@ Exception Define
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/exception_define.py`
+* Solution: :download:`solution/controlflow_exception_define.py`
 
 :English:
     #. Ask user to input temperature in Kelvins
@@ -731,3 +715,28 @@ Exception Define
     #. Użytkownik zawsze poda poprawne ``int`` lub ``float``
     #. Zdefiniuj wyjątek dla temperatur ujemnych
     #. Podnieś własny wyjątek jeżeli temperatura jest poniżej 0
+
+.. todo:: Doctests
+
+Exception Custom
+----------------
+* Assignment name: Exception Custom
+* Last update: 2020-11-18
+* Complexity level: easy
+* Lines of code to write: 5 lines
+* Estimated time of completion: 3 min
+* Solution: :download:`solution/controlflow_exception_custom.py`
+
+:English:
+    #. Ask user to input angle in degrees
+    #. Cotangent for 180 degrees is infinite
+    #. Define own exception ``CotangentError``
+    #. If user typed angle equal to 180, raise your exception
+
+:Polish:
+    #. Poproś użytkownika o wprowadzenie kąta
+    #. Cotangens dla konta 180 ma nieskończoną wartość
+    #. Zdefiniuj własny wyjątek ``CotangentError``
+    #. Jeżeli użytkownik wprowadził kąt równy 180, podnieś swój wyjątek
+
+.. todo:: Doctests

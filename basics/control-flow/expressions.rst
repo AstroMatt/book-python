@@ -156,7 +156,7 @@ Conditional Expression
 * Complexity level: medium
 * Lines of code to write: 25 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/conditional_expression.py`
+* Solution: :download:`solution/controlflow_conditional_expression.py`
 
 :English:
     #. Use data from "Input" section (see below)
@@ -216,3 +216,5 @@ Conditional Expression
     * Composite conditional statements
     * Checking for corner cases
     * Defining constants and variables
+
+.. todo:: Doctests

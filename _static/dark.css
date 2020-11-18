@@ -13,6 +13,7 @@
     --code-background: #111;
     --code-border: none;
     --code-text: #aaa;
+    --code-highlight: #111;
 
     --table-background: none;
     --table-border: #000;
@@ -156,6 +157,7 @@
     /* code listings */
     code.literal {color: var(--code-text) !important; background: var(--code-background) !important; border: 1px solid var(--code-border); padding-left: 0.5rem; padding-right: 0.5rem; font-family: monospace}
     .highlight {background: var(--code-background); border: var(--code-border)}
+    .highlight .hll {background-color: var(--code-highlight)}
     .rst-content div[class^=highlight], .rst-content pre.literal-block {border: var(--code-border)}
 
     /* search */

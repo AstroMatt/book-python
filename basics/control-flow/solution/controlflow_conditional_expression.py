@@ -1,3 +1,9 @@
+"""
+>>> assert type(systolic) is int
+>>> assert type(diastolic) is int
+"""
+
+
 blood_pressure = input('What is your Blood Pressure?: ')
 systolic, diastolic = blood_pressure.strip().split('/')
 systolic = int(systolic)

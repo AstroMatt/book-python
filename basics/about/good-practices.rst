@@ -108,6 +108,54 @@ Filter
     result = filter(func, DATA)
 
 
+For Else
+========
+.. code-block:: python
+
+    found = False
+
+    for ...:
+        if ...:
+            found = True
+            break
+
+    if not found:
+        ....
+
+.. code-block:: python
+
+    for ...:
+        if ...:
+            found = True
+            break
+    else:
+        ....
+
+While Else
+==========
+.. code-block:: python
+
+    found = False
+
+    while ...:
+        if ...:
+            found = True
+            break
+
+    if not found:
+        ....
+
+.. code-block:: python
+
+    while ...:
+        if ...:
+            found = True
+            break
+    else:
+        ....
+
+
+
 Str
 ===
 .. code-block:: python

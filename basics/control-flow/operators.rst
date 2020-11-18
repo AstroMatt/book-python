@@ -168,7 +168,7 @@ Conditional Operators Modulo
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/conditional_operators_modulo.py`
+* Solution: :download:`solution/controlflow_operators_modulo.py`
 
 :English:
     #. Read a number from user
@@ -186,6 +186,20 @@ Conditional Operators Modulo
     #. Wypisz ``result``
     #. Nie używaj instrukcji ``if``
 
+:Output:
+    .. code-block:: text
+
+        >>> '5' % 2
+        Traceback (most recent call last):
+            ...
+        TypeError: not all arguments converted during string formatting
+
+        >>> '5%s' % 2
+        '52'
+
+        >>> 5 % 2
+        1
+
 :The whys and wherefores:
     * Reading input from user
     * Type casting
@@ -194,3 +208,5 @@ Conditional Operators Modulo
 
 :Hints:
     * ``%`` has different meaning for ``int`` and ``str``
+    * ``%`` on ``str`` is overloaded as a string formatting
+    * ``%`` on ``int`` is overloaded as a modulo division
