@@ -41,7 +41,6 @@ DATA = [
 
 
 RATIO = 0.6
-
 header, *data = DATA
 pivot = int(len(data) * RATIO)
 
@@ -55,29 +54,7 @@ labels_test = labels[pivot:]
 
 
 ## Alternative solution
-## not optimized (4 loops)
 # features_train = [X for *X,y in data[:pivot]]
 # features_test = [X for *X,y in data[pivot:]]
 # labels_train = [y for *X,y in data[:pivot]]
 # labels_test = [y for *X,y in data[pivot:]]
-
-
-## Alternative solution
-## not optimized (4 loops)
-# result = (
-#     [X for *X,y in data[:pivot]],
-#     [X for *X,y in data[pivot:]],
-#     [y for *X,y in data[:pivot]],
-#     [y for *X,y in data[pivot:]],
-# )
-# print(result)
-
-
-## Alternative solution
-## not optimized (4 loops)
-# print(
-#     [X for *X,y in data[:pivot]],
-#     [X for *X,y in data[pivot:]],
-#     [y for *X,y in data[:pivot]],
-#     [y for *X,y in data[pivot:]],
-# )

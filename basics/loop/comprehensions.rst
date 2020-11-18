@@ -720,7 +720,6 @@ Loop Comprehension Split
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Separate header from data
     #. Calculate pivot point: length of data times given percent (60%/40%, see below)
     #. Using List Comprehension split data to:
 
@@ -738,7 +737,6 @@ Loop Comprehension Split
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Odseparuj nagłówek od danych
     #. Wylicz punkt podziału: długość danych razy zadany procent (60%/40%, patrz poniżej)
     #. Używając List Comprehension podziel dane na:
 
