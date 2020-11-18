@@ -34,6 +34,7 @@ Functions
     :caption: Functions
     :name: Advanced Functions
 
+    function/assignment-expression.rst
     function/unpack.rst
     function/args-kwargs-parameters.rst
     function/args-kwargs-arguments.rst

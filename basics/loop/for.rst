@@ -394,7 +394,7 @@ Loop For Newline
 Loop For Translate
 ------------------
 * Assignment name: Loop For Translate
-* Last update: 2020-10-01
+* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
@@ -486,7 +486,7 @@ Loop For Months
 Loop For Text
 -------------
 * Assignment name: Loop For Text
-* Last update: 2020-10-01
+* Last update: 2020-11-18
 * Complexity level: medium or hard
 * Lines of code to write: 30 lines
 * Estimated time of completion: 13 min

@@ -39,11 +39,9 @@ features = []
 labels = []
 label_encoder = {}
 lookup = {}
-
-header, *data = DATA
 i = 0
 
-for *X,y in data:
+for *X,y in DATA[1:]:
     if y not in lookup:
         label_encoder[i] = y
         lookup[y] = i

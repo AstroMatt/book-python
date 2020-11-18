@@ -206,7 +206,7 @@ Assignments
 Loop Nested Mean
 ----------------
 * Assignment name: Loop Nested Mean
-* Last update: 2020-10-01
+* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min

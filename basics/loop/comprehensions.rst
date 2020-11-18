@@ -61,31 +61,31 @@ Comprehensions and Generator Expression
 Comprehensions or Generator Expression
 ======================================
 .. code-block:: python
+
+    data = [x for x in range(0,10)]
+    print(data)
+    # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+    data = (x for x in range(0,10))
+    print(data)
+    # <generator object <genexpr> at 0x10ef1d040>
+
+.. code-block:: python
     :caption: Comprehension
 
     data = [x for x in range(0,10)]
 
     for x in data:
-        print(x)
+        print(x, end=' ')
         if x == 3:
             break
-
-    # 0
-    # 1
-    # 2
-    # 3
+    # 0 1 2 3
 
     for x in data:
-        print(x)
+        print(x, end=' ')
         if x == 6:
             break
-    # 0
-    # 1
-    # 2
-    # 3
-    # 4
-    # 5
-    # 6
+    # 0 1 2 3 4 5 6
 
     print(list(data))
     # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -99,23 +99,16 @@ Comprehensions or Generator Expression
     data = (x for x in range(0,10))
 
     for x in data:
-        print(x)
+        print(x, end=' ')
         if x == 3:
             break
-
-    # 0
-    # 1
-    # 2
-    # 3
+    # 0 1 2 3
 
     for x in data:
-        print(x)
+        print(x, end=' ')
         if x == 6:
             break
-
-    # 4
-    # 5
-    # 6
+    # 4 5 6
 
     print(list(data))
     # [7, 8, 9]
@@ -586,101 +579,43 @@ All and Any
     # False
 
 
-Assignment Expressions
-======================
-.. versionadded:: Python 3.8
-    :pep:`572` Assignment Expressions (walrus operator)
-
-.. code-block:: python
-
-    DATA = [
-        {'is_astronaut': True,  'name': 'JaN TwarDOwski'},
-        {'is_astronaut': True,  'name': 'Mark Jim WaTNey'},
-        {'is_astronaut': False, 'name': 'José Maria Jiménez'},
-        {'is_astronaut': True,  'name': 'Melissa Lewis'},
-        {'is_astronaut': False, 'name': 'Alex Vogel'},
-    ]
-
-    astronauts = [{'firstname': name[0], 'lastname': name[-1]}
-                  for person in DATA
-                  if person['is_astronaut']
-                  and (name := person['name'].title().split())]
-
-    print(astronauts)
-    # [{'firstname': 'Jan', 'lastname': 'Twardowski'},
-    #  {'firstname': 'Mark', 'lastname': 'Watney'},
-    #  {'firstname': 'Melissa', 'lastname': 'Lewis'}]
-
-.. code-block:: python
-
-    DATA = [
-        {'is_astronaut': True,  'name': 'JaN TwarDOwski'},
-        {'is_astronaut': True,  'name': 'Mark Jim WaTNey'},
-        {'is_astronaut': False, 'name': 'José Maria Jiménez'},
-        {'is_astronaut': True,  'name': 'Melissa Lewis'},
-        {'is_astronaut': False, 'name': 'Alex Vogel'},
-    ]
-
-    astronauts = [{'firstname': fname, 'lastname': lname}
-                  for person in DATA
-                  if person['is_astronaut']
-                  and (name := person['name'].title().split())
-                  and (fname := name[0])
-                  and (lname := name[-1])]
-
-    print(astronauts)
-    # [{'firstname': 'Jan', 'lastname': 'Twardowski'},
-    #  {'firstname': 'Mark', 'lastname': 'Watney'},
-    #  {'firstname': 'Melissa', 'lastname': 'Lewis'}]
-
-.. code-block:: python
-
-    DATA = [
-        ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
-        (5.8, 2.7, 5.1, 1.9, 'virginica'),
-        (5.1, 3.5, 1.4, 0.2, 'setosa'),
-        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-        (6.3, 2.9, 5.6, 1.8, 'virginica'),
-        (6.4, 3.2, 4.5, 1.5, 'versicolor'),
-        (4.7, 3.2, 1.3, 0.2, 'setosa'),
-        (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-    ]
-
-    result = [cls(*features)
-              for *features, species in DATA[1:]
-              if (clsname := species.capitalize())
-              and (cls := globals()[clsname])]
-
-
 Assignments
 ===========
 
 Loop Comprehension Create
 -------------------------
 * Assignment name: Loop Comprehension Create
-* Last update: 2020-10-01
+* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 2 lines
-* Estimated time of completion: 3 min
+* Estimated time of completion: 2 min
 * Solution: :download:`solution/loop_comprehension_create.py`
 
 :English:
     #. Use list comprehension
     #. Generate ``result: list[int]`` of even numbers from 5 to 20
-    #. Print ``result``
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj rozwinięcia listowego
     #. Wygeneruj ``result: list[int]`` parzystych liczb z przedziału 5 do 20
-    #. Wypisz ``result``
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: text
+
+        >>> assert type(result) is list
+        >>> assert all(type(x) is int for x in result)
+        >>> result
+        [6, 8, 10, 12, 14, 16, 18]
 
 Loop Comprehension Translate
 ----------------------------
 * Assignment name: Loop Comprehension Translate
-* Last update: 2020-10-01
+* Last update: 2020-11-18
 * Complexity level: easy
-* Lines of code to write: 2 lines
-* Estimated time of completion: 5 min
+* Lines of code to write: 1 lines
+* Estimated time of completion: 3 min
 * Solution: :download:`solution/loop_comprehension_translate.py`
 
 :English:
@@ -695,7 +630,7 @@ Loop Comprehension Translate
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Zdefiniuj ``result: list``
     #. Użyj rozwinięcia listowego do iteracji po ``DATA``
-    #. Jeżeli litera jest w ``PL`` to użyj przekonwertowanej wartości jako litera
+    #. Jeżeli litera jest w ``PL`` to użyj skonwertowanej wartości jako litera
     #. Dodaj literę do ``result``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
@@ -709,15 +644,16 @@ Loop Comprehension Translate
         DATA = 'zażółć gęślą jaźń'
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: str
-        # 'zazolc gesla jazn'
+        >>> assert type(result) is str
+        >>> result
+        'zazolc gesla jazn'
 
 Loop Comprehension Months
 -------------------------
 * Assignment name: Loop Comprehension Months
-* Last update: 2020-10-01
+* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
@@ -731,7 +667,7 @@ Loop Comprehension Months
         * Keys: month number
         * Values: month name
 
-    #. Month number must be two letter string (zero padded)
+    #. Month number must be two letter string (zero padded) - ``f'{number:02}'``
     #. Compare result with "Output" section (see below)
 
 :Polish:
@@ -742,7 +678,7 @@ Loop Comprehension Months
         * klucz: numer miesiąca
         * wartość: nazwa miesiąca
 
-    #. Numer miesiąca ma być dwuznakowym stringiem (wypełnij zerem)
+    #. Numer miesiąca ma być dwuznakowym stringiem (wypełnij zerem) - ``f'{number:02}'``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
@@ -753,26 +689,30 @@ Loop Comprehension Months
                   'October', 'November', 'December']
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: dict
-        # {'01': 'January',
-        #  '02': 'February',
-        #  '03': 'March',
-        #  '04': 'April',
-        #  '05': 'May',
-        #  '06': 'June',
-        #  '07': 'July',
-        #  '08': 'August',
-        #  '09': 'September',
-        #  '10': 'October',
-        #  '11': 'November',
-        #  '12': 'December'}
+        >>> assert type(result) is dict
+        >>> assert all(type(x) is str for x in result.keys())
+        >>> assert all(type(x) is str for x in result.values())
+        >>> assert all(len(x) == 2 for x in result.keys())
+        >>> result
+        {'01': 'January',
+         '02': 'February',
+         '03': 'March',
+         '04': 'April',
+         '05': 'May',
+         '06': 'June',
+         '07': 'July',
+         '08': 'August',
+         '09': 'September',
+         '10': 'October',
+         '11': 'November',
+         '12': 'December'}
 
 Loop Comprehension Split
 ------------------------
 * Assignment name: Loop Comprehension Split
-* Last update: 2020-10-01
+* Last update: 2020-11-18
 * Complexity level: medium
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
@@ -829,41 +769,35 @@ Loop Comprehension Split
             (7.6, 3.0, 6.6, 2.1, 'virginica'),
             (4.9, 3.0, 1.4, 0.2, 'setosa'),
             (4.9, 2.5, 4.5, 1.7, 'virginica'),
-            (7.1, 3.0, 5.9, 2.1, 'virginica'),
-            (4.6, 3.4, 1.4, 0.3, 'setosa'),
-            (5.4, 3.9, 1.7, 0.4, 'setosa'),
-            (5.7, 2.8, 4.5, 1.3, 'versicolor'),
-            (5.0, 3.6, 1.4, 0.3, 'setosa'),
-            (5.5, 2.3, 4.0, 1.3, 'versicolor'),
-            (6.5, 3.0, 5.8, 2.2, 'virginica'),
-            (6.5, 2.8, 4.6, 1.5, 'versicolor'),
-            (6.3, 3.3, 6.0, 2.5, 'virginica'),
-            (6.9, 3.1, 4.9, 1.5, 'versicolor'),
-            (4.6, 3.1, 1.5, 0.2, 'setosa'),
         ]
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        features_train: list[tuple[float, ...]]
-        # [(5.8, 2.7, 5.1, 1.9), (5.1, 3.5, 1.4, 0.2), (5.7, 2.8, 4.1, 1.3),
-        #  (6.3, 2.9, 5.6, 1.8), (6.4, 3.2, 4.5, 1.5), (4.7, 3.2, 1.3, 0.2),
-        #  (7.0, 3.2, 4.7, 1.4), (7.6, 3.0, 6.6, 2.1), (4.9, 3.0, 1.4, 0.2),
-        #  (4.9, 2.5, 4.5, 1.7), (7.1, 3.0, 5.9, 2.1), (4.6, 3.4, 1.4, 0.3)]
+        >>> assert type(features_train) is list
+        >>> assert type(features_test) is list
+        >>> assert type(labels_train) is list
+        >>> assert type(labels_test) is list
 
-        features_test: list[tuple[float, ...]]
-        # [(5.4, 3.9, 1.7, 0.4), (5.7, 2.8, 4.5, 1.3), (5.0, 3.6, 1.4, 0.3),
-        #  (5.5, 2.3, 4.0, 1.3), (6.5, 3.0, 5.8, 2.2), (6.5, 2.8, 4.6, 1.5),
-        #  (6.3, 3.3, 6.0, 2.5), (6.9, 3.1, 4.9, 1.5), (4.6, 3.1, 1.5, 0.2)]
+        >>> assert all(type(x) is tuple for x in features_train)
+        >>> assert all(type(x) is tuple for x in features_test)
+        >>> assert all(type(x) is str for x in labels_train)
+        >>> assert all(type(x) is str for x in labels_test)
 
-        labels_train: list[str]
-        # ['virginica', 'setosa', 'versicolor', 'virginica', 'versicolor',
-        #  'setosa', 'versicolor', 'virginica', 'setosa', 'virginica',
-        #  'virginica', 'setosa']
+        >>> features_train  # doctest: +NORMALIZE_WHITESPACE
+        [(5.8, 2.7, 5.1, 1.9), (5.1, 3.5, 1.4, 0.2),
+         (5.7, 2.8, 4.1, 1.3), (6.3, 2.9, 5.6, 1.8),
+         (6.4, 3.2, 4.5, 1.5), (4.7, 3.2, 1.3, 0.2)]
 
-        labels_test: list[str]
-        # ['setosa', 'versicolor', 'setosa', 'versicolor', 'virginica',
-        #  'versicolor', 'virginica', 'versicolor', 'setosa']
+        >>> features_test  # doctest: +NORMALIZE_WHITESPACE
+        [(7.0, 3.2, 4.7, 1.4), (7.6, 3.0, 6.6, 2.1),
+         (4.9, 3.0, 1.4, 0.2), (4.9, 2.5, 4.5, 1.7)]
+
+        >>> labels_train
+        ['virginica', 'setosa', 'versicolor', 'virginica', 'versicolor', 'setosa']
+
+        >>> labels_test
+        ['versicolor', 'virginica', 'setosa', 'virginica']
 
 :The whys and wherefores:
     * Iterating over nested data structures

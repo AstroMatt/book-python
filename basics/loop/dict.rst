@@ -237,12 +237,12 @@ Generate with Zip
 
 
 Assignments
-===========s
+===========
 
-Loop Dict from Dict to Dict
----------------------------
-* Assignment name: Loop Dict from Dict to Dict
-* Last update: 2020-10-01
+Loop Dict To Dict
+-----------------
+* Assignment name: Loop Dict To Dict
+* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 8 min
@@ -290,10 +290,10 @@ Loop Dict from Dict to Dict
     * Iterating over ``dict``
     * Updating ``dict``
 
-Loop Dict from List to Dict
----------------------------
-* Assignment name: Loop Dict from List to Dict
-* Last update: 2020-10-01
+Loop Dict To List
+-----------------
+* Assignment name: Loop Dict To List
+* Last update: 2020-11-18
 * Complexity level: medium
 * Lines of code to write: 6 lines
 * Estimated time of completion: 8 min
@@ -301,7 +301,6 @@ Loop Dict from List to Dict
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Separate header and data
     #. Print ``list[dict]``:
 
         * key - name from the header
@@ -311,7 +310,6 @@ Loop Dict from List to Dict
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Odseparuj nagłówek od danych
     #. Wypisz ``list[dict]``:
 
         * klucz: nazwa z nagłówka
@@ -352,7 +350,7 @@ Loop Dict from List to Dict
 Loop Dict Label Encoder
 -----------------------
 * Assignment name: Loop Dict Label Encoder
-* Last update: 2020-10-01
+* Last update: 2020-11-18
 * Complexity level: hard
 * Lines of code to write: 13 lines
 * Estimated time of completion: 13 min
