@@ -491,6 +491,7 @@ Loop For Text
 :Output:
     .. code-block:: text
 
+        >>> assert type(result) is str
         >>> print(result)  # doctest: +NORMALIZE_WHITESPACE
         Sentences: 7
         Words: 71
