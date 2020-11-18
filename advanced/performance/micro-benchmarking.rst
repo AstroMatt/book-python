@@ -154,12 +154,12 @@ Case Studies - Unique Keys
 
     %%timeit -r 10 -n 1000000
 
-    fieldnames = list()
+    result = list()
 
     for row in DATA:
         for key in row.keys():
-            if key not in fieldnames:
-                fieldnames.append(key)
+            if key not in result:
+                result.append(key)
 
     # 2.16 µs ± 26.5 ns per loop (mean ± std. dev. of 10 runs, 1000000 loops each)
 
@@ -168,13 +168,13 @@ Case Studies - Unique Keys
 
     %%timeit -r 10 -n 1000000
 
-    fieldnames = list()
+    result = list()
 
     for row in DATA:
         for key in row.keys():
-            fieldnames.append(key)
+            result.append(key)
 
-    set(fieldnames)
+    set(result)
 
     # 2.5 µs ± 32.9 ns per loop (mean ± std. dev. of 10 runs, 1000000 loops each)
 
@@ -183,11 +183,11 @@ Case Studies - Unique Keys
 
     %%timeit -r 10 -n 1000000
 
-    fieldnames = set()
+    result = set()
 
     for row in DATA:
         for key in row.keys():
-            fieldnames.add(key)
+            result.add(key)
 
     # 2.12 µs ± 32.4 ns per loop (mean ± std. dev. of 10 runs, 1000000 loops each)
 
@@ -196,10 +196,10 @@ Case Studies - Unique Keys
 
     %%timeit -r 10 -n 1000000
 
-    unique_keys = set()
+    result = set()
 
     for row in DATA:
-        unique_keys.update(row.keys())
+        result.update(row.keys())
 
     # 1.57 µs ± 26.7 ns per loop (mean ± std. dev. of 10 runs, 1000000 loops each)
 
@@ -208,7 +208,7 @@ Case Studies - Unique Keys
 
     %%timeit -r 10 -n 1000000
 
-    fieldnames = set(key
+    result = set(key
         for record in DATA
             for key in record.keys())
 
@@ -219,9 +219,9 @@ Case Studies - Unique Keys
 
     %%timeit -r 10 -n 1000000
 
-    fieldnames = set()
+    result = set()
 
-    fieldnames.add(key
+    result.add(key
         for record in DATA
            for key in record.keys())
 
@@ -232,8 +232,8 @@ Case Studies - Unique Keys
 
     %%timeit -r 10 -n 1000000
 
-    fieldnames = set()
-    fieldnames.update(tuple(x.keys()) for x in DATA)
+    result = set()
+    result.update(tuple(x.keys()) for x in DATA)
 
     # 2.06 µs ± 45.9 ns per loop (mean ± std. dev. of 10 runs, 1000000 loops each)
 
@@ -241,10 +241,10 @@ Case Studies - Unique Keys
 
     %%timeit -r 10 -n 1000000
 
-    unique_keys = set()
+    result = set()
 
     for row in DATA:
-        unique_keys.update(tuple(row))
+        result.update(tuple(row))
 
     # 2.09 µs ± 16.1 ns per loop (mean ± std. dev. of 10 runs, 1000000 loops each)
 
@@ -252,10 +252,10 @@ Case Studies - Unique Keys
 
     %%timeit -r 10 -n 1000000
 
-    unique_keys = set()
+    result = set()
 
     for row in DATA:
-        unique_keys.update(list(row))
+        result.update(list(row))
 
     # 2.33 µs ± 30.2 ns per loop (mean ± std. dev. of 10 runs, 1000000 loops each)
 
@@ -263,10 +263,10 @@ Case Studies - Unique Keys
 
     %%timeit -r 10 -n 1000000
 
-    unique_keys = set()
+    result = set()
 
     for row in DATA:
-        unique_keys.update(set(row))
+        result.update(set(row))
 
     # 1.71 µs ± 54 ns per loop (mean ± std. dev. of 10 runs, 1000000 loops each)
 

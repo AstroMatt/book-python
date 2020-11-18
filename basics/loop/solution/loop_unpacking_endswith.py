@@ -1,3 +1,9 @@
+"""
+>>> assert type(result) is set
+>>> result
+{'virginica', 'setosa'}
+"""
+
 DATA = [
     ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
     (5.8, 2.7, 5.1, 1.9, {'virginica'}),
@@ -13,43 +19,11 @@ DATA = [
 
 header, *data = DATA
 suffixes = ('osa', 'ca')
-
-# Solution 1
-for *X,y in data:
-    species = y.pop()
-
-    if species.endswith(suffixes):
-        print(species)
+result = set()
 
 
-# Solution 2
-for row in data:
-    species = row[4].pop()
-
-    if species.endswith('ca') or species.endswith('sa'):
-        print(species)
-
-
-# Solution 3
-for *_, species in data:
-    species = species.pop()
-
-    if species.endswith('ca') or species.endswith('sa'):
-        print(species)
-
-
-# Solution 4
 for *features, label in data:
     species = label.pop()
 
-    if any(species.endswith(x) for x in suffixes):
-        print(species)
-
-
-# Solution 5
-result = [species
-          for *X,y in data
-          if (species := y.pop())
-          and species.endswith(suffixes)]
-print(result)
-
+    if species.endswith(suffixes):
+        result.add(species)

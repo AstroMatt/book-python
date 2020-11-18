@@ -1,4 +1,5 @@
 """
+>>> assert type(result) is dict
 >>> result  # doctest: +NORMALIZE_WHITESPACE
 {1: 'January',
  2: 'February',
@@ -14,12 +15,14 @@
  12: 'December'}
 """
 
+
 MONTHS = ['January', 'February', 'March', 'April',
           'May', 'June', 'July', 'August', 'September',
           'October', 'November', 'December']
 
-
 result = {}
+i = 1
 
-for i, month in enumerate(MONTHS, start=1):
+for month in MONTHS:
     result[i] = month
+    i += 1

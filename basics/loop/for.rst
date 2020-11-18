@@ -431,6 +431,58 @@ Loop For Translate
         >>> result
         'zazolc gesla jazn'
 
+Loop For Months
+---------------
+* Assignment name: Loop For Months
+* Last update: 2020-11-18
+* Complexity level: easy
+* Lines of code to write: 5 lines
+* Estimated time of completion: 5 min
+* Solution: :download:`solution/loop_for_months.py`
+
+:English:
+    #. Use data from "Input" section (see below)
+    #. Convert ``MONTH`` into dict:
+
+        * Keys: month number
+        * Values: month name
+
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Przekonwertuj ``MONTH`` w słownik:
+
+        * klucz: numer miesiąca
+        * wartość: nazwa miesiąca
+
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Input:
+    .. code-block:: python
+
+        MONTHS = ['January', 'February', 'March', 'April',
+                  'May', 'June', 'July', 'August', 'September',
+                  'October', 'November', 'December']
+
+:Output:
+    .. code-block:: text
+
+        >>> assert type(result) is dict
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        {1: 'January',
+         2: 'February',
+         3: 'March',
+         4: 'April',
+         5: 'May',
+         6: 'June',
+         7: 'July',
+         8: 'August',
+         9: 'September',
+         10: 'October',
+         11: 'November',
+         12: 'December'}
+
 Loop For Text
 -------------
 * Assignment name: Loop For Text

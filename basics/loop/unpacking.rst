@@ -135,7 +135,7 @@ Assignments
 Loop Unpacking Months
 ---------------------
 * Assignment name: Loop Unpacking Months
-* Last update: 2020-10-01
+* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
@@ -167,26 +167,26 @@ Loop Unpacking Months
                   'October', 'November', 'December']
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: dict
-        # {1: 'January',
-        #  2: 'February',
-        #  3: 'March',
-        #  4: 'April',
-        #  5: 'May',
-        #  6: 'June',
-        #  7: 'July',
-        #  8: 'August',
-        #  9: 'September',
-        #  10: 'October',
-        #  11: 'November',
-        #  12: 'December'}
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        {1: 'January',
+         2: 'February',
+         3: 'March',
+         4: 'April',
+         5: 'May',
+         6: 'June',
+         7: 'July',
+         8: 'August',
+         9: 'September',
+         10: 'October',
+         11: 'November',
+         12: 'December'}
 
 Loop Unpacking Endswith
 -----------------------
 * Assignment name: Loop Unpacking Endswith
-* Last update: 2020-10-01
+* Last update: 2020-11-18
 * Complexity level: medium
 * Lines of code to write: 3 lines
 * Estimated time of completion: 8 min
@@ -195,14 +195,18 @@ Loop Unpacking Endswith
 :English:
     #. Use data from "Input" section (see below)
     #. Separate header from data
+    #. Define ``result: set[str]``
     #. Iterating over data unpack row to ``*features`` and ``label``
-    #. Print species names ending with "ca" or "osa"
+    #. Append to ``result`` species names ending with "ca" or "osa"
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Odseparuj nagłówek od danych
+    #. Zdefiniuj ``result: set[str]``
     #. Iterując po danych rozpakuj wiersz do ``*features`` oraz ``label``
-    #. Wypisz nazwy gatunków kończące się na "ca" lub "osa"
+    #. Dodaj do ``result`` nazwy gatunków kończące się na "ca" lub "osa"
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. code-block:: python
@@ -219,6 +223,12 @@ Loop Unpacking Endswith
             (7.6, 3.0, 6.6, 2.1, {'virginica'}),
             (4.6, 3.1, 1.5, 0.2, {'setosa'}),
         ]
+:Output:
+    .. code-block:: text
+
+        >>> assert type(result) is set
+        >>> result
+        {'virginica', 'setosa'}
 
 :The whys and wherefores:
     * Accessing ``set`` items
