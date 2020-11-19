@@ -1,9 +1,9 @@
 """
 >>> result  # doctest: +NORMALIZE_WHITESPACE
-[{'ip': '127.0.0.1', 'hostnames': {'astromatt', 'localhost'}, 'protocol': 'IPv4'},
- {'ip': '10.13.37.1', 'hostnames': {'nasa.gov', 'roscosmos.ru', 'esa.int'}, 'protocol': 'IPv4'},
- {'ip': '255.255.255.255', 'hostnames': {'broadcasthost'}, 'protocol': 'IPv4'},
- {'ip': '::1', 'hostnames': {'localhost'}, 'protocol': 'IPv6'}]
+[{'ip': '127.0.0.1', 'hostnames': ['localhost', ['astromatt']], 'protocol': 'IPv4'},
+ {'ip': '10.13.37.1', 'hostnames': ['nasa.gov', 'esa.int', 'roscosmos.ru'], 'protocol': 'IPv4'},
+ {'ip': '255.255.255.255', 'hostnames': ['broadcasthost'], 'protocol': 'IPv4'},
+ {'ip': '::1', 'hostnames': ['localhost'], 'protocol': 'IPv6'}]
 """
 
 FILE = r'/tmp/_temporary.txt'
@@ -29,10 +29,8 @@ with open(FILE, mode='w') as file:
 try:
     with open(FILE) as file:
         hosts_file = file.readlines()
-
 except FileNotFoundError:
     print('File does not exist')
-
 except PermissionError:
     print('Permission denied')
 
@@ -48,14 +46,14 @@ for line in hosts_file:
 
     for host in result:
         if host['ip'] == ip:
-            host['hostnames'].update(hostnames)
+            host['hostnames'].append(hostnames)
             found = True
             break
 
     if not found:
         result.append({
             'ip': ip,
-            'hostnames': set(hostnames),
+            'hostnames': list(hostnames),
             'protocol': 'IPv4' if '.' in ip else 'IPv6'
         })
 

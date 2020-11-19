@@ -450,10 +450,10 @@ File Read Parsing List of Dicts
     .. code-block:: text
 
         >>> result  # doctest: +NORMALIZE_WHITESPACE
-        [{'ip': '127.0.0.1', 'hostnames': {'astromatt', 'localhost'}, 'protocol': 'IPv4'},
-         {'ip': '10.13.37.1', 'hostnames': {'nasa.gov', 'roscosmos.ru', 'esa.int'}, 'protocol': 'IPv4'},
-         {'ip': '255.255.255.255', 'hostnames': {'broadcasthost'}, 'protocol': 'IPv4'},
-         {'ip': '::1', 'hostnames': {'localhost'}, 'protocol': 'IPv6'}]
+        [{'ip': '127.0.0.1', 'hostnames': ['localhost', ['astromatt']], 'protocol': 'IPv4'},
+         {'ip': '10.13.37.1', 'hostnames': ['nasa.gov', 'esa.int', 'roscosmos.ru'], 'protocol': 'IPv4'},
+         {'ip': '255.255.255.255', 'hostnames': ['broadcasthost'], 'protocol': 'IPv4'},
+         {'ip': '::1', 'hostnames': ['localhost'], 'protocol': 'IPv6'}]
 
 :The whys and wherefores:
     * czytanie i parsowanie pliku
