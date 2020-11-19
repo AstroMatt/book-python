@@ -8,16 +8,79 @@ File Path
 Rationale
 =========
 .. highlights::
-    * Never hardcode paths (put path directly to open function)
-    * Use constant as a file name or file path
-    * Convention ``FILE``, ``FILENAME``, ``FILEPATH``, ``PATH``
-    * Or their respective plural forms for multiple files
+    * Python works with both relative and absolute path
+    * Path separator ``\`` (backslash) is used on Windows
+    * Path separator ``/`` (slash) is used on ``*nix`` operating systems: Linux, macOS, BSD and other POSIX compliant OSes (excluding Windows)
+    * In newer Windows versions both ``\`` and ``/`` works the same
+
+.. code-block:: text
+    :caption: Absolute path on Windows
+
+    C:\Users\Watney\myfile.txt
+
+.. code-block:: text
+    :caption: Absolute path on ``*nix`` (Linux, macOS, BSD, etc.)
+
+    /tmp/myfile.txt
+
+.. code-block:: text
+    :caption: Relative paths works the same on Windows and ``*nix`` (Linux, macOS, BSD, etc.)
+
+    myfile.txt
+    tmp/myfile.txt
+    ../myfile.txt
+
+
+Good Engineering Practices
+==========================
+.. highlights::
+    * Never hardcode paths, use constant as a file name or file path
+    * Convention (singular form): ``FILE``, ``FILENAME``, ``FILEPATH``, ``PATH``
+    * Convention (plural form): ``FILES``, ``FILENAMES``, ``FILEPATHS``, ``PATHS``
     * Note, that ``PATH`` is usually used for other purposes (``sys.path`` or ``os.getenv('PATH')``)
-    * Always use raw-strings ``r"..."``
-    * Paths on Windows uses ``\``
-    * Paths on ``*nix`` uses ``/``
-    * ``*nix`` operating systems: Linux, macOS, BSD and other POSIX compliant OSes (excluding Windows)
-    * In newer Windows versions both ``\`` and ``/`` works
+
+.. code-block:: python
+
+    FILE = 'myfile.txt'
+
+.. code-block:: python
+
+    FILES = [
+        'myfile.txt',
+        'myfile.csv']
+
+
+Raw Strings
+===========
+.. highlights::
+    * Always use raw-strings (``r"..."``) for paths
+    * Escapes does not matters
+
+.. code-block:: python
+
+    print(r'C:\Users\Admin\file.txt')
+    # C:\Users\Admin\file.txt
+
+    print('C:\\Users\\Admin\\file.txt')
+    # C:\Users\Admin\file.txt
+
+    print('C:\Users\Admin\file.txt')
+    # Traceback (most recent call last):
+    #     ...
+    # SyntaxError: (unicode error) 'unicodeescape'
+    #   codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+
+* Problem: ``\Users``
+* after ``\U...`` python expects Unicode codepoint in hex i.e. '\U0001F680' which is 🚀 emoticon
+* ``s`` is invalid hexadecimal character
+* Only valid characters are ``0123456789abcdefABCDEF``
+
+.. code-block:: python
+
+    import string
+
+    print(string.hexdigits)
+    # 0123456789abcdefABCDEF
 
 
 Absolute Path
@@ -61,8 +124,8 @@ Relative Path
 Escaping Characters in Path
 ===========================
 .. highlights::
-    * "\\ " (slash space) - escapes space
-    * Note escapes are not needed
+    * "\\ " (backslash space) - escapes space
+    * Note that in Python escapes in paths are not required
 
 .. code-block:: python
 
@@ -93,6 +156,7 @@ Escaping Characters in Path
 
     print(FILE)
     # C:\Users\Admin\myfile.txt
+
 
 Create Directories
 ==================
@@ -147,6 +211,7 @@ Exists and is Directory or File
     path.is_file()
     # True
 
+
 Current Working Directory
 =========================
 .. highlights::
@@ -198,10 +263,19 @@ File Path Abspath
     #. Using ``input()`` ask user for a file path
     #. Convert path to absolute
     #. Print if path exists and leads to file or directory
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Używając ``input()`` zapytaj użytkownika o ścieżkę do pliku
     #. Przekonwertuj ścieżkę do bezwzględnej
     #. Wypisz czy ścieżka istnieje i czy prowadzi do pliku czy katalogu
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
-.. todo:: Doctests
+:Output:
+    .. code-block:: text
+
+        >>> isinstance(result, Path)
+        True
+        >>> current_directory = Path.cwd()
+        >>> str(current_directory) in str(result)
+        True

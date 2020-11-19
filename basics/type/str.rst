@@ -177,7 +177,7 @@ Bytes Literal
 Raw String
 ==========
 .. highlights::
-    *  Escapes does not matters
+    * Escapes does not matters
 
 .. code-block:: python
     :caption: In Regular Expressions
@@ -199,8 +199,9 @@ Raw String
     #   codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
 
 * Problem: ``\Users``
-* after ``\U...`` python expects Unicode codepoint in hex
+* after ``\U...`` python expects Unicode codepoint in hex i.e. '\U0001F680' which is 🚀 emoticon
 * ``s`` is invalid hexadecimal character
+* Only valid characters are ``0123456789abcdefABCDEF``
 
 
 Reading Input
