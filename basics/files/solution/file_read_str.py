@@ -1,3 +1,9 @@
+"""
+>>> assert type(result) is str
+>>> result
+'hello'
+"""
+
 FILE = r'/tmp/_temporary.txt'
 DATA = 'hello'
 

@@ -68,18 +68,14 @@ Escaping Characters in Path
 
     FILE = '/tmp/my file.txt'
 
-    with open(FILE) as file:
-        print(file.read())
-
+    file = open(FILE)
     # Success!
 
 .. code-block:: python
 
     FILE = r'/tmp/my file.txt'
 
-    with open(FILE) as file:
-        print(file.read())
-
+    file = open(FILE)
     # Success!
 
 .. code-block:: python
@@ -194,8 +190,8 @@ File Path Abspath
 * Assignment name: File Path Abspath
 * Last update: 2020-10-01
 * Complexity level: easy
-* Lines of code to write: 5 lines
-* Estimated time of completion: 5 min
+* Lines of code to write: 3 lines
+* Estimated time of completion: 2 min
 * Solution: :download:`solution/file_path_abspath.py`
 
 :English:
@@ -208,3 +204,4 @@ File Path Abspath
     #. Przekonwertuj ścieżkę do bezwzględnej
     #. Wypisz czy ścieżka istnieje i czy prowadzi do pliku czy katalogu
 
+.. todo:: Doctests

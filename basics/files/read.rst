@@ -213,8 +213,9 @@ File Read Str
 :Output:
     .. code-block:: python
 
-        result: str
-        # hello world
+        >>> assert type(result) is str
+        >>> result
+        'hello'
 
 File Read Multiline
 -------------------
@@ -248,8 +249,10 @@ File Read Multiline
 :Output:
     .. code-block:: python
 
-        result: list[str]
-        # ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
+        >>> assert type(result) is list
+        >>> assert all(type(x) is str for x in result)
+        >>> result
+        ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
 
 File Read CSV
 -------------
@@ -305,12 +308,6 @@ File Read CSV
         7.3,2.9,6.3,1.8,virginica
         5.6,2.5,3.9,1.1,versicolor
         5.4,3.9,1.3,0.4,setosa
-        5.5,2.6,4.4,1.2,versicolor
-        5.7,2.9,4.2,1.3,versicolor
-        4.9,3.1,1.5,0.1,setosa
-        6.7,2.5,5.8,1.8,virginica
-        6.5,3.0,5.2,2.0,virginica
-        5.1,3.3,1.7,0.5,setosa
         """
 
         header = []
@@ -318,20 +315,19 @@ File Read CSV
         labels = []
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        header: list[str]
-        # ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
-
-        features: list[tuple[float]]
-        # [(5.4, 3.9, 1.3, 0.4), (5.9, 3.0, 5.1, 1.8), (6.0, 3.4, 4.5, 1.6),
-        #  (7.3, 2.9, 6.3, 1.8), (5.6, 2.5, 3.9, 1.1), (5.4, 3.9, 1.3, 0.4),
-        #  (5.5, 2.6, 4.4, 1.2), (5.7, 2.9, 4.2, 1.3), (4.9, 3.1, 1.5, 0.1), ...]
-
-        labels: list[str]
-        # ['setosa', 'virginica', 'versicolor', 'virginica', 'versicolor',
-        #  'setosa', 'versicolor', 'versicolor', 'setosa', 'virginica',
-        #  'virginica', 'setosa', 'setosa', ...]
+        >>> header
+        ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
+        >>> features  # doctest: +NORMALIZE_WHITESPACE
+        [(5.4, 3.9, 1.3, 0.4),
+         (5.9, 3.0, 5.1, 1.8),
+         (6.0, 3.4, 4.5, 1.6),
+         (7.3, 2.9, 6.3, 1.8),
+         (5.6, 2.5, 3.9, 1.1),
+         (5.4, 3.9, 1.3, 0.4)]
+        >>> label
+        ['setosa', 'virginica', 'versicolor', 'virginica', 'versicolor', 'setosa']
 
 :The whys and wherefores:
     * Reading file

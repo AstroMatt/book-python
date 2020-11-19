@@ -12,6 +12,7 @@ DATA = """
 255.255.255.255 broadcasthost
 ::1             localhost
 """
+
 result = []
 
 with open(FILE, mode='w') as file:

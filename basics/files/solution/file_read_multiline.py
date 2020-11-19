@@ -1,3 +1,10 @@
+"""
+>>> assert type(result) is list
+>>> assert all(type(x) is str for x in result)
+>>> result
+['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
+"""
+
 FILE = r'/tmp/_temporary.txt'
 DATA = 'sepal_length\nsepal_width\npetal_length\npetal_width\nspecies\n'
 

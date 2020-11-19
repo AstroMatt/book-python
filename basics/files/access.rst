@@ -4,22 +4,46 @@
 File Access Modes
 *****************
 
+
 Rationale
 =========
-* Text - easy to read and write
-* Binary - Fast and efficient
-* Read - Get data from file
-* Write - Save data to file (overwrite existing data)
-* Append - Add line to file
-* Update - Read and Write
-* If mode is not specified it will read in text mode (``mode='rt'``)
+By type:
+
+    * Text - easy to read and write
+    * Binary - Fast and efficient
+
+By operation:
+
+    * Read - Get data from file
+    * Write - Save data to file (overwrite existing data)
+    * Append - Add line to file
+    * Update - Read and Write (rarely used)
+
+If mode is not specified it will read in text mode (``mode='rt'``)
 
 .. code-block:: python
 
     FILE = r'/tmp/myfile.txt'
 
-    with open(FILE) as file:
-        ...
+    file = open(FILE)
+
+
+Short Notation
+==============
+.. highlights::
+    * Most commonly used
+    * By default text mode is used
+    * ``mode='r'`` - read in text mode
+    * ``mode='w'`` - write in text mode
+    * ``mode='a'`` - append in text mode
+
+.. code-block:: python
+
+    FILE = r'/tmp/myfile.txt'
+
+    file = open(FILE, mode='r')
+    file = open(FILE, mode='w')
+    file = open(FILE, mode='a')
 
 
 Text Mode
@@ -34,14 +58,9 @@ Text Mode
 
     FILE = r'/tmp/myfile.txt'
 
-    with open(FILE, mode='rt') as file:
-        ...
-
-    with open(FILE, mode='wt') as file:
-        ...
-
-    with open(FILE, mode='at') as file:
-        ...
+    file = open(FILE, mode='rt')
+    file = open(FILE, mode='wt')
+    file = open(FILE, mode='at')
 
 
 Binary Mode
@@ -56,35 +75,26 @@ Binary Mode
 
     FILE = r'/tmp/myfile.txt'
 
-    with open(FILE, mode='rb') as file:
-        ...
+    file = open(FILE, mode='rb')
+    file = open(FILE, mode='wb')
+    file = open(FILE, mode='ab')
 
-    with open(FILE, mode='wb') as file:
-        ...
-
-    with open(FILE, mode='ab') as file:
-        ...
 
 Update in Text Mode
 ===================
 .. highlights::
     * Reading and Writing
-    * ``mode='rt+'`` - update in binary mode
-    * ``mode='wt+'`` - update in binary mode
-    * ``mode='at+'`` - update in binary mode
+    * ``mode='rt+'`` - update in text mode
+    * ``mode='wt+'`` - update in text mode
+    * ``mode='at+'`` - update in text mode
 
 .. code-block:: python
 
     FILE = r'/tmp/myfile.txt'
 
-    with open(FILE, mode='rt+') as file:
-        ...
-
-    with open(FILE, mode='wt+') as file:
-        ...
-
-    with open(FILE, mode='at+') as file:
-        ...
+    file = open(FILE, mode='rt+')
+    file = open(FILE, mode='wt+')
+    file = open(FILE, mode='at+')
 
 
 Update in Binary Mode
@@ -99,37 +109,9 @@ Update in Binary Mode
 
     FILE = r'/tmp/myfile.txt'
 
-    with open(FILE, mode='rb+') as file:
-        ...
-
-    with open(FILE, mode='wb+') as file:
-        ...
-
-    with open(FILE, mode='ab+') as file:
-        ...
-
-
-Short Notation
-==============
-.. highlights::
-    * By default text mode is used
-    * Most commonly used
-    * ``mode='r'`` - read in text mode
-    * ``mode='w'`` - write in text mode
-    * ``mode='a'`` - append in text mode
-
-.. code-block:: python
-
-    FILE = r'/tmp/myfile.txt'
-
-    with open(FILE, mode='r') as file:
-        ...
-
-    with open(FILE, mode='w') as file:
-        ...
-
-    with open(FILE, mode='a') as file:
-        ...
+    file = open(FILE, mode='rb+')
+    file = open(FILE, mode='wb+')
+    file = open(FILE, mode='ab+')
 
 
 Short Notation Update Mode
@@ -156,25 +138,32 @@ Short Notation Update Mode
 
 Recap
 =====
-* ``mode='r'`` - read in text mode
-* ``mode='w'`` - write in text mode
-* ``mode='a'`` - append in text mode
+Most common (90% of time):
 
-* ``mode='rt'`` - read in text mode (default)
-* ``mode='wt'`` - write in text mode
-* ``mode='at'`` - append in text mode
+    * ``mode='r'`` - read in text mode
+    * ``mode='w'`` - write in text mode
+    * ``mode='a'`` - append in text mode
 
-* ``mode='rb'`` - read in binary mode
-* ``mode='wb'`` - write in binary mode
-* ``mode='ab'`` - append in binary mode
+Text Mode:
 
-* ``mode='rb+'`` - update in binary mode
-* ``mode='wb+'`` - update in binary mode
-* ``mode='ab+'`` - update in binary mode
+    * ``mode='rt'`` - read in text mode (default)
+    * ``mode='wt'`` - write in text mode
+    * ``mode='at'`` - append in text mode
 
-* ``mode='r+'`` - read in text mode
-* ``mode='w+'`` - write in text mode
-* ``mode='a+'`` - append in text mode
+Binary Mode:
+
+    * ``mode='rb'`` - read in binary mode
+    * ``mode='wb'`` - write in binary mode
+    * ``mode='ab'`` - append in binary mode
+
+Update (rarely used):
+
+    * ``mode='rb+'`` - update in binary mode
+    * ``mode='wb+'`` - update in binary mode
+    * ``mode='ab+'`` - update in binary mode
+    * ``mode='r+'`` - read in text mode
+    * ``mode='w+'`` - write in text mode
+    * ``mode='a+'`` - append in text mode
 
 * If mode is not specified it will read in text mode (``mode='rt'``)
 
@@ -186,12 +175,9 @@ Exception Handling
     FILE = r'/tmp/myfile.txt'
 
     try:
-        with open(FILE) as file:
-            print(file.read())
-
+        file = open(FILE)
     except FileNotFoundError:
         print('File does not exist')
-
     except PermissionError:
         print('Permission denied')
 
@@ -205,7 +191,7 @@ File Access Error
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
-* Estimated time of completion: 3 min
+* Estimated time of completion: 2 min
 * Solution: :download:`solution/file_access_error.py`
 
 :English:
