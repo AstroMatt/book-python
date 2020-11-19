@@ -320,14 +320,14 @@ File Read CSV
 :Hints:
     * ``tuple(float(x) for x in X)``
 
-File Read Parsing Dict
-----------------------
-* Assignment name: File Read Parsing Dict
+File Read Dict
+--------------
+* Assignment name: File Read Dict
 * Last update: 2020-11-19
 * Complexity level: medium
 * Lines of code to write: 10 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/file_read_parsing_dict.py`
+* Solution: :download:`solution/file_read_dict.py`
 
 :English:
     #. Use data from "Input" section (see below)
@@ -386,14 +386,14 @@ File Read Parsing Dict
     * ``str.isspace()``
     * ``str.split()``
 
-File Read Parsing List of Dicts
--------------------------------
-* Assignment name: File Read Parsing List of Dicts
+File Read List of Dicts
+-----------------------
+* Assignment name: File Read List of Dicts
 * Last update: 2020-11-19
 * Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/file_read_parsing_listdict.py`
+* Solution: :download:`solution/file_read_listdict.py`
 
 :English:
     #. Use data from "Input" section (see below)
