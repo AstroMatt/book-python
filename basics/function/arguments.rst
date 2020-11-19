@@ -157,7 +157,7 @@ Function Arguments Divide
 * Assignment name: Function Arguments Divide
 * Last update: 2020-10-01
 * Complexity level: easy
-* Lines of code to write: 5 lines
+* Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/function_args_divide.py`
 
@@ -180,13 +180,11 @@ Function Arguments Divide
     #. Co zrobić w przypadku błędu?
 
 :Output:
-    .. code-block:: python
-
-        >>> divide(4, 2)
-        2
+    .. code-block:: text
 
         >>> divide(4, 0)
-        None
+        >>> divide(4, 2)
+        2.0
 
 Function Arguments Power
 ------------------------
@@ -216,11 +214,10 @@ Function Arguments Power
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> power(4, 3)
         64
-
         >>> power(3)
         27
 
@@ -229,30 +226,22 @@ Function Arguments Translate
 * Assignment name: Function Arguments Translate
 * Last update: 2020-10-01
 * Complexity level: easy
-* Lines of code to write: 4 lines
+* Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/function_args_translate.py`
 
 :English:
-    #. Use data from "Input" section (see below)
     #. Define function ``translate`` with parameter ``text``
     #. Use ``str.join()`` with generator expression to iterate over ``text``
     #. If letter is in ``PL`` then use conversion value as letter, otherwise take letter
     #. Return from function translated ``text``
-    #. Call ``translate('zażółć')``
-    #. Call ``translate('gęślą')``
-    #. Call ``translate('jaźń')``
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Zdefiniuj funkcję ``translate`` przyjmującą parametr ``text``
     #. Użyj ``str.join()`` z wyrażeniem generatorowym do iteracji po ``text``
-    #. Jeżeli litera jest w ``PL`` to użyj przekonwertowanej wartości jako litera, w przeciwnym przypadku to weź literę
+    #. Jeżeli litera jest w ``PL`` to użyj skonwertowanej wartości jako litera, w przeciwnym przypadku to weź literę
     #. Zwróć z funkcji przetłumaczony ``text``
-    #. Uruchom ``translate('zażółć')``
-    #. Uruchom ``translate('gęślą')``
-    #. Uruchom ``translate('jaźń')``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
@@ -263,16 +252,16 @@ Function Arguments Translate
               'ś': 's', 'ż': 'z', 'ź': 'z'}
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
         >>> translate('zażółć')
         'zazolc'
-
         >>> translate('gęślą')
         'gesla'
-
         >>> translate('jaźń')
         'jazn'
+        >>> translate('zażółć gęślą jaźń')
+        'zazolc gesla jazn'
 
 
 .. _Function Arguments Clean:
@@ -287,68 +276,41 @@ Function Arguments Clean
 * Solution: :download:`solution/function_args_clean.py`
 
 :English:
-    #. Use data from "Input" section (see below)
     #. Write function cleaning up data
     #. Function takes one argument of type ``str``
     #. Function returns cleaned text
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Napisz funkcję czyszczącą dane
     #. Funkcja przyjmuje jeden argument typu ``str``
     #. Funkcja zwraca oczyszczony tekst
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
-:Input:
-    .. code-block:: python
+:Output:
+    .. code-block:: text
 
         >>> clean('ul.Mieszka II')
         'Mieszka II'
-
         >>> clean('UL. Zygmunta III WaZY')
         'Zygmunta III Wazy'
-
         >>> clean('  bolesława chrobrego ')
         'Bolesława Chrobrego'
-
         >>> clean('ul Jana III SobIESkiego')
         'Jana III Sobieskiego'
-
         >>> clean('\tul. Jana trzeciego Sobieskiego')
         'Jana III Sobieskiego'
-
         >>> clean('ulicaJana III Sobieskiego')
         'Jana III Sobieskiego'
-
         >>> clean('UL. JA    NA 3 SOBIES  KIEGO')
         'Jana III Sobieskiego'
-
         >>> clean('ULICA JANA III SOBIESKIEGO  ')
         'Jana III Sobieskiego'
-
         >>> clean('ULICA. JANA III SOBIeskieGO')
         'Jana III Sobieskiego'
-
         >>> clean(' Jana 3 Sobieskiego  ')
         'Jana III Sobieskiego'
-
         >>> clean('Jana III Sobi  eskiego ')
-        'Jana III Sobieskiego'
-
-:Output:
-    .. code-block:: python
-
-        'Mieszka II'
-        'Zygmunta III Wazy'
-        'Bolesława Chrobrego'
-        'Jana III Sobieskiego'
-        'Jana III Sobieskiego'
-        'Jana III Sobieskiego'
-        'Jana III Sobieskiego'
-        'Jana III Sobieskiego'
-        'Jana III Sobieskiego'
-        'Jana III Sobieskiego'
         'Jana III Sobieskiego'
 
 :The whys and wherefores:
@@ -365,14 +327,14 @@ Function Arguments Numbers to Str
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/function_args_numstr_simple.py`
+* Solution: :download:`solution/function_args_numstr.py`
 
 :English:
     #. Use data from "Input" section (see below)
     #. Given is pilot's alphabet for numbers
     #. Convert ``DATA: dict[int, str]`` to ``data: dict[str, str]`` (keys as ``str``)
     #. For input data (see input section below)
-    #. Define function converting ``int`` or ``float`` to text form in Pilot's Speak
+    #. Define function ``pilot_say`` converting ``int`` or ``float`` to text form in Pilot's Speak
     #. You cannot change ``DATA``, but you can modify ``data``
     #. Compare result with "Output" section (see below)
 
@@ -381,7 +343,7 @@ Function Arguments Numbers to Str
     #. Dany jest alfabet pilotów dla numerów
     #. Przekonwertuj ``DATA: dict[int, str]`` na ``data: dict[str, str]`` (klucze jako ``str``)
     #. Dla danych wejściowych (patrz sekcja input poniżej)
-    #. Zdefiniuj funkcję konwertującą ``int`` lub ``float`` na formę tekstową w mowie pilotów
+    #. Zdefiniuj funkcję ``pilot_say`` konwertującą ``int`` lub ``float`` na formę tekstową w mowie pilotów
     #. Nie możesz zmieniać ``DATA``, ale możesz modyfikować ``data``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
@@ -401,38 +363,22 @@ Function Arguments Numbers to Str
             9: 'niner',
         }
 
-    .. code-block:: python
+:Output:
+    .. code-block:: text
 
         >>> pilot_say(1969)
         'one niner six niner'
-
         >>> pilot_say(31337)
         'tree one tree tree seven'
-
         >>> pilot_say(13.37)
         'one tree and tree seven'
-
         >>> pilot_say(31.337)
         'tree one and tree tree seven'
-
         >>> pilot_say(-1969)
         'minus one niner six niner'
-
         >>> pilot_say(-31.337)
         'minus tree one and tree tree seven'
-
         >>> pilot_say(-49.35)
-        'minus fower niner and tree fife'
-
-:Output:
-    .. code-block:: python
-
-        'one niner six niner'
-        'tree one tree tree seven'
-        'one tree and tree seven'
-        'tree one and tree tree seven'
-        'minus one niner six niner'
-        'minus tree one and tree tree seven'
         'minus fower niner and tree fife'
 
 :The whys and wherefores:
@@ -448,10 +394,9 @@ Function Arguments Numbers to Human
 * Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/function_args_numstr_human.py`
+* Solution: :download:`solution/function_args_numhuman.py`
 
 :English:
-    #. Use data from "Input" section (see below)
     #. Define function converting ``int`` or ``float`` to text form
     #. Text form must be in proper grammar form
     #. Max 6 digits before decimal separator (point ``.``)
@@ -459,33 +404,28 @@ Function Arguments Numbers to Human
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Zdefiniuj funkcję konwertującą ``int`` lub ``float`` na formę tekstową
     #. Forma tekstowa musi być poprawna gramatycznie
     #. Max 6 cyfr przed separatorem dziesiętnym (point ``.``)
     #. Max 5 cyfr po separatorze dziesiętnym (point ``.``)
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
-:Input:
-    .. code-block:: python
-
-        1969
-        31337
-        13.37
-        31.337
-        -1969
-        -31.337
-        -49.35
-
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
+        >>> number_to_str(1969)
         'one thousand nine hundred sixty nine'
+        >>> number_to_str(31337)
         'thirty one thousand three hundred thirty seven'
+        >>> number_to_str(13.37)
         'thirteen and thirty seven hundredths'
-        'thirty one three hundreds thirty seven thousands'
+        >>> number_to_str(31.337)
+        'thirty one and three hundreds thirty seven thousands'
+        >>> number_to_str(-1969)
         'minus one thousand nine hundred sixty nine'
+        >>> number_to_str(-31.337)
         'minus thirty one and three hundreds thirty seven thousands'
+        >>> number_to_str(-49.35)
         'minus forty nine and thirty five hundreds'
 
 :The whys and wherefores:

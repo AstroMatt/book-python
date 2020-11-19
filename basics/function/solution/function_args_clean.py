@@ -1,29 +1,29 @@
-def clean(text: str) -> str:
-    """
-    >>> clean('ul.Mieszka II')
-    'Mieszka II'
-    >>> clean('UL. Zygmunta III WaZY')
-    'Zygmunta III Wazy'
-    >>> clean('  bolesława chrobrego ')
-    'Bolesława Chrobrego'
-    >>> clean('ul Jana III SobIESkiego')
-    'Jana III Sobieskiego'
-    >>> clean('\tul. Jana trzeciego Sobieskiego')
-    'Jana III Sobieskiego'
-    >>> clean('ulicaJana III Sobieskiego')
-    'Jana III Sobieskiego'
-    >>> clean('UL. JA    NA 3 SOBIES  KIEGO')
-    'Jana III Sobieskiego'
-    >>> clean('ULICA JANA III SOBIESKIEGO  ')
-    'Jana III Sobieskiego'
-    >>> clean('ULICA. JANA III SOBIeskieGO')
-    'Jana III Sobieskiego'
-    >>> clean(' Jana 3 Sobieskiego  ')
-    'Jana III Sobieskiego'
-    >>> clean('Jana III Sobi  eskiego ')
-    'Jana III Sobieskiego'
-    """
+"""
+>>> clean('ul.Mieszka II')
+'Mieszka II'
+>>> clean('UL. Zygmunta III WaZY')
+'Zygmunta III Wazy'
+>>> clean('  bolesława chrobrego ')
+'Bolesława Chrobrego'
+>>> clean('ul Jana III SobIESkiego')
+'Jana III Sobieskiego'
+>>> clean('\tul. Jana trzeciego Sobieskiego')
+'Jana III Sobieskiego'
+>>> clean('ulicaJana III Sobieskiego')
+'Jana III Sobieskiego'
+>>> clean('UL. JA    NA 3 SOBIES  KIEGO')
+'Jana III Sobieskiego'
+>>> clean('ULICA JANA III SOBIESKIEGO  ')
+'Jana III Sobieskiego'
+>>> clean('ULICA. JANA III SOBIeskieGO')
+'Jana III Sobieskiego'
+>>> clean(' Jana 3 Sobieskiego  ')
+'Jana III Sobieskiego'
+>>> clean('Jana III Sobi  eskiego ')
+'Jana III Sobieskiego'
+"""
 
+def clean(text: str) -> str:
     # Convert to common format
     text = text.upper()
 

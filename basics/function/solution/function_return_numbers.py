@@ -1,5 +1,10 @@
+"""
+>>> result
+3
+"""
+
 def add():
     return 1 + 2
 
 
-print(add())
+result = add()

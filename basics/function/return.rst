@@ -194,3 +194,9 @@ Function Return Numbers
     #. Funkcja powinna zwracać sumę ``1`` i ``2``
     #. Wywołaj funkcję i przechwyć zwracaną wartość
     #. Wyświetl wartość
+
+:Output:
+    .. code-block:: text
+
+        >>> result
+        3
