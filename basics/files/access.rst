@@ -80,27 +80,17 @@ Binary Mode
     file = open(FILE, mode='ab')
 
 
-Update in Text Mode
-===================
+Update Mode
+===========
 .. highlights::
     * Reading and Writing
+    * Text mode is used if not specified otherwise
+    * ``mode='r+'`` - read in text mode
+    * ``mode='w+'`` - write in text mode
+    * ``mode='a+'`` - append in text mode
     * ``mode='rt+'`` - update in text mode
     * ``mode='wt+'`` - update in text mode
     * ``mode='at+'`` - update in text mode
-
-.. code-block:: python
-
-    FILE = r'/tmp/myfile.txt'
-
-    file = open(FILE, mode='rt+')
-    file = open(FILE, mode='wt+')
-    file = open(FILE, mode='at+')
-
-
-Update in Binary Mode
-=====================
-.. highlights::
-    * Reading and Writing
     * ``mode='rb+'`` - update in binary mode
     * ``mode='wb+'`` - update in binary mode
     * ``mode='ab+'`` - update in binary mode
@@ -109,31 +99,17 @@ Update in Binary Mode
 
     FILE = r'/tmp/myfile.txt'
 
+    file = open(FILE, mode='r+')
+    file = open(FILE, mode='w+')
+    file = open(FILE, mode='a+')
+
+    file = open(FILE, mode='rt+')
+    file = open(FILE, mode='wt+')
+    file = open(FILE, mode='at+')
+
     file = open(FILE, mode='rb+')
     file = open(FILE, mode='wb+')
     file = open(FILE, mode='ab+')
-
-
-Short Notation Update Mode
-==========================
-.. highlights::
-    * By default text mode is used
-    * ``mode='r+'`` - read in text mode
-    * ``mode='w+'`` - write in text mode
-    * ``mode='a+'`` - append in text mode
-
-.. code-block:: python
-
-    FILE = r'/tmp/myfile.txt'
-
-    with open(FILE, mode='r+') as file:
-        ...
-
-    with open(FILE, mode='w+') as file:
-        ...
-
-    with open(FILE, mode='a+') as file:
-        ...
 
 
 Recap
