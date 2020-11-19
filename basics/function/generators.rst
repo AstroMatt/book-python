@@ -190,6 +190,18 @@ Map
     # frozenset({1.0, 2.0, 3.0})
 
 .. code-block:: python
+
+    DATA = [1.1111, 2.22222, 3.3333]
+
+    result = [round(x) for x in DATA]
+    # [1, 2, 3]
+
+    result = map(round, DATA)
+    list(result)
+    # [1, 2, 3]
+
+
+.. code-block:: python
     :caption: ``map()`` examples
 
     def square(x):
@@ -200,6 +212,7 @@ Map
     result = map(square, data)
     list(result)
     # [1, 4, 9]
+
 
 Filter
 ======
@@ -384,6 +397,7 @@ Function Generator Chain
     #. Use ``filter()`` to get odd numbers from ``numbers``
     #. Use ``map()`` to cube all numbers in ``numbers``
     #. Create ``result: float`` with arithmetic mean of ``numbers``
+    #. Do not use ``lambda`` expressions
     #. Compare result with "Output" section (see below)
 
 :Polish:
@@ -392,11 +406,14 @@ Function Generator Chain
     #. Użyj ``filter()`` aby otrzymać liczby nieparzyste z ``numbers``
     #. Użyj ``map()`` aby podnieść wszystkie liczby w ``numbers`` do sześcianu
     #. Stwórz ``result: float`` ze średnią arytmetyczną z ``numbers``
+    #. Nie używaj wyrażeń lambda
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Output:
     .. code-block:: text
 
+        >>> type(result) is float
+        True
         >>> result
         11502.0
 

@@ -198,6 +198,8 @@ Function Lambda Chain
 :Output:
     .. code-block:: text
 
+        >>> type(result) is float
+        True
         >>> result
         11502.0
 

@@ -1,5 +1,14 @@
+"""
+>>> type(result) is float
+True
+>>> result
+11502.0
+"""
+
+
 def odd(x):
     return x % 2
+
 
 def cube(x):
     return x ** 3
@@ -11,5 +20,3 @@ numbers = map(cube, numbers)
 numbers = list(numbers)
 result = sum(numbers) / len(numbers)
 
-print(result)
-# 11502.0

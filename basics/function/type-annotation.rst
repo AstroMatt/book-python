@@ -49,18 +49,6 @@ Union
 
     from typing import Union
 
-    def add_numbers(a: Union[int,float],
-                    b: Union[int,float]
-                    ) -> Union[int,float]:
-        return a + b
-
-    add_numbers(1, 2)       # 'Ok'
-    add_numbers(1.5, 2.5)   # 'Ok'
-
-.. code-block:: python
-
-    from typing import Union
-
     Number = Union[int, float]
 
     def add_numbers(a: Number, b: Number) -> Number:
@@ -75,12 +63,12 @@ Optional
 .. code-block:: python
 
     def find(text: str, what: str) -> Optional[int]:
-        start_position = text.find(what)
+        position = text.find(what)
 
-        if start_position > 0:
-            return start_position
-        else:
+        if position == -1:
             return None
+        else:
+            return position
 
 
     find('Python', 'o')      # 4
@@ -96,7 +84,6 @@ NoReturn
 
     def stop() -> NoReturn:
         raise RuntimeError
-
 
 .. code-block:: python
 
@@ -155,7 +142,7 @@ Errors
 ======
 .. highlights::
     * Python will execute without even warning
-    * Your IDE and ``mypy`` will yield errors
+    * Your IDE and ``mypy`` et. al. will yield errors
 
 .. code-block:: python
 
@@ -165,6 +152,26 @@ Errors
 
     add_numbers('Jan', 'Twardowski')
     # 'JanTwardowski'
+
+
+Good Engineering Practices
+==========================
+* Example https://github.com/pandas-dev/pandas/blob/master/pandas/core/frame.py#L458
+
+.. code-block:: python
+
+    from typing import Union
+
+    def add_numbers(a: Union[int,float],
+                    b: Union[int,float]
+                    ) -> Union[int,float]:
+        return a + b
+
+    add_numbers(1, 2)       # 'Ok'
+    add_numbers(1.5, 2.5)   # 'Ok'
+
+
+
 
 
 More Information
