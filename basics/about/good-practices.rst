@@ -228,6 +228,9 @@ Str Startswith
     result = str.startswith('v')
     result = str.startswith(('v', 's'))
 
+
+Str Join Newline
+================
 .. code-block:: python
     :caption: Replace with ``str.join()``
 
@@ -239,10 +242,10 @@ Str Startswith
 
 Others
 ======
-.. code-block:: python
-    :caption: The same for ...
-
-    all(), any(), iter(), next()
+* ``all()``
+* ``any()``
+* ``iter()``
+* ``next()``
 
 
 Functools

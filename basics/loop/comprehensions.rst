@@ -588,7 +588,7 @@ Loop Comprehension Create
 * Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 2 lines
-* Estimated time of completion: 2 min
+* Estimated time of completion: 3 min
 * Solution: :download:`solution/loop_comprehension_create.py`
 
 :English:
@@ -612,7 +612,7 @@ Loop Comprehension Create
 Loop Comprehension Translate
 ----------------------------
 * Assignment name: Loop Comprehension Translate
-* Last update: 2020-11-18
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
@@ -624,6 +624,7 @@ Loop Comprehension Translate
     #. Use list comprehension to iterate over ``DATA``
     #. If letter is in ``PL`` then use conversion value as letter
     #. Add letter to ``result``
+    #. Redefine ``result: str`` as a joined ``result``
     #. Compare result with "Output" section (see below)
 
 :Polish:
@@ -632,6 +633,7 @@ Loop Comprehension Translate
     #. Użyj rozwinięcia listowego do iteracji po ``DATA``
     #. Jeżeli litera jest w ``PL`` to użyj skonwertowanej wartości jako litera
     #. Dodaj literę do ``result``
+    #. Przedefiniuj ``result: str`` jako złączony ``result``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
@@ -653,10 +655,10 @@ Loop Comprehension Translate
 Loop Comprehension Months
 -------------------------
 * Assignment name: Loop Comprehension Months
-* Last update: 2020-11-18
+* Last update: 2020-11-19
 * Complexity level: easy
-* Lines of code to write: 2 lines
-* Estimated time of completion: 5 min
+* Lines of code to write: 1 lines
+* Estimated time of completion: 3 min
 * Solution: :download:`solution/loop_comprehension_months.py`
 
 :English:
@@ -692,10 +694,13 @@ Loop Comprehension Months
     .. code-block:: text
 
         >>> assert type(result) is dict
+        >>> assert '00' not in result
+        >>> assert '13' not in result
+        >>> assert result['01'] == 'January'
         >>> assert all(type(x) is str for x in result.keys())
         >>> assert all(type(x) is str for x in result.values())
         >>> assert all(len(x) == 2 for x in result.keys())
-        >>> result
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
         {'01': 'January',
          '02': 'February',
          '03': 'March',
@@ -783,13 +788,18 @@ Loop Comprehension Split
         >>> assert all(type(x) is str for x in labels_test)
 
         >>> features_train  # doctest: +NORMALIZE_WHITESPACE
-        [(5.8, 2.7, 5.1, 1.9), (5.1, 3.5, 1.4, 0.2),
-         (5.7, 2.8, 4.1, 1.3), (6.3, 2.9, 5.6, 1.8),
-         (6.4, 3.2, 4.5, 1.5), (4.7, 3.2, 1.3, 0.2)]
+        [(5.8, 2.7, 5.1, 1.9),
+         (5.1, 3.5, 1.4, 0.2),
+         (5.7, 2.8, 4.1, 1.3),
+         (6.3, 2.9, 5.6, 1.8),
+         (6.4, 3.2, 4.5, 1.5),
+         (4.7, 3.2, 1.3, 0.2)]
 
         >>> features_test  # doctest: +NORMALIZE_WHITESPACE
-        [(7.0, 3.2, 4.7, 1.4), (7.6, 3.0, 6.6, 2.1),
-         (4.9, 3.0, 1.4, 0.2), (4.9, 2.5, 4.5, 1.7)]
+        [(7.0, 3.2, 4.7, 1.4),
+         (7.6, 3.0, 6.6, 2.1),
+         (4.9, 3.0, 1.4, 0.2),
+         (4.9, 2.5, 4.5, 1.7)]
 
         >>> labels_train
         ['virginica', 'setosa', 'versicolor', 'virginica', 'versicolor', 'setosa']
