@@ -116,7 +116,7 @@ Assignments
 File Write Str
 --------------
 * Assignment name: File Write Str
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -148,7 +148,7 @@ File Write Str
 File Write Multiline
 --------------------
 * Assignment name: File Write Multiline
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -187,7 +187,7 @@ File Write Multiline
 File Write List
 ---------------
 * Assignment name: File Write List
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -220,7 +220,7 @@ File Write List
 File Write Non-Str
 ------------------
 * Assignment name: File Write Non-Str
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -252,7 +252,7 @@ File Write Non-Str
 File Write Iris
 ---------------
 * Assignment name: File Write Iris
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -289,7 +289,7 @@ File Write Iris
 File Write CSV
 --------------
 * Assignment name: File Write CSV
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: medium
 * Lines of code to write: 6 lines
 * Estimated time of completion: 13 min

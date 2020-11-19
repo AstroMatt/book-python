@@ -155,27 +155,9 @@ Examples
 
     with open(FILE) as file:
         for line in file:
-            total += sum(line)
+            total += sum(float(line))
 
     print(total)
-
-.. code-block:: python
-
-    moving_average = 0
-    window = 10
-    tmp = []
-
-    with open(FILE) as file:
-        for i, line in enumerate(file):
-            line = line.strip().split(',')
-            values = [x for x in line if x.isnumeric()]
-            tmp.append(sum(values) / len(values))
-
-            if i % window == 0:
-                moving_average += sum(tmp) / len(tmp)
-                tmp = []
-
-    print(mean)
 
 
 Assignments
@@ -184,7 +166,7 @@ Assignments
 File Read Str
 -------------
 * Assignment name: File Read Str
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -220,7 +202,7 @@ File Read Str
 File Read Multiline
 -------------------
 * Assignment name: File Read Multiline
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -257,7 +239,7 @@ File Read Multiline
 File Read CSV
 -------------
 * Assignment name: File Read CSV
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 8 min
@@ -341,7 +323,7 @@ File Read CSV
 File Read Parsing Dict
 ----------------------
 * Assignment name: File Read Parsing Dict
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: medium
 * Lines of code to write: 10 lines
 * Estimated time of completion: 8 min
@@ -364,7 +346,7 @@ File Read Parsing Dict
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Zapisz ``DATA`` do pliku ``FILE``
-    #. Wczytaj ``FILE`` i dla każdej lini:
+    #. Wczytaj ``FILE`` i dla każdej linii:
 
         * Usuń białe znaki na początku i końcu linii
         * Pomiń linię, jeżeli jest pusta
@@ -379,20 +361,20 @@ File Read Parsing Dict
     .. code-block:: python
 
         FILE = r'_temporary.txt'
-        DATA = """
-        127.0.0.1       localhost
+        DATA = """127.0.0.1       localhost
         10.13.37.1      nasa.gov esa.int roscosmos.ru
         255.255.255.255 broadcasthost
-        ::1             localhost"""
+        ::1             localhost
+        """
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: dict
-        # {'127.0.0.1': ['localhost'],
-        #  '10.13.37.1': ['nasa.gov', 'esa.int', 'roscosmos.ru'],
-        #  '255.255.255.255': ['broadcasthost'],
-        #  '::1': ['localhost']}
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        {'127.0.0.1': ['localhost'],
+         '10.13.37.1': ['nasa.gov', 'esa.int', 'roscosmos.ru'],
+         '255.255.255.255': ['broadcasthost'],
+         '::1': ['localhost']}
 
 :The whys and wherefores:
     * Reading file
@@ -407,7 +389,7 @@ File Read Parsing Dict
 File Read Parsing List of Dicts
 -------------------------------
 * Assignment name: File Read Parsing List of Dicts
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
@@ -434,7 +416,7 @@ File Read Parsing List of Dicts
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Zdefiniuj ``result: list[dict]``
     #. Używając ``file.write()`` zapisz dane wejściowe z listingu poniżej do pliku ``hosts-advanced.txt``
-    #. Przeczytaj plik i dla każdej lini:
+    #. Przeczytaj plik i dla każdej linii:
 
         * Pomiń linię jeżeli jest pusta, jest białym znakiem lub zaczyna się od komentarza ``#``
         * Usuń białe znaki na początku i końcu linii
@@ -448,7 +430,7 @@ File Read Parsing List of Dicts
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
-    .. code-block:: python
+    .. code-block:: text
 
         DATA = """
         ##
@@ -465,13 +447,13 @@ File Read Parsing List of Dicts
         """
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: list[dict]
-        # [{'ip': '127.0.0.1', 'protocol': 'ipv4', 'hostnames': {'localhost', 'astromatt'}},
-        #  {'ip': '10.13.37.1', 'protocol': 'ipv4', 'hostnames': {'nasa.gov', 'esa.int', 'roscosmos.ru'}},
-        #  {'ip': '255.255.255.255', 'protocol': 'ipv4', 'hostnames': {'broadcasthost'}},
-        #  {'ip': '::1', 'protocol': 'ipv6', 'hostnames': {'localhost'}}]
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        [{'ip': '127.0.0.1', 'hostnames': {'astromatt', 'localhost'}, 'protocol': 'IPv4'},
+         {'ip': '10.13.37.1', 'hostnames': {'nasa.gov', 'roscosmos.ru', 'esa.int'}, 'protocol': 'IPv4'},
+         {'ip': '255.255.255.255', 'hostnames': {'broadcasthost'}, 'protocol': 'IPv4'},
+         {'ip': '::1', 'hostnames': {'localhost'}, 'protocol': 'IPv6'}]
 
 :The whys and wherefores:
     * czytanie i parsowanie pliku

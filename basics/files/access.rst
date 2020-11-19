@@ -188,7 +188,7 @@ Assignments
 File Access Error
 -----------------
 * Assignment name: File Access Error
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 2 min

@@ -1,8 +1,17 @@
+"""
+>>> result  # doctest: +NORMALIZE_WHITESPACE
+{'127.0.0.1': ['localhost'],
+ '10.13.37.1': ['nasa.gov', 'esa.int', 'roscosmos.ru'],
+ '255.255.255.255': ['broadcasthost'],
+ '::1': ['localhost']}
+"""
+
 FILE = r'/tmp/_temporary.txt'
-DATA = """127.0.0.1       astromatt
+DATA = """127.0.0.1       localhost
 10.13.37.1      nasa.gov esa.int roscosmos.ru
 255.255.255.255 broadcasthost
-::1             localhost"""
+::1             localhost
+"""
 
 result = {}
 
@@ -17,10 +26,3 @@ with open(FILE) as file:
             result[ip] += hosts
         else:
             result[ip] = hosts
-
-
-print(result)
-# {'127.0.0.1': ['localhost', 'astromatt'],
-#  '10.13.37.1': ['nasa.gov', 'esa.int', 'roscosmos.ru'],
-#  '255.255.255.255': ['broadcasthost'],
-#  '::1': ['localhost']}

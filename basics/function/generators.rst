@@ -355,6 +355,16 @@ Examples
     list(result)
     # ['Mark Watney', 'Melissa Lewis']
 
+.. code-block:: python
+
+    import sys
+    print(sum(map(int, sys.stdin)))
+
+.. code-block:: console
+
+    $ cat ~/.profile |grep addnum
+    alias addnum='python -c"import sys; print(sum(map(int, sys.stdin)))"'
+
 
 Assignments
 ===========

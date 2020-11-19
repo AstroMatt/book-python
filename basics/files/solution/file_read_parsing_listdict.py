@@ -1,3 +1,11 @@
+"""
+>>> result  # doctest: +NORMALIZE_WHITESPACE
+[{'ip': '127.0.0.1', 'hostnames': {'astromatt', 'localhost'}, 'protocol': 'IPv4'},
+ {'ip': '10.13.37.1', 'hostnames': {'nasa.gov', 'roscosmos.ru', 'esa.int'}, 'protocol': 'IPv4'},
+ {'ip': '255.255.255.255', 'hostnames': {'broadcasthost'}, 'protocol': 'IPv4'},
+ {'ip': '::1', 'hostnames': {'localhost'}, 'protocol': 'IPv6'}]
+"""
+
 FILE = r'/tmp/_temporary.txt'
 DATA = """
 ##
@@ -50,12 +58,6 @@ for line in hosts_file:
             'hostnames': set(hostnames),
             'protocol': 'IPv4' if '.' in ip else 'IPv6'
         })
-
-print(result)
-# [{'ip': '127.0.0.1', 'hostnames': {'astromatt', 'localhost'}, 'protocol': 'IPv4'},
-#  {'ip': '10.13.37.1', 'hostnames': {'nasa.gov', 'esa.int', 'roscosmos.ru'}, 'protocol': 'IPv4'},
-#  {'ip': '255.255.255.255', 'hostnames': {'broadcasthost'}, 'protocol': 'IPv4'},
-#  {'ip': '::1', 'hostnames': {'localhost'}, 'protocol': 'IPv6'}]
 
 
 ## Alternative solution
