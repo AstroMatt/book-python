@@ -136,7 +136,7 @@ Assignments
 Function Arguments Sequence
 ---------------------------
 * Assignment name: Function Arguments Sequence
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
@@ -155,7 +155,7 @@ Function Arguments Sequence
 Function Arguments Divide
 -------------------------
 * Assignment name: Function Arguments Divide
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
@@ -189,7 +189,7 @@ Function Arguments Divide
 Function Arguments Power
 ------------------------
 * Assignment name: Function Arguments Power
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
@@ -224,7 +224,7 @@ Function Arguments Power
 Function Arguments Translate
 ----------------------------
 * Assignment name: Function Arguments Translate
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
@@ -269,7 +269,7 @@ Function Arguments Translate
 Function Arguments Clean
 ------------------------
 * Assignment name: Function Arguments Clean
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
@@ -323,7 +323,7 @@ Function Arguments Clean
 Function Arguments Numbers to Str
 ---------------------------------
 * Assignment name: Function Arguments Numbers to Str
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
@@ -390,7 +390,7 @@ Function Arguments Numbers to Str
 Function Arguments Numbers to Human
 -----------------------------------
 * Assignment name: Function Arguments Numbers to Human
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min

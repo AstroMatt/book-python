@@ -161,7 +161,7 @@ Assignments
 Function Lambda Chain
 ---------------------
 * Assignment name: Function Lambda Chain
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min

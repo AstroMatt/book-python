@@ -179,7 +179,7 @@ Test Str
         """
         print(f'{text}\n' * 3)
 
-.. code-block:: python
+.. code-block:: text
 
     >>> DATA = [
     ...     ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
@@ -326,19 +326,19 @@ Test Python Expressions
 
 Flags
 =====
-DONT_ACCEPT_TRUE_FOR_1
-DONT_ACCEPT_BLANKLINE
-NORMALIZE_WHITESPACE
-ELLIPSIS
-IGNORE_EXCEPTION_DETAIL
-SKIP
-COMPARISON_FLAGS
-REPORT_UDIFF
-REPORT_CDIFF
-REPORT_NDIFF
-REPORT_ONLY_FIRST_FAILURE
-FAIL_FAST
-REPORTING_FLAGS
+* ``DONT_ACCEPT_TRUE_FOR_1``
+* ``DONT_ACCEPT_BLANKLINE``
+* ``NORMALIZE_WHITESPACE``
+* ``ELLIPSIS``
+* ``IGNORE_EXCEPTION_DETAIL``
+* ``SKIP``
+* ``COMPARISON_FLAGS``
+* ``REPORT_UDIFF``
+* ``REPORT_CDIFF``
+* ``REPORT_NDIFF``
+* ``REPORT_ONLY_FIRST_FAILURE``
+* ``FAIL_FAST``
+* ``REPORTING_FLAGS``
 
 
 Examples
@@ -451,7 +451,7 @@ Assignments
 Function Doctest Temperature
 ----------------------------
 * Assignment name: Function Doctest Temperature
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
@@ -494,7 +494,7 @@ Function Doctest Temperature
 Function Doctest Distance
 -------------------------
 * Assignment name: Function Doctest Distance
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 21 lines
 * Estimated time of completion: 13 min
@@ -531,7 +531,7 @@ Function Doctest Distance
 Function Doctest Regexp
 -----------------------
 * Assignment name: Function Doctest Regexp
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: hard
 * Lines of code to write: 0 lines
 * Estimated time of completion: 5 min

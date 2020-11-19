@@ -200,7 +200,7 @@ Assignments
 Function Parameters Sequence
 ----------------------------
 * Assignment name: Function Parameters Sequence
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
@@ -219,7 +219,7 @@ Function Parameters Sequence
 Function Parameters Echo
 ------------------------
 * Assignment name: Function Parameters Echo
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
@@ -251,7 +251,7 @@ Function Parameters Echo
 Function Parameters Default
 ---------------------------
 * Assignment name: Function Parameters Default
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min

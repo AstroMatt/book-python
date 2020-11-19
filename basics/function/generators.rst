@@ -372,7 +372,7 @@ Assignments
 Function Generator Chain
 ------------------------
 * Assignment name: Function Generator Chain
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min

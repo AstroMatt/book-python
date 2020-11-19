@@ -293,7 +293,7 @@ Assignments
 Function Scope Filter
 ---------------------
 * Assignment name: Function Scope Filter
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
@@ -301,24 +301,22 @@ Function Scope Filter
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Separate header from data
-    #. Define in global scope ``SELECT: set[str]`` with values 'setosa' and 'versicolor'
-    #. Iterate over data and split row into ``features`` and ``label`` (last)
-    #. Define function ``sum_if(features, label)``
+    #. Define in global scope ``SELECT: set[str]`` with values: ``'setosa', 'versicolor'``
+    #. Define function ``sumif(features, label)``
     #. Function sums ``features``, only when ``label`` is in ``SELECT``
     #. When ``label`` is not in ``select`` return ``0`` (zero)
-    #. Print sum
+    #. Iterate over data and split row to ``features`` and ``label`` (last)
+    #. Define ``result: float`` with sum of all features from species mentioned in ``SELECT``
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Odseparuj nagłówek od danych
-    #. Zdefiniuj w przestrzeni globalnej ``SELECT: set[str]`` z wartościami 'setosa' oraz 'versicolor'
-    #. Iterując po danych rozdziel wiersz na ``features`` i ``label`` (ostatni)
-    #. Zdefiniuj funkcję ``sum_if(features, label)``
+    #. Zdefiniuj w przestrzeni globalnej ``SELECT: set[str]`` z wartościami: ``'setosa', 'versicolor'``
+    #. Zdefiniuj funkcję ``sumif(features, label)``
     #. Funkcja sumuje ``features``, tylko gdy ``label`` jest w ``SELECT``
     #. Gdy ``label`` nie występuje w ``select`` zwróć ``0`` (zero)
-    #. Wypisz sumę
+    #. Iterując po danych rozdziel wiersz na ``features`` i ``label`` (ostatni)
+    #. Zdefiniuj ``result: float`` z sumą wszystkich cech gatunków wymienionych w ``SELECT``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
@@ -331,22 +329,18 @@ Function Scope Filter
             (5.7, 2.8, 4.1, 1.3, 'versicolor'),
             (6.3, 2.9, 5.6, 1.8, 'virginica'),
             (6.4, 3.2, 4.5, 1.5, 'versicolor'),
-            (4.7, 3.2, 1.3, 0.2, 'setosa'),
-            (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-            (7.6, 3.0, 6.6, 2.1, 'virginica'),
-            (4.9, 3.0, 1.4, 0.2, 'setosa'),
-        ]
+            (4.7, 3.2, 1.3, 0.2, 'setosa')]
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: float
-        # 74.9
+        >>> result
+        49.1
 
 Function Scope Roman to Int
 ---------------------------
 * Assignment name: Function Scope Roman to Int
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
@@ -397,7 +391,7 @@ Function Scope Roman to Int
 Function Scope Int To Roman
 ---------------------------
 * Assignment name: Function Scope Int To Roman
-* Last update: 2020-10-01
+* Last update: 2020-11-19
 * Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
