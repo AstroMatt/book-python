@@ -219,7 +219,7 @@ OOP Method Sequence
     #. For each row in ``DATA`` create ``Iris`` instance with row values
     #. Set class attributes at the initialization from positional arguments
     #. Create method which sums values of all ``features``
-    #. Print species name and a sum method result
+    #. In ``result`` gather species and sum of each row
     #. Compare result with "Output" section (see below)
 
 :Polish:
@@ -228,7 +228,7 @@ OOP Method Sequence
     #. Dla każdego wiersza w ``DATA`` twórz instancję ``Iris`` z danymi z wiersza
     #. Ustaw atrybuty klasy przy inicjalizacji z argumentów pozycyjnych
     #. Stwórz metodę sumującą wartości wszystkich ``features``
-    #. Wypisz nazwę gatunku i wynik metody sumującej
+    #. W ``result`` zbieraj nazwę gatunku i sumę z każdego wiersza
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
@@ -243,9 +243,10 @@ OOP Method Sequence
 :Output:
     .. code-block:: text
 
-        setosa 9.4
-        versicolor 16.299999999999997
-        virginica 19.3
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        {'setosa': 9.4,
+         'versicolor': 16.299999999999997,
+         'virginica': 19.3}
 
 OOP Method Nested
 -----------------

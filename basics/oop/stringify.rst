@@ -5,11 +5,39 @@ Stringify Objects
 *****************
 
 
+Rationale
+=========
+.. code-block:: python
+
+    import datetime
+    date = datetime.datetime(1961, 4, 12, 6, 7)
+
+    str(date)
+    # '1961-04-12 06:07:00'
+
+    repr(date)
+    # 'datetime.datetime(1961, 4, 12, 6, 7)'
+
+    format(date, '%Y-%m-%d')
+    # '1961-04-12'
+
+
 String
 ======
 .. highlights::
+    * Calling function ``str(obj)`` calls ``obj.__str__()``
+    * Calling function ``print(obj)`` calls ``str(obj)``, which calls ``obj.__str__()``
+    * Method ``obj.__str__()`` must return ``str``
     * for end-user
-    * ``print`` converts it's arguments to ``str()`` before printing
+
+.. code-block:: python
+
+    class Astronaut:
+        pass
+
+    astro = Astronaut()
+    str(astro)
+    # '<__main__.Astronaut object at 0x10ba3d760>'
 
 .. code-block:: python
     :caption: Object without ``__str__()`` method overloaded prints their memory address
@@ -46,11 +74,23 @@ String
 Representation
 ==============
 .. highlights::
+    * Calling function ``repr(obj)`` calls ``obj.__repr__()``
+    * Method ``obj.__repr__()`` must return ``str``
     * for developers
     * object representation
     * copy-paste for creating object with the same values
     * useful for debugging
-    * printing ``list`` will call ``__repr__`` on each element
+    * printing ``list`` will call ``__repr__()`` method on each element
+
+.. code-block:: python
+
+    class Astronaut:
+        pass
+
+    astro = Astronaut()
+    repr(astro)
+    # '<__main__.Astronaut object at 0x10ba3d760>'
+
 
 .. code-block:: python
     :caption: Using ``__repr__()`` on a class
@@ -69,7 +109,7 @@ Representation
      astro              # Astronaut(name="José Jiménez")
 
 .. code-block:: python
-    :caption: printing ``list`` will call ``__repr__`` on each element
+    :caption: Printing ``list`` will call ``__repr__()`` method on each element
 
     class Astronaut:
         def __init__(self, name):
@@ -89,7 +129,7 @@ Representation
     # ]
 
 .. code-block:: python
-    :caption: printing ``list`` will call ``__repr__`` on each element
+    :caption: Printing ``list`` will call ``__repr__()`` method on each element
 
     class Astronaut:
         def __init__(self, name):
@@ -108,23 +148,11 @@ Representation
     # [Jan Twardowski, Mark Watney, Melissa Lewis]
 
 
-String vs Representation
-========================
-.. code-block:: python
-    :caption: ``__str__`` and ``__repr__``
-
-    import datetime
-
-    str(datetime.datetime.now())
-    # 1961-04-12 6:07:00.000000
-
-    repr(datetime.datetime.now())
-    # datetime.datetime(1961, 4, 12, 6, 7, 0, 000000)
-
-
 Format
 ======
 .. highlights::
+    * Calling function ``format(obj, fmt)`` calls ``obj.__format__(fmt)``
+    * Method ``obj.__format__()`` must return ``str``
     * Used for advanced formatting
 
 .. code-block:: python
@@ -162,14 +190,12 @@ Format
 
         def __format__(self, unit):
             if unit == 'minutes':
-                return str(self.seconds / MINUTE)
-
-            if unit == 'hours':
-                return str(self.seconds / HOUR)
-
-            if unit == 'days':
-                return str(round(self.seconds / DAY, 2))
-
+                result = self.seconds / MINUTE
+            elif unit == 'hours':
+                result = self.seconds / HOUR
+            elif unit == 'days':
+                result = self.seconds / DAY
+            return str(round(result, 2))
 
     duration = Duration(seconds=3600)
 
@@ -203,10 +229,10 @@ Format
 
     duration = Duration(seconds=3600)
 
-    print(f'Duration: {duration:sec} seconds')
-    print(f'Duration: {duration:min} minutes')
-    print(f'Duration: {duration:hours} hours')
-    print(f'Duration: {duration:days} days')
+    print(f'Duration: {duration:s} seconds')
+    print(f'Duration: {duration:m} minutes')
+    print(f'Duration: {duration:h} hours')
+    print(f'Duration: {duration:d} days')
 
 .. code-block:: python
 
@@ -227,7 +253,6 @@ Format
                 value = self.to_celsius()
             elif unit == 'fahrenheit':
                 value = self.to_fahrenheit()
-
             return f'{value:.2f}'
 
 
@@ -248,20 +273,17 @@ Format
         def __format__(self, name):
 
             if name == 'in_2D':
-                return f"Point(x={self.x}, y={self.y})"
-
-            if name == 'in_3D':
-                return f"Point(x={self.x}, y={self.y}, z={self.z})"
-
-            if name == 'as_tuple':
-                return str(tuple(self.__dict__.values()))
-
-            if name == 'as_dict':
-                return str(self.__dict__)
-
-            if name == 'as_json':
+                result = f"Point(x={self.x}, y={self.y})"
+            elif name == 'in_3D':
+                result = f"Point(x={self.x}, y={self.y}, z={self.z})"
+            elif name == 'as_dict':
+                result = self.__dict__
+            elif name == 'as_tuple':
+                result = tuple(self.__dict__.values())
+            elif name == 'as_json':
                 import json
-                return json.dumps(self.__dict__)
+                result = json.dumps(self.__dict__)
+            return str(result)
 
 
     point = Point(x=1, y=2)
@@ -445,46 +467,39 @@ OOP Stringify Nested
                 self.name = name
 
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        melissa = Astronaut('Melissa Lewis')
+        >>> melissa = Astronaut('Melissa Lewis')
+        >>> print(f'Commander: \\n{melissa}\\n')  # doctest: +NORMALIZE_WHITESPACE
+        Commander:
+        Melissa Lewis
 
-        print(f'Commander: \n{melissa}\n')
-        # Commander:
-        # Melissa Lewis
+        >>> mark = Astronaut('Mark Watney', experience=[
+        ...    Mission(2035, 'Ares 3')])
+        >>> print(f'Space Pirate: \\n{mark}\\n')  # doctest: +NORMALIZE_WHITESPACE
+        Space Pirate:
+        Mark Watney veteran of [
+              2035: Ares 3]
 
-    .. code-block:: python
+        >>> crew = Crew([
+        ...     Astronaut('Jan Twardowski', experience=[
+        ...         Mission(1969, 'Apollo 11'),
+        ...         Mission(2024, 'Artemis 3'),
+        ...     ]),
+        ...     Astronaut('José Jiménez'),
+        ...     Astronaut('Mark Watney', experience=[
+        ...         Mission(2035, 'Ares 3'),
+        ...     ]),
+        ... ])
 
-        mark = Astronaut('Mark Watney', experience=[
-            Mission(2035, 'Ares 3'),
-        ])
-
-        print(f'Space Pirate: \n{mark}\n')
-        # Space Pirate:
-        # Mark Watney veteran of [
-        # 	2035: Ares 3]
-
-    .. code-block:: python
-
-        crew = Crew([
-            Astronaut('Jan Twardowski', experience=[
-                Mission(1969, 'Apollo 11'),
-                Mission(2024, 'Artemis 3'),
-            ]),
-            Astronaut('José Jiménez'),
-            Astronaut('Mark Watney', experience=[
-                Mission(2035, 'Ares 3'),
-            ]),
-        ])
-
-        print(f'Crew: \n{crew}')
-        # Crew:
-        # Jan Twardowski veteran of [
-        # 	1969: Apollo 11,
-        # 	2024: Artemis 3]
-        # José Jiménez
-        # Mark Watney veteran of [
-        # 	2035: Ares 3]
+        >>> print(f'Crew: \\n{crew}')  # doctest: +NORMALIZE_WHITESPACE
+        Crew:
+        Jan Twardowski veteran of [
+              1969: Apollo 11,
+              2024: Artemis 3]
+        José Jiménez
+        Mark Watney veteran of [
+              2035: Ares 3]
 
 :The whys and wherefores:
     * :ref:`OOP Stringify Objects`

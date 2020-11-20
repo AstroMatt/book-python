@@ -8,6 +8,7 @@
 '1337'
 """
 
+
 class Distance:
     def __init__(self, meters):
         self.meters = meters

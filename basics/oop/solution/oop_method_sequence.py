@@ -1,3 +1,10 @@
+"""
+>>> result  # doctest: +NORMALIZE_WHITESPACE
+{'setosa': 9.4,
+ 'versicolor': 16.299999999999997,
+ 'virginica': 19.3}
+"""
+
 DATA = [
     (4.7, 3.2, 1.3, 0.2, 'setosa'),
     (7.0, 3.2, 4.7, 1.4, 'versicolor'),
@@ -10,14 +17,11 @@ class Iris:
         self.features = features
         self.label = label
 
-    def total(self):
-        return sum(features)
+    def sum(self):
+        return sum(self.features)
 
 
+result = {}
 for *features, label in DATA:
     iris = Iris(features, label)
-    print(f'{iris.label} {iris.total()}')
-
-# setosa 9.4
-# versicolor 16.299999999999997
-# virginica 19.3
+    result[iris.label] = iris.sum()

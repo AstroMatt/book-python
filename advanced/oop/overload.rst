@@ -68,6 +68,7 @@ Numerical Operators
     "``obj *= other``",    "``obj.__imul__(other)``"
     "``obj / other``",     "``obj.__div__(other)``"
     "``obj /= other``",    "``obj.__idiv__(other)``"
+    "``obj ** other``",    "``obj.__pow__(other)``"
     "``obj % other``",     "``obj.__mod__(other)``"
     "``obj @ other``",     "``obj.__matmul__(other)``"
 
@@ -330,11 +331,6 @@ Accessors Overload
     # data.__getitem__((:, 2))
     # data.__getitem__((slice(), 2))
 
-.. code-block:: python
-
-    class Cache(dict):
-        def __missing__(self, key):
-            ...
 
 Use Case
 ========
@@ -351,6 +347,42 @@ Use Case
 .. code-block:: python
 
     hero["gold"] += dragon["gold"]
+
+.. code-block:: python
+
+    class Cache(dict):
+        def __init__(self, func):s
+            self._func = func
+
+        def __call__(self, *args):
+            return self[args]
+
+        def __missing__(self, key):
+            self[key] = self._func(*key)
+            return self[key]
+
+
+    @Cache
+    def myfunction(a, b):
+        return a * b
+
+
+    myfunction(2, 4)           # 8         # Computed
+    myfunction('hi', 3)        # 'hihihi'  # Computed
+    myfunction('ha', 3)        # 'hahaha'  # Computed
+
+    myfunction('ha', 3)        # 'hahaha'  # Fetched from cache
+    myfunction('hi', 3)        # 'hihihi'  # Fetched from cache
+    myfunction(2, 4)           # 8         # Fetched from cache
+    myfunction(4, 2)           # 8         # Computed
+
+    myfunction
+    # {
+    #   (2, 4): 8,
+    #   ('hi ', 3): 'hihihi',
+    #   ('ha', 3): 'hahaha',
+    #   (4, 2): 8,
+    # }
 
 
 Further Reading
