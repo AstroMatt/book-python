@@ -287,13 +287,13 @@ OOP Stringify Str
 
 :English:
     #. Use code from "Input" section (see below)
-    #. While printing object show: species name and a sum method result
+    #. While printing object show: species name and a sum of ``self.features``
     #. Result of sum round to one decimal place
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
-    #. Przy wypisywaniu obiektu pokaż: nazwę gatunku i wynik metody sumującej
+    #. Przy wypisywaniu obiektu pokaż: nazwę gatunku i sumę ``self.features``
     #. Wynik sumowania zaokrąglij do jednego miejsca po przecinku
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
@@ -312,14 +312,12 @@ OOP Stringify Str
                 self.features = features
                 self.label = label
 
-
-        for *features, label in DATA:
-            iris = Iris(features, label)
-            print(iris)
-
 :Output:
     .. code-block:: text
 
+        >>> for *features, label in DATA:
+        ...    iris = Iris(features, label)
+        ...    print(iris)
         setosa 9.4
         versicolor 16.3
         virginica 19.3
@@ -360,17 +358,14 @@ OOP Stringify Repr
                 self.features = features
                 self.label = label
 
-
-        result = [Iris(X,y) for *X,y in DATA]
-        print(result)
-
 :Output:
-    .. code-block:: python
+    .. code-block:: text
 
-        result: list[Iris]
-        # [Iris(features=[7.6, 3.0, 6.6, 2.1], label='virginica'),
-        #  Iris(features=[7.6, 3.0, 6.6, 2.1], label='virginica'),
-        #  Iris(features=[7.6, 3.0, 6.6, 2.1], label='virginica')]
+        >>> result = [Iris(X,y) for *X,y in DATA]
+        >>> result  # doctest: +NORMALIZE_WHITESPACE
+        [Iris(features=[4.7, 3.2, 1.3, 0.2], label='setosa'),
+         Iris(features=[7.0, 3.2, 4.7, 1.4], label='versicolor'),
+         Iris(features=[7.6, 3.0, 6.6, 2.1], label='virginica')]
 
 OOP Stringify Nested
 --------------------
