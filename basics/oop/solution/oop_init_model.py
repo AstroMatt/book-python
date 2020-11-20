@@ -1,33 +1,32 @@
+"""
+>>> assert isinstance(watney, Astronaut)
+>>> assert isinstance(nasa, SpaceAgency)
+>>> assert 'Mark Watney' in watney.__dict__.values()
+>>> assert 'USA' in watney.__dict__.values()
+>>> assert '1969-07-21' in watney.__dict__.values()
+>>> assert 'National Aeronautics and Space Administration' in nasa.__dict__.values()
+>>> assert 'USA' in nasa.__dict__.values()
+>>> assert '1958-07-29' in nasa.__dict__.values()
+"""
+
+
 class Astronaut:
-    def __init__(self, firstname, lastname, date_of_birth):
-        self.firstname = firstname
-        self.lastname = lastname
-        self.date_of_birth = date_of_birth
+    def __init__(self, name, country, date):
+        self.name = name
+        self.country = country
+        self.date = date
 
 
 class SpaceAgency:
-    def __init__(self, name, location, formation):
+    def __init__(self, name, country, date):
         self.name = name
-        self.location = location
-        self.formation = formation
+        self.country = country
+        self.date = date
 
 
-watney = Astronaut('Mark', 'Watney', '1969-07-21')
-twardowski = Astronaut('Jan', 'Twardowski', '1961-04-12')
+watney = Astronaut('Mark Watney', 'USA', '1969-07-21')
 
 nasa = SpaceAgency(
     name='National Aeronautics and Space Administration',
-    location='USA',
-    formation='1958-07-29')
-
-polsa = SpaceAgency(
-    name='Polish Space Agency',
-    location='Poland',
-    formation='2014-09-26')
-
-
-print(twardowski.__dict__)
-print(watney.__dict__)
-print(nasa.__dict__)
-print(polsa.__dict__)
-
+    country='USA',
+    date='1958-07-29')

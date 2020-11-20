@@ -364,7 +364,7 @@ Assignments
 OOP Inheritance Simple
 ----------------------
 * Assignment name: OOP Inheritance Simple
-* Last update: 2020-10-01
+* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 3 min
@@ -396,7 +396,7 @@ OOP Inheritance Simple
 OOP Inheritance Multiple
 ------------------------
 * Assignment name: OOP Inheritance Multiple
-* Last update: 2020-10-01
+* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 5 min
@@ -405,15 +405,31 @@ OOP Inheritance Multiple
 :English:
     #. Create classes ``Engineer``, ``Scientist``, ``Pilot``, ``MedicalDoctor``
     #. Create class ``Astronaut`` which inherits from all of those classes
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Stwórz klasy ``Engineer``, ``Scientist``, ``Pilot``, ``MedicalDoctor``
     #. Stwórz klasę ``Astronaut``, która dziedziczy po tych wszystkich klasach
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Output:
+    .. code-block:: text
+
+        >>> from inspect import isclass
+        >>> assert isclass(Scientist)
+        >>> assert isclass(Engineer)
+        >>> assert isclass(Pilot)
+        >>> assert isclass(MedicalDoctor)
+        >>> assert isclass(Astronaut)
+        >>> assert issubclass(Astronaut, Scientist)
+        >>> assert issubclass(Astronaut, Engineer)
+        >>> assert issubclass(Astronaut, Pilot)
+        >>> assert issubclass(Astronaut, MedicalDoctor)
 
 OOP Inheritance Super
 ---------------------
 * Assignment name: OOP Inheritance Super
-* Last update: 2020-10-01
+* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 8 min

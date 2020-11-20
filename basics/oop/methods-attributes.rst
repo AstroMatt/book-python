@@ -207,7 +207,7 @@ Assignments
 OOP Method Sequence
 -------------------
 * Assignment name: OOP Method Sequence
-* Last update: 2020-10-01
+* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 18 lines
 * Estimated time of completion: 13 min
@@ -250,7 +250,7 @@ OOP Method Sequence
 OOP Method Nested
 -----------------
 * Assignment name: OOP Method Nested
-* Last update: 2020-10-01
+* Last update: 2020-11-20
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min

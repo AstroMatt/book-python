@@ -215,7 +215,7 @@ Assignments
 OOP Attribute Model
 -------------------
 * Assignment name: OOP Attribute Model
-* Last update: 2020-10-01
+* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 8 min
@@ -224,18 +224,18 @@ OOP Attribute Model
 :English:
     #. Use data from "Input" section (see below)
     #. Model the data using classes
-    #. Create instances for each record
     #. How many classes are there?
     #. How many instances are there?
-    #. Print all fields from each instance
+    #. Create instances filling it with data
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Zamodeluj dane za pomocą klas
-    #. Stwórz instancje dla każdego wpisu
     #. Ile jest klas?
     #. Ile jest instancji?
-    #. Wypisz wszystkie pola każdej z instancji
+    #. Stwórz instancje wypełniając je danymi
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. code-block:: text
@@ -243,8 +243,17 @@ OOP Attribute Model
         Mark Watney, USA, 1969-07-21
         National Aeronautics and Space Administration, USA, 1958-07-29
 
-        Jan Twardowski, Poland, 1961-04-12
-        Polish Space Agency, Poland, 2014-09-26
+:Output:
+    .. code-block:: text
+
+        >>> assert isinstance(watney, Astronaut)
+        >>> assert isinstance(nasa, SpaceAgency)
+        >>> assert 'Mark Watney' in watney.__dict__.values()
+        >>> assert 'USA' in watney.__dict__.values()
+        >>> assert '1969-07-21' in watney.__dict__.values()
+        >>> assert 'National Aeronautics and Space Administration' in nasa.__dict__.values()
+        >>> assert 'USA' in nasa.__dict__.values()
+        >>> assert '1958-07-29' in nasa.__dict__.values()
 
 :The whys and wherefores:
     * :ref:`OOP Classes and Instances`

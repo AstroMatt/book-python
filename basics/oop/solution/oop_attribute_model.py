@@ -1,3 +1,15 @@
+"""
+>>> assert isinstance(watney, Astronaut)
+>>> assert isinstance(nasa, SpaceAgency)
+>>> assert 'Mark Watney' in watney.__dict__.values()
+>>> assert 'USA' in watney.__dict__.values()
+>>> assert '1969-07-21' in watney.__dict__.values()
+>>> assert 'National Aeronautics and Space Administration' in nasa.__dict__.values()
+>>> assert 'USA' in nasa.__dict__.values()
+>>> assert '1958-07-29' in nasa.__dict__.values()
+"""
+
+
 class Astronaut:
     pass
 
@@ -8,26 +20,10 @@ class SpaceAgency:
 
 watney = Astronaut()
 watney.name = 'Mark Watney'
-watney.location = 'USA'
-watney.date_of_birth = '1969-07-21'
-
-twardowski = Astronaut()
-twardowski.name = 'Jan Twardowski'
-twardowski.location = 'Poland'
-twardowski.date_of_birth = '1961-04-12'
+watney.country = 'USA'
+watney.date = '1969-07-21'
 
 nasa = SpaceAgency()
 nasa.name = 'National Aeronautics and Space Administration'
-nasa.location = 'USA'
-nasa.formation = '1958-07-29'
-
-polsa = SpaceAgency()
-polsa.name = 'Polish Space Agency'
-polsa.location = 'Poland'
-polsa.formation = '2014-09-26'
-
-
-print(twardowski.__dict__)
-print(watney.__dict__)
-print(nasa.__dict__)
-print(polsa.__dict__)
+nasa.country = 'USA'
+nasa.date = '1958-07-29'

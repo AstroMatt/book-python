@@ -279,38 +279,24 @@ Assignments
 OOP Init Print
 --------------
 * Assignment name: OOP Init Print
-* Last update: 2020-10-01
+* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 3 min
 * Solution: :download:`solution/oop_init_print.py`
 
 :English:
-    #. Create one class ``Temperature``
-    #. Create three instances of ``Temperature`` class
-    #. Values must be passed at the initialization
-    #. At initialization instances print:
-
-        * Instance ``celsius`` prints temperature 36.6
-        * Instance ``fahrenheit`` prints temperature 97.88
-        * Instance ``kelvin`` prints temperature 309.75
-
-    #. Do not convert units (print only given numbers)
+    #. Create one class ``Echo``
+    #. Value ``text`` must be passed at the initialization
+    #. At initialization instance print ``text``
     #. Do not store values in the instances (only print on instance creation)
     #. Do not use ``@dataclass``
     #. Compare result with "Output" section (see below)
 
 :Polish:
-    #. Stwórz jedną klasę ``Temperature``
-    #. Stwórz trzy instancje klasy ``Temperature``
-    #. Wartości mają być podawane przy inicjalizacji
-    #. Przy inicjalizacji instancje wypisują:
-
-        * Instancja ``celsius`` wyświetla temperaturę 36.6
-        * Instancja ``fahrenheit`` wyświetla temperaturę 97.88
-        * Instancja ``kelvin`` wyświetla temperaturę 309.75
-
-    #. Nie konwertuj jednostek (użyj tylko podanych numerów)
+    #. Stwórz jedną klasę ``Echo``
+    #. Wartość ``text`` maja być podawana przy inicjalizacji
+    #. Przy inicjalizacji instancja wypisuje ``text``
     #. Nie przechowuj informacji w instancjach (tylko wypisz przy inicjalizacji)
     #. Nie używaj ``@dataclass``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
@@ -318,14 +304,15 @@ OOP Init Print
 :Output:
     .. code-block:: text
 
-        36.6
-        97.88
-        309.75
+        >>> Echo('hello')
+        hello
+        >>> Echo('world')
+        world
 
 OOP Init Model
 --------------
 * Assignment name: OOP Init Model
-* Last update: 2020-10-01
+* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 8 min
@@ -338,8 +325,8 @@ OOP Init Model
     #. Values must be passed at the initialization
     #. Create instances of a first class using positional arguments
     #. Create instances of a second class using keyword arguments
-    #. Using ``__dict__`` print all fields from each instance
     #. Do not use ``@dataclass``
+    #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
@@ -348,8 +335,8 @@ OOP Init Model
     #. Wartości mają być podawane przy inicjalizacji
     #. Twórz instancje pierwszej klasy używając argumentów pozycyjnych
     #. Twórz instancje drugiej klasy używając argumentów nazwanych
-    #. Za pomocą ``__dict__`` wypisz wszystkie pola każdej z instancji
     #. Nie używaj ``@dataclass``
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
     .. code-block:: text
@@ -357,8 +344,17 @@ OOP Init Model
         Mark Watney, USA, 1969-07-21
         National Aeronautics and Space Administration, USA, 1958-07-29
 
-        Jan Twardowski, Poland, 1961-04-12
-        Polish Space Agency, Poland, 2014-09-26
+:Output:
+    .. code-block:: text
+
+        >>> assert isinstance(watney, Astronaut)
+        >>> assert isinstance(nasa, SpaceAgency)
+        >>> assert 'Mark Watney' in watney.__dict__.values()
+        >>> assert 'USA' in watney.__dict__.values()
+        >>> assert '1969-07-21' in watney.__dict__.values()
+        >>> assert 'National Aeronautics and Space Administration' in nasa.__dict__.values()
+        >>> assert 'USA' in nasa.__dict__.values()
+        >>> assert '1958-07-29' in nasa.__dict__.values()
 
 :The whys and wherefores:
     * :ref:`OOP Classes and Instances`
