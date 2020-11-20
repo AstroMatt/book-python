@@ -281,7 +281,7 @@ OOP Stringify Str
 * Assignment name: OOP Stringify Str
 * Last update: 2020-11-20
 * Complexity level: easy
-* Lines of code to write: 18 lines
+* Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/oop_stringify_str.py`
 
@@ -306,7 +306,6 @@ OOP Stringify Str
             (7.6, 3.0, 6.6, 2.1, 'virginica'),
         ]
 
-
         class Iris:
             def __init__(self, features, label):
                 self.features = features
@@ -327,7 +326,7 @@ OOP Stringify Repr
 * Assignment name: OOP Stringify Repr
 * Last update: 2020-11-20
 * Complexity level: easy
-* Lines of code to write: 9 lines
+* Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
 * Solution: :download:`solution/oop_stringify_repr.py`
 
@@ -366,6 +365,47 @@ OOP Stringify Repr
         [Iris(features=[4.7, 3.2, 1.3, 0.2], label='setosa'),
          Iris(features=[7.0, 3.2, 4.7, 1.4], label='versicolor'),
          Iris(features=[7.6, 3.0, 6.6, 2.1], label='virginica')]
+
+OOP Stringify Format
+--------------------
+* Assignment name: OOP Stringify Format
+* Last update: 2020-11-20
+* Complexity level: easy
+* Lines of code to write: 8 lines
+* Estimated time of completion: 5 min
+* Solution: :download:`solution/oop_stringify_format.py`
+
+:English:
+    #. Use code from "Input" section (see below)
+    #. Overload ``__format__()`` to convert length units
+    #. Compare result with "Output" section (see below)
+
+:Polish:
+    #. Użyj kodu z sekcji "Input" (patrz poniżej)
+    #. Przeciąż ``__format__()`` aby konwertował jednostki długości
+    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+:Input:
+    .. code-block:: python
+
+        class Distance:
+            def __init__(self, meters):
+                self.meters = meters
+
+:Output:
+    .. code-block:: text
+
+        >>> result = Distance(meters=1337)
+        >>> format(result, 'km')
+        '1.337'
+        >>> format(result, 'cm')
+        '133700'
+        >>> format(result, 'm')
+        '1337'
+
+:Hint:
+    * 1 km = 1000 m
+    * 1 m = 100 cm
 
 OOP Stringify Nested
 --------------------

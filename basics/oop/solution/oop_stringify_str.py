@@ -19,8 +19,6 @@ class Iris:
         self.features = features
         self.label = label
 
-    def total(self):
-        return sum(self.features)
-
     def __str__(self):
-        return f'{self.label} {self.total():.1f}'
+        total = sum(self.features)
+        return f'{self.label} {total:.1f}'

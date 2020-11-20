@@ -19,11 +19,7 @@ class Iris:
         self.features = features
         self.label = label
 
-    def total(self):
-        return sum(self.features)
-
     def __repr__(self):
         features = self.features
         label = self.label
         return f'Iris({features=}, {label=})'
-
