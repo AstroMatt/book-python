@@ -262,8 +262,8 @@ Sequence Tuple Select
     * Learning IDE features
 
 :Hints:
-    * ``ALT``+``left mouse button`` = multiple select
-    * ``ALT``+``SHIFT``+``left mouse button drag`` = vertical selection
+    * ``ALT`` + ``left mouse button`` = multiple select
+    * ``ALT`` + ``SHIFT`` + ``left mouse button drag`` = vertical selection
 
 Sequence Tuple Mean
 -------------------
@@ -320,13 +320,13 @@ Sequence Tuple Mean
 
 :Hints:
     * ``mean = sum(...) / len(...)``
-    * ``ALT``+``left mouse button`` = multiple select
-    * ``ALT``+``SHIFT``+``left mouse button drag`` = vertical selection
-    * ``ALT``+``SHIFT``+``right`` = select word to the right (macOS)
-    * ``ALT``+``SHIFT``+``left`` = select word to the left (macOS)
-    * ``CTRL``+``SHIFT``+``right`` = select word to the right (Windows)
-    * ``CTRL``+``SHIFT``+``left`` = select word to the left (Windows)
-    * ``CTRL``+``right`` = jump over the word to the right
-    * ``CTRL``+``left`` = jump over the word to the left
-    * ``CTRL``+``ALT``+ L = Reformat Code on Windows
-    * ``CMD``+``ALT``+ L = Reformat Code on macOS
+    * ``ALT`` + ``left mouse button`` = multiple select
+    * ``ALT`` + ``SHIFT`` + ``left mouse button drag`` = vertical selection
+    * ``ALT`` + ``SHIFT`` + ``right`` = select word to the right (macOS)
+    * ``ALT`` + ``SHIFT`` + ``left`` = select word to the left (macOS)
+    * ``CTRL`` + ``SHIFT`` + ``right`` = select word to the right (Windows)
+    * ``CTRL`` + ``SHIFT`` + ``left`` = select word to the left (Windows)
+    * ``CTRL`` + ``right`` = jump over the word to the right
+    * ``CTRL`` + ``left`` = jump over the word to the left
+    * ``CTRL`` + ``ALT`` + L = Reformat Code on Windows
+    * ``CMD`` + ``ALT`` + L = Reformat Code on macOS
