@@ -133,6 +133,7 @@ extlinks = {'isbn': ('https://e-isbn.pl/IsbnWeb/start/search.html?szukaj_fraza=%
 # 2 - sequence number of image in header level 2
 #       will use x.1, x.2, … if located directly under a header level 1,
 #       will use 1, 2, … if at the document level
+# etc...
 numfig_secnum_depth = 1
 numfig = True
 smartquotes = False

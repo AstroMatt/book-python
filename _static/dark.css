@@ -114,9 +114,12 @@
 
     /* glossary entries */
     dt {color: var(--body-header) !important; background: none !important; border: none !important}
+    dt[id^="term-"] {font-weight: bold}
 
     /* lists */
+    .rst-content dl dd {margin-bottom: 5px}
     .rst-content dl p {margin: 0 !important}
+    .rst-content .arabic dl dt {font-weight: normal; margin-bottom: 5px}
 
     /* bibliography entries */
     dl.citation dt:before {content: '['; color: var(--body-header) !important}
@@ -159,6 +162,9 @@
     .highlight {background: var(--code-background); border: var(--code-border)}
     .highlight .hll {background-color: var(--code-highlight)}
     .rst-content div[class^=highlight], .rst-content pre.literal-block {border: var(--code-border)}
+
+    /* assignments */
+    .highlight .sd {color: var(--code-text) !important; background: var(--code-background) !important; border: 1px solid var(--code-border);}
 
     /* search */
     form#search {text-align: center}

@@ -83,7 +83,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let search_input = '<form id="search" action="https://duckduckgo.com/"><input id="search-input" type="search" placeholder="Search..." name="q" onfocusout="onFormSubmit(); this.form"><input id="search-submit" type="submit" value="" onclick="onFormSubmit();"></form>'
     document.querySelectorAll('div[role="search"]')[0].innerHTML = search_input;
 
-
+    // hide """ from includes in assignments
+    $('p:contains(""")').hide();
 });
 
 
@@ -94,4 +95,6 @@ function onFormSubmit() {
         document.getElementById("search").submit();
         return true;
     }
+
 }
+
