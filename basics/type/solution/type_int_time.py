@@ -1,7 +1,5 @@
 """
-
-Type Int Time
--------------
+* Assignment name: Type Int Time
 * Last update: 2020-11-22
 * Complexity level: easy
 * Lines of code to write: 12 lines
@@ -9,46 +7,53 @@ Type Int Time
 
 English:
     1. Calculate how many seconds is one day
-    2. Calculate how many minutes is one day
-    3. Calculate how many seconds is work day (8 hours)
-    4. Calculate how many minutes is work week (5 work days)
-    5. Calculate how many hours is work month (22 work days)
-    6. In Calculations use truediv (``//``)
-    7. Compare result with "Tests" section (see below)
+    2. Calculate how many minutes is one week
+    3. Calculate how many hours is in one month
+    4. Calculate how many seconds is work day (8 hours)
+    5. Calculate how many minutes is work week (5 work days)
+    6. Calculate how many hours is work month (22 work days)
+    7. In Calculations use truediv (``//``)
+    8. Compare result with "Tests" section (see below)
 
 Polish:
     1. Oblicz ile sekund to jedna doba
-    2. Oblicz ile minut to je jedna doba
-    3. Oblicz ile sekund to dzień pracy (8 godzin)
-    4. Oblicz ile minut to tydzień pracy (5 dni pracy)
-    5. Oblicz ile godzin to miesiąc pracy (22 dni pracy)
-    6. W obliczeniach użyj truediv (``//``)
-    7. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+    2. Oblicz ile minut to jeden tydzień
+    3. Oblicz ile godzin to jeden miesiąc
+    4. Oblicz ile sekund to dzień pracy (8 godzin)
+    5. Oblicz ile minut to tydzień pracy (5 dni pracy)
+    6. Oblicz ile godzin to miesiąc pracy (22 dni pracy)
+    7. W obliczeniach użyj truediv (``//``)
+    8. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Hints:
     * 1 h = 60 min
     * 1 min = 60 s
 
 Tests:
-    >>> DAY // SECOND
+    >>> day
     86400
-    >>> DAY // MINUTE
-    1440
-    >>> workday // SECOND
+    >>> week
+    10080
+    >>> month
+    744
+    >>> workday
     28800
-    >>> workweek // MINUTE
+    >>> workweek
     2400
-    >>> workmonth // HOUR
+    >>> workmonth
     176
-
 """
 
-# Solution
+# Given
 SECOND = 1
 MINUTE = 60 * SECOND
-HOUR = 60 * MIN
+HOUR = 60 * MINUTE
 DAY = 24 * HOUR
 
-workday = 8 * HOUR
-workweek = 5 * workday
-workmonth = 22 * workday
+# Solution
+day = (1*DAY) // SECOND
+week = (7*DAY) // MINUTE
+month = (31*DAY) // HOUR
+workday = (8*HOUR) // SECOND
+workweek = (5*workday) // MINUTE
+workmonth = (22*workday) // HOUR

@@ -1,7 +1,5 @@
 """
-
-Type Int Mul
-------------
+* Assignment name: Type Int Mul
 * Last update: 2020-11-22
 * Complexity level: easy
 * Lines of code to write: 3 lines
@@ -34,10 +32,11 @@ Tests:
 
 """
 
-# Solution
+# Given
 m = 1
 km = 1000
 
+# Solution
 armstrong_line = 18 * km
 stratosphere = 20 * km
 usaf_space = 80 * km

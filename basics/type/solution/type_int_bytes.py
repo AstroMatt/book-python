@@ -1,7 +1,5 @@
 """
-
-Type Int Bytes
---------------
+* Assignment name: Type Int Bytes
 * Last update: 2020-11-22
 * Complexity level: easy
 * Lines of code to write: 7 lines
@@ -32,13 +30,13 @@ Tests:
 
 """
 
+# Given
+b = 1
+B = 8 * b
 
 # Solution
-b = 1
 kb = 1024 * b
 Mb = 1024 * kb
-
-B = 8 * b
 kB = 1024 * B
 MB = 1024 * kB
 

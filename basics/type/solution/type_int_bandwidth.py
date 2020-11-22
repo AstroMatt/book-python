@@ -1,7 +1,5 @@
 """
-
-Type Int Bandwidth
-------------------
+* Assignment name: Type Int Bandwidth
 * Last update: 2020-11-22
 * Complexity level: easy
 * Lines of code to write: 10 lines
@@ -29,19 +27,17 @@ Hints:
 Tests:
     >>> int(duration // SECOND)
     8
-
 """
 
 # Given
 SECOND = 1
+b = 1
+B = 8 * b
 
 
 # Solution
-b = 1
 kb = 1024 * b
 Mb = 1024 * kb
-
-B = 8 * b
 kB = 1024 * B
 MB = 1024 * kB
 

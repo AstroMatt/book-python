@@ -1,7 +1,5 @@
 """
-
-Type Int Truediv
-----------------
+* Assignment name: Type Int Bits
 * Last update: 2020-11-22
 * Complexity level: easy
 * Lines of code to write: 3 lines
@@ -33,13 +31,13 @@ Tests:
     80
     >>> karman_line_venus
     250
-
 """
 
-# Solution
+# Given
 m = 1
 km = 1000
 
+# Solution
 karman_line_earth = 100000 // km
 karman_line_mars = 80000 // km
 karman_line_venus = 250000 // km

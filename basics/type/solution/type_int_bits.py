@@ -1,7 +1,5 @@
 """
-
-Type Int Bits
--------------
+* Assignment name: Type Int Bits
 * Last update: 2020-11-22
 * Complexity level: medium
 * Lines of code to write: 4 lines
@@ -28,11 +26,12 @@ Tests:
     1048576
     >>> size // kb
     1024
-
 """
 
-# Solution
+# Given
 b = 1
+
+# Solution
 kb = 1024 * b
 Mb = 1024 * kb
 

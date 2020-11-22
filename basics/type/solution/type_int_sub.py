@@ -1,7 +1,5 @@
 """
-
-Type Int Sub
-------------
+* Assignment name: Type Int Sub
 * Last update: 2020-11-22
 * Complexity level: easy
 * Lines of code to write: 3 lines
@@ -30,11 +28,11 @@ Tests:
     180
     >>> moon_night
     -180
-
 """
 
-# Solution
-K = -273
+# Given
+K = 273
 
-moon_day = 453 + K
-moon_night = 93 + K
+# Solution
+moon_day = 453 - K
+moon_night = 93 - K

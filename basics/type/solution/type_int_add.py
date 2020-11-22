@@ -1,7 +1,5 @@
 """
-
-Type Int Add
-------------
+* Assignment name: Type Int Add
 * Last update: 2020-11-22
 * Complexity level: easy
 * Lines of code to write: 4 lines
@@ -34,12 +32,12 @@ Tests:
     153
     >>> mars_avg
     210
-
 """
 
-# Solution
-C = +273
+# Given
+C = 273
 
+# Solution
 mars_max = 20 + C
 mars_min = -120 + C
 mars_avg = -63 + C
