@@ -23,11 +23,20 @@ Hints:
     * 1 MB = 1024 KB
 
 Tests:
+    >>> type(kb)
+    <class 'int'>
+    >>> type(Mb)
+    <class 'int'>
+    >>> type(kB)
+    <class 'int'>
+    >>> type(MB)
+    <class 'int'>
+    >>> type(size)
+    <class 'int'>
     >>> size // MB
     100
     >>> size // Mb
     800
-
 """
 
 # Given

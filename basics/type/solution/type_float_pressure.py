@@ -22,6 +22,10 @@ Polish:
     6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
+    >>> type(emu)
+    <class 'float'>
+    >>> type(orlan)
+    <class 'int'>
     >>> emu
     29647.455099999996
     >>> orlan

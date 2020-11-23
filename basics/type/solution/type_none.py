@@ -29,11 +29,11 @@ Tests:
 """
 
 # Given
-a = ... is None  # True
-b = ... is not None  # False
-c = bool(bool(...) is not bool(...)) == False  # True
-d = (bool(bool(...) is not bool(...)) == False and bool(...))  # False
-e = (bool(bool(...) is not bool(...)) == False and bool(...)) and (... is not None)  # False
+a = ... is None
+b = ... is not None
+c = bool(bool(...) is not bool(...)) == False
+d = (bool(bool(...) is not bool(...)) == False and bool(...))
+e = (bool(bool(...) is not bool(...)) == False and bool(...)) and (... is not None)
 
 # Solution
 a = None is None

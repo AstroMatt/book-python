@@ -32,6 +32,8 @@ Hints:
         * Others 0.001%
 
 Tests:
+    >>> type(pO2)
+    <class 'float'>
     >>> pO2
     21223.5345
     >>> round(pO2/kPa, 2)
@@ -43,6 +45,7 @@ Pa = 1
 hPa = 100 * Pa
 kPa = 1000 * Pa
 ata = 1013.25 * hPa
+O2 = 20.946
 
 # Solution
-pO2 = 20.946/100 * ata
+pO2 = O2/100 * ata

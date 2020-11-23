@@ -25,6 +25,12 @@ Hints:
     * 1 km = 1000 m
 
 Tests:
+    >>> type(karman_line_earth)
+    <class 'int'>
+    >>> type(karman_line_mars)
+    <class 'int'>
+    >>> type(karman_line_venus)
+    <class 'int'>
     >>> karman_line_earth
     100
     >>> karman_line_mars
@@ -35,7 +41,7 @@ Tests:
 
 # Given
 m = 1
-km = 1000
+km = 1000 * m
 
 # Solution
 karman_line_earth = 100000 // km

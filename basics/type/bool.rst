@@ -71,8 +71,21 @@ Type Casting
 
 Comparison
 ==========
+* ``x < y`` - Less than
+* ``x <= y`` - Less or equal
+* ``x > y`` - Greater than
+* ``x >= y`` - Greater or equal
 * ``==`` - Equals
 * ``!=`` - Not Equals
+
+.. code-block:: python
+
+    10 < 2              # False
+    10 <= 2             # False
+    10 > 2              # True
+    10 >= 2             # True
+    10 == 2             # False
+    10 != 2             # True
 
 .. code-block:: python
 
@@ -81,6 +94,7 @@ Comparison
 
     x == 1      # True
     y == 2      # True
+
     x == y      # False
     x != y      # True
 

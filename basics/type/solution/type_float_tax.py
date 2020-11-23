@@ -24,6 +24,12 @@ Polish:
     7. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
+    >>> type(net)
+    <class 'float'>
+    >>> type(tax)
+    <class 'float'>
+    >>> type(gross)
+    <class 'float'>
     >>> net / PLN
     100.0
     >>> tax / PLN

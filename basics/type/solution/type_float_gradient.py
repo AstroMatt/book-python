@@ -35,6 +35,12 @@ Polish:
         * Others 0.001%
 
 Tests:
+    >>> type(pO2)
+    <class 'float'>
+    >>> type(gradient)
+    <class 'float'>
+    >>> type(result)
+    <class 'float'>
     >>> pO2
     21223.5345
     >>> gradient
@@ -48,8 +54,9 @@ m = 1
 Pa = 1
 hPa = 100 * Pa
 ata = 1013.25 * hPa
+O2 = 20.946
 
 # Solution
-pO2 = 20.946/100 * ata
+pO2 = O2/100 * ata
 gradient = 11.3 * Pa / m
 result = (ata - pO2) / gradient

@@ -26,6 +26,19 @@ Polish:
     8. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
+    >>> type(day)
+    <class 'int'>
+    >>> type(week)
+    <class 'int'>
+    >>> type(month)
+    <class 'int'>
+    >>> type(workday)
+    <class 'int'>
+    >>> type(workweek)
+    <class 'int'>
+    >>> type(workmonth)
+    <class 'int'>
+
     >>> day
     86400
     >>> week

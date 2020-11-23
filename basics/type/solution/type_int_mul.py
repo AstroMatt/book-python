@@ -10,6 +10,7 @@ English:
         a. Armstrong Line: 18 km
         b. Stratosphere: 20 km
         c. USAF Space Line: 80 km
+        d. IAF Space Line: 100 km
     2. Compare result with "Tests" section (see below)
 
 Polish:
@@ -17,6 +18,7 @@ Polish:
         a. Linia Armstronga: 18 km
         b. Stratosfera: 20 km
         c. Granica kosmosu wg. USAF: 80 km
+        d. Granica kosmosu wg. IAF 100 km
     2. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Hints:
@@ -29,7 +31,8 @@ Tests:
     20000
     >>> usaf_space
     80000
-
+    >>>> iaf_space
+    100000
 """
 
 # Given
@@ -40,3 +43,4 @@ km = 1000
 armstrong_line = 18 * km
 stratosphere = 20 * km
 usaf_space = 80 * km
+iaf_space = 100 * km

@@ -32,6 +32,8 @@ Tests:
     0.278
     >>> round(mph, 3)
     0.447
+    >>> round(result/mph, 1)
+    75.0
     >>> round(result/kph, 1)
     120.7
 """

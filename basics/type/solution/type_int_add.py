@@ -26,6 +26,12 @@ Polish:
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
+    >>> type(mars_max)
+    <class 'int'>
+    >>> type(mars_min)
+    <class 'int'>
+    >>> type(mars_avg)
+    <class 'int'>
     >>> mars_max
     293
     >>> mars_min
@@ -35,9 +41,9 @@ Tests:
 """
 
 # Given
-K = 273
+Kelvin = 273
 
 # Solution
-mars_max = 20 + K
-mars_min = -153 + K
-mars_avg = -63 + K
+mars_max = 20 + Kelvin
+mars_min = -153 + Kelvin
+mars_avg = -63 + Kelvin

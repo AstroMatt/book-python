@@ -20,6 +20,10 @@ Polish:
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
+    >>> type(result)
+    <class 'float'>
+    >>> result / ft
+    10000.0
     >>> result / m
     3048.0
 """

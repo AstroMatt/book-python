@@ -2,11 +2,11 @@
 * Assignment name: Type String Quotes
 * Suggested filename: type_str_quotes.py
 * Complexity level: easy
-* Lines of code to write: 3 lines
-* Estimated time of completion: 8 min
+* Lines of code to write: 1 lines
+* Estimated time of completion: 5 min
 
 English:
-    1. Define ``name`` with value ``José Jiménez``
+    1. Use data from "Given" section (see below)
     2. To print use f-string formatting
     3. Note, that second line starts with tab
     4. Value ``NAME`` in double quotes is a name read from user
@@ -16,7 +16,7 @@ English:
     8. Compare result with "Tests" section (see below)
 
 Polish:
-    1. Zdefiniuj ``name`` z wartością ``José Jiménez``
+    1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Do wypisania użyj f-string formatting
     3. Zauważ, że druga linijka zaczyna się od tabulacji
     4. Wartość ``NAME`` w podwójnych cudzysłowach to ciąg od użytkownika
@@ -31,6 +31,8 @@ Tests:
         I'm an \"\"\"astronaut!\"\"\"'''
 """
 
-# Solution
+# Given
 name = 'José Jiménez'
+
+# Solution
 result = f"""'''My name... "{name}".\n\tI\'m an \"\"\"astronaut!\"\"\"'''"""

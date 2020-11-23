@@ -24,6 +24,10 @@ Polish:
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
+    >>> type(moon_day)
+    <class 'int'>
+    >>> type(moon_night)
+    <class 'int'>
     >>> moon_day
     180
     >>> moon_night
@@ -31,8 +35,8 @@ Tests:
 """
 
 # Given
-K = 273
+Kelvin = 273
 
 # Solution
-moon_day = 453 - K
-moon_night = 93 - K
+moon_day = 453 - Kelvin
+moon_night = 93 - Kelvin

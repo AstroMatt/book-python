@@ -22,6 +22,12 @@ Hints:
     * 1 Mb = 1024 Kb
 
 Tests:
+    >>> type(kb)
+    <class 'int'>
+    >>> type(Mb)
+    <class 'int'>
+    >>> type(size)
+    <class 'int'>
     >>> b
     1
     >>> kb

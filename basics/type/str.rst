@@ -11,10 +11,13 @@ Type Definition
     * ``str`` is a sequence
 
 .. code-block:: python
-    :caption: ``str`` Type Definition
 
     data = ''
     data = 'Jan Twardowski'
+
+.. code-block:: python
+
+    data =  'First line\nSecond line\nThird line'
 
     data = """First line
     Second line
@@ -28,7 +31,6 @@ Type Casting
 * ``print()`` before printing on the screen runs ``str()`` on its arguments
 
 .. code-block:: python
-    :caption: ``str()`` converts argument to ``str``
 
     str('Moon')                     # 'Moon'
     str(1969)                       # '1969'
@@ -48,32 +50,28 @@ Single and Double Quotes
     :caption: Python console prefers single quote (``'``)
 
     data = 'My name is José Jiménez'
-
-    print(data)
+    data
     # 'My name is José Jiménez'
 
 .. code-block:: python
     :caption: Python console prefers single quote (``'``)
 
     data = "My name is José Jiménez"
-
-    print(data)
+    data
     # 'My name is José Jiménez'
 
 .. code-block:: python
     :caption: It's better to use double quotes, when text has apostrophes. This is the behavior of Python console.
 
     data = 'My name\'s José Jiménez'
-
-    print(data)
+    data
     # "My name's José Jiménez"
 
 .. code-block:: python
     :caption: HTML and XML uses double quotes to enclose attribute values, hence it's better to use single quotes for the string.
 
     data = '<a href="http://python.astrotech.io">Python and Machine Learning</a>'
-
-    print(data)
+    data
     # '<a href="http://python.astrotech.io">Python and Machine Learning</a>'
 
 .. code-block:: python
@@ -116,6 +114,19 @@ Escape Characters
 .. code-block:: python
 
     print('\U0001F680')     # 🚀
+
+.. code-block:: python
+
+    a = '\U0001F9D1'  # 🧑
+    b = '\U0000200D'  # ''
+    c = '\U0001F680'  # 🚀
+
+    a + b + c
+    # '🧑\u200d🚀'
+
+    astro = a + b + c
+    print(astro)
+    🧑‍🚀
 
 
 Format String
@@ -170,8 +181,23 @@ Bytes Literal
 
 .. code-block:: python
 
-    'Moon'.encode()     # b'Moon'
-    b'Moon'.decode()    # 'Moon'
+    data = 'Moon'
+
+    type(data)
+    # <class 'str'>
+
+    data.encode()
+    # b'Moon'
+
+.. code-block:: python
+
+    data = b'Moon'
+
+    type(data)
+    # <class 'bytes'>
+
+    data.decode()
+    # 'Moon'
 
 
 Raw String
@@ -199,7 +225,7 @@ Raw String
     #   codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
 
 * Problem: ``\Users``
-* after ``\U...`` python expects Unicode codepoint in hex i.e. '\U0001F680' which is 🚀 emoticon
+* after ``\U...`` python expects Unicode codepoint in hex i.e. '\\U0001F680' which is 🚀 emoticon
 * ``s`` is invalid hexadecimal character
 * Only valid characters are ``0123456789abcdefABCDEF``
 
@@ -217,7 +243,7 @@ Reading Input
 
     name = input('What is your name: ')  # Jan Twardowski<ENTER>
 
-    print(name)     # 'Jan Twardowski'
+    print(name)     # Jan Twardowski
     type(name)      # <class 'str'>
 
 .. code-block:: python
@@ -225,7 +251,7 @@ Reading Input
 
     age = input('What is your age: ')  # 42<ENTER>
 
-    print(age)      # '42'
+    print(age)      # 42
     type(age)       # <class 'str'>
 
     age = int(age)
@@ -237,19 +263,29 @@ Reading Input
 
     age = input('What is your age: ')  # 42.5<ENTER>
 
-    age = int(age)      # ValueError: invalid literal for int() with base 10: '42.5'
-    age = float(age)    # 42.5
+    age = int(age)
+    # Traceback (most recent call last):
+    #     ...
+    # ValueError: invalid literal for int() with base 10: '42.5'
 
+    age = float(age)
     print(age)          # 42.5
-    type(age)           # <class 'int'>
+    type(age)           # <class 'float'>
 
 .. code-block:: python
     :caption: Conversion to ``float`` cannot handle comma (',') as a decimal separator
 
     age = input('What is your age: ')  # 42,5<ENTER>
 
-    age = int(age)      # ValueError: invalid literal for int() with base 10: '45,5'
-    age = float(age)    # ValueError: could not convert string to float: '45,5'
+    age = int(age)
+    # Traceback (most recent call last):
+    #     ...
+    # ValueError: invalid literal for int() with base 10: '45,5'
+
+    age = float(age)
+    # Traceback (most recent call last):
+    #     ...
+    # ValueError: could not convert string to float: '45,5'
 
 
 Length
@@ -275,10 +311,10 @@ Concatenation
 
 .. code-block:: python
 
-    text1 = 'a'
-    text2 = 'b'
+    a = 'a'
+    b = 'b'
 
-    text1 + text2
+    a + b
     # 'ab'
 
 .. code-block:: python
@@ -307,64 +343,6 @@ Concatenation
 
     firstname + ' ' + lastname
     # Jan Twardowski
-
-String Immutability
-===================
-.. code-block:: python
-    :caption: How many string are there in a memory?
-
-    firstname = 'Jan'
-    lastname = 'Twardowski'
-
-    firstname + ' ' + lastname
-    # Jan Twardowski
-
-.. code-block:: python
-    :caption: How many string are there in a memory?
-
-    firstname = 'Jan'
-    lastname = 'Twardowski'
-
-    f'{firstname} {lastname}'
-    # Jan Twardowski
-
-.. code-block:: python
-    :caption: How many string are there in a memory?
-
-    firstname = 'Jan'
-    lastname = 'Twardowski'
-    age = 42
-
-    'Hello ' + firstname + ' ' + lastname + ' ' + str(age) + '!'
-    # 'Hello Jan Twardowski 42!'
-
-.. code-block:: python
-    :caption: How many string are there in a memory?
-
-    firstname = 'Jan'
-    lastname = 'Twardowski'
-    age = 42
-
-    f'Hello {firstname} {lastname} {age}!'
-    # 'Hello Jan Twardowski 42!'
-
-.. figure:: img/memory-str-1.png
-    :align: center
-    :scale: 50%
-
-    Define str
-
-.. figure:: img/memory-str-2.png
-    :align: center
-    :scale: 50%
-
-    Define another str with the same value
-
-.. figure:: img/memory-str-3.png
-    :align: center
-    :scale: 50%
-
-    Define another str with different value
 
 
 Assignments

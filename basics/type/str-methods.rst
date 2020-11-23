@@ -5,6 +5,65 @@ Type Str Methods
 ****************
 
 
+String Immutability
+===================
+.. code-block:: python
+    :caption: How many string are there in a memory?
+
+    firstname = 'Jan'
+    lastname = 'Twardowski'
+
+    firstname + ' ' + lastname
+    # Jan Twardowski
+
+.. code-block:: python
+    :caption: How many string are there in a memory?
+
+    firstname = 'Jan'
+    lastname = 'Twardowski'
+
+    f'{firstname} {lastname}'
+    # Jan Twardowski
+
+.. code-block:: python
+    :caption: How many string are there in a memory?
+
+    firstname = 'Jan'
+    lastname = 'Twardowski'
+    age = 42
+
+    'Hello ' + firstname + ' ' + lastname + ' ' + str(age) + '!'
+    # 'Hello Jan Twardowski 42!'
+
+.. code-block:: python
+    :caption: How many string are there in a memory?
+
+    firstname = 'Jan'
+    lastname = 'Twardowski'
+    age = 42
+
+    f'Hello {firstname} {lastname} {age}!'
+    # 'Hello Jan Twardowski 42!'
+
+.. figure:: img/memory-str-1.png
+    :align: center
+    :scale: 50%
+
+    Define str
+
+.. figure:: img/memory-str-2.png
+    :align: center
+    :scale: 50%
+
+    Define another str with the same value
+
+.. figure:: img/memory-str-3.png
+    :align: center
+    :scale: 50%
+
+    Define another str with different value
+
+
 Rationale
 =========
 .. highlights::

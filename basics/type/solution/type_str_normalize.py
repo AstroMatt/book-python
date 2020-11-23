@@ -2,8 +2,8 @@
 * Assignment name: Type String Normalize
 * Suggested filename: type_str_normalize.py
 * Complexity level: easy
-* Lines of code to write: 9 lines
-* Estimated time of completion: 5 min
+* Lines of code to write: 4 lines
+* Estimated time of completion: 8 min
 
 English:
     1. Use data from "Given" section (see below)
@@ -16,6 +16,8 @@ Polish:
     3. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
+    >>> type(result)
+    <class 'str'>
     >>> result
     'Jana Twardowskiego III'
 """
@@ -25,12 +27,9 @@ DATA = 'UL. jana \tTWArdoWskIEGO 3'
 
 # Solution
 result = (
-    DATA.upper()                # Convert to common format
-        .replace('\t', '')      # Remove unwanted whitespaces
-        .replace('.', '')       # Remove unwanted special characters
-        .replace('UL', '')      # Remove unwanted text
-        .replace('3', 'III')    # Substitute text
-        .title()                # Formatting
-        .replace('Iii', 'III')  # Clean-up
-        .strip()
+    DATA.replace('UL. ', '')
+        .replace('\t', '')
+        .title()
+        .replace('3', 'III')
 )
+

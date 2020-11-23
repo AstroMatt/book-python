@@ -20,6 +20,8 @@ Polish:
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
+    >>> type(result)
+    <class 'str'>
     >>> print(result)  # doctest: +NORMALIZE_WHITESPACE
     Meters: 1337
     Kilometers: 1.337
