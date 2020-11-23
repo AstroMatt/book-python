@@ -1,40 +1,58 @@
 """
->>> a
-False
->>> b
-True
->>> c
-False
->>> d
-False
->>> e
-False
->>> f
-False
->>> g
-True
->>> h
-True
->>> i
-True
->>> j
-True
->>> k
-False
->>> l
-True
->>> m
-False
->>> n
-False
->>> o
-False
->>> p
-True
->>> q
-False
+* Assignment name: Type Bool True or False
+* Suggested filename: type_bool_true_or_false.py
+* Complexity level: easy
+* Lines of code to write: 16 lines
+* Estimated time of completion: 5 min
+
+English:
+    #. Use data from "Given" section (see below)
+    #. Which variables are ``True``?
+    #. Which variables are ``False``?
+
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
+    #. Które zmienne są ``True``?
+    #. Które zmienne są ``False``?
+
+Tests:
+    >>> a
+    False
+    >>> b
+    True
+    >>> c
+    False
+    >>> d
+    False
+    >>> e
+    False
+    >>> f
+    False
+    >>> g
+    True
+    >>> h
+    True
+    >>> i
+    True
+    >>> j
+    True
+    >>> k
+    False
+    >>> l
+    True
+    >>> m
+    False
+    >>> n
+    False
+    >>> o
+    False
+    >>> p
+    True
+    >>> q
+    False
 """
 
+# Given
 a = bool(False)
 b = bool(True)
 

@@ -34,5 +34,6 @@ Tests:
     'Hello Mark Watney 🙂'
 """
 
+# Solution
 name = 'Mark Watney'
 result = f'Hello {name} \U0001F642'

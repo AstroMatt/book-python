@@ -16,6 +16,7 @@ Polish:
 TODO: Tests
 """
 
+# Solution
 text = input('Type text: ')
 length = len(text)
 
