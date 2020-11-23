@@ -31,6 +31,11 @@ Type Casting
     * ``int()`` - does not round numbers
 
 .. code-block:: python
+
+    int(1.001)                  # 1
+    int(1.999)                  # 1
+
+.. code-block:: python
     :caption: ``int()`` converts argument to ``int``
 
     int(1)                      # 1
