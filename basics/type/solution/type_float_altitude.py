@@ -6,18 +6,18 @@
 * Estimated time of completion: 3 min
 
 English:
-    #. Plane altitude is 10.000 ft
-    #. Data uses imperial (US) system
-    #. Convert to metric (SI) system
-    #. Result round to one decimal place
-    #. Compare result with "Tests" section (see below)
+    1. Plane altitude is 10.000 ft
+    2. Data uses imperial (US) system
+    3. Convert to metric (SI) system
+    4. Result round to one decimal place
+    5. Compare result with "Tests" section (see below)
 
 Polish:
-    #. Wysokość lotu samolotem wynosi 10 000 ft
-    #. Dane używają systemu imperialnego (US)
-    #. Przelicz je na system metryczny (układ SI)
-    #. Wynik zaokrąglij do jednego miejsca po przecinku
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+    1. Wysokość lotu samolotem wynosi 10 000 ft
+    2. Dane używają systemu imperialnego (US)
+    3. Przelicz je na system metryczny (układ SI)
+    4. Wynik zaokrąglij do jednego miejsca po przecinku
+    5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
     >>> result / m

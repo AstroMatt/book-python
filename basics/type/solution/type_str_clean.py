@@ -6,20 +6,20 @@
 * Estimated time of completion: 13 min
 
 English:
-    #. Use data from "Given" section (see below)
-    #. Expected value is ``Jana III Sobieskiego``
-    #. Use only ``str`` methods to clean each variable
-    #. Discuss how to create generic solution which fit all cases
-    #. Implementation of such generic function will be in `Function Arguments Clean` chapter
-    #. Compare result with "Tests" section (see below)
+    1. Use data from "Given" section (see below)
+    2. Expected value is ``Jana III Sobieskiego``
+    3. Use only ``str`` methods to clean each variable
+    4. Discuss how to create generic solution which fit all cases
+    5. Implementation of such generic function will be in `Function Arguments Clean` chapter
+    6. Compare result with "Tests" section (see below)
 
 Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Oczekiwana wartość ``Jana III Sobieskiego``
-    #. Wykorzystaj tylko metody ``str`` do oczyszczenia każdej zmiennej
-    #. Przeprowadź dyskusję jak zrobić rozwiązanie generyczne pasujące do wszystkich przypadków
-    #. Implementacja takiej generycznej funkcji będzie w rozdziale `Function Arguments Clean`
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+    1. Użyj danych z sekcji "Given" (patrz poniżej)
+    2. Oczekiwana wartość ``Jana III Sobieskiego``
+    3. Wykorzystaj tylko metody ``str`` do oczyszczenia każdej zmiennej
+    4. Przeprowadź dyskusję jak zrobić rozwiązanie generyczne pasujące do wszystkich przypadków
+    5. Implementacja takiej generycznej funkcji będzie w rozdziale `Function Arguments Clean`
+    6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
     >>> example

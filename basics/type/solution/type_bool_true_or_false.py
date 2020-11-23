@@ -6,14 +6,14 @@
 * Estimated time of completion: 5 min
 
 English:
-    #. Use data from "Given" section (see below)
-    #. Which variables are ``True``?
-    #. Which variables are ``False``?
+    1. Use data from "Given" section (see below)
+    2. Which variables are ``True``?
+    3. Which variables are ``False``?
 
 Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Które zmienne są ``True``?
-    #. Które zmienne są ``False``?
+    1. Użyj danych z sekcji "Given" (patrz poniżej)
+    2. Które zmienne są ``True``?
+    3. Które zmienne są ``False``?
 
 Tests:
     >>> a

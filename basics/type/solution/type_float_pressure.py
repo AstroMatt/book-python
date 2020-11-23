@@ -6,20 +6,20 @@
 * Estimated time of completion: 3 min
 
 English:
-    #. Operational pressure of EMU spacesuit: 4.3 PSI
-    #. Operational pressure of ORLAN spacesuit: 400 hPa
-    #. Calculate operational pressure in kPa for EMU
-    #. Calculate operational pressure in PSI for Orlan
-    #. Print all results in kPa and PSI rounding to one decimal places
-    #. Compare result with "Tests" section (see below)
+    1. Operational pressure of EMU spacesuit: 4.3 PSI
+    2. Operational pressure of ORLAN spacesuit: 400 hPa
+    3. Calculate operational pressure in kPa for EMU
+    4. Calculate operational pressure in PSI for Orlan
+    5. Print all results in kPa and PSI rounding to one decimal places
+    6. Compare result with "Tests" section (see below)
 
 Polish:
-    #. Ciśnienie operacyjne skafandra kosmicznego EMU (NASA): 4.3 PSI
-    #. Ciśnienie operacyjne skafandra kosmicznego ORLAN (Roscosmos): 400 hPa
-    #. Oblicz ciśnienie operacyjne skafandra EMU w kPa
-    #. Oblicz ciśnienie operacyjne skafandra Orlan w PSI
-    #. Wypisz wszystkie wyniki w kPa oraz PSI zaokrąglając do jednego miejsca po przecinku
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+    1. Ciśnienie operacyjne skafandra kosmicznego EMU (NASA): 4.3 PSI
+    2. Ciśnienie operacyjne skafandra kosmicznego ORLAN (Roscosmos): 400 hPa
+    3. Oblicz ciśnienie operacyjne skafandra EMU w kPa
+    4. Oblicz ciśnienie operacyjne skafandra Orlan w PSI
+    5. Wypisz wszystkie wyniki w kPa oraz PSI zaokrąglając do jednego miejsca po przecinku
+    6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
     >>> emu / psi

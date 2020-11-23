@@ -6,20 +6,20 @@
 * Estimated time of completion: 8 min
 
 English:
-    #. At what altitude above sea level, pressure is equal to partial pressure of Oxygen
-    #. Print result in meters rounding to two decimal places
-    #. To calculate partial pressure use ratio (100% is 1013.25 hPa, 20.946% is how many hPa?)
-    #. Calculated altitude is pressure at sea level minis oxygen partial pressure divided by gradient
-    #. Mind the operator precedence
-    #. Compare result with "Tests" section (see below)
+    1. At what altitude above sea level, pressure is equal to partial pressure of Oxygen
+    2. Print result in meters rounding to two decimal places
+    3. To calculate partial pressure use ratio (100% is 1013.25 hPa, 20.946% is how many hPa?)
+    4. Calculated altitude is pressure at sea level minis oxygen partial pressure divided by gradient
+    5. Mind the operator precedence
+    6. Compare result with "Tests" section (see below)
 
 Polish:
-    #. Na jakiej wysokości nad poziomem morza panuje ciśnienie równe ciśnieniu parcjalnemu tlenu?
-    #. Wypisz rezultat w metrach zaokrąglając do dwóch miejsc po przecinku
-    #. Aby policzyć ciśnienie parcjalne skorzystaj z proporcji (100% to 1013.25 hPa, 20.946% to ile hPa?)
-    #. Wyliczona wysokość to ciśnienie atmosferyczne na poziomie morza minus ciśnienie parcjalne tlenu podzielone przez gradient
-    #. Zwróć uwagę na kolejność wykonywania działań
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+    1. Na jakiej wysokości nad poziomem morza panuje ciśnienie równe ciśnieniu parcjalnemu tlenu?
+    2. Wypisz rezultat w metrach zaokrąglając do dwóch miejsc po przecinku
+    3. Aby policzyć ciśnienie parcjalne skorzystaj z proporcji (100% to 1013.25 hPa, 20.946% to ile hPa?)
+    4. Wyliczona wysokość to ciśnienie atmosferyczne na poziomie morza minus ciśnienie parcjalne tlenu podzielone przez gradient
+    5. Zwróć uwagę na kolejność wykonywania działań
+    6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 :Hints:
     * pressure gradient (decrease) = 11.3 Pa / 1 m

@@ -6,14 +6,14 @@
 * Estimated time of completion: 5 min
 
 English:
-    #. Use data from "Given" section (see below)
-    #. Use ``str`` methods to clean ``DATA``
-    #. Compare result with "Tests" section (see below)
+    1. Use data from "Given" section (see below)
+    2. Use ``str`` methods to clean ``DATA``
+    3. Compare result with "Tests" section (see below)
 
 Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Wykorzystaj metody ``str`` do oczyszczenia ``DATA``
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+    1. Użyj danych z sekcji "Given" (patrz poniżej)
+    2. Wykorzystaj metody ``str`` do oczyszczenia ``DATA``
+    3. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
     >>> result
