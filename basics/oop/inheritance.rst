@@ -465,7 +465,9 @@ Given:
         print(result)
 
 Tests:
-Astronaut crew:
+    .. code-block:: text
+
+        Astronaut crew:
         - Mark Watney (Ares 3)
         - Melissa Lewis (Ares 3)
         - Alex Vogel (Ares 3)

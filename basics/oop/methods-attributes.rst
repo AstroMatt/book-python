@@ -327,6 +327,8 @@ Given:
         print(virginica.show())
 
 Tests:
-total=10.20 mean=2.55 setosa
+    .. code-block:: text
+
+        total=10.20 mean=2.55 setosa
         total=15.50 mean=3.88 virginica
 

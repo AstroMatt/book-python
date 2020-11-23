@@ -173,7 +173,9 @@ Given:
         """
 
 Tests:
-127.0.0.1       localhost
+    .. code-block:: text
+
+        127.0.0.1       localhost
         10.13.37.1      nasa.gov esa.int roscosmos.ru
         255.255.255.255 broadcasthost
         ::1             localhost
@@ -205,7 +207,9 @@ Given:
         DATA = ['hello', 'world']
 
 Tests:
-hello
+    .. code-block:: text
+
+        hello
         world
 
 File Write Non-Str
@@ -267,7 +271,9 @@ Given:
             (5.7, 2.8, 4.1, 1.3, 'versicolor')]
 
 Tests:
-5.8,2.7,5.1,1.9,virginica
+    .. code-block:: text
+
+        5.8,2.7,5.1,1.9,virginica
         5.1,3.5,1.4,0.2,setosa
         5.7,2.8,4.1,1.3,versicolor
 
@@ -316,7 +322,9 @@ Given:
             (4.7, 3.2, 1.3, 0.2, 'setosa')]
 
 Tests:
-Sepal length,Sepal width,Petal length,Petal width,Species
+    .. code-block:: text
+
+        Sepal length,Sepal width,Petal length,Petal width,Species
         5.8,2.7,5.1,1.9,virginica
         5.1,3.5,1.4,0.2,setosa
         5.7,2.8,4.1,1.3,versicolor
