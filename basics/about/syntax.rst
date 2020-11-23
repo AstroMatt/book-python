@@ -271,8 +271,8 @@ Assignments
 
 .. literalinclude:: solution/about_print.py
     :caption: :download:`solution/about_print.py`
-    :end-at: # Solution
+    :end-before: # Solution
 
 .. literalinclude:: solution/about_syntax.py
     :caption: :download:`solution/about_syntax.py`
-    :end-at: # Solution
+    :end-before: # Solution
