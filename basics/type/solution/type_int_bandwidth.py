@@ -1,6 +1,6 @@
 """
 * Assignment name: Type Int Bandwidth
-* Last update: 2020-11-22
+* Suggested filename: type_int_bandwidth.py
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 3 min

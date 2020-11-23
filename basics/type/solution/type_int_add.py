@@ -1,6 +1,6 @@
 """
 * Assignment name: Type Int Add
-* Last update: 2020-11-22
+* Suggested filename: type_int_add.py
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
@@ -29,15 +29,15 @@ Tests:
     >>> mars_max
     293
     >>> mars_min
-    153
+    120
     >>> mars_avg
     210
 """
 
 # Given
-C = 273
+K = 273
 
 # Solution
-mars_max = 20 + C
-mars_min = -120 + C
-mars_avg = -63 + C
+mars_max = 20 + K
+mars_min = -153 + K
+mars_avg = -63 + K

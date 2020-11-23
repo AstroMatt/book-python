@@ -1,6 +1,6 @@
 """
 * Assignment name: Type Int Bytes
-* Last update: 2020-11-22
+* Suggested filename: type_int_bytes.py
 * Complexity level: easy
 * Lines of code to write: 7 lines
 * Estimated time of completion: 3 min

@@ -42,7 +42,7 @@ About Setup IDE
     #. Trener poda Ci link do repozytorium
     #. Stwórz projekt w Twoim IDE wykorzystując opcję 'Create from VCS'
     #. Kliknij "clone" i zaczekaj na pobranie repozytorium
-    #. Jeżeli PyCharm zapyta Cię o autoryzację, wybi
+    #. Jeżeli PyCharm zapyta Cię o autoryzację, wybierz opcję "Use Token" i "Generate"
     #. Po stworzeniu projektu załóż katalog gdzie będziesz przechowywał kod tworzony podczas szkolenia
 
         * Katalog ma mieć nazwę jak Twoje imie i pierwsza litera nazwiska, np. ``JanT``, ``MarkW`` lub ``MelissaL``
@@ -83,13 +83,13 @@ About Setup Interpreter
     .. code-block:: python
 
         import sys
-        print(sys.version[:5])
+        print(sys.version[:6])
 
 :Output:
     .. code-block:: text
 
         >>> import sys
-        >>> print(sys.version[:5])
+        >>> print(sys.version[:6])
         3.9.0
 
 About Setup VCS

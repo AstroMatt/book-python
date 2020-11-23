@@ -155,6 +155,26 @@ Comments
     print('Mark Watney: Space Pirate')  # This is who Mark Watney is
 
 
+Docstring and Doctests
+======================
+.. highlights::
+    * Docstring is a first multiline comment in: File/Module, Class, Method/Function
+    * Used for ``doctest``. More information in :ref:`Function Doctest`
+    * :pep:`257` Docstring convention - For multiline always use three double quote (``"""``) characters
+
+.. code-block:: python
+
+    """
+    This is my first Python script
+
+    >>> result
+    12
+    """
+
+    result = 10 + 2
+
+
+
 Indentation
 ===========
 .. highlights::
@@ -249,67 +269,10 @@ Good practices
 Assignments
 ===========
 
-About Print
-------------
-* Assignment name: About Print
-* Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 1 lines
-* Estimated time of completion: 3 min
-* Solution: :download:`solution/about_print.py`
+.. literalinclude:: solution/about_print.py
+    :caption: :download:`solution/about_print.py`
+    :end-at: # Solution
 
-:English:
-    #. Print "Hello World" on the screen
-    #. "Hello" must be in a first line
-    #. "Wold" must be in a second line
-    #. Use only one ``print()`` function call
-
-:Polish:
-    #. Wypisz "Hello World" na ekranie
-    #. "Hello" ma być w pierwszej linii
-    #. "World" ma być w drugiej linii
-    #. Użyj tylko jednego wywołania funkcji ``print()``
-
-:Output:
-    .. code-block:: text
-
-        Hello
-        World
-
-:The whys and wherefores:
-    * Wyświetlanie na ekranie
-
-About Syntax
-------------
-* Assignment name: About Syntax
-* Last update: 2020-11-16
-* Complexity level: easy
-* Lines of code to write: 8 lines
-* Estimated time of completion: 3 min
-* Solution: :download:`solution/about_syntax.py`
-
-:English:
-    #. Write a multiline comment with program description (todo from this assignments)
-    #. Declare variable ``name`` and set its value to ``Mark Watney``
-    #. Add inline comment to variable declaration with text: ``Space Pirate``
-    #. Print "Hello World Mark Watney", where "Mark Watney" is the ``name`` variable value
-    #. Use f-string
-
-:Polish:
-    #. Napisz wieloliniowy komentarz z opisem programu (punkty do wykonania z tego zadania)
-    #. Zadeklaruj zmienną ``name`` i ustaw jej wartość na ``Mark Watney``
-    #. Dodaj komentarz "inline" do zmiennej o treści: ``Space Pirate``
-    #. Wypisz "Hello World Mark Watney", gdzie "Mark Watney" jest wartością zmiennej ``name``
-    #. Zastosuj f-string
-
-:Output:
-    .. code-block:: text
-
-        Hello World Mark Watney
-
-:The whys and wherefores:
-    * Tworzenie skryptów Python
-    * Deklaracja zmiennych
-    * Komentowanie kodu
-    * Wyświetlanie wartości zmiennych
-
+.. literalinclude:: solution/about_syntax.py
+    :caption: :download:`solution/about_syntax.py`
+    :end-at: # Solution

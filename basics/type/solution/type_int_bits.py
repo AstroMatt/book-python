@@ -1,5 +1,6 @@
 """
 * Assignment name: Type Int Bits
+* Suggested filename: type_int_bits.py
 * Last update: 2020-11-22
 * Complexity level: medium
 * Lines of code to write: 4 lines
