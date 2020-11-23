@@ -134,14 +134,14 @@ extlinks = {'isbn': ('https://e-isbn.pl/IsbnWeb/start/search.html?szukaj_fraza=%
 #       will use x.1, x.2, … if located directly under a header level 1,
 #       will use 1, 2, … if at the document level
 # etc...
-numfig_secnum_depth = 3
+numfig_secnum_depth = 1
 numfig = True
 smartquotes = False
 numfig_format = {
     'section': 'Section %s.',
     'figure': 'Figure %s.',
     'table': 'Table %s.',
-    'code-block': 'Listing %s.'}
+    'code-block': 'Code %s.'}
 
 project_slug = re.sub(r'[\W]+', '', project)
 sha1 = subprocess.run('git log -1 --format="%h"', stdout=subprocess.PIPE, shell=True, encoding='utf-8').stdout.strip()
