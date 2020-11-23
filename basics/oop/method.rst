@@ -98,11 +98,11 @@ Assignments
 
 OOP Method Call
 ---------------
-* Assignment name: OOP Method Call
-* Complexity level: easy
+* Assignment: OOP Method Call
+* Filename: oop_method_call.py
+* Complexity: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 13 min
-* Suggested filename: oop_method_call.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -149,10 +149,8 @@ Given:
         ]
 
 Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is list
-        >>> assert all(type(x) is float for x in result)
-        >>> result
-        [3.9, 2.5, 3.5, 4.1, 3.9, 2.4]
+    >>> assert type(result) is list
+    >>> assert all(type(x) is float for x in result)
+    >>> result
+    [3.9, 2.5, 3.5, 4.1, 3.9, 2.4]
 

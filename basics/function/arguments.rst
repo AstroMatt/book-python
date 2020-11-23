@@ -135,11 +135,11 @@ Assignments
 
 Function Arguments Sequence
 ---------------------------
-* Assignment name: Function Arguments Sequence
-* Complexity level: easy
+* Assignment: Function Arguments Sequence
+* Filename: function_args_sequence.py
+* Complexity: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
-* Suggested filename: function_args_sequence.py
 
 English:
     #. Define function which takes sequence of integers as an argument
@@ -153,11 +153,11 @@ Polish:
 
 Function Arguments Divide
 -------------------------
-* Assignment name: Function Arguments Divide
-* Complexity level: easy
+* Assignment: Function Arguments Divide
+* Filename: function_args_divide.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Suggested filename: function_args_divide.py
 
 English:
     #. Define function ``divide``
@@ -178,19 +178,17 @@ Polish:
     #. Co zrobić w przypadku błędu?
 
 Tests:
-    .. code-block:: text
-
-        >>> divide(4, 0)
-        >>> divide(4, 2)
-        2.0
+    >>> divide(4, 0)
+    >>> divide(4, 2)
+    2.0
 
 Function Arguments Power
 ------------------------
-* Assignment name: Function Arguments Power
-* Complexity level: easy
+* Assignment: Function Arguments Power
+* Filename: function_args_power.py
+* Complexity: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
-* Suggested filename: function_args_power.py
 
 English:
     #. Define function ``power``
@@ -211,20 +209,18 @@ Polish:
     #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
-    .. code-block:: text
-
-        >>> power(4, 3)
-        64
-        >>> power(3)
-        27
+    >>> power(4, 3)
+    64
+    >>> power(3)
+    27
 
 Function Arguments Translate
 ----------------------------
-* Assignment name: Function Arguments Translate
-* Complexity level: easy
+* Assignment: Function Arguments Translate
+* Filename: function_args_translate.py
+* Complexity: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
-* Suggested filename: function_args_translate.py
 
 English:
     #. Define function ``translate`` with parameter ``text``
@@ -248,27 +244,25 @@ Given:
               'ś': 's', 'ż': 'z', 'ź': 'z'}
 
 Tests:
-    .. code-block:: text
-
-        >>> translate('zażółć')
-        'zazolc'
-        >>> translate('gęślą')
-        'gesla'
-        >>> translate('jaźń')
-        'jazn'
-        >>> translate('zażółć gęślą jaźń')
-        'zazolc gesla jazn'
+    >>> translate('zażółć')
+    'zazolc'
+    >>> translate('gęślą')
+    'gesla'
+    >>> translate('jaźń')
+    'jazn'
+    >>> translate('zażółć gęślą jaźń')
+    'zazolc gesla jazn'
 
 
 .. _Function Arguments Clean:
 
 Function Arguments Clean
 ------------------------
-* Assignment name: Function Arguments Clean
-* Complexity level: medium
+* Assignment: Function Arguments Clean
+* Filename: function_args_clean.py
+* Complexity: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
-* Suggested filename: function_args_clean.py
 
 English:
     #. Write function cleaning up data
@@ -283,40 +277,38 @@ Polish:
     #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
-    .. code-block:: text
-
-        >>> clean('ul.Mieszka II')
-        'Mieszka II'
-        >>> clean('UL. Zygmunta III WaZY')
-        'Zygmunta III Wazy'
-        >>> clean('  bolesława chrobrego ')
-        'Bolesława Chrobrego'
-        >>> clean('ul Jana III SobIESkiego')
-        'Jana III Sobieskiego'
-        >>> clean('\tul. Jana trzeciego Sobieskiego')
-        'Jana III Sobieskiego'
-        >>> clean('ulicaJana III Sobieskiego')
-        'Jana III Sobieskiego'
-        >>> clean('UL. JA    NA 3 SOBIES  KIEGO')
-        'Jana III Sobieskiego'
-        >>> clean('ULICA JANA III SOBIESKIEGO  ')
-        'Jana III Sobieskiego'
-        >>> clean('ULICA. JANA III SOBIeskieGO')
-        'Jana III Sobieskiego'
-        >>> clean(' Jana 3 Sobieskiego  ')
-        'Jana III Sobieskiego'
-        >>> clean('Jana III Sobi  eskiego ')
-        'Jana III Sobieskiego'
+    >>> clean('ul.Mieszka II')
+    'Mieszka II'
+    >>> clean('UL. Zygmunta III WaZY')
+    'Zygmunta III Wazy'
+    >>> clean('  bolesława chrobrego ')
+    'Bolesława Chrobrego'
+    >>> clean('ul Jana III SobIESkiego')
+    'Jana III Sobieskiego'
+    >>> clean('\tul. Jana trzeciego Sobieskiego')
+    'Jana III Sobieskiego'
+    >>> clean('ulicaJana III Sobieskiego')
+    'Jana III Sobieskiego'
+    >>> clean('UL. JA    NA 3 SOBIES  KIEGO')
+    'Jana III Sobieskiego'
+    >>> clean('ULICA JANA III SOBIESKIEGO  ')
+    'Jana III Sobieskiego'
+    >>> clean('ULICA. JANA III SOBIeskieGO')
+    'Jana III Sobieskiego'
+    >>> clean(' Jana 3 Sobieskiego  ')
+    'Jana III Sobieskiego'
+    >>> clean('Jana III Sobi  eskiego ')
+    'Jana III Sobieskiego'
 
 TODO: Translate input data to English
 
 Function Arguments Numbers to Str
 ---------------------------------
-* Assignment name: Function Arguments Numbers to Str
-* Complexity level: medium
+* Assignment: Function Arguments Numbers to Str
+* Filename: function_args_numstr.py
+* Complexity: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
-* Suggested filename: function_args_numstr.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -351,30 +343,28 @@ Given:
         }
 
 Tests:
-    .. code-block:: text
-
-        >>> pilot_say(1969)
-        'one niner six niner'
-        >>> pilot_say(31337)
-        'tree one tree tree seven'
-        >>> pilot_say(13.37)
-        'one tree and tree seven'
-        >>> pilot_say(31.337)
-        'tree one and tree tree seven'
-        >>> pilot_say(-1969)
-        'minus one niner six niner'
-        >>> pilot_say(-31.337)
-        'minus tree one and tree tree seven'
-        >>> pilot_say(-49.35)
-        'minus fower niner and tree fife'
+    >>> pilot_say(1969)
+    'one niner six niner'
+    >>> pilot_say(31337)
+    'tree one tree tree seven'
+    >>> pilot_say(13.37)
+    'one tree and tree seven'
+    >>> pilot_say(31.337)
+    'tree one and tree tree seven'
+    >>> pilot_say(-1969)
+    'minus one niner six niner'
+    >>> pilot_say(-31.337)
+    'minus tree one and tree tree seven'
+    >>> pilot_say(-49.35)
+    'minus fower niner and tree fife'
 
 Function Arguments Numbers to Human
 -----------------------------------
-* Assignment name: Function Arguments Numbers to Human
-* Complexity level: hard
+* Assignment: Function Arguments Numbers to Human
+* Filename: function_args_numhuman.py
+* Complexity: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Suggested filename: function_args_numhuman.py
 
 English:
     #. Define function converting ``int`` or ``float`` to text form
@@ -391,20 +381,18 @@ Polish:
     #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
-    .. code-block:: text
-
-        >>> number_to_str(1969)
-        'one thousand nine hundred sixty nine'
-        >>> number_to_str(31337)
-        'thirty one thousand three hundred thirty seven'
-        >>> number_to_str(13.37)
-        'thirteen and thirty seven hundredths'
-        >>> number_to_str(31.337)
-        'thirty one and three hundreds thirty seven thousands'
-        >>> number_to_str(-1969)
-        'minus one thousand nine hundred sixty nine'
-        >>> number_to_str(-31.337)
-        'minus thirty one and three hundreds thirty seven thousands'
-        >>> number_to_str(-49.35)
-        'minus forty nine and thirty five hundreds'
+    >>> number_to_str(1969)
+    'one thousand nine hundred sixty nine'
+    >>> number_to_str(31337)
+    'thirty one thousand three hundred thirty seven'
+    >>> number_to_str(13.37)
+    'thirteen and thirty seven hundredths'
+    >>> number_to_str(31.337)
+    'thirty one and three hundreds thirty seven thousands'
+    >>> number_to_str(-1969)
+    'minus one thousand nine hundred sixty nine'
+    >>> number_to_str(-31.337)
+    'minus thirty one and three hundreds thirty seven thousands'
+    >>> number_to_str(-49.35)
+    'minus forty nine and thirty five hundreds'
 

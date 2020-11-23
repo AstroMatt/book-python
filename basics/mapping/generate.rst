@@ -156,11 +156,11 @@ Assignments
 
 Mapping Generate Pairs
 ----------------------
-* Assignment name: Mapping Generate Pairs
-* Complexity level: easy
+* Assignment: Mapping Generate Pairs
+* Filename: mapping_generate_pairs.py
+* Complexity: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
-* Suggested filename: mapping_generate_pairs.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -186,22 +186,20 @@ Given:
         ]
 
 Tests:
-    .. code-block:: text
-
-        >>> result  # doctest: +NORMALIZE_WHITESPACE
-        {'Sepal length': 5.8,
-         'Sepal width': 2.7,
-         'Petal length': 5.1,
-         'Petal width': 1.9,
-         'Species': 'virginica'}
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    {'Sepal length': 5.8,
+     'Sepal width': 2.7,
+     'Petal length': 5.1,
+     'Petal width': 1.9,
+     'Species': 'virginica'}
 
 Mapping Generate Enumerate
 --------------------------
-* Assignment name: Mapping Generate Enumerate
-* Complexity level: easy
+* Assignment: Mapping Generate Enumerate
+* Filename: mapping_generate_enumerate.py
+* Complexity: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
-* Suggested filename: mapping_generate_enumerate.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -221,20 +219,18 @@ Given:
         DATA = ['setosa', 'versicolor', 'virginica']
 
 Tests:
-    .. code-block:: text
-
-        >>> result  # doctest: +NORMALIZE_WHITESPACE
-        {0: 'setosa',
-         1: 'versicolor',
-         2: 'virginica'}
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    {0: 'setosa',
+     1: 'versicolor',
+     2: 'virginica'}
 
 Mapping Generate Zip
 --------------------
-* Assignment name: Mapping Generate Zip
-* Complexity level: easy
+* Assignment: Mapping Generate Zip
+* Filename: mapping_generate_zip.py
+* Complexity: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
-* Suggested filename: mapping_generate_zip.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -255,11 +251,9 @@ Given:
         VALUES = [5.8, 2.7, 5.1, 1.9, 'virginica']
 
 Tests:
-    .. code-block:: text
-
-        >>> result  # doctest: +NORMALIZE_WHITESPACE
-        {'Sepal length': 5.8,
-         'Sepal width': 2.7,
-         'Petal length': 5.1,
-         'Petal width': 1.9,
-         'Species': 'virginica'}
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    {'Sepal length': 5.8,
+     'Sepal width': 2.7,
+     'Petal length': 5.1,
+     'Petal width': 1.9,
+     'Species': 'virginica'}

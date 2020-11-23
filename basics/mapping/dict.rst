@@ -460,11 +460,11 @@ Assignments
 
 Mapping Dict Define
 -------------------
-* Assignment name: Mapping Dict Define
-* Complexity level: easy
+* Assignment: Mapping Dict Define
+* Filename: mapping_dict_define.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Suggested filename: mapping_dict_define.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -482,25 +482,23 @@ Given:
         Missions: Apollo, Artemis
 
 Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is dict
-        >>> assert 'firstname' in result
-        >>> assert 'lastname' in result
-        >>> assert 'missions' in result
-        >>> assert result['firstname'] == 'Jan'
-        >>> assert result['lastname'] == 'Twardowski'
-        >>> assert 'Artemis' in result['missions']
-        >>> assert 'Ares' in result['missions']
-        >>> assert type(result['missions']) is list
+    >>> assert type(result) is dict
+    >>> assert 'firstname' in result
+    >>> assert 'lastname' in result
+    >>> assert 'missions' in result
+    >>> assert result['firstname'] == 'Jan'
+    >>> assert result['lastname'] == 'Twardowski'
+    >>> assert 'Artemis' in result['missions']
+    >>> assert 'Ares' in result['missions']
+    >>> assert type(result['missions']) is list
 
 Mapping Dict Items
 ------------------
-* Assignment name: Mapping Dict Items
-* Complexity level: easy
+* Assignment: Mapping Dict Items
+* Filename: mapping_dict_items.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Suggested filename: mapping_dict_items.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -527,30 +525,28 @@ Given:
         }
 
 Tests:
-    .. code-block:: text
+    >>> assert type(keys) is list
+    >>> assert type(values) is list
+    >>> assert type(items) is list
+    >>> assert all(type(x) is tuple for x in items)
 
-        >>> assert type(keys) is list
-        >>> assert type(values) is list
-        >>> assert type(items) is list
-        >>> assert all(type(x) is tuple for x in items)
-
-        >>> keys
-        ['Sepal length', 'Sepal width', 'Petal length', 'Petal width']
-        >>> values
-        [5.8, 2.7, 5.1, 1.9]
-        >>> items  # doctest: +NORMALIZE_WHITESPACE
-        [('Sepal length', 5.8),
-         ('Sepal width', 2.7),
-         ('Petal length', 5.1),
-         ('Petal width', 1.9)]
+    >>> keys
+    ['Sepal length', 'Sepal width', 'Petal length', 'Petal width']
+    >>> values
+    [5.8, 2.7, 5.1, 1.9]
+    >>> items  # doctest: +NORMALIZE_WHITESPACE
+    [('Sepal length', 5.8),
+     ('Sepal width', 2.7),
+     ('Petal length', 5.1),
+     ('Petal width', 1.9)]
 
 Mapping Dict Substitute
 -----------------------
-* Assignment name: Mapping Dict Substitute
-* Complexity level: easy
+* Assignment: Mapping Dict Substitute
+* Filename: mapping_dict_substitute.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
-* Suggested filename: mapping_dict_substitute.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -587,11 +583,11 @@ Given:
 
 Mapping Dict Get
 ----------------
-* Assignment name: Mapping Dict Get
-* Complexity level: easy
+* Assignment: Mapping Dict Get
+* Filename: mapping_dict_get.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
-* Suggested filename: mapping_dict_get.py
 
 English:
     #. Use data from "Given" section (see below)

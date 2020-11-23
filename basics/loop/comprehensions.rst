@@ -584,11 +584,11 @@ Assignments
 
 Loop Comprehension Create
 -------------------------
-* Assignment name: Loop Comprehension Create
-* Complexity level: easy
+* Assignment: Loop Comprehension Create
+* Filename: loop_comprehension_create.py
+* Complexity: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
-* Suggested filename: loop_comprehension_create.py
 
 English:
     #. Use list comprehension
@@ -601,20 +601,18 @@ Polish:
     #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is list
-        >>> assert all(type(x) is int for x in result)
-        >>> result
-        [6, 8, 10, 12, 14, 16, 18]
+    >>> assert type(result) is list
+    >>> assert all(type(x) is int for x in result)
+    >>> result
+    [6, 8, 10, 12, 14, 16, 18]
 
 Loop Comprehension Translate
 ----------------------------
-* Assignment name: Loop Comprehension Translate
-* Complexity level: easy
+* Assignment: Loop Comprehension Translate
+* Filename: loop_comprehension_translate.py
+* Complexity: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
-* Suggested filename: loop_comprehension_translate.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -644,19 +642,17 @@ Given:
         DATA = 'zażółć gęślą jaźń'
 
 Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is str
-        >>> result
-        'zazolc gesla jazn'
+    >>> assert type(result) is str
+    >>> result
+    'zazolc gesla jazn'
 
 Loop Comprehension Months
 -------------------------
-* Assignment name: Loop Comprehension Months
-* Complexity level: easy
+* Assignment: Loop Comprehension Months
+* Filename: loop_comprehension_months.py
+* Complexity: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
-* Suggested filename: loop_comprehension_months.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -688,36 +684,34 @@ Given:
                   'October', 'November', 'December']
 
 Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is dict
-        >>> assert '00' not in result
-        >>> assert '13' not in result
-        >>> assert result['01'] == 'January'
-        >>> assert all(type(x) is str for x in result.keys())
-        >>> assert all(type(x) is str for x in result.values())
-        >>> assert all(len(x) == 2 for x in result.keys())
-        >>> result  # doctest: +NORMALIZE_WHITESPACE
-        {'01': 'January',
-         '02': 'February',
-         '03': 'March',
-         '04': 'April',
-         '05': 'May',
-         '06': 'June',
-         '07': 'July',
-         '08': 'August',
-         '09': 'September',
-         '10': 'October',
-         '11': 'November',
-         '12': 'December'}
+    >>> assert type(result) is dict
+    >>> assert '00' not in result
+    >>> assert '13' not in result
+    >>> assert result['01'] == 'January'
+    >>> assert all(type(x) is str for x in result.keys())
+    >>> assert all(type(x) is str for x in result.values())
+    >>> assert all(len(x) == 2 for x in result.keys())
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    {'01': 'January',
+     '02': 'February',
+     '03': 'March',
+     '04': 'April',
+     '05': 'May',
+     '06': 'June',
+     '07': 'July',
+     '08': 'August',
+     '09': 'September',
+     '10': 'October',
+     '11': 'November',
+     '12': 'December'}
 
 Loop Comprehension Split
 ------------------------
-* Assignment name: Loop Comprehension Split
-* Complexity level: medium
+* Assignment: Loop Comprehension Split
+* Filename: loop_comprehension_split.py
+* Complexity: medium
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
-* Suggested filename: loop_comprehension_split.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -771,34 +765,32 @@ Given:
         ]
 
 Tests:
-    .. code-block:: text
+    >>> assert type(features_train) is list
+    >>> assert type(features_test) is list
+    >>> assert type(labels_train) is list
+    >>> assert type(labels_test) is list
 
-        >>> assert type(features_train) is list
-        >>> assert type(features_test) is list
-        >>> assert type(labels_train) is list
-        >>> assert type(labels_test) is list
+    >>> assert all(type(x) is tuple for x in features_train)
+    >>> assert all(type(x) is tuple for x in features_test)
+    >>> assert all(type(x) is str for x in labels_train)
+    >>> assert all(type(x) is str for x in labels_test)
 
-        >>> assert all(type(x) is tuple for x in features_train)
-        >>> assert all(type(x) is tuple for x in features_test)
-        >>> assert all(type(x) is str for x in labels_train)
-        >>> assert all(type(x) is str for x in labels_test)
+    >>> features_train  # doctest: +NORMALIZE_WHITESPACE
+    [(5.8, 2.7, 5.1, 1.9),
+     (5.1, 3.5, 1.4, 0.2),
+     (5.7, 2.8, 4.1, 1.3),
+     (6.3, 2.9, 5.6, 1.8),
+     (6.4, 3.2, 4.5, 1.5),
+     (4.7, 3.2, 1.3, 0.2)]
 
-        >>> features_train  # doctest: +NORMALIZE_WHITESPACE
-        [(5.8, 2.7, 5.1, 1.9),
-         (5.1, 3.5, 1.4, 0.2),
-         (5.7, 2.8, 4.1, 1.3),
-         (6.3, 2.9, 5.6, 1.8),
-         (6.4, 3.2, 4.5, 1.5),
-         (4.7, 3.2, 1.3, 0.2)]
+    >>> features_test  # doctest: +NORMALIZE_WHITESPACE
+    [(7.0, 3.2, 4.7, 1.4),
+     (7.6, 3.0, 6.6, 2.1),
+     (4.9, 3.0, 1.4, 0.2),
+     (4.9, 2.5, 4.5, 1.7)]
 
-        >>> features_test  # doctest: +NORMALIZE_WHITESPACE
-        [(7.0, 3.2, 4.7, 1.4),
-         (7.6, 3.0, 6.6, 2.1),
-         (4.9, 3.0, 1.4, 0.2),
-         (4.9, 2.5, 4.5, 1.7)]
+    >>> labels_train
+    ['virginica', 'setosa', 'versicolor', 'virginica', 'versicolor', 'setosa']
 
-        >>> labels_train
-        ['virginica', 'setosa', 'versicolor', 'virginica', 'versicolor', 'setosa']
-
-        >>> labels_test
-        ['versicolor', 'virginica', 'setosa', 'virginica']
+    >>> labels_test
+    ['versicolor', 'virginica', 'setosa', 'virginica']

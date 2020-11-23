@@ -165,11 +165,11 @@ Assignments
 
 File Read Str
 -------------
-* Assignment name: File Read Str
-* Complexity level: easy
+* Assignment: File Read Str
+* Filename: file_read_str.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Suggested filename: file_read_str.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -200,11 +200,11 @@ Tests:
 
 File Read Multiline
 -------------------
-* Assignment name: File Read Multiline
-* Complexity level: easy
+* Assignment: File Read Multiline
+* Filename: file_read_multiline.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Suggested filename: file_read_multiline.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -236,11 +236,11 @@ Tests:
 
 File Read CSV
 -------------
-* Assignment name: File Read CSV
-* Complexity level: easy
+* Assignment: File Read CSV
+* Filename: file_read_csv.py
+* Complexity: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 8 min
-* Suggested filename: file_read_csv.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -297,28 +297,26 @@ Given:
         labels = []
 
 Tests:
-    .. code-block:: text
-
-        >>> header
-        ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
-        >>> features  # doctest: +NORMALIZE_WHITESPACE
-        [(5.4, 3.9, 1.3, 0.4),
-         (5.9, 3.0, 5.1, 1.8),
-         (6.0, 3.4, 4.5, 1.6),
-         (7.3, 2.9, 6.3, 1.8),
-         (5.6, 2.5, 3.9, 1.1),
-         (5.4, 3.9, 1.3, 0.4)]
-        >>> label
-        ['setosa', 'virginica', 'versicolor', 'virginica', 'versicolor', 'setosa']
+    >>> header
+    ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
+    >>> features  # doctest: +NORMALIZE_WHITESPACE
+    [(5.4, 3.9, 1.3, 0.4),
+     (5.9, 3.0, 5.1, 1.8),
+     (6.0, 3.4, 4.5, 1.6),
+     (7.3, 2.9, 6.3, 1.8),
+     (5.6, 2.5, 3.9, 1.1),
+     (5.4, 3.9, 1.3, 0.4)]
+    >>> label
+    ['setosa', 'virginica', 'versicolor', 'virginica', 'versicolor', 'setosa']
 
 
 File Read Dict
 --------------
-* Assignment name: File Read Dict
-* Complexity level: medium
+* Assignment: File Read Dict
+* Filename: file_read_dict.py
+* Complexity: medium
 * Lines of code to write: 10 lines
 * Estimated time of completion: 8 min
-* Suggested filename: file_read_dict.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -363,21 +361,19 @@ Given:
         """
 
 Tests:
-    .. code-block:: text
-
-        >>> result  # doctest: +NORMALIZE_WHITESPACE
-        {'127.0.0.1': ['localhost'],
-         '10.13.37.1': ['nasa.gov', 'esa.int', 'roscosmos.ru'],
-         '255.255.255.255': ['broadcasthost'],
-         '::1': ['localhost']}
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    {'127.0.0.1': ['localhost'],
+     '10.13.37.1': ['nasa.gov', 'esa.int', 'roscosmos.ru'],
+     '255.255.255.255': ['broadcasthost'],
+     '::1': ['localhost']}
 
 File Read List of Dicts
 -----------------------
-* Assignment name: File Read List of Dicts
-* Complexity level: hard
+* Assignment: File Read List of Dicts
+* Filename: file_read_listdict.py
+* Complexity: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
-* Suggested filename: file_read_listdict.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -436,11 +432,9 @@ Given:
         """
 
 Tests:
-    .. code-block:: text
-
-        >>> result  # doctest: +NORMALIZE_WHITESPACE
-        [{'ip': '127.0.0.1', 'hostnames': ['localhost', ['astromatt']], 'protocol': 'IPv4'},
-         {'ip': '10.13.37.1', 'hostnames': ['nasa.gov', 'esa.int', 'roscosmos.ru'], 'protocol': 'IPv4'},
-         {'ip': '255.255.255.255', 'hostnames': ['broadcasthost'], 'protocol': 'IPv4'},
-         {'ip': '::1', 'hostnames': ['localhost'], 'protocol': 'IPv6'}]
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    [{'ip': '127.0.0.1', 'hostnames': ['localhost', ['astromatt']], 'protocol': 'IPv4'},
+     {'ip': '10.13.37.1', 'hostnames': ['nasa.gov', 'esa.int', 'roscosmos.ru'], 'protocol': 'IPv4'},
+     {'ip': '255.255.255.255', 'hostnames': ['broadcasthost'], 'protocol': 'IPv4'},
+     {'ip': '::1', 'hostnames': ['localhost'], 'protocol': 'IPv6'}]
 

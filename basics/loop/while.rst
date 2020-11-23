@@ -213,11 +213,11 @@ Assignments
 
 Loop While Cast
 ---------------
-* Assignment name: Loop While Cast
-* Complexity level: easy
+* Assignment: Loop While Cast
+* Filename: loop_while_cast.py
+* Complexity: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
-* Suggested filename: loop_while_cast.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -241,20 +241,18 @@ Given:
         DATA = ['1', '2', '3']
 
 Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is list
-        >>> assert all(type(x) is int for x in result)
-        >>> result
-        [1, 2, 3]
+    >>> assert type(result) is list
+    >>> assert all(type(x) is int for x in result)
+    >>> result
+    [1, 2, 3]
 
 Loop While Convert
 ------------------
-* Assignment name: Loop While Convert
-* Complexity level: easy
+* Assignment: Loop While Convert
+* Filename: loop_while_convert.py
+* Complexity: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
-* Suggested filename: loop_while_convert.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -278,20 +276,18 @@ Given:
         DATA = (2, 3, 3.5, 4, 4.5, 5)
 
 Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is list
-        >>> assert all(type(x) is float for x in result)
-        >>> result
-        [2.0, 3.0, 3.5, 4.0, 4.5, 5.0]
+    >>> assert type(result) is list
+    >>> assert all(type(x) is float for x in result)
+    >>> result
+    [2.0, 3.0, 3.5, 4.0, 4.5, 5.0]
 
 Loop While Translate
 --------------------
-* Assignment name: Loop While Translate
-* Complexity level: medium
+* Assignment: Loop While Translate
+* Filename: loop_while_translate.py
+* Complexity: medium
 * Lines of code to write: 9 lines
 * Estimated time of completion: 8 min
-* Suggested filename: loop_while_translate.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -318,19 +314,17 @@ Given:
         DATA = 'zażółć gęślą jaźń'
 
 Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is str
-        >>> result
-        'zazolc gesla jazn'
+    >>> assert type(result) is str
+    >>> result
+    'zazolc gesla jazn'
 
 Loop While Input
 ----------------
-* Assignment name: Loop While Input
-* Complexity level: medium
+* Assignment: Loop While Input
+* Filename: loop_while_input.py
+* Complexity: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
-* Suggested filename: loop_while_input.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -365,11 +359,9 @@ Given:
         GRADE_SCALE = (2.0, 3.0, 3.5, 4.0, 4.5, 5.0)
 
 Tests:
-    .. code-block:: text
-
-        >>> import statistics
-        >>> assert type(mean) is float
-        >>> assert all(type(x) is float for x in result)
-        >>> assert statistics.mean(result) == mean
+    >>> import statistics
+    >>> assert type(mean) is float
+    >>> assert all(type(x) is float for x in result)
+    >>> assert statistics.mean(result) == mean
 
 

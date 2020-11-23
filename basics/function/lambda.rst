@@ -160,11 +160,11 @@ Assignments
 
 Function Lambda Chain
 ---------------------
-* Assignment name: Function Lambda Chain
-* Complexity level: easy
+* Assignment: Function Lambda Chain
+* Filename: function_lambda_chain.py
+* Complexity: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
-* Suggested filename: function_lambda_chain.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -199,10 +199,8 @@ Given:
         print(result)
 
 Tests:
-    .. code-block:: text
-
-        >>> type(result) is float
-        True
-        >>> result
-        11502.0
+    >>> type(result) is float
+    True
+    >>> result
+    11502.0
 

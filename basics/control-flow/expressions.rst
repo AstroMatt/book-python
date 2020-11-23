@@ -151,11 +151,11 @@ Assignments
 
 Conditional Expression
 ----------------------
-* Assignment name: Conditional Expression
-* Complexity level: medium
+* Assignment: Conditional Expression
+* Filename: controlflow_conditional_expression.py
+* Complexity: medium
 * Lines of code to write: 25 lines
 * Estimated time of completion: 21 min
-* Suggested filename: controlflow_conditional_expression.py
 
 English:
     #. Use data from "Given" section (see below)

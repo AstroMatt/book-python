@@ -1,7 +1,7 @@
 """
-* Assignment name: Type Bool Simple
-* Suggested filename: type_bool_simple.py
-* Complexity level: easy
+* Assignment: Type Bool Simple
+* Filename: type_bool_simple.py
+* Complexity: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 5 min
 

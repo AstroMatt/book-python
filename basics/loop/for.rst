@@ -189,11 +189,11 @@ Assignments
 
 Loop For Count
 --------------
-* Assignment name: Loop For Count
-* Complexity level: easy
+* Assignment: Loop For Count
+* Filename: loop_for_count.py
+* Complexity: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 5 min
-* Suggested filename: loop_for_count.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -211,22 +211,20 @@ Given:
         DATA = ['red', 'green', 'blue', 'red', 'green', 'red', 'blue']
 
 Tests:
-    .. code-block:: text
-
-        >>> red
-        3
-        >>> green
-        2
-        >>> blue
-        2
+    >>> red
+    3
+    >>> green
+    2
+    >>> blue
+    2
 
 Loop For Counter
 ----------------
-* Assignment name: Loop For Counter
-* Complexity level: easy
+* Assignment: Loop For Counter
+* Filename: loop_for_counter.py
+* Complexity: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
-* Suggested filename: loop_for_counter.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -280,11 +278,11 @@ Tests:
 
 Loop For Segmentation
 ---------------------
-* Assignment name: Loop For Segmentation
-* Complexity level: easy
+* Assignment: Loop For Segmentation
+* Filename: loop_for_segmentation.py
+* Complexity: easy
 * Lines of code to write: 14 lines
 * Estimated time of completion: 8 min
-* Suggested filename: loop_for_segmentation.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -338,11 +336,11 @@ Tests:
 
 Loop For Newline
 ----------------
-* Assignment name: Loop For Newline
-* Complexity level: easy
+* Assignment: Loop For Newline
+* Filename: loop_for_newline.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
-* Suggested filename: loop_for_newline.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -369,21 +367,19 @@ Given:
             'Not because they are easy, but because they are hard.']
 
 Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is str
-        >>> result.count('\\n')
-        3
-        >>> result
-        'We choose to go to the Moon.\\nWe choose to go to the Moon in this decade and do the other things.\\nNot because they are easy, but because they are hard.\\n'
+    >>> assert type(result) is str
+    >>> result.count('\\n')
+    3
+    >>> result
+    'We choose to go to the Moon.\\nWe choose to go to the Moon in this decade and do the other things.\\nNot because they are easy, but because they are hard.\\n'
 
 Loop For Translate
 ------------------
-* Assignment name: Loop For Translate
-* Complexity level: easy
+* Assignment: Loop For Translate
+* Filename: loop_for_translate.py
+* Complexity: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
-* Suggested filename: loop_for_translate.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -410,19 +406,17 @@ Given:
         DATA = 'zażółć gęślą jaźń'
 
 Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is str
-        >>> result
-        'zazolc gesla jazn'
+    >>> assert type(result) is str
+    >>> result
+    'zazolc gesla jazn'
 
 Loop For Months
 ---------------
-* Assignment name: Loop For Months
-* Complexity level: easy
+* Assignment: Loop For Months
+* Filename: loop_for_months.py
+* Complexity: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
-* Suggested filename: loop_for_months.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -450,30 +444,28 @@ Given:
                   'October', 'November', 'December']
 
 Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is dict
-        >>> result  # doctest: +NORMALIZE_WHITESPACE
-        {1: 'January',
-         2: 'February',
-         3: 'March',
-         4: 'April',
-         5: 'May',
-         6: 'June',
-         7: 'July',
-         8: 'August',
-         9: 'September',
-         10: 'October',
-         11: 'November',
-         12: 'December'}
+    >>> assert type(result) is dict
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    {1: 'January',
+     2: 'February',
+     3: 'March',
+     4: 'April',
+     5: 'May',
+     6: 'June',
+     7: 'July',
+     8: 'August',
+     9: 'September',
+     10: 'October',
+     11: 'November',
+     12: 'December'}
 
 Loop For Text
 -------------
-* Assignment name: Loop For Text
-* Complexity level: medium or hard
+* Assignment: Loop For Text
+* Filename: loop_for_text.py
+* Complexity: medium or hard
 * Lines of code to write: 30 lines
 * Estimated time of completion: 13 min
-* Suggested filename: loop_for_text.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -524,14 +516,12 @@ Given:
         """
 
 Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is str
-        >>> print(result)  # doctest: +NORMALIZE_WHITESPACE
-        Sentences: 7
-        Words: 71
-        Characters: 347
-        Letters: 283
-        Commas: 1
-        Adverbs: 0
+    >>> assert type(result) is str
+    >>> print(result)  # doctest: +NORMALIZE_WHITESPACE
+    Sentences: 7
+    Words: 71
+    Characters: 347
+    Letters: 283
+    Commas: 1
+    Adverbs: 0
 

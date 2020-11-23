@@ -206,11 +206,11 @@ Assignments
 
 OOP Method Sequence
 -------------------
-* Assignment name: OOP Method Sequence
-* Complexity level: easy
+* Assignment: OOP Method Sequence
+* Filename: oop_method_sequence.py
+* Complexity: easy
 * Lines of code to write: 18 lines
 * Estimated time of completion: 13 min
-* Suggested filename: oop_method_sequence.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -240,20 +240,18 @@ Given:
         ]
 
 Tests:
-    .. code-block:: text
-
-        >>> result  # doctest: +NORMALIZE_WHITESPACE
-        {'setosa': 9.4,
-         'versicolor': 16.299999999999997,
-         'virginica': 19.3}
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    {'setosa': 9.4,
+     'versicolor': 16.299999999999997,
+     'virginica': 19.3}
 
 OOP Method Nested
 -----------------
-* Assignment name: OOP Method Nested
-* Complexity level: medium
+* Assignment: OOP Method Nested
+* Filename: oop_method_nested.py
+* Complexity: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Suggested filename: oop_method_nested.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -329,8 +327,6 @@ Given:
         print(virginica.show())
 
 Tests:
-    .. code-block:: text
-
-        total=10.20 mean=2.55 setosa
+total=10.20 mean=2.55 setosa
         total=15.50 mean=3.88 virginica
 

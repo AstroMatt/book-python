@@ -205,11 +205,11 @@ Assignments
 
 Loop Nested Mean
 ----------------
-* Assignment name: Loop Nested Mean
-* Complexity level: easy
+* Assignment: Loop Nested Mean
+* Filename: loop_nested_mean.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
-* Suggested filename: loop_nested_mean.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -240,19 +240,17 @@ Given:
         ]
 
 Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is float
-        >>> result
-        5.911111111111111
+    >>> assert type(result) is float
+    >>> result
+    5.911111111111111
 
 Loop Nested Unique Keys
 -----------------------
-* Assignment name: Loop Nested Unique Keys
-* Complexity level: medium
+* Assignment: Loop Nested Unique Keys
+* Filename: loop_nested_unique_keys.py
+* Complexity: medium
 * Lines of code to write: 3 lines
 * Estimated time of completion: 8 min
-* Suggested filename: loop_nested_unique_keys.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -285,8 +283,6 @@ Given:
         ]
 
 Tests:
-    .. code-block:: text
-
-        >>> sorted(result)
-        ['Petal length', 'Petal width', 'Sepal length', 'Sepal width', 'Species']
+    >>> sorted(result)
+    ['Petal length', 'Petal width', 'Sepal length', 'Sepal width', 'Species']
 

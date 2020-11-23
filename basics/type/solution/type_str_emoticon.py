@@ -1,7 +1,7 @@
 """
-* Assignment name: Type String Emoticon
-* Suggested filename: type_str_emoticon.py
-* Complexity level: easy
+* Assignment: Type String Emoticon
+* Filename: type_str_emoticon.py
+* Complexity: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
 

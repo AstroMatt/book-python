@@ -1,7 +1,7 @@
 """
-* Assignment name: Type Int Sub
-* Suggested filename: type_int_sub.py
-* Complexity level: easy
+* Assignment: Type Int Sub
+* Filename: type_int_sub.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 

@@ -167,11 +167,11 @@ Assignments
 
 About Environment
 -----------------
-* Assignment name: About Environment
-* Complexity level: easy
+* Assignment: About Environment
+* Filename: about_environment.py
+* Complexity: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 3 min
-* Suggested filename: about_environment.py
 
 English:
     .. todo:: English Translation

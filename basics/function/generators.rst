@@ -384,11 +384,11 @@ Assignments
 
 Function Generator Chain
 ------------------------
-* Assignment name: Function Generator Chain
-* Complexity level: easy
+* Assignment: Function Generator Chain
+* Filename: function_generators_chain.py
+* Complexity: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
-* Suggested filename: function_generators_chain.py
 
 English:
     #. Use generator expression to create ``numbers``
@@ -413,10 +413,8 @@ Hints:
     * ``mean = sum(...) / len(...)``
 
 Tests:
-    .. code-block:: text
-
-        >>> type(result) is float
-        True
-        >>> result
-        11502.0
+    >>> type(result) is float
+    True
+    >>> result
+    11502.0
 

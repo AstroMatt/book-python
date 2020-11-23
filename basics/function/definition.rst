@@ -137,11 +137,11 @@ Assignments
 
 Function Definition Print
 -------------------------
-* Assignment name: Function Definition Print
-* Complexity level: easy
+* Assignment: Function Definition Print
+* Filename: function_definition_print.py
+* Complexity: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
-* Suggested filename: function_definition_print.py
 
 English:
     #. Define function ``call`` without parameters

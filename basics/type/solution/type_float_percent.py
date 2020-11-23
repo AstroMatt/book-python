@@ -1,7 +1,7 @@
 """
-* Assignment name: Type Float Percent
-* Suggested filename: type_float_percent.py
-* Complexity level: medium
+* Assignment: Type Float Percent
+* Filename: type_float_percent.py
+* Complexity: medium
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
 

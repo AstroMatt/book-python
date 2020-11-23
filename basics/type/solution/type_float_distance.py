@@ -1,7 +1,7 @@
 """
-* Assignment name: Type Float Distance
-* Suggested filename: type_float_distance.py
-* Complexity level: easy
+* Assignment: Type Float Distance
+* Filename: type_float_distance.py
+* Complexity: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
 

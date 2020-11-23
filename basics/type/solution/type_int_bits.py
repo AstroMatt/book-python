@@ -1,7 +1,7 @@
 """
-* Assignment name: Type Int Bits
-* Suggested filename: type_int_bits.py
-* Complexity level: medium
+* Assignment: Type Int Bits
+* Filename: type_int_bits.py
+* Complexity: medium
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
 

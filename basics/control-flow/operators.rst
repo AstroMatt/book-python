@@ -163,11 +163,11 @@ Assignments
 
 Conditional Operators Modulo
 ----------------------------
-* Assignment name: Conditional Operators Modulo
-* Complexity level: easy
+* Assignment: Conditional Operators Modulo
+* Filename: controlflow_operators_modulo.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Suggested filename: controlflow_operators_modulo.py
 
 English:
     #. Read a number from user
@@ -191,16 +191,14 @@ Hints:
     * ``%`` on ``int`` is overloaded as a modulo division
 
 Tests:
-    .. code-block:: text
+    >>> '5' % 2
+    Traceback (most recent call last):
+        ...
+    TypeError: not all arguments converted during string formatting
 
-        >>> '5' % 2
-        Traceback (most recent call last):
-            ...
-        TypeError: not all arguments converted during string formatting
+    >>> '5%s' % 2
+    '52'
 
-        >>> '5%s' % 2
-        '52'
-
-        >>> 5 % 2
-        1
+    >>> 5 % 2
+    1
 

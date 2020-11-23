@@ -178,30 +178,6 @@ Many Types
 Assignments
 ===========
 
-Sequence Nested Create
-----------------------
-* Assignment name: Sequence Nested Create
-* Complexity level: easy
-* Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
-* Suggested filename: sequence_nested_create.py
-
-English:
-    #. Create nested sequence ``result`` with elements:
-
-        * tuple: ``1``, ``2``, ``3``
-        * list: ``1.1``, ``2.2``, ``3.3``
-        * set: ``'Mark Watney'``, ``'Melissa Lewis'``, ``'Jan Twardowski'``
-
-    #. Print ``result``
-    #. Print number of elements in ``result``
-
-Polish:
-    #. Stwórz zagnieżdżoną sekwencję ``result`` z elementami:
-
-        * krotka: ``1``, ``2``, ``3``
-        * lista: ``1.1``, ``2.2``, ``3.3``
-        * zbiór: ``'Mark Watney'``, ``'Melissa Lewis'``, ``'Jan Twardowski'``
-
-    #. Wypisz ``result``
-    #. Wypisz liczbę elementów ``result``
+.. literalinclude:: solution/sequence_nested_create.py
+    :caption: :download:`Download solution <solution/sequence_nested_create.py>`
+    :end-before: # Solution

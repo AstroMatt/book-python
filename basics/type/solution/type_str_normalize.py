@@ -1,7 +1,7 @@
 """
-* Assignment name: Type String Normalize
-* Suggested filename: type_str_normalize.py
-* Complexity level: easy
+* Assignment: Type String Normalize
+* Filename: type_str_normalize.py
+* Complexity: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 8 min
 

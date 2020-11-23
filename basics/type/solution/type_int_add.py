@@ -1,7 +1,7 @@
 """
-* Assignment name: Type Int Add
-* Suggested filename: type_int_add.py
-* Complexity level: easy
+* Assignment: Type Int Add
+* Filename: type_int_add.py
+* Complexity: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
 

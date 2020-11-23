@@ -1,7 +1,7 @@
 """
-* Assignment name: Type Float Pressure
-* Suggested filename: type_float_pressure.py
-* Complexity level: medium
+* Assignment: Type Float Pressure
+* Filename: type_float_pressure.py
+* Complexity: medium
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
 

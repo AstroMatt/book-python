@@ -1,7 +1,7 @@
 """
-* Assignment name: Type Bool True or False
-* Suggested filename: type_bool_true_or_false.py
-* Complexity level: easy
+* Assignment: Type Bool True or False
+* Filename: type_bool_true_or_false.py
+* Complexity: easy
 * Lines of code to write: 16 lines
 * Estimated time of completion: 5 min
 

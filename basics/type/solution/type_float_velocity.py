@@ -1,7 +1,7 @@
 """
-* Assignment name: Type Float Velocity
-* Suggested filename: type_float_velocity.py
-* Complexity level: easy
+* Assignment: Type Float Velocity
+* Filename: type_float_velocity.py
+* Complexity: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 3 min
 

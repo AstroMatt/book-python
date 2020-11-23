@@ -241,11 +241,11 @@ Assignments
 
 Loop Dict To Dict
 -----------------
-* Assignment name: Loop Dict To Dict
-* Complexity level: easy
+* Assignment: Loop Dict To Dict
+* Filename: loop_dict_to_dict.py
+* Complexity: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 8 min
-* Suggested filename: loop_dict_to_dict.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -270,27 +270,25 @@ Given:
         }
 
 Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is dict
-        >>> result  # doctest: +NORMALIZE_WHITESPACE
-        {'Doctorate': '6',
-         'Prof-school': '6',
-         'Masters': '5',
-         'Bachelor': '5',
-         'Engineer': '5',
-         'HS-grad': '4',
-         'Junior High': '3',
-         'Primary School': '2',
-         'Kindergarten': '1'}
+    >>> assert type(result) is dict
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    {'Doctorate': '6',
+     'Prof-school': '6',
+     'Masters': '5',
+     'Bachelor': '5',
+     'Engineer': '5',
+     'HS-grad': '4',
+     'Junior High': '3',
+     'Primary School': '2',
+     'Kindergarten': '1'}
 
 Loop Dict To List
 -----------------
-* Assignment name: Loop Dict To List
-* Complexity level: medium
+* Assignment: Loop Dict To List
+* Filename: loop_dict_to_list.py
+* Complexity: medium
 * Lines of code to write: 6 lines
 * Estimated time of completion: 8 min
-* Suggested filename: loop_dict_to_list.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -324,25 +322,23 @@ Given:
         ]
 
 Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is list
-        >>> assert all(type(x) is dict for x in result)
-        >>> result  # doctest: +NORMALIZE_WHITESPACE
-        [{'Sepal length': 5.8, 'Sepal width': 2.7, 'Petal length': 5.1, 'Petal width': 1.9, 'Species': 'virginica'},
-         {'Sepal length': 5.1, 'Sepal width': 3.5, 'Petal length': 1.4, 'Petal width': 0.2, 'Species': 'setosa'},
-         {'Sepal length': 5.7, 'Sepal width': 2.8, 'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
-         {'Sepal length': 6.3, 'Sepal width': 2.9, 'Petal length': 5.6, 'Petal width': 1.8, 'Species': 'virginica'},
-         {'Sepal length': 6.4, 'Sepal width': 3.2, 'Petal length': 4.5, 'Petal width': 1.5, 'Species': 'versicolor'},
-         {'Sepal length': 4.7, 'Sepal width': 3.2, 'Petal length': 1.3, 'Petal width': 0.2, 'Species': 'setosa'}]
+    >>> assert type(result) is list
+    >>> assert all(type(x) is dict for x in result)
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    [{'Sepal length': 5.8, 'Sepal width': 2.7, 'Petal length': 5.1, 'Petal width': 1.9, 'Species': 'virginica'},
+     {'Sepal length': 5.1, 'Sepal width': 3.5, 'Petal length': 1.4, 'Petal width': 0.2, 'Species': 'setosa'},
+     {'Sepal length': 5.7, 'Sepal width': 2.8, 'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
+     {'Sepal length': 6.3, 'Sepal width': 2.9, 'Petal length': 5.6, 'Petal width': 1.8, 'Species': 'virginica'},
+     {'Sepal length': 6.4, 'Sepal width': 3.2, 'Petal length': 4.5, 'Petal width': 1.5, 'Species': 'versicolor'},
+     {'Sepal length': 4.7, 'Sepal width': 3.2, 'Petal length': 1.3, 'Petal width': 0.2, 'Species': 'setosa'}]
 
 Loop Dict Label Encoder
 -----------------------
-* Assignment name: Loop Dict Label Encoder
-* Complexity level: hard
+* Assignment: Loop Dict Label Encoder
+* Filename: loop_dict_label_encoder.py
+* Complexity: hard
 * Lines of code to write: 13 lines
 * Estimated time of completion: 13 min
-* Suggested filename: loop_dict_label_encoder.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -399,30 +395,28 @@ Given:
         ]
 
 Tests:
-    .. code-block:: text
+    >>> assert type(features) is list
+    >>> assert type(labels) is list
+    >>> assert type(label_encoder) is dict
 
-        >>> assert type(features) is list
-        >>> assert type(labels) is list
-        >>> assert type(label_encoder) is dict
+    >>> assert all(type(x) is tuple for x in features)
+    >>> assert all(type(x) is int for x in labels)
+    >>> assert all(type(x) is int for x in label_encoder.keys())
+    >>> assert all(type(x) is str for x in label_encoder.values())
 
-        >>> assert all(type(x) is tuple for x in features)
-        >>> assert all(type(x) is int for x in labels)
-        >>> assert all(type(x) is int for x in label_encoder.keys())
-        >>> assert all(type(x) is str for x in label_encoder.values())
+    >>> features  # doctest: +NORMALIZE_WHITESPACE
+    [(5.8, 2.7, 5.1, 1.9),
+     (5.1, 3.5, 1.4, 0.2),
+     (5.7, 2.8, 4.1, 1.3),
+     (6.3, 2.9, 5.6, 1.8),
+     (6.4, 3.2, 4.5, 1.5),
+     (4.7, 3.2, 1.3, 0.2)]
 
-        >>> features  # doctest: +NORMALIZE_WHITESPACE
-        [(5.8, 2.7, 5.1, 1.9),
-         (5.1, 3.5, 1.4, 0.2),
-         (5.7, 2.8, 4.1, 1.3),
-         (6.3, 2.9, 5.6, 1.8),
-         (6.4, 3.2, 4.5, 1.5),
-         (4.7, 3.2, 1.3, 0.2)]
+    >>> labels
+    [0, 1, 2, 0, 2, 1]
 
-        >>> labels
-        [0, 1, 2, 0, 2, 1]
-
-        >>> label_encoder  # doctest: +NORMALIZE_WHITESPACE
-        {0: 'virginica',
-         1: 'setosa',
-         2: 'versicolor'}
+    >>> label_encoder  # doctest: +NORMALIZE_WHITESPACE
+    {0: 'virginica',
+     1: 'setosa',
+     2: 'versicolor'}
 

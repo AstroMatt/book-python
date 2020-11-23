@@ -214,11 +214,11 @@ Assignments
 
 OOP Attribute Model
 -------------------
-* Assignment name: OOP Attribute Model
-* Complexity level: easy
+* Assignment: OOP Attribute Model
+* Filename: oop_attribute_model.py
+* Complexity: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 8 min
-* Suggested filename: oop_attribute_model.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -243,14 +243,12 @@ Given:
         National Aeronautics and Space Administration, USA, 1958-07-29
 
 Tests:
-    .. code-block:: text
-
-        >>> assert isinstance(watney, Astronaut)
-        >>> assert isinstance(nasa, SpaceAgency)
-        >>> assert 'Mark Watney' in watney.__dict__.values()
-        >>> assert 'USA' in watney.__dict__.values()
-        >>> assert '1969-07-21' in watney.__dict__.values()
-        >>> assert 'National Aeronautics and Space Administration' in nasa.__dict__.values()
-        >>> assert 'USA' in nasa.__dict__.values()
-        >>> assert '1958-07-29' in nasa.__dict__.values()
+    >>> assert isinstance(watney, Astronaut)
+    >>> assert isinstance(nasa, SpaceAgency)
+    >>> assert 'Mark Watney' in watney.__dict__.values()
+    >>> assert 'USA' in watney.__dict__.values()
+    >>> assert '1969-07-21' in watney.__dict__.values()
+    >>> assert 'National Aeronautics and Space Administration' in nasa.__dict__.values()
+    >>> assert 'USA' in nasa.__dict__.values()
+    >>> assert '1958-07-29' in nasa.__dict__.values()
 

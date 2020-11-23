@@ -115,11 +115,11 @@ Assignments
 
 File Write Str
 --------------
-* Assignment name: File Write Str
-* Complexity level: easy
+* Assignment: File Write Str
+* Filename: file_write_str.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Suggested filename: file_write_str.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -140,17 +140,15 @@ Given:
         DATA = 'hello'
 
 Tests:
-    .. code-block:: text
-
-        hello world
+hello world
 
 File Write Multiline
 --------------------
-* Assignment name: File Write Multiline
-* Complexity level: easy
+* Assignment: File Write Multiline
+* Filename: file_write_multiline.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Suggested filename: file_write_multiline.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -175,20 +173,18 @@ Given:
         """
 
 Tests:
-    .. code-block:: text
-
-        127.0.0.1       localhost
+127.0.0.1       localhost
         10.13.37.1      nasa.gov esa.int roscosmos.ru
         255.255.255.255 broadcasthost
         ::1             localhost
 
 File Write List
 ---------------
-* Assignment name: File Write List
-* Complexity level: easy
+* Assignment: File Write List
+* Filename: file_write_list.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Suggested filename: file_write_list.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -209,18 +205,16 @@ Given:
         DATA = ['hello', 'world']
 
 Tests:
-    .. code-block:: text
-
-        hello
+hello
         world
 
 File Write Non-Str
 ------------------
-* Assignment name: File Write Non-Str
-* Complexity level: easy
+* Assignment: File Write Non-Str
+* Filename: file_write_nonstr.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Suggested filename: file_write_nonstr.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -241,17 +235,15 @@ Given:
         DATA = (5.1, 3.5, 1.4, 0.2, 'setosa')
 
 Tests:
-    .. code-block:: text
-
-        5.1,3.5,1.4,0.2,setosa
+5.1,3.5,1.4,0.2,setosa
 
 File Write Iris
 ---------------
-* Assignment name: File Write Iris
-* Complexity level: easy
+* Assignment: File Write Iris
+* Filename: file_write_iris.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Suggested filename: file_write_iris.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -275,19 +267,17 @@ Given:
             (5.7, 2.8, 4.1, 1.3, 'versicolor')]
 
 Tests:
-    .. code-block:: text
-
-        5.8,2.7,5.1,1.9,virginica
+5.8,2.7,5.1,1.9,virginica
         5.1,3.5,1.4,0.2,setosa
         5.7,2.8,4.1,1.3,versicolor
 
 File Write CSV
 --------------
-* Assignment name: File Write CSV
-* Complexity level: medium
+* Assignment: File Write CSV
+* Filename: file_write_csv.py
+* Complexity: medium
 * Lines of code to write: 6 lines
 * Estimated time of completion: 13 min
-* Suggested filename: file_write_csv.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -326,9 +316,7 @@ Given:
             (4.7, 3.2, 1.3, 0.2, 'setosa')]
 
 Tests:
-    .. code-block:: text
-
-        Sepal length,Sepal width,Petal length,Petal width,Species
+Sepal length,Sepal width,Petal length,Petal width,Species
         5.8,2.7,5.1,1.9,virginica
         5.1,3.5,1.4,0.2,setosa
         5.7,2.8,4.1,1.3,versicolor

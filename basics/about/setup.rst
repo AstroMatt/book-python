@@ -28,8 +28,8 @@ Assignments
 
 About Setup IDE
 ---------------
-* Assignment name: About Setup IDE
-* Complexity level: easy
+* Assignment: About Setup IDE
+* Complexity: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 5 min
 * Solution: TODO
@@ -53,11 +53,11 @@ Polish:
 
 About Setup Interpreter
 -----------------------
-* Assignment name: About Setup Interpreter
-* Complexity level: easy
+* Assignment: About Setup Interpreter
+* Filename: about_interpreter.py
+* Complexity: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 3 min
-* Suggested filename: about_interpreter.py
 
 English:
     #. In your directory create file ``about_interpreter.py``
@@ -84,19 +84,17 @@ Given:
         print(sys.version[:6])
 
 Tests:
-    .. code-block:: text
-
-        >>> import sys
-        >>> print(sys.version[:6])
-        3.9.0
+    >>> import sys
+    >>> print(sys.version[:6])
+    3.9.0
 
 About Setup VCS
 ---------------
-* Assignment name: About Setup VCS
-* Complexity level: easy
+* Assignment: About Setup VCS
+* Filename: gitignore
+* Complexity: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 3 min
-* Suggested filename: gitignore
 
 English:
     .. todo:: English Translation

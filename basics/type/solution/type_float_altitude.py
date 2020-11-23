@@ -1,7 +1,7 @@
 """
-* Assignment name: Type Float Altitude
-* Suggested filename: type_float_tax.py
-* Complexity level: easy
+* Assignment: Type Float Altitude
+* Filename: type_float_tax.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 

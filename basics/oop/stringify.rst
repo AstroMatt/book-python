@@ -300,11 +300,11 @@ Assignments
 
 OOP Stringify Str
 -----------------
-* Assignment name: OOP Stringify Str
-* Complexity level: easy
+* Assignment: OOP Stringify Str
+* Filename: oop_stringify_str.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
-* Suggested filename: oop_stringify_str.py
 
 English:
     #. Use code from "Given" section (see below)
@@ -333,22 +333,20 @@ Given:
                 self.label = label
 
 Tests:
-    .. code-block:: text
-
-        >>> for *features, label in DATA:
-        ...    iris = Iris(features, label)
-        ...    print(iris)
-        setosa 9.4
-        versicolor 16.3
-        virginica 19.3
+    >>> for *features, label in DATA:
+    ...    iris = Iris(features, label)
+    ...    print(iris)
+    setosa 9.4
+    versicolor 16.3
+    virginica 19.3
 
 OOP Stringify Repr
 ------------------
-* Assignment name: OOP Stringify Repr
-* Complexity level: easy
+* Assignment: OOP Stringify Repr
+* Filename: oop_stringify_repr.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
-* Suggested filename: oop_stringify_repr.py
 
 English:
     #. Use code from "Given" section (see below)
@@ -378,21 +376,19 @@ Given:
                 self.label = label
 
 Tests:
-    .. code-block:: text
-
-        >>> result = [Iris(X,y) for *X,y in DATA]
-        >>> result  # doctest: +NORMALIZE_WHITESPACE
-        [Iris(features=[4.7, 3.2, 1.3, 0.2], label='setosa'),
-         Iris(features=[7.0, 3.2, 4.7, 1.4], label='versicolor'),
-         Iris(features=[7.6, 3.0, 6.6, 2.1], label='virginica')]
+    >>> result = [Iris(X,y) for *X,y in DATA]
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    [Iris(features=[4.7, 3.2, 1.3, 0.2], label='setosa'),
+     Iris(features=[7.0, 3.2, 4.7, 1.4], label='versicolor'),
+     Iris(features=[7.6, 3.0, 6.6, 2.1], label='virginica')]
 
 OOP Stringify Format
 --------------------
-* Assignment name: OOP Stringify Format
-* Complexity level: easy
+* Assignment: OOP Stringify Format
+* Filename: oop_stringify_format.py
+* Complexity: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
-* Suggested filename: oop_stringify_format.py
 
 English:
     #. Use code from "Given" section (see below)
@@ -416,23 +412,21 @@ Given:
                 self.meters = meters
 
 Tests:
-    .. code-block:: text
-
-        >>> result = Distance(meters=1337)
-        >>> format(result, 'km')
-        '1.337'
-        >>> format(result, 'cm')
-        '133700'
-        >>> format(result, 'm')
-        '1337'
+    >>> result = Distance(meters=1337)
+    >>> format(result, 'km')
+    '1.337'
+    >>> format(result, 'cm')
+    '133700'
+    >>> format(result, 'm')
+    '1337'
 
 OOP Stringify Nested
 --------------------
-* Assignment name: OOP Stringify Nested
-* Complexity level: medium
+* Assignment: OOP Stringify Nested
+* Filename: oop_stringify_nested.py
+* Complexity: medium
 * Lines of code to write: 9 lines
 * Estimated time of completion: 21 min
-* Suggested filename: oop_stringify_nested.py
 
 English:
     #. Use code from "Given" section (see below)
@@ -468,37 +462,35 @@ Given:
                 self.name = name
 
 Tests:
-    .. code-block:: text
+    >>> melissa = Astronaut('Melissa Lewis')
+    >>> print(f'Commander: \\n{melissa}\\n')  # doctest: +NORMALIZE_WHITESPACE
+    Commander:
+    Melissa Lewis
 
-        >>> melissa = Astronaut('Melissa Lewis')
-        >>> print(f'Commander: \\n{melissa}\\n')  # doctest: +NORMALIZE_WHITESPACE
-        Commander:
-        Melissa Lewis
+    >>> mark = Astronaut('Mark Watney', experience=[
+    ...    Mission(2035, 'Ares 3')])
+    >>> print(f'Space Pirate: \\n{mark}\\n')  # doctest: +NORMALIZE_WHITESPACE
+    Space Pirate:
+    Mark Watney veteran of [
+          2035: Ares 3]
 
-        >>> mark = Astronaut('Mark Watney', experience=[
-        ...    Mission(2035, 'Ares 3')])
-        >>> print(f'Space Pirate: \\n{mark}\\n')  # doctest: +NORMALIZE_WHITESPACE
-        Space Pirate:
-        Mark Watney veteran of [
-              2035: Ares 3]
+    >>> crew = Crew([
+    ...     Astronaut('Jan Twardowski', experience=[
+    ...         Mission(1969, 'Apollo 11'),
+    ...         Mission(2024, 'Artemis 3'),
+    ...     ]),
+    ...     Astronaut('José Jiménez'),
+    ...     Astronaut('Mark Watney', experience=[
+    ...         Mission(2035, 'Ares 3'),
+    ...     ]),
+    ... ])
 
-        >>> crew = Crew([
-        ...     Astronaut('Jan Twardowski', experience=[
-        ...         Mission(1969, 'Apollo 11'),
-        ...         Mission(2024, 'Artemis 3'),
-        ...     ]),
-        ...     Astronaut('José Jiménez'),
-        ...     Astronaut('Mark Watney', experience=[
-        ...         Mission(2035, 'Ares 3'),
-        ...     ]),
-        ... ])
-
-        >>> print(f'Crew: \\n{crew}')  # doctest: +NORMALIZE_WHITESPACE
-        Crew:
-        Jan Twardowski veteran of [
-              1969: Apollo 11,
-              2024: Artemis 3]
-        José Jiménez
-        Mark Watney veteran of [
-              2035: Ares 3]
+    >>> print(f'Crew: \\n{crew}')  # doctest: +NORMALIZE_WHITESPACE
+    Crew:
+    Jan Twardowski veteran of [
+          1969: Apollo 11,
+          2024: Artemis 3]
+    José Jiménez
+    Mark Watney veteran of [
+          2035: Ares 3]
 

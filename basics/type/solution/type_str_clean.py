@@ -1,7 +1,7 @@
 """
-* Assignment name: Type String Clean
-* Suggested filename: type_str_clean.py
-* Complexity level: easy
+* Assignment: Type String Clean
+* Filename: type_str_clean.py
+* Complexity: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
 

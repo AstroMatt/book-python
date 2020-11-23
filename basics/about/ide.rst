@@ -70,8 +70,8 @@ Assignments
 
 About IDE Usage
 ---------------
-* Assignment name: About IDE Usage
-* Complexity level: easy
+* Assignment: About IDE Usage
+* Complexity: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 8 min
 * Solution: TODO
@@ -100,8 +100,8 @@ Polish:
 
 About IDE Spellchecker
 ----------------------
-* Assignment name: About IDE Spellchecker
-* Complexity level: easy
+* Assignment: About IDE Spellchecker
+* Complexity: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 5 min
 * Solution: TODO

@@ -1,7 +1,7 @@
 """
-* Assignment name: Type Int Bits
-* Suggested filename: type_int_truediv.py
-* Complexity level: easy
+* Assignment: Type Int Bits
+* Filename: type_int_truediv.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 

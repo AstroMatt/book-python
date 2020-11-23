@@ -393,83 +393,11 @@ Cardinality
 Assignments
 ===========
 
-Sequence Set Create
--------------------
-* Assignment name: Sequence Set Create
-* Complexity level: easy
-* Lines of code to write: 1 lines
-* Estimated time of completion: 2 min
-* Suggested filename: sequence_set_create.py
+.. literalinclude:: solution/sequence_set_create.py
+    :caption: :download:`Download solution <solution/sequence_set_create.py>`
+    :end-before: # Solution
 
-English:
-    #. Create set ``result`` with elements:
-
-        * ``'a'``
-        * ``1``
-        * ``2.2``
-
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Stwórz zbiór ``result`` z elementami:
-
-        * ``'a'``
-        * ``1``
-        * ``2.2``
-
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is set
-        >>> assert 'a' in result
-        >>> assert 1 in result
-        >>> assert 2.2 in result
-
-Sequence Set Many
------------------
-* Assignment name: Sequence Set Many
-* Complexity level: easy
-* Lines of code to write: 8 lines
-* Estimated time of completion: 8 min
-* Suggested filename: sequence_set_many.py
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Create set ``result`` representing first row
-    #. Values from second row add to ``result`` using ``.add()``
-    #. From third row create ``set`` and add it to ``result`` using ``.update()``
-    #. From fourth row create ``tuple`` and add it to ``result`` using ``.update()``
-    #. From fifth row create ``list`` and add it to ``result`` using ``.update()``
-    #. Print ``result``
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Stwórz zbiór ``result`` reprezentujący pierwszy wiersz
-    #. Wartości z drugiego wiersza dodawaj do ``result`` używając ``.add()``
-    #. Na podstawie trzeciego wiersza stwórz ``set`` i dodaj go do ``result`` używając ``.update()``
-    #. Na podstawie czwartego wiersza stwórz ``tuple`` i dodaj go do ``result`` używając ``.update()``
-    #. Na podstawie piątego wiersza stwórz ``list`` i dodaj go do ``result`` używając ``.update()``
-    #. Wypis ``result``
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Given:
-    .. csv-table:: Input data
-        :header: "Row", "Sepal length", "Sepal width", "Petal length", "Petal width"
-        :stub-columns: 1
-
-        "1", "5.8", "2.7", "5.1", "1.9"
-        "2", "5.1", "3.5", "1.4", "0.2"
-        "3", "5.7", "2.8", "4.1", "1.3"
-        "4", "6.3", "2.9", "5.6", "1.8"
-        "5", "6.4", "3.2", "4.5", "1.5"
-
-Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is set
-        >>> result
-        {0.2, 1.9, 2.7, 3.5, 1.4, 5.8, 5.1, 1.3, 2.8, 4.1, 5.7, 6.3, 5.6, 6.4, 1.5, 4.5, 3.2, 1.8, 2.9}
+.. literalinclude:: solution/sequence_set_many.py
+    :caption: :download:`Download solution <solution/sequence_set_many.py>`
+    :end-before: # Solution
 

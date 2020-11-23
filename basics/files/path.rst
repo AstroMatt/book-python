@@ -252,11 +252,11 @@ Assignments
 
 File Path Abspath
 -----------------
-* Assignment name: File Path Abspath
-* Complexity level: easy
+* Assignment: File Path Abspath
+* Filename: file_path_abspath.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 2 min
-* Suggested filename: file_path_abspath.py
 
 English:
     #. Using ``input()`` ask user for a file path
@@ -271,10 +271,8 @@ Polish:
     #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
-    .. code-block:: text
-
-        >>> isinstance(result, Path)
-        True
-        >>> current_directory = Path.cwd()
-        >>> str(current_directory) in str(result)
-        True
+    >>> isinstance(result, Path)
+    True
+    >>> current_directory = Path.cwd()
+    >>> str(current_directory) in str(result)
+    True

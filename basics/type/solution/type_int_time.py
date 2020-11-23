@@ -1,7 +1,7 @@
 """
-* Assignment name: Type Int Time
-* Suggested filename: type_int_time.py
-* Complexity level: easy
+* Assignment: Type Int Time
+* Filename: type_int_time.py
+* Complexity: easy
 * Lines of code to write: 12 lines
 * Estimated time of completion: 8 min
 

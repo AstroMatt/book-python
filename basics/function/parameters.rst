@@ -199,11 +199,11 @@ Assignments
 
 Function Parameters Sequence
 ----------------------------
-* Assignment name: Function Parameters Sequence
-* Complexity level: easy
+* Assignment: Function Parameters Sequence
+* Filename: function_parameters_sequence.py
+* Complexity: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
-* Suggested filename: function_parameters_sequence.py
 
 English:
     #. Define function ``add``
@@ -217,11 +217,11 @@ Polish:
 
 Function Parameters Echo
 ------------------------
-* Assignment name: Function Parameters Echo
-* Complexity level: easy
+* Assignment: Function Parameters Echo
+* Filename: function_parameters_echo.py
+* Complexity: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
-* Suggested filename: function_parameters_echo.py
 
 English:
     #. Define function ``echo`` with two parameters
@@ -248,11 +248,11 @@ Tests:
 
 Function Parameters Default
 ---------------------------
-* Assignment name: Function Parameters Default
-* Complexity level: easy
+* Assignment: Function Parameters Default
+* Filename: function_parameters_default.py
+* Complexity: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
-* Suggested filename: function_parameters_default.py
 
 English:
     #. Define function ``default`` with two parameters

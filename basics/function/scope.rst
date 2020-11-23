@@ -292,11 +292,11 @@ Assignments
 
 Function Scope Filter
 ---------------------
-* Assignment name: Function Scope Filter
-* Complexity level: easy
+* Assignment: Function Scope Filter
+* Filename: function_scope_filter.py
+* Complexity: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
-* Suggested filename: function_scope_filter.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -331,18 +331,16 @@ Given:
             (4.7, 3.2, 1.3, 0.2, 'setosa')]
 
 Tests:
-    .. code-block:: text
-
-        >>> result
-        49.1
+    >>> result
+    49.1
 
 Function Scope Roman to Int
 ---------------------------
-* Assignment name: Function Scope Roman to Int
-* Complexity level: hard
+* Assignment: Function Scope Roman to Int
+* Filename: function_scope_romanint.py
+* Complexity: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Suggested filename: function_scope_romanint.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -381,11 +379,11 @@ Given:
 
 Function Scope Int To Roman
 ---------------------------
-* Assignment name: Function Scope Int To Roman
-* Complexity level: hard
+* Assignment: Function Scope Int To Roman
+* Filename: function_scope_introman.py
+* Complexity: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Suggested filename: function_scope_introman.py
 
 English:
     #. Use data from "Given" section (see below)

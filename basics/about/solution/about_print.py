@@ -1,7 +1,7 @@
 """
-* Assignment name: About Print
-* Suggested filename: about_print.py
-* Complexity level: easy
+* Assignment: About Print
+* Filename: about_print.py
+* Complexity: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
 

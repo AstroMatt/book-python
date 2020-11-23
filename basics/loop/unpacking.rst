@@ -134,11 +134,11 @@ Assignments
 
 Loop Unpacking Months
 ---------------------
-* Assignment name: Loop Unpacking Months
-* Complexity level: easy
+* Assignment: Loop Unpacking Months
+* Filename: loop_unpacking_months.py
+* Complexity: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
-* Suggested filename: loop_unpacking_months.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -166,29 +166,27 @@ Given:
                   'October', 'November', 'December']
 
 Tests:
-    .. code-block:: text
-
-        >>> result  # doctest: +NORMALIZE_WHITESPACE
-        {1: 'January',
-         2: 'February',
-         3: 'March',
-         4: 'April',
-         5: 'May',
-         6: 'June',
-         7: 'July',
-         8: 'August',
-         9: 'September',
-         10: 'October',
-         11: 'November',
-         12: 'December'}
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    {1: 'January',
+     2: 'February',
+     3: 'March',
+     4: 'April',
+     5: 'May',
+     6: 'June',
+     7: 'July',
+     8: 'August',
+     9: 'September',
+     10: 'October',
+     11: 'November',
+     12: 'December'}
 
 Loop Unpacking Endswith
 -----------------------
-* Assignment name: Loop Unpacking Endswith
-* Complexity level: medium
+* Assignment: Loop Unpacking Endswith
+* Filename: loop_unpacking_endswith.py
+* Complexity: medium
 * Lines of code to write: 3 lines
 * Estimated time of completion: 8 min
-* Suggested filename: loop_unpacking_endswith.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -228,8 +226,6 @@ Hints:
     * ``isinstance`` or ``type``
 
 Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is set
-        >>> result
-        {'virginica', 'setosa'}
+    >>> assert type(result) is set
+    >>> result
+    {'virginica', 'setosa'}

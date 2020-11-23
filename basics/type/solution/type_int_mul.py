@@ -1,7 +1,7 @@
 """
-* Assignment name: Type Int Mul
-* Suggested filename: type_int_mul.py
-* Complexity level: easy
+* Assignment: Type Int Mul
+* Filename: type_int_mul.py
+* Complexity: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
 

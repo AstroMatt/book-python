@@ -1,18 +1,71 @@
 """
->>> sepal_length
-5.954545454545454
->>> sepal_width
-3.0
->>> petal_length
-4.1
->>> petal_width
-1.3090909090909089
+* Assignment: Sequence Tuple Mean
+* Filename: sequence_tuple_mean.py
+* Complexity: medium
+* Lines of code to write: 8 lines
+* Estimated time of completion: 8 min
+
+English:
+    1. Use data from "Given" section (see below)
+    2. Calculate mean for each numerical values column
+    3. To convert table use multiline select with ``alt`` key in your IDE
+    4. Do not use ``slice``, ``getitem``, ``for``, ``while`` or any other control-flow statement
+    5. Compare result with "Tests" section (see below)
+
+Polish:
+    1. Użyj danych z sekcji "Given" (patrz poniżej)
+    2. Wylicz średnią arytmetyczną dla każdej z kolumn numerycznych
+    3. Do konwersji tabelki wykorzystaj zaznaczanie wielu linijek za pomocą klawisza ``alt`` w Twoim IDE
+    4. Nie używaj ``slice``, ``getitem``, ``for``, ``while`` lub jakiejkolwiek innej instrukcji sterującej
+    5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+
+Hints:
+    * ``mean = sum(...) / len(...)``
+    * ``ALT`` + ``left mouse button`` = multiple select
+    * ``ALT`` + ``SHIFT`` + ``left mouse button drag`` = vertical selection
+    * ``ALT`` + ``SHIFT`` + ``right`` = select word to the right (macOS)
+    * ``ALT`` + ``SHIFT`` + ``left`` = select word to the left (macOS)
+    * ``CTRL`` + ``SHIFT`` + ``right`` = select word to the right (Windows)
+    * ``CTRL`` + ``SHIFT`` + ``left`` = select word to the left (Windows)
+    * ``CTRL`` + ``right`` = jump over the word to the right
+    * ``CTRL`` + ``left`` = jump over the word to the left
+    * ``CTRL`` + ``ALT`` + L = Reformat Code on Windows
+    * ``CMD`` + ``ALT`` + L = Reformat Code on macOS
+
+Tests:
+    >>> type(sepal_length)
+    <class 'float'>
+    >>> type(sepal_width)
+    <class 'float'>
+    >>> type(petal_length)
+    <class 'float'>
+    >>> type(petal_width)
+    <class 'float'>
+    >>> sepal_length
+    5.859999999999999
+    >>> sepal_width
+    3.0200000000000005
+    >>> petal_length
+    4.14
+    >>> petal_width
+    1.34
 """
 
-sepal_length = (5.8, 5.1, 5.7, 6.3, 6.4, 4.7, 7.0, 7.6, 4.9, 4.9, 7.1)
-sepal_width = (2.7, 3.5, 2.8, 2.9, 3.2, 3.2, 3.2, 3.0, 3.0, 2.5, 3.0)
-petal_length = (5.1, 1.4, 4.1, 5.6, 4.5, 1.3, 4.7, 6.6, 1.4, 4.5, 5.9)
-petal_width = (1.9, 0.2, 1.3, 1.8, 1.5, 0.2, 1.4, 2.1, 0.2, 1.7, 2.1)
+# Given
+DATA = """
+    'sepal length', 'sepal width', 'petal length', 'petal width', 'species',
+    '5.8', '2.7', '5.1', '1.9', 'virginica',   # row 1
+    '5.1', '3.5', '1.4', '0.2', 'setosa',      # row 2
+    '5.7', '2.8', '4.1', '1.3', 'versicolor',  # row 3
+    '6.3', '2.9', '5.6', '1.8', 'virginica',   # row 4
+    '6.4', '3.2', '4.5', '1.5', 'versicolor',  # row 5
+"""
+
+# Solution
+sepal_length = (5.8, 5.1, 5.7, 6.3, 6.4)
+sepal_width = (2.7, 3.5, 2.8, 2.9, 3.2)
+petal_length = (5.1, 1.4, 4.1, 5.6, 4.5)
+petal_width = (1.9, 0.2, 1.3, 1.8, 1.5)
 
 sepal_length = sum(sepal_length) / len(sepal_length)
 sepal_width = sum(sepal_width) / len(sepal_width)

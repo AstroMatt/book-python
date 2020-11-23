@@ -300,126 +300,14 @@ Built-in Functions
 Assignments
 ===========
 
-Sequence List Create
---------------------
-* Assignment name: Sequence List Create
-* Complexity level: easy
-* Lines of code to write: 1 lines
-* Estimated time of completion: 2 min
-* Suggested filename: sequence_list_create.py
+.. literalinclude:: solution/sequence_list_create.py
+    :caption: :download:`Download solution <solution/sequence_list_create.py>`
+    :end-before: # Solution
 
-English:
-    #. Create list ``result`` with elements:
+.. literalinclude:: solution/sequence_list_many.py
+    :caption: :download:`Download solution <solution/sequence_list_many.py>`
+    :end-before: # Solution
 
-        * ``'a'``
-        * ``1``
-        * ``2.2``
-
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Stwórz listę ``result`` z elementami:
-
-        * ``'a'``
-        * ``1``
-        * ``2.2``
-
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is list
-        >>> result
-        ['a', 1, 2.2]
-
-Sequence List Many
-------------------
-* Assignment name: Sequence List Many
-* Complexity level: easy
-* Lines of code to write: 3 lines
-* Estimated time of completion: 5 min
-* Suggested filename: sequence_list_many.py
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Create list ``a`` with data from row 1
-    #. Create list ``b`` with data from row 2
-    #. Create list ``c`` with data from row 3
-    #. Do not use values from "Row" column
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Stwórz listę ``a`` z danymi z wiersza 1
-    #. Stwórz listę ``b`` z danymi z wiersza 2
-    #. Stwórz listę ``c`` z danymi z wiersza 3
-    #. Nie używaj wartości z kolumny "Row"
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Given:
-    .. csv-table:: Input data
-        :header: "Row", "Sepal length", "Sepal width", "Petal length", "Petal width", "Species"
-        :stub-columns: 1
-
-        "1", "5.8", "2.7", "5.1", "1.9", "virginica"
-        "2", "5.1", "3.5", "1.4", "0.2", "setosa"
-        "3", "5.7", "2.8", "4.1", "1.3", "versicolor"
-
-Tests:
-    .. code-block:: text
-
-        >>> assert type(a) is list
-        >>> assert type(b) is list
-        >>> assert type(c) is list
-        >>> a
-        # [5.8, 2.7, 5.1, 1.9, 'virginica']
-        >>> b
-        # [5.1, 3.5, 1.4, 0.2, 'setosa']
-        >>> c
-        # [5.7, 2.8, 4.1, 1.3, 'versicolor']
-
-Sequence List Modify
---------------------
-* Assignment name: Sequence List Modify
-* Complexity level: easy
-* Lines of code to write: 6 lines
-* Estimated time of completion: 5 min
-* Suggested filename: sequence_list_modify.py
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Insert at the begin of ``a`` last element popped from ``b``
-    #. Append to the ``b`` last element popped from ``a``
-    #. For getting elements use ``list.pop()``
-    #. From list ``c`` using ``del`` delete last element
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Na początek ``a`` wstaw ostatni element wyciągnięty z ``b``
-    #. Na koniec ``b`` wstaw ostatni element wyciągnięty z ``a``
-    #. Do wyciągnięcia używaj ``list.pop()``
-    #. Z listy ``c`` za pomocą ``del`` usuń ostatni element
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Given:
-    .. code-block:: python
-
-        a = [4.7, 3.2, 1.3, 0.2, 'setosa']
-        b = [7.0, 3.2, 4.7, 1.4, 'versicolor']
-        c = [7.6, 3.0, 6.6, 2.1, 'virginica']
-
-Tests:
-    .. code-block:: text
-
-        >>> assert type(a) is list
-        >>> assert type(b) is list
-        >>> assert type(c) is list
-        >>> a
-        ['versicolor', 4.7, 3.2, 1.3, 0.2]
-        >>> b
-        [7.0, 3.2, 4.7, 1.4, 'setosa']
-        >>> c
-        [7.6, 3.0, 6.6, 2.1]
-
+.. literalinclude:: solution/sequence_list_modify.py
+    :caption: :download:`Download solution <solution/sequence_list_modify.py>`
+    :end-before: # Solution

@@ -176,11 +176,11 @@ Assignments
 
 Function Return Numbers
 -----------------------
-* Assignment name: Function Return Numbers
-* Complexity level: easy
+* Assignment: Function Return Numbers
+* Filename: function_return_numbers.py
+* Complexity: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
-* Suggested filename: function_return_numbers.py
 
 English:
     #. Define function ``add`` without parameters
@@ -195,7 +195,5 @@ Polish:
     #. Wyświetl wartość
 
 Tests:
-    .. code-block:: text
-
-        >>> result
-        3
+    >>> result
+    3

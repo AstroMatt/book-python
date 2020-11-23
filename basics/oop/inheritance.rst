@@ -363,11 +363,11 @@ Assignments
 
 OOP Inheritance Simple
 ----------------------
-* Assignment name: OOP Inheritance Simple
-* Complexity level: easy
+* Assignment: OOP Inheritance Simple
+* Filename: oop_inheritance_simple.py
+* Complexity: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 3 min
-* Suggested filename: oop_inheritance_simple.py
 
 English:
     #. Create class ``Mars``
@@ -382,23 +382,21 @@ Polish:
     #. Stwórz klasę ``Man``, która dziedziczy po ``Mars``
 
 Tests:
-    .. code-block:: text
-
-        >>> from inspect import isclass
-        >>> assert isclass(Venus)
-        >>> assert isclass(Woman)
-        >>> assert isclass(Mars)
-        >>> assert isclass(Man)
-        >>> assert issubclass(Woman, Venus)
-        >>> assert issubclass(Man, Mars)
+    >>> from inspect import isclass
+    >>> assert isclass(Venus)
+    >>> assert isclass(Woman)
+    >>> assert isclass(Mars)
+    >>> assert isclass(Man)
+    >>> assert issubclass(Woman, Venus)
+    >>> assert issubclass(Man, Mars)
 
 OOP Inheritance Multiple
 ------------------------
-* Assignment name: OOP Inheritance Multiple
-* Complexity level: easy
+* Assignment: OOP Inheritance Multiple
+* Filename: oop_inheritance_multiple.py
+* Complexity: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 5 min
-* Suggested filename: oop_inheritance_multiple.py
 
 English:
     #. Create classes ``Engineer``, ``Scientist``, ``Pilot``, ``MedicalDoctor``
@@ -411,26 +409,24 @@ Polish:
     #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
-    .. code-block:: text
-
-        >>> from inspect import isclass
-        >>> assert isclass(Scientist)
-        >>> assert isclass(Engineer)
-        >>> assert isclass(Pilot)
-        >>> assert isclass(MedicalDoctor)
-        >>> assert isclass(Astronaut)
-        >>> assert issubclass(Astronaut, Scientist)
-        >>> assert issubclass(Astronaut, Engineer)
-        >>> assert issubclass(Astronaut, Pilot)
-        >>> assert issubclass(Astronaut, MedicalDoctor)
+    >>> from inspect import isclass
+    >>> assert isclass(Scientist)
+    >>> assert isclass(Engineer)
+    >>> assert isclass(Pilot)
+    >>> assert isclass(MedicalDoctor)
+    >>> assert isclass(Astronaut)
+    >>> assert issubclass(Astronaut, Scientist)
+    >>> assert issubclass(Astronaut, Engineer)
+    >>> assert issubclass(Astronaut, Pilot)
+    >>> assert issubclass(Astronaut, MedicalDoctor)
 
 OOP Inheritance Super
 ---------------------
-* Assignment name: OOP Inheritance Super
-* Complexity level: easy
+* Assignment: OOP Inheritance Super
+* Filename: oop_inheritance_super.py
+* Complexity: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 8 min
-* Suggested filename: oop_inheritance_super.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -469,9 +465,7 @@ Given:
         print(result)
 
 Tests:
-    .. code-block:: text
-
-        Astronaut crew:
+Astronaut crew:
         - Mark Watney (Ares 3)
         - Melissa Lewis (Ares 3)
         - Alex Vogel (Ares 3)

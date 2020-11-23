@@ -164,11 +164,11 @@ Assignments
 
 OOP Class Iris
 --------------
-* Assignment name: OOP Class Iris
-* Complexity level: easy
+* Assignment: OOP Class Iris
+* Filename: oop_class_iris.py
+* Complexity: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
-* Suggested filename: oop_class_iris.py
 
 English:
     #. Define class ``Iris``
@@ -185,21 +185,19 @@ Polish:
     #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
-    .. code-block:: text
-
-        >>> from inspect import isclass
-        >>> assert isclass(Iris)
-        >>> assert isinstance(setosa, Iris)
-        >>> assert isinstance(versicolor, Iris)
-        >>> assert isinstance(virginica, Iris)
+    >>> from inspect import isclass
+    >>> assert isclass(Iris)
+    >>> assert isinstance(setosa, Iris)
+    >>> assert isinstance(versicolor, Iris)
+    >>> assert isinstance(virginica, Iris)
 
 OOP Class Instance
 ------------------
-* Assignment name: OOP Class Instance
-* Complexity level: easy
+* Assignment: OOP Class Instance
+* Filename: oop_class_instance.py
+* Complexity: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 5 min
-* Suggested filename: oop_class_instance.py
 
 English:
     #. Define class ``Astronaut``

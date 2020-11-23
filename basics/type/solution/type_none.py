@@ -1,7 +1,7 @@
 """
-* Assignment name: Type None
-* Suggested filename: type_none.py
-* Complexity level: easy
+* Assignment: Type None
+* Filename: type_none.py
+* Complexity: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
 

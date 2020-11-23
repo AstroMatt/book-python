@@ -163,11 +163,11 @@ Assignments
 
 File Access Error
 -----------------
-* Assignment name: File Access Error
-* Complexity level: easy
+* Assignment: File Access Error
+* Filename: file_access_error.py
+* Complexity: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 2 min
-* Suggested filename: file_access_error.py
 
 English:
     #. Using ``input()`` ask user for a file path

@@ -112,74 +112,11 @@ Set:
 Assignments
 ===========
 
-Sequence Frozenset Create
--------------------------
-* Assignment name: Sequence Frozenset Create
-* Complexity level: easy
-* Lines of code to write: 1 lines
-* Estimated time of completion: 2 min
-* Suggested filename: sequence_frozenset_create.py
 
-English:
-    #. Create frozenset ``result`` with elements:
+.. literalinclude:: solution/sequence_frozenset_create.py
+    :caption: :download:`Download solution <solution/sequence_frozenset_create.py>`
+    :end-before: # Solution
 
-        * ``'a'``
-        * ``1``
-        * ``2.2``
-
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Stwórz frozenset ``result`` z elementami:
-
-        * ``'a'``
-        * ``1``
-        * ``2.2``
-
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is frozenset
-        >>> assert 'a' in result
-        >>> assert 1 in result
-        >>> assert 2.2 in result
-
-Sequence Frozenset Newline
---------------------------
-* Assignment name: Sequence Frozenset Newline
-* Complexity level: easy
-* Lines of code to write: 1 lines
-* Estimated time of completion: 3 min
-* Suggested filename: sequence_frozenset_newline.py
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Define ``result: str``
-    #. Use ``str.join()`` to join lines of text with newline (``\n``) character
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Zdefiniuj ``result: str``
-    #. Użyj ``str.join()`` aby połączyć linie tekstu znakiem końca linii (``\n``)
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Given:
-    .. code-block:: python
-
-        DATA = frozenset({
-            'We choose to go to the Moon.',
-            'We choose to go to the Moon in this decade and do the other things.',
-            'Not because they are easy, but because they are hard.'})
-
-Tests:
-    .. code-block:: text
-
-        >>> assert type(result) is str
-        >>> assert 'We choose to go to the Moon.' in result
-        >>> assert 'We choose to go to the Moon in this decade and do the other things.' in result
-        >>> assert 'Not because they are easy, but because they are hard.' in result
-        >>> result.count('\\n')
-        2
+.. literalinclude:: solution/sequence_frozenset_newline.py
+    :caption: :download:`Download solution <solution/sequence_frozenset_newline.py>`
+    :end-before: # Solution

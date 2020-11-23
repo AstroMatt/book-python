@@ -278,11 +278,11 @@ Assignments
 
 OOP Init Print
 --------------
-* Assignment name: OOP Init Print
-* Complexity level: easy
+* Assignment: OOP Init Print
+* Filename: oop_init_print.py
+* Complexity: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 3 min
-* Suggested filename: oop_init_print.py
 
 English:
     #. Create one class ``Echo``
@@ -301,20 +301,18 @@ Polish:
     #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
-    .. code-block:: text
-
-        >>> Echo('hello')
-        hello
-        >>> Echo('world')
-        world
+    >>> Echo('hello')
+    hello
+    >>> Echo('world')
+    world
 
 OOP Init Model
 --------------
-* Assignment name: OOP Init Model
-* Complexity level: easy
+* Assignment: OOP Init Model
+* Filename: oop_init_model.py
+* Complexity: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 8 min
-* Suggested filename: oop_init_model.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -343,14 +341,12 @@ Given:
         National Aeronautics and Space Administration, USA, 1958-07-29
 
 Tests:
-    .. code-block:: text
-
-        >>> assert isinstance(watney, Astronaut)
-        >>> assert isinstance(nasa, SpaceAgency)
-        >>> assert 'Mark Watney' in watney.__dict__.values()
-        >>> assert 'USA' in watney.__dict__.values()
-        >>> assert '1969-07-21' in watney.__dict__.values()
-        >>> assert 'National Aeronautics and Space Administration' in nasa.__dict__.values()
-        >>> assert 'USA' in nasa.__dict__.values()
-        >>> assert '1958-07-29' in nasa.__dict__.values()
+    >>> assert isinstance(watney, Astronaut)
+    >>> assert isinstance(nasa, SpaceAgency)
+    >>> assert 'Mark Watney' in watney.__dict__.values()
+    >>> assert 'USA' in watney.__dict__.values()
+    >>> assert '1969-07-21' in watney.__dict__.values()
+    >>> assert 'National Aeronautics and Space Administration' in nasa.__dict__.values()
+    >>> assert 'USA' in nasa.__dict__.values()
+    >>> assert '1958-07-29' in nasa.__dict__.values()
 

@@ -1,7 +1,7 @@
 """
-* Assignment name: Type String Input
-* Suggested filename: type_str_input.py
-* Complexity level: easy
+* Assignment: Type String Input
+* Filename: type_str_input.py
+* Complexity: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
 
