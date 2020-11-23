@@ -21,8 +21,16 @@ Type Definition
 
 Type Casting
 ============
+* ``bool()`` converts argument to ``bool``
 .. code-block:: python
-    :caption: ``bool()`` converts argument to ``bool``
+
+    bool(True)                      # True
+    bool(False)                     # False
+
+    bool(1)                         # True
+    bool(0)                         # False
+
+.. code-block:: python
 
     bool(1)                         # True
     bool(2)                         # True
@@ -61,8 +69,32 @@ Type Casting
     bool(frozenset())               # False
 
 
+Comparison
+==========
+* ``==`` - Equals
+* ``!=`` - Not Equals
+
+.. code-block:: python
+
+    x = 1
+    y = 2
+
+    x == 1      # True
+    y == 2      # True
+    x == y      # False
+    x != y      # True
+
+
 Conjunction
 ===========
+.. code-block:: python
+
+    firstname = 'Mark'
+    lastname = 'Watney'
+
+    firstname == 'Mark' and lastname == 'Watney'        # True
+    firstname == 'Mark' and lastname == 'Twardowski'    # False
+
 .. code-block:: python
 
     True and True                   # True
@@ -127,6 +159,12 @@ Boolean Algebra
 ===============
 .. code-block:: python
 
+    (firstname == 'Mark' and lastname == 'Watney') \
+        or (firstname == 'Jan' and lastname == 'Twardowski') \
+        or (firstname == 'Melissa' and lastname == 'Lewis')
+
+.. code-block:: python
+
     True and True or False          # True
     False and False or True         # True
 
@@ -137,12 +175,6 @@ Boolean Algebra
 
     True and False or False         # False
     True and (False or False)       # False
-
-.. code-block:: python
-
-    (firstname == 'Mark' and lastname == 'Watney') \
-        or (firstname == 'Jan' and lastname == 'Twardowski') \
-        or (firstname == 'Melissa' and lastname == 'Lewis')
 
 
 Built-in Functions
