@@ -6,9 +6,9 @@
 * Estimated time of completion: 8 min
 
 English:
-    1. Calculate how many seconds is one day
-    2. Calculate how many minutes is one week
-    3. Calculate how many hours is in one month
+    1. Calculate how many seconds is one day (24 hours)
+    2. Calculate how many minutes is one week (7 days)
+    3. Calculate how many hours is in one month (31 days)
     4. Calculate how many seconds is work day (8 hours)
     5. Calculate how many minutes is work week (5 work days)
     6. Calculate how many hours is work month (22 work days)
@@ -16,18 +16,14 @@ English:
     8. Compare result with "Tests" section (see below)
 
 Polish:
-    1. Oblicz ile sekund to jedna doba
-    2. Oblicz ile minut to jeden tydzień
-    3. Oblicz ile godzin to jeden miesiąc
+    1. Oblicz ile sekund to jedna doba (24 godziny)
+    2. Oblicz ile minut to jeden tydzień (7 dni)
+    3. Oblicz ile godzin to jeden miesiąc (31 dni)
     4. Oblicz ile sekund to dzień pracy (8 godzin)
     5. Oblicz ile minut to tydzień pracy (5 dni pracy)
     6. Oblicz ile godzin to miesiąc pracy (22 dni pracy)
     7. W obliczeniach użyj truediv (``//``)
     8. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Hints:
-    * 1 h = 60 min
-    * 1 min = 60 s
 
 Tests:
     >>> day

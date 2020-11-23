@@ -1,11 +1,54 @@
-m = 1337
-km = m / 1000
-mi = m / 1609.344
-nm = m / 1852
+"""
+* Assignment name: Type Float Distance
+* Suggested filename: type_float_distance.py
+* Complexity level: easy
+* Lines of code to write: 4 lines
+* Estimated time of completion: 5 min
 
+English:
+    1. Use code from "Input" section (see below)
+    2. Convert units
+    3. Instead ``...`` substitute calculated and converted values
+    4. Note the number of decimal places
+    5. Compare result with "Output" section (see below)
 
-print(f'Meters: {m}')
-print(f'Kilometers: {km}')
-print(f'Miles: {mi:.2f}')
-print(f'Nautical Miles: {nm:.3f}')
-print(f'All: km: {km:.0f}, mi: {mi:.1f}, nm: {nm:.2f}')
+Polish:
+    1. Użyj kodu z sekcji "Input" (patrz poniżej)
+    2. Przekonwertuj jednostki
+    3. Zamiast ``...`` podstaw wyliczone i przekonwertowane wartości
+    4. Zwróć uwagę na ilość miejsc po przecinku
+    5. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+
+Output:
+    >>> print(result)  # doctest: +NORMALIZE_WHITESPACE
+    Meters: 1337
+    Kilometers: 1.337
+    Miles: 0.83
+    Nautical Miles: 0.722
+    All: km: 1, mi: 0.8, nm: 0.72
+"""
+
+# Given
+m = 1
+km = 1000 * m
+mi = 1609.344 * m
+nm = 1852 * m
+
+result = f"""Meters: {...}
+Kilometers: {...}
+Miles: {...}
+Nautical Miles: {...}
+All: km: {...}, mi: {...}, nm: {...}"""
+
+# Solution
+distance = 1337
+distance_m = distance / m
+distance_km = distance / km
+distance_mi = distance / mi
+distance_nm = distance / nm
+
+result = f"""Meters: {distance_m:.0f}
+Kilometers: {distance_km}
+Miles: {distance_mi:.2f}
+Nautical Miles: {distance_nm:.3f}
+All: km: {distance_km:.0f}, mi: {distance_mi:.1f}, nm: {distance_nm:.2f}"""
