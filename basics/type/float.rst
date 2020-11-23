@@ -176,10 +176,10 @@ Assignments
 
     EMU and Orlan
 
-.. literalinclude:: solution/type_int_add.py
-    :caption: :download:`solution/type_int_add.py`
+.. literalinclude:: solution/type_float_percent.py
+    :caption: :download:`solution/type_float_percent.py`
     :end-before: # Solution
 
-.. literalinclude:: solution/type_int_add.py
-    :caption: :download:`solution/type_int_add.py`
+.. literalinclude:: solution/type_float_gradient.py
+    :caption: :download:`solution/type_float_gradient.py`
     :end-before: # Solution
