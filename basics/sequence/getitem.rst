@@ -135,5 +135,5 @@ Assignments
 ===========
 
 .. literalinclude:: solution/sequence_getitem_select.py
-    :caption: :download:`Download solution <solution/sequence_getitem_select.py>`
+    :caption: :download:`Solution <solution/sequence_getitem_select.py>`
     :end-before: # Solution

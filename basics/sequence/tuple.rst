@@ -178,13 +178,13 @@ Assignments
 ===========
 
 .. literalinclude:: solution/sequence_tuple_create.py
-    :caption: :download:`Download solution <solution/sequence_tuple_create.py>`
+    :caption: :download:`Solution <solution/sequence_tuple_create.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/sequence_tuple_select.py
-    :caption: :download:`Download solution <solution/sequence_tuple_select.py>`
+    :caption: :download:`Solution <solution/sequence_tuple_select.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/sequence_tuple_mean.py
-    :caption: :download:`Download solution <solution/sequence_tuple_mean.py>`
+    :caption: :download:`Solution <solution/sequence_tuple_mean.py>`
     :end-before: # Solution

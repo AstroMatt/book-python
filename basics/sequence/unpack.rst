@@ -314,11 +314,11 @@ Assignments
 
 
 .. literalinclude:: solution/sequence_tuple_mean.py
-    :caption: :download:`Download solution <solution/sequence_tuple_mean.py>`
+    :caption: :download:`Solution <solution/sequence_tuple_mean.py>`
     :end-before: # Solution
 
 
 .. literalinclude:: solution/sequence_tuple_mean.py
-    :caption: :download:`Download solution <solution/sequence_tuple_mean.py>`
+    :caption: :download:`Solution <solution/sequence_tuple_mean.py>`
     :end-before: # Solution
 

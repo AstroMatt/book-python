@@ -394,10 +394,10 @@ Assignments
 ===========
 
 .. literalinclude:: solution/sequence_set_create.py
-    :caption: :download:`Download solution <solution/sequence_set_create.py>`
+    :caption: :download:`Solution <solution/sequence_set_create.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/sequence_set_many.py
-    :caption: :download:`Download solution <solution/sequence_set_many.py>`
+    :caption: :download:`Solution <solution/sequence_set_many.py>`
     :end-before: # Solution
 

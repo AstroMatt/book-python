@@ -179,5 +179,5 @@ Assignments
 ===========
 
 .. literalinclude:: solution/sequence_nested_create.py
-    :caption: :download:`Download solution <solution/sequence_nested_create.py>`
+    :caption: :download:`Solution <solution/sequence_nested_create.py>`
     :end-before: # Solution

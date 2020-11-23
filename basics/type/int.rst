@@ -86,33 +86,33 @@ Assignments
 ===========
 
 .. literalinclude:: solution/type_int_add.py
-    :caption: :download:`Download solution <solution/type_int_add.py>`
+    :caption: :download:`Solution <solution/type_int_add.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/type_int_sub.py
-    :caption: :download:`Download solution <solution/type_int_sub.py>`
+    :caption: :download:`Solution <solution/type_int_sub.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/type_int_mul.py
-    :caption: :download:`Download solution <solution/type_int_mul.py>`
+    :caption: :download:`Solution <solution/type_int_mul.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/type_int_truediv.py
-    :caption: :download:`Download solution <solution/type_int_truediv.py>`
+    :caption: :download:`Solution <solution/type_int_truediv.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/type_int_time.py
-    :caption: :download:`Download solution <solution/type_int_time.py>`
+    :caption: :download:`Solution <solution/type_int_time.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/type_int_bits.py
-    :caption: :download:`Download solution <solution/type_int_bits.py>`
+    :caption: :download:`Solution <solution/type_int_bits.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/type_int_bytes.py
-    :caption: :download:`Download solution <solution/type_int_bytes.py>`
+    :caption: :download:`Solution <solution/type_int_bytes.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/type_int_bandwidth.py
-    :caption: :download:`Download solution <solution/type_int_bandwidth.py>`
+    :caption: :download:`Solution <solution/type_int_bandwidth.py>`
     :end-before: # Solution

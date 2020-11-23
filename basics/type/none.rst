@@ -47,7 +47,7 @@ Assignments
 ===========
 
 .. literalinclude:: solution/type_none.py
-    :caption: :download:`Download solution <solution/type_none.py>`
+    :caption: :download:`Solution <solution/type_none.py>`
     :end-before: # Solution
 
 
