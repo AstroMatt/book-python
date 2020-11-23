@@ -371,13 +371,13 @@ Assignments
 ===========
 
 .. literalinclude:: solution/type_str_input.py
-    :caption: :download:`solution/type_str_input.py`
+    :caption: :download:`Download solution <solution/type_str_input.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/type_str_emoticon.py
-    :caption: :download:`solution/type_str_emoticon.py`
+    :caption: :download:`Download solution <solution/type_str_emoticon.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/type_str_quotes.py
-    :caption: :download:`solution/type_str_quotes.py`
+    :caption: :download:`Download solution <solution/type_str_quotes.py>`
     :end-before: # Solution

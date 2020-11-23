@@ -213,9 +213,9 @@ Assignments
 ===========
 
 .. literalinclude:: solution/type_bool_true_or_false.py
-    :caption: :download:`solution/type_bool_true_or_false.py`
+    :caption: :download:`Download solution <solution/type_bool_true_or_false.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/type_bool_simple.py
-    :caption: :download:`solution/type_bool_simple.py`
+    :caption: :download:`Download solution <solution/type_bool_simple.py>`
     :end-before: # Solution

@@ -543,9 +543,9 @@ Assignments
 ===========
 
 .. literalinclude:: solution/type_str_normalize.py
-    :caption: :download:`solution/type_str_normalize.py`
+    :caption: :download:`Download solution <solution/type_str_normalize.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/type_str_clean.py
-    :caption: :download:`solution/type_str_clean.py`
+    :caption: :download:`Download solution <solution/type_str_clean.py>`
     :end-before: # Solution

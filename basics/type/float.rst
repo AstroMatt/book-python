@@ -147,27 +147,27 @@ Assignments
 ===========
 
 .. literalinclude:: solution/type_float_tax.py
-    :caption: :download:`solution/type_float_tax.py`
+    :caption: :download:`Download solution <solution/type_float_tax.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/type_float_altitude.py
-    :caption: :download:`solution/type_float_altitude.py`
+    :caption: :download:`Download solution <solution/type_float_altitude.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/type_float_volume.py
-    :caption: :download:`solution/type_float_volume.py`
+    :caption: :download:`Download solution <solution/type_float_volume.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/type_float_distance.py
-    :caption: :download:`solution/type_float_distance.py`
+    :caption: :download:`Download solution <solution/type_float_distance.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/type_float_velocity.py
-    :caption: :download:`solution/type_float_velocity.py`
+    :caption: :download:`Download solution <solution/type_float_velocity.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/type_float_pressure.py
-    :caption: :download:`solution/type_float_pressure.py`
+    :caption: :download:`Download solution <solution/type_float_pressure.py>`
     :end-before: # Solution
 
 .. figure:: img/spacesuits.png
@@ -177,9 +177,9 @@ Assignments
     EMU and Orlan
 
 .. literalinclude:: solution/type_float_percent.py
-    :caption: :download:`solution/type_float_percent.py`
+    :caption: :download:`Download solution <solution/type_float_percent.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/type_float_gradient.py
-    :caption: :download:`solution/type_float_gradient.py`
+    :caption: :download:`Download solution <solution/type_float_gradient.py>`
     :end-before: # Solution

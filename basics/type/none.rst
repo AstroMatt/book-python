@@ -46,51 +46,9 @@ Comparison
 Assignments
 ===========
 
-Type None
----------
-* Assignment name: Type None
-* Suggested filename: type_none.py
-* Complexity level: easy
-* Lines of code to write: 5 lines
-* Estimated time of completion: 3 min
-
-English:
-    #. Use data from "Given" section (see below)
-    #. What you need to put in expressions to get the expected outcome?
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Co należy podstawić w wyrażeniach aby otrzymać wartość oczekiwaną?
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-:Input:
-    .. code-block:: python
-
-        a = ... is None                                                                       # True
-        b = ... is not None                                                                   # False
-        c = bool(bool(...) is not bool(...)) == False                                         # True
-        d = (bool(bool(...) is not bool(...)) == False and bool(...))                         # False
-        e = (bool(bool(...) is not bool(...)) == False and bool(...)) and (... is not None)   # False
-
-Tests:
-    .. code-block:: text
-
-        >>> bool(a)
-        True
-        >>> bool(b)
-        False
-        >>> bool(c)
-        True
-        >>> bool(d)
-        False
-        >>> bool(e)
-        False
-
-:The whys and wherefores:
-    * Defining variables
-    * Type casting
-    * Logic types
+.. literalinclude:: solution/type_none.py
+    :caption: :download:`Download solution <solution/type_none.py>`
+    :end-before: # Solution
 
 
 .. todo:: Create more assignments
