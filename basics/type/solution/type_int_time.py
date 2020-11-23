@@ -38,7 +38,6 @@ Tests:
     <class 'int'>
     >>> type(workmonth)
     <class 'int'>
-
     >>> day
     86400
     >>> week

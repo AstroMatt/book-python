@@ -499,7 +499,6 @@ DataFrame Groupby Phones
     #. Użyj danych z sekcji "Input" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``phones: pd.DataFrame``
     #. Podaj informacje o łącznej liczbie wszystkich połączeń telefonicznych dla każdego miesiąca kalendarzowego
-    #.
 
 :Input:
     .. code-block:: python
