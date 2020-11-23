@@ -253,25 +253,24 @@ Assignments
 File Path Abspath
 -----------------
 * Assignment name: File Path Abspath
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 2 min
-* Solution: :download:`solution/file_path_abspath.py`
+* Suggested filename: file_path_abspath.py
 
-:English:
+English:
     #. Using ``input()`` ask user for a file path
     #. Convert path to absolute
     #. Print if path exists and leads to file or directory
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
+Polish:
     #. Używając ``input()`` zapytaj użytkownika o ścieżkę do pliku
     #. Przekonwertuj ścieżkę do bezwzględnej
     #. Wypisz czy ścieżka istnieje i czy prowadzi do pliku czy katalogu
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> isinstance(result, Path)

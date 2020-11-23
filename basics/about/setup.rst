@@ -29,16 +29,15 @@ Assignments
 About Setup IDE
 ---------------
 * Assignment name: About Setup IDE
-* Last update: 2020-10-12
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 5 min
 * Solution: TODO
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Trener poda Ci link do repozytorium
     #. Stwórz projekt w Twoim IDE wykorzystując opcję 'Create from VCS'
     #. Kliknij "clone" i zaczekaj na pobranie repozytorium
@@ -55,37 +54,36 @@ About Setup IDE
 About Setup Interpreter
 -----------------------
 * Assignment name: About Setup Interpreter
-* Last update: 2020-10-12
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/about_interpreter.py`
+* Suggested filename: about_interpreter.py
 
-:English:
+English:
     #. In your directory create file ``about_interpreter.py``
     #. If question about adding file to GIT repository pops-up, mark checkbox "Always add" and click "Yes"
-    #. Use code from "Input" section (see below)
+    #. Use code from "Given" section (see below)
     #. Run code in your IDE (right click on code -> "Run File in Python Console")
     #. What Python version is installed?
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
     #. Write result (version number) in shared spreadsheet
 
-:Polish:
+Polish:
     #. W swoim katalogu stwórz plik ``about_interpreter.py``
     #. Jeżeli wyskoczy pytanie czy dodać plik do repozytorium GIT, zaznacz checkbox "Always add" i wybierz "Yes"
-    #. Użyj kodu z sekcji "Input" (patrz poniżej)
+    #. Użyj kodu z sekcji "Given" (patrz poniżej)
     #. Uruchom kod swoim IDE (prawy klawisz myszy na kodzie -> "Run File in Python Console")
     #. Jaka wersja Python jest zainstalowana?
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
     #. Zapisz rezultat (numer wersji) we współdzielonym arkuszu kalkulacyjnym
 
-:Input:
+Given:
     .. code-block:: python
 
         import sys
         print(sys.version[:6])
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> import sys
@@ -95,16 +93,15 @@ About Setup Interpreter
 About Setup VCS
 ---------------
 * Assignment name: About Setup VCS
-* Last update: 2020-10-12
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/gitignore`
+* Suggested filename: gitignore
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. W Twoim IDE
     #. Upewnij się, że w repozytorium jest plik ``.gitignore`` i ma zawartość
     #. Kliknij prawym klawiszem na nazwę projektu

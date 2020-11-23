@@ -22,6 +22,7 @@ Type Definition
 Type Casting
 ============
 * ``bool()`` converts argument to ``bool``
+
 .. code-block:: python
 
     bool(True)                      # True

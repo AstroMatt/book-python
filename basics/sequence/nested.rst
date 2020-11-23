@@ -181,13 +181,12 @@ Assignments
 Sequence Nested Create
 ----------------------
 * Assignment name: Sequence Nested Create
-* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/sequence_nested_create.py`
+* Suggested filename: sequence_nested_create.py
 
-:English:
+English:
     #. Create nested sequence ``result`` with elements:
 
         * tuple: ``1``, ``2``, ``3``
@@ -197,7 +196,7 @@ Sequence Nested Create
     #. Print ``result``
     #. Print number of elements in ``result``
 
-:Polish:
+Polish:
     #. Stwórz zagnieżdżoną sekwencję ``result`` z elementami:
 
         * krotka: ``1``, ``2``, ``3``

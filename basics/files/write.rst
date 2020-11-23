@@ -116,31 +116,30 @@ Assignments
 File Write Str
 --------------
 * Assignment name: File Write Str
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/file_write_str.py`
+* Suggested filename: file_write_str.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Write ``DATA`` to file ``FILE``
     #. Check in your operating system if data was written correctly
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zapisz ``DATA`` do pliku ``FILE``
     #. Sprawdź w systemie operacyjnym czy dane zapisały się poprawnie
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         FILE = r'_temporary.txt'
         DATA = 'hello'
 
-:Output:
+Tests:
     .. code-block:: text
 
         hello world
@@ -148,25 +147,24 @@ File Write Str
 File Write Multiline
 --------------------
 * Assignment name: File Write Multiline
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/file_write_multiline.py`
+* Suggested filename: file_write_multiline.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Write ``DATA`` to file ``FILE``
     #. Check in your operating system if data was written correctly
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zapisz ``DATA`` do pliku ``FILE``
     #. Sprawdź w systemie operacyjnym czy dane zapisały się poprawnie
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         FILE = r'_temporary.txt'
@@ -176,7 +174,7 @@ File Write Multiline
         ::1             localhost
         """
 
-:Output:
+Tests:
     .. code-block:: text
 
         127.0.0.1       localhost
@@ -187,31 +185,30 @@ File Write Multiline
 File Write List
 ---------------
 * Assignment name: File Write List
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/file_write_list.py`
+* Suggested filename: file_write_list.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Write ``DATA`` to file ``FILE``
     #. Check in your operating system if data was written correctly
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zapisz ``DATA`` do pliku ``FILE``
     #. Sprawdź w systemie operacyjnym czy dane zapisały się poprawnie
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         FILE = r'_temporary.txt'
         DATA = ['hello', 'world']
 
-:Output:
+Tests:
     .. code-block:: text
 
         hello
@@ -220,31 +217,30 @@ File Write List
 File Write Non-Str
 ------------------
 * Assignment name: File Write Non-Str
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/file_write_nonstr.py`
+* Suggested filename: file_write_nonstr.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Write ``DATA`` to file ``FILE``
     #. Check in your operating system if data was written correctly
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zapisz ``DATA`` do pliku ``FILE``
     #. Sprawdź w systemie operacyjnym czy dane zapisały się poprawnie
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         FILE = r'_temporary.txt'
         DATA = (5.1, 3.5, 1.4, 0.2, 'setosa')
 
-:Output:
+Tests:
     .. code-block:: text
 
         5.1,3.5,1.4,0.2,setosa
@@ -252,25 +248,24 @@ File Write Non-Str
 File Write Iris
 ---------------
 * Assignment name: File Write Iris
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/file_write_iris.py`
+* Suggested filename: file_write_iris.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Write ``DATA`` to file ``FILE``
     #. Check in your operating system if data was written correctly
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zapisz ``DATA`` do pliku ``FILE``
     #. Sprawdź w systemie operacyjnym czy dane zapisały się poprawnie
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         FILE = r'_temporary.txt'
@@ -279,7 +274,7 @@ File Write Iris
             (5.1, 3.5, 1.4, 0.2, 'setosa'),
             (5.7, 2.8, 4.1, 1.3, 'versicolor')]
 
-:Output:
+Tests:
     .. code-block:: text
 
         5.8,2.7,5.1,1.9,virginica
@@ -289,14 +284,13 @@ File Write Iris
 File Write CSV
 --------------
 * Assignment name: File Write CSV
-* Last update: 2020-11-19
 * Complexity level: medium
 * Lines of code to write: 6 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/file_write_csv.py`
+* Suggested filename: file_write_csv.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Separate header from data
     #. Write data to file: ``FILE``
     #. First line in file must be a header (first line of ``DATA``)
@@ -305,8 +299,8 @@ File Write CSV
     #. Add line terminator (``\n``) to each row
     #. Save row values to file
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Odseparuj nagłówek od danych
     #. Zapisz dane do pliku: ``FILE``
     #. Pierwsza linia w pliku musi być nagłówkiem (pierwsza linia ``DATA``)
@@ -315,7 +309,10 @@ File Write CSV
     #. Użyj ``\n`` jako koniec linii w każdym wierszu
     #. Zapisz do pliku wartości z wiersza
 
-:Input:
+Hints:
+    * ``[str(x) for x in ...]``
+
+Given:
     .. code-block:: python
 
         FILE = r'_temporary.csv'
@@ -328,7 +325,7 @@ File Write CSV
             (6.4, 3.2, 4.5, 1.5, 'versicolor'),
             (4.7, 3.2, 1.3, 0.2, 'setosa')]
 
-:Output:
+Tests:
     .. code-block:: text
 
         Sepal length,Sepal width,Petal length,Petal width,Species
@@ -339,6 +336,3 @@ File Write CSV
         6.4,3.2,4.5,1.5,versicolor
         4.7,3.2,1.3,0.2,setosa
 
-
-:Hints:
-    * ``[str(x) for x in ...]``

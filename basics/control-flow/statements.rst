@@ -427,27 +427,20 @@ Assignments
 Conditional Statements
 ----------------------
 * Assignment name: Conditional Statements
-* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/controlflow_conditional_statements.py`
+* Suggested filename: controlflow_conditional_statements.py
 
-:English:
+English:
     #. Ask user to input age
     #. User will pass only valid ``int``
     #. Print whether user is adult
 
-:Polish:
+Polish:
     #. Poproś użytkownika o wprowadzenie swojego wieku
     #. Użytkownika poda tylko poprawne ``int``
     #. Wypisz czy użytkownik jest pełnoletni
 
-:The whys and wherefores:
-    * Reading input
-    * Type casting
-    * Conditional statements
-    * Defining variables
-    * Magic Number
-
-.. todo:: Doctests
+Tests:
+    TODO doctests

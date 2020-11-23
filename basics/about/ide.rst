@@ -71,16 +71,15 @@ Assignments
 About IDE Usage
 ---------------
 * Assignment name: About IDE Usage
-* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 8 min
 * Solution: TODO
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Jak zrobić w Twoim IDE:
 
         * Run...
@@ -99,25 +98,18 @@ About IDE Usage
     #. Czym się różni ``Distraction Free Mode`` od ``Full Screen``
     #. Ustaw Scope tak, aby ukryć katalog z Virtualenv
 
-:The whys and wherefores:
-    * Korzystanie z IDE
-    * Uruchamianie debuggera
-    * Znajomość różnicy między uruchamianiem i debuggingiem
-    * Znajomość różnicy między terminalem i konsolą
-
 About IDE Spellchecker
 ----------------------
 * Assignment name: About IDE Spellchecker
-* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 5 min
 * Solution: TODO
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Zainstaluj w PyCharm plugin 'Hunspell' (File -> Settings -> Plugins -> Marketplace -> 'Hunspell')
     #. Pobierz z https://github.com/LibreOffice/dictionaries/tree/master/pl_PL słownik ``.dic`` oraz ``.aff`` dla języka polskiego
 
@@ -126,6 +118,3 @@ About IDE Spellchecker
 
     #. Skonfiguruj IDE do korzystania z tego słownika (File -> Settings -> Editor -> Spelling -> Add custom dictionary)
 
-:The whys and wherefores:
-    * Korzystanie z IDE
-    * Konfiguracja IDE

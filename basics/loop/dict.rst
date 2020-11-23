@@ -242,23 +242,22 @@ Assignments
 Loop Dict To Dict
 -----------------
 * Assignment name: Loop Dict To Dict
-* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/loop_dict_to_dict.py`
+* Suggested filename: loop_dict_to_dict.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Convert to ``result: dict[str, str]``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Przekonwertuj do ``result: dict[str, str]``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = {
@@ -270,7 +269,7 @@ Loop Dict To Dict
             1: ['Kindergarten'],
         }
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is dict
@@ -285,39 +284,33 @@ Loop Dict To Dict
          'Primary School': '2',
          'Kindergarten': '1'}
 
-:The whys and wherefores:
-    * Accessing ``dict`` items
-    * Iterating over ``dict``
-    * Updating ``dict``
-
 Loop Dict To List
 -----------------
 * Assignment name: Loop Dict To List
-* Last update: 2020-11-18
 * Complexity level: medium
 * Lines of code to write: 6 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/loop_dict_to_list.py`
+* Suggested filename: loop_dict_to_list.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Print ``list[dict]``:
 
         * key - name from the header
         * value - measurement or species
 
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wypisz ``list[dict]``:
 
         * klucz: nazwa z nagłówka
         * wartość: wyniki pomiarów lub gatunek
 
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -330,7 +323,7 @@ Loop Dict To List
             (4.7, 3.2, 1.3, 0.2, 'setosa'),
         ]
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is list
@@ -343,21 +336,16 @@ Loop Dict To List
          {'Sepal length': 6.4, 'Sepal width': 3.2, 'Petal length': 4.5, 'Petal width': 1.5, 'Species': 'versicolor'},
          {'Sepal length': 4.7, 'Sepal width': 3.2, 'Petal length': 1.3, 'Petal width': 0.2, 'Species': 'setosa'}]
 
-:The whys and wherefores:
-    * Working with nested data structures
-    * Iterating over dict and lists
-
 Loop Dict Label Encoder
 -----------------------
 * Assignment name: Loop Dict Label Encoder
-* Last update: 2020-11-18
 * Complexity level: hard
 * Lines of code to write: 13 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/loop_dict_label_encoder.py`
+* Suggested filename: loop_dict_label_encoder.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Define:
 
         * ``features: list[tuple]`` - measurements
@@ -373,10 +361,10 @@ Loop Dict Label Encoder
     #. ``label_encoder`` must be generated from ``DATA``
     #. For each row add appropriate data to ``features``, ``labels`` and ``label_encoder``
     #. Print ``features``, ``labels`` and ``label_encoder``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zdefiniuj:
 
         * ``features: list[tuple]`` - pomiary
@@ -392,9 +380,12 @@ Loop Dict Label Encoder
     #. ``label_encoder`` musi być wygenerowany z ``DATA``
     #. Dla każdego wiersza dodawaj odpowiednie dane do ``feature``, ``labels`` i ``label_encoder``
     #. Wypisz ``feature``, ``labels`` i ``label_encoder``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Hints:
+    * Create reversed lookup dict
+
+Given:
     .. code-block:: python
 
         DATA = [
@@ -407,7 +398,7 @@ Loop Dict Label Encoder
             (4.7, 3.2, 1.3, 0.2, 'setosa'),
         ]
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(features) is list
@@ -435,10 +426,3 @@ Loop Dict Label Encoder
          1: 'setosa',
          2: 'versicolor'}
 
-:The whys and wherefores:
-    * ``dict`` lookups
-    * Dynamic ``dict`` generating
-    * ``dict`` reversal
-
-:Hints:
-    * Create reversed lookup dict

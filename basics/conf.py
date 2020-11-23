@@ -1,7 +1,7 @@
 import sys; sys.path.append('..')
 from conf import *
 
-project = 'CI/CD with Git and Git Flow'
+project = 'Python Basic'
 author = 'Matt Harasymczuk'
 email = 'matt@astrotech.io'
 
@@ -10,3 +10,7 @@ todo_include_todos = True
 
 html_static_path = ['../_static']
 html_favicon = '../_static/favicon.png'
+
+suppress_warnings += [
+    'ref.ref',
+]

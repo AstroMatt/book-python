@@ -343,31 +343,30 @@ Assignments
 Sequence Slice Substr
 ---------------------
 * Assignment name: Sequence Slice Substr
-* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/sequence_slice_substr.py`
+* Suggested filename: sequence_slice_substr.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Use ``str.find()`` and slicing
     #. Print ``TEXT`` without text in ``REMOVE``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Użyj ``str.find()`` oraz wycinania
     #. Wypisz ``TEXT`` bez tekstu z ``REMOVE``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         TEXT = 'We choose to go to the Moon!'
         REMOVE = 'to go to '
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is str
@@ -377,62 +376,55 @@ Sequence Slice Substr
 Sequence Slice Sequence
 -----------------------
 * Assignment name: Sequence Slice Sequence
-* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/sequence_slice_sequence.py`
+* Suggested filename: sequence_slice_sequence.py
 
-:English:
+English:
     #. Create tuple ``a`` with digits: 0, 1, 2, 3
     #. Create list ``b`` with digits: 2, 3, 4, 5
     #. Create set ``result`` with every second element from ``a`` and ``b``
     #. Print ``result``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
+Polish:
     #. Stwórz tuplę ``a`` z cyframi: 0, 1, 2, 3
     #. Stwórz listę ``b`` z cyframi: 2, 3, 4, 5
     #. Stwórz zbiór ``result`` z co drugim elementem ``a`` i ``b``
     #. Wypisz ``result``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is set
         >>> result
         {0, 2, 4}
 
-:The whys and wherefores:
-    * Defining and using ``list``, ``tuple``, ``set``
-    * Slice data structures
-    * Type casting
-
 Sequence Slice Text
 -------------------
 * Assignment name: Sequence Slice Text
-* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/sequence_slice_text.py`
+* Suggested filename: sequence_slice_text.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Remove title and military rank in each variable
     #. Remove also whitespaces at the beginning and end of a text
     #. Use only ``slice`` to clean text
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Usuń tytuł naukowy i stopień wojskowy z każdej zmiennej
     #. Usuń również białe znaki na początku i końcu tekstu
     #. Użyj tylko ``slice`` do oczyszczenia tekstu
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         example = 'lt. Mark Watney, PhD'
@@ -453,7 +445,7 @@ Sequence Slice Text
         f = f[:]
         g = g[:]
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> example
@@ -473,23 +465,16 @@ Sequence Slice Text
         >>> g
         'Jan Twardowski'
 
-:The whys and wherefores:
-    * Variable definition
-    * Print formatting
-    * Slicing strings
-    * Cleaning text input
-
 Sequence Slice Split
 --------------------
 * Assignment name: Sequence Slice Split
-* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/sequence_slice_split.py`
+* Suggested filename: sequence_slice_split.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Separate header from data
     #. Write header (first line) to ``header`` variable
     #. Write data without header to ``data`` variable
@@ -501,10 +486,10 @@ Sequence Slice Split
 
     #. From ``data`` write training data from start to pivot
     #. From ``data`` write test data from pivot to end
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Odseparuj nagłówek od danych
     #. Zapisz nagłówek (pierwsza linia) do zmiennej ``header``
     #. Zapisz dane bez nagłówka do zmiennej ``data``
@@ -516,9 +501,9 @@ Sequence Slice Split
 
     #. Z ``data`` zapisz do uczenia rekordy od początku do punktu podziału
     #. Z ``data`` zapisz do testów rekordy od punktu podziału do końca
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -546,7 +531,7 @@ Sequence Slice Split
             (4.6, 3.1, 1.5, 0.2, 'setosa'),
         ]
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(header) is tuple
@@ -583,8 +568,3 @@ Sequence Slice Split
          (6.9, 3.1, 4.9, 1.5, 'versicolor'),
          (4.6, 3.1, 1.5, 0.2, 'setosa')]
 
-:The whys and wherefores:
-    * Using nested sequences
-    * Using slices
-    * Type casting
-    * Magic Number

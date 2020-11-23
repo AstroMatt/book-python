@@ -215,35 +215,34 @@ Assignments
 OOP Attribute Model
 -------------------
 * Assignment name: OOP Attribute Model
-* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/oop_attribute_model.py`
+* Suggested filename: oop_attribute_model.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Model the data using classes
     #. How many classes are there?
     #. How many instances are there?
     #. Create instances filling it with data
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zamodeluj dane za pomocą klas
     #. Ile jest klas?
     #. Ile jest instancji?
     #. Stwórz instancje wypełniając je danymi
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: text
 
         Mark Watney, USA, 1969-07-21
         National Aeronautics and Space Administration, USA, 1958-07-29
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert isinstance(watney, Astronaut)
@@ -255,6 +254,3 @@ OOP Attribute Model
         >>> assert 'USA' in nasa.__dict__.values()
         >>> assert '1958-07-29' in nasa.__dict__.values()
 
-:The whys and wherefores:
-    * :ref:`OOP Classes and Instances`
-    * :ref:`OOP Attributes`

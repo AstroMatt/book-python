@@ -138,18 +138,17 @@ Assignments
 Function Definition Print
 -------------------------
 * Assignment name: Function Definition Print
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/function_definition_print.py`
+* Suggested filename: function_definition_print.py
 
-:English:
+English:
     #. Define function ``call`` without parameters
     #. Print ``Beetlejuice`` on the screen
     #. Call function three times
 
-:Polish:
+Polish:
     #. Zdefiniuj funkcję ``call`` bez parametrów
     #. Wypisz ``Beetlejuice`` na ekranie
     #. Wywołaj funkcję trzy razy

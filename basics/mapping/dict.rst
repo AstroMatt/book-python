@@ -461,28 +461,27 @@ Assignments
 Mapping Dict Define
 -------------------
 * Assignment name: Mapping Dict Define
-* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/mapping_dict_define.py`
+* Suggested filename: mapping_dict_define.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Create ``result: dict`` representing input data
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Stwórz ``result: dict`` reprezentujący dane wejściowe
 
-:Input:
+Given:
     .. code-block:: text
 
         First Name: Jan
         Last Name: Twardowski
         Missions: Apollo, Artemis
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is dict
@@ -498,27 +497,26 @@ Mapping Dict Define
 Mapping Dict Items
 ------------------
 * Assignment name: Mapping Dict Items
-* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/mapping_dict_items.py`
+* Suggested filename: mapping_dict_items.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Define ``keys: list[str]`` with list of ``DATA`` keys
     #. Define ``values: list[str]`` with list of ``DATA`` values
     #. Define ``keys: list[tuple]`` with list of ``DATA`` key-value pairs
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zdefiniuj ``keys: list[str]`` z listą kluczy z ``DATA``
     #. Zdefiniuj ``values: list[str]`` z listą wartości z ``DATA``
     #. Zdefiniuj ``keys: list[tuple]`` z listą par klucz-wartość z ``DATA``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = {
@@ -528,7 +526,7 @@ Mapping Dict Items
             'Petal width': 1.9,
         }
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(keys) is list
@@ -549,27 +547,26 @@ Mapping Dict Items
 Mapping Dict Substitute
 -----------------------
 * Assignment name: Mapping Dict Substitute
-* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/mapping_dict_substitute.py`
+* Suggested filename: mapping_dict_substitute.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Ask user to input single letter
     #. Convert to lowercase
     #. If letter is in ``PL`` then use conversion value as letter
     #. Print letter
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Poproś użytkownika o wprowadzenie jednej litery
     #. Przekonwertuj literę na małą
     #. Jeżeli litera jest w ``PL`` to użyj przekonwertowanej wartości jako litera
     #. Wypisz literę
 
-:Input:
+Given:
     .. code-block:: python
 
         PL = {'ą': 'a', 'ć': 'c', 'ę': 'e',
@@ -591,14 +588,13 @@ Mapping Dict Substitute
 Mapping Dict Get
 ----------------
 * Assignment name: Mapping Dict Get
-* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/mapping_dict_get.py`
+* Suggested filename: mapping_dict_get.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Create translator of pilot's alphabet
     #. Each letter has it's phonetic counterpart
     #. To convert table use multiline select with ``alt`` key in your IDE (if shortcut key is not working in your IDE, use only first four letters)
@@ -608,8 +604,8 @@ Mapping Dict Get
     #. If user type character not existing in alphabet, print: "Pilots don't say that"
     #. Do not use ``if``, ``try``, and ``except``
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Stwórz tłumacza alfabetu pilotów
     #. Pojedynczym literom przyporządkuj ich fonetyczne odpowiedniki
     #. Do konwersji tabelki wykorzystaj zaznaczanie wielu linijek za pomocą klawisza ``alt`` w Twoim IDE (jeżeli skrót klawiszowy nie działa w Twoim IDE, użyj tylko cztery pierwsze litery)
@@ -619,7 +615,7 @@ Mapping Dict Get
     #. Jeżeli wpisał znak, który nie występuje w alfabecie, wypisz: "Pilots don't say that"
     #. Nie używaj ``if``, ``try`` ani ``except``
 
-:Input:
+Given:
     .. code-block:: text
 
         Letter, Pronounce
@@ -650,11 +646,8 @@ Mapping Dict Get
         Y, Yankee
         Z, Zulu
 
-:The whys and wherefores:
-    * Defining ``dict`` with values
-    * Type casting
-
-.. todo:: Doctests
+Tests:
+    TODO doctests
 
 
 References

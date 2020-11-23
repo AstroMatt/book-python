@@ -585,23 +585,22 @@ Assignments
 Loop Comprehension Create
 -------------------------
 * Assignment name: Loop Comprehension Create
-* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/loop_comprehension_create.py`
+* Suggested filename: loop_comprehension_create.py
 
-:English:
+English:
     #. Use list comprehension
     #. Generate ``result: list[int]`` of even numbers from 5 to 20
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
+Polish:
     #. Użyj rozwinięcia listowego
     #. Wygeneruj ``result: list[int]`` parzystych liczb z przedziału 5 do 20
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is list
@@ -612,31 +611,30 @@ Loop Comprehension Create
 Loop Comprehension Translate
 ----------------------------
 * Assignment name: Loop Comprehension Translate
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/loop_comprehension_translate.py`
+* Suggested filename: loop_comprehension_translate.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Define ``result: list``
     #. Use list comprehension to iterate over ``DATA``
     #. If letter is in ``PL`` then use conversion value as letter
     #. Add letter to ``result``
     #. Redefine ``result: str`` as a joined ``result``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zdefiniuj ``result: list``
     #. Użyj rozwinięcia listowego do iteracji po ``DATA``
     #. Jeżeli litera jest w ``PL`` to użyj skonwertowanej wartości jako litera
     #. Dodaj literę do ``result``
     #. Przedefiniuj ``result: str`` jako złączony ``result``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         PL = {'ą': 'a', 'ć': 'c', 'ę': 'e',
@@ -645,7 +643,7 @@ Loop Comprehension Translate
 
         DATA = 'zażółć gęślą jaźń'
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is str
@@ -655,14 +653,13 @@ Loop Comprehension Translate
 Loop Comprehension Months
 -------------------------
 * Assignment name: Loop Comprehension Months
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/loop_comprehension_months.py`
+* Suggested filename: loop_comprehension_months.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Use dict comprehension
     #. Convert ``MONTH`` into dict:
 
@@ -670,10 +667,10 @@ Loop Comprehension Months
         * Values: month name
 
     #. Month number must be two letter string (zero padded) - ``f'{number:02}'``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Użyj rozwinięcia słownikowego
     #. Przekonwertuj ``MONTH`` w słownik:
 
@@ -681,16 +678,16 @@ Loop Comprehension Months
         * wartość: nazwa miesiąca
 
     #. Numer miesiąca ma być dwuznakowym stringiem (wypełnij zerem) - ``f'{number:02}'``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         MONTHS = ['January', 'February', 'March', 'April',
                   'May', 'June', 'July', 'August', 'September',
                   'October', 'November', 'December']
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is dict
@@ -717,14 +714,13 @@ Loop Comprehension Months
 Loop Comprehension Split
 ------------------------
 * Assignment name: Loop Comprehension Split
-* Last update: 2020-11-18
 * Complexity level: medium
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/loop_comprehension_split.py`
+* Suggested filename: loop_comprehension_split.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Calculate pivot point: length of data times given percent (60%/40%, see below)
     #. Using List Comprehension split data to:
 
@@ -740,8 +736,8 @@ Loop Comprehension Split
 
     #. Compare results with "Output" section below
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wylicz punkt podziału: długość danych razy zadany procent (60%/40%, patrz poniżej)
     #. Używając List Comprehension podziel dane na:
 
@@ -757,7 +753,7 @@ Loop Comprehension Split
 
     #. Porównaj wynik z sekcją "Output" poniżej
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -774,7 +770,7 @@ Loop Comprehension Split
             (4.9, 2.5, 4.5, 1.7, 'virginica'),
         ]
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(features_train) is list
@@ -806,10 +802,3 @@ Loop Comprehension Split
 
         >>> labels_test
         ['versicolor', 'virginica', 'setosa', 'virginica']
-
-:The whys and wherefores:
-    * Iterating over nested data structures
-    * Using slices
-    * Type casting
-    * List comprehension
-    * Magic Number

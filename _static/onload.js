@@ -38,19 +38,8 @@ const ALPHABET = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-
-    /* Replace solution links to chapter */
-    document.querySelectorAll('a.download').forEach( (a) => {
-        // let chapter = window.location.pathname.split('/')[1];
-        // a.innerHTML = a.innerHTML.replace('solution',  chapter);
-        a.innerHTML = a.innerHTML.replace('solution/', '');
-    });
-
-
-
-    let chapters = document.querySelectorAll("nav.wy-nav-side p.caption");
+    /* Left menu - auto-expand current chapter  */
     let menuItems = document.querySelectorAll("nav.wy-nav-side p.caption + ul");
-
     menuItems.forEach((ul) => {
         if (ul.className === "current")
             ul.style.display = "block";
@@ -58,12 +47,12 @@ document.addEventListener("DOMContentLoaded", () => {
             ul.style.display = "none";
     });
 
+    /* Left menu - allow to expand other chapters */
+    let chapters = document.querySelectorAll("nav.wy-nav-side p.caption");
     chapters.forEach((chapter, i) => {
         chapter.innerHTML = `${PREFIX[i]} ${chapter.innerHTML}`;
-
         chapter.onclick = () => {
             let ul = chapter.nextElementSibling;
-
             if (ul.style.display !== "block")
                 ul.style.display = "block";
             else
@@ -71,27 +60,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    try {
-        let sectionNumber = document.querySelector('#assignments h2').innerText.split(' ')[0];
-        document.querySelectorAll('#assignments h3 .section-number').forEach((taskNumber, num) => {
-          taskNumber.innerHTML = `${sectionNumber}${ALPHABET[num]}. `;
-        });
-    } catch (e) {}
-
-
-    // Substitute for new Assignments
-    // let captionNumber = $('.caption-number')[0];
-    // let num = captionNumber.innerText.split('.').slice(-2, -1);
-    // let alpha = ALPHABET[num];
-
-    // let search_input = '<iframe src="https://duckduckgo.com/search.html?site=python.astrotech.io&prefill=Search..." id="search" frameborder="0"></iframe>';
+    /* Left menu - Search */
     let search_input = '<form id="search" action="https://duckduckgo.com/"><input id="search-input" type="search" placeholder="Search..." name="q" onfocusout="onFormSubmit(); this.form"><input id="search-submit" type="submit" value="" onclick="onFormSubmit();"></form>'
     document.querySelectorAll('div[role="search"]')[0].innerHTML = search_input;
 
-    // hide """ from includes in assignments
-    $('p:contains(""")').hide();
-
-    document.querySelector('.caption-number')
+    /* Assignment - Change numbering to A, B, C, ... */
+    let assignments = document.querySelectorAll('#assignments .caption-number')
+    i = 0;
+    for (let assignment of assignments)
+        assignment.innerHTML = `Assignment ${ALPHABET[i++].toUpperCase()}.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`;
 });
 
 

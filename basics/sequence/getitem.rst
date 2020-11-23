@@ -137,14 +137,13 @@ Assignments
 Sequence GetItem Select
 ------------------------
 * Assignment name: Sequence GetItem Select
-* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/sequence_getitem_select.py`
+* Suggested filename: sequence_getitem_select.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Write header (row with index 0) to ``header: tuple`` variable
     #. Create ``result: list``
     #. Select row at index 2, convert it to ``list`` and add to ``result``
@@ -153,10 +152,10 @@ Sequence GetItem Select
     #. Select row at index -4, convert it to ``frozenset`` and add to ``result``
     #. Append to ``result``: empty ``list``, empty ``tuple``, empty ``set`` and empty ``frozenset``
     #. Use only indexes and do not use ``for``, ``while`` or ``slice()``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zapisz nagłówek (wiersz o indeksie 0) do zmiennej ``header: tuple``
     #. Stwórz ``result: list``
     #. Wybierz wiersz o indeksie 2, przekonwertuj go do ``list`` i dodaj do ``result``
@@ -165,9 +164,13 @@ Sequence GetItem Select
     #. Wybierz wiersz o indeksie -2, przekonwertuj go do ``frozenset`` i dodaj do ``result``
     #. Dodaj na koniec ``result``: pustą ``list``, pustą ``tuple``, pusty ``set``, pusty ``frozenset``
     #. Korzystaj tylko z indeksów i nie używaj ``for``, ``while`` lub ``slice()``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Hints:
+    * ``from pprint import pprint``
+    * ``pprint(result)``
+
+Given:
     .. code-block:: python
 
         DATA = [
@@ -180,7 +183,7 @@ Sequence GetItem Select
             (4.7, 3.2, 1.3, 0.2, 'setosa'),
         ]
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(header) is tuple
@@ -197,11 +200,3 @@ Sequence GetItem Select
          set(),
          frozenset()]
 
-:The whys and wherefores:
-    * Using nested data structures
-    * Using indexes
-    * Type casting
-
-:Hints:
-    * ``from pprint import pprint``
-    * ``pprint(result)``

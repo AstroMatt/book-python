@@ -206,25 +206,24 @@ Assignments
 Loop Nested Mean
 ----------------
 * Assignment name: Loop Nested Mean
-* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/loop_nested_mean.py`
+* Suggested filename: loop_nested_mean.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Separate header from data
     #. Calculate mean `Sepal length` value
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Odseparuj nagłówek od danych
     #. Wylicz średnią wartość `Sepal length`
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -240,40 +239,40 @@ Loop Nested Mean
             (4.6, 3.1, 1.5, 0.2, 'setosa'),
         ]
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is float
         >>> result
         5.911111111111111
 
-:The whys and wherefores:
-    * Iterating over nested structure
-
 Loop Nested Unique Keys
 -----------------------
 * Assignment name: Loop Nested Unique Keys
-* Last update: 2020-11-18
 * Complexity level: medium
 * Lines of code to write: 3 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/loop_nested_unique_keys.py`
+* Suggested filename: loop_nested_unique_keys.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Collect keys from all rows in one sequence ``result``
     #. Sort ``result``
     #. Print unique keys
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zbierz klucze z wszystkich wierszy w jednej sekwencji ``result``
     #. Posortuj ``result``
     #. Wypisz unikalne klucze
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Hints:
+    * ``row.keys()``
+    * Compare solutions with :ref:`Micro-benchmarking use case`
+
+Given:
     .. code-block:: python
 
         DATA = [
@@ -285,19 +284,9 @@ Loop Nested Unique Keys
             {'Sepal width': 2.9, 'Petal width': 1.8, 'Species': 'virginica'},
         ]
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> sorted(result)
         ['Petal length', 'Petal width', 'Sepal length', 'Sepal width', 'Species']
 
-:The whys and wherefores:
-    * Generating ``set``
-    * Deduplication
-    * Accessing ``dict`` keys
-    * Iterating over nested structure
-    * Updating ``set``
-
-:Hints:
-    * ``row.keys()``
-    * Compare solutions with :ref:`Micro-benchmarking use case`

@@ -364,25 +364,24 @@ Assignments
 OOP Inheritance Simple
 ----------------------
 * Assignment name: OOP Inheritance Simple
-* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/oop_inheritance_simple.py`
+* Suggested filename: oop_inheritance_simple.py
 
-:English:
+English:
     #. Create class ``Mars``
     #. Create class ``Venus``
     #. Create class ``Woman`` which inherits from ``Venus``
     #. Create class ``Man`` which inherits from ``Mars``
 
-:Polish:
+Polish:
     #. Stwórz klasę ``Mars``
     #. Stwórz klasę ``Venus``
     #. Stwórz klasę ``Woman``, która dziedziczy po ``Venus``
     #. Stwórz klasę ``Man``, która dziedziczy po ``Mars``
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> from inspect import isclass
@@ -396,23 +395,22 @@ OOP Inheritance Simple
 OOP Inheritance Multiple
 ------------------------
 * Assignment name: OOP Inheritance Multiple
-* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/oop_inheritance_multiple.py`
+* Suggested filename: oop_inheritance_multiple.py
 
-:English:
+English:
     #. Create classes ``Engineer``, ``Scientist``, ``Pilot``, ``MedicalDoctor``
     #. Create class ``Astronaut`` which inherits from all of those classes
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
+Polish:
     #. Stwórz klasy ``Engineer``, ``Scientist``, ``Pilot``, ``MedicalDoctor``
     #. Stwórz klasę ``Astronaut``, która dziedziczy po tych wszystkich klasach
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> from inspect import isclass
@@ -429,33 +427,32 @@ OOP Inheritance Multiple
 OOP Inheritance Super
 ---------------------
 * Assignment name: OOP Inheritance Super
-* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/oop_inheritance_super.py`
+* Suggested filename: oop_inheritance_super.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Create class ``Crew``
     #. In ``__init__()`` set ``mission`` to ``Ares 3``
     #. Create class ``Astronaut`` which inherits from ``Crew``
     #. Using positional arguments at the initialization set astronaut first name and last name
     #. All astronauts must have assigned mission (inherited from ``Crew``)
     #. Return first name, last name and mission name from ``__str__()``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Stwórz klasę ``Crew``
     #. W ``__init__()`` ustaw ``mission`` na ``Ares 3``
     #. Stwórz klasę ``Astronaut`` dziedziczącą po ``Crew``
     #. Używając parametrów pozycyjnych podanych przy inicjalizacji ustaw imię i nazwisko astronauty
     #. Każdy astronauta musi mieć przydzieloną misję (odziedziczoną z ``Crew``)
     #. Zwróć imię, nazwisko i nazwę misji from ``__str__()``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         mark = Astronaut('Mark Watney')
@@ -471,7 +468,7 @@ OOP Inheritance Super
 
         print(result)
 
-:Output:
+Tests:
     .. code-block:: text
 
         Astronaut crew:

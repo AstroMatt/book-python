@@ -190,28 +190,27 @@ Assignments
 Loop For Count
 --------------
 * Assignment name: Loop For Count
-* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/loop_for_count.py`
+* Suggested filename: loop_for_count.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Count occurrences of each color
     #. Compare results with "Output" section below
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zlicz wystąpienia każdego z kolorów
     #. Porównaj wynik z sekcją "Output" poniżej
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = ['red', 'green', 'blue', 'red', 'green', 'red', 'blue']
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> red
@@ -224,14 +223,13 @@ Loop For Count
 Loop For Counter
 ----------------
 * Assignment name: Loop For Counter
-* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/loop_for_counter.py`
+* Suggested filename: loop_for_counter.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Iterate over ``DATA``
     #. Count occurrences of each number
     #. Create empty ``result: dict[int, int]``:
@@ -246,8 +244,8 @@ Loop For Counter
 
     #. Compare results with "Output" section below
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Iteruj po ``DATA``
     #. Policz wystąpienia każdej z cyfr
     #. Stwórz pusty ``result: dict[int, int]``:
@@ -262,7 +260,7 @@ Loop For Counter
 
     #. Porównaj wynik z sekcją "Output" poniżej
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [1, 4, 6, 7, 4, 4, 4, 5, 1, 7, 0,
@@ -271,7 +269,7 @@ Loop For Counter
                 1, 3, 5, 6, 8, 2, 8, 1, 3, 9, 5,
                 4, 8, 1, 9, 6, 3]
 
-:Output:
+Tests:
     .. code-block:: python
 
         >>> assert type(result) is dict
@@ -280,22 +278,16 @@ Loop For Counter
         >>> result
         {1: 7, 4: 8, 6: 4, 7: 4, 5: 4, 0: 7, 9: 5, 8: 6, 2: 2, 3: 3}
 
-:The whys and wherefores:
-    * Defining ``dict`` :ref:`Mapping Dict`
-    * Updating ``dict``
-    * Iterating over sequences
-
 Loop For Segmentation
 ---------------------
 * Assignment name: Loop For Segmentation
-* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 14 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/loop_for_segmentation.py`
+* Suggested filename: loop_for_segmentation.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Count occurrences of each group
     #. Define groups:
 
@@ -310,8 +302,8 @@ Loop For Segmentation
 
     #. Compare results with "Output" section below
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Policz wystąpienia każdej z group
     #. Zdefiniuj grupy
 
@@ -326,7 +318,7 @@ Loop For Segmentation
 
     #. Porównaj wynik z sekcją "Output" poniżej
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [1, 4, 6, 7, 4, 4, 4, 5, 1, 7, 0,
@@ -335,7 +327,7 @@ Loop For Segmentation
                 1, 3, 5, 6, 8, 2, 8, 1, 3, 9, 5,
                 4, 8, 1, 9, 6, 3]
 
-:Output:
+Tests:
     .. code-block:: python
 
         >>> assert type(result) is dict
@@ -344,37 +336,31 @@ Loop For Segmentation
         >>> result
         {'small': 16, 'medium': 19, 'large': 15}
 
-:The whys and wherefores:
-    * Defining ``dict``
-    * Updating ``dict``
-    * Iterating over sequences
-
 Loop For Newline
 ----------------
 * Assignment name: Loop For Newline
-* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/loop_for_newline.py`
+* Suggested filename: loop_for_newline.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Define ``result: str``
     #. Use ``for`` to iterate over ``DATA``
     #. Join lines of text with newline (``\n``) character
     #. Do not use ``str.join()``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zdefiniuj ``result: str``
     #. Użyj ``for`` do iterowania po ``DATA``
     #. Połącz linie tekstu znakiem końca linii (``\n``)
     #. Nie używaj ``str.join()``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -382,7 +368,7 @@ Loop For Newline
             'We choose to go to the Moon in this decade and do the other things.',
             'Not because they are easy, but because they are hard.']
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is str
@@ -394,28 +380,27 @@ Loop For Newline
 Loop For Translate
 ------------------
 * Assignment name: Loop For Translate
-* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/loop_for_translate.py`
+* Suggested filename: loop_for_translate.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Define ``result: list``
     #. Use ``for`` to iterate over ``DATA``
     #. If letter is in ``PL`` then use conversion value as letter
     #. Add letter to ``result``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Użyj ``for`` do iteracji po ``DATA``
     #. Jeżeli litera jest w ``PL`` to użyj przekonwertowanej wartości jako litera
     #. Dodaj literę do ``result``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         PL = {'ą': 'a', 'ć': 'c', 'ę': 'e',
@@ -424,7 +409,7 @@ Loop For Translate
 
         DATA = 'zażółć gęślą jaźń'
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is str
@@ -434,38 +419,37 @@ Loop For Translate
 Loop For Months
 ---------------
 * Assignment name: Loop For Months
-* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/loop_for_months.py`
+* Suggested filename: loop_for_months.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Convert ``MONTH`` into dict:
 
         * Keys: month number
         * Values: month name
 
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Przekonwertuj ``MONTH`` w słownik:
 
         * klucz: numer miesiąca
         * wartość: nazwa miesiąca
 
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         MONTHS = ['January', 'February', 'March', 'April',
                   'May', 'June', 'July', 'August', 'September',
                   'October', 'November', 'December']
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is dict
@@ -486,14 +470,13 @@ Loop For Months
 Loop For Text
 -------------
 * Assignment name: Loop For Text
-* Last update: 2020-11-18
 * Complexity level: medium or hard
 * Lines of code to write: 30 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/loop_for_text.py`
+* Suggested filename: loop_for_text.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Given is text of the "Moon Speech" by John F. Kennedy's  :cite:`BasicKennedy1962`
     #. Sentences are separated by period (``.``)
     #. Clean each sentence from whitespaces at the beginning and at the end
@@ -509,8 +492,8 @@ Loop For Text
 
     #. Compare results with "Output" section below
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Dany jest tekst przemówienia "Moon Speech" wygłoszonej przez John F. Kennedy'ego :cite:`BasicKennedy1962`
     #. Zdania oddzielone są kropkami (``.``)
     #. Każde zdanie oczyść z białych znaków na początku i końcu
@@ -526,7 +509,7 @@ Loop For Text
 
     #. Porównaj wynik z sekcją "Output" poniżej
 
-:Input:
+Given:
     .. code-block:: python
         :caption: "Moon Speech" by John F. Kennedy, Rice Stadium, Houston, TX, 1962-09-12 :cite:`BasicKennedy1962`
 
@@ -540,7 +523,7 @@ Loop For Text
             And one we intend to win
         """
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is str
@@ -552,9 +535,3 @@ Loop For Text
         Commas: 1
         Adverbs: 0
 
-:The whys and wherefores:
-    * String splitting
-    * Calculating lengths
-    * Iterating over string
-    * Naming convention
-    * Good variable names

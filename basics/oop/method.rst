@@ -99,14 +99,13 @@ Assignments
 OOP Method Call
 ---------------
 * Assignment name: OOP Method Call
-* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/oop_method_call.py`
+* Suggested filename: oop_method_call.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Define class ``Stats``
     #. Define method ``mean()`` in ``Stats`` class
     #. Method takes ``data: list[float]`` as an argument
@@ -117,10 +116,10 @@ OOP Method Call
     #. Separate features from label
     #. Call ``mean()`` method of ``Stats`` class passing list of features as an argument
     #. Define ``result: list[float]`` with list of means from each row
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zdefiniuj klasę ``Stats``
     #. Zdefiniuj metodę ``mean()`` w klasie ``Stats``
     #. Metoda przyjmuje ``data: list[float]`` jako argument
@@ -131,9 +130,12 @@ OOP Method Call
     #. Rozdziel cechy od etykiety
     #. Wywołuj metodę ``mean()`` klasy ``Stats`` przekazując listę features jako argument
     #. Zdefiniuj ``result: list[float]`` z listą średnich każdego z wierszy
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Hints:
+    * ``round()``
+
+Given:
     .. code-block:: python
 
         DATA = [
@@ -146,7 +148,7 @@ OOP Method Call
             (4.7, 3.2, 1.3, 0.2, 'setosa'),
         ]
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is list
@@ -154,5 +156,3 @@ OOP Method Call
         >>> result
         [3.9, 2.5, 3.5, 4.1, 3.9, 2.4]
 
-:Hint:
-    * ``round()``

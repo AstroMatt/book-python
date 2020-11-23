@@ -115,31 +115,30 @@ Assignments
 Sequence Frozenset Create
 -------------------------
 * Assignment name: Sequence Frozenset Create
-* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 2 min
-* Solution: :download:`solution/sequence_frozenset_create.py`
+* Suggested filename: sequence_frozenset_create.py
 
-:English:
+English:
     #. Create frozenset ``result`` with elements:
 
         * ``'a'``
         * ``1``
         * ``2.2``
 
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
+Polish:
     #. Stwórz frozenset ``result`` z elementami:
 
         * ``'a'``
         * ``1``
         * ``2.2``
 
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is frozenset
@@ -147,31 +146,27 @@ Sequence Frozenset Create
         >>> assert 1 in result
         >>> assert 2.2 in result
 
-:The whys and wherefores:
-    * Defining ``list``
-
 Sequence Frozenset Newline
 --------------------------
 * Assignment name: Sequence Frozenset Newline
-* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/sequence_frozenset_newline.py`
+* Suggested filename: sequence_frozenset_newline.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Define ``result: str``
     #. Use ``str.join()`` to join lines of text with newline (``\n``) character
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zdefiniuj ``result: str``
     #. Użyj ``str.join()`` aby połączyć linie tekstu znakiem końca linii (``\n``)
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = frozenset({
@@ -179,7 +174,7 @@ Sequence Frozenset Newline
             'We choose to go to the Moon in this decade and do the other things.',
             'Not because they are easy, but because they are hard.'})
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is str

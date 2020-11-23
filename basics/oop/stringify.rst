@@ -301,25 +301,24 @@ Assignments
 OOP Stringify Str
 -----------------
 * Assignment name: OOP Stringify Str
-* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/oop_stringify_str.py`
+* Suggested filename: oop_stringify_str.py
 
-:English:
-    #. Use code from "Input" section (see below)
+English:
+    #. Use code from "Given" section (see below)
     #. While printing object show: species name and a sum of ``self.features``
     #. Result of sum round to one decimal place
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj kodu z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj kodu z sekcji "Given" (patrz poniżej)
     #. Przy wypisywaniu obiektu pokaż: nazwę gatunku i sumę ``self.features``
     #. Wynik sumowania zaokrąglij do jednego miejsca po przecinku
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -333,7 +332,7 @@ OOP Stringify Str
                 self.features = features
                 self.label = label
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> for *features, label in DATA:
@@ -346,25 +345,24 @@ OOP Stringify Str
 OOP Stringify Repr
 ------------------
 * Assignment name: OOP Stringify Repr
-* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/oop_stringify_repr.py`
+* Suggested filename: oop_stringify_repr.py
 
-:English:
-    #. Use code from "Input" section (see below)
+English:
+    #. Use code from "Given" section (see below)
     #. Print representation of each instance with values (use ``repr()``)
     #. Result of sum round to two decimal places
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj kodu z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj kodu z sekcji "Given" (patrz poniżej)
     #. Wypisz reprezentację każdej z instancji z wartościami (użyj ``repr()``)
     #. Wynik sumowania zaokrąglij do dwóch miejsc po przecinku
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -379,7 +377,7 @@ OOP Stringify Repr
                 self.features = features
                 self.label = label
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> result = [Iris(X,y) for *X,y in DATA]
@@ -391,30 +389,33 @@ OOP Stringify Repr
 OOP Stringify Format
 --------------------
 * Assignment name: OOP Stringify Format
-* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/oop_stringify_format.py`
+* Suggested filename: oop_stringify_format.py
 
-:English:
-    #. Use code from "Input" section (see below)
+English:
+    #. Use code from "Given" section (see below)
     #. Overload ``__format__()`` to convert length units
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj kodu z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj kodu z sekcji "Given" (patrz poniżej)
     #. Przeciąż ``__format__()`` aby konwertował jednostki długości
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Hints:
+    * 1 km = 1000 m
+    * 1 m = 100 cm
+
+Given:
     .. code-block:: python
 
         class Distance:
             def __init__(self, meters):
                 self.meters = meters
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> result = Distance(meters=1337)
@@ -425,30 +426,30 @@ OOP Stringify Format
         >>> format(result, 'm')
         '1337'
 
-:Hint:
-    * 1 km = 1000 m
-    * 1 m = 100 cm
-
 OOP Stringify Nested
 --------------------
 * Assignment name: OOP Stringify Nested
-* Last update: 2020-11-20
 * Complexity level: medium
 * Lines of code to write: 9 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/oop_stringify_nested.py`
+* Suggested filename: oop_stringify_nested.py
 
-:English:
-    #. Use code from "Input" section (see below)
+English:
+    #. Use code from "Given" section (see below)
     #. Overload ``str`` and ``repr`` to achieve desired printing output
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj kodu z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj kodu z sekcji "Given" (patrz poniżej)
     #. Przeciąż ``str`` i ``repr`` aby osiągnąć oczekiwany rezultat wypisywania
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Hints:
+    * Define ``Crew.__str__()``
+    * Define ``Astronaut.__str__()`` and ``Astronaut.__repr__()``
+    * Define ``Mission.__repr__()``
+
+Given:
     .. code-block:: python
         :caption: Address Book
 
@@ -466,7 +467,7 @@ OOP Stringify Nested
                 self.year = year
                 self.name = name
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> melissa = Astronaut('Melissa Lewis')
@@ -501,10 +502,3 @@ OOP Stringify Nested
         Mark Watney veteran of [
               2035: Ares 3]
 
-:The whys and wherefores:
-    * :ref:`OOP Stringify Objects`
-
-:Hints:
-    * Define ``Crew.__str__()``
-    * Define ``Astronaut.__str__()`` and ``Astronaut.__repr__()``
-    * Define ``Mission.__repr__()``

@@ -116,6 +116,7 @@ Escape Characters
     print('\U0001F680')     # 🚀
 
 .. code-block:: python
+    :force:
 
     a = '\U0001F9D1'  # 🧑
     b = '\U0000200D'  # ''
@@ -124,8 +125,8 @@ Escape Characters
     a + b + c
     # '🧑\u200d🚀'
 
-    astro = a + b + c
-    print(astro)
+    astronaut = a + b + c
+    print(astronaut)
     🧑‍🚀
 
 

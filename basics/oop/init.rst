@@ -279,29 +279,28 @@ Assignments
 OOP Init Print
 --------------
 * Assignment name: OOP Init Print
-* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/oop_init_print.py`
+* Suggested filename: oop_init_print.py
 
-:English:
+English:
     #. Create one class ``Echo``
     #. Value ``text`` must be passed at the initialization
     #. At initialization instance print ``text``
     #. Do not store values in the instances (only print on instance creation)
     #. Do not use ``@dataclass``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
+Polish:
     #. Stwórz jedną klasę ``Echo``
     #. Wartość ``text`` maja być podawana przy inicjalizacji
     #. Przy inicjalizacji instancja wypisuje ``text``
     #. Nie przechowuj informacji w instancjach (tylko wypisz przy inicjalizacji)
     #. Nie używaj ``@dataclass``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> Echo('hello')
@@ -312,39 +311,38 @@ OOP Init Print
 OOP Init Model
 --------------
 * Assignment name: OOP Init Model
-* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/oop_init_model.py`
+* Suggested filename: oop_init_model.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Model the data using classes
     #. Create instances for each record
     #. Values must be passed at the initialization
     #. Create instances of a first class using positional arguments
     #. Create instances of a second class using keyword arguments
     #. Do not use ``@dataclass``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zamodeluj dane za pomocą klas
     #. Stwórz instancje dla każdego wpisu
     #. Wartości mają być podawane przy inicjalizacji
     #. Twórz instancje pierwszej klasy używając argumentów pozycyjnych
     #. Twórz instancje drugiej klasy używając argumentów nazwanych
     #. Nie używaj ``@dataclass``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: text
 
         Mark Watney, USA, 1969-07-21
         National Aeronautics and Space Administration, USA, 1958-07-29
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert isinstance(watney, Astronaut)
@@ -356,6 +354,3 @@ OOP Init Model
         >>> assert 'USA' in nasa.__dict__.values()
         >>> assert '1958-07-29' in nasa.__dict__.values()
 
-:The whys and wherefores:
-    * :ref:`OOP Classes and Instances`
-    * :ref:`OOP Attributes`

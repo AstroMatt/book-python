@@ -157,25 +157,24 @@ Assignments
 Mapping Generate Pairs
 ----------------------
 * Assignment name: Mapping Generate Pairs
-* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/mapping_generate_pairs.py`
+* Suggested filename: mapping_generate_pairs.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Create ``result: dict``
     #. Convert ``DATA`` to ``dict`` and assign to ``result``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Stwórz ``result: dict``
     #. Przekonwertuj ``DATA`` do ``dict`` i przypisz do ``result``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -186,7 +185,7 @@ Mapping Generate Pairs
             ('Species', 'virginica')
         ]
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> result  # doctest: +NORMALIZE_WHITESPACE
@@ -199,30 +198,29 @@ Mapping Generate Pairs
 Mapping Generate Enumerate
 --------------------------
 * Assignment name: Mapping Generate Enumerate
-* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/mapping_generate_enumerate.py`
+* Suggested filename: mapping_generate_enumerate.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Create ``result: dict``
     #. Using ``enumerate()`` convert data to ``dict`` and assign to ``result``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Stwórz ``result: dict``
     #. Używając ``enumerate()`` przekonwertuj dane do ``dict`` i przypisz do ``result``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = ['setosa', 'versicolor', 'virginica']
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> result  # doctest: +NORMALIZE_WHITESPACE
@@ -233,31 +231,30 @@ Mapping Generate Enumerate
 Mapping Generate Zip
 --------------------
 * Assignment name: Mapping Generate Zip
-* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/mapping_generate_zip.py`
+* Suggested filename: mapping_generate_zip.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Create ``result: dict``
     #. Using ``zip()`` convert data to ``dict`` and assign to ``result``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Stwórz ``result: dict``
     #. Używając ``zip()`` przekonwertuj dane do ``dict`` i przypisz do ``result``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         KEYS =  ['Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species']
         VALUES = [5.8, 2.7, 5.1, 1.9, 'virginica']
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> result  # doctest: +NORMALIZE_WHITESPACE

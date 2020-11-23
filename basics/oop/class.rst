@@ -165,27 +165,26 @@ Assignments
 OOP Class Iris
 --------------
 * Assignment name: OOP Class Iris
-* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/oop_class_iris.py`
+* Suggested filename: oop_class_iris.py
 
-:English:
+English:
     #. Define class ``Iris``
     #. Create instance ``setosa`` of a class ``Iris``
     #. Create instance ``virginica`` of a class ``Iris``
     #. Create instance ``versicolor`` of a class ``Iris``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
+Polish:
     #. Zdefiniuj klasę ``Iris``
     #. Stwórz instancję ``setosa`` klasy ``Iris``
     #. Stwórz instancję ``virginica`` klasy ``Iris``
     #. Stwórz instancję ``versicolor`` klasy ``Iris``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> from inspect import isclass
@@ -194,33 +193,29 @@ OOP Class Iris
         >>> assert isinstance(versicolor, Iris)
         >>> assert isinstance(virginica, Iris)
 
-:The whys and wherefores:
-    * :ref:`OOP Classes and Instances`
-
 OOP Class Instance
 ------------------
 * Assignment name: OOP Class Instance
-* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/oop_class_instance.py`
+* Suggested filename: oop_class_instance.py
 
-:English:
+English:
     #. Define class ``Astronaut``
     #. Define class ``SpaceAgency``
     #. Create instance ``watney`` of a class ``Astronaut``
     #. Create instance ``nasa`` of a class ``SpaceAgency``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
+Polish:
     #. Zdefiniuj klasę ``Astronaut``
     #. Zdefiniuj klasę ``SpaceAgency``
     #. Stwórz instancję ``watney`` klasy ``Astronaut``
     #. Stwórz instancję ``nasa`` klasy ``SpaceAgency``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Output:
+Tests:
     .. code-block:: python
 
         >>> from inspect import isclass
@@ -228,9 +223,6 @@ OOP Class Instance
         >>> assert isclass(SpaceAgency)
         >>> assert isinstance(watney, Astronaut)
         >>> assert isinstance(nasa, SpaceAgency)
-
-:The whys and wherefores:
-    * :ref:`OOP Classes and Instances`
 
 
 References

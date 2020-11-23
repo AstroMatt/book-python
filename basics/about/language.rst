@@ -168,24 +168,23 @@ Assignments
 About Environment
 -----------------
 * Assignment name: About Environment
-* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/about_environment.py`
+* Suggested filename: about_environment.py
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Stwórz plik o nazwie ``about_env.py``
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Uruchom plik w swoim IDE (menu ``Run -> Run... -> nazwa Twojego skryptu``)
     #. Gdzie Python jest zainstalowany?
     #. Czy korzystasz z "Virtualenv"?
     #. Upewnij się, że w linijce z "Virtualenv" nie masz ``None``
 
-:Input:
+Given:
     .. code-block:: python
 
         import sys

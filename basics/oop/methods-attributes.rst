@@ -207,31 +207,30 @@ Assignments
 OOP Method Sequence
 -------------------
 * Assignment name: OOP Method Sequence
-* Last update: 2020-11-20
 * Complexity level: easy
 * Lines of code to write: 18 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/oop_method_sequence.py`
+* Suggested filename: oop_method_sequence.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Create class ``Iris`` with ``features: list[float]`` and ``label: str`` attributes
     #. For each row in ``DATA`` create ``Iris`` instance with row values
     #. Set class attributes at the initialization from positional arguments
     #. Create method which sums values of all ``features``
     #. In ``result`` gather species and sum of each row
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Stwórz klasę ``Iris`` z atrybutami ``features: list[float]`` i ``label: str``
     #. Dla każdego wiersza w ``DATA`` twórz instancję ``Iris`` z danymi z wiersza
     #. Ustaw atrybuty klasy przy inicjalizacji z argumentów pozycyjnych
     #. Stwórz metodę sumującą wartości wszystkich ``features``
     #. W ``result`` zbieraj nazwę gatunku i sumę z każdego wiersza
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -240,7 +239,7 @@ OOP Method Sequence
             (7.6, 3.0, 6.6, 2.1, 'virginica'),
         ]
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> result  # doctest: +NORMALIZE_WHITESPACE
@@ -251,14 +250,13 @@ OOP Method Sequence
 OOP Method Nested
 -----------------
 * Assignment name: OOP Method Nested
-* Last update: 2020-11-20
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/oop_method_nested.py`
+* Suggested filename: oop_method_nested.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Define class ``Iris``
     #. ``Iris`` has:
 
@@ -280,10 +278,10 @@ OOP Method Nested
     #. Create ``virginica`` object with attributes set at the initialization
     #. Print sum, mean and species name of each objects
     #. Do not use ``@dataclass``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zdefiniuj klasę ``Iris``
     #. ``Iris`` ma:
 
@@ -305,9 +303,12 @@ OOP Method Nested
     #. Stwórz obiekt ``virginica`` z atrybutami ustawionymi przy inicjalizacji
     #. Wypisz sumę, średnią oraz nazwę gatunku każdego z obiektów
     #. Nie używaj ``@dataclass``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Hints:
+    * ``isinstance(value, float)``
+
+Given:
     .. code-block:: python
 
         class Iris:
@@ -327,11 +328,9 @@ OOP Method Nested
         print(setosa.show())
         print(virginica.show())
 
-:Output:
+Tests:
     .. code-block:: text
 
         total=10.20 mean=2.55 setosa
         total=15.50 mean=3.88 virginica
 
-:Hints:
-    * ``isinstance(value, float)``

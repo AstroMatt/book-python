@@ -136,18 +136,17 @@ Assignments
 Function Arguments Sequence
 ---------------------------
 * Assignment name: Function Arguments Sequence
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/function_args_sequence.py`
+* Suggested filename: function_args_sequence.py
 
-:English:
+English:
     #. Define function which takes sequence of integers as an argument
     #. Sum only even numbers
     #. Print returned value
 
-:Polish:
+Polish:
     #. Zdefiniuj funkcję biorącą sekwencję liczb całkowitych jako argument
     #. Zsumuj tylko parzyste liczby
     #. Wypisz zwróconą wartość
@@ -155,13 +154,12 @@ Function Arguments Sequence
 Function Arguments Divide
 -------------------------
 * Assignment name: Function Arguments Divide
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/function_args_divide.py`
+* Suggested filename: function_args_divide.py
 
-:English:
+English:
     #. Define function ``divide``
     #. Function takes two arguments
     #. Function divides its arguments and returns the result
@@ -170,7 +168,7 @@ Function Arguments Divide
     #. Print returned values
     #. What to do in case of error?
 
-:Polish:
+Polish:
     #. Zdefiniuj funkcję ``divide``
     #. Funkcja przyjmuje dwa argumenty
     #. Funkcja dzieli oba argumenty przez siebie i zwraca wynik dzielenia
@@ -179,7 +177,7 @@ Function Arguments Divide
     #. Wypisz zwracane wartości
     #. Co zrobić w przypadku błędu?
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> divide(4, 0)
@@ -189,31 +187,30 @@ Function Arguments Divide
 Function Arguments Power
 ------------------------
 * Assignment name: Function Arguments Power
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/function_args_power.py`
+* Suggested filename: function_args_power.py
 
-:English:
+English:
     #. Define function ``power``
     #. Function takes two arguments
     #. Second argument is optional
     #. Function returns power of the first argument to the second
     #. If only one argument was passed, consider second equal to the first one
     #. Print returned values
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
+Polish:
     #. Zdefiniuj funkcję ``power``
     #. Funkcja przyjmuje dwa argumenty
     #. Drugi argument jest opcjonalny
     #. Funkcja zwraca wynik pierwszego argumentu do potęgi drugiego
     #. Jeżeli tylko jeden argument był podany, przyjmij drugi równy pierwszemu
     #. Wypisz zwracane wartości
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> power(4, 3)
@@ -224,34 +221,33 @@ Function Arguments Power
 Function Arguments Translate
 ----------------------------
 * Assignment name: Function Arguments Translate
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/function_args_translate.py`
+* Suggested filename: function_args_translate.py
 
-:English:
+English:
     #. Define function ``translate`` with parameter ``text``
     #. Use ``str.join()`` with generator expression to iterate over ``text``
     #. If letter is in ``PL`` then use conversion value as letter, otherwise take letter
     #. Return from function translated ``text``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
+Polish:
     #. Zdefiniuj funkcję ``translate`` przyjmującą parametr ``text``
     #. Użyj ``str.join()`` z wyrażeniem generatorowym do iteracji po ``text``
     #. Jeżeli litera jest w ``PL`` to użyj skonwertowanej wartości jako litera, w przeciwnym przypadku to weź literę
     #. Zwróć z funkcji przetłumaczony ``text``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         PL = {'ą': 'a', 'ć': 'c', 'ę': 'e',
               'ł': 'l', 'ń': 'n', 'ó': 'o',
               'ś': 's', 'ż': 'z', 'ź': 'z'}
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> translate('zażółć')
@@ -269,25 +265,24 @@ Function Arguments Translate
 Function Arguments Clean
 ------------------------
 * Assignment name: Function Arguments Clean
-* Last update: 2020-11-19
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/function_args_clean.py`
+* Suggested filename: function_args_clean.py
 
-:English:
+English:
     #. Write function cleaning up data
     #. Function takes one argument of type ``str``
     #. Function returns cleaned text
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
+Polish:
     #. Napisz funkcję czyszczącą dane
     #. Funkcja przyjmuje jeden argument typu ``str``
     #. Funkcja zwraca oczyszczony tekst
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> clean('ul.Mieszka II')
@@ -313,41 +308,33 @@ Function Arguments Clean
         >>> clean('Jana III Sobi  eskiego ')
         'Jana III Sobieskiego'
 
-:The whys and wherefores:
-    * Defining and calling functions
-    * Passing function arguments
-    * Cleaning data from user input
-
-.. todo:: Translate input data to English
+TODO: Translate input data to English
 
 Function Arguments Numbers to Str
 ---------------------------------
 * Assignment name: Function Arguments Numbers to Str
-* Last update: 2020-11-19
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/function_args_numstr.py`
+* Suggested filename: function_args_numstr.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Given is pilot's alphabet for numbers
     #. Convert ``DATA: dict[int, str]`` to ``data: dict[str, str]`` (keys as ``str``)
-    #. For input data (see input section below)
     #. Define function ``pilot_say`` converting ``int`` or ``float`` to text form in Pilot's Speak
     #. You cannot change ``DATA``, but you can modify ``data``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Dany jest alfabet pilotów dla numerów
     #. Przekonwertuj ``DATA: dict[int, str]`` na ``data: dict[str, str]`` (klucze jako ``str``)
-    #. Dla danych wejściowych (patrz sekcja input poniżej)
     #. Zdefiniuj funkcję ``pilot_say`` konwertującą ``int`` lub ``float`` na formę tekstową w mowie pilotów
     #. Nie możesz zmieniać ``DATA``, ale możesz modyfikować ``data``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = {
@@ -363,7 +350,7 @@ Function Arguments Numbers to Str
             9: 'niner',
         }
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> pilot_say(1969)
@@ -381,36 +368,29 @@ Function Arguments Numbers to Str
         >>> pilot_say(-49.35)
         'minus fower niner and tree fife'
 
-:The whys and wherefores:
-    * Defining and calling functions
-    * Passing function arguments
-    * Cleaning data from user input
-    * ``dict`` lookups
-
 Function Arguments Numbers to Human
 -----------------------------------
 * Assignment name: Function Arguments Numbers to Human
-* Last update: 2020-11-19
 * Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/function_args_numhuman.py`
+* Suggested filename: function_args_numhuman.py
 
-:English:
+English:
     #. Define function converting ``int`` or ``float`` to text form
     #. Text form must be in proper grammar form
     #. Max 6 digits before decimal separator (point ``.``)
     #. Max 5 digits after decimal separator (point ``.``)
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
+Polish:
     #. Zdefiniuj funkcję konwertującą ``int`` lub ``float`` na formę tekstową
     #. Forma tekstowa musi być poprawna gramatycznie
     #. Max 6 cyfr przed separatorem dziesiętnym (point ``.``)
     #. Max 5 cyfr po separatorze dziesiętnym (point ``.``)
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> number_to_str(1969)
@@ -428,8 +408,3 @@ Function Arguments Numbers to Human
         >>> number_to_str(-49.35)
         'minus forty nine and thirty five hundreds'
 
-:The whys and wherefores:
-    * Defining and calling functions
-    * Passing function arguments
-    * Cleaning data from user input
-    * ``dict`` lookups

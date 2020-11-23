@@ -161,23 +161,26 @@ Assignments
 Function Lambda Chain
 ---------------------
 * Assignment name: Function Lambda Chain
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/function_lambda_chain.py`
+* Suggested filename: function_lambda_chain.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Inline functions ``odd()`` and ``cube()`` with ``lambda`` expressions
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wciel kod ``odd()`` i ``cube()`` wykorzystując wyrażenia ``lambda``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Hints:
+    * ``mean = sum(...) / len(...)``
+    * type cast to ``list()`` before calculating mean to expand generator
+
+Given:
     .. code-block:: python
 
         def odd(x):
@@ -195,7 +198,7 @@ Function Lambda Chain
 
         print(result)
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> type(result) is float
@@ -203,6 +206,3 @@ Function Lambda Chain
         >>> result
         11502.0
 
-:Hints:
-    * ``mean = sum(...) / len(...)``
-    * type cast to ``list()`` before calculating mean to expand generator

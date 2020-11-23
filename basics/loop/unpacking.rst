@@ -135,38 +135,37 @@ Assignments
 Loop Unpacking Months
 ---------------------
 * Assignment name: Loop Unpacking Months
-* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/loop_unpacking_months.py`
+* Suggested filename: loop_unpacking_months.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Use ``enumerate()`` to convert ``MONTH`` into dict:
 
         * Keys: month number
         * Values: month name
 
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Użyj ``enumerate()`` do konwersji ``MONTH`` w słownik:
 
         * klucz: numer miesiąca
         * wartość: nazwa miesiąca
 
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         MONTHS = ['January', 'February', 'March', 'April',
                   'May', 'June', 'July', 'August', 'September',
                   'October', 'November', 'December']
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> result  # doctest: +NORMALIZE_WHITESPACE
@@ -186,29 +185,28 @@ Loop Unpacking Months
 Loop Unpacking Endswith
 -----------------------
 * Assignment name: Loop Unpacking Endswith
-* Last update: 2020-11-18
 * Complexity level: medium
 * Lines of code to write: 3 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/loop_unpacking_endswith.py`
+* Suggested filename: loop_unpacking_endswith.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Separate header from data
     #. Define ``result: set[str]``
     #. Iterating over data unpack row to ``*features`` and ``label``
     #. Append to ``result`` species names ending with "ca" or "osa"
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Odseparuj nagłówek od danych
     #. Zdefiniuj ``result: set[str]``
     #. Iterując po danych rozpakuj wiersz do ``*features`` oraz ``label``
     #. Dodaj do ``result`` nazwy gatunków kończące się na "ca" lub "osa"
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -223,19 +221,15 @@ Loop Unpacking Endswith
             (7.6, 3.0, 6.6, 2.1, {'virginica'}),
             (4.6, 3.1, 1.5, 0.2, {'setosa'}),
         ]
-:Output:
+
+Hints:
+    * ``str.endswith()``
+    * ``set.pop()``
+    * ``isinstance`` or ``type``
+
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is set
         >>> result
         {'virginica', 'setosa'}
-
-:The whys and wherefores:
-    * Accessing ``set`` items
-    * Iterating over nested structure
-    * Unpacking in ``for`` loop
-
-:Hints:
-    * ``str.endswith()``
-    * ``set.pop()``
-    * ``isinstance`` or ``type``

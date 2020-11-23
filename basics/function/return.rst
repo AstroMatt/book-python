@@ -177,25 +177,24 @@ Assignments
 Function Return Numbers
 -----------------------
 * Assignment name: Function Return Numbers
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/function_return_numbers.py`
+* Suggested filename: function_return_numbers.py
 
-:English:
+English:
     #. Define function ``add`` without parameters
     #. Function should return sum of ``1`` and ``2``
     #. Call function and intercept returned value
     #. Print value
 
-:Polish:
+Polish:
     #. Zdefiniuj funkcję ``add`` bez parametrów
     #. Funkcja powinna zwracać sumę ``1`` i ``2``
     #. Wywołaj funkcję i przechwyć zwracaną wartość
     #. Wyświetl wartość
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> result

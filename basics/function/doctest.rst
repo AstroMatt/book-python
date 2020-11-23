@@ -451,23 +451,22 @@ Assignments
 Function Doctest Temperature
 ----------------------------
 * Assignment name: Function Doctest Temperature
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/function_doctest_temperature.py`
+* Suggested filename: function_doctest_temperature.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Write implementation of a function ``celsius_to_kelvin``
     #. All tests must pass
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Napisz implementację funkcji ``celsius_to_kelvin``
     #. Wszystkie testy muszą przechodzić
 
-:Input:
+Given:
     .. code-block:: python
 
         def celsius_to_kelvin(degrees):
@@ -494,13 +493,12 @@ Function Doctest Temperature
 Function Doctest Distance
 -------------------------
 * Assignment name: Function Doctest Distance
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 21 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/function_doctest_distance.py`
+* Suggested filename: function_doctest_distance.py
 
-:English:
+English:
     #. Write functions which convert distance given in kilometers to meters
     #. 1 km = 1000 m
     #. Distance cannot be negative
@@ -508,7 +506,7 @@ Function Doctest Distance
     #. Write doctests
     #. All tests must pass
 
-:Polish:
+Polish:
     #. Napisz funkcję, która przeliczy dystans podany w kilometrach na metry
     #. 1 km = 1000 m
     #. Dystans nie może być ujemny
@@ -516,7 +514,7 @@ Function Doctest Distance
     #. Napisz doctesty
     #. Wszystkie testy muszą przechodzić
 
-:Output:
+Tests:
     * Test arguments:
 
         * -1
@@ -531,26 +529,25 @@ Function Doctest Distance
 Function Doctest Regexp
 -----------------------
 * Assignment name: Function Doctest Regexp
-* Last update: 2020-11-19
 * Complexity level: hard
 * Lines of code to write: 0 lines
 * Estimated time of completion: 5 min
 * Solution: TODO
 * Warning: Do not write any code - **discussion only**
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Pattern incorrectly classifies ``https://foo_bar.example.com/`` as invalid
     #. Fix pattern without automated tests
     #. Don't break classification of the other cases
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wyrażenie niepoprawnie klasyfikuje ``https://foo_bar.example.com/`` jako nieprawidłowy
     #. Popraw wyrażenie bez testów automatycznych
     #. Nie zepsuj klasyfikacji pozostałych przypadków
 
-:Input:
+Given:
     .. code-block:: python
         :caption: @diegoperini --  https://mathiasbynens.be/demo/url-regex
 

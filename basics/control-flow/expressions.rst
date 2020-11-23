@@ -152,14 +152,13 @@ Assignments
 Conditional Expression
 ----------------------
 * Assignment name: Conditional Expression
-* Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 25 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/controlflow_conditional_expression.py`
+* Suggested filename: controlflow_conditional_expression.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Table contains Blood Pressure classification according to American Heart Association :cite:`Whelton2018`
     #. User inputs blood pressure in ``XXX/YY`` or ``XXX/YYY`` format
     #. User will not try to input invalid data
@@ -171,8 +170,8 @@ Conditional Expression
     #. Print status of given blood pressure
     #. If systolic and diastolic values are in different categories, assume worst case
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Tabela zawiera klasyfikację ciśnienia krwi wg American Heart Association :cite:`Whelton2018`
     #. Użytkownik wprowadza ciśnienie krwi w formacie ``XXX/YY`` lub ``XXX/YYY``
     #. Użytkownik nie będzie próbował wprowadzać danych niepoprawnych
@@ -194,7 +193,7 @@ Conditional Expression
     "Hypertension stage 2", "140 or higher", "or", "90 or higher"
     "Hypertensive Crisis", "Higher than 180", "and/or", "Higher than 120"
 
-:Input:
+Given:
     .. code-block:: text
 
         '119/79': 'Normal',
@@ -209,12 +208,5 @@ Conditional Expression
         '141/91': 'Hypertension stage 2',
         '180/120': ('Hypertension stage 2', 'Hypertensive Crisis')
 
-:The whys and wherefores:
-    * Reading user input
-    * Type casting
-    * Conditional statements
-    * Composite conditional statements
-    * Checking for corner cases
-    * Defining constants and variables
-
-.. todo:: Doctests
+Tests:
+    TODO doctests

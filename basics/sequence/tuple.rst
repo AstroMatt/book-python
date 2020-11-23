@@ -180,31 +180,30 @@ Assignments
 Sequence Tuple Create
 ---------------------
 * Assignment name: Sequence Tuple Create
-* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 2 min
-* Solution: :download:`solution/sequence_tuple_create.py`
+* Suggested filename: sequence_tuple_create.py
 
-:English:
+English:
     #. Create tuple ``result`` with elements:
 
         * ``'a'``
         * ``1``
         * ``2.2``
 
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
+Polish:
     #. Stwórz tuple ``result`` z elementami:
 
         * ``'a'``
         * ``1``
         * ``2.2``
 
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is tuple
@@ -214,25 +213,28 @@ Sequence Tuple Create
 Sequence Tuple Select
 ---------------------
 * Assignment name: Sequence Tuple Select
-* Last update: 2020-11-17
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/sequence_tuple_select.py`
+* Suggested filename: sequence_tuple_select.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Create a ``tuple`` representing all Species
     #. To convert table use multiline select with ``alt`` key in your IDE
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Stwórz ``tuple`` z nazwami gatunków
     #. Do konwersji tabelki wykorzystaj zaznaczanie wielu linijek za pomocą klawisza ``alt`` w Twoim IDE
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Hints:
+    * ``ALT`` + ``left mouse button`` = multiple select
+    * ``ALT`` + ``SHIFT`` + ``left mouse button drag`` = vertical selection
+
+Given:
     .. code-block:: text
 
         "Sepal length", "Sepal width", "Petal length", "Petal width", "Species"
@@ -248,7 +250,7 @@ Sequence Tuple Select
         "4.9", "2.5", "4.5", "1.7", "virginica"
         "7.1", "3.0", "5.9", "2.1", "virginica"
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(species) is tuple
@@ -257,68 +259,28 @@ Sequence Tuple Select
          'versicolor', 'setosa', 'versicolor', 'virginica',
          'setosa', 'virginica', 'virginica')
 
-:The whys and wherefores:
-    * Defining ``tuple``
-    * Learning IDE features
-
-:Hints:
-    * ``ALT`` + ``left mouse button`` = multiple select
-    * ``ALT`` + ``SHIFT`` + ``left mouse button drag`` = vertical selection
 
 Sequence Tuple Mean
 -------------------
 * Assignment name: Sequence Tuple Mean
-* Last update: 2020-11-17
 * Complexity level: medium
 * Lines of code to write: 13 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/sequence_tuple_mean.py`
+* Suggested filename: sequence_tuple_mean.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Calculate mean for each numerical values column
     #. To convert table use multiline select with ``alt`` key in your IDE
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wylicz średnią arytmetyczną dla każdej z kolumn numerycznych
     #. Do konwersji tabelki wykorzystaj zaznaczanie wielu linijek za pomocą klawisza ``alt`` w Twoim IDE
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
-    .. code-block:: text
-
-        "Sepal length", "Sepal width", "Petal length", "Petal width", "Species"
-        "5.8", "2.7", "5.1", "1.9", "virginica"
-        "5.1", "3.5", "1.4", "0.2", "setosa"
-        "5.7", "2.8", "4.1", "1.3", "versicolor"
-        "6.3", "2.9", "5.6", "1.8", "virginica"
-        "6.4", "3.2", "4.5", "1.5", "versicolor"
-        "4.7", "3.2", "1.3", "0.2", "setosa"
-        "7.0", "3.2", "4.7", "1.4", "versicolor"
-        "7.6", "3.0", "6.6", "2.1", "virginica"
-        "4.9", "3.0", "1.4", "0.2", "setosa"
-        "4.9", "2.5", "4.5", "1.7", "virginica"
-        "7.1", "3.0", "5.9", "2.1", "virginica"
-
-:Output:
-    .. code-block:: text
-
-        >>> sepal_length
-        5.954545454545454
-        >>> sepal_width
-        3.0
-        >>> petal_length
-        4.1
-        >>> petal_width
-        1.3090909090909089
-
-:The whys and wherefores:
-    * Defining ``tuple``
-    * Learning IDE features
-
-:Hints:
+Hints:
     * ``mean = sum(...) / len(...)``
     * ``ALT`` + ``left mouse button`` = multiple select
     * ``ALT`` + ``SHIFT`` + ``left mouse button drag`` = vertical selection
@@ -330,3 +292,32 @@ Sequence Tuple Mean
     * ``CTRL`` + ``left`` = jump over the word to the left
     * ``CTRL`` + ``ALT`` + L = Reformat Code on Windows
     * ``CMD`` + ``ALT`` + L = Reformat Code on macOS
+
+Given:
+    .. code-block:: text
+
+        "Sepal length", "Sepal width", "Petal length", "Petal width", "Species"
+        "5.8", "2.7", "5.1", "1.9", "virginica"
+        "5.1", "3.5", "1.4", "0.2", "setosa"
+        "5.7", "2.8", "4.1", "1.3", "versicolor"
+        "6.3", "2.9", "5.6", "1.8", "virginica"
+        "6.4", "3.2", "4.5", "1.5", "versicolor"
+        "4.7", "3.2", "1.3", "0.2", "setosa"
+        "7.0", "3.2", "4.7", "1.4", "versicolor"
+        "7.6", "3.0", "6.6", "2.1", "virginica"
+        "4.9", "3.0", "1.4", "0.2", "setosa"
+        "4.9", "2.5", "4.5", "1.7", "virginica"
+        "7.1", "3.0", "5.9", "2.1", "virginica"
+
+Tests:
+    .. code-block:: text
+
+        >>> sepal_length
+        5.954545454545454
+        >>> sepal_width
+        3.0
+        >>> petal_length
+        4.1
+        >>> petal_width
+        1.3090909090909089
+

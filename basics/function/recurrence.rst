@@ -76,13 +76,12 @@ Assignments
 Function Recurrence Brackets
 ----------------------------
 * Assignment name: Function Recurrence Brackets
-* Last update: 2020-11-19
 * Complexity level: medium
 * Lines of code to write: 10 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/function_recurrence_brackets.py`
+* Suggested filename: function_recurrence_brackets.py
 
-:English:
+English:
     #. Create function which checks if brackets are balanced
     #. Brackets are balanced, when each opening bracket has closing pair
     #. Use recursion
@@ -93,7 +92,7 @@ Function Recurrence Brackets
         * curly ``{`` i ``}``
         * angle ``<`` i ``>``
 
-:Polish:
+Polish:
     #. Stwórz funkcję, która sprawdzi czy nawiasy są zbalansowane
     #. Nawiasy są zbalansowane, gdy każdy otwierany nawias ma zamykającą parę
     #. Użyj rekurencji

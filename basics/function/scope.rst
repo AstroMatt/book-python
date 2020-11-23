@@ -293,33 +293,32 @@ Assignments
 Function Scope Filter
 ---------------------
 * Assignment name: Function Scope Filter
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/function_scope_filter.py`
+* Suggested filename: function_scope_filter.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Define in global scope ``SELECT: set[str]`` with values: ``'setosa', 'versicolor'``
     #. Define function ``sumif(features, label)``
     #. Function sums ``features``, only when ``label`` is in ``SELECT``
     #. When ``label`` is not in ``select`` return ``0`` (zero)
     #. Iterate over data and split row to ``features`` and ``label`` (last)
     #. Define ``result: float`` with sum of all features from species mentioned in ``SELECT``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zdefiniuj w przestrzeni globalnej ``SELECT: set[str]`` z wartościami: ``'setosa', 'versicolor'``
     #. Zdefiniuj funkcję ``sumif(features, label)``
     #. Funkcja sumuje ``features``, tylko gdy ``label`` jest w ``SELECT``
     #. Gdy ``label`` nie występuje w ``select`` zwróć ``0`` (zero)
     #. Iterując po danych rozdziel wiersz na ``features`` i ``label`` (ostatni)
     #. Zdefiniuj ``result: float`` z sumą wszystkich cech gatunków wymienionych w ``SELECT``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -331,7 +330,7 @@ Function Scope Filter
             (6.4, 3.2, 4.5, 1.5, 'versicolor'),
             (4.7, 3.2, 1.3, 0.2, 'setosa')]
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> result
@@ -340,21 +339,20 @@ Function Scope Filter
 Function Scope Roman to Int
 ---------------------------
 * Assignment name: Function Scope Roman to Int
-* Last update: 2020-11-19
 * Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/function_scope_romanint.py`
+* Suggested filename: function_scope_romanint.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Define function converting roman numerals to integer
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zdefiniuj funkcję przeliczającą liczbę rzymską na całkowitą
 
-:Input:
+Given:
     .. code-block:: python
 
         CONVERSION = {
@@ -380,32 +378,24 @@ Function Scope Roman to Int
             'D': 500,
             'M': 1000,
         }
-
-:The whys and wherefores:
-    * Defining and calling functions
-    * Checking for corner cases
-    * Passing function arguments
-    * Cleaning data from user input
-    * ``dict`` lookups
 
 Function Scope Int To Roman
 ---------------------------
 * Assignment name: Function Scope Int To Roman
-* Last update: 2020-11-19
 * Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/function_scope_introman.py`
+* Suggested filename: function_scope_introman.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Define function converting integer to roman numerals
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zdefiniuj funkcję przeliczającą liczbę całkowitą na rzymską
 
-:Input:
+Given:
     .. code-block:: python
 
         CONVERSION = {
@@ -432,9 +422,3 @@ Function Scope Int To Roman
             'M': 1000,
         }
 
-:The whys and wherefores:
-    * Defining and calling functions
-    * Checking for corner cases
-    * Passing function arguments
-    * Cleaning data from user input
-    * ``dict`` lookups

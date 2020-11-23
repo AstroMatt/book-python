@@ -315,32 +315,34 @@ Assignments
 Function Unpack Flat
 --------------------
 * Assignment name: Function Unpack Flat
-* Last update: 2020-10-12
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/sequence_unpack_flat.py`
+* Suggested filename: sequence_unpack_flat.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Using ``str.split()`` split input data by white space
     #. Separate ip address and host names
     #. Use asterisk ``*`` notation
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Używając ``str.split()`` podziel dane wejściowe po białych znakach
     #. Odseparuj adres ip i nazw hostów
     #. Skorzystaj z notacji z gwiazdką ``*``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Hints:
+    * ``help(str.split)``
+
+Given:
     .. code-block:: python
 
         DATA = '10.13.37.1      nasa.gov esa.int roscosmos.ru'
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(ip) is str
@@ -352,31 +354,27 @@ Function Unpack Flat
         >>> hosts
         ['nasa.gov', 'esa.int', 'roscosmos.ru']
 
-:Hints:
-    * ``help(str.split)``
-
 Function Unpack Nested
 ----------------------
 * Assignment name: Function Unpack Nested
-* Last update: 2020-10-12
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/sequence_unpack_nested.py`
+* Suggested filename: sequence_unpack_nested.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Separate header and records
     #. Use asterisk ``*`` notation
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Odseparuj nagłówek od danych
     #. Skorzystaj z konstrukcji z gwiazdką ``*``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -389,7 +387,7 @@ Function Unpack Nested
             (4.7, 3.2, 1.3, 0.2, 'setosa'),
         ]
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(header) is tuple

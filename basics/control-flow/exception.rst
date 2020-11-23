@@ -654,18 +654,17 @@ Assignments
 Exception Raise
 ---------------
 * Assignment name: Exception Raise
-* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/controlflow_exception_raise.py`
+* Suggested filename: controlflow_exception_raise.py
 
-:English:
+English:
     #. Ask user to input age
     #. If user has less than 18 years
     #. Raise an exception ``PermissionError`` with message "Adults only"
 
-:Polish:
+Polish:
     #. Poproś użytkownika o wprowadzenie wieku
     #. Jeżeli użytkownik ma mniej niż 18 lat
     #. Wyrzuć wyjątek ``PermissionError`` z komunikatem "Adults only"
@@ -675,19 +674,18 @@ Exception Raise
 Exception Catch
 ---------------
 * Assignment name: Exception Catch
-* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/controlflow_exception_catch.py`
+* Suggested filename: controlflow_exception_catch.py
 
-:English:
+English:
     #. Ask user to input temperature in Kelvins
     #. Convert temperature to ``float``
     #. If cannot type cast to ``float``, then print 'Invalid temperature' and exit with status code 1
     #. Print temperature
 
-:Polish:
+Polish:
     #. Poproś użytkownika o wprowadzenie temperatury w Kelwinach
     #. Przekonwertuj temperaturę do ``float``
     #. Jeżeli nie można rzutować do ``float``, to wypisz "Invalid temperature" i wyjdź z kodem błędu 1
@@ -698,19 +696,18 @@ Exception Catch
 Exception Define
 ----------------
 * Assignment name: Exception Define
-* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/controlflow_exception_define.py`
+* Suggested filename: controlflow_exception_define.py
 
-:English:
+English:
     #. Ask user to input temperature in Kelvins
     #. User will always type proper ``int`` or ``float``
     #. Define exception for negative temperature
     #. Raise your exception if temperature is less than 0
 
-:Polish:
+Polish:
     #. Poproś użytkownika o wprowadzenie temperatury w Kelwinach
     #. Użytkownik zawsze poda poprawne ``int`` lub ``float``
     #. Zdefiniuj wyjątek dla temperatur ujemnych
@@ -721,19 +718,18 @@ Exception Define
 Exception Custom
 ----------------
 * Assignment name: Exception Custom
-* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/controlflow_exception_custom.py`
+* Suggested filename: controlflow_exception_custom.py
 
-:English:
+English:
     #. Ask user to input angle in degrees
     #. Cotangent for 180 degrees is infinite
     #. Define own exception ``CotangentError``
     #. If user typed angle equal to 180, raise your exception
 
-:Polish:
+Polish:
     #. Poproś użytkownika o wprowadzenie kąta
     #. Cotangens dla konta 180 ma nieskończoną wartość
     #. Zdefiniuj własny wyjątek ``CotangentError``

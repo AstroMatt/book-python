@@ -164,13 +164,12 @@ Assignments
 Conditional Operators Modulo
 ----------------------------
 * Assignment name: Conditional Operators Modulo
-* Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/controlflow_operators_modulo.py`
+* Suggested filename: controlflow_operators_modulo.py
 
-:English:
+English:
     #. Read a number from user
     #. User will input ``int`` and will not try to input invalid data
     #. Define ``result: bool`` with parity check of input number
@@ -178,7 +177,7 @@ Conditional Operators Modulo
     #. Print ``result``
     #. Do not use ``if`` statement
 
-:Polish:
+Polish:
     #. Wczytaj liczbę od użytkownika
     #. Użytkownika poda ``int`` i nie będzie próbował wprowadzać niepoprawnych danych
     #. Zdefiniuj ``result: bool`` z wynikiem sprawdzania parzystości liczby wprowadzonej
@@ -186,7 +185,12 @@ Conditional Operators Modulo
     #. Wypisz ``result``
     #. Nie używaj instrukcji ``if``
 
-:Output:
+Hints:
+    * ``%`` has different meaning for ``int`` and ``str``
+    * ``%`` on ``str`` is overloaded as a string formatting
+    * ``%`` on ``int`` is overloaded as a modulo division
+
+Tests:
     .. code-block:: text
 
         >>> '5' % 2
@@ -200,13 +204,3 @@ Conditional Operators Modulo
         >>> 5 % 2
         1
 
-:The whys and wherefores:
-    * Reading input from user
-    * Type casting
-    * Print formatting
-    * Numerical operators
-
-:Hints:
-    * ``%`` has different meaning for ``int`` and ``str``
-    * ``%`` on ``str`` is overloaded as a string formatting
-    * ``%`` on ``int`` is overloaded as a modulo division

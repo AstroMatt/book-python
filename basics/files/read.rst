@@ -166,33 +166,32 @@ Assignments
 File Read Str
 -------------
 * Assignment name: File Read Str
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/file_read_str.py`
+* Suggested filename: file_read_str.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Write ``DATA`` to file ``FILE``
     #. Read ``FILE`` to ``result: str``
     #. Print ``result``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zapisz ``DATA`` do pliku ``FILE``
     #. Wczytaj ``FILE`` do ``result: str``
     #. Wypisz ``result``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         FILE = r'_temporary.txt'
         DATA = 'hello world'
 
-:Output:
+Tests:
     .. code-block:: python
 
         >>> assert type(result) is str
@@ -202,33 +201,32 @@ File Read Str
 File Read Multiline
 -------------------
 * Assignment name: File Read Multiline
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/file_read_multiline.py`
+* Suggested filename: file_read_multiline.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Write ``DATA`` to file ``FILE``
     #. Read ``FILE`` to ``result: list[str]``
     #. Print ``result``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zapisz ``DATA`` do pliku ``FILE``
     #. Wczytaj ``FILE`` do ``result: list[str]``
     #. Wypisz ``result``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         FILE = r'_temporary.txt'
         DATA = 'sepal_length\nsepal_width\npetal_length\npetal_width\nspecies\n'
 
-:Output:
+Tests:
     .. code-block:: python
 
         >>> assert type(result) is list
@@ -239,14 +237,13 @@ File Read Multiline
 File Read CSV
 -------------
 * Assignment name: File Read CSV
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/file_read_csv.py`
+* Suggested filename: file_read_csv.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Write ``DATA`` to file ``FILE``
     #. Read ``FILE``
     #. Separate header from data
@@ -260,10 +257,10 @@ File Read CSV
         * Append species name to ``labels``
 
     #. Print ``header``, ``features`` and ``labels``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zapisz ``DATA`` do pliku ``FILE``
     #. Wczytaj ``FILE``
     #. Odseparuj nagłówek od danych
@@ -277,9 +274,12 @@ File Read CSV
         * Dodaj gatunek do ``labels``
 
     #. Wyświetl ``header``, ``features`` i ``labels``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Hints:
+    * ``tuple(float(x) for x in X)``
+
+Given:
     .. code-block:: python
 
         FILE = r'_temporary.csv'
@@ -296,7 +296,7 @@ File Read CSV
         features = []
         labels = []
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> header
@@ -311,26 +311,17 @@ File Read CSV
         >>> label
         ['setosa', 'virginica', 'versicolor', 'virginica', 'versicolor', 'setosa']
 
-:The whys and wherefores:
-    * Reading file
-    * Iterating over lines in file
-    * String methods
-    * Working with nested sequences
-
-:Hints:
-    * ``tuple(float(x) for x in X)``
 
 File Read Dict
 --------------
 * Assignment name: File Read Dict
-* Last update: 2020-11-19
 * Complexity level: medium
 * Lines of code to write: 10 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/file_read_dict.py`
+* Suggested filename: file_read_dict.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Write ``DATA`` to file ``FILE``
     #. Read ``FILE`` and for each line:
 
@@ -341,10 +332,10 @@ File Read Dict
         * Append IP address and hosts names to ``result``
 
     #. Merge hostnames for the same IP
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zapisz ``DATA`` do pliku ``FILE``
     #. Wczytaj ``FILE`` i dla każdej linii:
 
@@ -355,9 +346,13 @@ File Read Dict
         * Dodaj adres IP i nazwy hostów do ``result``
 
     #. Scal nazwy hostów dla tego samego IP
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Hints:
+    * ``str.isspace()``
+    * ``str.split()``
+
+Given:
     .. code-block:: python
 
         FILE = r'_temporary.txt'
@@ -367,7 +362,7 @@ File Read Dict
         ::1             localhost
         """
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> result  # doctest: +NORMALIZE_WHITESPACE
@@ -376,27 +371,16 @@ File Read Dict
          '255.255.255.255': ['broadcasthost'],
          '::1': ['localhost']}
 
-:The whys and wherefores:
-    * Reading file
-    * Iterating over lines in file
-    * String methods
-    * Working with nested sequences
-
-:Hints:
-    * ``str.isspace()``
-    * ``str.split()``
-
 File Read List of Dicts
 -----------------------
 * Assignment name: File Read List of Dicts
-* Last update: 2020-11-19
 * Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/file_read_listdict.py`
+* Suggested filename: file_read_listdict.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Define ``result: list[dict]``
     #. Using ``file.write()`` save input data from listing below to file ``hosts-advanced.txt``
     #. Read file and for each line:
@@ -410,10 +394,10 @@ File Read List of Dicts
         * Append IP address and hosts names to ``result``
 
     #. Merge hostnames for the same IP
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zdefiniuj ``result: list[dict]``
     #. Używając ``file.write()`` zapisz dane wejściowe z listingu poniżej do pliku ``hosts-advanced.txt``
     #. Przeczytaj plik i dla każdej linii:
@@ -427,9 +411,14 @@ File Read List of Dicts
         * Dodaj adres IP i nazwy hostów do ``result``
 
     #. Scal nazwy hostów dla tego samego IP
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Hints:
+    * ``str.split()``
+    * ``str.isspace()``
+    * ``value = True if ... else False``
+
+Given:
     .. code-block:: text
 
         DATA = """
@@ -446,7 +435,7 @@ File Read List of Dicts
         ::1             localhost
         """
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> result  # doctest: +NORMALIZE_WHITESPACE
@@ -455,15 +444,3 @@ File Read List of Dicts
          {'ip': '255.255.255.255', 'hostnames': ['broadcasthost'], 'protocol': 'IPv4'},
          {'ip': '::1', 'hostnames': ['localhost'], 'protocol': 'IPv6'}]
 
-:The whys and wherefores:
-    * czytanie i parsowanie pliku
-    * nieregularne pliki konfiguracyjne (struktura może się zmieniać)
-    * filtrowanie elementów
-    * korzystanie z pętli i instrukcji warunkowych
-    * parsowanie stringów
-    * praca ze ścieżkami w systemie operacyjnym
-
-:Hints:
-    * ``str.split()``
-    * ``str.isspace()``
-    * ``value = True if ... else False``

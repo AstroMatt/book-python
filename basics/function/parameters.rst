@@ -200,18 +200,17 @@ Assignments
 Function Parameters Sequence
 ----------------------------
 * Assignment name: Function Parameters Sequence
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/function_parameters_sequence.py`
+* Suggested filename: function_parameters_sequence.py
 
-:English:
+English:
     #. Define function ``add``
     #. Function parameter is sequence of integers
     #. Print sum of all sequence values
 
-:Polish:
+Polish:
     #. Zdefiniuj funkcję ``add``
     #. Parametrem do funkcji ma być sekwencja liczb całkowitych
     #. Wypisz sumę wszystkich wartości sekwencji
@@ -219,27 +218,26 @@ Function Parameters Sequence
 Function Parameters Echo
 ------------------------
 * Assignment name: Function Parameters Echo
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/function_parameters_echo.py`
+* Suggested filename: function_parameters_echo.py
 
-:English:
+English:
     #. Define function ``echo`` with two parameters
     #. Parameter ``a`` is required
     #. Parameter ``b`` is required
     #. Wypisz ``a`` i ``b``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
+Polish:
     #. Zdefiniuj funkcję ``echo`` z dwoma parametrami
     #. Parametr ``a`` jest wymagany
     #. Parametr ``b`` jest wymagany
     #. Wypisz ``a`` i ``b``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Output:
+Tests:
     .. code-block:: python
 
         >>> echo(1, 2)
@@ -251,29 +249,28 @@ Function Parameters Echo
 Function Parameters Default
 ---------------------------
 * Assignment name: Function Parameters Default
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/function_parameters_default.py`
+* Suggested filename: function_parameters_default.py
 
-:English:
+English:
     #. Define function ``default`` with two parameters
     #. Parameter ``a`` is required
     #. Parameter ``b`` is optional and has default value ``None``
     #. If only one argument was passed, consider second equal to the first one
     #. Print ``a`` i ``b``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
+Polish:
     #. Zdefiniuj funkcję ``default`` z dwoma parametrami
     #. Parametr ``a`` jest wymagany
     #. Parametr ``b`` jest opcjonalny i ma domyślną wartość ``None``
     #. Jeżeli tylko jeden argument był podany, przyjmij drugi równy pierwszemu
     #. Wypisz ``a`` i ``b``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Output:
+Tests:
     .. code-block:: python
 
         >>> default(1)

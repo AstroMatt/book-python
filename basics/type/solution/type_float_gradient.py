@@ -21,7 +21,7 @@ Polish:
     5. Zwróć uwagę na kolejność wykonywania działań
     6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Hints:
+Hints:
     * pressure gradient (decrease) = 11.3 Pa / 1 m
     * 1 hPa = 100 Pa
     * 1 kPa = 1000 Pa

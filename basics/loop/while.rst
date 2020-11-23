@@ -214,34 +214,33 @@ Assignments
 Loop While Cast
 ---------------
 * Assignment name: Loop While Cast
-* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/loop_while_cast.py`
+* Suggested filename: loop_while_cast.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Create ``result: list[int]``
     #. Use ``while`` to iterate over ``DATA``
     #. Convert all elements of ``DATA`` to ``int``
     #. Converted values add to ``result``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Stwórz ``result: list[int]``
     #. Użyj ``while`` do iterowania po ``DATA``
     #. Przekonwertuj wszystkie elementy ``DATA`` do ``int``
     #. Przekonwertowane wartości dodaj do ``result``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = ['1', '2', '3']
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is list
@@ -252,34 +251,33 @@ Loop While Cast
 Loop While Convert
 ------------------
 * Assignment name: Loop While Convert
-* Last update: 2020-11-18
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/loop_while_convert.py`
+* Suggested filename: loop_while_convert.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Create ``result: list[float]``
     #. Use ``while`` to iterate over ``DATA``
     #. Convert all elements of ``DATA`` to ``float``
     #. Converted values add to ``result``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Stwórz ``result: list[float]``
     #. Użyj ``while`` do iterowania po ``DATA``
     #. Przekonwertuj wszystkie elementy ``DATA`` do ``float``
     #. Przekonwertowane wartości dodaj do ``result``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = (2, 3, 3.5, 4, 4.5, 5)
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is list
@@ -287,37 +285,30 @@ Loop While Convert
         >>> result
         [2.0, 3.0, 3.5, 4.0, 4.5, 5.0]
 
-:The whys and wherefores:
-    * Type casting
-    * Sequences
-    * Using while loop
-    * Using built-in functions
-
 Loop While Translate
 --------------------
 * Assignment name: Loop While Translate
-* Last update: 2020-11-18
 * Complexity level: medium
 * Lines of code to write: 9 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/loop_while_translate.py`
+* Suggested filename: loop_while_translate.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Define ``result: list``
     #. Use ``while`` to iterate over ``DATA``
     #. If letter is in ``PL`` then use conversion value as letter
     #. Add letter to ``result``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Użyj ``while`` do iteracji po ``DATA``
     #. Jeżeli litera jest w ``PL`` to użyj skonwertowanej wartości jako litera
     #. Dodaj literę do ``result``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         PL = {'ą': 'a', 'ć': 'c', 'ę': 'e',
@@ -326,7 +317,7 @@ Loop While Translate
 
         DATA = 'zażółć gęślą jaźń'
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert type(result) is str
@@ -336,14 +327,13 @@ Loop While Translate
 Loop While Input
 ----------------
 * Assignment name: Loop While Input
-* Last update: 2020-11-18
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/loop_while_input.py`
+* Suggested filename: loop_while_input.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Define ``result: list[float]``
     #. Using ``input()`` ask user about grade, one at a time
     #. User will type only valid ``int`` or ``float``
@@ -354,8 +344,8 @@ Loop While Input
     #. At the end, print calculated mean of ``result``
     #. Test case when report list is empty
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zdefiniuj ``result: list[float]``
     #. Do iterowania użyj tylko pętli ``while``
     #. Używając ``input()`` poproś użytkownika o ocenę, jedną na raz
@@ -366,12 +356,15 @@ Loop While Input
     #. Na zakończenie wyświetl wyliczoną dla ``result`` średnią arytmetyczną
     #. Przetestuj przypadek, gdy dzienniczek jest pusty
 
-:Input:
+Hints:
+    * ``mean = sum(...) / len(...)``
+
+Given:
     .. code-block:: python
 
         GRADE_SCALE = (2.0, 3.0, 3.5, 4.0, 4.5, 5.0)
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> import statistics
@@ -379,15 +372,4 @@ Loop While Input
         >>> assert all(type(x) is float for x in result)
         >>> assert statistics.mean(result) == mean
 
-:The whys and wherefores:
-    * Reading user input
-    * Input validation
-    * Type casting
-    * Sequences
-    * Using while loop
-    * Breaking loop
-    * Using built-in functions
-
-:Hints:
-    * ``mean = sum(...) / len(...)``
 

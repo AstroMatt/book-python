@@ -164,19 +164,18 @@ Assignments
 File Access Error
 -----------------
 * Assignment name: File Access Error
-* Last update: 2020-11-19
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 2 min
-* Solution: :download:`solution/file_access_error.py`
+* Suggested filename: file_access_error.py
 
-:English:
+English:
     #. Using ``input()`` ask user for a file path
     #. Print file content
     #. Handle exception for not existing file
     #. Handle exception for not having sufficient permissions
 
-:Polish:
+Polish:
     #. Używając ``input()`` zapytaj użytkownika o ścieżkę do pliku
     #. Wypisz zawartość pliku
     #. Obsłuż wyjątek dla nieistniejącego pliku
