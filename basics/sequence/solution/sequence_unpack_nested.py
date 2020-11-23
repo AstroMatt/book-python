@@ -8,13 +8,13 @@
 English:
     1. Use data from "Given" section (see below)
     2. Separate header and records
-    3. Use asterisk ``*`` notation
+    3. Use asterisk `*` notation
     4. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Odseparuj nagłówek od danych
-    3. Skorzystaj z konstrukcji z gwiazdką ``*``
+    3. Skorzystaj z konstrukcji z gwiazdką `*`
     4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:

@@ -7,13 +7,13 @@
 
 English:
     1. Use data from "Given" section (see below)
-    2. Which variables are ``True``?
-    3. Which variables are ``False``?
+    2. Which variables are `True`?
+    3. Which variables are `False`?
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Które zmienne są ``True``?
-    3. Które zmienne są ``False``?
+    2. Które zmienne są `True`?
+    3. Które zmienne są `False`?
 
 Tests:
     >>> a

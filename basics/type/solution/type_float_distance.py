@@ -8,14 +8,14 @@
 English:
     1. Use code from "Given" section (see below)
     2. Convert units
-    3. Instead ``...`` substitute calculated and converted values
+    3. Instead `...` substitute calculated and converted values
     4. Note the number of decimal places
     5. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj kodu z sekcji "Given" (patrz poniżej)
     2. Przekonwertuj jednostki
-    3. Zamiast ``...`` podstaw wyliczone i przekonwertowane wartości
+    3. Zamiast `...` podstaw wyliczone i przekonwertowane wartości
     4. Zwróć uwagę na ilość miejsc po przecinku
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 

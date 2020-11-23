@@ -7,14 +7,14 @@
 
 English:
     1. Use data from "Given" section (see below)
-    3. Create set ``result`` with every second element from ``a`` and ``b``
-    4. Print ``result``
+    3. Create set `result` with every second element from `a` and `b`
+    4. Print `result`
     5. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    3. Stwórz zbiór ``result`` z co drugim elementem ``a`` i ``b``
-    4. Wypisz ``result``
+    3. Stwórz zbiór `result` z co drugim elementem `a` i `b`
+    4. Wypisz `result`
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:

@@ -9,14 +9,14 @@ English:
     1. Use data from "Given" section (see below)
     2. Remove title and military rank in each variable
     3. Remove also whitespaces at the beginning and end of a text
-    4. Use only ``slice`` to clean text
+    4. Use only `slice` to clean text
     5. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Usuń tytuł naukowy i stopień wojskowy z każdej zmiennej
     3. Usuń również białe znaki na początku i końcu tekstu
-    4. Użyj tylko ``slice`` do oczyszczenia tekstu
+    4. Użyj tylko `slice` do oczyszczenia tekstu
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:

@@ -7,16 +7,16 @@
 
 English:
     1. Use data from "Given" section (see below)
-    2. Expected value is ``Jana III Sobieskiego``
-    3. Use only ``str`` methods to clean each variable
+    2. Expected value is `Jana III Sobieskiego`
+    3. Use only `str` methods to clean each variable
     4. Discuss how to create generic solution which fit all cases
     5. Implementation of such generic function will be in `Function Arguments Clean` chapter
     6. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Oczekiwana wartość ``Jana III Sobieskiego``
-    3. Wykorzystaj tylko metody ``str`` do oczyszczenia każdej zmiennej
+    2. Oczekiwana wartość `Jana III Sobieskiego`
+    3. Wykorzystaj tylko metody `str` do oczyszczenia każdej zmiennej
     4. Przeprowadź dyskusję jak zrobić rozwiązanie generyczne pasujące do wszystkich przypadków
     5. Implementacja takiej generycznej funkcji będzie w rozdziale `Function Arguments Clean`
     6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)

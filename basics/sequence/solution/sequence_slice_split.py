@@ -8,27 +8,27 @@
 English:
     1. Use data from "Given" section (see below)
     2. Separate header from data
-    3. Write header (first line) to ``header`` variable
-    4. Write data without header to ``data`` variable
-    5. Calculate pivot point: number records in ``data`` multiplied by PERCENT (division ratio below)
-    6. Divide ``data`` into two lists:
-        a. ``train``: 60% - training data
-        b. ``test``: 40% - testing data
-    7. From ``data`` write training data from start to pivot
-    8. From ``data`` write test data from pivot to end
+    3. Write header (first line) to `header` variable
+    4. Write data without header to `data` variable
+    5. Calculate pivot point: number records in `data` multiplied by PERCENT (division ratio below)
+    6. Divide `data` into two lists:
+        a. `train`: 60% - training data
+        b. `test`: 40% - testing data
+    7. From `data` write training data from start to pivot
+    8. From `data` write test data from pivot to end
     9. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Odseparuj nagłówek od danych
-    3. Zapisz nagłówek (pierwsza linia) do zmiennej ``header``
-    4. Zapisz dane bez nagłówka do zmiennej ``data``
-    5. Wylicz punkt podziału: ilość rekordów w ``data`` razy PROCENT (proporcja podziału poniżej)
-    6. Podziel ``data`` na dwie listy:
-        a. ``train``: 60% - dane do uczenia
-        b. ``test``: 40% - dane do testów
-    7. Z ``data`` zapisz do uczenia rekordy od początku do punktu podziału
-    8. Z ``data`` zapisz do testów rekordy od punktu podziału do końca
+    3. Zapisz nagłówek (pierwsza linia) do zmiennej `header`
+    4. Zapisz dane bez nagłówka do zmiennej `data`
+    5. Wylicz punkt podziału: ilość rekordów w `data` razy PROCENT (proporcja podziału poniżej)
+    6. Podziel `data` na dwie listy:
+        a. `train`: 60% - dane do uczenia
+        b. `test`: 40% - dane do testów
+    7. Z `data` zapisz do uczenia rekordy od początku do punktu podziału
+    8. Z `data` zapisz do testów rekordy od punktu podziału do końca
     9. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:

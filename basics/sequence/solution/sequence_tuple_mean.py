@@ -8,29 +8,29 @@
 English:
     1. Use data from "Given" section (see below)
     2. Calculate mean for each numerical values column
-    3. To convert table use multiline select with ``alt`` key in your IDE
-    4. Do not use ``slice``, ``getitem``, ``for``, ``while`` or any other control-flow statement
+    3. To convert table use multiline select with `alt` key in your IDE
+    4. Do not use `slice`, `getitem`, `for`, `while` or any other control-flow statement
     5. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Wylicz średnią arytmetyczną dla każdej z kolumn numerycznych
-    3. Do konwersji tabelki wykorzystaj zaznaczanie wielu linijek za pomocą klawisza ``alt`` w Twoim IDE
-    4. Nie używaj ``slice``, ``getitem``, ``for``, ``while`` lub jakiejkolwiek innej instrukcji sterującej
+    3. Do konwersji tabelki wykorzystaj zaznaczanie wielu linijek za pomocą klawisza `alt` w Twoim IDE
+    4. Nie używaj `slice`, `getitem`, `for`, `while` lub jakiejkolwiek innej instrukcji sterującej
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Hints:
-    * ``mean = sum(...) / len(...)``
-    * ``ALT`` + ``left mouse button`` = multiple select
-    * ``ALT`` + ``SHIFT`` + ``left mouse button drag`` = vertical selection
-    * ``ALT`` + ``SHIFT`` + ``right`` = select word to the right (macOS)
-    * ``ALT`` + ``SHIFT`` + ``left`` = select word to the left (macOS)
-    * ``CTRL`` + ``SHIFT`` + ``right`` = select word to the right (Windows)
-    * ``CTRL`` + ``SHIFT`` + ``left`` = select word to the left (Windows)
-    * ``CTRL`` + ``right`` = jump over the word to the right
-    * ``CTRL`` + ``left`` = jump over the word to the left
-    * ``CTRL`` + ``ALT`` + L = Reformat Code on Windows
-    * ``CMD`` + ``ALT`` + L = Reformat Code on macOS
+    * `mean = sum(...) / len(...)`
+    * `ALT` + `left mouse button` = multiple select
+    * `ALT` + `SHIFT` + `left mouse button drag` = vertical selection
+    * `ALT` + `SHIFT` + `right` = select word to the right (macOS)
+    * `ALT` + `SHIFT` + `left` = select word to the left (macOS)
+    * `CTRL` + `SHIFT` + `right` = select word to the right (Windows)
+    * `CTRL` + `SHIFT` + `left` = select word to the left (Windows)
+    * `CTRL` + `right` = jump over the word to the right
+    * `CTRL` + `left` = jump over the word to the left
+    * `CTRL` + `ALT` + L = Reformat Code on Windows
+    * `CMD` + `ALT` + L = Reformat Code on macOS
 
 Tests:
     >>> type(sepal_length)

@@ -7,11 +7,11 @@
 
 English:
     1. Ask user to input text
-    2. Define ``result`` with number of characters of input text
+    2. Define `result` with number of characters of input text
 
 Polish:
     1. Poproś użytkownika o wprowadzenie tekstu
-    2. Zdefiniuj ``result`` z liczbą znaków wprowadzonego tekstu
+    2. Zdefiniuj `result` z liczbą znaków wprowadzonego tekstu
 
 Tests:
     >>> type(result)

@@ -8,13 +8,13 @@
 English:
     1. Use data from "Given" section (see below)
     2. What you need to put in expressions to get the expected outcome?
-    3. In place of ellipsis (``...``) insert only ``True`` or ``False``
+    3. In place of ellipsis (`...`) insert only `True` or `False`
     4. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Co należy podstawić w wyrażeniach aby otrzymać wartość oczekiwaną?
-    3. W miejsce trzech kropek (``...``) wstawiaj tylko ``True`` lub ``False``
+    3. W miejsce trzech kropek (`...`) wstawiaj tylko `True` lub `False`
     4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:

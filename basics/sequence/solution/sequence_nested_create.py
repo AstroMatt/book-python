@@ -6,20 +6,20 @@
 * Estimated time of completion: 3 min
 
 English:
-    1. Create nested sequence ``result`` with elements:
-        a. tuple: ``1``, ``2``, ``3``
-        b. list: ``1.1``, ``2.2``, ``3.3``
-        c. set: ``'Mark Watney'``, ``'Melissa Lewis'``, ``'Jan Twardowski'``
-    2. Print ``result``
-    3. Print number of elements in ``result``
+    1. Create nested sequence `result` with elements:
+        a. tuple: `1`, `2`, `3`
+        b. list: `1.1`, `2.2`, `3.3`
+        c. set: `'Mark Watney'`, `'Melissa Lewis'`, `'Jan Twardowski'`
+    2. Print `result`
+    3. Print number of elements in `result`
 
 Polish:
-    1. Stwórz zagnieżdżoną sekwencję ``result`` z elementami:
-        a. krotka: ``1``, ``2``, ``3``
-        b. lista: ``1.1``, ``2.2``, ``3.3``
-        c. zbiór: ``'Mark Watney'``, ``'Melissa Lewis'``, ``'Jan Twardowski'``
-    2. Wypisz ``result``
-    3. Wypisz liczbę elementów ``result``
+    1. Stwórz zagnieżdżoną sekwencję `result` z elementami:
+        a. krotka: `1`, `2`, `3`
+        b. lista: `1.1`, `2.2`, `3.3`
+        c. zbiór: `'Mark Watney'`, `'Melissa Lewis'`, `'Jan Twardowski'`
+    2. Wypisz `result`
+    3. Wypisz liczbę elementów `result`
 
 Tests:
     >>> type(result)

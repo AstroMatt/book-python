@@ -9,7 +9,7 @@
 FILE = r'/tmp/_temporary.txt'
 DATA = """
 ##
-# ``/etc/hosts`` structure:
+# `/etc/hosts` structure:
 #   - IPv4 or IPv6
 #   - Hostnames
  ##

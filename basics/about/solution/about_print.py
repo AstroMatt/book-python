@@ -6,12 +6,12 @@
 * Estimated time of completion: 3 min
 
 English:
-    #. Define ``result`` with text "Hello World"
+    #. Define `result` with text "Hello World"
     #. "Hello" must be in a first line
     #. "Wold" must be in a second line
 
 Polish:
-    #. Zdefiniuj zmienną ``result`` z tekstem "Hello World"
+    #. Zdefiniuj zmienną `result` z tekstem "Hello World"
     #. "Hello" ma być w pierwszej linii
     #. "World" ma być w drugiej linii
 

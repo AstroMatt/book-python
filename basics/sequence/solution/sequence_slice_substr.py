@@ -7,14 +7,14 @@
 
 English:
     1. Use data from "Given" section (see below)
-    2. Use ``str.find()`` and slicing
-    3. Print ``TEXT`` without text in ``REMOVE``
+    2. Use `str.find()` and slicing
+    3. Print `TEXT` without text in `REMOVE`
     4. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Użyj ``str.find()`` oraz wycinania
-    3. Wypisz ``TEXT`` bez tekstu z ``REMOVE``
+    2. Użyj `str.find()` oraz wycinania
+    3. Wypisz `TEXT` bez tekstu z `REMOVE`
     4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:

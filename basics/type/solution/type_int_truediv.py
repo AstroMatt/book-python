@@ -10,7 +10,7 @@ English:
         a. Kármán Line Earth: 100000 m
         b. Kármán Line Mars: 80000 m
         c. Kármán Line Venus: 250000 m
-    2. In Calculations use truediv (``//``)
+    2. In Calculations use truediv (`//`)
     3. Compare result with "Tests" section (see below)
 
 Polish:
@@ -18,7 +18,7 @@ Polish:
         a. Linia Kármána Ziemia: 100000 m
         b. Linia Kármána Mars: 80000 m
         c. Linia Kármána Wenus: 250000 m
-    2. W obliczeniach użyj truediv (``//``)
+    2. W obliczeniach użyj truediv (`//`)
     3. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Hints:

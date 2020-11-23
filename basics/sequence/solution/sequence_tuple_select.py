@@ -7,21 +7,21 @@
 
 English:
     1. Use data from "Given" section (see below)
-    2. Create a ``tuple`` representing all species
-    3. To convert table use multiline select with ``alt`` key in your IDE
-    4. Do not use ``slice``, ``getitem``, ``for``, ``while`` or any other control-flow statement
+    2. Create a `tuple` representing all species
+    3. To convert table use multiline select with `alt` key in your IDE
+    4. Do not use `slice`, `getitem`, `for`, `while` or any other control-flow statement
     5. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz ``tuple`` z nazwami gatunków
-    3. Do konwersji tabelki wykorzystaj zaznaczanie wielu linijek za pomocą klawisza ``alt`` w Twoim IDE
-    4. Nie używaj ``slice``, ``getitem``, ``for``, ``while`` lub jakiejkolwiek innej instrukcji sterującej
+    2. Stwórz `tuple` z nazwami gatunków
+    3. Do konwersji tabelki wykorzystaj zaznaczanie wielu linijek za pomocą klawisza `alt` w Twoim IDE
+    4. Nie używaj `slice`, `getitem`, `for`, `while` lub jakiejkolwiek innej instrukcji sterującej
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Hints:
-    * ``ALT`` + ``left mouse button`` = multiple select
-    * ``ALT`` + ``SHIFT`` + ``left mouse button drag`` = vertical selection
+    * `ALT` + `left mouse button` = multiple select
+    * `ALT` + `SHIFT` + `left mouse button drag` = vertical selection
 
 Tests:
     >>> type(result)

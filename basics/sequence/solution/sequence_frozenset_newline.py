@@ -7,14 +7,14 @@
 
 English:
     1. Use data from "Given" section (see below)
-    2. Define ``result: str``
-    3. Use ``str.join()`` to join lines of text with newline (``\n``) character
+    2. Define `result: str`
+    3. Use `str.join()` to join lines of text with newline (`\n`) character
     4. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zdefiniuj ``result: str``
-    3. Użyj ``str.join()`` aby połączyć linie tekstu znakiem końca linii (``\n``)
+    2. Zdefiniuj `result: str`
+    3. Użyj `str.join()` aby połączyć linie tekstu znakiem końca linii (`\n`)
     4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:

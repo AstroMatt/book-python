@@ -7,18 +7,18 @@
 
 English:
     1. Use data from "Given" section (see below)
-    2. Insert at the begin of ``a`` last element popped from ``b``
-    3. Append to the ``b`` last element popped from ``a``
-    4. For getting elements use ``list.pop()``
-    5. From list ``c`` using ``del`` delete last element
+    2. Insert at the begin of `a` last element popped from `b`
+    3. Append to the `b` last element popped from `a`
+    4. For getting elements use `list.pop()`
+    5. From list `c` using `del` delete last element
     6. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Na początek ``a`` wstaw ostatni element wyciągnięty z ``b``
-    3. Na koniec ``b`` wstaw ostatni element wyciągnięty z ``a``
-    4. Do wyciągnięcia używaj ``list.pop()``
-    5. Z listy ``c`` za pomocą ``del`` usuń ostatni element
+    2. Na początek `a` wstaw ostatni element wyciągnięty z `b`
+    3. Na koniec `b` wstaw ostatni element wyciągnięty z `a`
+    4. Do wyciągnięcia używaj `list.pop()`
+    5. Z listy `c` za pomocą `del` usuń ostatni element
     6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:

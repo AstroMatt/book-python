@@ -7,17 +7,17 @@
 
 English:
     1. Use data from "Given" section (see below)
-    2. Create list ``a`` with data from row 1
-    3. Create list ``b`` with data from row 2
-    4. Create list ``c`` with data from row 3
+    2. Create list `a` with data from row 1
+    3. Create list `b` with data from row 2
+    4. Create list `c` with data from row 3
     5. Do not use values from "Row" column
     6. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz listę ``a`` z danymi z wiersza 1
-    3. Stwórz listę ``b`` z danymi z wiersza 2
-    4. Stwórz listę ``c`` z danymi z wiersza 3
+    2. Stwórz listę `a` z danymi z wiersza 1
+    3. Stwórz listę `b` z danymi z wiersza 2
+    4. Stwórz listę `c` z danymi z wiersza 3
     5. Nie używaj wartości z kolumny "Row"
     6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
