@@ -37,7 +37,7 @@ Tests:
 
 # Given
 m = 1
-km = 1000
+km = 1000 * m
 
 # Solution
 armstrong_line = 18 * km

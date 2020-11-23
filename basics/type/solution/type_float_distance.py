@@ -36,7 +36,7 @@ km = 1000 * m
 mi = 1609.344 * m
 nm = 1852 * m
 
-distance = 1337
+distance = 1337 * m
 
 result = f"""Meters: {...}
 Kilometers: {...}
