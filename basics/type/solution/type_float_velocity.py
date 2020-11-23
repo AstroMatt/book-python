@@ -11,7 +11,7 @@ English:
     3. Convert to metric (SI) system
     4. Speed limit print in KPH (km/h)
     5. Result round to one decimal place
-    6. Compare result with "Output" section (see below)
+    6. Compare result with "Tests" section (see below)
 
 Polish:
     1. Ograniczenie prędkości wynosi 75 MPH
@@ -19,7 +19,7 @@ Polish:
     3. Przelicz je na system metryczny (układ SI)
     4. Ograniczenie prędkości wypisz w KPH (km/h)
     5. Wynik zaokrąglij do jednego miejsca po przecinku
-    6. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
     >>> round(result/KPH, 1)

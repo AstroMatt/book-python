@@ -49,21 +49,20 @@ Assignments
 Type None
 ---------
 * Assignment name: Type None
-* Last update: 2020-11-16
+* Suggested filename: type_none.py
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/type_none.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. What you need to put in expressions to get the expected outcome?
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Co należy podstawić w wyrażeniach aby otrzymać wartość oczekiwaną?
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 :Input:
     .. code-block:: python
@@ -74,7 +73,7 @@ Type None
         d = (bool(bool(...) is not bool(...)) == False and bool(...))                         # False
         e = (bool(bool(...) is not bool(...)) == False and bool(...)) and (... is not None)   # False
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> bool(a)

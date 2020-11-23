@@ -9,13 +9,13 @@ English:
     1. Bottle volume is 20 Fl Oz
     2. Data uses imperial (US) system
     3. Convert to metric (SI) system
-    4. Compare result with "Output" section (see below)
+    4. Compare result with "Tests" section (see below)
 
 Polish:
     1. Objętość butelki wynosi 20 Fl Oz
     2. Dane używają systemu imperialnego (US)
     3. Przelicz je na system metryczny (układ SI)
-    4. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
     >>> result / LITER

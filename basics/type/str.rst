@@ -370,102 +370,14 @@ String Immutability
 Assignments
 ===========
 
-Type String Input
------------------
-* Assignment name: Type String Input
-* Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
-* Solution: :download:`solution/type_str_input.py`
+.. literalinclude:: solution/type_str_input.py
+    :caption: :download:`solution/type_str_input.py`
+    :end-before: # Solution
 
-:English:
-    #. Ask user to input text
-    #. Print number of characters
+.. literalinclude:: solution/type_str_emoticon.py
+    :caption: :download:`solution/type_str_emoticon.py`
+    :end-before: # Solution
 
-:Polish:
-    #. Poproś użytkownika o wprowadzenie tekstu
-    #. Wypisz liczbę znaków
-
-.. todo:: Doctests
-
-Type String Emoticon
---------------------
-* Assignment name: Type String Emoticon
-* Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 2 lines
-* Estimated time of completion: 3 min
-* Solution: :download:`solution/type_str_emoticon.py`
-
-:English:
-    #. Ask user to input name
-    #. Print ``hello NAME EMOTICON``, where:
-
-        * NAME is a name read from user
-        * EMOTICON is Unicode Codepoint "\U0001F642"
-
-    #. Compare result with "Output" section (see below)
-
-:Polish:
-    #. Poproś użytkownika o wprowadzenie imienia
-    #. Wypisz ``hello NAME EMOTICON``, gdzie:
-
-        * NAME to imię wczytane od użytkownika
-        * EMOTICON to Unicode Codepoint "\U0001F642"
-
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-:Output:
-    .. code-block:: text
-
-        >>> assert type(result) is str
-        >>> assert '\U0001F642' in result
-        >>> assert name in result
-
-:The whys and wherefores:
-    * Variable declaration
-    * Print formatting
-    * Reading input data from user
-
-Type String Quotes
-------------------
-* Assignment name: Type String Quotes
-* Last update: 2020-11-17
-* Complexity level: easy
-* Lines of code to write: 3 lines
-* Estimated time of completion: 8 min
-* Solution: :download:`solution/type_str_quotes.py`
-
-:English:
-    #. Ask user to input name
-    #. To print use f-string formatting
-    #. Note, that second line starts with tab
-    #. Value ``NAME`` in double quotes is a name read from user
-    #. Mind the different quotes, apostrophes, tabs and newlines
-    #. Do not use neither space not enter - use ``\n`` and ``\t``
-    #. Do not use string addition (``str + str``)
-    #. Compare result with "Output" section (see below)
-
-:Polish:
-    #. Poproś użytkownika o wprowadzenie imienia
-    #. Do wypisania użyj f-string formatting
-    #. Zauważ, że druga linijka zaczyna się od tabulacji
-    #. Wartość ``NAME`` w podwójnych cudzysłowach to ciąg od użytkownika
-    #. Zwróć uwagę na znaki apostrofów, cudzysłowów, tabulacji i nowych linii
-    #. Nie używaj spacji ani klawisza enter - użyj ``\n`` i ``\t``
-    #. Nie korzystaj z dodawania stringów (``str + str``)
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-:Output:
-    .. code-block:: text
-
-        >>> print(result)  # doctest: +NORMALIZE_WHITESPACE
-        '''My name... "José Jiménez".
-        \tI'm an \"\"\"astronaut!\"\"\"'''
-
-:The whys and wherefores:
-    * Variable declaration
-    * Print formatting
-    * Reading input data from user
-
+.. literalinclude:: solution/type_str_quotes.py
+    :caption: :download:`solution/type_str_quotes.py`
+    :end-before: # Solution

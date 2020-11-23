@@ -10,14 +10,14 @@ English:
     #. Data uses imperial (US) system
     #. Convert to metric (SI) system
     #. Result round to one decimal place
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
 Polish:
     #. Wysokość lotu samolotem wynosi 10 000 ft
     #. Dane używają systemu imperialnego (US)
     #. Przelicz je na system metryczny (układ SI)
     #. Wynik zaokrąglij do jednego miejsca po przecinku
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
     >>> result / m

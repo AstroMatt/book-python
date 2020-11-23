@@ -163,7 +163,7 @@ Assignments
     :end-before: # Solution
 
 .. literalinclude:: solution/type_float_velocity.py
-    :caption: :download:`solution/type_int_add.py`
+    :caption: :download:`solution/type_float_velocity.py`
     :end-before: # Solution
 
 .. literalinclude:: solution/type_float_pressure.py

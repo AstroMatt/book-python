@@ -12,7 +12,7 @@ English:
     4. To calculate tax, multiply net times VAT
     5. To calculate gross multiply net times VAT plus 1
     6. Mind the operator precedence
-    7. Compare result with "Output" section (see below)
+    7. Compare result with "Tests" section (see below)
 
 Polish:
     1. Cena usługi wynosi 100.00 PLN netto
@@ -21,7 +21,7 @@ Polish:
     4. Aby obliczyć podatek, pomnóż cenę netto razy stawkę VAT
     5. Aby obliczyć cenę brutto pomnóż cenę netto razy stawka VAT plus 1
     6. Zwróć uwagę na kolejność wykonywania działań
-    7. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    7. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
     >>> net / PLN

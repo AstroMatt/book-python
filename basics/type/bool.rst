@@ -215,19 +215,18 @@ Assignments
 Type Bool True or False
 -----------------------
 * Assignment name: Type Bool True or False
-* Last update: 2020-10-01
+* Suggested filename: type_bool_true_or_false.py
 * Complexity level: easy
 * Lines of code to write: 16 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/type_bool_true_or_false.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Which variables are ``True``?
     #. Which variables are ``False``?
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Które zmienne są ``True``?
     #. Które zmienne są ``False``?
 
@@ -264,23 +263,22 @@ Type Bool True or False
 Type Bool Simple
 ----------------
 * Assignment name: Type Bool Simple
-* Last update: 2020-11-16
+* Suggested filename: type_bool_simple.py
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/type_bool_simple.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. What you need to put in expressions to get the expected outcome?
     #. In place of ellipsis (``...``) insert only ``True`` or ``False``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Co należy podstawić w wyrażeniach aby otrzymać wartość oczekiwaną?
     #. W miejsce trzech kropek (``...``) wstawiaj tylko ``True`` lub ``False``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 :Input:
     .. code-block:: python
@@ -295,7 +293,7 @@ Type Bool Simple
         h = bool(bool(...) == ...) or False
         i = bool(...) is not bool(False)
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> bool(a)

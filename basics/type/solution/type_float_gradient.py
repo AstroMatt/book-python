@@ -11,7 +11,7 @@ English:
     #. To calculate partial pressure use ratio (100% is 1013.25 hPa, 20.946% is how many hPa?)
     #. Calculated altitude is pressure at sea level minis oxygen partial pressure divided by gradient
     #. Mind the operator precedence
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
 Polish:
     #. Na jakiej wysokości nad poziomem morza panuje ciśnienie równe ciśnieniu parcjalnemu tlenu?
@@ -19,7 +19,7 @@ Polish:
     #. Aby policzyć ciśnienie parcjalne skorzystaj z proporcji (100% to 1013.25 hPa, 20.946% to ile hPa?)
     #. Wyliczona wysokość to ciśnienie atmosferyczne na poziomie morza minus ciśnienie parcjalne tlenu podzielone przez gradient
     #. Zwróć uwagę na kolejność wykonywania działań
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 :Hints:
     * pressure gradient (decrease) = 11.3 Pa / 1 m
