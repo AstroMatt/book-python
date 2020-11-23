@@ -22,6 +22,10 @@ Polish:
     6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
+    >>> emu
+    29647.455099999996
+    >>> orlan
+    40000
     >>> emu / psi
     4.3
     >>> orlan / kPa

@@ -26,7 +26,7 @@ Tests:
 
 # Given
 m = 1
-FT = 0.3048 * m
+ft = 0.3048 * m
 
 # Solution
-result = 10_000 * FT
+result = 10_000 * ft

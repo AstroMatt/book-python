@@ -18,14 +18,18 @@ Polish:
     4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
-    >>> result / LITER
+    >>> type(result)
+    <class 'float'>
+    >>> result / floz
+    20.0
+    >>> result / liter
     0.5914688
 """
 
 # Given
-LITER = 1
-FLOZ = 0.02957344 * LITER
+liter = 1
+floz = 0.02957344 * liter
 
 # Solution
-result = 20 * FLOZ
+result = 20 * floz
 

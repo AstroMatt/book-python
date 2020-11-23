@@ -34,6 +34,8 @@ km = 1000 * m
 mi = 1609.344 * m
 nm = 1852 * m
 
+distance = 1337
+
 result = f"""Meters: {...}
 Kilometers: {...}
 Miles: {...}
@@ -41,14 +43,13 @@ Nautical Miles: {...}
 All: km: {...}, mi: {...}, nm: {...}"""
 
 # Solution
-distance = 1337
 distance_m = distance / m
 distance_km = distance / km
 distance_mi = distance / mi
 distance_nm = distance / nm
 
 result = f"""Meters: {distance_m:.0f}
-Kilometers: {distance_km}
+Kilometers: {distance_km:.3f}
 Miles: {distance_mi:.2f}
 Nautical Miles: {distance_nm:.3f}
 All: km: {distance_km:.0f}, mi: {distance_mi:.1f}, nm: {distance_nm:.2f}"""

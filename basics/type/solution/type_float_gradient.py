@@ -35,6 +35,10 @@ Polish:
         * Others 0.001%
 
 Tests:
+    >>> pO2
+    21223.5345
+    >>> gradient
+    11.3
     >>> round(result/m, 2)
     7088.63
 """

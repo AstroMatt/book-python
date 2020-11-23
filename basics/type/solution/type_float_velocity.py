@@ -22,7 +22,17 @@ Polish:
     6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
-    >>> round(result/KPH, 1)
+    >>> type(kph)
+    <class 'float'>
+    >>> type(mph)
+    <class 'float'>
+    >>> type(result)
+    <class 'float'>
+    >>> round(kph, 3)
+    0.278
+    >>> round(mph, 3)
+    0.447
+    >>> round(result/kph, 1)
     120.7
 """
 
@@ -36,7 +46,7 @@ km = 1000 * m
 mi = 1609.344 * m
 
 # Solution
-KPH = km / HOUR
-MPH = mi / HOUR
+kph = km / HOUR
+mph = mi / HOUR
 
-result = 75 * MPH
+result = 75 * mph

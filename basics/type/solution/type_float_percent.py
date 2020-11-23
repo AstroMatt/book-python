@@ -32,8 +32,6 @@ Hints:
         * Others 0.001%
 
 Tests:
-    >>> ata
-    101325.0
     >>> pO2
     21223.5345
     >>> round(pO2/kPa, 2)
