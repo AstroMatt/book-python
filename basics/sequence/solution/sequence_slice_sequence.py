@@ -18,7 +18,8 @@ Polish:
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
-    >>> assert type(result) is set
+    >>> type(result)
+    <class 'set'>
     >>> result
     {0, 2, 4}
 """

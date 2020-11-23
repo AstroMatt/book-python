@@ -32,15 +32,16 @@ Polish:
     9. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
-    >>> assert type(header) is tuple
-    >>> assert type(train) is list
-    >>> assert type(test) is list
+    >>> type(header)
+    <class 'tuple'>
+    >>> type(train)
+    <class 'list'>
+    >>> type(test)
+    <class 'list'>
     >>> assert all(type(x) is tuple for x in train)
     >>> assert all(type(x) is tuple for x in test)
-
     >>> header  # doctest: +NORMALIZE_WHITESPACE
     ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species')
-
     >>> train  # doctest: +NORMALIZE_WHITESPACE
     [(5.8, 2.7, 5.1, 1.9, 'virginica'),
      (5.1, 3.5, 1.4, 0.2, 'setosa'),
@@ -48,7 +49,6 @@ Tests:
      (6.3, 2.9, 5.6, 1.8, 'virginica'),
      (6.4, 3.2, 4.5, 1.5, 'versicolor'),
      (4.7, 3.2, 1.3, 0.2, 'setosa')]
-
     >>> test  # doctest: +NORMALIZE_WHITESPACE
     [(7.0, 3.2, 4.7, 1.4, 'versicolor'),
      (7.6, 3.0, 6.6, 2.1, 'virginica'),

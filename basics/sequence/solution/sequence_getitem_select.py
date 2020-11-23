@@ -56,15 +56,6 @@ Tests:
     True
     >>> frozenset() in result
     True
-    >>> result  # doctest: +NORMALIZE_WHITESPACE
-    [[5.1, 3.5, 1.4, 0.2, 'setosa'],
-     (6.3, 2.9, 5.6, 1.8, 'virginica'),
-     {1.3, 2.8, 4.1, 5.7, 'versicolor'},
-     frozenset({1.5, 3.2, 4.5, 6.4, 'versicolor'}),
-     [],
-     (),
-     set(),
-     frozenset()]
 """
 
 # Given

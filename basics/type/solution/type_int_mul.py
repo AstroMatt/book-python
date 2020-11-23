@@ -31,7 +31,7 @@ Tests:
     20000
     >>> usaf_space
     80000
-    >>>> iaf_space
+    >>> iaf_space
     100000
 """
 
