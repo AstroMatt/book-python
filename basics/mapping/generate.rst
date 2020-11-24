@@ -26,11 +26,9 @@ List of Pairs
     ]
 
     dict(pairs)
-    # {
-    #   'commander': 'Melissa Lewis',
+    # {'commander': 'Melissa Lewis',
     #   'botanist': 'Mark Watney',
-    #   'chemist': 'Alex Vogel',
-    # }
+    #   'chemist': 'Alex Vogel'}
 
 
 Enumerate

@@ -424,23 +424,6 @@ Switch
 Assignments
 ===========
 
-Conditional Statements
-----------------------
-* Assignment: Conditional Statements
-* Filename: controlflow_conditional_statements.py
-* Complexity: easy
-* Lines of code to write: 6 lines
-* Estimated time: 3 min
-
-English:
-    #. Ask user to input age
-    #. User will pass only valid ``int``
-    #. Print whether user is adult
-
-Polish:
-    #. Poproś użytkownika o wprowadzenie swojego wieku
-    #. Użytkownika poda tylko poprawne ``int``
-    #. Wypisz czy użytkownik jest pełnoletni
-
-Tests:
-    TODO doctests
+.. literalinclude:: solution/controlflow_conditional_statements.py
+    :caption: :download:`Solution <solution/controlflow_conditional_statements.py>`
+    :end-before: # Solution
