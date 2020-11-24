@@ -13,9 +13,8 @@ Rationale
     * Can store elements of any **hashable** types
     * Has all ``set`` methods such as ``.intersect()``, ``.subset()`` ``.union()``, etc.
     * One solid block in memory
-    * Frozenset is unordered data structure
-    * Do not support getitem
-    * Do not support slice
+    * Frozenset is unordered data structure and do not record element position
+    * Do not support getitem and slice
 
 
 Type Definition
@@ -26,9 +25,10 @@ Type Definition
     * Brackets are required
 
 .. code-block:: python
-    :caption: ``set`` type definition
 
     data = frozenset()
+
+.. code-block:: python
 
     data = frozenset({1})
     data = frozenset({1, 2, 3})

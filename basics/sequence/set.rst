@@ -11,11 +11,8 @@ Rationale
     * Only unique values
     * Mutable - can add, remove, and modify items
     * Can store elements of any **hashable** types
-    * Set is unordered data structure (each time order differs)
-    * Do not record element position
-    * Do not record order of insertion
-    * Do not support getitem
-    * Do not support slice
+    * Set is unordered data structure and do not record element position or insertion
+    * Do not support getitem and slice
 
 Hashable (Immutable)
 
@@ -44,9 +41,10 @@ Type Definition
     * Brackets are required
 
 .. code-block:: python
-    :caption: ``set`` type definition
 
     data = set()
+
+.. code-block:: python
 
     data = {1}
     data = {1, 2, 3}
@@ -59,11 +57,6 @@ Type Definition
     :caption: ``set`` stores only unique values.
 
     {1, 2, 1}                       # {1, 2}
-    {1, 2, 'a'}                     # {1, 2, 'a'}
-    {1, 2, (3, 4)}                  # {1, 2, (3, 4)}
-    {1, 2, [3, 4]}                  # TypeError: unhashable type: 'list'
-    {1, 2, {3, 4}}                  # TypeError: unhashable type: 'set'
-    {1, 2, frozenset({3, 4})}       # {1, 2, frozenset({3, 4})}
 
 .. code-block:: python
     :caption: ``set`` compares by values, not types
@@ -72,6 +65,15 @@ Type Definition
     {1.0}                           # {1.0}
     {1, 1.0}                        # {1}
     {1.0, 1}                        # {1.0}
+
+.. code-block:: python
+    :caption: Can store elements of any **hashable** types
+
+    {1, 2, 'a'}                     # {1, 2, 'a'}
+    {1, 2, (3, 4)}                  # {1, 2, (3, 4)}
+    {1, 2, [3, 4]}                  # TypeError: unhashable type: 'list'
+    {1, 2, {3, 4}}                  # TypeError: unhashable type: 'set'
+    {1, 2, frozenset({3, 4})}       # {1, 2, frozenset({3, 4})}
 
 
 Type Casting

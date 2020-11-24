@@ -9,7 +9,79 @@ Rationale
 =========
 .. highlights::
     * Slice argument must be ``int`` (positive, negative or zero)
-    * Negative slices starts from the end and go right to left
+    * Positive Index starts with ``0``
+    * Negative index starts with ``-1``
+
+
+Slice Forwards
+==============
+.. highlights::
+    * ``sequence[start:stop]``
+
+.. code-block:: python
+
+    text = 'We choose to go to the Moon!'
+
+    text[0:2]       # 'We'
+    text[:2]        # 'We'
+    text[0:9]       # 'We choose'
+    text[:9]        # 'We choose'
+    text[23:28]     # 'Moon!'
+    text[23:]       # 'Moon!'
+
+
+Slice Backwards
+===============
+.. highlights::
+    * Negative index starts from the end and go right to left
+
+.. code-block:: python
+
+    text = 'We choose to go to the Moon!'
+
+    text[:-13]      # 'We choose to go'
+    text[:-19]      # 'We choose'
+    text[-12:]      # 'to the Moon!'
+    text[-5:]       # 'Moon!'
+    text[-5:-1]     # 'Moon'
+    text[23:-2]     # 'Moo'
+
+    text[-1:0]      # ''
+    text[-2:0]      # ''
+    text[-2:2]      # ''
+    text[-5:5]      # ''
+
+
+Step
+====
+.. highlights::
+    * Every ``n``-th element
+    * ``sequence[start:stop:step]``
+    * ``start`` defaults to ``0``
+    * ``stop`` defaults to ``len(sequence)``
+    * ``step`` defaults to ``1``
+
+.. code-block:: python
+
+    text = 'We choose to go to the Moon!'
+
+    text[::1]       # 'We choose to go to the Moon!'
+    text[::2]       # 'W hoet ot h on'
+    text[::-1]      # '!nooM eht ot og ot esoohc eW'
+    text[::-2]      # '!oMeto go soce'
+
+
+Out of Range
+============
+.. code-block:: python
+
+    text = 'We choose to go to the Moon!'
+
+    text[:100]
+    # 'We choose to go to the Moon!'
+
+    text[100:]
+    # ''
 
 
 Ordered Sequences
@@ -23,7 +95,6 @@ Ordered Sequences
     data[3:5]           # 'de'
     data[:3]            # 'abc'
     data[3:]            # 'de'
-
     data[::1]           # 'abcde'
     data[::-1]          # 'edcba'
     data[::2]           # 'ace'
@@ -40,7 +111,6 @@ Ordered Sequences
     data[3:5]           # ('d', 'e')
     data[:3]            # ('a', 'b', 'c')
     data[3:]            # ('d', 'e')
-
     data[::2]           # ('a', 'c', 'e')
     data[::-1]          # ('e', 'd', 'c', 'b', 'a')
     data[1::2]          # ('b', 'd')
@@ -55,7 +125,6 @@ Ordered Sequences
     data[3:5]           # ['d', 'e']
     data[:3]            # ['a', 'b', 'c']
     data[3:]            # ['d', 'e']
-
     data[::2]           # ['a', 'c', 'e']
     data[::-1]          # ['e', 'd', 'c', 'b', 'a']
     data[1::2]          # ['b', 'd']
@@ -85,87 +154,34 @@ Unordered Sequences
     # TypeError: 'frozenset' object is not subscriptable
 
 
-Slice Forwards
-==============
-.. highlights::
-    * ``sequence[start:stop]``
-
-.. code-block:: python
-
-    text = 'We choose to go to the Moon!'
-
-    text[0:2]       # 'We'
-    text[:2]        # 'We'
-
-    text[0:9]       # 'We choose'
-    text[:9]        # 'We choose'
-
-    text[23:28]     # 'Moon!'
-    text[23:]       # 'Moon!'
-
-
-Slice Backwards
-===============
-.. highlights::
-    * Negative index starts from the end and go right to left
-
-.. code-block:: python
-
-    text = 'We choose to go to the Moon!'
-
-    text[:-13]      # 'We choose to go'
-    text[:-19]      # 'We choose'
-
-    text[-12:]      # 'to the Moon!'
-    text[-5:]       # 'Moon!'
-
-    text[-12:-6]    # 'to the'
-    text[-5:-1]     # 'Moon'
-
-    text[23:-2]     # 'Moo'
-    text[13:-2]     # 'go to the Moo'
-
-    text[-1:0]      # ''
-    text[-2:0]      # ''
-    text[-2:2]      # ''
-    text[-5:5]      # ''
-
-
-Step
-====
-.. highlights::
-    * Every ``n``-th element
-    * ``sequence[start:stop:step]``
-
-.. code-block:: python
-
-    text = 'We choose to go to the Moon!'
-
-    text[::2]
-    # 'W hoet ot h on'
-
-    text[::-1]
-    # '!nooM eht ot og ot esoohc eW'
-
-    text[::-2]
-    # '!oMeto go soce'
-
-
-Out of Range
-============
-.. code-block:: python
-
-    text = 'We choose to go to the Moon!'
-
-    text[:100]
-    # 'We choose to go to the Moon!'
-
-    text[100:]
-    # ''
-
-
 Nested Sequences
 ================
+.. code-block:: python
+
+    DATA = [
+        ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
+        (5.8, 2.7, 5.1, 1.9, 'virginica'),
+        (5.1, 3.5, 1.4, 0.2, 'setosa'),
+        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+        (6.3, 2.9, 5.6, 1.8, 'virginica'),
+        (6.4, 3.2, 4.5, 1.5, 'versicolor'),
+        (4.7, 3.2, 1.3, 0.2, 'setosa'),
+    ]
+
+    DATA[1:]
+    # [(5.8, 2.7, 5.1, 1.9, 'virginica'),
+    #  (5.1, 3.5, 1.4, 0.2, 'setosa'),
+    #  (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+    #  (6.3, 2.9, 5.6, 1.8, 'virginica'),
+    #  (6.4, 3.2, 4.5, 1.5, 'versicolor'),
+    #  (4.7, 3.2, 1.3, 0.2, 'setosa')]
+
+    DATA[-3:]
+    # [(6.3, 2.9, 5.6, 1.8, 'virginica'),
+    #  (6.4, 3.2, 4.5, 1.5, 'versicolor'),
+    #  (4.7, 3.2, 1.3, 0.2, 'setosa')]
+
+
 .. code-block:: python
 
     data = [[1, 2, 3],
@@ -232,22 +248,32 @@ Slice All
 
     import pandas as pd
 
-    df = pd.DataFrame({
-        'A': [1, 2, 3],
-        'B': [4, 5, 6],
-        'C': [7, 8, 9]})
+    df = pd.DataFrame([
+        {'A': 1, 'B': 2, 'C': 3},
+        {'A': 4, 'B': 5, 'C': 6},
+        {'A': 7, 'B': 8, 'C': 9}])
+
+    df
+    #    A  B  C
+    # 0  1  2  3
+    # 1  4  5  6
+    # 2  7  8  9
 
     df.loc[:, ('A','B')]
     #    A  B
-    # 0  1  4
-    # 1  2  5
-    # 2  3  6
+    # 0  1  2
+    # 1  4  5
+    # 2  7  8
+
+    df.loc[::2, ::2]
+    #    A  C
+    # 0  1  3
+    # 2  7  9
 
     df.loc[1, :]
     # A    2
     # B    5
     # C    8
-    # Name: 1, dtype: int64
 
 
 Index Arithmetic
@@ -267,6 +293,13 @@ Index Arithmetic
 
 Slice Function
 ==============
+.. highlights::
+    * Every ``n``-th element
+    * ``sequence[start:stop:step]``
+    * ``start`` defaults to ``0``
+    * ``stop`` defaults to ``len(sequence)``
+    * ``step`` defaults to ``1``
+
 .. code-block:: python
 
     text = 'We choose to go to the Moon!'
