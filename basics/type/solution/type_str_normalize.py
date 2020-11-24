@@ -3,7 +3,7 @@
 * Filename: type_str_normalize.py
 * Complexity: easy
 * Lines of code to write: 4 lines
-* Estimated time of completion: 8 min
+* Estimated time: 8 min
 
 English:
     1. Use data from "Given" section (see below)

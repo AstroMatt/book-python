@@ -3,7 +3,7 @@
 * Filename: type_float_tax.py
 * Complexity: easy
 * Lines of code to write: 5 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     1. Cost of the service is 100.00 PLN net

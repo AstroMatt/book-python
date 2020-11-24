@@ -304,7 +304,7 @@ OOP Stringify Str
 * Filename: oop_stringify_str.py
 * Complexity: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Use code from "Given" section (see below)
@@ -346,7 +346,7 @@ OOP Stringify Repr
 * Filename: oop_stringify_repr.py
 * Complexity: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Use code from "Given" section (see below)
@@ -388,7 +388,7 @@ OOP Stringify Format
 * Filename: oop_stringify_format.py
 * Complexity: easy
 * Lines of code to write: 8 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Use code from "Given" section (see below)
@@ -426,7 +426,7 @@ OOP Stringify Nested
 * Filename: oop_stringify_nested.py
 * Complexity: medium
 * Lines of code to write: 9 lines
-* Estimated time of completion: 21 min
+* Estimated time: 21 min
 
 English:
     #. Use code from "Given" section (see below)

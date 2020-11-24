@@ -588,7 +588,7 @@ Loop Comprehension Create
 * Filename: loop_comprehension_create.py
 * Complexity: easy
 * Lines of code to write: 2 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Use list comprehension
@@ -612,7 +612,7 @@ Loop Comprehension Translate
 * Filename: loop_comprehension_translate.py
 * Complexity: easy
 * Lines of code to write: 1 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -652,7 +652,7 @@ Loop Comprehension Months
 * Filename: loop_comprehension_months.py
 * Complexity: easy
 * Lines of code to write: 1 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -711,7 +711,7 @@ Loop Comprehension Split
 * Filename: loop_comprehension_split.py
 * Complexity: medium
 * Lines of code to write: 8 lines
-* Estimated time of completion: 13 min
+* Estimated time: 13 min
 
 English:
     #. Use data from "Given" section (see below)

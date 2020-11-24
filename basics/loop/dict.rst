@@ -245,7 +245,7 @@ Loop Dict To Dict
 * Filename: loop_dict_to_dict.py
 * Complexity: easy
 * Lines of code to write: 4 lines
-* Estimated time of completion: 8 min
+* Estimated time: 8 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -288,7 +288,7 @@ Loop Dict To List
 * Filename: loop_dict_to_list.py
 * Complexity: medium
 * Lines of code to write: 6 lines
-* Estimated time of completion: 8 min
+* Estimated time: 8 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -338,7 +338,7 @@ Loop Dict Label Encoder
 * Filename: loop_dict_label_encoder.py
 * Complexity: hard
 * Lines of code to write: 13 lines
-* Estimated time of completion: 13 min
+* Estimated time: 13 min
 
 English:
     #. Use data from "Given" section (see below)

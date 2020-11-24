@@ -209,7 +209,7 @@ Loop Nested Mean
 * Filename: loop_nested_mean.py
 * Complexity: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -250,7 +250,7 @@ Loop Nested Unique Keys
 * Filename: loop_nested_unique_keys.py
 * Complexity: medium
 * Lines of code to write: 3 lines
-* Estimated time of completion: 8 min
+* Estimated time: 8 min
 
 English:
     #. Use data from "Given" section (see below)

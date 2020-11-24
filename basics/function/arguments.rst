@@ -139,7 +139,7 @@ Function Arguments Sequence
 * Filename: function_args_sequence.py
 * Complexity: easy
 * Lines of code to write: 5 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Define function which takes sequence of integers as an argument
@@ -157,7 +157,7 @@ Function Arguments Divide
 * Filename: function_args_divide.py
 * Complexity: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Define function ``divide``
@@ -188,7 +188,7 @@ Function Arguments Power
 * Filename: function_args_power.py
 * Complexity: easy
 * Lines of code to write: 6 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Define function ``power``
@@ -220,7 +220,7 @@ Function Arguments Translate
 * Filename: function_args_translate.py
 * Complexity: easy
 * Lines of code to write: 2 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Define function ``translate`` with parameter ``text``
@@ -262,7 +262,7 @@ Function Arguments Clean
 * Filename: function_args_clean.py
 * Complexity: medium
 * Lines of code to write: 15 lines
-* Estimated time of completion: 13 min
+* Estimated time: 13 min
 
 English:
     #. Write function cleaning up data
@@ -308,7 +308,7 @@ Function Arguments Numbers to Str
 * Filename: function_args_numstr.py
 * Complexity: medium
 * Lines of code to write: 5 lines
-* Estimated time of completion: 8 min
+* Estimated time: 8 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -364,7 +364,7 @@ Function Arguments Numbers to Human
 * Filename: function_args_numhuman.py
 * Complexity: hard
 * Lines of code to write: 15 lines
-* Estimated time of completion: 21 min
+* Estimated time: 21 min
 
 English:
     #. Define function converting ``int`` or ``float`` to text form

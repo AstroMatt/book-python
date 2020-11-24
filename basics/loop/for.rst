@@ -193,7 +193,7 @@ Loop For Count
 * Filename: loop_for_count.py
 * Complexity: easy
 * Lines of code to write: 10 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -224,7 +224,7 @@ Loop For Counter
 * Filename: loop_for_counter.py
 * Complexity: easy
 * Lines of code to write: 6 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -282,7 +282,7 @@ Loop For Segmentation
 * Filename: loop_for_segmentation.py
 * Complexity: easy
 * Lines of code to write: 14 lines
-* Estimated time of completion: 8 min
+* Estimated time: 8 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -340,7 +340,7 @@ Loop For Newline
 * Filename: loop_for_newline.py
 * Complexity: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -379,7 +379,7 @@ Loop For Translate
 * Filename: loop_for_translate.py
 * Complexity: easy
 * Lines of code to write: 6 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -416,7 +416,7 @@ Loop For Months
 * Filename: loop_for_months.py
 * Complexity: easy
 * Lines of code to write: 5 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -465,7 +465,7 @@ Loop For Text
 * Filename: loop_for_text.py
 * Complexity: medium or hard
 * Lines of code to write: 30 lines
-* Estimated time of completion: 13 min
+* Estimated time: 13 min
 
 English:
     #. Use data from "Given" section (see below)

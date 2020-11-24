@@ -3,7 +3,7 @@
 * Filename: sequence_slice_split.py
 * Complexity: easy
 * Lines of code to write: 6 lines
-* Estimated time of completion: 8 min
+* Estimated time: 8 min
 
 English:
     1. Use data from "Given" section (see below)
@@ -38,6 +38,10 @@ Tests:
     <class 'list'>
     >>> type(test)
     <class 'list'>
+    >>> ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species') not in train
+    True
+    >>> ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species') not in test
+    True
     >>> assert all(type(x) is tuple for x in train)
     >>> assert all(type(x) is tuple for x in test)
     >>> header  # doctest: +NORMALIZE_WHITESPACE

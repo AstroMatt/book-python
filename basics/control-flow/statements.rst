@@ -430,7 +430,7 @@ Conditional Statements
 * Filename: controlflow_conditional_statements.py
 * Complexity: easy
 * Lines of code to write: 6 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Ask user to input age

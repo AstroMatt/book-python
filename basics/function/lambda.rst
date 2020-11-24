@@ -164,7 +164,7 @@ Function Lambda Chain
 * Filename: function_lambda_chain.py
 * Complexity: easy
 * Lines of code to write: 2 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Use data from "Given" section (see below)

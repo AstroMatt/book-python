@@ -15,8 +15,7 @@ Rationale
 Type Definition
 ===============
 .. highlights::
-    * ``[]`` is used more often
-    * ``list()`` is more readable
+    * Defining empty list with ``[]`` is used more often, but ``list()`` is more readable
     * Comma after last element of a one element list is optional
     * Brackets are required
 
@@ -24,6 +23,8 @@ Type Definition
 
     data = list()
     data = []
+
+.. code-block:: python
 
     data = [1]
     data = [1, 2, 3]
@@ -144,7 +145,6 @@ Append
     * ``list.append()``
 
 .. code-block:: python
-    :caption: Adding two lists
 
     data = [1, 2]
     data = data + [3, 4]
@@ -153,7 +153,6 @@ Append
     # [1, 2, 3, 4]
 
 .. code-block:: python
-    :caption: Adding two lists
 
     data = [1, 2]
     data += [3, 4]
@@ -162,7 +161,6 @@ Append
     # [1, 2, 3, 4]
 
 .. code-block:: python
-    :caption: Extending lists
 
     data = [1, 2]
     data.extend([3, 4])
@@ -171,7 +169,6 @@ Append
     # [1, 2, 3, 4]
 
 .. code-block:: python
-    :caption: Appending single item
 
     data = [1, 2]
     data.append(3)
@@ -180,7 +177,6 @@ Append
     # [1, 2, 3]
 
 .. code-block:: python
-    :caption: Appending multiple items
 
     data = [1, 2]
     data.append([3, 4])
@@ -282,17 +278,11 @@ Built-in Functions
     max(data)       # 2
     sum(data)       # 3
     len(data)       # 3
-    any(data)       # True
-    all(data)       # False
 
 .. code-block:: python
 
     data = [True, False, True]
 
-    min(data)       # False
-    max(data)       # True
-    sum(data)       # 2
-    len(data)       # 3
     any(data)       # True
     all(data)       # False
 

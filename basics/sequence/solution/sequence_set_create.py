@@ -3,7 +3,7 @@
 * Filename: sequence_set_create.py
 * Complexity: easy
 * Lines of code to write: 1 lines
-* Estimated time of completion: 2 min
+* Estimated time: 2 min
 
 English:
     1. Create set `result` with elements:
@@ -22,6 +22,8 @@ Polish:
 Tests:
     >>> type(result)
     <class 'set'>
+    >>> len(result)
+    3
     >>> 'a' in result
     True
     >>> 1 in result

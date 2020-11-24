@@ -3,20 +3,20 @@
 * Filename: sequence_tuple_mean.py
 * Complexity: medium
 * Lines of code to write: 8 lines
-* Estimated time of completion: 8 min
+* Estimated time: 8 min
 
 English:
     1. Use data from "Given" section (see below)
     2. Calculate mean for each numerical values column
     3. To convert table use multiline select with `alt` key in your IDE
-    4. Do not use `slice`, `getitem`, `for`, `while` or any other control-flow statement
+    7. Do not use `str.split()`, `slice`, `getitem`, `for`, `while` or any other control-flow statement
     5. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Wylicz średnią arytmetyczną dla każdej z kolumn numerycznych
     3. Do konwersji tabelki wykorzystaj zaznaczanie wielu linijek za pomocą klawisza `alt` w Twoim IDE
-    4. Nie używaj `slice`, `getitem`, `for`, `while` lub jakiejkolwiek innej instrukcji sterującej
+    4. Nie używaj `str.split()`, `slice`, `getitem`, `for`, `while` lub jakiejkolwiek innej instrukcji sterującej
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Hints:
@@ -52,14 +52,14 @@ Tests:
 """
 
 # Given
-DATA = """
-    'sepal length', 'sepal width', 'petal length', 'petal width', 'species',
-    '5.8', '2.7', '5.1', '1.9', 'virginica',   # row 1
-    '5.1', '3.5', '1.4', '0.2', 'setosa',      # row 2
-    '5.7', '2.8', '4.1', '1.3', 'versicolor',  # row 3
-    '6.3', '2.9', '5.6', '1.8', 'virginica',   # row 4
-    '6.4', '3.2', '4.5', '1.5', 'versicolor',  # row 5
-"""
+DATA = [
+    'sepal_length,sepal_width,petal_length,petal_width,species',
+    '5.8,2.7,5.1,1.9,virginica',
+    '5.1,3.5,1.4,0.2,setosa',
+    '5.7,2.8,4.1,1.3,versicolor',
+    '6.3,2.9,5.6,1.8,virginica',
+    '6.4,3.2,4.5,1.5,versicolor',
+]
 
 # Solution
 sepal_length = (5.8, 5.1, 5.7, 6.3, 6.4)

@@ -102,7 +102,7 @@ OOP Method Call
 * Filename: oop_method_call.py
 * Complexity: easy
 * Lines of code to write: 6 lines
-* Estimated time of completion: 13 min
+* Estimated time: 13 min
 
 English:
     #. Use data from "Given" section (see below)

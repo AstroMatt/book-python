@@ -160,7 +160,7 @@ Mapping Generate Pairs
 * Filename: mapping_generate_pairs.py
 * Complexity: easy
 * Lines of code to write: 1 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -199,7 +199,7 @@ Mapping Generate Enumerate
 * Filename: mapping_generate_enumerate.py
 * Complexity: easy
 * Lines of code to write: 1 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -230,7 +230,7 @@ Mapping Generate Zip
 * Filename: mapping_generate_zip.py
 * Complexity: easy
 * Lines of code to write: 1 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Use data from "Given" section (see below)

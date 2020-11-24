@@ -119,7 +119,7 @@ File Write Str
 * Filename: file_write_str.py
 * Complexity: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -148,7 +148,7 @@ File Write Multiline
 * Filename: file_write_multiline.py
 * Complexity: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -186,7 +186,7 @@ File Write List
 * Filename: file_write_list.py
 * Complexity: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -218,7 +218,7 @@ File Write Non-Str
 * Filename: file_write_nonstr.py
 * Complexity: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -247,7 +247,7 @@ File Write Iris
 * Filename: file_write_iris.py
 * Complexity: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -283,7 +283,7 @@ File Write CSV
 * Filename: file_write_csv.py
 * Complexity: medium
 * Lines of code to write: 6 lines
-* Estimated time of completion: 13 min
+* Estimated time: 13 min
 
 English:
     #. Use data from "Given" section (see below)

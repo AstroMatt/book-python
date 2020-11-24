@@ -388,7 +388,7 @@ Function Generator Chain
 * Filename: function_generators_chain.py
 * Complexity: easy
 * Lines of code to write: 10 lines
-* Estimated time of completion: 13 min
+* Estimated time: 13 min
 
 English:
     #. Use generator expression to create ``numbers``

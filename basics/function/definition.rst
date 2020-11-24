@@ -141,7 +141,7 @@ Function Definition Print
 * Filename: function_definition_print.py
 * Complexity: easy
 * Lines of code to write: 5 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Define function ``call`` without parameters

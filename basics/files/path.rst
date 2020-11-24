@@ -256,7 +256,7 @@ File Path Abspath
 * Filename: file_path_abspath.py
 * Complexity: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 2 min
+* Estimated time: 2 min
 
 English:
     #. Using ``input()`` ask user for a file path

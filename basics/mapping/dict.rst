@@ -464,7 +464,7 @@ Mapping Dict Define
 * Filename: mapping_dict_define.py
 * Complexity: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -498,7 +498,7 @@ Mapping Dict Items
 * Filename: mapping_dict_items.py
 * Complexity: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -546,7 +546,7 @@ Mapping Dict Substitute
 * Filename: mapping_dict_substitute.py
 * Complexity: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -587,7 +587,7 @@ Mapping Dict Get
 * Filename: mapping_dict_get.py
 * Complexity: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Use data from "Given" section (see below)

@@ -3,7 +3,7 @@
 * Filename: sequence_tuple_select.py
 * Complexity: easy
 * Lines of code to write: 1 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     1. Use data from "Given" section (see below)
@@ -26,19 +26,33 @@ Hints:
 Tests:
     >>> type(result)
     <class 'tuple'>
-    >>> result
-    ('virginica', 'setosa', 'versicolor', 'virginica', 'versicolor')
+    >>> all(type(x) is str for x in result)
+    True
+    >>> ('sepal_length' not in result
+    ...  and 'sepal_width' not in result
+    ...  and 'petal_length' not in result
+    ...  and 'petal_width' not in result
+    ...  and 'species' not in result)
+    True
+    >>> len(result)
+    5
+    >>> result.count('virginica')
+    2
+    >>> result.count('setosa')
+    1
+    >>> result.count('versicolor')
+    2
 """
 
 # Given
-DATA = """
-    'sepal length', 'sepal width', 'petal length', 'petal width', 'species',
-    '5.8', '2.7', '5.1', '1.9', 'virginica',   # row 1
-    '5.1', '3.5', '1.4', '0.2', 'setosa',      # row 2
-    '5.7', '2.8', '4.1', '1.3', 'versicolor',  # row 3
-    '6.3', '2.9', '5.6', '1.8', 'virginica',   # row 4
-    '6.4', '3.2', '4.5', '1.5', 'versicolor',  # row 5
-"""
+DATA = [
+    'sepal_length,sepal_width,petal_length,petal_width,species',
+    '5.8,2.7,5.1,1.9,virginica',
+    '5.1,3.5,1.4,0.2,setosa',
+    '5.7,2.8,4.1,1.3,versicolor',
+    '6.3,2.9,5.6,1.8,virginica',
+    '6.4,3.2,4.5,1.5,versicolor',
+]
 
 # Solution
 result = ('virginica', 'setosa', 'versicolor', 'virginica', 'versicolor')

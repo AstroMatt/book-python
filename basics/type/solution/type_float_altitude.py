@@ -3,7 +3,7 @@
 * Filename: type_float_tax.py
 * Complexity: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     1. Plane altitude is 10.000 ft

@@ -171,7 +171,7 @@ About Environment
 * Filename: about_environment.py
 * Complexity: easy
 * Lines of code to write: 0 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     .. todo:: English Translation

@@ -3,7 +3,7 @@
 * Filename: about_syntax.py
 * Complexity: easy
 * Lines of code to write: 4 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     1. Write comments:

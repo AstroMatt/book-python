@@ -210,7 +210,7 @@ OOP Method Sequence
 * Filename: oop_method_sequence.py
 * Complexity: easy
 * Lines of code to write: 18 lines
-* Estimated time of completion: 13 min
+* Estimated time: 13 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -251,7 +251,7 @@ OOP Method Nested
 * Filename: oop_method_nested.py
 * Complexity: medium
 * Lines of code to write: 15 lines
-* Estimated time of completion: 21 min
+* Estimated time: 21 min
 
 English:
     #. Use data from "Given" section (see below)

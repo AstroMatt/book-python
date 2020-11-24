@@ -3,7 +3,7 @@
 * Filename: type_int_sub.py
 * Complexity: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     1. One Kelvin is equal to 1 Celsius degree (1K = 1°C)

@@ -3,7 +3,7 @@
 * Filename: type_float_velocity.py
 * Complexity: easy
 * Lines of code to write: 9 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     1. Speed limit is 75 MPH

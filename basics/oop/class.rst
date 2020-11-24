@@ -168,7 +168,7 @@ OOP Class Iris
 * Filename: oop_class_iris.py
 * Complexity: easy
 * Lines of code to write: 5 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Define class ``Iris``
@@ -197,7 +197,7 @@ OOP Class Instance
 * Filename: oop_class_instance.py
 * Complexity: easy
 * Lines of code to write: 9 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Define class ``Astronaut``

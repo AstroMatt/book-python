@@ -657,7 +657,7 @@ Exception Raise
 * Filename: controlflow_exception_raise.py
 * Complexity: easy
 * Lines of code to write: 5 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Ask user to input age
@@ -677,7 +677,7 @@ Exception Catch
 * Filename: controlflow_exception_catch.py
 * Complexity: easy
 * Lines of code to write: 6 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Ask user to input temperature in Kelvins
@@ -699,7 +699,7 @@ Exception Define
 * Filename: controlflow_exception_define.py
 * Complexity: easy
 * Lines of code to write: 6 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Ask user to input temperature in Kelvins
@@ -721,7 +721,7 @@ Exception Custom
 * Filename: controlflow_exception_custom.py
 * Complexity: easy
 * Lines of code to write: 5 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Ask user to input angle in degrees

@@ -3,7 +3,7 @@
 * Filename: type_bool_simple.py
 * Complexity: easy
 * Lines of code to write: 9 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     1. Use data from "Given" section (see below)

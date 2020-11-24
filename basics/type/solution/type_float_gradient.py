@@ -3,7 +3,7 @@
 * Filename: type_float_gradient.py
 * Complexity: hard
 * Lines of code to write: 7 lines
-* Estimated time of completion: 8 min
+* Estimated time: 8 min
 
 English:
     1. At what altitude above sea level, pressure is equal to partial pressure of Oxygen

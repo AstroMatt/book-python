@@ -167,7 +167,7 @@ File Access Error
 * Filename: file_access_error.py
 * Complexity: easy
 * Lines of code to write: 5 lines
-* Estimated time of completion: 2 min
+* Estimated time: 2 min
 
 English:
     #. Using ``input()`` ask user for a file path

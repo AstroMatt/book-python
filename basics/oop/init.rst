@@ -282,7 +282,7 @@ OOP Init Print
 * Filename: oop_init_print.py
 * Complexity: easy
 * Lines of code to write: 10 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Create one class ``Echo``
@@ -312,7 +312,7 @@ OOP Init Model
 * Filename: oop_init_model.py
 * Complexity: easy
 * Lines of code to write: 15 lines
-* Estimated time of completion: 8 min
+* Estimated time: 8 min
 
 English:
     #. Use data from "Given" section (see below)

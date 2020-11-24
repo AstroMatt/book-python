@@ -454,7 +454,7 @@ Function Doctest Temperature
 * Filename: function_doctest_temperature.py
 * Complexity: easy
 * Lines of code to write: 5 lines
-* Estimated time of completion: 13 min
+* Estimated time: 13 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -496,7 +496,7 @@ Function Doctest Distance
 * Filename: function_doctest_distance.py
 * Complexity: easy
 * Lines of code to write: 21 lines
-* Estimated time of completion: 13 min
+* Estimated time: 13 min
 
 English:
     #. Write functions which convert distance given in kilometers to meters
@@ -531,7 +531,7 @@ Function Doctest Regexp
 * Assignment: Function Doctest Regexp
 * Complexity: hard
 * Lines of code to write: 0 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 * Solution: TODO
 * Warning: Do not write any code - **discussion only**
 

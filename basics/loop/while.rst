@@ -217,7 +217,7 @@ Loop While Cast
 * Filename: loop_while_cast.py
 * Complexity: easy
 * Lines of code to write: 6 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -252,7 +252,7 @@ Loop While Convert
 * Filename: loop_while_convert.py
 * Complexity: easy
 * Lines of code to write: 8 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -287,7 +287,7 @@ Loop While Translate
 * Filename: loop_while_translate.py
 * Complexity: medium
 * Lines of code to write: 9 lines
-* Estimated time of completion: 8 min
+* Estimated time: 8 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -324,7 +324,7 @@ Loop While Input
 * Filename: loop_while_input.py
 * Complexity: medium
 * Lines of code to write: 15 lines
-* Estimated time of completion: 13 min
+* Estimated time: 13 min
 
 English:
     #. Use data from "Given" section (see below)

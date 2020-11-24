@@ -155,7 +155,7 @@ Conditional Expression
 * Filename: controlflow_conditional_expression.py
 * Complexity: medium
 * Lines of code to write: 25 lines
-* Estimated time of completion: 21 min
+* Estimated time: 21 min
 
 English:
     #. Use data from "Given" section (see below)

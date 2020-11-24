@@ -3,7 +3,7 @@
 * Filename: type_str_emoticon.py
 * Complexity: easy
 * Lines of code to write: 2 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     1. Define `name` with value `Mark Watney`

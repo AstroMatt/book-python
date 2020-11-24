@@ -3,7 +3,7 @@
 * Filename: sequence_getitem_select.py
 * Complexity: easy
 * Lines of code to write: 10 lines
-* Estimated time of completion: 8 min
+* Estimated time: 8 min
 
 English:
     1. Use data from "Given" section (see below)
@@ -14,8 +14,9 @@ English:
     6. Select row at index -2, convert it to `set` and add to `result`
     7. Select row at index -4, convert it to `frozenset` and add to `result`
     8. Append to `result`: empty `list`, empty `tuple`, empty `set` and empty `frozenset`
-    9. Use only indexes and do not use `for`, `while` or `slice()`
-    10. Compare result with "Tests" section (see below)
+    9. Use only indexes (`getitem`)
+    10. Do not use `str.split()`, `slice`, `for`, `while` or any other control-flow statement
+    11. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
@@ -26,18 +27,23 @@ Polish:
     6. Wybierz wiersz o indeksie -4, przekonwertuj go do `set` i dodaj do `result`
     7. Wybierz wiersz o indeksie -2, przekonwertuj go do `frozenset` i dodaj do `result`
     8. Dodaj na koniec `result`: pustą `list`, pustą `tuple`, pusty `set`, pusty `frozenset`
-    9. Korzystaj tylko z indeksów i nie używaj `for`, `while` lub `slice()`
-    10. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Hints:
-    * `from pprint import pprint`
-    * `pprint(result)`
+    9. Korzystaj tylko z indeksów (`getitem`)
+    10. Nie używaj `str.split()`, `slice`, `getitem`, `for`, `while` lub jakiejkolwiek innej instrukcji sterującej
+    11. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
     >>> type(header)
     <class 'tuple'>
     >>> type(result)
     <class 'list'>
+    >>> ('sepal_length' not in result
+    ...  and 'sepal_width' not in result
+    ...  and 'petal_length' not in result
+    ...  and 'petal_width' not in result
+    ...  and 'species' not in result)
+    True
+    >>> len(result)
+    8
     >>> header
     ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species')
     >>> [5.1, 3.5, 1.4, 0.2, 'setosa'] in result

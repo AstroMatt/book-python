@@ -169,7 +169,7 @@ File Read Str
 * Filename: file_read_str.py
 * Complexity: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -204,7 +204,7 @@ File Read Multiline
 * Filename: file_read_multiline.py
 * Complexity: easy
 * Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -240,7 +240,7 @@ File Read CSV
 * Filename: file_read_csv.py
 * Complexity: easy
 * Lines of code to write: 15 lines
-* Estimated time of completion: 8 min
+* Estimated time: 8 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -316,7 +316,7 @@ File Read Dict
 * Filename: file_read_dict.py
 * Complexity: medium
 * Lines of code to write: 10 lines
-* Estimated time of completion: 8 min
+* Estimated time: 8 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -373,7 +373,7 @@ File Read List of Dicts
 * Filename: file_read_listdict.py
 * Complexity: hard
 * Lines of code to write: 15 lines
-* Estimated time of completion: 13 min
+* Estimated time: 13 min
 
 English:
     #. Use data from "Given" section (see below)

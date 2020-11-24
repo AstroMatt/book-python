@@ -367,7 +367,7 @@ OOP Inheritance Simple
 * Filename: oop_inheritance_simple.py
 * Complexity: easy
 * Lines of code to write: 8 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Create class ``Mars``
@@ -396,7 +396,7 @@ OOP Inheritance Multiple
 * Filename: oop_inheritance_multiple.py
 * Complexity: easy
 * Lines of code to write: 10 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Create classes ``Engineer``, ``Scientist``, ``Pilot``, ``MedicalDoctor``
@@ -426,7 +426,7 @@ OOP Inheritance Super
 * Filename: oop_inheritance_super.py
 * Complexity: easy
 * Lines of code to write: 8 lines
-* Estimated time of completion: 8 min
+* Estimated time: 8 min
 
 English:
     #. Use data from "Given" section (see below)

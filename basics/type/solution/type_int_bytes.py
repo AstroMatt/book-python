@@ -3,7 +3,7 @@
 * Filename: type_int_bytes.py
 * Complexity: easy
 * Lines of code to write: 7 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     1. File size is 100 megabytes

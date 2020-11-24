@@ -26,14 +26,21 @@ Type Definition
     data = ()
     data = tuple()
 
+.. code-block:: python
+    :caption: Single element ``tuple`` require comma at the end (**important!**)
+
     data = (1,)
+    data = 1,
+
+.. code-block:: python
+    :caption: Brackets are optional and comma after last element of one element tuple is optional
+
     data = (1, 2, 3)
     data = (1.1, 2.2, 3.3)
     data = (True, False)
     data = ('a', 'b', 'c')
     data = ('a', 1, 2.2, True, None)
 
-    data = 1,
     data = 1, 2, 3
     data = 1.1, 2.2, 3.3
     data = True, False
@@ -154,6 +161,20 @@ List:
     * mutable
     * implemented in memory as list of pointers to objects
     * objects are scattered in memory
+
+.. code-block:: python
+
+    from sys import getsizeof
+
+
+    a = [1, 2, 3]
+    b = (1, 2, 3)
+
+    getsizeof(a)
+    # 120
+
+    getsizeof(b)
+    # 64
 
 .. figure:: img/memory-tuple.png
     :align: center

@@ -3,7 +3,7 @@
 * Filename: type_float_volume.py
 * Complexity: easy
 * Lines of code to write: 4 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     1. Bottle volume is 20 Fl Oz

@@ -138,7 +138,7 @@ Loop Unpacking Months
 * Filename: loop_unpacking_months.py
 * Complexity: easy
 * Lines of code to write: 2 lines
-* Estimated time of completion: 5 min
+* Estimated time: 5 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -186,7 +186,7 @@ Loop Unpacking Endswith
 * Filename: loop_unpacking_endswith.py
 * Complexity: medium
 * Lines of code to write: 3 lines
-* Estimated time of completion: 8 min
+* Estimated time: 8 min
 
 English:
     #. Use data from "Given" section (see below)

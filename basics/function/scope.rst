@@ -296,7 +296,7 @@ Function Scope Filter
 * Filename: function_scope_filter.py
 * Complexity: easy
 * Lines of code to write: 5 lines
-* Estimated time of completion: 8 min
+* Estimated time: 8 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -340,7 +340,7 @@ Function Scope Roman to Int
 * Filename: function_scope_romanint.py
 * Complexity: hard
 * Lines of code to write: 15 lines
-* Estimated time of completion: 21 min
+* Estimated time: 21 min
 
 English:
     #. Use data from "Given" section (see below)
@@ -383,7 +383,7 @@ Function Scope Int To Roman
 * Filename: function_scope_introman.py
 * Complexity: hard
 * Lines of code to write: 15 lines
-* Estimated time of completion: 21 min
+* Estimated time: 21 min
 
 English:
     #. Use data from "Given" section (see below)

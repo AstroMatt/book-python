@@ -3,7 +3,7 @@
 * Filename: type_str_clean.py
 * Complexity: easy
 * Lines of code to write: 8 lines
-* Estimated time of completion: 13 min
+* Estimated time: 13 min
 
 English:
     1. Use data from "Given" section (see below)

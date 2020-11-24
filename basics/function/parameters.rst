@@ -203,7 +203,7 @@ Function Parameters Sequence
 * Filename: function_parameters_sequence.py
 * Complexity: easy
 * Lines of code to write: 2 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Define function ``add``
@@ -221,7 +221,7 @@ Function Parameters Echo
 * Filename: function_parameters_echo.py
 * Complexity: easy
 * Lines of code to write: 2 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Define function ``echo`` with two parameters
@@ -252,7 +252,7 @@ Function Parameters Default
 * Filename: function_parameters_default.py
 * Complexity: easy
 * Lines of code to write: 6 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     #. Define function ``default`` with two parameters

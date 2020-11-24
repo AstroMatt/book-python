@@ -3,7 +3,7 @@
 * Filename: sequence_frozenset_newline.py
 * Complexity: easy
 * Lines of code to write: 1 lines
-* Estimated time of completion: 3 min
+* Estimated time: 3 min
 
 English:
     1. Use data from "Given" section (see below)
@@ -20,6 +20,8 @@ Polish:
 Tests:
     >>> type(result)
     <class 'str'>
+    >>> len(result)
+    150
     >>> 'We choose to go to the Moon.' in result
     True
     >>> 'We choose to go to the Moon in this decade and do the other things.' in result
