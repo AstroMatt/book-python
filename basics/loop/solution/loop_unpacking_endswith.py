@@ -1,9 +1,41 @@
 """
->>> assert type(result) is set
->>> result
-{'virginica', 'setosa'}
+* Assignment: Loop Unpacking Endswith
+* Filename: loop_unpacking_endswith.py
+* Complexity: medium
+* Lines of code to write: 5 lines
+* Estimated time: 8 min
+
+English:
+    #. Use data from "Given" section (see below)
+    #. Define `result: set[str]`
+    #. Iterating over data unpack row to `*features` and `label`
+    #. Append to `result` species names ending with "ca" or "osa"
+    #. Compare result with "Tests" section (see below)
+
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
+    #. Zdefiniuj `result: set[str]`
+    #. Iterując po danych rozpakuj wiersz do `*features` oraz `label`
+    #. Dodaj do `result` nazwy gatunków kończące się na "ca" lub "osa"
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+
+Hints:
+    * `str.endswith()`
+    * `set.pop()`
+    * `isinstance` or `type`
+
+Tests:
+    >>> type(result)
+    <class 'set'>
+    >>> 'virginica' in result
+    True
+    >>> 'setosa' in result
+    True
+    >>> 'versicolor' in result
+    False
 """
 
+# Given
 DATA = [
     ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
     (5.8, 2.7, 5.1, 1.9, {'virginica'}),
@@ -17,12 +49,12 @@ DATA = [
     (4.6, 3.1, 1.5, 0.2, {'setosa'}),
 ]
 
-header, *data = DATA
+result: set = set()
+
+# Solution
 suffixes = ('osa', 'ca')
-result = set()
 
-
-for *features, label in data:
+for *features, label in DATA[1:]:
     species = label.pop()
 
     if species.endswith(suffixes):

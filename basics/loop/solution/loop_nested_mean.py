@@ -1,9 +1,28 @@
 """
->>> assert type(result) is float
->>> result
-5.911111111111111
+* Assignment: Loop Nested Mean
+* Filename: loop_nested_mean.py
+* Complexity: easy
+* Lines of code to write: 5 lines
+* Estimated time: 5 min
+
+English:
+    1. Use data from "Given" section (see below)
+    2. Calculate mean `Sepal length` value
+    3. Compare result with "Tests" section (see below)
+
+Polish:
+    1. Użyj danych z sekcji "Given" (patrz poniżej)
+    2. Wylicz średnią wartość `Sepal length`
+    3. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+
+Tests:
+    >>> type(result)
+    <class 'float'>
+    >>> result
+    5.911111111111111
 """
 
+# Given
 DATA = [
     ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
     (5.8, 2.7, 5.1, 1.9, 'virginica'),
@@ -17,10 +36,10 @@ DATA = [
     (4.6, 3.1, 1.5, 0.2, 'setosa'),
 ]
 
-header, *data = DATA
-result = []
+# Solution
+sepal_length = []
 
-for sepal_length, *others in data:
-    result.append(sepal_length)
+for row in DATA[1:]:
+    sepal_length.append(row[0])
 
-result = sum(result) / len(result)
+result = sum(sepal_length) / len(sepal_length)

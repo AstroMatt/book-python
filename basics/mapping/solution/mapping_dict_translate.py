@@ -1,6 +1,6 @@
 """
-* Assignment: Mapping Dict Substitute
-* Filename: mapping_dict_substitute.py
+* Assignment: Mapping Dict Translate
+* Filename: mapping_dict_translate.py
 * Complexity: easy
 * Lines of code to write: 2 lines
 * Estimated time: 5 min
@@ -16,7 +16,7 @@ Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Poproś użytkownika o wprowadzenie jednej litery
     3. Przekonwertuj literę na małą
-    4. Jeżeli litera jest w `PL` to użyj przekonwertowanej wartości jako litera
+    4. Jeżeli litera jest w `PL` to użyj skonwertowanej wartości jako litera
     5. Wypisz literę
 
 Example:
@@ -29,6 +29,13 @@ Example:
 
 Tests:
     TODO: Doctests
+    >>> type(result)
+    <class 'str'>
+    >>> result not in PL.keys()
+    True
+    >>> import string
+    >>> result in string.ascii_letters
+    True
 """
 
 # Given

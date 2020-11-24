@@ -190,100 +190,10 @@ Enumerate
 Assignments
 ===========
 
-Loop Unpacking Months
----------------------
-* Assignment: Loop Unpacking Months
-* Filename: loop_unpacking_months.py
-* Complexity: easy
-* Lines of code to write: 2 lines
-* Estimated time: 5 min
+.. literalinclude:: solution/loop_unpacking_months.py
+    :caption: :download:`Solution <solution/loop_unpacking_months.py>`
+    :end-before: # Solution
 
-English:
-    #. Use data from "Given" section (see below)
-    #. Use ``enumerate()`` to convert ``MONTH`` into dict:
-
-        * Keys: month number
-        * Values: month name
-
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Użyj ``enumerate()`` do konwersji ``MONTH`` w słownik:
-
-        * klucz: numer miesiąca
-        * wartość: nazwa miesiąca
-
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Given:
-    .. code-block:: python
-
-        MONTHS = ['January', 'February', 'March', 'April',
-                  'May', 'June', 'July', 'August', 'September',
-                  'October', 'November', 'December']
-
-Tests:
-    >>> result  # doctest: +NORMALIZE_WHITESPACE
-    {1: 'January',
-     2: 'February',
-     3: 'March',
-     4: 'April',
-     5: 'May',
-     6: 'June',
-     7: 'July',
-     8: 'August',
-     9: 'September',
-     10: 'October',
-     11: 'November',
-     12: 'December'}
-
-Loop Unpacking Endswith
------------------------
-* Assignment: Loop Unpacking Endswith
-* Filename: loop_unpacking_endswith.py
-* Complexity: medium
-* Lines of code to write: 3 lines
-* Estimated time: 8 min
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Separate header from data
-    #. Define ``result: set[str]``
-    #. Iterating over data unpack row to ``*features`` and ``label``
-    #. Append to ``result`` species names ending with "ca" or "osa"
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Odseparuj nagłówek od danych
-    #. Zdefiniuj ``result: set[str]``
-    #. Iterując po danych rozpakuj wiersz do ``*features`` oraz ``label``
-    #. Dodaj do ``result`` nazwy gatunków kończące się na "ca" lub "osa"
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Given:
-    .. code-block:: python
-
-        DATA = [
-            ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
-            (5.8, 2.7, 5.1, 1.9, {'virginica'}),
-            (5.1, 3.5, 1.4, 0.2, {'setosa'}),
-            (5.7, 2.8, 4.1, 1.3, {'versicolor'}),
-            (6.3, 2.9, 5.6, 1.8, {'virginica'}),
-            (6.4, 3.2, 4.5, 1.5, {'versicolor'}),
-            (4.7, 3.2, 1.3, 0.2, {'setosa'}),
-            (7.0, 3.2, 4.7, 1.4, {'versicolor'}),
-            (7.6, 3.0, 6.6, 2.1, {'virginica'}),
-            (4.6, 3.1, 1.5, 0.2, {'setosa'}),
-        ]
-
-Hints:
-    * ``str.endswith()``
-    * ``set.pop()``
-    * ``isinstance`` or ``type``
-
-Tests:
-    >>> assert type(result) is set
-    >>> result
-    {'virginica', 'setosa'}
+.. literalinclude:: solution/loop_unpacking_endswith.py
+    :caption: :download:`Solution <solution/loop_unpacking_endswith.py>`
+    :end-before: # Solution

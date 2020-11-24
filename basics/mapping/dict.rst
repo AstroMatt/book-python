@@ -485,8 +485,8 @@ Assignments
     :caption: :download:`Solution <solution/mapping_dict_get.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/mapping_dict_substitute.py
-    :caption: :download:`Solution <solution/mapping_dict_substitute.py>`
+.. literalinclude:: solution/mapping_dict_translate.py
+    :caption: :download:`Solution <solution/mapping_dict_translate.py>`
     :end-before: # Solution
 
 
