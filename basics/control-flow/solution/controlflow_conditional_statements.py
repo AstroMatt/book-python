@@ -2,7 +2,7 @@
 * Assignment: Conditional Statements
 * Filename: controlflow_conditional_statements.py
 * Complexity: easy
-* Lines of code to write: 6 lines
+* Lines of code to write: 4 lines
 * Estimated time: 3 min
 
 English:
@@ -16,18 +16,20 @@ Polish:
     3. Wypisz czy użytkownik jest pełnoletni
 
 Tests:
-    TODO doctests
+    >>> type(age)
+    <class 'int'>
+    >>> type(result)
+    <class 'str'>
+    >>> result in ('Adult', 'Young')
+    True
 """
 
-AGE_ADULT = 18
-
-
+# Given
+ADULT = 18
 age = input('What is your age?: ')
-age = int(age.strip())
 
-if age >= AGE_ADULT:
+# Solution
+if int(age) >= ADULT:
     result = 'Adult'
 else:
     result = 'Young'
-
-print(result)

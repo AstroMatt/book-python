@@ -2,8 +2,8 @@
 * Assignment: Conditional Expression
 * Filename: controlflow_conditional_expression.py
 * Complexity: medium
-* Lines of code to write: 25 lines
-* Estimated time: 21 min
+* Lines of code to write: 10 lines
+* Estimated time: 13 min
 
 English:
     1. Use data from "Given" section (see below)
@@ -27,6 +27,15 @@ Polish:
     6. Wypisz status wprowadzonego ciśnienia krwi
     7. Gdy wartości ciśnienia skurczowego i rozkurczowego należą do różnych kategorii, przyjmij gorszy przypadek
 
+Given:
+    | Blood Pressure Category | Systolic [mm Hg] | Operator | Diastolic [mm Hg] |
+    |-------------------------|------------------|----------|-------------------|
+    | Normal                  | Less than 120    | and      | Less than 80      |
+    | Elevated                | 120-129          | and      | Less than 80      |
+    | Hypertension stage 1    | 130-139          | or       | 80-89             |
+    | Hypertension stage 2    | 140 or higher    | or       | 90 or higher      |
+    | Hypertensive Crisis     | Higher than 180  | and/or   | Higher than 120   |
+
 Tests:
     TODO: Doctests
     '119/79': 'Normal',
@@ -42,13 +51,13 @@ Tests:
     '180/120': ('Hypertension stage 2', 'Hypertensive Crisis')
 """
 
-# Solution
+# Given
 blood_pressure = input('What is your Blood Pressure?: ')
 systolic, diastolic = blood_pressure.strip().split('/')
 systolic = int(systolic)
 diastolic = int(diastolic)
 
-
+# Solution
 if systolic >= 180 or diastolic >= 120:
     print('Hypertensive Crisis')
 
