@@ -458,192 +458,21 @@ Future
 Assignments
 ===========
 
-Mapping Dict Define
--------------------
-* Assignment: Mapping Dict Define
-* Filename: mapping_dict_define.py
-* Complexity: easy
-* Lines of code to write: 3 lines
-* Estimated time: 3 min
+.. literalinclude:: solution/mapping_dict_define.py
+    :caption: :download:`Solution <solution/mapping_dict_define.py>`
+    :end-before: # Solution
 
-English:
-    #. Use data from "Given" section (see below)
-    #. Create ``result: dict`` representing input data
+.. literalinclude:: solution/mapping_dict_items.py
+    :caption: :download:`Solution <solution/mapping_dict_items.py>`
+    :end-before: # Solution
 
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Stwórz ``result: dict`` reprezentujący dane wejściowe
+.. literalinclude:: solution/mapping_dict_get.py
+    :caption: :download:`Solution <solution/mapping_dict_get.py>`
+    :end-before: # Solution
 
-Given:
-    .. code-block:: text
-
-        First Name: Jan
-        Last Name: Twardowski
-        Missions: Apollo, Artemis
-
-Tests:
-    >>> assert type(result) is dict
-    >>> assert 'firstname' in result
-    >>> assert 'lastname' in result
-    >>> assert 'missions' in result
-    >>> assert result['firstname'] == 'Jan'
-    >>> assert result['lastname'] == 'Twardowski'
-    >>> assert 'Artemis' in result['missions']
-    >>> assert 'Ares' in result['missions']
-    >>> assert type(result['missions']) is list
-
-Mapping Dict Items
-------------------
-* Assignment: Mapping Dict Items
-* Filename: mapping_dict_items.py
-* Complexity: easy
-* Lines of code to write: 3 lines
-* Estimated time: 3 min
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Define ``keys: list[str]`` with list of ``DATA`` keys
-    #. Define ``values: list[str]`` with list of ``DATA`` values
-    #. Define ``keys: list[tuple]`` with list of ``DATA`` key-value pairs
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Zdefiniuj ``keys: list[str]`` z listą kluczy z ``DATA``
-    #. Zdefiniuj ``values: list[str]`` z listą wartości z ``DATA``
-    #. Zdefiniuj ``keys: list[tuple]`` z listą par klucz-wartość z ``DATA``
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Given:
-    .. code-block:: python
-
-        DATA = {
-            'Sepal length': 5.8,
-            'Sepal width': 2.7,
-            'Petal length': 5.1,
-            'Petal width': 1.9,
-        }
-
-Tests:
-    >>> assert type(keys) is list
-    >>> assert type(values) is list
-    >>> assert type(items) is list
-    >>> assert all(type(x) is tuple for x in items)
-
-    >>> keys
-    ['Sepal length', 'Sepal width', 'Petal length', 'Petal width']
-    >>> values
-    [5.8, 2.7, 5.1, 1.9]
-    >>> items  # doctest: +NORMALIZE_WHITESPACE
-    [('Sepal length', 5.8),
-     ('Sepal width', 2.7),
-     ('Petal length', 5.1),
-     ('Petal width', 1.9)]
-
-Mapping Dict Substitute
------------------------
-* Assignment: Mapping Dict Substitute
-* Filename: mapping_dict_substitute.py
-* Complexity: easy
-* Lines of code to write: 3 lines
-* Estimated time: 5 min
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Ask user to input single letter
-    #. Convert to lowercase
-    #. If letter is in ``PL`` then use conversion value as letter
-    #. Print letter
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Poproś użytkownika o wprowadzenie jednej litery
-    #. Przekonwertuj literę na małą
-    #. Jeżeli litera jest w ``PL`` to użyj przekonwertowanej wartości jako litera
-    #. Wypisz literę
-
-Given:
-    .. code-block:: python
-
-        PL = {'ą': 'a', 'ć': 'c', 'ę': 'e',
-              'ł': 'l', 'ń': 'n', 'ó': 'o',
-              'ś': 's', 'ż': 'z', 'ź': 'z'}
-
-:Example:
-    .. code-block:: text
-
-        | Input | Output |
-        |-------|--------|
-        |   A   |    a   |
-        |   x   |    x   |
-        |   ś   |    s   |
-        |   Ź   |    z   |
-
-.. todo:: Doctests
-
-Mapping Dict Get
-----------------
-* Assignment: Mapping Dict Get
-* Filename: mapping_dict_get.py
-* Complexity: easy
-* Lines of code to write: 3 lines
-* Estimated time: 5 min
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Create translator of pilot's alphabet
-    #. Each letter has it's phonetic counterpart
-    #. To convert table use multiline select with ``alt`` key in your IDE (if shortcut key is not working in your IDE, use only first four letters)
-    #. Ask user to input letter
-    #. User will always put only one capitalized letter or number
-    #. Print phonetic letter pronunciation
-    #. If user type character not existing in alphabet, print: "Pilots don't say that"
-    #. Do not use ``if``, ``try``, and ``except``
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Stwórz tłumacza alfabetu pilotów
-    #. Pojedynczym literom przyporządkuj ich fonetyczne odpowiedniki
-    #. Do konwersji tabelki wykorzystaj zaznaczanie wielu linijek za pomocą klawisza ``alt`` w Twoim IDE (jeżeli skrót klawiszowy nie działa w Twoim IDE, użyj tylko cztery pierwsze litery)
-    #. Poproś użytkownika o wprowadzenie litery
-    #. Użytkownik zawsze poda tylko jedną dużą literę lub cyfrę
-    #. Wypisz fonetyczną wymowę litery
-    #. Jeżeli wpisał znak, który nie występuje w alfabecie, wypisz: "Pilots don't say that"
-    #. Nie używaj ``if``, ``try`` ani ``except``
-
-Given:
-    .. code-block:: text
-
-        Letter, Pronounce
-        A, Alfa
-        B, Bravo
-        C, Charlie
-        D, Delta
-        E, Echo
-        F, Foxtrot
-        G, Golf
-        H, Hotel
-        I, India
-        J, Juliet
-        K, Kilo
-        L, Lima
-        M, Mike
-        N, November
-        O, Oscar
-        P, Papa
-        Q, Quebec
-        R, Romeo
-        S, Sierra
-        T, Tango
-        U, Uniform
-        V, Victor
-        W, Whisky
-        X, X-Ray
-        Y, Yankee
-        Z, Zulu
-
-Tests:
-    TODO doctests
+.. literalinclude:: solution/mapping_dict_substitute.py
+    :caption: :download:`Solution <solution/mapping_dict_substitute.py>`
+    :end-before: # Solution
 
 
 References

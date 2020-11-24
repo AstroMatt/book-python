@@ -312,13 +312,10 @@ Using in a Loop
 Assignments
 ===========
 
-
-.. literalinclude:: solution/sequence_tuple_mean.py
-    :caption: :download:`Solution <solution/sequence_tuple_mean.py>`
+.. literalinclude:: solution/sequence_unpack_nested.py
+    :caption: :download:`Solution <solution/sequence_unpack_nested.py>`
     :end-before: # Solution
 
-
-.. literalinclude:: solution/sequence_tuple_mean.py
-    :caption: :download:`Solution <solution/sequence_tuple_mean.py>`
+.. literalinclude:: solution/sequence_unpack_split.py
+    :caption: :download:`Solution <solution/sequence_unpack_split.py>`
     :end-before: # Solution
-

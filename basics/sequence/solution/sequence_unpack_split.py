@@ -1,6 +1,6 @@
 """
-* Assignment: Function Unpack Flat
-* Filename: sequence_unpack_flat.py
+* Assignment: Function Unpack Split
+* Filename: sequence_unpack_split.py
 * Complexity: easy
 * Lines of code to write: 1 lines
 * Estimated time: 3 min
