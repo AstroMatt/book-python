@@ -86,10 +86,17 @@ Typed Dict
         y: int
 
 
-    pt1: Point = {'x':1, 'y':2}             # Ok
-    pt2: Point = {'x':1, 'y':2, 'z':0}      # Error
-    pt3: Point = Point(x=1, y=2)            # Ok
-    pt4: Point = Point(x=1, y=2, z=0)       # Error
+    pt1: Point = {'x':1, 'y':2}         # Ok
+    pt2: Point = {'x':1, 'y':2, 'z':0}  # Expected type 'Point', got 'Dict[str, int]' instead
+    pt3: Point = {'x':1, 'z':0}         # Expected type 'Point', got 'Dict[str, int]' instead
+
+    pt4: Point = Point(x=1, y=2)        # Ok
+    pt5: Point = Point(x=1, z=2)        # Unexpected argument
+    pt6: Point = Point(x=1, y=2, z=0)   # Unexpected argument
+
+    pt6: Point = {}
+    pt6['x'] = 10                       # Ok
+    pt6['z'] = 20                       # TypeDict "Point" has no key 'z'
 
 
 More Information
