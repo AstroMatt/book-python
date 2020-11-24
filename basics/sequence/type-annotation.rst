@@ -18,6 +18,16 @@ Rationale
         (5.7, 2.8, 4.1, 1.3, 'versicolor'),
     ]
 
+    x: str = DATA[0][-1]
+    x  # IDE knows exactly what type is species
+       # and what methods hint for autocompletion
+
+    DATA = [
+        (5.8, 2.7, 5.1, 1.9, 'virginica'),
+        (5.1, 3.5, 1.4, 0.2, 'setosa'),
+        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+    ]
+
     for row in DATA:
         species = row[-1]
         species  # IDE don't know what type is species
@@ -324,4 +334,6 @@ Unions
 
 More Information
 ================
+* Example: https://github.com/pandas-dev/pandas/blob/master/pandas/core/frame.py#L458
+
 .. note:: More information in :ref:`Type Annotations` and :ref:`CI/CD Type Checking`

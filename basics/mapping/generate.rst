@@ -158,11 +158,9 @@ Assignments
     :caption: :download:`Solution <solution/mapping_generate_pairs.py>`
     :end-before: # Solution
 
-
 .. literalinclude:: solution/mapping_generate_enumerate.py
     :caption: :download:`Solution <solution/mapping_generate_enumerate.py>`
     :end-before: # Solution
-
 
 .. literalinclude:: solution/mapping_generate_zip.py
     :caption: :download:`Solution <solution/mapping_generate_zip.py>`

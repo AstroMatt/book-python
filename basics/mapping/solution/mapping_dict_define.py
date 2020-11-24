@@ -24,21 +24,21 @@ Polish:
 Tests:
     >>> type(result)
     <class 'dict'>
-    >>> 'firstname' in result
+    >>> 'firstname' in result.keys()
     True
-    >>> 'lastname' in result
+    >>> 'lastname' in result.keys()
     True
-    >>> 'missions' in result
+    >>> 'missions' in result.keys()
     True
     >>> result['firstname'] == 'Jan'
     True
     >>> result['lastname'] == 'Twardowski'
     True
-    >>> 'Artemis' in result['missions']
-    True
-    >>> 'Ares' in result['missions']
-    True
     >>> type(result['missions']) is list
+    True
+    >>> 'Apollo' in result['missions']
+    True
+    >>> 'Artemis' in result['missions']
     True
 """
 
@@ -53,5 +53,5 @@ DATA = """
 result = {
     'firstname': 'Jan',
     'lastname': 'Twardowski',
-    'missions': ['Artemis', 'Ares'],
+    'missions': ['Apollo', 'Artemis'],
 }

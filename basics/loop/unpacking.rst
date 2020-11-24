@@ -1,8 +1,8 @@
-.. _Loop Unpacking Sequences:
+.. _Loop Unpacking Assignment:
 
-************************
-Loop Unpacking Sequences
-************************
+*************************
+Loop Unpacking Assignment
+*************************
 
 
 Recap
@@ -31,6 +31,64 @@ List of Pairs
     # a -> 1
     # b -> 2
     # c -> 3
+
+
+Longer data
+===========
+.. code-block:: python
+
+    DATA = [
+        (5.1, 3.5, 1.4, 0.2, 'setosa'),
+        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+        (6.3, 2.9, 5.6, 1.8, 'virginica'),
+    ]
+
+    for sepal_length, sepal_width, petal_length, petal_width, species in DATA:
+        print(species, '->', sepal_length)
+
+    for sl, sw, pl, pw, s in DATA:
+        print(s, '->', sl)
+
+
+Unpacking Assignment
+====================
+.. code-block:: python
+
+    *features, label = (5.8, 2.7, 5.1, 1.9, 'virginica')
+
+    features                # [5.8, 2.7, 5.1, 1.9]
+    label                   # 'virginica'
+
+.. code-block:: python
+
+    DATA = [
+        (5.8, 2.7, 5.1, 1.9, 'virginica'),
+        (5.1, 3.5, 1.4, 0.2, 'setosa'),
+        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+    ]
+
+    for *features, label in DATA:
+        avg = sum(features) / len(features)
+        print(label, avg)
+
+    # virginica 3.875
+    # setosa 2.55
+    # versicolor 3.475
+
+.. code-block:: python
+
+    DATA = [
+        (5.8, 2.7, 5.1, 1.9, 'virginica'),
+        (5.1, 3.5, 1.4, 0.2, 'setosa'),
+        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+    ]
+
+    for *_, label in DATA:
+        print(label)
+
+    # virginica
+    # setosa
+    # versicolor
 
 
 List of Sequence

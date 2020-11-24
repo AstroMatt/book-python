@@ -32,6 +32,10 @@ Type Definition
         1969: 'First Step on the Moon'}
 
     data = {
+        1961: ['First Russian Space Flight', 'First US Space Flight'],
+        1969: ['First Step on the Moon']}
+
+    data = {
         'commander': 'Melissa Lewis',
         'botanist': 'Mark Watney',
         'chemist': 'Alex Vogel'}
@@ -130,6 +134,15 @@ In Python 2, the methods items(), keys() and values() used to "take a snapshot" 
         'botanist': 'Mark Watney',
         'chemist': 'Alex Vogel'}
 
+    crew.keys()
+    # dict_keys(['commander', 'botanist', 'chemist'])
+
+    crew.values()
+    # dict_values(['Melissa Lewis', 'Mark Watney', 'Alex Vogel'])
+
+    crew.items()
+    # dict_items([('commander', 'Melissa Lewis'), ('botanist', 'Mark Watney'), ('chemist', 'Alex Vogel')])
+
     list(crew.keys())
     # ['commander', 'botanist', 'chemist']
 
@@ -157,9 +170,15 @@ Set Item
         'chemist': 'Alex Vogel'}
 
     crew['pilot'] = 'Rick Martinez'
-
     print(crew)
     # {'commander': 'Melissa Lewis',
+    #  'botanist': 'Mark Watney',
+    #  'chemist': 'Alex Vogel',
+    #  'pilot': 'Rick Martinez'}
+
+    crew['commander'] = 'Jan Twardowski'
+    print(crew)
+    # {'commander': 'Jan Twardowski',
     #  'botanist': 'Mark Watney',
     #  'chemist': 'Alex Vogel',
     #  'pilot': 'Rick Martinez'}
@@ -179,13 +198,12 @@ Set Item
     #  'chemist': 'Alex Vogel',
     #  'pilot': 'Rick Martinez'}
 
-    crew.update(mission=['Artemis', 'Ares III'])
+    crew.update(commander='Jan Twardowski')
     print(crew)
-    # {'commander': 'Melissa Lewis',
+    # {'commander': 'Jan Twardowski',
     #  'botanist': 'Mark Watney',
     #  'chemist': 'Alex Vogel',
-    #  'pilot': 'Rick Martinez',
-    #  'mission': ['Artemis', 'Ares III']}
+    #  'pilot': 'Rick Martinez'}
 
 .. code-block:: python
     :caption: Update Method
@@ -267,131 +285,8 @@ Delete Item
     #  'botanist': 'Mark Watney'}
 
 
-GetItem and Slice
-=================
-.. highlights::
-    * GetItem with index on ``dict`` is not possible
-    * Slicing on ``dict`` is not possible
-
-.. code-block:: python
-
-    crew = {
-        'commander': 'Melissa Lewis',
-        'botanist': 'Mark Watney',
-        'chemist': 'Alex Vogel'}
-
-    crew[0]             # KeyError: 0
-    crew[1]             # KeyError: 1
-    crew[2]             # KeyError: 2
-
-    crew[-0]            # KeyError: 0
-    crew[-1]            # KeyError: -1
-    crew[-2]            # KeyError: -2
-
-    crew[1:2]           # TypeError: unhashable type: 'slice'
-    crew[:2]            # TypeError: unhashable type: 'slice'
-    crew[::2]           # TypeError: unhashable type: 'slice'
-
-.. code-block:: python
-
-    crew = {
-        0: 'Melissa Lewis',
-        1: 'Mark Watney',
-        2: 'Alex Vogel'}
-
-    crew[0]             # 'Melissa Lewis'
-    crew[1]             # 'Mark Watney'
-    crew[2]             # 'Alex Vogel'
-
-    crew[-0]            # 'Melissa Lewis'
-    crew[-1]            # KeyError: -1
-    crew[-2]            # KeyError: -2
-
-    crew[1:2]           # TypeError: unhashable type: 'slice'
-    crew[:2]            # TypeError: unhashable type: 'slice'
-    crew[::2]           # TypeError: unhashable type: 'slice'
-
-
-Dict or Set
-===========
-.. highlights::
-    * Both ``set`` and ``dict`` keys must be hashable
-    * Both ``set`` and ``dict`` uses the same ``{`` and ``}`` braces
-    * Despite similar syntax, they are different types
-
-.. code-block:: python
-
-    {1, 2}            # set
-    {1: 2}            # dict
-
-    {1, 2, 3, 4}      # set
-    {1: 2, 3: 4}      # dict
-
-.. code-block:: python
-    :caption: Empty ``dict`` and empty ``set``
-
-    data = {1: 1}       # {1:1}
-    data.pop(1)         # {}
-
-    data = {1}          # {1}
-    data.pop()          # set()
-
-.. code-block:: python
-    :caption: Differences
-
-    data = {1: 1}
-    isinstance(data, set)          # False
-    isinstance(data, dict)         # True
-
-    data = {1}
-    isinstance(data, set)          # True
-    isinstance(data, dict)         # False
-
-    data = {}
-    isinstance(data, (set, dict))  # True
-    isinstance(data, set)          # False
-    isinstance(data, dict)         # True
-
-
-Length
-======
-.. code-block:: python
-
-    crew = {
-        'commander': 'Melissa Lewis',
-        'botanist': 'Mark Watney',
-        'chemist': 'Alex Vogel'}
-
-
-    len(crew)
-    # 3
-
-    len(crew.keys())
-    # 3
-
-    len(crew.values())
-    # 3
-
-    len(crew.items())
-    # 3
-
-
-Examples
-========
-.. code-block:: python
-
-    git = {
-        'ce16a8ce': 'commit/1',
-        'cae6b510': 'commit/2',
-        '895444a6': 'commit/3',
-        'aef731b5': 'commit/4',
-        '4a92bc79': 'branch/master',
-        'b3bbd85a': 'tag/v1.0',
-    }
-
-
-Future
-======
+Merge
+=====
 .. versionadded:: Python 3.9
     :pep:`584` merge (``|``) and update (``|=``) operators have been added to the built-in dict class.
 
@@ -453,6 +348,126 @@ Future
     # {'pilot': 'Rick Martinez',
     #  'surgeon': 'Chris Beck',
     #  'engineer': 'Beth Johanssen'}
+
+
+GetItem and Slice
+=================
+.. highlights::
+    * GetItem with index on ``dict`` is not possible
+    * Slicing on ``dict`` is not possible
+
+.. code-block:: python
+
+    crew = {
+        'commander': 'Melissa Lewis',
+        'botanist': 'Mark Watney',
+        'chemist': 'Alex Vogel'}
+
+    crew[0]             # KeyError: 0
+    crew[1]             # KeyError: 1
+    crew[2]             # KeyError: 2
+    crew[-0]            # KeyError: 0
+    crew[-1]            # KeyError: -1
+    crew[-2]            # KeyError: -2
+    crew[1:2]           # TypeError: unhashable type: 'slice'
+    crew[:2]            # TypeError: unhashable type: 'slice'
+    crew[::2]           # TypeError: unhashable type: 'slice'
+
+.. code-block:: python
+
+    crew = {
+        0: 'Melissa Lewis',
+        1: 'Mark Watney',
+        2: 'Alex Vogel'}
+
+    crew[0]             # 'Melissa Lewis'
+    crew[1]             # 'Mark Watney'
+    crew[2]             # 'Alex Vogel'
+    crew[-0]            # 'Melissa Lewis'
+    crew[-1]            # KeyError: -1
+    crew[-2]            # KeyError: -2
+    crew[1:2]           # TypeError: unhashable type: 'slice'
+    crew[:2]            # TypeError: unhashable type: 'slice'
+    crew[::2]           # TypeError: unhashable type: 'slice'
+
+
+Dict or Set
+===========
+.. highlights::
+    * Both ``set`` and ``dict`` keys must be hashable
+    * Both ``set`` and ``dict`` uses the same ``{`` and ``}`` braces
+    * Despite similar syntax, they are different types
+
+.. code-block:: python
+
+    {1, 2}            # set
+    {1: 2}            # dict
+
+    {1, 2, 3, 4}      # set
+    {1: 2, 3: 4}      # dict
+
+.. code-block:: python
+    :caption: Empty ``dict`` and empty ``set``
+
+    data = {1: 1}
+    data.pop(1)
+    # {}
+
+    data = {1}
+    data.pop()
+    # set()
+
+.. code-block:: python
+    :caption: Differences
+
+    data = {1: 1}
+    isinstance(data, set)          # False
+    isinstance(data, dict)         # True
+
+    data = {1}
+    isinstance(data, set)          # True
+    isinstance(data, dict)         # False
+
+    data = {}
+    isinstance(data, set)          # False
+    isinstance(data, dict)         # True
+
+
+Length
+======
+.. code-block:: python
+
+    crew = {
+        'commander': 'Melissa Lewis',
+        'botanist': 'Mark Watney',
+        'chemist': 'Alex Vogel'}
+
+
+    len(crew)
+    # 3
+
+    len(crew.keys())
+    # 3
+
+    len(crew.values())
+    # 3
+
+    len(crew.items())
+    # 3
+
+
+Examples
+========
+.. code-block:: python
+
+    git = {
+        'ce16a8ce': 'commit/1',
+        'cae6b510': 'commit/2',
+        '895444a6': 'commit/3',
+        'aef731b5': 'commit/4',
+        '4a92bc79': 'branch/master',
+        'b3bbd85a': 'tag/v1.0',
+    }
 
 
 Assignments

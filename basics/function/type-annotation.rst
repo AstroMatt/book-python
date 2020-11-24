@@ -156,8 +156,6 @@ Errors
 
 Good Engineering Practices
 ==========================
-* Example https://github.com/pandas-dev/pandas/blob/master/pandas/core/frame.py#L458
-
 .. code-block:: python
 
     from typing import Union
@@ -171,9 +169,8 @@ Good Engineering Practices
     add_numbers(1.5, 2.5)   # 'Ok'
 
 
-
-
-
 More Information
 ================
+* Example: https://github.com/pandas-dev/pandas/blob/master/pandas/core/frame.py#L458
+
 .. note:: More information in :ref:`Type Annotations` and :ref:`CI/CD Type Checking`

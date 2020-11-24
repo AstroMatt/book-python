@@ -23,7 +23,6 @@ Rationale
     * More information in :ref:`cicd-tools`
     * https://www.infoq.com/presentations/dynamic-static-typing/
 
-
 Int
 ===
 .. code-block:: python
@@ -176,4 +175,6 @@ Future
 
 More Information
 ================
+* Example: https://github.com/pandas-dev/pandas/blob/master/pandas/core/frame.py#L458
+
 .. note:: More information in :ref:`Type Annotations` and :ref:`CI/CD Type Checking`
