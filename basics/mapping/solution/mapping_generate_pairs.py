@@ -7,14 +7,14 @@
 
 English:
     1. Use data from "Given" section (see below)
-    2. Create ``result: dict``
-    3. Convert ``DATA`` to ``dict`` and assign to ``result``
+    2. Create `result: dict`
+    3. Convert `DATA` to `dict` and assign to `result`
     4. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz ``result: dict``
-    3. Przekonwertuj ``DATA`` do ``dict`` i przypisz do ``result``
+    2. Stwórz `result: dict`
+    3. Przekonwertuj `DATA` do `dict` i przypisz do `result`
     4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:

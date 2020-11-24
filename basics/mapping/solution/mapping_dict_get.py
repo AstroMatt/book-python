@@ -13,7 +13,7 @@ English:
     5. User will always put only one capitalized letter or number
     6. Print phonetic letter pronunciation
     7. If user type character not existing in alphabet, print: "Pilots don't say that"
-    8. Do not use ``if``, ``try``, and ``except``
+    8. Do not use `if`, `try`, and `except`
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
@@ -23,7 +23,7 @@ Polish:
     5. Użytkownik zawsze poda tylko jedną dużą literę lub cyfrę
     6. Wypisz fonetyczną wymowę litery
     7. Jeżeli wpisał znak, który nie występuje w alfabecie, wypisz: "Pilots don't say that"
-    8. Nie używaj ``if``, ``try`` ani ``except``
+    8. Nie używaj `if`, `try` ani `except`
 
 Tests:
     TODO doctests

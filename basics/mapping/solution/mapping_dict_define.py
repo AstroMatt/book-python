@@ -7,7 +7,7 @@
 
 English:
     1. Use data from "Given" section (see below)
-    2. Create ``result: dict`` representing input data
+    2. Create `result: dict` representing input data
     3. Non-functional requirements:
         a. Assignmnet verifies creation of `dict()`
         b. Do not parse `DATA`, simply model `result` based on `DATA`
@@ -15,7 +15,7 @@ English:
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz ``result: dict`` reprezentujący dane wejściowe
+    2. Stwórz `result: dict` reprezentujący dane wejściowe
     3. Wymagania niefunkcjonalne:
         a. Zadanie sprawdza tworzenie `dict()`
         b. Nie parsuj `DATA`, po prostu zamodeluj `result` bazując na `DATA`
