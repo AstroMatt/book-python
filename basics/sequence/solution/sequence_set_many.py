@@ -7,22 +7,30 @@
 
 English:
     1. Use data from "Given" section (see below)
-    2. Create set `result` representing first row
-    3. Values from second row add to `result` using `.add()` (five calls)
-    4. From third row create `set` and add it to `result` using `.update()` (one call)
-    5. From fourth row create `tuple` and add it to `result` using `.update()` (one call)
-    6. From fifth row create `list` and add it to `result` using `.update()` (one call)
-    7. Do not use `str.split()`, `slice`, `getitem`, `for`, `while` or any other control-flow statement
+    2. Non-functional requirements:
+        a. Assignmnet verifies creation of `set()` and method `.add()` and `.update()` usage
+        b. For simplicity numerical values type as `floats`
+        c. Do not use `str.split()`, `slice`, `getitem`, `for`, `while` or any other control-flow statement
+        d. Example: instead of '5.8' just type 5.8
+    3. Create set `result` representing row with index 1
+    4. Values from row at index 2 add to `result` using `.add()` (five calls)
+    5. From row at index 3 create `set` and add it to `result` using `.update()` (one call)
+    6. From row at index 4 `tuple` and add it to `result` using `.update()` (one call)
+    7. From row at index 5 `list` and add it to `result` using `.update()` (one call)
     8. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz zbiór `result` reprezentujący pierwszy wiersz
-    3. Wartości z drugiego wiersza dodawaj do `result` używając `.add()` (pięć wywołań)
-    4. Na podstawie trzeciego wiersza stwórz `set` i dodaj go do `result` używając `.update()` (jedno wywołanie)
-    5. Na podstawie czwartego wiersza stwórz `tuple` i dodaj go do `result` używając `.update()` (jedno wywołanie)
-    6. Na podstawie piątego wiersza stwórz `list` i dodaj go do `result` używając `.update()` (jedno wywołanie)
-    7. Nie używaj `str.split()`, `slice`, `getitem`, `for`, `while` lub jakiejkolwiek innej instrukcji sterującej
+    2. Wymagania niefunkcjonalne:
+        a. Zadanie sprawdza tworzenie `set()` oraz użycie metod `.add()` i `.update()`
+        b. Dla uproszczenia wartości numeryczne wypisuj jako `float`
+        c. Nie używaj `str.split()`, `slice`, `getitem`, `for`, `while` lub jakiejkolwiek innej instrukcji sterującej
+        d. Przykład: zamiast '5.8' zapisz 5.8
+    3. Stwórz zbiór `result` reprezentujący wiersz o indeksie 1
+    4. Wartości z wiersza o indeksie 2 dodawaj do `result` używając `.add()` (pięć wywołań)
+    5. Na podstawie wiersza o indeksie 3 stwórz `set` i dodaj go do `result` używając `.update()` (jedno wywołanie)
+    6. Na podstawie wiersza o indeksie 4 stwórz `tuple` i dodaj go do `result` używając `.update()` (jedno wywołanie)
+    7. Na podstawie wiersza o indeksie 5 stwórz `list` i dodaj go do `result` używając `.update()` (jedno wywołanie)
     8. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
