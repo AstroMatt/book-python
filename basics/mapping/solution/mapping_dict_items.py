@@ -20,11 +20,14 @@ Polish:
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
-    >>> assert type(keys) is list
-    >>> assert type(values) is list
-    >>> assert type(items) is list
-    >>> assert all(type(x) is tuple for x in items)
-
+    >>> type(keys)
+    <class 'list'>
+    >>> type(values)
+    <class 'list'>
+    >>> type(items)
+    <class 'list'>
+    >>> all(type(x) is tuple for x in items)
+    True
     >>> keys
     ['Sepal length', 'Sepal width', 'Petal length', 'Petal width']
     >>> values

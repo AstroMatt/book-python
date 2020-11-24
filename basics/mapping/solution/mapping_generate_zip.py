@@ -18,6 +18,22 @@ Polish:
     4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
+    >>> type(result)
+    <class 'dict'>
+    >>> all(type(x) is str for x in result.keys())
+    True
+    >>> ('Sepal length' in result.keys()
+    ...  and 'Sepal width' in result.keys()
+    ...  and 'Petal length' in result.keys()
+    ...  and 'Petal width' in result.keys()
+    ...  and 'Species' in result.keys())
+    True
+    >>> (5.8 in result.values()
+    ...  and 2.7 in result.values()
+    ...  and 5.1 in result.values()
+    ...  and 1.9 in result.values()
+    ...  and 'virginica' in result.values())
+    True
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     {'Sepal length': 5.8,
      'Sepal width': 2.7,

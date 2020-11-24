@@ -22,15 +22,24 @@ Polish:
         c. Nie używaj `str.split()`, `slice`, `getitem`, `for`, `while` lub jakiejkolwiek innej instrukcji sterującej
 
 Tests:
-    >>> assert type(result) is dict
-    >>> assert 'firstname' in result
-    >>> assert 'lastname' in result
-    >>> assert 'missions' in result
-    >>> assert result['firstname'] == 'Jan'
-    >>> assert result['lastname'] == 'Twardowski'
-    >>> assert 'Artemis' in result['missions']
-    >>> assert 'Ares' in result['missions']
-    >>> assert type(result['missions']) is list
+    >>> type(result)
+    <class 'dict'>
+    >>> 'firstname' in result
+    True
+    >>> 'lastname' in result
+    True
+    >>> 'missions' in result
+    True
+    >>> result['firstname'] == 'Jan'
+    True
+    >>> result['lastname'] == 'Twardowski'
+    True
+    >>> 'Artemis' in result['missions']
+    True
+    >>> 'Ares' in result['missions']
+    True
+    >>> type(result['missions']) is list
+    True
 """
 
 # Given

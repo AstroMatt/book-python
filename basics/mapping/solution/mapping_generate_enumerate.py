@@ -18,6 +18,12 @@ Polish:
     4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
+    >>> type(result)
+    <class 'dict'>
+    >>> all(type(x) is int for x in result.keys())
+    True
+    >>> all(type(x) is str for x in result.values())
+    True
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     {0: 'setosa',
      1: 'versicolor',
