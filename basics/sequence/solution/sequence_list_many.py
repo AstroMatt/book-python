@@ -28,12 +28,30 @@ Tests:
     <class 'list'>
     >>> type(c)
     <class 'list'>
-    >>> a
-    [5.8, 2.7, 5.1, 1.9, 'virginica']
-    >>> b
-    [5.1, 3.5, 1.4, 0.2, 'setosa']
-    >>> c
-    [5.7, 2.8, 4.1, 1.3, 'versicolor']
+    >>> len(a)
+    5
+    >>> len(b)
+    5
+    >>> len(c)
+    5
+    >>> (5.8 in a
+    ...  and 2.7 in a
+    ...  and 5.1 in a
+    ...  and 1.9 in a
+    ...  and 'virginica' in a)
+    True
+    >>> (5.1 in b
+    ...  and 3.5 in b
+    ...  and 1.4 in b
+    ...  and 0.2 in b
+    ...  and 'setosa' in b)
+    True
+    >>> (5.7 in c
+    ...  and 2.8 in c
+    ...  and 4.1 in c
+    ...  and 1.3 in c
+    ...  and 'versicolor' in c)
+    True
 """
 
 # Given

@@ -113,7 +113,7 @@ Type Casting
 Deduplicate
 ===========
 .. highlights::
-    * Works with ``tuple``, ``list``, ``str``
+    * Works with ``str``, ``list``, ``tuple``, ``frozenset``
 
 .. code-block:: python
 
