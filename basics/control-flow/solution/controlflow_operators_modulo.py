@@ -27,18 +27,14 @@ Hints:
     * `%` on `int` is overloaded as a modulo division
 
 Tests:
-    TODO: Doctests
-    >>> '5' % 2
-    Traceback (most recent call last):
-        ...
-    TypeError: not all arguments converted during string formatting
-    >>> '5%s' % 2
-    '52'
-    >>> 5 % 2
-    1
+    >>> type(result)
+    <class 'bool'>
+    >>> result in (True, False)
+    True
 """
 
-# Solution
+# Given
 number = input('What is your number?: ')
+
+# Solution
 result = float(number) % 2 == 0
-print(result)

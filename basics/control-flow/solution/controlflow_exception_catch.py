@@ -21,8 +21,10 @@ Tests:
     TODO: Doctests
 """
 
+# Given
 temperature = input('Type temperature: ')
 
+# Solution
 try:
     float(temperature)
 except ValueError:

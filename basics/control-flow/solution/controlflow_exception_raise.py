@@ -19,9 +19,10 @@ Tests:
     TODO: Doctests
 """
 
-ADULT_AGE = 18
+# Given
+ADULT = 18
 age = input('Type age: ')
-age = float(age)
 
-if age < ADULT_AGE:
+# Solution
+if float(age) < ADULT:
     raise PermissionError('Adults only')

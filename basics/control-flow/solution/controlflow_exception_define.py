@@ -21,9 +21,11 @@ Tests:
     TODO: Doctests
 """
 
+# Given
 temperature = input('Type temperature: ')
 
 
+# Solution
 class NegativeKelvinError(Exception):
     pass
 

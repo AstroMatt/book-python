@@ -97,11 +97,6 @@ Type Checking
     type(-0)                    # <class 'int'>
 
 
-References
-==========
-.. [MSLREMS] Centro de Astrobiología (CSIC-INTA). Rover Environmental Monitoring Station, Mars Science Laboratory (NASA). 2019. Accessed: 2019-08-06
-
-
 Assignments
 ===========
 

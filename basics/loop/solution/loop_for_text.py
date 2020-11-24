@@ -7,7 +7,7 @@
 
 English:
     1. Use data from "Given" section (see below)
-    2. Given is text of the "Moon Speech" by John F. Kennedy's  :cite:`BasicKennedy1962`
+    2. Given is text of the "Moon Speech" by John F. Kennedy's [1]
     3. Sentences are separated by period (`.`)
     4. Clean each sentence from whitespaces at the beginning and at the end
     5. Words are separated by spaces
@@ -22,7 +22,7 @@ English:
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Dany jest tekst przemówienia "Moon Speech" wygłoszonej przez John F. Kennedy'ego :cite:`BasicKennedy1962`
+    2. Dany jest tekst przemówienia "Moon Speech" wygłoszonej przez John F. Kennedy'ego [1]
     3. Zdania oddzielone są kropkami (`.`)
     4. Każde zdanie oczyść z białych znaków na początku i końcu
     5. Słowa oddzielone są spacjami
@@ -34,6 +34,9 @@ Polish:
         e. znaków (łącznie ze spacjami wewnątrz zdań, ale bez przecinków `,`)
         f. przecinków (`,`)
     7. Porównaj wynik z sekcją "Output" poniżej
+
+References:
+    [1] Kennedy, J.F. Moon Speech - Rice Stadium. 1962. URL: http://er.jsc.nasa.gov/seh/ricetalk.htm
 
 Tests:
     >>> type(result)

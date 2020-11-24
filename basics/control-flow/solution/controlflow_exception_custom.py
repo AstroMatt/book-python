@@ -21,9 +21,11 @@ Tests:
     TODO: Doctests
 """
 
+# Given
 degrees = input('Type angle [deg]: ')
 
 
+# Solution
 class CotangentError(Exception):
     pass
 

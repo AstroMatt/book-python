@@ -38,61 +38,60 @@ Given:
 
 Tests:
     TODO: Doctests
-    '119/79': 'Normal',
-    '120/80': 'Hypertension stage 1',
-    '121/79': 'Elevated',
-    '120/81': 'Hypertension stage 1',
-    '130/80': 'Hypertension stage 1',
-    '130/89': 'Hypertension stage 1',
-    '140/85': 'Hypertension stage 2',
-    '140/89': 'Hypertension stage 2',
-    '141/90': 'Hypertension stage 2',
-    '141/91': 'Hypertension stage 2',
-    '180/120': ('Hypertension stage 2', 'Hypertensive Crisis')
+    >>> type(result)
+    <class 'list'>
+    >>> len(result) in (1, 2)
+    True
+    >>>
+    >>> if len(result) == 2:
+    ...     (STATUS_HYPERTENSIVE_CRISIS in result
+    ...      and STATUS_HYPERTENSION_STAGE_2 in result)
+    ... elif len(result) == 1:
+    ...     (STATUS_NORMAL in result
+    ...      or STATUS_ELEVATED in result
+    ...      or STATUS_HYPERTENSION_STAGE_1 in result
+    ...      or STATUS_HYPERTENSION_STAGE_2 in result
+    ...      or STATUS_HYPERTENSIVE_CRISIS in result)
+    ... else:
+    ...     raise ValueError
+    True
+    >>> assert blood_pressure == '119/79' and result == ['Normal'] or True
+    >>> assert blood_pressure == '120/80' and result == ['Hypertension stage 1'] or True
+    >>> assert blood_pressure == '121/79' and result == ['Elevated'] or True
+    >>> assert blood_pressure == '120/81' and result == ['Hypertension stage 1'] or True
+    >>> assert blood_pressure == '130/80' and result == ['Hypertension stage 1'] or True
+    >>> assert blood_pressure == '130/89' and result == ['Hypertension stage 1'] or True
+    >>> assert blood_pressure == '140/85' and result == ['Hypertension stage 2'] or True
+    >>> assert blood_pressure == '140/89' and result == ['Hypertension stage 2'] or True
+    >>> assert blood_pressure == '141/90' and result == ['Hypertension stage 2'] or True
+    >>> assert blood_pressure == '141/91' and result == ['Hypertension stage 2'] or True
+    >>> assert blood_pressure == '180/120' and result == ['Hypertension stage 2', 'Hypertensive Crisis'] or True
 """
 
 # Given
+STATUS_NORMAL = 'Normal'
+STATUS_ELEVATED = 'Elevated'
+STATUS_HYPERTENSION_STAGE_1 = 'Hypertension stage 1'
+STATUS_HYPERTENSION_STAGE_2 = 'Hypertension stage 2'
+STATUS_HYPERTENSIVE_CRISIS = 'Hypertensive Crisis'
+
 blood_pressure = input('What is your Blood Pressure?: ')
 systolic, diastolic = blood_pressure.strip().split('/')
 systolic = int(systolic)
 diastolic = int(diastolic)
 
+result = []
+
 # Solution
-if systolic >= 180 or diastolic >= 120:
-    print('Hypertensive Crisis')
+if 180 <= systolic or 120 <= diastolic:
+    result.append(STATUS_HYPERTENSIVE_CRISIS)
 
-if systolic >= 140 or diastolic >= 90:
-    print('Hypertension stage 2')
+if 140 <= systolic or 90 <= diastolic:
+    result.append(STATUS_HYPERTENSION_STAGE_2)
 elif 130 <= systolic <= 139 or 80 <= diastolic <= 89:
-    print('Hypertension stage 1')
-elif 120 <= systolic < 129 and diastolic < 80:
-    print('Elevated')
+    result.append(STATUS_HYPERTENSION_STAGE_1)
+elif 120 <= systolic <= 129 and diastolic < 80:
+    result.append(STATUS_ELEVATED)
 elif systolic < 120 and diastolic < 80:
-    print('Normal')
+    result.append(STATUS_NORMAL)
 
-
-## Alternative solution
-# STATUS_NORMAL = 'Normal'
-# STATUS_ELEVATED = 'Elevated'
-# STATUS_HYPERTENSION_STAGE_1 = 'Hypertension stage 1'
-# STATUS_HYPERTENSION_STAGE_2 = 'Hypertension stage 2'
-# STATUS_HYPERTENSIVE_CRISIS = 'Hypertensive Crisis'
-#
-# status = []
-#
-# if 180 <= systolic or 120 <= diastolic:
-#     status.append(STATUS_HYPERTENSIVE_CRISIS)
-#
-# if 140 <= systolic or 90 <= diastolic:
-#     status.append(STATUS_HYPERTENSION_STAGE_2)
-#
-# elif 130 <= systolic <= 139 or 80 <= diastolic <= 89:
-#     status.append(STATUS_HYPERTENSION_STAGE_1)
-#
-# elif 120 <= systolic <= 129 and diastolic < 80:
-#     status.append(STATUS_ELEVATED)
-#
-# elif systolic < 120 and diastolic < 80:
-#     status.append(STATUS_NORMAL)
-#
-# print(status)

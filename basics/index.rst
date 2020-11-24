@@ -15,7 +15,6 @@ About
     about/syntax.rst
     about/operators.rst
 
-
 *****
 Types
 *****
@@ -156,16 +155,3 @@ Recap
     about/good-practices.rst
     about/recap.rst
     about/certificate.rst
-
-
-**********
-References
-**********
-
-Bibliography
-============
-.. bibliography:: _references/bibliography.bib
-    :style: plain
-    :labelprefix: F
-    :all:
-
