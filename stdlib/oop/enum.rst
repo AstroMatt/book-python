@@ -191,6 +191,122 @@ Use cases
         OperationMode = 0x6060
 
 
+Pattern Matching
+================
+.. versionadded:: Python 3.10
+    * :pep:`636` - Structural Pattern Matching: Tutorial
+
+.. code-block:: python
+    :force:
+
+    request = 'GET 1.1 /index.html'
+
+    match request.split():
+        case ['GET', version, uri]:
+            server.get(uri)
+        case ['POST', version, uri]:
+            server.post(uri)
+        case ['PUT', version, uri]:
+            server.put(uri)
+        case ['DELETE', version, uri]:
+            server.delete(uri)
+
+.. code-block:: python
+    :force:
+
+    def http_error(status):
+        match status:
+            case 400:
+                return 'Bad request'
+            case 401 | 403 | 404:
+                return 'Not allowed'
+            case 404:
+                return 'Not found'
+            case 418:
+                return "I'm a teapot"
+            case _:
+                return 'Unexpected status'
+
+.. code-block:: python
+    :force:
+
+    match hero.action():
+        case ['move', ('up'|'down'|'left'|'right') as direction, value]:
+            hero.move(direction, value)
+        case ['make_damage', value]:
+            hero.make_damage(value)
+        case ['take_damage', value]:
+            hero.take_damage(value)
+
+.. code-block:: python
+    :force:
+
+    from enum import Enum
+
+    class Key(Enum):
+        ESC = 27
+        ARROW_LEFT = 37
+        ARROW_UP = 38
+        ARROW_RIGHT = 39
+        ARROW_DOWN = 40
+
+    match keyboard.on_key_press():
+        case Key.ESC:
+            game.quit()
+        case Key.ARROW_LEFT:
+            game.move_left()
+        case Key.ARROW_UP:
+            game.move_up()
+        case Key.ARROW_RIGHT:
+            game.move_right()
+        case Key.ARROW_DOWN:
+            game.move_down()
+        case _:
+            raise ValueError(f'Unrecognized key')
+
+.. code-block:: python
+    :force:
+
+    from enum import Enum
+
+    class Color(Enum):
+        RED = 0
+        BLUE = 1
+        BLACK = 2
+
+    match color:
+        case Color.RED:
+            print('Soviet')
+        case Color.BLUE:
+            print('Allies')
+        case Color.BLACK:
+            print('Axis')
+
+.. code-block:: python
+    :force:
+
+    from enum import Enum
+
+    class SpaceMan(Enum):
+        NASA = 'Astronaut'
+        ESA = 'Astronaut'
+        ROSCOSMOS = 'Cosmonaut'
+        CNSA = 'Taikonaut'
+        ISRO = 'GaganYatri'
+
+    match agency:
+        case SpaceMan.NASA:
+            print('USA')
+        case SpaceMan.ESA:
+            print('Europe')
+        case SpaceMan.ROSCOSMOS:
+            print('Russia')
+        case SpaceMan.CNSA:
+            print('China')
+        case SpaceMan.ISRO:
+            print('India')
+
+
 Assignments
 ===========
 .. todo:: Create assignments
