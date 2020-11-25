@@ -211,12 +211,12 @@ Force Skip Iteration
 Assignments
 ===========
 
-.. literalinclude:: solution/loop_while_int.py
-    :caption: :download:`Solution <solution/loop_while_int.py>`
-    :end-before: # Solution
-
 .. literalinclude:: solution/loop_while_float.py
     :caption: :download:`Solution <solution/loop_while_float.py>`
+    :end-before: # Solution
+
+.. literalinclude:: solution/loop_while_str.py
+    :caption: :download:`Solution <solution/loop_while_str.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/loop_while_translate.py

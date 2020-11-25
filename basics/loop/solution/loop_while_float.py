@@ -9,17 +9,20 @@ English:
     1. Use data from "Given" section (see below)
     2. Create `result: list[float]`
     3. Use `while` to iterate over `DATA`
-    4. Convert all elements of `DATA` to `float`
-    5. Converted values add to `result`
+    4. Convert current elements of `DATA` to `float`
+    5. Converted value append to `result`
     6. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Stwórz `result: list[float]`
     3. Użyj `while` do iterowania po `DATA`
-    4. Przekonwertuj wszystkie elementy `DATA` do `float`
-    5. Przekonwertowane wartości dodaj do `result`
+    4. Przekonwertuj obecny element `DATA` do `float`
+    5. Przekonwertowaną wartość dodaj na koniec `result`
     6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+
+Hints:
+    * `Stop` or `Ctrl+C` kills infinite loop
 
 Tests:
     >>> type(result)
@@ -31,7 +34,7 @@ Tests:
 
 # Given
 DATA = (2, 3, 3.5, 4, 4.5, 5)
-result = []
+result: list = []
 
 # Solution
 i = 0

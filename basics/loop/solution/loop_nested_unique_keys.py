@@ -24,6 +24,10 @@ Hints:
     * Compare solutions with :ref:`Micro-benchmarking use case`
 
 Tests:
+    >>> result is not Ellipsis
+    True
+    >>> type(result) in (set, list, tuple, frozenset)
+    True
     >>> sorted(result)
     ['Petal length', 'Petal width', 'Sepal length', 'Sepal width', 'Species']
 """
@@ -37,6 +41,8 @@ DATA = [
     {'Sepal width': 2.8, 'Petal length': 4.1, 'Species': 'versicolor'},
     {'Sepal width': 2.9, 'Petal width': 1.8, 'Species': 'virginica'},
 ]
+
+result = ...
 
 # Solution
 result = set()

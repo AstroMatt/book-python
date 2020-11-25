@@ -13,7 +13,7 @@ English:
 Polish:
     1. Poproś użytkownika o wprowadzenie temperatury w Kelwinach
     2. Spróbuj skonwertować temperaturę do `float`
-    3. Jeżeli się nie uda to wypisz "Invalid temperature" i wyjdź z kodem błędu 1
+    3. Jeżeli się nie uda to wypisz 'Invalid temperature' i wyjdź z kodem błędu 1
 
 Tests:
     TODO: Doctests

@@ -20,6 +20,16 @@ Polish:
     3. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
+    >>> type(result)
+    <class 'dict'>
+    >>> assert all(type(x) is int for x in result.keys())
+    >>> assert all(type(x) is str for x in result.values())
+    >>> assert all(x in result.keys() for x in range(1, 13))
+    >>> assert all(x in result.values() for x in MONTHS)
+    >>> 13 not in result
+    True
+    >>> 0 not in result
+    True
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     {1: 'January',
      2: 'February',
@@ -33,7 +43,6 @@ Tests:
      10: 'October',
      11: 'November',
      12: 'December'}
-
 """
 
 # Given

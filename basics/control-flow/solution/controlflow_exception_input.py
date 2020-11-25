@@ -29,9 +29,9 @@ degrees = input('Type angle [deg]: ')
 
 # Solution
 try:
-    deg = float(degrees)
+    degrees = float(degrees)
 except ValueError:
-    print('Deg has to be float or int')
+    print('Degrees expects int or float')
     exit(1)
 
 
@@ -39,5 +39,5 @@ class CotangentError(Exception):
     pass
 
 
-if deg == 180:
+if degrees == 180:
     raise CotangentError

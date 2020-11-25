@@ -8,16 +8,17 @@
 English:
     1. Ask user to input temperature in Kelvins
     2. User will always type proper `int` or `float`
-    3. Define exception for negative temperature
-    4. Raise `ValueError` exception if temperature is less than 0
+    3. Raise `ValueError` exception if temperature is less than 0
 
 Polish:
     1. Poproś użytkownika o wprowadzenie temperatury w Kelwinach
     2. Użytkownik zawsze poda poprawne `int` lub `float`
-    4. Podnieś wyjątek `ValueError` jeżeli temperatura jest poniżej 0
+    3. Podnieś wyjątek `ValueError` jeżeli temperatura jest poniżej 0
 
 Tests:
     TODO: Doctests
+    >>> type(temperature)
+    <class 'float'>
 """
 
 # Given
@@ -26,4 +27,4 @@ temperature = float(temperature)
 
 # Solution
 if temperature < 0:
-    raise ValueError('Negative Kelvin')
+    raise ValueError

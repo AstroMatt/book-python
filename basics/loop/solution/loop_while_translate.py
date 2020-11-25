@@ -2,8 +2,8 @@
 * Assignment: Loop While Translate
 * Filename: loop_while_translate.py
 * Complexity: medium
-* Lines of code to write: 8 lines
-* Estimated time: 8 min
+* Lines of code to write: 5 lines
+* Estimated time: 5 min
 
 English:
     1. Use data from "Given" section (see below)
@@ -20,8 +20,12 @@ Polish:
     4. Dodaj literę do `result`
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
+Hints:
+    * `Stop` or `Ctrl+C` kills infinite loop
+
 Tests:
-    >>> assert type(result) is str
+    >>> type(result)
+    <class 'str'>
     >>> result
     'zazolc gesla jazn'
 """
@@ -32,15 +36,13 @@ PL = {'ą': 'a', 'ć': 'c', 'ę': 'e',
       'ś': 's', 'ż': 'z', 'ź': 'z'}
 
 DATA = 'zażółć gęślą jaźń'
+result: str = ''
 
 # Solution
-result = []
 i = 0
 
 while i < len(DATA):
     letter = DATA[i]
-    letter = PL.get(letter, letter)
-    result.append(letter)
+    result += PL.get(letter, letter)
     i += 1
 
-result = ''.join(result)

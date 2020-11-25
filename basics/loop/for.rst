@@ -54,14 +54,43 @@ Convention
     * ``i`` - for loop counter
     * ``_`` - if value is not used
 
+.. code-block:: python
+
+    for digit in [1, 2, 3]:
+        print(digit)
+
+.. code-block:: python
+
+    for x in [1, 2, 3]:
+        print(x)
+
+.. code-block:: python
+
+    for i in range(0,5):
+        print(i)
+
+.. code-block:: python
+
+    for _ in range(10):
+        spawn_thread()
+
 
 Iterating Sequences
 ===================
-.. code-block:: python
-    :caption: Iterating over ``str`` will get character on each iteration. Suggested variable name: ``letter``.
+* Iterating works for builtin sequences:
 
-    for obj in 'setosa':
-        print(obj)
+    * ``str``
+    * ``bytes``
+    * ``list``
+    * ``tuple``
+    * ``set``
+    * ``frozenset``
+    * ``dict`` (More information :ref:`Loop Dict`)
+
+.. code-block:: python
+
+    for letter in 'setosa':
+        print(letter)
 
     # s
     # e
@@ -71,54 +100,11 @@ Iterating Sequences
     # a
 
 .. code-block:: python
-    :caption: Iterating over ``list`` will get one element on each iteration. Suggested variable name: ``value``.
 
     DATA = [5.1, 3.5, 1.4, 0.2, 'setosa']
 
-    for obj in DATA:
-        print(obj)
-
-    # 5.1
-    # 3.5
-    # 1.4
-    # 0.2
-    # 'setosa'
-
-.. code-block:: python
-    :caption: Iterating over ``tuple`` will get one element on each iteration. Suggested variable name: ``value``.
-
-    DATA = (5.1, 3.5, 1.4, 0.2, 'setosa')
-
-    for obj in DATA:
-        print(obj)
-
-    # 5.1
-    # 3.5
-    # 1.4
-    # 0.2
-    # 'setosa'
-
-.. code-block:: python
-    :caption: Iterating over ``set`` will get one element on each iteration.  Suggested variable name: ``value``.
-
-    DATA = {5.1, 3.5, 1.4, 0.2, 'setosa'}
-
-    for obj in DATA:
-        print(obj)
-
-    # 5.1
-    # 3.5
-    # 1.4
-    # 0.2
-    # 'setosa'
-
-.. code-block:: python
-    :caption: Iterating over ``frozenset`` will get one element on each iteration.  Suggested variable name: ``value``.
-
-    DATA = frozenset({5.1, 3.5, 1.4, 0.2, 'setosa'})
-
-    for obj in DATA:
-        print(obj)
+    for value in DATA:
+        print(value)
 
     # 5.1
     # 3.5
@@ -131,10 +117,14 @@ Range
 =====
 .. highlights::
     * ``range(start, stop, step)``
-    * ``range(0,3)`` will generate ``(0, 1, 2)``
     * ``start`` is inclusive, default: ``0``
     * ``stop`` is exclusive, required
     * ``step`` default: ``1``
+
+.. code-block:: python
+
+    range(0, 5)
+    # range(0, 5)
 
 .. code-block:: python
 
@@ -151,15 +141,10 @@ Range
     # [0, 2, 4]
 
 .. code-block:: python
-
-    range(0, 5)
-    # range(0, 5)
-
-.. code-block:: python
     :caption: Loops with ``range``
 
-    for number in range(0, 3):
-        print(number)
+    for i in range(0, 3):
+        print(i)
 
     # 0
     # 1
@@ -178,7 +163,7 @@ Range
 
 .. code-block:: python
 
-    for _ in range(0,10):
+    for _ in range(10):
         print('-', end='')
 
     # ----------

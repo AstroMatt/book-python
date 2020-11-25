@@ -697,6 +697,10 @@ Exit Status Code
 Assignments
 ===========
 
+.. literalinclude:: solution/controlflow_exception_assert.py
+    :caption: :download:`Solution <solution/controlflow_exception_assert.py>`
+    :end-before: # Solution
+
 .. literalinclude:: solution/controlflow_exception_raise.py
     :caption: :download:`Solution <solution/controlflow_exception_raise.py>`
     :end-before: # Solution
@@ -707,6 +711,14 @@ Assignments
 
 .. literalinclude:: solution/controlflow_exception_finally.py
     :caption: :download:`Solution <solution/controlflow_exception_finally.py>`
+    :end-before: # Solution
+
+.. literalinclude:: solution/controlflow_exception_else.py
+    :caption: :download:`Solution <solution/controlflow_exception_else.py>`
+    :end-before: # Solution
+
+.. literalinclude:: solution/controlflow_exception_custom.py
+    :caption: :download:`Solution <solution/controlflow_exception_custom.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/controlflow_exception_input.py

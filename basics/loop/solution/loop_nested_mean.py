@@ -16,6 +16,8 @@ Polish:
     3. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
+    >>> result is not Ellipsis
+    True
     >>> type(result)
     <class 'float'>
     >>> result
@@ -35,6 +37,8 @@ DATA = [
     (7.6, 3.0, 6.6, 2.1, 'virginica'),
     (4.6, 3.1, 1.5, 0.2, 'setosa'),
 ]
+
+result: float = ...
 
 # Solution
 sepal_length = []

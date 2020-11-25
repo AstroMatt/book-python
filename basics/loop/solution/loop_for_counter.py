@@ -33,6 +33,7 @@ Tests:
     >>> assert type(result) is dict
     >>> assert all(type(x) is int for x in result.keys())
     >>> assert all(type(x) is int for x in result.values())
+    >>> assert all(x in result.keys() for x in range(0, 10))
     >>> result
     {1: 7, 4: 8, 6: 4, 7: 4, 5: 4, 0: 7, 9: 5, 8: 6, 2: 2, 3: 3}
 """
