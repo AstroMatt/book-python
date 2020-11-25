@@ -355,9 +355,9 @@ Traceback Analysis
 
     apollo13()
     # Traceback (most recent call last):
-    #   File "/home/python/my_script.py", line 4, in <module>
+    #   File "/home/watney/myscript.py", line 4, in <module>
     #     apollo13()
-    #   File "/home/python/my_script.py", line 2, in apollo13
+    #   File "/home/watney/myscript.py", line 2, in apollo13
     #     raise RuntimeError('Oxygen tank explosion')
     # RuntimeError: Oxygen tank explosion
 
@@ -375,9 +375,9 @@ Traceback Analysis
     #     pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
     #   File "/Applications/PyCharm 2019.2 EAP.app/Contents/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
     #     exec(compile(contents+"\n", file, 'exec'), glob, loc)
-    #   File "/home/python/my_script.py", line 4, in <module>
+    #   File "/home/watney/myscript.py", line 4, in <module>
     #     apollo13()
-    #   File "/home/python/my_script.py", line 2, in apollo13
+    #   File "/home/watney/myscript.py", line 2, in apollo13
     #     raise RuntimeError('Oxygen tank explosion')
     # RuntimeError: Oxygen tank explosion
 
@@ -401,9 +401,9 @@ Change Verbosity Level
 
     apollo13()
     # Traceback (most recent call last):
-    #   File "/home/python/my_script.py", line 4, in <module>
+    #   File "/home/watney/myscript.py", line 4, in <module>
     #     apollo13()
-    #   File "/home/python/my_script.py", line 2, in apollo13
+    #   File "/home/watney/myscript.py", line 2, in apollo13
     #     raise RuntimeError('Oxygen tank explosion')
     # RuntimeError: Oxygen tank explosion
 
@@ -415,6 +415,18 @@ Catching Exceptions
     * ``except``
     * ``else``
     * ``finally``
+    * ``try`` is required and then one of the others blocks
+
+.. code-block:: python
+
+    try:
+        # try to execute
+    except Exception:
+        # what to do if exception occurs
+    else:
+        # what to do if no exception occurs
+    finally:
+        # What to do either if exception occurs or not
 
 .. code-block:: python
     :caption: Catch single exception
@@ -483,6 +495,15 @@ Else and Finally
 * ``else`` is executed when no exception occurred
 * ``finally`` is executed always (even if there was exception)
 * Used to close file, connection or transaction to database
+
+.. code-block:: python
+
+    try:
+        file = open('/tmp/myfile.txt')
+    except Exception:
+        print('Error')
+    finally:
+        file.close()
 
 .. code-block:: python
     :caption: ``else`` is executed when no exception occurred
@@ -647,6 +668,31 @@ Exit Status Code
     # Cannot type cast to float
     # [...] program exited with status 1
 
+.. code-block:: console
+
+    $ python3.9 -m doctest myscript.py
+    $ echo $?
+    0
+
+.. code-block:: console
+
+    $ python3.9 -m doctest myscript.py
+    **********************************************************************
+    File "/home/watney/myscript.py", line 41, in myscript
+    Failed example:
+        1 + 2
+    Expected:
+        3
+    Got:
+        4
+    **********************************************************************
+    1 items had failures:
+       1 of   2 in myscript
+    ***Test Failed*** 1 failures.
+
+    $ echo $?
+    1
+
 
 Assignments
 ===========
@@ -655,14 +701,14 @@ Assignments
     :caption: :download:`Solution <solution/controlflow_exception_raise.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/controlflow_exception_catch.py
-    :caption: :download:`Solution <solution/controlflow_exception_catch.py>`
+.. literalinclude:: solution/controlflow_exception_except.py
+    :caption: :download:`Solution <solution/controlflow_exception_except.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/controlflow_exception_define.py
-    :caption: :download:`Solution <solution/controlflow_exception_define.py>`
+.. literalinclude:: solution/controlflow_exception_finally.py
+    :caption: :download:`Solution <solution/controlflow_exception_finally.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/controlflow_exception_custom.py
-    :caption: :download:`Solution <solution/controlflow_exception_custom.py>`
+.. literalinclude:: solution/controlflow_exception_input.py
+    :caption: :download:`Solution <solution/controlflow_exception_input.py>`
     :end-before: # Solution
