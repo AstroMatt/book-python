@@ -68,12 +68,14 @@ Entry Test Endswith
 
 :English:
     #. Use data from "Input" section (see below)
-    #. Define ``result: list[str]`` with species names ending with "ca" or "osa"
+    #. Define ``result: set[str]``
+    #. Append to `result` species with endings in `suffixes`
     #. Compare result with "Output" section (see below)
 
 :Polish:
     #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Zdefiniuj ``result: list[str]`` z nazwami gatunków kończącymi się na "ca" lub "osa"
+    #. Zdefiniuj ``result: set[str]`
+    #. Dodaj do ``result` nazwy gatunków z końcówkami w ``suffixes``
     #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
 
 :Input:
@@ -92,14 +94,20 @@ Entry Test Endswith
             (4.6, 3.1, 1.5, 0.2, {'setosa'}),
         ]
 
+        result: set = set()
+        suffixes: tuple = ('ca', 'osa')
+
 :Output:
     .. code-block:: text
 
-        >>> assert type(result) is list
-        >>> assert all(type(row) is str for row in result)
-        >>> result
-        ['virginica', 'setosa', 'virginica', 'setosa', 'virginica', 'setosa']
-
+        >>> type(result)
+        <class 'set'>
+        >>> 'virginica' in result
+        True
+        >>> 'setosa' in result
+        True
+        >>> 'versicolor' in result
+        False
 
 Entry Test File
 ===============
