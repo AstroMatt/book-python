@@ -15,7 +15,7 @@ English:
     5. Iterating over numbers check if number is already in `result`
         a. If first occurrence, then add it to `result` with value 1
         b. If exists, then increment the value by 1
-    6. Compare results with "Output" section below
+    6. Compare results with "Tests" section below
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
@@ -27,7 +27,7 @@ Polish:
     5. Iterując po cyfrach sprawdź czy cyfra znajduje się już w `result`
         a. Jeżeli pierwsze wystąpienie, to dodaj ją do `result` z wartością 1
         b. Jeżeli istnieje, to zwiększ w wartość o 1
-    6. Porównaj wynik z sekcją "Output" poniżej
+    6. Porównaj wynik z sekcją "Tests" poniżej
 
 Tests:
     >>> assert type(result) is dict

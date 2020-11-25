@@ -169,6 +169,21 @@ Range
     # ----------
 
 
+Nested Loops
+============
+.. code-block:: python
+
+    for row in [1, 2, 3]:
+        print()
+
+        for column in ['A', 'B', 'C']:
+            print(f'{column}{row}', end=' ')
+
+    # A1 B1 C1
+    # A2 B2 C2
+    # A3 B3 C3
+
+
 Assignments
 ===========
 

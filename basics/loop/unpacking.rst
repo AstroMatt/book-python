@@ -13,6 +13,7 @@ Recap
     a, b = (1, 2)
     k, v = (1, 2)
     key, value = (1, 2)
+    role, name = ('commander', 'Melissa Lewis')
 
 
 List of Pairs
@@ -20,21 +21,21 @@ List of Pairs
 .. code-block:: python
 
     DATA = [
-        ('a', 1),
-        ('b', 2),
-        ('c', 3),
+        ('commander', 'Melissa Lewis'),
+        ('botanist', 'Mark Watney'),
+        ('chemist', 'Alex Vogel'),
     ]
 
-    for key, value in DATA:
-        print(f'{key} -> {value}')
+    for role, name in DATA:
+        print(f'{role} -> {name}')
 
-    # a -> 1
-    # b -> 2
-    # c -> 3
+    # commander -> Melissa Lewis
+    # botanist -> Mark Watney
+    # chemist -> Alex Vogel
 
 
-Longer data
-===========
+List of Tuples
+==============
 .. code-block:: python
 
     DATA = [
@@ -44,10 +45,26 @@ Longer data
     ]
 
     for sepal_length, sepal_width, petal_length, petal_width, species in DATA:
-        print(species, '->', sepal_length)
+        print(f'{species} -> {sepal_length}')
+
+    # setosa -> 5.1
+    # versicolor -> 5.7
+    # virginica -> 6.3
+
+.. code-block:: python
+
+    DATA = [
+        (5.1, 3.5, 1.4, 0.2, 'setosa'),
+        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+        (6.3, 2.9, 5.6, 1.8, 'virginica'),
+    ]
 
     for sl, sw, pl, pw, s in DATA:
-        print(s, '->', sl)
+        print(f'{s} -> {sl}')
+
+    # setosa -> 5.1
+    # versicolor -> 5.7
+    # virginica -> 6.3
 
 
 Unpacking Assignment
@@ -69,11 +86,11 @@ Unpacking Assignment
 
     for *features, label in DATA:
         avg = sum(features) / len(features)
-        print(label, avg)
+        print(f'{label} -> {avg}')
 
-    # virginica 3.875
-    # setosa 2.55
-    # versicolor 3.475
+    # virginica -> 3.875
+    # setosa -> 2.55
+    # versicolor -> 3.475
 
 .. code-block:: python
 
@@ -83,16 +100,17 @@ Unpacking Assignment
         (5.7, 2.8, 4.1, 1.3, 'versicolor'),
     ]
 
-    for *_, label in DATA:
-        print(label)
+    for *X,y in DATA:
+        avg = sum(X) / len(X)
+        print(f'{y} -> {avg}')
 
-    # virginica
-    # setosa
-    # versicolor
+    # virginica -> 3.875
+    # setosa -> 2.55
+    # versicolor -> 3.475
 
 
-List of Sequence
-================
+Unused Values
+=============
 .. code-block:: python
 
     DATA = [
@@ -101,21 +119,27 @@ List of Sequence
         (6.3, 2.9, 5.6, 1.8, 'virginica'),
     ]
 
-    for sepal_length, sepal_width, petal_length, petal_width, species in DATA:
-        print(species, '->', sepal_length)
+    for sepal_length, _, _, _, species in DATA:
+        print(f'{species} -> {sepal_length}')
 
-    for sl, sw, pl, pw, s in DATA:
-        print(s, '->', sl)
+    # setosa -> 5.1
+    # versicolor -> 5.7
+    # virginica -> 6.3
 
-    for *features, label in DATA:
-        print(label, '->', sum(features))
+.. code-block:: python
 
-    for *X,y in DATA:
-        print(y, '->', sum(X))
+    DATA = [
+        (5.8, 2.7, 5.1, 1.9, 'virginica'),
+        (5.1, 3.5, 1.4, 0.2, 'setosa'),
+        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+    ]
 
-    # setosa -> [5.1, 3.5, 1.4, 0.2]
-    # versicolor -> [5.7, 2.8, 4.1, 1.3]
-    # virginica -> [6.3, 2.9, 5.6, 1.8]
+    for sepal_length, *_, species in DATA:
+        print(f'{species} -> {sepal_length}')
+
+    # virginica -> 5.8
+    # setosa -> 5.1
+    # versicolor -> 5.7
 
 
 Mixed
@@ -130,8 +154,8 @@ Mixed
         (['NASA', 'ESA', 'Roscosmos'], 1),
     ]
 
-    for key, value in DATA:
-        print(f'{key} -> {value}')
+    for first, second in DATA:
+        print(f'{first} -> {second}')
 
     # 1 -> 2
     # name -> Jan Twardowski
@@ -148,16 +172,34 @@ Enumerate
     * ``enumerate()`` will return ``counter`` and ``value`` for every iteration
 
 .. code-block:: python
+
+    data = enumerate(DATA)
+
+    next(data)
+    # (0, 'a')
+
+    next(data)
+    # (1, 'b')
+
+    next(data)
+    # (2, 'c')
+
+    next(data)
+    # Traceback (most recent call last):
+    #     ...
+    # StopIteration
+
+.. code-block:: python
     :caption: ``enumerate()`` will return ``counter`` and ``value`` for every iteration
 
     DATA = ['a', 'b', 'c']
 
     for i, letter in enumerate(DATA):
-        print(i, letter)
+        print(f'{i} -> {letter}')
 
-    # 0 a
-    # 1 b
-    # 2 c
+    # 0 -> a
+    # 1 -> b
+    # 2 -> c
 
 .. code-block:: python
     :caption: ``enumerate()`` can start with custom number
@@ -165,11 +207,11 @@ Enumerate
     DATA = ['a', 'b', 'c']
 
     for i, letter in enumerate(DATA, start=5):
-        print(i, letter)
+        print(f'{i} -> {letter}')
 
-    # 5 a
-    # 6 b
-    # 7 c
+    # 5 -> a
+    # 6 -> b
+    # 7 -> c
 
 .. code-block:: python
 
@@ -185,6 +227,41 @@ Enumerate
     # 0 -> (5.1, 3.5, 1.4, 0.2, 'setosa')
     # 1 -> (5.7, 2.8, 4.1, 1.3, 'versicolor')
     # 2 -> (6.3, 2.9, 5.6, 1.8, 'virginica')
+
+
+Zip
+===
+.. code-block:: python
+
+    roles = ['commander', 'botanist', 'chemist']
+    crew = ['Melissa Lewis', 'Mark Watney', 'Alex Vogel']
+    data = zip(roles, crew)
+
+    next(data)
+    # ('commander', 'Melissa Lewis')
+
+    next(data)
+    # ('botanist', 'Mark Watney')
+
+    next(data)
+    # ('chemist', 'Alex Vogel')
+
+    next(data)
+    # Traceback (most recent call last):
+    #     ...
+    # StopIteration
+
+.. code-block:: python
+
+    roles = ['commander', 'botanist', 'chemist']
+    crew = ['Melissa Lewis', 'Mark Watney', 'Alex Vogel']
+
+    for role, name in zip(roles, crew):
+        print(f'{role} -> {name}')
+
+    # commander -> Melissa Lewis
+    # botanist -> Mark Watney
+    # chemist -> Alex Vogel
 
 
 Assignments

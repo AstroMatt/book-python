@@ -16,7 +16,7 @@ English:
         b. `features_test: list[tuple]` - features to test - 40%
         c. `labels_train: list[str]` - labels to train - 60%
         d. `labels_test: list[str]` - labels to test - 40%
-    5. Compare results with "Output" section below
+    5. Compare results with "Tests" section below
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
@@ -29,7 +29,7 @@ Polish:
         b. `features_test: list[tuple]` - features do testów - 40%
         c. `labels_train: list[str]` - labels do uczenia - 60%
         d. `labels_test: list[str]` - labels do testów - 40%
-    5. Porównaj wynik z sekcją "Output" poniżej
+    5. Porównaj wynik z sekcją "Tests" poniżej
 
 Tests:
     >>> assert type(features_train) is list

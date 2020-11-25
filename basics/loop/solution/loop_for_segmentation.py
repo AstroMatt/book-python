@@ -15,7 +15,7 @@ English:
     4. Print `result: dict[str, int]`:
         a. key - group
         b. value - number of occurrences
-    5. Compare results with "Output" section below
+    5. Compare results with "Tests" section below
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
@@ -27,7 +27,7 @@ Polish:
     4. Wypisz `result: dict[str, int]`:
         a. klucz - grupa
         b. wartość - liczba wystąpień
-    5. Porównaj wynik z sekcją "Output" poniżej
+    5. Porównaj wynik z sekcją "Tests" poniżej
 
 Tests:
     >>> type(result)

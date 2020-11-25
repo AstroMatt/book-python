@@ -22,56 +22,28 @@ Convention
 * Note that ``i`` may interfere with ``i`` used as loop counter
 
 
-Vector
-======
-.. highlights::
-    * Suggested variable name: ``value``
-
-.. code-block:: python
-
-    DATA = [
-        'a',
-        'b',
-        'c',
-    ]
-
-    for obj in DATA:
-        print(obj)
-
-    # a
-    # b
-    # c
-
-
 List of Pairs
 =============
-.. highlights::
-    * Suggested variable name: ``pair``
-
 .. code-block:: python
 
     DATA = [
-        ('a', 1),
-        ('b', 2),
-        ('c', 3),
+        ('commander', 'Melissa Lewis'),
+        ('botanist', 'Mark Watney'),
+        ('chemist', 'Alex Vogel'),
     ]
 
-    for obj in DATA:
-        first = obj[0]
-        second = obj[1]
+    for pair in DATA:
+        role = pair[0]
+        name = pair[1]
+        print(f'{role} -> {name}')
 
-        print(first, '->', second)
-
-    # a -> 1
-    # b -> 2
-    # c -> 3
+    # commander -> Melissa Lewis
+    # botanist -> Mark Watney
+    # chemist -> Alex Vogel
 
 
 List of Sequence
 ================
-.. highlights::
-    * Suggested variable name: ``row`` or ``line``
-
 .. code-block:: python
 
     DATA = [
@@ -80,15 +52,14 @@ List of Sequence
         (6.3, 2.9, 5.6, 1.8, 'virginica'),
     ]
 
-    for obj in DATA:
-        sepal_length = obj[0]
-        sepal_width = obj[1]
-        petal_length = obj[2]
-        petal_width = obj[3]
-        species = obj[4]
-
-        total = sepal_length + sepal_width + petal_length + petal_width
-        print(species, '->', sepal_length)
+    for row in DATA:
+        sepal_length = row[0]
+        sepal_width = row[1]
+        petal_length = row[2]
+        petal_width = row[3]
+        species = row[4]
+        features = sepal_length + sepal_width + petal_length + petal_width
+        print(f'{species} -> {total}')
 
     # setosa -> 10.2
     # versicolor -> 13.9
@@ -107,9 +78,9 @@ List of Sequence
         label = row[4]
         print(f'{label} -> {sum(features)}')
 
-    # setosa -> (5.1, 3.5, 1.4, 0.2)
-    # versicolor -> (5.7, 2.8, 4.1, 1.3)
-    # virginica -> (6.3, 2.9, 5.6, 1.8)
+    # setosa -> 10.2
+    # versicolor -> 13.9
+    # virginica -> 16.599999999999998
 
 
 Matrix
@@ -119,29 +90,39 @@ Matrix
 
 .. code-block:: python
 
-    DATA = [
-        [1, 2, 3],
-        [4, 5, 6],
-        [7, 8, 9],
-    ]
+    DATA = [[1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]]
 
-    for obj in DATA:
-        column_A = obj[0]
-        column_B = obj[1]
-        column_C = obj[2]
+    for row in DATA:
+        a = row[0]
+        b = row[1]
+        c = row[2]
+        print(f'{a=} {b=} {c=}')
 
-        print(f'{column_A=} {column_B=} {column_C=}')
+    # a=1 b=2 c=3
+    # a=4 b=5 c=6
+    # a=7 b=8 c=9
 
-    # column_A=1 column_B=2 column_C=3
-    # column_A=4 column_B=5 column_C=6
-    # column_A=7 column_B=8 column_C=9
+.. code-block:: python
+
+    DATA = [[1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]]
+
+    for row in DATA:
+        print()
+
+        for value in row:
+            print(f'{value}', end=' ')
+
+    # 1 2 3
+    # 4 5 6
+    # 7 8 9
 
 
 Mixed
 =====
-.. highlights::
-    * Suggested variable name: ``outer`` and ``inner``
-
 .. code-block:: python
     :caption: Iterating over ``list`` with scalar and vector values - simple loop
 
@@ -161,9 +142,9 @@ Mixed
 
     DATA = [('Jan', 'Twardowski'), 'Watney', 42, 13.37, {True, None, False}]
 
-    for sequence in DATA:
-        for obj in sequence:
-            print(obj)
+    for obj in DATA:
+        for element in obj:
+            print(element)
 
     # Jan
     # Twardowski
@@ -184,7 +165,7 @@ Mixed
 
 
     for obj in DATA:
-        if isinstance(obj, (list, tuple, set, frozenset)):
+        if type(obj) in (list, tuple, set, frozenset):
             for element in obj:
                 print(element)
         else:

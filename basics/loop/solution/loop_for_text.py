@@ -18,7 +18,7 @@ English:
         d. letters
         e. characters (including spaces inside sentences, but without comas `,`)
         f. comas (`,`)
-    7. Compare results with "Output" section below
+    7. Compare results with "Tests" section below
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
@@ -33,7 +33,7 @@ Polish:
         d. liter
         e. znaków (łącznie ze spacjami wewnątrz zdań, ale bez przecinków `,`)
         f. przecinków (`,`)
-    7. Porównaj wynik z sekcją "Output" poniżej
+    7. Porównaj wynik z sekcją "Tests" poniżej
 
 References:
     [1] Kennedy, J.F. Moon Speech - Rice Stadium. 1962. URL: http://er.jsc.nasa.gov/seh/ricetalk.htm
