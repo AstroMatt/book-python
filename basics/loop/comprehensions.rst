@@ -26,7 +26,9 @@ Syntax
 
 .. code-block:: python
 
-    [x for x in range(0,5)]
+    result = [x for x in range(0,5)]
+
+    print(result)
     # [0, 1, 2, 3, 4]
 
 
@@ -45,16 +47,22 @@ Comprehensions and Generator Expression
 
 .. code-block:: python
 
+    # List Comprehension
     list(x for x in range(0,5))        # [0, 1, 2, 3, 4]
     [x for x in range(0,5)]            # [0, 1, 2, 3, 4]
 
+    # Set Comprehension
     set(x for x in range(0,5))         # {0, 1, 2, 3, 4}
     {x for x in range(0,5)}            # {0, 1, 2, 3, 4}
 
+    # Dict Comprehension
     dict((x,x) for x in range(0,5))    # {0: 0, 1: 1, 2: 2, 3: 3, 4: 4}
     {x:x for x in range(0,5)}          # {0: 0, 1: 1, 2: 2, 3: 3, 4: 4}
 
+    # Tuple Comprehension
     tuple(x for x in range(0,5))       # (0, 1, 2, 3, 4)
+
+    # Generator Expression
     (x for x in range(0,5))            # <generator object <genexpr> at 0x118c1aed0>
 
 
@@ -120,10 +128,20 @@ Comprehensions or Generator Expression
 List Comprehension
 ==================
 .. code-block:: python
-    :caption: ``list`` comprehension approach to applying function to elements
 
-    [x+10 for x in range(0,5)]
-    # [10, 11, 12, 13, 14]
+    [x+1 for x in range(0,5)]
+    # [1, 2, 3, 4, 5]
+
+    [x-1 for x in range(0,5)]
+    # [-1, 0, 1, 2, 3]
+
+    [x**2 for x in range(0,5)]
+    # [0, 1, 4, 9, 16]
+
+    [2**x for x in range(0,5)]
+    # [1, 2, 4, 8, 16]
+
+.. code-block:: python
 
     list(x+10 for x in range(0,5))
     # [10, 11, 12, 13, 14]
@@ -190,10 +208,9 @@ Tuple Comprehension?!
     # <generator object <genexpr> at 0x11eaef570>
 
 
-Conditional Comprehension
-=========================
+Filter
+======
 .. code-block:: python
-    :caption: Iterative approach to applying function to selected elements
 
     result = []
 
@@ -205,13 +222,11 @@ Conditional Comprehension
     # [0, 2, 4]
 
 .. code-block:: python
-    :caption: ``list`` Comprehensions approach to applying function to selected elements
 
     [x for x in range(0,5) if x%2==0]
     # [0, 2, 4]
 
 .. code-block:: python
-    :caption: Using ``list`` comprehension for filtering
 
     DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
             (5.8, 2.7, 5.1, 1.9, 'virginica'),
@@ -231,8 +246,8 @@ Conditional Comprehension
     #  [4.7, 3.2, 1.3, 0.2]]
 
 
-Apply Function
-==============
+Map
+===
 .. code-block:: python
     :caption: Applying function to each output element
 
@@ -272,8 +287,8 @@ Apply Function
     #  (4.7, 3.2, 1.3, 0.2)]
 
 
-Indent
-======
+Indent and Whitespaces
+======================
 .. code-block:: python
 
     result = [pow(x,2) for x in range(0,5)]
@@ -282,6 +297,10 @@ Indent
 
     result = [pow(x,2)
               for x in range(0,5)]
+
+.. code-block:: python
+
+    result = [pow(x, 2) for x in range(0, 5) if x % 2 == 0]
 
 .. code-block:: python
 
@@ -315,7 +334,7 @@ Nested
 
     result = {title: str(i)
               for i, titles in DATA.items()
-                 for title in titles}
+              for title in titles}
 
     print(result)
     # {
@@ -353,6 +372,12 @@ Examples
 
 .. code-block:: python
     :caption: Power
+
+    [pow(x,2) for x in range(0,5)]
+    # [0, 1, 4, 9, 16]
+
+    [x**2 for x in range(0,5)]
+    # [0, 1, 4, 9, 16]
 
     [pow(2,x) for x in range(0,5)]
     # [1, 2, 4, 8, 16]

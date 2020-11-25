@@ -19,10 +19,13 @@ Tests:
     TODO: Doctests
     >>> type(temperature)
     <class 'float'>
+    >>> import sys
+    >>> sys.modules[__name__]
 """
 
 # Given
-temperature = input('Type temperature: ')
+# temperature = input('Type temperature: ')
+temperature = 10
 temperature = float(temperature)
 
 # Solution

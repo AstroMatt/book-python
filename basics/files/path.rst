@@ -158,6 +158,18 @@ Escaping Characters in Path
     # C:\Users\Admin\myfile.txt
 
 
+Exception Handling
+==================
+.. code-block:: python
+
+    try:
+        file = open('/tmp/myfile.txt')
+    except FileNotFoundError:
+        print('Sorry, file not found')
+    except PermissionError:
+        print('Sorry, not permitted')
+
+
 Create Directories
 ==================
 .. code-block:: python
@@ -250,29 +262,10 @@ Script Path
 Assignments
 ===========
 
-File Path Abspath
------------------
-* Assignment: File Path Abspath
-* Filename: file_path_abspath.py
-* Complexity: easy
-* Lines of code to write: 3 lines
-* Estimated time: 2 min
+.. literalinclude:: solution/file_path_exception.py
+    :caption: :download:`Solution <solution/file_path_exception.py>`
+    :end-before: # Solution
 
-English:
-    #. Using ``input()`` ask user for a file path
-    #. Convert path to absolute
-    #. Print if path exists and leads to file or directory
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Używając ``input()`` zapytaj użytkownika o ścieżkę do pliku
-    #. Przekonwertuj ścieżkę do bezwzględnej
-    #. Wypisz czy ścieżka istnieje i czy prowadzi do pliku czy katalogu
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Tests:
-    >>> isinstance(result, Path)
-    True
-    >>> current_directory = Path.cwd()
-    >>> str(current_directory) in str(result)
-    True
+.. literalinclude:: solution/file_path_abspath.py
+    :caption: :download:`Solution <solution/file_path_abspath.py>`
+    :end-before: # Solution

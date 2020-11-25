@@ -1,8 +1,8 @@
-.. _Files Access Modes:
+.. _Files Modes:
 
-*****************
-File Access Modes
-*****************
+**********
+File Modes
+**********
 
 
 Rationale
@@ -23,9 +23,7 @@ If mode is not specified it will read in text mode (``mode='rt'``)
 
 .. code-block:: python
 
-    FILE = r'/tmp/myfile.txt'
-
-    file = open(FILE)
+    open('myfile.txt')
 
 
 Short Notation
@@ -39,11 +37,9 @@ Short Notation
 
 .. code-block:: python
 
-    FILE = r'/tmp/myfile.txt'
-
-    file = open(FILE, mode='r')
-    file = open(FILE, mode='w')
-    file = open(FILE, mode='a')
+    open('myfile.txt', mode='r')
+    open('myfile.txt', mode='w')
+    open('myfile.txt', mode='a')
 
 
 Text Mode
@@ -56,11 +52,9 @@ Text Mode
 
 .. code-block:: python
 
-    FILE = r'/tmp/myfile.txt'
-
-    file = open(FILE, mode='rt')
-    file = open(FILE, mode='wt')
-    file = open(FILE, mode='at')
+    open('myfile.txt', mode='rt')
+    open('myfile.txt', mode='wt')
+    open('myfile.txt', mode='at')
 
 
 Binary Mode
@@ -73,11 +67,9 @@ Binary Mode
 
 .. code-block:: python
 
-    FILE = r'/tmp/myfile.txt'
-
-    file = open(FILE, mode='rb')
-    file = open(FILE, mode='wb')
-    file = open(FILE, mode='ab')
+    open('myfile.txt', mode='rb')
+    open('myfile.txt', mode='wb')
+    open('myfile.txt', mode='ab')
 
 
 Update Mode
@@ -97,19 +89,17 @@ Update Mode
 
 .. code-block:: python
 
-    FILE = r'/tmp/myfile.txt'
+    open('myfile.txt', mode='r+')
+    open('myfile.txt', mode='w+')
+    open('myfile.txt', mode='a+')
 
-    file = open(FILE, mode='r+')
-    file = open(FILE, mode='w+')
-    file = open(FILE, mode='a+')
+    open('myfile.txt', mode='rt+')
+    open('myfile.txt', mode='wt+')
+    open('myfile.txt', mode='at+')
 
-    file = open(FILE, mode='rt+')
-    file = open(FILE, mode='wt+')
-    file = open(FILE, mode='at+')
-
-    file = open(FILE, mode='rb+')
-    file = open(FILE, mode='wb+')
-    file = open(FILE, mode='ab+')
+    open('myfile.txt', mode='rb+')
+    open('myfile.txt', mode='wb+')
+    open('myfile.txt', mode='ab+')
 
 
 Recap
@@ -144,40 +134,7 @@ Update (rarely used):
 * If mode is not specified it will read in text mode (``mode='rt'``)
 
 
-Exception Handling
-==================
-.. code-block:: python
-
-    FILE = r'/tmp/myfile.txt'
-
-    try:
-        file = open(FILE)
-    except FileNotFoundError:
-        print('File does not exist')
-    except PermissionError:
-        print('Permission denied')
-
-
 Assignments
 ===========
 
-File Access Error
------------------
-* Assignment: File Access Error
-* Filename: file_access_error.py
-* Complexity: easy
-* Lines of code to write: 5 lines
-* Estimated time: 2 min
-
-English:
-    #. Using ``input()`` ask user for a file path
-    #. Print file content
-    #. Handle exception for not existing file
-    #. Handle exception for not having sufficient permissions
-
-Polish:
-    #. Używając ``input()`` zapytaj użytkownika o ścieżkę do pliku
-    #. Wypisz zawartość pliku
-    #. Obsłuż wyjątek dla nieistniejącego pliku
-    #. Obsłuż wyjątek dla braku wystarczających uprawnień
-
+.. todo:: Create assignments

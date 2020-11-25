@@ -113,221 +113,26 @@ Reading From One File and Writing to Another
 Assignments
 ===========
 
-File Write Str
---------------
-* Assignment: File Write Str
-* Filename: file_write_str.py
-* Complexity: easy
-* Lines of code to write: 3 lines
-* Estimated time: 3 min
+.. literalinclude:: solution/file_write_str.py
+    :caption: :download:`Solution <solution/file_write_str.py>`
+    :end-before: # Solution
 
-English:
-    #. Use data from "Given" section (see below)
-    #. Write ``DATA`` to file ``FILE``
-    #. Check in your operating system if data was written correctly
-    #. Compare result with "Tests" section (see below)
+.. literalinclude:: solution/file_write_multiline.py
+    :caption: :download:`Solution <solution/file_write_multiline.py>`
+    :end-before: # Solution
 
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Zapisz ``DATA`` do pliku ``FILE``
-    #. Sprawdź w systemie operacyjnym czy dane zapisały się poprawnie
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+.. literalinclude:: solution/file_write_list.py
+    :caption: :download:`Solution <solution/file_write_list.py>`
+    :end-before: # Solution
 
-Given:
-    .. code-block:: python
+.. literalinclude:: solution/file_write_nonstr.py
+    :caption: :download:`Solution <solution/file_write_nonstr.py>`
+    :end-before: # Solution
 
-        FILE = r'_temporary.txt'
-        DATA = 'hello'
+.. literalinclude:: solution/file_write_iris.py
+    :caption: :download:`Solution <solution/file_write_iris.py>`
+    :end-before: # Solution
 
-Tests:
-hello world
-
-File Write Multiline
---------------------
-* Assignment: File Write Multiline
-* Filename: file_write_multiline.py
-* Complexity: easy
-* Lines of code to write: 3 lines
-* Estimated time: 3 min
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Write ``DATA`` to file ``FILE``
-    #. Check in your operating system if data was written correctly
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Zapisz ``DATA`` do pliku ``FILE``
-    #. Sprawdź w systemie operacyjnym czy dane zapisały się poprawnie
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Given:
-    .. code-block:: python
-
-        FILE = r'_temporary.txt'
-        DATA = """127.0.0.1       localhost
-        10.13.37.1      nasa.gov esa.int roscosmos.ru
-        255.255.255.255 broadcasthost
-        ::1             localhost
-        """
-
-Tests:
-    .. code-block:: text
-
-        127.0.0.1       localhost
-        10.13.37.1      nasa.gov esa.int roscosmos.ru
-        255.255.255.255 broadcasthost
-        ::1             localhost
-
-File Write List
----------------
-* Assignment: File Write List
-* Filename: file_write_list.py
-* Complexity: easy
-* Lines of code to write: 3 lines
-* Estimated time: 3 min
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Write ``DATA`` to file ``FILE``
-    #. Check in your operating system if data was written correctly
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Zapisz ``DATA`` do pliku ``FILE``
-    #. Sprawdź w systemie operacyjnym czy dane zapisały się poprawnie
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Given:
-    .. code-block:: python
-
-        FILE = r'_temporary.txt'
-        DATA = ['hello', 'world']
-
-Tests:
-    .. code-block:: text
-
-        hello
-        world
-
-File Write Non-Str
-------------------
-* Assignment: File Write Non-Str
-* Filename: file_write_nonstr.py
-* Complexity: easy
-* Lines of code to write: 3 lines
-* Estimated time: 3 min
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Write ``DATA`` to file ``FILE``
-    #. Check in your operating system if data was written correctly
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Zapisz ``DATA`` do pliku ``FILE``
-    #. Sprawdź w systemie operacyjnym czy dane zapisały się poprawnie
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Given:
-    .. code-block:: python
-
-        FILE = r'_temporary.txt'
-        DATA = (5.1, 3.5, 1.4, 0.2, 'setosa')
-
-Tests:
-5.1,3.5,1.4,0.2,setosa
-
-File Write Iris
----------------
-* Assignment: File Write Iris
-* Filename: file_write_iris.py
-* Complexity: easy
-* Lines of code to write: 3 lines
-* Estimated time: 3 min
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Write ``DATA`` to file ``FILE``
-    #. Check in your operating system if data was written correctly
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Zapisz ``DATA`` do pliku ``FILE``
-    #. Sprawdź w systemie operacyjnym czy dane zapisały się poprawnie
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Given:
-    .. code-block:: python
-
-        FILE = r'_temporary.txt'
-        DATA = [
-            (5.8, 2.7, 5.1, 1.9, 'virginica'),
-            (5.1, 3.5, 1.4, 0.2, 'setosa'),
-            (5.7, 2.8, 4.1, 1.3, 'versicolor')]
-
-Tests:
-    .. code-block:: text
-
-        5.8,2.7,5.1,1.9,virginica
-        5.1,3.5,1.4,0.2,setosa
-        5.7,2.8,4.1,1.3,versicolor
-
-File Write CSV
---------------
-* Assignment: File Write CSV
-* Filename: file_write_csv.py
-* Complexity: medium
-* Lines of code to write: 6 lines
-* Estimated time: 13 min
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Separate header from data
-    #. Write data to file: ``FILE``
-    #. First line in file must be a header (first line of ``DATA``)
-    #. For each row, convert it's values to ``str``
-    #. Use coma (``,``) as a value separator
-    #. Add line terminator (``\n``) to each row
-    #. Save row values to file
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Odseparuj nagłówek od danych
-    #. Zapisz dane do pliku: ``FILE``
-    #. Pierwsza linia w pliku musi być nagłówkiem (pierwsza linia ``DATA``)
-    #. Dla każdego wiersza przekonwertuj jego wartości do ``str``
-    #. Użyj przecinka (``,``) jako separatora wartości
-    #. Użyj ``\n`` jako koniec linii w każdym wierszu
-    #. Zapisz do pliku wartości z wiersza
-
-Hints:
-    * ``[str(x) for x in ...]``
-
-Given:
-    .. code-block:: python
-
-        FILE = r'_temporary.csv'
-        DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
-                (5.8, 2.7, 5.1, 1.9, 'virginica'),
-                (5.1, 3.5, 1.4, 0.2, 'setosa'),
-                (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-                (6.3, 2.9, 5.6, 1.8, 'virginica'),
-                (6.4, 3.2, 4.5, 1.5, 'versicolor'),
-                (4.7, 3.2, 1.3, 0.2, 'setosa')]
-
-Tests:
-    .. code-block:: text
-
-        Sepal length,Sepal width,Petal length,Petal width,Species
-        5.8,2.7,5.1,1.9,virginica
-        5.1,3.5,1.4,0.2,setosa
-        5.7,2.8,4.1,1.3,versicolor
-        6.3,2.9,5.6,1.8,virginica
-        6.4,3.2,4.5,1.5,versicolor
-        4.7,3.2,1.3,0.2,setosa
-
+.. literalinclude:: solution/file_write_csv.py
+    :caption: :download:`Solution <solution/file_write_csv.py>`
+    :end-before: # Solution

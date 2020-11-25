@@ -100,7 +100,7 @@ Files
     :name: Basic Files
 
     files/path.rst
-    files/access.rst
+    files/modes.rst
     files/write.rst
     files/append.rst
     files/read.rst

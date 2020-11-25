@@ -7,11 +7,10 @@
 
 English:
     1. Use data from "Given" section (see below)
-    2. Define `result: list`
-    3. Use `while` to iterate over `DATA`
-    4. If letter is in `PL` then use conversion value as letter
-    5. Add letter to `result`
-    #. Compare result with "Tests" section (see below)
+    2. Use `while` to iterate over `DATA`
+    3. If letter is in `PL` then use conversion value as letter
+    4. Add letter to `result`
+    5. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
