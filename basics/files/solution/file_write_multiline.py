@@ -6,16 +6,16 @@
 * Estimated time: 3 min
 
 English:
-    #. Use data from "Given" section (see below)
-    #. Write `DATA` to file `FILE`
-    #. Check in your operating system if data was written correctly
-    #. Compare result with "Tests" section (see below)
+    1. Use data from "Given" section (see below)
+    2. Write `DATA` to file `FILE`
+    3. Check in your operating system if data was written correctly
+    4. Compare result with "Tests" section (see below)
 
 Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Zapisz `DATA` do pliku `FILE`
-    #. Sprawdź w systemie operacyjnym czy dane zapisały się poprawnie
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+    1. Użyj danych z sekcji "Given" (patrz poniżej)
+    2. Zapisz `DATA` do pliku `FILE`
+    3. Sprawdź w systemie operacyjnym czy dane zapisały się poprawnie
+    4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
     >>> open(FILE).read()

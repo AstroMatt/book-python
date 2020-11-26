@@ -6,38 +6,34 @@
 * Estimated time: 8 min
 
 English:
-    #. Use data from "Given" section (see below)
-    #. Write `DATA` to file `FILE`
-    #. Read `FILE`
-    #. Separate header from data
-    #. Write header (first line) to `header`
-    #. Read file and for each line:
-
-        * Strip whitespaces
-        * Split line by coma `,`
-        * Convert measurements do `tuple[float]`
-        * Append measurements to `features`
-        * Append species name to `labels`
-
-    #. Print `header`, `features` and `labels`
-    #. Compare result with "Tests" section (see below)
+    1. Use data from "Given" section (see below)
+    2. Write `DATA` to file `FILE`
+    3. Read `FILE`
+    4. Separate header from data
+    5. Write header (first line) to `header`
+    6. Read file and for each line:
+        a. Strip whitespaces
+        b. Split line by coma `,`
+        c. Convert measurements do `tuple[float]`
+        d. Append measurements to `features`
+        e. Append species name to `labels`
+    7. Print `header`, `features` and `labels`
+    8. Compare result with "Tests" section (see below)
 
 Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Zapisz `DATA` do pliku `FILE`
-    #. Wczytaj `FILE`
-    #. Odseparuj nagłówek od danych
-    #. Zapisz nagłówek (pierwsza linia) do `header`
-    #. Zaczytaj plik i dla każdej linii:
-
-        * Usuń białe znaki z początku i końca linii
-        * Podziel linię po przecinku `,`
-        * Przekonwertuj pomiary do `tuple[float]`
-        * Dodaj pomiary do `features`
-        * Dodaj gatunek do `labels`
-
-    #. Wyświetl `header`, `features` i `labels`
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+    1. Użyj danych z sekcji "Given" (patrz poniżej)
+    2. Zapisz `DATA` do pliku `FILE`
+    3. Wczytaj `FILE`
+    4. Odseparuj nagłówek od danych
+    5. Zapisz nagłówek (pierwsza linia) do `header`
+    6. Zaczytaj plik i dla każdej linii:
+        a. Usuń białe znaki z początku i końca linii
+        b. Podziel linię po przecinku `,`
+        c. Przekonwertuj pomiary do `tuple[float]`
+        d. Dodaj pomiary do `features`
+        e. Dodaj gatunek do `labels`
+    7. Wyświetl `header`, `features` i `labels`
+    8. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Hints:
     * `tuple(float(x) for x in X)`

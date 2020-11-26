@@ -6,32 +6,28 @@
 * Estimated time: 8 min
 
 English:
-    #. Use data from "Given" section (see below)
-    #. Write `DATA` to file `FILE`
-    #. Read `FILE` and for each line:
-
-        * Remove leading and trailing whitespaces
-        * Skip line if it is empty
-        * Split line by whitespace
-        * Separate IP address and hosts names
-        * Append IP address and hosts names to `result`
-
-    #. Merge hostnames for the same IP
-    #. Compare result with "Tests" section (see below)
+    1. Use data from "Given" section (see below)
+    2. Write `DATA` to file `FILE`
+    3. Read `FILE` and for each line:
+        a. Remove leading and trailing whitespaces
+        b. Skip line if it is empty
+        c. Split line by whitespace
+        d. Separate IP address and hosts names
+        e. Append IP address and hosts names to `result`
+    4. Merge hostnames for the same IP
+    5. Compare result with "Tests" section (see below)
 
 Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Zapisz `DATA` do pliku `FILE`
-    #. Wczytaj `FILE` i dla każdej linii:
-
-        * Usuń białe znaki na początku i końcu linii
-        * Pomiń linię, jeżeli jest pusta
-        * Podziel linię po białych znakach
-        * Odseparuj adres IP i nazwy hostów
-        * Dodaj adres IP i nazwy hostów do `result`
-
-    #. Scal nazwy hostów dla tego samego IP
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+    1. Użyj danych z sekcji "Given" (patrz poniżej)
+    2. Zapisz `DATA` do pliku `FILE`
+    3. Wczytaj `FILE` i dla każdej linii:
+        a. Usuń białe znaki na początku i końcu linii
+        b. Pomiń linię, jeżeli jest pusta
+        c. Podziel linię po białych znakach
+        d. Odseparuj adres IP i nazwy hostów
+        e. Dodaj adres IP i nazwy hostów do `result`
+    4. Scal nazwy hostów dla tego samego IP
+    5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Hints:
     * `str.isspace()`
