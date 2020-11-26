@@ -197,84 +197,14 @@ Examples
 Assignments
 ===========
 
-Function Parameters Sequence
-----------------------------
-* Assignment: Function Parameters Sequence
-* Filename: function_parameters_sequence.py
-* Complexity: easy
-* Lines of code to write: 2 lines
-* Estimated time: 3 min
+.. literalinclude:: solution/function_parameters_sequence.py
+    :caption: :download:`Solution <solution/function_parameters_sequence.py>`
+    :end-before: # Solution
 
-English:
-    #. Define function ``add``
-    #. Function parameter is sequence of integers
-    #. Print sum of all sequence values
+.. literalinclude:: solution/function_parameters_echo.py
+    :caption: :download:`Solution <solution/function_parameters_echo.py>`
+    :end-before: # Solution
 
-Polish:
-    #. Zdefiniuj funkcję ``add``
-    #. Parametrem do funkcji ma być sekwencja liczb całkowitych
-    #. Wypisz sumę wszystkich wartości sekwencji
-
-Function Parameters Echo
-------------------------
-* Assignment: Function Parameters Echo
-* Filename: function_parameters_echo.py
-* Complexity: easy
-* Lines of code to write: 2 lines
-* Estimated time: 3 min
-
-English:
-    #. Define function ``echo`` with two parameters
-    #. Parameter ``a`` is required
-    #. Parameter ``b`` is required
-    #. Wypisz ``a`` i ``b``
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Zdefiniuj funkcję ``echo`` z dwoma parametrami
-    #. Parametr ``a`` jest wymagany
-    #. Parametr ``b`` jest wymagany
-    #. Wypisz ``a`` i ``b``
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Tests:
-    .. code-block:: python
-
-        >>> echo(1, 2)
-        a=1 b=2
-
-        >>> echo(3, 4)
-        a=3 b=4
-
-Function Parameters Default
----------------------------
-* Assignment: Function Parameters Default
-* Filename: function_parameters_default.py
-* Complexity: easy
-* Lines of code to write: 6 lines
-* Estimated time: 3 min
-
-English:
-    #. Define function ``default`` with two parameters
-    #. Parameter ``a`` is required
-    #. Parameter ``b`` is optional and has default value ``None``
-    #. If only one argument was passed, consider second equal to the first one
-    #. Print ``a`` i ``b``
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Zdefiniuj funkcję ``default`` z dwoma parametrami
-    #. Parametr ``a`` jest wymagany
-    #. Parametr ``b`` jest opcjonalny i ma domyślną wartość ``None``
-    #. Jeżeli tylko jeden argument był podany, przyjmij drugi równy pierwszemu
-    #. Wypisz ``a`` i ``b``
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Tests:
-    .. code-block:: python
-
-        >>> default(1)
-        a=1 b=1
-
-        >>> default(2, 3)
-        a=2 b=3
+.. literalinclude:: solution/function_parameters_default.py
+    :caption: :download:`Solution <solution/function_parameters_default.py>`
+    :end-before: # Solution

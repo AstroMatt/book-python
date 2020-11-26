@@ -276,77 +276,10 @@ Checking Values
 Assignments
 ===========
 
-OOP Init Print
---------------
-* Assignment: OOP Init Print
-* Filename: oop_init_print.py
-* Complexity: easy
-* Lines of code to write: 10 lines
-* Estimated time: 3 min
+.. literalinclude:: solution/oop_init_print.py
+    :caption: :download:`Solution <solution/oop_init_print.py>`
+    :end-before: # Solution
 
-English:
-    #. Create one class ``Echo``
-    #. Value ``text`` must be passed at the initialization
-    #. At initialization instance print ``text``
-    #. Do not store values in the instances (only print on instance creation)
-    #. Do not use ``@dataclass``
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Stwórz jedną klasę ``Echo``
-    #. Wartość ``text`` maja być podawana przy inicjalizacji
-    #. Przy inicjalizacji instancja wypisuje ``text``
-    #. Nie przechowuj informacji w instancjach (tylko wypisz przy inicjalizacji)
-    #. Nie używaj ``@dataclass``
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Tests:
-    >>> Echo('hello')
-    hello
-    >>> Echo('world')
-    world
-
-OOP Init Model
---------------
-* Assignment: OOP Init Model
-* Filename: oop_init_model.py
-* Complexity: easy
-* Lines of code to write: 15 lines
-* Estimated time: 8 min
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Model the data using classes
-    #. Create instances for each record
-    #. Values must be passed at the initialization
-    #. Create instances of a first class using positional arguments
-    #. Create instances of a second class using keyword arguments
-    #. Do not use ``@dataclass``
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Zamodeluj dane za pomocą klas
-    #. Stwórz instancje dla każdego wpisu
-    #. Wartości mają być podawane przy inicjalizacji
-    #. Twórz instancje pierwszej klasy używając argumentów pozycyjnych
-    #. Twórz instancje drugiej klasy używając argumentów nazwanych
-    #. Nie używaj ``@dataclass``
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Given:
-    .. code-block:: text
-
-        Mark Watney, USA, 1969-07-21
-        National Aeronautics and Space Administration, USA, 1958-07-29
-
-Tests:
-    >>> assert isinstance(watney, Astronaut)
-    >>> assert isinstance(nasa, SpaceAgency)
-    >>> assert 'Mark Watney' in watney.__dict__.values()
-    >>> assert 'USA' in watney.__dict__.values()
-    >>> assert '1969-07-21' in watney.__dict__.values()
-    >>> assert 'National Aeronautics and Space Administration' in nasa.__dict__.values()
-    >>> assert 'USA' in nasa.__dict__.values()
-    >>> assert '1958-07-29' in nasa.__dict__.values()
-
+.. literalinclude:: solution/oop_init_model.py
+    :caption: :download:`Solution <solution/oop_init_model.py>`
+    :end-before: # Solution

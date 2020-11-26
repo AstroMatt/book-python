@@ -382,39 +382,6 @@ Examples
 Assignments
 ===========
 
-Function Generator Chain
-------------------------
-* Assignment: Function Generator Chain
-* Filename: function_generators_chain.py
-* Complexity: easy
-* Lines of code to write: 10 lines
-* Estimated time: 13 min
-
-English:
-    #. Use generator expression to create ``numbers``
-    #. In generator use ``range()`` to get numbers from 1 to 33 (inclusive) divisible by 3
-    #. Use ``filter()`` to get odd numbers from ``numbers``
-    #. Use ``map()`` to cube all numbers in ``numbers``
-    #. Create ``result: float`` with arithmetic mean of ``numbers``
-    #. Do not use ``lambda`` expressions
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj wyrażenia generatorowego do stworzenia ``numbers``
-    #. W generatorze użyj ``range()`` aby otrzymać liczby od 1 do 33 (włącznie) podzielne przez 3
-    #. Użyj ``filter()`` aby otrzymać liczby nieparzyste z ``numbers``
-    #. Użyj ``map()`` aby podnieść wszystkie liczby w ``numbers`` do sześcianu
-    #. Stwórz ``result: float`` ze średnią arytmetyczną z ``numbers``
-    #. Nie używaj wyrażeń lambda
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Hints:
-    * type cast to ``list()`` before calculating mean to expand generator
-    * ``mean = sum(...) / len(...)``
-
-Tests:
-    >>> type(result) is float
-    True
-    >>> result
-    11502.0
-
+.. literalinclude:: solution/function_generators_chain.py
+    :caption: :download:`Solution <solution/function_generators_chain.py>`
+    :end-before: # Solution

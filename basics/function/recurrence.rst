@@ -70,73 +70,14 @@ Recursion Depth Limit
     sys.setrecursionlimit(3000)
 
 
-Assignments
-===========
-
-Function Recurrence Brackets
-----------------------------
-* Assignment: Function Recurrence Brackets
-* Filename: function_recurrence_brackets.py
-* Complexity: medium
-* Lines of code to write: 10 lines
-* Estimated time: 21 min
-
-English:
-    #. Create function which checks if brackets are balanced
-    #. Brackets are balanced, when each opening bracket has closing pair
-    #. Use recursion
-    #. Types of brackets:
-
-        * round: ``(`` i ``)``
-        * square: ``[`` i ``]``
-        * curly ``{`` i ``}``
-        * angle ``<`` i ``>``
-
-Polish:
-    #. Stwórz funkcję, która sprawdzi czy nawiasy są zbalansowane
-    #. Nawiasy są zbalansowane, gdy każdy otwierany nawias ma zamykającą parę
-    #. Użyj rekurencji
-    #. Typy nawiasów:
-
-        * okrągłe: ``(`` i ``)``
-        * kwadratowe: ``[`` i ``]``
-        * klamrowe ``{`` i ``}``
-        * trójkątne ``<`` i ``>``
-
-.. code-block:: python
-
-    def is_bracket_balanced(text: str) -> bool:
-        """
-        >>> is_bracket_balanced('{}')
-        True
-        >>> is_bracket_balanced('()')
-        True
-        >>> is_bracket_balanced('[]')
-        True
-        >>> is_bracket_balanced('<>')
-        True
-        >>> is_bracket_balanced('')
-        True
-        >>> is_bracket_balanced('(')
-        False
-        >>> is_bracket_balanced('}')
-        False
-        >>> is_bracket_balanced('(]')
-        False
-        >>> is_bracket_balanced('([)')
-        False
-        >>> is_bracket_balanced('[()')
-        False
-        >>> is_bracket_balanced('{()[]}')
-        True
-        >>> is_bracket_balanced('() [] () ([]()[])')
-        True
-        >>> is_bracket_balanced("( (] ([)]")
-        False
-        """
-        pass
-
-
 References
 ==========
 .. [hanoi] https://dyermath.files.wordpress.com/2015/06/hanoi-13.jpg
+
+
+Assignments
+===========
+
+.. literalinclude:: solution/function_recurrence_brackets.py
+    :caption: :download:`Solution <solution/function_recurrence_brackets.py`
+    :end-before: # Solution

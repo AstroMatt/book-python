@@ -159,71 +159,20 @@ Convention
     jose = Astronaut()
 
 
-Assignments
-===========
-
-OOP Class Iris
---------------
-* Assignment: OOP Class Iris
-* Filename: oop_class_iris.py
-* Complexity: easy
-* Lines of code to write: 5 lines
-* Estimated time: 3 min
-
-English:
-    #. Define class ``Iris``
-    #. Create instance ``setosa`` of a class ``Iris``
-    #. Create instance ``virginica`` of a class ``Iris``
-    #. Create instance ``versicolor`` of a class ``Iris``
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Zdefiniuj klasę ``Iris``
-    #. Stwórz instancję ``setosa`` klasy ``Iris``
-    #. Stwórz instancję ``virginica`` klasy ``Iris``
-    #. Stwórz instancję ``versicolor`` klasy ``Iris``
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Tests:
-    >>> from inspect import isclass
-    >>> assert isclass(Iris)
-    >>> assert isinstance(setosa, Iris)
-    >>> assert isinstance(versicolor, Iris)
-    >>> assert isinstance(virginica, Iris)
-
-OOP Class Instance
-------------------
-* Assignment: OOP Class Instance
-* Filename: oop_class_instance.py
-* Complexity: easy
-* Lines of code to write: 9 lines
-* Estimated time: 5 min
-
-English:
-    #. Define class ``Astronaut``
-    #. Define class ``SpaceAgency``
-    #. Create instance ``watney`` of a class ``Astronaut``
-    #. Create instance ``nasa`` of a class ``SpaceAgency``
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Zdefiniuj klasę ``Astronaut``
-    #. Zdefiniuj klasę ``SpaceAgency``
-    #. Stwórz instancję ``watney`` klasy ``Astronaut``
-    #. Stwórz instancję ``nasa`` klasy ``SpaceAgency``
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Tests:
-    .. code-block:: python
-
-        >>> from inspect import isclass
-        >>> assert isclass(Astronaut)
-        >>> assert isclass(SpaceAgency)
-        >>> assert isinstance(watney, Astronaut)
-        >>> assert isinstance(nasa, SpaceAgency)
-
-
 References
 ==========
 .. [class] http://makieta.pl/12344-thickbox_default/faller-130803-blok-z-wielkiej-plyty-skala-h0.jpg
 .. [instances] https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Os_Rusa_Poznań_RB1.jpg/1200px-Os_Rusa_Poznań_RB1.jpg
+
+
+Assignments
+===========
+
+.. literalinclude:: solution/oop_class_iris.py
+    :caption: :download:`Solution <solution/oop_class_iris.py>`
+    :end-before: # Solution
+
+.. literalinclude:: solution/oop_class_instance.py
+    :caption: :download:`Solution <solution/oop_class_instance.py>`
+    :end-before: # Solution
+

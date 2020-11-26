@@ -361,114 +361,14 @@ Super Function
 Assignments
 ===========
 
-OOP Inheritance Simple
-----------------------
-* Assignment: OOP Inheritance Simple
-* Filename: oop_inheritance_simple.py
-* Complexity: easy
-* Lines of code to write: 8 lines
-* Estimated time: 3 min
+.. literalinclude:: solution/oop_inheritance_simple.py
+    :caption: :download:`Solution <solution/oop_inheritance_simple.py>`
+    :end-before: # Solution
 
-English:
-    #. Create class ``Mars``
-    #. Create class ``Venus``
-    #. Create class ``Woman`` which inherits from ``Venus``
-    #. Create class ``Man`` which inherits from ``Mars``
+.. literalinclude:: solution/oop_inheritance_multiple.py
+    :caption: :download:`Solution <solution/oop_inheritance_multiple.py>`
+    :end-before: # Solution
 
-Polish:
-    #. Stwórz klasę ``Mars``
-    #. Stwórz klasę ``Venus``
-    #. Stwórz klasę ``Woman``, która dziedziczy po ``Venus``
-    #. Stwórz klasę ``Man``, która dziedziczy po ``Mars``
-
-Tests:
-    >>> from inspect import isclass
-    >>> assert isclass(Venus)
-    >>> assert isclass(Woman)
-    >>> assert isclass(Mars)
-    >>> assert isclass(Man)
-    >>> assert issubclass(Woman, Venus)
-    >>> assert issubclass(Man, Mars)
-
-OOP Inheritance Multiple
-------------------------
-* Assignment: OOP Inheritance Multiple
-* Filename: oop_inheritance_multiple.py
-* Complexity: easy
-* Lines of code to write: 10 lines
-* Estimated time: 5 min
-
-English:
-    #. Create classes ``Engineer``, ``Scientist``, ``Pilot``, ``MedicalDoctor``
-    #. Create class ``Astronaut`` which inherits from all of those classes
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Stwórz klasy ``Engineer``, ``Scientist``, ``Pilot``, ``MedicalDoctor``
-    #. Stwórz klasę ``Astronaut``, która dziedziczy po tych wszystkich klasach
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Tests:
-    >>> from inspect import isclass
-    >>> assert isclass(Scientist)
-    >>> assert isclass(Engineer)
-    >>> assert isclass(Pilot)
-    >>> assert isclass(MedicalDoctor)
-    >>> assert isclass(Astronaut)
-    >>> assert issubclass(Astronaut, Scientist)
-    >>> assert issubclass(Astronaut, Engineer)
-    >>> assert issubclass(Astronaut, Pilot)
-    >>> assert issubclass(Astronaut, MedicalDoctor)
-
-OOP Inheritance Super
----------------------
-* Assignment: OOP Inheritance Super
-* Filename: oop_inheritance_super.py
-* Complexity: easy
-* Lines of code to write: 8 lines
-* Estimated time: 8 min
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Create class ``Crew``
-    #. In ``__init__()`` set ``mission`` to ``Ares 3``
-    #. Create class ``Astronaut`` which inherits from ``Crew``
-    #. Using positional arguments at the initialization set astronaut first name and last name
-    #. All astronauts must have assigned mission (inherited from ``Crew``)
-    #. Return first name, last name and mission name from ``__str__()``
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Stwórz klasę ``Crew``
-    #. W ``__init__()`` ustaw ``mission`` na ``Ares 3``
-    #. Stwórz klasę ``Astronaut`` dziedziczącą po ``Crew``
-    #. Używając parametrów pozycyjnych podanych przy inicjalizacji ustaw imię i nazwisko astronauty
-    #. Każdy astronauta musi mieć przydzieloną misję (odziedziczoną z ``Crew``)
-    #. Zwróć imię, nazwisko i nazwę misji from ``__str__()``
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Given:
-    .. code-block:: python
-
-        mark = Astronaut('Mark Watney')
-        melissa = Astronaut('Melissa Lewis')
-        alex = Astronaut('Alex Vogel')
-
-        result = f"""
-        Astronaut crew:
-        - {mark}
-        - {melissa}
-        - {alex}
-        """
-
-        print(result)
-
-Tests:
-    .. code-block:: text
-
-        Astronaut crew:
-        - Mark Watney (Ares 3)
-        - Melissa Lewis (Ares 3)
-        - Alex Vogel (Ares 3)
-
+.. literalinclude:: solution/oop_inheritance_super.py
+    :caption: :download:`Solution <solution/oop_inheritance_super.py>`
+    :end-before: # Solution

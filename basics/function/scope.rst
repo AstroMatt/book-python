@@ -290,132 +290,14 @@ Local Scope
 Assignments
 ===========
 
-Function Scope Filter
----------------------
-* Assignment: Function Scope Filter
-* Filename: function_scope_filter.py
-* Complexity: easy
-* Lines of code to write: 5 lines
-* Estimated time: 8 min
+.. literalinclude:: solution/function_scope_filter.py
+    :caption: :download:`Solution <solution/function_scope_filter.py`
+    :end-before: # Solution
 
-English:
-    #. Use data from "Given" section (see below)
-    #. Define in global scope ``SELECT: set[str]`` with values: ``'setosa', 'versicolor'``
-    #. Define function ``sumif(features, label)``
-    #. Function sums ``features``, only when ``label`` is in ``SELECT``
-    #. When ``label`` is not in ``select`` return ``0`` (zero)
-    #. Iterate over data and split row to ``features`` and ``label`` (last)
-    #. Define ``result: float`` with sum of all features from species mentioned in ``SELECT``
-    #. Compare result with "Tests" section (see below)
+.. literalinclude:: solution/function_scope_romanint.py
+    :caption: :download:`Solution <solution/function_scope_romanint.py`
+    :end-before: # Solution
 
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Zdefiniuj w przestrzeni globalnej ``SELECT: set[str]`` z wartościami: ``'setosa', 'versicolor'``
-    #. Zdefiniuj funkcję ``sumif(features, label)``
-    #. Funkcja sumuje ``features``, tylko gdy ``label`` jest w ``SELECT``
-    #. Gdy ``label`` nie występuje w ``select`` zwróć ``0`` (zero)
-    #. Iterując po danych rozdziel wiersz na ``features`` i ``label`` (ostatni)
-    #. Zdefiniuj ``result: float`` z sumą wszystkich cech gatunków wymienionych w ``SELECT``
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Given:
-    .. code-block:: python
-
-        DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
-                (5.8, 2.7, 5.1, 1.9, 'virginica'),
-                (5.1, 3.5, 1.4, 0.2, 'setosa'),
-                (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-                (6.3, 2.9, 5.6, 1.8, 'virginica'),
-                (6.4, 3.2, 4.5, 1.5, 'versicolor'),
-                (4.7, 3.2, 1.3, 0.2, 'setosa')]
-
-Tests:
-    >>> result
-    49.1
-
-Function Scope Roman to Int
----------------------------
-* Assignment: Function Scope Roman to Int
-* Filename: function_scope_romanint.py
-* Complexity: hard
-* Lines of code to write: 15 lines
-* Estimated time: 21 min
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Define function converting roman numerals to integer
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Zdefiniuj funkcję przeliczającą liczbę rzymską na całkowitą
-
-Given:
-    .. code-block:: python
-
-        CONVERSION = {
-            'I': 1,
-            'II': 2,
-            'III': 3,
-            'IV': 4,
-            'V': 5,
-            'VI': 6,
-            'VII': 7,
-            'VIII': 8,
-            'IX': 9,
-            'X': 10,
-            'XX': 20,
-            'XXX': 30,
-            'XL': 40,
-            'L': 50,
-            'LX': 60,
-            'LXX': 70,
-            'LXXX': 80,
-            'XC': 90,
-            'C': 100,
-            'D': 500,
-            'M': 1000,
-        }
-
-Function Scope Int To Roman
----------------------------
-* Assignment: Function Scope Int To Roman
-* Filename: function_scope_introman.py
-* Complexity: hard
-* Lines of code to write: 15 lines
-* Estimated time: 21 min
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Define function converting integer to roman numerals
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Zdefiniuj funkcję przeliczającą liczbę całkowitą na rzymską
-
-Given:
-    .. code-block:: python
-
-        CONVERSION = {
-            'I': 1,
-            'II': 2,
-            'III': 3,
-            'IV': 4,
-            'V': 5,
-            'VI': 6,
-            'VII': 7,
-            'VIII': 8,
-            'IX': 9,
-            'X': 10,
-            'XX': 20,
-            'XXX': 30,
-            'XL': 40,
-            'L': 50,
-            'LX': 60,
-            'LXX': 70,
-            'LXXX': 80,
-            'XC': 90,
-            'C': 100,
-            'D': 500,
-            'M': 1000,
-        }
-
+.. literalinclude:: solution/function_scope_introman.py
+    :caption: :download:`Solution <solution/function_scope_introman.py`
+    :end-before: # Solution

@@ -174,26 +174,6 @@ Intercept returned value
 Assignments
 ===========
 
-Function Return Numbers
------------------------
-* Assignment: Function Return Numbers
-* Filename: function_return_numbers.py
-* Complexity: easy
-* Lines of code to write: 4 lines
-* Estimated time: 3 min
-
-English:
-    #. Define function ``add`` without parameters
-    #. Function should return sum of ``1`` and ``2``
-    #. Call function and intercept returned value
-    #. Print value
-
-Polish:
-    #. Zdefiniuj funkcję ``add`` bez parametrów
-    #. Funkcja powinna zwracać sumę ``1`` i ``2``
-    #. Wywołaj funkcję i przechwyć zwracaną wartość
-    #. Wyświetl wartość
-
-Tests:
-    >>> result
-    3
+.. literalinclude:: solution/function_return_numbers.py
+    :caption: :download:`Solution <solution/function_return_numbers.py>`
+    :end-before: # Solution

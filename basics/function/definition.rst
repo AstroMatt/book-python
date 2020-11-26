@@ -135,20 +135,6 @@ Docstring
 Assignments
 ===========
 
-Function Definition Print
--------------------------
-* Assignment: Function Definition Print
-* Filename: function_definition_print.py
-* Complexity: easy
-* Lines of code to write: 5 lines
-* Estimated time: 3 min
-
-English:
-    #. Define function ``call`` without parameters
-    #. Print ``Beetlejuice`` on the screen
-    #. Call function three times
-
-Polish:
-    #. Zdefiniuj funkcję ``call`` bez parametrów
-    #. Wypisz ``Beetlejuice`` na ekranie
-    #. Wywołaj funkcję trzy razy
+.. literalinclude:: solution/function_definition_print.py
+    :caption: :download:`Solution <solution/function_definition_print.py>`
+    :end-before: # Solution

@@ -1,3 +1,32 @@
+""""
+* Assignment: Function Scope Int To Roman
+* Filename: function_scope_introman.py
+* Complexity: hard
+* Lines of code to write: 15 lines
+* Estimated time: 21 min
+
+English:
+    1. Use data from "Given" section (see below)
+    2. Define function converting integer to roman numerals
+
+Polish:
+    1. Użyj danych z sekcji "Given" (patrz poniżej)
+    2. Zdefiniuj funkcję przeliczającą liczbę całkowitą na rzymską
+
+Tests:
+    >>> roman_to_int('I')
+    1
+    >>> roman_to_int('IX')
+    9
+    >>> roman_to_int('MDL')
+    1550
+    >>> roman_to_int('MXDL')
+    1540
+    >>> roman_to_int('XIV')
+    14
+"""
+
+# Given
 ROMAN = {
     'I': 1,
     'II': 2,
@@ -23,19 +52,8 @@ ROMAN = {
 }
 
 
+# Solution
 def roman_to_int(roman: str) -> int:
-    """
-    >>> roman_to_int('I')
-    1
-    >>> roman_to_int('IX')
-    9
-    >>> roman_to_int('MDL')
-    1550
-    >>> roman_to_int('MXDL')
-    1540
-    >>> roman_to_int('XIV')
-    14
-    """
     arabic = []
 
     for letter in roman:

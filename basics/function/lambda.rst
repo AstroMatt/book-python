@@ -155,52 +155,10 @@ Lambda with Filter
     result = filter(lambda x: x in astronauts, people)
     list(result)
 
+
 Assignments
 ===========
 
-Function Lambda Chain
----------------------
-* Assignment: Function Lambda Chain
-* Filename: function_lambda_chain.py
-* Complexity: easy
-* Lines of code to write: 2 lines
-* Estimated time: 3 min
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Inline functions ``odd()`` and ``cube()`` with ``lambda`` expressions
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Wciel kod ``odd()`` i ``cube()`` wykorzystując wyrażenia ``lambda``
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Hints:
-    * ``mean = sum(...) / len(...)``
-    * type cast to ``list()`` before calculating mean to expand generator
-
-Given:
-    .. code-block:: python
-
-        def odd(x):
-            return x % 2
-
-        def cube(x):
-            return x ** 3
-
-
-        numbers = (x for x in range(1, 34) if x % 3 == 0)
-        numbers = filter(odd, numbers)
-        numbers = map(cube, numbers)
-        numbers = list(numbers)
-        result = sum(numbers) / len(numbers)
-
-        print(result)
-
-Tests:
-    >>> type(result) is float
-    True
-    >>> result
-    11502.0
-
+.. literalinclude:: solution/function_lambda_chain.py
+    :caption: :download:`Solution <solution/function_lambda_chain.py>`
+    :end-before: # Solution
