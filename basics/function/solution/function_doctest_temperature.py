@@ -7,12 +7,12 @@
 
 English:
     1. Use data from "Given" section (see below)
-    2. Write implementation of a function ``celsius_to_kelvin``
+    2. Write implementation of a function `celsius_to_kelvin`
     3. All tests must pass
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Napisz implementację funkcji ``celsius_to_kelvin``
+    2. Napisz implementację funkcji `celsius_to_kelvin`
     3. Wszystkie testy muszą przechodzić
 
 Tests:

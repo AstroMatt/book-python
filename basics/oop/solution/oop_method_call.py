@@ -7,34 +7,34 @@
 
 English:
     1. Use data from "Given" section (see below)
-    2. Define class ``Stats``
-    3. Define method ``mean()`` in ``Stats`` class
-    4. Method takes ``data: list[float]`` as an argument
-    5. Method returns arithmetic mean of the ``data``
+    2. Define class `Stats`
+    3. Define method `mean()` in `Stats` class
+    4. Method takes `data: list[float]` as an argument
+    5. Method returns arithmetic mean of the `data`
     6. Returned value must me rounded to one decimal places
-    7. Create instance of ``Stats`` class
-    8. Iterate over ``DATA`` skipping header
+    7. Create instance of `Stats` class
+    8. Iterate over `DATA` skipping header
     9. Separate features from label
-    10. Call ``mean()`` method of ``Stats`` class passing list of features as an argument
-    11. Define ``result: list[float]`` with list of means from each row
+    10. Call `mean()` method of `Stats` class passing list of features as an argument
+    11. Define `result: list[float]` with list of means from each row
     12. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zdefiniuj klasę ``Stats``
-    3. Zdefiniuj metodę ``mean()`` w klasie ``Stats``
-    4. Metoda przyjmuje ``data: list[float]`` jako argument
-    5. Metoda zwraca średnią arytmetyczną z ``data``
+    2. Zdefiniuj klasę `Stats`
+    3. Zdefiniuj metodę `mean()` w klasie `Stats`
+    4. Metoda przyjmuje `data: list[float]` jako argument
+    5. Metoda zwraca średnią arytmetyczną z `data`
     6. Zwracana value ma być zaokrąglona do jednego miejsca po przecinku
-    7. Stwórz instancję klasy ``Stats``
-    8. Iteruj po ``DATA`` pomijając nagłówek
+    7. Stwórz instancję klasy `Stats`
+    8. Iteruj po `DATA` pomijając nagłówek
     9. Rozdziel cechy od etykiety
-    10. Wywołuj metodę ``mean()`` klasy ``Stats`` przekazując listę features jako argument
-    11. Zdefiniuj ``result: list[float]`` z listą średnich każdego z wierszy
+    10. Wywołuj metodę `mean()` klasy `Stats` przekazując listę features jako argument
+    11. Zdefiniuj `result: list[float]` z listą średnich każdego z wierszy
     12. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Hints:
-    * ``round()``
+    * `round()`
 
 Tests:
     >>> assert type(result) is list

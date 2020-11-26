@@ -7,18 +7,18 @@
 
 English:
     1. Use data from "Given" section (see below)
-    2. Create class ``Astronaut`` which inherits from ``Person``
+    2. Create class `Astronaut` which inherits from `Person`
     3. Using positional arguments at the initialization set astronaut first name and last name
-    4. All astronauts must have name inherited from ``Person``
-    5. Return first name, last name and mission name from ``__str__()``
+    4. All astronauts must have name inherited from `Person`
+    5. Return first name, last name and mission name from `__str__()`
     6. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz klasę ``Astronaut`` dziedziczącą po ``Person``
+    2. Stwórz klasę `Astronaut` dziedziczącą po `Person`
     3. Używając parametrów pozycyjnych podanych przy inicjalizacji ustaw imię i nazwisko astronauty
-    4. Każdy astronauta musi mieć imię i nazwisko odziedziczone z ``Person``
-    5. Zwróć imię, nazwisko i nazwę misji from ``__str__()``
+    4. Każdy astronauta musi mieć imię i nazwisko odziedziczone z `Person`
+    5. Zwróć imię, nazwisko i nazwę misji from `__str__()`
     6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:

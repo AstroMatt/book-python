@@ -7,18 +7,18 @@
 
 English:
     1. Use code from "Given" section (see below)
-    2. Overload ``str`` and ``repr`` to achieve desired printing output
+    2. Overload `str` and `repr` to achieve desired printing output
     3. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj kodu z sekcji "Given" (patrz poniżej)
-    2. Przeciąż ``str`` i ``repr`` aby osiągnąć oczekiwany rezultat wypisywania
+    2. Przeciąż `str` i `repr` aby osiągnąć oczekiwany rezultat wypisywania
     3. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Hints:
-    * Define ``Crew.__str__()``
-    * Define ``Astronaut.__str__()`` and ``Astronaut.__repr__()``
-    * Define ``Mission.__repr__()``
+    * Define `Crew.__str__()`
+    * Define `Astronaut.__str__()` and `Astronaut.__repr__()`
+    * Define `Mission.__repr__()`
 
 Tests:
     >>> melissa = Astronaut('Melissa Lewis')

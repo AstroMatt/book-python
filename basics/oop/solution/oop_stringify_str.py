@@ -7,13 +7,13 @@
 
 English:
     1. Use code from "Given" section (see below)
-    2. While printing object show: species name and a sum of ``self.features``
+    2. While printing object show: species name and a sum of `self.features`
     3. Result of sum round to one decimal place
     4. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj kodu z sekcji "Given" (patrz poniżej)
-    2. Przy wypisywaniu obiektu pokaż: nazwę gatunku i sumę ``self.features``
+    2. Przy wypisywaniu obiektu pokaż: nazwę gatunku i sumę `self.features`
     3. Wynik sumowania zaokrąglij do jednego miejsca po przecinku
     4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 

@@ -25,7 +25,7 @@ Tests:
     1. Valid arguments:
         a. `int`
         b. `float`
-    2. Invalid argument -> expect ``TypeError``
+    2. Invalid argument -> expect `TypeError`
         a. `bool`
         b. `str`
         c. `list[int]`

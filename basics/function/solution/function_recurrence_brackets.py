@@ -10,20 +10,20 @@ English:
     2. Brackets are balanced, when each opening bracket has closing pair
     3. Use recursion
     4. Types of brackets:
-        a. round: ``(`` i ``)``
-        b. square: ``[`` i ``]``
-        c. curly ``{`` i ``}``
-        d. angle ``<`` i ``>``
+        a. round: `(` i `)`
+        b. square: `[` i `]`
+        c. curly `{` i `}`
+        d. angle `<` i `>`
 
 Polish:
     1. Stwórz funkcję, która sprawdzi czy nawiasy są zbalansowane
     2. Nawiasy są zbalansowane, gdy każdy otwierany nawias ma zamykającą parę
     3. Użyj rekurencji
     4. Typy nawiasów:
-        a. okrągłe: ``(`` i ``)``
-        b. kwadratowe: ``[`` i ``]``
-        c. klamrowe ``{`` i ``}``
-        d. trójkątne ``<`` i ``>``
+        a. okrągłe: `(` i `)`
+        b. kwadratowe: `[` i `]`
+        c. klamrowe `{` i `}`
+        d. trójkątne `<` i `>`
 
 Tests:
     >>> is_bracket_balanced('{}')

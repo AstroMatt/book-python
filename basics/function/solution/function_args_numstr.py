@@ -8,17 +8,17 @@
 English:
     1. Use data from "Given" section (see below)
     2. Given is pilot's alphabet for numbers
-    3. Convert ``DATA: dict[int, str]`` to ``data: dict[str, str]`` (keys as ``str``)
-    4. Define function ``pilot_say`` converting ``int`` or ``float`` to text form in Pilot's Speak
-    5. You cannot change ``DATA``, but you can modify ``data``
+    3. Convert `DATA: dict[int, str]` to `data: dict[str, str]` (keys as `str`)
+    4. Define function `pilot_say` converting `int` or `float` to text form in Pilot's Speak
+    5. You cannot change `DATA`, but you can modify `data`
     6. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Dany jest alfabet pilotów dla numerów
-    3. Przekonwertuj ``DATA: dict[int, str]`` na ``data: dict[str, str]`` (klucze jako ``str``)
-    4. Zdefiniuj funkcję ``pilot_say`` konwertującą ``int`` lub ``float`` na formę tekstową w mowie pilotów
-    5. Nie możesz zmieniać ``DATA``, ale możesz modyfikować ``data``
+    3. Przekonwertuj `DATA: dict[int, str]` na `data: dict[str, str]` (klucze jako `str`)
+    4. Zdefiniuj funkcję `pilot_say` konwertującą `int` lub `float` na formę tekstową w mowie pilotów
+    5. Nie możesz zmieniać `DATA`, ale możesz modyfikować `data`
     6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:

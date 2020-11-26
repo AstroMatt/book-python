@@ -7,13 +7,13 @@
 
 English:
     1. Write function cleaning up data
-    2. Function takes one argument of type ``str``
+    2. Function takes one argument of type `str`
     3. Function returns cleaned text
     4. Compare result with "Tests" section (see below)
 
 Polish:
     1. Napisz funkcję czyszczącą dane
-    2. Funkcja przyjmuje jeden argument typu ``str``
+    2. Funkcja przyjmuje jeden argument typu `str`
     3. Funkcja zwraca oczyszczony tekst
     4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 

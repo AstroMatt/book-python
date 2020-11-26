@@ -6,17 +6,17 @@
 * Estimated time: 5 min
 
 English:
-    1. Define function ``translate`` with parameter ``text``
-    2. Use ``str.join()`` with generator expression to iterate over ``text``
-    3. If letter is in ``PL`` then use conversion value as letter, otherwise take letter
-    4. Return from function translated ``text``
+    1. Define function `translate` with parameter `text`
+    2. Use `str.join()` with generator expression to iterate over `text`
+    3. If letter is in `PL` then use conversion value as letter, otherwise take letter
+    4. Return from function translated `text`
     5. Compare result with "Tests" section (see below)
 
 Polish:
-    1. Zdefiniuj funkcję ``translate`` przyjmującą parametr ``text``
-    2. Użyj ``str.join()`` z wyrażeniem generatorowym do iteracji po ``text``
-    3. Jeżeli litera jest w ``PL`` to użyj skonwertowanej wartości jako litera, w przeciwnym przypadku to weź literę
-    4. Zwróć z funkcji przetłumaczony ``text``
+    1. Zdefiniuj funkcję `translate` przyjmującą parametr `text`
+    2. Użyj `str.join()` z wyrażeniem generatorowym do iteracji po `text`
+    3. Jeżeli litera jest w `PL` to użyj skonwertowanej wartości jako litera, w przeciwnym przypadku to weź literę
+    4. Zwróć z funkcji przetłumaczony `text`
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:

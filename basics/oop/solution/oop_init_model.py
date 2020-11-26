@@ -12,7 +12,7 @@ English:
     4. Values must be passed at the initialization
     5. Create instances of a first class using positional arguments
     6. Create instances of a second class using keyword arguments
-    7. Do not use ``@dataclass``
+    7. Do not use `@dataclass`
     8. Compare result with "Tests" section (see below)
 
 Polish:
@@ -22,7 +22,7 @@ Polish:
     4. Wartości mają być podawane przy inicjalizacji
     5. Twórz instancje pierwszej klasy używając argumentów pozycyjnych
     6. Twórz instancje drugiej klasy używając argumentów nazwanych
-    7. Nie używaj ``@dataclass``
+    7. Nie używaj `@dataclass`
     8. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:

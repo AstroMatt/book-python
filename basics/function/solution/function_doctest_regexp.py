@@ -8,7 +8,7 @@
 English:
     1. Do not write any code, this is discussion only!
     2. Use data from "Given" section (see below)
-    3. Pattern incorrectly classifies ``https://foo_bar.example.com/`` as invalid
+    3. Pattern incorrectly classifies `https://foo_bar.example.com/` as invalid
     4. Fix pattern without writing automated tests
     5. Don't break classification of the other cases
     6. Discuss whether this is sane and how tests are helping?
@@ -16,7 +16,7 @@ English:
 Polish:
     1. Nie pisz żadnego kodu, to jest tylko dyskusja!
     2. Użyj danych z sekcji "Given" (patrz poniżej)
-    3. Wyrażenie niepoprawnie klasyfikuje ``https://foo_bar.example.com/`` jako nieprawidłowy
+    3. Wyrażenie niepoprawnie klasyfikuje `https://foo_bar.example.com/` jako nieprawidłowy
     4. Popraw wyrażenie bez pisania testów automatycznych
     5. Nie zepsuj klasyfikacji pozostałych przypadków
     6. Przedyskutuj czy ma to sens i czy jak pomagają?

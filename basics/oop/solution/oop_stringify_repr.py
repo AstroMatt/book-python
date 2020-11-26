@@ -7,13 +7,13 @@
 
 English:
     1. Use code from "Given" section (see below)
-    2. Print representation of each instance with values (use ``repr()``)
+    2. Print representation of each instance with values (use `repr()`)
     3. Result of sum round to two decimal places
     4. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj kodu z sekcji "Given" (patrz poniżej)
-    2. Wypisz reprezentację każdej z instancji z wartościami (użyj ``repr()``)
+    2. Wypisz reprezentację każdej z instancji z wartościami (użyj `repr()`)
     3. Wynik sumowania zaokrąglij do dwóch miejsc po przecinku
     4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 

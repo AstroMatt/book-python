@@ -7,12 +7,12 @@
 
 English:
     1. Use code from "Given" section (see below)
-    2. Overload ``__format__()`` to convert length units
+    2. Overload `__format__()` to convert length units
     3. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj kodu z sekcji "Given" (patrz poniżej)
-    2. Przeciąż ``__format__()`` aby konwertował jednostki długości
+    2. Przeciąż `__format__()` aby konwertował jednostki długości
     3. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Hints:

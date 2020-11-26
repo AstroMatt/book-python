@@ -6,12 +6,12 @@
 * Estimated time: 3 min
 
 English:
-    1. Define function ``add``
+    1. Define function `add`
     2. Function parameter is `data` sequence of integers
     3. Print sum of all sequence values
 
 Polish:
-    1. Zdefiniuj funkcję ``add``
+    1. Zdefiniuj funkcję `add`
     2. Parametrem do funkcji ma być `data` sekwencja liczb całkowitych
     3. Wypisz sumę wszystkich wartości sekwencji
 """

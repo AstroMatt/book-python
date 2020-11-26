@@ -7,17 +7,17 @@
 
 English:
     1. Use data from "Given" section (see below)
-    2. Inline functions ``odd()`` and ``cube()`` with ``lambda`` expressions
+    2. Inline functions `odd()` and `cube()` with `lambda` expressions
     3. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wciel kod ``odd()`` i ``cube()`` wykorzystując wyrażenia ``lambda``
+    2. Wciel kod `odd()` i `cube()` wykorzystując wyrażenia `lambda`
     3. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Hints:
-    * ``mean = sum(...) / len(...)``
-    * type cast to ``list()`` before calculating mean to expand generator
+    * `mean = sum(...) / len(...)`
+    * type cast to `list()` before calculating mean to expand generator
 
 Tests:
     >>> type(result) is float

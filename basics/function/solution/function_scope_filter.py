@@ -7,22 +7,22 @@
 
 English:
     1. Use data from "Given" section (see below)
-    2. Define in global scope ``SELECT: set[str]`` with values: ``'setosa', 'versicolor'``
-    3. Define function ``sumif(features, label)``
-    4. Function sums ``features``, only when ``label`` is in ``SELECT``
-    5. When ``label`` is not in ``select`` return ``0`` (zero)
-    6. Iterate over data and split row to ``features`` and ``label`` (last)
-    7. Define ``result: float`` with sum of all features from species mentioned in ``SELECT``
+    2. Define in global scope `SELECT: set[str]` with values: `'setosa', 'versicolor'`
+    3. Define function `sumif(features, label)`
+    4. Function sums `features`, only when `label` is in `SELECT`
+    5. When `label` is not in `select` return `0` (zero)
+    6. Iterate over data and split row to `features` and `label` (last)
+    7. Define `result: float` with sum of all features from species mentioned in `SELECT`
     8. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zdefiniuj w przestrzeni globalnej ``SELECT: set[str]`` z wartościami: ``'setosa', 'versicolor'``
-    3. Zdefiniuj funkcję ``sumif(features, label)``
-    4. Funkcja sumuje ``features``, tylko gdy ``label`` jest w ``SELECT``
-    5. Gdy ``label`` nie występuje w ``select`` zwróć ``0`` (zero)
-    6. Iterując po danych rozdziel wiersz na ``features`` i ``label`` (ostatni)
-    7. Zdefiniuj ``result: float`` z sumą wszystkich cech gatunków wymienionych w ``SELECT``
+    2. Zdefiniuj w przestrzeni globalnej `SELECT: set[str]` z wartościami: `'setosa', 'versicolor'`
+    3. Zdefiniuj funkcję `sumif(features, label)`
+    4. Funkcja sumuje `features`, tylko gdy `label` jest w `SELECT`
+    5. Gdy `label` nie występuje w `select` zwróć `0` (zero)
+    6. Iterując po danych rozdziel wiersz na `features` i `label` (ostatni)
+    7. Zdefiniuj `result: float` z sumą wszystkich cech gatunków wymienionych w `SELECT`
     8. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:

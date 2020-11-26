@@ -6,7 +6,7 @@
 * Estimated time: 3 min
 
 English:
-    1. Define function ``power``
+    1. Define function `power`
     2. Function takes two arguments
     3. Second argument is optional
     4. Function returns power of the first argument to the second
@@ -15,7 +15,7 @@ English:
     7. Compare result with "Tests" section (see below)
 
 Polish:
-    1. Zdefiniuj funkcję ``power``
+    1. Zdefiniuj funkcję `power`
     2. Funkcja przyjmuje dwa argumenty
     3. Drugi argument jest opcjonalny
     4. Funkcja zwraca wynik pierwszego argumentu do potęgi drugiego
