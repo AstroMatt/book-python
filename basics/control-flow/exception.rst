@@ -23,7 +23,7 @@ Most Common Exceptions
 ======================
 .. code-block:: python
     :caption: ``AttributeError`` - Attribute reference or assignment fails
-    :emphasize-lines: 5
+    :emphasize-lines: 4
 
     name = 'Jan'
     name.append('Twardowski')
@@ -32,7 +32,7 @@ Most Common Exceptions
 
 .. code-block:: python
     :caption: ``ImportError``, ``ModuleNotFoundError`` - Module could not be located
-    :emphasize-lines: 5
+    :emphasize-lines: 4
 
     import math
     import match
@@ -41,7 +41,7 @@ Most Common Exceptions
 
 .. code-block:: python
     :caption: ``IndexError`` - Sequence subscript is out of range
-    :emphasize-lines: 5
+    :emphasize-lines: 4
 
     DATA = ['a', 'b', 'c']
     DATA[100]
@@ -50,7 +50,7 @@ Most Common Exceptions
 
 .. code-block:: python
     :caption: ``KeyError`` - Dictionary key is not found
-    :emphasize-lines: 5
+    :emphasize-lines: 4
 
     DATA = {'a': 1, 'b': 2}
     DATA['x']
@@ -59,7 +59,7 @@ Most Common Exceptions
 
 .. code-block:: python
     :caption: ``NameError`` - Local or global name is not found
-    :emphasize-lines: 4
+    :emphasize-lines: 3
 
     print(firstname)
     # Traceback (most recent call last):
@@ -67,7 +67,7 @@ Most Common Exceptions
 
 .. code-block:: python
     :caption: ``SyntaxError`` - Parser encounters a syntax error
-    :emphasize-lines: 7
+    :emphasize-lines: 6
 
     if True
         print('Yes')
@@ -79,7 +79,7 @@ Most Common Exceptions
 
 .. code-block:: python
     :caption: ``IndentationError`` - Syntax errors related to incorrect indentation
-    :emphasize-lines: 9
+    :emphasize-lines: 8
 
     if True:
        print('Hello!')
@@ -93,7 +93,7 @@ Most Common Exceptions
 
 .. code-block:: python
     :caption: ``TypeError`` - Operation or function is applied to an object of inappropriate type
-    :emphasize-lines: 4,9,14,19
+    :emphasize-lines: 3,7,11,15
 
     42 + 'a'
     # Traceback (most recent call last):
@@ -113,7 +113,7 @@ Most Common Exceptions
 
 .. code-block:: python
     :caption: ``ValueError`` Argument has an invalid value
-    :emphasize-lines: 4,9,14,19
+    :emphasize-lines: 3,7,11,15
 
     a, b, c = 1, 2
     # Traceback (most recent call last):
@@ -205,7 +205,7 @@ Raising Exceptions
 ==================
 .. code-block:: python
     :caption: Raise Exception without message
-    :emphasize-lines: 4
+    :emphasize-lines: 3
 
     raise RuntimeError
     # Traceback (most recent call last):
@@ -213,7 +213,7 @@ Raising Exceptions
 
 .. code-block:: python
     :caption: Exception with additional message
-    :emphasize-lines: 4
+    :emphasize-lines: 3
 
     raise RuntimeError('Some message')
     # Traceback (most recent call last):

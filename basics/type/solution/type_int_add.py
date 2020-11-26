@@ -26,7 +26,9 @@ Polish:
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 References:
-    [1] Centro de Astrobiología (CSIC-INTA). Rover Environmental Monitoring Station, Mars Science Laboratory (NASA). 2019. Accessed: 2019-08-06
+    [1] Centro de Astrobiología (CSIC-INTA).
+        Rover Environmental Monitoring Station, Mars Science Laboratory (NASA).
+        Year: 2019. Accessed: 2019-08-06. URL: http://cab.inta-csic.es/rems/marsweather.html
 
 Tests:
     >>> type(mars_max)

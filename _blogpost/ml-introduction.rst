@@ -202,6 +202,7 @@ Ważne pytania przed przystąpieniem do tworzenia algorytmu
 
     Machine Learning Steps
 
+
 Czyszczenie Danych
 ==================
 * Bardzo ważny temat
