@@ -31,7 +31,6 @@ Recap information about classes and objects
 
     User.hello()
     # Traceback (most recent call last):
-    #     ...
     # TypeError: hello() missing 1 required positional argument: 'self'
 
 .. code-block:: python
@@ -235,12 +234,10 @@ Dynamic Methods
 
     u.hello()
     # Traceback (most recent call last):
-    #     ...
     # TypeError: <lambda>() missing 1 required positional argument: 'self'
 
     u.hello('José Jiménez')
     # Traceback (most recent call last):
-    #     ...
     # AttributeError: 'str' object has no attribute 'name'
 
 .. code-block:: python
@@ -280,7 +277,6 @@ Backups
     User.hello = User._old_hello
     User.hello()
     # Traceback (most recent call last):
-    #     ...
     # TypeError: hello() missing 1 required positional argument: 'self'
 
 
@@ -349,7 +345,6 @@ User Cases
 
     json.dumps({'gagarin': datetime(1961, 4, 12, 6, 7)})
     # Traceback (most recent call last):
-    #     ...
     # TypeError: Object of type datetime is not JSON serializable
 
     json.JSONEncoder.default = lambda self, dt: dt.isoformat()

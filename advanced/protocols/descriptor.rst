@@ -89,7 +89,6 @@ Use Cases
 
     t.kelvin = -1
     # Traceback (most recent call last):
-    #     ...
     # ValueError: Cannot set negative Kelvin
 
 .. code-block:: python
@@ -192,12 +191,10 @@ Use Cases
 
     Astronaut('Mark Watney', age=44, height=170)
     # Traceback (most recent call last):
-    #     ...
     # ValueError: Age is not between 28 to 42
 
     Astronaut('Mark Watney', age=38, height=210)
     # Traceback (most recent call last):
-    #     ...
     # ValueError: Height is not between 150 to 200
 
 .. figure:: img/datetime-compare.png

@@ -83,7 +83,6 @@ Multiple Statistics per Group
         'date': lambda x: max(x) - 1
     })
     # Traceback (most recent call last):
-    #     ...
     # ValueError: Cannot add integral value to Timestamp without freq.
 
 

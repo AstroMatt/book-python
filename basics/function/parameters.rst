@@ -45,12 +45,10 @@ Required Parameters
 
     add()
     # Traceback (most recent call last):
-    #     ...
     # TypeError: add() missing 2 required positional arguments: 'a' and 'b'
 
     add(1)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: add() missing 1 required positional argument: 'b'
 
     add(1, 2)
@@ -58,7 +56,6 @@ Required Parameters
 
     add(1, 2, 3)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: add() takes 2 positional arguments but 3 were given
 
 
@@ -86,7 +83,6 @@ Default Parameters
 
     add(1, 2, 3)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: add() takes from 0 to 2 positional arguments but 3 were given
 
 
@@ -105,7 +101,6 @@ Required and Default Parameters
 
     add()
     # Traceback (most recent call last):
-    #     ...
     # TypeError: add() missing 1 required positional argument: 'a'
 
     add(1)
@@ -116,7 +111,6 @@ Required and Default Parameters
 
     add(1, 2, 3)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: add() takes from 1 to 2 positional arguments but 3 were given
 
 .. code-block:: python
@@ -125,7 +119,6 @@ Required and Default Parameters
         print(a + b)
 
     # Traceback (most recent call last):
-    #     ...
     # SyntaxError: non-default argument follows default argument
 
 .. code-block:: python
@@ -134,7 +127,6 @@ Required and Default Parameters
         print(a + b + c)
 
     # Traceback (most recent call last):
-    #     ...
     # SyntaxError: non-default argument follows default argument
 
 

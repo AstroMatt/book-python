@@ -33,7 +33,6 @@ Tests:
     >>> hero.current_health = -10
     >>> hero.make_damage()
     Traceback (most recent call last):
-        ...
     RuntimeError: Hero is dead and cannot make damage
 """
 

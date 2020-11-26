@@ -26,20 +26,18 @@ Tests:
 
     >>> pt.notexisting = 10
     Traceback (most recent call last):
-        ...
     PermissionError: Cannot set other attributes than x,y,z
 
     >>> pt.x = 10
     Traceback (most recent call last):
-        ...
     PermissionError: Cannot modify existing attributes
+
     >>> pt.y = 20
     Traceback (most recent call last):
-        ...
     PermissionError: Cannot modify existing attributes
+
     >>> pt.z = 30
     Traceback (most recent call last):
-        ...
     PermissionError: Cannot modify existing attributes
 """
 

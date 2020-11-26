@@ -100,7 +100,6 @@ Dynamic Attributes
 
     print(astro.missions)
     # Traceback (most recent call last):
-    #     ...
     # AttributeError: 'Astronaut' object has no attribute 'missions'
 
 .. code-block:: python
@@ -119,7 +118,6 @@ Dynamic Attributes
 
     print(f'My name... {mark.name}')
     # Traceback (most recent call last):
-    #     ...
     # AttributeError: 'Astronaut' object has no attribute 'name'
 
 Namespace

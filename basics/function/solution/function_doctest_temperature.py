@@ -24,7 +24,6 @@ Tests:
     272.15
     >>> celsius_to_kelvin('a')
     Traceback (most recent call last):
-        ...
     TypeError: Invalid argument
     >>> celsius_to_kelvin([0, 1])
     [273.15, 274.15]

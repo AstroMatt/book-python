@@ -252,7 +252,6 @@ Test Exceptions
         """
         >>> add_numbers('one', 'two')
         Traceback (most recent call last):
-            ...
         TypeError: Argument must be int or float
         """
         if not isinstance(a, (int, float)):
@@ -270,7 +269,6 @@ Test Exceptions
         """
         >>> add_numbers(True, 1)
         Traceback (most recent call last):
-            ...
         ValueError: not a number
         """
         if not isinstance(a, (int, float)):
@@ -283,7 +281,6 @@ Test Exceptions
 
     # Expected:
     #     Traceback (most recent call last):
-    #         ...
     #     ValueError: not a number
     # Got:
     #     2.0
@@ -295,7 +292,6 @@ Test Exceptions
         """
         >>> add_numbers(True, 1)
         Traceback (most recent call last):
-            ...
         ValueError: not a number
         """
         if type(a) not in (int, float):
@@ -358,19 +354,18 @@ Examples
         2.5
         >>> add_numbers([1, 2], 3)
         Traceback (most recent call last):
-            ...
         ValueError: not a number
+
         >>> add_numbers(0, [1, 2])
         Traceback (most recent call last):
-            ...
         ValueError: not a number
+
         >>> add_numbers('one', 'two')
         Traceback (most recent call last):
-            ...
         ValueError: not a number
+
         >>> add_numbers(True, 1)
         Traceback (most recent call last):
-            ...
         ValueError: not a number
         """
         if type(a) not in (int, float):
@@ -400,17 +395,14 @@ Examples
 
         >>> celsius_to_kelvin(-273.16)
         Traceback (most recent call last):
-            ...
         ValueError: Negative Kelvin
 
         >>> celsius_to_kelvin(-300)
         Traceback (most recent call last):
-            ...
         ValueError: Negative Kelvin
 
         >>> celsius_to_kelvin(True)
         Traceback (most recent call last):
-            ...
         TypeError: Argument must be: int, float or Sequence[int, float]
 
         >>> celsius_to_kelvin([0, 1, 2, 3])
@@ -421,7 +413,6 @@ Examples
 
         >>> celsius_to_kelvin([0, 1, 2, -300])
         Traceback (most recent call last):
-            ...
         ValueError: Negative Kelvin
 
         >>> celsius_to_kelvin([0, 1, [2, 3], 3])

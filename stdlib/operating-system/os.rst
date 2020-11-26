@@ -301,7 +301,6 @@ Setting the shell argument to a true value causes subprocess to spawn an interme
 
     subprocess.call('echo $HOME')
     # Traceback (most recent call last):
-    #     ...
     # OSError: [Errno 2] No such file or directory
 
 .. code-block:: python
@@ -347,7 +346,6 @@ Execute command in OS
 
     subprocess.run("exit 1", shell=True, check=True)
     # Traceback (most recent call last):
-    #     ...
     # subprocess.CalledProcessError: Command 'exit 1' returned non-zero exit status 1
 
 .. code-block:: python

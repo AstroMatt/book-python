@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- encoding: utf-8 -*-
 from dataclasses import dataclass
 from multiprocessing.connection import Listener
 import logging

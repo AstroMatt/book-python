@@ -214,7 +214,6 @@ Datetime to JSON
 
     result = json.dumps(DATA)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: Object of type date is not JSON serializable
 
 .. code-block:: python

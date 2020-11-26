@@ -102,7 +102,6 @@ NoReturn
 
     valid_email('mark.watney_at_nasa.gov')
     # Traceback (most recent call last):
-    #     ...
     # ValueError: Invalid Email
 
 

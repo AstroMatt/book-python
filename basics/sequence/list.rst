@@ -37,7 +37,6 @@ Type Definition
 
     list(1, 2, 3, 4)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: list expected at most 1 argument, got 4
 
     list([1, 2, 3, 4])
@@ -110,7 +109,6 @@ Set Item
     data = ['a', 'b', 'c', 'd']
     data[4] = 'x'
     # Traceback (most recent call last):
-    #     ...
     # IndexError: list assignment index out of range
 
 
@@ -256,7 +254,6 @@ Method Chaining
 
     data.sort().append(4)
     # Traceback (most recent call last):
-    #     ...
     # AttributeError: 'NoneType' object has no attribute 'append'
 
 

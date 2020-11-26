@@ -417,7 +417,6 @@ Get from ``sequence``
 
     f'{data[1]}'
     # Traceback (most recent call last):
-    #     ...
     # TypeError: 'set' object is not subscriptable
 
 Get from ``class``

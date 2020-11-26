@@ -66,12 +66,10 @@ Protected Attribute
 
     print(mark.firstname)
     # Traceback (most recent call last):
-    #     ...
     # AttributeError: 'Astronaut' object has no attribute 'firstname'
 
     print(mark.lastname)
     # Traceback (most recent call last):
-    #     ...
     # AttributeError: 'Astronaut' object has no attribute 'lastname'
 
 
@@ -95,12 +93,10 @@ Private Attribute
 
     print(astro.__firstname)
     # Traceback (most recent call last):
-    #     ...
     # AttributeError: 'Astronaut' object has no attribute '__firstname'
 
     print(astro.__lastname)
     # Traceback (most recent call last):
-    #     ...
     # AttributeError: 'Astronaut' object has no attribute '__firstname'
 
     print(astro.__dict__)
@@ -221,7 +217,6 @@ Private Method
 
     mark.__get_fullname()
     # Traceback (most recent call last):
-    #     ...
     # AttributeError: 'Astronaut' object has no attribute '__get_fullname'
 
 

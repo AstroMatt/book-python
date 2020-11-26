@@ -23,7 +23,6 @@ Iris(5.8, 2.7, 5.1, 1.9, 'virginica')
 
 >>> iris.__dict__
 Traceback (most recent call last):
-  ...
 AttributeError: 'Iris' object has no attribute '__dict__'
 
 >>> values = tuple(getattr(iris, x) for x in iris.__slots__)

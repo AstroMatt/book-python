@@ -11,7 +11,6 @@
 
 >>> iris = IrisInterface(5.8, 2.7, 5.1, 1.9)
 Traceback (most recent call last):
-    ...
 NotImplementedError
 """
 

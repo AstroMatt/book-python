@@ -40,7 +40,6 @@ Example
 
     astro = Astronaut()
     # Traceback (most recent call last):
-    #     ...
     # TypeError: Can't instantiate abstract class Astronaut with abstract method say_hello
 
 .. code-block:: python
@@ -57,7 +56,6 @@ Example
 
     astro = Astronaut()
     # Traceback (most recent call last):
-    #     ...
     # TypeError: Can't instantiate abstract class Astronaut with abstract method say_hello
 
 
@@ -103,7 +101,6 @@ Errors
 
     astro = Astronaut()
     # Traceback (most recent call last):
-    #     ...
     # TypeError: Can't instantiate abstract class Astronaut with abstract method say_hello
 
 .. code-block:: python
@@ -172,7 +169,6 @@ Use Cases
 
     file2 = Document('filename.txt')
     # Traceback (most recent call last):
-    #     ...
     # TypeError: Can't instantiate abstract class Document with abstract method display
 
 

@@ -22,12 +22,10 @@ Tests:
 
     >>> del pt.x
     Traceback (most recent call last):
-        ...
     PermissionError: Cannot delete attributes
 
     >>> del pt.notexisting
     Traceback (most recent call last):
-        ...
     PermissionError: Cannot delete attributes
 """
 

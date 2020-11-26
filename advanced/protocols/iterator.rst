@@ -294,7 +294,6 @@ Standard Library Itertools
 
     next(data)
     # Traceback (most recent call last):
-    #     ...
     # StopIteration
 
 .. code-block:: python
@@ -318,7 +317,6 @@ Standard Library Itertools
 
     next(data)
     # Traceback (most recent call last):
-    #     ...
     # StopIteration
 
 
@@ -412,7 +410,6 @@ Standard Library Itertools
 
     next(data)
     # Traceback (most recent call last):
-    #     ...
     # StopIteration
 
 .. code-block:: python
@@ -484,7 +481,6 @@ Standard Library Itertools
 
     next(data)
     # Traceback (most recent call last):
-    #     ...
     # StopIteration
 
 .. code-block:: python
@@ -546,7 +542,6 @@ Standard Library Itertools
 
     next(data)
     # Traceback (most recent call last):
-    #     ...
     # StopIteration
 
 .. code-block:: python
@@ -607,7 +602,6 @@ Standard Library Itertools
 
     next(data)
     # Traceback (most recent call last):
-    #     ...
     # StopIteration
 
     [k for k, g in groupby('AAAABBBCCDAABBB')]

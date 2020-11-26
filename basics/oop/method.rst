@@ -67,7 +67,6 @@ Methods With Required Argument
 
     jose.say_hello()
     # Traceback (most recent call last):
-    #     ...
     # TypeError: say_hello() missing 1 required positional argument: 'name'
 
 

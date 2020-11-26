@@ -38,7 +38,6 @@ Tests:
     >>> echo.disabled = True
     >>> echo('hello')
     Traceback (most recent call last):
-        ...
     PermissionError: Function is disabled
 
     >>> assert hasattr(echo, 'disabled')

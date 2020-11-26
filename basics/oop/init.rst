@@ -76,7 +76,6 @@ Initializer Method With Arguments
 
     ivan = Astronaut()
     # Traceback (most recent call last):
-    #     ...
     # TypeError: __init__() missing 1 required positional argument: 'firstname'
 
 
@@ -269,7 +268,6 @@ Checking Values
 
     b = Kelvin(-300)
     # Traceback (most recent call last):
-    #     ...
     # ValueError: Temperature must be greater than 0
 
 

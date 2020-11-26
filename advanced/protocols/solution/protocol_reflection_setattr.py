@@ -23,7 +23,6 @@ Tests:
     (1, 2, 3)
     >>> pt.notexisting = 10
     Traceback (most recent call last):
-        ...
     PermissionError: Cannot set other attributes than x,y,z
     >>> pt.x = 10
     >>> pt.y = 20

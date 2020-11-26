@@ -186,7 +186,6 @@ Enumerate
 
     next(data)
     # Traceback (most recent call last):
-    #     ...
     # StopIteration
 
 .. code-block:: python
@@ -248,7 +247,6 @@ Zip
 
     next(data)
     # Traceback (most recent call last):
-    #     ...
     # StopIteration
 
 .. code-block:: python

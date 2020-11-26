@@ -55,23 +55,18 @@ Tests:
     True
     >>> echo(1, 1)
     Traceback (most recent call last):
-    ...
     TypeError: "a" is <class 'int'>, but <class 'str'> was expected
     >>> echo('one', 'two')
     Traceback (most recent call last):
-    ...
     TypeError: "b" is <class 'str'>, but <class 'int'> was expected
     >>> echo('one', 1, 'two')
     Traceback (most recent call last):
-    ...
     TypeError: "c" is <class 'str'>, but <class 'float'> was expected
     >>> echo(b='one', a='two')
     Traceback (most recent call last):
-    ...
     TypeError: "b" is <class 'str'>, but <class 'int'> was expected
     >>> echo('one', c=1.1, b=1.1)
     Traceback (most recent call last):
-    ...
     TypeError: "b" is <class 'float'>, but <class 'int'> was expected
 """
 

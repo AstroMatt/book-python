@@ -1,25 +1,25 @@
+"""
+>>> euclidean_distance_n_dimensions((0,0,1,0,1), (1,1))
+Traceback (most recent call last):
+ValueError: Points must be in the same dimensions
+
+>>> euclidean_distance_n_dimensions((0,0,0), (0,0,0))
+0.0
+
+>>> euclidean_distance_n_dimensions((0,0,0), (1,1,1))
+1.7320508075688772
+
+>>> euclidean_distance_n_dimensions((0,1,0,1), (1,1,0,0))
+1.4142135623730951
+
+>>> euclidean_distance_n_dimensions((0,0,1,0,1), (1,1,0,0,1))
+1.7320508075688772
+"""
+
 from math import sqrt
 
 
 def euclidean_distance_n_dimensions(A, B):
-    """
-    >>> euclidean_distance_n_dimensions((0,0,1,0,1), (1,1))
-    Traceback (most recent call last):
-        ...
-    ValueError: Points must be in the same dimensions
-
-    >>> euclidean_distance_n_dimensions((0,0,0), (0,0,0))
-    0.0
-
-    >>> euclidean_distance_n_dimensions((0,0,0), (1,1,1))
-    1.7320508075688772
-
-    >>> euclidean_distance_n_dimensions((0,1,0,1), (1,1,0,0))
-    1.4142135623730951
-
-    >>> euclidean_distance_n_dimensions((0,0,1,0,1), (1,1,0,0,1))
-    1.7320508075688772
-    """
     if len(A) != len(B):
         raise ValueError('Points must be in the same dimensions')
 

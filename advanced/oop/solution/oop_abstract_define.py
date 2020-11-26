@@ -24,7 +24,6 @@ Polish:
 Tests:
     >>> iris = Iris()
     Traceback (most recent call last):
-      ...
     TypeError: Can't instantiate abstract class Iris with abstract method get_name
     >>> setosa = Setosa()
 

@@ -48,21 +48,17 @@ def km_to_meters(kilometers):
     0.0
     >>> km_to_meters(-1)
     Traceback (most recent call last):
-        ...
     ValueError: Argument must be not negative
     >>> km_to_meters([1, 2])
     Traceback (most recent call last):
-        ...
     TypeError: Invalid argument type
     >>> km_to_meters('one')
     Traceback (most recent call last):
-        ...
     TypeError: Invalid argument type
     >>> km_to_meters(1.5)
     1500.0
     >>> km_to_meters(True)
     Traceback (most recent call last):
-        ...
     TypeError: Invalid argument type
     """
     if type(kilometers) not in {int, float}:

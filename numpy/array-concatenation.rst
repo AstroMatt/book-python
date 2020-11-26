@@ -15,7 +15,6 @@ Array Concatenation
 
     np.concatenate(a, b)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: only integer scalar arrays can be converted to a scalar index
 
     np.concatenate((a, b))

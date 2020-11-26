@@ -28,7 +28,6 @@ Tests:
 
     >>> echo('hello')
     Traceback (most recent call last):
-        ...
     PermissionError: Function is disabled
 """
 

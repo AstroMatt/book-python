@@ -38,21 +38,18 @@ Errors
 
     {a, b, c} = {1, 2, 3}
     # Traceback (most recent call last):
-    #     ...
     # SyntaxError: can't assign to literal
 
 .. code-block:: python
 
     a, b, c = [1, 2, 3, 4]
     # Traceback (most recent call last):
-    #     ...
     # ValueError: too many values to unpack (expected 3)
 
 .. code-block:: python
 
     a, b, c, d = [1, 2, 3]
     # Traceback (most recent call last):
-    #     ...
     # ValueError: not enough values to unpack (expected 4, got 3)
 
 
@@ -99,7 +96,6 @@ Arbitrary Number of Arguments
 
     *a, b, *c = [1, 2, 3, 4]
     # Traceback (most recent call last):
-    #     ...
     # SyntaxError: two starred expressions in assignment
 
 .. code-block:: python
@@ -107,7 +103,6 @@ Arbitrary Number of Arguments
 
     a, *b, c = [1]
     # Traceback (most recent call last):
-    #     ...
     # ValueError: not enough values to unpack (expected at least 2, got 1)
 
 

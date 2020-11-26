@@ -121,7 +121,6 @@ Callable
 
     astro()
     # Traceback (most recent call last):
-    #     ...
     # TypeError: 'str' object is not callable
 
     callable(astro)

@@ -186,7 +186,6 @@ Overflow
 
     lib.echo(10 ** 30)
     # Traceback (most recent call last):
-    #     ...
     # ctypes.ArgumentError: argument 1: <class 'OverflowError'>: int too long to convert
 
 

@@ -192,12 +192,10 @@ New Features
 
     isinstance([1, 2, 3], list[str])
     # Traceback (most recent call last):
-    #     ...
     # TypeError: isinstance() arg 2 cannot be a parameterized generic
 
     issubclass(list, list[str])
     # Traceback (most recent call last):
-    #     ...
     # TypeError: issubclass() arg 2 cannot be a parameterized generic
 
     isinstance(list[str], types.GenericAlias)

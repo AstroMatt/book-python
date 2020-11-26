@@ -28,7 +28,6 @@ Dict Keys
         {1,2,3}: 'virginica',
     }
     # Traceback (most recent call last):
-    #     ...
     # TypeError: unhashable type: 'set'
 
 .. code-block:: python
@@ -38,7 +37,6 @@ Dict Keys
         [1,2,3]: 'virginica',
     }
     # Traceback (most recent call last):
-    #     ...
     # TypeError: unhashable type: 'list'
 
 

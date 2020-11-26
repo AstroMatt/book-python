@@ -52,12 +52,10 @@ Rationale
 
     datetime.utcnow(tz=timezone.utc)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: utcnow() takes no keyword arguments
 
     datetime.utcnow(timezone.utc)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: utcnow() takes no arguments (1 given)
 
 

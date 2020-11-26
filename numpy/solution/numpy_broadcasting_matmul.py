@@ -15,7 +15,6 @@ b = np.array([
 
 a * b
 # Traceback (most recent call last):
-#     ...
 # ValueError: operands could not be broadcast together with shapes (4,4) (4,2)
 
 a @ b
@@ -26,11 +25,9 @@ a @ b
 
 b * a
 # Traceback (most recent call last):
-#     ...
 # ValueError: operands could not be broadcast together with shapes (4,2) (4,4)
 
 b @ a
 # Traceback (most recent call last):
-#     ...
 # ValueError: matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 4 is different from 2)
 

@@ -86,7 +86,6 @@ Set Attribute
 
     astro._salary = 100
     # Traceback (most recent call last):
-    #     ...
     # PermissionError: Field is protected
 
 
@@ -118,7 +117,6 @@ Delete Attribute
     del astro.name
     del astro._salary
     # Traceback (most recent call last):
-    #     ...
     # PermissionError: Field is protected
 
 
@@ -154,7 +152,6 @@ Get Attribute
 
     print(astro._salary)
     # Traceback (most recent call last):
-    #     ...
     # PermissionError: Field is protected
 
 
@@ -272,12 +269,10 @@ Use Cases
 
     astro._salary = 100
     # Traceback (most recent call last):
-    #     ...
     # PermissionError: Field is protected
 
     print(astro._salary)
     # Traceback (most recent call last):
-    #     ...
     # PermissionError: Field is protected
 
 .. code-block:: python
@@ -303,7 +298,6 @@ Use Cases
 
     t.kelvin = -10
     # Traceback (most recent call last):
-    #     ...
     # ValueError: Kelvin temperature cannot be negative
 
 .. code-block:: python

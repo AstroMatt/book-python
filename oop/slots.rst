@@ -27,7 +27,6 @@ Rationale
 
     astro.mission = 'Ares 3'
     # Traceback (most recent call last):
-    #     ...
     # AttributeError: 'Astronaut' object has no attribute 'mission'
 
 
@@ -43,7 +42,6 @@ Example
 
     astro.name = 'Mark Watney'
     # Traceback (most recent call last):
-    #     ...
     # AttributeError: 'Astronaut' object has no attribute 'name'
 
 .. code-block:: python
@@ -57,7 +55,6 @@ Example
     astro.name = 'Mark Watney'
     astro.mission = 'Ares 3'
     # Traceback (most recent call last):
-    #     ...
     # AttributeError: 'Astronaut' object has no attribute 'mission'
 
 
@@ -79,7 +76,6 @@ Example
 
     print(astro.__dict__)
     # Traceback (most recent call last):
-    #     ...
     # AttributeError: 'Astronaut' object has no attribute '__dict__'
 
 .. code-block:: python
@@ -142,7 +138,6 @@ Slots and Init
 
     astro = Astronaut('Mark Watney', 'Ares 3')
     # Traceback (most recent call last):
-    #     ...
     # AttributeError: 'Astronaut' object has no attribute 'mission'
 
 
@@ -181,7 +176,6 @@ Inheritance
     astro.mission = 'Ares 3'
     astro.rank = 'Senior'
     # Traceback (most recent call last):
-    #     ...
     # AttributeError: 'Astronaut' object has no attribute 'rank'
 
 .. code-block:: python
@@ -199,7 +193,6 @@ Inheritance
     astro.mission = 'Ares 3'
     astro.rank = 'Senior'
     # Traceback (most recent call last):
-    #     ...
     # AttributeError: 'Astronaut' object has no attribute 'rank'
 
 
@@ -226,7 +219,6 @@ Use Cases
 
     print(astro.__dict__)
     # Traceback (most recent call last):
-    #     ...
     # AttributeError: 'Astronaut' object has no attribute '__dict__'
 
     result = {attr: getattr(astro, attr)
@@ -300,7 +292,6 @@ Tests:
 
     >>> iris.__dict__
     Traceback (most recent call last):
-      ...
     AttributeError: 'Iris' object has no attribute '__dict__'
 
     >>> values = tuple(getattr(iris, x) for x in iris.__slots__)

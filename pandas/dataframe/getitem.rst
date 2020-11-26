@@ -100,7 +100,6 @@ Rows
 
     df['2000-01-05']
     # Traceback (most recent call last):
-    #     ...
     # KeyError: '2000-01-05'
 
     df.loc['2000-01-05']

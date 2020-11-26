@@ -140,7 +140,6 @@ Unordered Sequences
 
     data[:3]
     # Traceback (most recent call last):
-    #     ...
     # TypeError: 'set' object is not subscriptable
 
 .. code-block:: python
@@ -150,7 +149,6 @@ Unordered Sequences
 
     data[:3]
     # Traceback (most recent call last):
-    #     ...
     # TypeError: 'frozenset' object is not subscriptable
 
 
@@ -235,7 +233,6 @@ Slice All
 
     data[:, 1]
     # Traceback (most recent call last):
-    #     ...
     # TypeError: list indices must be integers or slices, not tuple
 
     data[:][1]

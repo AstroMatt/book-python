@@ -23,7 +23,6 @@ Tests:
     (1, 2, 3)
     >>> pt.position = (4, 5, 6)
     Traceback (most recent call last):
-        ...
     PermissionError: Cannot modify values
 """
 

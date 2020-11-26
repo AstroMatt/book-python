@@ -33,7 +33,6 @@ Boolean Value
 
     bool(pd.NA)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: boolean value of NA is ambiguous
 
 

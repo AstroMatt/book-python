@@ -17,7 +17,6 @@ def euclidean_distance_n_dimensions(A, B):
 
     >>> euclidean_distance_n_dimensions((0,0,1,0,1), (1,1))
     Traceback (most recent call last):
-        ...
     ValueError: Points must be in the same dimensions
     """
     if len(A) != len(B):

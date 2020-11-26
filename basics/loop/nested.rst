@@ -155,7 +155,6 @@ Mixed
     # e
     # y
     # Traceback (most recent call last):
-    #     ...
     # TypeError: 'int' object is not iterable
 
 .. code-block:: python

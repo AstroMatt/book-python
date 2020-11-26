@@ -28,7 +28,6 @@ Rationale
 
     data[1.1]
     # Traceback (most recent call last):
-    #     ...
     # TypeError: list indices must be integers or slices, not float
 
 
@@ -49,7 +48,6 @@ Positive Index
 
     data[4]
     # Traceback (most recent call last):
-    #     ...
     # IndexError: string index out of range
 
 
@@ -72,7 +70,6 @@ Negative Index
 
     data[-5]
     # Traceback (most recent call last):
-    #     ...
     # IndexError: string index out of range
 
 
@@ -200,7 +197,6 @@ Nested Sequence
     data[2]     # {7, 8, 9}
     data[2][0]
     # Traceback (most recent call last):
-    #     ...
     # TypeError: 'set' object is not subscriptable
 
 

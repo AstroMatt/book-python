@@ -48,7 +48,6 @@ Addition
 
     a + d
     # Traceback (most recent call last):
-    #     ...
     # ValueError: operands could not be broadcast together with shapes (2,3) (2,)
 
 
@@ -78,7 +77,6 @@ Subtraction
 
     a - d
     # Traceback (most recent call last):
-    #     ...
     # ValueError: operands could not be broadcast together with shapes (2,3) (2,)
 
 
@@ -108,7 +106,6 @@ Division
 
     a / d
     # Traceback (most recent call last):
-    #     ...
     # ValueError: operands could not be broadcast together with shapes (2,3) (2,)
 
 
@@ -138,7 +135,6 @@ True Division
 
     a // d
     # Traceback (most recent call last):
-    #     ...
     # ValueError: operands could not be broadcast together with shapes (2,3) (2,)
 
 
@@ -168,7 +164,6 @@ Modulo
 
     a % d
     # Traceback (most recent call last):
-    #     ...
     # ValueError: operands could not be broadcast together with shapes (2,3) (2,)
 
 
@@ -198,7 +193,6 @@ Power
 
     a ** d
     # Traceback (most recent call last):
-    #     ...
     # ValueError: operands could not be broadcast together with shapes (2,3) (2,)
 
 
@@ -228,7 +222,6 @@ Root
 
     a ** (1/d)
     # Traceback (most recent call last):
-    #     ...
     # ValueError: operands could not be broadcast together with shapes (2,3) (2,)
 
 
@@ -260,7 +253,6 @@ Array Multiplication
 
     a * d
     # Traceback (most recent call last):
-    #     ...
     # ValueError: operands could not be broadcast together with shapes (2,3) (2,)
 
 
@@ -301,7 +293,6 @@ Matrix Multiplication
 
     a @ b
     # Traceback (most recent call last):
-    #     ...
     # ValueError: matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 2 is different from 3)
 
 

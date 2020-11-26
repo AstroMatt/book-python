@@ -221,7 +221,6 @@ Raw String
 
     print('C:\Users\Admin\file.txt')
     # Traceback (most recent call last):
-    #     ...
     # SyntaxError: (unicode error) 'unicodeescape'
     #   codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
 
@@ -266,7 +265,6 @@ Reading Input
 
     age = int(age)
     # Traceback (most recent call last):
-    #     ...
     # ValueError: invalid literal for int() with base 10: '42.5'
 
     age = float(age)
@@ -280,12 +278,10 @@ Reading Input
 
     age = int(age)
     # Traceback (most recent call last):
-    #     ...
     # ValueError: invalid literal for int() with base 10: '45,5'
 
     age = float(age)
     # Traceback (most recent call last):
-    #     ...
     # ValueError: could not convert string to float: '45,5'
 
 

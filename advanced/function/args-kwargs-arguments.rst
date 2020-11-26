@@ -72,7 +72,6 @@ Positional Arguments
     args = (1, 2)
     echo(args)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: echo() missing 1 required positional argument: 'b'
 
 
@@ -196,7 +195,6 @@ Objects From Sequence
 
     movement = [Point(x,y) for x,y in MOVEMENT]
     # Traceback (most recent call last):
-    #     ...
     # ValueError: too many values to unpack (expected 2)
 
     movement = [Point(*coordinates) for coordinates in MOVEMENT]

@@ -36,7 +36,6 @@ Tests:
 
     >>> launch(CREW_BACKUP)
     Traceback (most recent call last):
-        ...
     PermissionError: Alex Vogel is not an astronaut
 """
 

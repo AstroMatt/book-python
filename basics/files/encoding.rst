@@ -84,7 +84,6 @@ Unicode Encode Error
     with open(FILE, mode='w', encoding='cp1250') as file:
         file.write('Иван Иванович')
     # Traceback (most recent call last):
-    #     ...
     # UnicodeEncodeError: 'charmap' codec can't encode characters in position 0-3: character maps to <undefined>
 
 
@@ -100,7 +99,6 @@ Unicode Decode Error
     with open(FILE, encoding='cp1250') as file:
         print(file.read())
     # Traceback (most recent call last):
-    #     ...
     # UnicodeDecodeError: 'charmap' codec can't decode byte 0x98 in position 1: character maps to <undefined>
 
 

@@ -126,7 +126,6 @@ Return
 
     Astronaut()
     # Traceback (most recent call last):
-    #     ...
     # TypeError: __init__() should return None, not 'int'
 
 

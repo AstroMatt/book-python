@@ -66,7 +66,6 @@ Raw Strings
 
     print('C:\Users\Admin\file.txt')
     # Traceback (most recent call last):
-    #     ...
     # SyntaxError: (unicode error) 'unicodeescape'
     #   codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
 
@@ -182,7 +181,6 @@ Create Directories
 
     mkdir('/tmp/a/b/c')
     # Traceback (most recent call last):
-    #     ...
     # FileNotFoundError: [Errno 2] No such file or directory: '/tmp/a/b/c'
 
 .. code-block:: python
@@ -195,7 +193,6 @@ Create Directories
 
     makedirs('/tmp/a')
     # Traceback (most recent call last):
-    #     ...
     # FileExistsError: [Errno 17] File exists: '/tmp/a'
 
     makedirs('/tmp/a', exist_ok=True)

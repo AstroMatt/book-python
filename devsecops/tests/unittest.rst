@@ -111,7 +111,6 @@ Side effect
 
     mock()
     # Traceback (most recent call last):
-    #     ...
     # KeyError: 'foo'
 
 patch

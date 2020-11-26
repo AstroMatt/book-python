@@ -36,12 +36,10 @@ Example
 
     User.from_json(DATA)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: from_json() missing 1 required positional argument: 'data'
 
     User().from_json(DATA)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: __init__() missing 2 required positional arguments: 'firstname' and 'lastname'
 
     User(None, None).from_json(DATA)
@@ -70,17 +68,14 @@ Example
 
     User.from_json(DATA)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: from_json() missing 1 required positional argument: 'data'
 
     User().from_json(DATA)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: __init__() missing 2 required positional arguments: 'firstname' and 'lastname'
 
     User(None, None).from_json(DATA)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: 'User' object is not callable
 
 .. code-block:: python
@@ -106,12 +101,10 @@ Example
 
     User.from_json(DATA)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: from_json() missing 1 required positional argument: 'data'
 
     User().from_json(DATA)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: __init__() missing 2 required positional arguments: 'firstname' and 'lastname'
 
     result = User(None, None).from_json(DATA)

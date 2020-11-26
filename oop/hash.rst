@@ -66,19 +66,16 @@ Examples
 
     data[[1,2]] = 'whatever'
     # Traceback (most recent call last):
-    #     ...
     # TypeError: unhashable type: 'list'
 
     data[{1,2}] = 'whatever'
     # Traceback (most recent call last):
-    #     ...
     # TypeError: unhashable type: 'set'
 
     data[frozenset({1,2})] = 'whatever'
 
     data[{'a':1}] = 'cokolwiek'
     # Traceback (most recent call last):
-    #     ...
     # TypeError: unhashable type: 'dict'
 
 .. code-block:: python
@@ -205,7 +202,6 @@ Hashable
     key = list([1, 2, 3])
     hash(key)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: unhashable type: 'list'
 
 .. code-block:: python
@@ -225,7 +221,6 @@ Hashable
     key = list([1,2,3])
     data[key] = 'whatever'
     # Traceback (most recent call last):
-    #     ...
     # TypeError: unhashable type: 'list'
 
     class list(list):

@@ -100,7 +100,6 @@ Reshape
 
     a.reshape(5, 2)
     # Traceback (most recent call last):
-    #     ...
     # ValueError: cannot reshape array of size 6 into shape (5,2)
 
 .. code-block:: python
@@ -156,7 +155,6 @@ Reshape
 
     a.reshape(2, 3, 1)
     # Traceback (most recent call last):
-    #     ...
     # ValueError: cannot reshape array of size 8 into shape (2,3,1)
 
 

@@ -193,7 +193,6 @@ Take
 
     a[2,:,:]
     # Traceback (most recent call last):
-    #     ...
     # IndexError: index 2 is out of bounds for axis 0 with size 2
 
     a.take(0, axis=0)
@@ -208,7 +207,6 @@ Take
 
     a.take(2, axis=0)
     # Traceback (most recent call last):
-    #     ...
     # IndexError: index 2 is out of bounds for size 2
 
 .. code-block:: python

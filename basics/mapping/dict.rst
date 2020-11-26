@@ -75,7 +75,6 @@ GetItem
 
     crew['pilot']
     # Traceback (most recent call last):
-    #     ...
     # KeyError: 'pilot'
 
 .. code-block:: python
@@ -110,7 +109,6 @@ GetItem
 
     calendarium['1961']
     # Traceback (most recent call last):
-    #     ...
     # KeyError: '1961'
 
     calendarium.get('1961')

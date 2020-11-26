@@ -44,27 +44,22 @@ Tests:
 
     >>> list(Range())
     Traceback (most recent call last):
-      ...
     ValueError: Invalid arguments
 
     >>> list(Range(1,2,3,4))
     Traceback (most recent call last):
-      ...
     ValueError: Invalid arguments
 
     >>> Range(stop=2)
     Traceback (most recent call last):
-      ...
     TypeError: Range() takes no keyword arguments
 
     >>> Range(start=1, stop=2)
     Traceback (most recent call last):
-      ...
     TypeError: Range() takes no keyword arguments
 
     >>> Range(start=1, stop=2, step=2)
     Traceback (most recent call last):
-      ...
     TypeError: Range() takes no keyword arguments
 """
 

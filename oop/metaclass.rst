@@ -240,7 +240,6 @@ Example
 
     str.__new__ = new
     # Traceback (most recent call last):
-    #     ...
     # TypeError: can't set attributes of built-in/extension type 'str'
 
 .. code-block:: python
@@ -255,7 +254,6 @@ Example
 
     type.__new__ = new
     # Traceback (most recent call last):
-    #     ...
     # TypeError: can't set attributes of built-in/extension type 'type'
 
 
@@ -302,7 +300,6 @@ Use Case
 
     astro = Astronaut()
     # Traceback (most recent call last):
-    #     ...
     # TypeError: Can't instantiate abstract class Astronaut with abstract methods say_hello
 
 
@@ -366,7 +363,6 @@ Metaclass replacements
 
     astro = Astronaut()
     # Traceback (most recent call last):
-    #     ...
     # TypeError: Can't instantiate abstract class Astronaut with abstract methods hello
 
 .. code-block:: python

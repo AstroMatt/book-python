@@ -31,7 +31,6 @@ Tests:
     1
     >>> t.kelvin = -1
     Traceback (most recent call last):
-        ...
     ValueError: Negative temperature
 """
 

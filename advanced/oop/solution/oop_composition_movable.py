@@ -80,13 +80,11 @@ Tests:
     >>> astro.set_position(x=1, y=1)
     >>> astro.change_position(left=2)
     Traceback (most recent call last):
-        ...
     ValueError: Coordinate cannot be negative
 
     >>> astro.set_position(x=1, y=1)
     >>> astro.change_position(up=2)
     Traceback (most recent call last):
-        ...
     ValueError: Coordinate cannot be negative
 """
 

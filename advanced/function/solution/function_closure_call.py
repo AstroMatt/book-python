@@ -43,7 +43,6 @@ Tests:
 
     >>> check()
     Traceback (most recent call last):
-        ...
     NameError: name 'check' is not defined
 """
 

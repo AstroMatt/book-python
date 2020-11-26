@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- encoding: utf-8 -*-
 
 import unittest
 
@@ -10,7 +9,6 @@ class Rectangle:
         """
         >>> Rectangle(0, 1)
         Traceback (most recent call last):
-        ...
         ValueError: Side length must be positive
         """
         self.side_a = a

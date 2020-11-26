@@ -30,12 +30,10 @@ Example 1
 
     p0 = Point()
     # Traceback (most recent call last):
-    #     ...
     # TypeError: __init__() missing 2 required positional arguments: 'x' and 'y'
 
     p1 = Point(10)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: __init__() missing 1 required positional argument: 'y'
 
     p2 = Point(10, 20)
@@ -59,12 +57,10 @@ Example 1
 
     p0 = Point()
     # Traceback (most recent call last):
-    #     ...
     # TypeError: __init__() missing 2 required positional arguments: 'x' and 'y'
 
     p1 = Point(10)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: __init__() missing 1 required positional argument: 'y'
 
     p2 = Point(10, 20)
@@ -203,7 +199,6 @@ Example 3
 
     t2 = Kelvin(-10)
     # Traceback (most recent call last):
-    #     ...
     # ValueError: Temperature must be greater than 0
 
 .. code-block:: python
@@ -228,7 +223,6 @@ Example 3
 
     t2 = Kelvin(-10)
     # Traceback (most recent call last):
-    #     ...
     # ValueError: Temperature must be greater than 0
 
 
@@ -317,7 +311,6 @@ init
 
     p = Point(10, 20)
     # Traceback (most recent call last):
-    #     ...
     # TypeError: Point() takes no arguments
 
 repr
@@ -374,7 +367,6 @@ frozen
 
     p.x = 30
     # Traceback (most recent call last):
-    #     ...
     # dataclasses.FrozenInstanceError: cannot assign to field 'x'
 
 eq

@@ -13,7 +13,6 @@ SSH
 
     client.connect('example.com', username='myusername')
     # Traceback (most recent call last):
-    #     ...
     # paramiko.ssh_exception.SSHException: Server 'example.com' not found in known_hosts
 
 .. code-block:: python

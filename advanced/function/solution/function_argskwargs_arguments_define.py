@@ -32,7 +32,6 @@ Tests:
     2.0
     >>> mean()
     Traceback (most recent call last):
-        ...
     ValueError: At least one argument is required
 
     >>> assert type(result) is list

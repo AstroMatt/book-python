@@ -351,7 +351,6 @@ Given:
             """
             >>> euclidean_distance((0,0,1,0,1), (1,1))
             Traceback (most recent call last):
-                ...
             ValueError: Points must be in the same dimensions
 
             >>> A = (0,1,0,1)

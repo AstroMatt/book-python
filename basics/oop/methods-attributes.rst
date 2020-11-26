@@ -58,7 +58,6 @@ Methods Accessing Fields
     jose = Astronaut()
     jose.say_hello()
     # Traceback (most recent call last):
-    #     ...
     # AttributeError: 'Astronaut' object has no attribute 'name'
 
 

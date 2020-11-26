@@ -46,7 +46,6 @@ Timestamp
 
     pd.Timestamp('2016-12-31 23:59:60')
     # Traceback (most recent call last):
-    #     ...
     # ValueError: second must be in 0..59
 
 

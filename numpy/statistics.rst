@@ -24,7 +24,6 @@ Mean
 
     np.mean(a, axis=1)
     # Traceback (most recent call last):
-    #     ...
     # IndexError: tuple index out of range
 
 .. code-block:: python
@@ -82,7 +81,6 @@ Average
 
     np.average(a, axis=1)
     # Traceback (most recent call last):
-    #     ...
     # IndexError: tuple index out of range
 
     np.average(a, weights=[1, 1, 2])
@@ -152,7 +150,6 @@ Median
 
     np.median(a, axis=1)
     # Traceback (most recent call last):
-    #     ...
     # numpy.AxisError: axis 1 is out of bounds for array of dimension 1
 
 
@@ -223,7 +220,6 @@ Variance
 
     np.var(a, axis=1)
     # Traceback (most recent call last):
-    #     ...
     # IndexError: tuple index out of range
 
 .. code-block:: python
@@ -284,7 +280,6 @@ Standard Deviation
 
     np.std(a, axis=1)
     # Traceback (most recent call last):
-    #     ...
     # IndexError: tuple index out of range
 
 .. code-block:: python

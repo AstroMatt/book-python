@@ -51,32 +51,26 @@ Tests:
 
     >>> GeographicCoordinate(-91, 0, 0)
     Traceback (most recent call last):
-      ...
     ValueError: Out of bounds
 
     >>> GeographicCoordinate(+91, 0, 0)
     Traceback (most recent call last):
-      ...
     ValueError: Out of bounds
 
     >>> GeographicCoordinate(0, -181, 0)
     Traceback (most recent call last):
-      ...
     ValueError: Out of bounds
 
     >>> GeographicCoordinate(0, +181, 0)
     Traceback (most recent call last):
-      ...
     ValueError: Out of bounds
 
     >>> GeographicCoordinate(0, 0, -10995)
     Traceback (most recent call last):
-      ...
     ValueError: Out of bounds
 
     >>> GeographicCoordinate(0, 0, +8849)
     Traceback (most recent call last):
-      ...
     ValueError: Out of bounds
 """
 

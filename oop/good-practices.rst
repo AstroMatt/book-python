@@ -153,7 +153,6 @@ Setters, Getters, Deleters
     t = Temperature()
     t.set_kelvin(-1)
     # Traceback (most recent call last):
-    #     ...
     # ValueError: Kelvin cannot be negative
 
 .. code-block:: python
