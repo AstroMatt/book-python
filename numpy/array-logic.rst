@@ -356,21 +356,21 @@ Assignments
 
 Numpy Logic Even
 ----------------
-* Assignment name: Numpy Logic Even
+* Assignment: Numpy Logic Even
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/numpy_logic_even.py`
+* Filename: :download:`solution/numpy_logic_even.py`
 
-:English:
+English:
     #. Set random seed to zero
     #. Generate ``a: np.ndarray`` of 9 random integers from 0 to 100 (exclusive)
     #. Check for even numbers which are less than 50
     #. Check if all numbers matches this condition
     #. Check if any number matches this condition
 
-:Polish:
+Polish:
     #. Ustaw ziarno losowości na zero
     #. Wygeneruj ``a: np.ndarray`` z 9 losowymi liczbami całkowitymi od 0 do 100 (rozłącznie)
     #. Sprawdź parzyste elementy, które są mniejsze od 50
@@ -379,20 +379,20 @@ Numpy Logic Even
 
 Numpy Logic Isin
 ----------------
-* Assignment name: Numpy Logic Isin
+* Assignment: Numpy Logic Isin
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/numpy_logic_isin.py`
+* Filename: :download:`solution/numpy_logic_isin.py`
 
-:English:
+English:
     #. Set random seed to zero
     #. Generate ``a: np.ndarray`` of 50 random integers from 0 to 100 (exclusive)
     #. Generate ``b: np.ndarray`` with sequential powers of 2 and exponential from 0 to 6 (inclusive)
     #. Check which elements from ``a`` are present in ``b``
 
-:Polish:
+Polish:
     #. Ustaw ziarno losowości na zero
     #. Wygeneruj ``a: np.ndarray`` z 50 losowymi liczbami całkowitymi od 0 do 100 (rozłącznie)
     #. Wygeneruj ``b: np.ndarray`` z kolejnymi potęgami liczby 2, wykładnik od 0 do 6 (włącznie)

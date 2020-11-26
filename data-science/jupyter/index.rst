@@ -549,17 +549,17 @@ Assignments
 
 Jupyter First
 -------------
-* Assignment name: Jupyter First
+* Assignment: Jupyter First
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/jupyter_first.ipynb`
+* Filename: :download:`solution/jupyter_first.ipynb`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Stwórz notebook jupyter o nazwie ``jupyter_first.ipynb``
     #. dodaj tekst opisujący następne polecenia
     #. dodaj trzy różne 'code cell'
@@ -569,15 +569,15 @@ Jupyter First
 
 Jupyter Slides
 --------------
-* Assignment name: Jupyter Slides
+* Assignment: Jupyter Slides
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/jupyter_slides.py`
+* Filename: :download:`solution/jupyter_slides.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Poprzedni skrypt przekonwertuj na slajdy i uruchom prezentację w przeglądarce

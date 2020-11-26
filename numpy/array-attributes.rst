@@ -132,15 +132,15 @@ Assignments
 
 Numpy Attributes
 ----------------
-* Assignment name: Numpy Attributes
+* Assignment: Numpy Attributes
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/numpy_attributes.py`
+* Filename: :download:`solution/numpy_attributes.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Print:
 
         * number of dimensions;
@@ -150,8 +150,8 @@ Numpy Attributes
         * shape;
         * strides.
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wypisz:
 
         * liczbę wymiarów,
@@ -161,11 +161,9 @@ Numpy Attributes
         * kształt,
         * przeskoki (strides).
 
-:Input:
+Given:
     .. code-block:: python
 
         a = np.array([[-1.1, 0.0, 1.1],
                       [ 2.2, 3.3, 4.4]])
 
-:The whys and wherefores:
-    * Defining ``np.ndarray``

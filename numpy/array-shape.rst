@@ -252,30 +252,30 @@ Assignments
 
 Numpy Shape
 -----------
-* Assignment name: Numpy Shape
+* Assignment: Numpy Shape
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/numpy_shape.py`
+* Filename: :download:`solution/numpy_shape.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Given ``a: np.ndarray`` (see below)
     #. Flatten using method ``.ravel()``
     #. Print ``a``
     #. Change shape back to 3x3
     #. Print ``a``
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Dany ``a: np.ndarray`` (patrz sekcja input)
     #. Spłaszcz używając metody ``.ravel()``
     #. Wypisz ``a``
     #. Zmień kształt na powrót na 3x3
     #. Wypisz ``a``
 
-:Input:
+Given:
     .. code-block:: python
 
         a = np.array([[1, 2, 3],

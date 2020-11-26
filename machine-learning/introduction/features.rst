@@ -159,17 +159,17 @@ Assignments
 
 Feature Engineering
 -------------------
-* Assignment name: Feature Engineering
+* Assignment: Feature Engineering
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/features_engineering.py`
+* Filename: :download:`solution/features_engineering.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Celem zadania będzie opracowanie tabeli, cech osób, które czynią z niego astronautę.
     #. Istotne jest dobranie odpowiednich kolumn cech oraz wpisanie wartości
     #. Dane kontrargumentowe możesz dobrać dowolnie
@@ -184,7 +184,7 @@ Feature Engineering
     #. Uruchom test wagi parametrów
     #. Czy Twoje features mają wysokie znaczenie?
 
-:Hints:
+Hints:
     * ``np.genfromtxt()``
     * ``np.array()`` i ``.transpose()``
 

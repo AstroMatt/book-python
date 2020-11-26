@@ -185,26 +185,26 @@ Assignments
 
 Numpy Polyfit
 -------------
-* Assignment name: Numpy Polyfit
+* Assignment: Numpy Polyfit
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/numpy_polyfit.py`
+* Filename: :download:`solution/numpy_polyfit.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Given are points coordinates in Cartesian system
     #. Separate first row (header) from data
     #. Calculate coefficients of best approximating polynomial of 3rd degree
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Dane są koordynaty punktów w układzie kartezjańskim
     #. Odseparuj pierwszy wiersz (nagłówek) do danych
     #. Oblicz współczynniki najlepiej dopasowanego wielomianu 3 stopnia
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [

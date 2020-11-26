@@ -396,35 +396,35 @@ Assignments
 
 Series NA
 ---------
-* Assignment name: Series NA
+* Assignment: Series NA
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/series_na.py`
+* Filename: :download:`solution/series_na.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. From input data create ``pd.Series``
     #. Fill first missing value with zero
     #. Drop missing values
     #. Reindex series (without old copy)
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Z danych wejściowych stwórz ``pd.Series``
     #. Wypełnij pierwszą brakującą wartość zerem
     #. Usuń brakujące wartości
     #. Zresetuj indeks (bez kopii starego)
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [1, None, 5, None, 1, 2, 1]
 
-:Output:
+Tests:
     .. code-block:: python
 
         s: pd.Series

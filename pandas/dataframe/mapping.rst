@@ -320,57 +320,57 @@ Assignments
 
 DataFrame Mapping Split
 -----------------------
-* Assignment name: DataFrame Mapping Split
+* Assignment: DataFrame Mapping Split
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/df_mapping_split.py`
+* Filename: :download:`solution/df_mapping_split.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` as ``phones: pd.DataFrame``
     #. Parse data in ``date`` column as ``datetime`` object
     #. Split column ``date`` with into two separate: date and time columns
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``phones: pd.DataFrame``
     #. Sparsuj dane w kolumnie ``date`` jako obiekty ``datetime``
     #. Podziel kolumnę z ``date`` na dwie osobne: datę i czas
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/phones-pl.csv'
 
-:Hints:
+Hints:
     * ``help(phones['date'].dt)``
 
 DataFrame Mapping Translate
 ---------------------------
-* Assignment name: DataFrame Mapping Translate
+* Assignment: DataFrame Mapping Translate
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/df_mapping_translate.py`
+* Filename: :download:`solution/df_mapping_translate.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` as ``martian: pd.DataFrame``
     #. Set header and index to data from file
     #. Convert Polish month names to English
     #. Parse dates to ``datetime`` objects
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``martian: pd.DataFrame``
     #. Ustaw nagłówek i index na dane zaczytane z pliku
     #. Przekonwertuj polskie nazwy miesięcy na angielskie
     #. Sparsuj daty do obiektów ``datetime``
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/martian-pl.csv'
@@ -388,27 +388,27 @@ DataFrame Mapping Translate
                        'listopad': 'November',
                        'grudzień': 'December'}
 
-:Hints:
+Hints:
     * ``df['column'].replace(regex=True)``
     * ``pd.Timestamp``
 
 DataFrame Mapping Month
 -----------------------
-* Assignment name: DataFrame Mapping Month
+* Assignment: DataFrame Mapping Month
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/df_mapping_month.py`
+* Filename: :download:`solution/df_mapping_month.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` as ``phones: pd.DataFrame``
     #. Add column ``year`` and ``month`` by parsing ``period`` column
     #. Month name must be a string month name, not a number (i.e.: 'January', 'May')
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``phones: pd.DataFrame``
     #. Dodaj kolumnę ``year`` i ``month`` poprzez sparsowanie kolumny ``period``
     #. Nazwa miesiąca musi być ciągiem znaków, a nie liczbą (i.e. 'January', 'May')
@@ -418,7 +418,7 @@ DataFrame Mapping Month
     #. ``year``: 2015
     #. ``month``: January
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/phones-pl.csv'
@@ -427,21 +427,21 @@ DataFrame Mapping Month
                      'May', 'June', 'July', 'August', 'September',
                      'October', 'November', 'December']
 
-:Hints:
+Hints:
     * ``Series.str.split(expand=True)``
     * ``df[ ['A', 'B'] ] = ...``
 
 DataFrame Mapping Substitute
 ----------------------------
-* Assignment name: DataFrame Mapping Substitute
+* Assignment: DataFrame Mapping Substitute
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/df_mapping_substitute.py`
+* Filename: :download:`solution/df_mapping_substitute.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` as ``astro_trl: pd.DataFrame``
     #. Select ``Polish`` spreadsheet
     #. Set header and index to data from file
@@ -449,8 +449,8 @@ DataFrame Mapping Substitute
     #. Substitute Polish Diacritics to English alphabet letters
     #. Compare ``df.replace(regex=True)`` with ``df.applymap()``
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``astro_trl: pd.DataFrame``
     #. Wybierz arkusz ``Polish``
     #. Ustaw nagłówek i index na dane zaczytane z pliku
@@ -458,7 +458,7 @@ DataFrame Mapping Substitute
     #. Podmień polskie znaki diakrytyczne na litery z alfabetu angielskiego
     #. Porównaj ``df.replace(regex=True)`` z ``df.applymap()``
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/xlsx/astro-trl.xlsx'

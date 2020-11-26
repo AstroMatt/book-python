@@ -1,49 +1,75 @@
 """
->>> from inspect import isclass, ismethod
->>> assert isclass(Range)
+* Assignment: Protocol Iterator Range
+* Filename: protocol_iterator_range.py
+* Complexity: medium
+* Lines of code to write: 25 lines
+* Estimated time: 21 min
 
->>> r = Range(0, 0, 0)
->>> assert hasattr(r, '__iter__')
->>> assert hasattr(r, '__next__')
->>> assert ismethod(r.__iter__)
->>> assert ismethod(r.__next__)
+English:
+    1. Use data from "Given" section (see below)
+    2. Define class `Range` with parameters: `start`, `stop`, `step`
+    3. Write own implementation of a built-in `range(start, stop, step)` function
+    4. Use Iterator protocol
+    5. How to implement passing only stop argument (`range(start=0, stop=???, step=1)`)?
+    6. All tests must pass
+    7. Compare result with "Tests" section (see below)
 
->>> list(Range(0, 10, 2))
-[0, 2, 4, 6, 8]
+Polish:
+    1. Użyj danych z sekcji "Given" (patrz poniżej)
+    2. Zdefiniuj klasę `Range` z parametrami: `start`, `stop`, `step`
+    3. Zaimplementuj własne rozwiązanie wbudowanej funkcji `range(start, stop, step)`
+    4. Użyj protokołu Iterator
+    5. Jak zaimplementować możliwość podawania tylko końca (`range(start=0, stop=???, step=1)`)?
+    6. Wszystkie testy muszą przejść
+    7. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
->>> list(Range(0, 5))
-[0, 1, 2, 3, 4]
+Tests:
+    >>> from inspect import isclass, ismethod
+    >>> assert isclass(Range)
 
->>> list(Range(5))
-[0, 1, 2, 3, 4]
+    >>> r = Range(0, 0, 0)
+    >>> assert hasattr(r, '__iter__')
+    >>> assert hasattr(r, '__next__')
+    >>> assert ismethod(r.__iter__)
+    >>> assert ismethod(r.__next__)
 
->>> list(Range())
-Traceback (most recent call last):
-  ...
-ValueError: Invalid arguments
+    >>> list(Range(0, 10, 2))
+    [0, 2, 4, 6, 8]
 
->>> list(Range(1,2,3,4))
-Traceback (most recent call last):
-  ...
-ValueError: Invalid arguments
+    >>> list(Range(0, 5))
+    [0, 1, 2, 3, 4]
 
->>> Range(stop=2)
-Traceback (most recent call last):
-  ...
-TypeError: Range() takes no keyword arguments
+    >>> list(Range(5))
+    [0, 1, 2, 3, 4]
 
->>> Range(start=1, stop=2)
-Traceback (most recent call last):
-  ...
-TypeError: Range() takes no keyword arguments
+    >>> list(Range())
+    Traceback (most recent call last):
+      ...
+    ValueError: Invalid arguments
 
->>> Range(start=1, stop=2, step=2)
-Traceback (most recent call last):
-  ...
-TypeError: Range() takes no keyword arguments
+    >>> list(Range(1,2,3,4))
+    Traceback (most recent call last):
+      ...
+    ValueError: Invalid arguments
+
+    >>> Range(stop=2)
+    Traceback (most recent call last):
+      ...
+    TypeError: Range() takes no keyword arguments
+
+    >>> Range(start=1, stop=2)
+    Traceback (most recent call last):
+      ...
+    TypeError: Range() takes no keyword arguments
+
+    >>> Range(start=1, stop=2, step=2)
+    Traceback (most recent call last):
+      ...
+    TypeError: Range() takes no keyword arguments
 """
 
 
+# Solution
 class Range:
     def __init__(self, *args, **kwargs):
         if kwargs:

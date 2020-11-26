@@ -238,15 +238,15 @@ Assignments
 
 Database SQLite Logs
 --------------------
-* Assignment name: Database SQLite Logs
+* Assignment: Database SQLite Logs
 * Last update: 2020-10-11
 * Complexity level: easy
 * Lines of code to write: 25 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/database_sqlite_logs.py`
+* Filename: :download:`solution/database_sqlite_logs.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Save input data to file ``FILE``
     #. Extract ``datetime`` object, level name and message from each line
     #. Collect data to ``DATA: list[dict]`` (see below)
@@ -255,10 +255,10 @@ Database SQLite Logs
     #. Select only ``WARNING`` logs between 1969-07-20 and 1969-07-21
     #. Order logs by datetime descending
     #. Print ``result: list[dict]``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zapisz dane wejściowe do pliku ``FILE``
     #. Wyciągnij obiekt ``datetime``, poziom logowania oraz wiadomość z każdej linii
     #. Zbierz dane do ``DATA: list[dict]`` (patrz sekcja input)
@@ -267,9 +267,9 @@ Database SQLite Logs
     #. Wybierz tylko logi ``WARNING`` z przedziału 1969-07-20 i 1969-07-21
     #. Posortuj logi w kolejności datetime malejąco
     #. Wyświetl ``result: list[dict]``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
         :caption: Apollo 11 timeline https://history.nasa.gov/SP-4029/Apollo_11i_Timeline.htm
 
@@ -305,38 +305,33 @@ Database SQLite Logs
         1969-07-24, 16:50:35, WARNING, Splashdown (went to apex-down)
         1969-07-24, 17:29, INFO, Crew egress"""
 
-:Output:
-    .. code-block:: text
+Tests:
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    [{'date': datetime.datetime(1969, 7, 21, 17, 54, 00, tzinfo=datetime.timezone.utc),
+      'level': 'WARNING',
+      'message': 'LM lunar liftoff ignition (LM APS)'},
+     {'date': datetime.datetime(1969, 7, 21, 2, 56, 15, tzinfo=datetime.timezone.utc),
+      'level': 'WARNING',
+      'message': '1st step taken lunar surface (CDR) "That\'s one small step for [a] man... one giant leap for mankind"'},
+     {'date': datetime.datetime(1969, 7, 20, 20, 17, 39, tzinfo=datetime.timezone.utc),
+      'level': 'WARNING',
+      'message': 'LM lunar landing'},
+    ...]
 
-        >>> result  # doctest: +NORMALIZE_WHITESPACE
-        [{'date': datetime.datetime(1969, 7, 21, 17, 54, 00, tzinfo=datetime.timezone.utc),
-          'level': 'WARNING',
-          'message': 'LM lunar liftoff ignition (LM APS)'},
-
-         {'date': datetime.datetime(1969, 7, 21, 2, 56, 15, tzinfo=datetime.timezone.utc),
-          'level': 'WARNING',
-          'message': '1st step taken lunar surface (CDR) "That\'s one small step for [a] man... one giant leap for mankind"'},
-
-         {'date': datetime.datetime(1969, 7, 20, 20, 17, 39, tzinfo=datetime.timezone.utc),
-          'level': 'WARNING',
-          'message': 'LM lunar landing'},
-
-        ...]
-
-:Hint:
+Hint:
     * ``datetime.fromisoformat()``
 
 Database SQLite CSV
 -------------------
-* Assignment name: Database SQLite CSV
+* Assignment: Database SQLite CSV
 * Last update: 2020-10-11
 * Complexity level: easy
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/database_sqlite_csv.py`
+* Filename: :download:`solution/database_sqlite_csv.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Save ``DATA`` to ``FILE``
     #. Read data from ``FILE`` (don't use ``csv`` or ``pandas`` library)
     #. Replace species from ``int`` to ``str`` according to ``SPECIES`` conversion table
@@ -344,8 +339,8 @@ Database SQLite CSV
     #. Create table ``iris`` and write data to it
     #. Print all rows as dicts
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zapisz ``DATA`` do ``FILE``
     #. Wczytaj dane z ``FILE`` (nie używaj biblioteki ``csv`` lub ``pandas``)
     #. Podmień gatunki z ``int`` na ``str`` zgodnie z tabelą podstawień ``SPECIES``
@@ -353,17 +348,7 @@ Database SQLite CSV
     #. Stwórz tabelę ``iris`` i zapisz do niej dane
     #. Wypisz wszystkie wiersze jako słowniki
 
-:The whys and wherefores:
-    * Parsing ``csv`` files
-    * Using ``sqlite3`` database
-    * Creating database
-    * Inserting data to database
-    * Selecting data from database
-    * Type casting
-    * Using ``datetime`` and UTC timezone
-    * Creating indexes (extra task)
-
-:Input:
+Given:
     .. code-block:: python
 
         DATABASE = r'_temporary.sqlite3'
@@ -424,26 +409,26 @@ Database SQLite CSV
 
 Database SQLite JSON
 --------------------
-* Assignment name: Database SQLite JSON
+* Assignment: Database SQLite JSON
 * Last update: 2020-10-11
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/database_sqlite_json.py`
+* Filename: :download:`solution/database_sqlite_json.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Create database and two tables ``astronaut`` and ``address``
     #. Insert data to separate tables
     #. Print data joining information from both tables
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Stwórz bazę danych i dwie tabele ``astronaut`` i ``address``
     #. Zapisz dane do osobnych tabel
     #. Wypisz dane łącząc informacje z obu tabel
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -464,7 +449,7 @@ Database SQLite JSON
                 {"street": "Linder Hoehe", "city": "Köln", "code": 51147, "state": None, "country": "Germany"}]}
         ]
 
-:Hint:
+Hint:
     .. code-block:: python
 
         SQL_CREATE_TABLE_ASTRONAUT = """

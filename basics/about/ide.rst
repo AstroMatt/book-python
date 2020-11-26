@@ -74,7 +74,7 @@ About IDE Usage
 * Complexity: easy
 * Lines of code to write: 0 lines
 * Estimated time: 8 min
-* Solution: TODO
+* Filename: TODO
 
 English:
     .. todo:: English Translation
@@ -104,7 +104,7 @@ About IDE Spellchecker
 * Complexity: easy
 * Lines of code to write: 0 lines
 * Estimated time: 5 min
-* Solution: TODO
+* Filename: TODO
 
 English:
     .. todo:: English Translation

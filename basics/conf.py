@@ -1,7 +1,7 @@
 import sys; sys.path.append('..')
 from conf import *
 
-project = 'Python Basic'
+project = 'Python: Basics'
 author = 'Matt Harasymczuk'
 email = 'matt@astrotech.io'
 

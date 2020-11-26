@@ -1,5 +1,2 @@
-sphinx==3.2.*
+sphinx==3.3.*
 sphinx_rtd_theme
-
-## Performance Profiling
-# yappi

@@ -1,3 +1,35 @@
+"""
+* Assignment: OOP Relations Nested
+* Filename: oop_relations_nested.py
+* Complexity: medium
+* Lines of code to write: 45 lines
+* Estimated time: 13 min
+
+English:
+    1. Client can open a bank account
+    2. Client can have many accounts
+    3. Bank has many clients
+    4. Each account has unique number generated when opening an account
+    5. Client can ask about number of all of his accounts
+    6. Client can add money to the account
+    7. Client can withdraw money from the account
+    8. Compare result with "Tests" section (see below)
+
+Polish:
+    1. Klient może otworzyć konto w banku
+    2. Klient może mieć wiele kont
+    3. Bank może mieć wielu klientów
+    4. Każde konto ma unikalny numer, który jest generowany przy zakładaniu
+    5. Klient może odpytać o numery wszystkich swoich kont
+    6. Klient może wpłacić pieniądze na swoje konto
+    7. Klient może wybrać pieniądze z bankomatu
+    8. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+
+Tests:
+    TODO: Doctests
+"""
+
+# Solution
 from dataclasses import dataclass
 from decimal import Decimal
 

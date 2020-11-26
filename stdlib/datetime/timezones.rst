@@ -158,15 +158,15 @@ Assignments
 
 Datetime Timezone Convert
 -------------------------
-* Assignment name: Datetime Timezone Convert
+* Assignment: Datetime Timezone Convert
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/datetime_timezone_convert.py`
+* Filename: :download:`solution/datetime_timezone_convert.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Convert given date to ``datetime`` objects
     #. What was the time in:
 
@@ -177,8 +177,8 @@ Datetime Timezone Convert
         * Sydney, Australia
         * Auckland, New Zealand
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Przekonwertuj podaną datę do obiektu ``datetime``
     #. Wyświetl datę jaka była w:
 
@@ -189,7 +189,7 @@ Datetime Timezone Convert
         * Sydney, Australia
         * Auckland, Nowa Zelandia
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = '1969-07-21 02:56:15 UTC'

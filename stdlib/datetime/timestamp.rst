@@ -61,26 +61,26 @@ Assignments
 
 Datetime Timestamp Limits
 -------------------------
-* Assignment name: Datetime Timestamp Limits
+* Assignment: Datetime Timestamp Limits
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/datetime_timestamp_limits.py`
+* Filename: :download:`solution/datetime_timestamp_limits.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Convert given dates to ``datetime`` objects
     #. Print timestamp for each date
     #. What is special about those dates?
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Przekonwertuj podane daty do obiektów ``datetime``
     #. Wypisz timestamp każdej daty
     #. Co to za daty?
 
-:Input:
+Given:
     .. code-block:: python
 
         a = '1902-12-13 20:45:53 UTC'

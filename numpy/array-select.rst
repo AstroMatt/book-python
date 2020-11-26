@@ -495,14 +495,14 @@ Assignments
 
 Numpy Select Isin
 -----------------
-* Assignment name: Numpy Select Isin
+* Assignment: Numpy Select Isin
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/numpy_select_isin.py`
+* Filename: :download:`solution/numpy_select_isin.py`
 
-:English:
+English:
     #. Set random seed to 0
     #. Generate ``a: np.ndarray`` of size 50x50
     #. ``a`` must contains random integers from 0 to 1024 inclusive
@@ -510,7 +510,7 @@ Numpy Select Isin
     #. Sort ``result`` in descending order
     #. Print ``result``
 
-:Polish:
+Polish:
     #. Ustaw ziarno losowości na 0
     #. Wygeneruj ``a: np.ndarray`` rozmiaru 50x50
     #. ``a`` musi zawierać losowe liczby całkowite z zakresu od 0 do 1024 włącznie
@@ -518,6 +518,6 @@ Numpy Select Isin
     #. Posortuj ``result`` w kolejności malejącej
     #. Wypisz ``result``
 
-:Hints:
+Hints:
     * ``np.isin(a, b)``
     * ``np.flip(a)``

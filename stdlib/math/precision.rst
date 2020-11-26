@@ -72,8 +72,8 @@ NaN vs Inf
 
 Floating Numbers Precision
 ==========================
-* Solution: Store values as ``int``, do operation and then divide. For example instead of 1.99 USD, store price as 199 US cents
-* Solution: Use ``Decimal`` type
+* Filename: Store values as ``int``, do operation and then divide. For example instead of 1.99 USD, store price as 199 US cents
+* Filename: Use ``Decimal`` type
 
 .. code-block:: python
     :caption: Problem

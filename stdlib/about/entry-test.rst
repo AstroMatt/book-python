@@ -5,15 +5,15 @@ Pre-Intermediate
 
 Entry Test Select
 =================
-* Assignment name: Entry Test Select
+* Assignment: Entry Test Select
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
-* Solution: entry_test_select.py
+* Filename: entry_test_select.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Write header (first line) to ``header`` variable
     #. Convert to ``list`` data from row 2, 6, 9 and add to ``result``
     #. Convert to ``tuple`` data from row 12, 15, 16 and add to ``result``
@@ -26,8 +26,8 @@ Entry Test Select
     #. Use only indexes
     #. Do not use ``for``, ``while`` or ``slice()``
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zapisz nagłówek (pierwsza linia) do zmiennej ``header``
     #. Przekonwertuj do ``list`` dane z wierszy 2, 6, 9 i dodaj do ``result``
     #. Przekonwertuj do ``tuple`` dane z wierszy 12, 15, 16 i dodaj do ``result``
@@ -40,7 +40,7 @@ Entry Test Select
      #. Użyj tylko indeksów
      #. Nie używaj ``for``, ``while`` lub ``slice()``
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -68,38 +68,33 @@ Entry Test Select
             (4.6, 3.1, 1.5, 0.2, 'setosa'),
         ]
 
-:The whys and wherefores:
-    * Using nested data structures
-    * Using indexes
-    * Type casting
-
 
 Entry Test Slice
 ================
-* Assignment name: Entry Test Slice
+* Assignment: Entry Test Slice
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 20 lines
 * Estimated time of completion: 13 min
-* Solution: entry_test_slice.py
+* Filename: entry_test_slice.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Use only ``slice``
     #. Extract list ``features`` with measurements (every row must be tuple)
     #. Extract species name (every fifth element) and write to ``labels`` list
     #. Write unique species names to ``species`` set
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Użyj tylko ``slice``
     #. Wyodrębnij listę ``features`` w pomiarami (każdy wiersz ma być krotką)
     #. Wyodrębnij nazwę gatunku (co piąty element) i zapisz do listy ``labels``
     #. Zapisz unikalne nazwy gatunków do zbioru ``species``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = (
@@ -111,7 +106,7 @@ Entry Test Slice
             4.7, 3.2, 1.3, 0.2, 'setosa',
         )
 
-:Output:
+Tests:
     .. code-block:: python
 
         features = [
@@ -138,41 +133,37 @@ Entry Test Slice
             'virginica',
         }
 
-:The whys and wherefores:
-    * Defining and using ``list``, ``tuple``, ``set``
-    * Slicing sequences
-
 
 Entry Test Listdict
 ===================
-* Assignment name: Entry Test Listdict
+* Assignment: Entry Test Listdict
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
-* Solution: entry_test_listdict.py
+* Filename: entry_test_listdict.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Separate header and data
     #. Print ``result: list[dict]``
 
         * key - name from the header
         * value - measurement or species
 
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Odseparuj nagłówek i dane
     #. Wypisz ``result: list[dict]``
 
         * klucz: nazwa z nagłówka
         * wartość: wyniki pomiarów lub gatunek
 
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -200,43 +191,36 @@ Entry Test Listdict
             (4.6, 3.1, 1.5, 0.2, 'setosa'),
         ]
 
-:Output:
-    .. code-block:: python
-
-        result: list[dict] = [
-            {'Sepal length': 5.8, 'Sepal width': 2.7, 'Petal length': 5.1, 'Petal width': 1.9, 'Species': 'virginica'},
-            {'Sepal length': 5.1, 'Sepal width': 3.5, 'Petal length': 1.4, 'Petal width': 0.2, 'Species': 'setosa'},
-            {'Sepal length': 5.7, 'Sepal width': 2.8, 'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
-            ...
-        ]
-
-:The whys and wherefores:
-    * Working with nested data structures
-    * Iterating over dict and lists
+Tests:
+    >>> result
+    [{'Sepal length': 5.8, 'Sepal width': 2.7, 'Petal length': 5.1, 'Petal width': 1.9, 'Species': 'virginica'},
+     {'Sepal length': 5.1, 'Sepal width': 3.5, 'Petal length': 1.4, 'Petal width': 0.2, 'Species': 'setosa'},
+     {'Sepal length': 5.7, 'Sepal width': 2.8, 'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
+     ...]
 
 
 Entry Test Nested
 =================
-* Assignment name: Entry Test Nested
+* Assignment: Entry Test Nested
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 13 min
-* Solution: entry_test_nested.py
+* Filename: entry_test_nested.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Separate header from data
     #. Iterate over data
     #. Print species names ending with "ca" or "osa"
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Oddziel nagłówek od danych
     #. Iteruj po danych
     #. Wypisz nazwy gatunków kończące się na "ca" lub "osa"
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -251,7 +235,3 @@ Entry Test Nested
             (7.6, 3.0, 6.6, 2.1, {'virginica'}),
             (4.6, 3.1, 1.5, 0.2, {'setosa'}),
         ]
-
-:The whys and wherefores:
-    * Accessing ``dict`` keys
-    * Iterating over nested structure

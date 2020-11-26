@@ -123,17 +123,17 @@ Assignments
 
 Address Book
 ------------
-* Assignment name: Address Book
+* Assignment: Address Book
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 50 lines
 * Estimated time of completion: 21 min
-* Solution: TODO
+* Filename: TODO
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Stwórz projekt ``addressbook``
     #. Stwórz apkę ``contact``
     #. Stwórz model ``Address`` z polami:
@@ -163,8 +163,4 @@ Address Book
     #. Dodaj wyszukiwarkę po nazwisku
     #. Dodaj filtrowanie po dacie urodzenia
 
-:The whys and wherefores:
-    * Umiejętność modelowania obiektów świata rzeczywistego
-    * Umiejętność obsługi plików i obrazków
-    * Umiejętność generowania paneli administracyjnych w Django
 

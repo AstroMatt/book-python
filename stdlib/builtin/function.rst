@@ -348,15 +348,15 @@ Assignments
 
 Average
 -------
-* Assignment name: Average
+* Assignment: Average
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 12 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/builtin_average.py`
+* Filename: :download:`solution/builtin_average.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Separate header and data
     #. Define dict ``result: dict[str, list]``, keys are column names from header
     #. For each row in data, add values to proper lists in ``result``
@@ -364,10 +364,10 @@ Average
     #. Return ``None`` if any argument to the function is not ``float`` or ``int``
     #. To calculate mean use built-in functions
     #. Iterating over ``result`` print column name and calculated average
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Odseparuj nagłówek od danych
     #. Zdefiniuj słownik ``result: dict[str, list]``, klucze to nazwy kolumn z nagłówka
     #. Dla każdego wiersza w danych, dodawaj wartości do odpowiednich list w ``result``
@@ -375,9 +375,9 @@ Average
     #. Zwróć ``None`` jeżeli którykolwiek z argumentów do funkcji nie jest ``float`` lub ``int``
     #. Do wyliczenia średniej wykorzystaj wbudowane funkcje
     #. Iterując po ``result`` wypisz nazwę kolumny oraz wyliczoną średnią
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -405,18 +405,12 @@ Average
             (4.6, 3.1, 1.5, 0.2, 'setosa'),
         ]
 
-:Output:
-    .. code-block:: python
+Tests:
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    {'Sepal length': [5.8, 5.1, ...],
+     'Sepal width': [2.7, 3.5, ...],
+     'Petal length': [5.1, 1.4, ...],
+     'Petal width': [1.9, 0.2, ...],
+     'Species': ['virginica', 'setosa',
+     ...],}
 
-        result  # doctest: +NORMALIZE_WHITESPACE
-        {'Sepal length': [5.8, 5.1, ...],
-         'Sepal width': [2.7, 3.5, ...],
-         'Petal length': [5.1, 1.4, ...],
-         'Petal width': [1.9, 0.2, ...],
-         'Species': ['virginica', 'setosa',
-         ...],}
-
-:The whys and wherefores:
-    * :ref:`Builtin Functions`
-    * :ref:`Loop Nested Sequences`
-    * :ref:`Sequence Slice`

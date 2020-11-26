@@ -742,42 +742,42 @@ Assignments
 
 XML Parsing
 -----------
-* Assignment name: XML Parsing
+* Assignment: XML Parsing
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/xml_parse.py`
+* Filename: :download:`solution/xml_parse.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Convert input data to ``list[dict]``
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Przekonwertuj dane wejściowe do ``list[dict]``
 
-:Input:
+Given:
     .. literalinclude:: data/xml_plants.xml
         :language: xml
 
 XSLT Transformation
 -------------------
-* Assignment name: XSLT Transformation
+* Assignment: XSLT Transformation
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/xml_xslt.py`
+* Filename: :download:`solution/xml_xslt.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Convert input data to ``list[dict]``
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Przekonwertuj dane wejściowe do ``list[dict]``
 
-:Input:
+Given:
     .. literalinclude:: data/xml_transform.xml
         :language: xml

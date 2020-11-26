@@ -10,17 +10,17 @@ Dragon (version release candidate)
 
     Firkraag dragon from game Baldur's Gate II: Shadows of Amn
 
-* Assignment name: Dragon (version release candidate)
+* Assignment: Dragon (version release candidate)
 * Last update: 2020-10-01
 * Complexity level: hard
 * Lines of code to write: 50 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/dragon_rc.py`
+* Filename: :download:`solution/dragon_rc.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Dodaj możliwość poruszania się smoka i bohatera w 3 wymiarach
     #. Bohater może należeć do drużyny, który może składać się maks z 6 postaci (różnych klas)
     #. Żadna z istot na planszy nie może wyjść poza zakres ekranu

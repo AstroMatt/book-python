@@ -1,22 +1,39 @@
 """
->>> pt = Point(1, 2, 3)
->>> pt.x, pt.y, pt.z
-(1, 2, 3)
+* Assignment: Protocol Reflection Setattr
+* Filename: protocol_reflection_setattr.py
+* Complexity: easy
+* Lines of code to write: 9 lines
+* Estimated time: 8 min
 
->>> pt.notexisting = 10
-Traceback (most recent call last):
-    ...
-PermissionError: Cannot set other attributes than x,y,z
+English:
+    1. Create class `Point` with `x`, `y`, `z` attributes
+    2. Prevent creation of new attributes
+    3. Allow to modify values of `x`, `y`, `z`
+    4. Compare result with "Tests" section (see below)
 
->>> pt.x = 10
->>> pt.y = 20
->>> pt.z = 30
+Polish:
+    1. Stwórz klasę `Point` z atrybutami `x`, `y`, `z`
+    2. Zablokuj tworzenie nowych atrybutów
+    3. Zezwól na modyfikowanie wartości `x`, `y`, `z`
+    4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
->>> pt.x, pt.y, pt.z
-(10, 20, 30)
+Tests:
+    >>> pt = Point(1, 2, 3)
+    >>> pt.x, pt.y, pt.z
+    (1, 2, 3)
+    >>> pt.notexisting = 10
+    Traceback (most recent call last):
+        ...
+    PermissionError: Cannot set other attributes than x,y,z
+    >>> pt.x = 10
+    >>> pt.y = 20
+    >>> pt.z = 30
+    >>> pt.x, pt.y, pt.z
+    (10, 20, 30)
 """
 
 
+# Solution
 class Point:
     def __init__(self, x, y, z):
         self.x = x

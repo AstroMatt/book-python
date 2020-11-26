@@ -249,36 +249,6 @@ Further Reading
 Assignments
 ===========
 
-Memoization
------------
-* Assignment name: Memoization
-* Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 5 lines
-* Estimated time of completion: 13 min
-* Solution: :download:`solution/optimization_memoize.py`
-
-:English:
-    .. todo:: English Translation
-
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Stwórz pusty ``dict`` o nazwie ``CACHE``
-    #. W słowniku będziemy przechowywali wyniki wyliczenia funkcji dla zadanych parametrów:
-
-        * klucz: argument funkcji
-        * wartość: wynik obliczeń
-
-    #. Zmodyfikuj funkcję ``factorial_cache(n: int)``
-    #. Przed uruchomieniem funkcji, sprawdź czy wynik został już wcześniej obliczony:
-
-        * jeżeli tak, to zwraca dane z ``CACHE``
-        * jeżeli nie, to oblicza, aktualizuje ``CACHE``, a następnie zwraca wartość
-
-    #. Porównaj prędkość działania
-
-:Input:
-    .. literalinclude:: src/performance-memoize.py
-        :language: python
-        :caption: Memoization
-        :name: listing-performance-memoize
+.. literalinclude:: solution/optimization_memoize.py
+    :caption: :download:`Solution <solution/optimization_memoize.py>`
+    :end-before: # Solution

@@ -483,101 +483,101 @@ Assignments
 
 DataFrame Groupby Phones
 ------------------------
-* Assignment name: DataFrame Groupby Phones
+* Assignment: DataFrame Groupby Phones
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/df_groupby_phones.py`
+* Filename: :download:`solution/df_groupby_phones.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` as ``phones: pd.DataFrame``
     #. Give information about total number of all phone calls for each calendar month
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``phones: pd.DataFrame``
     #. Podaj informacje o łącznej liczbie wszystkich połączeń telefonicznych dla każdego miesiąca kalendarzowego
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/phones-pl.csv'
 
 DataFrame Groupby Astro Female
 ------------------------------
-* Assignment name: DataFrame Groupby Astro Female
+* Assignment: DataFrame Groupby Astro Female
 * Last update: 2020-10-19
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/df_groupby_astro_female.py`
+* Filename: :download:`solution/df_groupby_astro_female.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` as ``astro_female: pd.DataFrame``
     #. Which nationality has the most flight time of a female in space?
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``astro_eva_all: pd.DataFrame``
     #. Który kraj ma największy nalot kobiet w kosmosie?
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/astro-gender.csv'
 
 DataFrame Groupby Astro Flights
 -------------------------------
-* Assignment name: DataFrame Groupby Astro Flights
+* Assignment: DataFrame Groupby Astro Flights
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/df_groupby_astro_flights.py`
+* Filename: :download:`solution/df_groupby_astro_flights.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` as ``astro_flights: pd.DataFrame``
     #. Create ranking of the most experienced astronauts (number of flights)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``astro_flights: pd.DataFrame``
     #. Stwórz ranking najbardziej doświadczonych astronautów (liczba lotów)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/astro-order.csv'
 
 DataFrame Groupby Astro EVA
 ---------------------------
-* Assignment name: DataFrame Groupby Astro EVA
+* Assignment: DataFrame Groupby Astro EVA
 * Last update: 2020-10-19
 * Complexity level: medium
 * Lines of code to write: 13 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/df_groupby_astro_eva.py`
+* Filename: :download:`solution/df_groupby_astro_eva.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` as ``astro_eva_all: pd.DataFrame``
     #. Create ranking of astronauts with the most time spent on EVA (ExtraVehicular Activity)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``astro_eva_all: pd.DataFrame``
     #. Stwórz ranking astronautów z największym czasem EVA (Spacerów kosmicznych)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/astro-eva.csv'
 
-:Hints:
+Hints:
     * Parse CSV and replace newlines inside fields with ``","``
     * Split names into separate columns for each spacewalker (first, second, third)
     * Split names into separate rows for each spacewalker (use ffill)

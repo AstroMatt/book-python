@@ -318,144 +318,15 @@ Using in a Loop
 Assignments
 ===========
 
-Function Unpack Flat
---------------------
-* Assignment name: Function Unpack Flat
-* Last update: 2020-10-12
-* Complexity level: easy
-* Lines of code to write: 1 lines
-* Estimated time of completion: 3 min
-* Solution: :download:`solution/function_unpack_flat.py`
+.. literalinclude:: solution/function_unpack_flat.py
+    :caption: :download:`Solution <solution/function_unpack_flat.py>`
+    :end-before: # Solution
 
-:English:
-    #. Use data from "Input" section (see below)
-    #. Using ``str.split()`` split input data by white space
-    #. Separate ip address and host names
-    #. Use asterisk ``*`` notation
-    #. Compare result with "Output" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Używając ``str.split()`` podziel dane wejściowe po białych znakach
-    #. Odseparuj adres ip i nazw hostów
-    #. Skorzystaj z notacji z gwiazdką ``*``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+.. literalinclude:: solution/function_unpack_nested.py
+    :caption: :download:`Solution <solution/function_unpack_nested.py>`
+    :end-before: # Solution
 
-:Input:
-    .. code-block:: python
-
-        DATA = '10.13.37.1      nasa.gov esa.int roscosmos.ru'
-
-:Output:
-    .. code-block:: text
-
-        >>> assert type(ip) is str
-        >>> assert type(hosts) is list
-        >>> assert all(type(host) is str for host in hosts)
-
-        >>> ip
-        '10.13.37.1'
-        >>> hosts
-        ['nasa.gov', 'esa.int', 'roscosmos.ru']
-
-:Hints:
-    * ``help(str.split)``
-
-Function Unpack Nested
-----------------------
-* Assignment name: Function Unpack Nested
-* Last update: 2020-10-12
-* Complexity level: easy
-* Lines of code to write: 1 lines
-* Estimated time of completion: 3 min
-* Solution: :download:`solution/function_unpack_nested.py`
-
-:English:
-    #. Use data from "Input" section (see below)
-    #. Separate header and records
-    #. Use asterisk ``*`` notation
-    #. Compare result with "Output" section (see below)
-
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Odseparuj nagłówek od danych
-    #. Skorzystaj z konstrukcji z gwiazdką ``*``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-:Input:
-    .. code-block:: python
-
-        DATA = [
-            ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
-            (5.8, 2.7, 5.1, 1.9, 'virginica'),
-            (5.1, 3.5, 1.4, 0.2, 'setosa'),
-            (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-            (6.3, 2.9, 5.6, 1.8, 'virginica'),
-            (6.4, 3.2, 4.5, 1.5, 'versicolor'),
-            (4.7, 3.2, 1.3, 0.2, 'setosa'),
-        ]
-
-:Output:
-    .. code-block:: text
-
-        >>> assert type(header) is tuple
-        >>> assert all(type(x) is str for x in header)
-        >>> assert type(data) is list
-        >>> assert all(type(row) is tuple for row in data)
-
-        >>> header
-        ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species')
-
-        >>> data  # doctest: +NORMALIZE_WHITESPACE
-        [(5.8, 2.7, 5.1, 1.9, 'virginica'),
-         (5.1, 3.5, 1.4, 0.2, 'setosa'),
-         (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-         (6.3, 2.9, 5.6, 1.8, 'virginica'),
-         (6.4, 3.2, 4.5, 1.5, 'versicolor'),
-         (4.7, 3.2, 1.3, 0.2, 'setosa')]
-
-Function Unpack Loop
---------------------
-* Assignment name: Function Unpack Loop
-* Last update: 2020-10-12
-* Complexity level: easy
-* Lines of code to write: 4 lines
-* Estimated time of completion: 5 min
-* Solution: :download:`solution/function_unpack_loop.py`
-
-:English:
-    #. Use data from "Input" section (see below)
-    #. Iterate over data splitting ``*features`` from ``label``
-    #. Define ``result: list[str]`` with species names ending with "ca" or "osa"
-    #. Compare result with "Output" section (see below)
-
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
-    #. Iteruj po danych rozdzielając ``*features`` od ``label``
-    #. Zdefiniuj ``result: list[str]`` z nazwami gatunków kończącymi się na "ca" lub "osa"
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-:Input:
-    .. code-block:: python
-
-        DATA = [
-            ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
-            (5.8, 2.7, 5.1, 1.9, 'virginica'),
-            (5.1, 3.5, 1.4, 0.2, 'setosa'),
-            (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-            (6.3, 2.9, 5.6, 1.8, 'virginica'),
-            (6.4, 3.2, 4.5, 1.5, 'versicolor'),
-            (4.7, 3.2, 1.3, 0.2, 'setosa'),
-        ]
-
-:Output:
-    .. code-block:: text
-
-        >>> assert type(result) is list
-        >>> assert all(type(x) is str for x in result)
-
-        >>> result
-        ['virginica', 'setosa', 'virginica', 'setosa']
-
-:Hints:
-    * ``str.endswith()``
+.. literalinclude:: solution/function_unpack_loop.py
+    :caption: :download:`Solution <solution/function_unpack_loop.py>`
+    :end-before: # Solution

@@ -426,20 +426,20 @@ Assignments
 
 Wykorzystanie biblioteki ``sklearn``
 ------------------------------------
-* Assignment name: Wykorzystanie biblioteki ``sklearn``
+* Assignment: Wykorzystanie biblioteki ``sklearn``
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/svm_sklearn.py`
+* Filename: :download:`solution/svm_sklearn.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Naucz algorytm rozpoznawania danych wykorzystując algorytm Support Vector Machines.
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/'

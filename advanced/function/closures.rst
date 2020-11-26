@@ -106,86 +106,10 @@ What is closure?
 Assignments
 ===========
 
-Function Closure Define
------------------------
-* Assignment name: Function Closure Define
-* Last update: 2020-10-13
-* Complexity level: easy
-* Lines of code to write: 4 lines
-* Estimated time of completion: 5 min
-* Solution: :download:`solution/function_closure_define.py`
+.. literalinclude:: solution/function_closure_define.py
+    :caption: :download:`Solution <solution/function_closure_define.py>`
+    :end-before: # Solution
 
-:English:
-    #. Define function ``check`` which takes ``func: Callable`` as an argument
-    #. Define closure function ``wrapper`` inside ``check``
-    #. Function ``wrapper`` takes ``*args`` and ``**kwargs`` as arguments
-    #. Function ``wrapper`` returns ``None``
-    #. Function ``check`` must return ``wrapper: Callable``
-
-:Polish:
-    #. Zdefiniuj funkcję ``check``, która przyjmuje ``func: Callable`` jako argument
-    #. Zdefiniuj funkcję closure ``wrapper`` wewnątrz ``check``
-    #. Funkcja ``wrapper`` przyjmuje ``*args`` i ``**kwargs`` jako argumenty
-    #. Funkcja ``wrapper`` zwraca ``None``
-    #. Funkcja ``check`` ma zwracać ``wrapper: Callable``
-
-:Output:
-    .. code-block:: text
-
-        >>> assert callable(check)
-        >>> assert callable(check(lambda x: x))
-        >>> result = check(lambda x: x).__call__()
-        >>> result is None
-        True
-
-Function Closure Call
----------------------
-* Assignment name: Function Closure Call
-* Last update: 2020-10-13
-* Complexity level: easy
-* Lines of code to write: 9 lines
-* Estimated time of completion: 5 min
-* Solution: :download:`solution/function_closure_call.py`
-
-:English:
-    #. Define function ``check`` with parameter ``func: Callable``
-    #. Define closure function ``wrapper`` inside ``check``
-    #. Function ``wrapper`` takes arbitrary number of positional and keyword arguments
-    #. Function ``wrapper`` prints ``hello from wrapper`` on the screen
-    #. Function ``check`` must return ``wrapper: Callable``
-    #. Define function ``hello()`` which prints ``hello from function``
-    #. Define ``result`` with result of calling ``check(hello)``
-    #. Delete ``check`` using ``del`` keyword
-    #. Call ``result``
-    #. Compare result with "Output" section (see below)
-
-:Polish:
-    #. Zdefiniuj funkcję ``check`` z parametrem ``func: Callable``
-    #. Zdefiniuj funkcję closure ``wrapper`` wewnątrz ``check``
-    #. Funkcja ``wrapper`` przyjmuje dowolną ilość argumentów pozycyjnych i nazwanych
-    #. Funkcja ``wrapper`` wypisuje ``hello from wrapper``
-    #. Funkcja ``check`` ma zwracać ``wrapper: Callable``
-    #. Zdefiniuj funkcję ``hello()``, która wypisuje ``hello from function``
-    #. Zdefiniuj zmienną ``result``, która jest wynikiem wywołania ``check(hello)``
-    #. Skasuj ``check`` za pomocą słowa kluczowego ``del``
-    #. Wywołaj ``result``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-:Output:
-    .. code-block:: text
-
-        >>> from inspect import isfunction
-        >>> assert isfunction(hello)
-        >>> assert isfunction(result)
-        >>> assert not hasattr(__name__, 'check')
-
-        >>> hello()
-        hello from function
-
-        >>> result()
-        hello from wrapper
-
-        >>> check()
-        Traceback (most recent call last):
-            ...
-        NameError: name 'check' is not defined
+.. literalinclude:: solution/function_closure_call.py
+    :caption: :download:`Solution <solution/function_closure_call.py>`
+    :end-before: # Solution

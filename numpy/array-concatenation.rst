@@ -77,36 +77,34 @@ Assignments
 
 Numpy Concatenation
 -------------------
-* Assignment name: Numpy Concatenation
+* Assignment: Numpy Concatenation
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/numpy_concatenation.py`
+* Filename: :download:`solution/numpy_concatenation.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Given are one-dimensional: ``a: np.ndarray``, ``b: np.ndarray``
     #. Concatenate them as ``result: np.ndarray``
     #. Reshape ``result`` into two rows and three columns
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Dane są jednowymiarowe: ``a: np.ndarray``, ``b: np.ndarray``
     #. Połącz je ze sobą jako ``result: np.ndarray``
     #. Przekształć ``result`` w dwa wiersze na trzy kolumny
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         a = np.array([1, 2, 3])
         b = np.array([4, 5, 6])
 
-:Output:
-    .. code-block:: python
-
-        result: np.ndarray
-        # array([[1, 2, 3],
-        #        [4, 5, 6]])
+Tests:
+    >>> result
+    array([[1, 2, 3],
+           [4, 5, 6]])

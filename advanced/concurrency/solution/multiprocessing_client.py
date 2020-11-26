@@ -1,17 +1,20 @@
+from dataclasses import dataclass
 from multiprocessing.connection import Client
 import logging
 import pickle
 
-from __init__ import Rectangle
-
-
 logging.basicConfig(
     level=logging.DEBUG,
-    format='[%(asctime).19s] %(levelname)-9s %(name)10s: %(message)s',
-    #filename='/_tmp/processes.log'
-)
+    #filename='/_tmp/processes.log',
+    format='[%(asctime).19s] %(levelname)-9s %(name)10s: %(message)s')
 
 log = logging.getLogger('client')
+
+
+@dataclass
+class Point:
+    x: int
+    y: int
 
 
 log.debug('Opening connection')
@@ -22,7 +25,7 @@ client = Client(
 
 
 log.debug('Sending data')
-rectangle = Rectangle(5, 10)
+rectangle = Point(x=1, y=2)
 
 pickled = pickle.dumps(rectangle, protocol=pickle.HIGHEST_PROTOCOL)
 

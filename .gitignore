@@ -2,6 +2,7 @@
 _tmp/
 */_tmp*.py
 _temporary.txt
+_temporary.*
 */_temporary.txt
 **/_temporary.txt
 

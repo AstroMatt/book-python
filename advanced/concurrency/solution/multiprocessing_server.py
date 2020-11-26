@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 # -*- encoding: utf-8 -*-
-
+from dataclasses import dataclass
 from multiprocessing.connection import Listener
 import logging
-
-from __init__ import Rectangle
 import pickle
 
 logging.basicConfig(
@@ -14,6 +12,13 @@ logging.basicConfig(
 )
 
 log = logging.getLogger('listener')
+
+
+@dataclass
+class Point:
+    x: int
+    y: int
+
 
 log.debug('Creating listener')
 listener = Listener(
@@ -36,9 +41,8 @@ while True:
 
     else:
         log.info(data)
-        if isinstance(data, Prostokat):
-            circumference = data.obwod()
-            log.info(f'Received {data} with circumference: {circumference}')
+        if isinstance(data, Point):
+            log.info(f'Received point: {data}')
         elif isinstance(data, bytes):
             obj = pickle.loads(data, encoding='bytes')
             print(obj, 'with circumference', obj.obwod())

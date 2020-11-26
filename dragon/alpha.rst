@@ -10,7 +10,7 @@ Dragon (version alpha)
 
     Firkraag dragon from game Baldur's Gate II: Shadows of Amn
 
-* Assignment name: Dragon (version alpha)
+* Assignment: Dragon (version alpha)
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 100 lines
@@ -19,7 +19,7 @@ Dragon (version alpha)
 * Solution (advanced): :download:`solution/dragon_alpha_adv.py`
 * Warning: Don't delete code, assignment will be continued
 
-:English:
+English:
     #. Dragon has (attributes):
 
         #. name
@@ -91,7 +91,7 @@ Dragon (version alpha)
         #. Do not read solution or any future iterations of this exercise.
         #. If you read future tasks, you will spoil fun and what is the most important: learning.
 
-:Polish:
+Polish:
     #. Smok ma (atrybuty):
 
         #. nazwę
@@ -163,17 +163,6 @@ Dragon (version alpha)
         #. Nie przeglądaj rozwiązań ani treści kolejnych (przyszłych) części zadania.
         #. Jeżeli zaglądniesz w przód, to zepsujesz sobie zabawę i co najważniejsze naukę.
 
-:The whys and wherefores:
-    * Object oriented thinking
-    * Data modeling in OOP
-    * Designing and working with objects
-    * Nested objects
-    * Interface specification
-    * MVC architecture
-    * Good Engineering Practices
-    * Keep it Simple
-    * Open to extensions, close for modifications
-
-:Hints:
+Hints:
     * ``from random import randint``
     * ``randint`` returns random integer in range [a, b], including both end point

@@ -129,17 +129,17 @@ Assignments
 
 Heartbeat
 ---------
-* Assignment name: Heartbeat
+* Assignment: Heartbeat
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/socket_heartbeat_client.py` and :download:`solution/socket_heartbeat_server.py`
+* Filename: :download:`solution/socket_heartbeat_client.py` and :download:`solution/socket_heartbeat_server.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Stwórz klienta i serwer Heart Beat
     #. Zarówno klient jak i serwer ma być uruchamiany w wątkach
     #. Serwer ma przyjmować komunikaty UDP/IPv4 na porcie 1337
@@ -151,24 +151,24 @@ Heartbeat
         * datę UTC przyjścia pakietu,
         * IP i PORT przesłany przez klienta.
 
-:Hints:
+Hints:
     * ``threading.Timer(frequency: int, fn: Callable).start()``
     * ``socket.socket(socket.AF_INET, socket.SOCK_DGRAM)``
     * ``socketserver.ThreadingUDPServer``
 
 Backdoor
 --------
-* Assignment name: Backdoor
+* Assignment: Backdoor
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 150 lines
 * Estimated time of completion: 34 min
-* Solution: :download:`solution/socket_backdoor.py`
+* Filename: :download:`solution/socket_backdoor.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Stwórz uruchamiany w wątku serwer TCP
     #. Serwer ma być uruchamiany na losowym porcie z przedziału 1025-65535 (dlaczego taki zakres portów?)
     #. Wyciągnij informację o adresie IP i PORT na którym nasłuchuje serwer
@@ -188,7 +188,7 @@ Backdoor
         * ``stderr: str``,
         * ``exit_code: int``
 
-:Hints:
+Hints:
     * ``random.randint()``
     * ``socket.socket(socket.AF_INET, socket.SOCK_STREAM)``
     * ``socketserver.ThreadingTCPServer``

@@ -291,13 +291,13 @@ Assignments
 ===========
 
 .. literalinclude:: solution/function_scope_filter.py
-    :caption: :download:`Solution <solution/function_scope_filter.py`
+    :caption: :download:`Solution <solution/function_scope_filter.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/function_scope_romanint.py
-    :caption: :download:`Solution <solution/function_scope_romanint.py`
+    :caption: :download:`Solution <solution/function_scope_romanint.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/function_scope_introman.py
-    :caption: :download:`Solution <solution/function_scope_introman.py`
+    :caption: :download:`Solution <solution/function_scope_introman.py>`
     :end-before: # Solution

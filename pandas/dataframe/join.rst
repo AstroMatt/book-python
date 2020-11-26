@@ -347,17 +347,17 @@ Assignments
 
 DataFrame Join
 --------------
-* Assignment name: DataFrame Join
+* Assignment: DataFrame Join
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 25 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/df_join_eva.py`
+* Filename: :download:`solution/df_join_eva.py`
 
-:English:
+English:
     .. todo:: Translate to English
 
-:Polish:
+Polish:
     #. Na podstawie podanych URL:
 
         * https://www.worldspaceflight.com/bios/eva/eva.php

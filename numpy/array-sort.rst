@@ -121,36 +121,37 @@ Assignments
 
 Numpy Sort
 ----------
-* Assignment name: Numpy Sort
+* Assignment: Numpy Sort
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/numpy_sort.py`
+* Filename: :download:`solution/numpy_sort.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Sort ``result`` columns
     #. Flip ``result`` rows
     #. Print ``result``
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Posortuj kolumny ``result``
     #. Flipnij wiersze ``result``
     #. Wypisz ``result``
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = np.array([[44, 47, 64, 67],
                          [67,  9, 83, 21],
                          [36, 87, 70, 88]])
 
-:Output:
-    .. code-block:: python
+Tests:
 
-        result: np.ndarray
-        # array([[36, 70, 87, 88],
-        #        [ 9, 21, 67, 83],
-        #        [44, 47, 64, 67]])
+    >>> type(result)
+    np.ndarray
+    >>> result
+    array([[36, 70, 87, 88],
+           [ 9, 21, 67, 83],
+           [44, 47, 64, 67]])

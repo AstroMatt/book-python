@@ -611,17 +611,17 @@ Assignments
 
 Powielanie napisów
 ------------------
-* Assignment name: Powielanie napisów
+* Assignment: Powielanie napisów
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/print_lines.py`
+* Filename: :download:`solution/print_lines.py`
 
-:English:
+English:
     .. todo:: English translation
 
-:Polish:
+Polish:
     #. Dany jest ciąg znaków: ``text = 'Lorem Ipsum'``
     #. Napisz trzy funkcje:
 
@@ -633,32 +633,27 @@ Powielanie napisów
     #. Każdy ciąg znaków w osobnej linii
     #. Napisz doctest do wszystkich funkcji
 
-:The whys and wherefores:
-    * wczytywanie ciągu znaków od użytkownika
-    * formatowanie ciągu znaków
-    * korzystanie z pętli i instrukcji warunkowych
-
 Przeliczanie temperatury
 ------------------------
-* Assignment name: Przeliczanie temperatury
+* Assignment: Przeliczanie temperatury
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/print_formatting.py`
+* Filename: :download:`solution/print_formatting.py`
 
-:English:
+English:
     .. todo:: English translation
 
-:Polish:
+Polish:
     #. Napisz program, który wyświetli tabelę przeliczeń stopni Celsjusza na stopnie Fahrenheita w zakresie od –20 do +40 stopni Celsjusza (co 5 stopni).
     #. Wynik musi być taki jak na listingu poniżej
     #. Znak ma być zawsze wyświetlany
     #. Zwróć uwagę na wyjustowanie tekstu
     #. Zwróć uwagę na wypełnienie miejsca niezajętego przez cyfry
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Output:
+Tests:
     .. code-block:: text
 
         -------------------------------------------
@@ -688,7 +683,7 @@ Przeliczanie temperatury
         -------------------------------------------
         | Temperature | +     40°C | ...+104...°F |
 
-:Hints:
+Hints:
     * Fahrenheit to Celsius: (°F - 32) / 1.8 = °C
     * Celsius to Fahrenheit: (°C * 1.8) + 32 = °F
     * .. code-block:: python
@@ -696,5 +691,3 @@ Przeliczanie temperatury
         def celsius_to_fahrenheit(degree):
             return degree*1.8 + 32
 
-:The whys and wherefores:
-    * zaawansowane formatowanie ciągu znaków

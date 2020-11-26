@@ -271,18 +271,18 @@ Assignments
 
 DataFrame NaN
 -------------
-* Assignment name: DataFrame NaN
+* Assignment: DataFrame NaN
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/df_nan.py`
+* Filename: :download:`solution/df_nan.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``iris: pd.DataFrame``
     #. Pomiń pierwszą linię z metadanymi
     #. Zmień nazwy kolumn na:
@@ -306,7 +306,7 @@ DataFrame NaN
     #. Wypisz dwa pierwsze wiersze
     #. Wypisz liczbę wierszy
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris-dirty.csv'

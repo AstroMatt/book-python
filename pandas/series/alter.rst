@@ -80,35 +80,35 @@ Assignments
 
 Series Alter
 ------------
-* Assignment name: Series Alter
+* Assignment: Series Alter
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/series_alter.py`
+* Filename: :download:`solution/series_alter.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. From input data create ``pd.Series``
     #. Drop values at index 2, 4, 6
     #. Drop duplicates
     #. Reindex series (without old copy)
     #. Print series
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Z danych wejściowych stwórz ``pd.Series``
     #. Usuń wartości na indeksach 2, 4, 6
     #. Usuń duplikujące się wartości
     #. Zresetuj indeks (bez kopii starego)
     #. Wypisz serię
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [1, None, 5, None, 1, 2, 1]
 
-:Output:
+Tests:
     .. code-block:: python
 
         s: pd.Series

@@ -230,54 +230,54 @@ Assignments
 
 Trigonometry
 ------------
-* Assignment name: Trigonometry
+* Assignment: Trigonometry
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/math_trigonometry.py`
+* Filename: :download:`solution/math_trigonometry.py`
 
-:English:
+English:
     #. Read input (angle in degrees) from user
     #. User will type ``int`` or ``float``
     #. Print all trigonometric functions (sin, cos, tg, ctg)
     #. If there is no value for this angle, raise an exception
 
-:Polish:
+Polish:
     #. Program wczytuje od użytkownika wielkość kąta w stopniach
     #. Użytkownik zawsze podaje ``int`` albo ``float``
     #. Wyświetl wartość funkcji trygonometrycznych (sin, cos, tg, ctg)
     #. Jeżeli funkcja trygonometryczna nie istnieje dla danego kąta podnieś stosowny wyjątek
 
-:Hints:
+Hints:
     * ``input('Type angle [deg]: ')``
 
 Euclidean distance 2D
 ---------------------
-* Assignment name: Euclidean distance 2D
+* Assignment: Euclidean distance 2D
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/math_euclidean_2d.py`
+* Filename: :download:`solution/math_euclidean_2d.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Given are two points ``A: tuple[int, int]`` and ``B: tuple[int, int]``
     #. Coordinates are in cartesian system
     #. Points ``A`` and ``B`` are in two dimensional space
     #. Calculate distance between points using Euclidean algorithm
     #. Function must pass ``doctest``
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Dane są dwa punkty ``A: tuple[int, int]`` i ``B: tuple[int, int]``
     #. Koordynaty są w systemie kartezjańskim
     #. Punkty ``A`` i ``B`` są w dwuwymiarowej przestrzeni
     #. Oblicz odległość między nimi wykorzystując algorytm Euklidesa
     #. Funkcja musi przechodzić ``doctest``
 
-:Input:
+Given:
     .. code-block:: python
 
         def euclidean_distance(A, B):
@@ -311,20 +311,20 @@ Euclidean distance 2D
 
     Calculate Euclidean distance in Cartesian coordinate system
 
-:Hints:
+Hints:
     * :math:`distance(a, b) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2`
 
 Euclidean distance ``n`` dimensions
 -----------------------------------
-* Assignment name: Euclidean distance ``n`` dimensions
+* Assignment: Euclidean distance ``n`` dimensions
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/math_euclidean_multi_dim.py`
+* Filename: :download:`solution/math_euclidean_multi_dim.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Given are two points ``A: Sequence[int]`` and ``B: Sequence[int]``
     #. Coordinates are in cartesian system
     #. Points ``A`` and ``B`` are in ``N``-dimensional space
@@ -332,8 +332,8 @@ Euclidean distance ``n`` dimensions
     #. Calculate distance between points using Euclidean algorithm
     #. Function must pass ``doctest``
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Dane są dwa punkty ``A: Sequence[int]`` i ``B: Sequence[int]``
     #. Koordynaty są w systemie kartezjańskim
     #. Punkty ``A`` i ``B`` są w ``N``-wymiarowej przestrzeni
@@ -341,7 +341,7 @@ Euclidean distance ``n`` dimensions
     #. Oblicz odległość między nimi wykorzystując algorytm Euklidesa
     #. Funkcja musi przechodzić ``doctest``
 
-:Input:
+Given:
     .. code-block:: python
 
         def euclidean_distance(A, B):
@@ -370,30 +370,30 @@ Euclidean distance ``n`` dimensions
             """
             return ...
 
-:Hints:
+Hints:
     * :math:`distance(a, b) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + ... + (n_2 - n_1)^2}`
     * ``for n1, n2 in zip(A, B)``
 
 Matrix multiplication
 ---------------------
-* Assignment name: Matrix multiplication
+* Assignment: Matrix multiplication
 * Last update: 2020-10-01
 * Complexity level: hard
 * Lines of code to write: 6 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/math_matmul.py`
+* Filename: :download:`solution/math_matmul.py`
 
-:English:
+English:
     #. Use code from "Input" section (see below)
     #. Multiply matrices using nested ``for`` loops
     #. Function must pass ``doctest``
 
-:Polish:
+Polish:
     #. Użyj code z sekcji "Input" (patrz poniżej)
     #. Pomnóż macierze wykorzystując zagnieżdżone pętle ``for``
     #. Funkcja musi przechodzić ``doctest``
 
-:Input:
+Given:
     .. code-block:: python
 
         def matrix_multiplication(A, B):
@@ -410,26 +410,26 @@ Matrix multiplication
             """
             return
 
-:Hints:
+Hints:
     * Zero matrix
     * Three nested ``for`` loops
 
 Triangle
 --------
-* Assignment name: Triangle
+* Assignment: Triangle
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/math_triangle.py`
+* Filename: :download:`solution/math_triangle.py`
 
-:English:
+English:
     #. Calculate triangle area
     #. User will input base and height
     #. Input numbers will be only ``int`` and ``float``
     #. Function must pass ``doctest``
 
-:Polish:
+Polish:
     #. Obliczy pole trójkąta
     #. Użytkownik poda wysokość i długość podstawy
     #. Wprowadzone dane będą tylko ``int`` lub ``float``

@@ -336,95 +336,14 @@ Temperature
 Assignments
 ===========
 
-Protocol Property Getter
-------------------------
-* Assignment name: Protocol Property Getter
-* Last update: 2020-10-16
-* Complexity level: easy
-* Lines of code to write: 9 lines
-* Estimated time of completion: 5 min
-* Solution: :download:`solution/protocol_property_getter.py`
+.. literalinclude:: solution/protocol_property_getter.py
+    :caption: :download:`Solution <solution/protocol_property_getter.py>`
+    :end-before: # Solution
 
-:English:
-    #. Define class ``Point`` with ``x``, ``y``, ``z`` attributes
-    #. Define property ``position`` in class ``Point``
-    #. Accessing ``position`` returns ``(x, y, z)``
-    #. Compare result with "Output" section (see below)
+.. literalinclude:: solution/protocol_property_setter.py
+    :caption: :download:`Solution <solution/protocol_property_setter.py>`
+    :end-before: # Solution
 
-:Polish:
-    #. Zdefiniuj klasę ``Point`` z atrybutami ``x``, ``y``, ``z``
-    #. Zdefiniuj property ``position`` w klasie ``Point``
-    #. Dostęp do ``position`` zwraca ``(x, y, z)``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-:Output:
-    .. code-block:: text
-
-        >>> pt = Point(x=1, y=2, z=3)
-        >>> pt.x, pt.y, pt.z
-        (1, 2, 3)
-        >>> pt.position
-        (1, 2, 3)
-
-Protocol Property Setter
-------------------------
-* Assignment name: Protocol Property Setter
-* Last update: 2020-10-16
-* Complexity level: easy
-* Lines of code to write: 9 lines
-* Estimated time of completion: 5 min
-* Solution: :download:`solution/protocol_property_setter.py`
-
-:English:
-    #. Define class ``Point`` with ``x``, ``y``, ``z`` attributes
-    #. Define property ``position`` in class ``Point``
-    #. Deleting ``position`` sets all attributes to 0 (``x=0``, ``y=0``, ``z=0``)
-    #. Compare result with "Output" section (see below)
-
-:Polish:
-    #. Zdefiniuj klasę ``Point`` z atrybutami ``x``, ``y``, ``z``
-    #. Zdefiniuj property ``position`` w klasie ``Point``
-    #. Usunięcie ``position`` ustawia wszystkie atrybuty na 0 (``x=0``, ``y=0``, ``z=0``)
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-:Output:
-    .. code-block:: text
-
-        >>> pt = Point(x=1, y=2, z=3)
-        >>> pt.x, pt.y, pt.z
-        (1, 2, 3)
-        >>> pt.position = (4, 5, 6)
-        Traceback (most recent call last):
-            ...
-        PermissionError: Cannot modify values
-
-Protocol Property Deleter
--------------------------
-* Assignment name: Protocol Property Deleter
-* Last update: 2020-10-16
-* Complexity level: easy
-* Lines of code to write: 11 lines
-* Estimated time of completion: 5 min
-* Solution: :download:`solution/protocol_property_deleter.py`
-
-:English:
-    #. Define class ``Point`` with ``x``, ``y``, ``z`` attributes
-    #. Define property ``position`` in class ``Point``
-    #. Deleting ``position`` sets all attributes to 0 (``x=0``, ``y=0``, ``z=0``)
-    #. Compare result with "Output" section (see below)
-
-:Polish:
-    #. Zdefiniuj klasę ``Point`` z atrybutami ``x``, ``y``, ``z``
-    #. Zdefiniuj property ``position`` w klasie ``Point``
-    #. Usunięcie ``position`` ustawia wszystkie atrybuty na 0 (``x=0``, ``y=0``, ``z=0``)
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-:Output:
-    .. code-block:: text
-
-        >>> pt = Point(x=1, y=2, z=3)
-        >>> pt.x, pt.y, pt.z
-        (1, 2, 3)
-        >>> del pt.position
-        >>> pt.x. pt,y, pt.z
-        (0, 0, 0)
+.. literalinclude:: solution/protocol_property_deleter.py
+    :caption: :download:`Solution <solution/protocol_property_deleter.py>`
+    :end-before: # Solution

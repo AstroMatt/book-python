@@ -241,28 +241,28 @@ Assignments
 
 OOP Slots Define
 ----------------
-* Assignment name: OOP Slots Define
+* Assignment: OOP Slots Define
 * Last update: 2020-10-02
 * Complexity level: easy
 * Lines of code to write: 11 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/oop_slots_define.py`
+* Filename: :download:`solution/oop_slots_define.py`
 
-:English:
+English:
     #. Use code from "Input" section (see below)
     #. Define class ``Iris`` with attributes: ``sepal_length, sepal_width, petal_length, petal_width, species``
     #. All attributes must be in ``__slots__``
     #. Define method ``__repr__`` which prints class name and all values positionally, ie. ``Iris(5.8, 2.7, 5.1, 1.9, 'virginica')``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
+Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
     #. Zdefiniuj klasę ``Iris`` z atrybutami: ``sepal_length, sepal_width, petal_length, petal_width, species``
     #. Wszystkie atrybuty muszą być w ``__slots__``
     #. Zdefiniuj metodę ``__repr__`` wypisującą nazwę klasy i wszystkie wartości atrybutów pozycyjnie, np. ``Iris(5.8, 2.7, 5.1, 1.9, 'virginica')``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -275,39 +275,37 @@ OOP Slots Define
             (4.7, 3.2, 1.3, 0.2, 'setosa'),
         ]
 
-:Output:
-    .. code-block:: text
+Tests:
+    >>> result = [Iris(*row) for row in DATA[1:]]
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    [Iris(5.8, 2.7, 5.1, 1.9, 'virginica'),
+     Iris(5.1, 3.5, 1.4, 0.2, 'setosa'),
+     Iris(5.7, 2.8, 4.1, 1.3, 'versicolor'),
+     Iris(6.3, 2.9, 5.6, 1.8, 'virginica'),
+     Iris(6.4, 3.2, 4.5, 1.5, 'versicolor'),
+     Iris(4.7, 3.2, 1.3, 0.2, 'setosa')]
 
-        >>> result = [Iris(*row) for row in DATA[1:]]
-        >>> result  # doctest: +NORMALIZE_WHITESPACE
-        [Iris(5.8, 2.7, 5.1, 1.9, 'virginica'),
-         Iris(5.1, 3.5, 1.4, 0.2, 'setosa'),
-         Iris(5.7, 2.8, 4.1, 1.3, 'versicolor'),
-         Iris(6.3, 2.9, 5.6, 1.8, 'virginica'),
-         Iris(6.4, 3.2, 4.5, 1.5, 'versicolor'),
-         Iris(4.7, 3.2, 1.3, 0.2, 'setosa')]
+    >>> iris = result[0]
+    >>> iris
+    Iris(5.8, 2.7, 5.1, 1.9, 'virginica')
 
-        >>> iris = result[0]
-        >>> iris
-        Iris(5.8, 2.7, 5.1, 1.9, 'virginica')
+    >>> iris.__slots__
+    ('sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species')
 
-        >>> iris.__slots__
-        ('sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species')
+    >>> [getattr(iris, x) for x in iris.__slots__]
+    [5.8, 2.7, 5.1, 1.9, 'virginica']
 
-        >>> [getattr(iris, x) for x in iris.__slots__]
-        [5.8, 2.7, 5.1, 1.9, 'virginica']
+    >>> {x: getattr(iris, x) for x in iris.__slots__}
+    {'sepal_length': 5.8, 'sepal_width': 2.7, 'petal_length': 5.1, 'petal_width': 1.9, 'species': 'virginica'}
 
-        >>> {x: getattr(iris, x) for x in iris.__slots__}
-        {'sepal_length': 5.8, 'sepal_width': 2.7, 'petal_length': 5.1, 'petal_width': 1.9, 'species': 'virginica'}
+    >>> iris.__dict__
+    Traceback (most recent call last):
+      ...
+    AttributeError: 'Iris' object has no attribute '__dict__'
 
-        >>> iris.__dict__
-        Traceback (most recent call last):
-          ...
-        AttributeError: 'Iris' object has no attribute '__dict__'
+    >>> values = tuple(getattr(iris, x) for x in iris.__slots__)
+    >>> print(f'Iris{values}')
+    Iris(5.8, 2.7, 5.1, 1.9, 'virginica')
 
-        >>> values = tuple(getattr(iris, x) for x in iris.__slots__)
-        >>> print(f'Iris{values}')
-        Iris(5.8, 2.7, 5.1, 1.9, 'virginica')
-
-:Hint:
+Hint:
     * In ``__repr__()`` use tuple comprehension to get ``self.__slots__`` values

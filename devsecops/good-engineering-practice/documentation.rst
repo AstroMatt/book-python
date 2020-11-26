@@ -133,17 +133,17 @@ Assignments
 
 Dokumentacja
 ------------
-* Assignment name: Dokumentacja
+* Assignment: Dokumentacja
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 30 lines
 * Estimated time of completion: 13 min
-* Solution: TODO
+* Filename: TODO
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Za pomocą ``sphinx-quickstart`` stwórz dokumentację.
     #. Zmień theme na ``sphinx_rtd_theme``
     #. Dokument zatytułuj "Szkolenie z Pythona"
@@ -159,7 +159,7 @@ Dokumentacja
 
     #. Tekst lorem ipsum oznacz jako cytowanie cycerona wykorzystując bibtext
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris.csv'

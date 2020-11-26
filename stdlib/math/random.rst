@@ -32,36 +32,36 @@ Assignments
 
 Random numbers
 --------------
-* Assignment name: Random numbers
+* Assignment: Random numbers
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/random_sample.py`
+* Filename: :download:`solution/random_sample.py`
 
-:English:
+English:
     #. Print 6 random integers without repetition in range from 1 to 49
 
-:Polish:
+Polish:
     #. Wyświetl 6 losowych i nie powtarzających się liczb całkowitych z zakresu od 1 do 49.
 
 Sum of inner elements
 ---------------------
-* Assignment name: Sum of inner elements
+* Assignment: Sum of inner elements
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/random_matrix.py`
+* Filename: :download:`solution/random_matrix.py`
 
-:English:
+English:
     #. Use only ``random`` module
     #. Set ``random.seed(0)``
     #. Generate ``outer: list[list[int]]`` with 16x16 random digits (0-9 inclusive)
     #. Calculate sum of inner 4x4 elements
     #. Inner matrix is exactly in the middle of outer
 
-:Polish:
+Polish:
     #. Używaj tylko modułu ``random``
     #. Ustaw ``random.seed(0)``
     #. Wygeneruj ``outer: list[list[int]]`` z 16x16 losowych cyfr (0-9 włącznie)

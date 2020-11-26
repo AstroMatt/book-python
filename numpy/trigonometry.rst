@@ -66,26 +66,26 @@ Assignments
 
 Numpy Trigonometry
 ------------------
-* Assignment name: Numpy Trigonometry
+* Assignment: Numpy Trigonometry
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/numpy_trigonometry.py`
+* Filename: :download:`solution/numpy_trigonometry.py`
 
-:English:
+English:
     #. Read input (angle in degrees) from user
     #. User will type ``int`` or ``float``
     #. Print all trigonometric functions (sin, cos, tg, ctg)
     #. Ctg for 180 and Tan for 90 degrees has infinite value
     #. Print calculated values or ``np.inf``
 
-:Polish:
+Polish:
     #. Program wczytuje od użytkownika wielkość kąta w stopniach
     #. Użytkownik zawsze podaje ``int`` albo ``float``
     #. Wyświetl wartość funkcji trygonometrycznych (sin, cos, tg, ctg)
     #. Ctg dla wartości 180 oraz Tan dla 90 stopni ma wartość nieskończoną
     #. Wypisz wyliczone wartości lub ``np.inf``
 
-:Hints:
+Hints:
     * ``input('Type angle [deg]: ')``

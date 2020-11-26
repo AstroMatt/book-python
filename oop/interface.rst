@@ -124,66 +124,64 @@ Assignments
 
 OOP Interface Define
 --------------------
-* Assignment name: OOP Interface Define
+* Assignment: OOP Interface Define
 * Last update: 2020-10-14
 * Complexity level: easy
 * Lines of code to write: 13 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/oop_interface_define.py`
+* Filename: :download:`solution/oop_interface_define.py`
 
-:English:
+English:
     #. Define interface ``IrisInterface``
     #. Attributes: ``sepal_length, sepal_width, petal_length, petal_width``
     #. Methods: ``sum()``, ``len()``, ``mean()`` in ``IrisInterface``
     #. All methods and constructor must raise exception ``NotImplementedError``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
+Polish:
     #. Zdefiniuj interfejs ``IrisInterface``
     #. Attributes: ``sepal_length, sepal_width, petal_length, petal_width``
     #. Metody: ``sum()``, ``len()``, ``mean()`` w ``IrisInterface``
     #. Wszystkie metody oraz konstruktor muszą podnosić wyjątek ``NotImplementedError``
 
-:Output:
-    .. code-block:: text
+Tests:
+    >>> assert hasattr(IrisInterface, 'mean')
+    >>> assert hasattr(IrisInterface, 'sum')
+    >>> assert hasattr(IrisInterface, 'len')
 
-        >>> assert hasattr(IrisInterface, 'mean')
-        >>> assert hasattr(IrisInterface, 'sum')
-        >>> assert hasattr(IrisInterface, 'len')
+    >>> IrisInterface.__annotations__  # doctest: +NORMALIZE_WHITESPACE
+    {'sepal_length': <class 'float'>,
+     'sepal_width': <class 'float'>,
+     'petal_length': <class 'float'>,
+     'petal_width': <class 'float'>}
 
-        >>> IrisInterface.__annotations__  # doctest: +NORMALIZE_WHITESPACE
-        {'sepal_length': <class 'float'>,
-         'sepal_width': <class 'float'>,
-         'petal_length': <class 'float'>,
-         'petal_width': <class 'float'>}
-
-        >>> iris = IrisInterface(5.8, 2.7, 5.1, 1.9)
-        Traceback (most recent call last):
-            ...
-        NotImplementedError
+    >>> iris = IrisInterface(5.8, 2.7, 5.1, 1.9)
+    Traceback (most recent call last):
+        ...
+    NotImplementedError
 
 OOP Interface Implement
 -----------------------
-* Assignment name: OOP Interface Implement
+* Assignment: OOP Interface Implement
 * Last update: 2020-10-14
 * Complexity level: easy
 * Lines of code to write: 12 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/oop_interface_implement.py`
+* Filename: :download:`solution/oop_interface_implement.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Define class ``Setosa`` implementing ``IrisInterface``
     #. Implement interface
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Stwórz klasę ``Setosa`` implementującą ``IrisInterface``
     #. Zaimplementuj interfejs
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         class IrisInterface:
@@ -210,7 +208,7 @@ OOP Interface Implement
                 raise NotImplementedError
 
 
-:Output:
+Tests:
     .. code-block:: text
 
         >>> assert issubclass(Setosa, IrisInterface)
@@ -232,6 +230,6 @@ OOP Interface Implement
         >>> setosa.mean()
         2.55
 
-:Hints:
+Hints:
     * ``self.__dict__.values()``
     * ``mean = sum() / len()``

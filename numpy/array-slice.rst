@@ -162,24 +162,24 @@ Assignments
 
 Numpy Slice 1
 -------------
-* Assignment name: Numpy Slice 1
+* Assignment: Numpy Slice 1
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/numpy_slice_1.py`
+* Filename: :download:`solution/numpy_slice_1.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Print inner 2x2 elements
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wybierz wewnętrzne 2x2 elementy
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = np.array([
@@ -189,37 +189,34 @@ Numpy Slice 1
             [1, 0, 6, 0],
         ])
 
-:Output:
-    .. code-block:: python
+Tests:
 
-        result: np.ndarray
-        # array([[8, 4],
-        #        [5, 2]])
-
-:The whys and wherefores:
-    * Defining ``np.array``
-    * Generating random ``np.array``
+    >>> type(result)
+    np.ndarray
+    >>> result
+    array([[8, 4],
+           [5, 2]])
 
 Numpy Slice 2
 -------------
-* Assignment name: Numpy Slice 2
+* Assignment: Numpy Slice 2
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/numpy_slice_2.py`
+* Filename: :download:`solution/numpy_slice_2.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Print inner 4x4 elements
     #. Inner matrix is exactly in the middle of outer
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wypisz środkowe 4x4 elementy
     #. Środkowa macierz jest dokładnie w środku większej
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = np.array([[5, 0, 3, 3, 7, 9, 3, 5, 2, 4, 7, 6, 8, 8, 1, 6],
@@ -239,7 +236,7 @@ Numpy Slice 2
                          [1, 5, 8, 4, 0, 2, 5, 5, 0, 8, 1, 1, 0, 3, 8, 8],
                          [4, 4, 0, 9, 3, 7, 3, 2, 1, 1, 2, 1, 4, 2, 5, 5]])
 
-:Output:
+Tests:
     .. code-block:: python
 
         result: np.ndarray

@@ -175,32 +175,30 @@ Assignments
 
 Numpy Iteration
 ---------------
-* Assignment name: Numpy Iteration
+* Assignment: Numpy Iteration
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 9 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/numpy_iteration.py`
+* Filename: :download:`solution/numpy_iteration.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Use ``for`` to iterate over ``DATA``
     #. Print even numbers
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Używając ``for`` iteruj po ``DATA``
     #. Wypisz liczby parzyste
 
-:Input:
+Hints:
+    * ``number % 2 == 0``
+
+Given:
     .. code-block:: python
 
         DATA = np.array([[1, 2, 3],
                          [4, 5, 6],
                          [7, 8, 9]])
 
-:The whys and wherefores:
-    * Iterating 2-dimensional ``np.ndarray``
-
-:Hints:
-    * ``number % 2 == 0``

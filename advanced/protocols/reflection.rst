@@ -337,126 +337,14 @@ Use Cases
 Assignments
 ===========
 
-Protocol Reflection Delattr
----------------------------
-* Assignment name: Protocol Reflection Delattr
-* Last update: 2020-10-16
-* Complexity level: easy
-* Lines of code to write: 7 lines
-* Estimated time of completion: 5 min
-* Solution: :download:`solution/protocol_reflection_delattr.py`
+.. literalinclude:: solution/protocol_reflection_delattr.py
+    :caption: :download:`Solution <solution/protocol_reflection_delattr.py>`
+    :end-before: # Solution
 
-:English:
-    #. Create class ``Point`` with ``x``, ``y``, ``z`` attributes
-    #. Prevent deleting attributes
-    #. Compare result with "Output" section (see below)
+.. literalinclude:: solution/protocol_reflection_setattr.py
+    :caption: :download:`Solution <solution/protocol_reflection_setattr.py>`
+    :end-before: # Solution
 
-:Polish:
-    #. Stwórz klasę ``Point`` z atrybutami ``x``, ``y``, ``z``
-    #. Zablokuj usuwanie atrybutów
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-:Output:
-    .. code-block:: text
-
-        >>> pt = Point(1, 2, 3)
-        >>> pt.x, pt.y, pt.z
-        (1, 2, 3)
-
-        >>> del pt.x
-        Traceback (most recent call last):
-            ...
-        PermissionError: Cannot delete attributes
-
-        >>> del pt.notexisting
-        Traceback (most recent call last):
-            ...
-        PermissionError: Cannot delete attributes
-
-Protocol Reflection Setattr
----------------------------
-* Assignment name: Protocol Reflection Setattr
-* Last update: 2020-10-16
-* Complexity level: easy
-* Lines of code to write: 9 lines
-* Estimated time of completion: 8 min
-* Solution: :download:`solution/protocol_reflection_setattr.py`
-
-:English:
-    #. Create class ``Point`` with ``x``, ``y``, ``z`` attributes
-    #. Prevent creation of new attributes
-    #. Allow to modify values of ``x``, ``y``, ``z``
-    #. Compare result with "Output" section (see below)
-
-:Polish:
-    #. Stwórz klasę ``Point`` z atrybutami ``x``, ``y``, ``z``
-    #. Zablokuj tworzenie nowych atrybutów
-    #. Zezwól na modyfikowanie wartości ``x``, ``y``, ``z``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-:Output:
-    .. code-block:: text
-
-        >>> pt = Point(1, 2, 3)
-        >>> pt.x, pt.y, pt.z
-        (1, 2, 3)
-
-        >>> pt.notexisting = 10
-        Traceback (most recent call last):
-            ...
-        PermissionError: Cannot set other attributes than x,y,z
-
-        >>> pt.x = 10
-        >>> pt.y = 20
-        >>> pt.z = 30
-
-        >>> pt.x, pt.y, pt.z
-        (10, 20, 30)
-
-Protocol Reflection Frozen
---------------------------
-* Assignment name: Protocol Reflection Frozen
-* Last update: 2020-10-16
-* Complexity level: easy
-* Lines of code to write: 11 lines
-* Estimated time of completion: 13 min
-* Solution: :download:`solution/protocol_reflection_frozen.py`
-
-:English:
-    #. Create class ``Point`` with ``x``, ``y``, ``z`` attributes
-    #. Prevent creation of new attributes
-    #. Allow to define ``x``, ``y``, ``z`` but only at the initialization
-    #. Prevent later modification of ``x``, ``y``, ``z``
-    #. Compare result with "Output" section (see below)
-
-:Polish:
-    #. Stwórz klasę ``Point`` z atrybutami ``x``, ``y``, ``z``
-    #. Zablokuj tworzenie nowych atrybutów
-    #. Pozwól na zdefiniowanie ``x``, ``y``, ``z`` ale tylko przy inicjalizacji
-    #. Zablokuj późniejsze modyfikacje ``x``, ``y``, ``z``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-:Output:
-    .. code-block:: text
-
-        >>> pt = Point(1, 2, 3)
-        >>> pt.x, pt.y, pt.z
-        (1, 2, 3)
-
-        >>> pt.notexisting = 10
-        Traceback (most recent call last):
-            ...
-        PermissionError: Cannot set other attributes than x,y,z
-
-        >>> pt.x = 10
-        Traceback (most recent call last):
-            ...
-        PermissionError: Cannot modify existing attributes
-        >>> pt.y = 20
-        Traceback (most recent call last):
-            ...
-        PermissionError: Cannot modify existing attributes
-        >>> pt.z = 30
-        Traceback (most recent call last):
-            ...
-        PermissionError: Cannot modify existing attributes
+.. literalinclude:: solution/protocol_reflection_frozen.py
+    :caption: :download:`Solution <solution/protocol_reflection_frozen.py>`
+    :end-before: # Solution

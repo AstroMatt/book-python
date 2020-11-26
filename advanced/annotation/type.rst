@@ -23,7 +23,6 @@ Rationale
     * More information in :ref:`cicd-tools`
     * https://www.infoq.com/presentations/dynamic-static-typing/
 
-
 Int
 ===
 .. code-block:: python
@@ -64,6 +63,7 @@ Optional
 
     from typing import Optional
 
+
     data: Optional[int] = 1
     data: Optional[int] = None
 
@@ -81,10 +81,24 @@ Union
 =====
 .. code-block:: python
 
-    from typing import Optional
+    from typing import Union
+
 
     data: Union[int, float] = 1
     data: Union[int, float] = 1.1
+
+
+Aliases
+=======
+.. code-block:: python
+
+    from typing import Union
+
+
+    Number = Union[float, int]
+
+    age: Number = 10
+    age: Number = 10.5
 
 
 Final
@@ -103,6 +117,7 @@ Final
 .. code-block:: python
 
     from typing import Final
+
 
     second: Final[int] = 1
     minute: Final[int] = 60 * second
@@ -125,31 +140,41 @@ Type Check is not Enforced
 
 Future
 ======
+* https://docs.python.org/dev/whatsnew/3.10.html
+
 .. versionadded:: Python 3.10
     :pep:`604` - Allow writing union types as X | Y
+
+.. versionadded:: Python 3.10
+    :pep:`645` - Allow writing optional types as x?
 
 .. code-block:: python
     :caption: Union and Optional before Python 3.10
 
     from typing import Union, Optional
 
+
     age: Union[int, float] = 1337
     age: Optional[int] = 1337
 
 .. code-block:: python
+    :force:
 
     age: int|float = 1337
     age: int|None = 1337
-
+    age: int? = 1337
 
 .. code-block:: python
     :caption: Result of this expression would then be valid in isinstance() and issubclass()
+    :force:
 
-    isinstance(1337, int|None)
     isinstance(1337, int|float)
-    issubclass(bool, int|float)
+    isinstance(1337, int|None)
+    isinstance(1337, int?)
 
 
 More Information
 ================
+* Example: https://github.com/pandas-dev/pandas/blob/master/pandas/core/frame.py#L458
+
 .. note:: More information in :ref:`Type Annotations` and :ref:`CI/CD Type Checking`

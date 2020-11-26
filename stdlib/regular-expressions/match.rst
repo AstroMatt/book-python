@@ -193,15 +193,15 @@ Assignments
 
 Regexp Match Phones
 -------------------
-* Assignment name: Regexp Match Phones
+* Assignment: Regexp Match Phones
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/regexp_match_phones.py`
+* Filename: :download:`solution/regexp_match_phones.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Use regular expressions to validate phone numbers
     #. Check all given numbers (see input section)
     #. Valid phone number formats:
@@ -209,10 +209,10 @@ Regexp Match Phones
         * Easy version: ``+## ### ### ###``
         * Harder version: ``+## ### ### ###`` or ``+## ## ### ####``
 
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Użyj wyrażeń regularnych do walidacji numeru telefonu
     #. Sprawdź wszystkie podane numery (patrz sekcja input)
     #. Poprawne formaty numeru:
@@ -220,48 +220,46 @@ Regexp Match Phones
         * Wersja łatwa: ``+## ### ### ###``
         * Wersja trudniejsza: ``+## ### ### ###`` lub ``+## ## ### ####``
 
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Output:
-    .. code-block:: text
-
-        >>> is_valid_phone('+48 (12) 355 5678')
-        False
-        >>> is_valid_phone('+48 123 555 678')
-        True
-        >>> is_valid_phone('123 555 678')
-        False
-        >>> is_valid_phone('+48 12 355 5678')
-        True
-        >>> is_valid_phone('+48 123-555-678')
-        False
-        >>> is_valid_phone('+48 123 555 6789')
-        False
-        >>> is_valid_phone('+1 (123) 555-6789')
-        False
-        >>> is_valid_phone('+1 (123).555.6789')
-        False
-        >>> is_valid_phone('+1 800-python')
-        False
-        >>> is_valid_phone('+48123555678')
-        False
-        >>> is_valid_phone('+48 123 555 678 wew. 1337')
-        False
-        >>> is_valid_phone('+48 123555678,1')
-        False
-        >>> is_valid_phone('+48 123555678,1,2,3')
-        False
+Tests:
+    >>> is_valid_phone('+48 (12) 355 5678')
+    False
+    >>> is_valid_phone('+48 123 555 678')
+    True
+    >>> is_valid_phone('123 555 678')
+    False
+    >>> is_valid_phone('+48 12 355 5678')
+    True
+    >>> is_valid_phone('+48 123-555-678')
+    False
+    >>> is_valid_phone('+48 123 555 6789')
+    False
+    >>> is_valid_phone('+1 (123) 555-6789')
+    False
+    >>> is_valid_phone('+1 (123).555.6789')
+    False
+    >>> is_valid_phone('+1 800-python')
+    False
+    >>> is_valid_phone('+48123555678')
+    False
+    >>> is_valid_phone('+48 123 555 678 wew. 1337')
+    False
+    >>> is_valid_phone('+48 123555678,1')
+    False
+    >>> is_valid_phone('+48 123555678,1,2,3')
+    False
 
 Regexp Match Git Flow
 ---------------------
-* Assignment name: Regexp Match Git Flow
+* Assignment: Regexp Match Git Flow
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/regexp_match_gitflow.py`
+* Filename: :download:`solution/regexp_match_gitflow.py`
 
-:English:
+English:
     #. Use regular expressions to validate Git branch names
     #. Check all given branch names (see input section)
     #. Branch names should comply with Git Flow convention:
@@ -287,7 +285,7 @@ Regexp Match Git Flow
         * ``pull-request/42``
 
 
-:Polish:
+Polish:
     #. Użyj wyrażeń regularnych do walidacji nazwy gałęzi w Git
     #. Sprawdź wszystkie dane nazwy gałęzi (patrz sekcja input)
     #. Nazwy gałęzi powinny stosować się do konwencji Git Flow:

@@ -145,17 +145,8 @@ Negation
         print(name)
 
 
-
 Assignments
 ===========
-.. csv-table:: Classification of blood pressure in adults :cite:`Whelton2018`
-    :header: "Blood Pressure Category", "Systolic [mm Hg]", "Operator", "Diastolic [mm Hg]"
-
-    "Normal", "Less than 120", "and", "Less than 80"
-    "Elevated", "120-129", "and", "Less than 80"
-    "Hypertension stage 1", "130-139", "or", "80-89"
-    "Hypertension stage 2", "140 or higher", "or", "90 or higher"
-    "Hypertensive Crisis", "Higher than 180", "and/or", "Higher than 120"
 
 .. literalinclude:: solution/controlflow_conditional_expression.py
     :caption: :download:`Solution <solution/controlflow_conditional_expression.py>`

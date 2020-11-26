@@ -444,15 +444,15 @@ Assignments
 
 Serialization JSON Dump
 -----------------------
-* Assignment name: Serialization JSON Dump
+* Assignment: Serialization JSON Dump
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/serialization_json_dump.py`
+* Filename: :download:`solution/serialization_json_dump.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Extract from input a header and data
     #. Create ``result: list[dict]``
 
@@ -460,10 +460,10 @@ Serialization JSON Dump
         * value: measurement or species
 
     #. Write structure to file ``iris_serialize.json`` in JSON format
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Z danych wydziel nagłówek i pomiary
     #. Wygeneruj ``result: list[dict]``
 
@@ -471,15 +471,9 @@ Serialization JSON Dump
         * wartość: wyniki pomiarów lub gatunek
 
     #. Zapisz strukturę do pliku ``iris_serialize.json`` w formacie JSON
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:The whys and wherefores:
-    * Serializing nested data structures
-    * Using stdlib ``json`` library
-    * Type casting
-    * Working with files
-
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -507,76 +501,62 @@ Serialization JSON Dump
             (4.6, 3.1, 1.5, 0.2, 'setosa'),
         ]
 
-:Output:
-    .. code-block:: python
-        :caption: Output
-
-        result  # doctest: +NORMALIZE_WHITESPACE
-        [{'Sepal length': 5.8, 'Sepal width': 2.7, 'Petal length': 5.1, 'Petal width': 1.9, 'Species': 'virginica'},
-         {'Sepal length': 5.1, 'Sepal width': 3.5, 'Petal length': 1.4, 'Petal width': 0.2, 'Species': 'setosa'},
-         {'Sepal length': 5.7, 'Sepal width': 2.8, 'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
-         ...]
+Tests:
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    [{'Sepal length': 5.8, 'Sepal width': 2.7, 'Petal length': 5.1, 'Petal width': 1.9, 'Species': 'virginica'},
+     {'Sepal length': 5.1, 'Sepal width': 3.5, 'Petal length': 1.4, 'Petal width': 0.2, 'Species': 'setosa'},
+     {'Sepal length': 5.7, 'Sepal width': 2.8, 'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
+     ...]
 
 Serialization JSON Load
 -----------------------
-* Assignment name: Serialization JSON Load
+* Assignment: Serialization JSON Load
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/serialization_json_load.py`
+* Filename: :download:`solution/serialization_json_load.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Save input data to "iris_deserialize.json" file
     #. Read file and print data in ``list[tuple]`` format
     #. First line must be a header
     #. Other lines must contain data
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zapisz dane wejściowe do pliku "iris_deserialize.json"
     #. Odczytaj dane z pliku, i wyświetl je w formacie ``list[tuple]``
     #. Pierwsza linijka ma zawierać nagłówek
     #. Kolejne linie mają mieć dane
 
-:The whys and wherefores:
-    * Serializing nested data structures
-    * Using stdlib ``json`` library
-    * Type casting
-    * Working with files
-
-:Input:
+Given:
     .. literalinclude:: data/iris.json
         :language: json
 
 Serialization JSON Datetime
 ---------------------------
-* Assignment name: Serialization JSON Datetime
+* Assignment: Serialization JSON Datetime
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/serialization_json_datetime.py`
+* Filename: :download:`solution/serialization_json_datetime.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Save data to file in JSON format
     #. Read data from file
     #. Recreate data structure
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zapisz dane do pliku w formacie JSON
     #. Odczytaj dane z pliku
     #. Odtwórz strukturę danych
 
-:The whys and wherefores:
-    * Serializing nested data structures
-    * Using stdlib ``json`` library
-    * Serialize and deserialize ``date`` and ``datetime`` objects
-
-:Input:
+Given:
     .. code-block:: python
 
         from datetime import datetime, date
@@ -594,31 +574,26 @@ Serialization JSON Datetime
 
 Serialization JSON Object
 -------------------------
-* Assignment name: Serialization JSON Object
+* Assignment: Serialization JSON Object
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/serialization_json_object.py`
+* Filename: :download:`solution/serialization_json_object.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Convert from JSON format to Python
     #. Create classes ``Setosa``, ``Virginica``, ``Versicolor`` representing data
     #. Reading file create instances of those classes based on value in field "species"
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Przekonwertuj dane z JSON do Python
     #. Stwórz klasy ``Setosa``, ``Virginica``, ``Versicolor`` reprezentujące dane
     #. Czytając plik twórz obiekty powyższych klas w zależności od wartości pola "species"
 
-:The whys and wherefores:
-    * Serializing nested data structures
-    * Using stdlib ``json`` library
-    * Serialize and deserialize objects
-
-:Input:
+Given:
     .. code-block:: json
 
         [
@@ -656,29 +631,24 @@ Serialization JSON Object
 
 Serialization JSON HTTP
 -----------------------
-* Assignment name: Serialization JSON HTTP
+* Assignment: Serialization JSON HTTP
 * Last update: 2020-10-01
 * Complexity level: hard
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/serialization_json_http.py`
+* Filename: :download:`solution/serialization_json_http.py`
 
-:English:
+English:
     #. Use ``requests`` library (requires installation)
     #. Download data from https://api.github.com/users
     #. Model data as class ``User``
     #. Iterate over records and create instances of this class
     #. Collect all instances to one list
 
-:Polish:
+Polish:
     #. Użyj biblioteki ``requests`` (wymagana instalacja)
     #. Pobierz dane z https://api.github.com/users
     #. Zamodeluj dane za pomocą klasy ``User``
     #. Iterując po rekordach twórz instancje tej klasy
     #. Zbierz wszystkie instancje do jednej listy
 
-:The whys and wherefores:
-    * Serializing nested data structures
-    * Using stdlib ``json`` library
-    * Serialize and deserialize nested objects
-    * Model data from API

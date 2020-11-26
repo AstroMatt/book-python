@@ -171,28 +171,28 @@ Assignments
 
 Database SQL Relations
 ----------------------
-* Assignment name: Database SQL Relations
+* Assignment: Database SQL Relations
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 0 lines
 * Estimated time of completion: 13 min
-* Solution: TODO
+* Filename: TODO
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. How to write input data in one table without using relations?
     #. There are at least four methods
     #. Discuss pros and cons of each method
     #. Which methods is ACID compliant?
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Jak zapisać w jednej tabeli bez wykorzystania relacji?
     #. Są przynajmniej cztery metody
     #. Przeprowadź dyskusję na temat zalet i wad każdej metody
     #. Która metody jest zgodna z ACID?
 
-:Input:
+Given:
     .. code-block:: text
 
         José, Jiménez

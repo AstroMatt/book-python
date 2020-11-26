@@ -7,7 +7,7 @@
 
 English:
     1. Use data from "Given" section (see below)
-    2. Table contains Blood Pressure classification according to American Heart Association :cite:`Whelton2018`
+    2. Table contains Blood Pressure classification according to American Heart Association [1]
     3. User inputs blood pressure in `XXX/YY` or `XXX/YYY` format
     4. User will not try to input invalid data
     5. Data format:
@@ -18,7 +18,7 @@ English:
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Tabela zawiera klasyfikację ciśnienia krwi wg American Heart Association :cite:`Whelton2018`
+    2. Tabela zawiera klasyfikację ciśnienia krwi wg American Heart Association [1]
     3. Użytkownik wprowadza ciśnienie krwi w formacie `XXX/YY` lub `XXX/YYY`
     4. Użytkownik nie będzie próbował wprowadzać danych niepoprawnych
     5. Format danych:
@@ -27,14 +27,13 @@ Polish:
     6. Wypisz status wprowadzonego ciśnienia krwi
     7. Gdy wartości ciśnienia skurczowego i rozkurczowego należą do różnych kategorii, przyjmij gorszy przypadek
 
-Given:
-    | Blood Pressure Category | Systolic [mm Hg] | Operator | Diastolic [mm Hg] |
-    |-------------------------|------------------|----------|-------------------|
-    | Normal                  | Less than 120    | and      | Less than 80      |
-    | Elevated                | 120-129          | and      | Less than 80      |
-    | Hypertension stage 1    | 130-139          | or       | 80-89             |
-    | Hypertension stage 2    | 140 or higher    | or       | 90 or higher      |
-    | Hypertensive Crisis     | Higher than 180  | and/or   | Higher than 120   |
+References:
+    [1] Whelton, Paul K. and et al.
+        2017 ACC/AHA/AAPA/ABC/ACPM/AGS/APhA/ASH/ASPC/NMA/PCNA Guideline for the
+        Prevention, Detection, Evaluation, and Management of High Blood Pressure
+        in Adults: Executive Summary: A Report of the American College of
+        Cardiology/American Heart Association Task Force on Clinical Practice Guidelines.
+        Journal of Hypertension. vol 71. pages 1269–1324. 2018. doi: 10.1161/HYP.0000000000000066
 
 Tests:
     TODO: Doctests
@@ -81,6 +80,16 @@ systolic = int(systolic)
 diastolic = int(diastolic)
 
 result = []
+
+"""
+| Blood Pressure Category | Systolic [mm Hg] | Operator | Diastolic [mm Hg] |
+|-------------------------|------------------|----------|-------------------|
+| Normal                  | Less than 120    | and      | Less than 80      |
+| Elevated                | 120-129          | and      | Less than 80      |
+| Hypertension stage 1    | 130-139          | or       | 80-89             |
+| Hypertension stage 2    | 140 or higher    | or       | 90 or higher      |
+| Hypertensive Crisis     | Higher than 180  | and/or   | Higher than 120   |
+"""
 
 # Solution
 if 180 <= systolic or 120 <= diastolic:

@@ -279,17 +279,17 @@ Assignments
 
 REST API
 --------
-* Assignment name: REST API
+* Assignment: REST API
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 35 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/requests_github.py`
+* Filename: :download:`solution/requests_github.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Załóż darmowe konto na Github i potwierdź email
     #. Wejdź na stronę internetową https://github.com/settings/tokens
     #. Wygeneruj w swoim profilu token (scope ``public_repo`` - Access public repositories)
@@ -301,16 +301,7 @@ REST API
     #. Podaj datę i opis ostatniego komita
     #. Znajdź numery ID tiketów (``Fixed #...``) z issue trackera, które zostały rozwiązane w ostatnim miesiącu
 
-:The whys and wherefores:
-    * Komunikacja HTTP (request, response)
-    * Parsowanie odpowiedzi HTTP
-    * Sprawdzanie stanu połączenia
-    * Serializacja i parsowanie *JSON*
-    * Korzystanie z API i dokumentacji
-    * Regexpy
-    * Używanie biblioteki standardowej i bibliotek zewnętrznych
-
-:Hints:
+Hints:
     .. code-block:: console
 
         $ curl -X GET https://api.github.com/orgs/django/repos

@@ -653,17 +653,17 @@ Assignments
 
 Recursive folders walking
 -------------------------
-* Assignment name: Recursive folders walking
+* Assignment: Recursive folders walking
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/system_walk.py`
+* Filename: :download:`solution/system_walk.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Sprawdź czy katalog "Python" już istnieje na pulpicie w Twoim systemie
     #. Jeżeli nie istnieje to za pomocą ``os.mkdir()`` stwórz go w tym miejscu
     #. Za pomocą ``subprocess.call()`` w tym katalogu stwórz plik ``README.rst`` i dodaj do niego tekst "Ehlo World"
@@ -678,7 +678,7 @@ Recursive folders walking
     #. Ścieżka ma być względna w stosunku do pliku, który aktualnie jest uruchamiany
     #. Jeżeli po przeszukaniu całego Pulpitu rekurencyjnie skrypt nie znajdzie pliku ``LICENSE.rst``, to ma rzucić informację ``logging.critical()`` i wyjść z kodem błędu ``1``.
 
-:Hints:
+Hints:
     * Gdyby był problem ze znalezieniem pliku, a ścieżka jest poprawna to zastosuj ``shell=True``
     * ``os.walk()``
     * ``subprocess.run()``
@@ -696,21 +696,21 @@ Recursive folders walking
 
 Tree
 ----
-* Assignment name: Tree
+* Assignment: Tree
 * Last update: 2020-10-01
 * Complexity level: hard
 * Lines of code to write: 60 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/system_tree.py`
+* Filename: :download:`solution/system_tree.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Za pomocą znaków unicode: "┣━", "┗━" , "┃  "
     #. Wygeneruj wynik przypominający wynik polecenia ``tree``.
 
-:Output:
+Tests:
     .. code-block:: text
 
         root:.

@@ -169,32 +169,32 @@ Assignments
 
 Pima Indians Diabetes problem
 -----------------------------
-* Assignment name: Pima Indians Diabetes problem
+* Assignment: Pima Indians Diabetes problem
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/knn_pima.py`
+* Filename: :download:`solution/knn_pima.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Dla Pima Indians Diabetes wykonaj analizę algorytmem KNN z biblioteki ``sklearn``.
 
 Płeć
 ----
-* Assignment name: Płeć
+* Assignment: Płeć
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/knn_gender.py`
+* Filename: :download:`solution/knn_gender.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Napisz własną implementacje k Nearest Neighbors, która dla danych:
 
         .. csv-table::
@@ -224,7 +224,7 @@ Płeć
         * tylko z normalizacją?
         * tylko skalowaniem?
 
-:Hints:
+Hints:
     * ``preprocessing.LabelEncoder()``
     * ``ExtraTreesClassifier()`` i ``.feature_importances_``
     * ``preprocessing.normalize(features)``

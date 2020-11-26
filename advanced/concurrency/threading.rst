@@ -259,33 +259,6 @@ References
 Assignments
 ===========
 
-Wielowątkowość
---------------
-* Assignment name: Wielowątkowość
-* Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 20 lines
-* Estimated time of completion: 21 min
-* Solution: :download:`solution/threading_timer.py`
-
-:English:
-    .. todo:: English Translation
-
-:Polish:
-    #. Stwórz kolejkę ``queue`` do której dodasz różne polecenia systemowe do wykonania, np.:
-
-        * Linux/macOS: ``['/bin/ls /etc/', '/bin/echo "test"', '/bin/sleep 2']``,
-        * Windows: ``['dir c:\\Users', 'echo "test"', 'type %HOMEPATH%\Desktop\README.txt']``.
-
-    #. Następnie przygotuj trzy wątki workerów, które będą wykonywały polecenia z kolejki
-    #. Wątki powinny być uruchamiane jako ``subprocess.run()`` w systemie operacyjnym z timeoutem równym ``TIMEOUT = 2.0`` sekundy
-    #. Ilość poleceń może się zwiększać w miarę wykonywania zadania.
-    #. Wątki mają być uruchomione w tle (ang. ``daemon``)
-
-:Extra task:
-    #. Wątki powinny być uśpione za pomocą ``Timer`` przez ``DELAY = 5.0`` sekund, a następnie ruszyć do roboty
-    #. Parametry rozbij za pomocą ``shlex``
-    #. Użyj logowania za pomocą biblioteki ``logging`` tak aby przy wyświetlaniu wyników widoczny był identyfikator procesu i wątku.
-
-:Hints:
-    Ustaw parametr ``shell=True`` dla ``subprocess.run()``
+.. literalinclude:: solution/threading_timer.py
+    :caption: :download:`Solution <solution/threading_timer.py>`
+    :end-before: # Solution

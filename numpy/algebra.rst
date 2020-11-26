@@ -258,14 +258,14 @@ Assignments
 
 Numpy Algebra Euclidean 2D
 --------------------------
-* Assignment name: Numpy Algebra Euclidean 2D
+* Assignment: Numpy Algebra Euclidean 2D
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/numpy_algebra_euclidean_2d.py`
+* Filename: :download:`solution/numpy_algebra_euclidean_2d.py`
 
-:English:
+English:
     #. Use code from "Input" section (see below)
     #. Given are two points ``A: tuple[int, int]`` and ``B: tuple[int, int]``
     #. Coordinates are in cartesian system
@@ -273,7 +273,7 @@ Numpy Algebra Euclidean 2D
     #. Calculate distance between points using Euclidean algorithm
     #. Function must pass ``doctest``
 
-:Polish:
+Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
     #. Dane są dwa punkty ``A: tuple[int, int]`` i ``B: tuple[int, int]``
     #. Koordynaty są w systemie kartezjańskim
@@ -281,7 +281,7 @@ Numpy Algebra Euclidean 2D
     #. Oblicz odległość między nimi wykorzystując algorytm Euklidesa
     #. Funkcja musi przechodzić ``doctest``
 
-:Input:
+Given:
     .. code-block:: python
 
         def euclidean_distance(A, B):
@@ -314,19 +314,19 @@ Numpy Algebra Euclidean 2D
 
     Calculate Euclidean distance in Cartesian coordinate system
 
-:Hints:
+Hints:
     * :math:`distance(a, b) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}`
 
 Numpy Algebra Euclidean Ndim
 ----------------------------
-* Assignment name: Numpy Algebra Euclidean Ndim
+* Assignment: Numpy Algebra Euclidean Ndim
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/numpy_algebra_euclidean_ndim.py`
+* Filename: :download:`solution/numpy_algebra_euclidean_ndim.py`
 
-:English:
+English:
     #. Use code from "Input" section (see below)
     #. Given are two points ``A: Sequence[int]`` and ``B: Sequence[int]``
     #. Coordinates are in cartesian system
@@ -335,7 +335,7 @@ Numpy Algebra Euclidean Ndim
     #. Calculate distance between points using Euclidean algorithm
     #. Function must pass ``doctest``
 
-:Polish:
+Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
     #. Dane są dwa punkty ``A: Sequence[int]`` i ``B: Sequence[int]``
     #. Koordynaty są w systemie kartezjańskim
@@ -344,7 +344,7 @@ Numpy Algebra Euclidean Ndim
     #. Oblicz odległość między nimi wykorzystując algorytm Euklidesa
     #. Funkcja musi przechodzić ``doctest``
 
-:Input:
+Given:
     .. code-block:: python
 
         def euclidean_distance(A, B):
@@ -372,7 +372,7 @@ Numpy Algebra Euclidean Ndim
             1.7320508075688772
             """
 
-:Hints:
+Hints:
     * ``import doctest``
     * :math:`distance(a, b) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + ... + (n_2 - n_1)^2}`
     * ``for n1, n2 in zip(A, B)``

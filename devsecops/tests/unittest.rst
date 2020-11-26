@@ -170,15 +170,15 @@ Assignments
 
 Dragon
 ------
-* Assignment name: Dragon
+* Assignment: Dragon
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 100 lines
 * Estimated time of completion: 21 min
-* Solution: TODO
+* Filename: TODO
 
-:English:
+English:
     #. Write unittest for the dragon from :ref:`Dragon Alpha`
 
-:Polish:
+Polish:
     #. Napisz testy jednostkowe dla Smoka z :ref:`Dragon Alpha`

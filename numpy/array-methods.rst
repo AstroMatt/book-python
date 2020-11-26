@@ -244,15 +244,15 @@ Assignments
 
 Numpy Methods
 -------------
-* Assignment name: Numpy Methods
+* Assignment: Numpy Methods
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/numpy_methods.py`
+* Filename: :download:`solution/numpy_methods.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Reshape ``result`` to 3x4
     #. Fill last column with zeros (0)
     #. Transpose ``result``
@@ -260,8 +260,8 @@ Numpy Methods
     #. Fill first row with ``np.nan``
     #. Print ``result``
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zmień kształt na 3x4
     #. Wypełnij ostatnią kolumnę zerami (0)
     #. Transponuj ``result``
@@ -269,18 +269,18 @@ Numpy Methods
     #. Wypełnij pierwszy wiersz ``np.nan``
     #. Wypisz ``result``
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = np.array([[44, 47, 64, 67],
                          [67,  9, 83, 21],
                          [36, 87, 70, 88]])
 
-:Output:
-    .. code-block:: python
-
-        result: np.ndarray
-        # array([[nan, nan, nan],
-        #        [47.,  9., 87.],
-        #        [64., 83., 70.],
-        #        [ 0.,  0.,  0.]])
+Tests:
+    >>> type(result)
+    np.ndarray
+    >>> result
+    array([[nan, nan, nan],
+           [47.,  9., 87.],
+           [64., 83., 70.],
+           [ 0.,  0.,  0.]])

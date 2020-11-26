@@ -5,34 +5,34 @@ Entry Test
 
 Entry Test Listdict
 ===================
-* Assignment name: Entry Test Listdict
+* Assignment: Entry Test Listdict
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 8 lines
 * Estimated time of completion: 13 min
-* Solution: entry_test_listdict.py
+* Filename: entry_test_listdict.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Separate header and data
     #. Print ``result: list[dict]``
 
         * key - name from the header
         * value - measurement or species
 
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Odseparuj nagłówek i dane
     #. Wypisz ``result: list[dict]``
 
         * klucz: nazwa z nagłówka
         * wartość: wyniki pomiarów lub gatunek
 
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -60,42 +60,36 @@ Entry Test Listdict
             (4.6, 3.1, 1.5, 0.2, 'setosa'),
         ]
 
-:Output:
-    .. code-block:: text
-
-        >>> result  # doctest: +NORMALIZE_WHITESPACE
-        [{'Sepal length': 5.8, 'Sepal width': 2.7, 'Petal length': 5.1, 'Petal width': 1.9, 'Species': 'virginica'},
-         {'Sepal length': 5.1, 'Sepal width': 3.5, 'Petal length': 1.4, 'Petal width': 0.2, 'Species': 'setosa'},
-         {'Sepal length': 5.7, 'Sepal width': 2.8, 'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
-         ...]
-
-:The whys and wherefores:
-    * Working with nested data structures
-    * Iterating over dict and lists
+Tests:
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    [{'Sepal length': 5.8, 'Sepal width': 2.7, 'Petal length': 5.1, 'Petal width': 1.9, 'Species': 'virginica'},
+     {'Sepal length': 5.1, 'Sepal width': 3.5, 'Petal length': 1.4, 'Petal width': 0.2, 'Species': 'setosa'},
+     {'Sepal length': 5.7, 'Sepal width': 2.8, 'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
+     ...]
 
 
 Entry Test Nested
 =================
-* Assignment name: Entry Test Nested
+* Assignment: Entry Test Nested
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 5 min
-* Solution: entry_test_nested.py
+* Filename: entry_test_nested.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Separate header from data
     #. Iterate over data
     #. Print species names ending with "ica" or "sa"
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Oddziel nagłówek od danych
     #. Iteruj po danych
     #. Wypisz nazwy gatunków kończące się na "ica" lub "sa"
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -111,22 +105,18 @@ Entry Test Nested
             (4.6, 3.1, 1.5, 0.2, {'setosa'}),
         ]
 
-:The whys and wherefores:
-    * Accessing ``dict`` keys
-    * Iterating over nested structure
-
 
 Entry Test Hosts
 ================
-* Assignment name: Entry Test Hosts
+* Assignment: Entry Test Hosts
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
-* Solution: entry_test_hosts.py
+* Filename: entry_test_hosts.py
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Save input data to file ``hosts.txt``
     #. Copy also comments and empty lines
     #. For each line in file:
@@ -140,10 +130,10 @@ Entry Test Hosts
         #. Append IP address and hosts names to ``result: list[dict]``
 
     #. Merge hostnames for the same IP
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zapisz dane wejściowe do pliku ``hosts.txt``
     #. Skopiuj również komentarz i pustą linię
     #. Dla każdej lini w pliku:
@@ -157,9 +147,9 @@ Entry Test Hosts
         #. Dodaj adres IP i nazwy hostów do ``result: list[dict]``
 
     #. Scal nazwy hostów dla tego samego IP
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: text
 
         ##
@@ -174,23 +164,13 @@ Entry Test Hosts
         255.255.255.255 broadcasthost
         ::1             localhost
 
-:Output:
-    .. code-block:: text
+Tests:
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    [{'ip': '127.0.0.1', 'protocol': 'ipv4', 'hostnames': {'localhost', 'astromatt'}},
+     {'ip': '10.13.37.1', 'protocol': 'ipv4', 'hostnames': {'nasa.gov', 'esa.int', 'roscosmos.ru'}},
+     {'ip': '255.255.255.255', 'protocol': 'ipv4', 'hostnames': {'broadcasthost'}},
+     {'ip': '::1', 'protocol': 'ipv6', 'hostnames': {'localhost'}}]
 
-        >>> result  # doctest: +NORMALIZE_WHITESPACE
-        [{'ip': '127.0.0.1', 'protocol': 'ipv4', 'hostnames': {'localhost', 'astromatt'}},
-         {'ip': '10.13.37.1', 'protocol': 'ipv4', 'hostnames': {'nasa.gov', 'esa.int', 'roscosmos.ru'}},
-         {'ip': '255.255.255.255', 'protocol': 'ipv4', 'hostnames': {'broadcasthost'}},
-         {'ip': '::1', 'protocol': 'ipv6', 'hostnames': {'localhost'}}]
-
-:The whys and wherefores:
-    * czytanie i parsowanie pliku
-    * nieregularne pliki konfiguracyjne (struktura może się zmieniać)
-    * filtrowanie elementów
-    * korzystanie z pętli i instrukcji warunkowych
-    * parsowanie stringów
-    * praca ze ścieżkami w systemie operacyjnym
-
-:Hints:
+Hints:
     * ``str.isspace()``
     * ``value = True if ... else False``

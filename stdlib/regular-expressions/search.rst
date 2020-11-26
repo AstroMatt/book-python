@@ -37,16 +37,16 @@ Assignments
 
 Regexp Search Astronauts
 ------------------------
-* Assignment name: Regexp Search Astronauts
+* Assignment: Regexp Search Astronauts
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/regexp_search_astronauts.py`
+* Filename: :download:`solution/regexp_search_astronauts.py`
 * References: First paragraph from Apollo 11 Wikipedia entry :cite:`RegexpWikipediaApollo11`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Use ``re.search()`` to check if Astronaut first and last names are in the text
     #. Astronauts to find:
 
@@ -56,8 +56,8 @@ Regexp Search Astronauts
         * Jan Twardowski
         * Mark Watney
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Użyj ``re.search()`` do sprawdzenia czy imiona i nazwiska Astronautów występują w tekście
     #. Astronauci do znalezienia:
 
@@ -67,7 +67,7 @@ Regexp Search Astronauts
         * Jan Twardowski
         * Mark Watney
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = """Apollo 11 was the spaceflight that first landed humans on the Moon.
@@ -84,22 +84,22 @@ Regexp Search Astronauts
 
 Regexp Search Moon Speech
 -------------------------
-* Assignment name: Regexp Search Moon Speech
+* Assignment: Regexp Search Moon Speech
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/regexp_search_moon_speech.py`
+* Filename: :download:`solution/regexp_search_moon_speech.py`
 * References: "Moon Speech" by John F. Kennedy at Rice Stadium, Houston, TX on 1962-09-12 :cite:`RegexpKennedy1962`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Save as ``moon_speech.html``
     #. Using ``re.search()`` split text by paragraphs
     #. Print paragraph starting with "We choose to go to the moon"
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zapisz jako ``moon_speech.html``
     #. Za pomocą ``re.search()`` podziel tekst na paragrafy
     #. Wyświetl paragraf zaczynający się od słów "We choose to go to the moon"
@@ -110,27 +110,27 @@ Regexp Search Moon Speech
 
 Regexp Search Time
 ------------------
-* Assignment name: Regexp Search Time
+* Assignment: Regexp Search Time
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/regexp_search_time.py`
+* Filename: :download:`solution/regexp_search_time.py`
 * References: First paragraph from Apollo 11 Wikipedia entry :cite:`RegexpWikipediaApollo11`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Use regular expressions to check text contains time in UTC (format: ``%H:%M UTC``)
     #. Use simplified checking: ``##:## UTC``, where ``#`` is a digit
     #. Print found time
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Użyj wyrażeń regularnych do sprawdzenia czy tekst zawiera godzinę w UTC (format: ``%H:%M UTC``)
     #. Użyj uproszczonego sprawdzania: ``##:## UTC``, gdzie ``#`` to dowolna cyfra
     #. Print found time
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = """Apollo 11 was the spaceflight that first landed humans on the Moon.
@@ -148,31 +148,31 @@ Regexp Search Time
 
 Regexp Search Datetime
 ----------------------
-* Assignment name: Regexp Search Datetime
+* Assignment: Regexp Search Datetime
 * Last update: 2020-10-01
 * Complexity level: hard
 * Lines of code to write: 4 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/regexp_search_datetime.py`
+* Filename: :download:`solution/regexp_search_datetime.py`
 * References: (modified) First paragraph from Apollo 11 Wikipedia entry :cite:`RegexpWikipediaApollo11`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Use regular expressions to check text contains time in UTC (format: ``%H:%M UTC``)
     #. Note, that this is slightly modified text than previously
     #. Check if text contains time in UTC (format: ``%H:%M UTC``)
     #. Found match must be a valid time
     #. Print found time
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Użyj wyrażeń regularnych do sprawdzenia czy tekst zawiera godzinę w UTC (format: ``%H:%M UTC``)
     #. Zwróć uwagę, że to lekko zmodyfikowany tekst niż poprzednio
     #. Sprawdź czy tekst zawiera godzinę w UTC (format: ``%H:%M UTC``)
     #. Znalezisko musi być poprawnym czasem
     #. Wyświetl znaleziony czas
 
-:Input:
+Given:
     .. code-block:: text
         :caption: (modified) First paragraph from Apollo 11 Wikipedia entry :cite:`RegexpWikipediaApollo11`
 

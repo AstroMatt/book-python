@@ -41,33 +41,28 @@ Converting to ``int``
 
 Assignments
 -----------
-* Assignment name: Assignments
+* Assignment: Assignments
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 12 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/types_int.py`
+* Filename: :download:`solution/types_int.py`
 
-:English:
+English:
     #. Calculate how many seconds is five minutes
     #. Calculate how many seconds is one hour
     #. Calculate how many seconds is work day (8 hours)
     #. Calculate how many seconds is work month (22 days per 8 hours)
     #. Calculate how many minutes is work week (40 hours)
 
-:Polish:
+Polish:
     #. Oblicz ile sekund to pięć minut
     #. Oblicz ile sekund to jedna godzina
     #. Oblicz ile sekund to dzień pracy (8 godzin)
     #. Oblicz ile sekund to miesiąc pracy (22 dni po 8 godzin)
     #. Oblicz ile minut to tydzień pracy (40 godzin)
 
-:The whys and wherefores:
-    * Defining constants and variables
-    * Naming convention
-    * Mathematical operations
-
-:Hints:
+Hints:
     * 1 h = 60 min
     * 1 min = 60 s
 
@@ -120,14 +115,14 @@ Converting to ``float``
 
 Assignments
 -----------
-* Assignment name: Assignments
+* Assignment: Assignments
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/types_float.py`
+* Filename: :download:`solution/types_float.py`
 
-:English:
+English:
     #. Use code from "Input" section (see below)
     #. Declare variable for holding value of 1337 meters
     #. Print values in other units
@@ -137,7 +132,7 @@ Assignments
 
         * Do not use ``input()``
 
-:Polish:
+Polish:
     #. Użyj kodu z sekcji "Input" (patrz poniżej)
     #. Zdefiniuj zmienną dla przechowywania wartości 1337 metrów
     #. Wypisz wartość w różnych jednostkach
@@ -147,7 +142,7 @@ Assignments
 
         * Nie używaj ``input()``
 
-:Input:
+Given:
     .. code-block:: python
 
         print(f'Meters: {...}')                              # int
@@ -156,14 +151,7 @@ Assignments
         print(f'Nautical Miles: {...}')                      # float
         print(f'm: {...}, km: {...}, mi: {...}, nm: {...}')  # int, int, float, float
 
-:The whys and wherefores:
-    * Defining constants and variables
-    * Naming convention
-    * Print formatting
-    * Mathematical operations
-    * Separation of business logic and view
-
-:Hints:
+Hints:
     * 1000 m = 1 km
     * 1608 m = 1 mile
     * 1852 m = 1 nautical mile
@@ -338,18 +326,18 @@ Methods
 
 Assignments
 -----------
-* Assignment name: Assignments
+* Assignment: Assignments
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/types_str.py`
+* Filename: :download:`solution/types_str.py`
 
-:English:
+English:
     * Ask user to input text
     * Print number of characters
 
-:Polish:
+Polish:
     * Poproś użytkownika o wprowadzenie tekstu
     * Wypisz liczbę znaków
 
@@ -481,24 +469,24 @@ Assignments
 
 To ``bool`` or not to ``bool``
 ------------------------------
-* Assignment name: To ``bool`` or not to ``bool``
+* Assignment: To ``bool`` or not to ``bool``
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/types_bool.py`
+* Filename: :download:`solution/types_bool.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Which variables are ``True``?
     #. Which variables are ``False``?
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Które zmienne są ``True``?
     #. Które zmienne są ``False``?
 
-:Input:
+Given:
     .. code-block:: python
 
         a = bool(False)
@@ -521,11 +509,6 @@ To ``bool`` or not to ``bool``
 
         o = bool(-0.0+0.0j)
         p = bool('-0.0+0.0j')
-
-:The whys and wherefores:
-    * Defining variables
-    * Type casting
-    * Logic types
 
 
 Operators

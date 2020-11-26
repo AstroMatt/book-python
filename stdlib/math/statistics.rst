@@ -219,15 +219,15 @@ Assignments
 
 Column Stats
 ------------
-* Assignment name: Column Stats
+* Assignment: Column Stats
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/statistics_column_stats.py`
+* Filename: :download:`solution/statistics_column_stats.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. For columns:
 
         * Sepal length,
@@ -246,8 +246,8 @@ Column Stats
 
         * Use ``statistics`` module from Python standard library
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Dla kolumn:
 
         * Sepal length,
@@ -266,7 +266,7 @@ Column Stats
 
         * Użyj modułu ``statistics`` z biblioteki standardowej Python
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -296,15 +296,15 @@ Column Stats
 
 Iris Stats
 ----------
-* Assignment name: Iris Stats
+* Assignment: Iris Stats
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 30 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/statistics_iris.py`
+* Filename: :download:`solution/statistics_iris.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Create dict ``result: dict[str, dict]``
     #. For each species calculate for numerical values:
 
@@ -314,13 +314,13 @@ Iris Stats
             * variance.
 
     #. Save data to ``result`` dict
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
     #. Non-functional requirements:
 
         * Use ``statistics`` module from Python standard library
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Stwórz słownik ``result: dict[str, dict]``
     #. Dla każdego gatunku wylicz dla wartości numerycznych:
 
@@ -330,12 +330,12 @@ Iris Stats
             * wariancję.
 
     #. Dane zapisz w słowniku ``result``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
     #. Wymagania niefunkcjonalne:
 
         * Użyj modułu ``statistics`` z biblioteki standardowej Python
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -363,31 +363,29 @@ Iris Stats
             (4.6, 3.1, 1.5, 0.2, 'setosa'),
         ]
 
-:Output:
-    .. code-block:: python
-
-        result  # doctest: +NORMALIZE_WHITESPACE
-        {'setosa': {
-            'Sepal length': {'mean': 4.9,
-                             'median': 4.9,
-                             'stdev': 0.2943920288775951,
-                             'values': [5.1, 4.7, 4.9, 4.6, 5.4, 5.0, 4.6],
-                             'variance': 0.08666666666666677},
-            'Sepal width':  {'mean': 3.3857142857142857,
-                             'median': 3.4,
-                             'stdev': 0.31320159337914943,
-                             'values': [3.5, 3.2, 3.0, 3.4, 3.9, 3.6, 3.1],
-                             'variance': 0.09809523809523807}},
-            'Petal length': {'mean': 1.4428571428571428,
-                             'median': 1.4,
-                             'stdev': 0.12724180205607036,
-                             'values': [1.4, 1.3, 1.4, 1.4, 1.7, 1.4, 1.5],
-                             'variance': 0.01619047619047619},
-            'Petal width':  {'mean': 0.2571428571428572,
-                             'median': 0.2,
-                             'stdev': 0.07867957924694431,
-                             'values': [0.2, 0.2, 0.2, 0.3, 0.4, 0.3, 0.2],
-                             'variance': 0.006190476190476191},
-         'virginica': {...},
-         'versicolor': {...},
-        }
+Tests:
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    {'setosa': {
+        'Sepal length': {'mean': 4.9,
+                         'median': 4.9,
+                         'stdev': 0.2943920288775951,
+                         'values': [5.1, 4.7, 4.9, 4.6, 5.4, 5.0, 4.6],
+                         'variance': 0.08666666666666677},
+        'Sepal width':  {'mean': 3.3857142857142857,
+                         'median': 3.4,
+                         'stdev': 0.31320159337914943,
+                         'values': [3.5, 3.2, 3.0, 3.4, 3.9, 3.6, 3.1],
+                         'variance': 0.09809523809523807}},
+        'Petal length': {'mean': 1.4428571428571428,
+                         'median': 1.4,
+                         'stdev': 0.12724180205607036,
+                         'values': [1.4, 1.3, 1.4, 1.4, 1.7, 1.4, 1.5],
+                         'variance': 0.01619047619047619},
+        'Petal width':  {'mean': 0.2571428571428572,
+                         'median': 0.2,
+                         'stdev': 0.07867957924694431,
+                         'values': [0.2, 0.2, 0.2, 0.3, 0.4, 0.3, 0.2],
+                         'variance': 0.006190476190476191},
+     'virginica': {...},
+     'versicolor': {...},
+    }

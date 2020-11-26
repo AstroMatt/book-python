@@ -112,123 +112,14 @@ LRU (least recently used) cache
 Assignments
 ===========
 
-Decorator Functools Func
-------------------------
-* Assignment name: Decorator Functools Func
-* Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 2 lines
-* Estimated time of completion: 3 min
-* Solution: :download:`solution/decorator_functools_func.py`
+.. literalinclude:: solution/decorator_functools_func.py
+    :caption: :download:`Solution <solution/decorator_functools_func.py>`
+    :end-before: # Solution
 
-:English:
-    #. Use code from "Input" section (see below)
-    #. Use ``functools.wraps`` in correct place
-    #. Compare result with "Output" section (see below)
+.. literalinclude:: solution/decorator_functools_args.py
+    :caption: :download:`Solution <solution/decorator_functools_args.py>`
+    :end-before: # Solution
 
-:Polish:
-    #. Użyj kodu z sekcji "Input" (patrz poniżej)
-    #. Użyj ``functools.wraps`` w odpowiednim miejscu
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-.. code-block:: python
-
-    def mydecorator(func):
-        def wrapper(*args, **kwargs):
-            return func(*args, **kwargs)
-        return wrapper
-
-
-    @mydecorator
-    def hello():
-        """Hello Docstring"""
-
-:Output:
-    .. code-block:: text
-
-        >>> hello.__name__
-        'hello'
-        >>> hello.__doc__
-        'Hello Docstring'
-
-Decorator Functools Args
-------------------------
-* Assignment name: Decorator Functools Args
-* Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 2 lines
-* Estimated time of completion: 3 min
-* Solution: :download:`solution/decorator_functools_args.py`
-
-:English:
-    #. Use code from "Input" section (see below)
-    #. Use ``functools.wraps`` in correct place
-    #. Compare result with "Output" section (see below)
-
-:Polish:
-    #. Użyj kodu z sekcji "Input" (patrz poniżej)
-    #. Użyj ``functools.wraps`` w odpowiednim miejscu
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-.. code-block:: python
-
-    def mydecorator(happy=True):
-        def decorator(func):
-            def wrapper(*args, **kwargs):
-                return func(*args, **kwargs)
-            return wrapper
-        return decorator
-
-
-    @mydecorator(happy=False)
-    def hello():
-        """Hello Docstring"""
-
-:Output:
-    .. code-block:: text
-
-        >>> hello.__name__
-        'hello'
-        >>> hello.__doc__
-        'Hello Docstring'
-
-Decorator Functools Cls
------------------------
-* Assignment name: Decorator Functools Cls
-* Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 2 lines
-* Estimated time of completion: 5 min
-* Solution: :download:`solution/decorator_functools_cls.py`
-
-:English:
-    #. Use code from "Input" section (see below)
-    #. Modify code to restore docstring and name from decorated class
-    #. Compare result with "Output" section (see below)
-
-:Polish:
-    #. Użyj kodu z sekcji "Input" (patrz poniżej)
-    #. Zmodyfikuj kod aby przywrócić docstring oraz nazwę z dekorowanej klasy
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-:Input:
-    .. code-block:: python
-
-        def mydecorator(cls):
-            class Wrapper(cls):
-                pass
-            return Wrapper
-
-
-        @mydecorator
-        class Hello:
-            """Hello Docstring"""
-
-:Output:
-    .. code-block:: text
-
-        >>> hello = Hello()
-        >>> hello.__name__
-        'Hello'
-        >>> hello.__doc__
-        'Hello Docstring'
+.. literalinclude:: solution/decorator_functools_cls.py
+    :caption: :download:`Solution <solution/decorator_functools_cls.py>`
+    :end-before: # Solution

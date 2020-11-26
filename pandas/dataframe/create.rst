@@ -129,22 +129,22 @@ Assignments
 
 DataFrame Create
 ----------------
-* Assignment name: DataFrame Create
+* Assignment: DataFrame Create
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/df_create.py`
+* Filename: :download:`solution/df_create.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Create ``DataFrame`` for input data
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Stwórz ``DataFrame`` dla danych wejściowych
 
-:Input:
+Given:
     .. csv-table::
         :header: "Crew", "Role", "Astronaut"
 
@@ -155,7 +155,7 @@ DataFrame Create
         "Backup", "LMP", "William Anders"
         "Backup", "CMP", "Fred Haise"
 
-:Hints:
+Hints:
     * Use selection with ``alt`` key in your IDE
     * If it's not working use CSV:
 

@@ -156,17 +156,17 @@ Assignments
 
 Virtualenv
 ----------
-* Assignment name: Virtualenv
+* Assignment: Virtualenv
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 0 lines
 * Estimated time of completion: 2 min
-* Solution: :download:`solution/venv.py`
+* Filename: :download:`solution/venv.py`
 
-:English:
+English:
     #. Create ``venv``
     #. Add ``venv`` as a Python interpreter in your IDE
 
-:Polish:
+Polish:
     #. Stwórz ``venv``
     #. Dodaj ``venv`` jako interpreter Python w Twoim IDE

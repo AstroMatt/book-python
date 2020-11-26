@@ -212,22 +212,22 @@ Assignments
 
 Own ``doctest``
 ---------------
-* Assignment name: Own ``doctest``
+* Assignment: Own ``doctest``
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 60 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/debugging_doctest.py`
+* Filename: :download:`solution/debugging_doctest.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Dla kodu z listingu
     #. Napisz własną uproszczoną implementację ``doctest``
     #. Dla uproszczenia przyjmij, że zwracana zawsze będzie tylko jedna linia (bezpośrednio poniżej testu)
 
-:Input:
+Given:
     .. code-block:: python
         :caption: Debugging with docstring
 

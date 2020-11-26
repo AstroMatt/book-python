@@ -317,17 +317,17 @@ Assignments
 
 Argument parsing
 ----------------
-* Assignment name: Argument parsing
+* Assignment: Argument parsing
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/argparse_avg.py`
+* Filename: :download:`solution/argparse_avg.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Napisz parser parametrów linii poleceń
     #. Ma przyjmować tylko ``int`` i ``float``
     #. Dla parametrów ma uruchomić funkcje ``avg()`` z listingu poniżej:

@@ -41,33 +41,31 @@ Assignments
 
 Regexp Find Dates
 -----------------
-* Assignment name: Regexp Find Dates
+* Assignment: Regexp Find Dates
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/regexp_find_dates.py`
+* Filename: :download:`solution/regexp_find_dates.py`
 * References: :cite:`RegexpWikipediaApollo11`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Using regular expressions find dates in US format (example: "April 12, 1961")
     #. Print all dates
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Używając wyrażeń regularnych wyszukaj dat w formacie US (przykład: "April 12, 1961")
     #. Wyświetl wszystkie daty
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Output:
-    .. code-block:: text
-
-        >>> result  # doctest: +NORMALIZE_WHITESPACE
-        ['October 4, 1957',
-         'April 12, 1961',
-         'May 5, 1961',
-         'May 25, 1961',
-         'September 12, 1962',
-         'September 12, 1962']
+Tests:
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    ['October 4, 1957',
+     'April 12, 1961',
+     'May 5, 1961',
+     'May 25, 1961',
+     'September 12, 1962',
+     'September 12, 1962']

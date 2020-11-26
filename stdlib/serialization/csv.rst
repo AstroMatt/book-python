@@ -541,34 +541,34 @@ Assignments
 
 Serialization CSV DictReader
 ----------------------------
-* Assignment name: Serialization CSV DictReader
+* Assignment: Serialization CSV DictReader
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 6 lines
 * Estimated time of completion: 7 min
-* Solution: :download:`solution/serialization_csv_dictreader.py`
+* Filename: :download:`solution/serialization_csv_dictreader.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Download :download:`data/iris.csv` file and save as ``iris.csv`` in your script folder
     #. Using ``csv.DictReader`` read the content
     #. Use explicit ``encoding``, ``delimiter`` and ``quotechar``
     #. Replace column names to ``FIELDNAMES``
     #. Skip the first line (header)
     #. Print rows with data
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Pobierz plik :download:`data/iris.csv` i zapisz go jako ``iris.csv`` w katalogu ze skryptami
     #. Korzystając z ``csv.DictReader`` wczytaj zawartość pliku
     #. Podaj jawnie ``encoding``, ``delimiter`` oraz ``quotechar``
     #. Podmień nazwy kolumn na ``FIELDNAMES``
     #. Pomiń pierwszą linię (nagłówek)
     #. Wypisz wiersze z danymi
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         FIELDNAMES = [
@@ -579,7 +579,7 @@ Serialization CSV DictReader
             'Species',
         ]
 
-:Output:
+Tests:
     .. code-block:: python
 
         {'Sepal Length': '5.4', 'Sepal Width': '3.9', 'Petal Length': '1.3', 'Petal Width': '0.4', 'Species': 'setosa'}
@@ -589,19 +589,19 @@ Serialization CSV DictReader
 
 Serialization CSV DictWriter
 ----------------------------
-* Assignment name: Serialization CSV DictWriter
+* Assignment: Serialization CSV DictWriter
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 7 min
-* Solution: :download:`solution/serialization_csv_dictwriter.py`
+* Filename: :download:`solution/serialization_csv_dictwriter.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Using ``csv.DictWriter()`` save ``DATA`` to file
     #. Open file in your spreadsheet program like Microsoft Excel / Libre Office / Numbers etc.
     #. Open file in simple in your IDE and simple text editor (like Notepad, vim, gedit)
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
     #. Non functional requirements:
 
         * All fields must be enclosed by double quote ``"`` character
@@ -609,12 +609,12 @@ Serialization CSV DictWriter
         * Use ``utf-8`` encoding
         * Use Unix ``\n`` newline
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Za pomocą ``csv.DictWriter()`` zapisz ``DATA`` do pliku
     #. Spróbuj otworzyć plik w arkuszu kalkulacyjnym tj. Microsoft Excel / Libre Office / Numbers itp
     #. Spróbuj otworzyć plik w IDE i prostym edytorze tekstu tj. Notepad, vim lub gedit
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
     #. Wymagania niefunkcjonalne:
 
         * Wszystkie pola muszą być otoczone znakiem cudzysłowu ``"``
@@ -622,7 +622,7 @@ Serialization CSV DictWriter
         * Użyj kodowania ``utf-8``
         * Użyj zakończenia linii Unix ``\n``
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -633,7 +633,7 @@ Serialization CSV DictWriter
             {'firstname': 'Melissa', 'lastname': 'Lewis'},
         ]
 
-:Output:
+Tests:
     .. code-block:: text
 
         "firstname","lastname"
@@ -645,18 +645,18 @@ Serialization CSV DictWriter
 
 Serialization CSV List of Tuples
 --------------------------------
-* Assignment name: Serialization CSV List of Tuples
+* Assignment: Serialization CSV List of Tuples
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 7 lines
 * Estimated time of completion: 7 min
-* Solution: :download:`solution/serialization_csv_list_of_tuple.py`
+* Filename: :download:`solution/serialization_csv_list_of_tuple.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Convert ``DATA`` to ``list[dict]``
     #. Using ``csv.DictWriter()`` save ``DATA`` to file
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
     #. Non functional requirements:
 
         * Do not use quotes in output CSV file
@@ -664,11 +664,11 @@ Serialization CSV List of Tuples
         * Use ``utf-8`` encoding
         * Use Unix ``\n`` newline
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Przekonwertuj ``DATA`` do ``list[dict]``
     #. Za pomocą ``csv.DictWriter()`` zapisz ``DATA`` do pliku
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
     #. Wymagania niefunkcjonalne:
 
         * Nie używaj cudzysłowów w wynikowym pliku CSV
@@ -676,7 +676,7 @@ Serialization CSV List of Tuples
         * Użyj kodowania ``utf-8``
         * Użyj zakończenia linii Unix ``\n``
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -704,7 +704,7 @@ Serialization CSV List of Tuples
             (4.6, 3.1, 1.5, 0.2, 'setosa'),
         ]
 
-:Output:
+Tests:
     .. code-block:: text
 
         Sepal length,Sepal width,Petal length,Petal width,Species
@@ -732,19 +732,19 @@ Serialization CSV List of Tuples
 
 Serialization CSV Schemaless
 -----------------------------
-* Assignment name: Serialization CSV Schemaless
+* Assignment: Serialization CSV Schemaless
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 8 lines
 * Estimated time of completion: 7 min
-* Solution: :download:`solution/serialization_csv_schemaless.py`
+* Filename: :download:`solution/serialization_csv_schemaless.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Using ``csv.DictWriter()`` write variable schema data to CSV file
     #. ``fieldnames`` must be automatically generated from ``DATA``
     #. ``fieldnames`` must always be in the same order
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
     #. Non functional requirements:
 
         * All fields must be enclosed by double quote ``"`` character
@@ -752,12 +752,12 @@ Serialization CSV Schemaless
         * Use ``utf-8`` encoding
         * Use Unix ``\n`` newline
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Za pomocą ``csv.DictWriter()`` zapisz do pliku CSV dane o zmiennej strukturze
     #. ``fieldnames`` musi być generowane automatycznie na podstawie ``DATA``
     #. ``fieldnames`` ma być zawsze w takiej samej kolejności
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
     #. Wymagania niefunkcjonalne:
 
         * Wszystkie pola muszą być otoczone znakiem cudzysłowu ``"``
@@ -765,12 +765,7 @@ Serialization CSV Schemaless
         * Użyj kodowania ``utf-8``
         * Użyj zakończenia linii Unix ``\n``
 
-:The whys and wherefores:
-    * Ability to use ``csv`` module to write data
-    * Ability to iterate over nested data structures
-    * Dynamically generate data structures from other
-
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -782,7 +777,7 @@ Serialization CSV Schemaless
             {'Sepal width': 2.9, 'Petal width': 1.8, 'Species': 'virginica'},
         ]
 
-:Output:
+Tests:
     .. csv-table:: Output
         :header: "Petal length", "Petal width", "Sepal length", "Sepal width", "Species"
 
@@ -795,15 +790,15 @@ Serialization CSV Schemaless
 
 Serialization CSV Objects
 -------------------------
-* Assignment name: Serialization CSV Objects
+* Assignment: Serialization CSV Objects
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 7 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/serialization_csv_objects.py`
+* Filename: :download:`solution/serialization_csv_objects.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Using ``csv.DictWriter()`` save data to CSV file
     #. Non functional requirements:
 
@@ -812,8 +807,8 @@ Serialization CSV Objects
         * Use ``utf-8`` encoding
         * Use Unix ``\n`` newline
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Za pomocą ``csv.DictWriter()`` zapisz dane do pliku CSV
     #. Wymagania niefunkcjonalne:
 
@@ -822,7 +817,7 @@ Serialization CSV Objects
         * Użyj kodowania ``utf-8``
         * Użyj zakończenia linii Unix ``\n``
 
-:Input:
+Given:
     .. code-block:: python
 
         class Iris:
@@ -847,15 +842,15 @@ Serialization CSV Objects
 
 Serialization CSV Relations
 ---------------------------
-* Assignment name: Serialization CSV Relations
+* Assignment: Serialization CSV Relations
 * Last update: 2020-10-01
 * Complexity level: hard
 * Lines of code to write: 18 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/serialization_csv_relations.py`
+* Filename: :download:`solution/serialization_csv_relations.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Using ``csv.DictWriter()`` save contacts from addressbook to CSV file
     #. How to write relations to CSV file (contact has many addresses)?
     #. Recreate object structure from CSV file
@@ -865,8 +860,8 @@ Serialization CSV Relations
         * Use ``;`` to separate columns
         * Use ``utf-8`` encoding
         * Use Unix ``\n`` newline
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Za pomocą ``csv.DictWriter()`` zapisz kontakty z książki adresowej w pliku
     #. Jak zapisać w CSV dane relacyjne (kontakt ma wiele adresów)?
     #. Odtwórz strukturę obiektów na podstawie danych odczytanych z pliku
@@ -877,7 +872,7 @@ Serialization CSV Relations
         * Użyj kodowania ``utf-8``
         * Użyj zakończenia linii Unix ``\n``
 
-:Input:
+Given:
     .. code-block:: python
 
        class Contact:

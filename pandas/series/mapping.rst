@@ -403,33 +403,33 @@ Assignments
 
 Series Mapping Clean
 --------------------
-* Assignment name: Series Mapping Clean
+* Assignment: Series Mapping Clean
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/series_mapping_clean.py`
+* Filename: :download:`solution/series_mapping_clean.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Convert ``DATA`` (see input section) to ``pd.Series``
     #. Create ``pd.Series``
     #. Write function to clean up data
     #. Function takes one ``str`` argument
     #. Function returns cleaned text
     #. Apply function to all elements of ``pd.Series``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Przekonwertuj ``DATA`` (patrz sekcja input) do ``pd.Series``
     #. Napisz funkcję czyszczącą dane
     #. Funkcja przyjmuje jeden argument typu ``str``
     #. Funkcja zwraca oczyszczony tekst
     #. Zaaplikuj funkcję na wszystkich elementach ``pd.Series``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = [
@@ -446,7 +446,7 @@ Series Mapping Clean
             'Jana III Sobi  eskiego ',
         ]
 
-:Output:
+Tests:
     .. code-block:: python
 
         s: pd.Series
@@ -462,11 +462,6 @@ Series Mapping Clean
         # 9     Jana III Sobieskiego
         # 10    Jana III Sobieskiego
         # dtype: object
-
-:The whys and wherefores:
-    * Defining and calling functions
-    * Passing function arguments
-    * Cleaning data from user input
 
 .. todo:: Translate input data to English
 

@@ -179,76 +179,10 @@ Use Cases
 Assignments
 ===========
 
-OOP Abstract Define
--------------------
-* Assignment name: OOP Abstract Define
-* Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 10 lines
-* Estimated time of completion: 5 min
-* Solution: :download:`solution/oop_abstract_define.py`
+.. literalinclude:: solution/oop_abstract_define.py
+    :caption: :download:`Solution <solution/oop_abstract_define.py>`
+    :end-before: # Solution
 
-:English:
-    #. Create abstract class ``Iris``
-    #. Create abstract method ``get_name()`` in ``Iris``
-    #. Create class ``Setosa`` inheriting from ``Iris``
-    #. Try to create instance of a class ``Setosa``
-    #. Try to create instance of a class ``Iris``
-    #. Compare result with "Output" section (see below)
-
-:Polish:
-    #. Stwórz klasę abstrakcyjną ``Iris``
-    #. Stwórz metodę abstrakcyjną ``get_name()`` w ``Iris``
-    #. Stwórz klasę ``Setosa`` dziedziczące po ``Iris``
-    #. Spróbuj stworzyć instancje klasy ``Setosa``
-    #. Spróbuj stworzyć instancję klasy ``Iris``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-.. note::
-    * Last line of doctest, second to last word of ``TypeError`` message
-    * In Python 3.7, 3.8 there is "methods" word in doctest
-    * In Python 3.9 there is "method" word in doctest
-    * So it differs by "s" at the end of "method" word
-
-:Output:
-    .. code-block:: text
-
-        >>> iris = Iris()
-        Traceback (most recent call last):
-          ...
-        TypeError: Can't instantiate abstract class Iris with abstract method get_name
-
-        >>> setosa = Setosa()
-
-OOP Abstract Interface
-----------------------
-* Assignment name: OOP Abstract Interface
-* Last update: 2020-10-14
-* Complexity level: easy
-* Lines of code to write: 14 lines
-* Estimated time of completion: 13 min
-* Solution: :download:`solution/oop_abstract_interface.py`
-
-:English:
-    #. Define abstract class ``IrisAbstract``
-    #. Attributes: ``sepal_length, sepal_width, petal_length, petal_width``
-    #. Methods: ``sum()``, ``len()``, ``mean()``
-    #. All methods and constructor must raise exception ``NotImplementedError``
-    #. Create class ``Setosa`` inheriting from ``IrisInterface``
-    #. Implement interface
-    #. Compare result with "Output" section (see below)
-
-:Polish:
-    #. Zdefiniuj klasę abstrakcyjną ``IrisAbstract``
-    #. Attributes: ``sepal_length, sepal_width, petal_length, petal_width``
-    #. Metody: ``sum()``, ``len()``, ``mean()``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-:Output:
-    .. code-block:: text
-
-        >>> from inspect import isabstract
-        >>> assert isabstract(IrisAbstract)
-        >>> assert hasattr(IrisAbstract, 'mean')
-        >>> assert hasattr(IrisAbstract, 'sum')
-        >>> assert hasattr(IrisAbstract, 'len')
+.. literalinclude:: solution/oop_abstract_interface.py
+    :caption: :download:`Solution <solution/oop_abstract_interface.py>`
+    :end-before: # Solution

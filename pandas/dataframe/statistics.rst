@@ -362,17 +362,17 @@ Assignments
 
 DataFrame Statistics
 --------------------
-* Assignment name: DataFrame Statistics
+* Assignment: DataFrame Statistics
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/df_statistics_cars.py`
+* Filename: :download:`solution/df_statistics_cars.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Ustaw ziarno losowości na zero
     #. Stwórz ``cars: pd.DataFrame`` z 50 wierszami:
 

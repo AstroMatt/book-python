@@ -354,66 +354,65 @@ Assignments
 
 Numpy Broadcasting Arithmetic
 -----------------------------
-* Assignment name: Numpy Broadcasting Arithmetic
+* Assignment: Numpy Broadcasting Arithmetic
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/numpy_broadcasting_arithmetic.py`
+* Filename: :download:`solution/numpy_broadcasting_arithmetic.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. For given: ``a: np.ndarray``, ``b: np.ndarray``, ``c: np.ndarray``
     #. Calculate square root of each element in ``a`` and ``b``
     #. Calculate second power (square) of each element in ``c``
     #. Add elements from ``a`` to ``b``
     #. Multiply the result by ``c``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Dla danych: ``a: np.ndarray``, ``b: np.ndarray``, ``c: np.ndarray``
     #. Oblicz pierwiastek kwadratowy każdego z elementu w ``a`` i ``b``
     #. Oblicz drugą potęgę (kwadrat) każdego z elementu w ``c``
     #. Dodaj elementy z ``a`` do ``b``
     #. Przemnóż wynik przez ``c``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         a = np.array([[0, 1], [2, 3]], float)
         b = np.array([2, 3], float)
         c = np.array([[1, 1], [4, 0]], float)
 
-:Output:
-    .. code-block:: python
-
-        array([[ 1.41421356,  2.73205081],
-               [45.254834  ,  0.        ]])
+Tests:
+    >>> result
+    array([[ 1.41421356,  2.73205081],
+           [45.254834  ,  0.        ]])
 
 Numpy Broadcasting Type Cast
 ----------------------------
-* Assignment name: Numpy Broadcasting Type Cast
+* Assignment: Numpy Broadcasting Type Cast
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/numpy_broadcasting_typecast.py`
+* Filename: :download:`solution/numpy_broadcasting_typecast.py`
 
-:English:
+English:
     #. For given: ``a: np.ndarray``, ``b: np.ndarray`` (see below)
     #. Add ``a`` and ``b``
     #. Add ``b`` and ``a``
     #. What happened?
 
-:Polish:
+Polish:
     #. Dla danych: ``a: np.ndarray``, ``b: np.ndarray`` (patrz sekcja input)
     #. Dodaj ``a`` i ``b``
     #. Dodaj ``b`` i ``a``
     #. Co się stało?
 
-:Input:
+Given:
     .. code-block:: python
 
         a = np.array([[1, 0], [0, 1]])
@@ -421,14 +420,14 @@ Numpy Broadcasting Type Cast
 
 Numpy Broadcasting Matmul
 -------------------------
-* Assignment name: Numpy Broadcasting Matmul
+* Assignment: Numpy Broadcasting Matmul
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/numpy_broadcasting_matmul.py`
+* Filename: :download:`solution/numpy_broadcasting_matmul.py`
 
-:English:
+English:
     #. For given: ``a: np.ndarray``, ``b: np.ndarray`` (see below)
     #. Multiply ``a`` and ``b`` using scalar multiplication
     #. Multiply ``a`` and ``b`` using matrix multiplication
@@ -436,7 +435,7 @@ Numpy Broadcasting Matmul
     #. Multiply ``b`` and ``a`` using matrix multiplication
     #. Discuss results
 
-:Polish:
+Polish:
     #. Dla danych: ``a: np.ndarray``, ``b: np.ndarray`` (patrz sekcja input)
     #. Przemnóż ``a`` i ``b`` używając mnożenia skalarnego
     #. Przemnóż ``a`` i ``b`` używając mnożenia macierzowego
@@ -444,7 +443,7 @@ Numpy Broadcasting Matmul
     #. Przemnóż ``b`` i ``a`` używając mnożenia macierzowego
     #. Omów wyniki
 
-:Input:
+Given:
     .. code-block:: python
 
         a = np.array([[1,0,1,0],

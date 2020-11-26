@@ -474,15 +474,15 @@ Assignments
 
 DataFrame Plot
 --------------
-* Assignment name: DataFrame Plot
+* Assignment: DataFrame Plot
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/df_plot.py`
+* Filename: :download:`solution/df_plot.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` as ``sensors: pd.DataFrame``
     #. Select ``Luminance`` stylesheet
     #. Parse column with dates
@@ -492,8 +492,8 @@ DataFrame Plot
     #. Easy: for day 2019-09-28
     #. Advanced: for each day, as subplots
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``sensors: pd.DataFrame``
     #. Wybierz arkusz ``Luminance``
     #. Sparsuj kolumny z datami
@@ -503,13 +503,13 @@ DataFrame Plot
     #. Łatwe: dla dnia 2019-09-28
     #. Zaawansowane: dla wszystkich dni, jako subplot
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/xlsx/sensors-optima.xlsx'
         WHERE = 'Sleeping Quarters upper'
         WHEN = '2019-09-28'
 
-:Hints:
+Hints:
     * ``pd.Series.apply(np.sign)`` :ref:`Numpy signum`
     * ``pd.Series.resample('H').sum()``

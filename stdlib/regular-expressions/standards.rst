@@ -85,18 +85,18 @@ Assignments
 
 Regexp Standards PESEL
 ----------------------
-* Assignment name: Regexp Standards PESEL
+* Assignment: Regexp Standards PESEL
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 0 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/regexp_standards_pesel.py` (naive implementation)
+* Filename: :download:`solution/regexp_standards_pesel.py` (naive implementation)
 * Warning: Do no write any code - **discussion only**
 
-:English:
+English:
     .. todo:: English translation
 
-:Polish:
+Polish:
     #. Przeprowadź eksperyment myślowy (**tylko dyskusja**)
     #. Jak sprawdzić za pomocą wyrażeń regularnych czy:
 

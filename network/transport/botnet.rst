@@ -8,12 +8,12 @@ Assignments
 
 Mini Botnet
 -----------
-* Assignment name: Mini Botnet
+* Assignment: Mini Botnet
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 45 lines
 * Estimated time of completion: 21 min
-* Solution: TODO
+* Filename: TODO
 
 #. Stwórz mini botnet o architekturze podanej :numref:`figure-botnet`. Mini botnet składa się z trzech części:
 
@@ -28,22 +28,22 @@ Mini Botnet
 
     Architektura botnet
 
-:Hints:
+Hints:
     * Do weryfikacji czy port jest otwarty możesz użyć ``telnet`` albo ``netcat``
 
 Heartbeat Receiver
 ------------------
-* Assignment name: Heartbeat Receiver
+* Assignment: Heartbeat Receiver
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 45 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/botnet_heartbeat_receiver.py`
+* Filename: :download:`solution/botnet_heartbeat_receiver.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Server ma przyjmować komunikaty UDP na porcie 1337
     #. Datę UTC przyjścia pakietu, IP i port backdoora zapisuje do bazy danych ``sqlite3`` jako pola:
 
@@ -51,22 +51,22 @@ Heartbeat Receiver
         * ``host TEXT``,
         * ``port INTEGER``.
 
-:Hints:
+Hints:
     * ``socketserver.UDPServer``
 
 Victim
 ------
-* Assignment name: Victim
+* Assignment: Victim
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 150 lines
 * Estimated time of completion: 34 min
-* Solution: :download:`solution/botnet_victim.py`
+* Filename: :download:`solution/botnet_victim.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Po zainfekowaniu otwiera randomowy port TCP (backdoor) z przedziału 1025-65535 na którym nasłuchuje komunikatów
     #. Dlaczego taki zakres portów?
     #. Co 5 sekund wysyła informację ze swoim numerem portu backdoor oraz swoim adresem IP do Heartbeat Receiver
@@ -82,7 +82,7 @@ Victim
     #. Stwórz dekorator ``is_valid_xml``, który sprawdzi czy XML się waliduje (czy ma poprawną strukturę) i tylko wtedy wykona polecenia
     #. Stwórz dekorator ``log_incoming_requests``, który zapisze do pliku ``botnet.log`` logi w formacie ``Request from IP:PORT to execute COMMAND ARGUMENTS`` dla każdego polecenia wykonywanego na systemie ofiary
 
-:Hints:
+Hints:
     * ``random``
     * ``logging``
     * ``socket``
@@ -93,17 +93,17 @@ Victim
 
 Attacker
 --------
-* Assignment name: Attacker
+* Assignment: Attacker
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 150 lines
 * Estimated time of completion: 34 min
-* Solution: :download:`solution/botnet_attacker.py`
+* Filename: :download:`solution/botnet_attacker.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Skopiuj zawartość :numref:`listing-botnet-commands` do pliku ``botnet-commands.xml``
     #. Skrypt można wywoływać z parametrami linii poleceń:
 
@@ -129,13 +129,13 @@ Attacker
     #. Przetwarzanie requestów jest nieblokujące, tzn. otwieraj wątek dla każdego zapytania
     #. Wykorzystaj ``os.path.join`` (łączenie ścieżki) oraz ``os.walk`` (wyświetlanie zawartości).
 
-:Input:
+Given:
     .. literalinclude:: src/botnet-commands.xml
         :name: listing-botnet-commands
         :language: python
         :caption: Komunikat XML z listą poleceń do wykonania na komputerze ofiary
 
-:Hints:
+Hints:
     * ``argparse``
     * ``socket``
     * ``json.dumps()``, ``json.loads()``

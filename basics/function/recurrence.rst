@@ -79,5 +79,5 @@ Assignments
 ===========
 
 .. literalinclude:: solution/function_recurrence_brackets.py
-    :caption: :download:`Solution <solution/function_recurrence_brackets.py`
+    :caption: :download:`Solution <solution/function_recurrence_brackets.py>`
     :end-before: # Solution

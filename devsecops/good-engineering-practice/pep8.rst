@@ -842,24 +842,19 @@ Assignments
 
 Cleanup your file
 -----------------
-* Assignment name: Cleanup your file
+* Assignment: Cleanup your file
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 2 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/cleanup.py`
+* Filename: :download:`solution/cleanup.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Install ``pycodestyle``
     #. Run ``pycodestyle`` on your last script
     #. Fix all errors
     #. Run ``pycodestyle`` on directory with all of your scripts
     #. Fix all errors
-
-:The whys and wherefores:
-    * Umiejętność czytania komunikatów
-    * Umiejętność pracy z terminalem
-    * Utrzymywanie konwencji PEP8

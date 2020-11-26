@@ -200,18 +200,18 @@ Assignments
 
 DataFrame Sample
 ----------------
-* Assignment name: DataFrame Sample
+* Assignment: DataFrame Sample
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/df_sample.py`
+* Filename: :download:`solution/df_sample.py`
 
-:English:
+English:
     .. todo:: English translation
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``astro_flights: pd.DataFrame``
     #. W danych kolumna "Order":
 
@@ -226,7 +226,7 @@ DataFrame Sample
         * Pierwsze trzy wiersze
         * Ostatnie 10% wierszy
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/astro-order.csv'

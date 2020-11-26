@@ -281,63 +281,52 @@ Assignments
 
 Numpy Random Float
 ------------------
-* Assignment name: Numpy Random Float
+* Assignment: Numpy Random Float
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/numpy_random_float.py`
+* Filename: :download:`solution/numpy_random_float.py`
 
-:English:
+English:
     #. Set random seed to zero
     #. Print ``np.ndarray`` of 10 random floats
 
-:Polish:
+Polish:
     #. Ustaw ziarno losowości na zero
     #. Wypisz ``np.ndarray`` z 10 losowymi liczbami zmiennoprzecinkowymi
 
-:The whys and wherefores:
-    * Using ``np.random.seed()``
-    * Generating random ``np.ndarray``
-
 Numpy Random Int
 ----------------
-* Assignment name: Numpy Random Int
+* Assignment: Numpy Random Int
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/numpy_random_int.py`
+* Filename: :download:`solution/numpy_random_int.py`
 
-:English:
+English:
     #. Set random seed to zero
     #. Print ``np.ndarray`` of size 16x16 with random integers ``[0;9]`` (inclusive)
 
-:Polish:
+Polish:
     #. Ustaw ziarno losowości na zero
     #. Print ``np.ndarray`` o rozmiarze 16x16 z losowymi liczbami całkowitymi ``<0,9>`` (włącznie)
 
-:The whys and wherefores:
-    * Using ``np.random.seed()``
-    * Generating random ``np.ndarray``
-
 Numpy Random Sample
 -------------------
-* Assignment name: Numpy Random Sample
+* Assignment: Numpy Random Sample
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/numpy_random_sample.py`
+* Filename: :download:`solution/numpy_random_sample.py`
 
-:English:
+English:
     #. Set random seed to zero
     #. Print 6 random integers without repetition in range from 1 to 49
 
-:Polish:
+Polish:
     #. Ustaw ziarno losowości na zero
     #. Wyświetl 6 losowych i nie powtarzających się liczb całkowitych z zakresu od 1 do 49.
 
-:The whys and wherefores:
-    * Using ``np.random.seed()``
-    * Generating random ``np.ndarray``

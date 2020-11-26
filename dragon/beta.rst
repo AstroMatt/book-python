@@ -10,18 +10,18 @@ Dragon (version beta)
 
     Firkraag dragon from game Baldur's Gate II: Shadows of Amn
 
-* Assignment name: Dragon (version beta)
+* Assignment: Dragon (version beta)
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 120 lines
 * Estimated time of completion: 60 min (±10 min), then 30 min live coding with instructor
-* Solution: :download:`solution/dragon_beta.py`
+* Filename: :download:`solution/dragon_beta.py`
 * Warning: Don't delete code, assignment will be continued
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Zaimportuj smoka z poprzedniej części zadania ("Part 1")
     #. Wykorzystaj mechanizm dziedziczenia dla Smoka
     #. Nie modyfikuj klasy smoka z poprzedniej części
@@ -49,5 +49,5 @@ Dragon (version beta)
     #. Przeprowadź walkę, tak długo aż ktoś pierwszy nie zginie
     #. Jeżeli konieczne jest wprowadzenie nowej metody, klasy lub pól to należy to zrobić
 
-:Hints:
+Hints:
     * Aby zaimportować trzeba najpierw w katalogu stworzyć pusty plik ``__init__.py``

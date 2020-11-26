@@ -252,15 +252,15 @@ Assignments
 
 Numpy Indexing
 --------------
-* Assignment name: Numpy Indexing
+* Assignment: Numpy Indexing
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/numpy_indexing.py`
+* Filename: :download:`solution/numpy_indexing.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Create ``result: np.ndarray``
     #. Add to ``result`` elements from ``DATA`` at indexes:
 
@@ -271,10 +271,10 @@ Numpy Indexing
 
     #. ``result`` size must be 2x2
     #. ``result`` type must be float
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Stwórz ``result: np.ndarray``
     #. Dodaj do ``result`` elementy z ``DATA`` o indeksach:
 
@@ -285,9 +285,9 @@ Numpy Indexing
 
     #. Rozmiar ``result`` musi być 2x2
     #. Typ ``result`` musi być float
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = np.array([
@@ -296,16 +296,10 @@ Numpy Indexing
             [7, 8, 9]
         ])
 
-:Output:
-    .. code-block:: python
+Tests:
+    >>> result
+    array([[3., 9.],
+           [1., 4.]])
 
-        result: np.ndarray
-        # array([[3., 9.],
-        #        [1., 4.]])
-
-:The whys and wherefores:
-    * Defining ``np.ndarray``
-    * Indexing ``np.ndarray``
-
-:Hints:
+Hints:
     * ``np.zeros(shape, dtype)``

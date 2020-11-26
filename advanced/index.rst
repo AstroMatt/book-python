@@ -138,16 +138,3 @@ Recap
 
     about/recap.rst
     about/certificate.rst
-
-
-**********
-References
-**********
-
-Bibliography
-============
-.. bibliography:: _references/bibliography.bib
-    :style: plain
-    :labelprefix: ADV
-    :all:
-

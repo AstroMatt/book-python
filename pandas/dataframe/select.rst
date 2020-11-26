@@ -219,23 +219,23 @@ Assignments
 
 DataFrame Select
 ----------------
-* Assignment name: DataFrame Select
+* Assignment: DataFrame Select
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/df_select.py`
+* Filename: :download:`solution/df_select.py`
 
-:English:
+English:
     .. todo:: Translate to English
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``iris: pd.DataFrame``
     #. Przefiltruj ``inplace`` kolumnę 'Petal length' i pozostaw wartości powyżej 2.0
     #. Wyświetl 5 pierwszych wierszy
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris-clean.csv'

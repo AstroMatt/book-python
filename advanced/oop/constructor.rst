@@ -330,58 +330,6 @@ Use Cases
 Assignments
 ===========
 
-OOP Constructor Passwd
-----------------------
-* Assignment name: OOP Constructor Passwd
-* Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 21 lines
-* Estimated time of completion: 13 min
-* Solution: :download:`solution/oop_constructor_passwd.py`
-
-:English:
-    .. todo:: English translation
-
-:Polish:
-    #. Użyj kodu z sekcji "Input" (patrz poniżej)
-    #. Iteruj po liniach w ``DATA``
-    #. Odrzuć puste linie i komentarze
-    #. Podziel linię po dwukropku
-    #. Stwórz klasę ``Account``, która zwraca instancje klas ``UserAccount`` lub ``SystemAccount`` w zależności od wartości pola UID
-    #. User ID (UID) to trzecie pole, np. ``root:x:0:0:root:/root:/bin/bash`` to UID jest równy ``0``
-    #. Konta systemowe (``SystemAccount``) to takie, które w polu UID mają wartość poniżej ``1000``
-    #. Konta użytkowników (``UserAccount``) to takie, które w polu UID mają wartość ``1000`` lub więcej
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
-
-:Input:
-    .. code-block:: python
-
-        DATA = """root:x:0:0:root:/root:/bin/bash
-        bin:x:1:1:bin:/bin:/sbin/nologin
-        daemon:x:2:2:daemon:/sbin:/sbin/nologin
-        adm:x:3:4:adm:/var/adm:/sbin/nologin
-        shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
-        halt:x:7:0:halt:/sbin:/sbin/halt
-        nobody:x:99:99:Nobody:/:/sbin/nologin
-        sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
-        twardowski:x:1000:1000:Jan Twardowski:/home/twardowski:/bin/bash
-        watney:x:1001:1001:José Jiménez:/home/watney:/bin/bash
-        ivanovic:x:1002:1002:Иван Иванович:/home/ivanovic:/bin/bash
-        lewis:x:1002:1002:Melissa Lewis:/home/lewis:/bin/bash"""
-
-:Output:
-    .. code-block:: text
-
-        >>> result  # doctest: +NORMALIZE_WHITESPACE
-        [SystemAccount(username='root'),
-         SystemAccount(username='bin'),
-         SystemAccount(username='daemon'),
-         SystemAccount(username='adm'),
-         SystemAccount(username='shutdown'),
-         SystemAccount(username='halt'),
-         SystemAccount(username='nobody'),
-         SystemAccount(username='sshd'),
-         UserAccount(username='twardowski'),
-         UserAccount(username='watney'),
-         UserAccount(username='ivanovic'),
-         UserAccount(username='lewis')]
+.. literalinclude:: solution/oop_constructor_passwd.py
+    :caption: :download:`Solution <solution/oop_constructor_passwd.py>`
+    :end-before: # Solution

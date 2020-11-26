@@ -146,14 +146,14 @@ Assignments
 
 Series Getitem
 --------------
-* Assignment name: Series Getitem
+* Assignment: Series Getitem
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 8 min
-* Solution: :download:`solution/series_getitem.py`
+* Filename: :download:`solution/series_getitem.py`
 
-:English:
+English:
     #. Set random seed to zero
     #. Create ``pd.Series`` with 100 random numbers from standard normal distribution
     #. Series Index are following dates since 2000
@@ -164,7 +164,7 @@ Series Getitem
         * last value in the series (without using ``.tail()``),
         * middle value in the series.
 
-:Polish:
+Polish:
     #. Ustaw ziarno losowości na zero
     #. Stwórz ``pd.Series`` z 100 losowymi liczbami z rozkładu normalnego
     #. Indeksem w serii mają być kolejne dni od 2000 roku
@@ -175,6 +175,6 @@ Series Getitem
         * ostatnią wartość w serii (nie używając ``.tail()``),
         * środkowa wartość serii.
 
-:Hints:
+Hints:
     * ``np.random.seed(0)``
     * ``np.random.randn(10)``

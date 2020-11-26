@@ -244,34 +244,6 @@ Case Studies
 Assignments
 ===========
 
-Function First Class Define
----------------------------
-* Assignment name: Function First Class Define
-* Last update: 2020-10-13
-* Complexity level: easy
-* Lines of code to write: 4 lines
-* Estimated time of completion: 5 min
-* Solution: :download:`solution/function_firstclass_define.py`
-
-:English:
-    #. Define function ``wrapper``
-    #. Function ``wrapper`` takes arbitrary number of positional and keyword arguments
-    #. Function ``wrapper`` prints ``hello from wrapper``
-    #. Define function ``check`` with ``func: Callable`` as a parameter
-    #. Function ``check`` must return ``wrapper: Callable``
-
-:Polish:
-    #. Zdefiniuj funkcję ``wrapper``
-    #. Funkcja ``wrapper`` przyjmuje dowolną ilość argumentów pozycyjnych i nazwanych
-    #. Funkcja ``wrapper`` wypisuje ``hello from wrapper``
-    #. Zdefiniuj funkcję ``check`` z ``func: Callable`` jako parametr
-    #. Funkcja ``check`` ma zwracać ``wrapper: Callable``
-
-.. code-block:: text
-
-    >>> from inspect import isfunction
-    >>> assert isfunction(check)
-    >>> assert isfunction(wrapper)
-    >>> assert isfunction(check(lambda: None))
-    >>> check(lambda: None)()
-    hello from wrapper
+.. literalinclude:: solution/function_firstclass_define.py
+    :caption: :download:`Solution <solution/function_firstclass_define.py>`
+    :end-before: # Solution

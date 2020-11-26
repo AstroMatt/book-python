@@ -340,17 +340,17 @@ Assignments
 
 Klastrowanie zbioru Iris
 ------------------------
-* Assignment name: Klastrowanie zbioru Iris
+* Assignment: Klastrowanie zbioru Iris
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 30 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/clustering_iris.py`
+* Filename: :download:`solution/clustering_iris.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Dla zbioru Iris dokonaj klastrowania za pomocą algorytmu ``KMeans`` z biblioteki ``sklearn``.
     #. Dla jakiego hiperparametru ``n_clusters`` osiągniemy największe accuracy?
     #. Zwizualizuj graficznie rozwiązanie problemu

@@ -166,14 +166,14 @@ Assignments
 
 Series Arithmetic
 -----------------
-* Assignment name: Series Arithmetic
+* Assignment: Series Arithmetic
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/series_arithmetic.py`
+* Filename: :download:`solution/series_arithmetic.py`
 
-:English:
+English:
     #. Set random seed to zero
     #. Generate ``data: ndarray`` with 5 random digits [0, 9]
     #. Create ``index: list`` with index names as sequential letters in english alphabet
@@ -181,7 +181,7 @@ Series Arithmetic
     #. Multiply ``s`` by 10
     #. Multiply ``s`` by original ``s`` values (before multiplying by 10)
 
-:Polish:
+Polish:
     #. Ustaw random ziarno losowości na zero
     #. Wygeneruj ``data: np.ndarray`` z 5 losowymi cyframi <0, 9>
     #. Stwórz ``index: list`` z indeksami jak kolejne listery alfabetu angielskiego

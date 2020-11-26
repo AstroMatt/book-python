@@ -244,44 +244,44 @@ Assignments
 
 Pandas Read CSV Dates
 ---------------------
-* Assignment name: Pandas Read CSV Dates
+* Assignment: Pandas Read CSV Dates
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/pandas_read_csv_dates.py`
+* Filename: :download:`solution/pandas_read_csv_dates.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` to ``result: pd.DataFrame``
     #. Parse dates in "Mission Date" column
     #. Print ``result``
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` do ``result: pd.DataFrame``
     #. Sparsuj daty w kolumnie "Mission Date"
     #. Wypisz ``result``
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/martian-en.csv'
 
-:Hints:
+Hints:
     * ``parse_dates`` argument
 
 Pandas Read CSV Replace
 -----------------------
-* Assignment name: Pandas Read CSV Replace
+* Assignment: Pandas Read CSV Replace
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/pandas_read_csv_replace.py`
+* Filename: :download:`solution/pandas_read_csv_replace.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` to ``result: pd.DataFrame``
     #. Use provided column names in ``COLUMNS``
     #. Read labels from the first row
@@ -289,15 +289,15 @@ Pandas Read CSV Replace
     #. Print ``DataFrame``
     #. Print first 5 rows from ``result``
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` do ``result: pd.DataFrame``
     #. Użyj podanych w ``COLUMNS`` nazw kolumn
     #. Wczytaj nazwy labeli z pierwszego wiersza
     #. Podmień dane w kolumnie ``label`` na wartości wyciągnięte powyżej
     #. Wypisz pierwsze 5 wierszy z ``result``
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/breast-cancer.csv'
@@ -313,147 +313,144 @@ Pandas Read CSV Replace
                    'worst compactness', 'worst concavity', 'worst concave points',
                    'worst symmetry', 'worst fractal dimension', 'label']
 
-:The whys and wherefores:
-    * Read Pandas ``DataFrame``
-
-:Hints:
+Hints:
     * ``pd.read_csv(url, nrows=0).columns``
     * ``df['label'].replace({'from': 'to'}, inplace=True)``
 
 Pandas Read JSON
 ----------------
-* Assignment name: Pandas Read JSON
+* Assignment: Pandas Read JSON
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/pandas_read_json_iris.py`
+* Filename: :download:`solution/pandas_read_json_iris.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` as ``result: pd.DataFrame``
     #. Print ``result: pd.DataFrame``
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``result: pd.DataFrame``
     #. Wypisz ``result``
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/json/iris.json'
 
 Pandas Read JSON OpenAPI
 ------------------------
-* Assignment name: Pandas Read JSON OpenAPI
+* Assignment: Pandas Read JSON OpenAPI
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/pandas_read_json_openapi.py`
+* Filename: :download:`solution/pandas_read_json_openapi.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` as ``result: pd.DataFrame``
     #. Use ``requests`` library
     #. Print ``result``
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``result: pd.DataFrame``
     #. Użyj biblioteki ``requests``
     #. Wypisz ``result``
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/json/openapi.json'
 
 Pandas Read HTML
 ----------------
-* Assignment name: Pandas Read HTML
+* Assignment: Pandas Read HTML
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/pandas_read_html.py`
+* Filename: :download:`solution/pandas_read_html.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` as ``result: pd.DataFrame``
     #. Print ``result`` with active European Space Agency astronauts
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``result: pd.DataFrame``
     #. Wypisz ``result`` z aktywnymi astronautami Europejskiej Agencji Kosmicznej
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://en.wikipedia.org/wiki/European_Astronaut_Corps'
 
-:Hints:
+Hints:
     * Might require ``lxml`` and ``html5lib``: ``pip install --upgrade lxml html5lib``
     * 3rd table
 
 Pandas Read XSLT Books
 ----------------------
-* Assignment name: Pandas Read XSLT Books
+* Assignment: Pandas Read XSLT Books
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/pandas_read_xslt_books.py`
+* Filename: :download:`solution/pandas_read_xslt_books.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` as ``result: pd.DataFrame``
     #. Use XSLT transformation
     #. Print ``result``
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``result: pd.DataFrame``
     #. Użyj transformaty XSLT
     #. Print ``result``
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/xml/plants.xml'
 
-:Hints:
+Hints:
     * Require ``lxml``: ``pip install lxml``
 
 Pandas Read XSLT Plants
 -----------------------
-* Assignment name: Pandas Read XSLT Plants
+* Assignment: Pandas Read XSLT Plants
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 5 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/pandas_read_xslt_plants.py`
+* Filename: :download:`solution/pandas_read_xslt_plants.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` as ``result: pd.DataFrame``
     #. Use XSLT transformation
     #. Make sure that columns and indexes are named properly
     #. Calculate average cost of flower
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``result: pd.DataFrame``
     #. Użyj transformaty XSLT
     #. Upewnij się, że nazwy kolumn i indeks są dobrze ustawione
     #. Wylicz średni koszt kwiatów
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/xml/plants.xml'
 
-:Hints:
+Hints:
     * Require ``lxml``: ``pip install lxml``

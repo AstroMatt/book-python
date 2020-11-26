@@ -48,24 +48,24 @@ Assignments
 
 DataFrame Export CSV
 --------------------
-* Assignment name: DataFrame Export CSV
+* Assignment: DataFrame Export CSV
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/pandas_to_csv.py`
+* Filename: :download:`solution/pandas_to_csv.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` as ``astro_eva1: pd.DataFrame``
     #. Export to file ``FILE`` data in ``CSV`` format
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``astro_eva1: pd.DataFrame``
     #. Wyeksportuj do pliku ``FILE`` dane w formacie ``CSV``
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://www.worldspaceflight.com/bios/eva/eva.php'
@@ -73,24 +73,24 @@ DataFrame Export CSV
 
 DataFrame Export JSON
 ---------------------
-* Assignment name: DataFrame Export JSON
+* Assignment: DataFrame Export JSON
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/pandas_to_json.py`
+* Filename: :download:`solution/pandas_to_json.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` as ``astro_eva2: pd.DataFrame``
     #. Export to file ``FILE`` data in ``JSON`` format
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``astro_eva2: pd.DataFrame``
     #. Wyeksportuj do pliku ``FILE`` dane w formacie ``JSON``
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = r'https://www.worldspaceflight.com/bios/eva/eva2.php'
@@ -98,24 +98,24 @@ DataFrame Export JSON
 
 DataFrame Export Pickle
 -----------------------
-* Assignment name: DataFrame Export Pickle
+* Assignment: DataFrame Export Pickle
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/pandas_to_pickle.py`
+* Filename: :download:`solution/pandas_to_pickle.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` as ``astro_eva3: pd.DataFrame``
     #. Export to file ``FILE`` data in ``JSON`` format
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``astro_eva3: pd.DataFrame``
     #. Wyeksportuj do pliku ``FILE`` dane w formacie ``JSON``
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = r'https://www.worldspaceflight.com/bios/eva/eva3.php'
@@ -123,26 +123,26 @@ DataFrame Export Pickle
 
 DataFrame Export Pickle
 -----------------------
-* Assignment name: DataFrame Export Pickle
+* Assignment: DataFrame Export Pickle
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/pandas_to_sql.py`
+* Filename: :download:`solution/pandas_to_sql.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Read data from ``DATA`` as ``astro_eva4: pd.DataFrame``
     #. Export to file ``FILE`` data in ``SQL`` format
     #. Use table ``astro_eva``
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj dane z ``DATA`` jako ``astro_eva4: pd.DataFrame``
     #. Wyeksportuj do pliku ``FILE`` dane w formacie ``SQL``
     #. Użyj tabeli ``astro_eva``
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = r'https://www.worldspaceflight.com/bios/eva/eva4.php'

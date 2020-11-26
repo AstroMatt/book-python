@@ -264,49 +264,49 @@ Assignments
 
 Least square regression 3 points
 --------------------------------
-* Assignment name: Least square regression 3 points
+* Assignment: Least square regression 3 points
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/linreg_least_square_3pts.py`
+* Filename: :download:`solution/linreg_least_square_3pts.py`
 
-:English:
+English:
     #. Consider the following set of points: :math:`{(-2 , -1) , (1 , 1) , (3 , 2)}`
     #. Find the least square regression line for the given data points.
     #. Plot the given points and the regression line in the same rectangular system of axes.
     #. Napisz własny kod implementujący rozwiązanie
 
-:Polish:
+Polish:
     .. todo:: Polish Translation
 
 Least square regression 4 points
 --------------------------------
-* Assignment name: Least square regression 4 points
+* Assignment: Least square regression 4 points
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/linreg_least_square_4pts.py`
+* Filename: :download:`solution/linreg_least_square_4pts.py`
 
-:English:
+English:
     #. Find the least square regression line for the following set of data: :math:`{(-1 , 0),(0 , 2),(1 , 4),(2 , 5)}`
     #. Plot the given points and the regression line in the same rectangular system of axes.
     #. Użyj kodu z przykładu własnej implementacji do rozwiązania
 
-:Polish:
+Polish:
     .. todo:: Polish Translation
 
 Company sales
 -------------
-* Assignment name: Company sales
+* Assignment: Company sales
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/linreg_company_sales.py`
+* Filename: :download:`solution/linreg_company_sales.py`
 
-:English:
+English:
     #. The sales of a company (in million dollars) for each year are shown in the table below.
 
         .. code-block:: text
@@ -318,5 +318,5 @@ Company sales
     #. Use the least squares regression line as a model to estimate the sales of the company in 2012.
     #. Use ``sklearn``
 
-:Polish:
+Polish:
     .. todo:: Polish Translation

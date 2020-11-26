@@ -534,17 +534,17 @@ Assignments
 
 ``map()``, ``filter()`` and ``lambda``
 --------------------------------------
-* Assignment name: ``map()``, ``filter()`` and ``lambda``
+* Assignment: ``map()``, ``filter()`` and ``lambda``
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/functional_map_filter_lambda.py`
+* Filename: :download:`solution/functional_map_filter_lambda.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Używając generatora zbuduj listę zawierającą wszystkie liczby podzielne przez 3 z zakresu od 1 do 33:
     #. Używając funkcji ``filter()`` usuń z niej wszystkie liczby parzyste
     #. Używając wyrażenia ``lambda`` i funkcji ``map()`` podnieś wszystkie elementy tak otrzymanej listy do sześcianu
@@ -552,14 +552,14 @@ Assignments
 
 Balanced Brackets
 -----------------
-* Assignment name: Balanced Brackets
+* Assignment: Balanced Brackets
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 10 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/functional_brackets.py`
+* Filename: :download:`solution/functional_brackets.py`
 
-:English:
+English:
     #. Create function which checks if brackets are balanced
     #. Brackets are balanced, when each opening bracket has closing pair
     #. Use recursion
@@ -570,7 +570,7 @@ Balanced Brackets
         * curly ``{`` i ``}``
         * angle ``<`` i ``>``
 
-:Polish:
+Polish:
     #. Stwórz funkcję, która sprawdzi czy nawiasy są zbalansowane
     #. Nawiasy są zbalansowane, gdy każdy otwierany nawias ma zamykającą parę
     #. Użyj rekurencji

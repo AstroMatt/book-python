@@ -1,6 +1,6 @@
 """
 * Assignment: Function Doctest Regexp
-* Solution: discussion
+* Filename: discussion
 * Complexity: almost impossible
 * Lines of code to write: 0 lines
 * Estimated time: 5 min
@@ -118,3 +118,5 @@ INVALID = [
     'http://.www.foo.bar./',
     'http://10.1.1.1',
     'http://10.1.1.254']
+
+# Solution

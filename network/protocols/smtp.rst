@@ -29,17 +29,17 @@ Assignments
 
 Send email
 ----------
-* Assignment name: Send email
+* Assignment: Send email
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/smtp_ssl.py`
+* Filename: :download:`solution/smtp_ssl.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Połącz się z serwerem podanym przez prowadzącego
     #. Wyślij wiadomość email na podany przez prowadzącego adres
     #. Do wiadomości załącz plik ``pep20.txt``, który będzie wynikiem polecenia ``import this`` :pep:`20`

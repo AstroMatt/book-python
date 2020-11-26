@@ -337,24 +337,24 @@ Assignments
 
 Iris transformations
 --------------------
-* Assignment name: Iris transformations
+* Assignment: Iris transformations
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/matplotlib_lifecycle.py`
+* Filename: :download:`solution/matplotlib_lifecycle.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Opracuj podobny wykres dla danych Irysów
     #. Weź pod uwagę jedynie ``sepal_length`` oraz ``species``
     #. Species ma być w osi ``y``
     #. Na osi ``x`` ma być ``sepal_length``
     #. Czerwony marker opisuje średnią długość ``sepal_length`` dla wszystkich gatunków
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris.csv'

@@ -195,7 +195,7 @@ Jaką płeć ma osoba o parametrach?:
 
 Zwizualizuj drzewo decyzyjne
 
-:Hints:
+Hints:
     * ``preprocessing.LabelEncoder()``
 
 Banknoty

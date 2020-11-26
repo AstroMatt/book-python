@@ -31,20 +31,20 @@ Assignments
 
 Installing from ``requirements.txt``
 ------------------------------------
-* Assignment name: Installing from ``requirements.txt``
+* Assignment: Installing from ``requirements.txt``
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 1 line
 * Estimated time of completion: 5 min
-* Solution: :download:``requirements.txt``
+* Filename: :download:``requirements.txt``
 
-:English:
+English:
     #. Create ``requirements.txt`` file
     #. Add line ``mypy``
     #. Let your IDE install package automatically (click in yellow banner)
     #. Run ``mypy`` on last edited Python script
 
-:Polish:
+Polish:
     #. Stwórz plik ``requirements.txt``
     #. Dopisz linię ``mypy``
     #. Niech Twoje IDE zainstaluje package automatycznie (kliknięcie w żółty banner)

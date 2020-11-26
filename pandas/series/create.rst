@@ -129,69 +129,69 @@ Assignments
 
 Series Create Float
 -------------------
-* Assignment name: Series Create Float
+* Assignment: Series Create Float
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/series_create_float.py`
+* Filename: :download:`solution/series_create_float.py`
 
-:English:
+English:
     #. Create ``pd.Series`` with 5 float numbers
     #. One of those values must be ``None``
 
-:Polish:
+Polish:
     #. Stwórz ``pd.Series`` z 5 liczbami zmiennoprzecinkowymi
     #. Jedną z tych wartości musi być ``None``
 
 Series Create Randint
 ---------------------
-* Assignment name: Series Create Randint
+* Assignment: Series Create Randint
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/series_create_randint.py`
+* Filename: :download:`solution/series_create_randint.py`
 
-:English:
+English:
     #. Set random seed to zero
     #. Create ``pd.Series`` with 10 random digits (``int`` from ``0`` to ``9``)
 
-:Polish:
+Polish:
     #. Ustaw ziarno losowości na zero
     #. Stwórz ``pd.Series`` z 10 losowymi cyframi  (``int`` from ``0`` to ``9``)
 
 Series Create Even
 ------------------
-* Assignment name: Series Create Even
+* Assignment: Series Create Even
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/series_create_even.py`
+* Filename: :download:`solution/series_create_even.py`
 
-:English:
+English:
     #. Create ``pd.Series`` with 10 even numbers
 
-:Polish:
+Polish:
     #. Stwórz ``pd.Series`` z 10 liczbami parzystymi
 
 Series Create Dates
 -------------------
-* Assignment name: Series Create Dates
+* Assignment: Series Create Dates
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/series_create_dates.py`
+* Filename: :download:`solution/series_create_dates.py`
 
-:English:
+English:
     #. Gagarin flown to space on 1961-04-12
     #. Armstrong set foot on the Moon on 1969-07-21
     #. Create ``pd.Series`` with days between Gagarin's launch and Armstrong's first step
     #. How many days passed?
 
-:Polish:
+Polish:
     #. Gagarin poleciał w kosmos w 1961-04-12
     #. Armstrong postawił stopę na Księżycu w 1969-07-21
     #. Stwórz ``pd.Series`` z dniami pomiędzy startem Gagarina a pierwszym krokiem Armstronga

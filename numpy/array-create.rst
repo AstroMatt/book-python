@@ -368,23 +368,20 @@ Assignments
 
 Numpy Create Arange
 -------------------
-* Assignment name: Numpy Create Arange
+* Assignment: Numpy Create Arange
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/numpy_create_arange.py`
+* Filename: :download:`solution/numpy_create_arange.py`
 
-:English:
+English:
     #. Create ``a: np.ndarray`` with even numbers from 0 to 100 (without 100)
     #. Numbers must be ``float`` type
 
-:Polish:
+Polish:
     #. Stwórz ``a: np.ndarray`` z liczbami parzystymi od 0 do 100 (bez 100)
     #. Liczby muszą być typu ``float``
-
-:The whys and wherefores:
-    * Defining ``np.ndarray``
 
 
 References

@@ -68,14 +68,14 @@ Assignments
 
 Series Sample
 --------------
-* Assignment name: Series Sample
+* Assignment: Series Sample
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/series_sample.py`
+* Filename: :download:`solution/series_sample.py`
 
-:English:
+English:
     #. Set random seed to zero
     #. Create ``pd.Series`` with 100 random numbers from standard normal distribution
     #. Series Index are following dates since 2000
@@ -88,7 +88,7 @@ Series Sample
         * three random elements,
         * 125% of random elements with replacement.
 
-:Polish:
+Polish:
     #. Ustaw ziarno losowości na zero
     #. Stwórz ``pd.Series`` z 100 losowymi liczbami z rozkładu normalnego
     #. Indeksem w serii mają być kolejne dni od 2000 roku
@@ -101,6 +101,6 @@ Series Sample
         * trzy losowe element,
         * 125% losowych elementów z powtórzeniami.
 
-:Hints:
+Hints:
     * ``np.random.seed(0)``
     * ``np.random.randn(n)``

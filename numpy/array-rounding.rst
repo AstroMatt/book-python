@@ -162,26 +162,26 @@ Assignments
 
 Numpy Round Rint
 ----------------
-* Assignment name: Numpy Round Rint
+* Assignment: Numpy Round Rint
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/numpy_round_rint.py`
+* Filename: :download:`solution/numpy_round_rint.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Round values to integers
     #. Convert data type to ``np.int8``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zaokrąglij wartości do pełnych liczb całkowitych
     #. Przekonwertuj typ danych do ``np.int8``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = np.array([0.5488135 , 0.71518937, 0.60276338, 0.54488318, 0.4236548 ,
@@ -190,36 +190,36 @@ Numpy Round Rint
                          0.0871293 , 0.0202184 , 0.83261985, 0.77815675, 0.87001215,
                          0.97861834])
 
-:Output:
-    .. code-block:: python
-
-        result: np.ndarray
-        # array([1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1], dtype=int8)
+Tests:
+    >>> type(result)
+    np.ndarray
+    >>> result
+    array([1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1], dtype=int8)
 
 Numpy Round Floor and Ceil
 --------------------------
-* Assignment name: Numpy Round Floor and Ceil
+* Assignment: Numpy Round Floor and Ceil
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/numpy_round_ceilfloor.py`
+* Filename: :download:`solution/numpy_round_ceilfloor.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Ceil round ``data`` values and print them
     #. Floor round ``data`` values and print them
     #. Round ``data`` values and print them
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zaokrąglij wartości ``data`` w górę (ceil) i je wypisz
     #. Zaokrąglij wartości ``data`` w dół (floor) i je wypisz
     #. Zaokrąglij wartości ``data`` i je wypisz
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = np.array([0.5488135 , 0.71518937, 0.60276338, 0.54488318, 0.4236548 ,
@@ -228,7 +228,7 @@ Numpy Round Floor and Ceil
                          0.0871293 , 0.0202184 , 0.83261985, 0.77815675, 0.87001215,
                          0.97861834])
 
-:Output:
+Tests:
     .. code-block:: python
 
         ceil: np.ndarray
@@ -245,28 +245,28 @@ Numpy Round Floor and Ceil
 
 Numpy Round Clip
 ----------------
-* Assignment name: Numpy Round Clip
+* Assignment: Numpy Round Clip
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/numpy_round_clip.py`
+* Filename: :download:`solution/numpy_round_clip.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Create ``result: np.ndarray`` copy of ``DATA``
     #. Clip numbers only in first column to 50 (inclusive) to 80 (exclusive)
     #. Print ``result``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Stwórz ``result: np.ndarray`` z kopią danych z ``DATA``
     #. Przytnij liczby w pierwszej kolumnie od 50 (włącznie) do 80 (rozłącznie)
     #. Wypisz ``result``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = np.array([[44, 47, 64],
@@ -277,14 +277,14 @@ Numpy Round Clip
                          [65, 39, 87],
                          [46, 88, 81]])
 
-:Output:
-    .. code-block:: python
-
-        result: np.ndarray
-        # array([[50, 47, 64],
-        #        [67, 67,  9],
-        #        [79, 21, 36],
-        #        [79, 70, 88],
-        #        [79, 12, 58],
-        #        [65, 39, 87],
-        #        [50, 88, 81]])
+Tests:
+    >>> type(result)
+    np.ndarray
+    >>> result
+    # array([[50, 47, 64],
+    #        [67, 67,  9],
+    #        [79, 21, 36],
+    #        [79, 70, 88],
+    #        [79, 12, 58],
+    #        [65, 39, 87],
+    #        [50, 88, 81]])

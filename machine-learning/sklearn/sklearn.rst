@@ -135,17 +135,17 @@ Zadania praktyczne
 
 Nearest Neighbor Classifier
 ---------------------------
-* Assignment name: Nearest Neighbor Classifier
+* Assignment: Nearest Neighbor Classifier
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/sklearn_classifier.py`
+* Filename: :download:`solution/sklearn_classifier.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Napisz klasyfikator najbliższego sąsiada
     #. Podziel dane treningowe i testowe pół-na-pół
     #. Dla zbioru Iris ma osiągać accuracy na poziomie powyżej 90%
@@ -156,7 +156,7 @@ Nearest Neighbor Classifier
 
     #. Do porównania użyj ``accuracy = metrics.accuracy_score(labels_test, labels_predicted)``
 
-:Hints:
+Hints:
     * Dla każdego feature sprawdzasz jaka jest najmniejsza odległość
     * Wybierasz najmniejszą odległość ze wszystkich
     * Do obliczania odległości skorzystaj z algorytmu Euklidesa.
@@ -197,17 +197,17 @@ Nearest Neighbor Classifier
 
 Sklearn Classifier Compare
 --------------------------
-* Assignment name: Sklearn Classifier Compare
+* Assignment: Sklearn Classifier Compare
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/sklearn_classifier_compare.py`
+* Filename: :download:`solution/sklearn_classifier_compare.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Pobierz dane Brest Cancer Dataset (``datasets.load_breast_cancer()``)
     #. Podziel zestaw na dane testowe (15%) i dane treningowe (85%) i ustaw ``random_state=0``
     #. Dla danych przeprowadź analizę wykorzystując różne modele danych
@@ -226,7 +226,7 @@ Sklearn Classifier Compare
          Naive Bayes | Accuracy: 73.62% (+/- 2.89%)
                  QDA | Accuracy: 73.97% (+/- 4.42%)
 
-:Hints:
+Hints:
     .. code-block:: python
 
         classifiers = [

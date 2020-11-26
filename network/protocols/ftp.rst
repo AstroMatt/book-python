@@ -37,17 +37,17 @@ Assignments
 
 FTP Download
 ------------
-* Assignment name: FTP Download
+* Assignment: FTP Download
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/ftp_download.py`
+* Filename: :download:`solution/ftp_download.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Stwórz na swoim komputerze plik o nazwie ``imie-nazwisko.txt``, gdzie:
 
         * zamiast ``imie`` wpisz swoje imię
@@ -61,17 +61,17 @@ FTP Download
 
 FTP Upload
 ----------
-* Assignment name: FTP Upload
+* Assignment: FTP Upload
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/ftp_upload.py`
+* Filename: :download:`solution/ftp_upload.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Pobierz na swój komputer plik :download:`http://python.astrotech.io/_static/favicon.png`
     #. Nazwij plik ``imie-nazwisko.png``, gdzie:
 

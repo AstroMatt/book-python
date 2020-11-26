@@ -88,17 +88,6 @@ Run
 Assignments
 ===========
 
-C Modules
----------
-* Assignment name: C Modules
-* Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 10 lines
-* Estimated time of completion: 13 min
-* Solution: :download:`solution/cmodules_datetime.py`
-
-:English:
-    .. todo:: English Translation
-
-:Polish:
-    #. Wykorzystując C Modules wypisz datę i czas, za pomocą funkcji zdefiniowanej w C ``<time.h>``
+.. literalinclude:: solution/cmodules_datetime.py
+    :caption: :download:`Solution <solution/cmodules_datetime.py>`
+    :end-before: # Solution

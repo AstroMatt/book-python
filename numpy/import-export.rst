@@ -130,15 +130,15 @@ Assignments
 
 Numpy Loadtext
 --------------
-* Assignment name: Numpy Loadtext
+* Assignment: Numpy Loadtext
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 4 lines
 * Estimated time of completion: 5 min
-* Solution: :download:`solution/numpy_loadtext.py`
+* Filename: :download:`solution/numpy_loadtext.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Load text from ``URL``
     #. From the first line select Iris species names and save as str to ``species: np.ndarray``
     #. For other lines:
@@ -147,10 +147,10 @@ Numpy Loadtext
         #. Read last column with species numbers and save as int to ``labels: np.ndarray``
 
     #. Print ``species``, ``labels`` and ``features``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Wczytaj tekst z ``URL``
     #. Z pierwszej linii wybierz nazwy gatunków Irysów i zapisz rezultat jako str do ``species: np.ndarray``
     #. W pozostałych linii:
@@ -159,14 +159,14 @@ Numpy Loadtext
         * Wczytaj ostatnią kolumnę z numerami gatunków i zapisz jako int do ``labels: np.ndarray``
 
     #. Wyświetl ``species``, ``labels`` i ``features``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         URL = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris-dirty.csv'
 
-:Output:
+Tests:
     .. code-block:: python
 
         species: np.ndarray

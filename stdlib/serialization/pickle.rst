@@ -237,26 +237,26 @@ Assignments
 
 Pickle Serialization
 --------------------
-* Assignment name: Pickle Serialization
+* Assignment: Pickle Serialization
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 7 lines
 * Estimated time of completion: 7 min
-* Solution: :download:`solution/serialization_pickle_dump_load.py`
+* Filename: :download:`solution/serialization_pickle_dump_load.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Using ``pickle`` save data structure to file
     #. Recreate data structure from file
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Za pomocą ``pickle`` zapisz strukturę danych do pliku
     #. Odtwórz strukturę danych na podstawie danych z pliku
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         class Astronaut:
@@ -289,17 +289,11 @@ Pickle Serialization
         ]
 
 
-:Output:
-    .. code-block:: python
-
-        result: list[Astronaut]
-        # [
-        #   Astronaut(name='Jan Twardowski', missions=[
-        #       Mission(year=1969, name='Apollo 11'),
-        #       Mission(year=2024, name='Artemis 3')]),
-        #
-        #   Astronaut(name='Mark Watney', missions=[
-        #       Mission(year=2035, name='Ares 3')]),
-        #
-        #   Astronaut(name='Melissa Lewis', missions=[])
-        # ]
+Tests:
+    >>> result
+    [Astronaut(name='Jan Twardowski', missions=[
+         Mission(year=1969, name='Apollo 11'),
+         Mission(year=2024, name='Artemis 3')]),
+     Astronaut(name='Mark Watney', missions=[
+         Mission(year=2035, name='Ares 3')]),
+     Astronaut(name='Melissa Lewis', missions=[])]

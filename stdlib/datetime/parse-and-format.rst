@@ -327,55 +327,55 @@ Assignments
 
 Datetime Parse ISO
 ------------------
-* Assignment name: Datetime Parse ISO
+* Assignment: Datetime Parse ISO
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 1 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/datetime_parse_iso.py`
+* Filename: :download:`solution/datetime_parse_iso.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. The date and time is given in ISO format:
     #. Convert it to ``datetime`` object
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Dana jest data w formacie ISO
     #. Przedstaw datę jako obiekt ``datetime``
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = '1969-07-21T02:56:15.123Z'
 
 Datetime Parse Local
 --------------------
-* Assignment name: Datetime Parse Local
+* Assignment: Datetime Parse Local
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 3 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/datetime_parse_local.py`
+* Filename: :download:`solution/datetime_parse_local.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Create ``datetime`` object by parsing the given date
     #. Using formatting parameters print the date and time in ISO format
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Podaną datę przekonwertuj do obiektu ``datetime``
     #. Używając parametrów formatujących wyświetl datę i czas w formacie ISO
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'April 12, 1961 6:07 local time'
 
-:Output:
+Tests:
     .. code-block:: python
 
         data: datetime
@@ -384,40 +384,40 @@ Datetime Parse Local
         print(result)
         # 1961-04-12T06:07:00.000000Z
 
-:Hints:
+Hints:
     * Add string ``local time`` to format statement
 
 Datetime Parse US
 -----------------
-* Assignment name: Datetime Parse US
+* Assignment: Datetime Parse US
 * Last update: 2020-10-01
 * Complexity level: easy
 * Lines of code to write: 5 lines
 * Estimated time of completion: 3 min
-* Solution: :download:`solution/datetime_parse_us.py`
+* Filename: :download:`solution/datetime_parse_us.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Using given date and time from below (copy with quotes inside)
     #. Create ``datetime`` object by parsing the date
     #. Using formatting parameters print american short date format
     #. Make sure, that hour is without leading zero
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Używając podaną poniżej datę i czas (skopiuj z cudzysłowami)
     #. Parsując stwórz obiekt ``datetime``
     #. Używając parametrów formatowania wyświetl datę w formacie amerykańskim krótkim
     #. Upewnij się, że godzina jest bez wiodącego zera
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = '"July 21st, 1969 2:56:15 AM UTC"'
 
-:Output:
+Tests:
     .. code-block:: python
 
         data: datetime
@@ -426,37 +426,37 @@ Datetime Parse US
         print(result)
         # 7/21/69 2:56 AM
 
-:Hints:
+Hints:
     * Add quote sign ``"`` like normal text to ``fmt`` parameter of ``.strptime()``
     * Use ``%-I`` or ``%_I`` on \*nix systems (macOS, BSD, Linux) to remove leading zero
     * Use ``%#I`` on Windows to remove leading zero
 
 Datetime Parse Logs
 -------------------
-* Assignment name: Datetime Parse Logs
+* Assignment: Datetime Parse Logs
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 13 min
-* Solution: :download:`solution/datetime_parse_logs.py`
+* Filename: :download:`solution/datetime_parse_logs.py`
 
-:English:
-    #. Use data from "Input" section (see below)
+English:
+    #. Use data from "Given" section (see below)
     #. Save input data to file ``apollo11-timeline.log``
     #. Extract ``datetime`` object, level name and message from each line
     #. Collect data to ``result: list[dict]``
     #. Print ``result``
-    #. Compare result with "Output" section (see below)
+    #. Compare result with "Tests" section (see below)
 
-:Polish:
-    #. Użyj danych z sekcji "Input" (patrz poniżej)
+Polish:
+    #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zapisz dane wejściowe do pliku ``apollo11-timeline.log``
     #. Wyciągnij obiekt ``datetime``, poziom logowania oraz wiadomość z każdej linii
     #. Zbierz dane do ``result: list[dict]``
     #. Wyświetl ``result``
-    #. Porównaj wyniki z sekcją "Output" (patrz poniżej)
+    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
-:Input:
+Given:
     .. code-block:: python
         :caption: Apollo 11 timeline https://history.nasa.gov/SP-4029/Apollo_11i_Timeline.htm
 
@@ -491,17 +491,15 @@ Datetime Parse Logs
             1969-07-24, 17:29, INFO, Crew egress
         """
 
-:Output:
-    .. code-block:: python
-
-        result  # doctest: +NORMALIZE_WHITESPACE
-        [{'date': datetime.datetime(1969, 7, 14, 21, 0),
-          'level': 'INFO',
-          'message': 'Terminal countdown started'},
-         {'date': datetime.datetime(1969, 7, 16, 13, 31, 53),
-          'level': 'WARNING',
-          'message': 'S-IC engine ignition (#5)'},
-         {'date': datetime.datetime(1969, 7, 16, 13, 33, 23),
-          'level': 'DEBUG',
-          'message': 'Maximum dynamic pressure (735.17 lb/ft^2)'},
-         ...]
+Tests:
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    [{'date': datetime.datetime(1969, 7, 14, 21, 0),
+      'level': 'INFO',
+      'message': 'Terminal countdown started'},
+     {'date': datetime.datetime(1969, 7, 16, 13, 31, 53),
+      'level': 'WARNING',
+      'message': 'S-IC engine ignition (#5)'},
+     {'date': datetime.datetime(1969, 7, 16, 13, 33, 23),
+      'level': 'DEBUG',
+      'message': 'Maximum dynamic pressure (735.17 lb/ft^2)'},
+     ...]

@@ -3,17 +3,17 @@ Assignments
 
 Trigonometry
 ------------
-* Assignment name: Trigonometry
+* Assignment: Trigonometry
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/matplotlib_trigonometry.py`
+* Filename: :download:`solution/matplotlib_trigonometry.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Dla ``x`` z przedziału od 0.0 do 1.0 z próbkowaniem co 0.01 przedstaw przebiegi funkcji ``sin``, ``cos`` dla parametrów ``2 * np.pi * x``
     #. Stwórz dwa osobne obrazki (figure):
 
@@ -28,49 +28,49 @@ Trigonometry
     #. Na obu wykresach pokaż grid
     #. Narysuj drugi obrazek z nałożonymi na jeden plot wykresami obu funkcji
 
-:Hints:
+Hints:
     * ``np.sin()``
     * ``np.cos()``
 
 Iris scatter
 ------------
-* Assignment name: Iris scatter
+* Assignment: Iris scatter
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 20 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/matplotlib_iris.py`
+* Filename: :download:`solution/matplotlib_iris.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Z podanego powyżej adresu URL pobierz dane
     #. Dla każdego gatunku
     #. Dane stosunku ``sepal_length`` do ``sepal_width`` zwizualizuj w formie ``scatter`` za pomocą ``matplotlib``
     #. Każdy gatunek powinien mieć inny kolor
 
-:Input:
+Given:
     .. code-block:: python
 
         DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris.csv'
 
-:Hints:
+Hints:
     * ``pd.groupby()``
 
 Random points
 -------------
-* Assignment name: Random points
+* Assignment: Random points
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Solution: :download:`solution/matplotlib_random_points.py`
+* Filename: :download:`solution/matplotlib_random_points.py`
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Wygeneruj 100 losowych punktów:
 
         * rozkład gaussa o średniej 0
@@ -116,22 +116,22 @@ Random points
     #. Co się stanie jeżeli będziemy zwiększali odchylenie standardowe przy generacji punktów?
     #. Albo przybliżymy do siebie punkty A i B?
 
-:Hints:
+Hints:
     * argument ``color='red'`` w funkcji ``plt.plot``
 
 Color graph
 -----------
-* Assignment name: Color graph
+* Assignment: Color graph
 * Last update: 2020-10-01
 * Complexity level: medium
 * Lines of code to write: 15 lines
 * Estimated time of completion: 21 min
-* Solution: TODO
+* Filename: TODO
 
-:English:
+English:
     .. todo:: English Translation
 
-:Polish:
+Polish:
     #. Dokonano pomiarów z urządzeń temperatury
     #. Wygeneruj listę ``dict`` z datami z ostatniego miesiąca oraz wartością pomiarów losowo 10-15 plus szum na poziomie 0.5 stopnia celsiusza (wykorzystaj ``np.gauss()``)
     #. Mając do dyspozycji szereg czasowy, gdzie dla każdego dnia wykonano pomiar temperatury

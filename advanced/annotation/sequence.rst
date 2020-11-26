@@ -18,15 +18,24 @@ Rationale
         (5.7, 2.8, 4.1, 1.3, 'versicolor'),
     ]
 
-    for row in DATA:
-        species = row[-1]
-        species  # IDE don't know what type is species
-                 # and cannot give hints for autocompletion
+    x = DATA[0][-1]
+    x
+    # IDE don't know what type is species
+    # and cannot give hints for autocompletion
 
-    for row in DATA:
-        species: str = row[-1]
-        species  # IDE knows exactly what type is species
-                 # and what methods hint for autocompletion
+.. code-block:: python
+
+    DATA = [
+        (5.8, 2.7, 5.1, 1.9, 'virginica'),
+        (5.1, 3.5, 1.4, 0.2, 'setosa'),
+        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+    ]
+
+    x: str = DATA[0][-1]
+    x
+    # IDE knows exactly what type is species
+    # and what methods hint for autocompletion
+
 
 Tuple
 =====
@@ -41,7 +50,6 @@ Tuple
     data: tuple[int, int, int] = (1, 2, 3)
     data: tuple[str, str, str] = ('setosa', 'virginica', 'versicolor')
     data: tuple[str, int, float] = ('a', 2, 3.3)
-
     data: tuple[int, ...] = (1, 2, 3)
     data: tuple[str, ...] = ('setosa', 'virginica', 'versicolor')
 
@@ -58,7 +66,6 @@ Tuple
     data: Tuple[int, int, int] = (1, 2, 3)
     data: Tuple[str, str, str] = ('setosa', 'virginica', 'versicolor')
     data: Tuple[str, int, float] = ('a', 2, 3.3)
-
     data: Tuple[int, ...] = (1, 2, 3)
     data: Tuple[str, ...] = ('setosa', 'virginica', 'versicolor')
 
@@ -324,4 +331,6 @@ Unions
 
 More Information
 ================
+* Example: https://github.com/pandas-dev/pandas/blob/master/pandas/core/frame.py#L458
+
 .. note:: More information in :ref:`Type Annotations` and :ref:`CI/CD Type Checking`
