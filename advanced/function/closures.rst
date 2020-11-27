@@ -5,6 +5,11 @@ Closures
 
 Rationale
 =========
+* Function local variables are stored on the stack (function stack frame)
+* Inner functions have access to outer functions variables (access to outer function stack)
+* In order to that work, you can call inner function only when outer function is running
+* https://youtu.be/t86v3N4OshQ?t=954
+
 .. code-block:: python
 
     def f(x):

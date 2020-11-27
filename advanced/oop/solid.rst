@@ -5,12 +5,38 @@ S.O.L.I.D.
 **********
 
 
-Single responsibility principle
-===============================
-* Class should have only a single responsibility
-* A class should have only one reason to change. -- Robert C. Martin
+Recap
+=====
+* Rigidity - mixing higher level with low level implementation
+* Fragility - if you change something, some other thing will break
+* Reusability
+* Coupling - interdependencies a.k.a "spaghetti code"
+* K.I.S.S.
+* D.R.Y.
+* OOP:
 
-The single responsibility principle is a computer programming principle that states that every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class. All its services should be narrowly aligned with that responsibility.
+    * Encapsulation
+    * Polymorphism
+    * Inheritance
+
+
+Rationale
+=========
+* SRP: The Single Responsibility Principle
+* OCP: The Open / Closed Principle
+* LSP: The Liskov Substitution Principle
+* ISP: The Interface Segregation Principle
+* DIP: The Dependency Inversion Principle
+
+
+Single Responsibility Principle
+===============================
+.. epigraph::
+
+    A class should have one, and only one, reason to change
+    -- Robert C. Martin
+
+Every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class. All its services should be narrowly aligned with that responsibility.
 
 .. code-block:: python
     :caption: Bad
@@ -100,7 +126,10 @@ The single responsibility principle is a computer programming principle that sta
 
 Open/Closed Principle
 =====================
-* Class should be open for extension, but closed for modification
+.. epigraph::
+
+    Modules [classes] should be open for extension, but closed for modification
+    -- Bertrand Mayer
 
 .. code-block:: python
 
@@ -142,8 +171,13 @@ Open/Closed Principle
             return randint(20, 30)
 
 
-Liskov substitution principle
+Liskov Substitution Principle
 =============================
+.. epigraph::
+
+    Derived classes must be usable through the base class interface, without the need for the user to know the difference.
+    -- Barbara Liskov
+
 * Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program
 
 .. code-block:: python
@@ -160,7 +194,7 @@ Liskov substitution principle
     # MARK WATNEY
 
 
-Interface segregation principle
+Interface Segregation Principle
 ===============================
 * many specific interfaces are better than one general-purpose interface
 
@@ -228,10 +262,18 @@ The interface-segregation principle (ISP) states that no client should be forced
             self.lastname = lastname
 
 
-Dependency inversion principle
+Dependency Inversion Principle
 ==============================
+.. epigraph::
+
+    Clients should not be forced to depend on methods that they do not use.
+    Program to an interface, not an implementation.
+    -- Robert C. Martin
+
+* https://medium.com/swlh/isp-the-interface-segregation-principle-a3416f3ac8f5
 * one should depend upon abstractions, [not] concretions
 * decoupling software modules
+
 
 When following this principle, the conventional dependency relationships established from high-level, policy-setting modules to low-level, dependency modules are reversed, thus rendering high-level modules independent of the low-level module implementation details. The principle states:
 
