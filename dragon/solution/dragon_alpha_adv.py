@@ -1,6 +1,5 @@
 """
->>> import random
->>> random.seed(0)
+>>> from random import seed; seed(0)
 >>> dragon = Dragon(name='Wawelski', position_x=50, position_y=120)
 >>> dragon.position_set(x=10, y=20)
 >>> dragon.position_change(left=10, down=20)
@@ -23,20 +22,20 @@ True
 ...     print(f'Gold dropped {drop["gold"]}')
 Wawelski is dead at position x=20, y=40
 Gold dropped 50
+
+TODO: dragon << Damage(...)
+TODO: dragon >> Damage(...)
+TODO: dragon @ Position(x,y)
+TODO: dragon > Position(x, y)
+TODO: dragon[...] -> items
+TODO: hero[gold] = dragon[gold]
 """
+
 from dataclasses import dataclass
 from functools import wraps
 from random import randint
 from typing import TypedDict, Optional, NoReturn, Callable
 from unittest import TestCase
-
-
-# TODO: dragon << Damage(...)
-# TODO: dragon >> Damage(...)
-# TODO: dragon @ Position(x,y)
-# TODO: dragon > Position(x, y)
-# TODO: dragon[...] -> items
-# TODO: hero[gold] = dragon[gold]
 
 
 def if_alive(method: Callable) -> Callable:
@@ -61,13 +60,6 @@ def if_dead(method: Callable) -> Callable:
 class Point:
     x: int = 0
     y: int = 0
-
-    # def __post_init__(self) -> None:
-    #     if self.x < 0:
-    #         raise ValueError('"x" cannot be negative')
-    #
-    #     if self.y < 0:
-    #         raise ValueError('"y" cannot be negative')
 
     def __str__(self) -> str:
         return f'x={self.x}, y={self.y}'

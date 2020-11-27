@@ -18,7 +18,6 @@ Wawelski is dead
 {'gold': 98, 'position': (20, 40)}
 """
 
-
 from random import randint
 
 
