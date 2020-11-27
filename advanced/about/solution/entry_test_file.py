@@ -57,8 +57,7 @@ for line in DATA.splitlines():
 
     if len(line) == 0:
         continue
-
-    if line.startswith('#'):
+    elif line.startswith('#'):
         continue
 
     ip, *hosts = line.split()

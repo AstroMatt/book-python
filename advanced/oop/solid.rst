@@ -60,9 +60,9 @@ Every module or class should have responsibility over a single part of the funct
     class Hero:
         HEALTH_MIN: int = 0
         HEALTH_MAX: int = 10
+        _health: int = 0
         _position_x: int = 0
         _position_y: int = 0
-        _health: int = 0
 
         def __post_init__(self) -> None:
             self._health = randint(self.HEALTH_MIN, self.HEALTH_MAX)
@@ -149,15 +149,12 @@ Open/Closed Principle
 
     S.O.L.I.D. - Open/Closed Principle
 
-.. figure:: img/oop-solid-deps.png
-    :scale: 40%
-    :align: center
-
-    SOLID Principles
-
 .. code-block:: python
 
-    class Hero:
+    from random import randint
+
+
+    class Critter:
         HEALTH_MIN: int = 0
         HEALTH_MAX: int = 10
 
@@ -165,34 +162,50 @@ Open/Closed Principle
             self._health = randint(self.HEALTH_MIN, self.HEALTH_MAX)
 
 
-    class Mage(Dragon):
-        pass
+    class Skeleton(Critter):
+        HEALTH_MIN: int = 10
+        HEALTH_MAX: int = 20
 
 
-    class Warrior(Dragon):
-        HEALTH_MIN: int = 30
-        HEALTH_MAX: int = 40
+    class Troll(Hero):
+        HEALTH_MIN: int = 100
+        HEALTH_MAX: int = 200
+
+
+    class Dragon(Critter):
+        HEALTH_MIN: int = 1000
+        HEALTH_MAX: int = 2000
 
 .. code-block:: python
 
     from random import randint
 
 
-    class Hero:
+    class Critter:
+        HEALTH_MIN: int
+        HEALTH_MAX: int
+
         def __init__(self):
             self._health = self._get_initial_health()
 
         def _get_initial_health(self):
-            return randint(10, 20)
+            return randint(self.HEALTH_MIN, self.HEALTH_MAX)
 
 
-    class Mage(Dragon):
+    class Regular(Critter):
         pass
 
 
-    class Warrior(Dragon):
+    class Elite(Critter):
         def _get_initial_health(self):
-            return randint(20, 30)
+            hp = super()._get_initial_health()
+            return hp * 2
+
+
+    class Boss(Critter):
+        def _get_initial_health(self):
+            hp = super()._get_initial_health()
+            return hp * 10
 
 
 Liskov Substitution Principle
@@ -214,6 +227,7 @@ Liskov Substitution Principle
 
     class mystr(str):
         pass
+
 
     a = str('Mark Watney')
     a.upper()
