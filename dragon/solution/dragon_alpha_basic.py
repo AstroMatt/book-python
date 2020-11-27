@@ -1,3 +1,24 @@
+"""
+>>> from random import seed; seed(0)
+>>> wawelski = Dragon(name='Wawelski', position_x=50, position_y=120)
+>>> wawelski.set_position(x=10, y=20)
+>>> wawelski.move(left=10, down=20)
+>>> wawelski.move(left=10, right=15)
+>>> wawelski.move(right=15, up=5)
+>>> wawelski.move(down=5)
+>>> assert wawelski.make_damage() in range(5, 20)
+>>> wawelski.take_damage(10)
+>>> wawelski.take_damage(5)
+>>> wawelski.take_damage(3)
+>>> wawelski.take_damage(2)
+>>> wawelski.take_damage(15)
+>>> wawelski.take_damage(25)
+>>> wawelski.take_damage(75)
+Wawelski is dead
+{'gold': 98, 'position': (20, 40)}
+"""
+
+
 from random import randint
 
 
@@ -19,10 +40,10 @@ class Dragon:
     def __init__(self, name, position_x=0, position_y=0):
         self.name = name
         self.current_health = randint(self.HEALTH_MIN, self.HEALTH_MAX)
+        self.update_status()
         self.texture = self.TEXTURE_ALIVE
         self.gold = randint(self.GOLD_MIN, self.GOLD_MAX)
         self.set_position(position_x, position_y)
-        self.update_status()
 
     def set_position(self, x, y):
         if self.is_alive():
@@ -43,10 +64,8 @@ class Dragon:
             return randint(self.DAMAGE_MIN, self.DAMAGE_MAX)
 
     def make_drop(self):
-        drop = {
-            'gold': self.gold,
-            'position': self.get_position(),
-        }
+        drop = {'gold': self.gold,
+                'position': self.get_position()}
         self.gold = 0
         return drop
 
@@ -55,8 +74,6 @@ class Dragon:
         self.texture = self.TEXTURE_DEAD
         drop = self.make_drop()
         print(f'{self.name} is dead')
-        print(f'Gold {drop["gold"]}')
-        print(f'Position {drop["position"]}')
         return drop
 
     def is_alive(self):
@@ -83,24 +100,6 @@ class Dragon:
             self.status = Status.ALIVE
         else:
             self.status = Status.DEAD
-
-
-wawelski = Dragon(name='Wawelski', position_x=50, position_y=120)
-
-wawelski.set_position(x=10, y=20)
-
-wawelski.move(left=10, down=20)
-wawelski.move(left=10, right=15)
-wawelski.move(right=15, up=5)
-wawelski.move(down=5)
-
-wawelski.take_damage(10)
-wawelski.take_damage(5)
-wawelski.take_damage(3)
-wawelski.take_damage(2)
-wawelski.take_damage(15)
-wawelski.take_damage(25)
-wawelski.take_damage(75)
 
 
 """ Alternative interface options
