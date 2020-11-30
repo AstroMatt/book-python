@@ -1,6 +1,6 @@
 """
-* Assignment: Function Unpack Nested
-* Filename: function_unpack_nested.py
+* Assignment: Unpacking Assignment Nested
+* Filename: unpacking_assignment_nested.py
 * Complexity: easy
 * Lines of code to write: 1 lines
 * Estimated time: 3 min

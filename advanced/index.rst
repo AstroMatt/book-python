@@ -27,6 +27,18 @@ Annotation
     annotation/oop.rst
 
 *********
+Unpacking
+*********
+.. toctree::
+    :maxdepth: 1
+    :caption: Unpacking
+    :name: Advanced Unpacking
+
+    unpacking/assignment.rst
+    unpacking/parameters.rst
+    unpacking/arguments.rst
+
+*********
 Functions
 *********
 .. toctree::
@@ -34,9 +46,6 @@ Functions
     :caption: Functions
     :name: Advanced Functions
 
-    function/unpack.rst
-    function/args-kwargs-parameters.rst
-    function/args-kwargs-arguments.rst
     function/parameter-syntax.rst
     function/assignment-expression.rst
     function/generator.rst

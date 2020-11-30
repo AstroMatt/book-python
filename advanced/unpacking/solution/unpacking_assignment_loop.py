@@ -1,6 +1,6 @@
 """
-* Assignment: Function Unpack Loop
-* Filename: function_unpack_loop.py
+* Assignment: Unpacking Assignment Loop
+* Filename: unpacking_assignment_loop.py
 * Complexity: easy
 * Lines of code to write: 4 lines
 * Estimated time: 5 min

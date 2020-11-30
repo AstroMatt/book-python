@@ -1,8 +1,8 @@
-.. _Function Arbitrary Number of Parameters:
+.. _Unpacking Parameters:
 
-******************************
-Arbitrary Number of Parameters
-******************************
+********************
+Unpacking Parameters
+********************
 
 
 Recap
@@ -20,7 +20,7 @@ Recap
 
 Rationale
 =========
-.. figure:: img/function-unpacking,args,kwargs.png
+.. figure:: img/unpacking-assignment,args,params.png
     :scale: 40%
     :align: center
 
@@ -194,14 +194,14 @@ Examples
 Assignments
 ===========
 
-.. literalinclude:: solution/function_argskwargs_parameters_define.py
-    :caption: :download:`Solution <solution/function_argskwargs_parameters_define.py>`
+.. literalinclude:: solution/unpacking_parameters_define.py
+    :caption: :download:`Solution <solution/unpacking_parameters_define.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_argskwargs_parameters_args.py
-    :caption: :download:`Solution <solution/function_argskwargs_parameters_args.py>`
+.. literalinclude:: solution/unpacking_parameters_args.py
+    :caption: :download:`Solution <solution/unpacking_parameters_args.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_argskwargs_parameters_kwargs.py
-    :caption: :download:`Solution <solution/function_argskwargs_parameters_kwargs.py>`
+.. literalinclude:: solution/unpacking_parameters_kwargs.py
+    :caption: :download:`Solution <solution/unpacking_parameters_kwargs.py>`
     :end-before: # Solution

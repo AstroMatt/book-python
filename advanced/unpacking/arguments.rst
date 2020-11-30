@@ -1,8 +1,8 @@
-.. _Function Arbitrary Number of Arguments:
+.. Unpacking Arguments:
 
-*****************************
-Arbitrary Number of Arguments
-*****************************
+*******************
+Unpacking Arguments
+*******************
 
 
 Recap
@@ -27,7 +27,7 @@ Recap
 
 Rationale
 =========
-.. figure:: img/function-unpacking,args,kwargs.png
+.. figure:: img/unpacking-assignment,args,params.png
     :scale: 40%
     :align: center
 
@@ -397,6 +397,6 @@ Examples
 Assignments
 ===========
 
-.. literalinclude:: solution/function_argskwargs_arguments_define.py
-    :caption: :download:`Solution <solution/function_argskwargs_arguments_define.py>`
+.. literalinclude:: solution/unpacking_arguments_define.py
+    :caption: :download:`Solution <solution/unpacking_arguments_define.py>`
     :end-before: # Solution

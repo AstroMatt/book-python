@@ -26,7 +26,7 @@ Recap
 
 Rationale
 =========
-.. figure:: img/function-unpacking,args,kwargs.png
+.. figure:: img/unpacking-assignment,args,params.png
     :scale: 40%
     :align: center
 
@@ -311,14 +311,14 @@ Using in a Loop
 Assignments
 ===========
 
-.. literalinclude:: solution/function_unpack_nested.py
-    :caption: :download:`Solution <solution/function_unpack_nested.py>`
+.. literalinclude:: solution/unpacking_assignment_nested.py
+    :caption: :download:`Solution <solution/unpacking_assignment_nested.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_unpack_flat.py
-    :caption: :download:`Solution <solution/function_unpack_flat.py>`
+.. literalinclude:: solution/unpacking_assignment_flat.py
+    :caption: :download:`Solution <solution/unpacking_assignment_flat.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_unpack_loop.py
-    :caption: :download:`Solution <solution/function_unpack_loop.py>`
+.. literalinclude:: solution/unpacking_assignment_loop.py
+    :caption: :download:`Solution <solution/unpacking_assignment_loop.py>`
     :end-before: # Solution

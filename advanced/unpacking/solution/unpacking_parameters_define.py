@@ -1,6 +1,6 @@
 """
-* Assignment: Function Args/Kwargs Parameters Define
-* Filename: function_argskwargs_parameters_define.py
+* Assignment: Unpacking Parameters Define
+* Filename: unpacking_parameters_define.py
 * Complexity: easy
 * Lines of code to write: 4 lines
 * Estimated time: 5 min
