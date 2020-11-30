@@ -1,8 +1,8 @@
-.. _Function Unpack:
+.. _Unpacking Assignment:
 
-***************
-Function Unpack
-***************
+********************
+Unpacking Assignment
+********************
 
 
 Recap
@@ -12,7 +12,6 @@ Recap
     a = 1
     a, b = 1, 2
     a, b, c = 1, 2, 3
-
     a, b, c = (1, 2, 3)
     a, b, c = [1, 2, 3]
     a, b, c = {1, 2, 3}
@@ -21,7 +20,6 @@ Recap
 
     (a, b, c) = (1, 2, 3)
     (a, b, c) = [1, 2, 3]
-
     [a, b, c] = [1, 2, 3]
     [a, b, c] = (1, 2, 3)
 

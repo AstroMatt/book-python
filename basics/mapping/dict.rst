@@ -21,6 +21,7 @@ Type Definition
     * Comma after last element is optional
     * Since Python 3.7 ``dict`` keeps order of elements
     * Before Python 3.7 ``dict`` order is not ensured!!
+    * https://mail.python.org/pipermail/python-dev/2017-December/151283.html
 
 .. code-block:: python
 

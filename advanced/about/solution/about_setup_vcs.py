@@ -1,26 +1,28 @@
 """
-* Assignment: Setup VCS
-* Filename: setup_vcs.py
+* Assignment: About Setup VCS
+* Filename: about_setup_vcs.py
 * Complexity: easy
 * Lines of code to write: 0 lines
-* Estimated time: 3 min
+* Estimated time: 5 min
 
 English:
     TODO: English Translation
 
 Polish:
-    1. W Twoim IDE
-    2. Upewnij się, że w repozytorium jest plik `.gitignore` i ma zawartość
-    3. Kliknij prawym klawiszem na nazwę projektu
-    4. Z menu wybierz `Git -> Commit Directory...`  lub użyj skrótu klawiszowego `ctrl+k`
-    5. Wpisać opis zmian (np. Python szkolenie)
-    6. Na dole wybrać `Commit and Push`
-    7. Jeżeli wyskoczy informacja o niekatulanym branchu i zapytanie czy odświeżyć,
-       zaznacz checkbox "Remember the update method and update silently in future" i wybierz "Yes"
-    8. Sprawdzić Github
-
-Tests:
-    TODO: Doctests
+    0. Github jest najpopularniejszym na świecie serwisem wymiany kodu źródłowego
+        a. Github należy do Microsoft
+        b. Kernel Linuxa jest rozwijany na Github
+        c. Python jest rozwijany na Github
+        d. Wiele różnych projektów, np. `.NET`, `Swift`, `Django` są rozwijane na github
+    1. Jeżeli nie masz konta na Github to proszę załóż je (jest darmowe)
+        a. Jest to konieczne do sprawnego przeprowadzenia szkolenia
+        b. Konieczne będzie podanie adresu email
+        c. Maila będzie trzeba zweryfikować klikając w link aktywacyjny
+    2. Wpisz swój username z Github w arkuszu zadań
+    3. Zaczekaj aż trener nada Ci uprawnienia do repozytorium
+    4. Wejdź na swojego maila i zaakceptuj zaproszenie do repozytorium
+    5. Sprawdź czy widać pliki w repozytorium
+    6. Upewnij się, że w repozytorium jest plik `.gitignore` i widzisz jego zawartość
 """
 
 # Solution

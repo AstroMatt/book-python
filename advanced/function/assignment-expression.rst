@@ -5,10 +5,47 @@ Assignment Expression
 *********************
 
 
+Recap
+=====
+.. code-block:: python
+
+    result = [x for x in range(0,10)]
+    result = [x for x in range(0,10) if x%2 == 0]
+
+
 Rationale
 =========
 * Since Python 3.8
 * :pep:`572` Assignment Expressions (walrus operator)
+
+
+.. code-block:: python
+
+    DATA = ['Jan Twardowski',
+            'Melissa Lewis',
+            'Mark Watney']
+
+
+    result = [(name.split()[0], name.split()[1])
+              for name in DATA]
+    # [('Jan', 'Twardowski'),
+    #  ('Melissa', 'Lewis'),
+    #  ('Mark', 'Watney')]
+
+    result = [{'firstname': name.split()[0],
+               'lastname': name.split()[1]}
+              for name in DATA]
+    # [{'firstname': 'Jan', 'lastname': 'Twardowski'},
+    #  {'firstname': 'Melissa', 'lastname': 'Lewis'},
+    #  {'firstname': 'Mark', 'lastname': 'Watney'}]
+
+    result = [{'firstname': astro[0],
+               'lastname': astro[1]}
+              for name in DATA
+              if (astro := name.split())]
+    # [{'firstname': 'Jan', 'lastname': 'Twardowski'},
+    #  {'firstname': 'Melissa', 'lastname': 'Lewis'},
+    #  {'firstname': 'Mark', 'lastname': 'Watney'}]
 
 
 Syntax
@@ -104,39 +141,53 @@ Use Case
         {'is_astronaut': False, 'name': 'Alex Vogel'},
     ]
 
-    astronauts = [{'firstname': name[0], 'lastname': name[-1]}
-                  for person in DATA
-                  if person['is_astronaut']
-                  and (name := person['name'].title().split())]
+    result = [{'firstname': person['name'].title().split()[0],
+               'lastname': person['name'].title().split()[-1]}
+              for person in DATA
+              if person['is_astronaut']]
 
-    print(astronauts)
+    result = [{'firstname': name[0],
+               'lastname': name[-1]}
+              for person in DATA
+              if person['is_astronaut']
+              and (name := person['name'].title().split())]
+
+    result = [{'firstname': fname,
+               'lastname': lname}
+              for person in DATA
+              if person['is_astronaut']
+              and (name := person['name'].title().split())
+              and (fname := name[0])
+              and (lname := name[-1])]
+
+    print(result)
     # [{'firstname': 'Jan', 'lastname': 'Twardowski'},
     #  {'firstname': 'Mark', 'lastname': 'Watney'},
     #  {'firstname': 'Melissa', 'lastname': 'Lewis'}]
 
 .. code-block:: python
 
-    DATA = [
-        {'is_astronaut': True,  'name': 'JaN TwarDOwski'},
-        {'is_astronaut': True,  'name': 'Mark Jim WaTNey'},
-        {'is_astronaut': False, 'name': 'José Maria Jiménez'},
-        {'is_astronaut': True,  'name': 'Melissa Lewis'},
-        {'is_astronaut': False, 'name': 'Alex Vogel'},
-    ]
+    from dataclasses import dataclass
+    from pprint import pprint
 
-    astronauts = [{'firstname': fname, 'lastname': lname}
-                  for person in DATA
-                  if person['is_astronaut']
-                  and (name := person['name'].title().split())
-                  and (fname := name[0])
-                  and (lname := name[-1])]
 
-    print(astronauts)
-    # [{'firstname': 'Jan', 'lastname': 'Twardowski'},
-    #  {'firstname': 'Mark', 'lastname': 'Watney'},
-    #  {'firstname': 'Melissa', 'lastname': 'Lewis'}]
+    @dataclass
+    class Iris:
+        sepal_length: float
+        sepal_width: float
+        petal_length: float
+        petal_width: float
 
-.. code-block:: python
+
+    class Versicolor(Iris):
+        pass
+
+    class Virginica(Iris):
+        pass
+
+    class Setosa(Iris):
+        pass
+
 
     DATA = [
         ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
@@ -153,6 +204,16 @@ Use Case
               for *features, species in DATA[1:]
               if (clsname := species.capitalize())
               and (cls := globals()[clsname])]
+
+
+    pprint(result)
+    # [Virginica(sepal_length=5.8, sepal_width=2.7, petal_length=5.1, petal_width=1.9),
+    #  Setosa(sepal_length=5.1, sepal_width=3.5, petal_length=1.4, petal_width=0.2),
+    #  Versicolor(sepal_length=5.7, sepal_width=2.8, petal_length=4.1, petal_width=1.3),
+    #  Virginica(sepal_length=6.3, sepal_width=2.9, petal_length=5.6, petal_width=1.8),
+    #  Versicolor(sepal_length=6.4, sepal_width=3.2, petal_length=4.5, petal_width=1.5),
+    #  Setosa(sepal_length=4.7, sepal_width=3.2, petal_length=1.3, petal_width=0.2),
+    #  Versicolor(sepal_length=7.0, sepal_width=3.2, petal_length=4.7, petal_width=1.4)]
 
 
 Assignments
