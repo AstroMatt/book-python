@@ -37,6 +37,7 @@ Unpacking
     unpacking/assignment.rst
     unpacking/parameters.rst
     unpacking/arguments.rst
+    unpacking/assignment-expression.rst
 
 *********
 Functions
@@ -47,7 +48,6 @@ Functions
     :name: Advanced Functions
 
     function/parameter-syntax.rst
-    function/assignment-expression.rst
     function/generator.rst
     function/functional-paradigm.rst
     function/first-class.rst
