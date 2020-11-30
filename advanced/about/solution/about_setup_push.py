@@ -16,7 +16,7 @@ Polish:
         b. `cmd+k` na macOS
     4. Wpisać opis zmian, np. swoje imię i pierwsza litera nazwiska,
        np. `JanT`, `MelissaL`, 'MarkW'
-    5. Na dole wybrać przycisk `Commit and Push`
+    5. Na dole wybrać przycisk `Commit and Push...`
     6. Jeżeli jest tylko przycisk `Commit`, to po jego prawej stronie powinna
        być strzałeczka w dół i po jej rozwinięciu opcja `Commit and Push`
     6. Jeżeli wyskoczy informacja o niekatulanym branchu i zapytanie czy odświeżyć,
