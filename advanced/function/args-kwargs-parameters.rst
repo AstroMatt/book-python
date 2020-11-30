@@ -29,7 +29,7 @@ Rationale
 
 Positional Parameters
 =====================
-* ``*`` is used for positional arguments
+* ``*`` is used for positional parameters
 * ``args`` is a convention, but you can use any name
 * ``*args`` unpacks to ``tuple``
 
@@ -48,29 +48,25 @@ Positional Parameters
 .. code-block:: python
 
     def echo(a, b, c=0, *args):
-        print(a)       # 1
-        print(b)       # 2
-        print(c)       # 0
-        print(args)    # ()
+        print(f'{a=}, {b=}, {c=}, {args=}')
 
 
     echo(1, 2)
+    # a=1, b=2, c=0, args=()
 
-.. code-block:: python
+    echo(1, 2, 3)
+    # a=1, b=2, c=3, args=()
 
-    def echo(a, b, c=0, *args):
-        print(a)       # 1
-        print(b)       # 2
-        print(c)       # 3
-        print(args)    # (4, 5, 6)
-
+    echo(1, 2, 3, 4)
+    # a=1, b=2, c=3, args=(4,)
 
     echo(1, 2, 3, 4, 5, 6)
+    # a=1, b=2, c=3, args=(4, 5, 6)
 
 
 Keyword Parameters
 ==================
-* ``**`` is used for keyword arguments
+* ``**`` is used for keyword parameters
 * ``kwargs`` is a convention, but you can use any name
 * ``**kwargs`` unpacks to ``dict``
 
@@ -87,75 +83,41 @@ Keyword Parameters
 .. code-block:: python
 
     def echo(a, b, c=0, **kwargs):
-        print(a)       # 1
-        print(b)       # 2
-        print(c)       # 0
-        print(kwargs)  # {}
+        print(f'{a=}, {b=}, {c=}, {kwargs=}')
 
 
     echo(1, 2)
+    # a=1, b=2, c=0, kwargs={}
 
-.. code-block:: python
-
-    def echo(a, b, c=0, **kwargs):
-        print(a)       # 1
-        print(b)       # 2
-        print(c)       # 3
-        print(kwargs)  # {'d': 7, 'e': 8}
-
+    echo(1, 2, 3)
+    # a=1, b=2, c=3, kwargs={}
 
     echo(1, 2, 3, d=7, e=8)
+    # a=1, b=2, c=3, kwargs={'d': 7, 'e': 8}
 
+    echo(1, 2, a=7)
+    # Traceback (most recent call last):
+    # TypeError: echo() got multiple values for argument 'a'
 
 Positional and Keyword Parameters
 =================================
 .. code-block:: python
 
     def echo(a, b, c=0, *args, **kwargs):
-        print(a)       # 1
-        print(b)       # 2
-        print(c)       # 0
-        print(args)    # ()
-        print(kwargs)  # {}
+        print(f'{a=}, {b=}, {c=}, {args=}, {kwargs=}')
 
 
     echo(1, 2)
-
-.. code-block:: python
-
-    def echo(a, b, c=0, *args, **kwargs):
-        print(a)       # 1
-        print(b)       # 2
-        print(c)       # 3
-        print(args)    # (4, 5, 6)
-        print(kwargs)  # {}
-
+    # a=1, b=2, c=0, args=(), kwargs={}
 
     echo(1, 2, 3, 4, 5, 6)
-
-.. code-block:: python
-
-    def echo(a, b, c=0, *args, **kwargs):
-        print(a)       # 1
-        print(b)       # 2
-        print(c)       # 3
-        print(args)    # ()
-        print(kwargs)  # {'d': 7, 'e': 8}
-
+    # a=1, b=2, c=3, args=(4, 5, 6), kwargs={}
 
     echo(1, 2, 3, d=7, e=8)
-
-.. code-block:: python
-
-    def echo(a, b, c=0, *args, **kwargs):
-        print(a)       # 1
-        print(b)       # 2
-        print(c)       # 3
-        print(args)    # (4, 5, 6)
-        print(kwargs)  # {'d': 7, 'e': 8}
-
+    # a=1, b=2, c=3, args=(), kwargs={'d': 7, 'e': 8}
 
     echo(1, 2, 3, 4, 5, 6, d=7, e=8)
+    # a=1, b=2, c=3, args=(4, 5, 6), kwargs={'d': 7, 'e': 8}
 
 
 Examples
@@ -165,10 +127,8 @@ Examples
 
     def sum(*values):
         total = 0
-
         for value in values:
             total += value
-
         return total
 
 
@@ -192,14 +152,12 @@ Examples
     # [274.15, 275.15, 276.15, 277.15, 278.15]
 
 .. code-block:: python
-    :caption: Generate HTML list from function arguments
+    :caption: Generate HTML list
 
     def html_list(*fruits):
         print('<ul>')
-
         for fruit in fruits:
             print(f'<li>{fruit}</li>')
-
         print('</ul>')
 
 
@@ -215,6 +173,22 @@ Examples
 
     def print(*values, sep=' ', end='\n', ...):
         return sep.join(values) + end
+
+
+    print('a')
+    # a
+
+    print('a', 'b')
+    # 'a b'
+
+    print('a', 'b', 'c')
+    # 'a b c'
+
+    print('a', 'b', 'c', sep=',')
+    # 'a,b,c'
+
+    print('a', 'b', 'c', sep='|')
+    # 'a|b|c'
 
 
 Assignments

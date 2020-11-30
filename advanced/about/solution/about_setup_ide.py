@@ -16,6 +16,7 @@ Polish:
     3. Format zapisu, np. `CE 2020.3` lub `PRO 2020.2` itp.
         a. `CE` - Community Edition
         b. `PRO` - Professional
+    8. Zapisz `100%` we współdzielonym arkuszu kalkulacyjnym w wierszu zadania
 """
 
 # Solution

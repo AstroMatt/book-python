@@ -20,13 +20,16 @@ Polish:
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Hints:
-    * `help(str.split)`
+    * Use `str.split()` without any argument
 
 Tests:
-    >>> assert type(ip) is str
-    >>> assert type(hosts) is list
+    >>> type(ip)
+    <class 'str'>
+    >>> type(hosts)
+    <class 'list'>
     >>> assert all(type(host) is str for host in hosts)
-
+    >>> '' not in hosts
+    True
     >>> ip
     '10.13.37.1'
     >>> hosts

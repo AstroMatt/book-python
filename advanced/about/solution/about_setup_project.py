@@ -18,6 +18,7 @@ Polish:
         c. W nazwie katalogu nie powinno być spacji ani żadnych znaków specjalnych
     5. Do końca szkolenia w tym katalogu będziesz tworzył rozwiązania do wszystkich zadań
     6. Dzięki oddzielnym katalogom dla każdego uczestnika unikniemy konfliktów w Git
+    7. Zapisz `100%` we współdzielonym arkuszu kalkulacyjnym w wierszu zadania
 """
 
 # Solution

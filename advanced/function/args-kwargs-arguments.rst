@@ -37,40 +37,29 @@ Rationale
 Positional Arguments
 ====================
 * ``*`` is used for positional arguments
-* ``args`` is a convention, but you can use any name
-* ``*args`` unpacks from ``tuple``, ``list`` or ``set``
+* there is no convention, but you can use any name
+* ``*`` unpacks from ``tuple``, ``list`` or ``set``
 
 .. code-block:: python
-    :caption: Positional arguments passed directly
 
     def echo(a, b, c=0):
-        print(a)    # 1
-        print(b)    # 2
-        print(c)    # 0
+        print(f'{a=}, {b=}, {c=}')
 
     echo(1, 2)
+    # a=1, b=2, c=0
 
 .. code-block:: python
-    :caption: Positional arguments passed from sequence
 
     def echo(a, b, c=0):
-        print(a)    # 1
-        print(b)    # 2
-        print(c)    # 0
+        print(f'{a=}, {b=}, {c=}')
 
-    args = (1, 2)
-    echo(*args)
 
-.. code-block:: python
-    :caption: Positional arguments passed from sequence
+    data = (1, 2)
+    echo(*data)
+    # a=1, b=2, c=0
 
-    def echo(a, b, c=0):
-        print(a)    # 1
-        print(b)    # 2
-        print(c)    # 0
-
-    args = (1, 2)
-    echo(args)
+    data = (1, 2)
+    echo(data)
     # Traceback (most recent call last):
     # TypeError: echo() missing 1 required positional argument: 'b'
 
@@ -78,55 +67,44 @@ Positional Arguments
 Keyword Arguments
 =================
 * ``**`` is used for keyword arguments
-* ``kwargs`` is a convention, but you can use any name
-* ``**kwargs`` unpacks from ``dict``
+* there is no convention, but you can use any name
+* ``**`` unpacks from ``dict``
 
 .. code-block:: python
     :caption: Keyword arguments passed directly
 
     def echo(a, b, c=0):
-        print(a)    # 1
-        print(b)    # 2
-        print(c)    # 0
+        print(f'{a=}, {b=}, {c=}')
+
 
     echo(a=1, b=2)
+    # a=1, b=2, c=0
 
-.. code-block:: python
-    :caption: Keyword arguments passed from ``dict``
-
-    def echo(a, b, c=0):
-        print(a)    # 1
-        print(b)    # 2
-        print(c)    # 0
-
-    kwargs = {'a': 1, 'b': 2}
-    echo(**kwargs)
+    data = {'a': 1, 'b': 2}
+    echo(**data)
+    # a=1, b=2, c=0
 
 
 Positional and Keyword Arguments
 ================================
 .. code-block:: python
-    :caption: Positional and keyword arguments passed directly
 
     def echo(a, b, c=0):
-        print(a)    # 1
-        print(b)    # 2
-        print(c)    # 0
+        print(f'{a=}, {b=}, {c=}')
 
     echo(1, b=2)
+    # a=1, b=2, c=0
 
-.. code-block:: python
-    :caption: Positional and keyword arguments passed from sequence and ``dict``
+    data1 = (1,)
+    data2 = {'b': 2}
+    echo(*data1, **data2)
+    # a=1, b=2, c=0
 
-    def echo(a, b, c=0):
-        print(a)    # 1
-        print(b)    # 2
-        print(c)    # 0
-
-    args = (1,)
-    kwargs = {'b': 2}
-
-    echo(*args, **kwargs)
+    data1 = (1, 2)
+    data2 = {'b': 2}
+    echo(*data1, **data2)
+    # Traceback (most recent call last):
+    # TypeError: echo() got multiple values for argument 'b'
 
 
 Objects From Sequence
@@ -158,6 +136,7 @@ Objects From Sequence
         (4.7, 3.2, 1.3, 0.2, 'setosa'),
     ]
 
+
     class Iris:
         def __init__(self, sepal_length, sepal_width, petal_length, petal_width, species):
             self.sepal_length = sepal_length
@@ -168,6 +147,7 @@ Objects From Sequence
 
         def __repr__(self):
             return f'{self.species}'
+
 
     result = [Iris(*row) for row in DATA]
     print(result)

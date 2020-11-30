@@ -20,7 +20,7 @@ Polish:
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Hints:
-    * `help(str.split)`
+    * Use `str.split()` without any argument
 
 Tests:
     >>> type(ip)

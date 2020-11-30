@@ -311,13 +311,12 @@ Using in a Loop
 Assignments
 ===========
 
-.. literalinclude:: solution/function_unpack_flat.py
-    :caption: :download:`Solution <solution/function_unpack_flat.py>`
-    :end-before: # Solution
-
-
 .. literalinclude:: solution/function_unpack_nested.py
     :caption: :download:`Solution <solution/function_unpack_nested.py>`
+    :end-before: # Solution
+
+.. literalinclude:: solution/function_unpack_flat.py
+    :caption: :download:`Solution <solution/function_unpack_flat.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/function_unpack_loop.py

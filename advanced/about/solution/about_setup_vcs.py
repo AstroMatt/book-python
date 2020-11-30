@@ -26,6 +26,7 @@ Polish:
         a. widzisz jego zawartość
         b. ostatnie linie powinny zawierać `.idea/` oraz `.venv-3.9`
     7. Nie zmieniaj jego zawartości
+    8. Zapisz `100%` we współdzielonym arkuszu kalkulacyjnym w wierszu zadania
 """
 
 # Solution
