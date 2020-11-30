@@ -6,7 +6,7 @@
 * Estimated time: 21 min
 
 English:
-    1. Use code from "Input" section (see below)
+    1. Use code from "Given" section (see below)
     2. How to write relations to CSV file (contact has many addresses)?
     3. Convert `DATA` to `resul: list[dict[str,str]]`
     4. Non-functional requirements:

@@ -3,10 +3,10 @@
 * Filename: function_generator_iris.py
 * Complexity: easy
 * Lines of code to write: 8 lines
-* Estimated time: 13 min
+* Estimated time: 8 min
 
 English:
-    1. Use code from "Input" section (see below)
+    1. Use code from "Given" section (see below)
     2. Write filter for `DATA` which returns `features` for given `species`
     3. Implement solution using function
     4. Implement solution using generator and `yield` keyword

@@ -6,7 +6,7 @@
 * Estimated time: 5 min
 
 English:
-    1. Use code from "Input" section (see below)
+    1. Use code from "Given" section (see below)
     2. Modify code to restore docstring and name from decorated class
     3. Compare result with "Tests" section (see below)
 

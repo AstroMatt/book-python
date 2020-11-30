@@ -6,7 +6,7 @@
 * Estimated time: 3 min
 
 English:
-    1. Use code from "Input" section (see below)
+    1. Use code from "Given" section (see below)
     2. Use `functools.wraps` in correct place
     3. Compare result with "Tests" section (see below)
 

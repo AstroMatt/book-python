@@ -6,7 +6,7 @@
 * Estimated time: 3 min
 
 English:
-    1. Use code from "Input" section (see below)
+    1. Use code from "Given" section (see below)
     2. Overload `@` operator
     3. Set position based on argument `tuple[int, int]`
     4. Compare result with "Tests" section (see below)

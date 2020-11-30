@@ -428,7 +428,6 @@ Standard Library Itertools
 
     next(data)
     # Traceback (most recent call last):
-    #   File "<input>", line 1, in <module>
     # StopIteration
 
 .. code-block:: python
@@ -450,7 +449,6 @@ Standard Library Itertools
 
     next(data)
     # Traceback (most recent call last):
-    #   File "<input>", line 1, in <module>
     # StopIteration
 
 .. code-block:: python
@@ -511,7 +509,6 @@ Standard Library Itertools
 
     next(data)
     # Traceback (most recent call last):
-    #   File "<input>", line 1, in <module>
     # StopIteration
 
 .. code-block:: python
@@ -572,7 +569,6 @@ Standard Library Itertools
 
     next(data)
     # Traceback (most recent call last):
-    #   File "<input>", line 1, in <module>
     # StopIteration
 
 .. code-block:: python

@@ -8,7 +8,7 @@
 English:
     1. In your directory create file `about_interpreter.py`
     2. If question about adding file to GIT repository pops-up, mark checkbox "Always add" and click "Yes"
-    3. Use code from "Input" section (see below)
+    3. Use code from "Given" section (see below)
     4. Run code in your IDE (right click on code -> "Run File in Python Console")
     5. What Python version is installed?
     6. Compare result with "Tests" section (see below)

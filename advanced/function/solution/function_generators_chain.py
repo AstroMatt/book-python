@@ -3,7 +3,7 @@
 * Filename: function_generators_chain.py
 * Complexity: easy
 * Lines of code to write: 10 lines
-* Estimated time: 13 min
+* Estimated time: 8 min
 
 English:
     1. Use generator expression to create `numbers`
@@ -31,19 +31,18 @@ Tests:
 """
 
 
-# Solution
+# Given
 def odd(x):
     return x % 2
+
 
 def cube(x):
     return x ** 3
 
 
+# Solution
 numbers = (x for x in range(1, 34) if x % 3 == 0)
 numbers = filter(odd, numbers)
 numbers = map(cube, numbers)
 numbers = list(numbers)
 result = sum(numbers) / len(numbers)
-
-print(result)
-# 11502.0

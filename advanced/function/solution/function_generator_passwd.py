@@ -4,10 +4,10 @@
 * Filename: function_generator_passwd.py
 * Complexity: medium
 * Lines of code to write: 10 lines
-* Estimated time: 13 min
+* Estimated time: 8 min
 
 English:
-    1. Use code from "Input" section (see below)
+    1. Use code from "Given" section (see below)
     2. Split `DATA` by lines and then by colon `:`
     3. Extract system accounts (users with UID [third field] is less than 1000)
     4. Return list of system account logins

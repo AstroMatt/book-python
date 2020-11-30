@@ -6,7 +6,7 @@
 * Estimated time: 13 min
 
 English:
-    1. Use code from "Input" section (see below)
+    1. Use code from "Given" section (see below)
     2. Override operators for code to work correctly
     3. Do not use `dataclasses`
     4. Compare result with "Tests" section (see below)

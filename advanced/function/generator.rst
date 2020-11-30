@@ -47,6 +47,9 @@ Rationale
     list(data)
     # [0, 1, 2, 3, 4]
 
+    print(data)
+    # [0, 1, 2, 3, 4]
+
 .. code-block:: python
 
     data = (x for x in range(0, 5))
@@ -56,14 +59,6 @@ Rationale
 
     list(data)
     # []
-
-
-Define
-======
-.. code-block:: python
-    :caption: This will only create generator expression object, but not evaluate it!
-
-    data = (x for x in range(0,5))
 
     print(data)
     # <generator object <genexpr> at 0x11cb45950>
@@ -103,7 +98,6 @@ Lazy Evaluation
 
     next(data)
     # Traceback (most recent call last):
-    #   File "<input>", line 1, in <module>
     # StopIteration
 
 .. code-block:: python
@@ -122,63 +116,59 @@ Iterative Evaluation
     * Generator doesn't know the next number
 
 .. code-block:: python
-    :caption: Comprehension will generate a sequence instantly, and iterate over it. It will be in the memory until end of a program
 
-    numbers = [x for x in range(0, 10)]
-
-    for x in numbers:
-       print(x)
-       if x == 3:
-           break
-    # 0
-    # 1
-    # 2
-    # 3
-
-    for x in numbers:
-       print(x)
-       if x == 6:
-           break
-    # 0
-    # 1
-    # 2
-    # 3
-    # 4
-    # 5
-    # 6
-
-    list(numbers)
+    data = [x for x in range(0,10)]
+    print(data)
     # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-    list(numbers)
+    data = (x for x in range(0,10))
+    print(data)
+    # <generator object <genexpr> at 0x10ef1d040>
+
+.. code-block:: python
+    :caption: Comprehension
+
+    data = [x for x in range(0,10)]
+
+    for x in data:
+        print(x, end=' ')
+        if x == 3:
+            break
+    # 0 1 2 3
+
+    for x in data:
+        print(x, end=' ')
+        if x == 6:
+            break
+    # 0 1 2 3 4 5 6
+
+    print(list(data))
+    # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+    print(list(data))
     # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 .. code-block:: python
-    :caption: Generator with generate numbers as it goes in the process
+    :caption: Generator
 
-    numbers = (x for x in range(0, 10))
+    data = (x for x in range(0,10))
 
-    for x in numbers:
-       print(x)
-       if x == 3:
-           break
-    # 0
-    # 1
-    # 2
-    # 3
+    for x in data:
+        print(x, end=' ')
+        if x == 3:
+            break
+    # 0 1 2 3
 
-    for x in numbers:
-       print(x)
-       if x == 6:
-           break
-    # 4
-    # 5
-    # 6
+    for x in data:
+        print(x, end=' ')
+        if x == 6:
+            break
+    # 4 5 6
 
-    list(numbers)
+    print(list(data))
     # [7, 8, 9]
 
-    list(numbers)
+    print(list(data))
     # []
 
 
@@ -268,7 +258,6 @@ Built-in generators
 
     next(result)
     # Traceback (most recent call last):
-    #   File "<input>", line 1, in <module>
     # StopIteration
 
 .. code-block:: python
@@ -298,6 +287,13 @@ Built-in generators
     # 1 -> Melissa Lewis
     # 2 -> Alex Vogel
 
+.. code-block:: python
+
+    crew = ['Mark Watney', 'Melissa Lewis', 'Alex Vogel']
+
+    dict(enumerate(crew))
+    # {0: 'Mark Watney', 1: 'Melissa Lewis', 2: 'Alex Vogel'}
+
 ``zip()``
 ---------
 * ``zip(*iterable)``
@@ -319,7 +315,6 @@ Built-in generators
 
     next(result)
     # Traceback (most recent call last):
-    #   File "<input>", line 1, in <module>
     # StopIteration
 
 .. code-block:: python
@@ -340,7 +335,6 @@ Built-in generators
 
     next(result)
     # Traceback (most recent call last):
-    #   File "<input>", line 1, in <module>
     # StopIteration
 
 .. code-block:: python
@@ -373,6 +367,16 @@ Built-in generators
     # commander -> Melissa Lewis
     # chemist -> Alex Vogel
 
+.. code-block:: python
+
+    roles = ['botanist', 'commander', 'chemist']
+    crew = ['Mark Watney', 'Melissa Lewis', 'Alex Vogel']
+
+    dict(zip(roles, crew))
+    # {'botanist': 'Mark Watney',
+    #  'commander': 'Melissa Lewis',
+    #  'chemist': 'Alex Vogel'}
+
 ``map()``
 ---------
 * ``map(callable, *iterable)``
@@ -393,7 +397,6 @@ Built-in generators
 
     next(result)
     # Traceback (most recent call last):
-    #   File "<input>", line 1, in <module>
     # StopIteration
 
 .. code-block:: python
@@ -428,7 +431,6 @@ Built-in generators
 
     next(result)
     # Traceback (most recent call last):
-    #   File "<input>", line 1, in <module>
     # StopIteration
 
 .. code-block:: python
@@ -454,11 +456,9 @@ Built-in generators
 .. code-block:: python
     :caption: ``filter()`` example
 
-    PEOPLE = [
-        {'age': 21, 'name': 'Jan Twardowski'},
-        {'age': 25, 'name': 'Mark Watney'},
-        {'age': 18, 'name': 'Melissa Lewis'},
-    ]
+    PEOPLE = [{'age': 21, 'name': 'Jan Twardowski'},
+              {'age': 25, 'name': 'Mark Watney'},
+              {'age': 18, 'name': 'Melissa Lewis'}]
 
 
     def adult(person):
@@ -573,21 +573,21 @@ Memory Footprint
     from sys import getsizeof
 
 
-    a = (x for x in range(0,10))
-    b = (x for x in range(0,10))
-    c = (x for x in range(0,100))
-    d = (x for x in range(0,1000))
+    a1 = (x for x in range(0,10))
+    a2 = (x for x in range(0,10))
+    b = (x for x in range(0,100))
+    c = (x for x in range(0,1000))
 
-    getsizeof(a)
+    getsizeof(a1)
+    # 112
+
+    getsizeof(a2)
     # 112
 
     getsizeof(b)
     # 112
 
     getsizeof(c)
-    # 112
-
-    getsizeof(d)
     # 112
 
 .. code-block:: python
@@ -595,21 +595,21 @@ Memory Footprint
     from sys import getsizeof
 
 
-    a = [x for x in range(0,10)]
-    b = [x for x in range(0,10)]
-    c = [x for x in range(0,100)]
-    d = [x for x in range(0,1000)]
+    a1 = [x for x in range(0,10)]
+    a2 = [x for x in range(0,10)]
+    b = [x for x in range(0,100)]
+    c = [x for x in range(0,1000)]
 
-    getsizeof(a)
+    getsizeof(a1)
+    # 184
+
+    getsizeof(a2)
     # 184
 
     getsizeof(b)
-    # 184
-
-    getsizeof(c)
     # 920
 
-    getsizeof(d)
+    getsizeof(c)
     # 8856
 
 
