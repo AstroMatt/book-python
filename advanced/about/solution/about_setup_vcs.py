@@ -22,7 +22,10 @@ Polish:
     3. Zaczekaj aż trener nada Ci uprawnienia do repozytorium
     4. Wejdź na swojego maila i zaakceptuj zaproszenie do repozytorium
     5. Sprawdź czy widać pliki w repozytorium
-    6. Upewnij się, że w repozytorium jest plik `.gitignore` i widzisz jego zawartość
+    6. Upewnij się, że w repozytorium jest plik `.gitignore`
+        a. widzisz jego zawartość
+        b. ostatnie linie powinny zawierać `.idea/` oraz `.venv-3.9`
+    7. Nie zmieniaj jego zawartości
 """
 
 # Solution
