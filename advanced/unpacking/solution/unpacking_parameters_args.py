@@ -52,6 +52,7 @@ Tests:
     False
 """
 
+
 # Solution
 def isnumeric(*args) -> bool:
     if not args:

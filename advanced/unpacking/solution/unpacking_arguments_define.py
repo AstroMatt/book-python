@@ -30,9 +30,6 @@ Tests:
     2.0
     >>> mean(1, 2, 3)
     2.0
-    >>> mean()
-    Traceback (most recent call last):
-    ValueError: At least one argument is required
 
     >>> assert type(result) is list
     >>> assert all(type(row) is tuple for row in result)
@@ -57,13 +54,9 @@ DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'
         (4.7,  'setosa')]
 
 
-# Solution
 def mean(*args):
-    if not args:
-        raise ValueError('At least one argument is required')
-
     return sum(args) / len(args)
 
-
+# Solution
 result = [(label, mean(*features))
           for *features, label in DATA[1:]]

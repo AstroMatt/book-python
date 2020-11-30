@@ -6,23 +6,23 @@
 * Estimated time: 8 min
 
 English:
-    1. Use generator expression to create `numbers`
+    1. Use generator expression to create `result`
     2. In generator use `range()` to get numbers from 1 to 33 (inclusive) divisible by 3
-    3. Use `filter()` to get odd numbers from `numbers`
-    4. Use `map()` to cube all numbers in `numbers`
-    5. Create `result: float` with arithmetic mean of `numbers`
+    3. Use `filter()` to get odd numbers from `result`
+    4. Use `map()` to cube all numbers in `result`
+    5. Set `result` with arithmetic mean of `result`
     6. Compare result with "Tests" section (see below)
 
 Polish:
-    1. Użyj wyrażenia generatorowego do stworzenia `numbers`
+    1. Użyj wyrażenia generatorowego do stworzenia `result`
     2. W generatorze użyj `range()` aby otrzymać liczby od 1 do 33 (włącznie) podzielne przez 3
-    3. Użyj `filter()` aby otrzymać liczby nieparzyste z `numbers`
-    4. Użyj `map()` aby podnieść wszystkie liczby w `numbers` do sześcianu
-    5. Stwórz `result: float` ze średnią arytmetyczną z `numbers`
+    3. Użyj `filter()` aby otrzymać liczby nieparzyste z `result`
+    4. Użyj `map()` aby podnieść wszystkie liczby w `result` do sześcianu
+    5. Ustaw `result` ze średnią arytmetyczną z `result`
     6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Hints:
-    * type cast to `list()` before calculating mean to expand generator
+    * type cast to `list()` to expand generator before calculating mean
     * `mean = sum(...) / len(...)`
 
 Tests:
