@@ -12,7 +12,12 @@ English:
     4. Implement solution using generator and `yield` keyword
     5. Compare results of both using `sys.getsizeof()`
     6. What will happen if input data will be bigger?
-    7. Compare result with "Tests" section (see below)
+    7. Note, that in different Python versions you'll get slightly
+       different values for getsizeof generator and function:
+        a. 112 for generator in Python 3.9
+        b. 112 for generator in Python 3.8
+        c. 128 for generator in Python 3.7
+    8. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj kodu z sekcji "Given" (patrz poniżej)
@@ -21,7 +26,12 @@ Polish:
     4. Zaimplementuj rozwiązanie wykorzystując generator i słowo kluczowe `yield`
     5. Porównaj wyniki obu używając `sys.getsizeof()`
     6. Co się stanie, gdy ilość danych będzie większa?
-    7. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+    7. Zwróć uwagę, że w zależności od wersji Python wartości getsizeof
+       dla funkcji i generatora mogą się nieznaczenie różnić:
+        a. 112 dla generator w Python 3.9
+        b. 112 dla generator w Python 3.8
+        c. 128 dla generator w Python 3.7
+    8. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
     >>> from sys import getsizeof
