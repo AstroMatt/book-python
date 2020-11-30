@@ -45,14 +45,9 @@ Positional Arguments
     def echo(a, b, c=0):
         print(f'{a=}, {b=}, {c=}')
 
+
     echo(1, 2)
     # a=1, b=2, c=0
-
-.. code-block:: python
-
-    def echo(a, b, c=0):
-        print(f'{a=}, {b=}, {c=}')
-
 
     data = (1, 2)
     echo(*data)
@@ -113,6 +108,7 @@ Objects From Sequence
 
     DATA = (6.0, 3.4, 4.5, 1.6, 'versicolor')
 
+
     class Iris:
         def __init__(self, sepal_length, sepal_width, petal_length, petal_width, species):
             self.sepal_length = sepal_length
@@ -121,20 +117,19 @@ Objects From Sequence
             self.petal_width = petal_width
             self.species = species
 
-    iris = Iris(*DATA)
-    iris.species
+
+    result = Iris(*DATA)
+    print(result.species)
     # 'versicolor'
 
 .. code-block:: python
 
-    DATA = [
-        (5.8, 2.7, 5.1, 1.9, 'virginica'),
-        (5.1, 3.5, 1.4, 0.2, 'setosa'),
-        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-        (6.3, 2.9, 5.6, 1.8, 'virginica'),
-        (6.4, 3.2, 4.5, 1.5, 'versicolor'),
-        (4.7, 3.2, 1.3, 0.2, 'setosa'),
-    ]
+    DATA = [(5.8, 2.7, 5.1, 1.9, 'virginica'),
+            (5.1, 3.5, 1.4, 0.2, 'setosa'),
+            (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+            (6.3, 2.9, 5.6, 1.8, 'virginica'),
+            (6.4, 3.2, 4.5, 1.5, 'versicolor'),
+            (4.7, 3.2, 1.3, 0.2, 'setosa')]
 
 
     class Iris:
@@ -158,14 +153,13 @@ Objects From Sequence
 
     from dataclasses import dataclass
 
-    MOVEMENT = [
-        (0, 0),
-        (1, 0),
-        (2, 1, 1),
-        (3, 2),
-        (3, 3, -1),
-        (2, 3),
-    ]
+    MOVEMENT = [(0, 0),
+                (1, 0),
+                (2, 1, 1),
+                (3, 2),
+                (3, 3, -1),
+                (2, 3)]
+
 
     @dataclass
     class Point:
@@ -173,12 +167,12 @@ Objects From Sequence
         y: int
         z: int = 0
 
+
     movement = [Point(x,y) for x,y in MOVEMENT]
     # Traceback (most recent call last):
     # ValueError: too many values to unpack (expected 2)
 
     movement = [Point(*coordinates) for coordinates in MOVEMENT]
-
     movement
     # [Point(x=0, y=0, z=0),
     #  Point(x=1, y=0, z=0),

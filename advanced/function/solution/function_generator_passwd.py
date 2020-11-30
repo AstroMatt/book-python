@@ -17,7 +17,7 @@ English:
     8. Compare result with "Tests" section (see below)
 
 Polish:
-    1. Użyj kodu z sekcji "Input" (patrz poniżej)
+    1. Użyj kodu z sekcji "Given" (patrz poniżej)
     2. Podziel `DATA` po liniach a następnie po dwukropku `:`
     3. Wyciągnij konta systemowe (użytkownicy z UID (trzecie pole) mniejszym niż 1000)
     4. Zwróć listę loginów użytkowników systemowych

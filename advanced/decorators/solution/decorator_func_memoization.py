@@ -14,7 +14,7 @@ English:
     4. Compare execution time using `timeit`
 
 Polish:
-    1. Użyj kodu z sekcji "Input" (patrz poniżej)
+    1. Użyj kodu z sekcji "Given" (patrz poniżej)
     2. Stwórz dekorator `@cache`
     3. Decorator ma sprawdzać przed uruchomieniem funkcji, czy dla danego argumentu wynik został już wcześniej obliczony:
         a. jeżeli tak, to zwraca dane z `_cache`

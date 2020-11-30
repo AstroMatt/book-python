@@ -15,7 +15,7 @@ English:
     7. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Polish:
-    1. Użyj kodu z sekcji "Input" (patrz poniżej)
+    1. Użyj kodu z sekcji "Given" (patrz poniżej)
     2. Stwórz dekorator `check_astronauts`
     3. Aby odpowiedzieć czy osoba jest astronautą sprawdź pole `is_astronaut` in `crew: list[dict]`
     4. Dekorator wywoła dekorowaną funkcję tylko wtedy, gdy każdy członek załogi ma pole o podanej wartości

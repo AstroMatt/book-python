@@ -46,12 +46,12 @@ Assignments
     :caption: :download:`Solution <solution/about_setup_push.py>`
     :end-before: # Solution
 
+.. literalinclude:: solution/about_setup_doctest.py
+    :caption: :download:`Solution <solution/about_setup_doctest.py>`
+    :end-before: # Solution
+
 .. figure:: img/pycharm-vsc-merge-rebase.png
     :scale: 100%
     :align: center
 
     Jeżeli wyskoczy informacja o odrzuceniu pusha, zaznacz checkbox "Remember the update method and update silently in future" i wybierz "Rebase"
-
-.. literalinclude:: solution/about_setup_doctest.py
-    :caption: :download:`Solution <solution/about_setup_doctest.py>`
-    :end-before: # Solution

@@ -18,7 +18,7 @@ English:
 Polish:
     1. W swoim katalogu stwórz plik `about_interpreter.py`
     2. Jeżeli wyskoczy pytanie czy dodać plik do repozytorium GIT, zaznacz checkbox "Always add" i wybierz "Yes"
-    3. Użyj kodu z sekcji "Input" (patrz poniżej)
+    3. Użyj kodu z sekcji "Given" (patrz poniżej)
     4. Uruchom kod swoim IDE (prawy klawisz myszy na kodzie -> "Run File in Python Console")
     5. Jaka wersja Python jest zainstalowana?
     6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
@@ -33,13 +33,9 @@ Tests:
 
 # Given
 import sys
-
-result = sys.version[:6]
-print(result)
+print(sys.version[:6])
 
 
 # Solution
 import sys
-
-result = sys.version[:6]
-print(result)
+print(sys.version[:6])

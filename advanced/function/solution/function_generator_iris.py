@@ -15,7 +15,7 @@ English:
     7. Compare result with "Tests" section (see below)
 
 Polish:
-    1. Użyj kodu z sekcji "Input" (patrz poniżej)
+    1. Użyj kodu z sekcji "Given" (patrz poniżej)
     2. Napisz filtr dla `DATA` zwracający `features` dla danego gatunku `species`
     3. Zaimplementuj rozwiązanie wykorzystując funkcję
     4. Zaimplementuj rozwiązanie wykorzystując generator i słowo kluczowe `yield`

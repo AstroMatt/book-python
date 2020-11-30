@@ -12,7 +12,7 @@ English:
     4. Compare result with "Tests" section (see below)
 
 Polish:
-    1. Użyj kodu z sekcji "Input" (patrz poniżej)
+    1. Użyj kodu z sekcji "Given" (patrz poniżej)
     2. Przeciąż operator `@`
     3. Ustaw pozycję na podstawie argumentu `tuple[int, int]`
     4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)

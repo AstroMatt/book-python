@@ -11,7 +11,7 @@ English:
     3. Compare result with "Tests" section (see below)
 
 Polish:
-    1. Użyj kodu z sekcji "Input" (patrz poniżej)
+    1. Użyj kodu z sekcji "Given" (patrz poniżej)
     2. Nadpisz operatory `+=` aby poniższy kod zadziałał poprawnie
     3. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 

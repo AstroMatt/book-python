@@ -14,7 +14,7 @@ English:
     6. Compare result with "Tests" section (see below)
 
 Polish:
-    1. Użyj kodu z sekcji "Input" (patrz poniżej)
+    1. Użyj kodu z sekcji "Given" (patrz poniżej)
     2. Stwórz dekorator `check`
     3. Dekorator wywołuje funkcję, tylko gdy `echo.disabled` jest `False`
     4. Zwróć uwagę, że dekoratory nadpisują wskaźniki i we `wrapper` musisz sprawdzić czy `wrapper.disabled` jest `False`

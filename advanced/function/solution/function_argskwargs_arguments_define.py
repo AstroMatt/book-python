@@ -15,7 +15,7 @@ English:
     7. Compare result with "Tests" section (see below)
 
 Polish:
-    1. Użyj kodu z sekcji "Input" (patrz poniżej)
+    1. Użyj kodu z sekcji "Given" (patrz poniżej)
     2. Stwórz funkcję `mean(*args)`, która liczy średnią arytmetyczną dla `args`
     3. Nie importuj żadnych bibliotek i modułów
     4. Zdefiniuj `result: list[tuple[str, float]]`

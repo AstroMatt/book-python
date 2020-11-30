@@ -15,7 +15,7 @@ English:
     5. Compare result with "Tests" section (see below)
 
 Polish:
-    1. Użyj kodu z sekcji "Input" (patrz poniżej)
+    1. Użyj kodu z sekcji "Given" (patrz poniżej)
     2. Jak zapisać w CSV dane relacyjne (kontakt ma wiele adresów)?
     3. Przekonwertuj `DATA` do `resul: list[dict[str,str]]`
     4. Wymagania niefunkcjonalne:

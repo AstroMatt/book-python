@@ -12,7 +12,7 @@ English:
     4. Compare result with "Tests" section (see below)
 
 Polish:
-    1. Użyj kodu z sekcji "Input" (patrz poniżej)
+    1. Użyj kodu z sekcji "Given" (patrz poniżej)
     2. Stwórz dekorator metod `if_alive`
     3. Dekorator pozwoli na wykonanie metody `make_damage`, tylko gdy `current_health` jest większe niż 0
     4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)

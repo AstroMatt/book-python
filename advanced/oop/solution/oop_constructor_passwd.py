@@ -9,7 +9,7 @@ English:
     TODO: English translation
 
 Polish:
-    1. Użyj kodu z sekcji "Input" (patrz poniżej)
+    1. Użyj kodu z sekcji "Given" (patrz poniżej)
     2. Iteruj po liniach w `DATA`
     3. Odrzuć puste linie i komentarze
     4. Podziel linię po dwukropku

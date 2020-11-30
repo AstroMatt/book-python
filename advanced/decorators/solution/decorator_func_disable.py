@@ -12,7 +12,7 @@ English:
     4. Compare result with "Tests" section (see below)
 
 Polish:
-    1. Użyj kodu z sekcji "Input" (patrz poniżej)
+    1. Użyj kodu z sekcji "Given" (patrz poniżej)
     2. Stwórz dekorator `disable`
     3. Dekorator podnosi wyjątek `PermissionError` i nie wywołuje funkcji
     4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
