@@ -28,7 +28,7 @@ Syntax
             def wrapper(*args, **kwargs):
                 return func(*args, **kwargs)
             return wrapper
-        return decorator
+        return mydecorator
 
 .. code-block:: python
     :caption: Decoration
@@ -54,9 +54,11 @@ Example
             return wrapper
         return decorator
 
+
     @run(lang='en')
     def hello(name):
         return f'My name... {name}'
+
 
     hello('José Jiménez')
     # 'My name... José Jiménez'
@@ -68,6 +70,7 @@ Use Cases
     :caption: Deprecated
 
     import warnings
+
 
     def deprecated(removed_in_version=None):
         def decorator(func):
@@ -82,9 +85,11 @@ Use Cases
             return wrapper
         return decorator
 
+
     @deprecated(removed_in_version=2.0)
     def myfunction():
         pass
+
 
     myfunction()
     # /home/python/myscript.py:11: DeprecationWarning: Call to deprecated function myfunction in /home/python/myscript.py at line 19
@@ -106,7 +111,7 @@ Use Cases
                 signal(SIGALRM, on_timeout)
                 alarm(int(seconds))
                 try:
-                    func(*args, **kwargs)
+                    return func(*args, **kwargs)
                 except TimeoutError:
                     print(error_message)
                 finally:
@@ -115,7 +120,7 @@ Use Cases
         return decorator
 
 
-    @timeout(seconds=3.0, error_message='Sorry, timeout')
+    @timeout(seconds=3.0)
     def countdown(n):
         for i in reversed(range(n)):
             print(i)
@@ -136,7 +141,7 @@ Use Cases
     from time import sleep
 
 
-    def timeout(seconds=3.0, error_message='Timeout'):
+    def timeout(seconds=2.0, error_message='Timeout'):
         def decorator(func):
             def wrapper(*args, **kwargs):
                 timer = Timer(seconds, interrupt_main)
@@ -152,7 +157,7 @@ Use Cases
         return decorator
 
 
-    @timeout(seconds=3.0, error_message='Sorry, timeout')
+    @timeout(seconds=3.0)
     def countdown(n):
         for i in reversed(range(n)):
             print(i)

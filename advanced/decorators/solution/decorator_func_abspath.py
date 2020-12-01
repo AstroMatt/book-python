@@ -2,7 +2,7 @@
 * Assignment: Decorator Function Abspath
 * Filename: decorator_func_abspath.py
 * Complexity: easy
-* Lines of code to write: 1 lines
+* Lines of code to write: 5 lines
 * Estimated time: 5 min
 
 English:

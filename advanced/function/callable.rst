@@ -157,7 +157,7 @@ Callbacks
     import requests
 
 
-    def http_request(url, on_success=lambda *args: None, on_error=lambda *args: None):
+    def http_request(url, on_success=lambda: None, on_error=lambda: None):
         result = requests.get(url)
         if result.status_code == HTTPStatus.OK:
             return on_success(result)
@@ -202,8 +202,8 @@ Type Annotation
 
 
     def http_request(url: str,
-                     on_success: Callable = lambda *args: None,
-                     on_error: Callable = lambda *args: None) -> None:
+                     on_success: Callable = lambda: None,
+                     on_error: Callable = lambda: None) -> None:
         ...
 
 .. code-block:: python

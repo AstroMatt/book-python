@@ -154,6 +154,10 @@ Use Cases
 Assignments
 ===========
 
+.. literalinclude:: solution/decorator_cls_syntax.py
+    :caption: :download:`Solution <solution/decorator_cls_syntax.py>`
+    :end-before: # Solution
+
 .. literalinclude:: solution/decorator_cls_abspath.py
     :caption: :download:`Solution <solution/decorator_cls_abspath.py>`
     :end-before: # Solution

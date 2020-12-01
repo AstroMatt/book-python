@@ -91,7 +91,6 @@ def decorator(func):
     def wrapper(*args, **kwargs):
         for argname, argval in merge(*args, **kwargs).items():
             validate(argname, argval)
-
         result = func(*args, **kwargs)
         validate('return', result)
         return result
@@ -124,6 +123,5 @@ class TypeCheck:
     def validate(self, argname, argval):
         argtype = type(argval)
         expected = self._func.__annotations__[argname]
-
         if argtype is not expected:
             raise TypeError(f'"{argname}" is {argtype}, but {expected} was expected')
