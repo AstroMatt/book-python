@@ -2,8 +2,8 @@
 * Assignment: Decorator Function Abspath
 * Filename: decorator_func_abspath.py
 * Complexity: easy
-* Lines of code to write: 7 lines
-* Estimated time: 13 min
+* Lines of code to write: 1 lines
+* Estimated time: 5 min
 
 English:
     1. Use data from "Given" section (see below)
@@ -22,7 +22,7 @@ Polish:
     6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Hints:
-    * `path = Path(current_directory, filename)`
+    * `path = Path(CURRENT_DIR, filename)`
 
 Tests:
     >>> @abspath

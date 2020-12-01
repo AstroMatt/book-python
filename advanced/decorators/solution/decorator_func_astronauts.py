@@ -2,23 +2,27 @@
 * Assignment: Decorator Function Astronauts
 * Filename: decorator_func_astronauts.py
 * Complexity: easy
-* Lines of code to write: 7 lines
+* Lines of code to write: 3 lines
 * Estimated time: 8 min
 
 English:
     1. Use data from "Given" section (see below)
-    2. Create decorator `check_astronauts`
-    3. To answer if person is an astronaut check field `is_astronaut` in `crew: list[dict]`
-    4. Decorator will call decorated function, only if all crew members are astronauts
-    5. If any member is not an astronaut raise `PermissionError` and print his first name and last name
+    2. Modify decorator `check_astronauts`
+    3. To answer if person is an astronaut check field:
+        a. `is_astronaut` in `crew: list[dict]`
+    4. Decorator will call function, only if all crew members are astronauts
+    5. If any member is not an astronaut raise `PermissionError` and print
+       his first name and last name
     6. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj kodu z sekcji "Given" (patrz poniżej)
-    2. Stwórz dekorator `check_astronauts`
-    3. Aby odpowiedzieć czy osoba jest astronautą sprawdź pole `is_astronaut` in `crew: list[dict]`
-    4. Dekorator wywoła dekorowaną funkcję, tylko gdy wszyscy członkowie załogi są astronautami
-    5. Jeżeli, jakikolwiek członek nie jest astronautą, podnieś wyjątek `PermissionError` i wypisz jego imię i nazwisko
+    2. Zmodufikuj dekorator `check_astronauts`
+    3. Aby odpowiedzieć czy osoba jest astronautą sprawdź pole:
+        a. `is_astronaut` in `crew: list[dict]`
+    4. Dekorator wywoła funkcję, tylko gdy wszyscy członkowie załogi są astronautami
+    5. Jeżeli, jakikolwiek członek nie jest astronautą, podnieś wyjątek
+       `PermissionError` i wypisz jego imię i nazwisko
     6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
@@ -49,6 +53,12 @@ CREW_BACKUP = [
     {'is_astronaut': True, 'name': 'Melissa Lewis'},
     {'is_astronaut': True, 'name': 'Mark Watney'},
     {'is_astronaut': False, 'name': 'Alex Vogel'}]
+
+
+def check_astronauts(func):
+    def wrapper(crew):
+        return func(crew)
+    return wrapper
 
 
 # Solution
