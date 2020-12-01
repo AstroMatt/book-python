@@ -2,20 +2,20 @@
 * Assignment: Decorator Function Numeric
 * Filename: decorator_func_numeric.py
 * Complexity: easy
-* Lines of code to write: 8 lines
-* Estimated time: 8 min
+* Lines of code to write: 4 lines
+* Estimated time: 5 min
 
 English:
     1. Use data from "Given" section (see below)
-    2. Create decorator function `numeric`
-    3. Decorator checks types arguments `a` and `b`
+    2. Modify decorator `numeric`
+    3. Decorator must check arguments `a` and `b` types
     4. If type `a` or `b` are not `int` or `float` raise exception `TypeError`
     5. Compare result with "Tests" section (see below)
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz dekorator funkcję `numeric`
-    3. Dekorator sprawdza typy argumentów `a` oraz `b`
+    1. Użyj kodu z sekcji "Given" (patrz poniżej)
+    2. Zmodyfikuj dekorator `numeric`
+    3. Dekorator ma sprawdzać typy argumentów `a` oraz `b`
     4. Jeżeli typ `a` lub `b` nie jest `int` lub `float` to podnieś wyjątek `TypeError`
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
@@ -41,6 +41,13 @@ Tests:
     Traceback (most recent call last):
     TypeError: Argument "b" must be int or float
 """
+
+
+# Given
+def numeric(func):
+    def wrapper(a, b):
+        return func(a, b)
+    return wrapper
 
 
 # Solution

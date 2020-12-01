@@ -8,74 +8,96 @@ Rationale
 .. code-block:: python
 
     def hello():
-        print('Hello')
+        return 'My name... José Jiménez'
 
 
     callable(hello)
     # True
 
-    hello()
-    # Hello
+    type(hello)           # <class 'function'>
+    hello                 # <function hello at 0x0C55D420>
+
+    type(hello())         # <class 'str'>
+    hello()               # My name... José Jiménez
 
 
-Function Object
-===============
+Function Attributes
+===================
 .. code-block:: python
 
     def hello():
-        print('Hello')
+        print('My name... José Jiménez')
 
 
-    type(hello)
-    # <class 'function'>
-
-    hello.__call__()
-    # Hello
-
-
-First-Class Function
-====================
-* Function can be assigned to a variable
-* Function can be used as parameters
-* Function can be used as a return value
-* Function can be stored in data structures such as lists, mappings, etc
+    hello.myvar = 10
+    print(hello.myvar)
+    # 10
 
 .. code-block:: python
 
-    def lower():
-        return 'hello'
-
-    def higher():
-        return lower
-
-
-    a = higher
-    b = higher()
-
-    a
-    # <function higher at 0x10a999040>
-
-    a()
-    # <function lower at 0x10a802a60>
-
-    a()()
-    # 'hello'
-
-    b
-    # <function lower at 0x10a802a60>
-
-    b()
-    # 'hello'
+    def hello():
+        if not hello.disabled:
+            print('My name... José Jiménez')
+        else:
+            raise PermissionError
 
 
-Callable
-========
+    hello.disabled = False
+    hello()
+    # My name... José Jiménez
+
+    hello.disabled = True
+    hello()
+    # Traceback (most recent call last):
+    # PermissionError
+
+.. code-block:: python
+
+    def add(a, b):
+        return a + b
+
+
+    add.__code__.co_varnames
+    # ('a', 'b')
+
+    dir(add.__code__)
+    # [...,
+    #  'co_argcount',
+    #  'co_cellvars',
+    #  'co_code',
+    #  'co_consts',
+    #  'co_filename',
+    #  'co_firstlineno',
+    #  'co_flags',
+    #  'co_freevars',
+    #  'co_kwonlyargcount',
+    #  'co_lnotab',
+    #  'co_name',
+    #  'co_names',
+    #  'co_nlocals',
+    #  'co_posonlyargcount',
+    #  'co_stacksize',
+    #  'co_varnames',
+    #  'replace']
+
+.. code-block:: python
+
+    def add(a: int, b: int) -> int:
+        return a + b
+
+
+    add.__annotations__
+    # {'a': int, 'b': int, 'return': int}
+
+
+Calling Call Method
+===================
 * ``__call__()`` method makes object callable
 
 .. code-block:: python
 
     def hello():
-        print('Hello')
+        print('My name... José Jiménez')
 
 
     type(hello)
@@ -85,44 +107,14 @@ Callable
     # True
 
     hello()
-    # Hello
+    # My name... José Jiménez
 
     hello.__call__()
-    # Hello
-
-.. code-block:: python
-
-    def hello():
-        return 'My name... José Jiménez'
+    # My name... José Jiménez
 
 
-    type(hello())         # <class 'str'>
-    hello()               # My name... José Jiménez
-
-    type(hello)           # <class 'function'>
-    hello                 # <function hello at 0x0C55D420>
-
-
-.. code-block:: python
-
-    import datetime
-    import time
-
-
-    now = datetime.datetime.now
-
-    print(now())
-    # 1969-07-21 02:56:25
-
-    print(now)
-    # <built-in method now of type object at 0x107695638>
-
-    now()
-    # datetime.datetime(1969, 7, 21, 2, 56, 25)
-
-    now.__call__()
-    # datetime.datetime(1969, 7, 21, 2, 56, 25)
-
+Overloading Call Method
+=======================
 .. code-block:: python
 
     astro = str('Mark Watney')
@@ -236,21 +228,39 @@ Case Studies
 ============
 .. code-block:: python
 
-    from datetime import datetime
+    import datetime
+
+
+    now = datetime.datetime.now
+
+    print(now)
+    # <built-in method now of type object at 0x107695638>
+
+    print(now())
+    # 1969-07-21 02:56:25
+
+    now()
+    # datetime.datetime(1969, 7, 21, 2, 56, 25)
+
+    now.__call__()
+    # datetime.datetime(1969, 7, 21, 2, 56, 25)
+
+.. code-block:: python
+
+    import datetime
     from time import sleep
 
 
-    now = datetime.now
+    now = datetime.datetime.now
 
     print(now())          # 1969-07-21 02:56:15
     sleep(10)
     print(now())          # 1969-07-21 02:56:25
 
 
-
 Assignments
 ===========
 
-.. literalinclude:: solution/function_firstclass_define.py
-    :caption: :download:`Solution <solution/function_firstclass_define.py>`
+.. literalinclude:: solution/function_callable_define.py
+    :caption: :download:`Solution <solution/function_callable_define.py>`
     :end-before: # Solution

@@ -3,7 +3,7 @@
 * Filename: decorator_func_memoization.py
 * Complexity: easy
 * Lines of code to write: 5 lines
-* Estimated time: 13 min
+* Estimated time: 8 min
 
 English:
     1. Use data from "Given" section (see below)

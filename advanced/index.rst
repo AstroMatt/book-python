@@ -49,8 +49,9 @@ Functions
 
     function/parameter-syntax.rst
     function/generator.rst
+    function/namespace.rst
     function/functional-paradigm.rst
-    function/first-class.rst
+    function/callable.rst
     function/closures.rst
 
 **********

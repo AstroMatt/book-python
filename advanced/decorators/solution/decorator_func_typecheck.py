@@ -6,26 +6,24 @@
 * Estimated time: 21 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Create decorator function `typecheck`
-    3. Decorator checks types of all arguments (`*args` oraz `**kwargs`)
-    4. Decorator checks return type
-    5. In case when received type is not expected throw an exception `TypeError` with:
+    1. Create decorator function `typecheck`
+    2. Decorator checks types of all arguments (`*args` oraz `**kwargs`)
+    3. Decorator checks return type
+    4. In case when received type is not expected throw an exception `TypeError` with:
         a. argument name
         b. actual type
         c. expected type
-    6. Compare result with "Tests" section (see below)
+    5. Compare result with "Tests" section (see below)
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz dekorator funkcję `typecheck`
-    3. Dekorator sprawdza typy wszystkich argumentów (`*args` oraz `**kwargs`)
-    4. Dekorator sprawdza typ zwracany
-    5. W przypadku gdy otrzymany typ nie jest równy oczekiwanemu wyrzuć wyjątek `TypeError` z:
+    1. Stwórz dekorator funkcję `typecheck`
+    2. Dekorator sprawdza typy wszystkich argumentów (`*args` oraz `**kwargs`)
+    3. Dekorator sprawdza typ zwracany
+    4. W przypadku gdy otrzymany typ nie jest równy oczekiwanemu wyrzuć wyjątek `TypeError` z:
         a. nazwa argumentu
         b. aktualny typ
         c. oczekiwany typ
-    6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+    5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Hints:
     * `echo.__annotations__`

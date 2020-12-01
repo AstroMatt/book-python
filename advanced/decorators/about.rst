@@ -32,9 +32,11 @@ Syntax
             return func(*args, **kwargs)
         return wrapper
 
+
     @mydecorator
     def myfunction(*args, **kwargs):
         pass
+
 
     myfunction()
 
@@ -132,8 +134,12 @@ Decorated Object
     def mydecorator(func):
         ...
 
+.. code-block:: python
+
     def mydecorator(cls):
         ...
+
+.. code-block:: python
 
     def mydecorator(mth):
         ...
@@ -144,9 +150,13 @@ Decorated Object
         def __init__(self, func):
             ...
 
+.. code-block:: python
+
     class MyDecorator:
         def __init__(self, cls):
             ...
+
+.. code-block:: python
 
     class MyDecorator:
         def __init__(self, mth):
@@ -161,10 +171,14 @@ Usage
     def myfunction(*args, **kwargs):
         ...
 
+.. code-block:: python
+
     class MyClass:
         @mydecorator
         def mymethod(self, *args, **kwargs):
             ...
+
+.. code-block:: python
 
     @mydecorator
     class MyClass:
@@ -176,10 +190,14 @@ Usage
     def myfunction(*args, **kwargs):
         ...
 
+.. code-block:: python
+
     class MyClass:
         @MyDecorator
         def mymethod(self, *args, **kwargs):
             ...
+
+.. code-block:: python
 
     @MyDecorator
     class MyClass:
@@ -197,6 +215,8 @@ Arguments
     def myfunction(*args, **kwargs):
         ...
 
+.. code-block:: python
+
     @mydecorator(a, b)
     def myfunction(*args, **kwargs):
         ...
@@ -206,6 +226,8 @@ Arguments
     @MyClass
     def myfunction(*args, **kwargs):
         ...
+
+.. code-block:: python
 
     @MyClass(a, b)
     def myfunction(*args, **kwargs):

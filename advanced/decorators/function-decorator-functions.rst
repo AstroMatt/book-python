@@ -55,9 +55,11 @@ Example
             return func(*args, **kwargs)
         return wrapper
 
+
     @run
     def hello(name):
         return f'My name... {name}'
+
 
     hello('José Jiménez')
     # 'My name... José Jiménez'
@@ -69,6 +71,7 @@ Use Cases
     :caption: File exists
 
     import os
+
 
     def ifexists(func):
         def wrapper(file):
@@ -236,6 +239,14 @@ Scope
                             return 1                # 1
 
 .. code-block:: python
+
+    def factorial(n):
+        if n == 0:
+            return 1
+        else:
+            return n * factorial(n-1)
+
+.. code-block:: python
     :caption: Cache with global scope
 
     _cache = {}
@@ -326,12 +337,6 @@ Scope
     # 720
 
     print(factorial._cache)
-    # {3: 6, 4: 24, 5: 120}
-
-    print(factorial(6))
-    # 720
-
-    print(factorial._cache)
     # {0: 1,
     #  1: 1,
     #  2: 2,
@@ -339,6 +344,9 @@ Scope
     #  4: 24,
     #  5: 120,
     #  6: 720}
+
+    print(factorial(6))
+    # 720
 
     print(factorial(3))
     # 6
@@ -397,12 +405,15 @@ Examples
 
     @app.get('/')
     async def index():
-        return {'Hello': 'World'}
+        return {'message': 'Hello World'}
 
+    @app.get('/user/{pk}')
+    async def user(pk: int):
+        return {'pk': pk}
 
-    @app.get('/items/{pk}')
-    async def items(pk: int, q: Optional[str] = None):
-        return {'pk': pk, 'q': q}
+    @app.get('/search')
+    async def items(q: Optional[str] = None):
+        return {'q': q}
 
 .. code-block:: python
     :caption: Django Login Required. Decorator checks whether user is_authenticated. If not, user will be redirected to login page.
@@ -441,6 +452,10 @@ Examples
 
 Assignments
 ===========
+
+.. literalinclude:: solution/decorator_func_syntax.py
+    :caption: :download:`Solution <solution/decorator_func_syntax.py>`
+    :end-before: # Solution
 
 .. literalinclude:: solution/decorator_func_disable.py
     :caption: :download:`Solution <solution/decorator_func_disable.py>`
