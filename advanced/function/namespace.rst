@@ -159,16 +159,42 @@ Return
     # B
 
     a, b = run()
+
     a()
     # A
+
     b()
     # B
 
     x, y = run()
+
     x()
     # A
+
     y()
     # B
+
+.. code-block:: python
+
+    def run():
+        a = 10
+        b = 20
+
+        class MyClass:
+            def hello(self):
+                pass
+
+        def abc():
+            pass
+
+        def xyz():
+            pass
+
+        return MyClass
+
+
+    run()
+    # <class '__main__.run.<locals>.MyClass'>
 
 
 Locals

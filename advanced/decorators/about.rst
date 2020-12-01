@@ -43,6 +43,35 @@ Syntax
     myfunction()
 
 
+Names
+=====
+.. code-block:: python
+
+    def mydecorator(func):
+        def wrapper(*args, **kwargs):
+            return func(*args, **kwargs)
+        return wrapper
+
+.. code-block:: python
+
+    def mydecorator(fn):
+        def wrap(*a, **b):
+            return fn(*a, **b)
+        return wrap
+
+.. code-block:: python
+
+    def mydecorator(fn):
+        def _(*a, **b):
+            return fn(*a, **b)
+        return _
+
+.. code-block:: python
+
+    def mydecorator(fn):
+        return lambda *a, **kw: fn(*a, **kw)
+
+
 Types of decorators
 ===================
 By type:
