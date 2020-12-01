@@ -409,9 +409,11 @@ Examples
     async def index():
         return {'message': 'Hello World'}
 
+
     @app.get('/user/{pk}')
     async def user(pk: int):
         return {'pk': pk}
+
 
     @app.get('/search')
     async def items(q: Optional[str] = None):
