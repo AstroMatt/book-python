@@ -45,19 +45,27 @@ First-Class Function
     def lower():
         return 'hello'
 
-
     def higher():
         return lower
 
 
-    result = higher()     # <function __main__.lower()>
-    result()              # 'hello'
+    a = higher
+    b = higher()
 
-.. code-block:: python
+    a
+    # <function higher at 0x10a999040>
 
-    def hello():
+    a()
+    # <function lower at 0x10a802a60>
 
+    a()()
+    # 'hello'
 
+    b
+    # <function lower at 0x10a802a60>
+
+    b()
+    # 'hello'
 
 
 Callable

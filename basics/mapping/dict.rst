@@ -28,6 +28,8 @@ Type Definition
     data = {}
     data = dict()
 
+.. code-block:: python
+
     data = {
         1961: 'First Human Space Flight',
         1969: 'First Step on the Moon'}
@@ -51,8 +53,9 @@ Type Definition
 
     data = {
         'commander': 'Melissa Lewis',
-        'commander': 'Jan Twardowski',
-    }
+        'commander': 'Jan Twardowski'}
+
+    data
     # {'commander': 'Jan Twardowski'}
 
 
