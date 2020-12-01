@@ -2,7 +2,7 @@
 * Assignment: Decorator Functools Args
 * Filename: decorator_functools_args.py
 * Complexity: easy
-* Lines of code to write: 2 lines
+* Lines of code to write: 1 lines
 * Estimated time: 3 min
 
 English:
@@ -27,6 +27,9 @@ Tests:
 
 
 # Given
+from functools import wraps
+
+
 def mydecorator(happy=True):
     def decorator(func):
         def wrapper(*args, **kwargs):
@@ -36,9 +39,6 @@ def mydecorator(happy=True):
 
 
 # Solution
-from functools import wraps
-
-
 def mydecorator(happy=True):
     def decorator(func):
         @wraps(func)

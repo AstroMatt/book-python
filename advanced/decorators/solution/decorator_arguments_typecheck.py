@@ -71,35 +71,50 @@ Tests:
 """
 
 
+# Given
+def decorator(func):
+    def validate(argname, argval):
+        argtype = type(argval)
+        expected = func.__annotations__[argname]
+        if argtype is not expected:
+            raise TypeError(f'"{argname}" is {argtype}, but {expected} was expected')
+
+    def merge(*args, **kwargs):
+        args = dict(zip(func.__annotations__.keys(), args))
+        return kwargs | args          # Python 3.9
+        # return {**args, **kwargs)}  # Python 3.7, 3.8
+
+    def wrapper(*args, **kwargs):
+        for argname, argval in merge(*args, **kwargs).items():
+            validate(argname, argval)
+
+        result = func(*args, **kwargs)
+        validate('return', result)
+        return result
+    return wrapper
+
+
 # Solution
-from typing import NoReturn, Any, Callable
-
-
 def typecheck(check_return: bool = True):
-    def decorator(func: Callable):
-        def valid(argname: str, argval: Any) -> NoReturn:
+    def decorator(func):
+        def validate(argname, argval):
             argtype = type(argval)
             expected = func.__annotations__[argname]
-
             if argtype is not expected:
                 raise TypeError(f'"{argname}" is {argtype}, but {expected} was expected')
 
         def merge(*args, **kwargs):
-            args = zip(func.__annotations__.keys(), args)
-            return (dict(args) | kwargs).items()
+            args = dict(zip(func.__annotations__.keys(), args))
+            return kwargs | args  # Python 3.9
+            # return {**args, **kwargs)}  # Python 3.7, 3.8
 
         def wrapper(*args, **kwargs):
-            # Check if all arguments are valid types
-            for argname, argval in merge(*args, **kwargs):
-                valid(argname, argval)
+            for argname, argval in merge(*args, **kwargs).items():
+                validate(argname, argval)
 
             result = func(*args, **kwargs)
-
-            # Check result
             if check_return:
-                valid('return', result)
-
-            # Return function result
+                validate('return', result)
             return result
         return wrapper
     return decorator

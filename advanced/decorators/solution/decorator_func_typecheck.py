@@ -6,7 +6,8 @@
 * Estimated time: 21 min
 
 English:
-    1. Create decorator function `typecheck`
+    1. Use code from "Given" section (see below)
+    1. Modify decorator `typecheck`
     2. Decorator checks types of all arguments (`*args` oraz `**kwargs`)
     3. Decorator checks return type
     4. In case when received type is not expected throw an exception `TypeError` with:
@@ -16,7 +17,8 @@ English:
     5. Compare result with "Tests" section (see below)
 
 Polish:
-    1. Stwórz dekorator funkcję `typecheck`
+    1. Użyj kodu z sekcji "Given" (patrz poniżej)
+    1. Zmodyfikuj dekorator `typecheck`
     2. Dekorator sprawdza typy wszystkich argumentów (`*args` oraz `**kwargs`)
     3. Dekorator sprawdza typ zwracany
     4. W przypadku gdy otrzymany typ nie jest równy oczekiwanemu wyrzuć wyjątek `TypeError` z:
@@ -27,7 +29,11 @@ Polish:
 
 Hints:
     * `echo.__annotations__`
-
+    # {'a': <class 'str'>,
+    #  'b': <class 'int'>,
+    #  'c': <class 'float'>,
+    #  'return': <class 'bool'>}
+s
 Tests:
     >>> @typecheck
     ... def echo(a: str, b: int, c: float = 0.0) -> bool:
@@ -68,32 +74,38 @@ Tests:
     TypeError: "b" is <class 'float'>, but <class 'int'> was expected
 """
 
+
+# Given
+def typecheck(func):
+    def merge(*args, **kwargs):
+        """Function merges *args, and **kwargs into single dict"""
+        args = dict(zip(func.__annotations__.keys(), args))
+        return kwargs | args          # Python 3.9
+        # return {**args, **kwargs)}  # Python 3.7, 3.8
+
+    def wrapper(*args, **kwargs):
+        return func(*args, **kwargs)
+    return wrapper
+
+
 # Solution
-from typing import NoReturn, Any, Callable
-
-
-def typecheck(func: Callable):
-    def valid(argname: str, argval: Any) -> NoReturn:
+def typecheck(func):
+    def validate(argname, argval):
         argtype = type(argval)
         expected = func.__annotations__[argname]
-
         if argtype is not expected:
             raise TypeError(f'"{argname}" is {argtype}, but {expected} was expected')
 
     def merge(*args, **kwargs):
-        arguments = zip(func.__annotations__.keys(), args)
-        return {**kwargs, **dict(arguments)}.items()
+        args = dict(zip(func.__annotations__.keys(), args))
+        return kwargs | args          # Python 3.9
+        # return {**args, **kwargs)}  # Python 3.7, 3.8
 
     def wrapper(*args, **kwargs):
-        # Check if all arguments are valid types
-        for argname, argval in merge(*args, **kwargs):
-            valid(argname, argval)
+        for argname, argval in merge(*args, **kwargs).items():
+            validate(argname, argval)
 
         result = func(*args, **kwargs)
-
-        # Check result
-        valid('return', result)
-
-        # Return function result
+        validate('return', result)
         return result
     return wrapper

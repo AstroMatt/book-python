@@ -61,6 +61,15 @@ Tests:
 """
 
 
+# Given
+def check_astronauts(field, value):
+    def decorator(func):
+        def wrapper(crew):
+            return func(crew)
+        return wrapper
+    return decorator
+
+
 # Solution
 def check_astronauts(field, value):
     def decorator(func):

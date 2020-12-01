@@ -22,7 +22,7 @@ Polish:
     6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Hints:
-    * `path = Path(current_directory, filename)`
+    * `path = Path(CURRENT_DIR, filename)`
 
 Tests:
     >>> @Abspath

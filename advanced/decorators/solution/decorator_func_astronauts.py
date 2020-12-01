@@ -43,6 +43,7 @@ Tests:
     PermissionError: Alex Vogel is not an astronaut
 """
 
+
 # Given
 CREW_PRIMARY = [
     {'is_astronaut': True, 'name': 'Jan Twardowski'},

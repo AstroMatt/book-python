@@ -54,7 +54,10 @@ Tests:
     >>> print(f'With Cache time: {duration_cache:.4f} seconds')
     >>> print(f'Without Cache time: {duration_nocache:.3f} seconds')
     >>> print(f'Cached solution is {duration_ratio:.1f} times faster')
+
+    TODO: Make tests faster
 """
+
 
 # Given
 _cache = {}

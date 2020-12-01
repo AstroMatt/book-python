@@ -74,12 +74,33 @@ Tests:
     TypeError: "b" is <class 'float'>, but <class 'int'> was expected
 """
 
+
+# Given
+def decorator(func):
+    def validate(argname, argval):
+        argtype = type(argval)
+        expected = func.__annotations__[argname]
+        if argtype is not expected:
+            raise TypeError(f'"{argname}" is {argtype}, but {expected} was expected')
+
+    def merge(*args, **kwargs):
+        args = dict(zip(func.__annotations__.keys(), args))
+        return kwargs | args          # Python 3.9
+        # return {**args, **kwargs)}  # Python 3.7, 3.8
+
+    def wrapper(*args, **kwargs):
+        for argname, argval in merge(*args, **kwargs).items():
+            validate(argname, argval)
+
+        result = func(*args, **kwargs)
+        validate('return', result)
+        return result
+    return wrapper
+
+
 # Solution
-from typing import Callable, Any, NoReturn
-
-
 class TypeCheck:
-    def __init__(self, func: Callable) -> None:
+    def __init__(self, func) -> None:
         self._func = func
 
     def __call__(self, *args, **kwargs):
@@ -89,18 +110,18 @@ class TypeCheck:
         return result
 
     def check_arguments(self, *args, **kwargs):
-        for argname, argval in self.merge(*args, **kwargs):
-            self.valid(argname, argval)
+        for argname, argval in self.merge(*args, **kwargs).items():
+            self.validate(argname, argval)
 
     def check_result(self, result):
-        self.valid('return', result)
+        self.validate('return', result)
 
     def merge(self, *args, **kwargs):
-        """Convert args to named arguments and merge with kwargs"""
-        arguments = zip(self._func.__annotations__.keys(), args)
-        return {**kwargs, **dict(arguments)}.items()
+        args = dict(zip(self._func.__annotations__.keys(), args))
+        return kwargs | args          # Python 3.9
+        # return {**args, **kwargs)}  # Python 3.7, 3.8
 
-    def valid(self, argname: str, argval: Any) -> NoReturn:
+    def validate(self, argname, argval):
         argtype = type(argval)
         expected = self._func.__annotations__[argname]
 

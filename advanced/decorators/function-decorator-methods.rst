@@ -7,7 +7,7 @@ Rationale
 =========
 * ``mydecorator`` is a decorator name
 * ``method`` is a method name
-* ``instance`` is an instance
+* ``self`` is an instance
 * ``args`` arbitrary number of positional arguments
 * ``kwargs`` arbitrary number of keyword arguments
 
@@ -39,7 +39,7 @@ Syntax
 ======
 * ``mydecorator`` is a decorator name
 * ``mymethod`` is a method name
-* ``instance`` is an instance
+* ``self`` is an instance
 * ``args`` arbitrary number of positional arguments
 * ``kwargs`` arbitrary number of keyword arguments
 
@@ -47,8 +47,8 @@ Syntax
     :caption: Definition
 
     def mydecorator(method):
-        def wrapper(instance, *args, **kwargs):
-            return method(instance, *args, **kwargs)
+        def wrapper(self, *args, **kwargs):
+            return method(self, *args, **kwargs)
         return wrapper
 
 .. code-block:: python
@@ -72,8 +72,8 @@ Example
 .. code-block:: python
 
     def run(method):
-        def wrapper(instance, *args, **kwargs):
-            return method(instance, *args, **kwargs)
+        def wrapper(self, *args, **kwargs):
+            return method(self, *args, **kwargs)
         return wrapper
 
 
@@ -93,9 +93,9 @@ Use Cases
 .. code-block:: python
 
     def if_allowed(method):
-        def wrapper(instance, *args, **kwargs):
-            if instance._is_allowed:
-                return method(instance, *args, **kwargs)
+        def wrapper(self, *args, **kwargs):
+            if self._is_allowed:
+                return method(self, *args, **kwargs)
             else:
                 print('Sorry, Permission Denied')
         return wrapper
@@ -127,8 +127,8 @@ Use Cases
 .. code-block:: python
 
     def paragraph(method):
-        def wrapper(instance, *args, **kwargs):
-            result = method(instance, *args, **kwargs)
+        def wrapper(self, *args, **kwargs):
+            result = method(self, *args, **kwargs)
             return f'<p>{result}</p>'
         return wrapper
 
