@@ -1,6 +1,8 @@
-****************************
-Class Decorator with Methods
-****************************
+.. _Decorator Class with Mth:
+
+************************
+Decorator Class with Mth
+************************
 
 
 Rationale

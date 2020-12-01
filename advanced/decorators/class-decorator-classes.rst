@@ -1,6 +1,8 @@
-****************************
-Class Decorator with Classes
-****************************
+.. _Decorator Class with Cls:
+
+************************
+Decorator Class with Cls
+************************
 
 
 Rationale

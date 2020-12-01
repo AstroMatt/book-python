@@ -1,6 +1,8 @@
-******************************
-Class Decorator with Functions
-******************************
+.. _Decorator Class with Func:
+
+*************************
+Decorator Class with Func
+*************************
 
 
 Rationale

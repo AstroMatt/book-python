@@ -1,6 +1,8 @@
-*******************************
-Function Decorator with Methods
-*******************************
+.. _Decorator Function with Mth:
+
+***************************
+Decorator Function with Mth
+***************************
 
 
 Rationale

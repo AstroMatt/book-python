@@ -1,3 +1,5 @@
+.. _Decorators Recap:
+
 ****************
 Decorators Recap
 ****************

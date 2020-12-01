@@ -1,5 +1,7 @@
+.. _Decorators About:
+
 ****************
-About Decorators
+Decorators About
 ****************
 
 

@@ -3,7 +3,7 @@
 * Filename: decorator_functools_args.py
 * Complexity: easy
 * Lines of code to write: 1 lines
-* Estimated time: 3 min
+* Estimated time: 2 min
 
 English:
     1. Use code from "Given" section (see below)

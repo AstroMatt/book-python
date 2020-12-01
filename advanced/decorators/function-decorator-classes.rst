@@ -1,6 +1,8 @@
-*******************************
-Function Decorator with Classes
-*******************************
+.. _Decorator Function with Cls:
+
+***************************
+Decorator Function with Cls
+***************************
 
 
 Rationale

@@ -45,4 +45,3 @@ def mydecorator(a, b):
             return func(*args, **kwargs)
         return wrapper
     return decorator
-

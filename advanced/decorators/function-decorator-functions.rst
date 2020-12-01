@@ -1,6 +1,8 @@
-*********************************
-Function Decorator with Functions
-*********************************
+.. _Decorator Function with Func:
+
+****************************
+Decorator Function with Func
+****************************
 
 
 Rationale

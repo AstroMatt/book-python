@@ -1,6 +1,8 @@
-************************
-Decorator with Arguments
-************************
+.. _Decorator Arguments:
+
+*******************
+Decorator Arguments
+*******************
 
 
 Rationale
@@ -174,6 +176,10 @@ Use Cases
 
 Assignments
 ===========
+
+.. literalinclude:: solution/decorator_arguments_syntax.py
+    :caption: :download:`Solution <solution/decorator_arguments_syntax.py>`
+    :end-before: # Solution
 
 .. literalinclude:: solution/decorator_arguments_astronauts.py
     :caption: :download:`Solution <solution/decorator_arguments_astronauts.py>`
