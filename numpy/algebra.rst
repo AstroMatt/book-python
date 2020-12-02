@@ -260,9 +260,9 @@ Numpy Algebra Euclidean 2D
 --------------------------
 * Assignment: Numpy Algebra Euclidean 2D
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 5 lines
-* Estimated time of completion: 5 min
+* Complexity: easy
+* Lines of code: 5 lines
+* Estimated time: 5 min
 * Filename: :download:`solution/numpy_algebra_euclidean_2d.py`
 
 English:
@@ -321,9 +321,9 @@ Numpy Algebra Euclidean Ndim
 ----------------------------
 * Assignment: Numpy Algebra Euclidean Ndim
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 10 lines
-* Estimated time of completion: 8 min
+* Complexity: easy
+* Lines of code: 10 lines
+* Estimated time: 8 min
 * Filename: :download:`solution/numpy_algebra_euclidean_ndim.py`
 
 English:

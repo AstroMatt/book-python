@@ -187,9 +187,9 @@ Numpy Polyfit
 -------------
 * Assignment: Numpy Polyfit
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 4 lines
-* Estimated time of completion: 5 min
+* Complexity: easy
+* Lines of code: 4 lines
+* Estimated time: 5 min
 * Filename: :download:`solution/numpy_polyfit.py`
 
 English:

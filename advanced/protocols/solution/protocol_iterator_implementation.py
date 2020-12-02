@@ -2,7 +2,7 @@
 * Assignment: Protocol Iterator Implementation
 * Filename: protocol_iterator_implementation.py
 * Complexity: easy
-* Lines of code to write: 9 lines
+* Lines of code: 9 lines
 * Estimated time: 8 min
 
 English:

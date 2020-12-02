@@ -2,7 +2,7 @@
 * Assignment: Sequence Tuple Select
 * Filename: sequence_tuple_select.py
 * Complexity: easy
-* Lines of code to write: 1 lines
+* Lines of code: 1 lines
 * Estimated time: 5 min
 
 English:

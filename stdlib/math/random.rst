@@ -34,9 +34,9 @@ Random numbers
 --------------
 * Assignment: Random numbers
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 5 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 5 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/random_sample.py`
 
 English:
@@ -49,9 +49,9 @@ Sum of inner elements
 ---------------------
 * Assignment: Sum of inner elements
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 5 lines
-* Estimated time of completion: 13 min
+* Complexity: medium
+* Lines of code: 5 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/random_matrix.py`
 
 English:

@@ -2,7 +2,7 @@
 * Assignment: OOP Composition Movable
 * Filename: oop_composition_movable.py
 * Complexity: medium
-* Lines of code to write: 20 lines
+* Lines of code: 20 lines
 * Estimated time: 13 min
 
 English:

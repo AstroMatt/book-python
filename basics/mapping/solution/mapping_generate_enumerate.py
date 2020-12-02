@@ -2,7 +2,7 @@
 * Assignment: Mapping Generate Enumerate
 * Filename: mapping_generate_enumerate.py
 * Complexity: easy
-* Lines of code to write: 1 lines
+* Lines of code: 1 lines
 * Estimated time: 3 min
 
 English:

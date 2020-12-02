@@ -2,7 +2,7 @@
 * Assignment: Function Unpack Split
 * Filename: sequence_unpack_split.py
 * Complexity: easy
-* Lines of code to write: 1 lines
+* Lines of code: 1 lines
 * Estimated time: 3 min
 
 English:

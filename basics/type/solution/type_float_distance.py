@@ -2,7 +2,7 @@
 * Assignment: Type Float Distance
 * Filename: type_float_distance.py
 * Complexity: easy
-* Lines of code to write: 4 lines
+* Lines of code: 4 lines
 * Estimated time: 5 min
 
 English:

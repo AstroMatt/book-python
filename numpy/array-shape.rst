@@ -252,9 +252,9 @@ Numpy Shape
 -----------
 * Assignment: Numpy Shape
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 5 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 5 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/numpy_shape.py`
 
 English:

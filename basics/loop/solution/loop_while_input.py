@@ -2,7 +2,7 @@
 * Assignment: Loop While Input
 * Filename: loop_while_input.py
 * Complexity: medium
-* Lines of code to write: 14 lines
+* Lines of code: 14 lines
 * Estimated time: 13 min
 
 English:

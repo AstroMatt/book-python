@@ -534,9 +534,9 @@ Assignments
 --------------------------------------
 * Assignment: ``map()``, ``filter()`` and ``lambda``
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 10 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 10 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/functional_map_filter_lambda.py`
 
 English:
@@ -552,9 +552,9 @@ Balanced Brackets
 -----------------
 * Assignment: Balanced Brackets
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 10 lines
-* Estimated time of completion: 13 min
+* Complexity: medium
+* Lines of code: 10 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/functional_brackets.py`
 
 English:

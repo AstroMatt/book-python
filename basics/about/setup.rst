@@ -30,7 +30,7 @@ About Setup IDE
 ---------------
 * Assignment: About Setup IDE
 * Complexity: easy
-* Lines of code to write: 0 lines
+* Lines of code: 0 lines
 * Estimated time: 5 min
 * Filename: TODO
 
@@ -56,7 +56,7 @@ About Setup Interpreter
 * Assignment: About Setup Interpreter
 * Filename: about_interpreter.py
 * Complexity: easy
-* Lines of code to write: 0 lines
+* Lines of code: 0 lines
 * Estimated time: 3 min
 
 English:
@@ -93,7 +93,7 @@ About Setup VCS
 * Assignment: About Setup VCS
 * Filename: gitignore
 * Complexity: easy
-* Lines of code to write: 0 lines
+* Lines of code: 0 lines
 * Estimated time: 3 min
 
 English:

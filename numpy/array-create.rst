@@ -370,9 +370,9 @@ Numpy Create Arange
 -------------------
 * Assignment: Numpy Create Arange
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 1 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 1 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/numpy_create_arange.py`
 
 English:

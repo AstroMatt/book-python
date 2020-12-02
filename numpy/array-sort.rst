@@ -123,9 +123,9 @@ Numpy Sort
 ----------
 * Assignment: Numpy Sort
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 4 lines
-* Estimated time of completion: 5 min
+* Complexity: easy
+* Lines of code: 4 lines
+* Estimated time: 5 min
 * Filename: :download:`solution/numpy_sort.py`
 
 English:

@@ -2,7 +2,7 @@
 * Assignment: Loop Comprehension Create
 * Filename: loop_comprehension_create.py
 * Complexity: easy
-* Lines of code to write: 2 lines
+* Lines of code: 2 lines
 * Estimated time: 3 min
 
 English:

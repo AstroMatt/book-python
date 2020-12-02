@@ -2,7 +2,7 @@
 * Assignment: Unpacking Assignment Flat
 * Filename: unpacking_assignment_flat.py
 * Complexity: easy
-* Lines of code to write: 1 lines
+* Lines of code: 1 lines
 * Estimated time: 3 min
 
 English:

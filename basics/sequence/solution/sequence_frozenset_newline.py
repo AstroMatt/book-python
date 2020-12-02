@@ -2,7 +2,7 @@
 * Assignment: Sequence Frozenset Newline
 * Filename: sequence_frozenset_newline.py
 * Complexity: easy
-* Lines of code to write: 1 lines
+* Lines of code: 1 lines
 * Estimated time: 3 min
 
 English:

@@ -240,9 +240,9 @@ Database SQLite Logs
 --------------------
 * Assignment: Database SQLite Logs
 * Last update: 2020-10-11
-* Complexity level: easy
-* Lines of code to write: 25 lines
-* Estimated time of completion: 21 min
+* Complexity: easy
+* Lines of code: 25 lines
+* Estimated time: 21 min
 * Filename: :download:`solution/database_sqlite_logs.py`
 
 English:
@@ -325,9 +325,9 @@ Database SQLite CSV
 -------------------
 * Assignment: Database SQLite CSV
 * Last update: 2020-10-11
-* Complexity level: easy
-* Lines of code to write: 30 lines
-* Estimated time of completion: 21 min
+* Complexity: easy
+* Lines of code: 30 lines
+* Estimated time: 21 min
 * Filename: :download:`solution/database_sqlite_csv.py`
 
 English:
@@ -411,9 +411,9 @@ Database SQLite JSON
 --------------------
 * Assignment: Database SQLite JSON
 * Last update: 2020-10-11
-* Complexity level: medium
-* Lines of code to write: 15 lines
-* Estimated time of completion: 21 min
+* Complexity: medium
+* Lines of code: 15 lines
+* Estimated time: 21 min
 * Filename: :download:`solution/database_sqlite_json.py`
 
 English:

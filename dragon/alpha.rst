@@ -12,9 +12,9 @@ Dragon (version alpha)
 
 * Assignment: Dragon (version alpha)
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 100 lines
-* Estimated time of completion: 60 min, then 90 min live coding with instructor
+* Complexity: medium
+* Lines of code: 100 lines
+* Estimated time: 60 min, then 90 min live coding with instructor
 * Solution (please don't do this!): :download:`solution/dragon_alpha_bad.py`
 * Solution (basic): :download:`solution/dragon_alpha_basic.py`
 * Solution (advanced): :download:`solution/dragon_alpha_adv.py`

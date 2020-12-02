@@ -551,9 +551,9 @@ Jupyter First
 -------------
 * Assignment: Jupyter First
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 10 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 10 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/jupyter_first.ipynb`
 
 English:
@@ -571,9 +571,9 @@ Jupyter Slides
 --------------
 * Assignment: Jupyter Slides
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 1 lines
-* Estimated time of completion: 5 min
+* Complexity: easy
+* Lines of code: 1 lines
+* Estimated time: 5 min
 * Filename: :download:`solution/jupyter_slides.py`
 
 English:

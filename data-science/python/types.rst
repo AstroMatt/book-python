@@ -43,9 +43,9 @@ Assignments
 -----------
 * Assignment: Assignments
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 12 lines
-* Estimated time of completion: 5 min
+* Complexity: easy
+* Lines of code: 12 lines
+* Estimated time: 5 min
 * Filename: :download:`solution/types_int.py`
 
 English:
@@ -117,9 +117,9 @@ Assignments
 -----------
 * Assignment: Assignments
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 4 lines
-* Estimated time of completion: 5 min
+* Complexity: easy
+* Lines of code: 4 lines
+* Estimated time: 5 min
 * Filename: :download:`solution/types_float.py`
 
 English:
@@ -326,9 +326,9 @@ Assignments
 -----------
 * Assignment: Assignments
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 3 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/types_str.py`
 
 English:
@@ -469,9 +469,9 @@ To ``bool`` or not to ``bool``
 ------------------------------
 * Assignment: To ``bool`` or not to ``bool``
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 15 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 15 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/types_bool.py`
 
 English:

@@ -7,8 +7,6 @@ Relations
 
 Relations
 =========
-* :ref:`OOP Argument Mutability`
-
 .. code-block:: python
 
     class Astronaut:

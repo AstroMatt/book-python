@@ -2,7 +2,7 @@
 * Assignment: Decorator Functools Func
 * Filename: decorator_functools_func.py
 * Complexity: easy
-* Lines of code to write: 1 lines
+* Lines of code: 1 lines
 * Estimated time: 2 min
 
 English:

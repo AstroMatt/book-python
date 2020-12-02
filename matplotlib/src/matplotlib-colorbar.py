@@ -8,7 +8,7 @@ iris = load_iris()
 x_index = 0
 y_index = 1
 
-# this formatter will label the ``colorbar`` with the correct target names
+# this formatter will label the `colorbar` with the correct target names
 formatter = plt.FuncFormatter(lambda i, *args: iris.target_names[int(i)])
 
 plt.figure(figsize=(5, 4))

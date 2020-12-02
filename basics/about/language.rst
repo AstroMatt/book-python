@@ -170,7 +170,7 @@ About Environment
 * Assignment: About Environment
 * Filename: about_environment.py
 * Complexity: easy
-* Lines of code to write: 0 lines
+* Lines of code: 0 lines
 * Estimated time: 3 min
 
 English:

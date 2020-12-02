@@ -348,9 +348,9 @@ DataFrame Join
 --------------
 * Assignment: DataFrame Join
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 25 lines
-* Estimated time of completion: 21 min
+* Complexity: medium
+* Lines of code: 25 lines
+* Estimated time: 21 min
 * Filename: :download:`solution/df_join_eva.py`
 
 English:

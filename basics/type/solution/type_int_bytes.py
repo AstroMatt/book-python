@@ -2,7 +2,7 @@
 * Assignment: Type Int Bytes
 * Filename: type_int_bytes.py
 * Complexity: easy
-* Lines of code to write: 7 lines
+* Lines of code: 7 lines
 * Estimated time: 3 min
 
 English:

@@ -2,7 +2,7 @@
 * Assignment: OOP Relations Nested
 * Filename: oop_relations_nested.py
 * Complexity: medium
-* Lines of code to write: 45 lines
+* Lines of code: 45 lines
 * Estimated time: 13 min
 
 English:

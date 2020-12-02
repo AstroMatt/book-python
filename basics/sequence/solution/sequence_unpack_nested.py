@@ -2,7 +2,7 @@
 * Assignment: Function Unpack Nested
 * Filename: sequence_unpack_nested.py
 * Complexity: easy
-* Lines of code to write: 1 lines
+* Lines of code: 1 lines
 * Estimated time: 3 min
 
 English:

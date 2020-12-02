@@ -358,9 +358,9 @@ Numpy Logic Even
 ----------------
 * Assignment: Numpy Logic Even
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 4 lines
-* Estimated time of completion: 5 min
+* Complexity: easy
+* Lines of code: 4 lines
+* Estimated time: 5 min
 * Filename: :download:`solution/numpy_logic_even.py`
 
 English:
@@ -381,9 +381,9 @@ Numpy Logic Isin
 ----------------
 * Assignment: Numpy Logic Isin
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 9 lines
-* Estimated time of completion: 5 min
+* Complexity: easy
+* Lines of code: 9 lines
+* Estimated time: 5 min
 * Filename: :download:`solution/numpy_logic_isin.py`
 
 English:

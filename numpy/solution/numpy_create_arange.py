@@ -1,7 +1,7 @@
 import numpy as np
 
 
-## Results with ``%%timeit -n 1_000_000 -r 10``
+## Results with `%%timeit -n 1_000_000 -r 10`
 
 result = np.arange(0, 100, step=2, dtype=float)
 # 756 ns ± 10.3 ns per loop (mean ± std. dev. of 10 runs, 1000000 loops each)

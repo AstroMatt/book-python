@@ -9,9 +9,9 @@ Exit Test Encoder
 =================
 * Assignment: Exit Test Encoder
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 13 lines
-* Estimated time of completion: 13 min
+* Complexity: medium
+* Lines of code: 13 lines
+* Estimated time: 13 min
 * Filename: exit_test_encoder.py
 
 English:
@@ -102,9 +102,9 @@ Exit Test Passwd
 ================
 * Assignment: Exit Test Passwd
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 100 lines
-* Estimated time of completion: 21 min
+* Complexity: medium
+* Lines of code: 100 lines
+* Estimated time: 21 min
 * Filename: exit_test_passwd.py
 
 English:

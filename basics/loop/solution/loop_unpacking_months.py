@@ -2,7 +2,7 @@
 * Assignment: Loop Unpacking Months
 * Filename: loop_unpacking_months.py
 * Complexity: easy
-* Lines of code to write: 2 lines
+* Lines of code: 2 lines
 * Estimated time: 5 min
 
 English:

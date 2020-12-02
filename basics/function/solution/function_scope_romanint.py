@@ -2,7 +2,7 @@
 * Assignment: Function Scope Roman to Int
 * Filename: function_scope_romanint.py
 * Complexity: hard
-* Lines of code to write: 15 lines
+* Lines of code: 15 lines
 * Estimated time: 21 min
 
 English:

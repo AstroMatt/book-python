@@ -271,9 +271,9 @@ DataFrame NaN
 -------------
 * Assignment: DataFrame NaN
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 10 lines
-* Estimated time of completion: 8 min
+* Complexity: easy
+* Lines of code: 10 lines
+* Estimated time: 8 min
 * Filename: :download:`solution/df_nan.py`
 
 English:

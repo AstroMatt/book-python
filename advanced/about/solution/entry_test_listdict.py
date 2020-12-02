@@ -2,7 +2,7 @@
 * Assignment: Entry Test List of Dict
 * Filename: entry_test_listdict.py
 * Complexity: easy
-* Lines of code to write: 6 lines
+* Lines of code: 6 lines
 * Estimated time: 8 min
 
 English:

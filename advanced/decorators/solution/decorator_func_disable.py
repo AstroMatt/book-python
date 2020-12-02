@@ -2,7 +2,7 @@
 * Assignment: Decorator Function Disable
 * Filename: decorator_func_disable.py
 * Complexity: easy
-* Lines of code to write: 1 lines
+* Lines of code: 1 lines
 * Estimated time: 5 min
 
 English:

@@ -2,7 +2,7 @@
 * Assignment: Sequence Tuple Mean
 * Filename: sequence_tuple_mean.py
 * Complexity: medium
-* Lines of code to write: 8 lines
+* Lines of code: 8 lines
 * Estimated time: 8 min
 
 English:

@@ -2,7 +2,7 @@
 * Assignment: Decorator Function Astronauts
 * Filename: decorator_func_astronauts.py
 * Complexity: easy
-* Lines of code to write: 3 lines
+* Lines of code: 3 lines
 * Estimated time: 8 min
 
 English:

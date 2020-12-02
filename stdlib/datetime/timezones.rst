@@ -158,9 +158,9 @@ Datetime Timezone Convert
 -------------------------
 * Assignment: Datetime Timezone Convert
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 5 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 5 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/datetime_timezone_convert.py`
 
 English:

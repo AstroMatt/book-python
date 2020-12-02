@@ -70,9 +70,9 @@ Series Sample
 --------------
 * Assignment: Series Sample
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 5 lines
-* Estimated time of completion: 5 min
+* Complexity: easy
+* Lines of code: 5 lines
+* Estimated time: 5 min
 * Filename: :download:`solution/series_sample.py`
 
 English:

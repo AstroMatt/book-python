@@ -1,5 +1,37 @@
+"""
+* Assignment: OOP Dataclass Addressbook
+* Filename: oop_dataclass_addressbook.py
+* Complexity: easy
+* Lines of code: 12 lines
+* Estimated time: 13 min
+
+English:
+    1. Use data from "Given" section (see below)
+    2. Model data using `dataclasses`
+    3. Compare result with "Tests" section (see below)
+
+Polish:
+    1. Użyj danych z sekcji "Given" (patrz poniżej)
+    2. Zamodeluj dane wykorzystując `dataclass`
+    3. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+
+Tests:
+    >>> from inspect import isclass
+    >>> assert isclass(Astronaut)
+    >>> assert isclass(Address)
+    >>> assert hasattr(Astronaut, 'firstname')
+    >>> assert hasattr(Astronaut, 'lastname')
+    >>> assert hasattr(Address, 'street')
+    >>> assert hasattr(Address, 'city')
+    >>> assert hasattr(Address, 'post_code')
+    >>> assert hasattr(Address, 'region')
+    >>> assert hasattr(Address, 'country')
+"""
+
+
+# Given
 from dataclasses import dataclass, field
-from typing import List
+
 
 DATA = [
     {"firstname": "Jan", "lastname": "Twardowski", "addresses": [
@@ -24,6 +56,7 @@ DATA = [
 ]
 
 
+# Solution
 @dataclass
 class Address:
     street: str = ''
@@ -37,9 +70,4 @@ class Address:
 class Astronaut:
     firstname: str = ''
     lastname: str = ''
-    addresses: List[Address] = field(default_factory=list)
-
-
-@dataclass
-class Crew:
-    members: List[Astronaut] = field(default_factory=list)
+    addresses: list[Address] = field(default_factory=list)

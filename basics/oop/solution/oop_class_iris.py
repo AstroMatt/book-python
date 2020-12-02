@@ -2,7 +2,7 @@
 * Assignment: OOP Class Iris
 * Filename: oop_class_iris.py
 * Complexity: easy
-* Lines of code to write: 5 lines
+* Lines of code: 5 lines
 * Estimated time: 3 min
 
 English:

@@ -2,7 +2,7 @@
 * Assignment: File Path Abspath
 * Filename: file_path_abspath.py
 * Complexity: easy
-* Lines of code to write: 3 lines
+* Lines of code: 3 lines
 * Estimated time: 2 min
 
 English:

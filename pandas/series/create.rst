@@ -131,9 +131,9 @@ Series Create Float
 -------------------
 * Assignment: Series Create Float
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 5 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 5 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/series_create_float.py`
 
 English:
@@ -148,9 +148,9 @@ Series Create Randint
 ---------------------
 * Assignment: Series Create Randint
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 5 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 5 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/series_create_randint.py`
 
 English:
@@ -165,9 +165,9 @@ Series Create Even
 ------------------
 * Assignment: Series Create Even
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 5 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 5 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/series_create_even.py`
 
 English:
@@ -180,9 +180,9 @@ Series Create Dates
 -------------------
 * Assignment: Series Create Dates
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 5 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 5 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/series_create_dates.py`
 
 English:

@@ -2,7 +2,7 @@
 * Assignment: OOP Attribute Access Modifiers
 * Filename: oop_attribute_access_modifiers.py
 * Complexity: easy
-* Lines of code to write: 11 lines
+* Lines of code: 11 lines
 * Estimated time: 8 min
 
 English:

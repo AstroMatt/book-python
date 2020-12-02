@@ -2,7 +2,7 @@
 * Assignment: File Write CSV
 * Filename: file_write_csv.py
 * Complexity: medium
-* Lines of code to write: 6 lines
+* Lines of code: 6 lines
 * Estimated time: 13 min
 
 English:

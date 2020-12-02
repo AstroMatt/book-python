@@ -2,7 +2,7 @@
 * Assignment: Sequence Frozenset Create
 * Filename: sequence_frozenset_create.py
 * Complexity: easy
-* Lines of code to write: 1 lines
+* Lines of code: 1 lines
 * Estimated time: 2 min
 
 English:

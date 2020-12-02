@@ -81,9 +81,10 @@ Object Oriented Programming
     :caption: Object Oriented Programming
     :name: Advanced Object Oriented Programming
 
+    oop/mutability.rst
+    oop/dataclass.rst
     oop/static-dynamic.rst
-    oop/access-modifiers.rst
-    oop/argument-mutability.rst
+    oop/protected.rst
     oop/overload.rst
     oop/composition.rst
     oop/relations.rst

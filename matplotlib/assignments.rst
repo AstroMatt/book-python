@@ -5,9 +5,9 @@ Trigonometry
 ------------
 * Assignment: Trigonometry
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 15 lines
-* Estimated time of completion: 21 min
+* Complexity: medium
+* Lines of code: 15 lines
+* Estimated time: 21 min
 * Filename: :download:`solution/matplotlib_trigonometry.py`
 
 English:
@@ -36,9 +36,9 @@ Iris scatter
 ------------
 * Assignment: Iris scatter
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 20 lines
-* Estimated time of completion: 21 min
+* Complexity: medium
+* Lines of code: 20 lines
+* Estimated time: 21 min
 * Filename: :download:`solution/matplotlib_iris.py`
 
 English:
@@ -62,9 +62,9 @@ Random points
 -------------
 * Assignment: Random points
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 15 lines
-* Estimated time of completion: 21 min
+* Complexity: medium
+* Lines of code: 15 lines
+* Estimated time: 21 min
 * Filename: :download:`solution/matplotlib_random_points.py`
 
 English:
@@ -123,9 +123,9 @@ Color graph
 -----------
 * Assignment: Color graph
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 15 lines
-* Estimated time of completion: 21 min
+* Complexity: medium
+* Lines of code: 15 lines
+* Estimated time: 21 min
 * Filename: TODO
 
 English:

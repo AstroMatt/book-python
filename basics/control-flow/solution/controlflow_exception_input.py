@@ -2,7 +2,7 @@
 * Assignment: Exception Input
 * Filename: controlflow_exception_input.py
 * Complexity: easy
-* Lines of code to write: 9 lines
+* Lines of code: 9 lines
 * Estimated time: 5 min
 
 English:

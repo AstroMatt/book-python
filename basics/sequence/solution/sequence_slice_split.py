@@ -2,7 +2,7 @@
 * Assignment: Sequence Slice Split
 * Filename: sequence_slice_split.py
 * Complexity: easy
-* Lines of code to write: 6 lines
+* Lines of code: 6 lines
 * Estimated time: 8 min
 
 English:

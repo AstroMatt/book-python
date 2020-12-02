@@ -31,9 +31,9 @@ Send email
 ----------
 * Assignment: Send email
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 20 lines
-* Estimated time of completion: 21 min
+* Complexity: medium
+* Lines of code: 20 lines
+* Estimated time: 21 min
 * Filename: :download:`solution/smtp_ssl.py`
 
 English:

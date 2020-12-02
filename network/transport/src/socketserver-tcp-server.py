@@ -16,5 +16,5 @@ class RequestHandler(BaseRequestHandler):
 
 with TCPServer((SERVER_HOST, SERVER_PORT), RequestHandler) as server:
     print(f'Accepting connections on {SERVER_HOST}:{SERVER_PORT}/TCP...')
-    print(f'To stop the server use ``Ctrl-C``\n')
+    print(f'To stop the server use `Ctrl-C`\n')
     server.serve_forever()

@@ -2,7 +2,7 @@
 * Assignment: Type Int Bits
 * Filename: type_int_truediv.py
 * Complexity: easy
-* Lines of code to write: 3 lines
+* Lines of code: 3 lines
 * Estimated time: 3 min
 
 English:

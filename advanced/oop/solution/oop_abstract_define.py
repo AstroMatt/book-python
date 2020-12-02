@@ -2,7 +2,7 @@
 * Assignment: OOP Abstract Define
 * Filename: oop_abstract_define.py
 * Complexity: easy
-* Lines of code to write: 10 lines
+* Lines of code: 10 lines
 * Estimated time: 5 min
 
 English:

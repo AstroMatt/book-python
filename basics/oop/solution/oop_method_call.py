@@ -2,7 +2,7 @@
 * Assignment: OOP Method Call
 * Filename: oop_method_call.py
 * Complexity: easy
-* Lines of code to write: 6 lines
+* Lines of code: 6 lines
 * Estimated time: 13 min
 
 English:

@@ -2,7 +2,7 @@
 * Assignment: Loop Nested Unique Keys
 * Filename: loop_nested_unique_keys.py
 * Complexity: medium
-* Lines of code to write: 3 lines
+* Lines of code: 3 lines
 * Estimated time: 8 min
 
 English:

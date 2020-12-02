@@ -246,9 +246,9 @@ Numpy Methods
 -------------
 * Assignment: Numpy Methods
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 6 lines
-* Estimated time of completion: 5 min
+* Complexity: easy
+* Lines of code: 6 lines
+* Estimated time: 5 min
 * Filename: :download:`solution/numpy_methods.py`
 
 English:

@@ -2,7 +2,7 @@
 * Assignment: Function Arguments Sequence
 * Filename: function_args_sequence.py
 * Complexity: easy
-* Lines of code to write: 5 lines
+* Lines of code: 5 lines
 * Estimated time: 3 min
 
 English:

@@ -2,7 +2,7 @@
 * Assignment: Protocol Reflection Delattr
 * Filename: protocol_reflection_delattr.py
 * Complexity: easy
-* Lines of code to write: 7 lines
+* Lines of code: 7 lines
 * Estimated time: 5 min
 
 English:

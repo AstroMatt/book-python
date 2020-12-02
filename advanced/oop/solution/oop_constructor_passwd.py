@@ -2,7 +2,7 @@
 * Assignment: OOP Constructor Passwd
 * Filename: oop_constructor_passwd.py
 * Complexity: easy
-* Lines of code to write: 21 lines
+* Lines of code: 21 lines
 * Estimated time: 13 min
 
 English:

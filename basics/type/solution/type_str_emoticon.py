@@ -2,7 +2,7 @@
 * Assignment: Type String Emoticon
 * Filename: type_str_emoticon.py
 * Complexity: easy
-* Lines of code to write: 2 lines
+* Lines of code: 2 lines
 * Estimated time: 3 min
 
 English:

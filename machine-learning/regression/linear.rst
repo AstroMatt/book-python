@@ -266,9 +266,9 @@ Least square regression 3 points
 --------------------------------
 * Assignment: Least square regression 3 points
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 10 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 10 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/linreg_least_square_3pts.py`
 
 English:
@@ -284,9 +284,9 @@ Least square regression 4 points
 --------------------------------
 * Assignment: Least square regression 4 points
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 10 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 10 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/linreg_least_square_4pts.py`
 
 English:
@@ -301,9 +301,9 @@ Company sales
 -------------
 * Assignment: Company sales
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 10 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 10 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/linreg_company_sales.py`
 
 English:

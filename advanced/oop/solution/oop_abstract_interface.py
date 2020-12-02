@@ -2,7 +2,7 @@
 * Assignment: OOP Abstract Interface
 * Filename: oop_abstract_interface.py
 * Complexity: easy
-* Lines of code to write: 14 lines
+* Lines of code: 14 lines
 * Estimated time: 13 min
 
 English:

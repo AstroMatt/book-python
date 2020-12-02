@@ -191,9 +191,9 @@ Datetime Create Custom
 ----------------------
 * Assignment: Datetime Create Custom
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 3 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/datetime_create_custom.py`
 
 English:
@@ -210,9 +210,9 @@ Datetime Create Current
 -----------------------
 * Assignment: Datetime Create Current
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 3 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/datetime_create_current.py`
 
 English:

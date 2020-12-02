@@ -445,9 +445,9 @@ Serialization JSON Dump
 -----------------------
 * Assignment: Serialization JSON Dump
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 8 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 8 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/serialization_json_dump.py`
 
 English:
@@ -511,9 +511,9 @@ Serialization JSON Load
 -----------------------
 * Assignment: Serialization JSON Load
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 8 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 8 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/serialization_json_load.py`
 
 English:
@@ -538,9 +538,9 @@ Serialization JSON Datetime
 ---------------------------
 * Assignment: Serialization JSON Datetime
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 10 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 10 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/serialization_json_datetime.py`
 
 English:
@@ -575,9 +575,9 @@ Serialization JSON Object
 -------------------------
 * Assignment: Serialization JSON Object
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 15 lines
-* Estimated time of completion: 13 min
+* Complexity: medium
+* Lines of code: 15 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/serialization_json_object.py`
 
 English:
@@ -632,9 +632,9 @@ Serialization JSON HTTP
 -----------------------
 * Assignment: Serialization JSON HTTP
 * Last update: 2020-10-01
-* Complexity level: hard
-* Lines of code to write: 15 lines
-* Estimated time of completion: 13 min
+* Complexity: hard
+* Lines of code: 15 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/serialization_json_http.py`
 
 English:

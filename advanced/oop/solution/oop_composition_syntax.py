@@ -2,7 +2,7 @@
 * Assignment: OOP Composition Syntax
 * Filename: oop_composition_syntax.py
 * Complexity: easy
-* Lines of code to write: 8 lines
+* Lines of code: 8 lines
 * Estimated time: 3 min
 
 English:

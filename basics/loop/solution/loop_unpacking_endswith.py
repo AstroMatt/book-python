@@ -2,7 +2,7 @@
 * Assignment: Loop Unpacking Endswith
 * Filename: loop_unpacking_endswith.py
 * Complexity: medium
-* Lines of code to write: 4 lines
+* Lines of code: 4 lines
 * Estimated time: 13 min
 
 English:

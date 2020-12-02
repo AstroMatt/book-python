@@ -2,7 +2,7 @@
 * Assignment: Exception Except
 * Filename: controlflow_exception_except.py
 * Complexity: easy
-* Lines of code to write: 6 lines
+* Lines of code: 6 lines
 * Estimated time: 3 min
 
 English:

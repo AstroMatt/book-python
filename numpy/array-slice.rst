@@ -164,9 +164,9 @@ Numpy Slice 1
 -------------
 * Assignment: Numpy Slice 1
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 3 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/numpy_slice_1.py`
 
 English:
@@ -201,9 +201,9 @@ Numpy Slice 2
 -------------
 * Assignment: Numpy Slice 2
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 3 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/numpy_slice_2.py`
 
 English:

@@ -2,7 +2,7 @@
 * Assignment: Protocol Reflection Frozen
 * Filename: protocol_reflection_frozen.py
 * Complexity: easy
-* Lines of code to write: 11 lines
+* Lines of code: 11 lines
 * Estimated time: 13 min
 
 English:

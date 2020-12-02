@@ -2,7 +2,7 @@
 * Assignment: Decorator Class Type Check
 * Filename: decorator_cls_typecheck.py
 * Complexity: medium
-* Lines of code to write: 15 lines
+* Lines of code: 15 lines
 * Estimated time: 21 min
 
 English:

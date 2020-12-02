@@ -2,7 +2,7 @@
 * Assignment: Entry Test File
 * Filename: entry_test_file.py
 * Complexity: hard
-* Lines of code to write: 15 lines
+* Lines of code: 15 lines
 * Estimated time: 13 min
 
 English:

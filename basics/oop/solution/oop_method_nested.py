@@ -2,7 +2,7 @@
 * Assignment: OOP Method Nested
 * Filename: oop_method_nested.py
 * Complexity: medium
-* Lines of code to write: 15 lines
+* Lines of code: 15 lines
 * Estimated time: 21 min
 
 English:

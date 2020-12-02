@@ -177,9 +177,9 @@ Numpy Iteration
 ---------------
 * Assignment: Numpy Iteration
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 9 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 9 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/numpy_iteration.py`
 
 English:

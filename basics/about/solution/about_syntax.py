@@ -2,7 +2,7 @@
 * Assignment: About Syntax
 * Filename: about_syntax.py
 * Complexity: easy
-* Lines of code to write: 4 lines
+* Lines of code: 4 lines
 * Estimated time: 3 min
 
 English:

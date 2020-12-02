@@ -2,7 +2,7 @@
 * Assignment: Wielowątkowość
 * Filename: threading_timer.py
 * Complexity: easy
-* Lines of code to write: 20 lines
+* Lines of code: 20 lines
 * Estimated time: 21 min
 
 English:

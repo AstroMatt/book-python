@@ -12,7 +12,7 @@ FILE_CSV = r'eva.csv'
 
 # When you dump page for the first time, you can test parsing on local file
 # It saves bandwidth, and speeds you development
-# Then comment following ``with`` context manager
+# Then comment following `with` context manager
 
 with open(FILE_HTML, mode='w', encoding='utf-8') as file:
     response = requests.get(URL)

@@ -2,7 +2,7 @@
 * Assignment: Protocol ContextManager File
 * Filename: protocol_contextmanager_file.py
 * Complexity: easy
-* Lines of code to write: 13 lines
+* Lines of code: 13 lines
 * Estimated time: 13 min
 
 English:

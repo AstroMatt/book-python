@@ -2,7 +2,7 @@
 * Assignment: Function Doctest Regexp
 * Filename: discussion
 * Complexity: almost impossible
-* Lines of code to write: 0 lines
+* Lines of code: 0 lines
 * Estimated time: 5 min
 
 English:

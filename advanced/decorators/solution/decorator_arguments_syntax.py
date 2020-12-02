@@ -2,7 +2,7 @@
 * Assignment: Decorator Arguments Syntax
 * Filename: decorator_arguments_syntax.py
 * Complexity: easy
-* Lines of code to write: 5 lines
+* Lines of code: 5 lines
 * Estimated time: 5 min
 
 English:

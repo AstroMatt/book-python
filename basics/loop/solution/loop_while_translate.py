@@ -2,7 +2,7 @@
 * Assignment: Loop While Translate
 * Filename: loop_while_translate.py
 * Complexity: medium
-* Lines of code to write: 5 lines
+* Lines of code: 5 lines
 * Estimated time: 5 min
 
 English:

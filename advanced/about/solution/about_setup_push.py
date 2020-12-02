@@ -2,7 +2,7 @@
 * Assignment: About Setup Push
 * Filename: about_setup_push.py
 * Complexity: easy
-* Lines of code to write: 0 lines
+* Lines of code: 0 lines
 * Estimated time: 3 min
 
 English:

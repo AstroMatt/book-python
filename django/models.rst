@@ -125,9 +125,9 @@ Address Book
 ------------
 * Assignment: Address Book
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 50 lines
-* Estimated time of completion: 21 min
+* Complexity: medium
+* Lines of code: 50 lines
+* Estimated time: 21 min
 * Filename: TODO
 
 English:

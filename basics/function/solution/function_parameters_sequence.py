@@ -2,7 +2,7 @@
 * Assignment: Function Parameters Sequence
 * Filename: function_parameters_sequence.py
 * Complexity: easy
-* Lines of code to write: 2 lines
+* Lines of code: 2 lines
 * Estimated time: 3 min
 
 English:

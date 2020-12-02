@@ -2,7 +2,7 @@
 * Assignment: Function Arguments Divide
 * Filename: function_args_divide.py
 * Complexity: easy
-* Lines of code to write: 3 lines
+* Lines of code: 3 lines
 * Estimated time: 3 min
 
 English:

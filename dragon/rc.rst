@@ -12,9 +12,9 @@ Dragon (version release candidate)
 
 * Assignment: Dragon (version release candidate)
 * Last update: 2020-10-01
-* Complexity level: hard
-* Lines of code to write: 50 lines
-* Estimated time of completion: 21 min
+* Complexity: hard
+* Lines of code: 50 lines
+* Estimated time: 21 min
 * Filename: :download:`solution/dragon_rc.py`
 
 English:

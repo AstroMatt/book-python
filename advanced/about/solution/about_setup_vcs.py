@@ -2,7 +2,7 @@
 * Assignment: About Setup VCS
 * Filename: about_setup_vcs.py
 * Complexity: easy
-* Lines of code to write: 0 lines
+* Lines of code: 0 lines
 * Estimated time: 5 min
 
 English:

@@ -2,7 +2,7 @@
 * Assignment: Type Int Bits
 * Filename: type_int_bits.py
 * Complexity: medium
-* Lines of code to write: 4 lines
+* Lines of code: 4 lines
 * Estimated time: 3 min
 
 English:

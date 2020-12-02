@@ -2,7 +2,7 @@
 * Assignment: Type Bool Simple
 * Filename: type_bool_simple.py
 * Complexity: easy
-* Lines of code to write: 9 lines
+* Lines of code: 9 lines
 * Estimated time: 5 min
 
 English:

@@ -2,7 +2,7 @@
 * Assignment: Unpacking Parameters Define
 * Filename: unpacking_parameters_define.py
 * Complexity: easy
-* Lines of code to write: 4 lines
+* Lines of code: 4 lines
 * Estimated time: 5 min
 
 English:

@@ -2,7 +2,7 @@
 * Assignment: Function Arguments Numbers to Human
 * Filename: function_args_numhuman.py
 * Complexity: hard
-* Lines of code to write: 15 lines
+* Lines of code: 15 lines
 * Estimated time: 21 min
 
 English:

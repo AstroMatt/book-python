@@ -2,7 +2,7 @@
 * Assignment: File Read List of Dicts
 * Filename: file_read_listdict.py
 * Complexity: hard
-* Lines of code to write: 15 lines
+* Lines of code: 15 lines
 * Estimated time: 13 min
 
 English:

@@ -2,7 +2,7 @@
 * Assignment: OOP Attribute Model
 * Filename: oop_attribute_model.py
 * Complexity: easy
-* Lines of code to write: 15 lines
+* Lines of code: 15 lines
 * Estimated time: 8 min
 
 English:

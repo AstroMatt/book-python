@@ -612,9 +612,9 @@ Powielanie napisów
 ------------------
 * Assignment: Powielanie napisów
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 8 lines
-* Estimated time of completion: 5 min
+* Complexity: easy
+* Lines of code: 8 lines
+* Estimated time: 5 min
 * Filename: :download:`solution/print_lines.py`
 
 English:
@@ -636,9 +636,9 @@ Przeliczanie temperatury
 ------------------------
 * Assignment: Przeliczanie temperatury
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 8 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 8 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/print_formatting.py`
 
 English:

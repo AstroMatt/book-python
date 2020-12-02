@@ -2,7 +2,7 @@
 * Assignment: Mapping Generate Pairs
 * Filename: mapping_generate_pairs.py
 * Complexity: easy
-* Lines of code to write: 1 lines
+* Lines of code: 1 lines
 * Estimated time: 3 min
 
 English:

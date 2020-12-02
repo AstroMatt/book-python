@@ -2,7 +2,7 @@
 * Assignment: Mapping Dict Define
 * Filename: mapping_dict_define.py
 * Complexity: easy
-* Lines of code to write: 3 lines
+* Lines of code: 3 lines
 * Estimated time: 3 min
 
 English:

@@ -137,9 +137,9 @@ Nearest Neighbor Classifier
 ---------------------------
 * Assignment: Nearest Neighbor Classifier
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 15 lines
-* Estimated time of completion: 21 min
+* Complexity: medium
+* Lines of code: 15 lines
+* Estimated time: 21 min
 * Filename: :download:`solution/sklearn_classifier.py`
 
 English:
@@ -199,9 +199,9 @@ Sklearn Classifier Compare
 --------------------------
 * Assignment: Sklearn Classifier Compare
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 15 lines
-* Estimated time of completion: 21 min
+* Complexity: medium
+* Lines of code: 15 lines
+* Estimated time: 21 min
 * Filename: :download:`solution/sklearn_classifier_compare.py`
 
 English:

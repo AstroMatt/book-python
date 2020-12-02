@@ -844,9 +844,9 @@ Cleanup your file
 -----------------
 * Assignment: Cleanup your file
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 2 lines
-* Estimated time of completion: 5 min
+* Complexity: easy
+* Lines of code: 2 lines
+* Estimated time: 5 min
 * Filename: :download:`solution/cleanup.py`
 
 English:

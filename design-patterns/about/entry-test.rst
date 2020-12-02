@@ -7,9 +7,9 @@ Entry Test Listdict
 ===================
 * Assignment: Entry Test Listdict
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 8 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 8 lines
+* Estimated time: 13 min
 * Filename: entry_test_listdict.py
 
 English:
@@ -72,9 +72,9 @@ Entry Test Nested
 =================
 * Assignment: Entry Test Nested
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 3 lines
-* Estimated time of completion: 5 min
+* Complexity: easy
+* Lines of code: 3 lines
+* Estimated time: 5 min
 * Filename: entry_test_nested.py
 
 English:
@@ -110,9 +110,9 @@ Entry Test Hosts
 ================
 * Assignment: Entry Test Hosts
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 15 lines
-* Estimated time of completion: 13 min
+* Complexity: medium
+* Lines of code: 15 lines
+* Estimated time: 13 min
 * Filename: entry_test_hosts.py
 
 English:

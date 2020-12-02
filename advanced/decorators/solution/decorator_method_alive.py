@@ -2,7 +2,7 @@
 * Assignment: Decorator Method Alive
 * Filename: decorator_method_alive.py
 * Complexity: easy
-* Lines of code to write: 5 lines
+* Lines of code: 5 lines
 * Estimated time: 13 min
 
 English:

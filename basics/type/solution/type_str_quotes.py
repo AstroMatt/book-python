@@ -2,7 +2,7 @@
 * Assignment: Type String Quotes
 * Filename: type_str_quotes.py
 * Complexity: easy
-* Lines of code to write: 1 lines
+* Lines of code: 1 lines
 * Estimated time: 5 min
 
 English:

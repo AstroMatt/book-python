@@ -2,7 +2,7 @@
 * Assignment: OOP Init Model
 * Filename: oop_init_model.py
 * Complexity: easy
-* Lines of code to write: 15 lines
+* Lines of code: 15 lines
 * Estimated time: 8 min
 
 English:

@@ -485,9 +485,9 @@ DataFrame Groupby Phones
 ------------------------
 * Assignment: DataFrame Groupby Phones
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 5 lines
-* Estimated time of completion: 8 min
+* Complexity: easy
+* Lines of code: 5 lines
+* Estimated time: 8 min
 * Filename: :download:`solution/df_groupby_phones.py`
 
 English:
@@ -509,9 +509,9 @@ DataFrame Groupby Astro Female
 ------------------------------
 * Assignment: DataFrame Groupby Astro Female
 * Last update: 2020-10-19
-* Complexity level: medium
-* Lines of code to write: 5 lines
-* Estimated time of completion: 8 min
+* Complexity: medium
+* Lines of code: 5 lines
+* Estimated time: 8 min
 * Filename: :download:`solution/df_groupby_astro_female.py`
 
 English:
@@ -533,9 +533,9 @@ DataFrame Groupby Astro Flights
 -------------------------------
 * Assignment: DataFrame Groupby Astro Flights
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 5 lines
-* Estimated time of completion: 13 min
+* Complexity: medium
+* Lines of code: 5 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/df_groupby_astro_flights.py`
 
 English:
@@ -557,9 +557,9 @@ DataFrame Groupby Astro EVA
 ---------------------------
 * Assignment: DataFrame Groupby Astro EVA
 * Last update: 2020-10-19
-* Complexity level: medium
-* Lines of code to write: 13 lines
-* Estimated time of completion: 21 min
+* Complexity: medium
+* Lines of code: 13 lines
+* Estimated time: 21 min
 * Filename: :download:`solution/df_groupby_astro_eva.py`
 
 English:

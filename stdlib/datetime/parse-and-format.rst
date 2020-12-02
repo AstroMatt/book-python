@@ -329,9 +329,9 @@ Datetime Parse ISO
 ------------------
 * Assignment: Datetime Parse ISO
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 1 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 1 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/datetime_parse_iso.py`
 
 English:
@@ -353,9 +353,9 @@ Datetime Parse Local
 --------------------
 * Assignment: Datetime Parse Local
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 3 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/datetime_parse_local.py`
 
 English:
@@ -391,9 +391,9 @@ Datetime Parse US
 -----------------
 * Assignment: Datetime Parse US
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 5 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 5 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/datetime_parse_us.py`
 
 English:
@@ -435,9 +435,9 @@ Datetime Parse Logs
 -------------------
 * Assignment: Datetime Parse Logs
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 15 lines
-* Estimated time of completion: 13 min
+* Complexity: medium
+* Lines of code: 15 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/datetime_parse_logs.py`
 
 English:

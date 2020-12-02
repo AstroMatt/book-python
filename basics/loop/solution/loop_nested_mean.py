@@ -2,7 +2,7 @@
 * Assignment: Loop Nested Mean
 * Filename: loop_nested_mean.py
 * Complexity: easy
-* Lines of code to write: 5 lines
+* Lines of code: 5 lines
 * Estimated time: 5 min
 
 English:

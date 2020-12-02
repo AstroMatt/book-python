@@ -2,7 +2,7 @@
 * Assignment: OOP Method Sequence
 * Filename: oop_method_sequence.py
 * Complexity: easy
-* Lines of code to write: 18 lines
+* Lines of code: 18 lines
 * Estimated time: 13 min
 
 English:

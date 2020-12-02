@@ -2,7 +2,7 @@
 * Assignment: Type String Clean
 * Filename: type_str_clean.py
 * Complexity: easy
-* Lines of code to write: 8 lines
+* Lines of code: 8 lines
 * Estimated time: 13 min
 
 English:

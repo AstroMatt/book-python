@@ -87,9 +87,9 @@ Regexp Standards PESEL
 ----------------------
 * Assignment: Regexp Standards PESEL
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 0 lines
-* Estimated time of completion: 5 min
+* Complexity: medium
+* Lines of code: 0 lines
+* Estimated time: 5 min
 * Filename: :download:`solution/regexp_standards_pesel.py` (naive implementation)
 * Warning: Do no write any code - **discussion only**
 

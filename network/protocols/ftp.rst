@@ -39,9 +39,9 @@ FTP Download
 ------------
 * Assignment: FTP Download
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 20 lines
-* Estimated time of completion: 21 min
+* Complexity: easy
+* Lines of code: 20 lines
+* Estimated time: 21 min
 * Filename: :download:`solution/ftp_download.py`
 
 English:
@@ -63,9 +63,9 @@ FTP Upload
 ----------
 * Assignment: FTP Upload
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 20 lines
-* Estimated time of completion: 21 min
+* Complexity: easy
+* Lines of code: 20 lines
+* Estimated time: 21 min
 * Filename: :download:`solution/ftp_upload.py`
 
 English:

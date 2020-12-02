@@ -2,7 +2,7 @@
 * Assignment: Protocol Classmethod CSV
 * Filename: protocol_classmethod_csv.py
 * Complexity: easy
-* Lines of code to write: 5 lines
+* Lines of code: 5 lines
 * Estimated time: 13 min
 
 English:

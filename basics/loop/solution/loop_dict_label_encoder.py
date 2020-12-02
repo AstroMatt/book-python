@@ -2,7 +2,7 @@
 * Assignment: Loop Dict Label Encoder
 * Filename: loop_dict_label_encoder.py
 * Complexity: hard
-* Lines of code to write: 9 lines
+* Lines of code: 9 lines
 * Estimated time: 13 min
 
 English:

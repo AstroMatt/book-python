@@ -2,7 +2,7 @@
 * Assignment: OOP Stringify Format
 * Filename: oop_stringify_format.py
 * Complexity: easy
-* Lines of code to write: 8 lines
+* Lines of code: 8 lines
 * Estimated time: 5 min
 
 English:

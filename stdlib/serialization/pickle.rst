@@ -239,9 +239,9 @@ Pickle Serialization
 --------------------
 * Assignment: Pickle Serialization
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 7 lines
-* Estimated time of completion: 7 min
+* Complexity: easy
+* Lines of code: 7 lines
+* Estimated time: 7 min
 * Filename: :download:`solution/serialization_pickle_dump_load.py`
 
 English:

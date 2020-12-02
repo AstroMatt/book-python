@@ -2,7 +2,7 @@
 * Assignment: Exception Finally
 * Filename: controlflow_exception_finally.py
 * Complexity: easy
-* Lines of code to write: 2 lines
+* Lines of code: 2 lines
 * Estimated time: 2 min
 
 English:

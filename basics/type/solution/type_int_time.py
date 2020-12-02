@@ -2,7 +2,7 @@
 * Assignment: Type Int Time
 * Filename: type_int_time.py
 * Complexity: easy
-* Lines of code to write: 12 lines
+* Lines of code: 12 lines
 * Estimated time: 8 min
 
 English:

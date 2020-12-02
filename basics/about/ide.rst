@@ -72,7 +72,7 @@ About IDE Usage
 ---------------
 * Assignment: About IDE Usage
 * Complexity: easy
-* Lines of code to write: 0 lines
+* Lines of code: 0 lines
 * Estimated time: 8 min
 * Filename: TODO
 
@@ -102,7 +102,7 @@ About IDE Spellchecker
 ----------------------
 * Assignment: About IDE Spellchecker
 * Complexity: easy
-* Lines of code to write: 0 lines
+* Lines of code: 0 lines
 * Estimated time: 5 min
 * Filename: TODO
 

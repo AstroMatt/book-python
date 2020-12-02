@@ -126,9 +126,9 @@ OOP Interface Define
 --------------------
 * Assignment: OOP Interface Define
 * Last update: 2020-10-14
-* Complexity level: easy
-* Lines of code to write: 13 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 13 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/oop_interface_define.py`
 
 English:
@@ -163,9 +163,9 @@ OOP Interface Implement
 -----------------------
 * Assignment: OOP Interface Implement
 * Last update: 2020-10-14
-* Complexity level: easy
-* Lines of code to write: 12 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 12 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/oop_interface_implement.py`
 
 English:

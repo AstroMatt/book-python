@@ -2,7 +2,7 @@
 * Assignment: Loop Comprehension Split
 * Filename: loop_comprehension_split.py
 * Complexity: medium
-* Lines of code to write: 9 lines
+* Lines of code: 9 lines
 * Estimated time: 13 min
 
 English:

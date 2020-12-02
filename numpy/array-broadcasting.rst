@@ -347,9 +347,9 @@ Numpy Broadcasting Arithmetic
 -----------------------------
 * Assignment: Numpy Broadcasting Arithmetic
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 10 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 10 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/numpy_broadcasting_arithmetic.py`
 
 English:
@@ -386,9 +386,9 @@ Numpy Broadcasting Type Cast
 ----------------------------
 * Assignment: Numpy Broadcasting Type Cast
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 2 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 2 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/numpy_broadcasting_typecast.py`
 
 English:
@@ -413,9 +413,9 @@ Numpy Broadcasting Matmul
 -------------------------
 * Assignment: Numpy Broadcasting Matmul
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 4 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 4 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/numpy_broadcasting_matmul.py`
 
 English:

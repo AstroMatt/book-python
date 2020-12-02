@@ -283,9 +283,9 @@ Numpy Random Float
 ------------------
 * Assignment: Numpy Random Float
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 3 lines
-* Estimated time of completion: 3 min
+* Complexity: medium
+* Lines of code: 3 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/numpy_random_float.py`
 
 English:
@@ -300,9 +300,9 @@ Numpy Random Int
 ----------------
 * Assignment: Numpy Random Int
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 4 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 4 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/numpy_random_int.py`
 
 English:
@@ -317,9 +317,9 @@ Numpy Random Sample
 -------------------
 * Assignment: Numpy Random Sample
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 5 lines
-* Estimated time of completion: 3 min
+* Complexity: medium
+* Lines of code: 5 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/numpy_random_sample.py`
 
 English:

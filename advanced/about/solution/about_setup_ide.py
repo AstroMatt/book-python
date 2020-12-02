@@ -2,7 +2,7 @@
 * Assignment: About Setup IDE
 * Filename: about_setup_ide.py
 * Complexity: easy
-* Lines of code to write: 0 lines
+* Lines of code: 0 lines
 * Estimated time: 2 min
 
 English:

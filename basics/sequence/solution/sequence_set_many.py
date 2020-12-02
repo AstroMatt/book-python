@@ -2,7 +2,7 @@
 * Assignment: Sequence Set Many
 * Filename: sequence_set_many.py
 * Complexity: easy
-* Lines of code to write: 9 lines
+* Lines of code: 9 lines
 * Estimated time: 8 min
 
 English:

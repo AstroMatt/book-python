@@ -2,7 +2,7 @@
 * Assignment: Function Arguments Clean
 * Filename: function_args_clean.py
 * Complexity: medium
-* Lines of code to write: 15 lines
+* Lines of code: 15 lines
 * Estimated time: 13 min
 
 English:

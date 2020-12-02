@@ -2,7 +2,7 @@
 * Assignment: Function Arguments Numbers to Str
 * Filename: function_args_numstr.py
 * Complexity: medium
-* Lines of code to write: 5 lines
+* Lines of code: 5 lines
 * Estimated time: 8 min
 
 English:

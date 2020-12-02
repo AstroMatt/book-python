@@ -2,7 +2,7 @@
 * Assignment: Loop For Text
 * Filename: loop_for_text.py
 * Complexity: medium
-* Lines of code to write: 14 lines
+* Lines of code: 14 lines
 * Estimated time: 13 min
 
 English:

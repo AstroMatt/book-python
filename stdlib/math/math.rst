@@ -230,9 +230,9 @@ Trigonometry
 ------------
 * Assignment: Trigonometry
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 10 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 10 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/math_trigonometry.py`
 
 English:
@@ -254,9 +254,9 @@ Euclidean distance 2D
 ---------------------
 * Assignment: Euclidean distance 2D
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 5 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 5 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/math_euclidean_2d.py`
 
 English:
@@ -316,9 +316,9 @@ Euclidean distance ``n`` dimensions
 -----------------------------------
 * Assignment: Euclidean distance ``n`` dimensions
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 10 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 10 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/math_euclidean_multi_dim.py`
 
 English:
@@ -375,9 +375,9 @@ Matrix multiplication
 ---------------------
 * Assignment: Matrix multiplication
 * Last update: 2020-10-01
-* Complexity level: hard
-* Lines of code to write: 6 lines
-* Estimated time of completion: 21 min
+* Complexity: hard
+* Lines of code: 6 lines
+* Estimated time: 21 min
 * Filename: :download:`solution/math_matmul.py`
 
 English:
@@ -415,9 +415,9 @@ Triangle
 --------
 * Assignment: Triangle
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 5 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 5 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/math_triangle.py`
 
 English:

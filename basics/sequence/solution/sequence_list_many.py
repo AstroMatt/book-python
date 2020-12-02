@@ -2,7 +2,7 @@
 * Assignment: Sequence List Many
 * Filename: sequence_list_many.py
 * Complexity: easy
-* Lines of code to write: 3 lines
+* Lines of code: 3 lines
 * Estimated time: 5 min
 
 English:

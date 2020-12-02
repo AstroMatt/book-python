@@ -2,7 +2,7 @@
 * Assignment: Loop Comprehension Months
 * Filename: loop_comprehension_months.py
 * Complexity: easy
-* Lines of code to write: 1 lines
+* Lines of code: 1 lines
 * Estimated time: 3 min
 
 English:

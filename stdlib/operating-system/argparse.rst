@@ -319,9 +319,9 @@ Argument parsing
 ----------------
 * Assignment: Argument parsing
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 5 lines
-* Estimated time of completion: 13 min
+* Complexity: easy
+* Lines of code: 5 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/argparse_avg.py`
 
 English:

@@ -2,7 +2,7 @@
 * Assignment: Memoization
 * Filename: optimization_memoize.py
 * Complexity: medium
-* Lines of code to write: 5 lines
+* Lines of code: 5 lines
 * Estimated time: 13 min
 
 English:

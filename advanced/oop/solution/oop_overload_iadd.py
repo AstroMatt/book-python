@@ -2,7 +2,7 @@
 * Assignment: OOP Overload IAdd
 * Filename: oop_overload_iadd.py
 * Complexity: easy
-* Lines of code to write: 3 lines
+* Lines of code: 3 lines
 * Estimated time: 5 min
 
 English:

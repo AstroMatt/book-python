@@ -2,7 +2,7 @@
 * Assignment: Sequence Nested Create
 * Filename: sequence_nested_create.py
 * Complexity: easy
-* Lines of code to write: 4 lines
+* Lines of code: 4 lines
 * Estimated time: 3 min
 
 English:

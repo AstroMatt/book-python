@@ -2,7 +2,7 @@
 * Assignment: OOP Init Print
 * Filename: oop_init_print.py
 * Complexity: easy
-* Lines of code to write: 10 lines
+* Lines of code: 10 lines
 * Estimated time: 3 min
 
 English:

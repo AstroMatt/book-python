@@ -1,4 +1,4 @@
-.. _OOP Dataclass:
+.. _Stdlib OOP Dataclass:
 
 *************
 OOP Dataclass
@@ -247,7 +247,7 @@ List attributes
 * ``field()`` creates new empty ``list`` for each object
 * It does not reuse pointer
 
-.. warning:: Note, :ref:`Argument Mutability <OOP Argument Mutability>`.
+.. warning:: Note, You should not set mutable objects as a default function argument. More information: :ref:`Argument Mutability <OOP Mutability Argument>`.
 
     .. code-block:: python
         :emphasize-lines: 2,10,14
@@ -548,78 +548,10 @@ Examples
 Assignments
 ===========
 
-Address Book (dataclass)
-------------------------
-* Assignment: Address Book (dataclass)
-* Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 15 lines
-* Estimated time of completion: 13 min
-* Filename: :download:`solution/dataclass_addressbook.py`
+.. literalinclude:: solution/oop_dataclass_addressbook.py
+    :caption: :download:`Solution <solution/oop_dataclass_addressbook.py>`
+    :end-before: # Solution
 
-English:
-    #. Use data from "Given" section (see below)
-    #. Model data using ``dataclasses``
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Zamodeluj dane wykorzystując ``dataclass``
-
-Given:
-    .. code-block:: json
-        :caption: Data for AddressBook
-
-        [
-            {"firstname": "Jan", "lastname": "Twardowski", "addresses": [
-                {"street": "Kamienica Pod św. Janem Kapistranem", "city": "Kraków", "post_code": "31-008", "region": "Małopolskie", "country": "Poland"}]},
-
-            {"firstname": "José", "lastname": "Jiménez", "addresses": [
-                {"street": "2101 E NASA Pkwy", "city": "Houston", "post_code": 77058, "region": "Texas", "country": "USA"},
-                {"street": "", "city": "Kennedy Space Center", "post_code": 32899, "region": "Florida", "country": "USA"}]},
-
-            {"firstname": "Mark", "lastname": "Watney", "addresses": [
-                {"street": "4800 Oak Grove Dr", "city": "Pasadena", "post_code": 91109, "region": "California", "country": "USA"},
-                {"street": "2825 E Ave P", "city": "Palmdale", "post_code": 93550, "region": "California", "country": "USA"}]},
-
-            {"firstname": "Иван", "lastname": "Иванович", "addresses": [
-                {"street": "", "city": "Космодро́м Байкону́р", "post_code": "", "region": "Кызылординская область", "country": "Қазақстан"},
-                {"street": "", "city": "Звёздный городо́к", "post_code": 141160, "region": "Московская область", "country": "Россия"}]},
-
-            {"firstname": "Melissa", "lastname": "Lewis", "addresses": []},
-
-            {"firstname": "Alex", "lastname": "Vogel", "addresses": [
-                {"street": "Linder Hoehe", "city": "Köln", "post_code": 51147, "region": "North Rhine-Westphalia", "country": "Germany"}]}
-        ]
-
-Deserialize data from API
--------------------------
-* Assignment: Deserialize data from API
-* Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 30 lines
-* Estimated time of completion: 21 min
-* Filename: :download:`solution/dataclass_json.py`
-
-English:
-    #. Use data from "Given" section (see below)
-    #. You received input data in JSON format from the API
-    #. Using ``dataclass`` Model data as class ``User``
-    #. Parse fields with dates and store as ``datetime`` objects
-    #. Parse fields with ``true`` and ``false`` values and store as ``bool`` objects
-    #. Iterate over records and create instances of this class
-    #. Collect all instances to one list
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Otrzymałeś z API dane wejściowe w formacie JSON
-    #. Wykorzystując ``dataclass`` zamodeluj dane za pomocą klasy ``User``
-    #. Sparsuj pola zwierające daty i zapisz je jako obiekty ``datetime``
-    #. Sparsuj pola zawierające ``true`` lub ``false`` i zapamiętaj ich wartości jako obiekty ``bool``
-    #. Iterując po rekordach twórz instancje tej klasy
-    #. Zbierz wszystkie instancje do jednej listy
-
-Given:
-    .. code-block:: text
-
-        [{"model":"authorization.user","pk":1,"fields":{"password":"pbkdf2_sha256$120000$gvEBNiCeTrYa0$5C+NiCeTrMyPassword1XNiCeTrY0MYPASSWD90=","last_login":"1970-01-01T00:00:00.000Z","is_superuser":false,"username":"commander","firstname":"Иван","lastname":"Иванович","email":"","is_staff":true,"is_active":true,"date_joined":"1970-01-01T00:00:00.000Z","groups":[1],"user_permissions":[{"eclss":["add","modify","view"]},{"communication":["add","modify","view"]},{"medical":["add","modify","view"]},{"science":["add","modify","view"]}]}},{"model":"authorization.user","pk":2,"fields":{"password":"pbkdf2_sha256$120000$eUNiCeTrYHoh$X32NiCeTrMYPASSWDBcVT1l3NiCeTrY4WJVhr+cKg=","last_login":null,"is_superuser":false,"username":"executive-officer","firstname":"José","lastname":"Jiménez","email":"","is_staff":true,"is_active":true,"date_joined":"1970-01-01T00:00:00.000Z","groups":[1],"user_permissions":[{"eclss":["add","modify","view"]},{"communication":["add","modify","view"]},{"medical":["add","modify","view"]},{"science":["add","modify","view"]}]}},{"model":"authorization.user","pk":3,"fields":{"password":"pbkdf2_sha256$120000$3G0RNiCeTrYlaV1$mVb62WNiCeTrYQ9aYzTsSh74NiCeTrY2+c9/M=","last_login":"1970-01-01T00:00:00.000Z","is_superuser":false,"username":"crew-medical-officer","firstname":"Melissa","lastname":"Lewis","email":"","is_staff":true,"is_active":true,"date_joined":"1970-01-01T00:00:00.000Z","groups":[1],"user_permissions":[{"communication":["add","view"]},{"medical":["add","modify","view"]},{"science":["add","modify","view"]}]}},{"model":"authorization.user","pk":4,"fields":{"password":"pbkdf2_sha256$120000$QmSNiCeTrYBv$Nt1jhPassNiCeTrYSuKzJ//UserNiCeTrYYZ3sB1r0g=","last_login":null,"is_superuser":false,"username":"science-data-officer","firstname":"Mark","lastname":"Watney","email":"","is_staff":true,"is_active":true,"date_joined":"1970-01-01T00:00:00.000Z","groups":[1],"user_permissions":[{"communication":["add","view"]},{"science":["add","modify","view"]}]}},{"model":"authorization.user","pk":5,"fields":{"password":"pbkdf2_sha256$120000$bxS4dNiCeTrY1n$Y8NiCeTrYRMa5bNJhTFjNiCeTrYp5swZni2RQbs=","last_login":null,"is_superuser":false,"username":"communication-officer","firstname":"Jan","lastname":"Twardowski","email":"","is_staff":true,"is_active":true,"date_joined":"1970-01-01T00:00:00.000Z","groups":[1],"user_permissions":[{"communication":["add","modify","view"]},{"science":["add","modify","view"]}]}},{"model":"authorization.user","pk":6,"fields":{"password":"pbkdf2_sha256$120000$aXNiCeTrY$UfCJrBh/qhXohNiCeTrYH8nsdANiCeTrYnShs9M/c=","last_login":null,"is_superuser":false,"username":"eclss-officer","firstname":"Harry","lastname":"Stamper","email":"","is_staff":true,"is_active":true,"date_joined":"1970-01-01T00:00:00.000Z","groups":[1],"user_permissions":[{"communication":["add","view"]},{"eclss":["add","modify","view"]},{"science":["add","modify","view"]}]}}]
-
+.. literalinclude:: solution/oop_dataclass_json.py
+    :caption: :download:`Solution <solution/oop_dataclass_json.py>`
+    :end-before: # Solution

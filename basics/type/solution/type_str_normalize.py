@@ -2,7 +2,7 @@
 * Assignment: Type String Normalize
 * Filename: type_str_normalize.py
 * Complexity: easy
-* Lines of code to write: 4 lines
+* Lines of code: 4 lines
 * Estimated time: 8 min
 
 English:

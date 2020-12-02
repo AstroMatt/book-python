@@ -405,9 +405,9 @@ Series Mapping Clean
 --------------------
 * Assignment: Series Mapping Clean
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 15 lines
-* Estimated time of completion: 21 min
+* Complexity: medium
+* Lines of code: 15 lines
+* Estimated time: 21 min
 * Filename: :download:`solution/series_mapping_clean.py`
 
 English:

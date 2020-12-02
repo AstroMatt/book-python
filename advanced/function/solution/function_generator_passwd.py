@@ -3,7 +3,7 @@
 * Assignment: Function Generator Passwd
 * Filename: function_generator_passwd.py
 * Complexity: medium
-* Lines of code to write: 10 lines
+* Lines of code: 10 lines
 * Estimated time: 8 min
 
 English:

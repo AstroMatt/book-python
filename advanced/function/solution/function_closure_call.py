@@ -2,7 +2,7 @@
 * Assignment: Function Closure Call
 * Filename: function_closure_call.py
 * Complexity: easy
-* Lines of code to write: 9 lines
+* Lines of code: 9 lines
 * Estimated time: 5 min
 
 English:

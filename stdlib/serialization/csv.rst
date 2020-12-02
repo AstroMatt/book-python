@@ -543,9 +543,9 @@ Serialization CSV DictReader
 ----------------------------
 * Assignment: Serialization CSV DictReader
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 6 lines
-* Estimated time of completion: 7 min
+* Complexity: easy
+* Lines of code: 6 lines
+* Estimated time: 7 min
 * Filename: :download:`solution/serialization_csv_dictreader.py`
 
 English:
@@ -591,9 +591,9 @@ Serialization CSV DictWriter
 ----------------------------
 * Assignment: Serialization CSV DictWriter
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 5 lines
-* Estimated time of completion: 7 min
+* Complexity: easy
+* Lines of code: 5 lines
+* Estimated time: 7 min
 * Filename: :download:`solution/serialization_csv_dictwriter.py`
 
 English:
@@ -647,9 +647,9 @@ Serialization CSV List of Tuples
 --------------------------------
 * Assignment: Serialization CSV List of Tuples
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 7 lines
-* Estimated time of completion: 7 min
+* Complexity: easy
+* Lines of code: 7 lines
+* Estimated time: 7 min
 * Filename: :download:`solution/serialization_csv_list_of_tuple.py`
 
 English:
@@ -734,9 +734,9 @@ Serialization CSV Schemaless
 -----------------------------
 * Assignment: Serialization CSV Schemaless
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 8 lines
-* Estimated time of completion: 7 min
+* Complexity: medium
+* Lines of code: 8 lines
+* Estimated time: 7 min
 * Filename: :download:`solution/serialization_csv_schemaless.py`
 
 English:
@@ -792,9 +792,9 @@ Serialization CSV Objects
 -------------------------
 * Assignment: Serialization CSV Objects
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 7 lines
-* Estimated time of completion: 13 min
+* Complexity: medium
+* Lines of code: 7 lines
+* Estimated time: 13 min
 * Filename: :download:`solution/serialization_csv_objects.py`
 
 English:
@@ -844,9 +844,9 @@ Serialization CSV Relations
 ---------------------------
 * Assignment: Serialization CSV Relations
 * Last update: 2020-10-01
-* Complexity level: hard
-* Lines of code to write: 18 lines
-* Estimated time of completion: 21 min
+* Complexity: hard
+* Lines of code: 18 lines
+* Estimated time: 21 min
 * Filename: :download:`solution/serialization_csv_relations.py`
 
 English:

@@ -2,7 +2,7 @@
 * Assignment: Loop Comprehension Translate
 * Filename: loop_comprehension_translate.py
 * Complexity: easy
-* Lines of code to write: 1 lines
+* Lines of code: 1 lines
 * Estimated time: 3 min
 
 English:

@@ -16,5 +16,5 @@ class RequestHandler(BaseRequestHandler):
 
 with UDPServer((HOST, PORT), RequestHandler) as server:
     print(f'Accepting connections on {HOST}:{PORT}/UDP...')
-    print(f'To stop the server use ``Ctrl-C``\n')
+    print(f'To stop the server use `Ctrl-C`\n')
     server.serve_forever()

@@ -2,7 +2,7 @@
 * Assignment: OOP Stringify Nested
 * Filename: oop_stringify_nested.py
 * Complexity: medium
-* Lines of code to write: 9 lines
+* Lines of code: 9 lines
 * Estimated time: 21 min
 
 English:

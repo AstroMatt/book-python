@@ -173,9 +173,9 @@ Database SQL Relations
 ----------------------
 * Assignment: Database SQL Relations
 * Last update: 2020-10-01
-* Complexity level: medium
-* Lines of code to write: 0 lines
-* Estimated time of completion: 13 min
+* Complexity: medium
+* Lines of code: 0 lines
+* Estimated time: 13 min
 * Filename: TODO
 
 English:

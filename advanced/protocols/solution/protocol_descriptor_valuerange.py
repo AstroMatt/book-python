@@ -2,7 +2,7 @@
 * Assignment: Protocol Descriptor ValueRange
 * Filename: protocol_descriptor_valuerange.py
 * Complexity: easy
-* Lines of code to write: 9 lines
+* Lines of code: 9 lines
 * Estimated time: 13 min
 
 English:

@@ -1,8 +1,8 @@
-.. _OOP Argument Mutability:
+.. _OOP Mutability:
 
-*******************
-Argument Mutability
-*******************
+**************
+OOP Mutability
+**************
 
 
 Rationale
@@ -30,8 +30,10 @@ Mutable Types
 * ``dict``
 
 
-Case Study
-==========
+.. _OOP Mutability Argument:
+
+Argument Mutability
+===================
 .. code-block:: python
     :caption: Bad
 

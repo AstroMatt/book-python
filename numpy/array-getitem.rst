@@ -254,9 +254,9 @@ Numpy Indexing
 --------------
 * Assignment: Numpy Indexing
 * Last update: 2020-10-01
-* Complexity level: easy
-* Lines of code to write: 4 lines
-* Estimated time of completion: 3 min
+* Complexity: easy
+* Lines of code: 4 lines
+* Estimated time: 3 min
 * Filename: :download:`solution/numpy_indexing.py`
 
 English:

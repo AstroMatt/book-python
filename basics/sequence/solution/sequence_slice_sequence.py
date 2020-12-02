@@ -2,7 +2,7 @@
 * Assignment: Sequence Slice Sequence
 * Filename: sequence_slice_sequence.py
 * Complexity: easy
-* Lines of code to write: 2 lines
+* Lines of code: 2 lines
 * Estimated time: 3 min
 
 English:

@@ -16,5 +16,5 @@ first = DB().connect()
 
 # Connecting for the second time
 # Will use existing connection to the DB
-# The same handle as ``first``
+# The same handle as `first`
 second = DB().connect()

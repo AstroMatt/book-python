@@ -2,7 +2,7 @@
 * Assignment: Type Int Add
 * Filename: type_int_add.py
 * Complexity: easy
-* Lines of code to write: 4 lines
+* Lines of code: 4 lines
 * Estimated time: 3 min
 
 English:

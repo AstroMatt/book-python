@@ -2,7 +2,7 @@
 * Assignment: Type Float Gradient
 * Filename: type_float_gradient.py
 * Complexity: hard
-* Lines of code to write: 7 lines
+* Lines of code: 7 lines
 * Estimated time: 8 min
 
 English:

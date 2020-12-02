@@ -2,7 +2,7 @@
 * Assignment: Unpacking Assignment Nested
 * Filename: unpacking_assignment_nested.py
 * Complexity: easy
-* Lines of code to write: 1 lines
+* Lines of code: 1 lines
 * Estimated time: 3 min
 
 English:
