@@ -50,11 +50,8 @@ class Astronaut:
         self.name = name
         self.missions = missions
 
-    def __contains__(self, other):
-        for mission in self.missions:
-            if mission == other:
-                return True
-        return False
+    def __contains__(self, flight):
+        return flight in self.missions
 
 
 class Mission:
@@ -63,7 +60,5 @@ class Mission:
         self.name = name
 
     def __eq__(self, other):
-        if self.name == other.name and self.year == other.year:
-            return True
-        else:
-            return False
+        return (self.year == other.year) \
+           and (self.name == other.name)
