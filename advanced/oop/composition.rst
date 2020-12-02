@@ -14,7 +14,7 @@ Code Duplication
 ================
 .. code-block:: python
 
-    class Car(Vehicle):
+    class Car:
         def engine_start(self):
             pass
 
@@ -22,7 +22,7 @@ Code Duplication
             pass
 
 
-    class Truck(Vehicle):
+    class Truck:
         def engine_start(self):
             pass
 
@@ -101,7 +101,6 @@ Composition
 
         def engine_stop(self):
             pass
-
 
     class HasWindows:
         def window_open(self):
@@ -193,6 +192,6 @@ Assignments
     :caption: :download:`Solution <solution/oop_composition_syntax.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/oop_composition_movable.py
-    :caption: :download:`Solution <solution/oop_composition_movable.py>`
+.. literalinclude:: solution/oop_composition_decompose.py
+    :caption: :download:`Solution <solution/oop_composition_decompose.py>`
     :end-before: # Solution

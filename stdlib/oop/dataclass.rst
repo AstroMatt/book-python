@@ -548,6 +548,10 @@ Examples
 Assignments
 ===========
 
+.. literalinclude:: solution/oop_dataclass_syntax.py
+    :caption: :download:`Solution <solution/oop_dataclass_syntax.py>`
+    :end-before: # Solution
+
 .. literalinclude:: solution/oop_dataclass_addressbook.py
     :caption: :download:`Solution <solution/oop_dataclass_addressbook.py>`
     :end-before: # Solution

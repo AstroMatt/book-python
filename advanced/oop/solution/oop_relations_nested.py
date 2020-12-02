@@ -2,8 +2,8 @@
 * Assignment: OOP Relations Nested
 * Filename: oop_relations_nested.py
 * Complexity: medium
-* Lines of code: 45 lines
-* Estimated time: 13 min
+* Lines of code: 30 lines
+* Estimated time: 21 min
 
 English:
     1. Client can open a bank account
@@ -74,19 +74,3 @@ class ATM:
 
     def _check_if_withdraw_possible(self):
         pass
-
-
-jose = Client()
-my_bank = Bank()
-atm = ATM()
-
-
-my_bank.open_account_for_client(jose)
-my_bank.whats_my_account_number(jose)
-
-
-atm.input_card(card)
-atm.input_pin(pin)
-atm.input_amount(amount)
-atm.give_money()
-atm.give_card()

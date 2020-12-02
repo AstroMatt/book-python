@@ -108,6 +108,10 @@ Assignments
     :caption: :download:`Solution <solution/oop_relations_model.py>`
     :end-before: # Solution
 
+.. literalinclude:: solution/oop_relations_movable.py
+    :caption: :download:`Solution <solution/oop_relations_movable.py>`
+    :end-before: # Solution
+
 .. literalinclude:: solution/oop_relations_flatten.py
     :caption: :download:`Solution <solution/oop_relations_flatten.py>`
     :end-before: # Solution
