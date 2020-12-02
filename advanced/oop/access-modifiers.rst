@@ -149,7 +149,6 @@ System Attributes
     # {'publicname': 'Mark W.'}
 
 
-
 Protected Method
 ================
 .. code-block:: python
