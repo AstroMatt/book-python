@@ -2,7 +2,7 @@
 * Assignment: OOP Relations Syntax
 * Filename: oop_relations_syntax.py
 * Complexity: easy
-* Lines of code: 5 lines
+* Lines of code: 7 lines
 * Estimated time: 5 min
 
 English:
