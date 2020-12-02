@@ -127,12 +127,10 @@ Deduplicate
 .. code-block:: python
     :caption: Converting ``set`` deduplicate items
 
-    data = [
-        'Twardowski',
-        'Twardowski',
-        'Watney',
-        'Twardowski'
-    ]
+    data = ['Twardowski',
+            'Twardowski',
+            'Watney',
+            'Twardowski']
 
     set(data)
     # {'Twardowski', 'Watney'}

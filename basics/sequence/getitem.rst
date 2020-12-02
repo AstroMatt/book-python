@@ -161,11 +161,9 @@ Nested Sequence
 .. code-block:: python
     :caption: Get elements from ``list`` of ``tuple``
 
-    data = [
-        (4.7, 3.2, 1.3, 0.2, 'setosa'),
-        (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-        (7.6, 3.0, 6.6, 2.1, 'virginica'),
-    ]
+    data = [(4.7, 3.2, 1.3, 0.2, 'setosa'),
+            (7.0, 3.2, 4.7, 1.4, 'versicolor'),
+            (7.6, 3.0, 6.6, 2.1, 'virginica')]
 
     data[0]     # (4.7, 3.2, 1.3, 0.2, 'setosa')
     data[0][0]  # 4.7

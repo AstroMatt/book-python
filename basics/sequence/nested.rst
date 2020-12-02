@@ -55,20 +55,16 @@ List of Tuples
 
 .. code-block:: python
 
-    data = [
-        (4.7, 3.2, 1.3, 0.2, 'setosa'),
-        (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-        (7.6, 3.0, 6.6, 2.1, 'virginica'),
-    ]
+    data = [(4.7, 3.2, 1.3, 0.2, 'setosa'),
+            (7.0, 3.2, 4.7, 1.4, 'versicolor'),
+            (7.6, 3.0, 6.6, 2.1, 'virginica')]
 
 .. code-block:: python
     :caption: Append elements using ``list.append()``
 
-    data = [
-        (4.7, 3.2, 1.3, 0.2, 'setosa'),
-        (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-        (7.6, 3.0, 6.6, 2.1, 'virginica'),
-    ]
+    data = [(4.7, 3.2, 1.3, 0.2, 'setosa'),
+            (7.0, 3.2, 4.7, 1.4, 'versicolor'),
+            (7.6, 3.0, 6.6, 2.1, 'virginica')]
 
     row = (4.9, 2.5, 4.5, 1.7, 'virginica')
     data.append(row)
@@ -80,11 +76,9 @@ List of Tuples
 .. code-block:: python
     :caption: Append elements using ``list.extend()``
 
-    data = [
-        (4.7, 3.2, 1.3, 0.2, 'setosa'),
-        (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-        (7.6, 3.0, 6.6, 2.1, 'virginica'),
-    ]
+    data = [(4.7, 3.2, 1.3, 0.2, 'setosa'),
+            (7.0, 3.2, 4.7, 1.4, 'versicolor'),
+            (7.6, 3.0, 6.6, 2.1, 'virginica')]
 
     row = (4.9, 2.5, 4.5, 1.7, 'virginica')
     data.extend(row)
@@ -99,11 +93,9 @@ List of Tuples
 
 .. code-block:: python
 
-    data = [
-        (4.7, 3.2, 1.3, 0.2, 'setosa'),
-        (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-        (7.6, 3.0, 6.6, 2.1, 'virginica'),
-    ]
+    data = [(4.7, 3.2, 1.3, 0.2, 'setosa'),
+            (7.0, 3.2, 4.7, 1.4, 'versicolor'),
+            (7.6, 3.0, 6.6, 2.1, 'virginica')]
 
     len(data)
     # 3

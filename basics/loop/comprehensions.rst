@@ -413,13 +413,11 @@ Examples
 .. code-block:: python
     :caption: Filtering
 
-    DATA = [
-        {'is_astronaut': True,  'name': 'Jan Twardowski'},
-        {'is_astronaut': True,  'name': 'Mark Watney'},
-        {'is_astronaut': False, 'name': 'José Jiménez'},
-        {'is_astronaut': True,  'name': 'Melissa Lewis'},
-        {'is_astronaut': False, 'name': 'Alex Vogel'},
-    ]
+    DATA = [{'is_astronaut': True,  'name': 'Jan Twardowski'},
+            {'is_astronaut': True,  'name': 'Mark Watney'},
+            {'is_astronaut': False, 'name': 'José Jiménez'},
+            {'is_astronaut': True,  'name': 'Melissa Lewis'},
+            {'is_astronaut': False, 'name': 'Alex Vogel'}]
 
     astronauts = [person
                   for person in DATA
@@ -476,11 +474,9 @@ Examples
 .. code-block:: python
     :caption: Quick parsing lines
 
-    DATA = [
-        '5.8,2.7,5.1,1.9,virginica',
-        '5.1,3.5,1.4,0.2,setosa',
-        '5.7,2.8,4.1,1.3,versicolor',
-    ]
+    DATA = ['5.8,2.7,5.1,1.9,virginica',
+            '5.1,3.5,1.4,0.2,setosa',
+            '5.7,2.8,4.1,1.3,versicolor']
 
     result = []
 
@@ -543,13 +539,11 @@ All and Any
 
 .. code-block:: python
 
-    DATA = [
-        {'is_astronaut': True,  'name': 'Jan Twardowski'},
-        {'is_astronaut': True,  'name': 'Mark Watney'},
-        {'is_astronaut': False, 'name': 'José Jiménez'},
-        {'is_astronaut': True,  'name': 'Melissa Lewis'},
-        {'is_astronaut': False, 'name': 'Alex Vogel'},
-    ]
+    DATA = [{'is_astronaut': True,  'name': 'Jan Twardowski'},
+            {'is_astronaut': True,  'name': 'Mark Watney'},
+            {'is_astronaut': False, 'name': 'José Jiménez'},
+            {'is_astronaut': True,  'name': 'Melissa Lewis'},
+            {'is_astronaut': False, 'name': 'Alex Vogel'}]
 
     if all(person['is_astronaut'] for person in DATA):
         print('Everyone is astronaut')
@@ -558,13 +552,11 @@ All and Any
 
 .. code-block:: python
 
-    DATA = [
-        {'is_astronaut': True,  'name': 'Jan Twardowski'},
-        {'is_astronaut': True,  'name': 'Mark Watney'},
-        {'is_astronaut': False, 'name': 'José Jiménez'},
-        {'is_astronaut': True,  'name': 'Melissa Lewis'},
-        {'is_astronaut': False, 'name': 'Alex Vogel'},
-    ]
+    DATA = [{'is_astronaut': True,  'name': 'Jan Twardowski'},
+            {'is_astronaut': True,  'name': 'Mark Watney'},
+            {'is_astronaut': False, 'name': 'José Jiménez'},
+            {'is_astronaut': True,  'name': 'Melissa Lewis'},
+            {'is_astronaut': False, 'name': 'Alex Vogel'}]
 
     if any(person['is_astronaut'] for person in DATA):
         print('At least one person is astronaut')

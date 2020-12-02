@@ -75,11 +75,9 @@ Example
 =======
 .. code-block:: python
 
-    DATA = [
-        '5.8,2.7,5.1,1.9,virginica',
-        '5.1,3.5,1.4,0.2,setosa',
-        '5.7,2.8,4.1,1.3,versicolor',
-    ]
+    DATA = ['5.8,2.7,5.1,1.9,virginica',
+            '5.1,3.5,1.4,0.2,setosa',
+            '5.7,2.8,4.1,1.3,versicolor']
 
     result = []
 
@@ -94,11 +92,9 @@ Example
 
 .. code-block:: python
 
-    DATA = [
-        '5.8,2.7,5.1,1.9,virginica',
-        '5.1,3.5,1.4,0.2,setosa',
-        '5.7,2.8,4.1,1.3,versicolor',
-    ]
+    DATA = ['5.8,2.7,5.1,1.9,virginica',
+            '5.1,3.5,1.4,0.2,setosa',
+            '5.7,2.8,4.1,1.3,versicolor']
 
     result = [[float(x) for x in X]
               for line in DATA
@@ -114,11 +110,9 @@ Use Case
 ========
 .. code-block:: python
 
-    DATA = [
-        '5.8,2.7,5.1,1.9,virginica',
-        '5.1,3.5,1.4,0.2,setosa',
-        '5.7,2.8,4.1,1.3,versicolor',
-    ]
+    DATA = ['5.8,2.7,5.1,1.9,virginica',
+            '5.1,3.5,1.4,0.2,setosa',
+            '5.7,2.8,4.1,1.3,versicolor']
 
     result = [[float(x) for x in X] + [y]
               for line in DATA
@@ -133,13 +127,11 @@ Use Case
 
 .. code-block:: python
 
-    DATA = [
-        {'is_astronaut': True,  'name': 'JaN TwarDOwski'},
-        {'is_astronaut': True,  'name': 'Mark Jim WaTNey'},
-        {'is_astronaut': False, 'name': 'José Maria Jiménez'},
-        {'is_astronaut': True,  'name': 'Melissa Lewis'},
-        {'is_astronaut': False, 'name': 'Alex Vogel'},
-    ]
+    DATA = [{'is_astronaut': True,  'name': 'JaN TwarDOwski'},
+            {'is_astronaut': True,  'name': 'Mark Jim WaTNey'},
+            {'is_astronaut': False, 'name': 'José Maria Jiménez'},
+            {'is_astronaut': True,  'name': 'Melissa Lewis'},
+            {'is_astronaut': False, 'name': 'Alex Vogel'}]
 
     result = [{'firstname': person['name'].title().split()[0],
                'lastname': person['name'].title().split()[-1]}
@@ -189,16 +181,14 @@ Use Case
         pass
 
 
-    DATA = [
-        ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
-        (5.8, 2.7, 5.1, 1.9, 'virginica'),
-        (5.1, 3.5, 1.4, 0.2, 'setosa'),
-        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-        (6.3, 2.9, 5.6, 1.8, 'virginica'),
-        (6.4, 3.2, 4.5, 1.5, 'versicolor'),
-        (4.7, 3.2, 1.3, 0.2, 'setosa'),
-        (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-    ]
+    DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
+            (5.8, 2.7, 5.1, 1.9, 'virginica'),
+            (5.1, 3.5, 1.4, 0.2, 'setosa'),
+            (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+            (6.3, 2.9, 5.6, 1.8, 'virginica'),
+            (6.4, 3.2, 4.5, 1.5, 'versicolor'),
+            (4.7, 3.2, 1.3, 0.2, 'setosa'),
+            (7.0, 3.2, 4.7, 1.4, 'versicolor')]
 
     result = [cls(*features)
               for *features, species in DATA[1:]

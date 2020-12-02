@@ -66,19 +66,17 @@ Example
 =======
 .. code-block:: python
 
-    DATA = [
-        'ul.Mieszka II',
-        'UL. Zygmunta III WaZY',
-        '  bolesława chrobrego ',
-        'ul Jana III SobIESkiego',
-        '\tul. Jana trzeciego Sobieskiego',
-        'ulicaJana III Sobieskiego',
-        'UL. JA    NA 3 SOBIES  KIEGO',
-        'ULICA JANA III SOBIESKIEGO  ',
-        'ULICA. JANA III SOBIeskieGO',
-        ' Jana 3 Sobieskiego  ',
-        'Jana III Sobi  eskiego ',
-    ]
+    DATA = ['ul.Mieszka II',
+            'UL. Zygmunta III WaZY',
+            '  bolesława chrobrego ',
+            'ul Jana III SobIESkiego',
+            '\tul. Jana trzeciego Sobieskiego',
+            'ulicaJana III Sobieskiego',
+            'UL. JA    NA 3 SOBIES  KIEGO',
+            'ULICA JANA III SOBIESKIEGO  ',
+            'ULICA. JANA III SOBIeskieGO',
+            ' Jana 3 Sobieskiego  ',
+            'Jana III Sobi  eskiego ']
 
     def clean(text):
         text = text.strip()
@@ -106,19 +104,17 @@ Example
 
 .. code-block:: python
 
-    DATA = [
-        'ul.Mieszka II',
-        'UL. Zygmunta III WaZY',
-        '  bolesława chrobrego ',
-        'ul Jana III SobIESkiego',
-        '\tul. Jana trzeciego Sobieskiego',
-        'ulicaJana III Sobieskiego',
-        'UL. JA    NA 3 SOBIES  KIEGO',
-        'ULICA JANA III SOBIESKIEGO  ',
-        'ULICA. JANA III SOBIeskieGO',
-        ' Jana 3 Sobieskiego  ',
-        'Jana III Sobi  eskiego ',
-    ]
+    DATA = ['ul.Mieszka II',
+            'UL. Zygmunta III WaZY',
+            '  bolesława chrobrego ',
+            'ul Jana III SobIESkiego',
+            '\tul. Jana trzeciego Sobieskiego',
+            'ulicaJana III Sobieskiego',
+            'UL. JA    NA 3 SOBIES  KIEGO',
+            'ULICA JANA III SOBIESKIEGO  ',
+            'ULICA. JANA III SOBIeskieGO',
+            ' Jana 3 Sobieskiego  ',
+            'Jana III Sobi  eskiego ']
 
     def clean(text):
         return (text

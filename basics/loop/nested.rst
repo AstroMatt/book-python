@@ -26,11 +26,9 @@ List of Pairs
 =============
 .. code-block:: python
 
-    DATA = [
-        ('commander', 'Melissa Lewis'),
-        ('botanist', 'Mark Watney'),
-        ('chemist', 'Alex Vogel'),
-    ]
+    DATA = [('commander', 'Melissa Lewis'),
+            ('botanist', 'Mark Watney'),
+            ('chemist', 'Alex Vogel')]
 
     for pair in DATA:
         role = pair[0]
@@ -46,11 +44,9 @@ List of Sequence
 ================
 .. code-block:: python
 
-    DATA = [
-        (5.1, 3.5, 1.4, 0.2, 'setosa'),
-        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-        (6.3, 2.9, 5.6, 1.8, 'virginica'),
-    ]
+    DATA = [(5.1, 3.5, 1.4, 0.2, 'setosa'),
+            (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+            (6.3, 2.9, 5.6, 1.8, 'virginica')]
 
     for row in DATA:
         sepal_length = row[0]
@@ -67,11 +63,9 @@ List of Sequence
 
 .. code-block:: python
 
-    DATA = [
-        (5.1, 3.5, 1.4, 0.2, 'setosa'),
-        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-        (6.3, 2.9, 5.6, 1.8, 'virginica'),
-    ]
+    DATA = [(5.1, 3.5, 1.4, 0.2, 'setosa'),
+            (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+            (6.3, 2.9, 5.6, 1.8, 'virginica')]
 
     for row in DATA:
         features = row[0:4]

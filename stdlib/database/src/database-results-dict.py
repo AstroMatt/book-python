@@ -1,13 +1,11 @@
 import sqlite3
 
 DATABASE = ':memory:'
-DATA = [
-    {'pesel': '61041212345', 'firstname': 'José', 'lastname': 'Jiménez'},
-    {'pesel': '61041212346', 'firstname': 'Jan', 'lastname': 'Twardowski'},
-    {'pesel': '61041212347', 'firstname': 'Melissa', 'lastname': 'Lewis'},
-    {'pesel': '61041212348', 'firstname': 'Alex', 'lastname': 'Vogel'},
-    {'pesel': '61041212349', 'firstname': 'Ryan', 'lastname': 'Stone'},
-]
+DATA = [{'pesel': '61041212345', 'firstname': 'José', 'lastname': 'Jiménez'},
+        {'pesel': '61041212346', 'firstname': 'Jan', 'lastname': 'Twardowski'},
+        {'pesel': '61041212347', 'firstname': 'Melissa', 'lastname': 'Lewis'},
+        {'pesel': '61041212348', 'firstname': 'Alex', 'lastname': 'Vogel'},
+        {'pesel': '61041212349', 'firstname': 'Ryan', 'lastname': 'Stone'}]
 
 SQL_CREATE_TABLE = """
     CREATE TABLE IF NOT EXISTS astronauts (

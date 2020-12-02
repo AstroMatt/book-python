@@ -1,17 +1,15 @@
 """
->>> DATA = [
-...     'ul.Mieszka II',
-...     'UL. Zygmunta III WaZY',
-...     '  bolesława chrobrego ',
-...     'ul Jana III SobIESkiego',
-...     '\tul. Jana trzeciego Sobieskiego',
-...     'ulicaJana III Sobieskiego',
-...     'UL. JA    NA 3 SOBIES  KIEGO',
-...     'ULICA JANA III SOBIESKIEGO  ',
-...     'ULICA. JANA III SOBIeskieGO',
-...     ' Jana 3 Sobieskiego  ',
-...     'Jana III Sobi  eskiego ',
-... ]
+>>> DATA = ['ul.Mieszka II',
+...         'UL. Zygmunta III WaZY',
+...         '  bolesława chrobrego ',
+...         'ul Jana III SobIESkiego',
+...         '\tul. Jana trzeciego Sobieskiego',
+...         'ulicaJana III Sobieskiego',
+...         'UL. JA    NA 3 SOBIES  KIEGO',
+...         'ULICA JANA III SOBIESKIEGO  ',
+...         'ULICA. JANA III SOBIeskieGO',
+...         ' Jana 3 Sobieskiego  ',
+...         'Jana III Sobi  eskiego ']
 >>> for address in DATA:
 ...     clean(address)
 'Mieszka II'
@@ -62,19 +60,17 @@ def clean(text: str) -> str:
     return text.strip()
 
 
-DATA = [
-    'ul.Mieszka II',
-    'UL. Zygmunta III WaZY',
-    '  bolesława chrobrego ',
-    'ul Jana III SobIESkiego',
-    '\tul. Jana trzeciego Sobieskiego',
-    'ulicaJana III Sobieskiego',
-    'UL. JA    NA 3 SOBIES  KIEGO',
-    'ULICA JANA III SOBIESKIEGO  ',
-    'ULICA. JANA III SOBIeskieGO',
-    ' Jana 3 Sobieskiego  ',
-    'Jana III Sobi  eskiego ',
-]
+DATA = ['ul.Mieszka II',
+        'UL. Zygmunta III WaZY',
+        '  bolesława chrobrego ',
+        'ul Jana III SobIESkiego',
+        '\tul. Jana trzeciego Sobieskiego',
+        'ulicaJana III Sobieskiego',
+        'UL. JA    NA 3 SOBIES  KIEGO',
+        'ULICA JANA III SOBIESKIEGO  ',
+        'ULICA. JANA III SOBIeskieGO',
+        ' Jana 3 Sobieskiego  ',
+        'Jana III Sobi  eskiego ']
 
 s = pd.Series(DATA)
 s = s.apply(clean)

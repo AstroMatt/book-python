@@ -226,12 +226,10 @@ Writer Object
 
     FILE = r'/tmp/_temporary.csv'
 
-    DATA = [
-        ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
-        (5.8, 2.7, 5.1, 1.9, 'virginica'),
-        (5.1, 3.5, 1.4, 0.2, 'setosa'),
-        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-    ]
+    DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
+            (5.8, 2.7, 5.1, 1.9, 'virginica'),
+            (5.1, 3.5, 1.4, 0.2, 'setosa'),
+            (5.7, 2.8, 4.1, 1.3, 'versicolor')]
 
     with open(FILE, mode='w') as file:
         result = csv.writer(file)
@@ -348,11 +346,9 @@ DictWriter
 
     FILE = r'/tmp/_temporary.csv'
 
-    DATA = [
-        {'Sepal Length': 5.4, 'Sepal Width': 3.9, 'Petal Length': 1.3, 'Petal Width': 0.4, 'Species': 'setosa'},
-        {'Sepal Length': 5.9, 'Sepal Width': 3.0, 'Petal Length': 5.1, 'Petal Width': 1.8, 'Species': 'virginica'},
-        {'Sepal Length': 6.0, 'Sepal Width': 3.4, 'Petal Length': 4.5, 'Petal Width': 1.6, 'Species': 'versicolor'},
-    ]
+    DATA = [{'Sepal Length': 5.4, 'Sepal Width': 3.9, 'Petal Length': 1.3, 'Petal Width': 0.4, 'Species': 'setosa'},
+            {'Sepal Length': 5.9, 'Sepal Width': 3.0, 'Petal Length': 5.1, 'Petal Width': 1.8, 'Species': 'virginica'},
+            {'Sepal Length': 6.0, 'Sepal Width': 3.4, 'Petal Length': 4.5, 'Petal Width': 1.6, 'Species': 'versicolor'}]
 
     header = DATA[0].keys()
 
@@ -375,19 +371,12 @@ DictWriter
 
     FILE = r'/tmp/_temporary.csv'
 
-    DATA = [
-        {'sepal_length': 5.4, 'sepal_width': 3.9, 'petal_length': 1.3, 'petal_width': 0.4, 'species': 'setosa'},
-        {'sepal_length': 5.9, 'sepal_width': 3.0, 'petal_length': 5.1, 'petal_width': 1.8, 'species': 'virginica'},
-        {'sepal_length': 6.0, 'sepal_width': 3.4, 'petal_length': 4.5, 'petal_width': 1.6, 'species': 'versicolor'},
-    ]
+    DATA = [{'sepal_length': 5.4, 'sepal_width': 3.9, 'petal_length': 1.3, 'petal_width': 0.4, 'species': 'setosa'},
+            {'sepal_length': 5.9, 'sepal_width': 3.0, 'petal_length': 5.1, 'petal_width': 1.8, 'species': 'virginica'},
+            {'sepal_length': 6.0, 'sepal_width': 3.4, 'petal_length': 4.5, 'petal_width': 1.6, 'species': 'versicolor'}]
 
-    FIELDNAMES = [
-        'sepal_length',
-        'sepal_width',
-        'petal_length',
-        'petal_width',
-        'species'
-    ]
+    FIELDNAMES = ['sepal_length', 'sepal_width', 'petal_length',
+                  'petal_width', 'species']
 
     with open(FILE, mode='w', encoding='utf-8') as file:
         result = csv.DictWriter(
@@ -625,13 +614,11 @@ Polish:
 Given:
     .. code-block:: python
 
-        DATA = [
-            {'firstname': 'Jan',  'lastname': 'Twardowski'},
-            {'firstname': 'José', 'lastname': 'Jiménez'},
-            {'firstname': 'Mark', 'lastname': 'Watney'},
-            {'firstname': 'Ivan', 'lastname': 'Ivanovic'},
-            {'firstname': 'Melissa', 'lastname': 'Lewis'},
-        ]
+        DATA = [{'firstname': 'Jan',  'lastname': 'Twardowski'},
+                {'firstname': 'José', 'lastname': 'Jiménez'},
+                {'firstname': 'Mark', 'lastname': 'Watney'},
+                {'firstname': 'Ivan', 'lastname': 'Ivanovic'},
+                {'firstname': 'Melissa', 'lastname': 'Lewis'}]
 
 Tests:
     .. code-block:: text
@@ -679,30 +666,28 @@ Polish:
 Given:
     .. code-block:: python
 
-        DATA = [
-            ('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
-            (5.8, 2.7, 5.1, 1.9, 'virginica'),
-            (5.1, 3.5, 1.4, 0.2, 'setosa'),
-            (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-            (6.3, 2.9, 5.6, 1.8, 'virginica'),
-            (6.4, 3.2, 4.5, 1.5, 'versicolor'),
-            (4.7, 3.2, 1.3, 0.2, 'setosa'),
-            (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-            (7.6, 3.0, 6.6, 2.1, 'virginica'),
-            (4.9, 3.0, 1.4, 0.2, 'setosa'),
-            (4.9, 2.5, 4.5, 1.7, 'virginica'),
-            (7.1, 3.0, 5.9, 2.1, 'virginica'),
-            (4.6, 3.4, 1.4, 0.3, 'setosa'),
-            (5.4, 3.9, 1.7, 0.4, 'setosa'),
-            (5.7, 2.8, 4.5, 1.3, 'versicolor'),
-            (5.0, 3.6, 1.4, 0.3, 'setosa'),
-            (5.5, 2.3, 4.0, 1.3, 'versicolor'),
-            (6.5, 3.0, 5.8, 2.2, 'virginica'),
-            (6.5, 2.8, 4.6, 1.5, 'versicolor'),
-            (6.3, 3.3, 6.0, 2.5, 'virginica'),
-            (6.9, 3.1, 4.9, 1.5, 'versicolor'),
-            (4.6, 3.1, 1.5, 0.2, 'setosa'),
-        ]
+        DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
+                (5.8, 2.7, 5.1, 1.9, 'virginica'),
+                (5.1, 3.5, 1.4, 0.2, 'setosa'),
+                (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+                (6.3, 2.9, 5.6, 1.8, 'virginica'),
+                (6.4, 3.2, 4.5, 1.5, 'versicolor'),
+                (4.7, 3.2, 1.3, 0.2, 'setosa'),
+                (7.0, 3.2, 4.7, 1.4, 'versicolor'),
+                (7.6, 3.0, 6.6, 2.1, 'virginica'),
+                (4.9, 3.0, 1.4, 0.2, 'setosa'),
+                (4.9, 2.5, 4.5, 1.7, 'virginica'),
+                (7.1, 3.0, 5.9, 2.1, 'virginica'),
+                (4.6, 3.4, 1.4, 0.3, 'setosa'),
+                (5.4, 3.9, 1.7, 0.4, 'setosa'),
+                (5.7, 2.8, 4.5, 1.3, 'versicolor'),
+                (5.0, 3.6, 1.4, 0.3, 'setosa'),
+                (5.5, 2.3, 4.0, 1.3, 'versicolor'),
+                (6.5, 3.0, 5.8, 2.2, 'virginica'),
+                (6.5, 2.8, 4.6, 1.5, 'versicolor'),
+                (6.3, 3.3, 6.0, 2.5, 'virginica'),
+                (6.9, 3.1, 4.9, 1.5, 'versicolor'),
+                (4.6, 3.1, 1.5, 0.2, 'setosa')]
 
 Tests:
     .. code-block:: text
@@ -768,14 +753,12 @@ Polish:
 Given:
     .. code-block:: python
 
-        DATA = [
-            {'Sepal length': 5.1, 'Sepal width': 3.5, 'Species': 'setosa'},
-            {'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
-            {'Sepal length': 6.3, 'Petal width': 1.8, 'Species': 'virginica'},
-            {'Sepal length': 5.0, 'Petal width': 0.2, 'Species': 'setosa'},
-            {'Sepal width': 2.8, 'Petal length': 4.1, 'Species': 'versicolor'},
-            {'Sepal width': 2.9, 'Petal width': 1.8, 'Species': 'virginica'},
-        ]
+        DATA = [{'Sepal length': 5.1, 'Sepal width': 3.5, 'Species': 'setosa'},
+                {'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
+                {'Sepal length': 6.3, 'Petal width': 1.8, 'Species': 'virginica'},
+                {'Sepal length': 5.0, 'Petal width': 0.2, 'Species': 'setosa'},
+                {'Sepal width': 2.8, 'Petal length': 4.1, 'Species': 'versicolor'},
+                {'Sepal width': 2.9, 'Petal width': 1.8, 'Species': 'virginica'}]
 
 Tests:
     .. csv-table:: Output
@@ -831,14 +814,12 @@ Given:
                 self.species = species
 
 
-        DATA = [
-            Iris(5.1, 3.5, 1.4, 0.2, 'setosa'),
-            Iris(5.8, 2.7, 5.1, 1.9, 'virginica'),
-            Iris(5.1, 3.5, 1.4, 0.2, 'setosa'),
-            Iris(5.7, 2.8, 4.1, 1.3, 'versicolor'),
-            Iris(6.3, 2.9, 5.6, 1.8, 'virginica'),
-            Iris(6.4, 3.2, 4.5, 1.5, 'versicolor'),
-        ]
+        DATA = [Iris(5.1, 3.5, 1.4, 0.2, 'setosa'),
+                Iris(5.8, 2.7, 5.1, 1.9, 'virginica'),
+                Iris(5.1, 3.5, 1.4, 0.2, 'setosa'),
+                Iris(5.7, 2.8, 4.1, 1.3, 'versicolor'),
+                Iris(6.3, 2.9, 5.6, 1.8, 'virginica'),
+                Iris(6.4, 3.2, 4.5, 1.5, 'versicolor')]
 
 Serialization CSV Relations
 ---------------------------

@@ -90,30 +90,24 @@ Dict Values
 
 .. code-block:: python
 
-    data = [
-        {'Sepal length': 5.1, 'Sepal width': 3.5, 'Species': 'setosa'},
-        {'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
-        {'Sepal length': 6.3, 'Petal width': 1.8, 'Species': 'virginica'},
-        {'Sepal length': 5.0, 'Petal width': 0.2, 'Species': 'setosa'},
-        {'Sepal width': 2.8, 'Petal length': 4.1, 'Species': 'versicolor'},
-        {'Sepal width': 2.9, 'Petal width': 1.8, 'Species': 'virginica'},
-    ]
+    data = [{'Sepal length': 5.1, 'Sepal width': 3.5, 'Species': 'setosa'},
+            {'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
+            {'Sepal length': 6.3, 'Petal width': 1.8, 'Species': 'virginica'},
+            {'Sepal length': 5.0, 'Petal width': 0.2, 'Species': 'setosa'},
+            {'Sepal width': 2.8, 'Petal length': 4.1, 'Species': 'versicolor'},
+            {'Sepal width': 2.9, 'Petal width': 1.8, 'Species': 'virginica'}]
 
 .. code-block:: python
 
-    data = [
-        {'sepal_length': 5.4, 'sepal_width': 3.9, 'petal_length': 1.3, 'petal_width': 0.4, 'species': 'setosa'},
-        {'sepal_length': 5.9, 'sepal_width': 3.0, 'petal_length': 5.1, 'petal_width': 1.8, 'species': 'virginica'},
-        {'sepal_length': 6.0, 'sepal_width': 3.4, 'petal_length': 4.5, 'petal_width': 1.6, 'species': 'versicolor'},
-    ]
+    data = [{'sepal_length': 5.4, 'sepal_width': 3.9, 'petal_length': 1.3, 'petal_width': 0.4, 'species': 'setosa'},
+            {'sepal_length': 5.9, 'sepal_width': 3.0, 'petal_length': 5.1, 'petal_width': 1.8, 'species': 'virginica'},
+            {'sepal_length': 6.0, 'sepal_width': 3.4, 'petal_length': 4.5, 'petal_width': 1.6, 'species': 'versicolor'}]
 
 .. code-block:: python
 
-    data = [
-        {'measurements': [4.7, 3.2, 1.3, 0.2], 'species': 'setosa'},
-        {'measurements': [7.0, 3.2, 4.7, 1.4], 'species': 'versicolor'},
-        {'measurements': [7.6, 3.0, 6.6, 2.1], 'species': 'virginica'},
-    ]
+    data = [{'measurements': [4.7, 3.2, 1.3, 0.2], 'species': 'setosa'},
+            {'measurements': [7.0, 3.2, 4.7, 1.4], 'species': 'versicolor'},
+            {'measurements': [7.6, 3.0, 6.6, 2.1], 'species': 'virginica'}]
 
 
 List of Dicts
@@ -121,11 +115,9 @@ List of Dicts
 .. code-block:: python
     :caption: GetItem
 
-    data = [
-        {'measurements': [4.7, 3.2, 1.3, 0.2], 'species': 'setosa'},
-        {'measurements': [7.0, 3.2, 4.7, 1.4], 'species': 'versicolor'},
-        {'measurements': [7.6, 3.0, 6.6, 2.1], 'species': 'virginica'},
-    ]
+    data = [{'measurements': [4.7, 3.2, 1.3, 0.2], 'species': 'setosa'},
+            {'measurements': [7.0, 3.2, 4.7, 1.4], 'species': 'versicolor'},
+            {'measurements': [7.6, 3.0, 6.6, 2.1], 'species': 'virginica'}]
 
     data[0]
     # {'measurements': [4.7, 3.2, 1.3, 0.2], 'species': 'setosa')
@@ -154,11 +146,9 @@ List of Dicts
 .. code-block:: python
     :caption: Length
 
-    data = [
-        {'measurements': [4.7, 3.2, 1.3, 0.2], 'species': 'setosa'},
-        {'measurements': [7.0, 3.2, 4.7, 1.4], 'species': 'versicolor'},
-        {'measurements': [7.6, 3.0, 6.6, 2.1], 'species': 'virginica'},
-    ]
+    data = [{'measurements': [4.7, 3.2, 1.3, 0.2], 'species': 'setosa'},
+            {'measurements': [7.0, 3.2, 4.7, 1.4], 'species': 'versicolor'},
+            {'measurements': [7.6, 3.0, 6.6, 2.1], 'species': 'virginica'}]
 
     len(data)
     # 3

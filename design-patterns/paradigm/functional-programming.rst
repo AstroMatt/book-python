@@ -43,10 +43,8 @@ Example 2
 ---------
 .. code-block:: python
 
-    DATA = [
-        {'user': 'twardowski', 'uid': 1000},
-        {'user': 'root', 'uid': 0},
-    ]
+    DATA = [{'user': 'twardowski', 'uid': 1000},
+            {'user': 'root', 'uid': 0}]
 
     def is_system_user(data):
         if data['uid'] < 1000:
@@ -66,10 +64,8 @@ Example 2
 
 .. code-block:: python
 
-    DATA = [
-        {'user': 'twardowski', 'uid': 1000},
-        {'user': 'root', 'uid': 0},
-    ]
+    DATA = [{'user': 'twardowski', 'uid': 1000},
+            {'user': 'root', 'uid': 0}]
 
 
     result = filter(lambda x: x['uid'] < 1000, DATA)
@@ -173,11 +169,9 @@ Built-in functions
 ------------
 .. code-block:: python
 
-    DATA = [
-        {'name': 'Jan Twardowski', 'age': 21},
-        {'name': 'Mark Watney', 'age': 25},
-        {'name': 'Melissa Lewis', 'age': 18},
-    ]
+    DATA = [{'name': 'Jan Twardowski', 'age': 21},
+            {'name': 'Mark Watney', 'age': 25},
+            {'name': 'Melissa Lewis', 'age': 18}]
 
     def is_adult(person):
         if person['age'] >= 21:

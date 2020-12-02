@@ -20,11 +20,9 @@ List of Pairs
 =============
 .. code-block:: python
 
-    DATA = [
-        ('commander', 'Melissa Lewis'),
-        ('botanist', 'Mark Watney'),
-        ('chemist', 'Alex Vogel'),
-    ]
+    DATA = [('commander', 'Melissa Lewis'),
+            ('botanist', 'Mark Watney'),
+            ('chemist', 'Alex Vogel')]
 
     for role, name in DATA:
         print(f'{role} -> {name}')
@@ -38,11 +36,9 @@ List of Tuples
 ==============
 .. code-block:: python
 
-    DATA = [
-        (5.1, 3.5, 1.4, 0.2, 'setosa'),
-        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-        (6.3, 2.9, 5.6, 1.8, 'virginica'),
-    ]
+    DATA = [(5.1, 3.5, 1.4, 0.2, 'setosa'),
+            (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+            (6.3, 2.9, 5.6, 1.8, 'virginica')]
 
     for sepal_length, sepal_width, petal_length, petal_width, species in DATA:
         print(f'{species} -> {sepal_length}')
@@ -53,11 +49,9 @@ List of Tuples
 
 .. code-block:: python
 
-    DATA = [
-        (5.1, 3.5, 1.4, 0.2, 'setosa'),
-        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-        (6.3, 2.9, 5.6, 1.8, 'virginica'),
-    ]
+    DATA = [(5.1, 3.5, 1.4, 0.2, 'setosa'),
+            (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+            (6.3, 2.9, 5.6, 1.8, 'virginica')]
 
     for sl, sw, pl, pw, s in DATA:
         print(f'{s} -> {sl}')
@@ -78,11 +72,9 @@ Unpacking Assignment
 
 .. code-block:: python
 
-    DATA = [
-        (5.8, 2.7, 5.1, 1.9, 'virginica'),
-        (5.1, 3.5, 1.4, 0.2, 'setosa'),
-        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-    ]
+    DATA = [(5.8, 2.7, 5.1, 1.9, 'virginica'),
+            (5.1, 3.5, 1.4, 0.2, 'setosa'),
+            (5.7, 2.8, 4.1, 1.3, 'versicolor')]
 
     for *features, label in DATA:
         avg = sum(features) / len(features)
@@ -94,11 +86,9 @@ Unpacking Assignment
 
 .. code-block:: python
 
-    DATA = [
-        (5.8, 2.7, 5.1, 1.9, 'virginica'),
-        (5.1, 3.5, 1.4, 0.2, 'setosa'),
-        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-    ]
+    DATA = [(5.8, 2.7, 5.1, 1.9, 'virginica'),
+            (5.1, 3.5, 1.4, 0.2, 'setosa'),
+            (5.7, 2.8, 4.1, 1.3, 'versicolor')]
 
     for *X,y in DATA:
         avg = sum(X) / len(X)
@@ -113,11 +103,9 @@ Unused Values
 =============
 .. code-block:: python
 
-    DATA = [
-        (5.1, 3.5, 1.4, 0.2, 'setosa'),
-        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-        (6.3, 2.9, 5.6, 1.8, 'virginica'),
-    ]
+    DATA = [(5.1, 3.5, 1.4, 0.2, 'setosa'),
+            (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+            (6.3, 2.9, 5.6, 1.8, 'virginica')]
 
     for sepal_length, _, _, _, species in DATA:
         print(f'{species} -> {sepal_length}')
@@ -128,11 +116,9 @@ Unused Values
 
 .. code-block:: python
 
-    DATA = [
-        (5.8, 2.7, 5.1, 1.9, 'virginica'),
-        (5.1, 3.5, 1.4, 0.2, 'setosa'),
-        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-    ]
+    DATA = [(5.8, 2.7, 5.1, 1.9, 'virginica'),
+            (5.1, 3.5, 1.4, 0.2, 'setosa'),
+            (5.7, 2.8, 4.1, 1.3, 'versicolor')]
 
     for sepal_length, *_, species in DATA:
         print(f'{species} -> {sepal_length}')
@@ -146,13 +132,11 @@ Mixed
 =====
 .. code-block:: python
 
-    DATA = [
-        (1, 2),
-        ('name', 'Jan Twardowski'),
-        ('species', ['setosa', 'versicolor', 'virginica']),
-        ((1, 2), ['Johnson Space Center', 'Kennedy Space Center']),
-        (['NASA', 'ESA', 'Roscosmos'], 1),
-    ]
+    DATA = [(1, 2),
+            ('name', 'Jan Twardowski'),
+            ('species', ['setosa', 'versicolor', 'virginica']),
+            ((1, 2), ['Johnson Space Center', 'Kennedy Space Center']),
+            (['NASA', 'ESA', 'Roscosmos'], 1)]
 
     for first, second in DATA:
         print(f'{first} -> {second}')
@@ -214,11 +198,9 @@ Enumerate
 
 .. code-block:: python
 
-    DATA = [
-        (5.1, 3.5, 1.4, 0.2, 'setosa'),
-        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-        (6.3, 2.9, 5.6, 1.8, 'virginica'),
-    ]
+    DATA = [(5.1, 3.5, 1.4, 0.2, 'setosa'),
+            (5.7, 2.8, 4.1, 1.3, 'versicolor'),
+            (6.3, 2.9, 5.6, 1.8, 'virginica')]
 
     for i, row in enumerate(DATA):
         print(f'{i} -> {row}')
