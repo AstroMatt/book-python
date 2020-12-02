@@ -104,6 +104,10 @@ Serialization
 Assignments
 ===========
 
+.. literalinclude:: solution/oop_relations_syntax.py
+    :caption: :download:`Solution <solution/oop_relations_syntax.py>`
+    :end-before: # Solution
+
 .. literalinclude:: solution/oop_relations_model.py
     :caption: :download:`Solution <solution/oop_relations_model.py>`
     :end-before: # Solution
