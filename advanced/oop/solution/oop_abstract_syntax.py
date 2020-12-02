@@ -1,6 +1,6 @@
 """
-* Assignment: OOP Abstract Define
-* Filename: oop_abstract_define.py
+* Assignment: OOP Abstract Syntax
+* Filename: oop_abstract_syntax.py
 * Complexity: easy
 * Lines of code: 10 lines
 * Estimated time: 5 min

@@ -1,6 +1,6 @@
 """
-* Assignment: OOP Attribute Access Dict
-* Filename: oop_attribute_access_dict.py
+* Assignment: OOP Protected Dict
+* Filename: oop_protected_dict.py
 * Complexity: medium
 * Lines of code: 35 lines
 * Estimated time: 21 min

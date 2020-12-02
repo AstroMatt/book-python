@@ -1,6 +1,6 @@
 """
-* Assignment: OOP Attribute Access Modifiers
-* Filename: oop_attribute_access_modifiers.py
+* Assignment: OOP Access Protected
+* Filename: oop_access_protected.py
 * Complexity: easy
 * Lines of code: 11 lines
 * Estimated time: 8 min

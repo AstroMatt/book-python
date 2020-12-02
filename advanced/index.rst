@@ -83,12 +83,12 @@ Object Oriented Programming
 
     oop/mutability.rst
     oop/dataclass.rst
-    oop/static-dynamic.rst
-    oop/protected.rst
+    oop/staticattrs.rst
+    oop/access.rst
     oop/overload.rst
     oop/composition.rst
     oop/relations.rst
-    oop/abstract-class.rst
+    oop/abstract.rst
     oop/identity.rst
     oop/constructor.rst
     oop/solid.rst

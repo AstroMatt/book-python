@@ -329,6 +329,10 @@ Use Cases
 Assignments
 ===========
 
+.. literalinclude:: solution/oop_constructor_syntax.py
+    :caption: :download:`Solution <solution/oop_constructor_syntax.py>`
+    :end-before: # Solution
+
 .. literalinclude:: solution/oop_constructor_passwd.py
     :caption: :download:`Solution <solution/oop_constructor_passwd.py>`
     :end-before: # Solution

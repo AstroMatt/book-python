@@ -24,15 +24,33 @@ Rationale
         Static method which must be implemented in a subclass
 
 
+Syntax
+======
+* New class ``ABC`` has ``ABCMeta`` as its meta class.
+* Using ``ABC`` as a base class has essentially the same effect as specifying ``metaclass=abc.ABCMeta``, but is simpler to type and easier to read.
+* ``abc.ABC`` basically just an extra layer over ``metaclass=abc.ABCMeta``
+* ``abc.ABC`` implicitly defines the metaclass for you
+
+.. code-block:: python
+
+    from abc import ABCMeta, abstractmethod
+
+
+    class MyClass(metaclass=ABCMeta):
+
+        @abstractmethod
+        def mymethod(self):
+            pass
+
+
 Example
 =======
 .. code-block:: python
 
-    from abc import ABC, abstractmethod
+    from abc import ABCMeta, abstractmethod
 
 
-    class Astronaut(ABC):
-
+    class Astronaut(metaclass=ABCMeta):
         @abstractmethod
         def say_hello(self):
             pass
@@ -44,11 +62,10 @@ Example
 
 .. code-block:: python
 
-    from abc import ABCMeta, abstractmethod
+    from abc import ABC, abstractmethod
 
 
-    class Astronaut(metaclass=ABCMeta):
-
+    class Astronaut(ABC):
         @abstractmethod
         def say_hello(self):
             pass
@@ -66,8 +83,10 @@ Errors
 
     from abc import ABC
 
+
     class Astronaut(ABC):
         pass
+
 
     astro = Astronaut()
     print('no errors')
@@ -78,8 +97,10 @@ Errors
 
     from abc import ABCMeta
 
+
     class Astronaut(metaclass=ABCMeta):
         pass
+
 
     astro = Astronaut()
     print('no errors')
@@ -90,10 +111,12 @@ Errors
 
     from abc import ABCMeta, abstractmethod
 
+
     class Human(metaclass=ABCMeta):
         @abstractmethod
         def say_hello(self):
             pass
+
 
     class Astronaut(Human):
         pass
@@ -111,26 +134,21 @@ Errors
 
 
     sys.modules['abc']
-    # <module 'abc' from '/usr/local/Cellar/python@3.8/3.8.3/Frameworks/Python.framework/Versions/3.8/lib/python3.8/abc.py'>
+    # <module 'abc' from '/usr/local/Cellar/python@3.9/3.9.0/Frameworks/Python.framework/Versions/3.9/lib/python3.9/abc.py'>
 
     pprint(sys.path)
-    # ['/Users/matt/Developer/book-python/advanced/oop/solution',
-    #   '/Applications/PyCharm 2020.2 EAP.app/Contents/plugins/python/helpers/pydev',
-    #   '/Users/matt/Developer/book-python',
-    #   '/Users/matt/Developer/book-python/_tmp',
-    #   '/Applications/PyCharm 2020.2 '
-    #   'EAP.app/Contents/plugins/python/helpers/pycharm_display',
-    #   '/Applications/PyCharm 2020.2 '
-    #   'EAP.app/Contents/plugins/python/helpers/third_party/thriftpy',
-    #   '/Applications/PyCharm 2020.2 EAP.app/Contents/plugins/python/helpers/pydev',
-    #   '/usr/local/Cellar/python@3.8/3.8.3/Frameworks/Python.framework/Versions/3.8/lib/python38.zip',
-    #   '/usr/local/Cellar/python@3.8/3.8.3/Frameworks/Python.framework/Versions/3.8/lib/python3.8',
-    #   '/usr/local/Cellar/python@3.8/3.8.3/Frameworks/Python.framework/Versions/3.8/lib/python3.8/lib-dynload',
-    #   '/Users/matt/Developer/book-python/.venv-3.8.3/lib/python3.8/site-packages',
-    #   '/Applications/PyCharm 2020.2 '
-    #   'EAP.app/Contents/plugins/python/helpers/pycharm_matplotlib_backend',
-    #   '/Users/matt/Developer/book-python',
-    #   '/Users/matt/Developer/book-python/_tmp']
+    # ['/Applications/PyCharm 2020.3 EAP.app/Contents/plugins/python/helpers/pydev',
+    #  '/Users/watney/book-python',
+    #  '/Applications/PyCharm 2020.3 EAP.app/Contents/plugins/python/helpers/pycharm_display',
+    #  '/Applications/PyCharm 2020.3 EAP.app/Contents/plugins/python/helpers/third_party/thriftpy',
+    #  '/Applications/PyCharm 2020.3 EAP.app/Contents/plugins/python/helpers/pydev',
+    #  '/usr/local/Cellar/python@3.9/3.9.0/Frameworks/Python.framework/Versions/3.9/lib/python39.zip',
+    #  '/usr/local/Cellar/python@3.9/3.9.0/Frameworks/Python.framework/Versions/3.9/lib/python3.9',
+    #  '/usr/local/Cellar/python@3.9/3.9.0/Frameworks/Python.framework/Versions/3.9/lib/python3.9/lib-dynload',
+    #  '/Users/watney/.virtualenvs/python-3.9/lib/python3.9/site-packages',
+    #  '/Applications/PyCharm 2020.3 EAP.app/Contents/plugins/python/helpers/pycharm_matplotlib_backend',
+    #  '/Users/watney/book-python',
+    #  '/Users/watney/book-python/_tmp']
 
 
 Use Cases
@@ -142,16 +160,13 @@ Use Cases
 
 
     class Document(ABC):
-        def __init__(self, filename):
-            self.filename = filename
-            self.content = self._read_file_content(filename)
-
-        def _read_file_content(self):
-            with open(self.filename, mode='rb') as file:
-                return file.read()
+        def __init__(self, file):
+            with open(file, mode='rb') as file:
+                self.file = file
+                self.content = file.read()
 
         @abstractmethod
-        def display(self, content):
+        def display(self):
             pass
 
 
@@ -175,8 +190,8 @@ Use Cases
 Assignments
 ===========
 
-.. literalinclude:: solution/oop_abstract_define.py
-    :caption: :download:`Solution <solution/oop_abstract_define.py>`
+.. literalinclude:: solution/oop_abstract_syntax.py
+    :caption: :download:`Solution <solution/oop_abstract_syntax.py>`
     :end-before: # Solution
 
 .. literalinclude:: solution/oop_abstract_interface.py

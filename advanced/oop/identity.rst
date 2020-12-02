@@ -7,15 +7,15 @@ Object Identity
 
 Rationale
 =========
+* ``=`` assignment
 * ``==`` checks for object equality
 * ``is`` checks for object identity
 
 .. code-block:: python
 
     found = True
-
-    found is True
     found == True
+    found is True
 
 
 Identity
@@ -35,29 +35,6 @@ Identity
     # '0x10c336cb0'
 
 
-Compare Value and Identity
-==========================
-.. code-block:: python
-
-    >>> a = 'Mark Watney'
-    >>> b = 'Mark Watney'
-
-    >>> a == b
-    True
-    >>> a is b
-    False
-
-.. code-block:: python
-
-    >>> a = 'Mark Watney'
-    ... b = 'Mark Watney'
-
-    >>> a == b
-    True
-    >>> a is b
-    True
-
-
 Value Comparison
 ================
 * ``==`` checks for object equality
@@ -67,13 +44,20 @@ Value Comparison
     'Mark Watney' == 'Mark Watney'
     # True
 
+.. code-block:: python
+
+    a = 'Mark Watney'
+    b = 'Mark Watney'
+
+    a == b
+    # True
+
 
 Identity Check
 ==============
 * ``is`` checks for object identity
-* Compares ``id()`` output for both objects
+* ``is`` compares ``id()`` output for both objects
 * CPython: compares the memory address a object resides in
-* Is used for checking if ``None``
 * Testing strings with ``is`` only works when the strings are interned
 
 .. versionchanged:: Python 3.8
@@ -87,12 +71,85 @@ Identity Check
 
 .. code-block:: python
 
+    a = 'Mark Watney'
+    b = 'Mark Watney'
+
+    a is b
+
+.. code-block:: python
+
     name = None
 
-    if name is None:
-        print('Your name is empty')
-    else:
-        print(f'Hello {name}')
+    name is None
+    name is True
+    name is False
+
+.. code-block:: python
+
+    name = None
+
+    type(name) is int
+    type(name) is float
+    type(name) is complex
+    type(name) is bool
+    type(name) is None
+    type(name) is str
+    type(name) is bytes
+    type(name) is list
+    type(name) is tuple
+    type(name) is set
+    type(name) is frozenset
+    type(name) is dict
+
+
+Problem
+=======
+.. code-block:: python
+
+    'Mark Watney' is 'Mark Watney'
+    # True
+
+.. code-block:: python
+
+    >>> a = 'Mark Watney'
+    ... b = 'Mark Watney'
+
+    >>> a == b
+    True
+
+    >>> a is b
+    True
+
+.. code-block:: python
+
+    >>> a = 'Mark Watney'
+    >>> b = 'Mark Watney'
+
+    >>> a == b
+    True
+
+    >>> a is b
+    False
+
+
+Compare Value and Identity
+==========================
+.. code-block:: python
+
+    name = 'Mark Watney'
+    expected = 'Mark Watney'
+
+    name == expected
+    # True
+
+    name is expected
+    # False
+
+    name == 'Mark Watney'
+    # True
+
+    name is 'Mark Watney'
+    # False
 
 
 Assignments

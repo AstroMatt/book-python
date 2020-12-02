@@ -1,8 +1,8 @@
-.. _OOP Protected:
+.. _OOP Access:
 
-*********
-Protected
-*********
+******
+Access
+******
 
 
 Rationale
@@ -247,10 +247,10 @@ System Method
 Assignments
 ===========
 
-.. literalinclude:: solution/oop_protected_modifiers.py
-    :caption: :download:`Solution <solution/oop_protected_modifiers.py>`
+.. literalinclude:: solution/oop_access_protected.py
+    :caption: :download:`Solution <solution/oop_access_protected.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/oop_protected_dict.py
-    :caption: :download:`Solution <solution/oop_protected_dict.py>`
+.. literalinclude:: solution/oop_access_dict.py
+    :caption: :download:`Solution <solution/oop_access_dict.py>`
     :end-before: # Solution
