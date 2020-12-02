@@ -203,10 +203,10 @@ Examples
 Assignments
 ===========
 
-.. literalinclude:: solution/oop_method_sequence.py
-    :caption: :download:`Solution <solution/oop_method_sequence.py>`
+.. literalinclude:: assignments/oop_method_sequence.py
+    :caption: :download:`Solution <assignments/oop_method_sequence.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/oop_method_nested.py
-    :caption: :download:`Solution <solution/oop_method_nested.py>`
+.. literalinclude:: assignments/oop_method_nested.py
+    :caption: :download:`Solution <assignments/oop_method_nested.py>`
     :end-before: # Solution

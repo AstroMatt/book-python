@@ -131,35 +131,35 @@ Examples
 Assignments
 ===========
 
-.. literalinclude:: solution/function_args_sequence.py
-    :caption: :download:`Solution <solution/function_args_sequence.py>`
+.. literalinclude:: assignments/function_args_sequence.py
+    :caption: :download:`Solution <assignments/function_args_sequence.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_args_divide.py
-    :caption: :download:`Solution <solution/function_args_divide.py>`
+.. literalinclude:: assignments/function_args_divide.py
+    :caption: :download:`Solution <assignments/function_args_divide.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_args_power.py
-    :caption: :download:`Solution <solution/function_args_power.py>`
+.. literalinclude:: assignments/function_args_power.py
+    :caption: :download:`Solution <assignments/function_args_power.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_args_power.py
-    :caption: :download:`Solution <solution/function_args_power.py>`
+.. literalinclude:: assignments/function_args_power.py
+    :caption: :download:`Solution <assignments/function_args_power.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_args_translate.py
-    :caption: :download:`Solution <solution/function_args_translate.py>`
+.. literalinclude:: assignments/function_args_translate.py
+    :caption: :download:`Solution <assignments/function_args_translate.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_args_clean.py
-    :caption: :download:`Solution <solution/function_args_clean.py>`
+.. literalinclude:: assignments/function_args_clean.py
+    :caption: :download:`Solution <assignments/function_args_clean.py>`
     :end-before: # Solution
     :name: Function Arguments Clean
 
-.. literalinclude:: solution/function_args_numstr.py
-    :caption: :download:`Solution <solution/function_args_numstr.py>`
+.. literalinclude:: assignments/function_args_numstr.py
+    :caption: :download:`Solution <assignments/function_args_numstr.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_args_numhuman.py
-    :caption: :download:`Solution <solution/function_args_numhuman.py>`
+.. literalinclude:: assignments/function_args_numhuman.py
+    :caption: :download:`Solution <assignments/function_args_numhuman.py>`
     :end-before: # Solution

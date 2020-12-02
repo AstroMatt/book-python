@@ -163,22 +163,22 @@ Examples
 Assignments
 ===========
 
-.. literalinclude:: solution/file_read_str.py
-    :caption: :download:`Solution <solution/file_read_str.py>`
+.. literalinclude:: assignments/file_read_str.py
+    :caption: :download:`Solution <assignments/file_read_str.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/file_read_multiline.py
-    :caption: :download:`Solution <solution/file_read_multiline.py>`
+.. literalinclude:: assignments/file_read_multiline.py
+    :caption: :download:`Solution <assignments/file_read_multiline.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/file_read_csv.py
-    :caption: :download:`Solution <solution/file_read_csv.py>`
+.. literalinclude:: assignments/file_read_csv.py
+    :caption: :download:`Solution <assignments/file_read_csv.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/file_read_dict.py
-    :caption: :download:`Solution <solution/file_read_dict.py>`
+.. literalinclude:: assignments/file_read_dict.py
+    :caption: :download:`Solution <assignments/file_read_dict.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/file_read_listdict.py
-    :caption: :download:`Solution <solution/file_read_listdict.py>`
+.. literalinclude:: assignments/file_read_listdict.py
+    :caption: :download:`Solution <assignments/file_read_listdict.py>`
     :end-before: # Solution

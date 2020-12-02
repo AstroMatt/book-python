@@ -148,6 +148,6 @@ Negation
 Assignments
 ===========
 
-.. literalinclude:: solution/controlflow_conditional_expression.py
-    :caption: :download:`Solution <solution/controlflow_conditional_expression.py>`
+.. literalinclude:: assignments/controlflow_conditional_expression.py
+    :caption: :download:`Solution <assignments/controlflow_conditional_expression.py>`
     :end-before: # Solution

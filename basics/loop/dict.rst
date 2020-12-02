@@ -239,14 +239,14 @@ Generate with Zip
 Assignments
 ===========
 
-.. literalinclude:: solution/loop_dict_to_dict.py
-    :caption: :download:`Solution <solution/loop_dict_to_dict.py>`
+.. literalinclude:: assignments/loop_dict_to_dict.py
+    :caption: :download:`Solution <assignments/loop_dict_to_dict.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/loop_dict_to_list.py
-    :caption: :download:`Solution <solution/loop_dict_to_list.py>`
+.. literalinclude:: assignments/loop_dict_to_list.py
+    :caption: :download:`Solution <assignments/loop_dict_to_list.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/loop_dict_label_encoder.py
-    :caption: :download:`Solution <solution/loop_dict_label_encoder.py>`
+.. literalinclude:: assignments/loop_dict_label_encoder.py
+    :caption: :download:`Solution <assignments/loop_dict_label_encoder.py>`
     :end-before: # Solution

@@ -342,7 +342,7 @@ Iris transformations
 * Complexity: medium
 * Lines of code: 20 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/matplotlib_lifecycle.py`
+* Filename: :download:`assignments/matplotlib_lifecycle.py`
 
 English:
     .. todo:: English Translation

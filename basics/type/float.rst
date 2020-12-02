@@ -146,28 +146,28 @@ Built-in Functions
 Assignments
 ===========
 
-.. literalinclude:: solution/type_float_tax.py
-    :caption: :download:`Solution <solution/type_float_tax.py>`
+.. literalinclude:: assignments/type_float_tax.py
+    :caption: :download:`Solution <assignments/type_float_tax.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/type_float_altitude.py
-    :caption: :download:`Solution <solution/type_float_altitude.py>`
+.. literalinclude:: assignments/type_float_altitude.py
+    :caption: :download:`Solution <assignments/type_float_altitude.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/type_float_volume.py
-    :caption: :download:`Solution <solution/type_float_volume.py>`
+.. literalinclude:: assignments/type_float_volume.py
+    :caption: :download:`Solution <assignments/type_float_volume.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/type_float_distance.py
-    :caption: :download:`Solution <solution/type_float_distance.py>`
+.. literalinclude:: assignments/type_float_distance.py
+    :caption: :download:`Solution <assignments/type_float_distance.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/type_float_velocity.py
-    :caption: :download:`Solution <solution/type_float_velocity.py>`
+.. literalinclude:: assignments/type_float_velocity.py
+    :caption: :download:`Solution <assignments/type_float_velocity.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/type_float_pressure.py
-    :caption: :download:`Solution <solution/type_float_pressure.py>`
+.. literalinclude:: assignments/type_float_pressure.py
+    :caption: :download:`Solution <assignments/type_float_pressure.py>`
     :end-before: # Solution
 
 .. figure:: img/spacesuits.png
@@ -176,10 +176,10 @@ Assignments
 
     EMU and Orlan
 
-.. literalinclude:: solution/type_float_percent.py
-    :caption: :download:`Solution <solution/type_float_percent.py>`
+.. literalinclude:: assignments/type_float_percent.py
+    :caption: :download:`Solution <assignments/type_float_percent.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/type_float_gradient.py
-    :caption: :download:`Solution <solution/type_float_gradient.py>`
+.. literalinclude:: assignments/type_float_gradient.py
+    :caption: :download:`Solution <assignments/type_float_gradient.py>`
     :end-before: # Solution

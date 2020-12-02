@@ -183,10 +183,10 @@ Mixed
 Assignments
 ===========
 
-.. literalinclude:: solution/loop_nested_mean.py
-    :caption: :download:`Solution <solution/loop_nested_mean.py>`
+.. literalinclude:: assignments/loop_nested_mean.py
+    :caption: :download:`Solution <assignments/loop_nested_mean.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/loop_nested_unique_keys.py
-    :caption: :download:`Solution <solution/loop_nested_unique_keys.py>`
+.. literalinclude:: assignments/loop_nested_unique_keys.py
+    :caption: :download:`Solution <assignments/loop_nested_unique_keys.py>`
     :end-before: # Solution

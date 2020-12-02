@@ -269,10 +269,10 @@ Good practices
 Assignments
 ===========
 
-.. literalinclude:: solution/about_print.py
-    :caption: :download:`solution/about_print.py`
+.. literalinclude:: assignments/about_print.py
+    :caption: :download:`assignments/about_print.py`
     :end-before: # Solution
 
-.. literalinclude:: solution/about_syntax.py
-    :caption: :download:`solution/about_syntax.py`
+.. literalinclude:: assignments/about_syntax.py
+    :caption: :download:`assignments/about_syntax.py`
     :end-before: # Solution

@@ -249,6 +249,6 @@ Further Reading
 Assignments
 ===========
 
-.. literalinclude:: solution/optimization_memoize.py
-    :caption: :download:`Solution <solution/optimization_memoize.py>`
+.. literalinclude:: assignments/optimization_memoize.py
+    :caption: :download:`Solution <assignments/optimization_memoize.py>`
     :end-before: # Solution

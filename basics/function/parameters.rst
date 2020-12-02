@@ -189,14 +189,14 @@ Examples
 Assignments
 ===========
 
-.. literalinclude:: solution/function_parameters_sequence.py
-    :caption: :download:`Solution <solution/function_parameters_sequence.py>`
+.. literalinclude:: assignments/function_parameters_sequence.py
+    :caption: :download:`Solution <assignments/function_parameters_sequence.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_parameters_echo.py
-    :caption: :download:`Solution <solution/function_parameters_echo.py>`
+.. literalinclude:: assignments/function_parameters_echo.py
+    :caption: :download:`Solution <assignments/function_parameters_echo.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_parameters_default.py
-    :caption: :download:`Solution <solution/function_parameters_default.py>`
+.. literalinclude:: assignments/function_parameters_default.py
+    :caption: :download:`Solution <assignments/function_parameters_default.py>`
     :end-before: # Solution

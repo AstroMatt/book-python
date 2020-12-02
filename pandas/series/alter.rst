@@ -85,7 +85,7 @@ Series Alter
 * Complexity: easy
 * Lines of code: 10 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/series_alter.py`
+* Filename: :download:`assignments/series_alter.py`
 
 English:
     #. Use data from "Given" section (see below)

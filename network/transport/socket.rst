@@ -134,7 +134,7 @@ Heartbeat
 * Complexity: medium
 * Lines of code: 20 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/socket_heartbeat_client.py` and :download:`solution/socket_heartbeat_server.py`
+* Filename: :download:`assignments/socket_heartbeat_client.py` and :download:`assignments/socket_heartbeat_server.py`
 
 English:
     .. todo:: English Translation
@@ -163,7 +163,7 @@ Backdoor
 * Complexity: medium
 * Lines of code: 150 lines
 * Estimated time: 34 min
-* Filename: :download:`solution/socket_backdoor.py`
+* Filename: :download:`assignments/socket_backdoor.py`
 
 English:
     .. todo:: English Translation

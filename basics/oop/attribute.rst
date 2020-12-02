@@ -210,6 +210,6 @@ Get All Dynamic Attributes and Values
 Assignments
 ===========
 
-.. literalinclude:: solution/oop_attribute_model.py
-    :caption: :download:`Solution <solution/oop_attribute_model.py>`
+.. literalinclude:: assignments/oop_attribute_model.py
+    :caption: :download:`Solution <assignments/oop_attribute_model.py>`
     :end-before: # Solution

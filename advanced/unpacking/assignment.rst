@@ -311,14 +311,14 @@ Using in a Loop
 Assignments
 ===========
 
-.. literalinclude:: solution/unpacking_assignment_nested.py
-    :caption: :download:`Solution <solution/unpacking_assignment_nested.py>`
+.. literalinclude:: assignments/unpacking_assignment_nested.py
+    :caption: :download:`Solution <assignments/unpacking_assignment_nested.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/unpacking_assignment_flat.py
-    :caption: :download:`Solution <solution/unpacking_assignment_flat.py>`
+.. literalinclude:: assignments/unpacking_assignment_flat.py
+    :caption: :download:`Solution <assignments/unpacking_assignment_flat.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/unpacking_assignment_loop.py
-    :caption: :download:`Solution <solution/unpacking_assignment_loop.py>`
+.. literalinclude:: assignments/unpacking_assignment_loop.py
+    :caption: :download:`Solution <assignments/unpacking_assignment_loop.py>`
     :end-before: # Solution

@@ -367,7 +367,7 @@ DataFrame Statistics
 * Complexity: medium
 * Lines of code: 15 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/df_statistics_cars.py`
+* Filename: :download:`assignments/df_statistics_cars.py`
 
 English:
     .. todo:: English Translation

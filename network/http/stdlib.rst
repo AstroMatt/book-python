@@ -394,7 +394,7 @@ REST API
 * Complexity: medium
 * Lines of code: 60 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/http_github.py`
+* Filename: :download:`assignments/http_github.py`
 
 English:
     .. todo:: English Translation

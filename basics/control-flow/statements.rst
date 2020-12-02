@@ -540,6 +540,6 @@ Pattern Matching
 Assignments
 ===========
 
-.. literalinclude:: solution/controlflow_conditional_statements.py
-    :caption: :download:`Solution <solution/controlflow_conditional_statements.py>`
+.. literalinclude:: assignments/controlflow_conditional_statements.py
+    :caption: :download:`Solution <assignments/controlflow_conditional_statements.py>`
     :end-before: # Solution

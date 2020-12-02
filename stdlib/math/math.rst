@@ -233,7 +233,7 @@ Trigonometry
 * Complexity: easy
 * Lines of code: 10 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/math_trigonometry.py`
+* Filename: :download:`assignments/math_trigonometry.py`
 
 English:
     #. Read input (angle in degrees) from user
@@ -257,7 +257,7 @@ Euclidean distance 2D
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/math_euclidean_2d.py`
+* Filename: :download:`assignments/math_euclidean_2d.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -319,7 +319,7 @@ Euclidean distance ``n`` dimensions
 * Complexity: easy
 * Lines of code: 10 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/math_euclidean_multi_dim.py`
+* Filename: :download:`assignments/math_euclidean_multi_dim.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -378,7 +378,7 @@ Matrix multiplication
 * Complexity: hard
 * Lines of code: 6 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/math_matmul.py`
+* Filename: :download:`assignments/math_matmul.py`
 
 English:
     #. Use code from "Input" section (see below)
@@ -418,7 +418,7 @@ Triangle
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/math_triangle.py`
+* Filename: :download:`assignments/math_triangle.py`
 
 English:
     #. Calculate triangle area

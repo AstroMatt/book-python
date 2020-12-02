@@ -190,7 +190,7 @@ Numpy Polyfit
 * Complexity: easy
 * Lines of code: 4 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/numpy_polyfit.py`
+* Filename: :download:`assignments/numpy_polyfit.py`
 
 English:
     #. Use data from "Given" section (see below)

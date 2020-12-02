@@ -298,18 +298,18 @@ Format
 Assignments
 ===========
 
-.. literalinclude:: solution/oop_stringify_str.py
-    :caption: :download:`Solution <solution/oop_stringify_str.py>`
+.. literalinclude:: assignments/oop_stringify_str.py
+    :caption: :download:`Solution <assignments/oop_stringify_str.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/oop_stringify_repr.py
-    :caption: :download:`Solution <solution/oop_stringify_repr.py>`
+.. literalinclude:: assignments/oop_stringify_repr.py
+    :caption: :download:`Solution <assignments/oop_stringify_repr.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/oop_stringify_format.py
-    :caption: :download:`Solution <solution/oop_stringify_format.py>`
+.. literalinclude:: assignments/oop_stringify_format.py
+    :caption: :download:`Solution <assignments/oop_stringify_format.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/oop_stringify_nested.py
-    :caption: :download:`Solution <solution/oop_stringify_nested.py>`
+.. literalinclude:: assignments/oop_stringify_nested.py
+    :caption: :download:`Solution <assignments/oop_stringify_nested.py>`
     :end-before: # Solution

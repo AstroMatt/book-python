@@ -259,10 +259,10 @@ Script Path
 Assignments
 ===========
 
-.. literalinclude:: solution/file_path_exception.py
-    :caption: :download:`Solution <solution/file_path_exception.py>`
+.. literalinclude:: assignments/file_path_exception.py
+    :caption: :download:`Solution <assignments/file_path_exception.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/file_path_abspath.py
-    :caption: :download:`Solution <solution/file_path_abspath.py>`
+.. literalinclude:: assignments/file_path_abspath.py
+    :caption: :download:`Solution <assignments/file_path_abspath.py>`
     :end-before: # Solution

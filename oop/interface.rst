@@ -129,7 +129,7 @@ OOP Interface Define
 * Complexity: easy
 * Lines of code: 13 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/oop_interface_define.py`
+* Filename: :download:`assignments/oop_interface_define.py`
 
 English:
     #. Define interface ``IrisInterface``
@@ -166,7 +166,7 @@ OOP Interface Implement
 * Complexity: easy
 * Lines of code: 12 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/oop_interface_implement.py`
+* Filename: :download:`assignments/oop_interface_implement.py`
 
 English:
     #. Use data from "Given" section (see below)

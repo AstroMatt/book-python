@@ -256,10 +256,10 @@ Use Cases
 Assignments
 ===========
 
-.. literalinclude:: solution/sequence_unpack_nested.py
-    :caption: :download:`Solution <solution/sequence_unpack_nested.py>`
+.. literalinclude:: assignments/sequence_unpack_nested.py
+    :caption: :download:`Solution <assignments/sequence_unpack_nested.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/sequence_unpack_split.py
-    :caption: :download:`Solution <solution/sequence_unpack_split.py>`
+.. literalinclude:: assignments/sequence_unpack_split.py
+    :caption: :download:`Solution <assignments/sequence_unpack_split.py>`
     :end-before: # Solution

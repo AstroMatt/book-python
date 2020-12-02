@@ -325,7 +325,7 @@ DataFrame Mapping Split
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/df_mapping_split.py`
+* Filename: :download:`assignments/df_mapping_split.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -354,7 +354,7 @@ DataFrame Mapping Translate
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/df_mapping_translate.py`
+* Filename: :download:`assignments/df_mapping_translate.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -399,7 +399,7 @@ DataFrame Mapping Month
 * Complexity: easy
 * Lines of code: 10 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/df_mapping_month.py`
+* Filename: :download:`assignments/df_mapping_month.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -438,7 +438,7 @@ DataFrame Mapping Substitute
 * Complexity: medium
 * Lines of code: 10 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/df_mapping_substitute.py`
+* Filename: :download:`assignments/df_mapping_substitute.py`
 
 English:
     #. Use data from "Given" section (see below)

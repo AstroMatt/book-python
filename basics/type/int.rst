@@ -100,34 +100,34 @@ Type Checking
 Assignments
 ===========
 
-.. literalinclude:: solution/type_int_add.py
-    :caption: :download:`Solution <solution/type_int_add.py>`
+.. literalinclude:: assignments/type_int_add.py
+    :caption: :download:`Solution <assignments/type_int_add.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/type_int_sub.py
-    :caption: :download:`Solution <solution/type_int_sub.py>`
+.. literalinclude:: assignments/type_int_sub.py
+    :caption: :download:`Solution <assignments/type_int_sub.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/type_int_mul.py
-    :caption: :download:`Solution <solution/type_int_mul.py>`
+.. literalinclude:: assignments/type_int_mul.py
+    :caption: :download:`Solution <assignments/type_int_mul.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/type_int_truediv.py
-    :caption: :download:`Solution <solution/type_int_truediv.py>`
+.. literalinclude:: assignments/type_int_truediv.py
+    :caption: :download:`Solution <assignments/type_int_truediv.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/type_int_time.py
-    :caption: :download:`Solution <solution/type_int_time.py>`
+.. literalinclude:: assignments/type_int_time.py
+    :caption: :download:`Solution <assignments/type_int_time.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/type_int_bits.py
-    :caption: :download:`Solution <solution/type_int_bits.py>`
+.. literalinclude:: assignments/type_int_bits.py
+    :caption: :download:`Solution <assignments/type_int_bits.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/type_int_bytes.py
-    :caption: :download:`Solution <solution/type_int_bytes.py>`
+.. literalinclude:: assignments/type_int_bytes.py
+    :caption: :download:`Solution <assignments/type_int_bytes.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/type_int_bandwidth.py
-    :caption: :download:`Solution <solution/type_int_bandwidth.py>`
+.. literalinclude:: assignments/type_int_bandwidth.py
+    :caption: :download:`Solution <assignments/type_int_bandwidth.py>`
     :end-before: # Solution

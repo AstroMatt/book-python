@@ -373,7 +373,7 @@ Numpy Create Arange
 * Complexity: easy
 * Lines of code: 1 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/numpy_create_arange.py`
+* Filename: :download:`assignments/numpy_create_arange.py`
 
 English:
     #. Create ``a: np.ndarray`` with even numbers from 0 to 100 (without 100)

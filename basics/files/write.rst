@@ -113,26 +113,26 @@ Reading From One File and Writing to Another
 Assignments
 ===========
 
-.. literalinclude:: solution/file_write_str.py
-    :caption: :download:`Solution <solution/file_write_str.py>`
+.. literalinclude:: assignments/file_write_str.py
+    :caption: :download:`Solution <assignments/file_write_str.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/file_write_multiline.py
-    :caption: :download:`Solution <solution/file_write_multiline.py>`
+.. literalinclude:: assignments/file_write_multiline.py
+    :caption: :download:`Solution <assignments/file_write_multiline.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/file_write_list.py
-    :caption: :download:`Solution <solution/file_write_list.py>`
+.. literalinclude:: assignments/file_write_list.py
+    :caption: :download:`Solution <assignments/file_write_list.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/file_write_nonstr.py
-    :caption: :download:`Solution <solution/file_write_nonstr.py>`
+.. literalinclude:: assignments/file_write_nonstr.py
+    :caption: :download:`Solution <assignments/file_write_nonstr.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/file_write_iris.py
-    :caption: :download:`Solution <solution/file_write_iris.py>`
+.. literalinclude:: assignments/file_write_iris.py
+    :caption: :download:`Solution <assignments/file_write_iris.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/file_write_csv.py
-    :caption: :download:`Solution <solution/file_write_csv.py>`
+.. literalinclude:: assignments/file_write_csv.py
+    :caption: :download:`Solution <assignments/file_write_csv.py>`
     :end-before: # Solution

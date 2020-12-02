@@ -190,10 +190,10 @@ Use Cases
 Assignments
 ===========
 
-.. literalinclude:: solution/oop_abstract_syntax.py
-    :caption: :download:`Solution <solution/oop_abstract_syntax.py>`
+.. literalinclude:: assignments/oop_abstract_syntax.py
+    :caption: :download:`Solution <assignments/oop_abstract_syntax.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/oop_abstract_interface.py
-    :caption: :download:`Solution <solution/oop_abstract_interface.py>`
+.. literalinclude:: assignments/oop_abstract_interface.py
+    :caption: :download:`Solution <assignments/oop_abstract_interface.py>`
     :end-before: # Solution

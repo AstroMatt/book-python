@@ -437,14 +437,14 @@ Examples
 Assignments
 ===========
 
-.. literalinclude:: solution/function_doctest_temperature.py
-    :caption: :download:`Solution <solution/function_doctest_temperature.py>`
+.. literalinclude:: assignments/function_doctest_temperature.py
+    :caption: :download:`Solution <assignments/function_doctest_temperature.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_doctest_distance.py
-    :caption: :download:`Solution <solution/function_doctest_distance.py>`
+.. literalinclude:: assignments/function_doctest_distance.py
+    :caption: :download:`Solution <assignments/function_doctest_distance.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_doctest_regexp.py
-    :caption: :download:`Solution <solution/function_doctest_regexp.py>`
+.. literalinclude:: assignments/function_doctest_regexp.py
+    :caption: :download:`Solution <assignments/function_doctest_regexp.py>`
     :end-before: # Solution

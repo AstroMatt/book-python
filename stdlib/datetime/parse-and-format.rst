@@ -332,7 +332,7 @@ Datetime Parse ISO
 * Complexity: easy
 * Lines of code: 1 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/datetime_parse_iso.py`
+* Filename: :download:`assignments/datetime_parse_iso.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -356,7 +356,7 @@ Datetime Parse Local
 * Complexity: easy
 * Lines of code: 3 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/datetime_parse_local.py`
+* Filename: :download:`assignments/datetime_parse_local.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -394,7 +394,7 @@ Datetime Parse US
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/datetime_parse_us.py`
+* Filename: :download:`assignments/datetime_parse_us.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -438,7 +438,7 @@ Datetime Parse Logs
 * Complexity: medium
 * Lines of code: 15 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/datetime_parse_logs.py`
+* Filename: :download:`assignments/datetime_parse_logs.py`
 
 English:
     #. Use data from "Given" section (see below)

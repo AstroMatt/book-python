@@ -656,7 +656,7 @@ Recursive folders walking
 * Complexity: easy
 * Lines of code: 30 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/system_walk.py`
+* Filename: :download:`assignments/system_walk.py`
 
 English:
     .. todo:: English Translation
@@ -699,7 +699,7 @@ Tree
 * Complexity: hard
 * Lines of code: 60 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/system_tree.py`
+* Filename: :download:`assignments/system_tree.py`
 
 English:
     .. todo:: English Translation

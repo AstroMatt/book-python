@@ -475,20 +475,20 @@ Examples
 Assignments
 ===========
 
-.. literalinclude:: solution/mapping_dict_define.py
-    :caption: :download:`Solution <solution/mapping_dict_define.py>`
+.. literalinclude:: assignments/mapping_dict_define.py
+    :caption: :download:`Solution <assignments/mapping_dict_define.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/mapping_dict_items.py
-    :caption: :download:`Solution <solution/mapping_dict_items.py>`
+.. literalinclude:: assignments/mapping_dict_items.py
+    :caption: :download:`Solution <assignments/mapping_dict_items.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/mapping_dict_get.py
-    :caption: :download:`Solution <solution/mapping_dict_get.py>`
+.. literalinclude:: assignments/mapping_dict_get.py
+    :caption: :download:`Solution <assignments/mapping_dict_get.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/mapping_dict_translate.py
-    :caption: :download:`Solution <solution/mapping_dict_translate.py>`
+.. literalinclude:: assignments/mapping_dict_translate.py
+    :caption: :download:`Solution <assignments/mapping_dict_translate.py>`
     :end-before: # Solution
 
 

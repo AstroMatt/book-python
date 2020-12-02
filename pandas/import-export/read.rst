@@ -248,7 +248,7 @@ Pandas Read CSV Dates
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/pandas_read_csv_dates.py`
+* Filename: :download:`assignments/pandas_read_csv_dates.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -277,7 +277,7 @@ Pandas Read CSV Replace
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/pandas_read_csv_replace.py`
+* Filename: :download:`assignments/pandas_read_csv_replace.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -323,7 +323,7 @@ Pandas Read JSON
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/pandas_read_json_iris.py`
+* Filename: :download:`assignments/pandas_read_json_iris.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -347,7 +347,7 @@ Pandas Read JSON OpenAPI
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/pandas_read_json_openapi.py`
+* Filename: :download:`assignments/pandas_read_json_openapi.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -373,7 +373,7 @@ Pandas Read HTML
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/pandas_read_html.py`
+* Filename: :download:`assignments/pandas_read_html.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -401,7 +401,7 @@ Pandas Read XSLT Books
 * Complexity: medium
 * Lines of code: 5 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/pandas_read_xslt_books.py`
+* Filename: :download:`assignments/pandas_read_xslt_books.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -430,7 +430,7 @@ Pandas Read XSLT Plants
 * Complexity: medium
 * Lines of code: 5 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/pandas_read_xslt_plants.py`
+* Filename: :download:`assignments/pandas_read_xslt_plants.py`
 
 English:
     #. Use data from "Given" section (see below)

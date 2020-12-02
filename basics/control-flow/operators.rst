@@ -161,6 +161,6 @@ Operator Precedence
 Assignments
 ===========
 
-.. literalinclude:: solution/controlflow_operators_modulo.py
-    :caption: :download:`Solution <solution/controlflow_operators_modulo.py>`
+.. literalinclude:: assignments/controlflow_operators_modulo.py
+    :caption: :download:`Solution <assignments/controlflow_operators_modulo.py>`
     :end-before: # Solution

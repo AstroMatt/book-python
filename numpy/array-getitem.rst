@@ -257,7 +257,7 @@ Numpy Indexing
 * Complexity: easy
 * Lines of code: 4 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/numpy_indexing.py`
+* Filename: :download:`assignments/numpy_indexing.py`
 
 English:
     #. Use data from "Given" section (see below)

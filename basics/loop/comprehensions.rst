@@ -599,18 +599,18 @@ All and Any
 Assignments
 ===========
 
-.. literalinclude:: solution/loop_comprehension_create.py
-    :caption: :download:`Solution <solution/loop_comprehension_create.py>`
+.. literalinclude:: assignments/loop_comprehension_create.py
+    :caption: :download:`Solution <assignments/loop_comprehension_create.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/loop_comprehension_months.py
-    :caption: :download:`Solution <solution/loop_comprehension_months.py>`
+.. literalinclude:: assignments/loop_comprehension_months.py
+    :caption: :download:`Solution <assignments/loop_comprehension_months.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/loop_comprehension_translate.py
-    :caption: :download:`Solution <solution/loop_comprehension_translate.py>`
+.. literalinclude:: assignments/loop_comprehension_translate.py
+    :caption: :download:`Solution <assignments/loop_comprehension_translate.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/loop_comprehension_split.py
-    :caption: :download:`Solution <solution/loop_comprehension_split.py>`
+.. literalinclude:: assignments/loop_comprehension_split.py
+    :caption: :download:`Solution <assignments/loop_comprehension_split.py>`
     :end-before: # Solution

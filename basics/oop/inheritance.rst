@@ -361,14 +361,14 @@ Super Function
 Assignments
 ===========
 
-.. literalinclude:: solution/oop_inheritance_simple.py
-    :caption: :download:`Solution <solution/oop_inheritance_simple.py>`
+.. literalinclude:: assignments/oop_inheritance_simple.py
+    :caption: :download:`Solution <assignments/oop_inheritance_simple.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/oop_inheritance_multiple.py
-    :caption: :download:`Solution <solution/oop_inheritance_multiple.py>`
+.. literalinclude:: assignments/oop_inheritance_multiple.py
+    :caption: :download:`Solution <assignments/oop_inheritance_multiple.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/oop_inheritance_super.py
-    :caption: :download:`Solution <solution/oop_inheritance_super.py>`
+.. literalinclude:: assignments/oop_inheritance_super.py
+    :caption: :download:`Solution <assignments/oop_inheritance_super.py>`
     :end-before: # Solution

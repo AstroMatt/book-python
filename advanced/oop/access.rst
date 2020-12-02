@@ -247,10 +247,10 @@ System Method
 Assignments
 ===========
 
-.. literalinclude:: solution/oop_access_protected.py
-    :caption: :download:`Solution <solution/oop_access_protected.py>`
+.. literalinclude:: assignments/oop_access_protected.py
+    :caption: :download:`Solution <assignments/oop_access_protected.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/oop_access_dict.py
-    :caption: :download:`Solution <solution/oop_access_dict.py>`
+.. literalinclude:: assignments/oop_access_dict.py
+    :caption: :download:`Solution <assignments/oop_access_dict.py>`
     :end-before: # Solution

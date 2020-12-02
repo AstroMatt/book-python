@@ -15,7 +15,7 @@ Dragon (version release candidate)
 * Complexity: hard
 * Lines of code: 50 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/dragon_rc.py`
+* Filename: :download:`assignments/dragon_rc.py`
 
 English:
     .. todo:: English Translation

@@ -194,7 +194,7 @@ Datetime Create Custom
 * Complexity: easy
 * Lines of code: 3 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/datetime_create_custom.py`
+* Filename: :download:`assignments/datetime_create_custom.py`
 
 English:
     #. Create ``date`` object with date of your birth
@@ -213,7 +213,7 @@ Datetime Create Current
 * Complexity: easy
 * Lines of code: 3 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/datetime_create_current.py`
+* Filename: :download:`assignments/datetime_create_current.py`
 
 English:
     #. Create ``date`` object with current date

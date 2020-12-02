@@ -110,10 +110,10 @@ What is closure?
 Assignments
 ===========
 
-.. literalinclude:: solution/function_closure_define.py
-    :caption: :download:`Solution <solution/function_closure_define.py>`
+.. literalinclude:: assignments/function_closure_define.py
+    :caption: :download:`Solution <assignments/function_closure_define.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_closure_call.py
-    :caption: :download:`Solution <solution/function_closure_call.py>`
+.. literalinclude:: assignments/function_closure_call.py
+    :caption: :download:`Solution <assignments/function_closure_call.py>`
     :end-before: # Solution

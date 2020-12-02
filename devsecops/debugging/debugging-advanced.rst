@@ -217,7 +217,7 @@ Own ``doctest``
 * Complexity: easy
 * Lines of code: 60 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/debugging_doctest.py`
+* Filename: :download:`assignments/debugging_doctest.py`
 
 English:
     .. todo:: English Translation

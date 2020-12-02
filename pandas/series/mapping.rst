@@ -408,7 +408,7 @@ Series Mapping Clean
 * Complexity: medium
 * Lines of code: 15 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/series_mapping_clean.py`
+* Filename: :download:`assignments/series_mapping_clean.py`
 
 English:
     #. Use data from "Given" section (see below)

@@ -554,7 +554,7 @@ Jupyter First
 * Complexity: easy
 * Lines of code: 10 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/jupyter_first.ipynb`
+* Filename: :download:`assignments/jupyter_first.ipynb`
 
 English:
     .. todo:: English Translation
@@ -574,7 +574,7 @@ Jupyter Slides
 * Complexity: easy
 * Lines of code: 1 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/jupyter_slides.py`
+* Filename: :download:`assignments/jupyter_slides.py`
 
 English:
     .. todo:: English Translation

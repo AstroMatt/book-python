@@ -259,6 +259,6 @@ References
 Assignments
 ===========
 
-.. literalinclude:: solution/threading_timer.py
-    :caption: :download:`Solution <solution/threading_timer.py>`
+.. literalinclude:: assignments/threading_timer.py
+    :caption: :download:`Solution <assignments/threading_timer.py>`
     :end-before: # Solution

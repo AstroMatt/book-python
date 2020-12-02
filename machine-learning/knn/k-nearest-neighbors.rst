@@ -174,7 +174,7 @@ Pima Indians Diabetes problem
 * Complexity: medium
 * Lines of code: 15 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/knn_pima.py`
+* Filename: :download:`assignments/knn_pima.py`
 
 English:
     .. todo:: English Translation
@@ -189,7 +189,7 @@ Płeć
 * Complexity: easy
 * Lines of code: 15 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/knn_gender.py`
+* Filename: :download:`assignments/knn_gender.py`
 
 English:
     .. todo:: English Translation

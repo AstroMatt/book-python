@@ -161,7 +161,7 @@ Datetime Timezone Convert
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/datetime_timezone_convert.py`
+* Filename: :download:`assignments/datetime_timezone_convert.py`
 
 English:
     #. Use data from "Given" section (see below)

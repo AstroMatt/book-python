@@ -140,7 +140,7 @@ Nearest Neighbor Classifier
 * Complexity: medium
 * Lines of code: 15 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/sklearn_classifier.py`
+* Filename: :download:`assignments/sklearn_classifier.py`
 
 English:
     .. todo:: English Translation
@@ -202,7 +202,7 @@ Sklearn Classifier Compare
 * Complexity: medium
 * Lines of code: 15 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/sklearn_classifier_compare.py`
+* Filename: :download:`assignments/sklearn_classifier_compare.py`
 
 English:
     .. todo:: English Translation

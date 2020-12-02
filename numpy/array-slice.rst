@@ -167,7 +167,7 @@ Numpy Slice 1
 * Complexity: easy
 * Lines of code: 3 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/numpy_slice_1.py`
+* Filename: :download:`assignments/numpy_slice_1.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -204,7 +204,7 @@ Numpy Slice 2
 * Complexity: easy
 * Lines of code: 3 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/numpy_slice_2.py`
+* Filename: :download:`assignments/numpy_slice_2.py`
 
 English:
     #. Use data from "Given" section (see below)

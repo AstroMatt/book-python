@@ -537,7 +537,7 @@ Assignments
 * Complexity: easy
 * Lines of code: 10 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/functional_map_filter_lambda.py`
+* Filename: :download:`assignments/functional_map_filter_lambda.py`
 
 English:
     .. todo:: English Translation
@@ -555,7 +555,7 @@ Balanced Brackets
 * Complexity: medium
 * Lines of code: 10 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/functional_brackets.py`
+* Filename: :download:`assignments/functional_brackets.py`
 
 English:
     #. Create function which checks if brackets are balanced

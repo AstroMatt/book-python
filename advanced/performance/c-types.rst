@@ -192,6 +192,6 @@ Overflow
 Assignments
 ===========
 
-.. literalinclude:: solution/ctypes_datetime.py
-    :caption: :download:`Solution <solution/ctypes_datetime.py>`
+.. literalinclude:: assignments/ctypes_datetime.py
+    :caption: :download:`Solution <assignments/ctypes_datetime.py>`
     :end-before: # Solution

@@ -448,7 +448,7 @@ Serialization JSON Dump
 * Complexity: easy
 * Lines of code: 8 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/serialization_json_dump.py`
+* Filename: :download:`assignments/serialization_json_dump.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -514,7 +514,7 @@ Serialization JSON Load
 * Complexity: easy
 * Lines of code: 8 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/serialization_json_load.py`
+* Filename: :download:`assignments/serialization_json_load.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -541,7 +541,7 @@ Serialization JSON Datetime
 * Complexity: easy
 * Lines of code: 10 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/serialization_json_datetime.py`
+* Filename: :download:`assignments/serialization_json_datetime.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -578,7 +578,7 @@ Serialization JSON Object
 * Complexity: medium
 * Lines of code: 15 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/serialization_json_object.py`
+* Filename: :download:`assignments/serialization_json_object.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -635,7 +635,7 @@ Serialization JSON HTTP
 * Complexity: hard
 * Lines of code: 15 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/serialization_json_http.py`
+* Filename: :download:`assignments/serialization_json_http.py`
 
 English:
     #. Use ``requests`` library (requires installation)

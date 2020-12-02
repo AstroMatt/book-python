@@ -286,7 +286,7 @@ Numpy Random Float
 * Complexity: medium
 * Lines of code: 3 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/numpy_random_float.py`
+* Filename: :download:`assignments/numpy_random_float.py`
 
 English:
     #. Set random seed to zero
@@ -303,7 +303,7 @@ Numpy Random Int
 * Complexity: easy
 * Lines of code: 4 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/numpy_random_int.py`
+* Filename: :download:`assignments/numpy_random_int.py`
 
 English:
     #. Set random seed to zero
@@ -320,7 +320,7 @@ Numpy Random Sample
 * Complexity: medium
 * Lines of code: 5 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/numpy_random_sample.py`
+* Filename: :download:`assignments/numpy_random_sample.py`
 
 English:
     #. Set random seed to zero

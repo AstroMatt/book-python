@@ -46,7 +46,7 @@ Assignments
 * Complexity: easy
 * Lines of code: 12 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/types_int.py`
+* Filename: :download:`assignments/types_int.py`
 
 English:
     #. Calculate how many seconds is five minutes
@@ -120,7 +120,7 @@ Assignments
 * Complexity: easy
 * Lines of code: 4 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/types_float.py`
+* Filename: :download:`assignments/types_float.py`
 
 English:
     #. Use code from "Input" section (see below)
@@ -329,7 +329,7 @@ Assignments
 * Complexity: easy
 * Lines of code: 3 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/types_str.py`
+* Filename: :download:`assignments/types_str.py`
 
 English:
     * Ask user to input text
@@ -472,7 +472,7 @@ To ``bool`` or not to ``bool``
 * Complexity: easy
 * Lines of code: 15 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/types_bool.py`
+* Filename: :download:`assignments/types_bool.py`
 
 English:
     #. Use data from "Given" section (see below)

@@ -15,9 +15,9 @@ Dragon (version alpha)
 * Complexity: medium
 * Lines of code: 100 lines
 * Estimated time: 60 min, then 90 min live coding with instructor
-* Solution (please don't do this!): :download:`solution/dragon_alpha_bad.py`
-* Solution (basic): :download:`solution/dragon_alpha_basic.py`
-* Solution (advanced): :download:`solution/dragon_alpha_adv.py`
+* Solution (please don't do this!): :download:`assignments/dragon_alpha_bad.py`
+* Solution (basic): :download:`assignments/dragon_alpha_basic.py`
+* Solution (advanced): :download:`assignments/dragon_alpha_adv.py`
 * Warning: Don't delete code, assignment will be continued
 
 English:

@@ -479,7 +479,7 @@ DataFrame Plot
 * Complexity: medium
 * Lines of code: 15 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/df_plot.py`
+* Filename: :download:`assignments/df_plot.py`
 
 English:
     #. Use data from "Given" section (see below)

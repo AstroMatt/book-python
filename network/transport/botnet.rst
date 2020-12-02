@@ -38,7 +38,7 @@ Heartbeat Receiver
 * Complexity: medium
 * Lines of code: 45 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/botnet_heartbeat_receiver.py`
+* Filename: :download:`assignments/botnet_heartbeat_receiver.py`
 
 English:
     .. todo:: English Translation
@@ -61,7 +61,7 @@ Victim
 * Complexity: medium
 * Lines of code: 150 lines
 * Estimated time: 34 min
-* Filename: :download:`solution/botnet_victim.py`
+* Filename: :download:`assignments/botnet_victim.py`
 
 English:
     .. todo:: English Translation
@@ -98,7 +98,7 @@ Attacker
 * Complexity: medium
 * Lines of code: 150 lines
 * Estimated time: 34 min
-* Filename: :download:`solution/botnet_attacker.py`
+* Filename: :download:`assignments/botnet_attacker.py`
 
 English:
     .. todo:: English Translation

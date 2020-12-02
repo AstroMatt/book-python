@@ -203,6 +203,6 @@ Nested Sequence
 Assignments
 ===========
 
-.. literalinclude:: solution/sequence_getitem_select.py
-    :caption: :download:`Solution <solution/sequence_getitem_select.py>`
+.. literalinclude:: assignments/sequence_getitem_select.py
+    :caption: :download:`Solution <assignments/sequence_getitem_select.py>`
     :end-before: # Solution

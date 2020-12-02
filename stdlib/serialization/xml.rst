@@ -746,7 +746,7 @@ XML Parsing
 * Complexity: easy
 * Lines of code: 20 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/xml_parse.py`
+* Filename: :download:`assignments/xml_parse.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -767,7 +767,7 @@ XSLT Transformation
 * Complexity: medium
 * Lines of code: 5 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/xml_xslt.py`
+* Filename: :download:`assignments/xml_xslt.py`
 
 English:
     #. Use data from "Given" section (see below)

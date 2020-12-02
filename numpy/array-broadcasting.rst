@@ -350,7 +350,7 @@ Numpy Broadcasting Arithmetic
 * Complexity: easy
 * Lines of code: 10 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/numpy_broadcasting_arithmetic.py`
+* Filename: :download:`assignments/numpy_broadcasting_arithmetic.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -389,7 +389,7 @@ Numpy Broadcasting Type Cast
 * Complexity: easy
 * Lines of code: 2 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/numpy_broadcasting_typecast.py`
+* Filename: :download:`assignments/numpy_broadcasting_typecast.py`
 
 English:
     #. For given: ``a: np.ndarray``, ``b: np.ndarray`` (see below)
@@ -416,7 +416,7 @@ Numpy Broadcasting Matmul
 * Complexity: easy
 * Lines of code: 4 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/numpy_broadcasting_matmul.py`
+* Filename: :download:`assignments/numpy_broadcasting_matmul.py`
 
 English:
     #. For given: ``a: np.ndarray``, ``b: np.ndarray`` (see below)

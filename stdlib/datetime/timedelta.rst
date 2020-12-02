@@ -201,7 +201,7 @@ Datetime Timedelta Period
 * Complexity: easy
 * Lines of code: 15 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/datetime_timedelta_period.py`
+* Filename: :download:`assignments/datetime_timedelta_period.py`
 
 English:
     #. Use data from "Given" section (see below)

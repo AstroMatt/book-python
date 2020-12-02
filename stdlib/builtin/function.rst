@@ -353,7 +353,7 @@ Average
 * Complexity: easy
 * Lines of code: 12 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/builtin_average.py`
+* Filename: :download:`assignments/builtin_average.py`
 
 English:
     #. Use data from "Given" section (see below)

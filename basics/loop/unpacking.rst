@@ -265,10 +265,10 @@ Zip
 Assignments
 ===========
 
-.. literalinclude:: solution/loop_unpacking_months.py
-    :caption: :download:`Solution <solution/loop_unpacking_months.py>`
+.. literalinclude:: assignments/loop_unpacking_months.py
+    :caption: :download:`Solution <assignments/loop_unpacking_months.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/loop_unpacking_endswith.py
-    :caption: :download:`Solution <solution/loop_unpacking_endswith.py>`
+.. literalinclude:: assignments/loop_unpacking_endswith.py
+    :caption: :download:`Solution <assignments/loop_unpacking_endswith.py>`
     :end-before: # Solution

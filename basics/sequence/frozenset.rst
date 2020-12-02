@@ -112,10 +112,10 @@ Assignments
 ===========
 
 
-.. literalinclude:: solution/sequence_frozenset_create.py
-    :caption: :download:`Solution <solution/sequence_frozenset_create.py>`
+.. literalinclude:: assignments/sequence_frozenset_create.py
+    :caption: :download:`Solution <assignments/sequence_frozenset_create.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/sequence_frozenset_newline.py
-    :caption: :download:`Solution <solution/sequence_frozenset_newline.py>`
+.. literalinclude:: assignments/sequence_frozenset_newline.py
+    :caption: :download:`Solution <assignments/sequence_frozenset_newline.py>`
     :end-before: # Solution

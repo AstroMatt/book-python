@@ -261,6 +261,6 @@ Case Studies
 Assignments
 ===========
 
-.. literalinclude:: solution/function_callable_define.py
-    :caption: :download:`Solution <solution/function_callable_define.py>`
+.. literalinclude:: assignments/function_callable_define.py
+    :caption: :download:`Solution <assignments/function_callable_define.py>`
     :end-before: # Solution

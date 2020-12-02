@@ -224,7 +224,7 @@ Column Stats
 * Complexity: easy
 * Lines of code: 30 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/statistics_column_stats.py`
+* Filename: :download:`assignments/statistics_column_stats.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -301,7 +301,7 @@ Iris Stats
 * Complexity: easy
 * Lines of code: 30 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/statistics_iris.py`
+* Filename: :download:`assignments/statistics_iris.py`
 
 English:
     #. Use data from "Given" section (see below)

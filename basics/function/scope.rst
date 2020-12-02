@@ -290,14 +290,14 @@ Local Scope
 Assignments
 ===========
 
-.. literalinclude:: solution/function_scope_filter.py
-    :caption: :download:`Solution <solution/function_scope_filter.py>`
+.. literalinclude:: assignments/function_scope_filter.py
+    :caption: :download:`Solution <assignments/function_scope_filter.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_scope_romanint.py
-    :caption: :download:`Solution <solution/function_scope_romanint.py>`
+.. literalinclude:: assignments/function_scope_romanint.py
+    :caption: :download:`Solution <assignments/function_scope_romanint.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_scope_introman.py
-    :caption: :download:`Solution <solution/function_scope_introman.py>`
+.. literalinclude:: assignments/function_scope_introman.py
+    :caption: :download:`Solution <assignments/function_scope_introman.py>`
     :end-before: # Solution

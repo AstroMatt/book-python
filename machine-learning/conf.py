@@ -106,7 +106,7 @@ exclude_patterns = [
     '_themes',
     '_tmp',
     '**/contrib/*',
-    '**/solution/*',
+    '**/assignments/*',
     '**/solutions/*',
     '**/_template.rst',
     '**.ipynb_checkpoints',

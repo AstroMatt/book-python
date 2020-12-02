@@ -397,6 +397,6 @@ Examples
 Assignments
 ===========
 
-.. literalinclude:: solution/unpacking_arguments_define.py
-    :caption: :download:`Solution <solution/unpacking_arguments_define.py>`
+.. literalinclude:: assignments/unpacking_arguments_define.py
+    :caption: :download:`Solution <assignments/unpacking_arguments_define.py>`
     :end-before: # Solution

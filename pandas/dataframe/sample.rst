@@ -205,7 +205,7 @@ DataFrame Sample
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 8 min
-* Filename: :download:`solution/df_sample.py`
+* Filename: :download:`assignments/df_sample.py`
 
 English:
     .. todo:: English translation

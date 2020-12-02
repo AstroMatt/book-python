@@ -151,7 +151,7 @@ Series Getitem
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 8 min
-* Filename: :download:`solution/series_getitem.py`
+* Filename: :download:`assignments/series_getitem.py`
 
 English:
     #. Set random seed to zero

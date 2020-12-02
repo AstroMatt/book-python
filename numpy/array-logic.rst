@@ -361,7 +361,7 @@ Numpy Logic Even
 * Complexity: easy
 * Lines of code: 4 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/numpy_logic_even.py`
+* Filename: :download:`assignments/numpy_logic_even.py`
 
 English:
     #. Set random seed to zero
@@ -384,7 +384,7 @@ Numpy Logic Isin
 * Complexity: easy
 * Lines of code: 9 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/numpy_logic_isin.py`
+* Filename: :download:`assignments/numpy_logic_isin.py`
 
 English:
     #. Set random seed to zero

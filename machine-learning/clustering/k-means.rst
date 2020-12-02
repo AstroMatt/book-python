@@ -345,7 +345,7 @@ Klastrowanie zbioru Iris
 * Complexity: medium
 * Lines of code: 30 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/clustering_iris.py`
+* Filename: :download:`assignments/clustering_iris.py`
 
 English:
     .. todo:: English Translation

@@ -187,30 +187,30 @@ Nested Loops
 Assignments
 ===========
 
-.. literalinclude:: solution/loop_for_count.py
-    :caption: :download:`Solution <solution/loop_for_count.py>`
+.. literalinclude:: assignments/loop_for_count.py
+    :caption: :download:`Solution <assignments/loop_for_count.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/loop_for_counter.py
-    :caption: :download:`Solution <solution/loop_for_counter.py>`
+.. literalinclude:: assignments/loop_for_counter.py
+    :caption: :download:`Solution <assignments/loop_for_counter.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/loop_for_segmentation.py
-    :caption: :download:`Solution <solution/loop_for_segmentation.py>`
+.. literalinclude:: assignments/loop_for_segmentation.py
+    :caption: :download:`Solution <assignments/loop_for_segmentation.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/loop_for_newline.py
-    :caption: :download:`Solution <solution/loop_for_newline.py>`
+.. literalinclude:: assignments/loop_for_newline.py
+    :caption: :download:`Solution <assignments/loop_for_newline.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/loop_for_translate.py
-    :caption: :download:`Solution <solution/loop_for_translate.py>`
+.. literalinclude:: assignments/loop_for_translate.py
+    :caption: :download:`Solution <assignments/loop_for_translate.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/loop_for_months.py
-    :caption: :download:`Solution <solution/loop_for_months.py>`
+.. literalinclude:: assignments/loop_for_months.py
+    :caption: :download:`Solution <assignments/loop_for_months.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/loop_for_text.py
-    :caption: :download:`Solution <solution/loop_for_text.py>`
+.. literalinclude:: assignments/loop_for_text.py
+    :caption: :download:`Solution <assignments/loop_for_text.py>`
     :end-before: # Solution

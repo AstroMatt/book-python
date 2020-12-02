@@ -322,7 +322,7 @@ Argument parsing
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/argparse_avg.py`
+* Filename: :download:`assignments/argparse_avg.py`
 
 English:
     .. todo:: English Translation

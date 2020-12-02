@@ -42,7 +42,7 @@ Regexp Search Astronauts
 * Complexity: easy
 * Lines of code: 6 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/regexp_search_astronauts.py`
+* Filename: :download:`assignments/regexp_search_astronauts.py`
 * References: First paragraph from Apollo 11 Wikipedia entry :cite:`RegexpWikipediaApollo11`
 
 English:
@@ -89,7 +89,7 @@ Regexp Search Moon Speech
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 8 min
-* Filename: :download:`solution/regexp_search_moon_speech.py`
+* Filename: :download:`assignments/regexp_search_moon_speech.py`
 * References: "Moon Speech" by John F. Kennedy at Rice Stadium, Houston, TX on 1962-09-12 :cite:`RegexpKennedy1962`
 
 English:
@@ -115,7 +115,7 @@ Regexp Search Time
 * Complexity: medium
 * Lines of code: 4 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/regexp_search_time.py`
+* Filename: :download:`assignments/regexp_search_time.py`
 * References: First paragraph from Apollo 11 Wikipedia entry :cite:`RegexpWikipediaApollo11`
 
 English:
@@ -153,7 +153,7 @@ Regexp Search Datetime
 * Complexity: hard
 * Lines of code: 4 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/regexp_search_datetime.py`
+* Filename: :download:`assignments/regexp_search_datetime.py`
 * References: (modified) First paragraph from Apollo 11 Wikipedia entry :cite:`RegexpWikipediaApollo11`
 
 English:

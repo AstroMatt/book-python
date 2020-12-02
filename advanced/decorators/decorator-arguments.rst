@@ -177,14 +177,14 @@ Use Cases
 Assignments
 ===========
 
-.. literalinclude:: solution/decorator_arguments_syntax.py
-    :caption: :download:`Solution <solution/decorator_arguments_syntax.py>`
+.. literalinclude:: assignments/decorator_arguments_syntax.py
+    :caption: :download:`Solution <assignments/decorator_arguments_syntax.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/decorator_arguments_astronauts.py
-    :caption: :download:`Solution <solution/decorator_arguments_astronauts.py>`
+.. literalinclude:: assignments/decorator_arguments_astronauts.py
+    :caption: :download:`Solution <assignments/decorator_arguments_astronauts.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/decorator_arguments_typecheck.py
-    :caption: :download:`Solution <solution/decorator_arguments_typecheck.py>`
+.. literalinclude:: assignments/decorator_arguments_typecheck.py
+    :caption: :download:`Solution <assignments/decorator_arguments_typecheck.py>`
     :end-before: # Solution

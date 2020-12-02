@@ -167,7 +167,7 @@ Numpy Round Rint
 * Complexity: easy
 * Lines of code: 4 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/numpy_round_rint.py`
+* Filename: :download:`assignments/numpy_round_rint.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -203,7 +203,7 @@ Numpy Round Floor and Ceil
 * Complexity: medium
 * Lines of code: 3 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/numpy_round_ceilfloor.py`
+* Filename: :download:`assignments/numpy_round_ceilfloor.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -250,7 +250,7 @@ Numpy Round Clip
 * Complexity: medium
 * Lines of code: 3 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/numpy_round_clip.py`
+* Filename: :download:`assignments/numpy_round_clip.py`
 
 English:
     #. Use data from "Given" section (see below)

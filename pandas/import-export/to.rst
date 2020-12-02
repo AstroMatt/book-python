@@ -53,7 +53,7 @@ DataFrame Export CSV
 * Complexity: easy
 * Lines of code: 3 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/pandas_to_csv.py`
+* Filename: :download:`assignments/pandas_to_csv.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -78,7 +78,7 @@ DataFrame Export JSON
 * Complexity: easy
 * Lines of code: 3 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/pandas_to_json.py`
+* Filename: :download:`assignments/pandas_to_json.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -103,7 +103,7 @@ DataFrame Export Pickle
 * Complexity: easy
 * Lines of code: 3 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/pandas_to_pickle.py`
+* Filename: :download:`assignments/pandas_to_pickle.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -128,7 +128,7 @@ DataFrame Export Pickle
 * Complexity: easy
 * Lines of code: 4 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/pandas_to_sql.py`
+* Filename: :download:`assignments/pandas_to_sql.py`
 
 English:
     #. Use data from "Given" section (see below)

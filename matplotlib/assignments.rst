@@ -8,7 +8,7 @@ Trigonometry
 * Complexity: medium
 * Lines of code: 15 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/matplotlib_trigonometry.py`
+* Filename: :download:`assignments/matplotlib_trigonometry.py`
 
 English:
     .. todo:: English Translation
@@ -39,7 +39,7 @@ Iris scatter
 * Complexity: medium
 * Lines of code: 20 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/matplotlib_iris.py`
+* Filename: :download:`assignments/matplotlib_iris.py`
 
 English:
     .. todo:: English Translation
@@ -65,7 +65,7 @@ Random points
 * Complexity: medium
 * Lines of code: 15 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/matplotlib_random_points.py`
+* Filename: :download:`assignments/matplotlib_random_points.py`
 
 English:
     .. todo:: English Translation

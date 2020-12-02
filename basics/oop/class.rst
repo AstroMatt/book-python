@@ -168,11 +168,11 @@ References
 Assignments
 ===========
 
-.. literalinclude:: solution/oop_class_iris.py
-    :caption: :download:`Solution <solution/oop_class_iris.py>`
+.. literalinclude:: assignments/oop_class_iris.py
+    :caption: :download:`Solution <assignments/oop_class_iris.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/oop_class_instance.py
-    :caption: :download:`Solution <solution/oop_class_instance.py>`
+.. literalinclude:: assignments/oop_class_instance.py
+    :caption: :download:`Solution <assignments/oop_class_instance.py>`
     :end-before: # Solution
 

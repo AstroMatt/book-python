@@ -263,7 +263,7 @@ Numpy Algebra Euclidean 2D
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/numpy_algebra_euclidean_2d.py`
+* Filename: :download:`assignments/numpy_algebra_euclidean_2d.py`
 
 English:
     #. Use code from "Input" section (see below)
@@ -324,7 +324,7 @@ Numpy Algebra Euclidean Ndim
 * Complexity: easy
 * Lines of code: 10 lines
 * Estimated time: 8 min
-* Filename: :download:`solution/numpy_algebra_euclidean_ndim.py`
+* Filename: :download:`assignments/numpy_algebra_euclidean_ndim.py`
 
 English:
     #. Use code from "Input" section (see below)

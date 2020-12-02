@@ -134,7 +134,7 @@ DataFrame Create
 * Complexity: easy
 * Lines of code: 10 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/df_create.py`
+* Filename: :download:`assignments/df_create.py`
 
 English:
     #. Use data from "Given" section (see below)

@@ -847,7 +847,7 @@ Cleanup your file
 * Complexity: easy
 * Lines of code: 2 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/cleanup.py`
+* Filename: :download:`assignments/cleanup.py`
 
 English:
     .. todo:: English Translation

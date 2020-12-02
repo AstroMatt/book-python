@@ -109,10 +109,10 @@ Examples
 Assignments
 ===========
 
-.. literalinclude:: solution/function_parameter_syntax_kwargs.py
-    :caption: :download:`Solution <solution/function_parameter_syntax_kwargs.py>`
+.. literalinclude:: assignments/function_parameter_syntax_kwargs.py
+    :caption: :download:`Solution <assignments/function_parameter_syntax_kwargs.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_parameter_syntax_args.py
-    :caption: :download:`Solution <solution/function_parameter_syntax_args.py>`
+.. literalinclude:: assignments/function_parameter_syntax_args.py
+    :caption: :download:`Solution <assignments/function_parameter_syntax_args.py>`
     :end-before: # Solution

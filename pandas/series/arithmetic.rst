@@ -171,7 +171,7 @@ Series Arithmetic
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/series_arithmetic.py`
+* Filename: :download:`assignments/series_arithmetic.py`
 
 English:
     #. Set random seed to zero

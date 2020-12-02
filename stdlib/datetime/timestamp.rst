@@ -66,7 +66,7 @@ Datetime Timestamp Limits
 * Complexity: easy
 * Lines of code: 1 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/datetime_timestamp_limits.py`
+* Filename: :download:`assignments/datetime_timestamp_limits.py`
 
 English:
     #. Use data from "Given" section (see below)

@@ -46,8 +46,8 @@ Comparison
 Assignments
 ===========
 
-.. literalinclude:: solution/type_none.py
-    :caption: :download:`Solution <solution/type_none.py>`
+.. literalinclude:: assignments/type_none.py
+    :caption: :download:`Solution <assignments/type_none.py>`
     :end-before: # Solution
 
 

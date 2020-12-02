@@ -315,7 +315,7 @@ Numpy Dtype Astype
 * Complexity: easy
 * Lines of code: 4 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/numpy_astype.py`
+* Filename: :download:`assignments/numpy_astype.py`
 
 English:
     #. Use data from "Given" section (see below)

@@ -15,7 +15,7 @@ Dragon (version beta)
 * Complexity: medium
 * Lines of code: 120 lines
 * Estimated time: 60 min (±10 min), then 30 min live coding with instructor
-* Filename: :download:`solution/dragon_beta.py`
+* Filename: :download:`assignments/dragon_beta.py`
 * Warning: Don't delete code, assignment will be continued
 
 English:

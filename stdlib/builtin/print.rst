@@ -615,7 +615,7 @@ Powielanie napisów
 * Complexity: easy
 * Lines of code: 8 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/print_lines.py`
+* Filename: :download:`assignments/print_lines.py`
 
 English:
     .. todo:: English translation
@@ -639,7 +639,7 @@ Przeliczanie temperatury
 * Complexity: easy
 * Lines of code: 8 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/print_formatting.py`
+* Filename: :download:`assignments/print_formatting.py`
 
 English:
     .. todo:: English translation

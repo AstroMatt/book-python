@@ -382,6 +382,6 @@ Examples
 Assignments
 ===========
 
-.. literalinclude:: solution/function_generators_chain.py
-    :caption: :download:`Solution <solution/function_generators_chain.py>`
+.. literalinclude:: assignments/function_generators_chain.py
+    :caption: :download:`Solution <assignments/function_generators_chain.py>`
     :end-before: # Solution

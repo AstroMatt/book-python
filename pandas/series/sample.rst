@@ -73,7 +73,7 @@ Series Sample
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/series_sample.py`
+* Filename: :download:`assignments/series_sample.py`
 
 English:
     #. Set random seed to zero

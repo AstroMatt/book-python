@@ -139,7 +139,7 @@ PCA dla zbioru Pima Indian Diabetes
 * Complexity: medium
 * Lines of code: 30 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/pca_pima.py`
+* Filename: :download:`assignments/pca_pima.py`
 
 English:
     .. todo:: English Translation

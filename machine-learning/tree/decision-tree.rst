@@ -171,7 +171,7 @@ Zadania praktyczne
 
 Prosta klasyfikacja na podstawie features i labels
 --------------------------------------------------
-* :download:`solution/tree_decision.py`
+* :download:`assignments/tree_decision.py`
 
 Stwórz Classifier dla podanych poniżej danych testowych:
 

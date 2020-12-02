@@ -457,35 +457,35 @@ Examples
 Assignments
 ===========
 
-.. literalinclude:: solution/decorator_func_syntax.py
-    :caption: :download:`Solution <solution/decorator_func_syntax.py>`
+.. literalinclude:: assignments/decorator_func_syntax.py
+    :caption: :download:`Solution <assignments/decorator_func_syntax.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/decorator_func_disable.py
-    :caption: :download:`Solution <solution/decorator_func_disable.py>`
+.. literalinclude:: assignments/decorator_func_disable.py
+    :caption: :download:`Solution <assignments/decorator_func_disable.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/decorator_func_check.py
-    :caption: :download:`Solution <solution/decorator_func_check.py>`
+.. literalinclude:: assignments/decorator_func_check.py
+    :caption: :download:`Solution <assignments/decorator_func_check.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/decorator_func_astronauts.py
-    :caption: :download:`Solution <solution/decorator_func_astronauts.py>`
+.. literalinclude:: assignments/decorator_func_astronauts.py
+    :caption: :download:`Solution <assignments/decorator_func_astronauts.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/decorator_func_memoization.py
-    :caption: :download:`Solution <solution/decorator_func_memoization.py>`
+.. literalinclude:: assignments/decorator_func_memoization.py
+    :caption: :download:`Solution <assignments/decorator_func_memoization.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/decorator_func_abspath.py
-    :caption: :download:`Solution <solution/decorator_func_abspath.py>`
+.. literalinclude:: assignments/decorator_func_abspath.py
+    :caption: :download:`Solution <assignments/decorator_func_abspath.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/decorator_func_numeric.py
-    :caption: :download:`Solution <solution/decorator_func_numeric.py>`
+.. literalinclude:: assignments/decorator_func_numeric.py
+    :caption: :download:`Solution <assignments/decorator_func_numeric.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/decorator_func_typecheck.py
-    :caption: :download:`Solution <solution/decorator_func_typecheck.py>`
+.. literalinclude:: assignments/decorator_func_typecheck.py
+    :caption: :download:`Solution <assignments/decorator_func_typecheck.py>`
     :end-before: # Solution
 

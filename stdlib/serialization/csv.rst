@@ -546,7 +546,7 @@ Serialization CSV DictReader
 * Complexity: easy
 * Lines of code: 6 lines
 * Estimated time: 7 min
-* Filename: :download:`solution/serialization_csv_dictreader.py`
+* Filename: :download:`assignments/serialization_csv_dictreader.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -594,7 +594,7 @@ Serialization CSV DictWriter
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 7 min
-* Filename: :download:`solution/serialization_csv_dictwriter.py`
+* Filename: :download:`assignments/serialization_csv_dictwriter.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -650,7 +650,7 @@ Serialization CSV List of Tuples
 * Complexity: easy
 * Lines of code: 7 lines
 * Estimated time: 7 min
-* Filename: :download:`solution/serialization_csv_list_of_tuple.py`
+* Filename: :download:`assignments/serialization_csv_list_of_tuple.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -737,7 +737,7 @@ Serialization CSV Schemaless
 * Complexity: medium
 * Lines of code: 8 lines
 * Estimated time: 7 min
-* Filename: :download:`solution/serialization_csv_schemaless.py`
+* Filename: :download:`assignments/serialization_csv_schemaless.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -795,7 +795,7 @@ Serialization CSV Objects
 * Complexity: medium
 * Lines of code: 7 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/serialization_csv_objects.py`
+* Filename: :download:`assignments/serialization_csv_objects.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -847,7 +847,7 @@ Serialization CSV Relations
 * Complexity: hard
 * Lines of code: 18 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/serialization_csv_relations.py`
+* Filename: :download:`assignments/serialization_csv_relations.py`
 
 English:
     #. Use data from "Given" section (see below)

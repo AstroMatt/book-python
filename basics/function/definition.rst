@@ -135,6 +135,6 @@ Docstring
 Assignments
 ===========
 
-.. literalinclude:: solution/function_definition_print.py
-    :caption: :download:`Solution <solution/function_definition_print.py>`
+.. literalinclude:: assignments/function_definition_print.py
+    :caption: :download:`Solution <assignments/function_definition_print.py>`
     :end-before: # Solution

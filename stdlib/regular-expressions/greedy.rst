@@ -51,7 +51,7 @@ Regexp Greedy Moon Speech
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 8 min
-* Filename: :download:`solution/regexp_greedy_moon_speech.py`
+* Filename: :download:`assignments/regexp_greedy_moon_speech.py`
 * References: "Moon Speech" by John F. Kennedy at Rice Stadium, Houston, TX on 1962-09-12 :cite:`RegexpKennedy1962`
 
 English:

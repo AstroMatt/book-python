@@ -194,14 +194,14 @@ Examples
 Assignments
 ===========
 
-.. literalinclude:: solution/unpacking_parameters_define.py
-    :caption: :download:`Solution <solution/unpacking_parameters_define.py>`
+.. literalinclude:: assignments/unpacking_parameters_define.py
+    :caption: :download:`Solution <assignments/unpacking_parameters_define.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/unpacking_parameters_args.py
-    :caption: :download:`Solution <solution/unpacking_parameters_args.py>`
+.. literalinclude:: assignments/unpacking_parameters_args.py
+    :caption: :download:`Solution <assignments/unpacking_parameters_args.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/unpacking_parameters_kwargs.py
-    :caption: :download:`Solution <solution/unpacking_parameters_kwargs.py>`
+.. literalinclude:: assignments/unpacking_parameters_kwargs.py
+    :caption: :download:`Solution <assignments/unpacking_parameters_kwargs.py>`
     :end-before: # Solution

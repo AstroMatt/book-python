@@ -334,14 +334,14 @@ Temperature
 Assignments
 ===========
 
-.. literalinclude:: solution/protocol_property_getter.py
-    :caption: :download:`Solution <solution/protocol_property_getter.py>`
+.. literalinclude:: assignments/protocol_property_getter.py
+    :caption: :download:`Solution <assignments/protocol_property_getter.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/protocol_property_setter.py
-    :caption: :download:`Solution <solution/protocol_property_setter.py>`
+.. literalinclude:: assignments/protocol_property_setter.py
+    :caption: :download:`Solution <assignments/protocol_property_setter.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/protocol_property_deleter.py
-    :caption: :download:`Solution <solution/protocol_property_deleter.py>`
+.. literalinclude:: assignments/protocol_property_deleter.py
+    :caption: :download:`Solution <assignments/protocol_property_deleter.py>`
     :end-before: # Solution

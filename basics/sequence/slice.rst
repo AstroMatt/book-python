@@ -366,18 +366,18 @@ Example
 Assignments
 ===========
 
-.. literalinclude:: solution/sequence_slice_substr.py
-    :caption: :download:`Solution <solution/sequence_slice_substr.py>`
+.. literalinclude:: assignments/sequence_slice_substr.py
+    :caption: :download:`Solution <assignments/sequence_slice_substr.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/sequence_slice_sequence.py
-    :caption: :download:`Solution <solution/sequence_slice_sequence.py>`
+.. literalinclude:: assignments/sequence_slice_sequence.py
+    :caption: :download:`Solution <assignments/sequence_slice_sequence.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/sequence_slice_text.py
-    :caption: :download:`Solution <solution/sequence_slice_text.py>`
+.. literalinclude:: assignments/sequence_slice_text.py
+    :caption: :download:`Solution <assignments/sequence_slice_text.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/sequence_slice_split.py
-    :caption: :download:`Solution <solution/sequence_slice_split.py>`
+.. literalinclude:: assignments/sequence_slice_split.py
+    :caption: :download:`Solution <assignments/sequence_slice_split.py>`
     :end-before: # Solution

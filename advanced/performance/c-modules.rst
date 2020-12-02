@@ -88,6 +88,6 @@ Run
 Assignments
 ===========
 
-.. literalinclude:: solution/cmodules_datetime.py
-    :caption: :download:`Solution <solution/cmodules_datetime.py>`
+.. literalinclude:: assignments/cmodules_datetime.py
+    :caption: :download:`Solution <assignments/cmodules_datetime.py>`
     :end-before: # Solution

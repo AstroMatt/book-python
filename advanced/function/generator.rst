@@ -616,14 +616,14 @@ Memory Footprint
 Assignments
 ===========
 
-.. literalinclude:: solution/function_generators_chain.py
-    :caption: :download:`Solution <solution/function_generators_chain.py>`
+.. literalinclude:: assignments/function_generators_chain.py
+    :caption: :download:`Solution <assignments/function_generators_chain.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_generator_iris.py
-    :caption: :download:`Solution <solution/function_generator_iris.py>`
+.. literalinclude:: assignments/function_generator_iris.py
+    :caption: :download:`Solution <assignments/function_generator_iris.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/function_generator_passwd.py
-    :caption: :download:`Solution <solution/function_generator_passwd.py>`
+.. literalinclude:: assignments/function_generator_passwd.py
+    :caption: :download:`Solution <assignments/function_generator_passwd.py>`
     :end-before: # Solution

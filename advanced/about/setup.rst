@@ -26,28 +26,28 @@ Requirements
 Assignments
 ===========
 
-.. literalinclude:: solution/about_setup_vcs.py
-    :caption: :download:`Solution <solution/about_setup_vcs.py>`
+.. literalinclude:: assignments/about_setup_vcs.py
+    :caption: :download:`Solution <assignments/about_setup_vcs.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/about_setup_ide.py
-    :caption: :download:`Solution <solution/about_setup_ide.py>`
+.. literalinclude:: assignments/about_setup_ide.py
+    :caption: :download:`Solution <assignments/about_setup_ide.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/about_setup_project.py
-    :caption: :download:`Solution <solution/about_setup_project.py>`
+.. literalinclude:: assignments/about_setup_project.py
+    :caption: :download:`Solution <assignments/about_setup_project.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/about_setup_interpreter.py
-    :caption: :download:`Solution <solution/about_setup_interpreter.py>`
+.. literalinclude:: assignments/about_setup_interpreter.py
+    :caption: :download:`Solution <assignments/about_setup_interpreter.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/about_setup_push.py
-    :caption: :download:`Solution <solution/about_setup_push.py>`
+.. literalinclude:: assignments/about_setup_push.py
+    :caption: :download:`Solution <assignments/about_setup_push.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/about_setup_doctest.py
-    :caption: :download:`Solution <solution/about_setup_doctest.py>`
+.. literalinclude:: assignments/about_setup_doctest.py
+    :caption: :download:`Solution <assignments/about_setup_doctest.py>`
     :end-before: # Solution
 
 .. figure:: img/pycharm-vsc-merge-rebase.png

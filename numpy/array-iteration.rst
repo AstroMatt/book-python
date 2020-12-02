@@ -180,7 +180,7 @@ Numpy Iteration
 * Complexity: easy
 * Lines of code: 9 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/numpy_iteration.py`
+* Filename: :download:`assignments/numpy_iteration.py`
 
 English:
     #. Use data from "Given" section (see below)

@@ -500,7 +500,7 @@ Numpy Select Isin
 * Complexity: easy
 * Lines of code: 10 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/numpy_select_isin.py`
+* Filename: :download:`assignments/numpy_select_isin.py`
 
 English:
     #. Set random seed to 0

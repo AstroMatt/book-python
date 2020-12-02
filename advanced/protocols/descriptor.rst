@@ -255,14 +255,14 @@ Use Cases
 Assignments
 ===========
 
-.. literalinclude:: solution/protocol_descriptor_simple.py
-    :caption: :download:`Solution <solution/protocol_descriptor_simple.py>`
+.. literalinclude:: assignments/protocol_descriptor_simple.py
+    :caption: :download:`Solution <assignments/protocol_descriptor_simple.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/protocol_descriptor_valuerange.py
-    :caption: :download:`Solution <solution/protocol_descriptor_valuerange.py>`
+.. literalinclude:: assignments/protocol_descriptor_valuerange.py
+    :caption: :download:`Solution <assignments/protocol_descriptor_valuerange.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/protocol_descriptor_inheritance.py
-    :caption: :download:`Solution <solution/protocol_descriptor_inheritance.py>`
+.. literalinclude:: assignments/protocol_descriptor_inheritance.py
+    :caption: :download:`Solution <assignments/protocol_descriptor_inheritance.py>`
     :end-before: # Solution

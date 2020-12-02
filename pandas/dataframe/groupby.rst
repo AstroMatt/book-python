@@ -488,7 +488,7 @@ DataFrame Groupby Phones
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 8 min
-* Filename: :download:`solution/df_groupby_phones.py`
+* Filename: :download:`assignments/df_groupby_phones.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -512,7 +512,7 @@ DataFrame Groupby Astro Female
 * Complexity: medium
 * Lines of code: 5 lines
 * Estimated time: 8 min
-* Filename: :download:`solution/df_groupby_astro_female.py`
+* Filename: :download:`assignments/df_groupby_astro_female.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -536,7 +536,7 @@ DataFrame Groupby Astro Flights
 * Complexity: medium
 * Lines of code: 5 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/df_groupby_astro_flights.py`
+* Filename: :download:`assignments/df_groupby_astro_flights.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -560,7 +560,7 @@ DataFrame Groupby Astro EVA
 * Complexity: medium
 * Lines of code: 13 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/df_groupby_astro_eva.py`
+* Filename: :download:`assignments/df_groupby_astro_eva.py`
 
 English:
     #. Use data from "Given" section (see below)

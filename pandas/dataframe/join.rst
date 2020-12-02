@@ -351,7 +351,7 @@ DataFrame Join
 * Complexity: medium
 * Lines of code: 25 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/df_join_eva.py`
+* Filename: :download:`assignments/df_join_eva.py`
 
 English:
     .. todo:: Translate to English

@@ -134,7 +134,7 @@ Series Create Float
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/series_create_float.py`
+* Filename: :download:`assignments/series_create_float.py`
 
 English:
     #. Create ``pd.Series`` with 5 float numbers
@@ -151,7 +151,7 @@ Series Create Randint
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/series_create_randint.py`
+* Filename: :download:`assignments/series_create_randint.py`
 
 English:
     #. Set random seed to zero
@@ -168,7 +168,7 @@ Series Create Even
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/series_create_even.py`
+* Filename: :download:`assignments/series_create_even.py`
 
 English:
     #. Create ``pd.Series`` with 10 even numbers
@@ -183,7 +183,7 @@ Series Create Dates
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/series_create_dates.py`
+* Filename: :download:`assignments/series_create_dates.py`
 
 English:
     #. Gagarin flown to space on 1961-04-12

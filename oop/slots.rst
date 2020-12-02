@@ -238,7 +238,7 @@ OOP Slots Define
 * Complexity: easy
 * Lines of code: 11 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/oop_slots_define.py`
+* Filename: :download:`assignments/oop_slots_define.py`
 
 English:
     #. Use code from "Input" section (see below)

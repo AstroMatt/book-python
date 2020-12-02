@@ -255,7 +255,7 @@ Numpy Shape
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/numpy_shape.py`
+* Filename: :download:`assignments/numpy_shape.py`
 
 English:
     #. Use data from "Given" section (see below)

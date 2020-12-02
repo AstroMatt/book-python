@@ -149,14 +149,14 @@ Zip
 Assignments
 ===========
 
-.. literalinclude:: solution/mapping_generate_pairs.py
-    :caption: :download:`Solution <solution/mapping_generate_pairs.py>`
+.. literalinclude:: assignments/mapping_generate_pairs.py
+    :caption: :download:`Solution <assignments/mapping_generate_pairs.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/mapping_generate_enumerate.py
-    :caption: :download:`Solution <solution/mapping_generate_enumerate.py>`
+.. literalinclude:: assignments/mapping_generate_enumerate.py
+    :caption: :download:`Solution <assignments/mapping_generate_enumerate.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/mapping_generate_zip.py
-    :caption: :download:`Solution <solution/mapping_generate_zip.py>`
+.. literalinclude:: assignments/mapping_generate_zip.py
+    :caption: :download:`Solution <assignments/mapping_generate_zip.py>`
     :end-before: # Solution

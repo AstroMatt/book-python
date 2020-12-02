@@ -174,6 +174,6 @@ Intercept returned value
 Assignments
 ===========
 
-.. literalinclude:: solution/function_return_numbers.py
-    :caption: :download:`Solution <solution/function_return_numbers.py>`
+.. literalinclude:: assignments/function_return_numbers.py
+    :caption: :download:`Solution <assignments/function_return_numbers.py>`
     :end-before: # Solution

@@ -159,6 +159,6 @@ Lambda with Filter
 Assignments
 ===========
 
-.. literalinclude:: solution/function_lambda_chain.py
-    :caption: :download:`Solution <solution/function_lambda_chain.py>`
+.. literalinclude:: assignments/function_lambda_chain.py
+    :caption: :download:`Solution <assignments/function_lambda_chain.py>`
     :end-before: # Solution

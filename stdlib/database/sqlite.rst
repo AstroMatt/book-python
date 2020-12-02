@@ -243,7 +243,7 @@ Database SQLite Logs
 * Complexity: easy
 * Lines of code: 25 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/database_sqlite_logs.py`
+* Filename: :download:`assignments/database_sqlite_logs.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -328,7 +328,7 @@ Database SQLite CSV
 * Complexity: easy
 * Lines of code: 30 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/database_sqlite_csv.py`
+* Filename: :download:`assignments/database_sqlite_csv.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -414,7 +414,7 @@ Database SQLite JSON
 * Complexity: medium
 * Lines of code: 15 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/database_sqlite_json.py`
+* Filename: :download:`assignments/database_sqlite_json.py`
 
 English:
     #. Use data from "Given" section (see below)

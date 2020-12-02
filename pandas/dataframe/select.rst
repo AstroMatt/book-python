@@ -224,7 +224,7 @@ DataFrame Select
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 8 min
-* Filename: :download:`solution/df_select.py`
+* Filename: :download:`assignments/df_select.py`
 
 English:
     .. todo:: Translate to English

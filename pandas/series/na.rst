@@ -400,7 +400,7 @@ Series NA
 * Complexity: easy
 * Lines of code: 10 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/series_na.py`
+* Filename: :download:`assignments/series_na.py`
 
 English:
     #. Use data from "Given" section (see below)

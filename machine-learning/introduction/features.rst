@@ -164,7 +164,7 @@ Feature Engineering
 * Complexity: easy
 * Lines of code: 15 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/features_engineering.py`
+* Filename: :download:`assignments/features_engineering.py`
 
 English:
     .. todo:: English Translation

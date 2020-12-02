@@ -274,7 +274,7 @@ DataFrame NaN
 * Complexity: easy
 * Lines of code: 10 lines
 * Estimated time: 8 min
-* Filename: :download:`solution/df_nan.py`
+* Filename: :download:`assignments/df_nan.py`
 
 English:
     .. todo:: English Translation

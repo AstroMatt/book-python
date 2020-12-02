@@ -392,14 +392,14 @@ Further Reading
 Assignments
 ===========
 
-.. literalinclude:: solution/oop_overload_matmul.py
-    :caption: :download:`Solution <solution/oop_overload_matmul.py>`
+.. literalinclude:: assignments/oop_overload_matmul.py
+    :caption: :download:`Solution <assignments/oop_overload_matmul.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/oop_overload_iadd.py
-    :caption: :download:`Solution <solution/oop_overload_iadd.py>`
+.. literalinclude:: assignments/oop_overload_iadd.py
+    :caption: :download:`Solution <assignments/oop_overload_iadd.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/oop_overload_contains.py
-    :caption: :download:`Solution <solution/oop_overload_contains.py>`
+.. literalinclude:: assignments/oop_overload_contains.py
+    :caption: :download:`Solution <assignments/oop_overload_contains.py>`
     :end-before: # Solution

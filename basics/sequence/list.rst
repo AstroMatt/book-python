@@ -287,14 +287,14 @@ Built-in Functions
 Assignments
 ===========
 
-.. literalinclude:: solution/sequence_list_create.py
-    :caption: :download:`Solution <solution/sequence_list_create.py>`
+.. literalinclude:: assignments/sequence_list_create.py
+    :caption: :download:`Solution <assignments/sequence_list_create.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/sequence_list_many.py
-    :caption: :download:`Solution <solution/sequence_list_many.py>`
+.. literalinclude:: assignments/sequence_list_many.py
+    :caption: :download:`Solution <assignments/sequence_list_many.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/sequence_list_modify.py
-    :caption: :download:`Solution <solution/sequence_list_modify.py>`
+.. literalinclude:: assignments/sequence_list_modify.py
+    :caption: :download:`Solution <assignments/sequence_list_modify.py>`
     :end-before: # Solution

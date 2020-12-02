@@ -188,10 +188,10 @@ Case Study
 Assignments
 ===========
 
-.. literalinclude:: solution/oop_composition_syntax.py
-    :caption: :download:`Solution <solution/oop_composition_syntax.py>`
+.. literalinclude:: assignments/oop_composition_syntax.py
+    :caption: :download:`Solution <assignments/oop_composition_syntax.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/oop_composition_decompose.py
-    :caption: :download:`Solution <solution/oop_composition_decompose.py>`
+.. literalinclude:: assignments/oop_composition_decompose.py
+    :caption: :download:`Solution <assignments/oop_composition_decompose.py>`
     :end-before: # Solution

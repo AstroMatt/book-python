@@ -168,7 +168,7 @@ Iris
 * Complexity: medium
 * Lines of code: 20 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/scrapping_iris.py`
+* Filename: :download:`assignments/scrapping_iris.py`
 
 English:
     .. todo:: English Translation
@@ -187,7 +187,7 @@ EVA
 * Complexity: medium
 * Lines of code: 100 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/scrapping_eva.py`
+* Filename: :download:`assignments/scrapping_eva.py`
 
 English:
     .. todo:: English Translation

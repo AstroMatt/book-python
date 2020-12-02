@@ -600,10 +600,10 @@ Cleaning User Input
 Assignments
 ===========
 
-.. literalinclude:: solution/type_str_normalize.py
-    :caption: :download:`Solution <solution/type_str_normalize.py>`
+.. literalinclude:: assignments/type_str_normalize.py
+    :caption: :download:`Solution <assignments/type_str_normalize.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/type_str_clean.py
-    :caption: :download:`Solution <solution/type_str_clean.py>`
+.. literalinclude:: assignments/type_str_clean.py
+    :caption: :download:`Solution <assignments/type_str_clean.py>`
     :end-before: # Solution

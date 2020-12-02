@@ -42,7 +42,7 @@ FTP Download
 * Complexity: easy
 * Lines of code: 20 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/ftp_download.py`
+* Filename: :download:`assignments/ftp_download.py`
 
 English:
     .. todo:: English Translation
@@ -66,7 +66,7 @@ FTP Upload
 * Complexity: easy
 * Lines of code: 20 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/ftp_upload.py`
+* Filename: :download:`assignments/ftp_upload.py`
 
 English:
     .. todo:: English Translation

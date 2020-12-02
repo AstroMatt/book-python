@@ -249,7 +249,7 @@ Numpy Methods
 * Complexity: easy
 * Lines of code: 6 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/numpy_methods.py`
+* Filename: :download:`assignments/numpy_methods.py`
 
 English:
     #. Use data from "Given" section (see below)

@@ -34,7 +34,7 @@ Send email
 * Complexity: medium
 * Lines of code: 20 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/smtp_ssl.py`
+* Filename: :download:`assignments/smtp_ssl.py`
 
 English:
     .. todo:: English Translation

@@ -198,7 +198,7 @@ Regexp Match Phones
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 8 min
-* Filename: :download:`solution/regexp_match_phones.py`
+* Filename: :download:`assignments/regexp_match_phones.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -257,7 +257,7 @@ Regexp Match Git Flow
 * Complexity: medium
 * Lines of code: 15 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/regexp_match_gitflow.py`
+* Filename: :download:`assignments/regexp_match_gitflow.py`
 
 English:
     #. Use regular expressions to validate Git branch names

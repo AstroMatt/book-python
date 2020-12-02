@@ -161,7 +161,7 @@ Virtualenv
 * Complexity: easy
 * Lines of code: 0 lines
 * Estimated time: 2 min
-* Filename: :download:`solution/venv.py`
+* Filename: :download:`assignments/venv.py`
 
 English:
     #. Create ``venv``

@@ -81,7 +81,7 @@ Numpy Concatenation
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/numpy_concatenation.py`
+* Filename: :download:`assignments/numpy_concatenation.py`
 
 English:
     #. Use data from "Given" section (see below)

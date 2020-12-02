@@ -259,10 +259,10 @@ Example
 Assignments
 ===========
 
-.. literalinclude:: solution/type_bool_true_or_false.py
-    :caption: :download:`Solution <solution/type_bool_true_or_false.py>`
+.. literalinclude:: assignments/type_bool_true_or_false.py
+    :caption: :download:`Solution <assignments/type_bool_true_or_false.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/type_bool_simple.py
-    :caption: :download:`Solution <solution/type_bool_simple.py>`
+.. literalinclude:: assignments/type_bool_simple.py
+    :caption: :download:`Solution <assignments/type_bool_simple.py>`
     :end-before: # Solution

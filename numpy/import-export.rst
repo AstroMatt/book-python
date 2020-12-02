@@ -132,7 +132,7 @@ Numpy Loadtext
 * Complexity: easy
 * Lines of code: 4 lines
 * Estimated time: 5 min
-* Filename: :download:`solution/numpy_loadtext.py`
+* Filename: :download:`assignments/numpy_loadtext.py`
 
 English:
     #. Use data from "Given" section (see below)

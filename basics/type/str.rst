@@ -345,14 +345,14 @@ Concatenation
 Assignments
 ===========
 
-.. literalinclude:: solution/type_str_input.py
-    :caption: :download:`Solution <solution/type_str_input.py>`
+.. literalinclude:: assignments/type_str_input.py
+    :caption: :download:`Solution <assignments/type_str_input.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/type_str_emoticon.py
-    :caption: :download:`Solution <solution/type_str_emoticon.py>`
+.. literalinclude:: assignments/type_str_emoticon.py
+    :caption: :download:`Solution <assignments/type_str_emoticon.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/type_str_quotes.py
-    :caption: :download:`Solution <solution/type_str_quotes.py>`
+.. literalinclude:: assignments/type_str_quotes.py
+    :caption: :download:`Solution <assignments/type_str_quotes.py>`
     :end-before: # Solution

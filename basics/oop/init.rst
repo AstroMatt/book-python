@@ -274,10 +274,10 @@ Checking Values
 Assignments
 ===========
 
-.. literalinclude:: solution/oop_init_print.py
-    :caption: :download:`Solution <solution/oop_init_print.py>`
+.. literalinclude:: assignments/oop_init_print.py
+    :caption: :download:`Solution <assignments/oop_init_print.py>`
     :end-before: # Solution
 
-.. literalinclude:: solution/oop_init_model.py
-    :caption: :download:`Solution <solution/oop_init_model.py>`
+.. literalinclude:: assignments/oop_init_model.py
+    :caption: :download:`Solution <assignments/oop_init_model.py>`
     :end-before: # Solution

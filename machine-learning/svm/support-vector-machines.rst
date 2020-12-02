@@ -431,7 +431,7 @@ Wykorzystanie biblioteki ``sklearn``
 * Complexity: medium
 * Lines of code: 30 lines
 * Estimated time: 21 min
-* Filename: :download:`solution/svm_sklearn.py`
+* Filename: :download:`assignments/svm_sklearn.py`
 
 English:
     .. todo:: English Translation

@@ -301,7 +301,7 @@ Series Slice Datetime
 * Complexity: easy
 * Lines of code: 5 lines
 * Estimated time: 3 min
-* Filename: :download:`solution/series_slice_datetime.py`
+* Filename: :download:`assignments/series_slice_datetime.py`
 
 English:
     #. Set random seed to zero
@@ -350,7 +350,7 @@ Slicing Slice Str
 * Complexity: easy
 * Lines of code: 10 lines
 * Estimated time: 13 min
-* Filename: :download:`solution/series_slice_str.py`
+* Filename: :download:`assignments/series_slice_str.py`
 
 English:
     #. Use data from "Given" section (see below)
