@@ -107,9 +107,9 @@ English:
     #. Use data from "Given" section (see below)
     #. Save listings content to files:
 
-        * ``etc_passwd.txt`` - :numref:`code-exam-etc-passwd`
-        * ``etc_shadow.txt`` - :numref:`code-exam-etc-shadow`
-        * ``etc_group.txt`` - :numref:`code-exam-etc-group`
+        * ``etc_passwd.txt``
+        * ``etc_shadow.txt``
+        * ``etc_group.txt``
 
     #. Copy also comments and empty lines
     #. Parse files and convert it to ``result: list[dict]``
@@ -121,9 +121,9 @@ Polish:
     #. Użyj danych z sekcji "Given" (patrz poniżej)
     #. Zapisz treści listingów do plików:
 
-        * ``etc_passwd.txt`` - :numref:`code-exam-etc-passwd`
-        * ``etc_shadow.txt`` - :numref:`code-exam-etc-shadow`
-        * ``etc_group.txt`` - :numref:`code-exam-etc-group`
+        * ``etc_passwd.txt``
+        * ``etc_shadow.txt``
+        * ``etc_group.txt``
 
     #. Skopiuj również komentarze i puste linie
     #. Sparsuj plik i przedstaw go w formacie ``result: list[dict]``

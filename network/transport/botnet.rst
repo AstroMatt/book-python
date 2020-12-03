@@ -14,14 +14,13 @@ Mini Botnet
 * Time: 21 min
 * Filename: TODO
 
-#. Stwórz mini botnet o architekturze podanej :numref:`figure-botnet`. Mini botnet składa się z trzech części:
+#. Stwórz mini botnet o architekturze podanej na obrazku. Mini botnet składa się z trzech części:
 
     * Heartbeat Receiver - server przyjmujący informacje o ofiarach (czy wciąż żyją i jakie mają backdoory),
     * Victim - ofiara,
     * Attacker - atakujący.
 
 .. figure:: img/botnet.png
-    :name: figure-botnet
     :width: 75%
     :align: center
 
@@ -100,7 +99,7 @@ English:
     .. todo:: English Translation
 
 Polish:
-    #. Skopiuj zawartość :numref:`listing-botnet-commands` do pliku ``botnet-commands.xml``
+    #. Skopiuj zawartość listingu z sekcji "Given" do pliku ``botnet-commands.xml``
     #. Skrypt można wywoływać z parametrami linii poleceń:
 
         * ``--xml FILENAME``, domyślnie ``botnet-commands.xml``, opcjonalny (jeżeli podano inne parametry),
@@ -127,7 +126,6 @@ Polish:
 
 Given:
     .. literalinclude:: src/botnet-commands.xml
-        :name: listing-botnet-commands
         :language: python
         :caption: Komunikat XML z listą poleceń do wykonania na komputerze ofiary
 
