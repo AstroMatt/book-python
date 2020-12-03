@@ -11,28 +11,28 @@
 English:
     1. Dragon has (attributes):
         a. name
-        b. position ``x`` on the screen
-        c. position ``y`` on the screen
-        d. texture file name, default ``img/dragon/alive.png``
-        e. health points, default random ``int`` in range from 50 to 100
+        b. position `x` on the screen
+        c. position `y` on the screen
+        d. texture file name, default `img/dragon/alive.png`
+        e. health points, default random `int` in range from 50 to 100
     2. Dragon can (methods):
         a. have position set to any place on the screen
         b. make damage in range from 5 to 20
         c. take damage
         d. move in any direction by specified value
     3. Assume left-top screen corner as a initial coordinates position:
-        a. going right add to ``x``
-        b. going left subtract from ``x``
-        c. going up subtract from ``y``
-        d. going down add to ``y``
+        a. going right add to `x`
+        b. going left subtract from `x`
+        c. going up subtract from `y`
+        d. going down add to `y`
     4. When dragon receives damage:
         a. print name of the Dragon
         b. health points which left
     5. When health points drop to, and below zero:
         a. Dragon is dead
         b. Set object status to dead
-        c. Print ``XXX is dead``, where XXX is the name of the dragon
-        d. Change texture file name to  ``img/dragon/dead.png``
+        c. Print `XXX is dead`, where XXX is the name of the dragon
+        d. Change texture file name to  `img/dragon/dead.png`
         e. Print position where dragon died
         f. Return gold dropped by Dragon (random in range from 1 to 100)
         g. Dragon cannot take any more damage
@@ -56,42 +56,48 @@ English:
     7. Non-functional requirements:
         a. This is a simulation of development process
         b. Trainer act as Product Owner with little technical knowledge
-        c. You are the software engineer who need to decide and live with consequences of your choices
-        d. Task is a narrative story telling to demonstrate OOP and good engineering practices
+        c. You are the software engineer who need to decide and live with
+           consequences of your choices
+        d. Task is a narrative story telling to demonstrate OOP
+           and good engineering practices
         e. Calculated last position of the game should be x=20, y=40
-        f. You can introduce new fields, methods, functions, variables, constants, classes, objects, whatever you want
+        f. You can introduce new fields, methods, functions, variables,
+           constants, classes, objects, whatever you want
         g. Don't use modules form outside the Python Standard Library
-        h. Task is business requirements specification, not a technical documentation, i.e. "what Dragon has to do, not how to do it"
+        h. Task is business requirements specification, not a technical
+           documentation, i.e. "what Dragon has to do, not how to do it"
         i. You don't have to keep order of business specification while writing code
-        j. This is ``alpha`` version, so no new functionality like negative position checking etc.
-        k. Do not read solution or any future iterations of this exercise.
-        l. If you read future tasks, you will spoil fun and what is the most important: learning.
+        j. This is `alpha` version, so no new functionality like
+           negative position checking etc.
+        k. Do not read solution or any future iterations of this exercise
+        l. If you read future tasks, you will spoil fun and what
+           is the most important: learning
 
 Polish:
     1. Smok ma (atrybuty):
         a. nazwę
-        b. pozycję ``x`` na ekranie
-        c. pozycję ``y`` na ekranie
-        d. nazwę pliku tekstury, domyślnie ``img/dragon/alive.png``
-        e. punkty życia, domyślnie losowy ``int`` z zakresu od 50 do 100
+        b. pozycję `x` na ekranie
+        c. pozycję `y` na ekranie
+        d. nazwę pliku tekstury, domyślnie `img/dragon/alive.png`
+        e. punkty życia, domyślnie losowy `int` z zakresu od 50 do 100
     2. Smok może (metody):
         a. być ustawiony w dowolne miejsce ekranu
         b. zadawać komuś losowe obrażenia z przedziału od 5 do 20
         c. otrzymywać obrażenia
         d. być przesuwany o zadaną liczbę punktów w którymś z kierunków
     3. Przyjmij górny lewy róg ekranu za punkt początkowy:
-        a. idąc w prawo dodajesz ``x``
-        b. idąc w lewo odejmujesz ``x``
-        c. idąc w górę odejmujesz ``y``
-        d. idąc w dół dodajesz ``y``
+        a. idąc w prawo dodajesz `x`
+        b. idąc w lewo odejmujesz `x`
+        c. idąc w górę odejmujesz `y`
+        d. idąc w dół dodajesz `y`
     4. Gdy smok otrzymuje obrażenia:
         a. wypisz nazwę smoka,
         b. pozostałe punkty życia
     5. Kiedy punkty życia Smoka spadną do, lub poniżej zera:
         a. Smok jest martwy
         b. Ustaw status obiektu na dead
-        c. Wypisz napis ``XXX is dead`` gdzie XXX to nazwa smoka
-        d. Zmień nazwę pliku tekstury na ``img/dragon/dead.png``
+        c. Wypisz napis `XXX is dead` gdzie XXX to nazwa smoka
+        d. Zmień nazwę pliku tekstury na `img/dragon/dead.png`
         e. Wypisz pozycję gdzie smok zginął
         f. Zwróć ile złota smok wyrzucił (losowa 1-100)
         g. Nie można zadawać mu obrażeń
@@ -115,20 +121,25 @@ Polish:
     7. Wymagania niefunkcjonalne:
         a. Zadanie jest symulacją procesu developmentu
         b. Trener zachowuje się jak Product Owner z niewielką techniczną wiedzą
-        c. Ty jesteś inżynierem oprogramowania, który musi podejmować decyzje i ponosić ich konsekwencje
-        d. Zadanie jest tylko narracją do demonstracji OOP i dobrych praktyk programowania
+        c. Ty jesteś inżynierem oprogramowania, który musi podejmować decyzje
+           i ponosić ich konsekwencje
+        d. Zadanie jest tylko narracją do demonstracji OOP i dobrych
+           praktyk programowania
         e. Wyliczona pozycja Smoka na końcu gry powinna być x=20, y=40
-        f. Możesz wprowadzać dodatkowe pola, metody, funkcje, zmienne, stały, klasy, obiekty, co tylko chcesz
+        f. Możesz wprowadzać dodatkowe pola, metody, funkcje, zmienne, stały,
+           klasy, obiekty, co tylko chcesz
         g. Nie korzystaj z modułów spoza standardowej biblioteki Pythona
-        h. Zadanie jest specyfikacją wymagań biznesowych, a nie dokumentacją techniczną. tj. "co Smok ma robić, a nie jak to ma robić"
+        h. Zadanie jest specyfikacją wymagań biznesowych, a nie dokumentacją
+           techniczną. tj. "co Smok ma robić, a nie jak to ma robić"
         i. Nie musisz trzymać się kolejności punktów i podpunktów w zadaniu
-        j. Jest to wersja ``alpha`` więc bez dodatkowych funkcjonalności (np. sprawdzanie koordynatów, wychodzenia poza planszę itp.)
+        j. Jest to wersja `alpha` więc bez dodatkowych funkcjonalności
+           (np. sprawdzanie koordynatów, wychodzenia poza planszę itp.)
         k. Nie przeglądaj rozwiązań ani treści kolejnych (przyszłych) części zadania.
-        l. Jeżeli zaglądniesz w przód, to zepsujesz sobie zabawę i co najważniejsze naukę.
+        l. Jeżeli zaglądniesz w przód, to zepsujesz sobie zabawę i co najważniejsze naukę
 
 Hints:
-    * ``from random import randint``
-    * ``randint`` returns random integer in range [a, b], including both end point
+    * `from random import randint`
+    * `randint` returns random integer in range [a, b], including both end point
 
 Tests:
     >>> from random import seed; seed(0)
@@ -220,7 +231,7 @@ class Dragon:
             return False
 
     def take_damage(self, damage):
-        if self.is_dead():
+        if self.is_alive():
             return None
 
         self.current_health -= damage
@@ -234,67 +245,3 @@ class Dragon:
             self.status = Status.ALIVE
         else:
             self.status = Status.DEAD
-
-
-""" Alternative interface options
-
-#-> wawelski = Dragon('Wawelski', position_x=50, position_y=120)
-#-> wawelski = Dragon('Wawelski', position=Position(50, 120))
-#-> wawelski = Dragon('Wawelski', position=Position(x=50, y=120))
-# wawelski = Dragon('Wawelski', x=50, y=120)
-# wawelski = Dragon('Wawelski', pos_x=50, pos_y=120)
-# wawelski = Dragon('Wawelski', xy=(50,120))
-# wawelski = Dragon('Wawelski', pos=(50,120))
-# wawelski = Dragon('Wawelski', position=(50,120))
-# wawelski = Dragon('Wawelski', position_xy=(50,120))
-# wawelski = Dragon('Wawelski', position={'x':50, 'y':120})
-# wawelski = Dragon('Wawelski', position=Position(position_x=50, position_y=120))
-
-#-> wawelski.set_position(x=10, y=20)
-# wawelski.set_position(10, 20)
-# wawelski.x = 10
-# wawelski.y = 20
-# wawelski.position_x = 10
-# wawelski.position_y = 20
-# wawelski._position_x = 10
-# wawelski._position_y = 20
-
-#-> wawelski.move(left=10, down=20)
-# wawelski.move(0, 10, 0, 20)
-# wawelski.move_left(10)
-# wawelski.move_right(10)
-# wawelski.move([
-#     (0, 10, 0, 20),
-#     (0, 10, 0, 20)])
-# wawelski.move(dx=10, dy=-20)
-# wawelski.move(vertical=10, horizontal=-20)
-# wawelski.move(x=10, y=-20)
-# wawelski.move_to(x=10, y=20)
-# wawelski.move_x(10)
-# wawelski.move_y(20)
-# wawelski.move_xy(10, 20)
-# wawelski.move({'x':50, 'y':120})
-# wawelski.move({'left':50, 'down':120})
-# wawelski.move([
-#     {'left':50, 'down':120},
-#     {'left':50, 'right':120},
-#     {'down':50}])
-# wawelski.move([
-#     (10, 20),
-#     (50, 120),
-#     (5)])
-# wawelski.move([
-#     (10, 20),
-#     (10, 15)])
-# wawelski.move([
-#     {'x':10, 'y':20},
-#     {'x':10, 'y':15}])
-# wawelski.move([
-#     Position(x=10, y=20),
-#     Position(x=10, y=15)])
-# wawelski.change_position(left=10, down=20)
-
-#-> wawelski.take_damage()
-# wawelski.attack()
-# wawelski.hit()
-"""
