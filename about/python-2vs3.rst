@@ -4,7 +4,7 @@ Python 2 vs. 3
 
 
 Rationale
-=======
+=========
 * `six <http://pythonhosted.org/six/>`_
 * `Wall of Super Powers <https://python3wos.appspot.com>`_
 * Unicode - bytes
