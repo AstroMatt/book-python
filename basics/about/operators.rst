@@ -133,18 +133,13 @@ Increment Operators
 
 .. doctest::
 
+    >>> x = 1
     >>> x++
-      File "<stdin>", line 1
-        x++
-          ^
+    Traceback (most recent call last):
     SyntaxError: invalid syntax
 
 .. doctest::
 
-    >>> ++x
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    NameError: name 'x' is not defined
     >>> x = 1
     >>> ++x
     1

@@ -244,7 +244,7 @@ Good practices
 
     >>> import this
     The Zen of Python, by Tim Peters
-
+    <BLANKLINE>
     Beautiful is better than ugly.
     Explicit is better than implicit.
     Simple is better than complex.

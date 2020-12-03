@@ -78,6 +78,7 @@ import re
 import subprocess
 import sys
 from datetime import date
+import doctest
 
 needs_sphinx = '3.0'
 
@@ -147,6 +148,10 @@ project_slug = re.sub(r'[\W]+', '', project)
 sha1 = subprocess.run('git log -1 --format="%h"', stdout=subprocess.PIPE, shell=True, encoding='utf-8').stdout.strip()
 year = date.today().year
 today = date.today().strftime('%Y-%m-%d')
+
+trim_doctest_flags = False
+# doctest_global_cleanup = """"""
+doctest_default_flags = doctest.ELLIPSIS | doctest.IGNORE_EXCEPTION_DETAIL
 
 version = f'#{sha1}, {today}'
 release = f'#{sha1}, {today}'

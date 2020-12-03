@@ -85,8 +85,8 @@ Given:
 
 Tests:
     >>> import sys
-    >>> print(sys.version[:6])
-    3.9.0
+    >>> sys.version_info > (3, 7, 0)
+    True
 
 About Setup VCS
 ---------------
