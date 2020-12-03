@@ -43,8 +43,8 @@ Syntax
             pass
 
 
-Example
-=======
+Abstract Method
+===============
 .. code-block:: python
 
     from abc import ABCMeta, abstractmethod
@@ -74,6 +74,64 @@ Example
     astro = Astronaut()
     # Traceback (most recent call last):
     # TypeError: Can't instantiate abstract class Astronaut with abstract method say_hello
+
+
+Abstract Property
+=================
+.. code-block:: python
+
+    from abc import ABCMeta, abstractproperty
+
+
+    class HasGold(metaclass=ABCMeta):
+        @abstractproperty
+        def GOLD_MIN(self):
+            raise NotImplementedError
+
+        @abstractproperty
+        def GOLD_MAX(self):
+            raise NotImplementedError
+
+
+    class Hero(HasGold):
+        GOLD_MIN: int = 1
+        GOLD_MAX: int = 10
+        name: str
+
+        def __init__(self, name):
+            self.name = name
+
+
+    my = Hero('Mark Watney')
+    print(my.name)
+    # Mark Watney
+
+.. code-block:: python
+
+    from abc import ABCMeta, abstractproperty
+
+
+    class HasGold(metaclass=ABCMeta):
+        @abstractproperty
+        def GOLD_MIN(self):
+            raise NotImplementedError
+
+        @abstractproperty
+        def GOLD_MAX(self):
+            raise NotImplementedError
+
+
+    class Hero(HasGold):
+        name: str
+
+        def __init__(self, name):
+            self.name = name
+
+
+    my = Hero('Mark Watney')
+    print(my.name)
+    # Traceback (most recent call last):
+    # TypeError: Can't instantiate abstract class Hero with abstract methods GOLD_MAX, GOLD_MIN
 
 
 Errors
