@@ -3,7 +3,7 @@
 * Filename: oop_relations_syntax.py
 * Complexity: easy
 * Lines of code: 7 lines
-* Estimated time: 5 min
+* Time: 5 min
 
 English:
     1. Use Dataclass to define class `Point` with attributes:

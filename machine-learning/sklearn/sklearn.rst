@@ -136,10 +136,9 @@ Zadania praktyczne
 Nearest Neighbor Classifier
 ---------------------------
 * Assignment: Nearest Neighbor Classifier
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 15 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/sklearn_classifier.py`
 
 English:
@@ -198,10 +197,9 @@ Hints:
 Sklearn Classifier Compare
 --------------------------
 * Assignment: Sklearn Classifier Compare
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 15 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/sklearn_classifier_compare.py`
 
 English:

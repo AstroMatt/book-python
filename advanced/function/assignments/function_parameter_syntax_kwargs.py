@@ -3,7 +3,7 @@
 * Filename: function_parameter_syntax_kwargs.py
 * Complexity: easy
 * Lines of code: 2 lines
-* Estimated time: 3 min
+* Time: 3 min
 
 English:
     1. Create function `set_position`

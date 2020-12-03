@@ -4,7 +4,7 @@
 * Filename: function_generator_passwd.py
 * Complexity: medium
 * Lines of code: 10 lines
-* Estimated time: 8 min
+* Time: 8 min
 
 English:
     1. Use code from "Given" section (see below)

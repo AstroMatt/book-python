@@ -33,10 +33,9 @@ Assignments
 Random numbers
 --------------
 * Assignment: Random numbers
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/random_sample.py`
 
 English:
@@ -48,10 +47,9 @@ Polish:
 Sum of inner elements
 ---------------------
 * Assignment: Sum of inner elements
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 5 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/random_matrix.py`
 
 English:

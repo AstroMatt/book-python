@@ -3,7 +3,7 @@
 * Filename: oop_method_sequence.py
 * Complexity: easy
 * Lines of code: 18 lines
-* Estimated time: 13 min
+* Time: 13 min
 
 English:
     1. Use data from "Given" section (see below)

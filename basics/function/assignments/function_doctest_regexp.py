@@ -3,7 +3,7 @@
 * Filename: discussion
 * Complexity: almost impossible
 * Lines of code: 0 lines
-* Estimated time: 5 min
+* Time: 5 min
 
 English:
     1. Do not write any code, this is discussion only!

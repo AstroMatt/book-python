@@ -3,7 +3,7 @@
 * Filename: function_parameters_sequence.py
 * Complexity: easy
 * Lines of code: 2 lines
-* Estimated time: 3 min
+* Time: 3 min
 
 English:
     1. Define function `add`

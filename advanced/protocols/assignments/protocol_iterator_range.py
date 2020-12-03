@@ -3,7 +3,7 @@
 * Filename: protocol_iterator_range.py
 * Complexity: medium
 * Lines of code: 25 lines
-* Estimated time: 21 min
+* Time: 21 min
 
 English:
     1. Use data from "Given" section (see below)

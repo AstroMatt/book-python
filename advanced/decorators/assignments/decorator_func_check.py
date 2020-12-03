@@ -3,7 +3,7 @@
 * Filename: decorator_func_check.py
 * Complexity: easy
 * Lines of code: 3 lines
-* Estimated time: 5 min
+* Time: 5 min
 
 English:
     1. Use data from "Given" section (see below)

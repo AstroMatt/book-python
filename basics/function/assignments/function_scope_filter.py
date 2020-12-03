@@ -3,7 +3,7 @@
 * Filename: function_scope_filter.py
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 8 min
+* Time: 8 min
 
 English:
     1. Use data from "Given" section (see below)

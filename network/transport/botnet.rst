@@ -9,10 +9,9 @@ Assignments
 Mini Botnet
 -----------
 * Assignment: Mini Botnet
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 45 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: TODO
 
 #. Stwórz mini botnet o architekturze podanej :numref:`figure-botnet`. Mini botnet składa się z trzech części:
@@ -34,10 +33,9 @@ Hints:
 Heartbeat Receiver
 ------------------
 * Assignment: Heartbeat Receiver
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 45 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/botnet_heartbeat_receiver.py`
 
 English:
@@ -57,10 +55,9 @@ Hints:
 Victim
 ------
 * Assignment: Victim
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 150 lines
-* Estimated time: 34 min
+* Time: 34 min
 * Filename: :download:`assignments/botnet_victim.py`
 
 English:
@@ -94,10 +91,9 @@ Hints:
 Attacker
 --------
 * Assignment: Attacker
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 150 lines
-* Estimated time: 34 min
+* Time: 34 min
 * Filename: :download:`assignments/botnet_attacker.py`
 
 English:

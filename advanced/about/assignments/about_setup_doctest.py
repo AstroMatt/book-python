@@ -3,7 +3,7 @@
 * Filename: about_setup_doctest.py
 * Complexity: easy
 * Lines of code: 0 lines
-* Estimated time: 5 min
+* Time: 5 min
 
 English:
     1. Run doctests from this file

@@ -213,10 +213,9 @@ Assignments
 Own ``doctest``
 ---------------
 * Assignment: Own ``doctest``
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 60 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/debugging_doctest.py`
 
 English:

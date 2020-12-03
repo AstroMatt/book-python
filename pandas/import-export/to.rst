@@ -49,10 +49,9 @@ Assignments
 DataFrame Export CSV
 --------------------
 * Assignment: DataFrame Export CSV
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 3 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/pandas_to_csv.py`
 
 English:
@@ -74,10 +73,9 @@ Given:
 DataFrame Export JSON
 ---------------------
 * Assignment: DataFrame Export JSON
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 3 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/pandas_to_json.py`
 
 English:
@@ -99,10 +97,9 @@ Given:
 DataFrame Export Pickle
 -----------------------
 * Assignment: DataFrame Export Pickle
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 3 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/pandas_to_pickle.py`
 
 English:
@@ -124,10 +121,9 @@ Given:
 DataFrame Export Pickle
 -----------------------
 * Assignment: DataFrame Export Pickle
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 4 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: :download:`assignments/pandas_to_sql.py`
 
 English:

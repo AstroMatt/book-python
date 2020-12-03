@@ -194,10 +194,9 @@ Assignments
 Regexp Match Phones
 -------------------
 * Assignment: Regexp Match Phones
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 8 min
+* Time: 8 min
 * Filename: :download:`assignments/regexp_match_phones.py`
 
 English:
@@ -253,10 +252,9 @@ Tests:
 Regexp Match Git Flow
 ---------------------
 * Assignment: Regexp Match Git Flow
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 15 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/regexp_match_gitflow.py`
 
 English:

@@ -3,7 +3,7 @@
 * Filename: unpacking_parameters_kwargs.py
 * Complexity: medium
 * Lines of code: 8 lines
-* Estimated time: 5 min
+* Time: 5 min
 
 English:
     1. Create function `isnumeric`

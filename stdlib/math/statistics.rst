@@ -220,10 +220,9 @@ Assignments
 Column Stats
 ------------
 * Assignment: Column Stats
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 30 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/statistics_column_stats.py`
 
 English:
@@ -295,10 +294,9 @@ Given:
 Iris Stats
 ----------
 * Assignment: Iris Stats
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 30 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/statistics_iris.py`
 
 English:

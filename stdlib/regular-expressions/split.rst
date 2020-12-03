@@ -60,10 +60,9 @@ Assignments
 Regexp Split Moon Speech
 ------------------------
 * Assignment: Regexp Split Moon Speech
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 8 min
+* Time: 8 min
 * Filename: :download:`assignments/regexp_split_moon_speech.py`
 * References: "Moon Speech" by John F. Kennedy at Rice Stadium, Houston, TX on 1962-09-12 :cite:`RegexpKennedy1962`
 

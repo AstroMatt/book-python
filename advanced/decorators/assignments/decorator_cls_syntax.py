@@ -3,7 +3,7 @@
 * Filename: decorator_cls_syntax.py
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 5 min
+* Time: 5 min
 
 English:
     1. Create decorator class `MyDecorator`

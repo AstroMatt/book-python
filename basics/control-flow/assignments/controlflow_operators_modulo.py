@@ -3,7 +3,7 @@
 * Filename: controlflow_operators_modulo.py
 * Complexity: easy
 * Lines of code: 3 lines
-* Estimated time: 3 min
+* Time: 3 min
 
 English:
     1. Read a number from user

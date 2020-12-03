@@ -3,7 +3,7 @@
 * Filename: type_str_input.py
 * Complexity: easy
 * Lines of code: 1 lines
-* Estimated time: 2 min
+* Time: 2 min
 
 English:
     1. Ask user to input text `NASA` (case sensitive)

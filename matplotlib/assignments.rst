@@ -4,10 +4,9 @@ Assignments
 Trigonometry
 ------------
 * Assignment: Trigonometry
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 15 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/matplotlib_trigonometry.py`
 
 English:
@@ -35,10 +34,9 @@ Hints:
 Iris scatter
 ------------
 * Assignment: Iris scatter
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 20 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/matplotlib_iris.py`
 
 English:
@@ -61,10 +59,9 @@ Hints:
 Random points
 -------------
 * Assignment: Random points
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 15 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/matplotlib_random_points.py`
 
 English:
@@ -122,10 +119,9 @@ Hints:
 Color graph
 -----------
 * Assignment: Color graph
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 15 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: TODO
 
 English:

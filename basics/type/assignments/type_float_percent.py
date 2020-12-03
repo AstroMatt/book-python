@@ -3,7 +3,7 @@
 * Filename: type_float_percent.py
 * Complexity: medium
 * Lines of code: 2 lines
-* Estimated time: 3 min
+* Time: 3 min
 
 English:
     1. International Standard Atmosphere (ISA) at sea level is 1 ata = 1013.25 hPa

@@ -73,7 +73,7 @@ About IDE Usage
 * Assignment: About IDE Usage
 * Complexity: easy
 * Lines of code: 0 lines
-* Estimated time: 8 min
+* Time: 8 min
 * Filename: TODO
 
 English:
@@ -103,7 +103,7 @@ About IDE Spellchecker
 * Assignment: About IDE Spellchecker
 * Complexity: easy
 * Lines of code: 0 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: TODO
 
 English:

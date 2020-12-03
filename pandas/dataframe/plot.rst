@@ -475,10 +475,9 @@ Assignments
 DataFrame Plot
 --------------
 * Assignment: DataFrame Plot
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 15 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/df_plot.py`
 
 English:

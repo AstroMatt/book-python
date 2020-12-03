@@ -3,7 +3,7 @@
 * Filename: protocol_reflection_setattr.py
 * Complexity: easy
 * Lines of code: 9 lines
-* Estimated time: 8 min
+* Time: 8 min
 
 English:
     1. Create class `Point` with `x`, `y`, `z` attributes

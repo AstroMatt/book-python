@@ -62,10 +62,9 @@ Assignments
 Datetime Timestamp Limits
 -------------------------
 * Assignment: Datetime Timestamp Limits
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 1 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: :download:`assignments/datetime_timestamp_limits.py`
 
 English:

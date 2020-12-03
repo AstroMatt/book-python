@@ -531,10 +531,9 @@ Assignments
 Serialization CSV DictReader
 ----------------------------
 * Assignment: Serialization CSV DictReader
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 6 lines
-* Estimated time: 7 min
+* Time: 7 min
 * Filename: :download:`assignments/serialization_csv_dictreader.py`
 
 English:
@@ -579,10 +578,9 @@ Tests:
 Serialization CSV DictWriter
 ----------------------------
 * Assignment: Serialization CSV DictWriter
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 7 min
+* Time: 7 min
 * Filename: :download:`assignments/serialization_csv_dictwriter.py`
 
 English:
@@ -633,10 +631,9 @@ Tests:
 Serialization CSV List of Tuples
 --------------------------------
 * Assignment: Serialization CSV List of Tuples
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 7 lines
-* Estimated time: 7 min
+* Time: 7 min
 * Filename: :download:`assignments/serialization_csv_list_of_tuple.py`
 
 English:
@@ -718,10 +715,9 @@ Tests:
 Serialization CSV Schemaless
 -----------------------------
 * Assignment: Serialization CSV Schemaless
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 8 lines
-* Estimated time: 7 min
+* Time: 7 min
 * Filename: :download:`assignments/serialization_csv_schemaless.py`
 
 English:
@@ -774,10 +770,9 @@ Tests:
 Serialization CSV Objects
 -------------------------
 * Assignment: Serialization CSV Objects
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 7 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/serialization_csv_objects.py`
 
 English:
@@ -824,10 +819,9 @@ Given:
 Serialization CSV Relations
 ---------------------------
 * Assignment: Serialization CSV Relations
-* Last update: 2020-10-01
 * Complexity: hard
 * Lines of code: 18 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/serialization_csv_relations.py`
 
 English:

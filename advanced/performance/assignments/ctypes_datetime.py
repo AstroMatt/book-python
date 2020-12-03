@@ -3,7 +3,7 @@
 * Filename: ctypes_datetime.py
 * Complexity: easy
 * Lines of code: 10 lines
-* Estimated time: 13 min
+* Time: 13 min
 
 English:
     TODO: English Translation

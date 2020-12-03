@@ -220,10 +220,9 @@ Assignments
 DataFrame Select
 ----------------
 * Assignment: DataFrame Select
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 8 min
+* Time: 8 min
 * Filename: :download:`assignments/df_select.py`
 
 English:

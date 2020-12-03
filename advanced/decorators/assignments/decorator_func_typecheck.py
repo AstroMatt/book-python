@@ -3,7 +3,7 @@
 * Filename: decorator_func_typecheck.py
 * Complexity: hard
 * Lines of code: 15 lines
-* Estimated time: 21 min
+* Time: 21 min
 
 English:
     1. Use code from "Given" section (see below)

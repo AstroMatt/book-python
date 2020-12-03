@@ -3,7 +3,7 @@
 * Filename: function_parameters_default.py
 * Complexity: easy
 * Lines of code: 4 lines
-* Estimated time: 3 min
+* Time: 3 min
 
 English:
     1. Define function `default` with two parameters

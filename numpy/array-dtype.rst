@@ -311,10 +311,9 @@ Assignments
 Numpy Dtype Astype
 ------------------
 * Assignment: Numpy Dtype Astype
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 4 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/numpy_astype.py`
 
 English:

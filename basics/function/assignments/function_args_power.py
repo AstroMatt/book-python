@@ -3,7 +3,7 @@
 * Filename: function_args_power.py
 * Complexity: easy
 * Lines of code: 6 lines
-* Estimated time: 3 min
+* Time: 3 min
 
 English:
     1. Define function `power`

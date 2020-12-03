@@ -390,10 +390,9 @@ Assignments
 REST API
 --------
 * Assignment: REST API
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 60 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/http_github.py`
 
 English:

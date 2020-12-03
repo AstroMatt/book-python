@@ -244,10 +244,9 @@ Assignments
 Pandas Read CSV Dates
 ---------------------
 * Assignment: Pandas Read CSV Dates
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/pandas_read_csv_dates.py`
 
 English:
@@ -273,10 +272,9 @@ Hints:
 Pandas Read CSV Replace
 -----------------------
 * Assignment: Pandas Read CSV Replace
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/pandas_read_csv_replace.py`
 
 English:
@@ -319,10 +317,9 @@ Hints:
 Pandas Read JSON
 ----------------
 * Assignment: Pandas Read JSON
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: :download:`assignments/pandas_read_json_iris.py`
 
 English:
@@ -343,10 +340,9 @@ Given:
 Pandas Read JSON OpenAPI
 ------------------------
 * Assignment: Pandas Read JSON OpenAPI
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: :download:`assignments/pandas_read_json_openapi.py`
 
 English:
@@ -369,10 +365,9 @@ Given:
 Pandas Read HTML
 ----------------
 * Assignment: Pandas Read HTML
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: :download:`assignments/pandas_read_html.py`
 
 English:
@@ -397,10 +392,9 @@ Hints:
 Pandas Read XSLT Books
 ----------------------
 * Assignment: Pandas Read XSLT Books
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 5 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/pandas_read_xslt_books.py`
 
 English:
@@ -426,10 +420,9 @@ Hints:
 Pandas Read XSLT Plants
 -----------------------
 * Assignment: Pandas Read XSLT Plants
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 5 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/pandas_read_xslt_plants.py`
 
 English:

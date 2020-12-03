@@ -42,10 +42,9 @@ Converting to ``int``
 Assignments
 -----------
 * Assignment: Assignments
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 12 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: :download:`assignments/types_int.py`
 
 English:
@@ -116,10 +115,9 @@ Converting to ``float``
 Assignments
 -----------
 * Assignment: Assignments
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 4 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: :download:`assignments/types_float.py`
 
 English:
@@ -325,10 +323,9 @@ Methods
 Assignments
 -----------
 * Assignment: Assignments
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 3 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/types_str.py`
 
 English:
@@ -468,10 +465,9 @@ Assignments
 To ``bool`` or not to ``bool``
 ------------------------------
 * Assignment: To ``bool`` or not to ``bool``
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 15 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/types_bool.py`
 
 English:

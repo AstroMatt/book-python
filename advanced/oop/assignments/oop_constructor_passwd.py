@@ -3,7 +3,7 @@
 * Filename: oop_constructor_passwd.py
 * Complexity: easy
 * Lines of code: 21 lines
-* Estimated time: 13 min
+* Time: 13 min
 
 English:
     TODO: English translation

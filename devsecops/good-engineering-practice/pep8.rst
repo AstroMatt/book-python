@@ -843,10 +843,9 @@ Assignments
 Cleanup your file
 -----------------
 * Assignment: Cleanup your file
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 2 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: :download:`assignments/cleanup.py`
 
 English:

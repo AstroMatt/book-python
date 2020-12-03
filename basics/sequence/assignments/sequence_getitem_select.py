@@ -3,7 +3,7 @@
 * Filename: sequence_getitem_select.py
 * Complexity: easy
 * Lines of code: 10 lines
-* Estimated time: 8 min
+* Time: 8 min
 
 English:
     1. Use data from "Given" section (see below)

@@ -3,7 +3,7 @@
 * Filename: optimization_memoize.py
 * Complexity: medium
 * Lines of code: 5 lines
-* Estimated time: 13 min
+* Time: 13 min
 
 English:
     TODO: English Translation

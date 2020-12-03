@@ -3,7 +3,7 @@
 * Filename: function_parameters_echo.py
 * Complexity: easy
 * Lines of code: 2 lines
-* Estimated time: 3 min
+* Time: 3 min
 
 English:
     1. Define function `echo` with two parameters

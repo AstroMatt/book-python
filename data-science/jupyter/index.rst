@@ -550,10 +550,9 @@ Assignments
 Jupyter First
 -------------
 * Assignment: Jupyter First
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 10 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/jupyter_first.ipynb`
 
 English:
@@ -570,10 +569,9 @@ Polish:
 Jupyter Slides
 --------------
 * Assignment: Jupyter Slides
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 1 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: :download:`assignments/jupyter_slides.py`
 
 English:

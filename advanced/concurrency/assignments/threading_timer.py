@@ -3,7 +3,7 @@
 * Filename: threading_timer.py
 * Complexity: easy
 * Lines of code: 20 lines
-* Estimated time: 21 min
+* Time: 21 min
 
 English:
     TODO: English Translation

@@ -3,7 +3,7 @@
 * Filename: oop_access_protected.py
 * Complexity: easy
 * Lines of code: 11 lines
-* Estimated time: 8 min
+* Time: 8 min
 
 English:
     1. Use data from "Given" section (see below)

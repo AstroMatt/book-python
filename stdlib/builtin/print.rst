@@ -611,10 +611,9 @@ Assignments
 Powielanie napisów
 ------------------
 * Assignment: Powielanie napisów
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 8 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: :download:`assignments/print_lines.py`
 
 English:
@@ -635,10 +634,9 @@ Polish:
 Przeliczanie temperatury
 ------------------------
 * Assignment: Przeliczanie temperatury
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 8 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/print_formatting.py`
 
 English:

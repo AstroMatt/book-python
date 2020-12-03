@@ -3,7 +3,7 @@
 * Filename: function_return_numbers.py
 * Complexity: easy
 * Lines of code: 4 lines
-* Estimated time: 3 min
+* Time: 3 min
 
 English:
     1. Define function `add` without parameters

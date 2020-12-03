@@ -86,10 +86,9 @@ Assignments
 Regexp Standards PESEL
 ----------------------
 * Assignment: Regexp Standards PESEL
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 0 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: :download:`assignments/regexp_standards_pesel.py` (naive implementation)
 * Warning: Do no write any code - **discussion only**
 

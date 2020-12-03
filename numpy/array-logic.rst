@@ -357,10 +357,9 @@ Assignments
 Numpy Logic Even
 ----------------
 * Assignment: Numpy Logic Even
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 4 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: :download:`assignments/numpy_logic_even.py`
 
 English:
@@ -380,10 +379,9 @@ Polish:
 Numpy Logic Isin
 ----------------
 * Assignment: Numpy Logic Isin
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 9 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: :download:`assignments/numpy_logic_isin.py`
 
 English:

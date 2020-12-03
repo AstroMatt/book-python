@@ -3,7 +3,7 @@
 * Filename: type_int_bits.py
 * Complexity: medium
 * Lines of code: 4 lines
-* Estimated time: 3 min
+* Time: 3 min
 
 English:
     1. File size is 1.337 megabit

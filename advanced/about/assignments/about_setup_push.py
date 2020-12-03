@@ -3,7 +3,7 @@
 * Filename: about_setup_push.py
 * Complexity: easy
 * Lines of code: 0 lines
-* Estimated time: 3 min
+* Time: 3 min
 
 English:
     TODO: English Translation

@@ -396,10 +396,9 @@ Assignments
 Series NA
 ---------
 * Assignment: Series NA
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 10 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: :download:`assignments/series_na.py`
 
 English:

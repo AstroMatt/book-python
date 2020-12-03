@@ -3,7 +3,7 @@
 * Filename: unpacking_parameters_args.py
 * Complexity: easy
 * Lines of code: 7 lines
-* Estimated time: 5 min
+* Time: 5 min
 
 English:
     1. Create function `isnumeric`

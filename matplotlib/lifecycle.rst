@@ -338,10 +338,9 @@ Assignments
 Iris transformations
 --------------------
 * Assignment: Iris transformations
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 20 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/matplotlib_lifecycle.py`
 
 English:

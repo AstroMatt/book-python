@@ -3,7 +3,7 @@
 * Filename: oop_overload_iadd.py
 * Complexity: easy
 * Lines of code: 3 lines
-* Estimated time: 5 min
+* Time: 5 min
 
 English:
     1. Use code from "Given" section (see below)

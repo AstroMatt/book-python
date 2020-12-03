@@ -197,10 +197,9 @@ Assignments
 Datetime Timedelta Period
 -------------------------
 * Assignment: Datetime Timedelta Period
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 15 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/datetime_timedelta_period.py`
 
 English:

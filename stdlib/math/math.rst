@@ -229,10 +229,9 @@ Assignments
 Trigonometry
 ------------
 * Assignment: Trigonometry
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 10 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/math_trigonometry.py`
 
 English:
@@ -253,10 +252,9 @@ Hints:
 Euclidean distance 2D
 ---------------------
 * Assignment: Euclidean distance 2D
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/math_euclidean_2d.py`
 
 English:
@@ -315,10 +313,9 @@ Hints:
 Euclidean distance ``n`` dimensions
 -----------------------------------
 * Assignment: Euclidean distance ``n`` dimensions
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 10 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/math_euclidean_multi_dim.py`
 
 English:
@@ -374,10 +371,9 @@ Hints:
 Matrix multiplication
 ---------------------
 * Assignment: Matrix multiplication
-* Last update: 2020-10-01
 * Complexity: hard
 * Lines of code: 6 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/math_matmul.py`
 
 English:
@@ -414,10 +410,9 @@ Hints:
 Triangle
 --------
 * Assignment: Triangle
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/math_triangle.py`
 
 English:

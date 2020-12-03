@@ -3,7 +3,7 @@
 * Filename: oop_abstract_syntax.py
 * Complexity: easy
 * Lines of code: 10 lines
-* Estimated time: 5 min
+* Time: 5 min
 
 English:
     1. Create abstract class `Iris`

@@ -3,7 +3,7 @@
 * Filename: sequence_tuple_create.py
 * Complexity: easy
 * Lines of code: 1 lines
-* Estimated time: 2 min
+* Time: 2 min
 
 English:
     1. Create tuple `result` with elements:

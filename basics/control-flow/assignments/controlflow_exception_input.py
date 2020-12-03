@@ -3,7 +3,7 @@
 * Filename: controlflow_exception_input.py
 * Complexity: easy
 * Lines of code: 9 lines
-* Estimated time: 5 min
+* Time: 5 min
 
 English:
     1. Ask user to input angle in degrees

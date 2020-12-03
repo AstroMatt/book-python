@@ -3,7 +3,7 @@
 * Filename: oop_stringify_nested.py
 * Complexity: medium
 * Lines of code: 9 lines
-* Estimated time: 21 min
+* Time: 21 min
 
 English:
     1. Use code from "Given" section (see below)

@@ -3,7 +3,7 @@
 * Filename: oop_constructor_syntax.py
 * Complexity: easy
 * Lines of code: 6 lines
-* Estimated time: 5 min
+* Time: 5 min
 
 English:
     1. Use data from "Given" section (see below)

@@ -321,10 +321,9 @@ Assignments
 DataFrame Mapping Split
 -----------------------
 * Assignment: DataFrame Mapping Split
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/df_mapping_split.py`
 
 English:
@@ -350,10 +349,9 @@ Hints:
 DataFrame Mapping Translate
 ---------------------------
 * Assignment: DataFrame Mapping Translate
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/df_mapping_translate.py`
 
 English:
@@ -395,10 +393,9 @@ Hints:
 DataFrame Mapping Month
 -----------------------
 * Assignment: DataFrame Mapping Month
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 10 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/df_mapping_month.py`
 
 English:
@@ -434,10 +431,9 @@ Hints:
 DataFrame Mapping Substitute
 ----------------------------
 * Assignment: DataFrame Mapping Substitute
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 10 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/df_mapping_substitute.py`
 
 English:

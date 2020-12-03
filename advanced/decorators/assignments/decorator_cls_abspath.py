@@ -3,7 +3,7 @@
 * Filename: decorator_cls_abspath.py
 * Complexity: easy
 * Lines of code: 10 lines
-* Estimated time: 13 min
+* Time: 13 min
 
 English:
     1. Use data from "Given" section (see below)

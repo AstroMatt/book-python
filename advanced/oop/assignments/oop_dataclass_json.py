@@ -3,7 +3,7 @@
 * Filename: oop_dataclass_json.py
 * Complexity: medium
 * Lines of code: 23 lines
-* Estimated time: 21 min
+* Time: 21 min
 
 English:
     1. Use data from "Given" section (see below)

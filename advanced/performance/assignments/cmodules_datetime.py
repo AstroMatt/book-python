@@ -3,7 +3,7 @@
 * Filename: cmodules_datetime.py
 * Complexity: medium
 * Lines of code: 10 lines
-* Estimated time: 13 min
+* Time: 13 min
 
 English:
     TODO: English Translation

@@ -3,7 +3,7 @@
 * Filename: file_path_exception.py
 * Complexity: easy
 * Lines of code: 6 lines
-* Estimated time: 2 min
+* Time: 2 min
 
 English:
     1. Using `input()` ask user for a file path

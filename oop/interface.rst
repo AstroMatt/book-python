@@ -125,10 +125,9 @@ Assignments
 OOP Interface Define
 --------------------
 * Assignment: OOP Interface Define
-* Last update: 2020-10-14
 * Complexity: easy
 * Lines of code: 13 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/oop_interface_define.py`
 
 English:
@@ -162,10 +161,9 @@ Tests:
 OOP Interface Implement
 -----------------------
 * Assignment: OOP Interface Implement
-* Last update: 2020-10-14
 * Complexity: easy
 * Lines of code: 12 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/oop_interface_implement.py`
 
 English:

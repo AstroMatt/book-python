@@ -3,7 +3,7 @@
 * Filename: file_read_str.py
 * Complexity: easy
 * Lines of code: 2 lines
-* Estimated time: 3 min
+* Time: 3 min
 
 English:
     1. Use data from "Given" section (see below)

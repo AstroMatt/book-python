@@ -130,10 +130,9 @@ Assignments
 Series Create Float
 -------------------
 * Assignment: Series Create Float
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/series_create_float.py`
 
 English:
@@ -147,10 +146,9 @@ Polish:
 Series Create Randint
 ---------------------
 * Assignment: Series Create Randint
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/series_create_randint.py`
 
 English:
@@ -164,10 +162,9 @@ Polish:
 Series Create Even
 ------------------
 * Assignment: Series Create Even
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/series_create_even.py`
 
 English:
@@ -179,10 +176,9 @@ Polish:
 Series Create Dates
 -------------------
 * Assignment: Series Create Dates
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/series_create_dates.py`
 
 English:

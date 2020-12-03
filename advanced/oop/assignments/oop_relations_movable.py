@@ -3,7 +3,7 @@
 * Filename: oop_relations_movable.py
 * Complexity: medium
 * Lines of code: 18 lines
-* Estimated time: 21 min
+* Time: 21 min
 
 English:
     1. Define class `Point`

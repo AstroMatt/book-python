@@ -3,7 +3,7 @@
 * Filename: type_int_bandwidth.py
 * Complexity: easy
 * Lines of code: 10 lines
-* Estimated time: 3 min
+* Time: 3 min
 
 English:
     1. Having internet connection with speed 100 Mb/s

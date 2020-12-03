@@ -3,7 +3,7 @@
 * Filename: oop_abstract_interface.py
 * Complexity: easy
 * Lines of code: 13 lines
-* Estimated time: 13 min
+* Time: 13 min
 
 English:
     1. Define abstract class `IrisAbstract`

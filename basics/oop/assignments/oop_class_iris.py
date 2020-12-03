@@ -3,7 +3,7 @@
 * Filename: oop_class_iris.py
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 3 min
+* Time: 3 min
 
 English:
     1. Define class `Iris`

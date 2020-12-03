@@ -190,10 +190,9 @@ Assignments
 Datetime Create Custom
 ----------------------
 * Assignment: Datetime Create Custom
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 3 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/datetime_create_custom.py`
 
 English:
@@ -209,10 +208,9 @@ Polish:
 Datetime Create Current
 -----------------------
 * Assignment: Datetime Create Current
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 3 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/datetime_create_current.py`
 
 English:

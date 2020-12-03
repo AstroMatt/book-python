@@ -349,10 +349,9 @@ Assignments
 Average
 -------
 * Assignment: Average
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 12 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/builtin_average.py`
 
 English:

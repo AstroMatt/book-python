@@ -527,10 +527,9 @@ Assignments
 ``map()``, ``filter()`` and ``lambda``
 --------------------------------------
 * Assignment: ``map()``, ``filter()`` and ``lambda``
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 10 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/functional_map_filter_lambda.py`
 
 English:
@@ -545,10 +544,9 @@ Polish:
 Balanced Brackets
 -----------------
 * Assignment: Balanced Brackets
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 10 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/functional_brackets.py`
 
 English:

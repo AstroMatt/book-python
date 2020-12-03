@@ -234,10 +234,9 @@ Assignments
 OOP Slots Define
 ----------------
 * Assignment: OOP Slots Define
-* Last update: 2020-10-02
 * Complexity: easy
 * Lines of code: 11 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/oop_slots_define.py`
 
 English:

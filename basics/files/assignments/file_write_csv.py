@@ -3,7 +3,7 @@
 * Filename: file_write_csv.py
 * Complexity: medium
 * Lines of code: 6 lines
-* Estimated time: 13 min
+* Time: 13 min
 
 English:
     1. Use data from "Given" section (see below)

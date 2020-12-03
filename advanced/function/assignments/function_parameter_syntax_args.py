@@ -3,7 +3,7 @@
 * Filename: function_parameter_syntax_args.py
 * Complexity: easy
 * Lines of code: 2 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Warning: This assignment will work only in Python 3.8+
 
 English:

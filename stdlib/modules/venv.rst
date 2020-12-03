@@ -157,10 +157,9 @@ Assignments
 Virtualenv
 ----------
 * Assignment: Virtualenv
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 0 lines
-* Estimated time: 2 min
+* Time: 2 min
 * Filename: :download:`assignments/venv.py`
 
 English:

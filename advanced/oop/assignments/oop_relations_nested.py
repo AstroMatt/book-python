@@ -3,7 +3,7 @@
 * Filename: oop_relations_nested.py
 * Complexity: medium
 * Lines of code: 30 lines
-* Estimated time: 21 min
+* Time: 21 min
 
 English:
     1. Client can open a bank account

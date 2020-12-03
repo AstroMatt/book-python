@@ -3,7 +3,7 @@
 * Filename: protocol_descriptor_simple.py
 * Complexity: easy
 * Lines of code: 9 lines
-* Estimated time: 13 min
+* Time: 13 min
 
 English:
     1. Define class `Temperature`

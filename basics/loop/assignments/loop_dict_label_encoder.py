@@ -3,7 +3,7 @@
 * Filename: loop_dict_label_encoder.py
 * Complexity: hard
 * Lines of code: 9 lines
-* Estimated time: 13 min
+* Time: 13 min
 
 English:
     1. Use data from "Given" section (see below)

@@ -170,10 +170,9 @@ Assignments
 Pima Indians Diabetes problem
 -----------------------------
 * Assignment: Pima Indians Diabetes problem
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 15 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/knn_pima.py`
 
 English:
@@ -185,10 +184,9 @@ Polish:
 Płeć
 ----
 * Assignment: Płeć
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 15 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/knn_gender.py`
 
 English:

@@ -3,7 +3,7 @@
 * Filename: protocol_reflection_frozen.py
 * Complexity: easy
 * Lines of code: 11 lines
-* Estimated time: 13 min
+* Time: 13 min
 
 English:
     1. Create class `Point` with `x`, `y`, `z` attributes

@@ -3,7 +3,7 @@
 * Filename: about_print.py
 * Complexity: easy
 * Lines of code: 1 lines
-* Estimated time: 3 min
+* Time: 3 min
 
 English:
     1. Define `result` with text "Hello World"

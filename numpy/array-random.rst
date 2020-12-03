@@ -282,10 +282,9 @@ Assignments
 Numpy Random Float
 ------------------
 * Assignment: Numpy Random Float
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 3 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/numpy_random_float.py`
 
 English:
@@ -299,10 +298,9 @@ Polish:
 Numpy Random Int
 ----------------
 * Assignment: Numpy Random Int
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 4 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/numpy_random_int.py`
 
 English:
@@ -316,10 +314,9 @@ Polish:
 Numpy Random Sample
 -------------------
 * Assignment: Numpy Random Sample
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 5 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/numpy_random_sample.py`
 
 English:

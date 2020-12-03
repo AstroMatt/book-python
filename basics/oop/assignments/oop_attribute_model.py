@@ -3,7 +3,7 @@
 * Filename: oop_attribute_model.py
 * Complexity: easy
 * Lines of code: 15 lines
-* Estimated time: 8 min
+* Time: 8 min
 
 English:
     1. Use data from "Given" section (see below)

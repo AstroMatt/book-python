@@ -130,10 +130,9 @@ Assignments
 Heartbeat
 ---------
 * Assignment: Heartbeat
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 20 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/socket_heartbeat_client.py` and :download:`assignments/socket_heartbeat_server.py`
 
 English:
@@ -159,10 +158,9 @@ Hints:
 Backdoor
 --------
 * Assignment: Backdoor
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 150 lines
-* Estimated time: 34 min
+* Time: 34 min
 * Filename: :download:`assignments/socket_backdoor.py`
 
 English:

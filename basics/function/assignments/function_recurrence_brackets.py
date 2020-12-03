@@ -3,7 +3,7 @@
 * Filename: function_recurrence_brackets.py
 * Complexity: medium
 * Lines of code: 10 lines
-* Estimated time: 21 min
+* Time: 21 min
 
 English:
     1. Create function which checks if brackets are balanced

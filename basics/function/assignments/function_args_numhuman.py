@@ -3,7 +3,7 @@
 * Filename: function_args_numhuman.py
 * Complexity: hard
 * Lines of code: 15 lines
-* Estimated time: 21 min
+* Time: 21 min
 
 English:
     1. Define function converting `int` or `float` to text form

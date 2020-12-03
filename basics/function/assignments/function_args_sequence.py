@@ -3,7 +3,7 @@
 * Filename: function_args_sequence.py
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 3 min
+* Time: 3 min
 
 English:
     1. Define function which takes sequence of integers as an argument

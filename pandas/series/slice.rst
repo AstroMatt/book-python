@@ -297,10 +297,9 @@ Assignments
 Series Slice Datetime
 ---------------------
 * Assignment: Series Slice Datetime
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/series_slice_datetime.py`
 
 English:
@@ -346,10 +345,9 @@ Hints:
 Slicing Slice Str
 -----------------
 * Assignment: Slicing Slice Str
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 10 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/series_slice_str.py`
 
 English:

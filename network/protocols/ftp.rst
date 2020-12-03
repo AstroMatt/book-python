@@ -38,10 +38,9 @@ Assignments
 FTP Download
 ------------
 * Assignment: FTP Download
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 20 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/ftp_download.py`
 
 English:
@@ -62,10 +61,9 @@ Polish:
 FTP Upload
 ----------
 * Assignment: FTP Upload
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 20 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/ftp_upload.py`
 
 English:

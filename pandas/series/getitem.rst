@@ -147,10 +147,9 @@ Assignments
 Series Getitem
 --------------
 * Assignment: Series Getitem
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 8 min
+* Time: 8 min
 * Filename: :download:`assignments/series_getitem.py`
 
 English:

@@ -3,7 +3,7 @@
 * Filename: function_generator_iris.py
 * Complexity: easy
 * Lines of code: 8 lines
-* Estimated time: 8 min
+* Time: 8 min
 
 English:
     1. Use code from "Given" section (see below)

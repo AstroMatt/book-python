@@ -176,10 +176,9 @@ Assignments
 Numpy Iteration
 ---------------
 * Assignment: Numpy Iteration
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 9 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/numpy_iteration.py`
 
 English:

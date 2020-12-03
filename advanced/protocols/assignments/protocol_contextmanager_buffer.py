@@ -3,7 +3,7 @@
 * Filename: protocol_contextmanager_buffer.py
 * Complexity: medium
 * Lines of code: 22 lines
-* Estimated time: 21 min
+* Time: 21 min
 
 English:
     1. Use data from "Given" section (see below)

@@ -157,10 +157,9 @@ Assignments
 Datetime Timezone Convert
 -------------------------
 * Assignment: Datetime Timezone Convert
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/datetime_timezone_convert.py`
 
 English:

@@ -163,10 +163,9 @@ Assignments
 Numpy Slice 1
 -------------
 * Assignment: Numpy Slice 1
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 3 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/numpy_slice_1.py`
 
 English:
@@ -200,10 +199,9 @@ Tests:
 Numpy Slice 2
 -------------
 * Assignment: Numpy Slice 2
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 3 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/numpy_slice_2.py`
 
 English:

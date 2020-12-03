@@ -440,10 +440,9 @@ Assignments
 Serialization JSON Dump
 -----------------------
 * Assignment: Serialization JSON Dump
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 8 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/serialization_json_dump.py`
 
 English:
@@ -504,10 +503,9 @@ Tests:
 Serialization JSON Load
 -----------------------
 * Assignment: Serialization JSON Load
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 8 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/serialization_json_load.py`
 
 English:
@@ -531,10 +529,9 @@ Given:
 Serialization JSON Datetime
 ---------------------------
 * Assignment: Serialization JSON Datetime
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 10 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/serialization_json_datetime.py`
 
 English:
@@ -568,10 +565,9 @@ Given:
 Serialization JSON Object
 -------------------------
 * Assignment: Serialization JSON Object
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 15 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/serialization_json_object.py`
 
 English:
@@ -625,10 +621,9 @@ Given:
 Serialization JSON HTTP
 -----------------------
 * Assignment: Serialization JSON HTTP
-* Last update: 2020-10-01
 * Complexity: hard
 * Lines of code: 15 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/serialization_json_http.py`
 
 English:

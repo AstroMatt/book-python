@@ -38,10 +38,9 @@ Assignments
 Regexp Search Astronauts
 ------------------------
 * Assignment: Regexp Search Astronauts
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 6 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: :download:`assignments/regexp_search_astronauts.py`
 * References: First paragraph from Apollo 11 Wikipedia entry :cite:`RegexpWikipediaApollo11`
 
@@ -85,10 +84,9 @@ Given:
 Regexp Search Moon Speech
 -------------------------
 * Assignment: Regexp Search Moon Speech
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 8 min
+* Time: 8 min
 * Filename: :download:`assignments/regexp_search_moon_speech.py`
 * References: "Moon Speech" by John F. Kennedy at Rice Stadium, Houston, TX on 1962-09-12 :cite:`RegexpKennedy1962`
 
@@ -111,10 +109,9 @@ Polish:
 Regexp Search Time
 ------------------
 * Assignment: Regexp Search Time
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 4 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: :download:`assignments/regexp_search_time.py`
 * References: First paragraph from Apollo 11 Wikipedia entry :cite:`RegexpWikipediaApollo11`
 
@@ -149,10 +146,9 @@ Given:
 Regexp Search Datetime
 ----------------------
 * Assignment: Regexp Search Datetime
-* Last update: 2020-10-01
 * Complexity: hard
 * Lines of code: 4 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: :download:`assignments/regexp_search_datetime.py`
 * References: (modified) First paragraph from Apollo 11 Wikipedia entry :cite:`RegexpWikipediaApollo11`
 

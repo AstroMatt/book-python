@@ -3,7 +3,7 @@
 * Filename: oop_dataclass_syntax.py
 * Complexity: easy
 * Lines of code: 2 lines
-* Estimated time: 3 min
+* Time: 3 min
 
 English:
     1. Use Dataclass to define class `Point` with attributes:

@@ -3,7 +3,7 @@
 * Filename: oop_inheritance_multiple.py
 * Complexity: easy
 * Lines of code: 2 lines
-* Estimated time: 2 min
+* Time: 2 min
 
 English:
     1. Use data from "Given" section (see below)

@@ -3,7 +3,7 @@
 * Filename: about_setup_interpreter.py
 * Complexity: easy
 * Lines of code: 0 lines
-* Estimated time: 3 min
+* Time: 3 min
 
 English:
     1. In your directory create file `about_interpreter.py`

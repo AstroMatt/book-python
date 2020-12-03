@@ -134,10 +134,9 @@ Assignments
 Dokumentacja
 ------------
 * Assignment: Dokumentacja
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 30 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: TODO
 
 English:

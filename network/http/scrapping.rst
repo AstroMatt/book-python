@@ -164,10 +164,9 @@ Assignments
 Iris
 ----
 * Assignment: Iris
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 20 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/scrapping_iris.py`
 
 English:
@@ -183,10 +182,9 @@ Polish:
 EVA
 ---
 * Assignment: EVA
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 100 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: :download:`assignments/scrapping_eva.py`
 
 English:

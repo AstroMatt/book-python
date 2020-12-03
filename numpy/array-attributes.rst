@@ -133,10 +133,9 @@ Assignments
 Numpy Attributes
 ----------------
 * Assignment: Numpy Attributes
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 4 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/numpy_attributes.py`
 
 English:

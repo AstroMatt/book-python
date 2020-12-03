@@ -3,7 +3,7 @@
 * Filename: loop_nested_unique_keys.py
 * Complexity: medium
 * Lines of code: 3 lines
-* Estimated time: 8 min
+* Time: 8 min
 
 English:
     1. Use data from "Given" section (see below)

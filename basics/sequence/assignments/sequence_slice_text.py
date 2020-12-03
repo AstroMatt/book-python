@@ -3,7 +3,7 @@
 * Filename: sequence_slice_text.py
 * Complexity: easy
 * Lines of code: 8 lines
-* Estimated time: 8 min
+* Time: 8 min
 
 English:
     1. Use data from "Given" section (see below)

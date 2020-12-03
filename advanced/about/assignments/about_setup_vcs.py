@@ -3,7 +3,7 @@
 * Filename: about_setup_vcs.py
 * Complexity: easy
 * Lines of code: 0 lines
-* Estimated time: 5 min
+* Time: 5 min
 
 English:
     TODO: English Translation

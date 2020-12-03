@@ -163,10 +163,9 @@ Assignments
 Numpy Round Rint
 ----------------
 * Assignment: Numpy Round Rint
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 4 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/numpy_round_rint.py`
 
 English:
@@ -199,10 +198,9 @@ Tests:
 Numpy Round Floor and Ceil
 --------------------------
 * Assignment: Numpy Round Floor and Ceil
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 3 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/numpy_round_ceilfloor.py`
 
 English:
@@ -246,10 +244,9 @@ Tests:
 Numpy Round Clip
 ----------------
 * Assignment: Numpy Round Clip
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 3 lines
-* Estimated time: 3 min
+* Time: 3 min
 * Filename: :download:`assignments/numpy_round_clip.py`
 
 English:

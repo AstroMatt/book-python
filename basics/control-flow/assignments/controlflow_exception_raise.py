@@ -3,7 +3,7 @@
 * Filename: controlflow_exception_raise.py
 * Complexity: easy
 * Lines of code: 2 lines
-* Estimated time: 3 min
+* Time: 3 min
 
 English:
     1. Ask user to input temperature in Kelvins

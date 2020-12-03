@@ -170,10 +170,9 @@ Assignments
 Dragon
 ------
 * Assignment: Dragon
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 100 lines
-* Estimated time: 21 min
+* Time: 21 min
 * Filename: TODO
 
 English:

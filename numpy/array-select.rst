@@ -496,10 +496,9 @@ Assignments
 Numpy Select Isin
 -----------------
 * Assignment: Numpy Select Isin
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 10 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: :download:`assignments/numpy_select_isin.py`
 
 English:

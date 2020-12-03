@@ -6,10 +6,9 @@ Pre-Intermediate
 Entry Test Select
 =================
 * Assignment: Entry Test Select
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 6 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: entry_test_select.py
 
 English:
@@ -70,10 +69,9 @@ Given:
 Entry Test Slice
 ================
 * Assignment: Entry Test Slice
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 20 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: entry_test_slice.py
 
 English:
@@ -135,10 +133,9 @@ Tests:
 Entry Test Listdict
 ===================
 * Assignment: Entry Test Listdict
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 8 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: entry_test_listdict.py
 
 English:
@@ -198,10 +195,9 @@ Tests:
 Entry Test Nested
 =================
 * Assignment: Entry Test Nested
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 3 lines
-* Estimated time: 13 min
+* Time: 13 min
 * Filename: entry_test_nested.py
 
 English:

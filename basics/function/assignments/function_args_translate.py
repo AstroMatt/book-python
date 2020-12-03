@@ -3,7 +3,7 @@
 * Filename: function_args_translate.py
 * Complexity: easy
 * Lines of code: 2 lines
-* Estimated time: 5 min
+* Time: 5 min
 
 English:
     1. Define function `translate` with parameter `text`

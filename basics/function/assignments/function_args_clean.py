@@ -3,7 +3,7 @@
 * Filename: function_args_clean.py
 * Complexity: medium
 * Lines of code: 15 lines
-* Estimated time: 13 min
+* Time: 13 min
 
 English:
     1. Write function cleaning up data

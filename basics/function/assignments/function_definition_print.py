@@ -3,7 +3,7 @@
 * Filename: function_definition_print.py
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 3 min
+* Time: 3 min
 
 English:
     1. Define function `call` without parameters

@@ -3,7 +3,7 @@
 * Filename: function_doctest_distance.py
 * Complexity: easy
 * Lines of code: 21 lines
-* Estimated time: 13 min
+* Time: 13 min
 
 English:
     1. Write functions which convert distance given in kilometers to meters

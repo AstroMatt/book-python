@@ -259,10 +259,9 @@ Assignments
 Numpy Algebra Euclidean 2D
 --------------------------
 * Assignment: Numpy Algebra Euclidean 2D
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 5 lines
-* Estimated time: 5 min
+* Time: 5 min
 * Filename: :download:`assignments/numpy_algebra_euclidean_2d.py`
 
 English:
@@ -320,10 +319,9 @@ Hints:
 Numpy Algebra Euclidean Ndim
 ----------------------------
 * Assignment: Numpy Algebra Euclidean Ndim
-* Last update: 2020-10-01
 * Complexity: easy
 * Lines of code: 10 lines
-* Estimated time: 8 min
+* Time: 8 min
 * Filename: :download:`assignments/numpy_algebra_euclidean_ndim.py`
 
 English:

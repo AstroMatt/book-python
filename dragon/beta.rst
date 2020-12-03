@@ -11,10 +11,9 @@ Dragon (version beta)
     Firkraag dragon from game Baldur's Gate II: Shadows of Amn
 
 * Assignment: Dragon (version beta)
-* Last update: 2020-10-01
 * Complexity: medium
 * Lines of code: 120 lines
-* Estimated time: 60 min (±10 min), then 30 min live coding with instructor
+* Time: 60 min (±10 min), then 30 min live coding with instructor
 * Filename: :download:`assignments/dragon_beta.py`
 * Warning: Don't delete code, assignment will be continued
 
