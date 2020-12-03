@@ -7,8 +7,10 @@ Mapping Type Annotation
 
 Rationale
 =========
-* Python 3.9 introduced :pep:`585` -- Type Hinting Generics In Standard Collections
 * Before Python 3.9 you need ``from typing import List, Set, Tuple, Dict``
+
+.. versionadded:: 3.9
+    :pep:`585` -- Type Hinting Generics In Standard Collections
 
 
 Dict
@@ -74,7 +76,7 @@ List of Dicts
 Typed Dict
 ==========
 .. versionadded:: Python 3.8
-    See :pep:`589`
+    :pep:`589` -- TypedDict: Type Hints for Dictionaries with a Fixed Set of Keys
 
 .. code-block:: python
 

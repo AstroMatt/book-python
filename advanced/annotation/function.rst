@@ -8,8 +8,10 @@ Annotation Function
 Rationale
 =========
 .. highlights::
-    * Python 3.9 introduced :pep:`585` -- Type Hinting Generics In Standard Collections
     * Before Python 3.9 you need ``from typing import List, Set, Tuple, Dict``
+
+    .. versionadded:: 3.9
+        :pep:`585` -- Type Hinting Generics In Standard Collections
 
 
 Return
@@ -108,7 +110,7 @@ NoReturn
 Literal
 =======
 .. versionadded:: Python 3.8
-    See :pep:`586`
+    :pep:`586` -- Literal Types
 
 .. code-block:: python
 

@@ -279,7 +279,8 @@ f-strings - Python >= 3.6
 
 Advanced String Formatting
 ==========================
-* :pep:`3101`
+.. versionadded:: 3.0
+    :pep:`3101` -- Advanced String Formatting
 
 Basic formatting
 ----------------

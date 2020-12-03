@@ -163,7 +163,7 @@ Hints:
     data = 'Jan Twardowski'
 
 .. code-block:: python
-    :caption: Multiline ``str``. Always use double quote characters to be consistent with the docstring convention :pep:`257`
+    :caption: :pep:`257` -- Docstring Conventions: For multiline ``str`` always use three double quote (``"""``) characters
 
     data = """First line
     Second line

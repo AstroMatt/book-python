@@ -2,11 +2,15 @@
 The Zen of Python
 *****************
 
-* :pep:`20`
+
+Rationale
+=========
+* :pep:`20` -- The Zen of Python
 
 .. code-block:: python
 
     import this
+
 
 Most important rules
 ====================

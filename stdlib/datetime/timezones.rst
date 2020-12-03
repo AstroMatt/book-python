@@ -67,7 +67,8 @@ IANA Time Zone Database
 
 Standard Library
 ================
-* :pep:`615` - Support for the IANA Time Zone Database in the Standard Library
+.. versionadded:: 3.9
+    :pep:`615` -- Support for the IANA Time Zone Database in the Standard Library
 
 .. code-block:: python
 

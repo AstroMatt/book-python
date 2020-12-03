@@ -89,7 +89,7 @@ Docstring
     * Used for generating ``help()`` documentation
     * It is accessible in ``__doc__`` property of an object
     * Used for ``doctest``
-    * :pep:`257` Docstring convention - For multiline always use three double quote (``"""``) characters
+    * :pep:`257` -- Docstring Conventions: For multiline ``str`` always use three double quote (``"""``) characters
     * More information in :ref:`Function Doctest`
 
 .. code-block:: python

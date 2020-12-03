@@ -384,7 +384,7 @@ Switch
 .. highlights::
     * No ``switch`` statement in Python!
     * ``switch`` in Object Oriented Programming is considered a bad practise
-    * :pep:`275` - Switching on Multiple Values [Rejected]
+    * :pep:`275` -- Switching on Multiple Values [Rejected]
 
 .. code-block:: python
 
@@ -424,7 +424,7 @@ Switch
 Pattern Matching
 ================
 .. versionadded:: Python 3.10
-    * :pep:`636` - Structural Pattern Matching: Tutorial
+    :pep:`636` -- Structural Pattern Matching: Tutorial
 
 .. code-block:: python
     :force:

@@ -13,15 +13,24 @@ Annotation Type
 Rationale
 =========
 .. highlights::
-    * Since Python 3.5, :pep:`484`, :pep:`526`, :pep:`544`
-    * ``SyntaxError`` in Python before 3.5
-    * Names: "type annotations", "type hints", "gradual typing"
+    * Introduced in Python 3.5
+    * Also known as: "type annotations", "type hints", "gradual typing"
     * Good IDE will give you hints
     * Types are used extensively in system libraries
     * More and more books and documentations use types
     * To type check use: ``mypy``, ``pyre-check``, ``pytypes``
     * More information in :ref:`cicd-tools`
     * https://www.infoq.com/presentations/dynamic-static-typing/
+
+.. versionadded:: 3.5
+    :pep:`484` -- Type Hints
+
+.. versionadded:: 3.6
+    :pep:`526` -- Syntax for Variable Annotations
+
+.. versionadded:: 3.8
+    :pep:`544` -- Protocols: Structural subtyping (static duck typing)
+
 
 Int
 ===
@@ -104,7 +113,7 @@ Aliases
 Final
 =====
 .. versionadded:: Python 3.8
-    See :pep:`591`
+    :pep:`591` -- Adding a final qualifier to typing
 
 .. code-block:: python
 
@@ -143,10 +152,10 @@ Future
 * https://docs.python.org/dev/whatsnew/3.10.html
 
 .. versionadded:: Python 3.10
-    :pep:`604` - Allow writing union types as X | Y
+    :pep:`604` -- Allow writing union types as X | Y
 
 .. versionadded:: Python 3.10
-    :pep:`645` - Allow writing optional types as x?
+    :pep:`645` -- Allow writing optional types as x?
 
 .. code-block:: python
     :caption: Union and Optional before Python 3.10

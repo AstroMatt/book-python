@@ -57,7 +57,7 @@ Callable
 Overload
 ========
 .. versionadded:: Python 3.8
-    See :pep:`589`
+    :pep:`589` -- TypedDict: Type Hints for Dictionaries with a Fixed Set of Keys
 
 * The ``@overload`` decorator allows describing functions and methods that support multiple different combinations of argument types.
 * A series of @overload-decorated definitions must be followed by exactly one non-@overload-decorated definition (for the same function/method)
@@ -84,7 +84,7 @@ Overload
 Final
 =====
 .. versionadded:: Python 3.8
-    See :pep:`589`
+    :pep:`589` -- TypedDict: Type Hints for Dictionaries with a Fixed Set of Keys
 
 .. code-block:: python
 

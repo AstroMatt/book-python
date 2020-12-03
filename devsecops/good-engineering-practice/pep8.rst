@@ -68,10 +68,11 @@ Comments
 
 Documentation Strings
 ---------------------
-* :pep:`257`
+* :pep:`257` -- Docstring Conventions
 * Write docstrings for all public modules, functions, classes, and methods.
 * Docstrings are not necessary for non-public methods, but you should have a comment that describes what the method does.
 * For one liner docstrings, please keep the closing """ on the same line.
+* :pep:`257` -- Docstring Conventions: For multiline ``str`` always use three double quote (``"""``) characters
 
 Use better names, rather than comments
 --------------------------------------
@@ -259,7 +260,7 @@ Single or double quotes?
 * Interpreter Pythona domyślnie stosuje pojedyncze znaki cudzysłowu.
 * Z tego powodu w tej książce będziemy trzymać się powyższej konwencji.
 * Ma to znaczenie przy ``doctest``, który zawsze korzysta z pojedynczych i rzuca errorem jak są podwójne
-* For triple-quoted strings, always use double quote characters to be consistent with the docstring convention in :pep:`257`
+* :pep:`257` -- Docstring Conventions: For multiline ``str`` always use three double quote (``"""``) characters
 
 .. code-block:: python
 

@@ -416,7 +416,7 @@ Count Occurrences
 Remove Prefix or Suffix
 =======================
 .. versionadded:: Python 3.9
-    :pep:`616` String methods to remove prefixes and suffixes
+    :pep:`616` -- String methods to remove prefixes and suffixes
 
 .. code-block:: python
 

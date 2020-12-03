@@ -173,7 +173,7 @@ Nested
 Final Class
 ===========
 .. versionadded:: Python 3.8
-    See :pep:`591`
+    :pep:`591` -- Adding a final qualifier to typing
 
 .. code-block:: python
 
@@ -201,7 +201,7 @@ Final Class
 Final Method
 ============
 .. versionadded:: Python 3.8
-    See :pep:`591`
+    :pep:`591` -- Adding a final qualifier to typing
 
 .. code-block:: python
 

@@ -50,7 +50,7 @@ Any
 Literal
 =======
 .. versionadded:: Python 3.8
-    See :pep:`586`
+    :pep:`586` -- Literal Types
 
 .. code-block:: python
 

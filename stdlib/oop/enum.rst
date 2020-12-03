@@ -194,7 +194,7 @@ Use cases
 Pattern Matching
 ================
 .. versionadded:: Python 3.10
-    * :pep:`636` - Structural Pattern Matching: Tutorial
+    :pep:`636` -- Structural Pattern Matching: Tutorial
 
 .. code-block:: python
     :force:

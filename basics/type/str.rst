@@ -44,7 +44,8 @@ Single and Double Quotes
     * Choose one and keep consistency in code
     * Python console prefers single quote (``'``) character
     * It matters for ``doctest``, which compares two outputs character by character
-    * For multiline always use double quote characters to be consistent with the docstring convention :pep:`257`
+    * :pep:`257` -- Docstring Conventions: For multiline ``str`` always use three double quote (``"""``) characters
+
 
 .. code-block:: python
     :caption: Python console prefers single quote (``'``)
@@ -75,7 +76,7 @@ Single and Double Quotes
     # '<a href="http://python.astrotech.io">Python and Machine Learning</a>'
 
 .. code-block:: python
-    :caption: For multiline always use double quote characters to be consistent with the docstring convention :pep:`257`
+    :caption: :pep:`257` -- Docstring Conventions: For multiline ``str`` always use three double quote (``"""``) characters
 
     data = """My name's "José Jiménez""""
     data = '''My name\'s "José Jiménez"'''
@@ -84,7 +85,7 @@ Single and Double Quotes
 Docstring
 =========
 .. highlights::
-    * For multiline always use double quote characters to be consistent with the docstring convention :pep:`257`
+    * :pep:`257` -- Docstring Conventions: For multiline ``str`` always use three double quote (``"""``) characters
     * More information in :ref:`Function Doctest`
 
 .. code-block:: python

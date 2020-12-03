@@ -41,4 +41,4 @@ English:
 Polish:
     #. Połącz się z serwerem podanym przez prowadzącego
     #. Wyślij wiadomość email na podany przez prowadzącego adres
-    #. Do wiadomości załącz plik ``pep20.txt``, który będzie wynikiem polecenia ``import this`` :pep:`20`
+    #. Do wiadomości załącz plik ``pep20.txt``, który będzie wynikiem polecenia ``import this`` :pep:`20` -- The Zen of Python

@@ -52,7 +52,7 @@ Polish:
         * zamiast ``imie`` wpisz swoje imię
         * zamiast ``nazwisko`` wpisz swoje nazwisko
 
-    #. Do pliku wklej treść tekstu :pep:`20` (wynik polecenia ``import this``)
+    #. Do pliku wklej treść tekstu :pep:`20` -- The Zen of Python (wynik polecenia ``import this``)
     #. Połącz się z serwerem podanym przez prowadzącego
     #. Pobierz plik ``README.txt`` z głównego folderu
     #. Do katalogu ``files`` uploaduj plik ``imie-nazwisko.txt``

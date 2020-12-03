@@ -59,9 +59,11 @@ Which Version?
 
 Why not Python 2?
 =================
-* 2020-04-20 - end of Life for Python 2.7 :pep:`373`
+* :pep:`373` -- Python 2.7 Release Schedule
+* :pep:`404` -- Python 2.8 Un-release Schedule
+* 2020-04-20 - end of Life for Python 2.7
 * Python 2 is no longer developed [`1 <https://www.python.org/psf/press-release/pr20191220/>`_, `2 <https://mail.python.org/archives/list/python-dev@python.org/message/N6JIGTTJCJHS47AYSI76SJPCQS25EBWR/>`_]
-* Python 2.7 is the last in 2.x branch, and there won't be Python 2.8 :pep:`404`
+* Python 2.7 is the last in 2.x branch, and there won't be Python 2.8
 * Python 2.7.18, the last release of Python 2 [`3 <https://pythoninsider.blogspot.com/2020/04/python-2718-last-release-of-python-2.html>`_]
 
 
@@ -76,7 +78,7 @@ Changes in Python 3
 Python Release Cycle
 ====================
 .. versionadded:: Python 3.9
-    See :pep:`602`
+    :pep:`602` -- Annual Release Cycle for Python
 
 * 12 months (1 year) release cycle
 * 18 months (1.5 year) of bugfix updates

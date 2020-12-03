@@ -114,7 +114,7 @@ End of Lines
 ============
 .. highlights::
     * No semicolon (``;``) at the end of lines
-    * :pep:`8`: Use ``\n`` for newline
+    * :pep:`8` -- Style Guide for Python Code: Use ``\n`` for newline
 
 .. doctest::
 
@@ -126,8 +126,8 @@ End of Lines
 Line Length
 ===========
 * Most controversial rule
-* :pep:`8`: 79 for line with code
-* :pep:`8`: 72 for line with comment
+* :pep:`8` -- Style Guide for Python Code: 79 for line with code
+* :pep:`8` -- Style Guide for Python Code: 72 for line with comment
 * ``black``: 90-ish
 * ``django``: 120 for code, 300 for models
 
@@ -135,8 +135,8 @@ Line Length
 Comments
 ========
 .. highlights::
-    * :pep:`8` for line comments: Hash (``#``), space and then comment
-    * :pep:`8` for inline comments: code, two spaces, hash (``#``), space and then comment
+    * :pep:`8` -- Style Guide for Python Code: for line comments: Hash (``#``), space and then comment
+    * :pep:`8` -- Style Guide for Python Code: for inline comments: code, two spaces, hash (``#``), space and then comment
     * Commented out code:
 
         * Never!
@@ -160,7 +160,7 @@ Docstring and Doctests
 .. highlights::
     * Docstring is a first multiline comment in: File/Module, Class, Method/Function
     * Used for ``doctest``. More information in :ref:`Function Doctest`
-    * :pep:`257` Docstring convention - For multiline always use three double quote (``"""``) characters
+    * :pep:`257` -- Docstring Conventions: For multiline ``str`` always use three double quote (``"""``) characters
 
 .. code-block:: python
 
@@ -180,7 +180,7 @@ Indentation
 .. highlights::
     * Python uses indentation instead of braces
     * Code indented on the same level belongs to block
-    * :pep:`8`: 4 spaces indentation, `no tabs <https://youtu.be/SsoOG6ZeyUI>`_
+    * :pep:`8` -- Style Guide for Python Code: 4 spaces indentation, `no tabs <https://youtu.be/SsoOG6ZeyUI>`_
     * Python throws ``IndentationError`` exception on problem
 
 .. code-block:: python
@@ -237,8 +237,8 @@ Indentation
 
 Good practices
 ==============
-* :pep:`8`
-* :pep:`20`
+* :pep:`8` -- Style Guide for Python Code
+* :pep:`20` -- The Zen of Python
 
 .. doctest::
 

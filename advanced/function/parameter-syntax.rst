@@ -42,7 +42,7 @@ Keyword-only Parameters
 Positional-only Parameters
 ==========================
 .. versionadded:: Python 3.8
-    See :pep:`570` Python Positional-Only Parameters
+    :pep:`570` -- Python Positional-Only Parameters
 
 * All parameters before ``/`` must be positional-only
 

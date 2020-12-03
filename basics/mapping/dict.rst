@@ -289,8 +289,11 @@ Delete Item
 
 Merge
 =====
+* Merge (``|``) and update (``|=``) operators have been added to the built-in dict class.
+
 .. versionadded:: Python 3.9
-    :pep:`584` merge (``|``) and update (``|=``) operators have been added to the built-in dict class.
+    :pep:`584` -- Add Union Operators To dict
+
 
 .. code-block:: python
 
