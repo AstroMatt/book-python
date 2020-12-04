@@ -152,6 +152,7 @@ Recap
     :caption: Recap
     :name: Basic Recap
 
+    ../about/further-reading.rst
     about/good-practices.rst
     about/recap.rst
     about/certificate.rst

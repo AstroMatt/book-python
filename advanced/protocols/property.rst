@@ -56,6 +56,56 @@ Example
 =======
 .. code-block:: python
 
+    class KelvinTemperature:
+        value: float
+
+        def __init__(self, value):
+            self.value = value
+
+
+.. code-block:: python
+
+    class KelvinTemperature:
+        value: float
+
+        def __init__(self, value):
+            if value < 0:
+                raise ValueError('Negative Kelvin Temperature')
+            self.value = value
+
+.. code-block:: python
+
+    class KelvinTemperature:
+        _value: float
+
+        def __init__(self, value):
+            self.set_value(value)
+
+        def set_value(self, new_value):
+            if new_value < 0:
+                raise ValueError('Negative Kelvin Temperature')
+            self._value = new_value
+
+.. code-block:: python
+
+    class KelvinTemperature:
+        _value: float
+        value = property()
+
+        def __init__(self, value):
+            self.value = value
+
+        @value.setter
+        def value(self, new_value):
+            if new_value < 0:
+                raise ValueError('Negative Kelvin Temperature')
+            self._value = new_value
+
+
+Use Cases
+=========
+.. code-block:: python
+
     class Astronaut:
         def __init__(self, firstname, lastname):
             self._firstname = firstname

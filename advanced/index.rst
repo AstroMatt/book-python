@@ -147,5 +147,6 @@ Recap
     :caption: Recap
     :name: Advanced Recap
 
+    ../about/further-reading.rst
     about/recap.rst
     about/certificate.rst

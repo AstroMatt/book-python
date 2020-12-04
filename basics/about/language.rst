@@ -106,12 +106,7 @@ Scripts
     "``.pyd``", "Compiled Windows DLL file"
     "``.pyw``", "Compiled Windows file. Executable with ``pythonw.exe``"
     "``.pyx``", "cPythona source for C/C++ conversion"
-    "``.pyz``", "`zipapp <https://docs.python.org/3/library/zipapp.html>`_ compressed archive. Since Python 3.5"
-
-.. code-block:: python
-    :caption: Minimal script
-
-    print('Ehlo World!')
+    "``.pyz``", "`zipapp <https://docs.python.org/3/library/zipapp.html>`_ compressed archive"
 
 
 Python Console (REPL)
@@ -135,13 +130,13 @@ Python Console (REPL)
 
 .. note:: In documentation and books you may find ``>>>`` and ``...`` at the beginning of code listing lines
 
-    .. code-block:: python
+.. doctest::
 
-        >>> if True:
-        ...     print('yes')
-        ... else:
-        ...     print('no')
-        yes
+    >>> if True:
+    ...     print('yes')
+    ... else:
+    ...     print('no')
+    yes
 
 
 Jupyter

@@ -38,24 +38,49 @@ Definition
 * In Python 3 all classes always inherit from object, hence they are new style classes
 
 .. code-block:: python
-    :caption: Python 2
 
-    class Astronaut:
-        """Old style class"""
+    # Python 2.x
+    # old style class
+    # inherits from type
 
-
-    class Astronaut(object):
-        """New style class"""
+    class MyClass:
+        pass
 
 .. code-block:: python
-    :caption: Python 3
 
-    class Astronaut:
-        """New style class"""
+    # Python > 2.2
+    # new style class
+    # inherits from object
 
+    class MyClass(object):
+        pass
 
-    class Astronaut(object):
-        """New style class"""
+.. code-block:: python
+
+    # Python 3.x
+    # meta class
+    # inherits from type
+
+    class MyClass(metaclass=type):
+        pass
+
+.. code-block:: python
+
+    # Python 3.x
+    # new style class
+    # inherits from object
+
+    class MyClass:
+        pass
+
+.. code-block:: python
+
+    # Python 3.x
+    # new style class
+    # inherits from object
+
+    class MyClass(object):
+        pass
 
 
 Assignments

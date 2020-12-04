@@ -92,34 +92,34 @@ elevation - min: -10994.0, max: 8848.0
 
 # Solution
 class RangeValidator:
-    MIN = None
-    MAX = None
-
-    @property
-    def attrname(self):
-        return '_' + self.__class__.__name__.lower()
+    NAME: str
+    MIN: float
+    MAX: float
 
     def __set__(self, parent, value):
         if self.MIN <= value <= self.MAX:
-            setattr(parent, self.attrname, value)
+            setattr(parent, self.NAME, value)
         else:
             raise ValueError('Out of bounds')
 
     def __get__(self, parent, parent_type):
-        return getattr(parent, self.attrname)
+        return getattr(parent, self.NAME)
 
 
 class Latitude(RangeValidator):
+    NAME = '_latitude'
     MIN = -90
     MAX = +90
 
 
 class Longitude(RangeValidator):
+    NAME = '_longitude'
     MIN = -180
     MAX = +180
 
 
 class Elevation(RangeValidator):
+    NAME = '_elevation'
     MIN = -10994
     MAX = +8848
 

@@ -14,22 +14,22 @@ Variables
     * ``NameError`` when using not declared variable
     * ``AttributeError`` when cannot assign to variables
 
-.. code-block:: python
-    :caption: Variable declaration
+.. doctest::
 
-    name = 'Mark Watney'
+    >>> name = 'Mark Watney'
 
-    first_name = 'Mark'
-    last_name = 'Watney'
+.. doctest::
 
-    firstname = 'Mark'
-    lastname = 'Watney'
+    >>> first_name = 'Mark'
+    >>> last_name = 'Watney'
 
-.. code-block:: python
-    :caption: Variables vs. constants - Names are case sensitive
+    >>> firstname = 'Mark'
+    >>> lastname = 'Watney'
 
-    name = 'Mark Watney'        # lower cased names are reserved for variables
-    Name = 'Jan Twardowski'     # Capitalized names are reserved for classes
+.. doctest::
+
+    >>> name = 'Mark Watney'     # Lower cased names are reserved for variables
+    >>> Name = 'Jan Twardowski'  # Upper cased names are reserved for classes
 
 
 Constants
@@ -41,47 +41,49 @@ Constants
     * Python do not distinguish between variables and constants
     * Python allows you to change "constants" but it's a bad practice (good IDE will tell you)
 
-.. code-block:: python
-    :caption: "Constant" declaration
+.. doctest::
 
-    FILE = '/etc/passwd'
-    FILE_NAME = '/etc/shadow'
-    FILENAME = '/etc/group'
+    >>> FILE = '/etc/passwd'
+    >>> FILE_NAME = '/etc/shadow'
+    >>> FILENAME = '/etc/group'
 
-.. code-block:: python
-    :caption: Python allows you to change "constants" but it's a bad practice (good IDE will tell you)
+.. doctest::
 
-    NAME = 'Mark Watney'
-    NAME = 'Jan Twardowski'
+    >>> NAME = 'Mark Watney'
+    >>> NAME = 'Jan Twardowski'
 
 
 Variables vs. Constants
 =======================
-.. code-block:: python
-    :caption: Variables vs. constants - Names are case sensitive
+* Variables vs. constants - Names are case sensitive
 
-    name = 'Mark Watney'        # variable
-    NAME = 'Jan Twardowski'     # constant
-    Name = 'José Jiménez'       # class
+.. doctest::
 
-.. code-block:: python
-    :caption: Variables vs. constants - Definition of second, minute or hour does not change based on location or country (those values should be constants). Definition of workday, workweek and workmonth differs based on location - each country can have different work times (those values should be variables).
+    >>> name = 'Mark Watney'        # variable
+    >>> NAME = 'Jan Twardowski'     # constant
+    >>> Name = 'José Jiménez'       # class
 
-    SECOND = 1
-    MINUTE = 60 * SECOND
-    HOUR = 60 * MINUTE
+Definition of second, minute or hour does not change based on location or country (those values should be constants).
+Definition of workday, workweek and workmonth differs based on location - each country can have different work times (those values should be variables).
 
-    workday = 8 * HOUR
-    workweek = 5 * workday
-    workmonth = 4 * workweek
+.. doctest::
 
-.. code-block:: python
-    :caption: For physical units it is ok to use proper cased names. It is better to be compliant with well known standard, than to enforce something which will mislead everyone.
+    >>> SECOND = 1
+    >>> MINUTE = 60 * SECOND
+    >>> HOUR = 60 * MINUTE
 
-    Pa = 1
-    hPa = 100 * Pa
-    kPa = 1000 * Pa
-    MPa = 1000 * kPa
+    >>> workday = 8 * HOUR
+    >>> workweek = 5 * workday
+    >>> workmonth = 4 * workweek
+
+For physical units it is ok to use proper cased names. It is better to be compliant with well known standard, than to enforce something which will mislead everyone.
+
+.. doctest::
+
+    >>> Pa = 1
+    >>> hPa = 100 * Pa
+    >>> kPa = 1000 * Pa
+    >>> MPa = 1000 * kPa
 
 
 Printing Values
@@ -93,21 +95,21 @@ Printing Values
 
 .. code-block:: python
 
-    print('My name... José Jiménez')
-    # My name... José Jiménez
+    >>> print('My name... José Jiménez')
+    My name... José Jiménez
 
 .. code-block:: python
 
-    name = 'José Jiménez'
+    >>> name = 'José Jiménez'
 
-    print(name)
-    # José Jiménez
+    >>> print(name)
+    José Jiménez
 
-    print('My name... {name}')
-    # My name... {name}
+    >>> print('My name... {name}')
+    My name... {name}
 
-    print(f'My name... {name}')
-    # My name... José Jiménez
+    >>> print(f'My name... {name}')
+    My name... José Jiménez
 
 
 End of Lines
