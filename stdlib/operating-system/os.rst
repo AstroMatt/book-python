@@ -224,7 +224,7 @@ Stats and permissions
 
     import os
 
-    file = os.stat(r'/tmp/_temporary.py')
+    file = os.stat(r'_temporary.txt')
 
     print(file)
     # os.stat_result(

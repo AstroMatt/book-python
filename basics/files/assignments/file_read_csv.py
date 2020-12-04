@@ -48,12 +48,14 @@ Tests:
      (7.3, 2.9, 6.3, 1.8),
      (5.6, 2.5, 3.9, 1.1),
      (5.4, 3.9, 1.3, 0.4)]
-    >>> label
+    >>> labels
     ['setosa', 'virginica', 'versicolor', 'virginica', 'versicolor', 'setosa']
+    >>> from os import remove
+    >>> remove(FILE)
 """
 
 # Given
-FILE = r'/tmp/_temporary.csv'
+FILE = r'_temporary.csv'
 
 DATA = """sepal_length,sepal_width,petal_length,petal_width,species
 5.4,3.9,1.3,0.4,setosa
@@ -81,4 +83,4 @@ with open(FILE) as file:
         # X = map(float, X)
 
         features.append(tuple(X))
-        label.append(y)
+        labels.append(y)

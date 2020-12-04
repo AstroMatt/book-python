@@ -8,13 +8,24 @@ My favourite sources
 * https://pyvideo.org/
 * https://www.thoughtworks.com/radar
 * https://www.infoq.com/python/presentations/
-* https://www.infoq.com/ai-ml-data-eng/presentations/
+* https://www.infoq.com/ai-ml-data-eng/
+* https://www.youtube.com/c/PatoArchitekci/videos
+
+* https://pypl.github.io/PYPL.html
+* https://insights.stackoverflow.com/survey/2020#technology-programming-scripting-and-markup-languages-professional-developers
+* https://www.jetbrains.com/lp/python-developers-survey-2019/
+* https://surveys.jetbrains.com/s3/c12-python-developers-survey-2020
+
+* https://www.youtube.com/watch?v=Xbl7XjFYsN4
+* https://www.youtube.com/watch?v=esZLCuWs_2Y
+* https://www.youtube.com/watch?v=6uAvHOKofws
+* https://www.youtube.com/watch?v=wf-BqAjZb8M
 
 
 Documentation
 =============
-* https://www.python.org - Strona do pobrania Pythona
-* https://pyformat.info - Formatowanie stringów w Python
+* https://docs.python.org/py-modindex.html
+* https://pyformat.info - Python string formatting
 * http://devdocs.io
 
 

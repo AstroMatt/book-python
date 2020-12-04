@@ -2,7 +2,7 @@
 * Assignment: Protocol ContextManager Buffer
 * Filename: protocol_contextmanager_buffer.py
 * Complexity: medium
-* Lines of code: 22 lines
+* Lines of code: 21 lines
 * Time: 21 min
 
 English:
@@ -20,7 +20,7 @@ Polish:
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Hints:
-    * `sys.getsizeof()`
+    * `sys.getsizeof(obj)` returns `obj` size in bytes
 
 Tests:
     >>> from inspect import isclass, ismethod
@@ -44,36 +44,38 @@ Tests:
 
     >>> open('_temporary.txt').read()
     'One\\nTwo\\nThree\\nFour\\nFive\\nSix\\n'
+    >>> from os import remove
+    >>> remove('_temporary.txt')
 """
 
-# Solution
+# Given
 from sys import getsizeof
 
 
+# Solution
 class File:
     BUFFER_LIMIT: int = 100
-
+    _content: list[str]
     filename: str
-    content: list[str]
 
-    def __init__(self, filename: str) -> None:
+    def __init__(self, filename):
         self.filename = filename
-        self.content = list()
+        self._content = list()
 
-    def append(self, line: str) -> None:
-        self.content.append(line + '\n')
-        if getsizeof(self.content) >= self.BUFFER_LIMIT:
-            self._write()
-
-    def _write(self):
-        with open(self.filename, mode='a') as file:
-            file.writelines(self.content)
-        self.content = []
-
-    def __enter__(self) -> 'File':
+    def __enter__(self):
         with open(self.filename, mode='w') as file:
-            file.writelines(self.content)
+            file.write('')
         return self
 
-    def __exit__(self, *arg) -> None:
-        self._write()
+    def __exit__(self, *args):
+        self._writefile()
+
+    def _writefile(self):
+        with open(self.filename, mode='a') as file:
+            file.writelines(self._content)
+            self._content = []
+
+    def append(self, line):
+        self._content.append(line + '\n')
+        if getsizeof(self._content) > self.BUFFER_LIMIT:
+            self._writefile()

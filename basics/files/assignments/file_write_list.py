@@ -20,10 +20,12 @@ Polish:
 Tests:
     >>> open(FILE).read()
     'hello\\nworld\\n'
+    >>> from os import remove
+    >>> remove(FILE)
 """
 
 # Given
-FILE = r'/tmp/_temporary.txt'
+FILE = r'_temporary.txt'
 DATA = ['hello', 'world']
 
 # Solution

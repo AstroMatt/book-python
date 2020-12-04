@@ -1,6 +1,6 @@
 import pickle
 
-FILE = r'/tmp/_temporary.pkl'
+FILE = r'_temporary.pkl'
 
 class Astronaut:
     def __init__(self, name, missions=()):

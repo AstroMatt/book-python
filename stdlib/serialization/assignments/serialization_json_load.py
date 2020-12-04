@@ -1,7 +1,7 @@
 import json
 from pprint import pprint
 
-FILE = r'/tmp/_temporary.json'
+FILE = r'_temporary.json'
 result = list()
 
 

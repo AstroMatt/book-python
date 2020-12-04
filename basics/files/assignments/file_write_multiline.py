@@ -20,10 +20,12 @@ Polish:
 Tests:
     >>> open(FILE).read()
     '127.0.0.1       localhost\\n10.13.37.1      nasa.gov esa.int roscosmos.ru\\n255.255.255.255 broadcasthost\\n::1             localhost\\n'
+    >>> from os import remove
+    >>> remove(FILE)
 """
 
 # Given
-FILE = r'/tmp/_temporary.txt'
+FILE = r'_temporary.txt'
 DATA = """127.0.0.1       localhost
 10.13.37.1      nasa.gov esa.int roscosmos.ru
 255.255.255.255 broadcasthost

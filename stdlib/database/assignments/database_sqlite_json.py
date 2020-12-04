@@ -1,6 +1,6 @@
 import sqlite3
 
-DATABASE = r'/tmp/_temporary.sqlite3'
+DATABASE = r'_temporary.sqlite3'
 
 SQL_CREATE_TABLE_ASTRONAUT = """
     CREATE TABLE IF NOT EXISTS astronaut (

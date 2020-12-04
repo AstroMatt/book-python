@@ -57,8 +57,6 @@ Example
 .. code-block:: python
 
     class Astronaut:
-        name = property()
-
         def __init__(self, firstname, lastname):
             self._firstname = firstname
             self._lastname = lastname
@@ -74,16 +72,37 @@ Example
 
 .. code-block:: python
 
+    class Astronaut:
+        name = property()
+
+        def __init__(self, firstname, lastname):
+            self._firstname = firstname
+            self._lastname = lastname
+
+        @name.getter
+        def name(self):
+            return f'{self._firstname} {self._lastname[0]}.'
+
+
+    astro = Astronaut('Mark', 'Watney')
+    print(astro.name)
+    # Mark W.
+
+.. code-block:: python
+
     class Temperature:
         kelvin = property()
+        __value: float
 
         def __init__(self, kelvin=None):
-            self._kelvin = kelvin
+            self.__value = kelvin
 
         @kelvin.setter
-        def kelvin(self, value):
-            if value < 0:
+        def kelvin(self, newvalue):
+            if newvalue < 0:
                 raise ValueError('Negative Kelvin Temperature')
+            else:
+                self.__value = newvalue
 
 
     t = Temperature()

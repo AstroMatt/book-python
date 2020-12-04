@@ -11,7 +11,7 @@ Serialization XML, XSLT, XPath
     from xml.etree.ElementTree import parse
 
 
-    FILE = r'/tmp/_temporary.xml'
+    FILE = r'_temporary.xml'
     # <execute>
     #     <command timeout="2">/bin/ls -la /etc/</command>
     #     <command>/bin/ls -l /home/ /tmp/</command>

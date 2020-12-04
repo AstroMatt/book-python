@@ -40,23 +40,26 @@ Tests:
 
     >>> open('_temporary.txt').read()
     'One\\nTwo\\n'
+    >>> from os import remove
+    >>> remove('_temporary.txt')
 """
+
 
 # Solution
 class File:
     filename: str
-    content: list[str]
+    _content: list[str]
 
-    def __init__(self, filename: str) -> None:
+    def __init__(self, filename):
         self.filename = filename
-        self.content = list()
+        self._content = list()
 
-    def append(self, line: str) -> None:
-        self.content.append(line + '\n')
-
-    def __enter__(self) -> 'File':
+    def __enter__(self):
         return self
 
-    def __exit__(self, *arg) -> None:
+    def __exit__(self, *args):
         with open(self.filename, mode='w') as file:
-            file.writelines(self.content)
+            file.writelines(self._content)
+
+    def append(self, line):
+        self._content.append(line + '\n')

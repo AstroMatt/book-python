@@ -1,7 +1,7 @@
 from csv import DictReader, QUOTE_NONE
 
 
-FILE = r'/tmp/_temporary.csv'
+FILE = r'_temporary.csv'
 
 FIELDNAMES = [
     'Sepal Length',

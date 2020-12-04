@@ -14,42 +14,40 @@ Rationale
 
 Range
 =====
-.. code-block:: python
+.. doctest::
 
-    i = 0
+    >>> i = 0
+    >>> while i < 10:
+    ...    i += 1
 
-    while i < 10:
-        i += 1
+.. doctest::
 
-.. code-block:: python
-
-    for i in range(10):
-        ...
+    >>> for i in range(10):
+    ...    pass
 
 
 ForEach
 =======
-.. code-block:: python
+.. doctest::
 
-    for i in range(len(DATA)):
-        value = DATA[i]
+    >>> for i in range(len(DATA)):
+    ...    value = DATA[i]
 
-.. code-block:: python
+.. doctest::
 
-    for value in DATA:
-        ...
+    >>> for value in DATA:
+    ...    pass
 
 
 Sum
 ===
-.. code-block:: python
+.. doctest::
 
-    total = 0
+    >>> total = 0
+    >>> for i in range(len(DATA)):
+    ...    total += DATA[i]
 
-    for i in range(len(DATA)):
-        total += DATA[i]
-
-.. code-block:: python
+.. doctest::
 
     sum(DATA)
 

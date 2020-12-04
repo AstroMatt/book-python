@@ -1,6 +1,6 @@
 import csv
 
-FILE = r'/tmp/_temporary.txt'
+FILE = r'_temporary.txt'
 
 
 class Iris:

@@ -2,7 +2,7 @@ import sqlite3
 import pandas as pd
 
 DATA = r'https://www.worldspaceflight.com/bios/eva/eva4.php'
-FILE = r'/tmp/_temporary.sqlite3'
+FILE = r'_temporary.sqlite3'
 
 
 with sqlite3.connect(FILE) as db:

@@ -1,6 +1,6 @@
 from csv import DictWriter, QUOTE_ALL
 
-FILE = r'/tmp/_temporary.csv'
+FILE = r'_temporary.csv'
 DATA = [{'Sepal length': 5.1, 'Sepal width': 3.5, 'Species': 'setosa'},
         {'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
         {'Sepal length': 6.3, 'Petal width': 1.8, 'Species': 'virginica'},

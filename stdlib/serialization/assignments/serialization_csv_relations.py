@@ -1,6 +1,6 @@
 import csv
 
-FILE = r'/tmp/_temporary.csv'
+FILE = r'_temporary.csv'
 
 
 class Astronaut:

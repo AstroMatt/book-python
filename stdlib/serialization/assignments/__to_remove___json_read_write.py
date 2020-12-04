@@ -1,6 +1,6 @@
 import json
 
-FILE = r'/tmp/_temporary.json'
+FILE = r'_temporary.json'
 
 DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
         (5.8, 2.7, 5.1, 1.9, 'virginica'),

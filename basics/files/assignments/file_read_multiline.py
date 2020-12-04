@@ -24,10 +24,12 @@ Tests:
     >>> assert all(type(x) is str for x in result)
     >>> result
     ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
+    >>> from os import remove
+    >>> remove(FILE)
 """
 
 # Given
-FILE = r'/tmp/_temporary.txt'
+FILE = r'_temporary.txt'
 DATA = 'sepal_length\nsepal_width\npetal_length\npetal_width\nspecies\n'
 
 with open(FILE, mode='wt') as file:

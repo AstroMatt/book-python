@@ -29,28 +29,31 @@ Polish:
 
 Hints:
     * `CSVMixin.to_csv()` should add newline `\n` at the end of line
+    * `CSVMixin.from_csv()` should remove newline `\n` at the end of line
 
 Tests:
     >>> from dataclasses import dataclass
 
     >>> @dataclass
-    ... class Human:
+    ... class Astronaut(CSVMixin):
+    ...     firstname: str
+    ...     lastname: str
+    ...
+    >>> @dataclass
+    ... class Cosmonaut(CSVMixin):
     ...     firstname: str
     ...     lastname: str
 
-    >>> class Astronaut(Human, CSVMixin):
-    ...     pass
-    ...
-
-    >>> class Cosmonaut(Human, CSVMixin):
-    ...     pass
-
     >>> mark = Astronaut('Mark', 'Watney')
     >>> jan = Cosmonaut('Jan', 'Twardowski')
-    >>> csv = mark.to_csv() + jan.to_csv()
+    >>> mark.to_csv()
+    'Mark,Watney\\n'
+    >>> jan.to_csv()
+    'Jan,Twardowski\\n'
 
     >>> with open('_temporary.txt', mode='wt') as file:
-    ...    file.writelines(csv)
+    ...     data = mark.to_csv() + jan.to_csv()
+    ...     file.writelines(data)
 
     >>> result = []
     >>> with open('_temporary.txt', mode='rt') as file:
@@ -61,6 +64,8 @@ Tests:
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     [Astronaut(firstname='Mark', lastname='Watney'),
      Cosmonaut(firstname='Jan', lastname='Twardowski')]
+    >>> from os import remove
+    >>> remove('_temporary.txt')
 """
 
 # Given
@@ -72,16 +77,16 @@ class CSVMixin:
         ...
 
     @classmethod
-    def from_csv(cls, text: str) -> Union['Astronaut', 'Cosmonaut']:
+    def from_csv(cls, line: str) -> Union['Astronaut', 'Cosmonaut']:
         ...
 
 
 # Solution
 class CSVMixin:
     def to_csv(self) -> str:
-        return ','.join(str(x) for x in self.__dict__.values()) + '\n'
+        return ','.join(self.__dict__.values()) + '\n'
 
     @classmethod
-    def from_csv(cls, text: str) -> Union['Astronaut', 'Cosmonaut']:
-        data = text.strip().split(',')
+    def from_csv(cls, line: str) -> Union['Astronaut', 'Cosmonaut']:
+        data = line.strip().split(',')
         return cls(*data)

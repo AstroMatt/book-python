@@ -175,6 +175,18 @@ Files
     with open(FILE) as f:
         content = f.read()
 
+.. code-block:: text
+
+    uint32_max = 4_294_967_295
+    char* file[uint32_max];
+
+    file[0] = '/tmp/myfile1.txt'
+    file[1] = '/tmp/myfile2.txt'
+    file[2] = '/tmp/myfile3.txt'
+    ...
+    file[4_294_967_295] = '/tmp/myfileX.txt'
+    file[4_294_967_296] -> KernelPanic
+
 Database
 --------
 .. code-block:: python
@@ -237,7 +249,6 @@ Lock
 
 String Microbenchmark
 ---------------------
-
 .. code-block:: python
 
     from time import time
@@ -253,13 +264,12 @@ String Microbenchmark
 
         def __exit__(self, *arg):
             end = time()
-            print(f'Duration of {self.name} is {end-self.start:.2f} second')
+            print(f'Duration of {self.name} is {end - self.start:.2f} second')
 
 
     a = 1
     b = 2
     repetitions = int(1e7)
-
 
     with Timeit('f-string'):
         for _ in range(repetitions):
@@ -267,7 +277,7 @@ String Microbenchmark
 
     with Timeit('string concat'):
         for _ in range(repetitions):
-            a + b
+            str(a) + str(b)
 
     with Timeit('str.format()'):
         for _ in range(repetitions):
@@ -293,14 +303,15 @@ String Microbenchmark
         for _ in range(repetitions):
             '%f%f' % (a, b)
 
-    # Duration of f-string is 2.70 second
-    # Duration of string concat is 0.68 second
-    # Duration of str.format() is 3.46 second
-    # Duration of str.format() is 3.37 second
-    # Duration of str.format() is 4.85 second
-    # Duration of %-style is 2.59 second
-    # Duration of %-style is 2.59 second
-    # Duration of %-style is 3.82 second
+    # Duration of f-string is 2.94 second
+    # Duration of string concat is 5.30 second
+    # Duration of str.format() is 3.62 second
+    # Duration of str.format() is 3.48 second
+    # Duration of str.format() is 5.02 second
+    # Duration of %-style is 2.60 second
+    # Duration of %-style is 2.71 second
+    # Duration of %-style is 4.02 second
+
 
 
 Assignments

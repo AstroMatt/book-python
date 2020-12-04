@@ -1,7 +1,7 @@
 import pandas as pd
 
 DATA = r'https://www.worldspaceflight.com/bios/eva/eva3.php'
-FILE = r'/tmp/_temporary.pkl'
+FILE = r'_temporary.pkl'
 
 
 data = pd.read_html(DATA, header=0)[1]

@@ -12,22 +12,32 @@ Comparison Operators
 * ``x == y`` - Equals
 * ``x != y`` - Not Equals
 
-.. code-block:: python
+.. doctest::
 
-    10 < 2              # False
-    10 <= 2             # False
-    10 > 2              # True
-    10 >= 2             # True
-    10 == 2             # False
-    10 != 2             # True
+    >>> 10 < 2
+    False
 
-.. code-block:: python
+    >>> 10 <= 2
+    False
 
-    x = 10
-    y = 2
+    >>> 10 > 2
+    True
 
-    x >= 2
-    # True
+    >>> 10 >= 2
+    True
+
+    >>> 10 == 2
+    False
+
+    >>> 10 != 2
+    True
+
+.. doctest::
+
+    >>> x = 10
+    >>> y = 2
+    >>> x >= 2
+    True
 
 
 Arithmetic Operators
@@ -37,43 +47,65 @@ Arithmetic Operators
 * ``*`` - Multiplication
 * ``/`` - Division
 
-.. code-block:: python
+.. doctest::
 
-    10 + 2              # 12
-    10 - 2              # 8
-    10 * 2              # 20
-    10 / 2              # 5.0
+    >>> 10 + 2
+    12
 
-.. code-block:: python
+    >>> 10 - 2
+    8
 
-    x = 10
-    y = 2
+    >>> 10 * 2
+    20
 
-    x + y
-    # 12
+    >>> 10 / 2
+    5.0
+
+.. doctest::
+
+    >>> x = 10
+    >>> y = 2
+    >>> x + y
+    12
 
 
 Power and Root
 ==============
-* ``**`` - Power
+* ``a ** b`` - ``b`` power of the number ``a``
+* ``a ** (1/b)`` - ``b``-th root of the number ``a``
 
-.. code-block:: python
-    :caption: ``n-th`` power of the number
+.. doctest::
 
-    10 ** 2             # 100
-    2 ** -1             # 0.5
-    1.337 ** 3          # 2.389979753
+    >>> 10 ** 2
+    100
 
-.. code-block:: python
-    :caption: ``n-th`` root of the number
+    >>> 2 ** -1
+    0.5
 
-    4 ** (1/2)          # 2.0
-    2 ** (1/2)          # 1.4142135623730951
-    27 ** (1/3)         # 3.0
+    >>> 1.337 ** 3
+    2.389979753
 
-    4 ** 0.5            # 2.0
-    2 ** 0.5            # 1.4142135623730951
-    27 ** 0.333         # 2.9967059728946346
+.. doctest::
+
+    >>> 4 ** (1/2)
+    2.0
+
+    >>> 2 ** (1/2)
+    1.4142135623730951
+
+    >>> 27 ** (1/3)
+    3.0
+
+.. doctest::
+
+    >>> 4 ** 0.5
+    2.0
+
+    >>> 2 ** 0.5
+    1.4142135623730951
+
+    >>> 27 ** 0.333
+    2.9967059728946346
 
 
 Divisions
@@ -82,22 +114,39 @@ Divisions
 * ``//`` - True division (preserving data type)
 * ``%`` - Modulo division (reminder)
 
-.. code-block:: python
+.. doctest::
 
-    12 / 6              # 2.0
-    12 / 5              # 2.4
+    >>> 12 / 6
+    2.0
 
-    12 // 6             # 2
-    12 // 5             # 2
+    >>> 12 / 5
+    2.4
 
-    12 % 6              # 0
-    12 % 5              # 2
+.. doctest::
 
-.. code-block:: python
-    :caption: Even vs odd
+    >>> 12 // 6
+    2
 
-    12 % 2 == 0         # True
-    11 % 2 == 0         # False
+    >>> 12 // 5
+    2
+
+.. doctest::
+
+    >>> 12 % 6
+    0
+
+    >>> 12 % 5
+    2
+
+Testing if value is even or odd is made with dividing using modulo (``%``) operator
+
+.. doctest::
+
+    >>> 12 % 2 == 0
+    True
+
+    >>> 11 % 2 == 0
+    False
 
 
 Increment Operators
@@ -107,29 +156,26 @@ Increment Operators
 * ``*=`` - Incremental multiplication
 * ``/=`` - Incremental division
 
-.. code-block:: python
+.. doctest::
 
-    x = 10
-    x = x + 1
+    >>> x = 10
+    >>> x = x + 1
+    >>> print(x)
+    11
 
-    print(x)
-    # 11
+.. doctest::
 
-.. code-block:: python
+    >>> x = 10
+    >>> x += 1
+    >>> print(x)
+    11
 
-    x = 10
-    x += 1
+.. doctest::
 
-    print(x)
-    # 11
-
-.. code-block:: python
-
-    x = 10
-    x -= 1
-
-    print(x)
-    # 9
+    >>> x = 10
+    >>> x -= 1
+    >>> print(x)
+    9
 
 .. doctest::
 

@@ -11,6 +11,26 @@ Rationale
 * Will pass class as a first argument
 * ``self`` is not required
 
+.. code-block:: python
+
+    class MyClass:
+        def mymethod(self):
+            pass
+
+.. code-block:: python
+
+    class MyClass:
+        @staticmethod
+        def mymethod():
+            pass
+
+.. code-block:: python
+
+    class MyClass:
+        @classmethod
+        def mymethod(cls):
+            pass
+
 
 Example
 =======
@@ -112,13 +132,47 @@ Example
     # <class 'NoneType'>
 
 .. code-block:: python
+    :caption: Trying to use methods ``self.__new__()`` and ``self.__init__()``
+
+    import json
+    from dataclasses import dataclass
+
+
+    class JSONMixin:
+        def from_json(self, data):
+            data = json.loads(data)
+            instance = object.__new__(type(self))
+            instance.__init__(**data)
+            return instance
+
+
+    @dataclass
+    class User(JSONMixin):
+        firstname: str
+        lastname: str
+
+
+    DATA = '{"firstname": "Jan", "lastname": "Twardowski"}'
+
+    User.from_json(DATA)
+    # Traceback (most recent call last):
+    # TypeError: from_json() missing 1 required positional argument: 'data'
+
+    User().from_json(DATA)
+    # Traceback (most recent call last):
+    # TypeError: __init__() missing 2 required positional arguments: 'firstname' and 'lastname'
+
+    User(None, None).from_json(DATA)
+    # User(firstname='Jan', lastname='Twardowski')
+
+
+.. code-block:: python
     :caption: Trying to use staticmethod
 
     import json
     from dataclasses import dataclass
 
     class JSONMixin:
-
         @staticmethod
         def from_json(data):
             data = json.loads(data)
@@ -142,12 +196,10 @@ Example
 
 
     class JSONMixin:
-
         @classmethod
         def from_json(cls, data):
             data = json.loads(data)
             return cls(**data)
-
 
     @dataclass
     class User(JSONMixin):
@@ -170,37 +222,29 @@ Use Cases
 
 
     class JSONMixin:
-
         @classmethod
         def from_json(cls, data):
             data = json.loads(data)
             return cls(**data)
 
+    @dataclass
+    class Guest(JSONMixin):
+        firstname: str
+        lastname: str
 
     @dataclass
-    class User:
+    class Admin(JSONMixin):
         firstname: str
         lastname: str
 
 
-    class Guest(User, JSONMixin):
-        pass
-
-
-    class Admin(User, JSONMixin):
-        pass
-
-
     DATA = '{"firstname": "Jan", "lastname": "Twardowski"}'
 
-    guest = Guest.from_json(DATA)
-    admin = Admin.from_json(DATA)
+    Guest.from_json(DATA)
+    # Guest(firstname='Jan', lastname='Twardowski')
 
-    type(guest)     # <class '__main__.Guest'>
-    type(admin)     # <class '__main__.Admin'>
-
-    print(guest)    # Guest(firstname='Jan', lastname='Twardowski')
-    print(admin)    # Admin(firstname='Jan', lastname='Twardowski')
+    Admin.from_json(DATA)
+    # Admin(firstname='Jan', lastname='Twardowski')
 
 .. code-block:: python
 

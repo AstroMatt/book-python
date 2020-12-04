@@ -1,8 +1,8 @@
 import sqlite3
 from datetime import datetime, timezone
 
-DATABASE = r'/tmp/_temporary.sqlite3'
-FILE = r'/tmp/_temporary.csv'
+DATABASE = r'_temporary.sqlite3'
+FILE = r'_temporary.csv'
 
 SPECIES = {
     0: 'setosa',

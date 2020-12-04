@@ -2,7 +2,7 @@ import json
 from dataclasses import dataclass
 from pprint import pprint
 
-FILE = r'/tmp/_temporary.json'
+FILE = r'_temporary.json'
 
 @dataclass
 class Iris:

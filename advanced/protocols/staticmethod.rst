@@ -29,9 +29,45 @@ Rationale
 Example
 =======
 .. code-block:: python
-    :caption: Functions on a high level of a module lack namespace
 
-    def echo(name):
+    class Astronaut:
+        def __init__(self):
+            self.name = 'José Jiménez'
+
+        def say_hello(self):
+            print(f'My name... {self.name}')
+
+        @staticmethod
+        def say_goodbye():
+            print('Goodbye')
+
+
+Instances
+=========
+.. code-block:: python
+
+    class MyClass:
+        def say_hello(self):
+            print(f'Hello')
+
+
+    my = MyClass()
+    my.say_hello()
+
+.. code-block:: python
+
+    class MyClass:
+        @staticmethod
+        def say_hello():
+            print('Hello')
+
+    MyClass.say_hello()
+
+
+Namespace
+=========
+.. code-block:: python
+    :caption: Functions on a high level of a module lack namespace
 
 
     def add(a, b):
@@ -301,22 +337,40 @@ Helper
         def add(datetime: str, device: str, type: str, value: str, unit: str):
             dt = clean_datetime(datetime)
             time = MissionTime().get_time_dict(from_datetime=dt)
-
-            return ZWaveSensor.objects.update_or_create(
-                datetime=dt,
-                defaults={
-                    'date': time['date'],
+            data = {'date': time['date'],
                     'time': time['time'],
                     'device': clean_device(device),
                     'type': clean_type(type),
                     'value': clean_value(value),
-                    'unit': clean_unit(unit),
-                }
-            )
+                    'unit': clean_unit(unit)}
+            return ZWaveSensor.objects.update_or_create(datetime=dt, defaults=data)
 
 .. code-block:: python
 
-    ZWaveSensor.add(datetime, device, type, value, unit)
+    from habitat.time import MissionTime
+    from habitat.sensors.models import ZWaveSensor
+    from habitat.sensors.models import clean_datetime
+    from habitat.sensors.models import clean_device
+    from habitat.sensors.models import clean_type
+    from habitat.sensors.models import clean_value
+    from habitat.sensors.models import clean_unit
+
+
+    dt = clean_datetime(datetime)
+    time = MissionTime().get_time_dict(from_datetime=dt)
+    data = {'date': time['date'],
+            'time': time['time'],
+            'device': clean_device(device),
+            'type': clean_type(type),
+            'value': clean_value(value),
+            'unit': clean_unit(unit)}
+
+    obj = ZWaveSensor.objects.update_or_create(datetime=dt, defaults=data)
+
+
+.. code-block:: python
+
+    obj = ZWaveSensor.add(datetime, device, type, value, unit)
 
 
 Assignments

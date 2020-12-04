@@ -2,7 +2,7 @@
 * Assignment: Protocol Context Manager AutoSave
 * Filename: protocol_contextmanager_autosave.py
 * Complexity: hard
-* Lines of code: 32 lines
+* Lines of code: 28 lines
 * Time: 21 min
 
 English:
@@ -18,6 +18,13 @@ Polish:
     3. Zapisuj zawartość bufora do pliku co `AUTOSAVE_SECONDS` sekund
     4. Operacje zapisu i odczytu trwają, jak zrobić, aby do bufora podczas zapisu na dysk, nadal można było pisać?
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+
+Hint:
+    * `from threading import Timer`
+    * `timer = Timer(interval, function)`
+    * `timer.start()`
+    * `timer.cancel()`
+    * `ctrl+c` or stop button kills infinite loop
 
 Tests:
     >>> from inspect import isclass, ismethod
@@ -41,59 +48,46 @@ Tests:
 
     >>> open('_temporary.txt').read()
     'One\\nTwo\\nThree\\nFour\\nFive\\nSix\\n'
+    >>> from os import remove
+    >>> remove('_temporary.txt')
 """
 
-# Solution
-import logging
+# Given
 from threading import Timer
 
-logging.basicConfig(
-    level='DEBUG',
-    datefmt='"%Y-%m-%d", "%H:%M:%S"',
-    format='{asctime}, "{levelname}", "{message}"',
-    # filename='_temporary.log',
-    style='{')
 
-log = logging.getLogger(__name__)
-
-
+# Solution
 class File:
     AUTOSAVE_SECONDS: float = 1.0
-
+    _content: list[str]
+    _timer: Timer
     filename: str
-    content: list[str]
-    exit: bool
 
-    def __init__(self, filename: str) -> None:
+    def __init__(self, filename):
         self.filename = filename
-        self.content = list()
-        self.exit = False
+        self._content = list()
 
-    def append(self, line: str) -> None:
-        self.content.append(line + '\n')
+    def _set_timer(self):
+        if hasattr(self, '_timer'):
+            self._timer.cancel()
+        self._timer = Timer(self.AUTOSAVE_SECONDS, self._writefile)
+        self._timer.start()
 
-    def _write(self):
-        with open(self.filename, mode='a') as file:
-            file.writelines(self.content)
-        self.content = []
-
-    def _autosave(self):
-        log.debug('Setting autosave timer')
-        if self.content:
-            self._write()
-        if not self.exit:
-            self._timer = Timer(interval=self.AUTOSAVE_SECONDS,
-                                function=self._autosave)
-            self._timer.start()
-
-    def __enter__(self) -> 'File':
+    def __enter__(self):
         with open(self.filename, mode='w') as file:
-            file.writelines(self.content)
-        self.exit = False
-        self._autosave()
+            file.write('')
+        self._set_timer()
         return self
 
-    def __exit__(self, *arg) -> None:
-        self.exit = True
-        self._write()
-        self._timer.join()
+    def __exit__(self, *args):
+        self._writefile()
+        self._timer.cancel()
+
+    def _writefile(self):
+        with open(self.filename, mode='a') as file:
+            file.writelines(self._content)
+        self._content = []
+        self._set_timer()
+
+    def append(self, line):
+        self._content.append(line+'\n')

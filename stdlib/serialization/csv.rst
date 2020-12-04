@@ -198,7 +198,7 @@ Reader Object
 
     import csv
 
-    FILE = r'/tmp/_temporary.csv'
+    FILE = r'_temporary.csv'
     # sepal_length,sepal_width,petal_length,petal_width,species
     # 5.4,3.9,1.3,0.4,setosa
     # 5.9,3.0,5.1,1.8,virginica
@@ -224,7 +224,7 @@ Writer Object
 
     import csv
 
-    FILE = r'/tmp/_temporary.csv'
+    FILE = r'_temporary.csv'
 
     DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
             (5.8, 2.7, 5.1, 1.9, 'virginica'),
@@ -248,7 +248,7 @@ DictReader
 
     import csv
 
-    FILE = r'/tmp/_temporary.csv'
+    FILE = r'_temporary.csv'
     # sepal_length,sepal_width,petal_length,petal_width,species
     # 5.4,3.9,1.3,0.4,setosa
     # 5.9,3.0,5.1,1.8,virginica
@@ -270,7 +270,7 @@ DictReader
 
     import csv
 
-    FILE = r'/tmp/_temporary.csv'
+    FILE = r'_temporary.csv'
     # 'sepal_length';'sepal_width';'petal_length';'petal_width';'species'
     # '5,4';'3,9';'1,3';'0,4';'setosa'
     # '5,9';'3,0';'5,1';'1,8';'virginica'
@@ -308,7 +308,7 @@ DictReader
 
     import csv
 
-    FILE = r'/tmp/_temporary.csv'
+    FILE = r'_temporary.csv'
     # sepal_length,sepal_width,petal_length,petal_width,species
     # 5.4,3.9,1.3,0.4,setosa
     # 5.9,3.0,5.1,1.8,virginica
@@ -344,7 +344,7 @@ DictWriter
 
     import csv
 
-    FILE = r'/tmp/_temporary.csv'
+    FILE = r'_temporary.csv'
 
     DATA = [{'Sepal Length': 5.4, 'Sepal Width': 3.9, 'Petal Length': 1.3, 'Petal Width': 0.4, 'Species': 'setosa'},
             {'Sepal Length': 5.9, 'Sepal Width': 3.0, 'Petal Length': 5.1, 'Petal Width': 1.8, 'Species': 'virginica'},
@@ -369,7 +369,7 @@ DictWriter
 
     import csv
 
-    FILE = r'/tmp/_temporary.csv'
+    FILE = r'_temporary.csv'
 
     DATA = [{'sepal_length': 5.4, 'sepal_width': 3.9, 'petal_length': 1.3, 'petal_width': 0.4, 'species': 'setosa'},
             {'sepal_length': 5.9, 'sepal_width': 3.0, 'petal_length': 5.1, 'petal_width': 1.8, 'species': 'virginica'},
@@ -404,7 +404,7 @@ Parsing Non-CSV Files
     import csv
 
 
-    FILE = r'/tmp/_temporary.txt'
+    FILE = r'_temporary.txt'
     # root:x:0:0:root:/root:/bin/bash
     # watney:x:1000:1000:Mark Watney:/home/watney:/bin/bash
     # lewis:x:1001:1001:José Jiménez:/home/lewis:/bin/bash
@@ -432,7 +432,7 @@ Parsing Non-CSV Files
     import csv
 
 
-    FILE = r'/tmp/_temporary.properties'
+    FILE = r'_temporary.properties'
     # sonar.projectKey=habitatOS
     # sonar.projectName=habitatOS
     # sonar.language=py

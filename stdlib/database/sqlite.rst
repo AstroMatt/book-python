@@ -316,6 +316,8 @@ Tests:
       'level': 'WARNING',
       'message': 'LM lunar landing'},
     ...]
+    >>> from os import remove
+    >>> remove(FILE)
 
 Hint:
     * ``datetime.fromisoformat()``

@@ -23,10 +23,12 @@ Tests:
     >>> assert type(result) is str
     >>> result
     'hello'
+    >>> from os import remove
+    >>> remove(FILE)
 """
 
 # Given
-FILE = r'/tmp/_temporary.txt'
+FILE = r'_temporary.txt'
 DATA = 'hello'
 
 with open(FILE, mode='wt') as file:

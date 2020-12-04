@@ -6,7 +6,7 @@ from pprint import pprint
 
 HOST = "localhost"
 PORT = 1337
-FILE = r'/tmp/_temporary.xml'
+FILE = r'_temporary.xml'
 
 
 logging.basicConfig(
