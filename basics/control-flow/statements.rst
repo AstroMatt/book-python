@@ -429,26 +429,11 @@ Pattern Matching
 .. code-block:: python
     :force:
 
-    request = 'GET 1.1 /index.html'
-
-    match request.split():
-        case ['GET', version, uri]:
-            server.get(uri)
-        case ['POST', version, uri]:
-            server.post(uri)
-        case ['PUT', version, uri]:
-            server.put(uri)
-        case ['DELETE', version, uri]:
-            server.delete(uri)
-
-.. code-block:: python
-    :force:
-
     def http_error(status):
         match status:
             case 400:
                 return 'Bad request'
-            case 401 | 403 | 404:
+            case 401 | 403 | 405:
                 return 'Not allowed'
             case 404:
                 return 'Not found'
@@ -456,6 +441,21 @@ Pattern Matching
                 return "I'm a teapot"
             case _:
                 return 'Unexpected status'
+
+.. code-block:: python
+    :force:
+
+    request = 'GET /index.html HTTP/2.0'
+
+    match request.split():
+        case ['GET', uri, version]:
+            server.get(uri)
+        case ['POST', uri, version]:
+            server.post(uri)
+        case ['PUT', uri, version]:
+            server.put(uri)
+        case ['DELETE', uri, version]:
+            server.delete(uri)
 
 .. code-block:: python
     :force:
