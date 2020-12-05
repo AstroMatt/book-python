@@ -39,7 +39,8 @@ Single Responsibility Principle
 ===============================
 .. epigraph::
 
-    A class should have one, and only one, reason to change
+    A class should have one, and only one, reason to change.
+
     -- Robert C. Martin
 
 Every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class. All its services should be narrowly aligned with that responsibility.
@@ -134,7 +135,8 @@ Open/Closed Principle
 =====================
 .. epigraph::
 
-    Modules [classes] should be open for extension, but closed for modification
+    Modules [classes] should be open for extension, but closed for modification.
+
     -- Bertrand Mayer
 
 .. figure:: img/oop-solid-ocp.png
@@ -207,6 +209,7 @@ Liskov Substitution Principle
 .. epigraph::
 
     Derived classes must be usable through the base class interface, without the need for the user to know the difference.
+
     -- Barbara Liskov
 
 * Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program
@@ -312,6 +315,7 @@ Dependency Inversion Principle
 
     Clients should not be forced to depend on methods that they do not use.
     Program to an interface, not an implementation.
+
     -- Robert C. Martin
 
 * https://medium.com/swlh/isp-the-interface-segregation-principle-a3416f3ac8f5

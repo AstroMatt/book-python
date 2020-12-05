@@ -8,17 +8,26 @@ Metaclass
 Rationale
 =========
 .. epigraph::
-    "Metaclasses are deeper magic than 99% of users should ever worry about. If you wonder whether you need them, you don’t (the people who actually need them know with certainty that they need them, and don’t need an explanation about why)." -- Tim Peters
+
+    Metaclasses are deeper magic than 99% of users should ever worry about.
+    If you wonder whether you need them, you don’t.
+    The people who actually need them know with certainty that they need them,
+    and don’t need an explanation about why.
+
+    -- Tim Peters
 
 .. highlights::
     * Object is an instance of a class
     * Class is an instance of a Metaclass
 
-.. figure:: img/metaclass-instances.png
-    :width: 50%
+.. figure:: img/oop-metaclass-inheritance.png
+    :width: 90%
     :align: center
 
-    Class is an instance of a metaclass.
+    Object is an instance of a Class.
+    Class is an instance of a Metaclass.
+    Metaclass is an instance of a type.
+    Type is an instance of a type.
 
 Class Definition
 ----------------
@@ -90,10 +99,48 @@ Recap
 
     MyClass = type('MyClass', (Parent,), {'myattr': 1, 'mymethod': mymethod})
 
+Create Classes Dynamically
+--------------------------
+.. code-block:: python
+
+    for classname in ['Astronaut', 'Cosmonaut', 'Taikonaut']:
+        globals()[classname] = type(classname, (), {})
+
+
+Syntax
+======
+.. code-block:: python
+
+    class MyMeta(type):
+        pass
+
+    class MyClass(metaclass=MyMeta):
+        pass
+
+    class MySubclass(MyClass):
+        pass
+
+
+    myinstance = MySubclass()
+
+
+    type(MyMeta)
+    # <class 'type'>
+
+    type(MyClass)
+    # <class '__main__.MyMeta'>
+
+    type(MySubclass)
+    # <class '__main__.MyMeta'>
+
+    type(myinstance)
+    # <class '__main__.MySubclass'>
+
 
 Metaclasses
 ===========
 .. highlights::
+    * Is a callable which returns a class
     * Instances are created by calling the class
     * Classes are created by calling the metaclass (when it executes the ``class`` statement)
     * Combined with the normal ``__init__`` and ``__new__`` methods
@@ -112,21 +159,30 @@ Metaclasses
 
 .. code-block:: python
 
-    class MyMetaclass(type):
+    class MyMeta(type):
         pass
 
 
-    class MyClass(metaclass=MyMetaclass):
+    class MyClass(metaclass=MyMeta):
         pass
 
 .. code-block:: python
 
-    class MyMetaclass(type):
-        def __new__(self, class_name, bases, attrs):
-            return type(class_name, bases, attrs)
+    class MyMeta(type):
+        def __new__(self, classname, bases, attrs):
+            return type(classname, bases, attrs)
 
 
-    class MyClass(metaclass=MyMetaclass):
+    class MyClass(metaclass=MyMeta):
+        pass
+
+.. code-block:: python
+
+    def mymeta(classname, bases, attrs):
+        return type(classname, bases, attrs)
+
+
+    class MyClass(metaclass=mymeta):
         pass
 
 
@@ -140,29 +196,46 @@ Usage
     * Replace the class with something else entirely
     * Inject logger instance
     * Injecting static fields
+    * Ensure subclass implementation
     * Metaclasses run when Python defines class (even if no instance is created)
 
 .. code-block:: python
 
-    class MyMetaclass(type):
-        def __new__(self, class_name, bases, attrs):
+    class MyMeta(type):
+        def __new__(self, classname, bases, attrs):
             print(locals())
-            return type(class_name, bases, attrs)
+            return type(classname, bases, attrs)
 
 
-    class MyClass(metaclass=MyMetaclass):
+    class MyClass(metaclass=MyMeta):
         myattr = 1
 
         def mymethod(self):
             pass
 
-    # {'self': <class '__main__.MyMetaclass'>,
-    #  'class_name': 'MyClass',
+    # {'self': <class '__main__.MyMeta'>,
+    #  'classname': 'MyClass',
     #  'bases': (),
     #  'attrs': {'__module__': '__main__',
     #            '__qualname__': 'MyClass',
     #            'myattr': 1,
     #            'mymethod': <function MyClass.mymethod at 0x10ae39ca0>}}
+
+
+Keyword Arguments
+=================
+.. code-block:: python
+
+    class MyMeta(type):
+        def __new__(self, classname, bases, attrs, myvar):
+            if myvar:
+                ...
+            return type(classname, bases, attrs)
+
+
+    class MyClass(metaclass=MyMeta, myvar=True):
+        pass
+
 
 
 Example
@@ -218,11 +291,14 @@ Type Metaclass
     type(object)      # <class 'type'>
     type(type)        # <class 'type'>
 
-.. figure:: img/metaclass-class-chain.png
-    :width: 25%
+.. figure:: img/oop-metaclass-diagram.png
+    :width: 90%
     :align: center
 
-    Class is an instance of a metaclass.
+    Object is an instance of a Class.
+    Class is an instance of a Metaclass.
+    Metaclass is an instance of a type.
+    Type is an instance of a type.
 
 .. code-block:: python
 
@@ -254,10 +330,10 @@ Type Metaclass
 
 .. code-block:: python
 
-    class MyMetaclass(type):
+    class MyMeta(type):
         pass
 
-    class MyClass(metaclass=MyMetaclass):
+    class MyClass(metaclass=MyMeta):
         pass
 
 
@@ -271,15 +347,13 @@ Type Metaclass
 
 .. code-block:: python
 
-    class MyMetaclass(type):
+    class MyMeta(type):
         def __new__(self, class_name, bases, attrs):
             return type(class_name, bases, attrs)
 
 
-    class MyClass(metaclass=MyMetaclass):
+    class MyClass(metaclass=MyMeta):
         pass
-
-
 
 
 Method Resolution Order

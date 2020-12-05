@@ -11,6 +11,7 @@ Rationale
 * Outsource functionality into specialized classes
 * Descriptors: ``classmethod``, ``staticmethod``, ``property``, functions in general
 * ``__del__(self)`` is reserved when object is being deleted by garbage collector (destructor)
+* ``__set_name()`` After class creation, Python default metaclass will call it with parent and classname
 
 
 Protocol
@@ -18,6 +19,13 @@ Protocol
 * ``__get__(self, parent, *args) -> self``
 * ``__set__(self, parent, value) -> None``
 * ``__delete__(self, parent) -> None``
+* ``__set_name__(self)``
+
+.. epigraph::
+
+    If any of those methods are defined for an object, it is said to be a descriptor.
+
+    -- Raymond Hettinger
 
 .. code-block:: python
 
@@ -29,6 +37,9 @@ Protocol
             ...
 
         def __delete__(self, parent):
+            ...
+
+        def __set_name__(self, parent, classname):
             ...
 
 
@@ -251,6 +262,46 @@ Use Cases
     print(t.moscow)     # 1969-07-21 05:56:15+03:00
     print(t.est)        # 1969-07-20 22:56:15-04:00
     print(t.pdt)        # 1969-07-20 19:56:15-07:00
+
+
+Function Descriptor
+===================
+.. code-block:: python
+
+    class Astronaut:
+        def say_hello(self):
+            pass
+
+
+    Astronaut.say_hello
+    # <function __main__.Astronaut.say_hello(self)>
+
+    astro = Astronaut()
+    astro.say_hello
+    # <bound method Astronaut.say_hello of <__main__.Astronaut object at 0x10a270070>>
+
+    Astronaut.say_hello.__get__(astro, Astronaut)
+    # <bound method Astronaut.say_hello of <__main__.Astronaut object at 0x10a270070>>
+
+    type(Astronaut.say_hello)
+    # <class 'function'>
+
+    type(astro.say_hello)
+    # <class 'method'>
+
+    dir(Astronaut.say_hello)
+    # ['__annotations__', '__call__', '__class__', '__closure__', '__code__', '__defaults__',
+    #  '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__',
+    #  '__get__', '__getattribute__', '__globals__', '__gt__', '__hash__', '__init__',
+    #  '__init_subclass__', '__kwdefaults__', '__le__', '__lt__', '__module__', '__name__',
+    #  '__ne__', '__new__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__',
+    #  '__setattr__', '__sizeof__', '__str__', '__subclasshook__']
+
+    dir(astro.say_hello)
+    # ['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__',
+    #  '__func__', '__ge__', '__get__', '__getattribute__', '__gt__', '__hash__', '__init__',
+    #  '__init_subclass__', '__le__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__',
+    #  '__repr__', '__self__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__']
 
 
 Assignments

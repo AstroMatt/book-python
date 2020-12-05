@@ -6,7 +6,9 @@ Annotation Type
 
 
 .. epigraph::
-    Types are not required, and never will be
+
+    Types are not required, and never will be.
+
     -- Guido van Rossum, Python initiator, core developer, former BDFL
 
 

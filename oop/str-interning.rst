@@ -28,19 +28,19 @@ Example
     ('a' * 4097) is ('a' * 4097)
     # False
 
-.. figure:: img/identity-str-1.png
+.. figure:: img/oop-identity-str-1.png
     :align: center
     :scale: 50%
 
     Define str
 
-.. figure:: img/identity-str-2.png
+.. figure:: img/oop-identity-str-2.png
     :align: center
     :scale: 50%
 
     Define another str with the same value
 
-.. figure:: img/identity-str-3.png
+.. figure:: img/oop-identity-str-3.png
     :align: center
     :scale: 50%
 
