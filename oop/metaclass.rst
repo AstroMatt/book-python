@@ -20,9 +20,79 @@ Rationale
 
     Class is an instance of a metaclass.
 
+Class Definition
+----------------
+.. code-block:: python
 
-How Metaclasses works?
-======================
+    class MyClass:
+        pass
+
+.. code-block:: python
+
+    MyClass = type('MyClass', (), {})
+
+Class Attributes
+----------------
+.. code-block:: python
+
+    class MyClass:
+        myattr = 1
+
+.. code-block:: python
+
+    MyClass = type('MyClass', (), {'myattr': 1})
+
+Class Methods
+-------------
+.. code-block:: python
+
+    class MyClass:
+        def mymethod(self):
+            pass
+
+.. code-block:: python
+
+    def mymethod(self):
+        pass
+
+    MyClass = type('MyClass', (), {'mymethod': mymethod})
+
+Class Inheritance
+-----------------
+.. code-block:: python
+
+    class Parent:
+        pass
+
+
+    class MyClass(Parent):
+        pass
+
+.. code-block:: python
+
+    MyClass = type('MyClass', (Parent,), {})
+
+Recap
+-----
+.. code-block:: python
+
+    class Parent:
+        pass
+
+
+    class MyClass(Parent):
+        myattr = 1
+
+        def mymethod(self):
+            pass
+
+.. code-block:: python
+
+    MyClass = type('MyClass', (Parent,), {'myattr': 1, 'mymethod': mymethod})
+
+
+Metaclasses
+===========
 .. highlights::
     * Instances are created by calling the class
     * Classes are created by calling the metaclass (when it executes the ``class`` statement)
@@ -32,18 +102,32 @@ How Metaclasses works?
 
 .. code-block:: python
 
-    name = 'Mark Watney'
+    class MyClass:
+        pass
 
+.. code-block:: python
 
-    def hello():
-        print('My name... José Jiménez')
+    class MyClass(object):
+        pass
 
+.. code-block:: python
 
-    class Astronaut:
+    class MyMetaclass(type):
         pass
 
 
-    astro = Astronaut()
+    class MyClass(metaclass=MyMetaclass):
+        pass
+
+.. code-block:: python
+
+    class MyMetaclass(type):
+        def __new__(self, class_name, bases, attrs):
+            return type(class_name, bases, attrs)
+
+
+    class MyClass(metaclass=MyMetaclass):
+        pass
 
 
 Usage
@@ -56,41 +140,29 @@ Usage
     * Replace the class with something else entirely
     * Inject logger instance
     * Injecting static fields
-
-
-Metaclass Mechanism
-===================
-.. code-block:: python
-
-    class Astronaut:
-        pass
-
-    astro = Astronaut()
-
-.. code-block:: python
-
-    class Astronaut(object):
-        pass
-
-    astro = Astronaut()
-
-
-.. code-block:: python
-
-    class Astronaut(metaclass=object):
-        pass
-
-    astro = Astronaut()
+    * Metaclasses run when Python defines class (even if no instance is created)
 
 .. code-block:: python
 
     class MyMetaclass(type):
-        pass
+        def __new__(self, class_name, bases, attrs):
+            print(locals())
+            return type(class_name, bases, attrs)
 
-    class Astronaut(metaclass=MyMetaclass):
-        pass
 
-    astro = Astronaut()
+    class MyClass(metaclass=MyMetaclass):
+        myattr = 1
+
+        def mymethod(self):
+            pass
+
+    # {'self': <class '__main__.MyMetaclass'>,
+    #  'class_name': 'MyClass',
+    #  'bases': (),
+    #  'attrs': {'__module__': '__main__',
+    #            '__qualname__': 'MyClass',
+    #            'myattr': 1,
+    #            'mymethod': <function MyClass.mymethod at 0x10ae39ca0>}}
 
 
 Example
@@ -151,6 +223,63 @@ Type Metaclass
     :align: center
 
     Class is an instance of a metaclass.
+
+.. code-block:: python
+
+    class MyClass:
+        pass
+
+
+    my = MyClass()
+
+    MyClass.__class__.__bases__
+    # (<class 'object'>,)
+
+    my.__class__.__bases__
+    # (<class 'object'>,)
+
+.. code-block:: python
+
+    class MyClass(object):
+        pass
+
+
+    my = MyClass()
+
+    MyClass.__class__.__bases__
+    # (<class 'object'>,)
+
+    my.__class__.__bases__
+    # (<class 'object'>,)
+
+.. code-block:: python
+
+    class MyMetaclass(type):
+        pass
+
+    class MyClass(metaclass=MyMetaclass):
+        pass
+
+
+    my = MyClass()
+
+    MyClass.__class__.__bases__
+    # (<class 'type'>,)
+
+    my.__class__.__bases__
+    # (<class 'object'>,)
+
+.. code-block:: python
+
+    class MyMetaclass(type):
+        def __new__(self, class_name, bases, attrs):
+            return type(class_name, bases, attrs)
+
+
+    class MyClass(metaclass=MyMetaclass):
+        pass
+
+
 
 
 Method Resolution Order
