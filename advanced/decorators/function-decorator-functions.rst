@@ -366,6 +366,42 @@ Scope
 Examples
 ========
 .. code-block:: python
+
+    DATABASE = {
+        'mlewis':       {'name': 'Melissa Lewis',   'email': 'melissa.lewis@nasa.gov'},
+        'mwatney':      {'name': 'Mark Watney',     'email': 'mark.watney@nasa.gov'},
+        'avogel':       {'name': 'Alex Vogel',      'email': 'alex.vogel@nasa.gov'},
+        'rmartinez':    {'name': 'Rick Martinez',   'email': 'rick.martinez@nasa.gov'},
+        'bjohansen':    {'name': 'Beth Johanssen',  'email': 'beth.johanssen@nasa.gov'},
+        'cbeck':        {'name': 'Chris Beck',      'email': 'chris.beck@nasa.gov'},
+    }
+
+    _cache = {}
+
+    def cache(func):
+        def wrapper(username):
+            if username not in _cache:
+                _cache[username] = func(username)
+            return _cache[username]
+        return wrapper
+
+
+    @cache
+    def db_search(username):
+        return DATABASE[username]['name']
+
+
+
+    db_search('mwatney')  # not in cache, searches database and updates cache with result
+    # 'Mark Watney'
+
+    db_search('mwatney')  # found in cache and returns from it, no database search
+    # 'Mark Watney'
+
+    print(_cache)
+    # {'mwatney': 'Mark Watney'}
+
+.. code-block:: python
     :caption: Flask URL Routing
 
     from flask import json

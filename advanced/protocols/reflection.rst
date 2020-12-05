@@ -10,33 +10,68 @@ Rationale
 * When accessing an attribute
 * Built-in Functions:
 
-    * ``setattr(obj, 'attribute_name', 'new value') -> None``
-    * ``delattr(obj, 'attribute_name') -> None``
-    * ``getattr(obj, 'attribute_name', 'default value') -> Any``
-    * ``hasattr(obj, 'attribute_name') -> bool``
+    * ``setattr(obj, 'attrname', 'new_value') -> None``
+    * ``delattr(obj, 'attrname') -> None``
+    * ``getattr(obj, 'attrname', 'default_value') -> Any``
+    * ``hasattr(obj, 'attrname') -> bool``
+
+.. code-block:: python
+
+    class Astronaut:
+        def __init__(self, name):
+            self.name = name
+
+
+    astro = Astronaut('Mark Watney')
+
+    if astro._salary is None:
+        astro._salary = 100
+    # Traceback (most recent call last):
+    # AttributeError: 'Astronaut' object has no attribute '_salary'
+
+
+    if not hasattr(astro, '_salary'):
+        astro._salary = 100
+
+    print(astro._salary)
+    # 100
+
+
+    attrname = input('Type attribute name: ')
+    value = getattr(astro, attrname, 'no such attribute')
+    print(value)
+
+    # Type attribute name: >? name
+    # Mark Watney
+
+    # Type attribute name: >? _salary
+    # 100
+
+    # Type attribute name: >? notexisting
+    # no such attribute
 
 
 Protocol
 ========
-* ``__setattr__(self, attribute_name, value) -> None``
-* ``__delattr__(self, attribute_name) -> None``
-* ``__getattribute__(self, attribute_name, default) -> Any``
-* ``__getattr__(self, attribute_name, default) -> Any``
+* ``__setattr__(self, attrname, value) -> None``
+* ``__delattr__(self, attrname) -> None``
+* ``__getattribute__(self, attrname, default) -> Any``
+* ``__getattr__(self, attrname, default) -> Any``
 
 .. code-block:: python
 
     class Reflection:
 
-        def __setattr__(self, attribute_name, value):
+        def __setattr__(self, attrname, value):
             ...
 
-        def __delattr__(self, attribute_name):
+        def __delattr__(self, attrname):
             ...
 
-        def __getattribute__(self, attribute_name, default):
+        def __getattribute__(self, attrname, default):
             ...
 
-        def __getattr__(self, attribute_name, default):
+        def __getattr__(self, attrname, default):
             ...
 
 
@@ -45,17 +80,17 @@ Example
 .. code-block:: python
 
     class Immutable:
-        def __setattr__(self, name, value):
+        def __setattr__(self, attrname, value):
             raise PermissionError('Immutable')
 
 .. code-block:: python
 
     class Protected:
-        def __setattr__(self, name, value):
-            if name.startswith('_'):
+        def __setattr__(self, attrname, value):
+            if attrname.startswith('_'):
                 raise PermissionError('Field is protected')
             else:
-                return super().__setattr__(name, value)
+                return super().__setattr__(attrname, value)
 
 
 Set Attribute
@@ -70,12 +105,11 @@ Set Attribute
 .. code-block:: python
 
     class Astronaut:
-
-        def __setattr__(self, name, value):
-            if name.startswith('_'):
+        def __setattr__(self, attrname, value):
+            if attrname.startswith('_'):
                 raise PermissionError('Field is protected')
             else:
-                return super().__setattr__(name, value)
+                return super().__setattr__(attrname, value)
 
 
     astro = Astronaut()
@@ -101,12 +135,11 @@ Delete Attribute
 .. code-block:: python
 
     class Astronaut:
-
-        def __delattr__(self, name):
-            if name.startswith('_'):
+        def __delattr__(self, attrname):
+            if attrname.startswith('_'):
                 raise PermissionError('Field is protected')
             else:
-                return super().__delattr__(name)
+                return super().__delattr__(attrname)
 
 
     astro = Astronaut()
@@ -136,12 +169,11 @@ Get Attribute
 .. code-block:: python
 
     class Astronaut:
-
-        def __getattribute__(self, name):
-            if name.startswith('_'):
+        def __getattribute__(self, attrname):
+            if attrname.startswith('_'):
                 raise PermissionError('Field is protected')
             else:
-                return super().__getattribute__(name)
+                return super().__getattribute__(attrname)
 
 
     astro = Astronaut()
@@ -168,7 +200,7 @@ Get Attribute if Missing
         def __init__(self):
             self.name = None
 
-        def __getattr__(self, name):
+        def __getattr__(self, attrname):
             return 'Sorry, field does not exist'
 
 
@@ -187,16 +219,17 @@ Get Attribute if Missing
         def __init__(self):
             self.name = None
 
-        def __getattribute__(self, name):
+        def __getattribute__(self, attrname):
             print('Getattribute called... ')
-            result = super().__getattribute__(name)
+            result = super().__getattribute__(attrname)
             print(f'Result was: "{result}"')
             return result
 
-        def __getattr__(self, name):
+        def __getattr__(self, attrname):
             print('Not found. Getattr called...')
-            print(f'Creating attribute {name} with `None` value')
-            super().__setattr__(name, None)
+            print(f'Creating attribute {attrname} with `None` value')
+            super().__setattr__(attrname, None)
+
 
 
     astro = Astronaut()
@@ -205,6 +238,7 @@ Get Attribute if Missing
     astro.name
     # Getattribute called...
     # Result was: "Mark Watney"
+    # 'Mark Watney'
 
     astro._salary
     # Getattribute called...
@@ -247,18 +281,17 @@ Use Cases
 .. code-block:: python
 
     class Astronaut:
-
-        def __getattribute__(self, name):
-            if name.startswith('_'):
+        def __getattribute__(self, attrname):
+            if attrname.startswith('_'):
                 raise PermissionError('Field is protected')
             else:
-                return super().__getattribute__(name)
+                return super().__getattribute__(attrname)
 
-        def __setattr__(self, name, value):
-            if name.startswith('_'):
+        def __setattr__(self, attrname, value):
+            if attrname.startswith('_'):
                 raise PermissionError('Field is protected')
             else:
-                return super().__setattr__(name, value)
+                return super().__setattr__(attrname, value)
 
 
     astro = Astronaut()
@@ -283,11 +316,11 @@ Use Cases
         def __init__(self, kelvin):
             self.kelvin = kelvin
 
-        def __setattr__(self, name, value):
-            if value < 0.0:
+        def __setattr__(self, attrname, value):
+            if attrname == 'kelvin' and value < 0.0:
                 raise ValueError('Kelvin temperature cannot be negative')
             else:
-                return super().__setattr__(name, value)
+                return super().__setattr__(attrname, value)
 
 
     t = Temperature(100)
@@ -307,22 +340,23 @@ Use Cases
         celsius: float
         fahrenheit: float
 
-        def __setattr__(self, name, value):
-            super().__setattr__(name, value)
-
-            if name == 'celsius':
-                self.kelvin = value + 273.15
-                self.fahrenheit = value * (9/5) + 32
+        def __getattr__(self, attrname):
+            if attrname == 'kelvin':
+                return super().__getattribute__('kelvin')
+            if attrname == 'celsius':
+                return self.kelvin - 273.15
+            if attrname == 'fahrenheit':
+                return (self.kelvin-273.15) * 1.8 + 32
 
 
     t = Temperature()
-    t.celsius = 100
+    t.kelvin = 373.15
 
     print(t.kelvin)
     # 373.15
 
     print(t.celsius)
-    # 100
+    # 100.0
 
     print(t.fahrenheit)
     # 212.0

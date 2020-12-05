@@ -29,6 +29,21 @@ Rationale
     Metaclass is an instance of a type.
     Type is an instance of a type.
 
+
+When a class definition is executed, the following steps occur:
+
+    #. MRO entries are resolved;
+    #. the appropriate metaclass is determined;
+    #. the class namespace is prepared;
+    #. the class body is executed;
+    #. the class object is created.
+
+When using the default metaclass type, or any metaclass that ultimately calls ``type.__new__``, the following additional customisation steps are invoked after creating the class object:
+
+    #. ``type.__new__`` collects all of the descriptors in the class namespace that define a ``__set_name__()`` method;
+    #. all of these ``__set_name__`` methods are called with the class being defined and the assigned name of that particular descriptor;
+    #. the ``__init_subclass__()`` hook is called on the immediate parent of the new class in its method resolution order. [pydocclassobject]_
+
 Class Definition
 ----------------
 .. code-block:: python
@@ -169,7 +184,7 @@ Metaclasses
 .. code-block:: python
 
     class MyMeta(type):
-        def __new__(self, classname, bases, attrs):
+        def __new__(mcs, classname, bases, attrs):
             return type(classname, bases, attrs)
 
 
@@ -199,10 +214,12 @@ Usage
     * Ensure subclass implementation
     * Metaclasses run when Python defines class (even if no instance is created)
 
+The potential uses for metaclasses are boundless. Some ideas that have been explored include enum, logging, interface checking, automatic delegation, automatic property creation, proxies, frameworks, and automatic resource locking/synchronization. [pydocclassobject]_
+
 .. code-block:: python
 
     class MyMeta(type):
-        def __new__(self, classname, bases, attrs):
+        def __new__(mcs, classname, bases, attrs):
             print(locals())
             return type(classname, bases, attrs)
 
@@ -227,7 +244,7 @@ Keyword Arguments
 .. code-block:: python
 
     class MyMeta(type):
-        def __new__(self, classname, bases, attrs, myvar):
+        def __new__(mcs, classname, bases, attrs, myvar):
             if myvar:
                 ...
             return type(classname, bases, attrs)
@@ -236,6 +253,31 @@ Keyword Arguments
     class MyClass(metaclass=MyMeta, myvar=True):
         pass
 
+
+Methods
+=======
+* ``__prepare__(metacls, name, bases, **kwargs) -> dict`` - on class namespace initialization
+* ``__new__(mcs, classname, bases, attrs) -> cls`` - before class creation
+* ``__init__(self, name, bases, attrs) -> None`` - after class creation
+* ``__call__(self, *args, **kwargs)`` - allows custom behavior when the class is called
+
+Once the appropriate metaclass has been identified, then the class namespace is prepared. If the metaclass has a ``__prepare__`` attribute, it is called as ``namespace = metaclass.__prepare__(name, bases, **kwds)`` (where the additional keyword arguments, if any, come from the class definition). The ``__prepare__`` method should be implemented as a ``classmethod()``. The namespace returned by ``__prepare__`` is passed in to ``__new__``, but when the final class object is created the namespace is copied into a new ``dict``. If the metaclass has no ``__prepare__`` attribute, then the class namespace is initialised as an empty ordered mapping. [pydocsprepare]_
+
+.. code-block:: python
+
+    class MyMeta(type):
+        @classmethod
+        def __prepare__(metacls, name, bases) -> dict:
+            pass
+
+        def __new__(mcs, classname, bases, attrs) -> Any:
+            pass
+
+        def __init__(self, *args, **kwargs) -> None:
+            pass
+
+        def __call__(self, *args, **kwargs) -> Any:
+            pass
 
 
 Example
@@ -348,8 +390,8 @@ Type Metaclass
 .. code-block:: python
 
     class MyMeta(type):
-        def __new__(self, class_name, bases, attrs):
-            return type(class_name, bases, attrs)
+        def __new__(mcs, classname, bases, attrs):
+            return type(classname, bases, attrs)
 
 
     class MyClass(metaclass=MyMeta):
@@ -505,6 +547,39 @@ Use Case
     # Traceback (most recent call last):
     # TypeError: Can't instantiate abstract class Astronaut with abstract methods say_hello
 
+.. code-block:: python
+
+    class Singleton(type):
+        _instances = {}
+        def __call__(cls, *args, **kwargs):
+            if cls not in cls._instances:
+                cls._instances[cls] = super().__call__(*args, **kwargs)
+            return cls._instances[cls]
+
+
+    class MyClass(metaclass=Singleton):
+        pass
+
+.. code-block:: python
+
+    class Final(type):
+        def __new__(mcs, classname, base, attrs):
+            for cls in base:
+                if isinstance(cls, Final):
+                    raise TypeError(f'{cls.__name__} is final and cannot inherit from it')
+            return type.__new__(mcs, classname, base, attrs)
+
+
+    class MyClass(metaclass=Final):
+        pass
+
+
+    class SomeOtherClass(MyClass):
+       pass
+
+    # Traceback (most recent call last):
+    # TypeError: MyClass is final and cannot inherit from it
+
 
 Metaclass replacements
 ======================
@@ -588,6 +663,12 @@ Metaclass replacements
     print(Astronaut._logger)
     # <Logger Astronaut (WARNING)>
 
+
+References
+==========
+.. [pydocsprepare] https://docs.python.org/3/reference/datamodel.html#preparing-the-class-namespace
+
+.. [pydocclassobject] https://docs.python.org/3/reference/datamodel.html#creating-the-class-object
 
 Assignments
 ===========

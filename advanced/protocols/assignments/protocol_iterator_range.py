@@ -23,6 +23,10 @@ Polish:
     6. Wszystkie testy muszą przejść
     7. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
+Hint:
+    * use ``*args``
+    * ``if len(args) == ...``
+
 Tests:
     >>> from inspect import isclass, ismethod
     >>> assert isclass(Range)

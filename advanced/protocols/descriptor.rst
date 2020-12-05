@@ -13,6 +13,44 @@ Rationale
 * ``__del__(self)`` is reserved when object is being deleted by garbage collector (destructor)
 * ``__set_name()`` After class creation, Python default metaclass will call it with parent and classname
 
+.. code-block:: python
+
+    class Temperature:
+        kelvin = property()
+        _value: float
+
+        @kelvin.setter
+        def myattribute(self, value):
+            if value < 0:
+                raise ValueError
+            else:
+                self._value = value
+
+.. code-block:: python
+
+    class Temperature:
+        kelvin: float
+
+        def __setattr__(self, attrname, value):
+            if attrname == 'kelvin' and value < 0:
+                raise ValueError
+            else:
+                super().__setattr__(attrname, value)
+
+.. code-block:: python
+
+    class Kelvin:
+        def __set__(self, parent, value):
+            if value < 0:
+                raise ValueError
+            else:
+                parent._value = value
+
+
+    class Temperature:
+        kelvin = Kelvin()
+        _value: float
+
 
 Protocol
 ========
