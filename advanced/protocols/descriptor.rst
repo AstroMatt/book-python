@@ -31,6 +31,7 @@ Protocol
         def __delete__(self, parent):
             ...
 
+
 Example
 =======
 .. code-block:: python
