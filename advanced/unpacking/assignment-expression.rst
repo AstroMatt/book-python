@@ -18,7 +18,10 @@ Rationale
 .. versionadded:: 3.8
     :pep:`572` -- Assignment Expressions
 
-* Also known as "the walrus operator"
+* A.K.A. "the walrus operator"
+* A.K.A. "Named Expressions"
+
+During discussion of this PEP, the operator became informally known as "the walrus operator". The construct's formal name is "Assignment Expressions" (as per the PEP title), but they may also be referred to as "Named Expressions" (e.g. the CPython reference implementation uses that name internally). [pep572]_
 
 
 .. code-block:: python
@@ -73,8 +76,144 @@ Syntax
               and (<VARIABLE3> := <EXPR>)
               or (<VARIABLE4> := <EXPR>)]
 
+It's not substitution for equals:
+
+    .. code-block:: python
+
+        a = 1
+
+        a := 1
+        # Traceback (most recent call last):
+        # SyntaxError: invalid syntax
+
+    .. code-block:: python
+
+        result = {}
+        result['commander'] = 'Mark Watney'
+
+        result = {}
+        result['commander'] := 'Mark Watney'
+        # Traceback (most recent call last):
+        # SyntaxError: cannot use assignment expressions with subscript
+
+    .. code-block:: python
+
+        x = 1, 2
+        print(x)
+        # (1, 2)
+
+        (x := 1, 2)
+        print(x)
+        # 1
+
+        result = (x := 1, 2)
+        print(result)
+        # (1, 2)
+
+    .. code-block:: python
+
+        x = 0
+        x += 1
+
+        x = 0
+        x +:= 1
+        # Traceback (most recent call last):
+        # SyntaxError: invalid syntax
+
+.. figure:: unpacking-assignmentexpr-bdfl.png
+    :align: center
+    :width: 90%
+
+    Guido van Rossum stepped down after accepting :pep:`572` -- Assignment Expressions
+
+
 Example
 =======
+
+Reusing Results
+---------------
+.. code-block:: python
+
+    result = [f(x), f(x)+1, f(x)+2]
+
+.. code-block:: python
+
+    result = [res := f(x), res+1, res+2]
+
+Processing Steams in Chunks
+---------------------------
+.. code-block:: python
+
+    file = open('_temporary.txt')
+    chunk = file.read(8192)
+
+    while chunk:
+        print(chunk)
+        chunk = file.read(8192)
+
+.. code-block:: python
+
+    file = open('_temporary.txt')
+
+    while chunk := file.read(8192):
+        print(chunk)
+
+Checking Match
+--------------
+.. code-block:: python
+
+    import re
+
+    pattern = r'\w+naut$'
+    data = 'Astronaut'
+
+    result = re.search(pattern, data)
+
+    if result:
+        print(result.group())
+
+.. code-block:: python
+
+    import re
+
+    pattern = r'\w+naut$'
+    data = 'Astronaut'
+
+    if (result := re.search(pattern, data)):
+        print(result)
+
+Patterns
+--------
+.. code-block:: python
+
+    import re
+
+    pattern = r'\w+naut$'
+    data = 'Astronaut'
+
+    match = re.match(pattern, data)
+    result = match.group() if match else None
+
+.. code-block:: python
+
+    import re
+
+    pattern = r'\w+naut$'
+    data = 'Astronaut'
+
+    result = re.match(pattern, data).group() if re.match(pattern, data) else None
+
+.. code-block:: python
+
+    import re
+
+    pattern = r'\w+naut$'
+    data = 'Astronaut'
+
+    result = res.group() if (res := re.match(pattern, data)) else None
+
+Comprehensions
+--------------
 .. code-block:: python
 
     DATA = ['5.8,2.7,5.1,1.9,virginica',
@@ -206,6 +345,10 @@ Use Case
     #  Versicolor(sepal_length=6.4, sepal_width=3.2, petal_length=4.5, petal_width=1.5),
     #  Setosa(sepal_length=4.7, sepal_width=3.2, petal_length=1.3, petal_width=0.2),
     #  Versicolor(sepal_length=7.0, sepal_width=3.2, petal_length=4.7, petal_width=1.4)]
+
+References
+==========
+.. [pep572] Angelico, C. and Peters T. and van Rossum, G. PEP 572 -- Assignment Expressions. Python Software Foundation. 2018. Url: https://www.python.org/dev/peps/pep-0572/#abstract Accessed: 2020-12-04.
 
 
 Assignments

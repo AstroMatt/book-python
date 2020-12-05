@@ -9,7 +9,7 @@ Video
 * https://www.infoq.com/python/presentations/
 * `Łukasz Langa - import asyncio: Learn Python's AsyncIO #1 - The Async Ecosystem <https://www.youtube.com/watch?v=Xbl7XjFYsN4>`_
 * `Łukasz Langa - Life Is Better Painted Black, or: How to Stop Worrying and Embrace Auto-Formatting. PyCon 2019 <https://www.youtube.com/watch?v=esZLCuWs_2Y>`_
-* `Raymond Hettinger - Beyond PEP 8 -- Best practices for beautiful intelligible code - PyCon 2015 <https://www.youtube.com/watch?v=wf-BqAjZb8M>_`
+* `Raymond Hettinger - Beyond PEP 8 -- Best practices for beautiful intelligible code - PyCon 2015 <https://www.youtube.com/watch?v=wf-BqAjZb8M>`_
 
 
 Documentation
