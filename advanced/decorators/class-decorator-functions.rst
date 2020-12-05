@@ -152,6 +152,51 @@ Use Cases
     #   (4, 2): 8,
     # }
 
+.. code-block:: python
+
+    from pickle import dumps
+
+
+    class Cache(dict):
+        _func: callable
+        _args: tuple
+        _kwargs: dict
+
+        def __init__(self, func):
+            self._func = func
+
+        def __call__(self, *args, **kwargs):
+            self._args = args
+            self._kwargs = kwargs
+            key = hash(dumps(args) + dumps(kwargs))
+            return self[key]
+
+        def __missing__(self, key):
+            self[key] = self._func(*self._args, **self._kwargs)
+            return self[key]
+
+
+    @Cache
+    def myfunction(a, b):
+        return a * b
+
+    myfunction(1, 2)
+    # 2
+    myfunction(2, 1)
+    # 2
+    myfunction(6, 1)
+    # 6
+    myfunction(6, 7)
+    # 42
+    myfunction(9, 7)
+    # 63
+    myfunction
+    # {-5031589639694290544: 2,
+    #  -7391056524300571861: 2,
+    #  -2712444627064717062: 6,
+    #  7201789803359913928: 42,
+    #  8409437572158207229: 63}
+
 
 Assignments
 ===========

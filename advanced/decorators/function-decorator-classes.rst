@@ -81,8 +81,10 @@ Example
 
 Use Case
 ========
+
+Logger
+------
 .. code-block:: python
-    :caption: Add logger attribute to class
 
     import logging
 
@@ -100,7 +102,28 @@ Use Case
     print(Astronaut.logger)
     # <Logger Astronaut (WARNING)>
 
+Object Birthday
+---------------
+.. code-block:: python
 
+    from time import time
+
+    def since(cls):
+        class Wrapper(cls):
+            _instance_created = time()
+        return Wrapper
+
+
+    @since
+    class Astronaut:
+        pass
+
+
+    print(Astronaut._instance_created)
+    # 1607187641.3407109
+
+Singleton with Function Wrapper
+-------------------------------
 .. code-block:: python
     :caption: Singleton using functional wrapper
 
@@ -127,6 +150,8 @@ Use Case
     b.connect()
     # Connecting... using <__main__.DatabaseConnection object at 0x10cd56fa0>
 
+Singleton with Class Wrapper
+----------------------------
 .. code-block:: python
     :caption: Singleton using class wrapper
 
