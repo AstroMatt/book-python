@@ -1,0 +1,4 @@
+root:x:0:0:root:/root:/bin/bash
+watney:x:1000:1000:Mark Watney:/home/watney:/bin/bash
+jimenez:x:1001:1001:José Jiménez:/home/jimenez:/bin/bash
+ivanovic:x:1002:1002:Иван Иванович:/home/ivanovic:/bin/bash
