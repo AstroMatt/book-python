@@ -89,39 +89,7 @@ High-Level Concurrency
     * Using Futures and Threading
 
 
-Coroutine
-=========
-The word "coroutine", like the word "generator", is used for two different (though related) concepts:
 
-    * The function that defines a coroutine (a function definition using async def or decorated with ``@asyncio.coroutine``). If disambiguation is needed we will call this a coroutine function (``iscoroutinefunction()`` returns ``True``).
-    * The object obtained by calling a coroutine function. This object represents a computation or an I/O operation (usually a combination) that will complete eventually. If disambiguation is needed we will call it a coroutine object (``iscoroutine()`` returns ``True``).
-
-
-``Asyncio``
-===========
-* Source: https://www.youtube.com/watch?v=Xbl7XjFYsN4
-
-.. code-block:: python
-    :caption: Python 3.7
-
-    import asyncio
-
-    async def my_function():
-        pass
-
-    result = asyncio.run(my_function())
-
-.. code-block:: python
-    :caption: Python 3.6
-
-    import asyncio
-
-    async def my_function():
-        pass
-
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
-    result = loop.run_until_complete(my_function())
 
 
 
@@ -155,135 +123,555 @@ Protocol
         async def __aexit__(self, exc_type, exc, tb):
             await print('exiting context')
 
-Low-level API
--------------
-* callbacks
-* Transport and Protocols
-* network, subprocesses, signals
-
-``async``/``await``
--------------------
-* run coroutines
-* streams, sockets, subprocesses, locks, timeouts, cancellations
-
-Mainstream
-----------
-* in standard library since Python 3.5
-* stable and supported
-* healthy ecosystem
-* HTTP: aiohttp, Sanic
-* DBs: asyncpg, aio-libs, aiomysql
-
-Pluggable event loop
---------------------
-* uvloop - makes asyncio 2-4x faster
-* PyO3
-
-.. code-block:: python
-
-    loop = asyncio.get_event_loop()
-    loop.create_task()
-    loop.run_until_complete()
-    loop.run_forever()
-
-    asyncio.gather()
-    loop.run_in_executor()
 
 
-Przykłady praktyczne
-====================
+*******
+AsyncIO
+*******
 
-Hello World coroutine
----------------------
+Rationale
+=========
+* Running asynchronously: 3s + 1s + 1s = bit over 3s [execution time]
+
 .. code-block:: python
 
     import asyncio
 
-    async def hello_world():
-        print("Hello World!")
 
-    loop = asyncio.get_event_loop()
-    # Blocking call which returns when the hello_world() coroutine is done
-    loop.run_until_complete(hello_world())
-    loop.close()
+    async def a():
+        print('A: started')
+        await asyncio.sleep(2)
+        print('A: finished')
+        return 'a'
 
-Coroutine displaying the current date
--------------------------------------
-.. code-block:: python
-
-    import asyncio
-    import datetime
-
-    async def display_date(loop):
-        end_time = loop.time() + 5.0
-        while True:
-            print(datetime.datetime.now())
-            if (loop.time() + 1.0) >= end_time:
-                break
-            await asyncio.sleep(1)
-
-    loop = asyncio.get_event_loop()
-    # Blocking call which returns when the display_date() coroutine is done
-    loop.run_until_complete(display_date(loop))
-    loop.close()
-
-Chain coroutines
-----------------
-.. code-block:: python
-
-    import asyncio
-
-    async def compute(x, y):
-        print(f"Compute {x} + {y} ...")
-        await asyncio.sleep(1.0)
-        return x + y
-
-    async def print_sum(x, y):
-        result = await compute(x, y)
-        print(f"{x} + {y} = {result}")
-
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(print_sum(1, 2))
-    loop.close()
-
-Future with ``run_until_complete()``
-------------------------------------
-.. code-block:: python
-
-    import asyncio
-
-    async def slow_operation(future):
+    async def b():
+        print('B: started')
         await asyncio.sleep(1)
-        future.set_result('Future is done!')
+        print('B: finished')
+        return 'b'
 
-    loop = asyncio.get_event_loop()
-    future = asyncio.Future()
-    asyncio.ensure_future(slow_operation(future))
-    loop.run_until_complete(future)
-    print(future.result())
-    loop.close()
+    async def c():
+        print('C: started')
+        await asyncio.sleep(3)
+        print('C: finished')
+        return 'c'
 
-Parallel execution of tasks
----------------------------
+
+    async def main():
+        result = await asyncio.gather(
+            a(),
+            b(),
+            c(),
+        )
+        print(f'Result: {result}')
+
+
+    if __name__ ==  '__main__':
+        asyncio.run(main())
+
+    # A: started
+    # B: started
+    # C: started
+    # B: finished
+    # A: finished
+    # C: finished
+    # Result: ['a', 'b', 'c']
+
+
+Running Program
+===============
+* ``asyncio.run(coro, *, debug=False)``
+* Execute the coroutine ``coro`` and return the result
+* Takes care of managing the asyncio event loop, finalizing asynchronous generators, and closing the threadpool.
+* Cannot be called when another asyncio event loop is running in the same thread.
+* Always creates a new event loop and closes it at the end.
+* It should be used as a main entry point for asyncio programs, and should ideally only be called once.
+
 .. code-block:: python
 
     import asyncio
 
-    async def factorial(name, number):
-        f = 1
-        for i in range(2, number+1):
-            print(f"Task {name}: Compute factorial({i})...")
-            await asyncio.sleep(1)
-            f *= i
-        print(f"Task {name}: factorial({number}) = {f}")
 
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(asyncio.gather(
-        factorial("A", 2),
-        factorial("B", 3),
-        factorial("C", 4),
-    ))
-    loop.close()
+    async def main():
+        await asyncio.sleep(1)
+        print('hello')
+
+
+    asyncio.run(main())
+
+
+Awaitables
+==========
+* Object is an awaitable if it can be used in an ``await`` expression
+* There are three main types of awaitable objects:
+
+    * coroutines,
+    * Tasks,
+    * Futures.
+
+
+Sleeping
+========
+* coroutine ``asyncio.sleep(delay, result=None)``
+* Block for delay seconds.
+* If result is provided, it is returned to the caller when the coroutine completes
+
+.. code-block:: python
+
+    import asyncio
+
+
+    async def main():
+        result = await asyncio.sleep(1, 'done')
+        print(result)
+
+
+    asyncio.run(main())
+    # done
+
+
+Coroutines
+==========
+* Python coroutines are awaitables
+* Coroutines declared with the async/await syntax is the preferred way of writing asyncio applications. [AsyncioTask]_
+* Term 'coroutine' can be used for two closely related concepts [AsyncioTask]_:
+
+    * a coroutine function: an ``async def`` function;
+    * a coroutine object: an object returned by calling a coroutine function.
+
+* Python distinguishes between a coroutine function and a coroutine object
+* Write a coroutine function by putting ``async`` in front of the ``def``
+* Only a coroutine function can use ``await``, non-coroutine functions cannot.
+* Calling a coroutine function does not execute it, but rather returns a coroutine object. (This is analogous to generator functions - calling them doesn't execute the function, it returns a generator object, which we then use later.)
+* To execute a coroutine object, either:
+
+    * use it in an expression with await in front of it, or
+    * use asyncio.run(coroutine_object()), or
+    * schedule it with ensure_future() or create_task().
+
+.. code-block:: python
+
+    import asyncio
+
+
+    async def work():
+        return 'done'
+
+
+    async def main():
+        result = await work()
+        print(result)
+
+
+    asyncio.run(main())
+    # done
+
+
+Tasks
+=====
+* ``asyncio.create_task(coro, *, name=None)``
+* Tasks are used to schedule coroutines concurrently
+* Wrap the ``coro`` coroutine into a ``Task`` and schedule its execution.
+* Return the ``Task`` object:
+
+    * can be used to cancel execution
+    * can be awaited until it is complete
+
+* The task is executed in the loop returned by ``get_running_loop()``
+* ``RuntimeError`` is raised if there is no running loop in current thread.
+
+.. code-block:: python
+
+    import asyncio
+
+
+    async def work():
+        return 'done'
+
+
+    async def main():
+        task = asyncio.create_task(work())
+        result = await task
+        print(result)
+
+
+    asyncio.run(main())
+    # done
+
+.. code-block:: python
+
+    import asyncio
+
+
+    async def a():
+        print(f'A: started')
+        await asyncio.sleep(2)
+        print(f'A: finished')
+
+
+    async def b():
+        print(f'B: started')
+        await asyncio.sleep(1)
+        print(f'B: finished')
+
+
+    async def c():
+        print(f'C: started')
+        await asyncio.sleep(3)
+        print(f'C: finished')
+
+
+    async def main():
+        t1 = asyncio.create_task(a())
+        t2 = asyncio.create_task(b())
+        t3 = asyncio.create_task(c())
+        await t1
+        await t2
+        await t3
+
+
+    if __name__ == '__main__':
+        asyncio.run(main())
+
+    # A: started
+    # B: started
+    # C: started
+    # B: finished
+    # A: finished
+    # C: finished
+
+
+Futures
+=======
+* Low-level awaitable object
+* Represents an eventual result of an asynchronous operation
+* When a Future object is awaited it means that the coroutine will wait until the Future is resolved in some other place
+* Future objects in asyncio are needed to allow callback-based code to be used with async/await.
+* Normally there is *no need* to create Future objects at the application level code.
+
+
+Running Tasks Concurrently
+==========================
+* awaitable ``asyncio.gather(*aws, return_exceptions=False)``
+* Run awaitable objects in the ``aws`` sequence concurrently.
+* If any awaitable in ``aws`` is a coroutine, it is automatically scheduled as a ``Task``.
+* If all awaitables are completed successfully, the result is an aggregate list of returned values.
+* The order of result values corresponds to the order of awaitables in ``aws``.
+* If ``return_exceptions`` is:
+
+    * ``False`` (default): the first raised exception is immediately propagated to the task that awaits on ``gather()``. Other awaitables in the ``aws`` sequence won't be cancelled and will continue to run.
+    * ``True``: exceptions are treated the same as successful results, and aggregated in the result list.
+
+* If ``gather()`` is cancelled, all submitted awaitables (that have not completed yet) are also cancelled.
+* If any ``Task`` or ``Future`` from the ``aws`` sequence is cancelled, it is treated as if it raised ``CancelledError`` – the ``gather()`` call is not cancelled in this case.
+* This is to prevent the cancellation of one submitted Task/Future to cause other Tasks/Futures to be cancelled.
+
+.. code-block:: python
+
+    import asyncio
+
+
+    async def a():
+        print(f'A: started')
+        await asyncio.sleep(2)
+        print(f'A: finished')
+        return 'a'
+
+    async def b():
+        print(f'B: started')
+        await asyncio.sleep(1)
+        print(f'B: finished')
+        return 'b'
+
+    async def c():
+        print(f'C: started')
+        await asyncio.sleep(3)
+        print(f'C: finished')
+        return 'c'
+
+
+    async def main():
+        result = await asyncio.gather(
+            a(),
+            b(),
+            c(),
+        )
+        print(f'Result: {result}')
+
+
+    if __name__ ==  '__main__':
+        asyncio.run(main())
+
+    # A: started
+    # B: started
+    # C: started
+    # B: finished
+    # A: finished
+    # C: finished
+    # Result: ['a', 'b', 'c']
+
+
+Shielding From Cancellation
+===========================
+* awaitable ``asyncio.shield(aw)``
+* Protect an awaitable object from being cancelled.
+
+.. code-block:: python
+
+    import asyncio
+
+    async def work():
+        return 'done'
+
+
+    async def main():
+        try:
+            res = await shield(work())
+        except CancelledError:
+            res = None
+
+
+    asyncio.run(main())
+
+
+Timeouts
+========
+* coroutine ``asyncio.wait_for(aw, timeout)``
+* Wait for the aw awaitable to complete with a timeout.
+* Timeout can either be ``None`` or a ``float`` or int number of seconds to wait for.
+* If timeout is ``None``, block until the future completes.
+* If a timeout occurs, it cancels the task and raises ``asyncio.TimeoutError``
+* If the wait is cancelled, the future ``aw`` is also cancelled.
+
+.. code-block:: python
+
+    import asyncio
+
+    HOUR = 3600
+
+
+    async def work():
+        await asyncio.sleep(HOUR)
+        return 'done'
+
+
+    async def main():
+        try:
+            await asyncio.wait_for(work(), timeout=1.0)
+        except asyncio.TimeoutError:
+            print('timeout!')
+
+    asyncio.run(main())
+    # timeout!
+
+
+Wait
+====
+* coroutine ``asyncio.wait(aws, *, timeout=None, return_when=ALL_COMPLETED)``
+* Run awaitable objects in the ``aws`` iterable concurrently and block until the condition specified by return_when.
+* The ``aws`` iterable must not be empty.
+* ``timeout: float|int`` if specified, maximum number of seconds to wait before returning.
+* ``wait()`` does not cancel the futures when a timeout occurs.
+* ``return_when`` indicates when this function should return. It must be one of the following constants:
+
+    * ``FIRST_COMPLETED`` - The function will return when any future finishes or is cancelled.
+    * ``FIRST_EXCEPTION`` - The function will return when any future finishes by raising an exception. If no future raises an exception then it is equivalent to ALL_COMPLETED.
+    * ``ALL_COMPLETED`` - The function will return when all futures finish or are cancelled.
+
+.. code-block:: python
+
+    done, pending = await asyncio.wait(aws)
+
+* Does not raise ``asyncio.TimeoutError``
+* ``Futures`` or ``Tasks`` that aren’t done when the timeout occurs are simply returned in the second set (``pending``).
+
+.. code-block:: python
+
+    import asyncio
+
+
+    async def work():
+        return 'done'
+
+
+    async def main():
+        task = asyncio.create_task(work())
+        done, pending = await asyncio.wait({task})
+
+        if task in done:
+            print('work is done')
+
+    asyncio.run(main())
+    # work is done
+
+
+As Completed
+============
+* ``asyncio.as_completed(aws, *, timeout=None)``
+* Run awaitable objects in the aws iterable concurrently.
+* Return an iterator of coroutines.
+* Each coroutine returned can be awaited to get the earliest next result from the iterable of the remaining awaitables.
+* Raises ``asyncio.TimeoutError`` if the timeout occurs before all Futures are done.
+
+.. code-block:: python
+
+    import asyncio
+
+
+    async def a():
+        print(f'A: started')
+        await asyncio.sleep(2)
+        print(f'A: finished')
+        return 'a'
+
+
+    async def b():
+        print(f'B: started')
+        await asyncio.sleep(1)
+        print(f'B: finished')
+        return 'b'
+
+
+    async def c():
+        print(f'C: started')
+        await asyncio.sleep(3)
+        print(f'C: finished')
+        return 'c'
+
+
+    async def main():
+        work = [a(), b(), c()]
+        for coro in asyncio.as_completed(work):
+            result = await coro
+            print(result)
+
+
+    if __name__ == '__main__':
+        asyncio.run(main())
+
+    # C: started
+    # B: started
+    # A: started
+    # B: finished
+    # b
+    # A: finished
+    # a
+    # C: finished
+    # c
+
+
+Running in Threads
+==================
+* coroutine ``asyncio.to_thread(func, /, *args, **kwargs)``
+* Asynchronously run function func in a separate thread.
+* Any ``*args`` and ``**kwargs`` supplied for this function are directly passed to func.
+* Return a coroutine that can be awaited to get the eventual result of func.
+* This coroutine function is intended to be used for executing IO-bound functions/methods that would otherwise block the event loop if they were ran in the main thread.
+
+.. code-block:: python
+
+    import asyncio
+    import time
+
+
+    def work():
+        print(f'Work started {time.strftime("%X")}')
+        time.sleep(2)  # Blocking
+        print(f'Work done at {time.strftime("%X")}')
+
+
+    async def main():
+        print(f'Started main at {time.strftime("%X")}')
+
+        await asyncio.gather(
+            asyncio.to_thread(work),
+            asyncio.sleep(1))
+
+        print(f'Finished main at {time.strftime("%X")}')
+
+
+    asyncio.run(main())
+    # Started main at 02:42:45
+    # Work started 02:42:45
+    # Work done at 02:42:47
+    # Finished main at 02:42:47
+
+
+.. note:: Due to the GIL, ``asyncio.to_thread()`` can typically only be used to make IO-bound functions non-blocking. However, for extension modules that release the GIL or alternative Python implementations that don’t have one, ``asyncio.to_thread()`` can also be used for CPU-bound functions.
+
+
+Introspection
+=============
+* ``asyncio.current_task(loop=None)`` - Return the currently running Task instance, or None if no task is running.
+* ``asyncio.all_tasks(loop=None)`` -  Return a set of not yet finished Task objects run by the loop.
+* If loop is ``None``, ``get_running_loop()`` is used for getting current loop.
+
+
+Event loops
+===========
+Async code can only run inside an event loop.
+The event loop is the driver code that manages the cooperative multitasking.
+You can create multiple threads and run different event loops in each of them.
+For example, Django uses the main thread to wait for incoming requests, so we can’t run an asyncio event loop there, but we can start a separate worker thread for our event loop.
+[cheat]_
+
+.. code-block:: python
+
+    import asyncio
+
+
+    async def func(*args, **kwargs):
+        # do stuff...
+        return result
+
+
+    result = asyncio.run(func(1,2,3))
+
+
+.. code-block:: python
+    :caption: Before Python 3.7
+
+    import asyncio
+
+
+    async def a():
+        print(f'A: started')
+        await asyncio.sleep(2)
+        print(f'A: finished')
+
+
+    async def b():
+        print(f'B: started')
+        await asyncio.sleep(1)
+        print(f'B: finished')
+
+
+    async def c():
+        print(f'C: started')
+        await asyncio.sleep(3)
+        print(f'C: finished')
+
+
+    async def main():
+        await asyncio.gather(
+            a(),
+            b(),
+            c(),
+        )
+
+
+    if __name__ == '__main__':
+        loop = asyncio.get_event_loop()
+        loop.run_until_complete(main())
+
+    # A: started
+    # B: started
+    # C: started
+    # B: finished
+    # A: finished
+    # C: finished
+
+
 
 
 Trio
@@ -419,6 +807,7 @@ Server
     # just make it a standalone function from the beginning.
     trio.run(main)
 
+
 Unsync library
 ==============
 * Library decides which to run, thread, asyncio or sync
@@ -438,3 +827,7 @@ References
 ==========
 * https://www.youtube.com/watch?v=Pe3b9bdRtiE
 * https://www.youtube.com/watch?v=Xbl7XjFYsN4
+
+.. [AsyncioTask] https://docs.python.org/3/library/asyncio-task.html
+
+.. [cheat] https://cheat.readthedocs.io/en/latest/python/asyncio.html
