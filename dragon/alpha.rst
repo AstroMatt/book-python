@@ -12,3 +12,5 @@ Dragon (version alpha)
     :caption: Solution :download:`Basic <assignments/dragon_alpha_basic.py>`, :download:`Advanced <assignments/dragon_alpha_adv.py>`, :download:`Bad (don't do it) <assignments/dragon_alpha_bad.py>`
     :start-after: """
     :end-before: Tests
+    :language: md
+

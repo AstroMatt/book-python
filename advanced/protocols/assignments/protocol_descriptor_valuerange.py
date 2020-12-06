@@ -34,11 +34,11 @@ Tests:
 
     >>> melissa = Astronaut('Melissa Lewis', 44, 170)
     Traceback (most recent call last):
-    ValueError: Age is not between 28 to 42
+    ValueError: Age is not between 28 and 42
 
     >>> alex = Astronaut('Alex Vogel', 40, 201)
     Traceback (most recent call last):
-    ValueError: Height is not between 150 to 200
+    ValueError: Height is not between 150 and 200
 """
 
 # Given
@@ -71,7 +71,7 @@ class ValueRange:
 
     def __set__(self, parent, value):
         if value not in range(self.min, self.max):
-            raise ValueError(f'{self.name} is not between {self.min} to {self.max}')
+            raise ValueError(f'{self.name} is not between {self.min} and {self.max}')
         self.value = value
 
 

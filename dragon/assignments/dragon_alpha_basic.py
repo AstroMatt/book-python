@@ -137,7 +137,7 @@ Polish:
 
 Hints:
     * `from random import randint`
-    * `randint` returns random integer in range [a, b], including both end point
+    * `randint` returns random integer between a and b (including both ends!)
 
 Tests:
     >>> from random import seed; seed(0)
