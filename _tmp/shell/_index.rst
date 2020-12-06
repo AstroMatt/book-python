@@ -1,3 +1,17 @@
+*****
+About
+*****
+.. toctree::
+    :maxdepth: 1
+    :caption: About
+    :name: About
+    :numbered:
+
+    about-setup.rst
+    about-entrytest.rst
+    about-str.rst
+    about-str-methods.rst
+
 ********
 Datetime
 ********

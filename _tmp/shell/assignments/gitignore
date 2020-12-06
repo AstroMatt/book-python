@@ -1,0 +1,45 @@
+## Temporary
+_tmp/
+*/_tmp*.py
+_temporary.txt
+*/_temporary.txt
+**/_temporary.txt
+
+## Compiled and environmental
+__pycache__/
+.mypy_cache/
+*.pyc
+~$*
+*.spec
+.ipynb_checkpoints
+*virtualenv*/
+*venv*/
+
+## Distribution / packaging
+build/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+sdist/
+*.egg-info/
+*.egg
+
+## Django
+*.log
+*.sqlite3
+*.sqlite3-journal
+_media
+
+## Sphinx documentation
+docs/_build/
+_build/
+.build/
+.slide/
+
+## IDE
+.idea
+
+## OS
+.DS_Store
