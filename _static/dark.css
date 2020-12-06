@@ -14,6 +14,7 @@
     --code-border: none;
     --code-text: #aaa;
     --code-highlight: #111;
+    --code-output: #444;
 
     --table-background: none;
     --table-border: #000;
@@ -162,6 +163,8 @@
     .highlight {background: var(--code-background); border: var(--code-border)}
     .highlight .hll {background-color: var(--code-highlight)}
     .rst-content div[class^=highlight], .rst-content pre.literal-block {border: var(--code-border)}
+    .highlight .go {color: var(--code-output)}
+    .highlight .go:before {content: '# '}
 
     /* assignments */
     .highlight .sd {color: var(--code-text) !important; background: var(--code-background) !important; border: 1px solid var(--code-border);}

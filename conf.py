@@ -19,6 +19,7 @@ extensions = [
     'sphinx.ext.todo',
     # 'sphinx.ext.viewcode',
     'sphinxcontrib.bibtex',
+    'recommonmark',
 ]
 
 suppress_warnings = [
@@ -69,6 +70,14 @@ html_static_path = [
 # letter  - For writing letters.
 # beamer  - For writing presentations (see LaTeX/Presentations).
 latex_documentclass = 'report'
+
+
+def setup(app):
+    from recommonmark.transform import AutoStructify
+    app.add_config_value('recommonmark_config', {
+        'enable_eval_rst': True,
+    }, True)
+    app.add_transform(AutoStructify)
 
 
 # -- Standard book config -----------------------------------------------------
@@ -124,6 +133,11 @@ highlight_language = 'python3'
 pygments_style = 'stata-dark'
 autodoc_typehints = "description"
 autosectionlabel_maxdepth = 4
+
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
+}
 
 sys.path.insert(0, os.path.abspath('_extensions'))
 

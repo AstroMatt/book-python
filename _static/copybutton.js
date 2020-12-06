@@ -30,7 +30,7 @@ $(document).ready(function() {
     div.each(function(index) {
         var jthis = $(this);
         if (jthis.find('.gp').length > 0) {
-            var button = $('<span class="copybutton">&gt;&gt;&gt;</span>');
+            var button = $('<span class="copybutton">show output</span>');
             button.css(button_styles)
             button.attr('title', hide_text);
             button.data('hidden', 'false');
@@ -51,17 +51,28 @@ $(document).ready(function() {
             // hide the code output
             button.parent().find('.go, .gp, .gt').hide();
             button.next('pre').find('.gt').nextUntil('.gp, .go').css('visibility', 'hidden');
-            button.css('text-decoration', 'line-through');
+            // button.css('text-decoration', 'line-through');
             button.attr('title', show_text);
             button.data('hidden', 'true');
+            button.text('show output');
         } else {
             // show the code output
-            button.parent().find('.go, .gp, .gt').show();
+            button.parent().find('.go').show();
             button.next('pre').find('.gt').nextUntil('.gp, .go').css('visibility', 'visible');
-            button.css('text-decoration', 'none');
+            // button.css('text-decoration', 'none');
             button.attr('title', hide_text);
             button.data('hidden', 'false');
+            button.text('hide output');
         }
+
+        button.parent().find('.go').each((i, line) => {
+            if (line.innerText === '>>>')
+                line.style.visibility = 'hidden';
+        })
+    });
+
+    div.each(function(index) {
+        $(this).find('.copybutton').click();
     });
 });
 
