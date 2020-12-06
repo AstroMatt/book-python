@@ -171,7 +171,11 @@ html_copy_source = False
 if html_theme == 'sphinx_rtd_theme':
     html_context.update({
         'css_files': ['_static/dark.css', '_static/print.css'],
-        'script_files': ['_static/jquery.min.js', '_static/onload.js', mathjax_path]})
+        'script_files': [
+                '_static/jquery.min.js',
+                '_static/onload.js',
+                '_static/copybutton.js',
+                mathjax_path]})
 
 if html_theme == 'thesis':
     html_context.update({
