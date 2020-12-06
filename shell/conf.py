@@ -15,4 +15,4 @@ suppress_warnings += [
     'ref.ref',
 ]
 
-master_doc = '_index'
+master_doc = 'index'
