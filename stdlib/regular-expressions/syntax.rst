@@ -334,7 +334,5 @@ Visualization
 * https://regex101.com/
 
 .. figure:: img/regexp-visualization.png
-    :width: 75%
-    :align: center
 
     Visualization for pattern ``r'^[a-zA-Z0-9][\w.+-]*@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]{2,20}$'``

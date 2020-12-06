@@ -25,12 +25,8 @@ Syntax
 Line Styles
 ===========
 .. figure:: img/matplotlib-plt-linestyle-basic.png
-    :width: 75%
-    :align: center
 
 .. figure:: img/matplotlib-plt-linestyle-advanced.png
-    :width: 75%
-    :align: center
 
 
 Single Plot

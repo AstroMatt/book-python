@@ -608,16 +608,10 @@ Running commands in parallel across many hosts
 * https://linux.die.net/man/1/pssh
 
 .. figure:: img/system-pssh-1.jpg
-    :align: center
-    :width: 75%
 
 .. figure:: img/system-pssh-2.jpg
-    :align: center
-    :width: 75%
 
 .. figure:: img/system-pssh-3.png
-    :align: center
-    :width: 75%
 
 
 Passwords and secrets

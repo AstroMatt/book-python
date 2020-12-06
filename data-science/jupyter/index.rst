@@ -392,8 +392,6 @@ Hist
     plt.show()
 
 .. figure:: img/matplotlib-pd-hist.png
-    :width: 75%
-    :align: center
 
     Visualization using hist
 
@@ -413,8 +411,6 @@ Density
     plt.show()
 
 .. figure:: img/matplotlib-pd-density.png
-    :width: 75%
-    :align: center
 
     Visualization using density
 
@@ -434,8 +430,6 @@ Box
     plt.show()
 
 .. figure:: img/matplotlib-pd-box.png
-    :width: 75%
-    :align: center
 
     Visualization using density
 
@@ -459,8 +453,6 @@ Scatter matrix
     plt.show()
 
 .. figure:: img/matplotlib-pd-scatter-matrix.png
-    :width: 75%
-    :align: center
 
     Visualization using density
 

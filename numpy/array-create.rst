@@ -60,8 +60,6 @@ Declare
     #         [7, 8, 9]]])
 
 .. figure:: img/numpy-create-cake.png
-    :scale: 50%
-    :align: center
 
     Multi layer cake as an analog for n-dim array [CAKE]_
 

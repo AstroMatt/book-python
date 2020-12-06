@@ -206,7 +206,6 @@ Transpose
 Signum
 ======
 .. figure:: img/numpy-methods-signum.png
-    :width: 75%
 
 .. code-block:: python
 

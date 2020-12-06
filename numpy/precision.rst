@@ -40,33 +40,23 @@ IEEE 754 standard
     1.234
 
 .. figure:: img/numpy-precision-float-anatomy.png
-    :width: 75%
-    :align: center
 
     What is ``float`` as defined by IEEE 754 standard
 
 .. figure:: img/numpy-precision-float-expression.png
-    :width: 75%
-    :align: center
 
     Points chart
 
 .. figure:: img/numpy-precision-float-mantissa-1.png
-    :width: 75%
-    :align: center
 
     How computer store ``float``?
     As defined by IEEE 754 standard
 
 .. figure:: img/numpy-precision-float-mantissa-2.png
-    :width: 75%
-    :align: center
 
     How to read/write ``float`` from/to memory?
 
 .. figure:: img/numpy-precision-float-normalized.png
-    :width: 75%
-    :align: center
 
     Normalized Line
 

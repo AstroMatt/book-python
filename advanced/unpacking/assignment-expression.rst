@@ -120,9 +120,7 @@ It's not substitution for equals:
         # Traceback (most recent call last):
         # SyntaxError: invalid syntax
 
-.. figure:: unpacking-assignmentexpr-bdfl.png
-    :align: center
-    :width: 90%
+.. figure:: img/unpacking-assignmentexpr-bdfl.png
 
     Guido van Rossum stepped down after accepting :pep:`572` -- Assignment Expressions
 

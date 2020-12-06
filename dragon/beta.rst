@@ -5,8 +5,6 @@ Dragon (version beta)
 *********************
 
 .. figure:: img/dragon.gif
-    :width: 75%
-    :align: center
 
     Firkraag dragon from game Baldur's Gate II: Shadows of Amn
 

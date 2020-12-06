@@ -59,8 +59,6 @@ Install on Linux
 Install on Windows
 ==================
 .. figure:: _img/python-install-1c.png
-    :width: 60%
-    :align: center
 
     Podczas instalacji Python zaznacz opcję (1) "Add Python to ``PATH``" a następnie kontynuuj instalację z zalecanymi opcjami (2).
 

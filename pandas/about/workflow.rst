@@ -172,8 +172,6 @@ Hist
     plt.show()
 
 .. figure:: img/pandas-about-workflow-plot-hist.png
-    :width: 75%
-    :align: center
 
     Visualization using hist
 
@@ -192,8 +190,6 @@ Density
     plt.show()
 
 .. figure:: img/pandas-about-workflow-plot-density.png
-    :width: 75%
-    :align: center
 
     Visualization using density
 
@@ -212,8 +208,6 @@ Box
     plt.show()
 
 .. figure:: img/pandas-about-workflow-plot-box.png
-    :width: 75%
-    :align: center
 
     Visualization using density
 
@@ -236,7 +230,5 @@ Scatter matrix
     plt.show()
 
 .. figure:: img/pandas-about-workflow-plot-scatter-matrix.png
-    :width: 75%
-    :align: center
 
     Visualization using density

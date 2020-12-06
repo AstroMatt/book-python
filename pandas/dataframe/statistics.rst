@@ -173,8 +173,6 @@ Average
     df.rolling(window=30)
 
 .. figure:: img/pandas-dataframe-stats-rolling.png
-    :width: 75%
-    :align: center
 
     Rolling Average
 
@@ -196,8 +194,6 @@ Distribution
     # dtype: float64
 
 .. figure:: img/pandas-dataframe-stats-stdev.png
-    :width: 75%
-    :align: center
 
     Standard Deviation
 
@@ -212,8 +208,6 @@ Distribution
     df.sem()
 
 .. figure:: img/pandas-dataframe-stats-sem.png
-    :width: 75%
-    :align: center
 
     Standard Error of the Mean (SEM)
 
@@ -223,8 +217,6 @@ Distribution
     df.skew()
 
 .. figure:: img/pandas-dataframe-stats-skew.png
-    :width: 75%
-    :align: center
 
     Skewness
 
@@ -234,8 +226,6 @@ Distribution
     df.kurt()
 
 .. figure:: img/pandas-dataframe-stats-kurt.png
-    :width: 75%
-    :align: center
 
     Kurtosis
 
@@ -276,8 +266,6 @@ Distribution
     # Midnight  0.201034  0.359761  0.136436  1.000000
 
 .. figure:: img/pandas-dataframe-stats-corr.png
-    :width: 75%
-    :align: center
 
     Correlation Coefficient
 

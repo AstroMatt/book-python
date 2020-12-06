@@ -36,8 +36,6 @@ Osiąganie kiepskich rezultatów na zbiorze testowym wiąże się zazwyczaj z je
 * wysoka wariancja - nadmierne dopasowanie (over fitting)
 
 .. figure:: img/model-quality-variance-bias.png
-    :width: 75%
-    :align: center
 
     Bias vs. Wariancja
 
@@ -46,8 +44,6 @@ Ważne, żebyśmy zorientowali się, co jest naszym problemem. Mamy możliwe trz
 Jak można powyżej zauważyć, stopień wielomianu (który dopasowujemy do danych) rośnie, gdy przesuwamy się w stronę overfittingu.
 
 .. figure:: img/model-quality-bias-variance.png
-    :width: 75%
-    :align: center
 
     Graphical illustration of bias and variance.
 
@@ -69,16 +65,12 @@ Tworząc sieci neuronowe mamy dwie opcje:
 * Możemy wykorzystać mniejszą sieć z niewielką liczbą ukrytych warstw i ukrytych jednostek. Jest ona bardziej podatna na underfitting. Jej główną zaletą jest niewielka złożoność obliczeniowa.
 
 .. figure:: img/model-quality-nn-simple.png
-    :width: 75%
-    :align: center
 
     Prosta jednowarstwowa sieć neuronowa.
 
 * Możemy wykorzystać relatywnie dużą sieć neuronową, która zawiera więcej ukrytych jednostek lub więcej ukrytych warstw. Jest bardziej podatna na overfitting oraz ma większą złożoność.
 
 .. figure:: img/model-quality-nn-deep.png
-    :width: 75%
-    :align: center
 
     Głęboka sieć neuronowa.
 
@@ -117,8 +109,6 @@ Train and test on entire dataset
     * Very low :math:`k` values creates complicated **overfit** model
 
 .. figure:: img/model-quality-overfitting.png
-    :width: 75%
-    :align: center
 
     Models that **overfit** learns to recognize noise from the signal, than the data.
     Black line represents the decision boundary and represents the signal.
@@ -244,8 +234,6 @@ Can we locate even better value for :math:`k`?
 #. For KNN models complexity is determined by the value of :math:`k` (lower value = more complex)
 
 .. figure:: img/model-quality-optimizations-knn.png
-    :width: 75%
-    :align: center
 
     For KNN models complexity is determined by the value of :math:`k` (lower value = more complex)
 
@@ -296,8 +284,6 @@ Regularyzacja – wprowadzenie dodatkowej informacji do rozwiązywanego zagadnie
 Regularyzacja jest sposobem na zmniejszenie prawdopodobieństwa pojawienia się overfittingu
 
 .. figure:: img/model-quality-regularization.png
-    :width: 75%
-    :align: center
 
     Regularyzacja – wprowadzenie dodatkowej informacji do rozwiązywanego zagadnienia źle postawionego w celu polepszenia jakości rozwiązania.
 

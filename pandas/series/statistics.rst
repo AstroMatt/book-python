@@ -168,8 +168,6 @@ Average
     # dtype: float64
 
 .. figure:: img/pandas-series-stats-rolling.png
-    :width: 75%
-    :align: center
 
     Rolling Average
 
@@ -194,8 +192,6 @@ Distribution
     # 1.707825127659933
 
 .. figure:: img/pandas-series-stats-stdev.png
-    :width: 75%
-    :align: center
 
     Standard Deviation
 
@@ -212,8 +208,6 @@ Distribution
     # 0.8539125638299665
 
 .. figure:: img/pandas-series-stats-sem.png
-    :width: 75%
-    :align: center
 
     Standard Error of the Mean (SEM)
 
@@ -223,8 +217,6 @@ Distribution
     s.skew()
 
 .. figure:: img/pandas-series-stats-skew.png
-    :width: 75%
-    :align: center
 
     Skewness
 
@@ -234,8 +226,6 @@ Distribution
     s.kurt()
 
 .. figure:: img/pandas-series-stats-kurt.png
-    :width: 75%
-    :align: center
 
     Kurtosis
 
@@ -264,8 +254,6 @@ Distribution
     # 1.0
 
 .. figure:: img/pandas-series-stats-corr.png
-    :width: 75%
-    :align: center
 
     Correlation Coefficient
 

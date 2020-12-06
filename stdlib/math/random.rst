@@ -67,7 +67,5 @@ Polish:
     #. Środkowa macierz jest dokładnie w środku większej
 
 .. figure:: img/random-inner-sum.png
-    :width: 75%
-    :align: center
 
     Sum of inner elements

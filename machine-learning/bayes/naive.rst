@@ -21,9 +21,6 @@ Naiwny klasyfikator Bayesowski, bazujący na twierdzeniu Bayesa, nadaje się szc
 Co to jest dokładnie?
 ---------------------
 .. figure:: img/naive-bayes.png
-    :name: naive-bayes
-    :width: 75%
-    :align: center
 
     Naive Bayes
 
@@ -65,9 +62,6 @@ Spam filtering based on a blacklist is flawed — it’s too restrictive and fal
 Przykład: Apple
 ---------------
 .. figure:: img/naive-bayes-apple.jpg
-    :name: bayes-apple
-    :width: 75%
-    :align: center
 
     Naive Bayes
 

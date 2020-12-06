@@ -262,8 +262,6 @@ Join
 * ``lfuffix`` - If two columns has the same name, add suffix to left
 
 .. figure:: img/pandas-dataframe-join.png
-    :width: 75%
-    :align: center
 
     Pandas DataFrame Joins
 

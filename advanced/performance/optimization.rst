@@ -24,8 +24,6 @@ Line Profiling
 Numpy vectorization
 -------------------
 .. figure:: img/scipy-ecosystem.png
-    :width: 75%
-    :align: center
 
     Scipy Ecosystem
 
@@ -99,8 +97,6 @@ Cython
     # which gives a 585 times improvement over the pure-python version
 
 .. figure:: img/performance-cython.png
-    :width: 75%
-    :align: center
 
     Cython compiling
 

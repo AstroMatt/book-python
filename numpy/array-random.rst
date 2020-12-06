@@ -109,8 +109,6 @@ Uniform Distribution
 * Random ``float`` in the half-open interval ``[0.0, 1.0)``
 
 .. figure:: img/random-distribution-uniform.png
-    :width: 75%
-    :align: center
 
     Continuous Uniform Distribution :cite:`NumpyUniformDistribution`
 
@@ -166,8 +164,6 @@ Normal (Gaussian) Distribution
     #        [-1.25088622,  0.92525075, -0.90478616]])
 
 .. figure:: img/random-distribution-normal.png
-    :width: 75%
-    :align: center
 
     Normal (Gaussian) distribution :cite:`NumpyNormalDistribution`
 
@@ -199,8 +195,6 @@ Poisson Distribution
     #        [8, 5, 5]])
 
 .. figure:: img/random-distribution-poisson.png
-    :width: 75%
-    :align: center
 
     Poisson distribution :cite:`NumpyPoissonDistribution`
 

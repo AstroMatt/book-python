@@ -15,8 +15,6 @@ The coefficients, the residual sum of squares and the variance score are also ca
 
 .. figure:: img/linear-regression.png
     :name: Linear Regression
-    :width: 75%
-    :align: center
 
     The straight line can be seen in the plot, showing how linear regression attempts to draw a straight line that will best minimize the residual sum of squares between the observed responses in the dataset, and the responses predicted by the linear approximation.
 
@@ -30,14 +28,10 @@ Przed zastosowaniem
 Wyznaczanie równania prostej
 ============================
 .. figure:: img/regression-function1.png
-    :width: 75%
-    :align: center
 
     Manipulowanie parametrami prostej (klasyfikatora) w celu określenia funkcji.
 
 .. figure:: img/regression-function2.png
-    :width: 75%
-    :align: center
 
     Wyznaczanie równania prostej.
 
@@ -73,8 +67,6 @@ Wyznaczanie równania prostej
 Funkcja przedziałami liniowa
 ============================
 .. figure:: img/regression-linear-fitting.gif
-    :width: 75%
-    :align: center
 
     Funkcja przedziałami liniowa
 
@@ -135,9 +127,6 @@ Wykorzystanie biblioteki ``sklearn``
     Variance score: 0.4
 
 .. figure:: img/linear-regression.png
-    :name: linear-regression
-    :width: 75%
-    :align: center
 
     The straight line can be seen in the plot, showing how linear regression attempts to draw a straight line that will best minimize the residual sum of squares between the observed responses in the dataset, and the responses predicted by the linear approximation.
 

@@ -6,8 +6,6 @@ Good Practices
 Rationale
 =========
 .. figure:: img/goodpractices-programmer-exp.png
-    :align: center
-    :scale: 50%
 
     Code Complexity vs. Programmer Experience
 

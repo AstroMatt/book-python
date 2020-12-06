@@ -26,8 +26,6 @@ Rationale
     [a, b, c] = (1, 2, 3)
 
 .. figure:: img/function-unpacking,args,kwargs.png
-    :scale: 40%
-    :align: center
 
     :ref:`Unpacking Assignment`, :ref:`Unpacking Parameters` and :ref:`Unpacking Arguments`.
 

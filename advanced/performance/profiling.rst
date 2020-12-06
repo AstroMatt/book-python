@@ -17,20 +17,14 @@ Profilers
 * vmprof https://vmprof.readthedocs.io/en/latest/
 
 .. figure:: img/performance-profiler-factorial.png
-    :scale: 75%
-    :align: center
 
     PyCharm Profiler Factorial [jetbrains]_
 
 .. figure:: img/performance-profiler-fibonacci.png
-    :scale: 100%
-    :align: center
 
     PyCharm Profiler Fibonacci [koderdojo]_
 
 .. figure:: img/performance-profiler-pycharm.png
-    :scale: 50%
-    :align: center
 
     PyCharm Profiler [csdnimg]_
 

@@ -72,8 +72,6 @@ Inheritance Method Resolution
 Inheritance Diamond
 ===================
 .. figure:: img/oop-mro-inheritance-diamond.png
-    :width: 75%
-    :align: center
 
     Inheritance Diamond
 

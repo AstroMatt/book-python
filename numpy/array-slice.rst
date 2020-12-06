@@ -244,7 +244,5 @@ Tests:
         #        [4, 3, 6, 9]])
 
 .. figure:: img/random-inner-sum.png
-    :width: 75%
-    :align: center
 
     Inner 4x4 elements

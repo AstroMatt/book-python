@@ -27,8 +27,6 @@ Jak odróżnić jabłko od pomarańczy?
 * co ze zdjęciami bez jabłek i pomarańczy
 
 .. figure:: img/features-apple-orange.png
-    :width: 75%
-    :align: center
 
     Apple vs. Oranges classification using orange and green pixel count.
 
@@ -100,8 +98,6 @@ Weight  Texture  Label
 What Makes a Good Feature?
 ==========================
 .. figure:: img/features-and-labels.png
-    :width: 75%
-    :align: center
 
     Features and labels. Features are input to classifier and labels are output from it.
 
@@ -129,8 +125,6 @@ What Makes a Good Feature?
     plt.show()
 
 .. figure:: img/features-distribution.png
-    :width: 75%
-    :align: center
 
     Dogs height Classification Probability
 
@@ -138,8 +132,6 @@ What Makes a Good Feature?
 * What features are good?
 
 .. figure:: img/features-bad-features.png
-    :width: 75%
-    :align: center
 
     Is this a good feature for classifier? Why?
 

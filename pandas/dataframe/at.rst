@@ -8,8 +8,6 @@ DataFrame At
 * ``iat`` integer at (no fancy indexing)
 
 .. figure:: img/pandas-dataframe-select-cell.png
-    :width: 75%
-    :align: center
 
     Pandas Select Cell
 

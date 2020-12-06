@@ -308,8 +308,6 @@ Given:
             y2 = ...
 
 .. figure:: img/euclidean-distance.png
-    :width: 75%
-    :align: center
 
     Calculate Euclidean distance in Cartesian coordinate system
 

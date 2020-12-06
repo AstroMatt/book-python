@@ -29,8 +29,6 @@ Unicast
 In computer networking, unicast refers to a one-to-one transmission from one point in the network to another point; that is, one sender and one receiver, each identified by a network address :cite:`DefinitionUnicast`.
 
 .. figure:: img/routing-unicast.png
-    :width: 75%
-    :align: center
 
     Unicast routing delivery scheme :cite:`RoutingUnicast`
 
@@ -42,8 +40,6 @@ In computer networking, telecommunication and information theory, broadcasting i
 All-to-all communication is a computer communication method in which each sender transmits messages to all receivers within a group. In networking this is often accomplished using multicast. This is in contrast with the point-to-point method in which each sender communicates with one receiver :cite:`DefinitionBroadcast`.
 
 .. figure:: img/routing-broadcast.png
-    :width: 75%
-    :align: center
 
     Broadcast routing delivery scheme :cite:`RoutingBroadcast`
 
@@ -75,8 +71,6 @@ Group communication may either be application layer multicast[1] or network assi
 Multicast is often employed in Internet Protocol (IP) applications of streaming media, such as IPTV and multipoint videoconferencing :cite:`DefinitionMulticast`.
 
 .. figure:: img/routing-multicast.png
-    :width: 75%
-    :align: center
 
     Multicast routing delivery scheme :cite:`RoutingMulticast`
 
@@ -119,8 +113,6 @@ Anycast
 Anycast is a network addressing and routing methodology in which a single destination address has multiple routing paths to two or more endpoint destinations. Routers will select the desired path on the basis of number of hops, distance, lowest cost, latency measurements or based on the least congested route. Anycast networks are widely used for content delivery network (CDN) products to bring their content closer to the end user :cite:`DefinitionAnycast`.
 
 .. figure:: img/routing-anycast.png
-    :width: 75%
-    :align: center
 
     Anycast routing delivery scheme :cite:`RoutingAnycast`
 
@@ -130,7 +122,5 @@ Geocast
 Geocast refers to the delivery of information to a group of destinations in a network identified by their geographical locations. It is a specialized form of multicast addressing used by some routing protocols for mobile ad hoc networks :cite:`DefinitionGeocast`.
 
 .. figure:: img/routing-geocast.png
-    :width: 75%
-    :align: center
 
     Geocast routing delivery scheme :cite:`RoutingGeocast`

@@ -29,8 +29,6 @@ Rationale
 * DIP: The Dependency Inversion Principle
 
 .. figure:: img/oop-solid.png
-    :scale: 40%
-    :align: center
 
     S.O.L.I.D. Principles
 
@@ -46,8 +44,6 @@ Single Responsibility Principle
 Every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class. All its services should be narrowly aligned with that responsibility.
 
 .. figure:: img/oop-solid-srp.png
-    :scale: 40%
-    :align: center
 
     S.O.L.I.D. - Single Responsibility Principle
 
@@ -140,8 +136,6 @@ Open/Closed Principle
     -- Bertrand Mayer
 
 .. figure:: img/oop-solid-ocp.png
-    :scale: 40%
-    :align: center
 
     S.O.L.I.D. - Open/Closed Principle
 
@@ -215,8 +209,6 @@ Liskov Substitution Principle
 * Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program
 
 .. figure:: img/oop-solid-lsp.png
-    :scale: 40%
-    :align: center
 
     S.O.L.I.D. - Liskov Substitution Principle
 
@@ -242,8 +234,6 @@ Interface Segregation Principle
 The interface-segregation principle (ISP) states that no client should be forced to depend on methods it does not use. ISP splits interfaces that are very large into smaller and more specific ones so that clients will only have to know about the methods that are of interest to them. Such shrunken interfaces are also called role interfaces. ISP is intended to keep a system decoupled and thus easier to refactor, change, and redeploy. ISP is one of the five SOLID principles of object-oriented design, similar to the High Cohesion Principle of GRASP.
 
 .. figure:: img/oop-solid-isp.png
-    :scale: 40%
-    :align: center
 
     S.O.L.I.D. Principles - Interface Segregation Principle
 
@@ -323,14 +313,10 @@ Dependency Inversion Principle
 * decoupling software modules
 
 .. figure:: img/oop-solid-dip.png
-    :scale: 40%
-    :align: center
 
     S.O.L.I.D. - Dependency Inversion Principle
 
 .. figure:: img/oop-solid-deps.png
-    :scale: 40%
-    :align: center
 
     Class Dependencies should depend upon abstractions, not concretions
 

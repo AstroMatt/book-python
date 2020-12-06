@@ -11,8 +11,6 @@ Rationale
     df.query('sales > 50000')
 
 .. figure:: img/pandas-dataframe-query.png
-    :width: 90%
-    :align: center
 
     Pandas query expression [sharpsightlabs]_
 

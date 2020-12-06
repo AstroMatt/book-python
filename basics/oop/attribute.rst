@@ -52,8 +52,6 @@ Rationale
             - gross mass = net mass + water mass (water mass depends on its volume used))
 
 .. figure:: img/bucket.jpg
-    :width: 30%
-    :align: center
 
 
 Syntax

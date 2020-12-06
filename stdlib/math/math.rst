@@ -302,8 +302,6 @@ Given:
             return ...
 
 .. figure:: img/math-euclidean-distance.png
-    :width: 75%
-    :align: center
 
     Calculate Euclidean distance in Cartesian coordinate system
 

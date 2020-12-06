@@ -4,8 +4,6 @@ How to understand charts?
 Figure anatomy
 --------------
 .. figure:: img/matplotlib-figure-anatomy.png
-    :width: 75%
-    :align: center
 
     Figure Anatomy
 

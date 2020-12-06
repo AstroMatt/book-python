@@ -248,8 +248,6 @@ Use Cases
     # ValueError: Height is not between 150 to 200
 
 .. figure:: img/datetime-compare.png
-    :scale: 66%
-    :align: center
 
     Comparing datetime works only when all has the same timezone (UTC). More information in :ref:`Stdlib Datetime Timezone`
 

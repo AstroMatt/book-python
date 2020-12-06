@@ -108,16 +108,12 @@ DELETE
 JOIN
 ====
 .. figure:: img/sql-joins.png
-    :width: 75%
-    :align: center
 
     Joins
 
 INNER JOIN
 ----------
 .. figure:: img/sql-innerjoin.gif
-    :align: center
-    :width: 75%
 
 .. literalinclude:: src/sql-join-inner.sql
     :language: sql
@@ -126,8 +122,6 @@ INNER JOIN
 LEFT JOIN
 ---------
 .. figure:: img/sql-leftjoin.gif
-    :align: center
-    :width: 75%
 
 .. literalinclude:: src/sql-join-left.sql
     :language: sql
@@ -136,8 +130,6 @@ LEFT JOIN
 RIGHT JOIN
 ----------
 .. figure:: img/sql-rightjoin.gif
-    :align: center
-    :width: 75%
 
 .. literalinclude:: src/sql-join-right.sql
     :language: sql
@@ -146,8 +138,6 @@ RIGHT JOIN
 FULL OUTER JOIN
 ---------------
 .. figure:: img/sql-fulljoin.gif
-    :align: center
-    :width: 75%
 
 .. literalinclude:: src/sql-join-outer.sql
     :language: sql

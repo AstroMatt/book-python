@@ -160,8 +160,6 @@ Glossary
             Models that **overfit** learns to recognize noise from the signal, than the data.
 
             .. figure:: img/glossary-overfitting.png
-                :width: 75%
-                :align: center
 
                 Black line represents the decision boundary and represents the signal.
                 Green line represents overfitted model which learned the noise.

@@ -21,8 +21,6 @@ Linear dimensionality reduction using Singular Value Decomposition of the data t
 First, consider a dataset in only two dimensions, like (height, weight). This dataset can be plotted as points in a plane. But if we want to tease out variation, PCA finds a new coordinate system in which every point has a new (x,y) value. The axes don't actually mean anything physical; they're combinations of height and weight called "principal components" that are chosen to give one axes lots of variation.
 
 .. figure:: img/principal-component-analysis.png
-    :width: 75%
-    :align: center
 
     PCA is useful for eliminating dimensions. If we're going to only see the data along one dimension, though, it might be better to make that dimension the principal component with most variation. We don't lose much by dropping PC2 since it contributes the least to the variation in the data set.
 
@@ -66,8 +64,6 @@ First, consider a dataset in only two dimensions, like (height, weight). This da
 3D example
 ==========
 .. figure:: img/principal-component-analysis-3d.png
-    :width: 75%
-    :align: center
 
     Principal Component Analysis 3D
 
@@ -123,8 +119,6 @@ PCA dla zbioru Iris
 
 .. figure:: img/principal-component-analysis-iris.png
     :name: PCA dla zbioru Iris
-    :width: 75%
-    :align: center
 
     PCA dla zbioru Iris
 

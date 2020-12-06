@@ -21,8 +21,6 @@ Mini Botnet
     * Attacker - atakujący.
 
 .. figure:: img/botnet.png
-    :width: 75%
-    :align: center
 
     Architektura botnet
 

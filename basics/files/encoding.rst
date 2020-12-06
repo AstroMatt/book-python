@@ -18,32 +18,22 @@ Rationale
     * https://en.wikipedia.org/wiki/List_of_Unicode_characters
 
 .. figure:: img/files-windows2000-notepad-saveas.png
-    :width: 33%
-    :align: center
 
     Windows 2000 Notepad "Save As" window with possibility to select encoding. UTF-8 is not selected by default... Source: [windows2000]_
 
 .. figure:: img/files-windows10-notepad-saveas.png
-    :width: 50%
-    :align: center
 
     Windows 10 Notepad "Save As" window with possibility to select encoding. Since Windows 10.1903 (May 2019) notepad writes files in UTF-8 by default! Source: [windows10]_ [windows101903]_
 
 .. figure:: img/files-encoding-ascii2.jpg
-    :width: 50%
-    :align: center
 
     ASCII table. Source: [ascii2]_
 
 .. figure:: img/files-encoding-unicode2.png
-    :width: 50%
-    :align: center
 
     Unicode. Source: [unicode2]_
 
 .. figure:: img/files-encoding-unicode3.png
-    :width: 50%
-    :align: center
 
     Unicode. Source: [unicode3]_
 
@@ -63,14 +53,10 @@ UTF-8
 
 
 .. figure:: img/files-encoding-utf.png
-    :width: 50%
-    :align: center
 
     UTF-8. Source: [utf]_
 
 .. figure:: img/files-encoding-utf2.jpg
-    :width: 50%
-    :align: center
 
     UTF-8. Source: [utf2]_
 
@@ -109,8 +95,6 @@ Escape Characters
     * ``\n`` - is used everywhere else
 
 .. figure:: img/type-machine.jpg
-    :width: 50%
-    :align: center
 
     Why we have '\\r\\n' on Windows?
 

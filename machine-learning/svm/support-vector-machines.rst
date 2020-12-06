@@ -60,9 +60,6 @@ Definicja intuicyjna
 U podstaw metody wektorów nośnych (Support Vector Machines - SVM) leży koncepcja przestrzeni decyzyjnej, którą dzieli się budując granice separujące obiekty o różnej przynależności klasowej, czego przykład widzimy na poniższym rysunku. Mamy tu dwie klasy kółek: czarne i białe. Linia graniczna rozdziela je wyraźnie. Nowy, nieznany obiekt, jeżeli znajdzie się po prawej stronie granicy zostanie zaklasyfikowany jako biały, a w przeciwnym wypadku, jako czarny.
 
 .. figure:: img/svm-hyperplane-linear.png
-    :name: svm-hyperplane-linear
-    :width: 75%
-    :align: center
 
     Maximum-margin hyperplane and margins for an SVM trained with samples from two classes. Samples on the margin are called the support vectors.
 
@@ -90,9 +87,6 @@ Linear Kernel SVM
 The kernel defines the similarity or a distance measure between new data and the support vectors.
 
 .. figure:: img/support-vector-machines-4.png
-    :name: Linear Kernel SVM
-    :width: 75%
-    :align: center
 
     Linear Kernel SVM
 
@@ -106,9 +100,6 @@ Polynomial Kernel SVM
 * The polynomial kernel allows for curved lines in the input space.
 
 .. figure:: img/svm-hyperplane-polynomial.png
-    :name: svm-hyperplane-polynomial
-    :width: 75%
-    :align: center
 
     Polynomial Kernel SVM
 
@@ -122,16 +113,10 @@ Radial Kernel SVM
 * The radial kernel is very local and can create complex regions within the feature space, like closed polygons in two-dimensional space.
 
 .. figure:: img/support-vector-machines-9.png
-    :name: 2D Radial Kernel SVM
-    :width: 75%
-    :align: center
 
     2D Radial Kernel SVM
 
 .. figure:: img/svm-hyperplane-3d.png
-    :name: 3D Radial Kernel SVM
-    :width: 75%
-    :align: center
 
     3D Radial Kernel SVM
 
@@ -194,8 +179,6 @@ Let's show a quick example of support vector classification. First we need to cr
     plt.scatter(X[:, 0], X[:, 1], c=y, s=50, cmap='spring');
 
 .. figure:: img/support-vector-machines-1.png
-    :width: 75%
-    :align: center
 
     A discriminative classifier attempts to draw a line between the two sets of data.
 
@@ -212,8 +195,6 @@ A discriminative classifier attempts to draw a line between the two sets of data
     plt.xlim(-1, 3.5);
 
 .. figure:: img/support-vector-machines-2.png
-    :width: 75%
-    :align: center
 
     Depending on which you choose, a new data point will be classified almost entirely differently!
 
@@ -239,8 +220,6 @@ Support vector machines are one way to address this. What support vector machine
     plt.xlim(-1, 3.5);
 
 .. figure:: img/support-vector-machines-3.png
-    :width: 75%
-    :align: center
 
     What support vector machined do is to not only draw a line, but consider a region about the line of some given width.
 
@@ -291,8 +270,6 @@ To better visualize what's happening here, let's create a quick convenience func
     plot_svc_decision_function(clf);
 
 .. figure:: img/support-vector-machines-4.png
-    :width: 75%
-    :align: center
 
     Notice that the dashed lines touch a couple of the points: these points are the pivotal pieces of this fit, and are known as the *support vectors* (giving the algorithm its name).
 
@@ -306,8 +283,6 @@ Notice that the dashed lines touch a couple of the points: these points are the 
                 s=200, facecolors='none');
 
 .. figure:: img/support-vector-machines-5.png
-    :width: 75%
-    :align: center
 
     Support Vector Machines
 
@@ -337,8 +312,6 @@ Let's use IPython's ``interact`` functionality to explore how the distribution o
     interact(plot_svm, N=[10, 200], kernel='linear');
 
 .. figure:: img/support-vector-machines-6.png
-    :width: 75%
-    :align: center
 
     Notice the unique thing about SVM is that only the support vectors matter: that is, if you moved any of the other points without letting them cross the decision boundaries, they would have no effect on the classification results!
 
@@ -360,8 +333,6 @@ Where SVM gets incredibly exciting is when it is used in conjunction with kernel
     plot_svc_decision_function(clf);
 
 .. figure:: img/support-vector-machines-7.png
-    :width: 75%
-    :align: center
 
     Clearly, no linear discrimination will ever separate these data.
 
@@ -391,8 +362,6 @@ If we plot this along with our data, we can see the effect of it:
     interact(plot_3D, elev=[-90, 90], azip=(-180, 180));
 
 .. figure:: img/support-vector-machines-8.png
-    :width: 75%
-    :align: center
 
     We can see that with this additional dimension, the data becomes trivially linearly separable!
 
@@ -409,8 +378,6 @@ We can see that with this additional dimension, the data becomes trivially linea
                 s=200, facecolors='none');
 
 .. figure:: img/support-vector-machines-9.png
-    :width: 75%
-    :align: center
 
     Here there are effectively :math:`N` basis functions: one centered at each point!
 

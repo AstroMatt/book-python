@@ -8,8 +8,7 @@ DataFrame Plotting
 * https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html
 
 .. figure:: img/matplotlib-figure-anatomy.png
-    :width: 75%
-    :align: center
+
 
 Plot kinds
 ==========
@@ -241,8 +240,6 @@ Line Plot
     df.plot(kind='line')
 
 .. figure:: img/pandas-dataframe-plot-line.png
-    :align: center
-    :width: 75%
 
     Line Plot
 
@@ -253,8 +250,6 @@ Vertical Bar Plot
     df.plot(kind='bar')
 
 .. figure:: img/pandas-dataframe-plot-bar.png
-    :align: center
-    :width: 75%
 
     Vertical Bar Plot
 
@@ -265,8 +260,6 @@ Horizontal Bar Plot
     df.plot(kind='barh')
 
 .. figure:: img/pandas-dataframe-plot-barh.png
-    :align: center
-    :width: 75%
 
     Horizontal Bar Plot
 
@@ -277,8 +270,6 @@ Histogram
     df.plot(kind='hist')
 
 .. figure:: img/pandas-dataframe-plot-hist.png
-    :align: center
-    :width: 75%
 
     Histogram
 
@@ -289,8 +280,6 @@ Boxplot
     df.plot(kind='box')
 
 .. figure:: img/pandas-dataframe-plot-box.png
-    :align: center
-    :width: 75%
 
     Boxplot
 
@@ -305,8 +294,6 @@ Kernel Density Estimation Plot
     df.plot(kind='kde')
 
 .. figure:: img/pandas-dataframe-plot-density.png
-    :align: center
-    :width: 75%
 
     Kernel Density Estimation Plot
 
@@ -317,14 +304,10 @@ Area Plot
     df.plot(kind='area')
 
 .. figure:: img/pandas-dataframe-plot-area.png
-    :align: center
-    :width: 75%
 
     Area Plot
 
 .. figure:: img/pandas-dataframe-plot-cumulative-flow-diagram.png
-    :align: center
-    :width: 75%
 
     Cumulative Flow Diagram in Atlassian Jira
 
@@ -335,8 +318,6 @@ Pie Plot
     df.plot(kind='pie')
 
 .. figure:: img/pandas-dataframe-plot-pie.png
-    :align: center
-    :width: 75%
 
     Pie Plot
 
@@ -347,8 +328,6 @@ Scatter Plot
     df.plot(kind='scatter')
 
 .. figure:: img/pandas-dataframe-plot-scatter.png
-    :align: center
-    :width: 75%
 
     Scatter Plot
 
@@ -359,8 +338,6 @@ Hexbin Plot
     df.plot(kind='hexbin')
 
 .. figure:: img/pandas-dataframe-plot-hexbin.png
-    :align: center
-    :width: 75%
 
     Hexbin Plot
 
@@ -382,8 +359,6 @@ Hist
     plt.show()
 
 .. figure:: img/pandas-dataframe-plot-hist.png
-    :width: 75%
-    :align: center
 
     Visualization using hist
 
@@ -402,8 +377,6 @@ Density
     plt.show()
 
 .. figure:: img/pandas-dataframe-plot-density2.png
-    :width: 75%
-    :align: center
 
     Visualization using density
 
@@ -422,8 +395,6 @@ Box
     plt.show()
 
 .. figure:: img/pandas-dataframe-plot-box2.png
-    :width: 75%
-    :align: center
 
     Visualization using density
 
@@ -446,8 +417,6 @@ Scatter matrix
     plt.show()
 
 .. figure:: img/pandas-dataframe-plot-scatter-matrix.png
-    :width: 75%
-    :align: center
 
     Visualization using density
 
@@ -455,12 +424,8 @@ Scatter matrix
 Actinograms
 ===========
 .. figure:: img/pandas-dataframe-actinogram-1.png
-    :width: 75%
-    :align: center
 
 .. figure:: img/pandas-dataframe-actinogram-2.png
-    :width: 75%
-    :align: center
 
 
 Further Reading

@@ -17,9 +17,6 @@ Since the logistic function has two different asymptotes, it can be used to divi
 * :math:`transformed = 1 / (1 + e^-x)`
 
 .. figure:: img/logistic-regression-curve.png
-    :name: Logistic Regression Curve
-    :width: 75%
-    :align: center
 
     The standard logistic function :math:`\sigma (t)`; note that :math:`\sigma (t) \in (0,1)` for all :math:`t`.
 
@@ -27,8 +24,6 @@ Since the logistic function has two different asymptotes, it can be used to divi
 Linear vs Logistics
 ===================
 .. figure:: img/regression-linear-vs-logistic.png
-    :width: 75%
-    :align: center
 
     Linear vs Logistics
 

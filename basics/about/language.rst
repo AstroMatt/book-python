@@ -4,8 +4,6 @@ Python Language
 
 
 .. figure:: img/python-logo.png
-    :width: 75%
-    :align: center
 
     Python Logo
 
@@ -85,8 +83,6 @@ Python Release Cycle
 * 42 months (3.5 year) of security updates
 
 .. figure:: img/pep602-release-calendar.png
-    :width: 85%
-    :align: center
 
     Python 12 months release cycle.
 

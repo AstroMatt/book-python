@@ -9,14 +9,10 @@ DataFrame Loc
 * ``df.iloc`` - behaves like Python slices
 
 .. figure:: img/pandas-dataframe-select-row.png
-    :width: 75%
-    :align: center
 
     Pandas Select Row
 
 .. figure:: img/pandas-dataframe-select-column.png
-    :width: 75%
-    :align: center
 
     Pandas Select Cell
 

@@ -21,8 +21,6 @@ Recap
 Rationale
 =========
 .. figure:: img/unpacking-assignment,args,params.png
-    :scale: 40%
-    :align: center
 
     :ref:`Unpacking Assignment`, :ref:`Unpacking Parameters` and :ref:`Unpacking Arguments`.
 

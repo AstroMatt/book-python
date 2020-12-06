@@ -5,14 +5,10 @@ Machine Learning Algorithms
 ***************************
 
 .. figure:: img/algorithms-cheat-sheet.png
-    :width: 75%
-    :align: center
 
     Machine Learning Algorithms Cheat Sheet
 
 .. figure:: img/algorithms-classes.png
-    :width: 75%
-    :align: center
 
     Machine Learning Algorithms Classes and Classification
 
@@ -37,8 +33,6 @@ Regression is concerned with modeling the relationship between variables that is
 Regression methods are a workhorse of statistics and have been co-opted into statistical machine learning. This may be confusing because we can use regression to refer to the class of problem and the class of algorithm. Really, regression is a process.
 
 .. figure:: img/algorithms-regression.png
-    :width: 75%
-    :align: center
 
     Regression Algorithms
 
@@ -58,8 +52,6 @@ Instance-based AlgorithmsInstance-based learning model is a decision problem wit
 Such methods typically build up a database of example data and compare new data to the database using a similarity measure in order to find the best match and make a prediction. For this reason, instance-based methods are also called winner-take-all methods and memory-based learning. Focus is put on the representation of the stored instances and similarity measures used between instances.
 
 .. figure:: img/algorithms-instance-based.png
-    :width: 75%
-    :align: center
 
     Instance-based Algorithms
 
@@ -78,8 +70,6 @@ An extension made to another method (typically regression methods) that penalize
 I have listed regularization algorithms separately here because they are popular, powerful and generally simple modifications made to other methods.
 
 .. figure:: img/algorithms-regularization.png
-    :width: 75%
-    :align: center
 
     Regularization Algorithms
 
@@ -98,8 +88,6 @@ Decision tree methods construct a model of decisions made based on actual values
 Decisions fork in tree structures until a prediction decision is made for a given record. Decision trees are trained on data for classification and regression problems. Decision trees are often fast and accurate and a big favorite in machine learning.
 
 .. figure:: img/algorithms-decision-tree.png
-    :width: 75%
-    :align: center
 
     Decision Tree Algorithms
 
@@ -119,8 +107,6 @@ Bayesian Algorithms
 Bayesian methods are those that explicitly apply Bayes' Theorem for problems such as classification and regression.
 
 .. figure:: img/algorithms-bayesian.png
-    :width: 75%
-    :align: center
 
     Bayesian Algorithms
 
@@ -141,8 +127,6 @@ Clustering, like regression, describes the class of problem and the class of met
 Clustering methods are typically organized by the modeling approaches such as centroid-based and hierarchical. All methods are concerned with using the inherent structures in the data to best organize the data into groups of maximum commonality.
 
 .. figure:: img/algorithms-clustering.png
-    :width: 75%
-    :align: center
 
     Clustering Algorithms
 
@@ -161,8 +145,6 @@ Association rule learning methods extract rules that best explain observed relat
 These rules can discover important and commercially useful associations in large multidimensional datasets that can be exploited by an organization.
 
 .. figure:: img/algorithms-association-rule-learning.png
-    :width: 75%
-    :align: center
 
     Association Rule Learning Algorithms
 
@@ -181,8 +163,6 @@ They are a class of pattern matching that are commonly used for regression and c
 Note that I have separated out Deep Learning from neural networks because of the massive growth and popularity in the field. Here we are concerned with the more classical methods.
 
 .. figure:: img/algorithms-artificial-neural-network.png
-    :width: 75%
-    :align: center
 
     Artificial Neural Network Algorithms
 
@@ -201,8 +181,6 @@ Deep Learning methods are a modern update to Artificial Neural Networks that exp
 They are concerned with building much larger and more complex neural networks and, as commented on above, many methods are concerned with semi-supervised learning problems where large datasets contain very little labeled data.
 
 .. figure:: img/algorithms-deep-learning.png
-    :width: 75%
-    :align: center
 
     Deep Learning Algorithms
 
@@ -219,8 +197,6 @@ Dimensional Reduction Algorithms
 Like clustering methods, dimensionality reduction seek and exploit the inherent structure in the data, but in this case in an unsupervised manner or order to summarize or describe data using less information.
 
 .. figure:: img/algorithms-dimensional-reduction.png
-    :width: 75%
-    :align: center
 
     Dimensional Reduction Algorithms
 
@@ -243,8 +219,6 @@ Ensemble Algorithms
 Ensemble methods are models composed of multiple weaker models that are independently trained and whose predictions are combined in some way to make the overall prediction.
 
 .. figure:: img/algorithms-ensemble.png
-    :width: 75%
-    :align: center
 
     Ensemble Algorithms
 

@@ -12,8 +12,6 @@ It’s a technique for building a computer program that learns from data. It is 
 Neural Networks are the best Machine Learning algorithm so far.
 
 .. figure:: img/deep-neural-network.png
-    :width: 75%
-    :align: center
 
     Neural Network
 
@@ -69,8 +67,6 @@ Przykład praktyczny
 * Cena domu wpływa na sumę wszystkich kombinacji elementów i ich wag z poprzednich stopni.
 
 .. figure:: img/neural-network.png
-    :width: 75%
-    :align: center
 
     Neural Network
 
@@ -109,16 +105,12 @@ Retraining
 Przetwarzanie obrazów na przykładzie rozpoznawania odręcznie napisanych cyfr (MNIST)
 ====================================================================================
 .. figure:: img/deep-neural-networks-mnist-overview.png
-    :width: 75%
-    :align: center
 
     Handwritten digits recognition also known as MNIST is equivalent to "hello world" in visual Machine Learning world.
 
 Flattening image
 ----------------
 .. figure:: img/dnn-images.png
-    :width: 75%
-    :align: center
 
     In Image processing files and image pixels are features.
 
@@ -136,8 +128,6 @@ Flattening image
             plt.imshow(img.reshape((28,28)), cmap=plt.cm.gray_r)
 
 .. figure:: img/deep-neural-networks-mnist-segmented.png
-    :width: 75%
-    :align: center
 
     Segmented Digit
 
@@ -148,16 +138,12 @@ Weight adjusted by gradient descent
 * Evaluate accuracy
 
 .. figure:: img/deep-neural-networks-mnist-pixels.png
-    :width: 75%
-    :align: center
 
     Compare middle image pixel.
 
 Visualize weights
 -----------------
 .. figure:: img/deep-neural-networks-mnist-weights.png
-    :width: 75%
-    :align: center
 
     Visualize the the weights in the TensorFlow Basic MNIST
 
@@ -339,8 +325,6 @@ The first column of images shows true faces. The next columns illustrate how ext
     plt.show()
 
 .. figure:: img/visual-faces.png
-    :width: 75%
-    :align: center
 
     This example shows the use of multi-output estimator to complete images. The goal is to predict the lower half of a face given its upper half.
 

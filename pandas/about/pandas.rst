@@ -42,8 +42,6 @@ Import
 Workflow
 ========
 .. figure:: img/pandas-about-workflow.png
-    :scale: 80%
-    :align: center
 
     Pandas workflow
 

@@ -108,14 +108,10 @@ Instances
 Class vs Instance
 =================
 .. figure:: img/oop-classes-class.jpg
-    :width: 30%
-    :align: center
 
     Class. Source: [class]_
 
 .. figure:: img/oop-classes-instances.jpg
-    :width: 30%
-    :align: center
 
     Instances. Source: [instances]_
 

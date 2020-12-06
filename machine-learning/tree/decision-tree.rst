@@ -5,8 +5,6 @@ Decision Tree
 *************
 
 .. figure:: img/decision-tree.png
-    :width: 75%
-    :align: center
 
     Drzewo decyzyjne
 
@@ -160,8 +158,6 @@ Visualizing a Decision Tree
 
 
 .. figure:: img/decision-tree-iris.png
-    :width: 75%
-    :align: center
 
     Visualization of Decision Tree Classifier
 

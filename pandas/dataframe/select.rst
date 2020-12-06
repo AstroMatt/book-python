@@ -25,8 +25,6 @@ DataFrame Select
     # 2000-01-05  2.269755 -1.454366  0.045759 -0.187184
 
 .. figure:: img/pandas-dataframe-select.png
-    :scale: 80%
-    :align: center
 
     Pandas Select Methods
 

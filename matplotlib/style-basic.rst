@@ -119,14 +119,10 @@ Line styles
 * Other line styles https://matplotlib.org/gallery/lines_bars_and_markers/linestyles.html#sphx-glr-gallery-lines-bars-and-markers-linestyles-py
 
 .. figure:: img/matplotlib-plt-linestyle-basic.png
-    :width: 75%
-    :align: center
 
     Basic line styles
 
 .. figure:: img/matplotlib-plt-linestyle-advanced.png
-    :width: 75%
-    :align: center
 
     Advanced line styles
 

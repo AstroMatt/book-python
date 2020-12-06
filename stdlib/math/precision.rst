@@ -88,33 +88,23 @@ Floating Numbers Precision
 IEEE 754 standard
 =================
 .. figure:: img/float-anatomy.png
-    :width: 75%
-    :align: center
 
     What is ``float`` as defined by IEEE 754 standard
 
 .. figure:: img/float-expression.png
-    :width: 75%
-    :align: center
 
     Points chart
 
 .. figure:: img/float-mantissa-1.png
-    :width: 75%
-    :align: center
 
     How computer store ``float``?
     As defined by IEEE 754 standard
 
 .. figure:: img/float-mantissa-2.png
-    :width: 75%
-    :align: center
 
     How to read/write ``float`` from/to memory?
 
 .. figure:: img/float-normalized.png
-    :width: 75%
-    :align: center
 
     Normalized Line
 

@@ -6,8 +6,6 @@ Socket
 ``socket``
 ==========
 .. figure:: img/socket-flow.jpg
-    :width: 75%
-    :align: center
 
     Socket Flow
 

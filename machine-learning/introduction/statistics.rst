@@ -16,8 +16,6 @@ Rozkłady
 * siły
 
 .. figure:: img/statistics-distributions.jpg
-    :width: 75%
-    :align: center
 
     Rozkłady statystyczne
 
@@ -31,8 +29,6 @@ Podstawowe pojęcia
 
     Funkcja
         .. figure:: img/statistics-function.png
-            :width: 75%
-            :align: center
 
             Funkcja opisana równaniem prostej :math:`f(x) = mx + b`
 

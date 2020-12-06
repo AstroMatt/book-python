@@ -14,14 +14,10 @@ Iris Flower Dataset
 The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in his 1936 paper The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis.
 
 .. figure:: img/dataset-iris-flowers.png
-    :width: 75%
-    :align: center
 
 The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimetres. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.
 
 .. figure:: img/dataset-iris-scatterplot.png
-    :width: 75%
-    :align: center
 
     Scatterplot of the Iris data set
 
@@ -29,8 +25,6 @@ Based on Fisher's linear discriminant model, this data set became a typical test
 
 
 .. figure:: img/dataset-iris-k-means.png
-    :width: 75%
-    :align: center
 
     Unsatisfactory k-means clustering result (the data set does not cluster into the known classes) and actual species visualized using ELKI
 

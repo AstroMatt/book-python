@@ -10,8 +10,6 @@ A loose definition of clustering could be "the process of organizing objects int
 * How many groups (clusters) you want your data to be in?
 
 .. figure:: img/clustering.png
-    :width: 75%
-    :align: center
 
     Clustering (grouping) data.
 
@@ -108,22 +106,16 @@ Clustering algorithms group a set of documents into subsets or clusters . The al
 
 .. figure:: img/clustering-flat.png
     :name: Flat Clustering
-    :width: 75%
-    :align: center
 
     Flat Clustering
 
 K-means
 -------
 .. figure:: img/clustering-k-means.png
-    :width: 75%
-    :align: center
 
     K-means
 
 .. figure:: img/clustering-k-means-convergence.gif
-    :width: 75%
-    :align: center
 
     K-means Convergence
 
@@ -136,8 +128,6 @@ Each node in the cluster tree contains a group of similar data; Nodes are placed
 
 .. figure:: img/clustering-hierarchical.png
     :name: Hierarchical Clustering
-    :width: 75%
-    :align: center
 
     Hierarchical Clustering
 
@@ -149,8 +139,6 @@ Porównanie algorytmów
 
 .. figure:: img/clustering-overview.png
     :name: clustering-overview
-    :width: 75%
-    :align: center
 
     Porównanie algorytmów klastrowania
 

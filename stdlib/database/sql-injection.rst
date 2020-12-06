@@ -37,7 +37,5 @@ Execute query
     # WHERE username='' OR 1=1; DROP TABLE users -- ' AND password='132'
 
 .. figure:: img/sql-injection.jpg
-    :width: 75%
-    :align: center
 
     SQL Injection

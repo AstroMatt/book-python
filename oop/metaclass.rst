@@ -21,8 +21,6 @@ Rationale
     * Class is an instance of a Metaclass
 
 .. figure:: img/oop-metaclass-inheritance.png
-    :width: 90%
-    :align: center
 
     Object is an instance of a Class.
     Class is an instance of a Metaclass.
@@ -334,8 +332,6 @@ Type Metaclass
     type(type)        # <class 'type'>
 
 .. figure:: img/oop-metaclass-diagram.png
-    :width: 90%
-    :align: center
 
     Object is an instance of a Class.
     Class is an instance of a Metaclass.

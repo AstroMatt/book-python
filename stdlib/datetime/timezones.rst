@@ -14,8 +14,6 @@ Rationale
 * ``datetime.utcnow()`` - produces timezone naive date!
 
 .. figure:: img/datetime-compare.png
-    :scale: 66%
-    :align: center
 
     Comparing datetime works only when all has the same timezone (UTC)
 

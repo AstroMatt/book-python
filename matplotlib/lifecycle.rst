@@ -81,8 +81,6 @@ is a part of that canvas on which we will make a particular visualization.
     fig, ax = plt.subplots()
 
 .. figure:: img/matplotlib-lifecycle-01.png
-    :width: 75%
-    :align: center
 
 Now that we have an Axes instance, we can plot on top of it.
 
@@ -92,8 +90,6 @@ Now that we have an Axes instance, we can plot on top of it.
     ax.barh(group_names, group_data)
 
 .. figure:: img/matplotlib-lifecycle-02.png
-    :width: 75%
-    :align: center
 
 
 Controlling the style
@@ -128,8 +124,6 @@ Now let's remake the above plot to see how it looks:
         ax.barh(group_names, group_data)
 
 .. figure:: img/matplotlib-lifecycle-03.png
-    :width: 75%
-    :align: center
 
     The style controls many things, such as color, linewidths, backgrounds, etc.
 
@@ -148,8 +142,6 @@ with the ``axes.Axes.get_xticklabels`` method:
         labels = ax.get_xticklabels()
 
 .. figure:: img/matplotlib-lifecycle-04.png
-    :width: 75%
-    :align: center
 
 If we'd like to set the property of many items at once, it's useful to use
 the ``pyplot.setp`` function. This will take a list (or many lists) of
@@ -164,8 +156,6 @@ Matplotlib objects, and attempt to set some style element of each one.
         plt.setp(labels, rotation=45, horizontalalignment='right')
 
 .. figure:: img/matplotlib-lifecycle-05.png
-    :width: 75%
-    :align: center
 
 It looks like this cut off some of the labels on the bottom. We can
 tell Matplotlib to automatically make room for elements in the figures
@@ -182,8 +172,6 @@ rcParams.
     plt.setp(labels, rotation=45, horizontalalignment='right')
 
 .. figure:: img/matplotlib-lifecycle-06.png
-    :width: 75%
-    :align: center
 
 Next, we'll add labels to the plot. To do this with the OO interface,
 we can use the ``axes.Axes.set`` method to set properties of this
@@ -199,8 +187,6 @@ Axes object.
            title='Company Revenue')
 
 .. figure:: img/matplotlib-lifecycle-07.png
-    :width: 75%
-    :align: center
 
 We can also adjust the size of this plot using the ``pyplot.subplots``
 function. We can do this with the ``figsize`` kwarg.
@@ -220,8 +206,6 @@ function. We can do this with the ``figsize`` kwarg.
            title='Company Revenue')
 
 .. figure:: img/matplotlib-lifecycle-08.png
-    :width: 75%
-    :align: center
 
 For labels, we can specify custom formatting guidelines in the form of
 functions by using the ``ticker.FuncFormatter`` class. Below we'll
@@ -256,8 +240,6 @@ actions on a specific axis on our plot.
     ax.xaxis.set_major_formatter(formatter)
 
 .. figure:: img/matplotlib-lifecycle-09.png
-    :width: 75%
-    :align: center
 
 
 Combining multiple visualizations
@@ -293,8 +275,6 @@ the plot methods on that axes object.
     plt.show()
 
 .. figure:: img/matplotlib-lifecycle-10.png
-    :width: 75%
-    :align: center
 
 
 Saving our plot

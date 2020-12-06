@@ -110,7 +110,5 @@ Polish:
     #. Sprawdzić Github
 
 .. figure:: img/pycharm-vsc-merge-rebase.png
-    :scale: 100%
-    :align: center
 
     Jeżeli wyskoczy informacja o odrzuceniu pusha, zaznacz checkbox "Remember the update method and update silently in future" i wybierz "Rebase"

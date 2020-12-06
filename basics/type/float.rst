@@ -293,8 +293,6 @@ Assignments
     :end-before: # Solution
 
 .. figure:: img/spacesuits.png
-    :width: 50%
-    :align: center
 
     EMU and Orlan
 

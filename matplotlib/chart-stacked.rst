@@ -78,7 +78,5 @@ Stack plot
     plt.show()
 
 .. figure:: img/matplotlib-plt-stackplot.png
-    :width: 75%
-    :align: center
 
     Stack plot

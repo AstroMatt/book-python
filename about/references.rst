@@ -46,20 +46,14 @@ Datasets
             (4.6, 3.1, 1.5, 0.2, 'setosa')]
 
 .. figure:: img/iris-species.jpg
-    :width: 75%
-    :align: center
 
     Iris flower species
 
 .. figure:: img/iris-dataset.png
-    :width: 75%
-    :align: center
 
     Iris dataset
 
 .. figure:: img/iris-grid.png
-    :width: 75%
-    :align: center
 
     Iris features distribution
 
@@ -98,8 +92,6 @@ Jan Twardowski
 * `Modern Film Adaptation by Allegro <https://www.youtube.com/watch?v=hRdYz8cnOW4>_`
 
 .. figure:: img/jan-twardowski.jpg
-    :width: 75%
-    :align: center
 
     Jan Twardowski, wizard from Polish fairytale who escaped before the devil to the Moon
 
@@ -108,8 +100,6 @@ Mark Watney
 * NASA Astronaut from Andy Weir's book "The Martian"
 
 .. figure:: img/mark-watney.jpg
-    :width: 75%
-    :align: center
 
     Mark Watney, NASA Astronaut from Andy Weir's book "The Martian"
 
@@ -118,8 +108,6 @@ Mark Watney
 * Dummy used in Soviet space program before Gagarin's Launch
 
 .. figure:: img/ivan-ivanovich.jpg
-    :width: 75%
-    :align: center
 
     Иван Иванович, dummy used in Soviet space program before Gagarin's Launch
 
@@ -138,8 +126,6 @@ José Jiménez
 * https://youtu.be/kPnaaHR9pLc?t=16
 
 .. figure:: img/jose-jimenez.jpg
-    :width: 75%
-    :align: center
 
     Jiménez as an astronaut, 1963. Fictional character created and performed by comedian Bill Dana
 
@@ -148,8 +134,6 @@ Melissa Lewis
 * NASA Astronaut from Andy Weir's book "The Martian"
 
 .. figure:: img/melissa-lewis.jpg
-    :width: 75%
-    :align: center
 
     Melissa Lewis, NASA Astronaut from Andy Weir's book "The Martian"
 
@@ -158,8 +142,6 @@ Ryan Stone
 * NASA Astronaut from the movie "Gravity"
 
 .. figure:: img/ryan-stone.jpg
-    :width: 75%
-    :align: center
 
     Ryan Stone, NASA Astronaut from the movie "Gravity"
 
@@ -168,8 +150,6 @@ Matt Kowalski
 * NASA Astronaut from the movie "Gravity"
 
 .. figure:: img/matt-kowalski.jpg
-    :width: 75%
-    :align: center
 
     Matt Kowalski, NASA Astronaut from the movie "Gravity"
 
@@ -178,23 +158,17 @@ Alex Vogel
 * NASA Astronaut from Andy Weir's book "The Martian"
 
 .. figure:: img/alex-vogel.jpg
-    :width: 75%
-    :align: center
 
     Alex Vogel, NASA Astronaut from Andy Weir's book "The Martian"
 
 National Geographic Mars Crew Members
 -------------------------------------
 .. figure:: img/crew-mars-natgeo.jpg
-    :width: 75%
-    :align: center
 
     Crew from National Geographic Mars: Robert Foucault (top left), Javier Delgado (top center), Amelie Durand (top right), Hana Seung (bottom left), Ben Sawyer (bottom center), Marta Kamen (bottom right)
 
 Martian Movie Crew Members
 --------------------------
 .. figure:: img/crew-martian.jpg
-    :width: 75%
-    :align: center
 
     Crew from Martian Movie: Melissa Lewis (top left), Alex Vogel (top center), Mark Watney (top right), Chris Beck (bottom left), Beth Johanssen (bottom center), Rick Martinez (bottom right)

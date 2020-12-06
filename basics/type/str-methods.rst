@@ -46,20 +46,14 @@ String Immutability
     # 'Hello Jan Twardowski 42!'
 
 .. figure:: img/memory-str-1.png
-    :align: center
-    :scale: 50%
 
     Define str
 
 .. figure:: img/memory-str-2.png
-    :align: center
-    :scale: 50%
 
     Define another str with the same value
 
 .. figure:: img/memory-str-3.png
-    :align: center
-    :scale: 50%
 
     Define another str with different value
 
@@ -316,8 +310,6 @@ Is Whitespace
     '\n'.isspace()      # True
 
 .. figure:: img/iss.jpg
-    :width: 50%
-    :align: center
 
     ISS - International Space Station.
     Credits: NASA/Crew of STS-132 (img: s132e012208).

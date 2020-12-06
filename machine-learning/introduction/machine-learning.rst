@@ -42,8 +42,6 @@ Elementy języka Python i biblioteki standardowej
 Ecosystem Scipy
 ---------------
 .. figure:: img/scipy-ecosystem.png
-    :width: 75%
-    :align: center
 
     Scipy Ecosystem
 
@@ -166,8 +164,6 @@ Ważne pytania przed przystąpieniem do tworzenia algorytmu
 * What makes a good feature?
 
 .. figure:: img/machine-learning-steps.png
-    :width: 75%
-    :align: center
 
     Machine Learning Steps
 
@@ -292,8 +288,6 @@ A model is prepared through a training process in which it is required to make p
 Example problems are classification and regression.
 
 .. figure:: img/algorithms-supervised.png
-    :width: 75%
-    :align: center
 
     Supervised Learning - Z nadzorem
 
@@ -314,8 +308,6 @@ A model is prepared by deducing structures present in the input data. This may b
 Example problems are clustering, dimensionality reduction and association rule learning.
 
 .. figure:: img/algorithms-unsupervised.png
-    :width: 75%
-    :align: center
 
     Unsupervised Learning - Bez nadzoru
 
@@ -334,8 +326,6 @@ Example problems are classification and regression.
 Example algorithms are extensions to other flexible methods that make assumptions about how to model the unlabeled data.
 
 .. figure:: img/algorithms-semisupervised.png
-    :width: 75%
-    :align: center
 
     Semi-Supervised Learning
 

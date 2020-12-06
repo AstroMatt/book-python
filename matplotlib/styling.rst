@@ -19,8 +19,6 @@ Matplotlib Style
 Figure Anatomy
 ==============
 .. figure:: img/matplotlib-figure-anatomy.png
-    :width: 75%
-    :align: center
 
     Matplotlib Figure Anatomy
 

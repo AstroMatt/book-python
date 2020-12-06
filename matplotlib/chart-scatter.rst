@@ -42,12 +42,8 @@ Markers
 * ``s`` - size
 
 .. figure:: img/matplotlib-markers-filled.png
-    :width: 75%
-    :align: center
 
 .. figure:: img/matplotlib-markers-unfilled.png
-    :width: 75%
-    :align: center
 
 .. code-block:: python
 

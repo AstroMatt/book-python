@@ -13,8 +13,6 @@ Escape Characters
     * https://en.wikipedia.org/wiki/List_of_Unicode_characters
 
 .. figure:: img/type-machine.jpg
-    :width: 75%
-    :align: center
 
     Why we have '\\r\\n' on Windows?
 

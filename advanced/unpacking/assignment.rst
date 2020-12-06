@@ -27,8 +27,6 @@ Recap
 Rationale
 =========
 .. figure:: img/unpacking-assignment,args,params.png
-    :scale: 40%
-    :align: center
 
     Unpacking and Arbitrary Number of Parameters and Arguments
 

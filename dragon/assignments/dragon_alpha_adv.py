@@ -1,11 +1,9 @@
 """
 * Assignment: Dragon (version alpha)
+* Filename: dragon_alpha.py
 * Complexity: medium
 * Lines of code: 100 lines
 * Time: 60 min, then 90 min live coding with instructor
-* Solution (please don't do this!): :download:`assignments/dragon_alpha_bad.py`
-* Solution (basic): :download:`assignments/dragon_alpha_basic.py`
-* Solution (advanced): :download:`assignments/dragon_alpha_adv.py`
 * Warning: Don't delete code, assignment will be continued
 
 English:

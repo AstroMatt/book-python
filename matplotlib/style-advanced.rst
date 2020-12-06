@@ -10,8 +10,6 @@ Label rotation
     :caption: Label rotation
 
 .. figure:: img/matplotlib-tick-rotation.png
-    :width: 75%
-    :align: center
 
     Label rotation
 
@@ -23,8 +21,6 @@ Grid
     :caption: Grid Simple
 
 .. figure:: img/matplotlib-grid-simple.png
-    :width: 75%
-    :align: center
 
     Grid Simple
 
@@ -33,8 +29,6 @@ Grid
     :caption: Grid Extra
 
 .. figure:: img/matplotlib-grid-extra.png
-    :width: 75%
-    :align: center
 
     Grid Extra
 
@@ -46,8 +40,6 @@ Trend line
     :caption: Trend line
 
 .. figure:: img/matplotlib-trendline.png
-    :width: 75%
-    :align: center
 
     Trend line
 
@@ -59,8 +51,6 @@ Error bars
     :caption: Error bars
 
 .. figure:: img/matplotlib-plt-errorbar.png
-    :width: 75%
-    :align: center
 
     Error bars
 
@@ -72,8 +62,6 @@ Colorbar
     :caption: Colorbar
 
 .. figure:: img/matplotlib-colorbar.png
-    :width: 75%
-    :align: center
 
     Colorbar
 
@@ -135,8 +123,6 @@ Single Annotation
     plt.show()
 
 .. figure:: img/style-annotations-simple.png
-    :width: 75%
-    :align: center
 
 Multiple Annotations
 --------------------
@@ -145,5 +131,3 @@ Multiple Annotations
     :caption: Multiple Annotations
 
 .. figure:: img/style-annotations-multiple.png
-    :width: 75%
-    :align: center
