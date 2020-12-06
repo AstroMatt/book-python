@@ -310,15 +310,15 @@ Tasks
 Selected Task methods:
 
     * class ``asyncio.Task(coro, *, loop=None, name=None)`` - A Future-like object that runs a Python coroutine. Not thread-safe.
-    * method ``asyncio.Task.cancel(msg=None)`` - Request the Task to be cancelled. This arranges for a CancelledError exception to be thrown into the wrapped coroutine on the next cycle of the event loop.
-    * method ``asyncio.Task.cancelled()`` - Return True if the Task is cancelled.
-    * method ``asyncio.Task.done()`` - Return True if the Task is done.
-    * method ``asyncio.Task.result()`` - Return the result of the Task. If the Task’s result isn’t yet available, this method raises a InvalidStateError exception.
-    * method ``asyncio.Task.exception()`` - Return the exception of the Task
-    * method ``asyncio.Task.add_done_callback(callback, *, context=None)`` - Add a callback to be run when the Task is done.
+    * method ``asyncio.Task.cancel(msg=None)`` - Request the Task to be cancelled. This arranges for a ``CancelledError`` exception to be thrown into the wrapped coroutine on the next cycle of the event loop.
+    * method ``asyncio.Task.cancelled()`` - Return ``True`` if the ``Task`` is cancelled.
+    * method ``asyncio.Task.done()`` - Return ``True`` if the ``Task`` is done.
+    * method ``asyncio.Task.result()`` - Return the result of the ``Task``. If the result isn't yet available, raise ``InvalidStateError``.
+    * method ``asyncio.Task.exception()`` - Return the exception of the ``Task``
+    * method ``asyncio.Task.add_done_callback(callback, *, context=None)`` - Add a callback to be run when the ``Task`` is done.
     * method ``asyncio.Task.remove_done_callback(callback)`` - Remove callback from the callbacks list.
-    * method ``asyncio.Task.set_name(value)`` - Set the name of the Task.
-    * method ``asyncio.Task.get_name()`` - Return the name of the Task.
+    * method ``asyncio.Task.set_name(value)`` - Set the name of the ``Task``.
+    * method ``asyncio.Task.get_name()`` - Return the name of the ``Task``.
 
 
 Futures
@@ -391,7 +391,7 @@ Running Tasks Concurrently
     # Result: ['a', 'b', 'c']
 
 
-Shielding From Cancellation
+Shielding from Cancellation
 ===========================
 * awaitable ``asyncio.shield(aw)``
 * Protect an awaitable object from being cancelled.
@@ -602,16 +602,16 @@ An event loop runs in a thread (typically the main thread) and executes all call
     import asyncio
 
 
-    async def func(*args, **kwargs):
+    async def work(*args, **kwargs):
         # do stuff...
         return result
 
 
-    result = asyncio.run(func(1,2,3))
+    result = asyncio.run(work(1, 2, 3))
 
+Since Python 3.7 there is ``asyncio.run()``. Before you had to ``get_event_loop()`` and then ``run_until_complete()``:
 
 .. code-block:: python
-    :caption: Before Python 3.7
 
     import asyncio
 
@@ -770,39 +770,6 @@ Exceptions:
     # total expected sleep time: 10.79 seconds
 
 
-Event
-=====
-* An asyncio event can be used to notify multiple asyncio tasks that some event has happened.
-* class ``asyncio.Event()``
-* coroutine ``wait()`` - Wait until the event is set. If the event is set, return ``True`` immediately. Otherwise block until another task calls ``set()``.
-* ``set()`` - Set the event. All tasks waiting for event to be set will be immediately awakened.
-* ``clear()`` - Clear (unset) the event. Tasks awaiting on ``wait()`` will now block until the ``set()`` method is called again.
-* ``is_set()`` - Return ``True`` if the event is set.
-
-.. code-block:: python
-
-    async def waiter(event):
-        print('waiting for it ...')
-        await event.wait()
-        print('... got it!')
-
-    async def main():
-        # Create an Event object.
-        event = asyncio.Event()
-
-        # Spawn a Task to wait until 'event' is set.
-        waiter_task = asyncio.create_task(waiter(event))
-
-        # Sleep for 1 second and set the event.
-        await asyncio.sleep(1)
-        event.set()
-
-        # Wait until the waiter task is finished.
-        await waiter_task
-
-    asyncio.run(main())
-
-
 Streams
 =======
 .. code-block:: python
@@ -848,11 +815,14 @@ Streams
 
     asyncio.run(main())
 
-Other
-=====
-* class ``asyncio.Lock()`` - An asyncio lock can be used to guarantee exclusive access to a shared resource (Mutex lock for asyncio tasks. Not thread-safe).
-* class ``asyncio.Condition(lock=None)`` - A Condition object. Not thread-safe.
-* class ``asyncio.Semaphore(value=1)`` - A semaphore manages an internal counter which is decremented by each acquire() call and incremented by each release() call. The counter can never go below zero; when acquire() finds that it is zero, it blocks, waiting until some task calls release().
+
+Synchronization Primitives
+==========================
+Mutex Lock:
+
+    * Class ``asyncio.Lock()``
+    * Can be used to guarantee exclusive access to a shared resource
+    * Not thread-safe.
 
 .. code-block:: python
 
@@ -861,6 +831,11 @@ Other
     async with lock:
         # access shared state
 
+Condition object:
+
+    * class ``asyncio.Condition(lock=None)``
+    * Not thread-safe.
+
 .. code-block:: python
 
     cond = asyncio.Condition()
@@ -868,12 +843,57 @@ Other
     async with cond:
         await cond.wait()
 
+Semaphore:
+
+    * class ``asyncio.Semaphore(value=1)``
+    * Manages an internal counter which is decremented by each ``acquire()`` call and incremented by each ``release()`` call.
+    * The counter can never go below zero.
+    * When ``acquire()`` finds that it is zero, it blocks, waiting until some task calls ``release()``.
+
 .. code-block:: python
 
     sem = asyncio.Semaphore(10)
 
     async with sem:
         # work with shared resource
+
+Event:
+
+    * class ``asyncio.Event()``
+    * Can be used to notify multiple asyncio tasks that some event has happened.
+    * coroutine ``wait()`` - Wait until the event is set. If the event is set, return ``True`` immediately. Otherwise block until another task calls ``set()``.
+    * ``set()`` - Set the event. All tasks waiting for event to be set will be immediately awakened.
+    * ``clear()`` - Clear (unset) the event. Tasks awaiting on ``wait()`` will now block until the ``set()`` method is called again.
+    * ``is_set()`` - Return ``True`` if the event is set.
+
+.. code-block:: python
+
+    import asyncio
+
+
+    async def listener(event):
+        print(f'Waiting for event')
+        await event.wait()
+        print(f'Event processed')
+
+
+    async def main():
+        myevent = asyncio.Event()
+
+        # Spawn a Task to wait until 'event' is set.
+        handler = asyncio.create_task(listener(myevent))
+
+        # Sleep for 1 second and set the event.
+        await asyncio.sleep(1)
+        myevent.set()
+
+        # Wait until processing is complete
+        await handler
+
+
+    asyncio.run(main())
+    # Waiting for event
+    # Event processed
 
 
 Debug
