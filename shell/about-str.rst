@@ -286,14 +286,6 @@ Reading Input
     # ValueError: could not convert string to float: '45,5'
 
 
-Length
-======
-.. code-block:: python
-
-    len('hello')
-    # 5
-
-
 Concatenation
 =============
 .. highlights::
@@ -341,19 +333,3 @@ Concatenation
 
     firstname + ' ' + lastname
     # Jan Twardowski
-
-
-Assignments
-===========
-
-.. literalinclude:: assignments/type_str_input.py
-    :caption: :download:`Solution <assignments/type_str_input.py>`
-    :end-before: # Solution
-
-.. literalinclude:: assignments/type_str_emoticon.py
-    :caption: :download:`Solution <assignments/type_str_emoticon.py>`
-    :end-before: # Solution
-
-.. literalinclude:: assignments/type_str_quotes.py
-    :caption: :download:`Solution <assignments/type_str_quotes.py>`
-    :end-before: # Solution

@@ -8,17 +8,16 @@
 English:
     1. Use data from "Given" section (see below)
     2. Skip comments (`#`) and empty lines
-    3. Extract from each line: ip, host and protocol and add to `result: list[dict]`
+    3. Extract from each line: ip, host and protocol and add them to `result: list[dict]`
     4. Each line must be a separate dict
-    5. Merge host names with the same IP
-    6. IPv4 protocol address is when dot (`.`) is in ip address
-    7. `result` must be list of dicts (`list[dict]`)
-    8. Compare result with "Tests" section (see below)
+    5. IPv4 protocol address is when dot (`.`) is in ip address
+    6. Merge host names with the same IP
+    7. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Pomiń komentarze (`#`) i puste linie
-    3. Wyciągnij z każdej linii: ip, host i protokół i dodaj do `result: list[dict]`
+    3. Wyciągnij z każdej linii: ip, host i protokół i dodaj je do `result: list[dict]`
     4. Każda linia ma być osobnym słownikiem
     5. Protokół IPv4 jest gdy kropka (`.`) znajduje się w adresie
     6. Scal nazwy hostów dla tego samego IP

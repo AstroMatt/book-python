@@ -13,7 +13,7 @@ English:
     5. What Python version is installed?
     6. Compare result with "Tests" section (see below)
     7. Write result (version number) in shared spreadsheet
-    8. Write `100%` in shared spreadsheet at assignment row
+    8. Write `100%` in assignment spreadsheet in row with this assignment
 
 Polish:
     1. W swoim katalogu stwórz plik `about_interpreter.py`
@@ -23,7 +23,7 @@ Polish:
     5. Jaka wersja Python jest zainstalowana?
     6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
     7. Zapisz rezultat (numer wersji) we współdzielonym arkuszu kalkulacyjnym
-    8. Zapisz `100%` we współdzielonym arkuszu kalkulacyjnym w wierszu zadania
+    8. Zapisz `100%` we arkuszu zadań w wierszu z tym zadaniem
 
 Tests:
     >>> import sys

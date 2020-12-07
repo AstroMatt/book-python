@@ -26,89 +26,29 @@ Requirements
 Assignments
 ===========
 
-About Setup IDE
----------------
-* Assignment: About Setup IDE
-* Complexity: easy
-* Lines of code: 0 lines
-* Time: 5 min
-* Filename: TODO
+.. literalinclude:: assignments/about_setup_vcs.py
+    :caption: :download:`Solution <assignments/about_setup_vcs.py>`
+    :end-before: # Solution
 
-English:
-    .. todo:: English Translation
+.. literalinclude:: assignments/about_setup_ide.py
+    :caption: :download:`Solution <assignments/about_setup_ide.py>`
+    :end-before: # Solution
 
-Polish:
-    #. Trener poda Ci link do repozytorium
-    #. Stwórz projekt w Twoim IDE wykorzystując opcję 'Create from VCS'
-    #. Kliknij "clone" i zaczekaj na pobranie repozytorium
-    #. Jeżeli PyCharm zapyta Cię o autoryzację, wybierz opcję "Use Token" i "Generate"
-    #. Po stworzeniu projektu załóż katalog gdzie będziesz przechowywał kod tworzony podczas szkolenia
+.. literalinclude:: assignments/about_setup_project.py
+    :caption: :download:`Solution <assignments/about_setup_project.py>`
+    :end-before: # Solution
 
-        * Katalog ma mieć nazwę jak Twoje imie i pierwsza litera nazwiska, np. ``JanT``, ``MarkW`` lub ``MelissaL``
-        * W nazwie katalogu nie powinno być polskich znaków diakrytycznych
-        * W nazwie katalogu nie powinno być spacji ani żadnych znaków specjalnych
+.. literalinclude:: assignments/about_setup_interpreter.py
+    :caption: :download:`Solution <assignments/about_setup_interpreter.py>`
+    :end-before: # Solution
 
-    #. WAŻNE: Już do końca szkolenia w tym katalogu będą tworzone rozwiązania do wszystkich zadań
-    #. Dzięki oddzielnym katalogom dla każdego uczestnika unikniemy konfliktów w Git
+.. literalinclude:: assignments/about_setup_doctest.py
+    :caption: :download:`Solution <assignments/about_setup_doctest.py>`
+    :end-before: # Solution
 
-About Setup Interpreter
------------------------
-* Assignment: About Setup Interpreter
-* Filename: about_interpreter.py
-* Complexity: easy
-* Lines of code: 0 lines
-* Time: 3 min
-
-English:
-    #. In your directory create file ``about_interpreter.py``
-    #. If question about adding file to GIT repository pops-up, mark checkbox "Always add" and click "Yes"
-    #. Use code from "Given" section (see below)
-    #. Run code in your IDE (right click on code -> "Run File in Python Console")
-    #. What Python version is installed?
-    #. Compare result with "Tests" section (see below)
-    #. Write result (version number) in shared spreadsheet
-
-Polish:
-    #. W swoim katalogu stwórz plik ``about_interpreter.py``
-    #. Jeżeli wyskoczy pytanie czy dodać plik do repozytorium GIT, zaznacz checkbox "Always add" i wybierz "Yes"
-    #. Użyj kodu z sekcji "Given" (patrz poniżej)
-    #. Uruchom kod swoim IDE (prawy klawisz myszy na kodzie -> "Run File in Python Console")
-    #. Jaka wersja Python jest zainstalowana?
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-    #. Zapisz rezultat (numer wersji) we współdzielonym arkuszu kalkulacyjnym
-
-Given:
-    .. code-block:: python
-
-        import sys
-        print(sys.version[:6])
-
-Tests:
-    >>> import sys
-    >>> sys.version_info > (3, 7, 0)
-    True
-
-About Setup VCS
----------------
-* Assignment: About Setup VCS
-* Filename: gitignore
-* Complexity: easy
-* Lines of code: 0 lines
-* Time: 3 min
-
-English:
-    .. todo:: English Translation
-
-Polish:
-    #. W Twoim IDE
-    #. Upewnij się, że w repozytorium jest plik ``.gitignore`` i ma zawartość
-    #. Kliknij prawym klawiszem na nazwę projektu
-    #. Z menu wybierz ``Git -> Commit Directory...``  lub użyj skrótu klawiszowego ``ctrl+k``
-    #. Wpisać opis zmian (np. Python szkolenie)
-    #. Na dole wybrać ``Commit and Push``
-    #. Jeżeli wyskoczy informacja o niekatulanym branchu i zapytanie czy odświeżyć, zaznacz checkbox "Remember the update method and update silently in future" i wybierz "Yes"
-    #. Sprawdzić Github
+.. literalinclude:: assignments/about_setup_push.py
+    :caption: :download:`Solution <assignments/about_setup_push.py>`
+    :end-before: # Solution
 
 .. figure:: img/pycharm-vsc-merge-rebase.png
 
-    Jeżeli wyskoczy informacja o odrzuceniu pusha, zaznacz checkbox "Remember the update method and update silently in future" i wybierz "Rebase"

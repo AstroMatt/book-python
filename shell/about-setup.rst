@@ -1,5 +1,3 @@
-.. _Advanced Setup:
-
 *****
 Setup
 *****
@@ -42,14 +40,13 @@ Assignments
     :caption: :download:`Solution <assignments/about_setup_interpreter.py>`
     :end-before: # Solution
 
-.. literalinclude:: assignments/about_setup_push.py
-    :caption: :download:`Solution <assignments/about_setup_push.py>`
-    :end-before: # Solution
-
 .. literalinclude:: assignments/about_setup_doctest.py
     :caption: :download:`Solution <assignments/about_setup_doctest.py>`
     :end-before: # Solution
 
+.. literalinclude:: assignments/about_setup_push.py
+    :caption: :download:`Solution <assignments/about_setup_push.py>`
+    :end-before: # Solution
+
 .. figure:: img/pycharm-vsc-merge-rebase.png
 
-    Jeżeli wyskoczy informacja o odrzuceniu pusha, zaznacz checkbox "Remember the update method and update silently in future" i wybierz "Rebase"
