@@ -67,6 +67,7 @@ Regexp
     re-greedy.rst
     re-standards.rst
 
+
 ********
 Database
 ********
@@ -76,7 +77,6 @@ Database
     :name: Database
     :numbered:
 
-    database-dataexploration.rst
     database-sql.rst
     database-sqlinjection.rst
     database-sqlite.rst
