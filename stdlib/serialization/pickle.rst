@@ -235,64 +235,6 @@ Examples
 Assignments
 ===========
 
-Pickle Serialization
---------------------
-* Assignment: Pickle Serialization
-* Filename: :download:`assignments/serialization_pickle_dump_load.py`
-* Complexity: easy
-* Lines of code: 7 lines
-* Time: 7 min
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Using ``pickle`` save data structure to file
-    #. Recreate data structure from file
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Za pomocą ``pickle`` zapisz strukturę danych do pliku
-    #. Odtwórz strukturę danych na podstawie danych z pliku
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Given:
-    .. code-block:: python
-
-        class Astronaut:
-            def __init__(self, name, missions=()):
-                self.name = name
-                self.missions = missions
-
-            def __repr__(self):
-                return f'\n\nAstronaut(name="{self.name}", missions={self.missions})'
-
-
-        class Mission:
-            def __init__(self, year, name):
-                self.year = year
-                self.name = name
-
-            def __repr__(self):
-                return f'\n\tMission(year={self.year}, name="{self.name}")'
-
-
-        CREW = [
-            Astronaut('Jan Twardowski', missions=(
-                Mission(1969, 'Apollo 18'),
-                Mission(2024, 'Artemis 3'))),
-
-            Astronaut('Mark Watney', missions=(
-                Mission(2035, 'Ares 3'))),
-
-            Astronaut('Melissa Lewis'),
-        ]
-
-
-Tests:
-    >>> result
-    [Astronaut(name='Jan Twardowski', missions=[
-         Mission(year=1969, name='Apollo 11'),
-         Mission(year=2024, name='Artemis 3')]),
-     Astronaut(name='Mark Watney', missions=[
-         Mission(year=2035, name='Ares 3')]),
-     Astronaut(name='Melissa Lewis', missions=[])]
+.. literalinclude:: assignments/serialization_pickle_dump_load.py
+    :caption: :download:`Solution <assignments/serialization_pickle_dump_load.py>`
+    :end-before: # Solution

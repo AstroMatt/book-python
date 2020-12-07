@@ -16,6 +16,8 @@ English:
         c. Use `;` to separate missions
         d. Use Unix `\n` newline
         e. Sort fieldnames
+    6. Compare result with "Tests" section (see below)
+
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Za pomocą `csv.DictWriter()` zapisz kontakty z książki adresowej w pliku
@@ -27,6 +29,7 @@ Polish:
         c. Użyj `;` do oddzielenia missions
         d. Użyj zakończenia linii Unix `\n`
         e. Posortuj fieldnames
+    6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
     >>> result = open(FILE).read()

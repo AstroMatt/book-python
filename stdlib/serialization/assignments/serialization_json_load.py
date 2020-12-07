@@ -10,12 +10,14 @@ English:
     2. Read data from `FILE`
     3. Convert data to ``result: list[tuple]``
     4. Do not add header as a first line
+    5. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Odczytaj dane z pliku `FILE`
     3. Przekonwertuj dane do ``result: list[tuple]``
     4. Nie dodawaj nagłówka jako pierwsza linia
+    5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
     >>> result  # doctest: +NORMALIZE_WHITESPACE

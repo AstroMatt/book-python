@@ -13,6 +13,7 @@ English:
         b. Use `,` to separate columns
         c. Use `utf-8` encoding
         d. Use Unix `\n` newline
+    4. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
@@ -22,6 +23,7 @@ Polish:
         b. Użyj `,` do oddzielenia kolumn
         c. Użyj kodowania `utf-8`
         d. Użyj zakończenia linii Unix `\n`
+    4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
     >>> result = open(FILE).read()

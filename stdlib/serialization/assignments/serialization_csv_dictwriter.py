@@ -6,28 +6,29 @@
 * Time: 7 min
 
 English:
-    #. Use data from "Given" section (see below)
-    #. Using `csv.DictWriter()` save `DATA` to file
-    #. Open file in your spreadsheet program like Microsoft Excel / Libre Office / Numbers etc.
-    #. Open file in simple in your IDE and simple text editor (like Notepad, vim, gedit)
-    #. Compare result with "Tests" section (see below)
-    #. Non functional requirements:
-        * All fields must be enclosed by double quote `"` character
-        * Use `,` to separate columns
-        * Use `utf-8` encoding
-        * Use Unix `\n` newline
+    1. Use data from "Given" section (see below)
+    2. Using `csv.DictWriter()` save `DATA` to file
+    3. Open file in your spreadsheet program like Microsoft Excel / Libre Office / Numbers etc.
+    4. Open file in simple in your IDE and simple text editor (like Notepad, vim, gedit)
+    5. Non functional requirements:
+        a. All fields must be enclosed by double quote `"` character
+        b. Use `,` to separate columns
+        c. Use `utf-8` encoding
+        d. Use Unix `\n` newline
+    6. Compare result with "Tests" section (see below)
 
 Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Za pomocą `csv.DictWriter()` zapisz `DATA` do pliku
-    #. Spróbuj otworzyć plik w arkuszu kalkulacyjnym tj. Microsoft Excel / Libre Office / Numbers itp
-    #. Spróbuj otworzyć plik w IDE i prostym edytorze tekstu tj. Notepad, vim lub gedit
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-    #. Wymagania niefunkcjonalne:
-        * Wszystkie pola muszą być otoczone znakiem cudzysłowu `"`
-        * Użyj `,` do oddzielenia kolumn
-        * Użyj kodowania `utf-8`
-        * Użyj zakończenia linii Unix `\n`
+    1. Użyj danych z sekcji "Given" (patrz poniżej)
+    2. Za pomocą `csv.DictWriter()` zapisz `DATA` do pliku
+    3. Spróbuj otworzyć plik w arkuszu kalkulacyjnym tj. Microsoft Excel / Libre Office / Numbers itp
+    4. Spróbuj otworzyć plik w IDE i prostym edytorze tekstu tj. Notepad, vim lub gedit
+    5. Wymagania niefunkcjonalne:
+        a. Wszystkie pola muszą być otoczone znakiem cudzysłowu `"`
+        b. Użyj `,` do oddzielenia kolumn
+        c. Użyj kodowania `utf-8`
+        d. Użyj zakończenia linii Unix `\n`
+    6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+
 Tests:
     >>> open(FILE).read()
     "firstname","lastname"

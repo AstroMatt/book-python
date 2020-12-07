@@ -10,24 +10,24 @@ English:
     2. Using `csv.DictWriter()` write variable schema data to CSV file
     3. `fieldnames` must be automatically generated from `DATA`
     4. `fieldnames` must always be in the same order
-    5. Compare result with "Tests" section (see below)
-    6. Non functional requirements:
+    5. Non functional requirements:
         a. All fields must be enclosed by double quote `"` character
         b. Use `;` to separate columns
         c. Use `utf-8` encoding
         d. Use Unix `\n` newline
+    6. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Za pomocą `csv.DictWriter()` zapisz do pliku CSV dane o zmiennej strukturze
     3. `fieldnames` musi być generowane automatycznie na podstawie `DATA`
     4. `fieldnames` ma być zawsze w takiej samej kolejności
-    5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-    6. Wymagania niefunkcjonalne:
+    5. Wymagania niefunkcjonalne:
         a. Wszystkie pola muszą być otoczone znakiem cudzysłowu `"`
         b. Użyj `,` do oddzielenia kolumn
         c. Użyj kodowania `utf-8`
         d. Użyj zakończenia linii Unix `\n`
+    6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
     >>> result = open(FILE).read()

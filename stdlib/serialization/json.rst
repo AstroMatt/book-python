@@ -18,36 +18,32 @@ JSON Syntax
 .. code-block:: json
     :caption: Example JSON file
 
-    [
-        {"sepalLength": 5.1, "sepalWidth": 3.5, "petalLength": 1.4, "petalWidth": 0.2, "species": "setosa"},
-        {"sepalLength": 4.9, "sepalWidth": 3.0, "petalLength": 1.4, "petalWidth": 0.2, "species": "setosa"},
-        {"sepalLength": false, "sepalWidth": true, "petalLength": null, "petalWidth": 0.2, "species": null}
-    ]
+    [{"sepalLength": 5.1, "sepalWidth": 3.5, "petalLength": 1.4, "petalWidth": 0.2, "species": "setosa"},
+     {"sepalLength": 4.9, "sepalWidth": 3.0, "petalLength": 1.4, "petalWidth": 0.2, "species": "setosa"},
+     {"sepalLength": false, "sepalWidth": true, "petalLength": null, "petalWidth": 0.2, "species": null}]
 
 .. code-block:: json
     :caption: JSON or Python ``list[dict]``?
 
-    [
-        {"firstname": "Jan", "lastname": "Twardowski", "addresses": [
-            {"street": "Kamienica Pod św. Janem Kapistranem", "city": "Kraków", "post_code": "31-008", "region": "Małopolskie", "country": "Poland"}]},
+    [{"firstname": "Jan", "lastname": "Twardowski", "addresses": [
+        {"street": "Kamienica Pod św. Janem Kapistranem", "city": "Kraków", "post_code": "31-008", "region": "Małopolskie", "country": "Poland"}]},
 
-        {"firstname": "José", "lastname": "Jiménez", "addresses": [
-            {"street": "2101 E NASA Pkwy", "city": "Houston", "post_code": 77058, "region": "Texas", "country": "USA"},
-            {"street": "", "city": "Kennedy Space Center", "post_code": 32899, "region": "Florida", "country": "USA"}]},
+     {"firstname": "José", "lastname": "Jiménez", "addresses": [
+        {"street": "2101 E NASA Pkwy", "city": "Houston", "post_code": 77058, "region": "Texas", "country": "USA"},
+        {"street": "", "city": "Kennedy Space Center", "post_code": 32899, "region": "Florida", "country": "USA"}]},
 
-        {"firstname": "Mark", "lastname": "Watney", "addresses": [
-            {"street": "4800 Oak Grove Dr", "city": "Pasadena", "post_code": 91109, "region": "California", "country": "USA"},
-            {"street": "2825 E Ave P", "city": "Palmdale", "post_code": 93550, "region": "California", "country": "USA"}]},
+     {"firstname": "Mark", "lastname": "Watney", "addresses": [
+        {"street": "4800 Oak Grove Dr", "city": "Pasadena", "post_code": 91109, "region": "California", "country": "USA"},
+        {"street": "2825 E Ave P", "city": "Palmdale", "post_code": 93550, "region": "California", "country": "USA"}]},
 
-        {"firstname": "Иван", "lastname": "Иванович", "addresses": [
-            {"street": "", "city": "Космодро́м Байкону́р", "post_code": "", "region": "Кызылординская область", "country": "Қазақстан"},
-            {"street": "", "city": "Звёздный городо́к", "post_code": 141160, "region": "Московская область", "country": "Россия"}]},
+     {"firstname": "Иван", "lastname": "Иванович", "addresses": [
+        {"street": "", "city": "Космодро́м Байкону́р", "post_code": "", "region": "Кызылординская область", "country": "Қазақстан"},
+        {"street": "", "city": "Звёздный городо́к", "post_code": 141160, "region": "Московская область", "country": "Россия"}]},
 
-        {"firstname": "Melissa", "lastname": "Lewis", "addresses": []},
+     {"firstname": "Melissa", "lastname": "Lewis", "addresses": []},
 
-        {"firstname": "Alex", "lastname": "Vogel", "addresses": [
-            {"street": "Linder Hoehe", "city": "Köln", "post_code": 51147, "region": "North Rhine-Westphalia", "country": "Germany"}]}
-    ]
+     {"firstname": "Alex", "lastname": "Vogel", "addresses": [
+        {"street": "Linder Hoehe", "city": "Köln", "post_code": 51147, "region": "North Rhine-Westphalia", "country": "Germany"}]}]
 
 
 Mapping to JSON
@@ -61,12 +57,10 @@ Mapping to JSON
     import json
 
 
-    DATA = {
-        'firstname': 'Jan',
-        'lastname': 'Twardowski'}
+    DATA = {'firstname': 'Jan',
+            'lastname': 'Twardowski'}
 
-    result = json.dumps(DATA)
-    print(result)
+    json.dumps(DATA)
     # '{"firstname": "Jan", "lastname": "Twardowski"}'
 
 .. code-block:: python
@@ -77,8 +71,7 @@ Mapping to JSON
 
     DATA = '{"firstname": "Jan", "lastname": "Twardowski"}'
 
-    result = json.loads(DATA)
-    print(result)
+    json.loads(DATA)
     # {'firstname': 'Jan',
     #  'lastname': 'Twardowski'}
 
@@ -98,8 +91,7 @@ Sequence to JSON
             {'firstname': 'Melissa', 'lastname': 'Lewis'},
             {'firstname': 'Mark', 'lastname': 'Watney'}]
 
-    result = json.dumps(DATA)
-    print(result)
+    json.dumps(DATA)
     # [{"firstname": "Jan", "lastname": "Twardowski"},
     #  {"firstname": "Melissa", "lastname": "Lewis"},
     #  {"firstname": "Mark", "lastname": "Watney"}]
@@ -112,8 +104,7 @@ Sequence to JSON
 
     DATA = '[{"firstname": "Jan", "lastname": "Twardowski"}, {"firstname": "Melissa", "lastname": "Lewis"}, {"firstname": "Mark", "lastname": "Watney"}]'
 
-    result = json.loads(DATA)
-    pprint(result)
+    json.loads(DATA)
     # [{'firstname': 'Jan', 'lastname': 'Twardowski'},
     #  {'firstname': 'Melissa', 'lastname': 'Lewis'},
     #  {'firstname': 'Mark', 'lastname': 'Watney'}]
@@ -128,8 +119,7 @@ Sequence to JSON
             (5.1, 3.5, 1.4, 0.2, 'setosa'),
             (5.7, 2.8, 4.1, 1.3, 'versicolor')]
 
-    result = json.dumps(DATA)
-    print(result)
+    json.dumps(DATA)
     # [["Sepal length", "Sepal width", "Petal length", "Petal width", "Species"],
     #  [5.8, 2.7, 5.1, 1.9, "virginica"],
     #  [5.1, 3.5, 1.4, 0.2, "setosa"],
@@ -143,8 +133,7 @@ Sequence to JSON
 
     DATA = '[["Sepal length", "Sepal width", "Petal length", "Petal width", "Species"], [5.8, 2.7, 5.1, 1.9, "virginica"], [5.1, 3.5, 1.4, 0.2, "setosa"], [5.7, 2.8, 4.1, 1.3, "versicolor"]]'
 
-    result = json.loads(DATA)
-    pprint(result)
+    json.loads(DATA)
     # [['Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'],
     #  [5.8, 2.7, 5.1, 1.9, 'virginica'],
     #  [5.1, 3.5, 1.4, 0.2, 'setosa'],
@@ -163,9 +152,8 @@ Write JSON File
 
 
     FILE = r'_temporary.json'
-    DATA = {
-        'firstname': 'Jan',
-        'lastname': 'Twardowski'}
+    DATA = {'firstname': 'Jan',
+            'lastname': 'Twardowski'}
 
     with open(FILE, mode='w') as file:
         json.dump(DATA, file)
@@ -190,6 +178,7 @@ Read JSON File
     with open(FILE) as file:
         result = json.load(file)
 
+    result
     # {'firstname': 'Jan', 'lastname': 'Twardowski'}
 
 
@@ -202,13 +191,11 @@ Datetime to JSON
     import json
 
 
-    DATA = {
-        'name': 'Jan Twardowski',
-        'date': date(1961, 4, 12),
-        'datetime': datetime(1969, 7, 21, 2, 56, 15),
-    }
+    DATA = {'name': 'Jan Twardowski',
+            'date': date(1961, 4, 12),
+            'datetime': datetime(1969, 7, 21, 2, 56, 15)}
 
-    result = json.dumps(DATA)
+    json.dumps(DATA)
     # Traceback (most recent call last):
     # TypeError: Object of type date is not JSON serializable
 
@@ -219,11 +206,9 @@ Datetime to JSON
     import json
 
 
-    DATA = {
-        'name': 'Jan Twardowski',
-        'date': date(1961, 4, 12),
-        'datetime': datetime(1969, 7, 21, 2, 56, 15),
-    }
+    DATA = {'name': 'Jan Twardowski',
+            'date': date(1961, 4, 12),
+            'datetime': datetime(1969, 7, 21, 2, 56, 15)}
 
 
     class JSONDatetimeEncoder(json.JSONEncoder):
@@ -330,8 +315,7 @@ Python Object to JSON
             return result
 
 
-    result = json.dumps(CREW, cls=JSONObjectEncoder, sort_keys=True, indent=2)
-    print(result)
+    json.dumps(CREW, cls=JSONObjectEncoder, sort_keys=True, indent=2)
     # [{"__class_name__": "Astronaut", "name": "Melissa Lewis", "missions": []},
     #  {"__class_name__": "Astronaut", "name": "Mark Watney", "missions": [
     #       {"__class_name__": "Mission", "name": "Ares 3", "year": 2035}]},
@@ -382,8 +366,7 @@ JSON to Python Object
             return cls(**obj)
 
 
-    result = json.loads(DATA, cls=JSONObjectDecoder)
-    print(result)
+    json.loads(DATA, cls=JSONObjectDecoder)
     # [
     # Astronaut(name="Melissa Lewis", missions=[]),
     # Astronaut(name="Mark Watney", missions=
@@ -449,117 +432,10 @@ Assignments
     :caption: :download:`Solution <assignments/serialization_json_datetime.py>`
     :end-before: # Solution
 
+.. literalinclude:: assignments/serialization_json_object.py
+    :caption: :download:`Solution <assignments/serialization_json_object.py>`
+    :end-before: # Solution
 
-Serialization JSON Datetime
----------------------------
-* Assignment: Serialization JSON Datetime
-* Filename: serialization_json_datetime.py
-* Complexity: easy
-* Lines of code: 10 lines
-* Time: 13 min
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Save data to file in JSON format
-    #. Read data from file
-    #. Recreate data structure
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Zapisz dane do pliku w formacie JSON
-    #. Odczytaj dane z pliku
-    #. Odtwórz strukturę danych
-
-Given:
-    .. code-block:: python
-
-        from datetime import datetime, date
-
-
-        DATA = {
-            "astronaut": {
-                "date": date(1961, 4, 12),
-                "person": "mark.watney@nasa.gov"
-            },
-            "flight": [
-                {"datetime": datetime(1969, 7, 21, 2, 56, 15), "action": "landing"}
-            ]
-        }
-
-Serialization JSON Object
--------------------------
-* Assignment: Serialization JSON Object
-* Filename: :download:`assignments/serialization_json_object.py`
-* Complexity: medium
-* Lines of code: 15 lines
-* Time: 13 min
-English:
-    #. Use data from "Given" section (see below)
-    #. Convert from JSON format to Python
-    #. Create classes ``Setosa``, ``Virginica``, ``Versicolor`` representing data
-    #. Reading file create instances of those classes based on value in field "species"
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Przekonwertuj dane z JSON do Python
-    #. Stwórz klasy ``Setosa``, ``Virginica``, ``Versicolor`` reprezentujące dane
-    #. Czytając plik twórz obiekty powyższych klas w zależności od wartości pola "species"
-
-Given:
-    .. code-block:: json
-
-        [
-            {"sepalLength": 5.0, "sepalWidth": 3.6, "petalLength": 1.4, "petalWidth": 0.2, "species": "setosa"},
-            {"sepalLength": 4.9, "sepalWidth": 3.1, "petalLength": 1.5, "petalWidth": 0.1, "species": "setosa"},
-            {"sepalLength": 4.9, "sepalWidth": 3.0, "petalLength": 1.4, "petalWidth": 0.2, "species": "setosa"},
-            {"sepalLength": 7.0, "sepalWidth": 3.2, "petalLength": 4.7, "petalWidth": 1.4, "species": "versicolor"},
-            {"sepalLength": 4.6, "sepalWidth": 3.1, "petalLength": 1.5, "petalWidth": 0.2, "species": "setosa"},
-            {"sepalLength": 6.5, "sepalWidth": 3.0, "petalLength": 5.8, "petalWidth": 2.2, "species": "virginica"},
-            {"sepalLength": 7.1, "sepalWidth": 3.0, "petalLength": 5.9, "petalWidth": 2.1, "species": "virginica"},
-            {"sepalLength": 6.7, "sepalWidth": 2.5, "petalLength": 5.8, "petalWidth": 1.8, "species": "virginica"},
-            {"sepalLength": 5.2, "sepalWidth": 2.7, "petalLength": 3.9, "petalWidth": 1.4, "species": "versicolor"},
-            {"sepalLength": 5.0, "sepalWidth": 3.4, "petalLength": 1.5, "petalWidth": 0.2, "species": "setosa"},
-            {"sepalLength": 4.9, "sepalWidth": 2.4, "petalLength": 3.3, "petalWidth": 1.0, "species": "versicolor"},
-            {"sepalLength": 6.5, "sepalWidth": 2.8, "petalLength": 4.6, "petalWidth": 1.5, "species": "versicolor"},
-            {"sepalLength": 5.4, "sepalWidth": 3.9, "petalLength": 1.7, "petalWidth": 0.4, "species": "setosa"},
-            {"sepalLength": 6.3, "sepalWidth": 3.3, "petalLength": 4.7, "petalWidth": 1.6, "species": "versicolor"},
-            {"sepalLength": 6.4, "sepalWidth": 3.2, "petalLength": 4.5, "petalWidth": 1.5, "species": "versicolor"},
-            {"sepalLength": 6.6, "sepalWidth": 2.9, "petalLength": 4.6, "petalWidth": 1.3, "species": "versicolor"},
-            {"sepalLength": 5.8, "sepalWidth": 2.7, "petalLength": 5.1, "petalWidth": 1.9, "species": "virginica"},
-            {"sepalLength": 6.3, "sepalWidth": 2.9, "petalLength": 5.6, "petalWidth": 1.8, "species": "virginica"},
-            {"sepalLength": 7.6, "sepalWidth": 3.0, "petalLength": 6.6, "petalWidth": 2.1, "species": "virginica"},
-            {"sepalLength": 5.1, "sepalWidth": 3.5, "petalLength": 1.4, "petalWidth": 0.2, "species": "setosa"},
-            {"sepalLength": 7.3, "sepalWidth": 2.9, "petalLength": 6.3, "petalWidth": 1.8, "species": "virginica"},
-            {"sepalLength": 4.7, "sepalWidth": 3.2, "petalLength": 1.3, "petalWidth": 0.2, "species": "setosa"},
-            {"sepalLength": 6.9, "sepalWidth": 3.1, "petalLength": 4.9, "petalWidth": 1.5, "species": "versicolor"},
-            {"sepalLength": 7.2, "sepalWidth": 3.6, "petalLength": 6.1, "petalWidth": 2.5, "species": "virginica"},
-            {"sepalLength": 4.4, "sepalWidth": 2.9, "petalLength": 1.4, "petalWidth": 0.2, "species": "setosa"},
-            {"sepalLength": 5.5, "sepalWidth": 2.3, "petalLength": 4.0, "petalWidth": 1.3, "species": "versicolor"},
-            {"sepalLength": 4.6, "sepalWidth": 3.4, "petalLength": 1.4, "petalWidth": 0.3, "species": "setosa"},
-            {"sepalLength": 6.3, "sepalWidth": 3.3, "petalLength": 6.0, "petalWidth": 2.5, "species": "virginica"},
-            {"sepalLength": 4.9, "sepalWidth": 2.5, "petalLength": 4.5, "petalWidth": 1.7, "species": "virginica"},
-            {"sepalLength": 5.7, "sepalWidth": 2.8, "petalLength": 4.5, "petalWidth": 1.3, "species": "versicolor"}
-        ]
-
-Serialization JSON HTTP
------------------------
-* Assignment: Serialization JSON HTTP
-* Filename: :download:`assignments/serialization_json_http.py`
-* Complexity: hard
-* Lines of code: 15 lines
-* Time: 13 min
-
-English:
-    #. Use ``requests`` library (requires installation)
-    #. Download data from https://api.github.com/users
-    #. Model data as class ``User``
-    #. Iterate over records and create instances of this class
-    #. Collect all instances to one list
-
-Polish:
-    #. Użyj biblioteki ``requests`` (wymagana instalacja)
-    #. Pobierz dane z https://api.github.com/users
-    #. Zamodeluj dane za pomocą klasy ``User``
-    #. Iterując po rekordach twórz instancje tej klasy
-    #. Zbierz wszystkie instancje do jednej listy
-
+.. literalinclude:: assignments/serialization_json_http.py
+    :caption: :download:`Solution <assignments/serialization_json_http.py>`
+    :end-before: # Solution

@@ -739,42 +739,10 @@ Example 3
 Assignments
 ===========
 
-XML Parsing
------------
-* Assignment: XML Parsing
-* Filename: :download:`assignments/xml_parse.py`
-* Complexity: easy
-* Lines of code: 20 lines
-* Time: 21 min
+.. literalinclude:: assignments/serialization_xml_parse.py
+    :caption: :download:`Solution <assignments/serialization_xml_parse.py>`
+    :end-before: # Solution
 
-English:
-    #. Use data from "Given" section (see below)
-    #. Convert input data to ``list[dict]``
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Przekonwertuj dane wejściowe do ``list[dict]``
-
-Given:
-    .. literalinclude:: data/xml_plants.xml
-        :language: xml
-
-XSLT Transformation
--------------------
-* Assignment: XSLT Transformation
-* Filename: :download:`assignments/xml_xslt.py`
-* Complexity: medium
-* Lines of code: 5 lines
-* Time: 13 min
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Convert input data to ``list[dict]``
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Przekonwertuj dane wejściowe do ``list[dict]``
-
-Given:
-    .. literalinclude:: data/xml_transform.xml
-        :language: xml
+.. literalinclude:: assignments/serialization_xml_xslt.py
+    :caption: :download:`Solution <assignments/serialization_xml_xslt.py>`
+    :end-before: # Solution

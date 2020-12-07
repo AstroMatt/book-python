@@ -9,23 +9,23 @@ English:
     1. Use data from "Given" section (see below)
     2. Convert `DATA` to `list[dict]`
     3. Using `csv.DictWriter()` save `DATA` to file
-    4. Compare result with "Tests" section (see below)
-    5. Non functional requirements:
+    4. Non functional requirements:
         a. Do not use quotes in output CSV file
         b. Use `,` to separate columns
         c. Use `utf-8` encoding
         d. Use Unix `\n` newline
+    5. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Przekonwertuj `DATA` do `list[dict]`
     3. Za pomocą `csv.DictWriter()` zapisz `DATA` do pliku
-    4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-    5. Wymagania niefunkcjonalne:
+    4. Wymagania niefunkcjonalne:
         a. Nie używaj cudzysłowów w wynikowym pliku CSV
         b. Użyj `,` do oddzielenia kolumn
         c. Użyj kodowania `utf-8`
         d. Użyj zakończenia linii Unix `\n`
+    5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
     >>> result = open(FILE).read()

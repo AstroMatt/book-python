@@ -7,22 +7,22 @@
 * Time: 7 min
 
 English:
-    #. Use data from "Given" section (see below)
-    #. Using `csv.DictReader` read the `FILE` content
-    #. Use explicit `encoding`, `delimiter` and `quotechar`
-    #. Replace column names to `FIELDNAMES`
-    #. Skip the first line (header)
-    #. Print rows with data
-    #. Compare result with "Tests" section (see below)
+    1. Use data from "Given" section (see below)
+    2. Using `csv.DictReader` read the `FILE` content
+    3. Use explicit `encoding`, `delimiter` and `quotechar`
+    4. Replace column names to `FIELDNAMES`
+    5. Skip the first line (header)
+    6. Print rows with data
+    7. Compare result with "Tests" section (see below)
 
 Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Korzystając z `csv.DictReader` wczytaj zawartość pliku `FILE`
-    #. Podaj jawnie `encoding`, `delimiter` oraz `quotechar`
-    #. Podmień nazwy kolumn na `FIELDNAMES`
-    #. Pomiń pierwszą linię (nagłówek)
-    #. Wypisz wiersze z danymi
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+    1. Użyj danych z sekcji "Given" (patrz poniżej)
+    2. Korzystając z `csv.DictReader` wczytaj zawartość pliku `FILE`
+    3. Podaj jawnie `encoding`, `delimiter` oraz `quotechar`
+    4. Podmień nazwy kolumn na `FIELDNAMES`
+    5. Pomiń pierwszą linię (nagłówek)
+    6. Wypisz wiersze z danymi
+    7. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
     >>> type(result)

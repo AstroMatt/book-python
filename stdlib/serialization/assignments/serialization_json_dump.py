@@ -58,6 +58,7 @@ DATA = [
     (4.9, 3.0, 1.4, 0.2, 'setosa'),
 ]
 
+
 # Solution
 header, *data = DATA
 
