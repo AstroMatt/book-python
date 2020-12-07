@@ -9,6 +9,17 @@ About
 
     about-setup.rst
     about-entrytest.rst
+
+******
+String
+******
+.. toctree::
+    :maxdepth: 1
+    :caption: String
+    :name: String
+    :numbered:
+
+
     about-str.rst
     about-str-methods.rst
 
@@ -23,10 +34,6 @@ Datetime
 
     datetime-datetime.rst
     datetime-parse,format.rst
-    datetime-timedelta.rst
-    datetime-timestamp.rst
-    datetime-timezones.rst
-    datetime-utils.rst
 
 
 *************
@@ -38,11 +45,9 @@ Serialization
     :name: Serialization
     :numbered:
 
-    serialization-csv.rst
     serialization-json.rst
+    serialization-csv.rst
     serialization-relations.rst
-    serialization-pickle.rst
-    serialization-xml.rst
 
 
 ******
@@ -91,7 +96,6 @@ Functions
     :name: Functions
     :numbered:
 
-    func-doctest.rst
     func-comprehensions.rst
     func-generators1.rst
     func-generators2.rst
@@ -99,7 +103,6 @@ Functions
     func-unpacking.rst
     func-arguments.rst
     func-parameters.rst
-    func-assignmentexpression.rst
 
 
 ****
@@ -185,25 +188,8 @@ Performance
     performance-compilers.rst
     performance-microbenchmarking.rst
     performance-profiling.rst
-    performance-collections.rst
     performance-cmodules.rst
     performance-ctypes.rst
-
-
-***********
-Concurrency
-***********
-.. toctree::
-    :maxdepth: 1
-    :caption: Concurrency
-    :name: Concurrency
-    :numbered:
-
-    concurrency-models.rst
-    concurrency-queues.rst
-    concurrency-multiprocessing.rst
-    concurrency-threading.rst
-    concurrency-async.rst
 
 
 ************
