@@ -157,10 +157,10 @@ Assignments
 Virtualenv
 ----------
 * Assignment: Virtualenv
+* Filename: :download:`assignments/venv.py`
 * Complexity: easy
 * Lines of code: 0 lines
 * Time: 2 min
-* Filename: :download:`assignments/venv.py`
 
 English:
     #. Create ``venv``

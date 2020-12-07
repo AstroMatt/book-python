@@ -318,10 +318,10 @@ Assignments
 Argument parsing
 ----------------
 * Assignment: Argument parsing
+* Filename: :download:`assignments/argparse_avg.py`
 * Complexity: easy
 * Lines of code: 5 lines
 * Time: 13 min
-* Filename: :download:`assignments/argparse_avg.py`
 
 English:
     .. todo:: English Translation

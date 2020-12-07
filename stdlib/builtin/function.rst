@@ -349,10 +349,10 @@ Assignments
 Average
 -------
 * Assignment: Average
+* Filename: :download:`assignments/builtin_average.py`
 * Complexity: easy
 * Lines of code: 12 lines
 * Time: 13 min
-* Filename: :download:`assignments/builtin_average.py`
 
 English:
     #. Use data from "Given" section (see below)

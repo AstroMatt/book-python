@@ -8,10 +8,10 @@ Stdlib Exit Test
 Exit Test Encoder
 =================
 * Assignment: Exit Test Encoder
+* Filename: exit_test_encoder.py
 * Complexity: medium
 * Lines of code: 13 lines
 * Time: 13 min
-* Filename: exit_test_encoder.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -98,10 +98,10 @@ Tests:
 Exit Test Passwd
 ================
 * Assignment: Exit Test Passwd
+* Filename: exit_test_passwd.py
 * Complexity: medium
 * Lines of code: 100 lines
 * Time: 21 min
-* Filename: exit_test_passwd.py
 
 English:
     #. Use data from "Given" section (see below)

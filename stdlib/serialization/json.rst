@@ -437,102 +437,26 @@ Pretty Printing JSON
 Assignments
 ===========
 
-Serialization JSON Dump
------------------------
-* Assignment: Serialization JSON Dump
-* Complexity: easy
-* Lines of code: 8 lines
-* Time: 13 min
-* Filename: :download:`assignments/serialization_json_dump.py`
+.. literalinclude:: assignments/serialization_json_dump.py
+    :caption: :download:`Solution <assignments/serialization_json_dump.py>`
+    :end-before: # Solution
 
-English:
-    #. Use data from "Given" section (see below)
-    #. Extract from input a header and data
-    #. Create ``result: list[dict]``
+.. literalinclude:: assignments/serialization_json_load.py
+    :caption: :download:`Solution <assignments/serialization_json_load.py>`
+    :end-before: # Solution
 
-        * key: name from the header
-        * value: measurement or species
+.. literalinclude:: assignments/serialization_json_datetime.py
+    :caption: :download:`Solution <assignments/serialization_json_datetime.py>`
+    :end-before: # Solution
 
-    #. Write structure to file ``iris_serialize.json`` in JSON format
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Z danych wydziel nagłówek i pomiary
-    #. Wygeneruj ``result: list[dict]``
-
-        * klucz: nazwa z nagłówka
-        * wartość: wyniki pomiarów lub gatunek
-
-    #. Zapisz strukturę do pliku ``iris_serialize.json`` w formacie JSON
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Given:
-    .. code-block:: python
-
-        DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
-                (5.8, 2.7, 5.1, 1.9, 'virginica'),
-                (5.1, 3.5, 1.4, 0.2, 'setosa'),
-                (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-                (6.3, 2.9, 5.6, 1.8, 'virginica'),
-                (6.4, 3.2, 4.5, 1.5, 'versicolor'),
-                (4.7, 3.2, 1.3, 0.2, 'setosa'),
-                (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-                (7.6, 3.0, 6.6, 2.1, 'virginica'),
-                (4.9, 3.0, 1.4, 0.2, 'setosa'),
-                (4.9, 2.5, 4.5, 1.7, 'virginica'),
-                (7.1, 3.0, 5.9, 2.1, 'virginica'),
-                (4.6, 3.4, 1.4, 0.3, 'setosa'),
-                (5.4, 3.9, 1.7, 0.4, 'setosa'),
-                (5.7, 2.8, 4.5, 1.3, 'versicolor'),
-                (5.0, 3.6, 1.4, 0.3, 'setosa'),
-                (5.5, 2.3, 4.0, 1.3, 'versicolor'),
-                (6.5, 3.0, 5.8, 2.2, 'virginica'),
-                (6.5, 2.8, 4.6, 1.5, 'versicolor'),
-                (6.3, 3.3, 6.0, 2.5, 'virginica'),
-                (6.9, 3.1, 4.9, 1.5, 'versicolor'),
-                (4.6, 3.1, 1.5, 0.2, 'setosa')]
-
-Tests:
-    >>> result  # doctest: +NORMALIZE_WHITESPACE
-    [{'Sepal length': 5.8, 'Sepal width': 2.7, 'Petal length': 5.1, 'Petal width': 1.9, 'Species': 'virginica'},
-     {'Sepal length': 5.1, 'Sepal width': 3.5, 'Petal length': 1.4, 'Petal width': 0.2, 'Species': 'setosa'},
-     {'Sepal length': 5.7, 'Sepal width': 2.8, 'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
-     ...]
-
-Serialization JSON Load
------------------------
-* Assignment: Serialization JSON Load
-* Complexity: easy
-* Lines of code: 8 lines
-* Time: 13 min
-* Filename: :download:`assignments/serialization_json_load.py`
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Save input data to "iris_deserialize.json" file
-    #. Read file and print data in ``list[tuple]`` format
-    #. First line must be a header
-    #. Other lines must contain data
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Zapisz dane wejściowe do pliku "iris_deserialize.json"
-    #. Odczytaj dane z pliku, i wyświetl je w formacie ``list[tuple]``
-    #. Pierwsza linijka ma zawierać nagłówek
-    #. Kolejne linie mają mieć dane
-
-Given:
-    .. literalinclude:: data/iris.json
-        :language: json
 
 Serialization JSON Datetime
 ---------------------------
 * Assignment: Serialization JSON Datetime
+* Filename: serialization_json_datetime.py
 * Complexity: easy
 * Lines of code: 10 lines
 * Time: 13 min
-* Filename: :download:`assignments/serialization_json_datetime.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -565,11 +489,10 @@ Given:
 Serialization JSON Object
 -------------------------
 * Assignment: Serialization JSON Object
+* Filename: :download:`assignments/serialization_json_object.py`
 * Complexity: medium
 * Lines of code: 15 lines
 * Time: 13 min
-* Filename: :download:`assignments/serialization_json_object.py`
-
 English:
     #. Use data from "Given" section (see below)
     #. Convert from JSON format to Python
@@ -621,10 +544,10 @@ Given:
 Serialization JSON HTTP
 -----------------------
 * Assignment: Serialization JSON HTTP
+* Filename: :download:`assignments/serialization_json_http.py`
 * Complexity: hard
 * Lines of code: 15 lines
 * Time: 13 min
-* Filename: :download:`assignments/serialization_json_http.py`
 
 English:
     #. Use ``requests`` library (requires installation)

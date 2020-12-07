@@ -3,8 +3,7 @@ from pprint import pprint
 
 
 # https://history.nasa.gov/SP-4029/Apollo_11i_Timeline.htm
-DATA = """
-1969-07-14, 21:00:00, INFO, Terminal countdown started
+DATA = """1969-07-14, 21:00:00, INFO, Terminal countdown started
 1969-07-16, 13:31:53, WARNING, S-IC engine ignition (#5)
 1969-07-16, 13:33:23, DEBUG, Maximum dynamic pressure (735.17 lb/ft^2)
 1969-07-16, 13:34:44, WARNING, S-II ignition
@@ -31,16 +30,12 @@ DATA = """
 1969-07-24, 16:21:12, INFO, CM/SM separation
 1969-07-24, 16:35:05, WARNING, Entry
 1969-07-24, 16:50:35, WARNING, Splashdown (went to apex-down)
-1969-07-24, 17:29, INFO, Crew egress
-"""
+1969-07-24, 17:29, INFO, Crew egress"""
 
 result = []
 
 
 for line in DATA.splitlines():
-    if not line:
-        continue
-
     date, time, level, message = line.split(', ', maxsplit=3)
     date = datetime.strptime(date, '%Y-%m-%d')
 

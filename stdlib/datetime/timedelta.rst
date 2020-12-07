@@ -194,42 +194,6 @@ Duration
 Assignments
 ===========
 
-Datetime Timedelta Period
--------------------------
-* Assignment: Datetime Timedelta Period
-* Complexity: easy
-* Lines of code: 15 lines
-* Time: 13 min
-* Filename: :download:`assignments/datetime_timedelta_period.py`
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Given period is the time between Gagarin launch and Armstrong first step on the Moon
-    #. Assume:
-
-        * year = 365.2425 days
-        * month = 30.436875 days
-
-    #. From current date subtract this period
-    #. Print calculated date
-    #. How old were you at the given moment?
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Podany jest czas, który upłynął między startem Gagarina a pierwszym krokiem Armstronga na Księżycu
-    #. Uwzględnij założenie:
-
-        * rok = 365.2425 dni
-        * miesiąc = 30.436875 dni
-
-    #. Od obecnej chwili odejmij ten czas
-    #. Wyświetl wyliczoną datę
-    #. Ile miałeś wtedy lat?
-
-Given:
-    * 8 years
-    * 3 months
-    * 8 days
-    * 20 hours
-    * 49 minutes
-    * 15 seconds
+.. literalinclude:: assignments/datetime_timedelta_period.py
+    :caption: :download:`Solution <assignments/datetime_timedelta_period.py>`
+    :end-before: # Solution

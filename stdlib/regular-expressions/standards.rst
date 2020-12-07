@@ -86,10 +86,10 @@ Assignments
 Regexp Standards PESEL
 ----------------------
 * Assignment: Regexp Standards PESEL
+* Filename: :download:`assignments/regexp_standards_pesel.py` (naive implementation)
 * Complexity: medium
 * Lines of code: 0 lines
 * Time: 5 min
-* Filename: :download:`assignments/regexp_standards_pesel.py` (naive implementation)
 * Warning: Do no write any code - **discussion only**
 
 English:

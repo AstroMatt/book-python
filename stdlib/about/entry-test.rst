@@ -6,10 +6,10 @@ Pre-Intermediate
 Entry Test Select
 =================
 * Assignment: Entry Test Select
+* Filename: entry_test_select.py
 * Complexity: easy
 * Lines of code: 6 lines
 * Time: 5 min
-* Filename: entry_test_select.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -69,10 +69,10 @@ Given:
 Entry Test Slice
 ================
 * Assignment: Entry Test Slice
+* Filename: entry_test_slice.py
 * Complexity: easy
 * Lines of code: 20 lines
 * Time: 13 min
-* Filename: entry_test_slice.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -133,10 +133,10 @@ Tests:
 Entry Test Listdict
 ===================
 * Assignment: Entry Test Listdict
+* Filename: entry_test_listdict.py
 * Complexity: easy
 * Lines of code: 8 lines
 * Time: 13 min
-* Filename: entry_test_listdict.py
 
 English:
     #. Use data from "Given" section (see below)
@@ -195,10 +195,10 @@ Tests:
 Entry Test Nested
 =================
 * Assignment: Entry Test Nested
+* Filename: entry_test_nested.py
 * Complexity: easy
 * Lines of code: 3 lines
 * Time: 13 min
-* Filename: entry_test_nested.py
 
 English:
     #. Use data from "Given" section (see below)

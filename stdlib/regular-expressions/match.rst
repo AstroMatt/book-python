@@ -194,10 +194,10 @@ Assignments
 Regexp Match Phones
 -------------------
 * Assignment: Regexp Match Phones
+* Filename: :download:`assignments/regexp_match_phones.py`
 * Complexity: easy
 * Lines of code: 5 lines
 * Time: 8 min
-* Filename: :download:`assignments/regexp_match_phones.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -252,10 +252,10 @@ Tests:
 Regexp Match Git Flow
 ---------------------
 * Assignment: Regexp Match Git Flow
+* Filename: :download:`assignments/regexp_match_gitflow.py`
 * Complexity: medium
 * Lines of code: 15 lines
 * Time: 21 min
-* Filename: :download:`assignments/regexp_match_gitflow.py`
 
 English:
     #. Use regular expressions to validate Git branch names

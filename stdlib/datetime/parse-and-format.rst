@@ -325,177 +325,18 @@ Examples
 Assignments
 ===========
 
-Datetime Parse ISO
-------------------
-* Assignment: Datetime Parse ISO
-* Complexity: easy
-* Lines of code: 1 lines
-* Time: 3 min
-* Filename: :download:`assignments/datetime_parse_iso.py`
+.. literalinclude:: assignments/datetime_parse_iso.py
+    :caption: :download:`Solution <assignments/datetime_parse_iso.py>`
+    :end-before: # Solution
 
-English:
-    #. Use data from "Given" section (see below)
-    #. The date and time is given in ISO format:
-    #. Convert it to ``datetime`` object
+.. literalinclude:: assignments/datetime_parse_local.py
+    :caption: :download:`Solution <assignments/datetime_parse_local.py>`
+    :end-before: # Solution
 
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Dana jest data w formacie ISO
-    #. Przedstaw datę jako obiekt ``datetime``
+.. literalinclude:: assignments/datetime_parse_us.py
+    :caption: :download:`Solution <assignments/datetime_parse_us.py>`
+    :end-before: # Solution
 
-Given:
-    .. code-block:: python
-
-        DATA = '1969-07-21T02:56:15.123Z'
-
-Datetime Parse Local
---------------------
-* Assignment: Datetime Parse Local
-* Complexity: easy
-* Lines of code: 3 lines
-* Time: 3 min
-* Filename: :download:`assignments/datetime_parse_local.py`
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Create ``datetime`` object by parsing the given date
-    #. Using formatting parameters print the date and time in ISO format
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Podaną datę przekonwertuj do obiektu ``datetime``
-    #. Używając parametrów formatujących wyświetl datę i czas w formacie ISO
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Given:
-    .. code-block:: python
-
-        DATA = 'April 12, 1961 6:07 local time'
-
-Tests:
-    .. code-block:: python
-
-        data: datetime
-        # datetime.datetime(1961, 4, 12, 6, 7)
-
-        print(result)
-        # 1961-04-12T06:07:00.000000Z
-
-Hints:
-    * Add string ``local time`` to format statement
-
-Datetime Parse US
------------------
-* Assignment: Datetime Parse US
-* Complexity: easy
-* Lines of code: 5 lines
-* Time: 3 min
-* Filename: :download:`assignments/datetime_parse_us.py`
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Using given date and time from below (copy with quotes inside)
-    #. Create ``datetime`` object by parsing the date
-    #. Using formatting parameters print american short date format
-    #. Make sure, that hour is without leading zero
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Używając podaną poniżej datę i czas (skopiuj z cudzysłowami)
-    #. Parsując stwórz obiekt ``datetime``
-    #. Używając parametrów formatowania wyświetl datę w formacie amerykańskim krótkim
-    #. Upewnij się, że godzina jest bez wiodącego zera
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Given:
-    .. code-block:: python
-
-        DATA = '"July 21st, 1969 2:56:15 AM UTC"'
-
-Tests:
-    .. code-block:: python
-
-        data: datetime
-        # datetime.datetime(1969, 7, 21, 2, 56)
-
-        print(result)
-        # 7/21/69 2:56 AM
-
-Hints:
-    * Add quote sign ``"`` like normal text to ``fmt`` parameter of ``.strptime()``
-    * Use ``%-I`` or ``%_I`` on \*nix systems (macOS, BSD, Linux) to remove leading zero
-    * Use ``%#I`` on Windows to remove leading zero
-
-Datetime Parse Logs
--------------------
-* Assignment: Datetime Parse Logs
-* Complexity: medium
-* Lines of code: 15 lines
-* Time: 13 min
-* Filename: :download:`assignments/datetime_parse_logs.py`
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Save input data to file ``apollo11-timeline.log``
-    #. Extract ``datetime`` object, level name and message from each line
-    #. Collect data to ``result: list[dict]``
-    #. Print ``result``
-    #. Compare result with "Tests" section (see below)
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Zapisz dane wejściowe do pliku ``apollo11-timeline.log``
-    #. Wyciągnij obiekt ``datetime``, poziom logowania oraz wiadomość z każdej linii
-    #. Zbierz dane do ``result: list[dict]``
-    #. Wyświetl ``result``
-    #. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
-
-Given:
-    .. code-block:: python
-        :caption: Apollo 11 timeline https://history.nasa.gov/SP-4029/Apollo_11i_Timeline.htm
-
-        DATA = """
-            1969-07-14, 21:00:00, INFO, Terminal countdown started
-            1969-07-16, 13:31:53, WARNING, S-IC engine ignition (#5)
-            1969-07-16, 13:33:23, DEBUG, Maximum dynamic pressure (735.17 lb/ft^2)
-            1969-07-16, 13:34:44, WARNING, S-II ignition
-            1969-07-16, 13:35:17, DEBUG, Launch escape tower jettisoned
-            1969-07-16, 13:39:40, DEBUG, S-II center engine cutoff
-            1969-07-16, 16:22:13, INFO, Translunar injection
-            1969-07-16, 16:56:03, INFO, CSM docked with LM/S-IVB
-            1969-07-16, 17:21:50, INFO, Lunar orbit insertion ignition
-            1969-07-16, 21:43:36, INFO, Lunar orbit circularization ignition
-            1969-07-20, 17:44:00, INFO, CSM/LM undocked
-            1969-07-20, 20:05:05, WARNING, LM powered descent engine ignition
-            1969-07-20, 20:10:22, ERROR, LM 1202 alarm
-            1969-07-20, 20:14:18, ERROR, LM 1201 alarm
-            1969-07-20, 20:17:39, WARNING, LM lunar landing
-            1969-07-21, 02:39:33, DEBUG, EVA started (hatch open)
-            1969-07-21, 02:56:15, WARNING, 1st step taken lunar surface (CDR)
-            1969-07-21, 02:56:15, WARNING, That's one small step for [a] man... one giant leap for mankind
-            1969-07-21, 03:05:58, DEBUG, Contingency sample collection started (CDR)
-            1969-07-21, 03:15:16, INFO, LMP on lunar surface
-            1969-07-21, 05:11:13, DEBUG, EVA ended (hatch closed)
-            1969-07-21, 17:54:00, WARNING, LM lunar liftoff ignition (LM APS)
-            1969-07-21, 21:35:00, INFO, CSM/LM docked
-            1969-07-22, 04:55:42, WARNING, Transearth injection ignition (SPS)
-            1969-07-24, 16:21:12, INFO, CM/SM separation
-            1969-07-24, 16:35:05, WARNING, Entry
-            1969-07-24, 16:50:35, WARNING, Splashdown (went to apex-down)
-            1969-07-24, 17:29, INFO, Crew egress
-        """
-
-Tests:
-    >>> result  # doctest: +NORMALIZE_WHITESPACE
-    [{'date': datetime.datetime(1969, 7, 14, 21, 0),
-      'level': 'INFO',
-      'message': 'Terminal countdown started'},
-     {'date': datetime.datetime(1969, 7, 16, 13, 31, 53),
-      'level': 'WARNING',
-      'message': 'S-IC engine ignition (#5)'},
-     {'date': datetime.datetime(1969, 7, 16, 13, 33, 23),
-      'level': 'DEBUG',
-      'message': 'Maximum dynamic pressure (735.17 lb/ft^2)'},
-     ...]
+.. literalinclude:: assignments/datetime_parse_logs.py
+    :caption: :download:`Solution <assignments/datetime_parse_logs.py>`
+    :end-before: # Solution

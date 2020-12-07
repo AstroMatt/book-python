@@ -33,10 +33,10 @@ Assignments
 Random numbers
 --------------
 * Assignment: Random numbers
+* Filename: :download:`assignments/random_sample.py`
 * Complexity: easy
 * Lines of code: 5 lines
 * Time: 13 min
-* Filename: :download:`assignments/random_sample.py`
 
 English:
     #. Print 6 random integers without repetition in range from 1 to 49
@@ -47,10 +47,10 @@ Polish:
 Sum of inner elements
 ---------------------
 * Assignment: Sum of inner elements
+* Filename: :download:`assignments/random_matrix.py`
 * Complexity: medium
 * Lines of code: 5 lines
 * Time: 13 min
-* Filename: :download:`assignments/random_matrix.py`
 
 English:
     #. Use only ``random`` module

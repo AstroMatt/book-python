@@ -742,10 +742,10 @@ Assignments
 XML Parsing
 -----------
 * Assignment: XML Parsing
+* Filename: :download:`assignments/xml_parse.py`
 * Complexity: easy
 * Lines of code: 20 lines
 * Time: 21 min
-* Filename: :download:`assignments/xml_parse.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -762,10 +762,10 @@ Given:
 XSLT Transformation
 -------------------
 * Assignment: XSLT Transformation
+* Filename: :download:`assignments/xml_xslt.py`
 * Complexity: medium
 * Lines of code: 5 lines
 * Time: 13 min
-* Filename: :download:`assignments/xml_xslt.py`
 
 English:
     #. Use data from "Given" section (see below)

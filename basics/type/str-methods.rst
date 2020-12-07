@@ -455,6 +455,14 @@ Method Chaining
     # 'CYTHON'.title() -> 'Cython'
 
 .. code-block:: python
+
+    a = 'Python'
+
+    a = a.upper().startswith('P').replace('P', 'C')
+    # Traceback (most recent call last):
+    # AttributeError: 'bool' object has no attribute 'replace'
+
+.. code-block:: python
     :caption: Note, that there cannot be any char, not even space after ``\`` character
 
     a = 'Python'
@@ -476,14 +484,6 @@ Method Chaining
         .title())
 
     print(a)
-
-.. code-block:: python
-
-    a = 'Python'
-
-    a = a.upper().startswith('P').replace('P', 'C')
-    # Traceback (most recent call last):
-    # AttributeError: 'bool' object has no attribute 'replace'
 
 
 Cleaning User Input
@@ -587,6 +587,16 @@ Cleaning User Input
     +48 123 555 678 wew. 1337
     +48 123555678,1
     +48 123555678,1,,2
+
+.. code-block:: python
+
+    1
+    1.0
+    1.00
+
+    '1'
+    '1.0'
+    '1.00'
 
 
 Assignments

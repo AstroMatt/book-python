@@ -238,10 +238,10 @@ Assignments
 Pickle Serialization
 --------------------
 * Assignment: Pickle Serialization
+* Filename: :download:`assignments/serialization_pickle_dump_load.py`
 * Complexity: easy
 * Lines of code: 7 lines
 * Time: 7 min
-* Filename: :download:`assignments/serialization_pickle_dump_load.py`
 
 English:
     #. Use data from "Given" section (see below)

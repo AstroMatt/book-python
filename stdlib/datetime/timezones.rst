@@ -153,47 +153,6 @@ Standard Library
 Assignments
 ===========
 
-Datetime Timezone Convert
--------------------------
-* Assignment: Datetime Timezone Convert
-* Complexity: easy
-* Lines of code: 5 lines
-* Time: 13 min
-* Filename: :download:`assignments/datetime_timezone_convert.py`
-
-English:
-    #. Use data from "Given" section (see below)
-    #. Convert given date to ``datetime`` objects
-    #. What was the time in:
-
-        * London, United Kingdom
-        * Moscow, Russian Federation
-        * Warsaw, Poland
-        * Tokyo, Japan
-        * Sydney, Australia
-        * Auckland, New Zealand
-
-Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Przekonwertuj podaną datę do obiektu ``datetime``
-    #. Wyświetl datę jaka była w:
-
-        * London, Wielka Brytania
-        * Moscow, Rosja
-        * Warsaw, Polska
-        * Tokyo, Japan
-        * Sydney, Australia
-        * Auckland, Nowa Zelandia
-
-Given:
-    .. code-block:: python
-
-        DATA = '1969-07-21 02:56:15 UTC'
-
-:Extra Task:
-    #. Kosmodrom Bajkonur, Kazachstan
-    #. Cape Canaveral, FL, USA
-    #. Houston, TX, USA
-    #. New York, USA
-    #. South Pole
-    #. North Pole
+.. literalinclude:: assignments/datetime_timezone_convert.py
+    :caption: :download:`Solution <assignments/datetime_timezone_convert.py>`
+    :end-before: # Solution

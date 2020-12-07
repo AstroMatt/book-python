@@ -187,40 +187,10 @@ Current ``datetime`` in local time
 Assignments
 ===========
 
-Datetime Create Custom
-----------------------
-* Assignment: Datetime Create Custom
-* Complexity: easy
-* Lines of code: 3 lines
-* Time: 3 min
-* Filename: :download:`assignments/datetime_create_custom.py`
+.. literalinclude:: assignments/datetime_create_custom.py
+    :caption: :download:`Solution <assignments/datetime_create_custom.py>`
+    :end-before: # Solution
 
-English:
-    #. Create ``date`` object with date of your birth
-    #. Create ``time`` object with time of your birth
-    #. Create ``datetime`` object with date and time of your birth
-
-Polish:
-    #. Stwórz obiekt ``date`` z datą Twojego urodzenia
-    #. Stwórz obiekt ``time`` z czasem Twojego urodzenia
-    #. Stwórz obiekt ``datetime`` z datą i czasem Twojego urodzenia
-
-Datetime Create Current
------------------------
-* Assignment: Datetime Create Current
-* Complexity: easy
-* Lines of code: 3 lines
-* Time: 3 min
-* Filename: :download:`assignments/datetime_create_current.py`
-
-English:
-    #. Create ``date`` object with current date
-    #. Create ``datetime`` object with current date and time
-    #. Create ``time`` object with current time
-    #. Date and time must be from system, not hardcoded in code
-
-Polish:
-    #. Stwórz obiekt ``date`` z obecną datą
-    #. Stwórz obiekt ``datetime`` z obecną datą i czasem
-    #. Stwórz obiekt ``time`` z obecnym czasem
-    #. Data i czas ma być pobierana z systemu, nie zapisana w kodzie
+.. literalinclude:: assignments/datetime_create_current.py
+    :caption: :download:`Solution <assignments/datetime_create_current.py>`
+    :end-before: # Solution

@@ -29,13 +29,13 @@ List requirements
 Assignments
 ===========
 
-Installing from ``requirements.txt``
-------------------------------------
-* Assignment: Installing from ``requirements.txt``
+Installing from requirements.txt
+--------------------------------
+* Assignment: Installing from requirements.txt
+* Filename: :download:``requirements.txt``
 * Complexity: easy
 * Lines of code: 1 line
 * Time: 5 min
-* Filename: :download:``requirements.txt``
 
 English:
     #. Create ``requirements.txt`` file

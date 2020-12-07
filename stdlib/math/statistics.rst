@@ -220,10 +220,10 @@ Assignments
 Column Stats
 ------------
 * Assignment: Column Stats
+* Filename: :download:`assignments/statistics_column_stats.py`
 * Complexity: easy
 * Lines of code: 30 lines
 * Time: 21 min
-* Filename: :download:`assignments/statistics_column_stats.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -294,10 +294,10 @@ Given:
 Iris Stats
 ----------
 * Assignment: Iris Stats
+* Filename: :download:`assignments/statistics_iris.py`
 * Complexity: easy
 * Lines of code: 30 lines
 * Time: 21 min
-* Filename: :download:`assignments/statistics_iris.py`
 
 English:
     #. Use data from "Given" section (see below)

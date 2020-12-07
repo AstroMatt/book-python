@@ -239,10 +239,10 @@ Assignments
 Database SQLite Logs
 --------------------
 * Assignment: Database SQLite Logs
+* Filename: :download:`assignments/database_sqlite_logs.py`
 * Complexity: easy
 * Lines of code: 25 lines
 * Time: 21 min
-* Filename: :download:`assignments/database_sqlite_logs.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -325,10 +325,10 @@ Hint:
 Database SQLite CSV
 -------------------
 * Assignment: Database SQLite CSV
+* Filename: :download:`assignments/database_sqlite_csv.py`
 * Complexity: easy
 * Lines of code: 30 lines
 * Time: 21 min
-* Filename: :download:`assignments/database_sqlite_csv.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -410,10 +410,10 @@ Given:
 Database SQLite JSON
 --------------------
 * Assignment: Database SQLite JSON
+* Filename: :download:`assignments/database_sqlite_json.py`
 * Complexity: medium
 * Lines of code: 15 lines
 * Time: 21 min
-* Filename: :download:`assignments/database_sqlite_json.py`
 
 English:
     #. Use data from "Given" section (see below)

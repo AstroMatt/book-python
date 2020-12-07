@@ -229,10 +229,10 @@ Assignments
 Trigonometry
 ------------
 * Assignment: Trigonometry
+* Filename: :download:`assignments/math_trigonometry.py`
 * Complexity: easy
 * Lines of code: 10 lines
 * Time: 13 min
-* Filename: :download:`assignments/math_trigonometry.py`
 
 English:
     #. Read input (angle in degrees) from user
@@ -252,10 +252,10 @@ Hints:
 Euclidean distance 2D
 ---------------------
 * Assignment: Euclidean distance 2D
+* Filename: :download:`assignments/math_euclidean_2d.py`
 * Complexity: easy
 * Lines of code: 5 lines
 * Time: 13 min
-* Filename: :download:`assignments/math_euclidean_2d.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -311,10 +311,10 @@ Hints:
 Euclidean distance ``n`` dimensions
 -----------------------------------
 * Assignment: Euclidean distance ``n`` dimensions
+* Filename: :download:`assignments/math_euclidean_multi_dim.py`
 * Complexity: easy
 * Lines of code: 10 lines
 * Time: 13 min
-* Filename: :download:`assignments/math_euclidean_multi_dim.py`
 
 English:
     #. Use data from "Given" section (see below)
@@ -369,10 +369,10 @@ Hints:
 Matrix multiplication
 ---------------------
 * Assignment: Matrix multiplication
+* Filename: :download:`assignments/math_matmul.py`
 * Complexity: hard
 * Lines of code: 6 lines
 * Time: 21 min
-* Filename: :download:`assignments/math_matmul.py`
 
 English:
     #. Use code from "Input" section (see below)
@@ -408,10 +408,10 @@ Hints:
 Triangle
 --------
 * Assignment: Triangle
+* Filename: :download:`assignments/math_triangle.py`
 * Complexity: easy
 * Lines of code: 5 lines
 * Time: 13 min
-* Filename: :download:`assignments/math_triangle.py`
 
 English:
     #. Calculate triangle area

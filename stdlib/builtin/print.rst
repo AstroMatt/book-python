@@ -610,10 +610,10 @@ Assignments
 Powielanie napisów
 ------------------
 * Assignment: Powielanie napisów
+* Filename: :download:`assignments/print_lines.py`
 * Complexity: easy
 * Lines of code: 8 lines
 * Time: 5 min
-* Filename: :download:`assignments/print_lines.py`
 
 English:
     .. todo:: English translation
@@ -633,10 +633,10 @@ Polish:
 Przeliczanie temperatury
 ------------------------
 * Assignment: Przeliczanie temperatury
+* Filename: :download:`assignments/print_formatting.py`
 * Complexity: easy
 * Lines of code: 8 lines
 * Time: 13 min
-* Filename: :download:`assignments/print_formatting.py`
 
 English:
     .. todo:: English translation
