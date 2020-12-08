@@ -2,7 +2,7 @@
 * Assignment: Serialization CSV Relations
 * Filename: serialization_csv_relations.py
 * Complexity: hard
-* Lines of code: 18 lines
+* Lines of code: 13 lines
 * Time: 21 min
 
 English:

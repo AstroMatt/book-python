@@ -8,19 +8,19 @@
 English:
     1. Use data from "Given" section (see below)
     2. Extract from input a header and data
-    3. Create ``result: list[dict]``
+    3. Create `result: list[dict]`
         a. key: name from the header
         b. value: measurement or species
-    4. Write structure to file ``iris_serialize.json`` in JSON format
+    4. Write structure to file `iris_serialize.json` in JSON format
     5. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Z danych wydziel nagłówek i pomiary
-    3. Wygeneruj ``result: list[dict]``
+    3. Wygeneruj `result: list[dict]`
         a. klucz: nazwa z nagłówka
         b. wartość: wyniki pomiarów lub gatunek
-    4. Zapisz strukturę do pliku ``iris_serialize.json`` w formacie JSON
+    4. Zapisz strukturę do pliku `iris_serialize.json` w formacie JSON
     5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:

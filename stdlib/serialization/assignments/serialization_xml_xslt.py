@@ -6,12 +6,12 @@
 * Time: 13 min
 
 English:
-    #. Use data from "Given" section (see below)
-    #. Convert input data to ``list[dict]``
+    1. Use data from "Given" section (see below)
+    2. Convert input data to `list[dict]`
 
 Polish:
-    #. Użyj danych z sekcji "Given" (patrz poniżej)
-    #. Przekonwertuj dane wejściowe do ``list[dict]``
+    1. Użyj danych z sekcji "Given" (patrz poniżej)
+    2. Przekonwertuj dane wejściowe do `list[dict]`
 """
 
 

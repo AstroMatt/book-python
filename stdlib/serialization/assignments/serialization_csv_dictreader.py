@@ -1,10 +1,9 @@
 """
-
 * Assignment: Serialization CSV DictReader
 * Filename: :download:`assignments/serialization_csv_dictreader.py`
 * Complexity: easy
-* Lines of code: 6 lines
-* Time: 7 min
+* Lines of code: 9 lines
+* Time: 8 min
 
 English:
     1. Use data from "Given" section (see below)
@@ -57,12 +56,11 @@ result = []
 # Solution
 with open(FILE) as file:
     header = file.readline()
-
-    reader = DictReader(
+    data = DictReader(
         f=file,
         fieldnames=FIELDNAMES,
         delimiter=',',
         quoting=QUOTE_NONE)
 
-    for row in reader:
+    for row in data:
         result.append(row)

@@ -7,18 +7,18 @@
 
 English:
     1. Use data from "Given" section (see below)
-    1. Use ``requests`` library (requires installation)
+    1. Use `requests` library (requires installation)
     2. Download data from https://api.github.com/users
-    3. Model data as class ``User``
+    3. Model data as class `User`
     4. Iterate over records and create instances of this class
     5. Collect all instances to one list
     6. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    1. Użyj biblioteki ``requests`` (wymagana instalacja)
+    1. Użyj biblioteki `requests` (wymagana instalacja)
     2. Pobierz dane z https://api.github.com/users
-    3. Zamodeluj dane za pomocą klasy ``User``
+    3. Zamodeluj dane za pomocą klasy `User`
     4. Iterując po rekordach twórz instancje tej klasy
     5. Zbierz wszystkie instancje do jednej listy
     6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)

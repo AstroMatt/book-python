@@ -2,8 +2,8 @@
 * Assignment: Serialization CSV DictWriter
 * Filename: serialization_csv_dictwriter.py
 * Complexity: easy
-* Lines of code: 5 lines
-* Time: 7 min
+* Lines of code: 10 lines
+* Time: 8 min
 
 English:
     1. Use data from "Given" section (see below)
@@ -30,7 +30,8 @@ Polish:
     6. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
-    >>> open(FILE).read()
+    >>> result = open(FILE).read()
+    >>> print(result)   # doctest: +NORMALIZE_WHITESPACE
     "firstname","lastname"
     "Jan","Twardowski"
     "José","Jiménez"
@@ -41,6 +42,7 @@ Tests:
     >>> remove(FILE)
 """
 
+# Given
 from csv import DictWriter, QUOTE_ALL
 
 
@@ -52,8 +54,9 @@ DATA = [{'firstname': 'Jan', 'lastname': 'Twardowski'},
         {'firstname': 'Melissa', 'lastname': 'Lewis'}]
 
 
+# Solution
 with open(FILE, mode='w', encoding='utf-8') as file:
-    writer = DictWriter(
+    data = DictWriter(
         f=file,
         fieldnames=['firstname', 'lastname'],
         delimiter=',',
@@ -61,5 +64,5 @@ with open(FILE, mode='w', encoding='utf-8') as file:
         quoting=QUOTE_ALL,
         lineterminator='\n')
 
-    writer.writeheader()
-    writer.writerows(DATA)
+    data.writeheader()
+    data.writerows(DATA)

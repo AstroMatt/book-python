@@ -2,18 +2,18 @@
 * Assignment: Pickle Serialization
 * Filename: serialization_pickle_dump_load.py
 * Complexity: easy
-* Lines of code: 7 lines
-* Time: 7 min
+* Lines of code: 4 lines
+* Time: 5 min
 
 English:
     1. Use data from "Given" section (see below)
-    2. Using ``pickle`` save data structure to file
+    2. Using `pickle` save data structure to file
     3. Recreate data structure from file
     4. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Za pomocą ``pickle`` zapisz strukturę danych do pliku
+    2. Za pomocą `pickle` zapisz strukturę danych do pliku
     3. Odtwórz strukturę danych na podstawie danych z pliku
     4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 

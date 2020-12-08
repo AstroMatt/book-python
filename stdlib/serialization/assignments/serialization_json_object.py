@@ -8,16 +8,16 @@
 English:
     1. Use data from "Given" section (see below)
     2. Convert from JSON format to Python
-    3. Create classes ``Setosa``, ``Virginica``, ``Versicolor`` representing data
-    4. Reading file create instances of those classes based on value in field "species"
-    5. Compare result with "Tests" section (see below)
+    3. Reading file create instances of `Setosa`, `Virginica`, `Versicolor`
+       classes based on value in field "species"
+    4. Compare result with "Tests" section (see below)
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Przekonwertuj dane z JSON do Python
-    3. Stwórz klasy ``Setosa``, ``Virginica``, ``Versicolor`` reprezentujące dane
-    4. Czytając plik twórz obiekty powyższych klas w zależności od wartości pola "species"
-    5. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+    3. Czytając plik twórz obiekty klas `Setosa`, `Virginica`, `Versicolor`
+       w zależności od wartości pola "species"
+    4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
     >>> result  # doctest: +NORMALIZE_WHITESPACE
@@ -30,9 +30,11 @@ Tests:
      Versicolor(sepalLength=7.0, sepalWidth=3.2, petalLength=4.7, petalWidth=1.4),
      Virginica(sepalLength=7.6, sepalWidth=3.0, petalLength=6.6, petalWidth=2.1),
      Setosa(sepalLength=4.9, sepalWidth=3.0, petalLength=1.4, petalWidth=0.2)]
-
+    >>> from os import remove
+    >>> remove(FILE)
 """
 
+# Given
 import json
 from dataclasses import dataclass
 
@@ -72,6 +74,7 @@ class Versicolor(Iris):
 
 result = []
 
+# Solution
 for iris in json.loads(DATA):
     species = iris.pop('species')
 

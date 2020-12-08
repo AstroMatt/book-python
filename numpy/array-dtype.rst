@@ -12,7 +12,8 @@ Rationale
 Bits and Bytes
 ==============
 * Signed and unsigned
-* For negative numbers "Two's complement" is used
+* Unsigned cannot be negative
+* For negative signed numbers "Two's complement" is used
 
 .. code-block:: text
 
@@ -22,54 +23,54 @@ Bits and Bytes
     -1      # signed
 
 .. code-block:: text
-    :caption: Three-bit unsigned integers. Values: 8, minimal: 0, maximal: 8
+    :caption: 3 bit unsigned integers. Values: 8, minimal: 0, maximal: 8
 
-    0   000
-    1   001
-    2   010
-    3   011
-    4   100
-    5   101
-    6   110
-    7   111
-
-.. code-block:: text
-    :caption: Three-bit signed integers. Values: 8, minimal: -4, maximal: 3
-
-    0   000
-    1   001
-    2   010
-    3   011
-    −4  100
-    −3  101
-    −2  110
-    −1  111
+    0       000
+    1       001
+    2       010
+    3       011
+    4       100
+    5       101
+    6       110
+    7       111
 
 .. code-block:: text
-    :caption: Eight-bit signed integers. Values: 256, minimal: -128, maximal: 127
+    :caption: 3 bit signed integers. Values: 8, minimal: -4, maximal: 3
 
-    0      0000 0000
-    1      0000 0001
-    2      0000 0010
-    126    0111 1110
-    127    0111 1111
-    −128   1000 0000
-    −127   1000 0001
-    −126   1000 0010
-    −2     1111 1110
-    −1     1111 1111
+    0       000
+    1       001
+    2       010
+    3       011
+    −4      100
+    −3      101
+    −2      110
+    −1      111
+
+.. code-block:: text
+    :caption: 8 bit signed integers. Values: 256, minimal: -128, maximal: 127
+
+    0       00000000
+    1       00000001
+    2       00000010
+    126     01111110
+    127     01111111
+    −128    10000000
+    −127    10000001
+    −126    10000010
+    −2      11111110
+    −1      11111111
 
 .. code-block:: text
     :caption: 32 bit unsigned int. Values: 2,147,483,647, minimal: 0, maximal: 2,147,483,647
 
-    0000000000000000000000000000000000 => 0
-    0000000000000000000000000000000001 => 1
-    0000000000000000000000000000000010 => 2
-    0000000000000000000000000000000011 => 3
-    0000000000000000000000000000000100 => 4
-    0000000000000000000000000000000101 => 5
-    0000000000000000000000000000000110 => 6
-    0000000000000000000000000000000111 => 7
+    0       0000000000000000000000000000000000
+    1       0000000000000000000000000000000001
+    2       0000000000000000000000000000000010
+    3       0000000000000000000000000000000011
+    4       0000000000000000000000000000000100
+    5       0000000000000000000000000000000101
+    6       0000000000000000000000000000000110
+    7       0000000000000000000000000000000111
 
 .. code-block:: python
     :caption: Calculates a two's complement integer from the given input value's bits.
@@ -77,6 +78,23 @@ Bits and Bytes
     def twos_complement(value: int, num_bits: int) -> int:
         mask = 2 ** (num_bits - 1)
         return -(value & mask) + (value & ~mask)
+
+.. code-block:: python
+
+    # decimal
+    69
+
+    # np.int8
+    01000101
+
+    # np.int16
+    00000000 01000101
+
+    # np.int32
+    00000000 00000000 00000000 01000101
+
+    # np.int64
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 01000101
 
 
 Signed int
@@ -90,7 +108,7 @@ Signed int
 * ``np.int64``
 
 .. csv-table:: Number of values is calculated with ``2 ** bytes``
-    :header: "Type", "Bytes", "Values", "Minimal", "Maximal"
+    :header: "Type", "Bytes", "Number of Values", "Minimal", "Maximal"
 
     "``np.int8``", "8", "256", "-128", "127"
     "``np.int16``", "16", "65,536", "-32,768", "32,767"
@@ -141,7 +159,7 @@ Unsigned int
 * ``np.uint64``
 
 .. csv-table:: Number of values is calculated with ``2 ** bytes``
-    :header: "Type", "Bytes", "Values", "Minimal", "Maximal"
+    :header: "Type", "Bytes", "Number of Values", "Minimal", "Maximal"
 
     "``np.uint8``", "8", "256", "0", "255"
     "``np.uint16``", "16", "65,536", "0", "65,535"
@@ -187,9 +205,9 @@ float
 * ``np.float128``
 
 .. csv-table:: Number of values is calculated with ``2 ** bytes``
-    :header: "Type", "Bytes", "Values", "Minimal", "Maximal", "Precision"
+    :header: "Type", "Bytes", "Minimal", "Maximal"
 
-    "``np.float16``", "16", "-65,504", "65,504", "0.0000000596046"
+    "``np.float16``", "16", "-65,504", "65,504"
     "``np.float32``", "32", "±0.000000×10−95", "±9.999999×1096"
     "``np.float64``", "64", "±0.000000000000000×10−383", "±9.999999999999999×10384"
     "``np.float128``", "64", "±0.000000000000000000000000000000000×10−6143", "±9.999999999999999999999999999999999×106144"

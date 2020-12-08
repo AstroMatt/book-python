@@ -2,7 +2,7 @@
 * Assignment: Serialization JSON Datetime
 * Filename: serialization_json_datetime.py
 * Complexity: easy
-* Lines of code: 10 lines
+* Lines of code: 15 lines
 * Time: 13 min
 
 English:
@@ -40,7 +40,6 @@ DATA = {"astronaut": {"date": date(1961, 4, 12), "person": "mark.watney@nasa.gov
 # Solution
 class JSONDatetimeEncoder(json.JSONEncoder):
     def default(self, value):
-
         if isinstance(value, datetime):
             return value.strftime('%Y-%m-%dT%H:%M:%S.%fZ')
         elif isinstance(value, date):

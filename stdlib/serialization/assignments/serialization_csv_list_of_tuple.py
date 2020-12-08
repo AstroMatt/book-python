@@ -2,8 +2,8 @@
 * Assignment: Serialization CSV List of Tuples
 * Filename: serialization_csv_list_of_tuple.py
 * Complexity: easy
-* Lines of code: 7 lines
-* Time: 7 min
+* Lines of code: 6 lines
+* Time: 8 min
 
 English:
     1. Use data from "Given" section (see below)

@@ -2,8 +2,8 @@
 * Assignment: Serialization CSV Objects
 * Filename: serialization_csv_objects.py
 * Complexity: medium
-* Lines of code: 7 lines
-* Time: 13 min
+* Lines of code: 6 lines
+* Time: 8 min
 
 English:
     1. Use data from "Given" section (see below)
@@ -24,6 +24,9 @@ Polish:
         c. Użyj kodowania `utf-8`
         d. Użyj zakończenia linii Unix `\n`
     4. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+
+Hints:
+    * `obj.__dict__`
 
 Tests:
     >>> result = open(FILE).read()
@@ -65,7 +68,7 @@ DATA = [Iris(5.1, 3.5, 1.4, 0.2, 'setosa'),
         Iris(6.4, 3.2, 4.5, 1.5, 'versicolor')]
 
 
-# Result
+# Solution
 data = [row.__dict__ for row in DATA]
 header = list(data[0].keys())
 

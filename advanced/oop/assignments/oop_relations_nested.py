@@ -2,75 +2,76 @@
 * Assignment: OOP Relations Nested
 * Filename: oop_relations_nested.py
 * Complexity: medium
-* Lines of code: 30 lines
+* Lines of code: 7 lines
 * Time: 21 min
 
 English:
-    1. Client can open a bank account
-    2. Client can have many accounts
-    3. Bank has many clients
-    4. Each account has unique number generated when opening an account
-    5. Client can ask about number of all of his accounts
-    6. Client can add money to the account
-    7. Client can withdraw money from the account
-    8. Compare result with "Tests" section (see below)
+    1. Use data from "Given" section (see below)
+    2. Convert `DATA` to format with one column per each attrbute
+       for example: `street1`, `street2`, `city1`, `city2`, etc.
+    3. Compare result with "Tests" section (see below)
 
 Polish:
-    1. Klient może otworzyć konto w banku
-    2. Klient może mieć wiele kont
-    3. Bank może mieć wielu klientów
-    4. Każde konto ma unikalny numer, który jest generowany przy zakładaniu
-    5. Klient może odpytać o numery wszystkich swoich kont
-    6. Klient może wpłacić pieniądze na swoje konto
-    7. Klient może wybrać pieniądze z bankomatu
-    8. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
+    1. Użyj danych z sekcji "Given" (patrz poniżej)
+    2. Przekonweruj `DATA` do formatu z jedną kolumną dla każdego atrybutu,
+       np. `street1`, `street2`, `city1`, `city2`, itd.
+    3. Porównaj wyniki z sekcją "Tests" (patrz poniżej)
 
 Tests:
-    TODO: Doctests
+    >>> type(result)
+    <class 'list'>
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    [{'firstname': 'Jan', 'lastname': 'Twardowski', 'street1': 'Kamienica Pod św. Janem Kapistranem', 'city1': 'Kraków', 'post_code1': '31-008', 'region1': 'Małopolskie', 'country1': 'Poland'},
+     {'firstname': 'José', 'lastname': 'Jiménez', 'street1': '2101 E NASA Pkwy', 'city1': 'Houston', 'post_code1': 77058, 'region1': 'Texas', 'country1': 'USA', 'street2': '', 'city2': 'Kennedy Space Center', 'post_code2': 32899, 'region2': 'Florida', 'country2': 'USA'},
+     {'firstname': 'Mark', 'lastname': 'Watney', 'street1': '4800 Oak Grove Dr', 'city1': 'Pasadena', 'post_code1': 91109, 'region1': 'California', 'country1': 'USA', 'street2': '2825 E Ave P', 'city2': 'Palmdale', 'post_code2': 93550, 'region2': 'California', 'country2': 'USA'},
+     {'firstname': 'Иван', 'lastname': 'Иванович', 'street1': '', 'city1': 'Космодро́м Байкону́р', 'post_code1': '', 'region1': 'Кызылординская область', 'country1': 'Қазақстан', 'street2': '', 'city2': 'Звёздный городо́к', 'post_code2': 141160, 'region2': 'Московская область', 'country2': 'Россия'},
+     {'firstname': 'Melissa', 'lastname': 'Lewis'},
+     {'firstname': 'Alex', 'lastname': 'Vogel', 'street1': 'Linder Hoehe', 'city1': 'Köln', 'post_code1': 51147, 'region1': 'North Rhine-Westphalia', 'country1': 'Germany'}]
 """
 
+
+# Given
+import json
+
+DATA = """[
+    {"firstname": "Jan", "lastname": "Twardowski", "addresses": [
+        {"street": "Kamienica Pod św. Janem Kapistranem", "city": "Kraków", "post_code": "31-008", "region": "Małopolskie", "country": "Poland"}]},
+
+    {"firstname": "José", "lastname": "Jiménez", "addresses": [
+        {"street": "2101 E NASA Pkwy", "city": "Houston", "post_code": 77058, "region": "Texas", "country": "USA"},
+        {"street": "", "city": "Kennedy Space Center", "post_code": 32899, "region": "Florida", "country": "USA"}]},
+
+    {"firstname": "Mark", "lastname": "Watney", "addresses": [
+        {"street": "4800 Oak Grove Dr", "city": "Pasadena", "post_code": 91109, "region": "California", "country": "USA"},
+        {"street": "2825 E Ave P", "city": "Palmdale", "post_code": 93550, "region": "California", "country": "USA"}]},
+
+    {"firstname": "Иван", "lastname": "Иванович", "addresses": [
+        {"street": "", "city": "Космодро́м Байкону́р", "post_code": "", "region": "Кызылординская область", "country": "Қазақстан"},
+        {"street": "", "city": "Звёздный городо́к", "post_code": 141160, "region": "Московская область", "country": "Россия"}]},
+
+    {"firstname": "Melissa", "lastname": "Lewis", "addresses": []},
+
+    {"firstname": "Alex", "lastname": "Vogel", "addresses": [
+        {"street": "Linder Hoehe", "city": "Köln", "post_code": 51147, "region": "North Rhine-Westphalia", "country": "Germany"}]}
+]"""
+
+result = []
+
 # Solution
-from dataclasses import dataclass
-from decimal import Decimal
+for astronaut in json.loads(DATA):
+    for i, address in enumerate(astronaut.pop('addresses'), start=1):
+        columns = [f'{key}{i}' for key in address.keys()]
+        addresses = zip(columns, address.values())
+        astronaut.update(dict(addresses))
+    result.append(astronaut)
 
 
-@dataclass
-class Client:
-    name: str
-    pesel: int
-
-
-@dataclass
-class Account:
-    number: int
-    owner: Client
-    amount: Decimal = 0.0
-
-
-@dataclass
-class Bank:
-    accounts = []
-
-
-@dataclass
-class ATM:
-    def input_card(self, card):
-        pass
-
-    def input_pin(self):
-        pass
-
-    def input_amount(self, amount):
-        pass
-
-    def give_money(self):
-        pass
-
-    def give_card(self):
-        pass
-
-    def _check_pin_number(self, pin):
-        pass
-
-    def _check_if_withdraw_possible(self):
-        pass
+# Note that
+# * dictionary merging `dict|dict` was introduced in Python 3.9
+# * assignment expressions `:=` was introduced in Python 3.8
+#
+# result = [astronaut | dict(addresses)
+#           for astronaut in json.loads(DATA)
+#           for i, address in enumerate(astronaut.pop('addresses'), start=1)
+#           if (columns := [f'{key}{i}' for key in address.keys()])
+#           and (addresses := zip(columns, address.values()))]

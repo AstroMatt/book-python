@@ -64,7 +64,7 @@ for row in DATA:
     fieldnames.update(row.keys())
 
 with open(FILE, mode='w') as file:
-    result = DictWriter(
+    data = DictWriter(
         f=file,
         fieldnames=sorted(fieldnames),
         delimiter=',',
@@ -72,5 +72,5 @@ with open(FILE, mode='w') as file:
         quoting=QUOTE_ALL,
         lineterminator='\n')
 
-    result.writeheader()
-    result.writerows(DATA)
+    data.writeheader()
+    data.writerows(DATA)

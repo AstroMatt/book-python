@@ -3,15 +3,15 @@
 * Filename: serialization_xml_parse.py
 * Complexity: easy
 * Lines of code: 20 lines
-* Time: 21 min
+* Time: 13 min
 
 English:
     1. Use data from "Given" section (see below)
-    2. Convert input data to ``list[dict]``
+    2. Convert input data to `list[dict]`
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Przekonwertuj dane wejściowe do ``list[dict]``
+    2. Przekonwertuj dane wejściowe do `list[dict]`
 """
 
 
