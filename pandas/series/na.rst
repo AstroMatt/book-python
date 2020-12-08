@@ -393,6 +393,8 @@ Conversion
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Series NA
 ---------
 * Assignment: Series NA

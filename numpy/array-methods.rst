@@ -241,6 +241,8 @@ Signum
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Numpy Methods
 -------------
 * Assignment: Numpy Methods

@@ -273,6 +273,8 @@ Shuffle
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Numpy Random Float
 ------------------
 * Assignment: Numpy Random Float

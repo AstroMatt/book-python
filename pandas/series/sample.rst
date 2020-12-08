@@ -66,6 +66,8 @@ Reset Index
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Series Sample
 --------------
 * Assignment: Series Sample

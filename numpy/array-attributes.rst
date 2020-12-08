@@ -130,6 +130,8 @@ Data
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Numpy Attributes
 ----------------
 * Assignment: Numpy Attributes

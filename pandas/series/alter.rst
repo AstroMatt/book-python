@@ -78,6 +78,8 @@ Reset Index
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Series Alter
 ------------
 * Assignment: Series Alter

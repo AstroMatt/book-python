@@ -127,6 +127,8 @@ Create from NDArray
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 DataFrame Create
 ----------------
 * Assignment: DataFrame Create

@@ -236,6 +236,8 @@ Use cases
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Database SQLite Logs
 --------------------
 * Assignment: Database SQLite Logs

@@ -121,9 +121,26 @@ Other
     ``np.genfromtxt()``, "Text", "Load data with missing values handled as specified"
     ``scipy.io.loadmat()``, "Binary", "reads MATLAB data files"
 
+.. code-block:: python
+
+    import numpy as np
+
+    data = np.loadtxt('_temporary.csv', delimiter=',', usecols=1, skiprows=1, dtype=np.float16)
+
+    small = (data < 1)
+    medium = (data < 1) & (data < 2.0)
+    large = (data < 2)
+
+    np.save('/tmp/small', data[small])
+    np.save('/tmp/medium', data[medium])
+    np.save('/tmp/large', data[large])
+
+
 
 Assignments
 ===========
+
+.. todo:: Convert assignments to literalinclude
 
 Numpy Loadtext
 --------------

@@ -35,6 +35,8 @@ Examples
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Regexp Search Astronauts
 ------------------------
 * Assignment: Regexp Search Astronauts

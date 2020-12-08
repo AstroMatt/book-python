@@ -241,6 +241,8 @@ Read SQL
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Pandas Read CSV Dates
 ---------------------
 * Assignment: Pandas Read CSV Dates

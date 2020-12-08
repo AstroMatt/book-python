@@ -196,6 +196,8 @@ Reset Index
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 DataFrame Sample
 ----------------
 * Assignment: DataFrame Sample

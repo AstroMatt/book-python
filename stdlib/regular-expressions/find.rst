@@ -39,6 +39,8 @@ Examples
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Regexp Find Dates
 -----------------
 * Assignment: Regexp Find Dates

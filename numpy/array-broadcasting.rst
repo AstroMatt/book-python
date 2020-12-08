@@ -341,6 +341,8 @@ Dot
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Numpy Broadcasting Arithmetic
 -----------------------------
 * Assignment: Numpy Broadcasting Arithmetic

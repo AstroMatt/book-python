@@ -164,6 +164,8 @@ Broadcasting
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Series Arithmetic
 -----------------
 * Assignment: Series Arithmetic

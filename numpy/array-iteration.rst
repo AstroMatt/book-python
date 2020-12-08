@@ -173,6 +173,8 @@ Enumerate
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Numpy Iteration
 ---------------
 * Assignment: Numpy Iteration

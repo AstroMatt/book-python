@@ -44,6 +44,8 @@ Examples
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Regexp Greedy Moon Speech
 -------------------------
 * Assignment: Regexp Greedy Moon Speech

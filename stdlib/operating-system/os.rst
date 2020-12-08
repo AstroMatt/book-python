@@ -643,6 +643,8 @@ Similar projects: Geckoboard, Dashing.
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Recursive folders walking
 -------------------------
 * Assignment: Recursive folders walking

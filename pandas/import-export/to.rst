@@ -46,6 +46,8 @@ Export data
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 DataFrame Export CSV
 --------------------
 * Assignment: DataFrame Export CSV

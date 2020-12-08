@@ -248,6 +248,8 @@ Ravel
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Numpy Shape
 -----------
 * Assignment: Numpy Shape

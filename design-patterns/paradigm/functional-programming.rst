@@ -524,6 +524,8 @@ Callback
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 ``map()``, ``filter()`` and ``lambda``
 --------------------------------------
 * Assignment: ``map()``, ``filter()`` and ``lambda``

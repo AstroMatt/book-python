@@ -841,6 +841,8 @@ Configuration
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Cleanup your file
 -----------------
 * Assignment: Cleanup your file

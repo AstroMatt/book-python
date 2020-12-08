@@ -63,3 +63,4 @@ Nowe Słownictwo
 Assignments
 ===========
 
+.. todo:: Create assignments

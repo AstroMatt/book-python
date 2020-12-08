@@ -161,6 +161,8 @@ Getting Page Text
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Iris
 ----
 * Assignment: Iris

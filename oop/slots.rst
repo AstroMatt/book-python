@@ -231,6 +231,8 @@ Use Cases
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 OOP Slots Define
 ----------------
 * Assignment: OOP Slots Define

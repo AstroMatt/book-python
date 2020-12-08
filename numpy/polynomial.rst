@@ -179,6 +179,8 @@ Sum of two polynomials
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Numpy Polyfit
 -------------
 * Assignment: Numpy Polyfit

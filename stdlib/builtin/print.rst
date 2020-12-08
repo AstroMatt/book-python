@@ -607,6 +607,8 @@ Quick and easy debugging
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Powielanie napisów
 ------------------
 * Assignment: Powielanie napisów

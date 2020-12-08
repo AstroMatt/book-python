@@ -68,6 +68,8 @@ Keyboard Shortcuts
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 About IDE Usage
 ---------------
 * Assignment: About IDE Usage

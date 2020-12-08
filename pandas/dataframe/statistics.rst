@@ -348,6 +348,8 @@ Examples
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 DataFrame Statistics
 --------------------
 * Assignment: DataFrame Statistics

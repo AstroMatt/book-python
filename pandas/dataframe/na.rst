@@ -267,6 +267,8 @@ Drop
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 DataFrame NaN
 -------------
 * Assignment: DataFrame NaN

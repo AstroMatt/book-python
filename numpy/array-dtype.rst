@@ -326,6 +326,8 @@ str
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Numpy Dtype Astype
 ------------------
 * Assignment: Numpy Dtype Astype

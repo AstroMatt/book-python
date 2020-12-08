@@ -217,6 +217,8 @@ Examples
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Column Stats
 ------------
 * Assignment: Column Stats

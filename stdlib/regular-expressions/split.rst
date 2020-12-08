@@ -57,6 +57,8 @@ Examples
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Regexp Split Moon Speech
 ------------------------
 * Assignment: Regexp Split Moon Speech

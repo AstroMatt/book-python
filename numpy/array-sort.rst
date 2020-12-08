@@ -119,6 +119,8 @@ Flip
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Numpy Sort
 ----------
 * Assignment: Numpy Sort

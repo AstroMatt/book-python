@@ -165,6 +165,8 @@ Stub
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Dragon
 ------
 * Assignment: Dragon

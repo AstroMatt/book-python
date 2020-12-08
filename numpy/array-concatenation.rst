@@ -74,6 +74,8 @@ Array Concatenation
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Numpy Concatenation
 -------------------
 * Assignment: Numpy Concatenation

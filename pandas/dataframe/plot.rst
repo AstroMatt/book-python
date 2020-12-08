@@ -437,6 +437,8 @@ Further Reading
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 DataFrame Plot
 --------------
 * Assignment: DataFrame Plot

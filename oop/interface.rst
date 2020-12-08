@@ -124,6 +124,8 @@ Use Cases
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 OOP Interface Define
 --------------------
 * Assignment: OOP Interface Define

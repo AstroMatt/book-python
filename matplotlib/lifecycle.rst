@@ -315,6 +315,8 @@ to disk. Note that there are several useful flags we'll show below:
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Iris transformations
 --------------------
 * Assignment: Iris transformations

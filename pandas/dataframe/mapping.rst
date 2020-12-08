@@ -316,6 +316,8 @@ Conversion
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 DataFrame Mapping Split
 -----------------------
 * Assignment: DataFrame Mapping Split

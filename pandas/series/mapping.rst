@@ -401,6 +401,8 @@ Example
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Series Mapping Clean
 --------------------
 * Assignment: Series Mapping Clean

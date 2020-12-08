@@ -160,6 +160,8 @@ Clip
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Numpy Round Rint
 ----------------
 * Assignment: Numpy Round Rint

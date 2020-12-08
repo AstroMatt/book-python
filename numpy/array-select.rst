@@ -493,6 +493,8 @@ Diagonal problem
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Numpy Select Isin
 -----------------
 * Assignment: Numpy Select Isin

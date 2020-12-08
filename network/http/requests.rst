@@ -277,6 +277,8 @@ Requests OAuth
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 REST API
 --------
 * Assignment: REST API

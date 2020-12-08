@@ -29,6 +29,8 @@ List requirements
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Installing from requirements.txt
 --------------------------------
 * Assignment: Installing from requirements.txt

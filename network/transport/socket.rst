@@ -125,6 +125,8 @@ References
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Heartbeat
 ---------
 * Assignment: Heartbeat

@@ -1,6 +1,8 @@
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Trigonometry
 ------------
 * Assignment: Trigonometry

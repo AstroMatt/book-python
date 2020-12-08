@@ -144,6 +144,8 @@ Date Index
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Series Getitem
 --------------
 * Assignment: Series Getitem

@@ -158,6 +158,8 @@ Python Developer Survey
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 About Environment
 -----------------
 * Assignment: About Environment

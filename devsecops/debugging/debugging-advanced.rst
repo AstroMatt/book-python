@@ -210,6 +210,8 @@ Wyciszanie logowania
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Own ``doctest``
 ---------------
 * Assignment: Own ``doctest``

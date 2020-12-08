@@ -364,6 +364,8 @@ Stringify
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Numpy Create Arange
 -------------------
 * Assignment: Numpy Create Arange

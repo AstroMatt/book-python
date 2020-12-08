@@ -251,6 +251,8 @@ Własna implementacja
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Least square regression 3 points
 --------------------------------
 * Assignment: Least square regression 3 points

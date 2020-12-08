@@ -191,6 +191,8 @@ Good Engineering Practices
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Regexp Match Phones
 -------------------
 * Assignment: Regexp Match Phones

@@ -64,6 +64,8 @@ Arcus hyperbolic functions
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Numpy Trigonometry
 ------------------
 * Assignment: Numpy Trigonometry

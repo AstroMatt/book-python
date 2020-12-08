@@ -127,6 +127,8 @@ Length
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Series Create Float
 -------------------
 * Assignment: Series Create Float

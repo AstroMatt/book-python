@@ -342,6 +342,8 @@ Join
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 DataFrame Join
 --------------
 * Assignment: DataFrame Join

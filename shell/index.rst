@@ -50,29 +50,6 @@ Serialization
     serialization-relations.rst
 
 
-******
-Regexp
-******
-.. toctree::
-    :maxdepth: 1
-    :caption: Regexp
-    :name: Regexp
-    :numbered:
-
-    re-syntax.rst
-    re-match.rst
-    re-search.rst
-    re-find.rst
-    re-compare.rst
-    re-compile.rst
-    re-groups.rst
-    re-multiline.rst
-    re-substitute.rst
-    re-split.rst
-    re-greedy.rst
-    re-standards.rst
-
-
 ********
 Database
 ********
@@ -98,9 +75,8 @@ Functions
 
     func-comprehensions.rst
     func-generators1.rst
-    func-generators2.rst
     func-lambda.rst
-    func-unpacking.rst
+    func-generators2.rst
     func-arguments.rst
     func-parameters.rst
 
@@ -175,21 +151,27 @@ Pandas
     pandas-about-workflow.rst
 
 
-***********
-Performance
-***********
+******
+Regexp
+******
 .. toctree::
     :maxdepth: 1
-    :caption: Performance
-    :name: Performance
+    :caption: Regexp
+    :name: Regexp
     :numbered:
 
-    performance-optimization.rst
-    performance-compilers.rst
-    performance-microbenchmarking.rst
-    performance-profiling.rst
-    performance-cmodules.rst
-    performance-ctypes.rst
+    re-syntax.rst
+    re-match.rst
+    re-search.rst
+    re-find.rst
+    re-compare.rst
+    re-compile.rst
+    re-groups.rst
+    re-multiline.rst
+    re-substitute.rst
+    re-split.rst
+    re-greedy.rst
+    re-standards.rst
 
 
 ************

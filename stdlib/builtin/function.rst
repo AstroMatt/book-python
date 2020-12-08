@@ -346,6 +346,8 @@ Other builtin functions
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Average
 -------
 * Assignment: Average

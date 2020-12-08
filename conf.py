@@ -6,8 +6,8 @@ language = 'en'
 html_theme = 'sphinx_rtd_theme'
 html_baseurl = 'https://python.astrotech.io'
 
-todo_emit_warnings = False
-todo_include_todos = True
+todo_emit_warnings = True
+todo_include_todos = False
 
 extensions = [
     # 'sphinx.ext.autosectionlabel',

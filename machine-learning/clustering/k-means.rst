@@ -326,6 +326,8 @@ K-means Clustering dla zbioru Iris
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Klastrowanie zbioru Iris
 ------------------------
 * Assignment: Klastrowanie zbioru Iris

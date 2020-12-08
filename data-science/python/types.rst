@@ -462,6 +462,8 @@ Logic operators
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 To ``bool`` or not to ``bool``
 ------------------------------
 * Assignment: To ``bool`` or not to ``bool``

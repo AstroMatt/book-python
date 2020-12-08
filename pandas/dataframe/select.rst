@@ -215,6 +215,8 @@ Logical XOR
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 DataFrame Select
 ----------------
 * Assignment: DataFrame Select

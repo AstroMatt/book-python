@@ -250,6 +250,8 @@ Multi-indexing
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Numpy Indexing
 --------------
 * Assignment: Numpy Indexing

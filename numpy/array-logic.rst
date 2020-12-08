@@ -354,6 +354,8 @@ Readability Counts
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Numpy Logic Even
 ----------------
 * Assignment: Numpy Logic Even

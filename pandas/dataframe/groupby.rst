@@ -481,6 +481,8 @@ Output format
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 DataFrame Groupby Phones
 ------------------------
 * Assignment: DataFrame Groupby Phones

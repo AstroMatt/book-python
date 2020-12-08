@@ -256,6 +256,8 @@ Linear Algebra
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Numpy Algebra Euclidean 2D
 --------------------------
 * Assignment: Numpy Algebra Euclidean 2D

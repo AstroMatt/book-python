@@ -176,6 +176,17 @@ Lineterminator
 
 Dialects
 ========
+.. code-block:: text
+
+    1,2 and 2,5 -> 1,2;2,5  # delimiter=';'
+    1.2 and 2.5 -> 1.2,2.5  # delimiter=','
+
+.. code-block:: text
+
+    1,2;2,5 -> 1 and 2; and 2 and 5  # delimiter=','
+    1,2 -> 1,2;2,5  # delimiter=';'
+    1.2,2.5 -> 1.2 and 2.5  # delimiter=','
+
 .. code-block:: python
 
     import csv
@@ -455,6 +466,29 @@ Parsing Non-CSV Files
     # {'property': 'sonar.language', 'value': 'py'}
     # {'property': 'sonar.sourceEncoding', 'value': 'UTF-8'}
     # {'property': 'sonar.verbose', 'value': 'true'}
+
+
+Use Cases
+=========
+.. code-block:: python
+
+    import csv
+
+    FILE = r'_temporary.csv'
+
+    total = 0
+    count = 0
+
+    with open(FILE) as file:
+        data = csv.reader(file)
+        next(data)
+
+        for line in data:
+            total += float(line[1])
+            count += 1
+
+    mean = total / count
+    print(mean)
 
 
 Serialization

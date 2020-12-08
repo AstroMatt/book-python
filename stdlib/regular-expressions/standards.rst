@@ -83,6 +83,8 @@ To parse a *URL* url into its component parts, the user agent must use the follo
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Regexp Standards PESEL
 ----------------------
 * Assignment: Regexp Standards PESEL

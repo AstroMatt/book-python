@@ -121,6 +121,8 @@ Example Model
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Address Book
 ------------
 * Assignment: Address Book

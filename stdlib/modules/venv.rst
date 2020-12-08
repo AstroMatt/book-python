@@ -154,6 +154,8 @@ Further Reading
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Virtualenv
 ----------
 * Assignment: Virtualenv

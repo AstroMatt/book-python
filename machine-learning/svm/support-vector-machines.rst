@@ -391,6 +391,8 @@ We'll leave SVMs for the time being and take a look at another classification al
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Wykorzystanie biblioteki ``sklearn``
 ------------------------------------
 * Assignment: Wykorzystanie biblioteki ``sklearn``

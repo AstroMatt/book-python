@@ -131,6 +131,8 @@ Read the docs
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Dokumentacja
 ------------
 * Assignment: Dokumentacja

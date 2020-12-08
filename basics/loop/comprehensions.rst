@@ -143,8 +143,17 @@ List Comprehension
 
 .. code-block:: python
 
-    list(x+10 for x in range(0,5))
-    # [10, 11, 12, 13, 14]
+    list(x+1 for x in range(0,5))
+    # [1, 2, 3, 4, 5]
+
+    list(x-1 for x in range(0,5))
+    # [-1, 0, 1, 2, 3]
+
+    list(x**2 for x in range(0,5))
+    # [0, 1, 4, 9, 16]
+
+    list(2**x for x in range(0,5))
+    # [1, 2, 4, 8, 16]
 
 
 Set Comprehension
@@ -164,20 +173,20 @@ Dict Comprehension
 .. code-block:: python
     :caption: ``dict`` comprehension approach to applying function to elements
 
-    {x:x+10 for x in range(0,5)}
-    # {0:10, 1:11, 2:12, 3:13, 4:14}
+    {x+10:x for x in range(0,5)}
+    # {10: 0, 11: 1, 12: 2, 13: 3, 14: 4}
 
-    dict((x,x+10) for x in range(0,5))
-    # {0:10, 1:11, 2:12, 3:13, 4:14}
+    dict((x+10,x) for x in range(0,5))
+    # {10: 0, 11: 1, 12: 2, 13: 3, 14: 4}
 
 .. code-block:: python
     :caption: ``dict`` comprehension approach to applying function to elements
 
-    {x+10:x for x in range(0,5)}
-    # {10:0, 11:1, 12:2, 13:3, 14:4}
+    {x:x+10 for x in range(0,5)}
+    # {0: 10, 1: 11, 2: 12, 3: 13, 4: 14}
 
-    dict((x+10,x) for x in range(0,5))
-    # {10:0, 11:1, 12:2, 13:3, 14:4}
+    dict((x,x+10) for x in range(0,5))
+    # {0: 10, 1: 11, 2: 12, 3: 13, 4: 14}
 
 .. code-block:: python
     :caption: ``dict`` Comprehension approach to applying function to elements
@@ -185,7 +194,7 @@ Dict Comprehension
     {x+10:x+10 for x in range(0,5)}
     # {10:10, 11:11, 12:12, 13:13, 14:14}
 
-    dict((x+10:x+10) for x in range(0,5))
+    dict((x+10:x-10) for x in range(0,5))
     # {10:10, 11:11, 12:12, 13:13, 14:14}
 
 
@@ -223,7 +232,9 @@ Filter
 
 .. code-block:: python
 
-    [x for x in range(0,5) if x%2==0]
+    result = [x for x in range(0,5) if x%2==0]
+
+    print(result)
     # [0, 2, 4]
 
 .. code-block:: python
@@ -293,16 +304,12 @@ Indent and Whitespaces
 
     result = [pow(x,2) for x in range(0,5)]
 
-.. code-block:: python
-
     result = [pow(x,2)
               for x in range(0,5)]
 
 .. code-block:: python
 
     result = [pow(x, 2) for x in range(0, 5) if x % 2 == 0]
-
-.. code-block:: python
 
     result = [pow(x,2) for x in range(0,5) if x%2==0]
 
@@ -312,15 +319,78 @@ Indent and Whitespaces
               for x in range(0,5)
                   if x % 2 == 0]
 
-.. code-block:: python
-
     result = [pow(x,2)
               for x in range(0,5)
               if x % 2 == 0]
 
+.. code-block:: python
+
+    DATA = [{'a':1, 'b':2, 'c': 3},
+            {'a':1, 'b':2, 'c': 3},
+            {'a':1, 'b':2, 'c': 3}]
+
+    result = [value
+              for row in DATA
+                for key, value in row.items()]
+
+    result = [value
+              for row in DATA
+              for key, value in row.items()]
+
+.. code-block:: python
+
+    result = [astronaut | dict(addresses)
+              for astronaut in json.loads(DATA)
+                for i, address in enumerate(astronaut.pop('addresses'), start=1)
+                    if (columns := [f'{key}{i}' for key in address.keys()])
+                        and (addresses := zip(columns, address.values()))]
+
+
+    result = [astronaut | dict(addresses)
+              for astronaut in json.loads(DATA)
+              for i, address in enumerate(astronaut.pop('addresses'), start=1)
+              if (columns := [f'{key}{i}' for key in address.keys()])
+              and (addresses := zip(columns, address.values()))]
+
 
 Nested
 ======
+.. code-block:: python
+
+    DATA = {
+        6: ['Doctorate', 'Prof-school'],
+        5: ['Masters', 'Bachelor', 'Engineer'],
+        4: ['HS-grad'],
+        3: ['Junior High'],
+        2: ['Primary School'],
+        1: ['Kindergarten'],
+    }
+
+    result = {}
+    for i, titles in DATA.items():
+          for title in titles:
+              result[title] = str(i)
+
+    print(result)
+    # {'Doctorate': '6',
+    #  'Prof-school': '6',
+    #  'Masters': '5',
+    #  'Bachelor': '5',
+    #  'Engineer': '5',
+    #  'HS-grad': '4',
+    #  'Junior High': '3',
+    #  'Primary School': '2',
+    #  'Kindergarten': '1'}
+
+    print(i)
+    # 1
+
+    print(title)
+    # Kindergarten
+
+    print(titles)
+    # ['Kindergarten']
+
 .. code-block:: python
 
     DATA = {
@@ -337,17 +407,28 @@ Nested
               for title in titles}
 
     print(result)
-    # {
-    #   'Doctorate': '6',
-    #   'Prof-school': '6',
-    #   'Masters': '5',
-    #   'Bachelor': '5',
-    #   'Engineer': '5',
-    #   'HS-grad': '4',
-    #   'Junior High': '3',
-    #   'Primary School': '2',
-    #   'Kindergarten': '1'
-    # }
+    # {'Doctorate': '6',
+    #  'Prof-school': '6',
+    #  'Masters': '5',
+    #  'Bachelor': '5',
+    #  'Engineer': '5',
+    #  'HS-grad': '4',
+    #  'Junior High': '3',
+    #  'Primary School': '2',
+    #  'Kindergarten': '1'}
+
+    print(i)
+    # Traceback (most recent call last):
+    # NameError: name 'i' is not defined
+
+    print(title)
+    # Traceback (most recent call last):
+    # NameError: name 'title' is not defined
+
+    print(titles)
+    # Traceback (most recent call last):
+    # NameError: name 'titles' is not defined
+
 
 
 Examples
@@ -446,6 +527,43 @@ Examples
     # [{'firstname': 'Jan', 'lastname': 'Twardowski'},
     #  {'firstname': 'Mark', 'lastname': 'Watney'},
     #  {'firstname': 'Melissa', 'lastname': 'Lewis'}]
+
+
+    astronauts = [{'firstname': person['name'].split()[0].capitalize(),
+                   'lastname': person['name'].split()[1][0]+'.'}
+                   for person in DATA
+                   if person['is_astronaut']]
+
+    print(astronauts)
+    # [{'firstname': 'Jan', 'lastname': 'T.'},
+    #  {'firstname': 'Mark', 'lastname': 'W.'},
+    #  {'firstname': 'Melissa', 'lastname': 'L.'}]
+
+
+    astronauts = [{'firstname': fname, 'lastname': lname}
+                   for person in DATA
+                   if person['is_astronaut']
+                   and (name := person['name'].split())
+                   and (fname := name[0].capitalize())
+                   and (lname := f'{name[1][0]}.')]
+
+    print(astronauts)
+    # [{'firstname': 'Jan', 'lastname': 'T.'},
+    #  {'firstname': 'Mark', 'lastname': 'W.'},
+    #  {'firstname': 'Melissa', 'lastname': 'L.'}]
+
+
+    astronauts = [f'{fname} {lname[0]}.'
+                  for person in DATA
+                  if person['is_astronaut']
+                  and (fullname := person['name'].split())
+                  and (fname := fullname[0].capitalize())
+                  and (lname := fullname[1].upper())
+
+    print(astronauts)
+    # ['Jan T.', 'Mark W.', 'Melissa L.']
+
+More information in :ref:`Assignment Expression`
 
 .. code-block:: python
     :caption: Using ``list`` comprehension for filtering with more complex expression

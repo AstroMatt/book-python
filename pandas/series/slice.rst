@@ -294,6 +294,8 @@ Date Index
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Series Slice Datetime
 ---------------------
 * Assignment: Series Slice Datetime

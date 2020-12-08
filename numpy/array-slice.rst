@@ -160,6 +160,8 @@ Array Slice
 Assignments
 ===========
 
+.. todo:: Convert assignments to literalinclude
+
 Numpy Slice 1
 -------------
 * Assignment: Numpy Slice 1
