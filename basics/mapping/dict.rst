@@ -13,8 +13,8 @@ Rationale
     * Mutable - can add, remove, and modify items
 
 
-Type Definition
-===============
+Definition
+==========
 * ``{}`` is used more often
 * ``dict()`` is more readable
 * Comma after last element is optional

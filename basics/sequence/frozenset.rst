@@ -1,34 +1,30 @@
-.. _Sequence Frozenset:
-
-******************
 Sequence Frozenset
-******************
+==================
 
 
 Rationale
-=========
-.. highlights::
-    * Only unique values
-    * Immutable - cannot add, modify or remove items
-    * Can store elements of any **hashable** types
-    * Has all ``set`` methods such as ``.intersect()``, ``.subset()`` ``.union()``, etc.
-    * One solid block in memory
-    * Frozenset is unordered data structure and do not record element position
-    * Do not support getitem and slice
+---------
+* Only unique values
+* Immutable - cannot add, modify or remove items
+* Can store elements of any **hashable** types
+* Has all ``set`` methods such as ``.intersect()``, ``.subset()`` ``.union()``, etc.
+* One solid block in memory
+* Frozenset is unordered data structure and do not record element position
+* Do not support getitem and slice
 
 
-Type Definition
-===============
-.. highlights::
-    * Defining only with ``frozenset()`` - no short syntax
-    * Comma after last element of a one element frozenset is optional
-    * Brackets are required
+Definition
+----------
+Defining only with ``frozenset()`` - no short syntax:
 
-.. code-block:: python
+    >>> data = frozenset()
 
-    data = frozenset()
+Comma after last element of a one element frozenset is optional:
 
-.. code-block:: python
+    >>> data = frozenset({1})
+    >>> data = frozenset({1,})
+
+Brackets inside are required:
 
     data = frozenset({1})
     data = frozenset({1, 2, 3})
@@ -39,56 +35,41 @@ Type Definition
 
 
 Type Casting
-============
-.. highlights::
-    * ``frozenset()`` converts argument to ``frozenset``
+------------
+Builtin function ``frozenset()`` converts argument to ``frozenset``
 
-.. code-block:: python
+    >>> data = 'abcd'
+    >>> frozenset(data) == frozenset({'a', 'b', 'c', 'd'})
+    True
 
-    data = 'abcd'
-    frozenset(data)
-    # frozenset({'a', 'b', 'c', 'd'})
+    >>> data = ['a', 'b', 'c', 'd']
+    >>> frozenset(data) == frozenset({'a', 'b', 'c', 'd'})
+    True
 
-.. code-block:: python
+    >>> data = ('a', 'b', 'c', 'd')
+    >>> frozenset(data) == frozenset({'a', 'b', 'c', 'd'})
+    True
 
-    data = ['a', 'b', 'c', 'd']
-    frozenset(data)
-    # frozenset({'a', 'b', 'c', 'd'})
+    >>> data = {'a', 'b', 'c', 'd'}
+    >>> frozenset(data) == frozenset({'a', 'b', 'c', 'd'})
+    True
 
-.. code-block:: python
+    >>> data = frozenset({'a', 'b', 'c', 'd'})
+    >>> frozenset(data) == frozenset({'a', 'b', 'c', 'd'})
+    True
 
-    data = ('a', 'b', 'c', 'd')
-    frozenset(data)
-    # frozenset({'a', 'b', 'c', 'd'})
+    >>> data = [1, 2, 3, [4, 5]]
+    >>> frozenset(data)
+    Traceback (most recent call last):
+    TypeError: unhashable type: 'list'
 
-.. code-block:: python
-
-    data = {'a', 'b', 'c', 'd'}
-    frozenset(data)
-    # frozenset({'a', 'b', 'c', 'd'})
-
-.. code-block:: python
-
-    data = frozenset({'a', 'b', 'c', 'd'})
-    frozenset(data)
-    # frozenset({'a', 'b', 'c', 'd'})
-
-.. code-block:: python
-
-    data = [1, 2, 3, [4, 5]]
-    frozenset(data)
-    # Traceback (most recent call last):
-    # TypeError: unhashable type: 'list'
-
-.. code-block:: python
-
-    data = [1, 2, 3, (4, 5)]
-    frozenset(data)
-    # frozenset({(4, 5), 1, 2, 3})
+    >>> data = [1, 2, 3, (4, 5)]
+    >>> frozenset(data) == frozenset({(4, 5), 1, 2, 3})
+    True
 
 
-Frozenset or Set
-================
+Frozenset vs. Set
+-----------------
 Both:
 
     * unordered
@@ -109,9 +90,7 @@ Set:
 
 
 Assignments
-===========
-
-
+-----------
 .. literalinclude:: assignments/sequence_frozenset_create.py
     :caption: :download:`Solution <assignments/sequence_frozenset_create.py>`
     :end-before: # Solution

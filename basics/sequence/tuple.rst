@@ -1,149 +1,163 @@
-.. _Sequence Tuple:
-
-**************
 Sequence Tuple
-**************
+==============
 
 
 Rationale
-=========
-.. highlights::
-    * Can store elements of any types
-    * Immutable - cannot add, modify or remove items
+---------
+* Immutable - cannot add, modify or remove items
 
 
-Type Definition
-===============
-.. highlights::
-    * ``()`` is used more often
-    * ``tuple()`` is more readable
-    * Single element ``tuple`` require comma at the end (**important!**)
-    * Brackets are optional
-    * Comma after last element of one element tuple is optional
+Definition
+----------
+Defining empty tuple with ``()`` is used more often, but ``tuple()`` is more explicit:
 
-.. code-block:: python
+    >>> data = ()
+    >>> data = tuple()
 
-    data = ()
-    data = tuple()
+Can store elements of any type:
 
-.. code-block:: python
-    :caption: Single element ``tuple`` require comma at the end (**important!**)
+    >>> data = (1, 2, 3)
+    >>> data = (1.1, 2.2, 3.3)
+    >>> data = (True, False)
+    >>> data = ('a', 'b', 'c')
+    >>> data = ('a', 1, 2.2, True, None)
 
-    data = (1,)
-    data = 1,
+Brackets are optional, but it's a good practice to always write them:
 
-.. code-block:: python
-    :caption: Brackets are optional and comma after last element of one element tuple is optional
+    >>> data = (1, 2, 3)
+    >>> data = 1, 2, 3
 
-    data = (1, 2, 3)
-    data = (1.1, 2.2, 3.3)
-    data = (True, False)
-    data = ('a', 'b', 'c')
-    data = ('a', 1, 2.2, True, None)
+Single element ``tuple`` require comma at the end (**important!**):
 
-    data = 1, 2, 3
-    data = 1.1, 2.2, 3.3
-    data = True, False
-    data = 'a', 'b', 'c'
-    data = 'a', 1, 2.2, True, None
+    >>> data = (1,)
+    >>> type(data)
+    <class 'tuple'>
+
+    >>> data = (1)
+    >>> type(data)
+    <class 'int'>
+
+Comma after last element of multi value tuple is optional:
+
+    >>> data = (1, 2)
+    >>> type(data)
+    <class 'tuple'>
+
+    >>> data = (1, 2,)
+    >>> type(data)
+    <class 'tuple'>
 
 
 Type Casting
-============
-.. highlights::
-    * ``tuple()`` converts argument to ``tuple``
+------------
+Builtin function ``tuple()`` converts argument to ``tuple``
 
-.. code-block:: python
+    >>> data = 'abcd'
+    >>> tuple(data)
+    ('a', 'b', 'c', 'd')
 
-    data = 'abcd'
-    tuple(data)
-    # ('a', 'b', 'c', 'd')
+    >>> data = ['a', 'b', 'c', 'd']
+    >>> tuple(data)
+    ('a', 'b', 'c', 'd')
 
-.. code-block:: python
+    >>> data = ('a', 'b', 'c', 'd')
+    >>> tuple(data)
+    ('a', 'b', 'c', 'd')
 
-    data = ['a', 'b', 'c', 'd']
-    tuple(data)
-    # ('a', 'b', 'c', 'd')
-
-.. code-block:: python
-
-    data = ('a', 'b', 'c', 'd')
-    tuple(data)
-    # ('a', 'b', 'c', 'd')
-
-.. code-block:: python
-
-    data = {1, 2, 3}
-    tuple(data)
-    # ('a', 'b', 'c', 'd')
-
-.. code-block:: python
-
-    data = frozenset({'a', 'b', 'c', 'd'})
-    tuple(data)
-    # ('a', 'b', 'c', 'd')
+    >>> tuple('a', 'b', 'c', 'd')
+    Traceback (most recent call last):
+    TypeError: tuple expected at most 1 argument, got 4
 
 
 GetItem
-=======
-.. highlights::
-    * More information in :ref:`Sequence GetItem` and :ref:`Sequence Slice`
+-------
+* More information in :ref:`Sequence GetItem` and :ref:`Sequence Slice`
 
-.. code-block:: python
+    >>> data = ('a', 'b', 'c', 'd')
 
-    data = ('a', 'b', 'c', 'd')
-
-    data[0]         # 'a'
-    data[1]         # 'b'
-    data[2]         # 'c'
-    data[3]         # 'd'
+    >>> data[0]
+    'a'
+    >>> data[1]
+    'b'
+    >>> data[2]
+    'c'
+    >>> data[3]
+    'd'
 
 
 Tuple or Int, Float, Str
-=========================
-.. code-block:: python
+------------------------
+    >>> data = 1
+    >>> type(data)
+    <class 'int'>
 
-    data = 1
-    type(data)
-    # <class 'int'>
+    >>> data = 1,
+    >>> type(data)
+    <class 'tuple'>
 
-    data = 1,
-    type(data)
-    # <class 'tuple'>
+    >>> data = 1.
+    >>> type(data)
+    <class 'float'>
 
-    data = 1.
-    type(data)
-    # <class 'float'>
+    >>> data = 1.2
+    >>> type(data)
+    <class 'float'>
+    >>> data = 1,2
+    >>> type(data)
+    <class 'tuple'>
+    >>> data = 1.2,
+    >>> type(data)
+    <class 'tuple'>
+    >>> data = 1,2.3
+    >>> type(data)
+    <class 'tuple'>
 
-.. code-block:: python
+    >>> data = 1.
+    >>> type(data)
+    <class 'float'>
+    >>> data = 1,
+    >>> type(data)
+    <class 'tuple'>
+    >>> data = 1.,
+    >>> type(data)
+    <class 'tuple'>
 
-    type(1.2)        # <class 'float'>
-    type(1,2)        # <class 'tuple'>
+    >>> data = .2
+    >>> type(data)
+    <class 'float'>
+    >>> data = .2,
+    >>> type(data)
+    <class 'tuple'>
+    >>> data = 1.2
+    >>> type(data)
+    <class 'float'>
 
-.. code-block:: python
+    >>> data = 1
+    >>> type(data)
+    <class 'int'>
+    >>> data = 1.,1.
+    >>> type(data)
+    <class 'tuple'>
+    >>> data = .2,.2
+    >>> type(data)
+    <class 'tuple'>
+    >>> data = 1.,.2
+    >>> type(data)
+    <class 'tuple'>
 
-    type(1.2,)       # <class 'tuple'>
-    type(1,2.3)      # <class 'tuple'>
-
-    type(1.)         # <class 'float'>
-    type(1,)         # <class 'tuple'>
-    type(1.,)        # <class 'tuple'>
-    type(.2)         # <class 'float'>
-    type(.2,)        # <class 'tuple'>
-    type(1.2)        # <class 'float'>
-    type(1)          # <class 'int'>
-
-    type(1.,1.)      # <class 'tuple'>
-    type(.2,.2)      # <class 'tuple'>
-    type(1.,.2)      # <class 'tuple'>
-
-    type('foo')      # <class 'str'>
-    type('foo',)     # <class 'tuple'>
-    type('foo'.)     # SyntaxError: invalid syntax
+    >>> data = 'foo'
+    >>> type(data)
+    <class 'str'>
+    >>> data = ('foo',)
+    >>> type(data)
+    <class 'tuple'>
+    >>> data = 'foo'.
+    Traceback (most recent call last):
+    SyntaxError: invalid syntax
 
 
 Tuple or List
-=============
+-------------
 Both:
 
     * ordered
@@ -162,19 +176,18 @@ List:
     * implemented in memory as list of pointers to objects
     * objects are scattered in memory
 
-.. code-block:: python
+Memory Footprint:
 
-    from sys import getsizeof
-
-
-    a = [1, 2, 3]
-    b = (1, 2, 3)
-
-    getsizeof(a)
-    # 120
-
-    getsizeof(b)
-    # 64
+    >>> from sys import getsizeof
+    >>>
+    >>> a = [1, 2, 3]
+    >>> b = (1, 2, 3)
+    >>>
+    >>> getsizeof(a)
+    120
+    >>>
+    >>> getsizeof(b)
+    64
 
 .. figure:: img/memory-tuple.png
 
@@ -190,8 +203,7 @@ List:
 
 
 Assignments
-===========
-
+-----------
 .. literalinclude:: assignments/sequence_tuple_create.py
     :caption: :download:`Solution <assignments/sequence_tuple_create.py>`
     :end-before: # Solution

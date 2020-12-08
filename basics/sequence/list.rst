@@ -1,293 +1,243 @@
-.. _Sequence List:
-
-*************
 Sequence List
-*************
+=============
 
 
 Rationale
-=========
-.. highlights::
-    * Can store elements of any types
-    * Mutable - can add, remove, and modify items
+---------
+* Mutable - can add, remove, and modify items
 
 
-Type Definition
-===============
-.. highlights::
-    * Defining empty list with ``[]`` is used more often, but ``list()`` is more readable
-    * Comma after last element of a one element list is optional
-    * Brackets are required
+Definition
+----------
+Defining empty list with ``[]`` is used more often, but ``list()`` is more explicit:
 
-.. code-block:: python
+    >>> data = list()
+    >>> data = []
 
-    data = list()
-    data = []
+Can store elements of any types:
 
-.. code-block:: python
+    >>> data = [1, 2, 3]
+    >>> data = [1.1, 2.2, 3.3]
+    >>> data = [True, False]
+    >>> data = ['a', 'b', 'c']
+    >>> data = ['a', 1, 2.2, True, None]
 
-    data = [1]
-    data = [1, 2, 3]
-    data = [1.1, 2.2, 3.3]
-    data = [True, False]
-    data = ['a', 'b', 'c']
-    data = ['a', 1, 2.2, True, None]
+Brackets are required
 
-.. code-block:: python
+    >>> data = [1, 2, 3]
 
-    list(1, 2, 3, 4)
-    # Traceback (most recent call last):
-    # TypeError: list expected at most 1 argument, got 4
+Comma after last element of a one element list is optional
 
-    list([1, 2, 3, 4])
-    # [1, 2, 3, 4]
+    >>> data = [1,]
+    >>> type(data)
+    <class 'list'>
+
+    >>> data = [1]
+    >>> type(data)
+    <class 'list'>
 
 
 Type Casting
-============
-.. highlights::
-    * ``list()`` converts argument to ``list``
+------------
+Builtin function ``list()`` converts argument to ``list``
 
-.. code-block:: python
+    >>> data = 'abcd'
+    >>> list(data)
+    ['a', 'b', 'c', 'd']
 
-    data = 'abcd'
-    list(data)
-    # ['a', 'b', 'c', 'd']
+    >>> data = ['a', 'b', 'c', 'd']
+    >>> list(data)
+    ['a', 'b', 'c', 'd']
 
-.. code-block:: python
+    >>> data = ('a', 'b', 'c', 'd')
+    >>> list(data)
+    ['a', 'b', 'c', 'd']
 
-    data = ['a', 'b', 'c', 'd']
-    list(data)
-    # ['a', 'b', 'c', 'd']
-
-.. code-block:: python
-
-    data = ('a', 'b', 'c', 'd')
-    list(data)
-    # ['a', 'b', 'c', 'd']
-
-.. code-block:: python
-
-    data = {'a', 'b', 'c', 'd'}
-    list(data)
-    # ['a', 'b', 'c', 'd']
-
-.. code-block:: python
-
-    data = frozenset({'a', 'b', 'c', 'd'})
-    list(data)
-    # ['a', 'b', 'c', 'd']
+    >>> list(1, 2, 3, 4)
+    Traceback (most recent call last):
+    TypeError: list expected at most 1 argument, got 4
 
 
 GetItem
-=======
-.. highlights::
-    * More information in :ref:`Sequence GetItem` and :ref:`Sequence Slice`
+-------
+* More information in :ref:`Sequence GetItem` and :ref:`Sequence Slice`
 
-.. code-block:: python
-
-    data = ['a', 'b', 'c', 'd']
-
-    data[0]         # 'a'
-    data[1]         # 'b'
-    data[2]         # 'c'
-    data[3]         # 'd'
+    >>>data = ['a', 'b', 'c', 'd']
+    >>>
+    >>>data[0]
+    'a'
+    >>>data[1]
+    'b'
+    >>>data[2]
+    'c'
+    >>>data[3]
+    'd'
 
 
 Set Item
-========
-.. code-block:: python
+--------
+    >>> data = ['a', 'b', 'c', 'd']
+    >>> data[0] = 'x'
+    >>>
+    >>> print(data)
+    ['x', 'b', 'c', 'd']
 
-    data = ['a', 'b', 'c', 'd']
-    data[0] = 'x'
-
-    print(data)
-    # ['x', 'b', 'c', 'd']
-
-.. code-block:: python
-
-    data = ['a', 'b', 'c', 'd']
-    data[4] = 'x'
-    # Traceback (most recent call last):
-    # IndexError: list assignment index out of range
+    >>> data = ['a', 'b', 'c', 'd']
+    >>> data[4] = 'x'
+    Traceback (most recent call last):
+    IndexError: list assignment index out of range
 
 
 Del Item
-========
-.. code-block:: python
+--------
+    >>> data = ['a', 'b', 'c', 'd']
+    >>> del data[3]
+    >>>
+    >>> print(data)
+    ['a', 'b', 'c']
 
-    data = ['a', 'b', 'c', 'd']
-    del data[3]
-
+    >>> data = ['a', 'b', 'c', 'd']
+    >>> value = data.pop()
+    >>>
     print(data)
-    # ['a', 'b', 'c']
-
-.. code-block:: python
-
-    data = ['a', 'b', 'c', 'd']
-    value = data.pop()
-
-    print(data)
-    # ['a', 'b', 'c']
-
+    ['a', 'b', 'c']
+    >>>
     print(value)
-    # 'd'
+    'd'
 
 
 Append
-======
-.. highlights::
-    * ``list + list``
-    * ``list += list``
-    * ``list.extend()``
-    * ``list.append()``
+------
+* ``list + list``
+* ``list += list``
+* ``list.extend()``
+* ``list.append()``
 
-.. code-block:: python
+    >>> data = [1, 2]
+    >>> data = data + [3, 4]
+    >>>
+    >>> print(data)
+    [1, 2, 3, 4]
 
-    data = [1, 2]
-    data = data + [3, 4]
+    >>> data = [1, 2]
+    >>> data += [3, 4]
+    >>>
+    >>> print(data)
+    [1, 2, 3, 4]
 
-    print(data)
-    # [1, 2, 3, 4]
+    >>> data = [1, 2]
+    >>> data.extend([3, 4])
+    >>>
+    >>> print(data)
+    [1, 2, 3, 4]
 
-.. code-block:: python
+    >>> data = [1, 2]
+    >>> data.append(3)
+    >>>
+    >>> print(data)
+    [1, 2, 3]
 
-    data = [1, 2]
-    data += [3, 4]
-
-    print(data)
-    # [1, 2, 3, 4]
-
-.. code-block:: python
-
-    data = [1, 2]
-    data.extend([3, 4])
-
-    print(data)
-    # [1, 2, 3, 4]
-
-.. code-block:: python
-
-    data = [1, 2]
-    data.append(3)
-
-    print(data)
-    # [1, 2, 3]
-
-.. code-block:: python
-
-    data = [1, 2]
-    data.append([3, 4])
-
-    print(data)
-    # [1, 2, [3, 4]]
+    >>> data = [1, 2]
+    >>> data.append([3, 4])
+    >>>
+    >>> print(data)
+    [1, 2, [3, 4]]
 
 
 Insert
-======
-.. highlights::
-    * Insert at specific position
+------
+* Insert at specific position
 
-.. code-block:: python
+    >>> data = ['a', 'b', 'c', 'd']
+    >>> data.insert(0, 'x')
+    >>>
+    >>> print(data)
+    ['x', 'a', 'b', 'c', 'd']
 
-    data = ['a', 'b', 'c', 'd']
-    data.insert(0, 'x')
-
-    print(data)
-    # ['x', 'a', 'b', 'c', 'd']
-
-.. code-block:: python
-
-    data = ['a', 'b', 'c', 'd']
-    data.insert(1, 'x')
-
-    print(data)
-    # ['a', 'x', 'b', 'c', 'd']
+    >>> data = ['a', 'b', 'c', 'd']
+    >>> data.insert(1, 'x')
+    >>>
+    >>> print(data)
+    ['a', 'x', 'b', 'c', 'd']
 
 
-Sort
-====
-.. epigraph::
+Sort vs Sorted
+--------------
+Timsort is a hybrid sorting algorithm, derived from merge sort and insertion sort, designed to perform well on many kinds of real-world data. It was invented by Tim Peters in 2002 for use in the Python programming language. The algorithm finds subsets of the data that are already ordered, and uses the subsets to sort the data more efficiently. This is done by merging an identified subset, called a run, with existing runs until certain criteria are fulfilled. Timsort has been Python's standard sorting algorithm since version 2.3. It is now also used to sort arrays in Java SE 7, and on the Android platform. [timsort]_
 
-    Timsort is a hybrid sorting algorithm, derived from merge sort and insertion sort, designed to perform well on many kinds of real-world data. It was invented by Tim Peters in 2002 for use in the Python programming language. The algorithm finds subsets of the data that are already ordered, and uses the subsets to sort the data more efficiently. This is done by merging an identified subset, called a run, with existing runs until certain criteria are fulfilled. Timsort has been Python's standard sorting algorithm since version 2.3. It is now also used to sort arrays in Java SE 7, and on the Android platform.
+* ``sorted()`` - Returns sorted list, do not modify the original
+* ``list.sort()`` - Changes object permanently, returns None
 
-.. highlights::
-    * ``sorted()`` - Returns sorted list, do not modify the original
-    * ``list.sort()`` - Changes object permanently, returns None
+    >>> a = [3, 1, 2]
+    >>> b = sorted(a)
+    >>>
+    >>> print(a)
+    [3, 1, 2]
+    >>>
+    >>> print(b)
+    [1, 2, 3]
 
-.. code-block:: python
-
-    a = [3, 1, 2]
-    b = sorted(a)
-
-    print(a)
-    # [3, 1, 2]
-
-    print(b)
-    # [1, 2, 3]
-
-.. code-block:: python
-
-    a = [3, 1, 2]
-    b = a.sort()
-
-    print(a)
-    # [1, 2, 3]
-
-    print(b)
-    # None
+    >>> a = [3, 1, 2]
+    >>> b = a.sort()
+    >>>
+    >>> print(a)
+    [1, 2, 3]
+    >>>
+    >>> print(b)
+    None
 
 
 Method Chaining
-===============
-.. code-block:: python
+---------------
+    >>> data = [3, 1, 2]
+    >>> data.sort()
+    >>> data.append(4)
+    >>>
+    >>> print(data)
+    [1, 2, 3, 4]
 
-    data = [3, 1, 2]
-    data.sort()
-    data.append(4)
-
-    print(data)
-    # [1, 2, 3, 4]
-
-.. code-block:: python
-
-    data = [3, 1, 2]
-
-    data.sort().append(4)
-    # Traceback (most recent call last):
-    # AttributeError: 'NoneType' object has no attribute 'append'
+    >>> data = [3, 1, 2]
+    >>>
+    >>> data.sort().append(4)
+    Traceback (most recent call last):
+    AttributeError: 'NoneType' object has no attribute 'append'
 
 
 Built-in Functions
-==================
-.. highlights::
-    * ``min()`` - Minimal value
-    * ``max()`` - Maximal value
-    * ``sum()`` - Sum of elements
-    * ``len()`` - Length of a list
-    * ``all()`` - All values are ``True``
-    * ``any()`` - Any values is ``True``
+------------------
+* ``min()`` - Minimal value
+* ``max()`` - Maximal value
+* ``sum()`` - Sum of elements
+* ``len()`` - Length of a list
+* ``all()`` - All values are ``True``
+* ``any()`` - Any values is ``True``
 
-.. code-block:: python
+    >>> data = [2, 0, 1]
+    >>>
+    >>> min(data)
+    0
+    >>> max(data)
+    2
+    >>> sum(data)
+    3
+    >>> len(data)
+    3
 
-    data = [2, 0, 1]
+    >>> data = [True, False, True]
+    >>>
+    >>> any(data)
+    True
+    >>> all(data)
+    False
 
-    min(data)       # 0
-    max(data)       # 2
-    sum(data)       # 3
-    len(data)       # 3
 
-.. code-block:: python
-
-    data = [True, False, True]
-
-    any(data)       # True
-    all(data)       # False
+References
+----------
+.. [timsort] https://en.wikipedia.org/wiki/Timsort
 
 
 Assignments
-===========
-
+-----------
 .. literalinclude:: assignments/sequence_list_create.py
     :caption: :download:`Solution <assignments/sequence_list_create.py>`
     :end-before: # Solution
