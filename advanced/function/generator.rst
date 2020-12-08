@@ -234,80 +234,23 @@ Generator Function
 Built-in generators
 ===================
 
-``enumerate()``
----------------
-* ``enumerate(iterable)``
-
-.. code-block:: python
-
-    data = ['a', 'b', 'c']
-    result = enumerate(data)
-
-    next(result)
-    # (0, 'a')
-
-    next(result)
-    # (1, 'b')
-
-    next(result)
-    # (2, 'c')
-
-    next(result)
-    # Traceback (most recent call last):
-    # StopIteration
-
-.. code-block:: python
-
-    data = ['a', 'b', 'c']
-    result = enumerate(data)
-
-    list(result)
-    # [(0, 'a'), (1, 'b'), (2, 'c')]
-
-.. code-block:: python
-
-    data = ['a', 'b', 'c']
-    result = enumerate(data)
-
-    dict(result)
-    # {0: 'a', 1: 'b', 2: 'c'}
-
-.. code-block:: python
-
-    crew = ['Mark Watney', 'Melissa Lewis', 'Alex Vogel']
-
-    for i, astro in enumerate(crew):
-        print(i, astro, sep=' -> ')
-
-    # 0 -> Mark Watney
-    # 1 -> Melissa Lewis
-    # 2 -> Alex Vogel
-
-.. code-block:: python
-
-    crew = ['Mark Watney', 'Melissa Lewis', 'Alex Vogel']
-
-    dict(enumerate(crew))
-    # {0: 'Mark Watney', 1: 'Melissa Lewis', 2: 'Alex Vogel'}
-
-``zip()``
+Enumerate
 ---------
-* ``zip(*iterable)``
+* ``enumerate(*iterables)``
 
 .. code-block:: python
 
-    header = ['a', 'b', 'c']
-    data = [1, 2, 3]
-    result = zip(header, data)
+    months = ['January', 'February', 'March']
+    result = enumerate(months)
 
     next(result)
-    # ('a', 1)
+    # (0, 'January')
 
     next(result)
-    # ('b', 2)
+    # (1, 'February')
 
     next(result)
-    # ('c', 3)
+    # (2, 'March')
 
     next(result)
     # Traceback (most recent call last):
@@ -315,67 +258,145 @@ Built-in generators
 
 .. code-block:: python
 
-    header = ['a', 'b', 'c']
-    data = [1, 2, 3]
-    row = [True, False, None]
-    result = zip(header, data, row)
-
-    next(result)
-    # ('a', 1, True)
-
-    next(result)
-    # ('b', 2, False)
-
-    next(result)
-    # ('c', 3, None)
-
-    next(result)
-    # Traceback (most recent call last):
-    # StopIteration
-
-.. code-block:: python
-
-    header = ['a', 'b', 'c']
-    data = [1, 2, 3]
-    result = zip(header, data)
+    months = ['January', 'February', 'March']
+    result = enumerate(months)
 
     list(result)
-    # [('a', 1), ('b', 2), ('c', 3)]
+    # [(0, 'January'), (1, 'February'), (2, 'March')]
 
 .. code-block:: python
 
-    header = ['a', 'b', 'c']
-    data = [1, 2, 3]
-    result = zip(header, data)
+    months = ['January', 'February', 'March']
+    result = enumerate(months)
 
     dict(result)
-    # {'a': 1, 'b': 2, 'c': 3}
+    # {0: 'January', 1: 'February', 2: 'March'}
+
+.. code-block:: python
+
+    months = ['January', 'February', 'March']
+    result = enumerate(months, start=1)
+
+    dict(result)
+    # {1: 'January', 2: 'February', 3: 'March'}
+
+.. code-block:: python
+
+    months = ['January', 'February', 'March']
+    result = {f'{i:02}':month for i,month in enumerate(months, start=1)}
+
+    print(result)
+    # {'01': 'January', '02': 'February', '03': 'March'}
+
+.. code-block:: python
+
+    months = ['January', 'February', 'March']
+
+    for i, month in enumerate(months, start=1):
+        print(f'{i} -> {month}')
+
+    # 1 -> January
+    # 2 -> February
+    # 3 -> March
+
+
+Zip
+---
+* ``zip(*iterables)``
+
+.. code-block:: python
+
+    firstnames = ['Mark', 'Melissa', 'Alex']
+    lastnames = ['Watney', 'Lewis', 'Vogel']
+    result = zip(firstnames, lastnames)
+
+    next(result)
+    # ('Mark', 'Watney')
+
+    next(result)
+    # ('Melissa', 'Lewis')
+
+    next(result)
+    # ('Alex', 'Vogel')
+
+    next(result)
+    # Traceback (most recent call last):
+    # StopIteration
+
+.. code-block:: python
+
+    firstnames = ['Mark', 'Melissa', 'Alex']
+    lastnames = ['Watney', 'Lewis', 'Vogel']
+    result = zip(firstnames, lastnames)
+
+    list(result)
+    # [('Mark', 'Watney'), ('Melissa', 'Lewis'), ('Alex', 'Vogel')]
+
+.. code-block:: python
+
+    firstnames = ['Mark', 'Melissa', 'Alex']
+    lastnames = ['Watney', 'Lewis', 'Vogel']
+    result = zip(firstnames, lastnames)
+
+    dict(result)
+    # {'Mark': 'Watney', 'Melissa': 'Lewis', 'Alex': 'Vogel'}
 
 .. code-block:: python
 
     roles = ['botanist', 'commander', 'chemist']
-    crew = ['Mark Watney', 'Melissa Lewis', 'Alex Vogel']
+    names = ['Mark Watney', 'Melissa Lewis', 'Alex Vogel']
 
-    for role, astro in zip(roles, crew):
-        print(role, astro, sep=' -> ')
+    dict(zip(roles, names))
+    # {'botanist': 'Mark Watney',
+    #  'commander': 'Melissa Lewis',
+    #  'chemist': 'Alex Vogel'}
+
+.. code-block:: python
+    :caption: ``zip()`` adjusts to the shortest
+
+    firstnames = ['Mark', 'Melissa']
+    lastnames = ['Watney', 'Lewis', 'Vogel']
+    result = zip(firstnames, lastnames)
+
+    list(result)
+    # [('Mark', 'Watney'), ('Melissa', 'Lewis')]
+
+.. code-block:: python
+
+    roles = ['botanist', 'commander', 'chemist']
+    firstnames = ['Mark', 'Melissa', 'Alex']
+    lastnames = ['Watney', 'Lewis', 'Vogel']
+    result = zip(roles, firstnames, lastnames)
+
+    next(result)
+    # ('botanist', 'Mark', 'Watney')
+
+    next(result)
+    # ('commander', 'Melissa', 'Lewis')
+
+    next(result)
+    # ('chemist', 'Alex', 'Vogel')
+
+    next(result)
+    # Traceback (most recent call last):
+    # StopIteration
+
+.. code-block:: python
+
+    roles = ['botanist', 'commander', 'chemist']
+    names = ['Mark Watney', 'Melissa Lewis', 'Alex Vogel']
+
+    for role, name in zip(roles, names):
+        print(f'{role} -> {name}')
 
     # botanist -> Mark Watney
     # commander -> Melissa Lewis
     # chemist -> Alex Vogel
 
-.. code-block:: python
 
-    roles = ['botanist', 'commander', 'chemist']
-    crew = ['Mark Watney', 'Melissa Lewis', 'Alex Vogel']
-
-    dict(zip(roles, crew))
-    # {'botanist': 'Mark Watney',
-    #  'commander': 'Melissa Lewis',
-    #  'chemist': 'Alex Vogel'}
-
-``map()``
----------
-* ``map(callable, *iterable)``
+Map
+---
+* ``map(callable, *iterables)``
 
 .. code-block:: python
 
@@ -403,9 +424,49 @@ Built-in generators
     list(result)
     # [1.0, 2.0, 3.0]
 
-``filter()``
-------------
-* ``filter(callable, *iterable)``
+.. code-block:: python
+
+    data = [1, 2, 3]
+    result = map(float, data)
+
+    tuple(map(float, data))
+    # (1.0, 2.0, 3.0)
+
+.. code-block:: python
+
+    data = [1, 2, 3]
+    result = map(float, data)
+
+    set(map(float, data))
+    # {1.0, 2.0, 3.0}
+
+.. code-block:: python
+
+    DATA = [1, 2, 3]
+
+    result = (float(x) for x in DATA)
+    list(result)
+    # [1.0, 2.0, 3.0]
+
+    result = map(round, DATA)
+    list(result)
+    # [1.0, 2.0, 3.0]
+
+.. code-block:: python
+
+    def square(x):
+        return x ** 2
+
+    data = [1, 2, 3]
+
+    result = map(square, data)
+    list(result)
+    # [1, 4, 9]
+
+
+Filter
+------
+* ``filter(callable, *iterables)``
 
 .. code-block:: python
 
@@ -413,8 +474,8 @@ Built-in generators
         return x % 2 == 0
 
 
-    numbers = [1, 2, 3, 4, 5, 6]
-    result = filter(even, numbers)
+    data = [1, 2, 3, 4, 5, 6]
+    result = filter(even, data)
 
     next(result)
     # 2
@@ -435,22 +496,13 @@ Built-in generators
         return x % 2 == 0
 
 
-    numbers = [1, 2, 3, 4, 5, 6]
-    result = filter(even, numbers)
+    data = [1, 2, 3, 4, 5, 6]
+    result = filter(even, data)
 
     list(result)
     # [2, 4, 6]
 
 .. code-block:: python
-
-    numbers = [1, 2, 3, 4, 5, 6]
-    result = filter(lambda x: x % 2 == 0, numbers)
-
-    list(result)
-    # [2, 4, 6]
-
-.. code-block:: python
-    :caption: ``filter()`` example
 
     PEOPLE = [{'age': 21, 'name': 'Jan Twardowski'},
               {'age': 25, 'name': 'Mark Watney'},
@@ -467,37 +519,84 @@ Built-in generators
     # [{'age': 21, 'name': 'Jan Twardowski'},
     #  {'age': 25, 'name': 'Mark Watney'}]
 
+Functools
+---------
+* https://docs.python.org/3/library/functools.html
 
-
-Loops Under the Hood
-====================
 .. code-block:: python
 
-    data = (x for x in range(0,3))
+    from functools import *
 
-    for a in data:
-        print(a)
+    reduce(callable, iterable[, initializer])
 
-    # is analogous to:
-    try:
-        i = iter(data)
+Itertools
+---------
+* https://docs.python.org/3/library/itertools.html
+* :ref:`Itertools`
 
-        a = next(i)
-        print(a)
+.. code-block:: python
 
-        a = next(i)
-        print(a)
+    from itertools import *
 
-        a = next(i)
-        print(a)
+    count(start=0, step=1)
+    cycle(iterable)
+    repeat(object[, times])
+    accumulate(iterable[, func, *, initial=None])
+    chain(*iterables)
+    compress(data, selectors)
+    islice(iterable, start, stop[, step])
+    starmap(function, iterable)
+    product(*iterables, repeat=1)
+    permutations(iterable, r=None)
+    combinations(iterable, r)
+    combinations_with_replacement(iterable, r)
+    groupby(iterable, key=None)
 
-        a = next(i)
-        print(a)
 
-        a = next(i)
-        print(a)
-    except StopIteration:
-        pass
+Memory Footprint
+================
+* ``sys.getsizeof(obj)`` returns the size of an ``obj`` in bytes
+* ``sys.getsizeof(obj)`` calls ``obj.__sizeof__()`` method
+* ``sys.getsizeof(obj)`` adds an additional garbage collector overhead if the ``obj`` is managed by the garbage collector
+
+.. code-block:: python
+
+    from sys import getsizeof
+
+
+    gen1 = (x for x in range(0,10))
+    gen10 = (x for x in range(0,10))
+    gen100 = (x for x in range(0,100))
+    gen1000 = (x for x in range(0,1000))
+
+    com1 = [x for x in range(0,1)]
+    com10 = [x for x in range(0,10)]
+    com100 = [x for x in range(0,100)]
+    com1000 = [x for x in range(0,1000)]
+
+    getsizeof(gen1)
+    # 112
+
+    getsizeof(gen10)
+    # 112
+
+    getsizeof(gen100)
+    # 112
+
+    getsizeof(gen1000)
+    # 112
+
+    getsizeof(com1)
+    # 88
+
+    getsizeof(com10)
+    # 184
+
+    getsizeof(com100)
+    # 920
+
+    getsizeof(com1000)
+    # 8856
 
 
 Inspection
@@ -556,57 +655,6 @@ Introspection
 
     data.gi_frame.f_lasti
     # 8
-
-
-Memory Footprint
-================
-* ``sys.getsizeof(object)`` returns the size of an object in bytes
-* ``sys.getsizeof(object)`` calls the object's ``__sizeof__`` method
-* ``sys.getsizeof(object)`` adds an additional garbage collector overhead if the object is managed by the garbage collector
-
-.. code-block:: python
-
-    from sys import getsizeof
-
-
-    a1 = (x for x in range(0,10))
-    a2 = (x for x in range(0,10))
-    b = (x for x in range(0,100))
-    c = (x for x in range(0,1000))
-
-    getsizeof(a1)
-    # 112
-
-    getsizeof(a2)
-    # 112
-
-    getsizeof(b)
-    # 112
-
-    getsizeof(c)
-    # 112
-
-.. code-block:: python
-
-    from sys import getsizeof
-
-
-    a1 = [x for x in range(0,10)]
-    a2 = [x for x in range(0,10)]
-    b = [x for x in range(0,100)]
-    c = [x for x in range(0,1000)]
-
-    getsizeof(a1)
-    # 184
-
-    getsizeof(a2)
-    # 184
-
-    getsizeof(b)
-    # 920
-
-    getsizeof(c)
-    # 8856
 
 
 Assignments

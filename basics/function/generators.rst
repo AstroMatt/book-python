@@ -7,10 +7,10 @@ Function Generators
 
 Range
 =====
-.. highlights::
-    * optional ``start``, inclusive, default: ``0``
-    * required ``stop``, exclusive,
-    * optional ``step``, default: ``1``
+* It is not a generator
+* optional ``start``, inclusive, default: ``0``
+* required ``stop``, exclusive,
+* optional ``step``, default: ``1``
 
 .. code-block:: python
     :caption: ``range()`` syntax
@@ -18,7 +18,6 @@ Range
     range([start], <stop>, [step])
 
 .. code-block:: python
-    :caption: ``range()`` definition
 
     range(0,3)
     # range(0, 3)
@@ -32,177 +31,231 @@ Range
     set(range(0,3))
     # {0, 1, 2}
 
-    frozenset(range(0,3))
-    # frozenset({0, 1, 2})
-
 .. code-block:: python
 
-    list(range(4, 11, 2))
+    list(range(4,11,2))
     # [4, 6, 8, 10]
-
-.. code-block:: python
-
-    header = ['a', 'b', 'c']
-    data = [1, 2, 3]
-    result = {}
-
-    for i in range(len(header)):
-        key = header[i]
-        value = data[i]
-        result[key] = value
-
-    print(result)
-    # {'a': 1, 'b': 2, 'c': 3}
-
-
-Zip
-===
-.. code-block:: python
-    :caption: ``zip()`` syntax
-
-    zip(<sequence>, <sequence>, ...)
-
-.. code-block:: python
-    :caption: ``zip()`` definition
-
-    header = ['a', 'b', 'c']
-    data = [1, 2, 3]
-
-    zip(header, data)
-    # <zip object at 0x11cf54b90>
-
-    list(zip(header, data))
-    # [('a', 1), ('b', 2), ('c', 3)]
-
-    tuple(zip(header, data))
-    # (('a', 1), ('b', 2), ('c', 3))
-
-    set(zip(header, data))
-    # {('b', 2), ('a', 1), ('c', 3)}
-
-    frozenset(zip(header, data))
-    # frozenset({('b', 2), ('a', 1), ('c', 3)})
-
-    dict(zip(header, data))
-    # {'a': 1, 'b': 2, 'c': 3}
-
-.. code-block:: python
-    :caption: ``zip()`` adjust to shortest sequence
-
-    header = ['a', 'b', 'c']
-    data = [1, 2, 3, 4, 5, 6]
-
-    result = zip(header, data)
-
-    print(list(result))
-    # [('a', 1), ('b', 2), ('c', 3)]
-
-.. code-block:: python
-    :caption: ``zip()`` examples
-
-    header = ['a', 'b', 'c']
-    data = [1, 2, 3]
-    row = [77, 88, 99]
-
-    result = [(h,d,r) for h,d,r in zip(header, data, row)]
-
-    print(result)
-    # [('a', 1, 77), ('b', 2, 88), ('c', 3, 99)]
 
 
 Enumerate
 =========
-.. code-block:: python
-    :caption: ``enumerate()`` syntax
-
-    enumerate(<sequence>)
+* ``enumerate(*iterables)``
 
 .. code-block:: python
-    :caption: ``enumerate()`` definition
 
-    header = ['a', 'b', 'c']
+    months = ['January', 'February', 'March']
+    result = enumerate(months)
 
-    list(enumerate(header))
-    # [(0, 'a'), (1, 'b'), (2, 'c')]
+    next(result)
+    # (0, 'January')
 
-    dict(enumerate(header))
-    # {0: 'a', 1: 'b', 2: 'c'}
+    next(result)
+    # (1, 'February')
 
-    dict((v,k) for k,v in enumerate(data))
-    # {'a': 0, 'b': 1, 'c': 2}
+    next(result)
+    # (2, 'March')
 
-    {v:k for k,v in enumerate(data, start=5)}
-    # {'a': 5, 'b': 6, 'c': 7}
+    next(result)
+    # Traceback (most recent call last):
+    # StopIteration
 
 .. code-block:: python
-    :caption: ``enumerate()`` example
 
-    header = ['a', 'b', 'c']
-    data = [1, 2, 3]
-    result = {}
+    months = ['January', 'February', 'March']
+    result = enumerate(months)
 
-    for i, _ in enumerate(header):
-        key = header[i]
-        value = data[i]
-        result[key] = value
+    list(result)
+    # [(0, 'January'), (1, 'February'), (2, 'March')]
+
+.. code-block:: python
+
+    months = ['January', 'February', 'March']
+    result = enumerate(months)
+
+    dict(result)
+    # {0: 'January', 1: 'February', 2: 'March'}
+
+.. code-block:: python
+
+    months = ['January', 'February', 'March']
+    result = enumerate(months, start=1)
+
+    dict(result)
+    # {1: 'January', 2: 'February', 3: 'March'}
+
+.. code-block:: python
+
+    months = ['January', 'February', 'March']
+    result = {f'{i:02}':month for i,month in enumerate(months, start=1)}
 
     print(result)
-    # {'a': 1, 'b': 2, 'c': 3}
+    # {'01': 'January', '02': 'February', '03': 'March'}
 
 .. code-block:: python
 
-    header = ['a', 'b', 'c']
-    data = [1, 2, 3]
-    result = {}
+    months = ['January', 'February', 'March']
 
-    for i, header in enumerate(header):
-        result[header] = data[i]
+    for i, month in enumerate(months, start=1):
+        print(f'{i} -> {month}')
 
-    print(result)
-    # {'a': 1, 'b': 2, 'c': 3}
+    # 1 -> January
+    # 2 -> February
+    # 3 -> March
+
+
+Zip
+===
+* ``zip(*iterables)``
+
+.. code-block:: python
+
+    firstnames = ['Mark', 'Melissa', 'Alex']
+    lastnames = ['Watney', 'Lewis', 'Vogel']
+    result = zip(firstnames, lastnames)
+
+    next(result)
+    # ('Mark', 'Watney')
+
+    next(result)
+    # ('Melissa', 'Lewis')
+
+    next(result)
+    # ('Alex', 'Vogel')
+
+    next(result)
+    # Traceback (most recent call last):
+    # StopIteration
+
+.. code-block:: python
+
+    firstnames = ['Mark', 'Melissa', 'Alex']
+    lastnames = ['Watney', 'Lewis', 'Vogel']
+    result = zip(firstnames, lastnames)
+
+    list(result)
+    # [('Mark', 'Watney'), ('Melissa', 'Lewis'), ('Alex', 'Vogel')]
+
+.. code-block:: python
+
+    firstnames = ['Mark', 'Melissa', 'Alex']
+    lastnames = ['Watney', 'Lewis', 'Vogel']
+    result = zip(firstnames, lastnames)
+
+    dict(result)
+    # {'Mark': 'Watney', 'Melissa': 'Lewis', 'Alex': 'Vogel'}
+
+.. code-block:: python
+
+    roles = ['botanist', 'commander', 'chemist']
+    names = ['Mark Watney', 'Melissa Lewis', 'Alex Vogel']
+
+    dict(zip(roles, names))
+    # {'botanist': 'Mark Watney',
+    #  'commander': 'Melissa Lewis',
+    #  'chemist': 'Alex Vogel'}
+
+.. code-block:: python
+    :caption: ``zip()`` adjusts to the shortest
+
+    firstnames = ['Mark', 'Melissa']
+    lastnames = ['Watney', 'Lewis', 'Vogel']
+    result = zip(firstnames, lastnames)
+
+    list(result)
+    # [('Mark', 'Watney'), ('Melissa', 'Lewis')]
+
+.. code-block:: python
+
+    roles = ['botanist', 'commander', 'chemist']
+    firstnames = ['Mark', 'Melissa', 'Alex']
+    lastnames = ['Watney', 'Lewis', 'Vogel']
+    result = zip(roles, firstnames, lastnames)
+
+    next(result)
+    # ('botanist', 'Mark', 'Watney')
+
+    next(result)
+    # ('commander', 'Melissa', 'Lewis')
+
+    next(result)
+    # ('chemist', 'Alex', 'Vogel')
+
+    next(result)
+    # Traceback (most recent call last):
+    # StopIteration
+
+.. code-block:: python
+
+    roles = ['botanist', 'commander', 'chemist']
+    names = ['Mark Watney', 'Melissa Lewis', 'Alex Vogel']
+
+    for role, name in zip(roles, names):
+        print(f'{role} -> {name}')
+
+    # botanist -> Mark Watney
+    # commander -> Melissa Lewis
+    # chemist -> Alex Vogel
 
 
 Map
 ===
-.. code-block:: python
-    :caption: ``map()`` syntax
-
-    map(<callable>, <sequence>)
+* ``map(callable, *iterables)``
 
 .. code-block:: python
-    :caption: ``map()`` definition
 
     data = [1, 2, 3]
+    result = map(float, data)
 
-    map(float, data)
-    # <map object at 0x11d15a190>
+    next(result)
+    # 1.0
 
-    list(map(float, data))
+    next(result)
+    # 2.0
+
+    next(result)
+    # 3.0
+
+    next(result)
+    # Traceback (most recent call last):
+    # StopIteration
+
+.. code-block:: python
+
+    data = [1, 2, 3]
+    result = map(float, data)
+
+    list(result)
     # [1.0, 2.0, 3.0]
+
+.. code-block:: python
+
+    data = [1, 2, 3]
+    result = map(float, data)
 
     tuple(map(float, data))
     # (1.0, 2.0, 3.0)
 
+.. code-block:: python
+
+    data = [1, 2, 3]
+    result = map(float, data)
+
     set(map(float, data))
     # {1.0, 2.0, 3.0}
 
-    frozenset(map(float, data))
-    # frozenset({1.0, 2.0, 3.0})
-
 .. code-block:: python
 
-    DATA = [1.1111, 2.22222, 3.3333]
+    DATA = [1, 2, 3]
 
-    result = [round(x) for x in DATA]
-    # [1, 2, 3]
+    result = (float(x) for x in DATA)
+    list(result)
+    # [1.0, 2.0, 3.0]
 
     result = map(round, DATA)
     list(result)
-    # [1, 2, 3]
-
+    # [1.0, 2.0, 3.0]
 
 .. code-block:: python
-    :caption: ``map()`` examples
 
     def square(x):
         return x ** 2
@@ -216,47 +269,58 @@ Map
 
 Filter
 ======
-.. code-block:: python
-    :caption: ``filter()`` syntax
-
-    filter(<callable>, <sequence>)
+* ``filter(callable, *iterables)``
 
 .. code-block:: python
 
-    data = [True, False, True]
-
-    filter(bool, data)
-    # <filter object at 0x11d182990>
-
-    result = filter(bool, data)
-    list(result)
-    # [True, True]
-
-.. code-block:: python
-    :caption: ``filter()`` example
-
-    def is_even(x):
-        if x % 2 == 0:
-            return True
-        else:
-            return False
-
-    data = [1, 2, 3, 4, 5, 6]
-
-    result = filter(is_even, data)
-    list(result)
-    # [2, 4, 6]
-
-.. code-block:: python
-
-    def is_even(x):
+    def even(x):
         return x % 2 == 0
 
-    data = [1, 2, 3, 4, 5, 6]
 
-    result = filter(is_even, data)
+    data = [1, 2, 3, 4, 5, 6]
+    result = filter(even, data)
+
+    next(result)
+    # 2
+
+    next(result)
+    # 4
+
+    next(result)
+    # 6
+
+    next(result)
+    # Traceback (most recent call last):
+    # StopIteration
+
+.. code-block:: python
+
+    def even(x):
+        return x % 2 == 0
+
+
+    data = [1, 2, 3, 4, 5, 6]
+    result = filter(even, data)
+
     list(result)
     # [2, 4, 6]
+
+.. code-block:: python
+
+    PEOPLE = [{'age': 21, 'name': 'Jan Twardowski'},
+              {'age': 25, 'name': 'Mark Watney'},
+              {'age': 18, 'name': 'Melissa Lewis'}]
+
+
+    def adult(person):
+        return person['age'] >= 21:
+
+
+    result = filter(adult, PEOPLE)
+
+    list(result)
+    # [{'age': 21, 'name': 'Jan Twardowski'},
+    #  {'age': 25, 'name': 'Mark Watney'}]
 
 
 Functools
