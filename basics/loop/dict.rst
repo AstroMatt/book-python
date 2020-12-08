@@ -7,9 +7,8 @@ Loop over Dict
 
 Rationale
 =========
-.. highlights::
-    * Since Python 3.7 ``dict`` keeps order
-    * Before Python 3.7 ``dict`` order is not ensured!!
+* Since Python 3.7: ``dict`` keeps order
+* Before Python 3.7: ``dict`` order is not ensured!!
 
 
 Iterate

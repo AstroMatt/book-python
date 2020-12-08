@@ -15,13 +15,12 @@ Rationale
 
 Type Definition
 ===============
-.. highlights::
-    * ``{}`` is used more often
-    * ``dict()`` is more readable
-    * Comma after last element is optional
-    * Since Python 3.7 ``dict`` keeps order of elements
-    * Before Python 3.7 ``dict`` order is not ensured!!
-    * https://mail.python.org/pipermail/python-dev/2017-December/151283.html
+* ``{}`` is used more often
+* ``dict()`` is more readable
+* Comma after last element is optional
+* Since Python 3.7: ``dict`` keeps order of elements
+* Before Python 3.7: ``dict`` order is not ensured!!
+* https://mail.python.org/pipermail/python-dev/2017-December/151283.html
 
 .. code-block:: python
 
