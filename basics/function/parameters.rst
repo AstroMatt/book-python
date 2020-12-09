@@ -34,8 +34,7 @@ Syntax
 
 Required Parameters
 ===================
-.. highlights::
-    * Parameters without default values are required
+* Parameters without default values are required
 
 .. code-block:: python
 
@@ -61,10 +60,9 @@ Required Parameters
 
 Default Parameters
 ==================
-.. highlights::
-    * Default parameters has default value
-    * Function will use default value if not overwritten by user
-    * Parameters with default values can be omitted while executing
+* Default parameters has default value
+* Function will use default value if not overwritten by user
+* Parameters with default values can be omitted while executing
 
 .. code-block:: python
 
@@ -88,10 +86,9 @@ Default Parameters
 
 Required and Default Parameters
 ===============================
-.. highlights::
-    * Required parameters must be at the left side
-    * Default parameters must be at the right side
-    * There cannot be required parameter after optional
+* Required parameters must be at the left side
+* Default parameters must be at the right side
+* There cannot be required parameter after optional
 
 .. code-block:: python
 

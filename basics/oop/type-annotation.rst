@@ -7,9 +7,8 @@ OOP Type Annotation
 
 Rationale
 =========
-.. highlights::
-    * All classes are types
-    * Always depend upon abstraction not an implementation (SOLID Dependency Inversion Principle). More information in :ref:`OOP SOLID`
+* All classes are types
+* Always depend upon abstraction not an implementation (SOLID Dependency Inversion Principle). More information in :ref:`OOP SOLID`
 
 .. code-block:: python
 

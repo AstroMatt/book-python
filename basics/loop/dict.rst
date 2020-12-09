@@ -13,9 +13,8 @@ Rationale
 
 Iterate
 =======
-.. highlights::
-    * By default ``dict`` iterates over keys
-    * Suggested variable name: ``key``
+* By default ``dict`` iterates over keys
+* Suggested variable name: ``key``
 
 .. code-block:: python
 
@@ -39,8 +38,7 @@ Iterate
 
 Iterate Keys
 ============
-.. highlights::
-    * Suggested variable name: ``key``
+* Suggested variable name: ``key``
 
 .. code-block:: python
 
@@ -67,8 +65,7 @@ Iterate Keys
 
 Iterate Values
 ==============
-.. highlights::
-    * Suggested variable name: ``value``
+* Suggested variable name: ``value``
 
 .. code-block:: python
 
@@ -95,8 +92,7 @@ Iterate Values
 
 Iterate Key-Value Pairs
 =======================
-.. highlights::
-    * Suggested variable name: ``key``, ``value``
+* Suggested variable name: ``key``, ``value``
 
 .. code-block:: python
     :caption: Getting pair: ``key``, ``value`` from ``dict`` items
@@ -147,10 +143,9 @@ List of Dicts
 
 Generate with Range
 ===================
-.. highlights::
-    * ``range()``
-    * Pythonic way is to use ``zip()``
-    * Don't use ``len(range(...))`` - it evaluates generator
+* ``range()``
+* Pythonic way is to use ``zip()``
+* Don't use ``len(range(...))`` - it evaluates generator
 
 .. code-block:: python
     :caption: Create ``dict`` from two ``list``
@@ -173,10 +168,9 @@ Generate with Range
 
 Generate with Enumerate
 =======================
-.. highlights::
-    * ``enumerate()``
-    * ``_`` regular variable name (not a special syntax)
-    * ``_`` by convention is used when variable will not be referenced
+* ``enumerate()``
+* ``_`` regular variable name (not a special syntax)
+* ``_`` by convention is used when variable will not be referenced
 
 .. code-block:: python
     :caption: Create ``dict`` from two ``list``
@@ -198,9 +192,8 @@ Generate with Enumerate
 
 Generate with Zip
 =================
-.. highlights::
-    * ``zip()``
-    * The most Pythonic way
+* ``zip()``
+* The most Pythonic way
 
 .. code-block:: python
 

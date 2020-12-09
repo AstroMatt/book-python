@@ -7,19 +7,17 @@ File Append
 
 Rationale
 =========
-.. highlights::
-    * Appends data at the end of file
-    * Creates file if not exists
-    * Works with both relative and absolute path
-    * Fails when directory with file cannot be accessed
-    * ``mode`` parameter to ``open()`` function is required
-    * ``.writelines()`` does not add a line separator!!
+* Appends data at the end of file
+* Creates file if not exists
+* Works with both relative and absolute path
+* Fails when directory with file cannot be accessed
+* ``mode`` parameter to ``open()`` function is required
+* ``.writelines()`` does not add a line separator!!
 
 
 Appending to File
 =================
-.. highlights::
-    * Append to the end of file
+* Append to the end of file
 
 .. code-block:: python
 

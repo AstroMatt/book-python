@@ -7,11 +7,10 @@ Function Lambda
 
 Rationale
 =========
-.. highlights::
-    * Lambda - Anonymous functions
-    * When function is used once
-    * When function is short
-    * You don't need to name it (hence it is anonymous)
+* Lambda - Anonymous functions
+* When function is used once
+* When function is short
+* You don't need to name it (hence it is anonymous)
 
 .. glossary::
 
@@ -40,13 +39,12 @@ Syntax
 
 Convention
 ==========
-.. highlights::
-    * Usually parameters are named ``x`` and ``y``
-    * Use shortest code possible
-    * Do not assign ``lambda`` to variable
-    * Lambda is anonymous function and it should stay anonymous. Do not name it
-    * :pep:`8` -- Style Guide for Python Code: "Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier". Lambda is anonymous function and it should stay anonymous. Do not name it.
-    * Usually there are no spaces in lambda expressions (to make code shorter)
+* Usually parameters are named ``x`` and ``y``
+* Use shortest code possible
+* Do not assign ``lambda`` to variable
+* Lambda is anonymous function and it should stay anonymous. Do not name it
+* :pep:`8` -- Style Guide for Python Code: "Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier". Lambda is anonymous function and it should stay anonymous. Do not name it.
+* Usually there are no spaces in lambda expressions (to make code shorter)
 
 .. code-block:: python
 

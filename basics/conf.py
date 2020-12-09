@@ -10,7 +10,3 @@ todo_include_todos = False
 
 html_static_path = ['../_static']
 html_favicon = '../_static/favicon.png'
-
-suppress_warnings += [
-    'ref.ref',
-]

@@ -7,13 +7,12 @@ Attributes
 
 Rationale
 =========
-.. highlights::
-    * Attributes are also known as "Properties" or "Fields"
-    * ``snake_case`` name convention
-    * Attributes store information (state) for instances
-    * Access field values using dot (``.``) notation
-    * Attributes should be defined only in ``__init__()`` method
-    * More information in :ref:`OOP Init Method`
+* Attributes are also known as "Properties" or "Fields"
+* ``snake_case`` name convention
+* Attributes store information (state) for instances
+* Access field values using dot (``.``) notation
+* Attributes should be defined only in ``__init__()`` method
+* More information in :ref:`OOP Init Method`
 
 .. glossary::
 

@@ -7,8 +7,7 @@ Function Type Annotation
 
 Rationale
 =========
-.. highlights::
-    * Before Python 3.9 you need ``from typing import List, Set, Tuple, Dict``
+* Before Python 3.9 you need ``from typing import List, Set, Tuple, Dict``
 
 .. versionadded:: 3.9
     :pep:`585` -- Type Hinting Generics In Standard Collections
@@ -140,9 +139,8 @@ Annotations
 
 Errors
 ======
-.. highlights::
-    * Python will execute without even warning
-    * Your IDE and ``mypy`` et. al. will yield errors
+* Python will execute without even warning
+* Your IDE and ``mypy`` et. al. will yield errors
 
 .. code-block:: python
 

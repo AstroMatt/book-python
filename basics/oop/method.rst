@@ -7,14 +7,13 @@ Methods
 
 Rationale
 =========
-.. highlights::
-    * Methods are functions in the class
-    * First argument is always instance (``self``)
-    * While calling function you never pass ``self``
-    * Prevents copy-paste code
-    * Improves readability
-    * Improves refactoring
-    * Decomposes bigger problem into smaller chunks
+* Methods are functions in the class
+* First argument is always instance (``self``)
+* While calling function you never pass ``self``
+* Prevents copy-paste code
+* Improves readability
+* Improves refactoring
+* Decomposes bigger problem into smaller chunks
 
 .. glossary::
 

@@ -7,9 +7,8 @@ Loop While
 
 Syntax
 ======
-.. highlights::
-    * Continue execution when argument is ``True``
-    * Stops if argument is ``False``
+* Continue execution when argument is ``True``
+* Stops if argument is ``False``
 
 .. code-block:: text
     :caption: ``while`` loop generic syntax
@@ -129,8 +128,7 @@ Force Exit the Loop
 
 Force Skip Iteration
 ====================
-.. highlights::
-    * if ``continue`` is encountered, it will jump to next loop iteration
+* if ``continue`` is encountered, it will jump to next loop iteration
 
 .. code-block:: python
 

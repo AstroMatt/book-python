@@ -7,11 +7,10 @@ File Path
 
 Rationale
 =========
-.. highlights::
-    * Python works with both relative and absolute path
-    * Path separator ``\`` (backslash) is used on Windows
-    * Path separator ``/`` (slash) is used on ``*nix`` operating systems: Linux, macOS, BSD and other POSIX compliant OSes (excluding Windows)
-    * In newer Windows versions both ``\`` and ``/`` works the same
+* Python works with both relative and absolute path
+* Path separator ``\`` (backslash) is used on Windows
+* Path separator ``/`` (slash) is used on ``*nix`` operating systems: Linux, macOS, BSD and other POSIX compliant OSes (excluding Windows)
+* In newer Windows versions both ``\`` and ``/`` works the same
 
 .. code-block:: text
     :caption: Absolute path on Windows
@@ -33,11 +32,10 @@ Rationale
 
 Good Engineering Practices
 ==========================
-.. highlights::
-    * Never hardcode paths, use constant as a file name or file path
-    * Convention (singular form): ``FILE``, ``FILENAME``, ``FILEPATH``, ``PATH``
-    * Convention (plural form): ``FILES``, ``FILENAMES``, ``FILEPATHS``, ``PATHS``
-    * Note, that ``PATH`` is usually used for other purposes (``sys.path`` or ``os.getenv('PATH')``)
+* Never hardcode paths, use constant as a file name or file path
+* Convention (singular form): ``FILE``, ``FILENAME``, ``FILEPATH``, ``PATH``
+* Convention (plural form): ``FILES``, ``FILENAMES``, ``FILEPATHS``, ``PATHS``
+* Note, that ``PATH`` is usually used for other purposes (``sys.path`` or ``os.getenv('PATH')``)
 
 .. code-block:: python
 
@@ -52,9 +50,8 @@ Good Engineering Practices
 
 Raw Strings
 ===========
-.. highlights::
-    * Always use raw-strings (``r"..."``) for paths
-    * Escapes does not matters
+* Always use raw-strings (``r"..."``) for paths
+* Escapes does not matters
 
 .. code-block:: python
 
@@ -84,10 +81,9 @@ Raw Strings
 
 Absolute Path
 =============
-.. highlights::
-    * Absolute path on Windows starts with drive letter
-    * Absolute path on ``*nix`` starts with root ``/`` dir
-    * Absolute path include all entries in the directories hierarchy
+* Absolute path on Windows starts with drive letter
+* Absolute path on ``*nix`` starts with root ``/`` dir
+* Absolute path include all entries in the directories hierarchy
 
 .. code-block:: python
 
@@ -100,10 +96,9 @@ Absolute Path
 
 Relative Path
 =============
-.. highlights::
-    * Path is relative to currently running script
-    * ``.`` - Current directory
-    * ``..`` - Parent directory
+* Path is relative to currently running script
+* ``.`` - Current directory
+* ``..`` - Parent directory
 
 .. code-block:: python
 
@@ -122,9 +117,8 @@ Relative Path
 
 Escaping Characters in Path
 ===========================
-.. highlights::
-    * "\\ " (backslash space) - escapes space
-    * Note that in Python escapes in paths are not required
+* "\\ " (backslash space) - escapes space
+* Note that in Python escapes in paths are not required
 
 .. code-block:: python
 
@@ -223,8 +217,7 @@ Exists and is Directory or File
 
 Current Working Directory
 =========================
-.. highlights::
-    * Returns an absolute path to current working directory
+* Returns an absolute path to current working directory
 
 .. code-block:: python
 
@@ -247,8 +240,7 @@ Convert Relative Path to Absolute
 
 Script Path
 ===========
-.. highlights::
-    * Returns an absolute path to currently running script
+* Returns an absolute path to currently running script
 
 .. code-block:: python
 

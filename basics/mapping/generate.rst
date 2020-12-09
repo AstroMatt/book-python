@@ -69,9 +69,8 @@ Enumerate
 
 Zip
 ===
-.. highlights::
-    * ``zip`` is a generator
-    * ``zip`` will create a list of pairs (like ``dict.items()``)
+* ``zip`` is a generator
+* ``zip`` will create a list of pairs (like ``dict.items()``)
 
 .. code-block:: python
 

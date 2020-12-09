@@ -35,8 +35,7 @@ Disjunction
 
 Boolean Algebra
 ===============
-.. highlights::
-    * Use parenthesis for explicit order
+* Use parenthesis for explicit order
 
 .. code-block:: python
 
@@ -119,8 +118,7 @@ Identity
 
 Negation
 ========
-.. highlights::
-    * ``not`` negates (logically inverts) condition
+* ``not`` negates (logically inverts) condition
 
 .. code-block:: python
 

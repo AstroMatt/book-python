@@ -7,24 +7,22 @@ Function Doctest
 
 Rationale
 =========
-.. highlights::
-    * Tests are always the most up-to-date code documentation
-    * Tests cannot get out of sync from code
-    * Checks if function output is exactly as expected
-    * Useful for regex modifications
-    * Can add text (i.e. explanations) between tests
-    * Case Study: https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/linear_model/_base.py#L409
+* Tests are always the most up-to-date code documentation
+* Tests cannot get out of sync from code
+* Checks if function output is exactly as expected
+* Useful for regex modifications
+* Can add text (i.e. explanations) between tests
+* Case Study: https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/linear_model/_base.py#L409
 
 
 Syntax
 ======
-.. highlights::
-    * Docstring is a first multiline comment in: File/Module, Class, Method/Function
-    * Used for generating ``help()`` documentation
-    * It is accessible in ``__doc__`` property of an object
-    * Used for ``doctest``
-    * :pep:`257` -- Docstring Conventions: For multiline ``str`` always use three double quote (``"""``) characters
-    * More information in :ref:`Function Doctest`
+* Docstring is a first multiline comment in: File/Module, Class, Method/Function
+* Used for generating ``help()`` documentation
+* It is accessible in ``__doc__`` property of an object
+* Used for ``doctest``
+* :pep:`257` -- Docstring Conventions: For multiline ``str`` always use three double quote (``"""``) characters
+* More information in :ref:`Function Doctest`
 
 .. code-block:: python
     :caption: Docstring used for doctest
@@ -126,10 +124,9 @@ Test Bool
 
 Test Str
 ========
-.. highlights::
-    * Python will change to single quotes in most cases
-    * Python will change to double quotes to avoid escapes
-    * ``print()`` function output, don't have quotes
+* Python will change to single quotes in most cases
+* Python will change to double quotes to avoid escapes
+* ``print()`` function output, don't have quotes
 
 .. code-block:: python
     :caption: Returning ``str``. Python will change to single quotes in most cases

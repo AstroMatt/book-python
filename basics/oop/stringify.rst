@@ -24,11 +24,10 @@ Rationale
 
 String
 ======
-.. highlights::
-    * Calling function ``str(obj)`` calls ``obj.__str__()``
-    * Calling function ``print(obj)`` calls ``str(obj)``, which calls ``obj.__str__()``
-    * Method ``obj.__str__()`` must return ``str``
-    * for end-user
+* Calling function ``str(obj)`` calls ``obj.__str__()``
+* Calling function ``print(obj)`` calls ``str(obj)``, which calls ``obj.__str__()``
+* Method ``obj.__str__()`` must return ``str``
+* for end-user
 
 .. code-block:: python
 
@@ -73,14 +72,13 @@ String
 
 Representation
 ==============
-.. highlights::
-    * Calling function ``repr(obj)`` calls ``obj.__repr__()``
-    * Method ``obj.__repr__()`` must return ``str``
-    * for developers
-    * object representation
-    * copy-paste for creating object with the same values
-    * useful for debugging
-    * printing ``list`` will call ``__repr__()`` method on each element
+* Calling function ``repr(obj)`` calls ``obj.__repr__()``
+* Method ``obj.__repr__()`` must return ``str``
+* for developers
+* object representation
+* copy-paste for creating object with the same values
+* useful for debugging
+* printing ``list`` will call ``__repr__()`` method on each element
 
 .. code-block:: python
 
@@ -150,10 +148,9 @@ Representation
 
 Format
 ======
-.. highlights::
-    * Calling function ``format(obj, fmt)`` calls ``obj.__format__(fmt)``
-    * Method ``obj.__format__()`` must return ``str``
-    * Used for advanced formatting
+* Calling function ``format(obj, fmt)`` calls ``obj.__format__(fmt)``
+* Method ``obj.__format__()`` must return ``str``
+* Used for advanced formatting
 
 .. code-block:: python
 

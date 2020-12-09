@@ -5,10 +5,9 @@ Membership
 
 Rationale
 =========
-.. highlights::
-    * ``in`` checks whether value is in sequence
-    * works with ``str``, ``list``, ``tuple``, ``set``, ``frozenset``, ``dict``
-    * Computational complexity for checking if sequence "contains":
+* ``in`` checks whether value is in sequence
+* works with ``str``, ``list``, ``tuple``, ``set``, ``frozenset``, ``dict``
+* Computational complexity for checking if sequence "contains":
 
         * O(n) - ``in str``
         * O(n) - ``in list``

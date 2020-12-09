@@ -169,7 +169,6 @@ Timsort is a hybrid stable sorting algorithm, derived from merge sort and insert
 * Average performance: :math:`O(n\log{n})`
 * Worst-case space complexity: :math:`O(n)`
 
-
 * ``sorted()`` - Returns sorted list, do not modify the original
 * ``list.sort()`` - Changes object permanently, returns None
 

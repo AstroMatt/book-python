@@ -1,12 +1,11 @@
 .. _Sequence Unpacking Assignment:
 
-********************
 Unpacking Assignment
-********************
+====================
 
 
 Rationale
-=========
+---------
 .. code-block:: python
 
     a = 1
@@ -31,7 +30,7 @@ Rationale
 
 
 Errors
-======
+------
 .. code-block:: python
 
     {a, b, c} = {1, 2, 3}
@@ -52,7 +51,7 @@ Errors
 
 
 Arbitrary Number of Arguments
-=============================
+-----------------------------
 .. code-block:: python
     :caption: Unpacking values at the right side
 
@@ -105,7 +104,7 @@ Arbitrary Number of Arguments
 
 
 Nested
-======
+------
 .. code-block:: python
 
     a, (b, c) = [1, (2, 3)]
@@ -116,7 +115,7 @@ Nested
 
 
 Convention
-==========
+----------
 .. code-block:: python
 
     first, *middle, last = [1, 2, 3, 4]
@@ -135,10 +134,9 @@ Convention
 
 
 Skipping Values
-===============
-.. highlights::
-    * ``_`` is regular variable name, not a special Python syntax
-    * ``_`` by convention is used for data we don't want to access in future
+---------------
+* ``_`` is regular variable name, not a special Python syntax
+* ``_`` by convention is used for data we don't want to access in future
 
 .. code-block:: python
 
@@ -207,7 +205,7 @@ Skipping Values
 
 
 Use Cases
-=========
+---------
 .. code-block:: python
 
     import sys
@@ -252,8 +250,7 @@ Use Cases
 
 
 Assignments
-===========
-
+-----------
 .. literalinclude:: assignments/sequence_unpack_nested.py
     :caption: :download:`Solution <assignments/sequence_unpack_nested.py>`
     :end-before: # Solution

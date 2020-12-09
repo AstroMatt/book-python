@@ -7,10 +7,9 @@ Mapping Dict
 
 Rationale
 =========
-.. highlights::
-    * ``dict`` are key-value storage
-    * key lookup is very efficient ``O(1)``
-    * Mutable - can add, remove, and modify items
+* ``dict`` are key-value storage
+* key lookup is very efficient ``O(1)``
+* Mutable - can add, remove, and modify items
 
 
 Definition
@@ -60,10 +59,9 @@ Definition
 
 GetItem
 =======
-.. highlights::
-    * ``[...]`` throws ``KeyError`` exception if key not found in ``dict``
-    * ``.get()`` returns ``None`` if key not found
-    * ``.get()`` can have default value, if key not found
+* ``[...]`` throws ``KeyError`` exception if key not found in ``dict``
+* ``.get()`` returns ``None`` if key not found
+* ``.get()`` can have default value, if key not found
 
 .. code-block:: python
     :caption: Getitem Method
@@ -123,8 +121,7 @@ GetItem
 
 Get Keys, Values and Key-Value Pairs
 ====================================
-.. highlights::
-    * Key can be any hashable object
+* Key can be any hashable object
 
 In Python 2, the methods items(), keys() and values() used to "take a snapshot" of the dictionary contents and return it as a list. It meant that if the dictionary changed while you were iterating over the list, the contents in the list would not change. In Python 3, these methods return a view object whose contents change dynamically as the dictionary changes. Therefore, in order for the behavior of iterations over the result of these methods to remain consistent with previous versions, an additional call to list() has to be performed in Python 3 to "take a snapshot" of the view object contents. [Hamidi2017]_
 
@@ -158,9 +155,8 @@ In Python 2, the methods items(), keys() and values() used to "take a snapshot" 
 
 Set Item
 ========
-.. highlights::
-    * Adds if value not exist
-    * Updates if value exist
+* Adds if value not exist
+* Updates if value exist
 
 .. code-block:: python
     :caption: Set Item Method
@@ -356,9 +352,8 @@ Merge
 
 GetItem and Slice
 =================
-.. highlights::
-    * GetItem with index on ``dict`` is not possible
-    * Slicing on ``dict`` is not possible
+* GetItem with index on ``dict`` is not possible
+* Slicing on ``dict`` is not possible
 
 .. code-block:: python
 
@@ -397,10 +392,9 @@ GetItem and Slice
 
 Dict or Set
 ===========
-.. highlights::
-    * Both ``set`` and ``dict`` keys must be hashable
-    * Both ``set`` and ``dict`` uses the same ``{`` and ``}`` braces
-    * Despite similar syntax, they are different types
+* Both ``set`` and ``dict`` keys must be hashable
+* Both ``set`` and ``dict`` uses the same ``{`` and ``}`` braces
+* Despite similar syntax, they are different types
 
 .. code-block:: python
 

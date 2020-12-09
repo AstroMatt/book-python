@@ -15,8 +15,7 @@ Rationale
 
 Write Binary
 ============
-.. highlights::
-    * ``mode='wb'`` - write in binary mode
+* ``mode='wb'`` - write in binary mode
 
 .. code-block:: python
 
@@ -30,8 +29,7 @@ Write Binary
 
 Append Binary
 =============
-.. highlights::
-    * ``mode='ab'`` - append in binary mode
+* ``mode='ab'`` - append in binary mode
 
 .. code-block:: python
 
@@ -45,8 +43,7 @@ Append Binary
 
 Read Binary
 ===========
-.. highlights::
-    * ``mode='rb'`` - read in binary mode
+* ``mode='rb'`` - read in binary mode
 
 .. code-block:: python
 
@@ -61,9 +58,8 @@ Read Binary
 
 Pickle
 ======
-.. highlights::
-    * Works with any Python object (variables, functions, classes, nested objects)
-    * More information in :ref:`Serialization Pickle`
+* Works with any Python object (variables, functions, classes, nested objects)
+* More information in :ref:`Serialization Pickle`
 
 .. code-block:: python
     :caption: Write binary data to file
@@ -92,9 +88,8 @@ Pickle
 
 Seek
 ====
-.. highlights::
-    * Go to the n-th byte in the file
-    * Supports negative index (from end of file)
+* Go to the n-th byte in the file
+* Supports negative index (from end of file)
 
 .. code-block:: python
 

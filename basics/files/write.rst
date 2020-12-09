@@ -7,18 +7,16 @@ File Write
 
 Rationale
 =========
-.. highlights::
-    * Creates file if not exists
-    * Truncate the file before writing
-    * Works with both relative and absolute path
-    * Fails when directory with file cannot be accessed
-    * ``mode`` parameter to ``open()`` function is required
+* Creates file if not exists
+* Truncate the file before writing
+* Works with both relative and absolute path
+* Fails when directory with file cannot be accessed
+* ``mode`` parameter to ``open()`` function is required
 
 
 Write to File
 =============
-.. highlights::
-    * Always remember to close file
+* Always remember to close file
 
 .. code-block:: python
 
@@ -43,10 +41,9 @@ Write One Line
 
 Write Multiple Lines
 ====================
-.. highlights::
-    * Write a list of lines to the file.
-    * ``.writelines()`` does not add a line separator (``\n``)!!
-    *  Each line must add a separator at the end.
+* Write a list of lines to the file.
+* ``.writelines()`` does not add a line separator (``\n``)!!
+*  Each line must add a separator at the end.
 
 .. code-block:: python
 
@@ -75,9 +72,8 @@ Write Multiple Lines
 
 Write Non-Str Data
 ==================
-.. highlights::
-    * Join works only for strings
-    * Conversion to ``str`` must be performed before adding a separator and writing to file.
+* Join works only for strings
+* Conversion to ``str`` must be performed before adding a separator and writing to file.
 
 .. code-block:: python
 

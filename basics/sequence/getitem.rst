@@ -126,7 +126,7 @@ GetItem from ``tuple``:
 
 
 Unordered Sequence
-==================
+------------------
 GetItem from ``set`` is impossible. ``set`` is unordered data structure:
 
     >>> data = {'a', 'b', 'c', 'd'}
@@ -175,7 +175,7 @@ GetItem from ``frozenset`` is impossible. ``frozenset`` is unordered data struct
 
 
 Nested Sequence
-===============
+---------------
 Get elements from ``list`` of ``list``:
 
     >>> data = [[1, 2, 3],

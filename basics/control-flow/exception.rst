@@ -7,16 +7,15 @@ Exceptions
 
 Rationale
 =========
-.. highlights::
-    * Used when error occurs
-    * You can catch exception and handles erroneous situation
-    * Exception example situations:
+* Used when error occurs
+* You can catch exception and handles erroneous situation
+* Exception example situations:
 
-        * File does not exists
-        * No permissions to read file
-        * Function argument is invalid type (ie. ``int('one')``)
-        * Value is incorrect (ie. negative Kelvin temperature)
-        * Network or database connection could not be established
+    * File does not exists
+    * No permissions to read file
+    * Function argument is invalid type (ie. ``int('one')``)
+    * Value is incorrect (ie. negative Kelvin temperature)
+    * Network or database connection could not be established
 
 
 Most Common Exceptions
@@ -294,8 +293,7 @@ Assertion
 
 Traceback Analysis
 ==================
-.. highlights::
-    * Stacktrace is 8 levels deep, it's not Java's 200 ;)
+* Stacktrace is 8 levels deep, it's not Java's 200 ;)
 
 .. code-block:: python
     :emphasize-lines: 3
@@ -364,10 +362,9 @@ Traceback Analysis
 
 Change Verbosity Level
 ======================
-.. highlights::
-    * Change level with ``sys.tracebacklimit``
-    * From time to time you can have problems somewhere in the middle, but it's rare
-    * Last lines are the most important, in most cases error is there
+* Change level with ``sys.tracebacklimit``
+* From time to time you can have problems somewhere in the middle, but it's rare
+* Last lines are the most important, in most cases error is there
 
 .. code-block:: python
     :emphasize-lines: 1,2
@@ -390,12 +387,11 @@ Change Verbosity Level
 
 Catching Exceptions
 ===================
-.. highlights::
-    * ``try``
-    * ``except``
-    * ``else``
-    * ``finally``
-    * ``try`` is required and then one of the others blocks
+* ``try``
+* ``except``
+* ``else``
+* ``finally``
+* ``try`` is required and then one of the others blocks
 
 .. code-block:: python
 
@@ -629,10 +625,9 @@ Defining Own Exceptions
 
 Exit Status Code
 ================
-.. highlights::
-    * exit status ``0`` - no error
-    * any other exit status - error
-    * This will not work in Jupyter
+* exit status ``0`` - no error
+* any other exit status - error
+* This will not work in Jupyter
 
 .. code-block:: python
     :emphasize-lines: 5

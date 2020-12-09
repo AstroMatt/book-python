@@ -7,9 +7,8 @@ Loop For
 
 Syntax
 ======
-.. highlights::
-    * ``ITERABLE`` must implement ``iterator`` interface
-    * More information in :ref:`Protocol Iterator`
+* ``ITERABLE`` must implement ``iterator`` interface
+* More information in :ref:`Protocol Iterator`
 
 .. code-block:: text
     :caption: ``for`` loop syntax
@@ -115,11 +114,10 @@ Iterating Sequences
 
 Range
 =====
-.. highlights::
-    * ``range(start, stop, step)``
-    * ``start`` is inclusive, default: ``0``
-    * ``stop`` is exclusive, required
-    * ``step`` default: ``1``
+* ``range(start, stop, step)``
+* ``start`` is inclusive, default: ``0``
+* ``stop`` is exclusive, required
+* ``step`` default: ``1``
 
 .. code-block:: python
 

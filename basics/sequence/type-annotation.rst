@@ -1,16 +1,13 @@
 .. _Sequence Type Annotation:
 
-************************
 Sequence Type Annotation
-************************
+========================
 
 
 Rationale
-=========
+---------
 * Before Python 3.9 you need ``from typing import List, Set, Tuple, Dict``
-
-.. versionadded:: 3.9
-    :pep:`585` -- Type Hinting Generics In Standard Collections
+* Since Python 3.9 - :pep:`585` -- Type Hinting Generics In Standard Collections
 
 .. code-block:: python
 
@@ -36,7 +33,7 @@ Rationale
 
 
 Tuple
-=====
+-----
 .. code-block:: python
     :caption: Generic type annotation
 
@@ -69,7 +66,7 @@ Tuple
 
 
 List
-====
+----
 .. code-block:: python
 
     data: list = list()
@@ -95,7 +92,7 @@ List
 
 
 Set
-===
+---
 .. code-block:: python
 
     data: set = set()
@@ -119,7 +116,7 @@ Set
 
 
 Frozenset
-=========
+---------
 .. code-block:: python
 
     data: frozenset = set()
@@ -143,7 +140,7 @@ Frozenset
 
 
 List of Tuples
-==============
+--------------
 .. code-block:: python
 
     data: list[tuple] = [
@@ -191,7 +188,7 @@ List of Tuples
 
 
 List of Lists
-=============
+-------------
 .. code-block:: python
 
     data: list[list] = [
@@ -225,7 +222,7 @@ List of Lists
 
 
 Aliases
-=======
+-------
 .. code-block:: python
 
     Point = tuple[int, int]
@@ -271,7 +268,7 @@ Aliases
 
 
 Unions
-======
+------
 .. code-block:: python
 
     from typing import Union
@@ -328,7 +325,7 @@ Unions
 
 
 More Information
-================
+----------------
 * Example: https://github.com/pandas-dev/pandas/blob/master/pandas/core/frame.py#L458
 
 .. note:: More information in :ref:`Type Annotations` and :ref:`CI/CD Type Checking`

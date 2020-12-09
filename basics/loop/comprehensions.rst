@@ -34,16 +34,14 @@ Syntax
 
 Convention
 ==========
-.. highlights::
-    * Use shorter variable names
-    * ``x`` is common name
+* Use shorter variable names
+* ``x`` is common name
 
 
 Comprehensions and Generator Expression
 =======================================
-.. highlights::
-    * Comprehensions executes instantly
-    * Generator expression executes lazily
+* Comprehensions executes instantly
+* Generator expression executes lazily
 
 .. code-block:: python
 
@@ -200,9 +198,8 @@ Dict Comprehension
 
 Tuple Comprehension?!
 =====================
-.. highlights::
-    * Tuple Comprehension vs. Generator Expression
-    * More information in :ref:`Generators`
+* Tuple Comprehension vs. Generator Expression
+* More information in :ref:`Generators`
 
 .. code-block:: python
     :caption: Tuple Comprehension

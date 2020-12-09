@@ -42,8 +42,7 @@ Dict Keys
 
 Dict Values
 ===========
-.. highlights::
-    * Value can be any object
+* Value can be any object
 
 .. code-block:: python
 

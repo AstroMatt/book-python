@@ -27,9 +27,8 @@ Syntax
 
 Return Keyword
 ==============
-.. highlights::
-    * ``return`` keyword indicates outcome of the function
-    * Code after ``return`` will not execute
+* ``return`` keyword indicates outcome of the function
+* Code after ``return`` will not execute
 
 .. code-block:: python
 
@@ -134,8 +133,7 @@ Return Nested Sequence
 
 Return None
 ===========
-.. highlights::
-    * Python will ``return None`` if no explicit return is specified
+* Python will ``return None`` if no explicit return is specified
 
 .. code-block:: python
 

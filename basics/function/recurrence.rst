@@ -11,13 +11,12 @@ Function Recurrence
 
 Rationale
 =========
-.. highlights::
-    * Also known as recursion
-    * Python isn't a functional language
-    * CPython implementation doesn't optimize tail recursion
-    * Tail recursion is not a particularly efficient technique in Python
-    * Unbridled recursion causes stack overflows!
-    * Rewriting the algorithm iteratively, is generally a better idea
+* Also known as recursion
+* Python isn't a functional language
+* CPython implementation doesn't optimize tail recursion
+* Tail recursion is not a particularly efficient technique in Python
+* Unbridled recursion causes stack overflows!
+* Rewriting the algorithm iteratively, is generally a better idea
 
 .. figure:: img/function-recurrence-hanoi.jpg
 
@@ -57,9 +56,8 @@ Example
 
 Recursion Depth Limit
 =====================
-.. highlights::
-    * Default recursion depth limit is 1000
-    * Warning: Anaconda sets default recursion depth limit to 2000
+* Default recursion depth limit is 1000
+* Warning: Anaconda sets default recursion depth limit to 2000
 
 .. code-block:: python
 

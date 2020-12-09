@@ -8,9 +8,8 @@ Classes and Instances
 
 Rationale
 =========
-.. highlights::
-    * Object Oriented Paradigm
-    * Model world as objects that interacts with each other
+* Object Oriented Paradigm
+* Model world as objects that interacts with each other
 
 .. glossary::
 
@@ -32,9 +31,8 @@ Rationale
 
 Classes
 =======
-.. highlights::
-    * Capitalized ``CamelCase`` name convention
-    * Classes are templates for objects
+* Capitalized ``CamelCase`` name convention
+* Classes are templates for objects
 
 .. code-block:: python
     :caption: Defining class. Classes should have capitalized name
@@ -51,10 +49,9 @@ Classes
 
 Instances
 =========
-.. highlights::
-    * Instances are also known as Objects
-    * Two newlines between class and code
-    * ``snake_case`` names
+* Instances are also known as Objects
+* Two newlines between class and code
+* ``snake_case`` names
 
 .. code-block:: python
     :caption: One class and one instance
@@ -118,11 +115,10 @@ Class vs Instance
 
 Convention
 ==========
-.. highlights::
-    * Never print in a class
-    * One class per file - when classes are long
-    * All classes in one file - when classes are short
-    * You can mix classes and functions in one file
+* Never print in a class
+* One class per file - when classes are long
+* All classes in one file - when classes are short
+* You can mix classes and functions in one file
 
 .. code-block:: python
     :caption: Classes and Objects

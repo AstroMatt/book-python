@@ -79,8 +79,7 @@ List of Sequence
 
 Matrix
 ======
-.. highlights::
-    * Suggested variable name: ``row``
+* Suggested variable name: ``row``
 
 .. code-block:: python
 

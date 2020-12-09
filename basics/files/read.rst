@@ -7,18 +7,16 @@ File Read
 
 Rationale
 =========
-.. highlights::
-    * Works with both relative and absolute path
-    * Fails when directory with file cannot be accessed
-    * Fails when file cannot be accessed
-    * Uses context manager
-    * ``mode`` parameter to ``open()`` function is optional (defaults to ``mode='rt'``)
+* Works with both relative and absolute path
+* Fails when directory with file cannot be accessed
+* Fails when file cannot be accessed
+* Uses context manager
+* ``mode`` parameter to ``open()`` function is optional (defaults to ``mode='rt'``)
 
 
 Read From File
 ==============
-.. highlights::
-    * Always remember to close file
+* Always remember to close file
 
 .. code-block:: python
 
@@ -31,11 +29,10 @@ Read From File
 
 Read Using Context Manager
 ==========================
-.. highlights::
-    * Context managers use ``with ... as ...:`` syntax
-    * It closes file automatically upon block exit (dedent)
-    * Using context manager is best practice
-    * More information in :ref:`Protocol Context Manager`
+* Context managers use ``with ... as ...:`` syntax
+* It closes file automatically upon block exit (dedent)
+* Using context manager is best practice
+* More information in :ref:`Protocol Context Manager`
 
 .. code-block:: python
 
@@ -47,8 +44,7 @@ Read Using Context Manager
 
 Read File at Once
 =================
-.. highlights::
-    * Note, that whole file must fit into memory
+* Note, that whole file must fit into memory
 
 .. code-block:: python
 
@@ -60,8 +56,7 @@ Read File at Once
 
 Read File as List of Lines
 ==========================
-.. highlights::
-    * Note, that whole file must fit into memory
+ * Note, that whole file must fit into memory
 
 .. code-block:: python
 
@@ -101,9 +96,8 @@ Read File as List of Lines
 
 Reading File as Generator
 =========================
-.. highlights::
-    * Use generator to iterate over other lines
-    * In those examples, ``file`` is a generator
+* Use generator to iterate over other lines
+* In those examples, ``file`` is a generator
 
 .. code-block:: python
 

@@ -150,10 +150,9 @@ Mixed
 
 Enumerate
 =========
-.. highlights::
-    * Pythonic way
-    * Preferred over ``i=0`` and ``i+=1`` for every iteration
-    * ``enumerate()`` will return ``counter`` and ``value`` for every iteration
+* Pythonic way
+* Preferred over ``i=0`` and ``i+=1`` for every iteration
+* ``enumerate()`` will return ``counter`` and ``value`` for every iteration
 
 .. code-block:: python
 

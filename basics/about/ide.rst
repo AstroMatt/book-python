@@ -7,7 +7,7 @@ What is IDE?
 ============
 * Integrated Development Environment
 * Refactoring
-* Syntax helping and highlighting
+* Syntax autocompletion and highlighting
 * Type hinting and checking
 * VCS support
 * Virtualenv support

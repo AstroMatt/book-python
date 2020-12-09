@@ -77,9 +77,8 @@ Global
 
 Global Scope
 ============
-.. highlights::
-    * All variables in main program
-    * Variables are available inside all functions
+* All variables in main program
+* Variables are available inside all functions
 
 .. code-block:: python
 
@@ -258,10 +257,9 @@ Global Scope
 
 Local Scope
 ===========
-.. highlights::
-    * Variables defined inside function
-    * Variables are not available from outside
-    * If outside the function, will return the same as ``globals()``
+* Variables defined inside function
+* Variables are not available from outside
+* If outside the function, will return the same as ``globals()``
 
 .. code-block:: python
 

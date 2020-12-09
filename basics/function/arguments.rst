@@ -34,8 +34,7 @@ Syntax
 
 Positional Arguments
 ====================
-.. highlights::
-    * Order of positional arguments has significance
+* Order of positional arguments has significance
 
 .. code-block:: python
 
@@ -49,8 +48,7 @@ Positional Arguments
 
 Keyword Arguments
 =================
-.. highlights::
-    * Order of keyword arguments has no significance
+* Order of keyword arguments has no significance
 
 .. code-block:: python
 
@@ -64,9 +62,8 @@ Keyword Arguments
 
 Positional and Keyword Arguments
 ================================
-.. highlights::
-    * Positional arguments must be at the left side
-    * Keyword arguments must be at the right side
+* Positional arguments must be at the left side
+* Keyword arguments must be at the right side
 
 .. code-block:: python
 

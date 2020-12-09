@@ -7,15 +7,14 @@ File Encoding
 
 Rationale
 =========
-.. highlights::
-    * ``utf-8`` - a.k.a. Unicode - international standard (should be always used!)
-    * ``iso-8859-1`` - ISO standard for Western Europe and USA
-    * ``iso-8859-2`` - ISO standard for Central Europe (including Poland)
-    * ``cp1250`` or ``windows-1250`` - Polish encoding on Windows
-    * ``cp1251`` or ``windows-1251`` - Russian encoding on Windows
-    * ``cp1252`` or ``windows-1252`` - Western European encoding on Windows
-    * ``ASCII`` - ASCII characters only
-    * https://en.wikipedia.org/wiki/List_of_Unicode_characters
+* ``utf-8`` - a.k.a. Unicode - international standard (should be always used!)
+* ``iso-8859-1`` - ISO standard for Western Europe and USA
+* ``iso-8859-2`` - ISO standard for Central Europe (including Poland)
+* ``cp1250`` or ``windows-1250`` - Polish encoding on Windows
+* ``cp1251`` or ``windows-1251`` - Russian encoding on Windows
+* ``cp1252`` or ``windows-1252`` - Western European encoding on Windows
+* ``ASCII`` - ASCII characters only
+* https://en.wikipedia.org/wiki/List_of_Unicode_characters
 
 .. figure:: img/files-windows2000-notepad-saveas.png
 
@@ -90,9 +89,8 @@ Unicode Decode Error
 
 Escape Characters
 =================
-.. highlights::
-    * ``\r\n`` - is used on windows
-    * ``\n`` - is used everywhere else
+* ``\r\n`` - is used on windows
+* ``\n`` - is used everywhere else
 
 .. figure:: img/type-machine.jpg
 

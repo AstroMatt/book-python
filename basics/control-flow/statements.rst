@@ -7,24 +7,23 @@ Conditional Statements
 
 Positive and Negative Values
 ============================
-.. highlights::
-    Negative values:
+Negative values:
 
-        * empty ``bool()`` or ``False``
-        * empty ``int()`` or ``0``
-        * empty ``float()`` or ``0.0``
-        * empty ``complex()`` or ``0+0j`` or ``0.0+0.0j``
-        * empty ``str()`` or ``''``
-        * empty ``tuple()`` or ``()``
-        * empty ``list()`` or ``[]``
-        * empty ``set()``
-        * empty ``frozenset()``
-        * empty ``dict()`` or ``{}``
-        * ``None``
+    * empty ``bool()`` or ``False``
+    * empty ``int()`` or ``0``
+    * empty ``float()`` or ``0.0``
+    * empty ``complex()`` or ``0+0j`` or ``0.0+0.0j``
+    * empty ``str()`` or ``''``
+    * empty ``tuple()`` or ``()``
+    * empty ``list()`` or ``[]``
+    * empty ``set()``
+    * empty ``frozenset()``
+    * empty ``dict()`` or ``{}``
+    * ``None``
 
-    Positive values:
+Positive values:
 
-        * any other
+    * any other
 
 
 Conditional Statement
@@ -144,9 +143,8 @@ Conditional Statement
 
 Unconditional Alternative
 =========================
-.. highlights::
-    * Optional
-    * Executed when condition is not met
+* Optional
+* Executed when condition is not met
 
 .. code-block:: text
     :caption: ``else`` generic syntax
@@ -264,9 +262,8 @@ Unconditional Alternative
 
 Conditional Alternative
 =======================
-.. highlights::
-    * Used to check for additional condition if first is not met
-    * In other languages is known as ``else if``
+* Used to check for additional condition if first is not met
+* In other languages is known as ``else if``
 
 .. code-block:: text
     :caption: ``elif`` generic syntax
@@ -381,10 +378,9 @@ Conditional Expression
 
 Switch
 ======
-.. highlights::
-    * No ``switch`` statement in Python!
-    * ``switch`` in Object Oriented Programming is considered a bad practise
-    * :pep:`275` -- Switching on Multiple Values [Rejected]
+* No ``switch`` statement in Python!
+* ``switch`` in Object Oriented Programming is considered a bad practise
+* :pep:`275` -- Switching on Multiple Values [Rejected]
 
 .. code-block:: python
 

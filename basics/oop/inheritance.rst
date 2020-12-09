@@ -7,9 +7,8 @@ Inheritance
 
 Rationale
 =========
-.. highlights::
-    * Child inherits all fields and methods from parent
-    * Used to avoid code duplication
+* Child inherits all fields and methods from parent
+* Used to avoid code duplication
 
 .. glossary::
 

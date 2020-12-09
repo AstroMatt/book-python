@@ -7,11 +7,10 @@ Function Definition
 
 Rationale
 =========
-.. highlights::
-    * Reuse code
-    * Improves code readability
-    * Clean-up code
-    * Allows for easier refactoring
+* Reuse code
+* Improves code readability
+* Clean-up code
+* Allows for easier refactoring
 
 
 Syntax
@@ -36,12 +35,11 @@ Definition
 
 Convention
 ==========
-.. highlights::
-    * Do not use ``camelCase`` names
-    * ``CamelCase`` is reserved for class names
-    * Use ``snake_case`` names # Python - snake ;)
-    * Add underscore (``_``) at the end of name when name collide
-    * System functions names starts and ends with 'dunder' - double underscore: ``__``
+* Do not use ``camelCase`` names
+* ``CamelCase`` is reserved for class names
+* Use ``snake_case`` names # Python - snake ;)
+* Add underscore (``_``) at the end of name when name collide
+* System functions names starts and ends with 'dunder' - double underscore: ``__``
 
 .. code-block:: python
     :caption: Do not use ``camelCase``, CamelCase is reserved for class names. Use ``snake_case``
@@ -84,13 +82,12 @@ Convention
 
 Docstring
 =========
-.. highlights::
-    * Docstring is a first multiline comment in: File/Module, Class, Method/Function
-    * Used for generating ``help()`` documentation
-    * It is accessible in ``__doc__`` property of an object
-    * Used for ``doctest``
-    * :pep:`257` -- Docstring Conventions: For multiline ``str`` always use three double quote (``"""``) characters
-    * More information in :ref:`Function Doctest`
+* Docstring is a first multiline comment in: File/Module, Class, Method/Function
+* Used for generating ``help()`` documentation
+* It is accessible in ``__doc__`` property of an object
+* Used for ``doctest``
+* :pep:`257` -- Docstring Conventions: For multiline ``str`` always use three double quote (``"""``) characters
+* More information in :ref:`Function Doctest`
 
 .. code-block:: python
     :caption: Docstring used for documentation
