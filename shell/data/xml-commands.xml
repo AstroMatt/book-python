@@ -1,6 +1,0 @@
-<execute>
-    <command timeout="2">/bin/ls -la /etc/</command>
-    <command>/bin/ls -l /home/ /tmp/</command>
-    <command timeout="1">/bin/sleep 2</command>
-    <command timeout="2">/bin/echo 'hello'</command>
-</execute>
