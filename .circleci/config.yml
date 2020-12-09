@@ -12,7 +12,7 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: ./manage.py test
+          command: sphinx-build -a -E -j auto --color -b doctest . /tmp/
           name: Test
 
 workflows:
