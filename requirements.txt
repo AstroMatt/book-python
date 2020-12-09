@@ -1,7 +1,12 @@
 sphinx==3.3.*
 sphinx_rtd_theme
 sphinxcontrib-bibtex
-recommonmark
 
+# recommonmark
 # sphinxcontrib-book
 # sphinxjp.themes.revealjs
+
+
+# Required by doctests for code listings
+numpy
+pandas
