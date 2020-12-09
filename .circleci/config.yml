@@ -12,7 +12,7 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: sphinx-build -a -E -j auto --color -b doctest . /tmp/
+          command: python ~/.local/lib/python3.9/site-packages/sphinx/cmd/build.py -a -E -j auto --color -b doctest /home/circleci/project/ /tmp/
           name: Test
 
 workflows:
