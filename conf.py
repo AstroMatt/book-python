@@ -19,7 +19,7 @@ extensions = [
     'sphinx.ext.todo',
     # 'sphinx.ext.viewcode',
     'sphinxcontrib.bibtex',
-    'recommonmark',
+    # 'recommonmark',
 ]
 
 suppress_warnings = [
