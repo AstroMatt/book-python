@@ -63,17 +63,14 @@ Compares by values, not types:
 
 Can store elements of any **hashable** types:
 
-    >>> {1, 2, 'a'}
-    {1, 2, 'a'}
-
-    >>> {1, 2, (3, 4)}
-    {1, 2, (3, 4)}
-
-    >>> {1, 2, [3, 4]}
+    >>> data = {1, 2, 'a'}
+    >>> data = {1, 2, (3, 4)}
+    >>>
+    >>> data = {1, 2, [3, 4]}
     Traceback (most recent call last):
     TypeError: unhashable type: 'list'
-
-    >>> {1, 2, {3, 4}}
+    >>>
+    >>> data = {1, 2, {3, 4}}
     Traceback (most recent call last):
     TypeError: unhashable type: 'set'
 

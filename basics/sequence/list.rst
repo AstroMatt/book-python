@@ -99,9 +99,9 @@ Del Item
     >>> data = ['a', 'b', 'c', 'd']
     >>> value = data.pop()
     >>>
-    >>> print(data)
+    >>> data
     ['a', 'b', 'c']
-    >>> print(value)
+    >>> value
     'd'
 
 
